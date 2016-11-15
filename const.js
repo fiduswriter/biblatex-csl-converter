@@ -1091,7 +1091,7 @@ export const BibFieldTypes = {
 }
 
 /** A list of all field aliases and what they refer to. */
-export let BiblatexFieldAliasTypes = {
+export const BiblatexFieldAliasTypes = {
         'address': 'location',
         'annote': 'annotation',
         'archiveprefix': 'eprinttype',
