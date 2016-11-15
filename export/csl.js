@@ -5,17 +5,24 @@ import {BibTypes, BibFieldTypes} from "../const"
  */
 
 export class CSLExporter {
-    constructor(bibDB) {
+    constructor(bibDB, pks) {
         this.bibDB = bibDB
+        if (pks) {
+            this.pks = pks // A list of pk values of the bibliography items to be exported.
+        } else {
+            this.pks = Object.keys(bibDB) // If none are selected, all keys are exporter
+        }
         this.cslDB = {}
-        this.convertAll()
     }
 
-    convertAll() {
+    get output() {
         for (let bibId in this.bibDB) {
-            this.cslDB[bibId] = this.getCSLEntry(bibId)
-            this.cslDB[bibId].id = bibId
+            if (bibId in this.pks) {
+                this.cslDB[bibId] = this.getCSLEntry(bibId)
+                this.cslDB[bibId].id = bibId
+            }
         }
+        return this.cslDB
     }
     /** Converts one BibDB entry to CSL format.
      * @function getCSLEntry

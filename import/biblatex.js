@@ -20,40 +20,32 @@ const MONTH_NAMES = [
     "December"
 ]
 
+const MONTH_ABBREVS  = {
+    JAN: "January",
+    FEB: "February",
+    MAR: "March",
+    APR: "April",
+    MAY: "May",
+    JUN: "June",
+    JUL: "July",
+    AUG: "August",
+    SEP: "September",
+    OCT: "October",
+    NOV: "November",
+    DEC: "December"
+}
+
 export class BibLatexParser {
 
-    constructor() {
+    constructor(input) {
+        this.input = input
         this.pos = 0
         this.input = ""
-
         this.entries = []
-        this.strings = {
-            JAN: "January",
-            FEB: "February",
-            MAR: "March",
-            APR: "April",
-            MAY: "May",
-            JUN: "June",
-            JUL: "July",
-            AUG: "August",
-            SEP: "September",
-            OCT: "October",
-            NOV: "November",
-            DEC: "December"
-        }
         this.currentKey = ""
         this.currentEntry = false
         this.currentType = ""
         this.errors = []
-
-    }
-
-    setInput(t) {
-        this.input = t
-    }
-
-    getEntries() {
-        return this.entries
     }
 
     isWhitespace(s) {
@@ -155,8 +147,8 @@ export class BibLatexParser {
             return this.valueQuotes()
         } else {
             let k = this.key()
-            if (this.strings[k.toUpperCase()]) {
-                return this.strings[k.toUpperCase()]
+            if (MONTH_ABBREVS[k.toUpperCase()]) {
+                return MONTH_ABBREVS[k.toUpperCase()]
             } else if (k.match("^[0-9]+$")) {
                 return k
             } else {
@@ -463,7 +455,7 @@ export class BibLatexParser {
 
     string() {
         let kv = this.keyEqualsValue()
-        this.strings[kv[0].toUpperCase()] = kv[1]
+        MONTH_ABBREVS[kv[0].toUpperCase()] = kv[1]
     }
 
     preamble() {
@@ -483,7 +475,7 @@ export class BibLatexParser {
         return value
     }
 
-    bibtex() {
+    get output() {
         while (this.skipToNext()) {
             let d = this.directive()
             this.match("{")
@@ -498,6 +490,7 @@ export class BibLatexParser {
             }
             this.match("}")
         }
+        return this.entries
     }
 
 

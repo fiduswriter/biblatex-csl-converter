@@ -31,12 +31,17 @@ const TexSpecialCharsShort = [ // Same list, but without braces which are presen
 
 export class BibLatexExporter {
 
-    constructor(pks, aBibDB) {
-        this.pks = pks // A list of pk values of the bibliography items to be exported.
-        this.aBibDB = aBibDB // The bibliography database to export from.
+    constructor(bibDB, pks) {
+        this.bibDB = bibDB // The bibliography database to export from.
+        if (pks) {
+            this.pks = pks // A list of pk values of the bibliography items to be exported.
+        } else {
+            this.pks = Object.keys(bibDB) // If none are selected, all keys are exporter
+        }
+
     }
 
-    init() {
+    get output() {
         this.bibtexArray = []
         this.bibtexStr = ''
 
@@ -44,7 +49,7 @@ export class BibLatexExporter {
 
         for (let i = 0; i < len; i++) {
             let pk = this.pks[i]
-            let bib = this.aBibDB[pk]
+            let bib = this.bibDB[pk]
             let bibEntry = {
                 'type': BibTypes[bib['bib_type']]['biblatex'],
                 'key': bib['entry_key']
@@ -81,6 +86,7 @@ export class BibLatexExporter {
             this.bibtexArray[this.bibtexArray.length] = bibEntry
         }
         this.bibtexStr = this._getBibtexString(this.bibtexArray)
+        return this.bibtexStr
     }
 
     _reformDate(theValue, typeName) {
