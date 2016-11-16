@@ -1,39 +1,10 @@
-import {TexSpecialChars, BibFieldTypes, BiblatexFieldAliasTypes, BibTypes, BiblatexAliasTypes} from "../const"
+import {BibFieldTypes, BibTypes} from "../const"
+import {MONTH_NAMES, MONTH_ABBREVS, TexSpecialChars, BiblatexAliasTypes, BiblatexFieldAliasTypes} from "./const"
 import {BibLatexNameStringParser} from "./name-string-parser"
 
 /** Parses files in BibTeX/BibLaTeX format
  * @function bibTexParser
  */
-
-const MONTH_NAMES = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December"
-]
-
-const MONTH_ABBREVS  = {
-    JAN: "January",
-    FEB: "February",
-    MAR: "March",
-    APR: "April",
-    MAY: "May",
-    JUN: "June",
-    JUL: "July",
-    AUG: "August",
-    SEP: "September",
-    OCT: "October",
-    NOV: "November",
-    DEC: "December"
-}
 
 export class BibLatexParser {
 
@@ -197,7 +168,7 @@ export class BibLatexParser {
 
     keyValueList() {
         let kv = this.keyEqualsValue()
-        if (_.isUndefined(kv)) {
+        if (typeof(kv) === 'undefined') {
             // Entry has no fields, so we delete it.
             // It was the last one pushed, so we remove the last one
             this.entries.pop()

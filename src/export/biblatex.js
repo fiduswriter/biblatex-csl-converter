@@ -1,28 +1,5 @@
+import {TexSpecialChars, TexSpecialCharsShort} from "./const"
 import {BibTypes, BibFieldTypes} from "../const"
-
-const TexSpecialChars = [ // A much smaller list, as biblatex does understand utf8
-    [/\\/g, '\\textbackslash '],
-    [/\{/g, '\\{ '],
-    [/\}/g, '\\} '],
-    [/&/g, '{\\&}'],
-    [/%/g, '{\\%}'],
-    [/\$/g, '{\\$}'],
-    [/#/g, '{\\#}'],
-    [/_/g, '{\\_}'],
-    [/~/g, '{\\textasciitilde}'],
-    [/\^/g, '{\\textasciicircum}']
-]
-
-const TexSpecialCharsShort = [ // Same list, but without braces which are present in name fields. TODO: get rid of this!
-    [/\\/g, '\\textbackslash '],
-    [/&/g, '{\\&}'],
-    [/%/g, '{\\%}'],
-    [/\$/g, '{\\$}'],
-    [/#/g, '{\\#}'],
-    [/_/g, '{\\_}'],
-    [/~/g, '{\\textasciitilde}'],
-    [/\^/g, '{\\textasciicircum}']
-]
 
 /** Export a list of bibliography items to bibLateX and serve the file to the user as a ZIP-file.
  * @class BibLatexExporter
@@ -56,11 +33,9 @@ export class BibLatexExporter {
             }
             let fValues = {}
             for (let fKey in bib) {
-                if ('entry_key' == fKey || 'id' == fKey || 'bib_type' ==
-                    fKey || 'entry_owner' == fKey || 0 === fKey.indexOf(
-                        'bibtype') ||
-                    'entry_cat' == fKey)
+                if (!BibFieldTypes[fKey]) {
                     continue
+                }
                 let fValue = bib[fKey]
                 if ("" === fValue)
                     continue
