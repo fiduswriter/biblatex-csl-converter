@@ -40,7 +40,6 @@ export class BibLatexParser {
     constructor(input) {
         this.input = input
         this.pos = 0
-        this.input = ""
         this.entries = []
         this.currentKey = ""
         this.currentEntry = false
