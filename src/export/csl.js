@@ -17,7 +17,7 @@ export class CSLExporter {
 
     get output() {
         for (let bibId in this.bibDB) {
-            if (bibId in this.pks) {
+            if (this.pks.indexOf(bibId) !== -1) {
                 this.cslDB[bibId] = this.getCSLEntry(bibId)
                 this.cslDB[bibId].id = bibId
             }
