@@ -12,6 +12,7 @@ export class BibLatexParser {
         this.input = input
         this.pos = 0
         this.entries = []
+        this.bibDB = {}
         this.currentKey = ""
         this.currentEntry = false
         this.currentType = ""
@@ -234,6 +235,7 @@ export class BibLatexParser {
         } else {
             this.currentEntry['bib_type'] = bibType
         }
+        delete this.currentEntry['biblatex_type']
 
         for(let fKey in this.currentEntry['fields']) {
             // Replace alias fields with their main term.
