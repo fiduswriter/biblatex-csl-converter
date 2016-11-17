@@ -213,30 +213,6 @@ export class BibLatexParser {
             this.currentEntry['fields']['date'] = `${date.year}`
         }
 
-        let biblatexType = this.currentEntry['biblatex_type']
-        if (BiblatexAliasTypes[biblatexType]) {
-            biblatexType = BiblatexAliasTypes[biblatexType]
-        }
-
-        let bibType = ''
-        Object.keys(BibTypes).forEach((bType) => {
-            if (BibTypes[bType]['biblatex'] === biblatexType) {
-                bibType = bType
-            }
-        })
-
-        if(bibType === '') {
-            this.errors.push({
-                type: 'unknown_type',
-                entry: this.currentEntry['entry_key'],
-                type_name: biblatexType
-            })
-            this.currentEntry['bib_type'] = 'misc'
-        } else {
-            this.currentEntry['bib_type'] = bibType
-        }
-        delete this.currentEntry['biblatex_type']
-
         for(let fKey in this.currentEntry['fields']) {
             // Replace alias fields with their main term.
             if (BiblatexFieldAliasTypes[fKey]) {
@@ -407,9 +383,33 @@ export class BibLatexParser {
         }
     }
 
+    bibType() {
+        let biblatexType = this.currentType
+        if (BiblatexAliasTypes[biblatexType]) {
+            biblatexType = BiblatexAliasTypes[biblatexType]
+        }
+
+        let bibType = ''
+        Object.keys(BibTypes).forEach((bType) => {
+            if (BibTypes[bType]['biblatex'] === biblatexType) {
+                bibType = bType
+            }
+        })
+
+        if(bibType === '') {
+            this.errors.push({
+                type: 'unknown_type',
+                type_name: biblatexType
+            })
+            bibType = 'misc'
+        }
+
+        return bibType
+    }
+
     newEntry() {
         this.currentEntry = {
-            'biblatex_type': this.currentType,
+            'bib_type': this.bibType(),
             'entry_key': this.key(),
             'fields': {}
         }
