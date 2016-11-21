@@ -7,32 +7,27 @@
     }
     </style>
 </head>
+<h3>Import .bib test</h3>
+
+<p>Select the .bib file here: <input type="file" accept=".bib" id="file-upload"></p>
+
 <body>
     <table width="100%">
         <tr>
-            <th width="10%">
-                Input
-            </th>
-            <th width="45%">
+            <th width="34%">
                 bibDB
             </th>
-            <th width="45%">
-                Output
+            <th width="33%">
+                CSL
+            </th>
+            <th width="33%">
+                Biblatex (export)
             </th>
         </tr>
         <tr>
-            <td>
-                <input type="file" accept=".bib" id="file-upload">
-            <td id='bib-db'>
-            </td>
-            <td>
-                <h3>Biblatex</h3>
-                <div id='biblatex'>
-                </div>
-                <h3>CSL</h3>
-                <div id='csl-db'>
-                </div>
-            </td>
+            <td id='bib-db'></td>
+            <td id='csl-db'></td>
+            <td id='biblatex'></td>
         </tr>
     </table>
     <script src="demo-transpiled.js"></script>

@@ -31,18 +31,17 @@ export class CSLExporter {
     getCSLEntry(id) {
         let bib = this.bibDB[id],
             cslOutput = {}
-
-        for (let fKey in bib) {
-            if (bib[fKey] !== '' && fKey in BibFieldTypes && 'csl' in BibFieldTypes[fKey]) {
+        for (let fKey in bib.fields) {
+            if (bib.fields[fKey] !== '' && fKey in BibFieldTypes && 'csl' in BibFieldTypes[fKey]) {
                 let fType = BibFieldTypes[fKey]['type']
                 if ('f_date' == fType) {
                     cslOutput[BibFieldTypes[fKey]['csl']] = this._reformDate(
-                        bib[fKey])
+                        bib.fields[fKey])
                 } else if ('l_name' == fType) {
                     cslOutput[BibFieldTypes[fKey]['csl']] = this._reformName(
-                        bib[fKey])
+                        bib.fields[fKey])
                 } else {
-                    cslOutput[BibFieldTypes[fKey]['csl']] = bib[fKey]
+                    cslOutput[BibFieldTypes[fKey]['csl']] = bib.fields[fKey]
                 }
             }
         }

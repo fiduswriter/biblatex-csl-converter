@@ -32,11 +32,11 @@ export class BibLatexExporter {
                 'key': bib['entry_key']
             }
             let fValues = {}
-            for (let fKey in bib) {
+            for (let fKey in bib.fields) {
                 if (!BibFieldTypes[fKey]) {
                     continue
                 }
-                let fValue = bib[fKey]
+                let fValue = bib.fields[fKey]
                 if ("" === fValue)
                     continue
                 let fType = BibFieldTypes[fKey]['type']
@@ -147,22 +147,22 @@ export class BibLatexExporter {
             outString += this._escapeTexSpecialChars(el.nodeValue, false)
         } else if (el.nodeType === 1) {
             let braceEnd = ""
-            if (jQuery(el).is('i')) {
+            if (el.matches('i')) {
                 outString += "\\emph{"
                 braceEnd = "}"
-            } else if (jQuery(el).is('b')) {
+            } else if (el.matches('b')) {
                 outString += "\\textbf{"
                 braceEnd = "}"
-            } else if (jQuery(el).is('sup')) {
+            } else if (el.matches('sup')) {
                 outString += "$^{"
                 braceEnd = "}$"
-            } else if (jQuery(el).is('sub')) {
+            } else if (el.matches('sub')) {
                 outString += "$_{"
                 braceEnd = "}$"
-            } else if (jQuery(el).is('span[class*="nocase"]')) {
+            } else if (el.matches('span[class*="nocase"]')) {
                 outString += "{{"
                 braceEnd = "}}"
-            } else if (jQuery(el).is('span[style*="small-caps"]')) {
+            } else if (el.matches('span[style*="small-caps"]')) {
                 outString += "\\textsc{"
                 braceEnd = "}"
             }

@@ -450,7 +450,7 @@ export class BibLatexParser {
         return value
     }
 
-    get output() {
+    bibtex() {
         while (this.skipToNext()) {
             let d = this.directive()
             this.match("{")
@@ -465,7 +465,19 @@ export class BibLatexParser {
             }
             this.match("}")
         }
-        return this.entries
+    }
+
+    createBibDB() {
+        let that = this
+        this.entries.forEach((entry, index)=> {
+            that.bibDB[index] = entry
+        })
+    }
+
+    get output() {
+        this.bibtex()
+        this.createBibDB()
+        return this.bibDB
     }
 
 }
