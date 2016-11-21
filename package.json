@@ -16,7 +16,9 @@
   ],
   "author": "Johannes Wilm",
   "contributors": [
-    "Takuto Kojima <mail@takutokojima.com>"
+    "Henrik Muehe",
+    "Takuto Kojima <mail@takutokojima.com>",
+    "Johannes Wilm <mail@johanneswilm.org>"
   ],
   "license": "LGPL-3.0",
   "bugs": {

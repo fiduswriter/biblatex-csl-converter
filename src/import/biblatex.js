@@ -3,8 +3,12 @@ import {MONTH_NAMES, MONTH_ABBREVS, TexSpecialChars, BiblatexAliasTypes, Biblate
 import {BibLatexNameStringParser} from "./name-string-parser"
 
 /** Parses files in BibTeX/BibLaTeX format
- * @function bibTexParser
  */
+
+ /* Based on original work by Henrik Muehe (c) 2010,
+  * licensed under the MIT license,
+  * https://code.google.com/archive/p/bibtex-js/
+  */
 
 export class BibLatexParser {
 
@@ -463,6 +467,5 @@ export class BibLatexParser {
         }
         return this.entries
     }
-
 
 }
