@@ -21,7 +21,7 @@ export class BibLatexSingleNameParser {
         } else if (parts.length === 1) {  // First von Last
             let spacedParts = this.splitTexString(this.nameString)
             if (spacedParts.length === 1) {
-                this.nameDict['first'] = spacedParts[0]
+                this.nameDict['literal'] = spacedParts[0]
             } else {
                 let split = this.splitAt(spacedParts)
                 let firstMiddle = split[0]
@@ -35,7 +35,7 @@ export class BibLatexSingleNameParser {
             }
 
         } else {
-            this.nameDict['first'] = this.nameString
+            this.nameDict['literal'] = this.nameString
         }
         return this.nameDict
     }
@@ -75,7 +75,7 @@ export class BibLatexSingleNameParser {
 
     processFirstMiddle(parts) {
         this._first = this._first.concat(parts)
-        this.nameDict['first'] = this._first.join(' ')
+        this.nameDict['given'] = this._first.join(' ')
     }
 
     processVonLast(parts, lineage=[]) {
@@ -88,7 +88,7 @@ export class BibLatexSingleNameParser {
         this._last = this._last.concat(von)
         this._last = this._last.concat(last)
         this._last = this._last.concat(lineage)
-        this.nameDict['last'] = this._last.join(' ')
+        this.nameDict['family'] = this._last.join(' ')
     }
 
     findFirstLowerCaseWord(lst) {

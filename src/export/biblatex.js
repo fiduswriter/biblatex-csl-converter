@@ -1,4 +1,4 @@
-import {TexSpecialChars, TexSpecialCharsShort} from "./const"
+import {TexSpecialChars} from "./const"
 import {BibTypes, BibFieldTypes} from "../const"
 
 /** Export a list of bibliography items to bibLateX and serve the file to the user as a ZIP-file.
@@ -19,6 +19,7 @@ export class BibLatexExporter {
     }
 
     get output() {
+        let that = this
         this.bibtexArray = []
         this.bibtexStr = ''
 
@@ -41,18 +42,27 @@ export class BibLatexExporter {
                     continue
                 let fType = BibFieldTypes[fKey]['type']
                 switch (fType) {
+                    case 'l_name':
+                        fValues[BibFieldTypes[fKey]['biblatex']] = this._reformName(fValue)
+                        break
                     case 'f_date':
-                        let dateParts = this._reformDate(fValue, fKey)
-                        for (let datePart in dateParts) {
-                            fValues[datePart] = dateParts[datePart]
-                        }
+                        fValues[BibFieldTypes[fKey]['biblatex']] = this._reformDate(fValue)
                         break
                     case 'f_literal':
-                        fValue = this._htmlToLatex(fValue)
-                        fValues[BibFieldTypes[fKey]['biblatex']] = fValue
+                    case 'f_key':
+                        fValues[BibFieldTypes[fKey]['biblatex']] = this._htmlToLatex(fValue)
+                        break
+                    case 'l_literal':
+                    case 'l_key':
+                        let eValues = []
+                        fValue.forEach((value) => {
+                            let eValue = that._htmlToLatex(value)
+                            eValues.push(eValue)
+                        })
+                        fValues[BibFieldTypes[fKey]['biblatex']] = eValues.join(' and ')
                         break
                     default:
-                        fValue = this._escapeTexSpecialChars(fValue, true)
+                        fValue = this._escapeTexSpecialChars(fValue)
                         fValues[BibFieldTypes[fKey]['biblatex']] = fValue
                 }
 
@@ -64,70 +74,47 @@ export class BibLatexExporter {
         return this.bibtexStr
     }
 
-    _reformDate(theValue, typeName) {
+    _reformDate(theValue) {
         //reform date-field
-        let dates = theValue.split('/'),
-            datesValue = [],
-            len = dates.length
-
-        for (let i = 0; i < len; i++) {
-            let eachDate = dates[i]
-            let dateParts = eachDate.split('-')
-            let dateValue = []
-            let len2 = dateParts.length
-            for (let j = 0; j < len2; j++) {
-                let datePart = dateParts[j]
-                if (datePart != parseInt(datePart)) {
-                    break
-                }
-                dateValue[dateValue.length] = datePart
-            }
-            datesValue[datesValue.length] = dateValue
-        }
-        let valueList = {}
-        let dateLen = datesValue[0].length
-        if (1 < datesValue.length)
-            dateLen = Math.min(dateLen, datesValue[1].length)
-        if (3 == dateLen) {
-            theValue = datesValue[0].join('-')
-            if (1 < datesValue.length)
-                theValue += '/' + datesValue[1].join('-')
-            valueList[typeName] = theValue
-        } else if ('date' == typeName) {
-            let year = datesValue[0][0]
-            if (1 < datesValue.length)
-                year += '/' + datesValue[1][0]
-            valueList.year = year
-            if (2 == dateLen) {
-                let month = datesValue[0][1]
-                if (1 < datesValue.length)
-                    month += '/' + datesValue[1][1]
-                valueList.month = month
-            }
+        let dateParts = theValue['date-parts']
+        if (typeof dateParts[0] === 'object') {
+            // We have a range of dates
+            return `${this._reformDate(dateParts[0])}/${this._reformDate(dateParts[1])}`
         } else {
-            if (dateLen < datesValue[0].length)
-                datesValue[0].splice(dateLen)
-            theValue = datesValue[0].join('-')
-            if (1 < datesValue.length) {
-                if (dateLen < datesValue[1].length)
-                    datesValue[1].splice(dateLen)
-                theValue += '/' + datesValue[1].join('-')
+            let dateStringParts = []
+            dateStringParts.push(String(dateParts.shift())) // year
+            while (dateParts.length > 0) {
+                let datePart = dateParts.shift()
+                dateStringParts.push(('0'+datePart).slice(-2)) // month + day with two characters
             }
-            valueList[typeName] = theValue
+            return dateStringParts.join('-')
         }
-        return valueList
     }
 
-    _escapeTexSpecialChars(theValue, short) {
+    _reformName(theValue) {
+        let names = [], that = this
+        theValue.forEach((name)=>{
+            if (name.literal) {
+                let literal = that._escapeTexSpecialChars(name.literal)
+                names.push(`{${literal}}`)
+            } else {
+                let family = that._escapeTexSpecialChars(name.family)
+                let given = that._escapeTexSpecialChars(name.given)
+                names.push(`{${family}} {${given}}`)
+            }
+        })
+        return names.join(' and ')
+    }
+
+    _escapeTexSpecialChars(theValue) {
         if ('string' != typeof (theValue)) {
             return false
         }
-        let texChars = short? TexSpecialCharsShort : TexSpecialChars
-        let len = texChars.length
+        let len = TexSpecialChars.length
         for (let i = 0; i < len; i++) {
             theValue = theValue.replace(
-                texChars[i][0],
-                texChars[i][1]
+                TexSpecialChars[i][0],
+                TexSpecialChars[i][1]
             )
         }
         return theValue
@@ -144,7 +131,7 @@ export class BibLatexExporter {
 
     _htmlToLatexTreeWalker(el, outString) {
         if (el.nodeType === 3) { // Text node
-            outString += this._escapeTexSpecialChars(el.nodeValue, false)
+            outString += this._escapeTexSpecialChars(el.nodeValue)
         } else if (el.nodeType === 1) {
             let braceEnd = ""
             if (el.matches('i')) {
@@ -190,6 +177,4 @@ export class BibLatexExporter {
         }
         return str
     }
-
-
 }

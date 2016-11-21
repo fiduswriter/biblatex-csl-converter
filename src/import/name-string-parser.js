@@ -40,22 +40,7 @@ export class BibLatexNameStringParser {
     }
 
     get output() {
-        let ref = []
-        this.people.forEach((person) => {
-            let name = ''
-            if (person['first']) {
-                name = '{' + person['first'] + '}'
-            }
-            if (person['last']) {
-                if ('' === name) {
-                    name = '{' + person['last'] + '}'
-                } else {
-                    name += ' {' + person['last'] + '}'
-                }
-            }
-            ref.push(name)
-        })
-        return ref
+        return this.people
     }
 
 }

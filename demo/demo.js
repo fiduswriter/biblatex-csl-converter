@@ -57,7 +57,7 @@ let exportCSL = function(bibDB) {
 
 let exportBibLatex = function(bibDB) {
     let exporter = new BibLatexExporter(bibDB)
-    let biblatex = exporter.output
+    let biblatex = exporter.output.split('\n').join('<br>')
     document.getElementById('biblatex').innerHTML = biblatex
 }
 

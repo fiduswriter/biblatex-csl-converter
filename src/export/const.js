@@ -9,17 +9,6 @@ export const TexSpecialChars = [
     [/#/g, '{\\#}'],
     [/_/g, '{\\_}'],
     [/~/g, '{\\textasciitilde}'],
-    [/\^/g, '{\\textasciicircum}']
-]
-
-// Same list as above, but without braces which are present in name fields. TODO: get rid of this!
-export const TexSpecialCharsShort = [
-    [/\\/g, '\\textbackslash '],
-    [/&/g, '{\\&}'],
-    [/%/g, '{\\%}'],
-    [/\$/g, '{\\$}'],
-    [/#/g, '{\\#}'],
-    [/_/g, '{\\_}'],
-    [/~/g, '{\\textasciitilde}'],
-    [/\^/g, '{\\textasciicircum}']
+    [/\^/g, '{\\textasciicircum}'],
+    [/ and /g, ' {and} ']
 ]

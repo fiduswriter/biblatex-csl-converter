@@ -240,47 +240,86 @@ export class BibLatexParser {
             let fValue = this.currentEntry['fields'][fKey]
             switch(fType) {
                 case 'l_name':
-                    this.currentEntry['fields'][fKey] = this.reformNameList(fValue)
+                    this.currentEntry['fields'][fKey] = this._reformNameList(fValue)
                     break
                 case 'f_date':
-                    this.currentEntry['fields'][fKey] = this.reformDate(fValue)
+                    let dateParts = this._reformDate(fValue)
+                    if (dateParts) {
+                        this.currentEntry['fields'][fKey] = {'date-parts': dateParts}
+                    }
                     break
                 case 'f_literal':
-                    this.currentEntry['fields'][fKey] = this.reformLiteral(fValue)
+                case 'f_key':
+                    break
+                    this.currentEntry['fields'][fKey] = this._reformLiteral(fValue)
+                case 'l_literal':
+                case 'l_key':
+                    let items = fValue.split(' and ')
+                    this.currentEntry['fields'][fKey] = []
+                    items.forEach((item) => {
+                        this.currentEntry['fields'][fKey].push(this._reformLiteral(item))
+                    })
                     break
             }
         }
 
     }
 
-    reformNameList(nameString) {
+    _reformNameList(nameString) {
         let nameStringParser = new BibLatexNameStringParser(nameString)
-        return nameStringParser.output.join(' and ')
+        return nameStringParser.output
     }
 
-    reformDate(dateStr) {
-        // TODO: handle start/end dates
-        dateStr = dateStr.replace(/-AA/g,'')
-        let dateFormat = '%Y-AA-AA'
+    _reformDate(dateStr) {
+        let that = this
+        if (dateStr.indexOf('/') !== -1) {
+            let dateRangeParts = dateStr.split('/')
+            let dateRangeArray = []
+            dateRangeParts.forEach((dateRangePart)=>{
+                let reformedDate = that._reformDate(dateRangePart)
+                if (reformedDate) {
+                    dateRangeArray.push(reformedDate)
+                }
+            })
+            if (dateRangeArray.length > 2) {
+                dateRangeArray = dateRangeArray.splice(0,2)
+            } else if (dateRangeArray.length === 1) {
+                dateRangeArray = dateRangeArray[0]
+            } else if (dateRangeArray.length === 0) {
+                dateRangeArray = null
+            }
+            return dateRangeArray
+        }
+        let month = true, day = true
         let dateLen = dateStr.split(/[\s,\./\-]/g).length
-        if (2 < dateLen) {
-            dateFormat = '%Y-%m-%d'
-        } else if (2 === dateLen) {
-            dateFormat = '%Y-%m-AA'
+        if (dateLen === 1) {
+            month = false
+            day = false
+        } else if (dateLen === 2) {
+            day = false
         }
         let theDate = new Date(dateStr)
         if ('Invalid Date' == theDate) {
-            dateFormat = ''
-        } else {
-            dateFormat = dateFormat.replace('%d', ("0" + theDate.getDate()).slice(-2))
-            dateFormat = dateFormat.replace('%m', ("0" + (theDate.getMonth()+1)).slice(-2))
-            dateFormat = dateFormat.replace('%Y', theDate.getFullYear())
+            return null
         }
-        return dateFormat
+
+        let dateArray = []
+        dateArray.push(theDate.getFullYear())
+
+        if (month) {
+            dateArray.push(theDate.getMonth()+1)
+        }
+
+        if (day) {
+            dateArray.push(theDate.getDate())
+        }
+
+        return dateArray
+
     }
 
 
-    reformLiteral(theValue) {
+    _reformLiteral(theValue) {
         let openBraces = ((theValue.match(/\{/g) || []).length),
             closeBraces = ((theValue.match(/\}/g) || []).length)
         if (openBraces === 0 && closeBraces === 0) {
