@@ -5,12 +5,14 @@ let printObject = function(object) {
     switch (typeof object) {
         case 'object':
             if (object instanceof Array) {
+                html += '['
                 object.forEach((item, index) => {
                     html += printObject(item)
                     if ((index+1)<object.length) {
                         html += ', '
                     }
                 })
+                html += ']'
             } else {
                 html += '<table>'
                 Object.keys(object).forEach((key) => {
