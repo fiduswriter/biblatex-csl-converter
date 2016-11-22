@@ -1,6 +1,22 @@
 import {BibFieldTypes, BibTypes} from "../const"
-import {MONTH_NAMES, MONTH_ABBREVS, TexSpecialChars, BiblatexAliasTypes, BiblatexFieldAliasTypes} from "./const"
+import {TexSpecialChars, BiblatexAliasTypes, BiblatexFieldAliasTypes} from "./const"
 import {BibLatexNameStringParser} from "./name-string-parser"
+
+// These variables are expected to be defined by some bibtex sources.
+let VARIABLES  = {
+    JAN: "January",
+    FEB: "February",
+    MAR: "March",
+    APR: "April",
+    MAY: "May",
+    JUN: "June",
+    JUL: "July",
+    AUG: "August",
+    SEP: "September",
+    OCT: "October",
+    NOV: "November",
+    DEC: "December"
+}
 
 /** Parses files in BibTeX/BibLaTeX format
  */
@@ -126,8 +142,8 @@ export class BibLatexParser {
             return this.valueQuotes()
         } else {
             let k = this.key()
-            if (MONTH_ABBREVS[k.toUpperCase()]) {
-                return MONTH_ABBREVS[k.toUpperCase()]
+            if (VARIABLES[k.toUpperCase()]) {
+                return VARIABLES[k.toUpperCase()]
             } else if (k.match("^[0-9]+$")) {
                 return k
             } else {
@@ -483,7 +499,7 @@ export class BibLatexParser {
 
     string() {
         let kv = this.keyEqualsValue()
-        MONTH_ABBREVS[kv[0].toUpperCase()] = kv[1]
+        VARIABLES[kv[0].toUpperCase()] = kv[1]
     }
 
     preamble() {
