@@ -75,8 +75,9 @@ export class BibLatexExporter {
     }
 
     _reformDate(theValue) {
-        //reform date-field
-        let dateParts = theValue['date-parts']
+        // reform date-field
+
+        let dateParts = theValue.slice()
         if (typeof dateParts[0] === 'object') {
             // We have a range of dates
             return `${this._reformDate(dateParts[0])}/${this._reformDate(dateParts[1])}`

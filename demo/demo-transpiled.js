@@ -36,14 +36,20 @@ var printObject = function printObject(object) {
 };
 
 var readBibFile = function readBibFile() {
-    var fileUpload = document.getElementById('file-upload');
-    if (fileUpload.files.length) {
-        var fr = new window.FileReader();
-        fr.onload = function (event) {
-            importBiblatex(event.target.result);
-        };
-        fr.readAsText(fileUpload.files[0]);
-    }
+    document.getElementById('bib-db').innerHTML = '<div class="spinner"></div>';
+    document.getElementById('csl-db').innerHTML = '<div class="spinner"></div>';
+    document.getElementById('biblatex').innerHTML = '<div class="spinner"></div>';
+    // Add timeout so that spinners are shown before processing of file starts.
+    window.setTimeout(function () {
+        var fileUpload = document.getElementById('file-upload');
+        if (fileUpload.files.length) {
+            var fr = new window.FileReader();
+            fr.onload = function (event) {
+                importBiblatex(event.target.result);
+            };
+            fr.readAsText(fileUpload.files[0]);
+        }
+    }, 500);
 };
 
 var importBiblatex = function importBiblatex(bibString) {
@@ -795,8 +801,9 @@ var BibLatexExporter = exports.BibLatexExporter = function () {
     _createClass(BibLatexExporter, [{
         key: "_reformDate",
         value: function _reformDate(theValue) {
-            //reform date-field
-            var dateParts = theValue['date-parts'];
+            // reform date-field
+
+            var dateParts = theValue.slice();
             if (_typeof(dateParts[0]) === 'object') {
                 // We have a range of dates
                 return this._reformDate(dateParts[0]) + "/" + this._reformDate(dateParts[1]);
@@ -1016,11 +1023,66 @@ var CSLExporter = exports.CSLExporter = function () {
                 cslOutput = {};
             for (var fKey in bib.fields) {
                 if (bib.fields[fKey] !== '' && fKey in _const.BibFieldTypes && 'csl' in _const.BibFieldTypes[fKey]) {
-                    cslOutput[_const.BibFieldTypes[fKey]['csl']] = bib.fields[fKey];
+                    var fType = _const.BibFieldTypes[fKey]['type'];
+                    if ('f_date' == fType) {
+                        cslOutput[_const.BibFieldTypes[fKey]['csl']] = { 'date-parts': bib.fields[fKey] };
+                    } else {
+                        cslOutput[_const.BibFieldTypes[fKey]['csl']] = bib.fields[fKey];
+                    }
                 }
             }
             cslOutput['type'] = _const.BibTypes[bib.bib_type].csl;
             return cslOutput;
+        }
+    }, {
+        key: '_reformDate',
+        value: function _reformDate(theValue) {
+            //reform date-field
+            var dates = theValue.split('/'),
+                datesValue = [],
+                len = dates.length;
+            for (var i = 0; i < len; i++) {
+                var eachDate = dates[i];
+                var dateParts = eachDate.split('-');
+                var dateValue = [];
+                var len2 = dateParts.length;
+                for (var j = 0; j < len2; j++) {
+                    var datePart = dateParts[j];
+                    if (datePart != parseInt(datePart)) break;
+                    dateValue[dateValue.length] = datePart;
+                }
+                datesValue[datesValue.length] = dateValue;
+            }
+
+            return {
+                'date-parts': datesValue
+            };
+        }
+    }, {
+        key: '_reformName',
+        value: function _reformName(theValue) {
+            //reform name-field
+            var names = theValue.substring(1, theValue.length - 1).split('} and {'),
+                namesValue = [],
+                len = names.length;
+            for (var i = 0; i < len; i++) {
+                var eachName = names[i];
+                var nameParts = eachName.split('} {');
+                var nameValue = void 0;
+                if (nameParts.length > 1) {
+                    nameValue = {
+                        'family': nameParts[1].replace(/[{}]/g, ''),
+                        'given': nameParts[0].replace(/[{}]/g, '')
+                    };
+                } else {
+                    nameValue = {
+                        'literal': nameParts[0].replace(/[{}]/g, '')
+                    };
+                }
+                namesValue[namesValue.length] = nameValue;
+            }
+
+            return namesValue;
         }
     }, {
         key: 'output',
@@ -1306,13 +1368,20 @@ var BibLatexParser = exports.BibLatexParser = function () {
                     case 'f_date':
                         var dateParts = _this._reformDate(fValue);
                         if (dateParts) {
-                            _this.currentEntry['fields'][_fKey] = { 'date-parts': dateParts };
+                            _this.currentEntry['fields'][_fKey] = dateParts;
+                        } else {
+                            _this.errors.push({
+                                type: 'unknown_date',
+                                entry: _this.currentEntry['entry_key'],
+                                field_name: _fKey
+                            });
+                            delete _this.currentEntry['fields'][_fKey];
                         }
                         break;
                     case 'f_literal':
                     case 'f_key':
-                        break;
                         _this.currentEntry['fields'][_fKey] = _this._reformLiteral(fValue);
+                        break;
                     case 'l_literal':
                     case 'l_key':
                         var items = fValue.split(' and ');

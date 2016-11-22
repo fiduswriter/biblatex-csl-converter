@@ -5,6 +5,20 @@
     td {
         vertical-align: top;
     }
+    .spinner {
+        border: 16px solid #ddd;
+        border-top: 16px solid #f3b52b;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        animation: turn 1s linear infinite;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @keyframes turn {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
     </style>
 </head>
 <h3>Import .bib test</h3>

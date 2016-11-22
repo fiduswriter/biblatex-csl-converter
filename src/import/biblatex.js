@@ -245,13 +245,20 @@ export class BibLatexParser {
                 case 'f_date':
                     let dateParts = this._reformDate(fValue)
                     if (dateParts) {
-                        this.currentEntry['fields'][fKey] = {'date-parts': dateParts}
+                        this.currentEntry['fields'][fKey] = dateParts
+                    } else {
+                        this.errors.push({
+                            type: 'unknown_date',
+                            entry: this.currentEntry['entry_key'],
+                            field_name: fKey
+                        })
+                        delete this.currentEntry['fields'][fKey]
                     }
                     break
                 case 'f_literal':
                 case 'f_key':
-                    break
                     this.currentEntry['fields'][fKey] = this._reformLiteral(fValue)
+                    break
                 case 'l_literal':
                 case 'l_key':
                     let items = fValue.split(' and ')

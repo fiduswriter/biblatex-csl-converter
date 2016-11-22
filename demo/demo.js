@@ -31,14 +31,20 @@ let printObject = function(object) {
 }
 
 let readBibFile = function() {
-    let fileUpload = document.getElementById('file-upload')
-    if(fileUpload.files.length) {
-        let fr = new window.FileReader()
-        fr.onload = function(event) {
-            importBiblatex(event.target.result)
+    document.getElementById('bib-db').innerHTML = '<div class="spinner"></div>'
+    document.getElementById('csl-db').innerHTML = '<div class="spinner"></div>'
+    document.getElementById('biblatex').innerHTML = '<div class="spinner"></div>'
+    // Add timeout so that spinners are shown before processing of file starts.
+    window.setTimeout(function() {
+        let fileUpload = document.getElementById('file-upload')
+        if(fileUpload.files.length) {
+            let fr = new window.FileReader()
+            fr.onload = function(event) {
+                importBiblatex(event.target.result)
+            }
+            fr.readAsText(fileUpload.files[0])
         }
-        fr.readAsText(fileUpload.files[0])
-    }
+    }, 500)
 }
 
 let importBiblatex = function(bibString) {
