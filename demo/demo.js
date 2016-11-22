@@ -24,7 +24,7 @@ let printObject = function(object) {
             html += String(object)
             break
         case 'string':
-            html += object
+            html += object.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
             break
     }
     return html
