@@ -1026,6 +1026,8 @@ var CSLExporter = exports.CSLExporter = function () {
                     var fType = _const.BibFieldTypes[fKey]['type'];
                     if ('f_date' == fType) {
                         cslOutput[_const.BibFieldTypes[fKey]['csl']] = { 'date-parts': bib.fields[fKey] };
+                    } else if ('l_literal' == fType || 'l_key' == fType) {
+                        cslOutput[_const.BibFieldTypes[fKey]['csl']] = bib.fields[fKey].join(', ');
                     } else {
                         cslOutput[_const.BibFieldTypes[fKey]['csl']] = bib.fields[fKey];
                     }
@@ -1154,7 +1156,11 @@ var BibLatexParser = exports.BibLatexParser = function () {
             if (this.input.substring(this.pos, this.pos + s.length) == s) {
                 this.pos += s.length;
             } else {
-                console.warn("Token mismatch, expected " + s + ", found " + this.input.substring(this.pos));
+                this.errors.push({
+                    type: 'token_mismatch',
+                    expected: s,
+                    found: this.input.substring(this.pos)
+                });
             }
             this.skipWhitespace();
         }
@@ -1212,7 +1218,7 @@ var BibLatexParser = exports.BibLatexParser = function () {
                 } else if (this.input[this.pos] == '{' && this.input[this.pos - 1] != '\\') {
                     bracecount++;
                 } else if (this.pos == this.input.length - 1) {
-                    console.warn("Unterminated value");
+                    this.errors.push({ type: 'unexpected_eof' });
                 }
                 this.pos++;
             }
@@ -1228,7 +1234,10 @@ var BibLatexParser = exports.BibLatexParser = function () {
                     this.match('"');
                     return this.input.substring(start, end);
                 } else if (this.pos == this.input.length - 1) {
-                    console.warn("Unterminated value:" + this.input.substring(start));
+                    this.errors.push({
+                        type: 'unterminated_value',
+                        value: this.input.substring(start)
+                    });
                 }
                 this.pos++;
             }
@@ -1248,7 +1257,10 @@ var BibLatexParser = exports.BibLatexParser = function () {
                 } else if (k.match("^[0-9]+$")) {
                     return k;
                 } else {
-                    console.warn("Value unexpected:" + this.input.substring(start));
+                    this.errors.push({
+                        type: 'value_unexpected',
+                        value: this.input.substring(start)
+                    });
                 }
             }
         }
@@ -1269,7 +1281,7 @@ var BibLatexParser = exports.BibLatexParser = function () {
             var start = this.pos;
             while (true) {
                 if (this.pos == this.input.length) {
-                    console.warn("Runaway key");
+                    this.errors.push({ type: 'runaway_key' });
                     return;
                 }
                 if (this.input[this.pos].match("[a-zA-Z0-9_:;`\\.\\\?+/-]")) {
@@ -1288,7 +1300,10 @@ var BibLatexParser = exports.BibLatexParser = function () {
                 var val = this.value();
                 return [key, val];
             } else {
-                console.warn("... = value expected, equals sign missing: " + this.input.substring(this.pos));
+                this.errors.push({
+                    type: 'missing_equal_sign',
+                    key: this.input.substring(this.pos)
+                });
             }
         }
     }, {

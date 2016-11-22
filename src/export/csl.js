@@ -36,6 +36,8 @@ export class CSLExporter {
                 let fType = BibFieldTypes[fKey]['type']
                 if ('f_date' == fType) {
                     cslOutput[BibFieldTypes[fKey]['csl']] = {'date-parts': bib.fields[fKey]}
+                } else if ('l_literal' == fType || 'l_key' == fType) {
+                    cslOutput[BibFieldTypes[fKey]['csl']] = bib.fields[fKey].join(', ')
                 } else {
                     cslOutput[BibFieldTypes[fKey]['csl']] = bib.fields[fKey]
                 }

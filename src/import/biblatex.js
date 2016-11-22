@@ -32,9 +32,11 @@ export class BibLatexParser {
         if (this.input.substring(this.pos, this.pos + s.length) == s) {
             this.pos += s.length
         } else {
-            console.warn("Token mismatch, expected " + s +
-                ", found " + this.input
-                .substring(this.pos))
+            this.errors.push({
+                type: 'token_mismatch',
+                expected: s,
+                found: this.input.substring(this.pos)
+            })
         }
         this.skipWhitespace()
     }
@@ -91,7 +93,7 @@ export class BibLatexParser {
                 '\\') {
                 bracecount++
             } else if (this.pos == this.input.length - 1) {
-                console.warn("Unterminated value")
+                this.errors.push({type: 'unexpected_eof'})
             }
             this.pos++
         }
@@ -107,8 +109,10 @@ export class BibLatexParser {
                 this.match('"')
                 return this.input.substring(start, end)
             } else if (this.pos == this.input.length - 1) {
-                console.warn("Unterminated value:" + this.input.substring(
-                    start))
+                this.errors.push({
+                    type: 'unterminated_value',
+                    value: this.input.substring(start)
+                })
             }
             this.pos++
         }
@@ -127,8 +131,10 @@ export class BibLatexParser {
             } else if (k.match("^[0-9]+$")) {
                 return k
             } else {
-                console.warn("Value unexpected:" + this.input.substring(
-                    start))
+                this.errors.push({
+                    type: 'value_unexpected',
+                    value: this.input.substring(start)
+                })
             }
         }
     }
@@ -147,7 +153,7 @@ export class BibLatexParser {
         let start = this.pos
         while (true) {
             if (this.pos == this.input.length) {
-                console.warn("Runaway key")
+                this.errors.push({type: 'runaway_key'})
                 return
             }
             if (this.input[this.pos].match("[a-zA-Z0-9_:;`\\.\\\?+/-]")) {
@@ -165,9 +171,10 @@ export class BibLatexParser {
             let val = this.value()
             return [key, val]
         } else {
-            console.warn(
-                "... = value expected, equals sign missing: " + this.input
-                .substring(this.pos))
+            this.errors.push({
+                type: 'missing_equal_sign',
+                key: this.input.substring(this.pos)
+            })
         }
     }
 
