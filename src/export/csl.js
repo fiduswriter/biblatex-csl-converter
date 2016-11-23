@@ -10,7 +10,8 @@ const TAGS = {
     'sub': {open:'<sub>', close: '</sub>'},
     'sup': {open:'<sup>', close: '</sup>'},
     'smallcaps': {open:'<span style="font-variant: small-caps;">', close: '</span>'},
-    'nocase': {open:'<span class="nocase">', close: '</span>'}
+    'nocase': {open:'<span class="nocase">', close: '</span>'},
+    'enquote': {open:'&ldquo;', close: '&rdquo;'},
  }
 
 export class CSLExporter {

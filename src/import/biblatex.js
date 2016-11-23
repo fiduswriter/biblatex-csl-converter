@@ -390,6 +390,7 @@ export class BibLatexParser {
                 ['\\textit{', 'em'],
                 ['\\emph{', 'em'],
                 ['\\textsc{', 'smallcaps'],
+                ['\\enquote{', 'enquote']
             ]
             parseString: while (i < len) {
                 if (theValue[i] === '\\') {
@@ -403,6 +404,21 @@ export class BibLatexParser {
                                 // so we need to start a new text node.
                                 textNode = {type: 'text', text: ''}
                                 output.push(textNode)
+                            }
+                            // If immediately inside a brace that added case protection, remove case protection. See
+                            // http://tex.stackexchange.com/questions/276943/biblatex-how-to-emphasize-but-not-caps-protect
+                            if (
+                                inCasePreserve===(braceLevel-1) &&
+                                theValue[i-1] === '{' &&
+                                currentMarks[currentMarks.length-1].type === 'nocase'
+                            ) {
+                                currentMarks.pop()
+                                inCasePreserve = false
+                            } else {
+                                // Of not immediately inside a brace, any styling also
+                                // adds case protection.
+                                currentMarks.push({type:'nocase'})
+                                inCasePreserve = braceLevel
                             }
                             currentMarks.push({type:s[1]})
                             textNode.marks = currentMarks.slice()
@@ -479,7 +495,6 @@ export class BibLatexParser {
                         }
                         currentMarks.push({type:'nocase'})
                         textNode.marks = currentMarks.slice()
-                        //output += '<span class="nocase">'
                         braceClosings.push(true)
                     }
                     i++

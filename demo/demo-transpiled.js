@@ -791,10 +791,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 var TAGS = {
     'strong': { open: '\\mkbibbold{', close: '}' },
     'em': { open: '\\mkbibitalic{', close: '}' },
+    'smallcaps': { open: '\\textsc{', close: '}' },
+    'enquote': { open: '\\enquote{', close: '}' },
+    'nocase': { open: '{{', close: '}}' },
     'sub': { open: '_{', close: '}' },
     'sup': { open: '^{', close: '}' },
-    'smallcaps': { open: '\\textsc{', close: '}' },
-    'nocase': { open: '{{', close: '}}' },
     'math': { open: '$', close: '$' }
 };
 
@@ -876,10 +877,16 @@ var BibLatexExporter = exports.BibLatexExporter = function () {
                         var mathMode = false;
                         textNode.marks.forEach(function (mark) {
                             // We need to activate mathmode for the lowest level sub/sup node.
-                            if (['sup', 'sub'].indexOf(mark.type) !== -1 && !mathMode) {
+                            if ((mark.type === 'sup' || mark.type === 'sub') && !mathMode) {
                                 newMarks.push('math');
+                                newMarks.push(mark.type);
+                                mathMode = true;
+                            } else if (mark.type === 'nocase') {
+                                // No case has to be applied at the top level to be effective.
+                                newMarks.unshift(mark.type);
+                            } else {
+                                newMarks.push(mark.type);
                             }
-                            newMarks.push(mark.type);
                         });
                     })();
                 }
@@ -893,6 +900,10 @@ var BibLatexExporter = exports.BibLatexExporter = function () {
                     }
                     if (closing) {
                         latex += TAGS[mark].close;
+                        // If not inside of a nocase, add a protective brace around tag.
+                        if (lastMarks[0] !== 'nocase' && TAGS[mark].open[0] === '\\') {
+                            latex += '}';
+                        }
                     }
                 });
                 // open all new tags that were not present in the last text node.
@@ -902,6 +913,10 @@ var BibLatexExporter = exports.BibLatexExporter = function () {
                         opening = true;
                     }
                     if (opening) {
+                        // If not inside of a nocase, add a protective brace around tag.
+                        if (newMarks[0] !== 'nocase' && TAGS[mark].open[0] === '\\') {
+                            latex += '{';
+                        }
                         latex += TAGS[mark].open;
                     }
                 });
@@ -1046,7 +1061,8 @@ var TAGS = {
     'sub': { open: '<sub>', close: '</sub>' },
     'sup': { open: '<sup>', close: '</sup>' },
     'smallcaps': { open: '<span style="font-variant: small-caps;">', close: '</span>' },
-    'nocase': { open: '<span class="nocase">', close: '</span>' }
+    'nocase': { open: '<span class="nocase">', close: '</span>' },
+    'enquote': { open: '&ldquo;', close: '&rdquo;' }
 };
 
 var CSLExporter = exports.CSLExporter = function () {
@@ -1673,7 +1689,7 @@ var BibLatexParser = exports.BibLatexParser = function () {
                 var inCasePreserve = false;
                 var textNode = { type: 'text', text: '' };
                 output.push(textNode);
-                var latexCommands = [['\\textbf{', 'strong'], ['\\mkbibbold{', 'strong'], ['\\mkbibitalic{', 'em'], ['\\mkbibemph{', 'em'], ['\\textit{', 'em'], ['\\emph{', 'em'], ['\\textsc{', 'smallcaps']];
+                var latexCommands = [['\\textbf{', 'strong'], ['\\mkbibbold{', 'strong'], ['\\mkbibitalic{', 'em'], ['\\mkbibemph{', 'em'], ['\\textit{', 'em'], ['\\emph{', 'em'], ['\\textsc{', 'smallcaps'], ['\\enquote{', 'enquote']];
                 parseString: while (i < len) {
                     if (theValue[i] === '\\') {
                         var _iteratorNormalCompletion = true;
@@ -1693,6 +1709,17 @@ var BibLatexParser = exports.BibLatexParser = function () {
                                         // so we need to start a new text node.
                                         textNode = { type: 'text', text: '' };
                                         output.push(textNode);
+                                    }
+                                    // If immediately inside a brace that added case protection, remove case protection. See
+                                    // http://tex.stackexchange.com/questions/276943/biblatex-how-to-emphasize-but-not-caps-protect
+                                    if (inCasePreserve === braceLevel - 1 && theValue[i - 1] === '{' && currentMarks[currentMarks.length - 1].type === 'nocase') {
+                                        currentMarks.pop();
+                                        inCasePreserve = false;
+                                    } else {
+                                        // Of not immediately inside a brace, any styling also
+                                        // adds case protection.
+                                        currentMarks.push({ type: 'nocase' });
+                                        inCasePreserve = braceLevel;
                                     }
                                     currentMarks.push({ type: s[1] });
                                     textNode.marks = currentMarks.slice();
@@ -1782,7 +1809,6 @@ var BibLatexParser = exports.BibLatexParser = function () {
                             }
                             currentMarks.push({ type: 'nocase' });
                             textNode.marks = currentMarks.slice();
-                            //output += '<span class="nocase">'
                             braceClosings.push(true);
                         }
                         i++;

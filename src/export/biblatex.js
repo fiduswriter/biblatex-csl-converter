@@ -9,10 +9,11 @@ import {BibTypes, BibFieldTypes} from "../const"
  const TAGS = {
      'strong': {open:'\\mkbibbold{', close: '}'},
      'em': {open:'\\mkbibitalic{', close: '}'},
+     'smallcaps': {open:'\\textsc{', close: '}'},
+     'enquote': {open:'\\enquote{', close: '}'},
+     'nocase': {open:'{{', close: '}}'},
      'sub': {open:'_{', close: '}'},
      'sup': {open:'^{', close: '}'},
-     'smallcaps': {open:'\\textsc{', close: '}'},
-     'nocase': {open:'{{', close: '}}'},
      'math': {open:'$', close: '$'}
   }
 
@@ -158,10 +159,16 @@ export class BibLatexExporter {
                 let mathMode = false
                 textNode.marks.forEach((mark)=>{
                     // We need to activate mathmode for the lowest level sub/sup node.
-                    if (['sup','sub'].indexOf(mark.type) !== -1 && !mathMode) {
+                    if ((mark.type === 'sup' || mark.type === 'sub') && !mathMode) {
                         newMarks.push('math')
+                        newMarks.push(mark.type)
+                        mathMode = true
+                    } else if (mark.type === 'nocase') {
+                        // No case has to be applied at the top level to be effective.
+                        newMarks.unshift(mark.type)
+                    } else {
+                        newMarks.push(mark.type)
                     }
-                    newMarks.push(mark.type)
                 })
             }
             // close all tags that are not present in current text node.
@@ -174,7 +181,12 @@ export class BibLatexExporter {
                 }
                 if (closing) {
                     latex += TAGS[mark].close
+                    // If not inside of a nocase, add a protective brace around tag.
+                    if (lastMarks[0] !== 'nocase' && TAGS[mark].open[0] === '\\') {
+                        latex += '}'
+                    }
                 }
+
             })
             // open all new tags that were not present in the last text node.
             let opening = false
@@ -183,6 +195,10 @@ export class BibLatexExporter {
                     opening = true
                 }
                 if (opening) {
+                    // If not inside of a nocase, add a protective brace around tag.
+                    if (newMarks[0] !== 'nocase' && TAGS[mark].open[0] === '\\') {
+                        latex += '{'
+                    }
                     latex += TAGS[mark].open
                 }
             })
