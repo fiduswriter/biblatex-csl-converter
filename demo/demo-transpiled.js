@@ -42,10 +42,10 @@ var readBibFile = function readBibFile() {
     document.getElementById('csl-db').innerHTML = '<div class="spinner"></div>';
     document.getElementById('biblatex').innerHTML = '<div class="spinner"></div>';
     // Add timeout so that spinners are shown before processing of file starts.
-    window.setTimeout(function () {
+    setTimeout(function () {
         var fileUpload = document.getElementById('file-upload');
         if (fileUpload.files.length) {
-            var fr = new window.FileReader();
+            var fr = new FileReader();
             fr.onload = function (event) {
                 importBiblatex(event.target.result);
             };
@@ -58,6 +58,7 @@ var importBiblatex = function importBiblatex(bibString) {
     var parser = new _src.BibLatexParser(bibString);
     var bibDB = parser.output;
     document.getElementById('bib-db').innerHTML = printObject(bibDB);
+    window.bibDB = bibDB;
     exportCSL(bibDB);
     exportBibLatex(bibDB);
 };
@@ -833,7 +834,7 @@ var BibLatexExporter = exports.BibLatexExporter = function () {
     }, {
         key: "_reformInteger",
         value: function _reformInteger(theValue) {
-            return window.String(theValue);
+            return String(theValue);
         }
     }, {
         key: "_reformName",
@@ -1152,7 +1153,7 @@ var CSLExporter = exports.CSLExporter = function () {
     }, {
         key: '_reformInteger',
         value: function _reformInteger(theValue) {
-            return window.String(theValue);
+            return String(theValue);
         }
     }, {
         key: '_reformText',
@@ -1867,7 +1868,7 @@ var BibLatexParser = exports.BibLatexParser = function () {
         key: "_reformInteger",
         value: function _reformInteger(theValue) {
             var theInt = parseInt(theValue);
-            if (window.isNaN(theInt)) {
+            if (isNaN(theInt)) {
                 theInt = 0;
             }
             return theInt;
@@ -1933,7 +1934,7 @@ var BibLatexParser = exports.BibLatexParser = function () {
             var len = _const2.TexSpecialChars.length;
             for (var i = 0; i < len; i++) {
                 var texChar = _const2.TexSpecialChars[i];
-                var texCharRegExp = new window.RegExp(texChar[0], 'g');
+                var texCharRegExp = new RegExp(texChar[0], 'g');
                 value = value.replace(texCharRegExp, texChar[1]);
             }
             // Delete multiple spaces
@@ -2116,7 +2117,7 @@ var BibLatexSingleNameParser = exports.BibLatexSingleNameParser = function () {
                 } else if (char === '}') {
                     braceLevel -= 1;
                 } else if (braceLevel === 0 && pos > 0) {
-                    var match = string.slice(pos).match(window.RegExp('^' + sep));
+                    var match = string.slice(pos).match(RegExp('^' + sep));
                     if (match) {
                         var sepLen = match[0].length;
                         if (pos + sepLen < stringLen) {

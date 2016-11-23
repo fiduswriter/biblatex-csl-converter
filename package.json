@@ -57,7 +57,9 @@
     "predef": [
       "window",
       "document",
-      "console"
+      "console",
+      "FileReader",
+      "setTimeout"
     ]
   }
 }

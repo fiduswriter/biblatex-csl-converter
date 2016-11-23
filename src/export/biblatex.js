@@ -119,7 +119,7 @@ export class BibLatexExporter {
     }
 
     _reformInteger(theValue) {
-        return window.String(theValue)
+        return String(theValue)
     }
 
     _reformName(theValue) {

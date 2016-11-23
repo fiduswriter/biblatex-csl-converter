@@ -1,0 +1,2 @@
+--ignore-directory=is:lib
+--ignore-file=is:demo-transpiled.js

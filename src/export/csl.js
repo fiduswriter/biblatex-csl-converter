@@ -100,7 +100,7 @@ export class CSLExporter {
     }
 
     _reformInteger(theValue) {
-        return window.String(theValue)
+        return String(theValue)
     }
 
     _reformText(theValue) {

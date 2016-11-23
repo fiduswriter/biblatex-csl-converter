@@ -56,7 +56,7 @@ export class BibLatexSingleNameParser {
             } else if (char === '}') {
                 braceLevel -= 1
             } else if (braceLevel === 0 && pos > 0) {
-                let match = string.slice(pos).match(window.RegExp(`^${sep}`))
+                let match = string.slice(pos).match(RegExp(`^${sep}`))
                 if (match) {
                     let sepLen = match[0].length
                     if (pos + sepLen < stringLen) {

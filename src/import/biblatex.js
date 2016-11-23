@@ -552,7 +552,7 @@ export class BibLatexParser {
 
     _reformInteger(theValue) {
         let theInt = parseInt(theValue)
-        if (window.isNaN(theInt)) {
+        if (isNaN(theInt)) {
             theInt = 0
         }
         return theInt
@@ -613,7 +613,7 @@ export class BibLatexParser {
         let len = TexSpecialChars.length
         for (let i = 0; i < len; i++) {
             let texChar = TexSpecialChars[i]
-            let texCharRegExp = new window.RegExp(texChar[0],'g')
+            let texCharRegExp = new RegExp(texChar[0],'g')
             value = value.replace(texCharRegExp, texChar[1])
         }
         // Delete multiple spaces

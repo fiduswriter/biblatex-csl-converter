@@ -37,10 +37,10 @@ let readBibFile = function() {
     document.getElementById('csl-db').innerHTML = '<div class="spinner"></div>'
     document.getElementById('biblatex').innerHTML = '<div class="spinner"></div>'
     // Add timeout so that spinners are shown before processing of file starts.
-    window.setTimeout(function() {
+    setTimeout(function() {
         let fileUpload = document.getElementById('file-upload')
         if(fileUpload.files.length) {
-            let fr = new window.FileReader()
+            let fr = new FileReader()
             fr.onload = function(event) {
                 importBiblatex(event.target.result)
             }
@@ -53,6 +53,7 @@ let importBiblatex = function(bibString) {
     let parser = new BibLatexParser(bibString)
     let bibDB = parser.output
     document.getElementById('bib-db').innerHTML = printObject(bibDB)
+    window.bibDB = bibDB
     exportCSL(bibDB)
     exportBibLatex(bibDB)
 }
