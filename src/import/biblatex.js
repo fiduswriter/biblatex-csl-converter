@@ -248,7 +248,9 @@ export class BibLatexParser {
                     this.errors.push({
                         type: 'alias_creates_duplicate_field',
                         entry: this.currentEntry['entry_key'],
-                        field_name: fKey
+                        field: fKey,
+                        alias_of: aliasKey,
+                        value: this.currentEntry['fields'][fKey]
                     })
                     delete this.currentEntry['fields'][fKey]
                     continue
