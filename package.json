@@ -59,7 +59,8 @@
       "document",
       "console",
       "FileReader",
-      "setTimeout"
+      "setTimeout",
+      "performance"
     ]
   }
 }

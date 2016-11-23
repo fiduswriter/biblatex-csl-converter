@@ -1502,7 +1502,7 @@ var BibLatexParser = exports.BibLatexParser = function () {
                 this.entries.pop();
                 return;
             }
-            this.currentEntry['fields'][kv[0]] = this.scanBibtexString(kv[1]);
+            this.currentEntry['fields'][kv[0]] = kv[1];
             // date may come either as year, year + month or as date field.
             // We therefore need to catch these hear and transform it to the
             // date field after evaluating all the fields.
@@ -1519,7 +1519,7 @@ var BibLatexParser = exports.BibLatexParser = function () {
                     this.errors.push({ type: 'variable_error' });
                     break;
                 }
-                var val = this.scanBibtexString(kv[1]);
+                var val = kv[1];
                 switch (kv[0]) {
                     case 'date':
                     case 'month':
@@ -1957,8 +1957,9 @@ var BibLatexParser = exports.BibLatexParser = function () {
             this.value();
         }
     }, {
-        key: "scanBibtexString",
-        value: function scanBibtexString(value) {
+        key: "replaceTeXChars",
+        value: function replaceTeXChars() {
+            var value = this.input;
             var len = _const2.TexSpecialChars.length;
             for (var i = 0; i < len; i++) {
                 var texChar = _const2.TexSpecialChars[i];
@@ -1968,8 +1969,8 @@ var BibLatexParser = exports.BibLatexParser = function () {
                 value = value.replace(texCharRe, texChar[1]);
             }
             // Delete multiple spaces
-            value = value.replace(/ +(?= )/g, '');
-            return value;
+            this.input = value.replace(/ +(?= )/g, '');
+            return;
         }
     }, {
         key: "bibtex",
@@ -2000,6 +2001,7 @@ var BibLatexParser = exports.BibLatexParser = function () {
     }, {
         key: "output",
         get: function get() {
+            this.replaceTeXChars();
             this.bibtex();
             this.createBibDB();
             return this.bibDB;
