@@ -9,6 +9,8 @@ const LATEX_COMMANDS = [
     ['\\enquote{', 'enquote']
 ]
 
+const LATEX_SPECIAL_CHARS = ['&','%','$', '#','_','{','}',',','~','^','\'']
+
 
 export class BibLatexLiteralParser {
     constructor(string) {
@@ -50,7 +52,7 @@ export class BibLatexLiteralParser {
                             // If immediately inside a brace that added case protection, remove case protection. See
                             // http://tex.stackexchange.com/questions/276943/biblatex-how-to-emphasize-but-not-caps-protect
                             if (
-                                inCasePreserve===(this.braceLevel-1) &&
+                                this.inCasePreserve===(this.braceLevel-1) &&
                                 this.string[this.si-1] === '{' &&
                                 this.currentMarks[this.currentMarks.length-1].type === 'nocase'
                             ) {
@@ -62,16 +64,28 @@ export class BibLatexLiteralParser {
                                 this.currentMarks.push({type:'nocase'})
                                 this.inCasePreserve = this.braceLevel
                             }
-                            this.currentMarks.push({type:s[1]})
+                            this.currentMarks.push({type:command[1]})
                             this.textNode.marks = this.currentMarks.slice()
                             this.braceClosings.push(true)
                             continue parseString
                         }
                     }
-
-                    if (this.si+1 < this.slen) {
+                    if (LATEX_SPECIAL_CHARS.indexOf(this.string[this.si+1]) !== -1) {
                         this.textNode.text += this.string[this.si+1]
                         this.si += 2
+                    } else {
+                        // We don't know the command and skip it.
+                        this.si++
+                        while(this.si<this.slen && this.string[this.si].match("[a-zA-Z0-9]")) {
+                            this.si++
+                        }
+                        // If there is a brace at the end of the command,
+                        // increase brace level but ignore brace.
+                        if (this.string[this.si] === "{") {
+                            this.braceLevel++
+                            this.braceClosings.push(false)
+                            this.si++
+                        }
                     }
                     break
                 case '_':
