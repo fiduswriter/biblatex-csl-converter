@@ -280,7 +280,8 @@ export class BibLatexParser {
                         this.errors.push({
                             type: 'unknown_date',
                             entry: this.currentEntry['entry_key'],
-                            field_name: fKey
+                            field_name: fKey,
+                            value: fValue
                         })
                         delete this.currentEntry['fields'][fKey]
                     }
