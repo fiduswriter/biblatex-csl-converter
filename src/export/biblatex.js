@@ -6,6 +6,16 @@ import {BibTypes, BibFieldTypes} from "../const"
  * @param pks A list of pks of the bibliography items that are to be exported.
  */
 
+ const TAGS = {
+     'strong': {open:'\\mkbibbold{', close: '}'},
+     'em': {open:'\\mkbibitalic{', close: '}'},
+     'sub': {open:'_{', close: '}'},
+     'sup': {open:'^{', close: '}'},
+     'smallcaps': {open:'\\textsc{', close: '}'},
+     'nocase': {open:'{{', close: '}}'},
+     'math': {open:'$', close: '$'}
+  }
+
 export class BibLatexExporter {
 
     constructor(bibDB, pks) {
@@ -38,32 +48,47 @@ export class BibLatexExporter {
                     continue
                 }
                 let fValue = bib.fields[fKey]
-                if ("" === fValue)
-                    continue
                 let fType = BibFieldTypes[fKey]['type']
+                let key = BibFieldTypes[fKey]['biblatex']
                 switch (fType) {
-                    case 'l_name':
-                        fValues[BibFieldTypes[fKey]['biblatex']] = this._reformName(fValue)
-                        break
                     case 'f_date':
-                        fValues[BibFieldTypes[fKey]['biblatex']] = this._reformDate(fValue)
+                        fValues[key] = this._reformDate(fValue)
+                        break
+                    case 'f_integer':
+                        fValues[key] = this._reformInteger(fValue)
+                        break
+                    case 'f_key':
+                        fValues[key] = this._escapeTeX(fValue)
                         break
                     case 'f_literal':
-                    case 'f_key':
-                        fValues[BibFieldTypes[fKey]['biblatex']] = this._htmlToLatex(fValue)
+                        fValues[key] = this._reformText(fValue)
+                        break
+                    case 'f_range':
+                        fValues[key] = this._escapeTeX(fValue)
+                        break
+                    case 'f_uri':
+                    case 'f_verbatim':
+                        fValues[key] = this._escapeTeX(fValue)
+                        break
+                    case 'l_key':
+                        let escapedTexts = []
+                        fValue.forEach((text)=>{
+                            escapedTexts.push(that._escapeTeX(text))
+                        })
+                        fValues[key] = escapedTexts.join(' and ')
                         break
                     case 'l_literal':
-                    case 'l_key':
-                        let eValues = []
-                        fValue.forEach((value) => {
-                            let eValue = that._htmlToLatex(value)
-                            eValues.push(eValue)
+                        let reformedTexts = []
+                        fValue.forEach((text)=>{
+                            reformedTexts.push(that._reformText(text))
                         })
-                        fValues[BibFieldTypes[fKey]['biblatex']] = eValues.join(' and ')
+                        fValues[key] = reformedTexts.join(' and ')
+                        break
+                    case 'l_name':
+                        fValues[key] = this._reformName(fValue)
                         break
                     default:
-                        fValue = this._escapeTexSpecialChars(fValue)
-                        fValues[BibFieldTypes[fKey]['biblatex']] = fValue
+                        console.warn(`Unrecognized type: ${fType}!`)
                 }
 
             }
@@ -92,22 +117,26 @@ export class BibLatexExporter {
         }
     }
 
+    _reformInteger(theValue) {
+        return window.String(theValue)
+    }
+
     _reformName(theValue) {
         let names = [], that = this
         theValue.forEach((name)=>{
             if (name.literal) {
-                let literal = that._escapeTexSpecialChars(name.literal)
+                let literal = that._escapeTeX(name.literal)
                 names.push(`{${literal}}`)
             } else {
-                let family = that._escapeTexSpecialChars(name.family)
-                let given = that._escapeTexSpecialChars(name.given)
+                let family = that._escapeTeX(name.family)
+                let given = that._escapeTeX(name.given)
                 names.push(`{${family}} {${given}}`)
             }
         })
         return names.join(' and ')
     }
 
-    _escapeTexSpecialChars(theValue) {
+    _escapeTeX(theValue) {
         if ('string' != typeof (theValue)) {
             return false
         }
@@ -121,45 +150,50 @@ export class BibLatexExporter {
         return theValue
     }
 
-
-    _htmlToLatex(theValue) {
-        let el = document.createElement('div')
-        el.innerHTML = theValue
-        let walker = this._htmlToLatexTreeWalker(el,"")
-        return walker
-    }
-
-
-    _htmlToLatexTreeWalker(el, outString) {
-        if (el.nodeType === 3) { // Text node
-            outString += this._escapeTexSpecialChars(el.nodeValue)
-        } else if (el.nodeType === 1) {
-            let braceEnd = ""
-            if (el.matches('i')) {
-                outString += "\\emph{"
-                braceEnd = "}"
-            } else if (el.matches('b')) {
-                outString += "\\textbf{"
-                braceEnd = "}"
-            } else if (el.matches('sup')) {
-                outString += "$^{"
-                braceEnd = "}$"
-            } else if (el.matches('sub')) {
-                outString += "$_{"
-                braceEnd = "}$"
-            } else if (el.matches('span[class*="nocase"]')) {
-                outString += "{{"
-                braceEnd = "}}"
-            } else if (el.matches('span[style*="small-caps"]')) {
-                outString += "\\textsc{"
-                braceEnd = "}"
+    _reformText(theValue) {
+        let that = this, latex = '', lastMarks = []
+        theValue.forEach((textNode)=>{
+            let newMarks = []
+            if (textNode.marks) {
+                let mathMode = false
+                textNode.marks.forEach((mark)=>{
+                    // We need to activate mathmode for the lowest level sub/sup node.
+                    if (['sup','sub'].indexOf(mark.type) !== -1 && !mathMode) {
+                        newMarks.push('math')
+                    }
+                    newMarks.push(mark.type)
+                })
             }
-            for (let i = 0; i < el.childNodes.length; i++) {
-                outString = this._htmlToLatexTreeWalker(el.childNodes[i], outString)
-            }
-            outString += braceEnd
-        }
-        return outString
+            // close all tags that are not present in current text node.
+            // Go through last marksd in revrse order to close innermost tags first.
+            let closing = false
+            lastMarks.slice().reverse().forEach((mark, rIndex)=>{
+                let index = lastMarks.length - rIndex
+                if (mark != newMarks[index]) {
+                    closing = true
+                }
+                if (closing) {
+                    latex += TAGS[mark].close
+                }
+            })
+            // open all new tags that were not present in the last text node.
+            let opening = false
+            newMarks.forEach((mark, index)=>{
+                if (mark != lastMarks[index]) {
+                    opening = true
+                }
+                if (opening) {
+                    latex += TAGS[mark].open
+                }
+            })
+            latex += that._escapeTeX(textNode.text)
+            lastMarks = newMarks
+        })
+        // Close all still open tags
+        lastMarks.slice().reverse().forEach((mark)=>{
+            latex += TAGS[mark].close
+        })
+        return latex
     }
 
     _getBibtexString(biblist) {

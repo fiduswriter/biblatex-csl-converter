@@ -4,6 +4,15 @@ import {BibTypes, BibFieldTypes} from "../const"
  * @param bibDB The bibliography database to convert.
  */
 
+const TAGS = {
+    'strong': {open:'<b>', close: '</b>'},
+    'em': {open:'<i>', close: '</i>'},
+    'sub': {open:'<sub>', close: '</sub>'},
+    'sup': {open:'<sup>', close: '</sup>'},
+    'smallcaps': {open:'<span style="font-variant: small-caps;">', close: '</span>'},
+    'nocase': {open:'<span class="nocase">', close: '</span>'}
+ }
+
 export class CSLExporter {
     constructor(bibDB, pks) {
         this.bibDB = bibDB
@@ -29,22 +38,109 @@ export class CSLExporter {
      * @param id The id identifying the bibliography entry.
      */
     getCSLEntry(id) {
-        let bib = this.bibDB[id],
-            cslOutput = {}
+        let that = this, bib = this.bibDB[id], fValues = {}
         for (let fKey in bib.fields) {
             if (bib.fields[fKey] !== '' && fKey in BibFieldTypes && 'csl' in BibFieldTypes[fKey]) {
+                let fValue = bib.fields[fKey]
                 let fType = BibFieldTypes[fKey]['type']
-                if ('f_date' == fType) {
-                    cslOutput[BibFieldTypes[fKey]['csl']] = {'date-parts': bib.fields[fKey]}
-                } else if ('l_literal' == fType || 'l_key' == fType) {
-                    cslOutput[BibFieldTypes[fKey]['csl']] = bib.fields[fKey].join(', ')
-                } else {
-                    cslOutput[BibFieldTypes[fKey]['csl']] = bib.fields[fKey]
+                let key = BibFieldTypes[fKey]['csl']
+                switch(fType) {
+                    case 'f_date':
+                        fValues[key] = {'date-parts': fValue}
+                        break
+                    case 'f_integer':
+                        fValues[key] = this._reformInteger(fValue)
+                        break
+                    case 'f_key':
+                        fValues[key] = this._escapeHtml(fValue)
+                        break
+                    case 'f_literal':
+                        fValues[key] = this._reformText(fValue)
+                        break
+                    case 'f_range':
+                        fValues[key] = this._escapeHtml(fValue)
+                        break
+                    case 'f_uri':
+                    case 'f_verbatim':
+                        fValues[key] = this._escapeHtml(fValue)
+                        break
+                    case 'l_key':
+                        let escapedTexts = []
+                        fValue.forEach((text)=>{
+                            escapedTexts.push(that._escapeHtml(text))
+                        })
+                        fValues[key] = escapedTexts.join(', ')
+                        break
+                    case 'l_literal':
+                        let reformedTexts = []
+                        fValue.forEach((text)=>{
+                            reformedTexts.push(that._reformText(text))
+                        })
+                        fValues[key] = reformedTexts.join(', ')
+                        break
+                    case 'l_name':
+                        fValues[key] = fValue
+                        break
+                    default:
+                        console.warn(`Unrecognized type: ${fType}!`)
                 }
             }
         }
-        cslOutput['type'] = BibTypes[bib.bib_type].csl
-        return cslOutput
+        fValues['type'] = BibTypes[bib.bib_type].csl
+        return fValues
+    }
+
+    _escapeHtml(string) {
+        return string.replace(/&/g, "&amp;")
+         .replace(/</g, "&lt;")
+         .replace(/>/g, "&gt;")
+         .replace(/'/g, "&apos;")
+         .replace(/"/g, "&quot;")
+    }
+
+    _reformInteger(theValue) {
+        return window.String(theValue)
+    }
+
+    _reformText(theValue) {
+        let that = this, html = '', lastMarks = []
+        theValue.forEach((textNode)=>{
+            let newMarks = []
+            if (textNode.marks) {
+                textNode.marks.forEach((mark)=>{
+                    newMarks.push(mark.type)
+                })
+            }
+            // close all tags that are not present in current text node.
+            // Go through last marksd in revrse order to close innermost tags first.
+            let closing = false
+            lastMarks.slice().reverse().forEach((mark, rIndex)=>{
+                let index = lastMarks.length - rIndex
+                if (mark != newMarks[index]) {
+                    closing = true
+                }
+                if (closing) {
+                    html += TAGS[mark].close
+                }
+            })
+            // open all new tags that were not present in the last text node.
+            let opening = false
+            newMarks.forEach((mark, index)=>{
+                if (mark != lastMarks[index]) {
+                    opening = true
+                }
+                if (opening) {
+                    html += TAGS[mark].open
+                }
+            })
+            html += that._escapeHtml(textNode.text)
+            lastMarks = newMarks
+        })
+        // Close all still open tags
+        lastMarks.slice().reverse().forEach((mark)=>{
+            html += TAGS[mark].close
+        })
+        return html
     }
 
     _reformDate(theValue) {

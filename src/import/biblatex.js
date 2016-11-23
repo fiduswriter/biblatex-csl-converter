@@ -262,9 +262,6 @@ export class BibLatexParser {
             let fType = field['type']
             let fValue = this.currentEntry['fields'][fKey]
             switch(fType) {
-                case 'l_name':
-                    this.currentEntry['fields'][fKey] = this._reformNameList(fValue)
-                    break
                 case 'f_date':
                     let dateParts = this._reformDate(fValue)
                     if (dateParts) {
@@ -278,18 +275,33 @@ export class BibLatexParser {
                         delete this.currentEntry['fields'][fKey]
                     }
                     break
-                case 'f_literal':
+                case 'f_integer':
+                    this.currentEntry['fields'][fKey] = this._reformInteger(fValue)
+                    break
                 case 'f_key':
+                    break
+                case 'f_literal':
                     this.currentEntry['fields'][fKey] = this._reformLiteral(fValue)
                     break
-                case 'l_literal':
+                case 'f_range':
+                case 'f_uri':
+                case 'f_verbatim':
+                    break
                 case 'l_key':
+                    this.currentEntry['fields'][fKey] = fValue.split(' and ')
+                    break
+                case 'l_literal':
                     let items = fValue.split(' and ')
                     this.currentEntry['fields'][fKey] = []
                     items.forEach((item) => {
                         this.currentEntry['fields'][fKey].push(this._reformLiteral(item))
                     })
                     break
+                case 'l_name':
+                    this.currentEntry['fields'][fKey] = this._reformNameList(fValue)
+                    break
+                default:
+                    console.warn(`Unrecognized type: ${fType}!`)
             }
         }
 
@@ -354,19 +366,30 @@ export class BibLatexParser {
             closeBraces = ((theValue.match(/\}/g) || []).length)
         if (openBraces === 0 && closeBraces === 0) {
             // There are no braces, return the original value
-            return theValue
+            return [{type: 'text', text: theValue}]
         } else if (openBraces != closeBraces) {
             // There are different amount of open and close braces, so we return the original string.
-            return theValue
+            return [{type: 'text', text: theValue}]
         } else {
-            // There are the same amount of open and close braces, but we don't know if they are in the right order.
-            let braceLevel = 0, len = theValue.length, i = 0, output = '', braceClosings = [], inCasePreserve = false
-
+            // There are the same amount of open and close braces, but we don't
+            // know if they are in the right order.
+            let braceLevel = 0
+            let len = theValue.length
+            let i = 0
+            let output = []
+            let braceClosings = []
+            let currentMarks = []
+            let inCasePreserve = false
+            let textNode = {type: 'text', text: ''}
+            output.push(textNode)
             const latexCommands = [
-                ['\\textbf{', '<b>', '</b>'],
-                ['\\textit{', '<i>', '</i>'],
-                ['\\emph{', '<i>', '</i>'],
-                ['\\textsc{', '<span style="font-variant:small-caps;">', '</span>'],
+                ['\\textbf{', 'strong'],
+                ['\\mkbibbold{', 'strong'],
+                ['\\mkbibitalic{', 'em'],
+                ['\\mkbibemph{', 'em'],
+                ['\\textit{', 'em'],
+                ['\\emph{', 'em'],
+                ['\\textsc{', 'smallcaps'],
             ]
             parseString: while (i < len) {
                 if (theValue[i] === '\\') {
@@ -375,40 +398,89 @@ export class BibLatexParser {
                         if (theValue.substring(i, i + s[0].length) === s[0]) {
                             braceLevel++
                             i += s[0].length
-                            output += s[1]
-                            braceClosings.push(s[2])
+                            if (textNode.text.length > 0) {
+                                // We have text in the last node already,
+                                // so we need to start a new text node.
+                                textNode = {type: 'text', text: ''}
+                                output.push(textNode)
+                            }
+                            currentMarks.push({type:s[1]})
+                            textNode.marks = currentMarks.slice()
+                            braceClosings.push(true)
                             continue parseString
                         }
                     }
 
                     if (i + 1 < len) {
+                        textNode.text += theValue[i+1]
                         i+=2
-                        output += theValue[i+1]
                         continue parseString
                     }
 
                 }
-                if (theValue[i] === '_' && theValue.substring(i,i+2) === '_{') {
-                    braceLevel++
-                    i+=2
-                    output =+ '<sub>'
-                    braceClosings.push('</sub>')
+                if (theValue[i] === '_') {
+                    if (textNode.text.length > 0) {
+                        // We have text in the last node already,
+                        // so we need to start a new text node.
+                        textNode = {type: 'text', text: ''}
+                        output.push(textNode)
+                    }
+                    if (theValue.substring(i,i+2) === '_{') {
+                        braceLevel++
+                        i+=2
+                        currentMarks.push({type:'sub'})
+                        textNode.marks = currentMarks.slice()
+                        braceClosings.push(true)
+                    } else {
+                        // We only add the next character to a sub node.
+                        textNode.marks = currentMarks.slice()
+                        textNode.marks.push({type:'sub'})
+                        textNode.text = theValue[i+1]
+                        textNode = {type: 'text', text: ''}
+                        output.push(textNode)
+                        i+=2
+                    }
                 }
-                if (theValue[i] === '^' && theValue.substring(i,i+2) === '^{') {
-                    braceLevel++
-                    i+=2
-                    output =+ '<sup>'
-                    braceClosings.push('</sup>')
+                if (theValue[i] === '^') {
+                    if (textNode.text.length > 0) {
+                        // We have text in the last node already,
+                        // so we need to start a new text node.
+                        textNode = {type: 'text', text: ''}
+                        output.push(textNode)
+                    }
+                    if (theValue.substring(i,i+2) === '_^') {
+                        braceLevel++
+                        i+=2
+                        currentMarks.push({type:'sup'})
+                        textNode.marks = currentMarks.slice()
+                        braceClosings.push('true')
+                    } else {
+                        // We only add the next character to a sub node.
+                        textNode.marks = currentMarks.slice()
+                        textNode.marks.push({type:'sup'})
+                        textNode.text = theValue[i+1]
+                        textNode = {type: 'text', text: ''}
+                        output.push(textNode)
+                        i+=2
+                    }
                 }
                 if (theValue[i] === '{') {
                     braceLevel++
                     if (inCasePreserve) {
                         // If already inside case preservation, do not add a second
-                        braceClosings.push('')
+                        braceClosings.push(false)
                     } else {
                         inCasePreserve = braceLevel
-                        output += '<span class="nocase">'
-                        braceClosings.push('</span>')
+                        if (textNode.text.length > 0) {
+                            // We have text in the last node already,
+                            // so we need to start a new text node.
+                            textNode = {type: 'text', text: ''}
+                            output.push(textNode)
+                        }
+                        currentMarks.push({type:'nocase'})
+                        textNode.marks = currentMarks.slice()
+                        //output += '<span class="nocase">'
+                        braceClosings.push(true)
                     }
                     i++
                     continue parseString
@@ -419,7 +491,19 @@ export class BibLatexParser {
                     }
                     braceLevel--
                     if (braceLevel > -1) {
-                        output += braceClosings.pop()
+                        let closeBrace = braceClosings.pop()
+                        if (closeBrace) {
+                            if (textNode.text.length > 0 && theValue.length > i+1) {
+                                // We have text in the last node already,
+                                // so we need to start a new text node.
+                                textNode = {type: 'text', text: ''}
+                                output.push(textNode)
+                            }
+                            currentMarks.pop()
+                            if (currentMarks.length) {
+                                textNode.marks = currentMarks.slice()
+                            }
+                        }
                         i++
                         continue parseString
                     }
@@ -433,27 +517,30 @@ export class BibLatexParser {
                     i++
                     continue parseString
                 }
-                if (theValue[i] === '<') {
-                    output += "&lt;"
-                    i++
-                    continue parseString
-                }
-                if (theValue[i] === '>') {
-                    output += "&gt;"
-                    i++
-                    continue parseString
-                }
-                output += theValue[i]
+                textNode.text += theValue[i]
                 i++
             }
 
             if (braceLevel > 0) {
                 // Too many opening braces, we return the original string.
-                return theValue
+                return [{type: 'text', text: theValue}]
+            }
+
+            // If the very last text node has no content, remove it.
+            if (output[output.length-1].text.length === 0) {
+                output.pop()
             }
             // Braces were accurate.
             return output
         }
+    }
+
+    _reformInteger(theValue) {
+        let theInt = parseInt(theValue)
+        if (window.isNaN(theInt)) {
+            theInt = 0
+        }
+        return theInt
     }
 
     bibType() {

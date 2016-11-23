@@ -15,4 +15,4 @@ Try demo [here](https://fiduswriter.github.io/biblatex-csl-converter/demo/).
 
 **Q:** How do I see if there are errors when parsing the BiBTeX/BibLatex file?
 
-**A:** There is an array of errors that were encountered while parsing the file that can be found at ```parser.errors``` after the
+**A:** There is an array of errors that were encountered while parsing the file that can be found at ```parser.errors``` after you get the ```parser.output```.

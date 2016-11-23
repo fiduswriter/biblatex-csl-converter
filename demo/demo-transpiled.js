@@ -10,12 +10,14 @@ var printObject = function printObject(object) {
     switch (typeof object === 'undefined' ? 'undefined' : _typeof(object)) {
         case 'object':
             if (object instanceof Array) {
+                html += '[';
                 object.forEach(function (item, index) {
                     html += printObject(item);
                     if (index + 1 < object.length) {
                         html += ', ';
                     }
                 });
+                html += ']';
             } else {
                 html += '<table>';
                 Object.keys(object).forEach(function (key) {
@@ -786,6 +788,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
  * @param pks A list of pks of the bibliography items that are to be exported.
  */
 
+var TAGS = {
+    'strong': { open: '\\mkbibbold{', close: '}' },
+    'em': { open: '\\mkbibitalic{', close: '}' },
+    'sub': { open: '_{', close: '}' },
+    'sup': { open: '^{', close: '}' },
+    'smallcaps': { open: '\\textsc{', close: '}' },
+    'nocase': { open: '{{', close: '}}' },
+    'math': { open: '$', close: '$' }
+};
+
 var BibLatexExporter = exports.BibLatexExporter = function () {
     function BibLatexExporter(bibDB, pks) {
         _classCallCheck(this, BibLatexExporter);
@@ -818,25 +830,30 @@ var BibLatexExporter = exports.BibLatexExporter = function () {
             }
         }
     }, {
+        key: "_reformInteger",
+        value: function _reformInteger(theValue) {
+            return window.String(theValue);
+        }
+    }, {
         key: "_reformName",
         value: function _reformName(theValue) {
             var names = [],
                 that = this;
             theValue.forEach(function (name) {
                 if (name.literal) {
-                    var literal = that._escapeTexSpecialChars(name.literal);
+                    var literal = that._escapeTeX(name.literal);
                     names.push("{" + literal + "}");
                 } else {
-                    var family = that._escapeTexSpecialChars(name.family);
-                    var given = that._escapeTexSpecialChars(name.given);
+                    var family = that._escapeTeX(name.family);
+                    var given = that._escapeTeX(name.given);
                     names.push("{" + family + "} {" + given + "}");
                 }
             });
             return names.join(' and ');
         }
     }, {
-        key: "_escapeTexSpecialChars",
-        value: function _escapeTexSpecialChars(theValue) {
+        key: "_escapeTeX",
+        value: function _escapeTeX(theValue) {
             if ('string' != typeof theValue) {
                 return false;
             }
@@ -847,46 +864,55 @@ var BibLatexExporter = exports.BibLatexExporter = function () {
             return theValue;
         }
     }, {
-        key: "_htmlToLatex",
-        value: function _htmlToLatex(theValue) {
-            var el = document.createElement('div');
-            el.innerHTML = theValue;
-            var walker = this._htmlToLatexTreeWalker(el, "");
-            return walker;
-        }
-    }, {
-        key: "_htmlToLatexTreeWalker",
-        value: function _htmlToLatexTreeWalker(el, outString) {
-            if (el.nodeType === 3) {
-                // Text node
-                outString += this._escapeTexSpecialChars(el.nodeValue);
-            } else if (el.nodeType === 1) {
-                var braceEnd = "";
-                if (el.matches('i')) {
-                    outString += "\\emph{";
-                    braceEnd = "}";
-                } else if (el.matches('b')) {
-                    outString += "\\textbf{";
-                    braceEnd = "}";
-                } else if (el.matches('sup')) {
-                    outString += "$^{";
-                    braceEnd = "}$";
-                } else if (el.matches('sub')) {
-                    outString += "$_{";
-                    braceEnd = "}$";
-                } else if (el.matches('span[class*="nocase"]')) {
-                    outString += "{{";
-                    braceEnd = "}}";
-                } else if (el.matches('span[style*="small-caps"]')) {
-                    outString += "\\textsc{";
-                    braceEnd = "}";
+        key: "_reformText",
+        value: function _reformText(theValue) {
+            var that = this,
+                latex = '',
+                lastMarks = [];
+            theValue.forEach(function (textNode) {
+                var newMarks = [];
+                if (textNode.marks) {
+                    (function () {
+                        var mathMode = false;
+                        textNode.marks.forEach(function (mark) {
+                            // We need to activate mathmode for the lowest level sub/sup node.
+                            if (['sup', 'sub'].indexOf(mark.type) !== -1 && !mathMode) {
+                                newMarks.push('math');
+                            }
+                            newMarks.push(mark.type);
+                        });
+                    })();
                 }
-                for (var i = 0; i < el.childNodes.length; i++) {
-                    outString = this._htmlToLatexTreeWalker(el.childNodes[i], outString);
-                }
-                outString += braceEnd;
-            }
-            return outString;
+                // close all tags that are not present in current text node.
+                // Go through last marksd in revrse order to close innermost tags first.
+                var closing = false;
+                lastMarks.slice().reverse().forEach(function (mark, rIndex) {
+                    var index = lastMarks.length - rIndex;
+                    if (mark != newMarks[index]) {
+                        closing = true;
+                    }
+                    if (closing) {
+                        latex += TAGS[mark].close;
+                    }
+                });
+                // open all new tags that were not present in the last text node.
+                var opening = false;
+                newMarks.forEach(function (mark, index) {
+                    if (mark != lastMarks[index]) {
+                        opening = true;
+                    }
+                    if (opening) {
+                        latex += TAGS[mark].open;
+                    }
+                });
+                latex += that._escapeTeX(textNode.text);
+                lastMarks = newMarks;
+            });
+            // Close all still open tags
+            lastMarks.slice().reverse().forEach(function (mark) {
+                latex += TAGS[mark].close;
+            });
+            return latex;
         }
     }, {
         key: "_getBibtexString",
@@ -930,33 +956,49 @@ var BibLatexExporter = exports.BibLatexExporter = function () {
                         continue;
                     }
                     var fValue = bib.fields[fKey];
-                    if ("" === fValue) continue;
                     var fType = _const2.BibFieldTypes[fKey]['type'];
+                    var key = _const2.BibFieldTypes[fKey]['biblatex'];
 
                     (function () {
                         switch (fType) {
-                            case 'l_name':
-                                fValues[_const2.BibFieldTypes[fKey]['biblatex']] = _this._reformName(fValue);
-                                break;
                             case 'f_date':
-                                fValues[_const2.BibFieldTypes[fKey]['biblatex']] = _this._reformDate(fValue);
+                                fValues[key] = _this._reformDate(fValue);
+                                break;
+                            case 'f_integer':
+                                fValues[key] = _this._reformInteger(fValue);
+                                break;
+                            case 'f_key':
+                                fValues[key] = _this._escapeTeX(fValue);
                                 break;
                             case 'f_literal':
-                            case 'f_key':
-                                fValues[_const2.BibFieldTypes[fKey]['biblatex']] = _this._htmlToLatex(fValue);
+                                fValues[key] = _this._reformText(fValue);
+                                break;
+                            case 'f_range':
+                                fValues[key] = _this._escapeTeX(fValue);
+                                break;
+                            case 'f_uri':
+                            case 'f_verbatim':
+                                fValues[key] = _this._escapeTeX(fValue);
+                                break;
+                            case 'l_key':
+                                var escapedTexts = [];
+                                fValue.forEach(function (text) {
+                                    escapedTexts.push(that._escapeTeX(text));
+                                });
+                                fValues[key] = escapedTexts.join(' and ');
                                 break;
                             case 'l_literal':
-                            case 'l_key':
-                                var eValues = [];
-                                fValue.forEach(function (value) {
-                                    var eValue = that._htmlToLatex(value);
-                                    eValues.push(eValue);
+                                var reformedTexts = [];
+                                fValue.forEach(function (text) {
+                                    reformedTexts.push(that._reformText(text));
                                 });
-                                fValues[_const2.BibFieldTypes[fKey]['biblatex']] = eValues.join(' and ');
+                                fValues[key] = reformedTexts.join(' and ');
+                                break;
+                            case 'l_name':
+                                fValues[key] = _this._reformName(fValue);
                                 break;
                             default:
-                                fValue = _this._escapeTexSpecialChars(fValue);
-                                fValues[_const2.BibFieldTypes[fKey]['biblatex']] = fValue;
+                                console.warn("Unrecognized type: " + fType + "!");
                         }
                     })();
                 }
@@ -998,6 +1040,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
  * @param bibDB The bibliography database to convert.
  */
 
+var TAGS = {
+    'strong': { open: '<b>', close: '</b>' },
+    'em': { open: '<i>', close: '</i>' },
+    'sub': { open: '<sub>', close: '</sub>' },
+    'sup': { open: '<sup>', close: '</sup>' },
+    'smallcaps': { open: '<span style="font-variant: small-caps;">', close: '</span>' },
+    'nocase': { open: '<span class="nocase">', close: '</span>' }
+};
+
 var CSLExporter = exports.CSLExporter = function () {
     function CSLExporter(bibDB, pks) {
         _classCallCheck(this, CSLExporter);
@@ -1019,22 +1070,117 @@ var CSLExporter = exports.CSLExporter = function () {
          * @param id The id identifying the bibliography entry.
          */
         value: function getCSLEntry(id) {
-            var bib = this.bibDB[id],
-                cslOutput = {};
+            var _this = this;
+
+            var that = this,
+                bib = this.bibDB[id],
+                fValues = {};
             for (var fKey in bib.fields) {
                 if (bib.fields[fKey] !== '' && fKey in _const.BibFieldTypes && 'csl' in _const.BibFieldTypes[fKey]) {
+                    var fValue = bib.fields[fKey];
                     var fType = _const.BibFieldTypes[fKey]['type'];
-                    if ('f_date' == fType) {
-                        cslOutput[_const.BibFieldTypes[fKey]['csl']] = { 'date-parts': bib.fields[fKey] };
-                    } else if ('l_literal' == fType || 'l_key' == fType) {
-                        cslOutput[_const.BibFieldTypes[fKey]['csl']] = bib.fields[fKey].join(', ');
-                    } else {
-                        cslOutput[_const.BibFieldTypes[fKey]['csl']] = bib.fields[fKey];
-                    }
+                    var key = _const.BibFieldTypes[fKey]['csl'];
+
+                    (function () {
+                        switch (fType) {
+                            case 'f_date':
+                                fValues[key] = { 'date-parts': fValue };
+                                break;
+                            case 'f_integer':
+                                fValues[key] = _this._reformInteger(fValue);
+                                break;
+                            case 'f_key':
+                                fValues[key] = _this._escapeHtml(fValue);
+                                break;
+                            case 'f_literal':
+                                fValues[key] = _this._reformText(fValue);
+                                break;
+                            case 'f_range':
+                                fValues[key] = _this._escapeHtml(fValue);
+                                break;
+                            case 'f_uri':
+                            case 'f_verbatim':
+                                fValues[key] = _this._escapeHtml(fValue);
+                                break;
+                            case 'l_key':
+                                var escapedTexts = [];
+                                fValue.forEach(function (text) {
+                                    escapedTexts.push(that._escapeHtml(text));
+                                });
+                                fValues[key] = escapedTexts.join(', ');
+                                break;
+                            case 'l_literal':
+                                var reformedTexts = [];
+                                fValue.forEach(function (text) {
+                                    reformedTexts.push(that._reformText(text));
+                                });
+                                fValues[key] = reformedTexts.join(', ');
+                                break;
+                            case 'l_name':
+                                fValues[key] = fValue;
+                                break;
+                            default:
+                                console.warn('Unrecognized type: ' + fType + '!');
+                        }
+                    })();
                 }
             }
-            cslOutput['type'] = _const.BibTypes[bib.bib_type].csl;
-            return cslOutput;
+            fValues['type'] = _const.BibTypes[bib.bib_type].csl;
+            return fValues;
+        }
+    }, {
+        key: '_escapeHtml',
+        value: function _escapeHtml(string) {
+            return string.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+        }
+    }, {
+        key: '_reformInteger',
+        value: function _reformInteger(theValue) {
+            return window.String(theValue);
+        }
+    }, {
+        key: '_reformText',
+        value: function _reformText(theValue) {
+            var that = this,
+                html = '',
+                lastMarks = [];
+            theValue.forEach(function (textNode) {
+                var newMarks = [];
+                if (textNode.marks) {
+                    textNode.marks.forEach(function (mark) {
+                        newMarks.push(mark.type);
+                    });
+                }
+                // close all tags that are not present in current text node.
+                // Go through last marksd in revrse order to close innermost tags first.
+                var closing = false;
+                lastMarks.slice().reverse().forEach(function (mark, rIndex) {
+                    var index = lastMarks.length - rIndex;
+                    if (mark != newMarks[index]) {
+                        closing = true;
+                    }
+                    if (closing) {
+                        html += TAGS[mark].close;
+                    }
+                });
+                // open all new tags that were not present in the last text node.
+                var opening = false;
+                newMarks.forEach(function (mark, index) {
+                    if (mark != lastMarks[index]) {
+                        opening = true;
+                    }
+                    if (opening) {
+                        html += TAGS[mark].open;
+                    }
+                });
+                html += that._escapeHtml(textNode.text);
+                lastMarks = newMarks;
+            });
+            // Close all still open tags
+            lastMarks.slice().reverse().forEach(function (mark) {
+                html += TAGS[mark].close;
+            });
+            return html;
         }
     }, {
         key: '_reformDate',
@@ -1393,9 +1539,6 @@ var BibLatexParser = exports.BibLatexParser = function () {
                 var fType = field['type'];
                 var fValue = _this.currentEntry['fields'][_fKey];
                 switch (fType) {
-                    case 'l_name':
-                        _this.currentEntry['fields'][_fKey] = _this._reformNameList(fValue);
-                        break;
                     case 'f_date':
                         var dateParts = _this._reformDate(fValue);
                         if (dateParts) {
@@ -1409,18 +1552,33 @@ var BibLatexParser = exports.BibLatexParser = function () {
                             delete _this.currentEntry['fields'][_fKey];
                         }
                         break;
-                    case 'f_literal':
+                    case 'f_integer':
+                        _this.currentEntry['fields'][_fKey] = _this._reformInteger(fValue);
+                        break;
                     case 'f_key':
+                        break;
+                    case 'f_literal':
                         _this.currentEntry['fields'][_fKey] = _this._reformLiteral(fValue);
                         break;
-                    case 'l_literal':
+                    case 'f_range':
+                    case 'f_uri':
+                    case 'f_verbatim':
+                        break;
                     case 'l_key':
+                        _this.currentEntry['fields'][_fKey] = fValue.split(' and ');
+                        break;
+                    case 'l_literal':
                         var items = fValue.split(' and ');
                         _this.currentEntry['fields'][_fKey] = [];
                         items.forEach(function (item) {
                             _this.currentEntry['fields'][_fKey].push(_this._reformLiteral(item));
                         });
                         break;
+                    case 'l_name':
+                        _this.currentEntry['fields'][_fKey] = _this._reformNameList(fValue);
+                        break;
+                    default:
+                        console.warn("Unrecognized type: " + fType + "!");
                 }
                 fKey = _fKey;
             };
@@ -1499,20 +1657,23 @@ var BibLatexParser = exports.BibLatexParser = function () {
                 closeBraces = (theValue.match(/\}/g) || []).length;
             if (openBraces === 0 && closeBraces === 0) {
                 // There are no braces, return the original value
-                return theValue;
+                return [{ type: 'text', text: theValue }];
             } else if (openBraces != closeBraces) {
                 // There are different amount of open and close braces, so we return the original string.
-                return theValue;
+                return [{ type: 'text', text: theValue }];
             } else {
-                // There are the same amount of open and close braces, but we don't know if they are in the right order.
-                var braceLevel = 0,
-                    len = theValue.length,
-                    i = 0,
-                    output = '',
-                    braceClosings = [],
-                    inCasePreserve = false;
-
-                var latexCommands = [['\\textbf{', '<b>', '</b>'], ['\\textit{', '<i>', '</i>'], ['\\emph{', '<i>', '</i>'], ['\\textsc{', '<span style="font-variant:small-caps;">', '</span>']];
+                // There are the same amount of open and close braces, but we don't
+                // know if they are in the right order.
+                var braceLevel = 0;
+                var len = theValue.length;
+                var i = 0;
+                var output = [];
+                var braceClosings = [];
+                var currentMarks = [];
+                var inCasePreserve = false;
+                var textNode = { type: 'text', text: '' };
+                output.push(textNode);
+                var latexCommands = [['\\textbf{', 'strong'], ['\\mkbibbold{', 'strong'], ['\\mkbibitalic{', 'em'], ['\\mkbibemph{', 'em'], ['\\textit{', 'em'], ['\\emph{', 'em'], ['\\textsc{', 'smallcaps']];
                 parseString: while (i < len) {
                     if (theValue[i] === '\\') {
                         var _iteratorNormalCompletion = true;
@@ -1527,8 +1688,15 @@ var BibLatexParser = exports.BibLatexParser = function () {
                                 if (theValue.substring(i, i + s[0].length) === s[0]) {
                                     braceLevel++;
                                     i += s[0].length;
-                                    output += s[1];
-                                    braceClosings.push(s[2]);
+                                    if (textNode.text.length > 0) {
+                                        // We have text in the last node already,
+                                        // so we need to start a new text node.
+                                        textNode = { type: 'text', text: '' };
+                                        output.push(textNode);
+                                    }
+                                    currentMarks.push({ type: s[1] });
+                                    textNode.marks = currentMarks.slice();
+                                    braceClosings.push(true);
                                     continue parseString;
                                 }
                             }
@@ -1548,32 +1716,74 @@ var BibLatexParser = exports.BibLatexParser = function () {
                         }
 
                         if (i + 1 < len) {
+                            textNode.text += theValue[i + 1];
                             i += 2;
-                            output += theValue[i + 1];
                             continue parseString;
                         }
                     }
-                    if (theValue[i] === '_' && theValue.substring(i, i + 2) === '_{') {
-                        braceLevel++;
-                        i += 2;
-                        output = +'<sub>';
-                        braceClosings.push('</sub>');
+                    if (theValue[i] === '_') {
+                        if (textNode.text.length > 0) {
+                            // We have text in the last node already,
+                            // so we need to start a new text node.
+                            textNode = { type: 'text', text: '' };
+                            output.push(textNode);
+                        }
+                        if (theValue.substring(i, i + 2) === '_{') {
+                            braceLevel++;
+                            i += 2;
+                            currentMarks.push({ type: 'sub' });
+                            textNode.marks = currentMarks.slice();
+                            braceClosings.push(true);
+                        } else {
+                            // We only add the next character to a sub node.
+                            textNode.marks = currentMarks.slice();
+                            textNode.marks.push({ type: 'sub' });
+                            textNode.text = theValue[i + 1];
+                            textNode = { type: 'text', text: '' };
+                            output.push(textNode);
+                            i += 2;
+                        }
                     }
-                    if (theValue[i] === '^' && theValue.substring(i, i + 2) === '^{') {
-                        braceLevel++;
-                        i += 2;
-                        output = +'<sup>';
-                        braceClosings.push('</sup>');
+                    if (theValue[i] === '^') {
+                        if (textNode.text.length > 0) {
+                            // We have text in the last node already,
+                            // so we need to start a new text node.
+                            textNode = { type: 'text', text: '' };
+                            output.push(textNode);
+                        }
+                        if (theValue.substring(i, i + 2) === '_^') {
+                            braceLevel++;
+                            i += 2;
+                            currentMarks.push({ type: 'sup' });
+                            textNode.marks = currentMarks.slice();
+                            braceClosings.push('true');
+                        } else {
+                            // We only add the next character to a sub node.
+                            textNode.marks = currentMarks.slice();
+                            textNode.marks.push({ type: 'sup' });
+                            textNode.text = theValue[i + 1];
+                            textNode = { type: 'text', text: '' };
+                            output.push(textNode);
+                            i += 2;
+                        }
                     }
                     if (theValue[i] === '{') {
                         braceLevel++;
                         if (inCasePreserve) {
                             // If already inside case preservation, do not add a second
-                            braceClosings.push('');
+                            braceClosings.push(false);
                         } else {
                             inCasePreserve = braceLevel;
-                            output += '<span class="nocase">';
-                            braceClosings.push('</span>');
+                            if (textNode.text.length > 0) {
+                                // We have text in the last node already,
+                                // so we need to start a new text node.
+                                textNode = { type: 'text', text: '' };
+                                output.push(textNode);
+                            }
+                            currentMarks.push({ type: 'nocase' });
+                            textNode.marks = currentMarks.slice();
+                            //output += '<span class="nocase">'
+                            braceClosings.push(true);
                         }
                         i++;
                         continue parseString;
@@ -1584,7 +1794,19 @@ var BibLatexParser = exports.BibLatexParser = function () {
                         }
                         braceLevel--;
                         if (braceLevel > -1) {
-                            output += braceClosings.pop();
+                            var closeBrace = braceClosings.pop();
+                            if (closeBrace) {
+                                if (textNode.text.length > 0 && theValue.length > i + 1) {
+                                    // We have text in the last node already,
+                                    // so we need to start a new text node.
+                                    textNode = { type: 'text', text: '' };
+                                    output.push(textNode);
+                                }
+                                currentMarks.pop();
+                                if (currentMarks.length) {
+                                    textNode.marks = currentMarks.slice();
+                                }
+                            }
                             i++;
                             continue parseString;
                         }
@@ -1598,27 +1820,31 @@ var BibLatexParser = exports.BibLatexParser = function () {
                         i++;
                         continue parseString;
                     }
-                    if (theValue[i] === '<') {
-                        output += "&lt;";
-                        i++;
-                        continue parseString;
-                    }
-                    if (theValue[i] === '>') {
-                        output += "&gt;";
-                        i++;
-                        continue parseString;
-                    }
-                    output += theValue[i];
+                    textNode.text += theValue[i];
                     i++;
                 }
 
                 if (braceLevel > 0) {
                     // Too many opening braces, we return the original string.
-                    return theValue;
+                    return [{ type: 'text', text: theValue }];
+                }
+
+                // If the very last text node has no content, remove it.
+                if (output[output.length - 1].text.length === 0) {
+                    output.pop();
                 }
                 // Braces were accurate.
                 return output;
             }
+        }
+    }, {
+        key: "_reformInteger",
+        value: function _reformInteger(theValue) {
+            var theInt = parseInt(theValue);
+            if (window.isNaN(theInt)) {
+                theInt = 0;
+            }
+            return theInt;
         }
     }, {
         key: "bibType",
