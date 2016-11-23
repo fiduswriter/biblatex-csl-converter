@@ -242,10 +242,20 @@ export class BibLatexParser {
 
         for(let fKey in this.currentEntry['fields']) {
             // Replace alias fields with their main term.
-            if (BiblatexFieldAliasTypes[fKey]) {
+            let aliasKey = BiblatexFieldAliasTypes[fKey]
+            if (aliasKey) {
+                if (this.currentEntry['fields'][aliasKey]) {
+                    this.errors.push({
+                        type: 'alias_creates_duplicate_field',
+                        entry: this.currentEntry['entry_key'],
+                        field_name: fKey
+                    })
+                    delete this.currentEntry['fields'][fKey]
+                    continue
+                }
                 let value = this.currentEntry['fields'][fKey]
                 delete this.currentEntry['fields'][fKey]
-                fKey = BiblatexFieldAliasTypes[fKey]
+                fKey = aliasKey
                 this.currentEntry['fields'][fKey] = value
             }
             let field = BibFieldTypes[fKey]

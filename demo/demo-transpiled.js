@@ -1540,10 +1540,20 @@ var BibLatexParser = exports.BibLatexParser = function () {
 
             var _loop = function _loop(_fKey) {
                 // Replace alias fields with their main term.
-                if (_const2.BiblatexFieldAliasTypes[_fKey]) {
+                var aliasKey = _const2.BiblatexFieldAliasTypes[_fKey];
+                if (aliasKey) {
+                    if (_this.currentEntry['fields'][aliasKey]) {
+                        _this.errors.push({
+                            type: 'alias_creates_duplicate_field',
+                            entry: _this.currentEntry['entry_key'],
+                            field_name: _fKey
+                        });
+                        delete _this.currentEntry['fields'][_fKey];
+                        return "continue";
+                    }
                     var value = _this.currentEntry['fields'][_fKey];
                     delete _this.currentEntry['fields'][_fKey];
-                    _fKey = _const2.BiblatexFieldAliasTypes[_fKey];
+                    _fKey = aliasKey;
                     _this.currentEntry['fields'][_fKey] = value;
                 }
                 var field = _const.BibFieldTypes[_fKey];
