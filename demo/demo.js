@@ -56,6 +56,9 @@ let readBibFile = function() {
 let importBiblatex = function(bibString) {
     let parser = new BibLatexParser(bibString)
     let bibDB = parser.output
+    if (parser.errors.length) {
+        console.log(parser.errors)
+    }
     document.getElementById('bib-db').innerHTML = printObject(bibDB)
     window.bibDB = bibDB
     exportCSL(bibDB)

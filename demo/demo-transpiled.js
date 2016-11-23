@@ -61,6 +61,9 @@ var readBibFile = function readBibFile() {
 var importBiblatex = function importBiblatex(bibString) {
     var parser = new _src.BibLatexParser(bibString);
     var bibDB = parser.output;
+    if (parser.errors.length) {
+        console.log(parser.errors);
+    }
     document.getElementById('bib-db').innerHTML = printObject(bibDB);
     window.bibDB = bibDB;
     exportCSL(bibDB);
@@ -1462,10 +1465,10 @@ var BibLatexParser = exports.BibLatexParser = function () {
                     this.errors.push({ type: 'runaway_key' });
                     return;
                 }
-                if (this.input[this.pos].match("[a-zA-Z0-9_:;`\\.\\\?+/-]")) {
+                if (this.input[this.pos].match("[a-zA-Z0-9\xC0-\xD6\xD8-\xF6\xF8-\u017F_:;`\\.\\?+/-]")) {
                     this.pos++;
                 } else {
-                    return this.input.substring(start, this.pos).toLowerCase();
+                    return this.input.substring(start, this.pos);
                 }
             }
         }
