@@ -464,12 +464,12 @@ export class BibLatexParser {
                         textNode = {type: 'text', text: ''}
                         output.push(textNode)
                     }
-                    if (theValue.substring(i,i+2) === '_^') {
+                    if (theValue.substring(i,i+2) === '^{') {
                         braceLevel++
                         i+=2
                         currentMarks.push({type:'sup'})
                         textNode.marks = currentMarks.slice()
-                        braceClosings.push('true')
+                        braceClosings.push(true)
                     } else {
                         // We only add the next character to a sub node.
                         textNode.marks = currentMarks.slice()
@@ -501,9 +501,6 @@ export class BibLatexParser {
                     continue parseString
                 }
                 if (theValue[i] === '}') {
-                    if (inCasePreserve===braceLevel) {
-                        inCasePreserve = false
-                    }
                     braceLevel--
                     if (braceLevel > -1) {
                         let closeBrace = braceClosings.pop()
@@ -514,7 +511,15 @@ export class BibLatexParser {
                                 textNode = {type: 'text', text: ''}
                                 output.push(textNode)
                             }
-                            currentMarks.pop()
+                            let lastMark = currentMarks.pop()
+                            if (inCasePreserve===(braceLevel+1)) {
+                                inCasePreserve = false
+                                // The last tag may have added more tags. The
+                                // lowest level will be the case preserving one.
+                                while(lastMark.type !== 'nocase' && currentMarks.length) {
+                                    lastMark = currentMarks.pop()
+                                }
+                            }
                             if (currentMarks.length) {
                                 textNode.marks = currentMarks.slice()
                             }

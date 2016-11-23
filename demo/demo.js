@@ -1,5 +1,9 @@
 import {BibLatexParser, BibLatexExporter, CSLExporter} from "../src"
 
+window.BibLatexParser = BibLatexParser
+window.BibLatexExporter = BibLatexExporter
+window.CSLExporter = CSLExporter
+
 let printObject = function(object) {
     let html = ''
     switch (typeof object) {
