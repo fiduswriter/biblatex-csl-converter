@@ -301,6 +301,9 @@ export class BibLatexParser {
                 case 'l_key':
                     this.currentEntry['fields'][fKey] = fValue.split(' and ')
                     break
+                case 'l_tag':
+                    this.currentEntry['fields'][fKey] = fValue.split(',').map((string)=>{return string.trim()})
+                    break
                 case 'l_literal':
                     let items = fValue.split(' and ')
                     this.currentEntry['fields'][fKey] = []

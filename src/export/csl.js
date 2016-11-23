@@ -66,11 +66,7 @@ export class CSLExporter {
                         fValues[key] = this._escapeHtml(fValue)
                         break
                     case 'l_key':
-                        let escapedTexts = []
-                        fValue.forEach((text)=>{
-                            escapedTexts.push(that._escapeHtml(text))
-                        })
-                        fValues[key] = escapedTexts.join(', ')
+                        fValues[key] = this._escapeHtml(fValue.join(' and '))
                         break
                     case 'l_literal':
                         let reformedTexts = []
@@ -81,6 +77,9 @@ export class CSLExporter {
                         break
                     case 'l_name':
                         fValues[key] = fValue
+                        break
+                    case 'l_tag':
+                        fValues[key] = this._escapeHtml(fValue.join(', '))
                         break
                     default:
                         console.warn(`Unrecognized type: ${fType}!`)

@@ -72,21 +72,16 @@ export class BibLatexExporter {
                         fValues[key] = this._escapeTeX(fValue)
                         break
                     case 'l_key':
-                        let escapedTexts = []
-                        fValue.forEach((text)=>{
-                            escapedTexts.push(that._escapeTeX(text))
-                        })
-                        fValues[key] = escapedTexts.join(' and ')
+                        fValues[key] = this._escapeTeX(fValue.join(' and '))
                         break
                     case 'l_literal':
-                        let reformedTexts = []
-                        fValue.forEach((text)=>{
-                            reformedTexts.push(that._reformText(text))
-                        })
-                        fValues[key] = reformedTexts.join(' and ')
+                        fValues[key] = fValue.map((text)=>{return that._reformText(text)}).join(' and ')
                         break
                     case 'l_name':
                         fValues[key] = this._reformName(fValue)
+                        break
+                    case 'l_tag':
+                        fValues[key] = this._escapeTeX(fValue.join(', '))
                         break
                     default:
                         console.warn(`Unrecognized type: ${fType}!`)

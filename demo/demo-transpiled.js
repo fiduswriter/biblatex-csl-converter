@@ -306,6 +306,10 @@ var BibFieldTypes = exports.BibFieldTypes = {
         biblatex: 'journaltitle',
         csl: 'container-title'
     },
+    'keywords': {
+        type: 'l_tag',
+        biblatex: 'keywords'
+    },
     'label': {
         type: 'f_literal',
         biblatex: 'label'
@@ -955,8 +959,6 @@ var BibLatexExporter = exports.BibLatexExporter = function () {
     }, {
         key: "output",
         get: function get() {
-            var _this = this;
-
             var that = this;
             this.bibtexArray = [];
             this.bibtexStr = '';
@@ -978,49 +980,43 @@ var BibLatexExporter = exports.BibLatexExporter = function () {
                     var fValue = bib.fields[fKey];
                     var fType = _const2.BibFieldTypes[fKey]['type'];
                     var key = _const2.BibFieldTypes[fKey]['biblatex'];
-
-                    (function () {
-                        switch (fType) {
-                            case 'f_date':
-                                fValues[key] = _this._reformDate(fValue);
-                                break;
-                            case 'f_integer':
-                                fValues[key] = _this._reformInteger(fValue);
-                                break;
-                            case 'f_key':
-                                fValues[key] = _this._escapeTeX(fValue);
-                                break;
-                            case 'f_literal':
-                                fValues[key] = _this._reformText(fValue);
-                                break;
-                            case 'f_range':
-                                fValues[key] = _this._escapeTeX(fValue);
-                                break;
-                            case 'f_uri':
-                            case 'f_verbatim':
-                                fValues[key] = _this._escapeTeX(fValue);
-                                break;
-                            case 'l_key':
-                                var escapedTexts = [];
-                                fValue.forEach(function (text) {
-                                    escapedTexts.push(that._escapeTeX(text));
-                                });
-                                fValues[key] = escapedTexts.join(' and ');
-                                break;
-                            case 'l_literal':
-                                var reformedTexts = [];
-                                fValue.forEach(function (text) {
-                                    reformedTexts.push(that._reformText(text));
-                                });
-                                fValues[key] = reformedTexts.join(' and ');
-                                break;
-                            case 'l_name':
-                                fValues[key] = _this._reformName(fValue);
-                                break;
-                            default:
-                                console.warn("Unrecognized type: " + fType + "!");
-                        }
-                    })();
+                    switch (fType) {
+                        case 'f_date':
+                            fValues[key] = this._reformDate(fValue);
+                            break;
+                        case 'f_integer':
+                            fValues[key] = this._reformInteger(fValue);
+                            break;
+                        case 'f_key':
+                            fValues[key] = this._escapeTeX(fValue);
+                            break;
+                        case 'f_literal':
+                            fValues[key] = this._reformText(fValue);
+                            break;
+                        case 'f_range':
+                            fValues[key] = this._escapeTeX(fValue);
+                            break;
+                        case 'f_uri':
+                        case 'f_verbatim':
+                            fValues[key] = this._escapeTeX(fValue);
+                            break;
+                        case 'l_key':
+                            fValues[key] = this._escapeTeX(fValue.join(' and '));
+                            break;
+                        case 'l_literal':
+                            fValues[key] = fValue.map(function (text) {
+                                return that._reformText(text);
+                            }).join(' and ');
+                            break;
+                        case 'l_name':
+                            fValues[key] = this._reformName(fValue);
+                            break;
+                        case 'l_tag':
+                            fValues[key] = this._escapeTeX(fValue.join(', '));
+                            break;
+                        default:
+                            console.warn("Unrecognized type: " + fType + "!");
+                    }
                 }
                 bibEntry.values = fValues;
                 this.bibtexArray[this.bibtexArray.length] = bibEntry;
@@ -1124,11 +1120,7 @@ var CSLExporter = exports.CSLExporter = function () {
                                 fValues[key] = _this._escapeHtml(fValue);
                                 break;
                             case 'l_key':
-                                var escapedTexts = [];
-                                fValue.forEach(function (text) {
-                                    escapedTexts.push(that._escapeHtml(text));
-                                });
-                                fValues[key] = escapedTexts.join(', ');
+                                fValues[key] = _this._escapeHtml(fValue.join(' and '));
                                 break;
                             case 'l_literal':
                                 var reformedTexts = [];
@@ -1139,6 +1131,9 @@ var CSLExporter = exports.CSLExporter = function () {
                                 break;
                             case 'l_name':
                                 fValues[key] = fValue;
+                                break;
+                            case 'l_tag':
+                                fValues[key] = _this._escapeHtml(fValue.join(', '));
                                 break;
                             default:
                                 console.warn('Unrecognized type: ' + fType + '!');
@@ -1598,6 +1593,11 @@ var BibLatexParser = exports.BibLatexParser = function () {
                         break;
                     case 'l_key':
                         _this.currentEntry['fields'][_fKey] = fValue.split(' and ');
+                        break;
+                    case 'l_tag':
+                        _this.currentEntry['fields'][_fKey] = fValue.split(',').map(function (string) {
+                            return string.trim();
+                        });
                         break;
                     case 'l_literal':
                         var items = fValue.split(' and ');

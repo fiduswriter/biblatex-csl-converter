@@ -217,6 +217,10 @@ export const BibFieldTypes = {
         biblatex: 'journaltitle',
         csl: 'container-title'
     },
+    'keywords': {
+        type: 'l_tag',
+        biblatex: 'keywords'
+    },
     'label': {
         type: 'f_literal',
         biblatex: 'label'
