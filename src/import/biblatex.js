@@ -141,7 +141,7 @@ export class BibLatexParser {
         } else if (this.tryMatch('"')) {
             return this.valueQuotes()
         } else {
-            let k = this.key()
+            let k = this.key().toLowerCase()
             if (VARIABLES[k.toUpperCase()]) {
                 return VARIABLES[k.toUpperCase()]
             } else if (k.match("^[0-9]+$")) {
@@ -181,7 +181,7 @@ export class BibLatexParser {
     }
 
     keyEqualsValue() {
-        let key = this.key()
+        let key = this.key().toLowerCase()
         if (this.tryMatch("=")) {
             this.match("=")
             let val = this.value()
@@ -616,7 +616,7 @@ export class BibLatexParser {
 
     directive() {
         this.match("@")
-        this.currentType = this.key()
+        this.currentType = this.key().toLowerCase()
         return "@" + this.currentType
     }
 
@@ -634,8 +634,10 @@ export class BibLatexParser {
         let len = TexSpecialChars.length
         for (let i = 0; i < len; i++) {
             let texChar = TexSpecialChars[i]
-            let texCharRegExp = new RegExp(texChar[0],'g')
-            value = value.replace(texCharRegExp, texChar[1])
+            let texCharReBraces = new RegExp(`{${texChar[0]}}`,'g')
+            value = value.replace(texCharReBraces, texChar[1])
+            let texCharRe = new RegExp(texChar[0],'g')
+            value = value.replace(texCharRe, texChar[1])
         }
         // Delete multiple spaces
         value = value.replace(/ +(?= )/g, '')

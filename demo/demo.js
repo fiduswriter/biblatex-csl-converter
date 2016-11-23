@@ -54,6 +54,7 @@ let readBibFile = function() {
 }
 
 let importBiblatex = function(bibString) {
+    let t0 = performance.now()
     let parser = new BibLatexParser(bibString)
     let bibDB = parser.output
     if (parser.errors.length) {
@@ -63,6 +64,8 @@ let importBiblatex = function(bibString) {
     window.bibDB = bibDB
     exportCSL(bibDB)
     exportBibLatex(bibDB)
+    let t1 = performance.now()
+    console.log(`Total: ${t1-t0} milliseconds`)
 }
 
 let exportCSL = function(bibDB) {
