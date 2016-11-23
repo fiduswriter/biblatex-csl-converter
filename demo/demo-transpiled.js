@@ -1578,7 +1578,8 @@ var BibLatexParser = exports.BibLatexParser = function () {
                             _this.errors.push({
                                 type: 'unknown_date',
                                 entry: _this.currentEntry['entry_key'],
-                                field_name: _fKey
+                                field_name: _fKey,
+                                value: fValue
                             });
                             delete _this.currentEntry['fields'][_fKey];
                         }
