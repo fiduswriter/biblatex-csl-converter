@@ -1,7 +1,8 @@
 import {BibFieldTypes, BibTypes} from "../const"
-import {TexSpecialChars, BiblatexAliasTypes, BiblatexFieldAliasTypes} from "./const"
-import {BibLatexNameStringParser} from "./name-string-parser"
+import {TeXSpecialChars, BiblatexAliasTypes, BiblatexFieldAliasTypes} from "./const"
+import {BibLatexNameParser} from "./name-parser"
 import {BibLatexLiteralParser} from "./literal-parser"
+import {splitTeXString} from "./tools"
 
 // These variables are expected to be defined by some bibtex sources.
 let VARIABLES  = {
@@ -302,13 +303,13 @@ export class BibLatexParser {
                 case 'f_verbatim':
                     break
                 case 'l_key':
-                    this.currentEntry['fields'][fKey] = fValue.split(' and ')
+                    this.currentEntry['fields'][fKey] = splitTeXString(fValue)
                     break
                 case 'l_tag':
                     this.currentEntry['fields'][fKey] = fValue.split(',').map((string)=>{return string.trim()})
                     break
                 case 'l_literal':
-                    let items = fValue.split(' and ')
+                    let items = splitTeXString(fValue)
                     this.currentEntry['fields'][fKey] = []
                     items.forEach((item) => {
                         this.currentEntry['fields'][fKey].push(this._reformLiteral(item))
@@ -325,8 +326,11 @@ export class BibLatexParser {
     }
 
     _reformNameList(nameString) {
-        let nameStringParser = new BibLatexNameStringParser(nameString)
-        return nameStringParser.output
+        let people = splitTeXString(nameString)
+        return people.map((person)=>{
+            let nameParser = new BibLatexNameParser(person)
+            return nameParser.output
+        })
     }
 
     _reformDate(dateStr) {
@@ -444,9 +448,9 @@ export class BibLatexParser {
 
     replaceTeXChars() {
         let value = this.input
-        let len = TexSpecialChars.length
+        let len = TeXSpecialChars.length
         for (let i = 0; i < len; i++) {
-            let texChar = TexSpecialChars[i]
+            let texChar = TeXSpecialChars[i]
             let texCharReBraces = new RegExp(`{${texChar[0]}}`,'g')
             value = value.replace(texCharReBraces, texChar[1])
             let texCharRe = new RegExp(texChar[0],'g')

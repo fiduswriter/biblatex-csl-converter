@@ -20,7 +20,7 @@ export const BiblatexAliasTypes = {
 }
 
 /** A list of special chars in Tex and their unicode equivalent. */
-export const TexSpecialChars = [
+export const TeXSpecialChars = [
     ["---", '—'],
     ["\\\\textexclamdown", '¡'],
     ["\\\\textcent", '¢'],

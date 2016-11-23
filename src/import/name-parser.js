@@ -1,4 +1,4 @@
-export class BibLatexSingleNameParser {
+export class BibLatexNameParser {
 
     constructor(nameString) {
         this.nameString = nameString
