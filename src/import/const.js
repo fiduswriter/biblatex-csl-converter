@@ -701,7 +701,6 @@ export const TeXSpecialChars = [
   ["\\\\textregistered", '\u00AE'],
   ["\\\\dblarrowupdown", '\u21C5'],
   ["\\\\textexclamdown", '\u00A1'],
-  ["\\\\textasciitilde", '~'],
   ["\\\\squaretopblack", '\u2B12'],
   ["\\\\squarebotblack", '\u2B13'],
   ["\\\\textasciigrave", '`'],
@@ -2965,5 +2964,6 @@ export const TeXSpecialChars = [
   ["\\\\=", '\u0304'],
   ["\\\\l", '\u0142'],
   ["'''", '\u2034'],
-  ["~", '\u00A0']
+  ["~", '\u00A0'],
+  ["\\\\textasciitilde", '\\~']
 ]
