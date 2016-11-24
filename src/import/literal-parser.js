@@ -6,7 +6,9 @@ const LATEX_COMMANDS = [
     ['\\textit{', 'em'],
     ['\\emph{', 'em'],
     ['\\textsc{', 'smallcaps'],
-    ['\\enquote{', 'enquote']
+    ['\\enquote{', 'enquote'],
+    ['\\textsubscript{', 'sub'],
+    ['\\textsuperscript{', 'sup']
 ]
 
 const LATEX_SPECIAL_CHARS = ['&','%','$', '#','_','{','}',',','~','^','\'']
@@ -89,37 +91,51 @@ export class BibLatexLiteralParser {
                     }
                     break
                 case '_':
-                    this.checkAndAddNewTextNode()
-                    if (this.string.substring(this.si,this.si+2) === '_{') {
-                        this.braceLevel++
-                        this.si += 2
-                        this.currentMarks.push({type:'sub'})
-                        this.textNode.marks = this.currentMarks.slice()
-                        this.braceClosings.push(true)
-                    } else {
-                        // We only add the next character to a sub node.
-                        this.textNode.marks = this.currentMarks.slice()
-                        this.textNode.marks.push({type:'sub'})
-                        this.textNode.text = this.string[this.si+1]
-                        this.addNewTextNode()
-                        this.si += 2
+                    switch(this.string[this.si+1]) {
+                        case '{':
+                            this.checkAndAddNewTextNode()
+                            this.braceLevel++
+                            this.si += 2
+                            this.currentMarks.push({type:'sub'})
+                            this.textNode.marks = this.currentMarks.slice()
+                            this.braceClosings.push(true)
+                            break
+                        case '\\':
+                            // There is a command following directly. Ignore the sub symbol.
+                            this.si++
+                            break
+                        default:
+                            // We only add the next character to a sub node.
+                            this.checkAndAddNewTextNode()
+                            this.textNode.marks = this.currentMarks.slice()
+                            this.textNode.marks.push({type:'sub'})
+                            this.textNode.text = this.string[this.si+1]
+                            this.addNewTextNode()
+                            this.si += 2
                     }
                     break
                 case '^':
-                    this.checkAndAddNewTextNode()
-                    if (this.string.substring(this.si,this.si+2) === '^{') {
-                        this.braceLevel++
-                        this.si += 2
-                        this.currentMarks.push({type:'sup'})
-                        this.textNode.marks = this.currentMarks.slice()
-                        this.braceClosings.push(true)
-                    } else {
-                        // We only add the next character to a sub node.
-                        this.textNode.marks = this.currentMarks.slice()
-                        this.textNode.marks.push({type:'sup'})
-                        this.textNode.text = this.string[this.si+1]
-                        this.addNewTextNode()
-                        this.si += 2
+                    switch(this.string[this.si+1]) {
+                        case '{':
+                            this.checkAndAddNewTextNode()
+                            this.braceLevel++
+                            this.si += 2
+                            this.currentMarks.push({type:'sup'})
+                            this.textNode.marks = this.currentMarks.slice()
+                            this.braceClosings.push(true)
+                            break
+                        case '\\':
+                            // There is a command following directly. Ignore the sup symbol.
+                            this.si++
+                            break
+                        default:
+                            // We only add the next character to a sup node.
+                            this.checkAndAddNewTextNode()
+                            this.textNode.marks = this.currentMarks.slice()
+                            this.textNode.marks.push({type:'sup'})
+                            this.textNode.text = this.string[this.si+1]
+                            this.addNewTextNode()
+                            this.si += 2
                     }
                     break
                 case '{':
