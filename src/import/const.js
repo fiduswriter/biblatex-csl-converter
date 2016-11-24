@@ -20,6 +20,15 @@ export const BiblatexAliasTypes = {
 }
 
 /** A list of special chars in Tex and their unicode equivalent. */
+
+/* The copyright holder of the below composition is Emiliano Heyns, and it is made available under the MIT license.
+
+Data sources for the composition are:
+
+http://milde.users.sourceforge.net/LUCR/Math/data/unimathsymbols.txt
+http://www.w3.org/2003/entities/2007xml/unicode.xml
+http://www.w3.org/Math/characters/unicode.xml
+*/
 export const TeXSpecialChars = [
   ["\\{\\\\fontencoding\\{LECO\\}\\\\selectfont\\\\char220\\}|\\\\fontencoding\\{LECO\\}\\\\selectfont\\\\char220", '\u033C'],
   ["\\{\\\\fontencoding\\{LECO\\}\\\\selectfont\\\\char225\\}|\\\\fontencoding\\{LECO\\}\\\\selectfont\\\\char225", '\u0361'],
@@ -1964,7 +1973,7 @@ export const TeXSpecialChars = [
   ["\\\\leftarrowx", '\u2B3E'],
   ["\\\\LLeftarrow", '\u2B45'],
   ["\\\\postalmark", '\u3012'],
-  ["\\\\\\$|\\\\textdollar", '$'],
+  ["\\\\textdollar", '\\$'],
   ["\\\\upuparrows", '\u21C8'],
   ["\\\\not\\\\equiv", '\u2262'],
   ["\\\\not\\\\simeq", '\u2244'],
@@ -2920,12 +2929,10 @@ export const TeXSpecialChars = [
   ["\\\\dj", '\u0111'],
   ["\\\\in", '\u2208'],
   ["\\\\\\-", '\u00AD'],
-  ["\\\\\\^", '^'],
   ["\\\\th", '\u00FE'],
   ["\\\\wp", '\u2118'],
   ["\\\\aa", '\u00E5'],
   ["\\\\ss", '\u00DF'],
-  ["\\\\\\#", '#'],
   ["\\\\ae", '\u00E6'],
   ["\\\\ng", '\u014B'],
   ["\\\\mu", '\u03BC'],
@@ -2952,13 +2959,10 @@ export const TeXSpecialChars = [
   ["\\\\o", '\u00F8'],
   ["\\\\`", '\u0300'],
   ["\\\\'", '\u0301'],
-  ["\\\\&", '&'],
   ["\\\\~", '\u0303'],
   ["\\\\r", '\u02DA'],
   ["\\\\O", '\u00D8'],
   ["\\\\=", '\u0304'],
-  ["\\\\_", '_'],
-  ["\\\\%", '%'],
   ["\\\\l", '\u0142'],
   ["'''", '\u2034'],
   ["~", '\u00A0']
