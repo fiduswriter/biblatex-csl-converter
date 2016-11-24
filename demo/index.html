@@ -20,13 +20,32 @@
         0% { transform: rotate(0deg); }
         100% { transform: rotate(360deg); }
     }
+    #paste-input {
+        border: 2px dotted #f3622b;
+        min-width: 300px;
+        min-height: 100px;
+    }
     </style>
 </head>
-<h3>Import .bib test</h3>
-
-<p>Select the .bib file here: <input type="file" accept=".bib" id="file-upload"></p>
 
 <body>
+
+    <h3>Import .bib test</h3>
+    <table>
+        <tr>
+            <td>
+                <p>Select the .bib file here: <input type="file" accept=".bib" id="file-upload"></p>
+            </td>
+            <td>
+                <p>Or paste here:</p>
+            </td>
+            <td>
+                <div contenteditable="true" id="paste-input"></div>
+            </td>
+        </tr>
+    </table>
+
+
     <table width="100%">
         <tr>
             <th width="34%">

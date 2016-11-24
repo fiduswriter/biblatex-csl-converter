@@ -41,6 +41,16 @@ var printObject = function printObject(object) {
     return html;
 };
 
+var readBibPaste = function readBibPaste(event) {
+    document.getElementById('bib-db').innerHTML = '<div class="spinner"></div>';
+    document.getElementById('csl-db').innerHTML = '<div class="spinner"></div>';
+    document.getElementById('biblatex').innerHTML = '<div class="spinner"></div>';
+    var clipBoardText = event.clipboardData.getData('text');
+    setTimeout(function () {
+        importBiblatex(clipBoardText);
+    }, 500);
+};
+
 var readBibFile = function readBibFile() {
     document.getElementById('bib-db').innerHTML = '<div class="spinner"></div>';
     document.getElementById('csl-db').innerHTML = '<div class="spinner"></div>';
@@ -86,6 +96,7 @@ var exportBibLatex = function exportBibLatex(bibDB) {
 };
 
 document.getElementById('file-upload').addEventListener('change', readBibFile);
+document.getElementById('paste-input').addEventListener('paste', readBibPaste, false);
 
 },{"../src":11}],2:[function(require,module,exports){
 'use strict';

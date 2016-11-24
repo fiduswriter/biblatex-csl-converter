@@ -36,6 +36,16 @@ let printObject = function(object) {
     return html
 }
 
+let readBibPaste = function(event) {
+    document.getElementById('bib-db').innerHTML = '<div class="spinner"></div>'
+    document.getElementById('csl-db').innerHTML = '<div class="spinner"></div>'
+    document.getElementById('biblatex').innerHTML = '<div class="spinner"></div>'
+    let clipBoardText = event.clipboardData.getData('text')
+    setTimeout(function() {
+        importBiblatex(clipBoardText)
+    }, 500)
+}
+
 let readBibFile = function() {
     document.getElementById('bib-db').innerHTML = '<div class="spinner"></div>'
     document.getElementById('csl-db').innerHTML = '<div class="spinner"></div>'
@@ -81,3 +91,4 @@ let exportBibLatex = function(bibDB) {
 }
 
 document.getElementById('file-upload').addEventListener('change', readBibFile)
+document.getElementById('paste-input').addEventListener('paste', readBibPaste, false)
