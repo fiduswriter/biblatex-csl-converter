@@ -66,9 +66,6 @@ export const TeXSpecialChars = [
     ["\\\\ng", 'ŋ'],
     ["\\\\OE", 'Œ'],
     ["\\\\oe", 'œ'],
-    ["\\\\textasciicircum", 'ˆ'],
-    ["\\\\~", '˜'],
-    ["\\\\textacutedbl", '˝'],
     ["\\\\textendash", '–'],
     ["\\\\textemdash", '—'],
     ["\\\\textemdash", '―'],
@@ -703,5 +700,9 @@ export const TeXSpecialChars = [
     ["\\\\d{Y}", 'Ỵ'],
     ["\\\\d{y}", 'ỵ'],
     ["\\\\~{Y}", 'Ỹ'],
-    ["\\\\~{y}", 'ỹ']
+    ["\\\\~{y}", 'ỹ'],
+    ["\\\\textasciicircum", 'ˆ'],
+    ["\\\\textasciitilde", '~'],
+    ["\\\\~", '˜'],
+    ["\\\\textacutedbl", '˝']
 ]

@@ -270,7 +270,7 @@ export class BibLatexParser {
 
         iterateFields: for(let bKey in rawFields) {
 
-            if (['date','year','month'].includes(bKey)) {
+            if (bKey==='date' || (['year','month'].includes(bKey) && !this.config.parseUnknown)) {
                 // Handled above
                 continue iterateFields
             }
@@ -516,9 +516,7 @@ export class BibLatexParser {
         let len = TeXSpecialChars.length
         for (let i = 0; i < len; i++) {
             let texChar = TeXSpecialChars[i]
-            let texCharReBraces = new RegExp(`{${texChar[0]}}`,'g')
-            value = value.replace(texCharReBraces, texChar[1])
-            let texCharRe = new RegExp(texChar[0],'g')
+            let texCharRe = new RegExp(`{${texChar[0]}}|${texChar[0]}`,'g')
             value = value.replace(texCharRe, texChar[1])
         }
         // Delete multiple spaces
