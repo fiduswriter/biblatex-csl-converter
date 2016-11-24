@@ -30,8 +30,9 @@ let VARIABLES  = {
 
 export class BibLatexParser {
 
-    constructor(input) {
+    constructor(input, config = {}) {
         this.input = input
+        this.config = config
         this.pos = 0
         this.entries = []
         this.bibDB = {}
@@ -268,6 +269,12 @@ export class BibLatexParser {
 
 
         iterateFields: for(let bKey in rawFields) {
+
+            if (['date','year','month'].includes(bKey)) {
+                // Handled above
+                continue iterateFields
+            }
+
             // Replace alias fields with their main term.
             let aliasKey = BiblatexFieldAliasTypes[bKey], fKey
             if (aliasKey) {
@@ -292,41 +299,51 @@ export class BibLatexParser {
                 })
             }
 
+            let oFields, fType
+            let bType = BibTypes[this.currentEntry['bib_type']]
+
             if('undefined' == typeof(fKey)) {
                 this.errors.push({
                     type: 'unknown_field',
                     entry: this.currentEntry['entry_key'],
                     field_name: bKey
                 })
-                continue iterateFields
-            }
-            let oFields
-            let bType = BibTypes[this.currentEntry['bib_type']]
-            if (bType['required'].includes(fKey) ||
-                bType['optional'].includes(fKey) ||
-                bType['eitheror'].includes(fKey)) {
-                    oFields = fields
-                } else {
-                    this.errors.push({
-                        type: 'unexpected_field',
-                        entry: this.currentEntry['entry_key'],
-                        field_name: bKey
-                    })
-                    if (!this.currentEntry['unexpected_fields']) {
-                        this.currentEntry['unexpected_fields'] = {}
-                    }
-                    oFields = this.currentEntry['unexpected_fields']
+                if (!this.config.processUnknown) {
+                    continue iterateFields
                 }
-            let field = BibFieldTypes[fKey]
+                if (!this.currentEntry['unknown_fields']) {
+                    this.currentEntry['unknown_fields'] = {}
+                }
+                oFields = this.currentEntry['unknown_fields']
+                fType = this.config.processUnknown[bKey] ? this.config.processUnknown[bKey] : 'f_literal'
+                fKey = bKey
+            } else if (
+                bType['required'].includes(fKey) ||
+                bType['optional'].includes(fKey) ||
+                bType['eitheror'].includes(fKey)
+            ) {
+                oFields = fields
+                fType = BibFieldTypes[fKey]['type']
+            } else {
+                this.errors.push({
+                    type: 'unexpected_field',
+                    entry: this.currentEntry['entry_key'],
+                    field_name: bKey
+                })
+                if (!this.config.processUnexpected) {
+                    continue iterateFields
+                }
+                if (!this.currentEntry['unexpected_fields']) {
+                    this.currentEntry['unexpected_fields'] = {}
+                }
+                oFields = this.currentEntry['unexpected_fields']
+                fType = BibFieldTypes[fKey]['type']
+            }
 
-            let fType = field['type']
+
             let fValue = rawFields[bKey]
             switch(fType) {
                 case 'f_date':
-                    if (['date','year','month'].indexOf(fKey) !== -1) {
-                        // handled separately above
-                        continue iterateFields
-                    }
                     let dateParts = this._reformDate(fValue)
                     if (dateParts) {
                         oFields[fKey] = dateParts
@@ -384,7 +401,7 @@ export class BibLatexParser {
 
     _reformDate(dateStr) {
         let that = this
-        if (dateStr.indexOf('/') !== -1) {
+        if (dateStr.includes('/')) {
             let dateRangeParts = dateStr.split('/')
             let dateRangeArray = []
             dateRangeParts.forEach((dateRangePart)=>{

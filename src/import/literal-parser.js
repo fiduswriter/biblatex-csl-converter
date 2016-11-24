@@ -70,7 +70,7 @@ export class BibLatexLiteralParser {
                             continue parseString
                         }
                     }
-                    if (LATEX_SPECIAL_CHARS.indexOf(this.string[this.si+1]) !== -1) {
+                    if (LATEX_SPECIAL_CHARS.includes(this.string[this.si+1])) {
                         this.textNode.text += this.string[this.si+1]
                         this.si += 2
                     } else {

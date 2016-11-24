@@ -65,7 +65,15 @@ let readBibFile = function() {
 
 let importBiblatex = function(bibString) {
     let t0 = performance.now()
-    let parser = new BibLatexParser(bibString)
+    let parser = new BibLatexParser(
+        bibString,
+        {
+            processUnexpected: true,
+            processUnknown: {
+                collaborator: 'l_name'
+            }
+        }
+    )
     let bibDB = parser.output
     if (parser.errors.length) {
         console.log(parser.errors)

@@ -70,7 +70,12 @@ var readBibFile = function readBibFile() {
 
 var importBiblatex = function importBiblatex(bibString) {
     var t0 = performance.now();
-    var parser = new _src.BibLatexParser(bibString);
+    var parser = new _src.BibLatexParser(bibString, {
+        processUnexpected: true,
+        processUnknown: {
+            collaborator: 'l_name'
+        }
+    });
     var bibDB = parser.output;
     if (parser.errors.length) {
         console.log(parser.errors);
@@ -1322,9 +1327,12 @@ var VARIABLES = {
 
 var BibLatexParser = exports.BibLatexParser = function () {
     function BibLatexParser(input) {
+        var config = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
         _classCallCheck(this, BibLatexParser);
 
         this.input = input;
+        this.config = config;
         this.pos = 0;
         this.entries = [];
         this.bibDB = {};
@@ -1571,6 +1579,12 @@ var BibLatexParser = exports.BibLatexParser = function () {
             }
 
             var _loop = function _loop(bKey) {
+
+                if (['date', 'year', 'month'].includes(bKey)) {
+                    // Handled above
+                    return "continue|iterateFields";
+                }
+
                 // Replace alias fields with their main term.
                 var aliasKey = _const2.BiblatexFieldAliasTypes[bKey],
                     fKey = void 0;
@@ -1596,39 +1610,47 @@ var BibLatexParser = exports.BibLatexParser = function () {
                     });
                 }
 
+                var oFields = void 0,
+                    fType = void 0;
+                var bType = _const.BibTypes[_this.currentEntry['bib_type']];
+
                 if ('undefined' == typeof fKey) {
                     _this.errors.push({
                         type: 'unknown_field',
                         entry: _this.currentEntry['entry_key'],
                         field_name: bKey
                     });
-                    return "continue|iterateFields";
-                }
-                var oFields = void 0;
-                var bType = _const.BibTypes[_this.currentEntry['bib_type']];
-                if (bType['required'].includes(fKey) || bType['optional'].includes(fKey) || bType['eitheror'].includes(fKey)) {
+                    if (!_this.config.processUnknown) {
+                        return "continue|iterateFields";
+                    }
+                    if (!_this.currentEntry['unknown_fields']) {
+                        _this.currentEntry['unknown_fields'] = {};
+                    }
+                    oFields = _this.currentEntry['unknown_fields'];
+                    fType = _this.config.processUnknown[bKey] ? _this.config.processUnknown[bKey] : 'f_literal';
+                    fKey = bKey;
+                } else if (bType['required'].includes(fKey) || bType['optional'].includes(fKey) || bType['eitheror'].includes(fKey)) {
                     oFields = fields;
+                    fType = _const.BibFieldTypes[fKey]['type'];
                 } else {
                     _this.errors.push({
                         type: 'unexpected_field',
                         entry: _this.currentEntry['entry_key'],
                         field_name: bKey
                     });
+                    if (!_this.config.processUnexpected) {
+                        return "continue|iterateFields";
+                    }
                     if (!_this.currentEntry['unexpected_fields']) {
                         _this.currentEntry['unexpected_fields'] = {};
                     }
                     oFields = _this.currentEntry['unexpected_fields'];
+                    fType = _const.BibFieldTypes[fKey]['type'];
                 }
-                var field = _const.BibFieldTypes[fKey];
 
-                var fType = field['type'];
                 var fValue = rawFields[bKey];
                 switch (fType) {
                     case 'f_date':
-                        if (['date', 'year', 'month'].indexOf(fKey) !== -1) {
-                            // handled separately above
-                            return "continue|iterateFields";
-                        }
                         var _dateParts = _this._reformDate(fValue);
                         if (_dateParts) {
                             oFields[fKey] = _dateParts;
@@ -1695,7 +1717,7 @@ var BibLatexParser = exports.BibLatexParser = function () {
         key: "_reformDate",
         value: function _reformDate(dateStr) {
             var that = this;
-            if (dateStr.indexOf('/') !== -1) {
+            if (dateStr.includes('/')) {
                 var _ret2 = function () {
                     var dateRangeParts = dateStr.split('/');
                     var dateRangeArray = [];
@@ -1997,7 +2019,7 @@ var BibLatexLiteralParser = exports.BibLatexLiteralParser = function () {
                             }
                         }
 
-                        if (LATEX_SPECIAL_CHARS.indexOf(this.string[this.si + 1]) !== -1) {
+                        if (LATEX_SPECIAL_CHARS.includes(this.string[this.si + 1])) {
                             this.textNode.text += this.string[this.si + 1];
                             this.si += 2;
                         } else {
