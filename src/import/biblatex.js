@@ -204,12 +204,8 @@ export class BibLatexParser {
             this.entries.pop()
             return
         }
-        this.currentEntry['fields'][kv[0]] = kv[1]
-        // date may come either as year, year + month or as date field.
-        // We therefore need to catch these hear and transform it to the
-        // date field after evaluating all the fields.
-        // All other date fields only come in the form of a date string.
-        let date = {}
+        let rawFields = this.currentEntry['raw_fields']
+        rawFields[kv[0]] = kv[1]
         while (this.tryMatch(",")) {
             this.match(",")
             //fixes problems with commas at the end of a list
@@ -221,7 +217,8 @@ export class BibLatexParser {
                 this.errors.push({type: 'variable_error'})
                 break
             }
-            let val = kv[1]
+            rawFields[kv[0]] = kv[1]
+            /*let val = kv[1]
             switch (kv[0]) {
                 case 'date':
                 case 'month':
@@ -230,56 +227,108 @@ export class BibLatexParser {
                     break
                 default:
                     this.currentEntry['fields'][kv[0]] = val
-            }
+            }*/
 
         }
-        if (date.date) {
+    }
+
+    processFields() {
+        let rawFields = this.currentEntry['raw_fields']
+        let fields = this.currentEntry['fields']
+
+        // date may come either as year, year + month or as date field.
+        // We therefore need to catch these hear and transform it to the
+        // date field after evaluating all the fields.
+        // All other date fields only come in the form of a date string.
+
+        let date
+        if (rawFields.date) {
             // date string has precedence.
-            this.currentEntry['fields']['date'] = date.date
-        } else if (date.year && date.month) {
-            this.currentEntry['fields']['date'] = `${date.year}-${date.month}`
-        } else if (date.year) {
-            this.currentEntry['fields']['date'] = `${date.year}`
+            date = rawFields.date
+        } else if (rawFields.year && rawFields.month) {
+            date = `${rawFields.year}-${rawFields.month}`
+        } else if (rawFields.year) {
+            date = `${rawFields.year}`
+        }
+        if (date) {
+            let dateParts = this._reformDate(date)
+            if (dateParts) {
+                fields['date'] = dateParts
+            } else {
+                let field_name, value
+                if (rawFields.date) {
+                    field_name = 'date'
+                    value = rawFields.date
+                } else if (rawFields.year && rawFields.month) {
+                    field_name = 'year,month'
+                    value = [rawFields.year, rawFields.month]
+                } else {
+                    field_name = 'year'
+                    value = rawFields.year
+                }
+                this.errors.push({
+                    type: 'unknown_date',
+                    entry: this.currentEntry['entry_key'],
+                    field_name,
+                    value
+                })
+            }
         }
 
-        for(let fKey in this.currentEntry['fields']) {
+
+
+
+        iterateFields: for(let bKey in rawFields) {
             // Replace alias fields with their main term.
-            let aliasKey = BiblatexFieldAliasTypes[fKey]
+            let aliasKey = BiblatexFieldAliasTypes[bKey], fKey
             if (aliasKey) {
-                if (this.currentEntry['fields'][aliasKey]) {
+                if (rawFields[aliasKey]) {
                     this.errors.push({
                         type: 'alias_creates_duplicate_field',
                         entry: this.currentEntry['entry_key'],
-                        field: fKey,
+                        field: bKey,
                         alias_of: aliasKey,
-                        value: this.currentEntry['fields'][fKey]
+                        value: rawFields[bKey],
+                        alias_of_value: rawFields[aliasKey]
                     })
-                    delete this.currentEntry['fields'][fKey]
-                    continue
+                    continue iterateFields
                 }
-                let value = this.currentEntry['fields'][fKey]
-                delete this.currentEntry['fields'][fKey]
-                fKey = aliasKey
-                this.currentEntry['fields'][fKey] = value
-            }
-            let field = BibFieldTypes[fKey]
 
-            if('undefined' == typeof(field)) {
+                fKey = Object.keys(BibFieldTypes).find((ft)=>{
+                    return BibFieldTypes[ft].biblatex === aliasKey
+                })
+                //let value = this.currentEntry['fields'][fKey]
+                //delete this.currentEntry['fields'][fKey]
+                //fKey = aliasKey
+                //this.currentEntry['fields'][fKey] = value
+            } else {
+                fKey = Object.keys(BibFieldTypes).find((ft)=>{
+                    return BibFieldTypes[ft].biblatex === bKey
+                })
+            }
+
+            if('undefined' == typeof(fKey)) {
                 this.errors.push({
                     type: 'unknown_field',
                     entry: this.currentEntry['entry_key'],
-                    field_name: fKey
+                    field_name: aliasKey ? aliasKey: bKey
                 })
-                delete this.currentEntry['fields'][fKey]
-                continue
+                continue iterateFields
             }
+
+            let field = BibFieldTypes[fKey]
+
             let fType = field['type']
-            let fValue = this.currentEntry['fields'][fKey]
+            let fValue = rawFields[bKey]
             switch(fType) {
                 case 'f_date':
+                    if (['date','year','month'].indexOf(fKey) !== -1) {
+                        // handled separately above
+                        continue iterateFields
+                    }
                     let dateParts = this._reformDate(fValue)
                     if (dateParts) {
-                        this.currentEntry['fields'][fKey] = dateParts
+                        fields[fKey] = dateParts
                     } else {
                         this.errors.push({
                             type: 'unknown_date',
@@ -287,36 +336,35 @@ export class BibLatexParser {
                             field_name: fKey,
                             value: fValue
                         })
-                        delete this.currentEntry['fields'][fKey]
                     }
                     break
                 case 'f_integer':
-                    this.currentEntry['fields'][fKey] = this._reformInteger(fValue)
+                    fields[fKey] = this._reformInteger(fValue)
                     break
                 case 'f_key':
                     break
                 case 'f_literal':
-                    this.currentEntry['fields'][fKey] = this._reformLiteral(fValue)
+                    fields[fKey] = this._reformLiteral(fValue)
                     break
                 case 'f_range':
                 case 'f_uri':
                 case 'f_verbatim':
                     break
                 case 'l_key':
-                    this.currentEntry['fields'][fKey] = splitTeXString(fValue)
+                    fields[fKey] = splitTeXString(fValue)
                     break
                 case 'l_tag':
-                    this.currentEntry['fields'][fKey] = fValue.split(',').map((string)=>{return string.trim()})
+                    fields[fKey] = fValue.split(',').map((string)=>{return string.trim()})
                     break
                 case 'l_literal':
                     let items = splitTeXString(fValue)
-                    this.currentEntry['fields'][fKey] = []
+                    fields[fKey] = []
                     items.forEach((item) => {
-                        this.currentEntry['fields'][fKey].push(this._reformLiteral(item))
+                        fields[fKey].push(this._reformLiteral(item))
                     })
                     break
                 case 'l_name':
-                    this.currentEntry['fields'][fKey] = this._reformNameList(fValue)
+                    fields[fKey] = this._reformNameList(fValue)
                     break
                 default:
                     console.warn(`Unrecognized type: ${fType}!`)
@@ -423,11 +471,13 @@ export class BibLatexParser {
         this.currentEntry = {
             'bib_type': this.bibType(),
             'entry_key': this.key(),
+            'raw_fields': {},
             'fields': {}
         }
         this.entries.push(this.currentEntry)
         this.match(",")
         this.keyValueList()
+        this.processFields()
     }
 
     directive() {

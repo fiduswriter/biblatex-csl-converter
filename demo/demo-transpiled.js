@@ -1499,8 +1499,6 @@ var BibLatexParser = exports.BibLatexParser = function () {
     }, {
         key: "keyValueList",
         value: function keyValueList() {
-            var _this = this;
-
             var kv = this.keyEqualsValue();
             if (typeof kv === 'undefined') {
                 // Entry has no fields, so we delete it.
@@ -1508,12 +1506,8 @@ var BibLatexParser = exports.BibLatexParser = function () {
                 this.entries.pop();
                 return;
             }
-            this.currentEntry['fields'][kv[0]] = kv[1];
-            // date may come either as year, year + month or as date field.
-            // We therefore need to catch these hear and transform it to the
-            // date field after evaluating all the fields.
-            // All other date fields only come in the form of a date string.
-            var date = {};
+            var rawFields = this.currentEntry['raw_fields'];
+            rawFields[kv[0]] = kv[1];
             while (this.tryMatch(",")) {
                 this.match(",");
                 //fixes problems with commas at the end of a list
@@ -1525,114 +1519,167 @@ var BibLatexParser = exports.BibLatexParser = function () {
                     this.errors.push({ type: 'variable_error' });
                     break;
                 }
-                var val = kv[1];
+                rawFields[kv[0]] = kv[1];
+                /*let val = kv[1]
                 switch (kv[0]) {
                     case 'date':
                     case 'month':
                     case 'year':
-                        date[kv[0]] = val;
-                        break;
+                        date[kv[0]] = val
+                        break
                     default:
-                        this.currentEntry['fields'][kv[0]] = val;
+                        this.currentEntry['fields'][kv[0]] = val
+                }*/
+            }
+        }
+    }, {
+        key: "processFields",
+        value: function processFields() {
+            var _this = this;
+
+            var rawFields = this.currentEntry['raw_fields'];
+            var fields = this.currentEntry['fields'];
+
+            // date may come either as year, year + month or as date field.
+            // We therefore need to catch these hear and transform it to the
+            // date field after evaluating all the fields.
+            // All other date fields only come in the form of a date string.
+
+            var date = void 0;
+            if (rawFields.date) {
+                // date string has precedence.
+                date = rawFields.date;
+            } else if (rawFields.year && rawFields.month) {
+                date = rawFields.year + "-" + rawFields.month;
+            } else if (rawFields.year) {
+                date = "" + rawFields.year;
+            }
+            if (date) {
+                var dateParts = this._reformDate(date);
+                if (dateParts) {
+                    fields['date'] = dateParts;
+                } else {
+                    var field_name = void 0,
+                        value = void 0;
+                    if (rawFields.date) {
+                        field_name = 'date';
+                        value = rawFields.date;
+                    } else if (rawFields.year && rawFields.month) {
+                        field_name = 'year,month';
+                        value = [rawFields.year, rawFields.month];
+                    } else {
+                        field_name = 'year';
+                        value = rawFields.year;
+                    }
+                    this.errors.push({
+                        type: 'unknown_date',
+                        entry: this.currentEntry['entry_key'],
+                        field_name: field_name,
+                        value: value
+                    });
                 }
             }
-            if (date.date) {
-                // date string has precedence.
-                this.currentEntry['fields']['date'] = date.date;
-            } else if (date.year && date.month) {
-                this.currentEntry['fields']['date'] = date.year + "-" + date.month;
-            } else if (date.year) {
-                this.currentEntry['fields']['date'] = "" + date.year;
-            }
 
-            var _loop = function _loop(_fKey) {
+            var _loop = function _loop(bKey) {
                 // Replace alias fields with their main term.
-                var aliasKey = _const2.BiblatexFieldAliasTypes[_fKey];
+                var aliasKey = _const2.BiblatexFieldAliasTypes[bKey],
+                    fKey = void 0;
                 if (aliasKey) {
-                    if (_this.currentEntry['fields'][aliasKey]) {
+                    if (rawFields[aliasKey]) {
                         _this.errors.push({
                             type: 'alias_creates_duplicate_field',
                             entry: _this.currentEntry['entry_key'],
-                            field: _fKey,
+                            field: bKey,
                             alias_of: aliasKey,
-                            value: _this.currentEntry['fields'][_fKey]
+                            value: rawFields[bKey],
+                            alias_of_value: rawFields[aliasKey]
                         });
-                        delete _this.currentEntry['fields'][_fKey];
-                        return "continue";
+                        return "continue|iterateFields";
                     }
-                    var value = _this.currentEntry['fields'][_fKey];
-                    delete _this.currentEntry['fields'][_fKey];
-                    _fKey = aliasKey;
-                    _this.currentEntry['fields'][_fKey] = value;
-                }
-                var field = _const.BibFieldTypes[_fKey];
 
-                if ('undefined' == typeof field) {
+                    fKey = Object.keys(_const.BibFieldTypes).find(function (ft) {
+                        return _const.BibFieldTypes[ft].biblatex === aliasKey;
+                    });
+                    //let value = this.currentEntry['fields'][fKey]
+                    //delete this.currentEntry['fields'][fKey]
+                    //fKey = aliasKey
+                    //this.currentEntry['fields'][fKey] = value
+                } else {
+                    fKey = Object.keys(_const.BibFieldTypes).find(function (ft) {
+                        return _const.BibFieldTypes[ft].biblatex === bKey;
+                    });
+                }
+
+                if ('undefined' == typeof fKey) {
                     _this.errors.push({
                         type: 'unknown_field',
                         entry: _this.currentEntry['entry_key'],
-                        field_name: _fKey
+                        field_name: aliasKey ? aliasKey : bKey
                     });
-                    delete _this.currentEntry['fields'][_fKey];
-                    return "continue";
+                    return "continue|iterateFields";
                 }
+
+                var field = _const.BibFieldTypes[fKey];
+
                 var fType = field['type'];
-                var fValue = _this.currentEntry['fields'][_fKey];
+                var fValue = rawFields[bKey];
                 switch (fType) {
                     case 'f_date':
-                        var dateParts = _this._reformDate(fValue);
-                        if (dateParts) {
-                            _this.currentEntry['fields'][_fKey] = dateParts;
+                        if (['date', 'year', 'month'].indexOf(fKey) !== -1) {
+                            // handled separately above
+                            return "continue|iterateFields";
+                        }
+                        var _dateParts = _this._reformDate(fValue);
+                        if (_dateParts) {
+                            fields[fKey] = _dateParts;
                         } else {
                             _this.errors.push({
                                 type: 'unknown_date',
                                 entry: _this.currentEntry['entry_key'],
-                                field_name: _fKey,
+                                field_name: fKey,
                                 value: fValue
                             });
-                            delete _this.currentEntry['fields'][_fKey];
                         }
                         break;
                     case 'f_integer':
-                        _this.currentEntry['fields'][_fKey] = _this._reformInteger(fValue);
+                        fields[fKey] = _this._reformInteger(fValue);
                         break;
                     case 'f_key':
                         break;
                     case 'f_literal':
-                        _this.currentEntry['fields'][_fKey] = _this._reformLiteral(fValue);
+                        fields[fKey] = _this._reformLiteral(fValue);
                         break;
                     case 'f_range':
                     case 'f_uri':
                     case 'f_verbatim':
                         break;
                     case 'l_key':
-                        _this.currentEntry['fields'][_fKey] = (0, _tools.splitTeXString)(fValue);
+                        fields[fKey] = (0, _tools.splitTeXString)(fValue);
                         break;
                     case 'l_tag':
-                        _this.currentEntry['fields'][_fKey] = fValue.split(',').map(function (string) {
+                        fields[fKey] = fValue.split(',').map(function (string) {
                             return string.trim();
                         });
                         break;
                     case 'l_literal':
                         var items = (0, _tools.splitTeXString)(fValue);
-                        _this.currentEntry['fields'][_fKey] = [];
+                        fields[fKey] = [];
                         items.forEach(function (item) {
-                            _this.currentEntry['fields'][_fKey].push(_this._reformLiteral(item));
+                            fields[fKey].push(_this._reformLiteral(item));
                         });
                         break;
                     case 'l_name':
-                        _this.currentEntry['fields'][_fKey] = _this._reformNameList(fValue);
+                        fields[fKey] = _this._reformNameList(fValue);
                         break;
                     default:
                         console.warn("Unrecognized type: " + fType + "!");
                 }
-                fKey = _fKey;
             };
 
-            for (var fKey in this.currentEntry['fields']) {
-                var _ret = _loop(fKey);
+            iterateFields: for (var bKey in rawFields) {
+                var _ret = _loop(bKey);
 
-                if (_ret === "continue") continue;
+                if (_ret === "continue|iterateFields") continue iterateFields;
             }
         }
     }, {
@@ -1745,11 +1792,13 @@ var BibLatexParser = exports.BibLatexParser = function () {
             this.currentEntry = {
                 'bib_type': this.bibType(),
                 'entry_key': this.key(),
+                'raw_fields': {},
                 'fields': {}
             };
             this.entries.push(this.currentEntry);
             this.match(",");
             this.keyValueList();
+            this.processFields();
         }
     }, {
         key: "directive",

@@ -13,7 +13,7 @@ const LATEX_SPECIAL_CHARS = ['&','%','$', '#','_','{','}',',','~','^','\'']
 
 
 export class BibLatexLiteralParser {
-    constructor(stringm) {
+    constructor(string) {
         this.string = string
         this.braceLevel = 0
         this.slen = string.length
