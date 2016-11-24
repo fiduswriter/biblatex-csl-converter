@@ -1500,7 +1500,8 @@ var BibLatexParser = exports.BibLatexParser = function () {
             } else {
                 this.errors.push({
                     type: 'missing_equal_sign',
-                    key: this.input.substring(this.pos)
+                    key: this.input.substring(this.pos),
+                    entry: this.currentEntry['entry_key']
                 });
             }
         }
@@ -1524,7 +1525,10 @@ var BibLatexParser = exports.BibLatexParser = function () {
                 }
                 kv = this.keyEqualsValue();
                 if (typeof kv === 'undefined') {
-                    this.errors.push({ type: 'variable_error' });
+                    this.errors.push({
+                        type: 'variable_error',
+                        entry: this.currentEntry['entry_key']
+                    });
                     break;
                 }
                 rawFields[kv[0]] = kv[1];
