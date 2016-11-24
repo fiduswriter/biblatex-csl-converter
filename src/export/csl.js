@@ -76,7 +76,7 @@ export class CSLExporter {
                         fValues[key] = reformedTexts.join(', ')
                         break
                     case 'l_name':
-                        fValues[key] = fValue
+                        fValues[key] = this._reformName(fValue)
                         break
                     case 'l_tag':
                         fValues[key] = this._escapeHtml(fValue.join(', '))
@@ -112,7 +112,7 @@ export class CSLExporter {
                 })
             }
             // close all tags that are not present in current text node.
-            // Go through last marksd in revrse order to close innermost tags first.
+            // Go through last marksd in reverse order to close innermost tags first.
             let closing = false
             lastMarks.slice().reverse().forEach((mark, rIndex)=>{
                 let index = lastMarks.length - rIndex
@@ -143,6 +143,21 @@ export class CSLExporter {
         return html
     }
 
+    _reformName(theNames) {
+        let reformedNames = [], that = this
+        theNames.forEach((name) => {
+            let reformedName = {}
+            if (name['literal']) {
+                reformedName['literal'] = that._reformText(name['literal'])
+            } else {
+                reformedName['given'] = that._reformText(name['given'])
+                reformedName['family'] = that._reformText(name['family'])
+            }
+            reformedNames.push(reformedName)
+        })
+        return reformedNames
+    }
+
     _reformDate(theValue) {
         //reform date-field
         let dates = theValue.split('/'),
@@ -165,32 +180,6 @@ export class CSLExporter {
         return {
             'date-parts': datesValue
         }
-    }
-
-    _reformName(theValue) {
-        //reform name-field
-        let names = theValue.substring(1, theValue.length - 1).split(
-            '} and {'),
-            namesValue = [],
-            len = names.length
-        for (let i = 0; i < len; i++) {
-            let eachName = names[i]
-            let nameParts = eachName.split('} {')
-            let nameValue
-            if (nameParts.length > 1) {
-                nameValue = {
-                    'family': nameParts[1].replace(/[{}]/g, ''),
-                    'given': nameParts[0].replace(/[{}]/g, '')
-                }
-            } else {
-                nameValue = {
-                    'literal': nameParts[0].replace(/[{}]/g, '')
-                }
-            }
-            namesValue[namesValue.length] = nameValue
-        }
-
-        return namesValue
     }
 
 }

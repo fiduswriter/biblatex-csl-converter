@@ -13,7 +13,7 @@ const LATEX_SPECIAL_CHARS = ['&','%','$', '#','_','{','}',',','~','^','\'']
 
 
 export class BibLatexLiteralParser {
-    constructor(string) {
+    constructor(stringm) {
         this.string = string
         this.braceLevel = 0
         this.slen = string.length
@@ -188,10 +188,7 @@ export class BibLatexLiteralParser {
     get output() {
         let openBraces = ((this.string.match(/\{/g) || []).length),
             closeBraces = ((this.string.match(/\}/g) || []).length)
-        if (openBraces === 0 && closeBraces === 0) {
-            // There are no braces, return the original value
-            return [{type: 'text', text: this.string}]
-        } else if (openBraces != closeBraces) {
+        if (openBraces != closeBraces) {
             // There are different amount of open and close braces, so we return the original string.
             return [{type: 'text', text: this.string}]
         } else {

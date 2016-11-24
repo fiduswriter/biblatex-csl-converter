@@ -1,3 +1,5 @@
+import {BibLatexLiteralParser} from "./literal-parser"
+
 export class BibLatexNameParser {
 
     constructor(nameString) {
@@ -21,7 +23,7 @@ export class BibLatexNameParser {
         } else if (parts.length === 1) {  // First von Last
             let spacedParts = this.splitTexString(this.nameString)
             if (spacedParts.length === 1) {
-                this.nameDict['literal'] = spacedParts[0]
+                this.nameDict['literal'] = this._reformLiteral(spacedParts[0])
             } else {
                 let split = this.splitAt(spacedParts)
                 let firstMiddle = split[0]
@@ -35,7 +37,7 @@ export class BibLatexNameParser {
             }
 
         } else {
-            this.nameDict['literal'] = this.nameString
+            this.nameDict['literal'] = this._reformLiteral(this.nameString)
         }
         return this.nameDict
     }
@@ -70,12 +72,12 @@ export class BibLatexNameParser {
         if (nameStart < stringLen) {
             result.push(string.slice(nameStart))
         }
-        return result.map((string)=>{return string.replace(/^(\s|{|})+|(\s|{|})+$/g,'')})
+        return result
     }
 
     processFirstMiddle(parts) {
         this._first = this._first.concat(parts)
-        this.nameDict['given'] = this._first.join(' ')
+        this.nameDict['given'] = this._reformLiteral(this._first.join(' '))
     }
 
     processVonLast(parts, lineage=[]) {
@@ -88,7 +90,7 @@ export class BibLatexNameParser {
         this._last = this._last.concat(von)
         this._last = this._last.concat(last)
         this._last = this._last.concat(lineage)
-        this.nameDict['family'] = this._last.join(' ')
+        this.nameDict['family'] = this._reformLiteral(this._last.join(' '))
     }
 
     findFirstLowerCaseWord(lst) {
@@ -113,6 +115,11 @@ export class BibLatexNameParser {
         let rpos = this.findFirstLowerCaseWord(lst.slice().reverse())
         let pos = lst.length - rpos
         return [lst.slice(0, pos), lst.slice(pos)]
+    }
+
+    _reformLiteral(litString) {
+        let parser = new BibLatexLiteralParser(litString)
+        return parser.output
     }
 
 }

@@ -121,11 +121,11 @@ export class BibLatexExporter {
         let names = [], that = this
         theValue.forEach((name)=>{
             if (name.literal) {
-                let literal = that._escapeTeX(name.literal)
+                let literal = that._reformText(name.literal)
                 names.push(`{${literal}}`)
             } else {
-                let family = that._escapeTeX(name.family)
-                let given = that._escapeTeX(name.given)
+                let family = that._reformText(name.family)
+                let given = that._reformText(name.given)
                 names.push(`{${family}} {${given}}`)
             }
         })
