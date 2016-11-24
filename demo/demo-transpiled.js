@@ -1610,7 +1610,7 @@ var BibLatexParser = exports.BibLatexParser = function () {
                     oFields = fields;
                 } else {
                     _this.errors.push({
-                        type: 'unexpexted_field',
+                        type: 'unexpected_field',
                         entry: _this.currentEntry['entry_key'],
                         field_name: bKey
                     });

@@ -308,7 +308,7 @@ export class BibLatexParser {
                     oFields = fields
                 } else {
                     this.errors.push({
-                        type: 'unexpexted_field',
+                        type: 'unexpected_field',
                         entry: this.currentEntry['entry_key'],
                         field_name: bKey
                     })
