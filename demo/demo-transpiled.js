@@ -1520,16 +1520,6 @@ var BibLatexParser = exports.BibLatexParser = function () {
                     break;
                 }
                 rawFields[kv[0]] = kv[1];
-                /*let val = kv[1]
-                switch (kv[0]) {
-                    case 'date':
-                    case 'month':
-                    case 'year':
-                        date[kv[0]] = val
-                        break
-                    default:
-                        this.currentEntry['fields'][kv[0]] = val
-                }*/
             }
         }
     }, {
@@ -1600,10 +1590,6 @@ var BibLatexParser = exports.BibLatexParser = function () {
                     fKey = Object.keys(_const.BibFieldTypes).find(function (ft) {
                         return _const.BibFieldTypes[ft].biblatex === aliasKey;
                     });
-                    //let value = this.currentEntry['fields'][fKey]
-                    //delete this.currentEntry['fields'][fKey]
-                    //fKey = aliasKey
-                    //this.currentEntry['fields'][fKey] = value
                 } else {
                     fKey = Object.keys(_const.BibFieldTypes).find(function (ft) {
                         return _const.BibFieldTypes[ft].biblatex === bKey;
@@ -1614,11 +1600,25 @@ var BibLatexParser = exports.BibLatexParser = function () {
                     _this.errors.push({
                         type: 'unknown_field',
                         entry: _this.currentEntry['entry_key'],
-                        field_name: aliasKey ? aliasKey : bKey
+                        field_name: bKey
                     });
                     return "continue|iterateFields";
                 }
-
+                var oFields = void 0;
+                var bType = _const.BibTypes[_this.currentEntry['bib_type']];
+                if (bType['required'].includes(fKey) || bType['optional'].includes(fKey) || bType['eitheror'].includes(fKey)) {
+                    oFields = fields;
+                } else {
+                    _this.errors.push({
+                        type: 'unexpexted_field',
+                        entry: _this.currentEntry['entry_key'],
+                        field_name: bKey
+                    });
+                    if (!_this.currentEntry['unexpected_fields']) {
+                        _this.currentEntry['unexpected_fields'] = {};
+                    }
+                    oFields = _this.currentEntry['unexpected_fields'];
+                }
                 var field = _const.BibFieldTypes[fKey];
 
                 var fType = field['type'];
@@ -1631,7 +1631,7 @@ var BibLatexParser = exports.BibLatexParser = function () {
                         }
                         var _dateParts = _this._reformDate(fValue);
                         if (_dateParts) {
-                            fields[fKey] = _dateParts;
+                            oFields[fKey] = _dateParts;
                         } else {
                             _this.errors.push({
                                 type: 'unknown_date',
@@ -1642,34 +1642,34 @@ var BibLatexParser = exports.BibLatexParser = function () {
                         }
                         break;
                     case 'f_integer':
-                        fields[fKey] = _this._reformInteger(fValue);
+                        oFields[fKey] = _this._reformInteger(fValue);
                         break;
                     case 'f_key':
                         break;
                     case 'f_literal':
-                        fields[fKey] = _this._reformLiteral(fValue);
+                        oFields[fKey] = _this._reformLiteral(fValue);
                         break;
                     case 'f_range':
                     case 'f_uri':
                     case 'f_verbatim':
                         break;
                     case 'l_key':
-                        fields[fKey] = (0, _tools.splitTeXString)(fValue);
+                        oFields[fKey] = (0, _tools.splitTeXString)(fValue);
                         break;
                     case 'l_tag':
-                        fields[fKey] = fValue.split(',').map(function (string) {
+                        oFields[fKey] = fValue.split(',').map(function (string) {
                             return string.trim();
                         });
                         break;
                     case 'l_literal':
                         var items = (0, _tools.splitTeXString)(fValue);
-                        fields[fKey] = [];
+                        oFields[fKey] = [];
                         items.forEach(function (item) {
-                            fields[fKey].push(_this._reformLiteral(item));
+                            oFields[fKey].push(_this._reformLiteral(item));
                         });
                         break;
                     case 'l_name':
-                        fields[fKey] = _this._reformNameList(fValue);
+                        oFields[fKey] = _this._reformNameList(fValue);
                         break;
                     default:
                         console.warn("Unrecognized type: " + fType + "!");
@@ -1769,14 +1769,11 @@ var BibLatexParser = exports.BibLatexParser = function () {
                 biblatexType = _const2.BiblatexAliasTypes[biblatexType];
             }
 
-            var bibType = '';
-            Object.keys(_const.BibTypes).forEach(function (bType) {
-                if (_const.BibTypes[bType]['biblatex'] === biblatexType) {
-                    bibType = bType;
-                }
+            var bibType = Object.keys(_const.BibTypes).find(function (bType) {
+                return _const.BibTypes[bType]['biblatex'] === biblatexType;
             });
 
-            if (bibType === '') {
+            if (typeof bibType === 'undefined') {
                 this.errors.push({
                     type: 'unknown_type',
                     type_name: biblatexType

@@ -218,17 +218,6 @@ export class BibLatexParser {
                 break
             }
             rawFields[kv[0]] = kv[1]
-            /*let val = kv[1]
-            switch (kv[0]) {
-                case 'date':
-                case 'month':
-                case 'year':
-                    date[kv[0]] = val
-                    break
-                default:
-                    this.currentEntry['fields'][kv[0]] = val
-            }*/
-
         }
     }
 
@@ -297,10 +286,6 @@ export class BibLatexParser {
                 fKey = Object.keys(BibFieldTypes).find((ft)=>{
                     return BibFieldTypes[ft].biblatex === aliasKey
                 })
-                //let value = this.currentEntry['fields'][fKey]
-                //delete this.currentEntry['fields'][fKey]
-                //fKey = aliasKey
-                //this.currentEntry['fields'][fKey] = value
             } else {
                 fKey = Object.keys(BibFieldTypes).find((ft)=>{
                     return BibFieldTypes[ft].biblatex === bKey
@@ -311,11 +296,27 @@ export class BibLatexParser {
                 this.errors.push({
                     type: 'unknown_field',
                     entry: this.currentEntry['entry_key'],
-                    field_name: aliasKey ? aliasKey: bKey
+                    field_name: bKey
                 })
                 continue iterateFields
             }
-
+            let oFields
+            let bType = BibTypes[this.currentEntry['bib_type']]
+            if (bType['required'].includes(fKey) ||
+                bType['optional'].includes(fKey) ||
+                bType['eitheror'].includes(fKey)) {
+                    oFields = fields
+                } else {
+                    this.errors.push({
+                        type: 'unexpexted_field',
+                        entry: this.currentEntry['entry_key'],
+                        field_name: bKey
+                    })
+                    if (!this.currentEntry['unexpected_fields']) {
+                        this.currentEntry['unexpected_fields'] = {}
+                    }
+                    oFields = this.currentEntry['unexpected_fields']
+                }
             let field = BibFieldTypes[fKey]
 
             let fType = field['type']
@@ -328,7 +329,7 @@ export class BibLatexParser {
                     }
                     let dateParts = this._reformDate(fValue)
                     if (dateParts) {
-                        fields[fKey] = dateParts
+                        oFields[fKey] = dateParts
                     } else {
                         this.errors.push({
                             type: 'unknown_date',
@@ -339,32 +340,32 @@ export class BibLatexParser {
                     }
                     break
                 case 'f_integer':
-                    fields[fKey] = this._reformInteger(fValue)
+                    oFields[fKey] = this._reformInteger(fValue)
                     break
                 case 'f_key':
                     break
                 case 'f_literal':
-                    fields[fKey] = this._reformLiteral(fValue)
+                    oFields[fKey] = this._reformLiteral(fValue)
                     break
                 case 'f_range':
                 case 'f_uri':
                 case 'f_verbatim':
                     break
                 case 'l_key':
-                    fields[fKey] = splitTeXString(fValue)
+                    oFields[fKey] = splitTeXString(fValue)
                     break
                 case 'l_tag':
-                    fields[fKey] = fValue.split(',').map((string)=>{return string.trim()})
+                    oFields[fKey] = fValue.split(',').map((string)=>{return string.trim()})
                     break
                 case 'l_literal':
                     let items = splitTeXString(fValue)
-                    fields[fKey] = []
+                    oFields[fKey] = []
                     items.forEach((item) => {
-                        fields[fKey].push(this._reformLiteral(item))
+                        oFields[fKey].push(this._reformLiteral(item))
                     })
                     break
                 case 'l_name':
-                    fields[fKey] = this._reformNameList(fValue)
+                    oFields[fKey] = this._reformNameList(fValue)
                     break
                 default:
                     console.warn(`Unrecognized type: ${fType}!`)
@@ -449,14 +450,11 @@ export class BibLatexParser {
             biblatexType = BiblatexAliasTypes[biblatexType]
         }
 
-        let bibType = ''
-        Object.keys(BibTypes).forEach((bType) => {
-            if (BibTypes[bType]['biblatex'] === biblatexType) {
-                bibType = bType
-            }
+        let bibType = Object.keys(BibTypes).find((bType) => {
+            return BibTypes[bType]['biblatex'] === biblatexType
         })
 
-        if(bibType === '') {
+        if(typeof bibType === 'undefined') {
             this.errors.push({
                 type: 'unknown_type',
                 type_name: biblatexType
