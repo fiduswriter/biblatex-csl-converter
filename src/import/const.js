@@ -2633,7 +2633,7 @@ export const TeXSpecialChars = [
   ["\\\\bowtie", '\u22C8'],
   ["\\\\bigbot", '\u27D8'],
   ["\\\\cirbot", '\u27DF'],
-  ["\\\\LaTeX", 'L$^A$T$^E$X'],
+  ["\\\\LaTeX", 'L$^A$T$_E$X'],
   ["\\\\delta", '\u03B4'],
   ["\\\\image", '\u22B7'],
   ["\\\\llarc", '\u25DF'],
