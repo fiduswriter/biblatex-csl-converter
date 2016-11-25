@@ -1104,7 +1104,7 @@ var TAGS = {
     'smallcaps': { open: '<span style="font-variant: small-caps;">', close: '</span>' },
     'nocase': { open: '<span class="nocase">', close: '</span>' },
     'enquote': { open: '&ldquo;', close: '&rdquo;' },
-    'undefined': { open: '<span class="undefined">', close: '</span>' }
+    'undefined': { open: '<span class="undef-variable">', close: '</span>' }
 };
 
 var CSLExporter = exports.CSLExporter = function () {
@@ -1487,7 +1487,6 @@ var BibLatexParser = exports.BibLatexParser = function () {
                 return this.valueQuotes();
             } else {
                 var k = this.key();
-                console.log(k);
                 if (VARIABLES[k.toUpperCase()]) {
                     return VARIABLES[k.toUpperCase()];
                 } else if (k.match("^[0-9]+$")) {
