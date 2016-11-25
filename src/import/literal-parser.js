@@ -174,8 +174,8 @@ export class BibLatexLiteralParser {
                         this.si++
                         continue parseString
                     } else {
-                    // A brace was closed before it was opened. Abort and return the original string.
-                    return [{type: 'text', text: this.string}]
+                        // A brace was closed before it was opened. Abort and return the original string.
+                        return [{type: 'text', text: this.string}]
                     }
                     break
                 case '$':
@@ -202,15 +202,6 @@ export class BibLatexLiteralParser {
     }
 
     get output() {
-        let openBraces = ((this.string.match(/\{/g) || []).length),
-            closeBraces = ((this.string.match(/\}/g) || []).length)
-        if (openBraces != closeBraces) {
-            // There are different amount of open and close braces, so we return the original string.
-            return [{type: 'text', text: this.string}]
-        } else {
-            // There are the same amount of open and close braces, but we don't
-            // know if they are in the right order.
-            return this.stringParser()
-        }
+        return this.stringParser()
     }
 }
