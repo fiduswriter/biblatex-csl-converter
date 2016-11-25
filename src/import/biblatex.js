@@ -3,6 +3,7 @@ import {TeXSpecialChars, BiblatexAliasTypes, BiblatexFieldAliasTypes} from "./co
 import {BibLatexNameParser} from "./name-parser"
 import {BibLatexLiteralParser} from "./literal-parser"
 import {splitTeXString} from "./tools"
+import edtf from "edtf"
 
 // These variables are expected to be defined by some bibtex sources.
 let VARIABLES  = {
@@ -222,7 +223,7 @@ export class BibLatexParser {
             kv = this.keyEqualsValue()
             if (typeof (kv) === 'undefined') {
                 this.errors.push({
-                    type: 'variable_error',
+                    type: 'key_value_error',
                     entry: this.currentEntry['entry_key']
                 })
                 break
@@ -425,7 +426,13 @@ export class BibLatexParser {
     }
 
     _reformDate(dateStr) {
-        let that = this
+        window.edtf = edtf
+        window.md=edtf(dateStr)
+        console.log(window.md)
+
+        return md
+
+        /*let that = this
         if (dateStr.includes('/')) {
             let dateRangeParts = dateStr.split('/')
             let dateRangeArray = []
@@ -468,7 +475,7 @@ export class BibLatexParser {
             dateArray.push(theDate.getDate())
         }
 
-        return dateArray
+        return dateArray*/
 
     }
 
