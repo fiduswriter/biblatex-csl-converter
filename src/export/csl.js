@@ -12,6 +12,7 @@ const TAGS = {
     'smallcaps': {open:'<span style="font-variant: small-caps;">', close: '</span>'},
     'nocase': {open:'<span class="nocase">', close: '</span>'},
     'enquote': {open:'&ldquo;', close: '&rdquo;'},
+    'undefined': {open:'<span class="undef-variable">', close: '</span>'}
  }
 
 export class CSLExporter {
@@ -23,6 +24,7 @@ export class CSLExporter {
             this.pks = Object.keys(bibDB) // If none are selected, all keys are exporter
         }
         this.cslDB = {}
+        this.errors = []
     }
 
     get output() {
@@ -107,10 +109,21 @@ export class CSLExporter {
 
     _reformText(theValue) {
         let that = this, html = '', lastMarks = []
-        theValue.forEach((textNode)=>{
+        theValue.forEach((node)=>{
+            if (node.type === 'variable') {
+                // This is an undefined variable
+                // This should usually not happen, as CSL doesn't know what to
+                // do with these. We'll put them into an unsupported tag.
+                html += `${TAGS.undefined.open}${node.attrs.variable}${TAGS.undefined.close}`
+                this.errors.push({
+                    type: 'undefined_variable',
+                    variable: node.attrs.variable
+                })
+                return
+            }
             let newMarks = []
-            if (textNode.marks) {
-                textNode.marks.forEach((mark)=>{
+            if (node.marks) {
+                node.marks.forEach((mark)=>{
                     newMarks.push(mark.type)
                 })
             }
@@ -136,7 +149,7 @@ export class CSLExporter {
                     html += TAGS[mark].open
                 }
             })
-            html += that._escapeHtml(textNode.text)
+            html += that._escapeHtml(node.text)
             lastMarks = newMarks
         })
         // Close all still open tags

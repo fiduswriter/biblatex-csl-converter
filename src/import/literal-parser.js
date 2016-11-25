@@ -28,6 +28,13 @@ export class BibLatexLiteralParser {
         this.textNode = false
     }
 
+    // If the last text node has no content, remove it.
+    removeIfEmptyTextNode() {
+        if (this.textNode.text.length === 0) {
+            this.json.pop()
+        }
+    }
+
     checkAndAddNewTextNode() {
         if (this.textNode.text.length > 0) {
             // We have text in the last node already,
@@ -185,6 +192,18 @@ export class BibLatexLiteralParser {
                     // math env, just remove
                     this.si++
                     break
+                case '%':
+                    // An undefined variable.
+                    this.removeIfEmptyTextNode()
+                    let sj = this.si + 1
+                    while (sj < this.slen && this.string[sj] !== '%') {
+                        sj++
+                    }
+                    let variable = this.string.substring(this.si+1, sj)
+                    this.json.push({type:'variable', attrs:{variable}})
+                    this.addNewTextNode()
+                    this.si = sj + 1
+                    break
                 default:
                     this.textNode.text += this.string[this.si]
                     this.si++
@@ -196,10 +215,8 @@ export class BibLatexLiteralParser {
             return [{type: 'text', text: this.string}]
         }
 
-        // If the very last text node has no content, remove it.
-        if (this.json[this.json.length-1].text.length === 0) {
-            this.json.pop()
-        }
+        this.removeIfEmptyTextNode()
+
         // Braces were accurate.
         return this.json
     }

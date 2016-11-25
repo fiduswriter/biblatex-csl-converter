@@ -26,7 +26,7 @@ export class BibLatexExporter {
         } else {
             this.pks = Object.keys(bibDB) // If none are selected, all keys are exporter
         }
-
+        this.warnings = []
     }
 
     get output() {
@@ -151,11 +151,22 @@ export class BibLatexExporter {
 
     _reformText(theValue) {
         let that = this, latex = '', lastMarks = []
-        theValue.forEach((textNode)=>{
+        theValue.forEach((node)=>{
+            if (node.type === 'variable') {
+                // This is an undefined variable
+                // This should usually not happen, as CSL doesn't know what to
+                // do with these. We'll put them into an unsupported tag.
+                latex += `} # ${node.attrs.variable} # {`
+                this.warnings.push({
+                    type: 'undefined_variable',
+                    variable: node.attrs.variable
+                })
+                return
+            }
             let newMarks = []
-            if (textNode.marks) {
+            if (node.marks) {
                 let mathMode = false
-                textNode.marks.forEach((mark)=>{
+                node.marks.forEach((mark)=>{
                     // We need to activate mathmode for the lowest level sub/sup node.
                     if ((mark.type === 'sup' || mark.type === 'sub') && !mathMode) {
                         newMarks.push('math')
@@ -200,7 +211,7 @@ export class BibLatexExporter {
                     latex += TAGS[mark].open
                 }
             })
-            latex += that._escapeTeX(textNode.text)
+            latex += that._escapeTeX(node.text)
             lastMarks = newMarks
         })
         // Close all still open tags
@@ -218,9 +229,10 @@ export class BibLatexExporter {
                 str += '\r\n\r\n'
             }
             let data = biblist[i]
-            str += '@' + data.type + '{' + data.key
+            str += `@${data.type}{${data.key}`
             for (let vKey in data.values) {
-                str += ',\r\n' + vKey + ' = {' + data.values[vKey] + '}'
+                let value = `{${data.values[vKey]}}`.replace(/\{\} \# /g,'').replace(/\# \{\}/g,'')
+                str += `,\r\n${vKey} = ${value}`
             }
             str += "\r\n}"
         }

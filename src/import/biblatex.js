@@ -36,7 +36,7 @@ export class BibLatexParser {
         this.pos = 0
         this.entries = []
         this.bibDB = {}
-        this.currentKey = ""
+        this.currentKey = false
         this.currentEntry = false
         this.currentType = ""
         this.errors = []
@@ -145,18 +145,19 @@ export class BibLatexParser {
         } else if (this.tryMatch('"')) {
             return this.valueQuotes()
         } else {
-            let k = this.key().toLowerCase()
+            let k = this.key()
             if (VARIABLES[k.toUpperCase()]) {
                 return VARIABLES[k.toUpperCase()]
             } else if (k.match("^[0-9]+$")) {
                 return k
             } else {
-                this.errors.push({
-                    type: 'undeclared_variable',
+                this.warnings.push({
+                    type: 'undefined_variable',
                     entry: this.currentEntry['entry_key'],
-                    variable_name: k,
-                    value: this.input.substring(start)
+                    key: this.currentKey,
+                    variable: k
                 })
+                return `%${k}%` // Using % as a delimiter for variables as they cannot be used in regular latex code.
             }
         }
     }
@@ -187,15 +188,15 @@ export class BibLatexParser {
     }
 
     keyEqualsValue() {
-        let key = this.key().toLowerCase()
+        this.currentKey = this.key().toLowerCase()
         if (this.tryMatch("=")) {
             this.match("=")
             let val = this.value()
-            return [key, val]
+            return [this.currentKey, val]
         } else {
             this.errors.push({
                 type: 'missing_equal_sign',
-                key: this.input.substring(this.pos),
+                key: this.currentKey,
                 entry: this.currentEntry['entry_key']
             })
         }

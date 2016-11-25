@@ -840,6 +840,7 @@ var BibLatexExporter = exports.BibLatexExporter = function () {
         } else {
             this.pks = Object.keys(bibDB); // If none are selected, all keys are exporter
         }
+        this.warnings = [];
     }
 
     _createClass(BibLatexExporter, [{
@@ -898,15 +899,28 @@ var BibLatexExporter = exports.BibLatexExporter = function () {
     }, {
         key: "_reformText",
         value: function _reformText(theValue) {
+            var _this = this;
+
             var that = this,
                 latex = '',
                 lastMarks = [];
-            theValue.forEach(function (textNode) {
+            theValue.forEach(function (node) {
+                if (node.type === 'variable') {
+                    // This is an undefined variable
+                    // This should usually not happen, as CSL doesn't know what to
+                    // do with these. We'll put them into an unsupported tag.
+                    latex += "} # " + node.attrs.variable + " # {";
+                    _this.warnings.push({
+                        type: 'undefined_variable',
+                        variable: node.attrs.variable
+                    });
+                    return;
+                }
                 var newMarks = [];
-                if (textNode.marks) {
+                if (node.marks) {
                     (function () {
                         var mathMode = false;
-                        textNode.marks.forEach(function (mark) {
+                        node.marks.forEach(function (mark) {
                             // We need to activate mathmode for the lowest level sub/sup node.
                             if ((mark.type === 'sup' || mark.type === 'sub') && !mathMode) {
                                 newMarks.push('math');
@@ -951,7 +965,7 @@ var BibLatexExporter = exports.BibLatexExporter = function () {
                         latex += TAGS[mark].open;
                     }
                 });
-                latex += that._escapeTeX(textNode.text);
+                latex += that._escapeTeX(node.text);
                 lastMarks = newMarks;
             });
             // Close all still open tags
@@ -970,9 +984,10 @@ var BibLatexExporter = exports.BibLatexExporter = function () {
                     str += '\r\n\r\n';
                 }
                 var data = biblist[i];
-                str += '@' + data.type + '{' + data.key;
+                str += "@" + data.type + "{" + data.key;
                 for (var vKey in data.values) {
-                    str += ',\r\n' + vKey + ' = {' + data.values[vKey] + '}';
+                    var value = ("{" + data.values[vKey] + "}").replace(/\{\} \# /g, '').replace(/\# \{\}/g, '');
+                    str += ",\r\n" + vKey + " = " + value;
                 }
                 str += "\r\n}";
             }
@@ -1088,7 +1103,8 @@ var TAGS = {
     'sup': { open: '<sup>', close: '</sup>' },
     'smallcaps': { open: '<span style="font-variant: small-caps;">', close: '</span>' },
     'nocase': { open: '<span class="nocase">', close: '</span>' },
-    'enquote': { open: '&ldquo;', close: '&rdquo;' }
+    'enquote': { open: '&ldquo;', close: '&rdquo;' },
+    'undefined': { open: '<span class="undefined">', close: '</span>' }
 };
 
 var CSLExporter = exports.CSLExporter = function () {
@@ -1102,6 +1118,7 @@ var CSLExporter = exports.CSLExporter = function () {
             this.pks = Object.keys(bibDB); // If none are selected, all keys are exporter
         }
         this.cslDB = {};
+        this.errors = [];
     }
 
     _createClass(CSLExporter, [{
@@ -1185,13 +1202,26 @@ var CSLExporter = exports.CSLExporter = function () {
     }, {
         key: '_reformText',
         value: function _reformText(theValue) {
+            var _this2 = this;
+
             var that = this,
                 html = '',
                 lastMarks = [];
-            theValue.forEach(function (textNode) {
+            theValue.forEach(function (node) {
+                if (node.type === 'variable') {
+                    // This is an undefined variable
+                    // This should usually not happen, as CSL doesn't know what to
+                    // do with these. We'll put them into an unsupported tag.
+                    html += '' + TAGS.undefined.open + node.attrs.variable + TAGS.undefined.close;
+                    _this2.errors.push({
+                        type: 'undefined_variable',
+                        variable: node.attrs.variable
+                    });
+                    return;
+                }
                 var newMarks = [];
-                if (textNode.marks) {
-                    textNode.marks.forEach(function (mark) {
+                if (node.marks) {
+                    node.marks.forEach(function (mark) {
                         newMarks.push(mark.type);
                     });
                 }
@@ -1217,7 +1247,7 @@ var CSLExporter = exports.CSLExporter = function () {
                         html += TAGS[mark].open;
                     }
                 });
-                html += that._escapeHtml(textNode.text);
+                html += that._escapeHtml(node.text);
                 lastMarks = newMarks;
             });
             // Close all still open tags
@@ -1342,7 +1372,7 @@ var BibLatexParser = exports.BibLatexParser = function () {
         this.pos = 0;
         this.entries = [];
         this.bibDB = {};
-        this.currentKey = "";
+        this.currentKey = false;
         this.currentEntry = false;
         this.currentType = "";
         this.errors = [];
@@ -1456,18 +1486,20 @@ var BibLatexParser = exports.BibLatexParser = function () {
             } else if (this.tryMatch('"')) {
                 return this.valueQuotes();
             } else {
-                var k = this.key().toLowerCase();
+                var k = this.key();
+                console.log(k);
                 if (VARIABLES[k.toUpperCase()]) {
                     return VARIABLES[k.toUpperCase()];
                 } else if (k.match("^[0-9]+$")) {
                     return k;
                 } else {
-                    this.errors.push({
-                        type: 'undeclared_variable',
+                    this.warnings.push({
+                        type: 'undefined_variable',
                         entry: this.currentEntry['entry_key'],
-                        variable_name: k,
-                        value: this.input.substring(start)
+                        key: this.currentKey,
+                        variable: k
                     });
+                    return "%" + k + "%"; // Using % as a delimiter for variables as they cannot be used in regular latex code.
                 }
             }
         }
@@ -1501,15 +1533,15 @@ var BibLatexParser = exports.BibLatexParser = function () {
     }, {
         key: "keyEqualsValue",
         value: function keyEqualsValue() {
-            var key = this.key().toLowerCase();
+            this.currentKey = this.key().toLowerCase();
             if (this.tryMatch("=")) {
                 this.match("=");
                 var val = this.value();
-                return [key, val];
+                return [this.currentKey, val];
             } else {
                 this.errors.push({
                     type: 'missing_equal_sign',
-                    key: this.input.substring(this.pos),
+                    key: this.currentKey,
                     entry: this.currentEntry['entry_key']
                 });
             }
@@ -1970,7 +2002,17 @@ var BibLatexLiteralParser = exports.BibLatexLiteralParser = function () {
         this.textNode = false;
     }
 
+    // If the last text node has no content, remove it.
+
+
     _createClass(BibLatexLiteralParser, [{
+        key: 'removeIfEmptyTextNode',
+        value: function removeIfEmptyTextNode() {
+            if (this.textNode.text.length === 0) {
+                this.json.pop();
+            }
+        }
+    }, {
         key: 'checkAndAddNewTextNode',
         value: function checkAndAddNewTextNode() {
             if (this.textNode.text.length > 0) {
@@ -2149,6 +2191,18 @@ var BibLatexLiteralParser = exports.BibLatexLiteralParser = function () {
                         // math env, just remove
                         this.si++;
                         break;
+                    case '%':
+                        // An undefined variable.
+                        this.removeIfEmptyTextNode();
+                        var sj = this.si + 1;
+                        while (sj < this.slen && this.string[sj] !== '%') {
+                            sj++;
+                        }
+                        var variable = this.string.substring(this.si + 1, sj);
+                        this.json.push({ type: 'variable', attrs: { variable: variable } });
+                        this.addNewTextNode();
+                        this.si = sj + 1;
+                        break;
                     default:
                         this.textNode.text += this.string[this.si];
                         this.si++;
@@ -2160,10 +2214,8 @@ var BibLatexLiteralParser = exports.BibLatexLiteralParser = function () {
                 return [{ type: 'text', text: this.string }];
             }
 
-            // If the very last text node has no content, remove it.
-            if (this.json[this.json.length - 1].text.length === 0) {
-                this.json.pop();
-            }
+            this.removeIfEmptyTextNode();
+
             // Braces were accurate.
             return this.json;
         }
