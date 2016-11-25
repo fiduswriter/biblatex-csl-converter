@@ -55,7 +55,7 @@ export class BibLatexParser {
             this.errors.push({
                 type: 'token_mismatch',
                 expected: s,
-                found: this.input.substring(this.pos)
+                found: this.input.substring(this.pos, this.pos + s.length)
             })
         }
         this.skipWhitespace()
