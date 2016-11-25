@@ -152,16 +152,16 @@ var BibFieldTypes = exports.BibFieldTypes = {
         localization: 'pagination'
     },
     'booksubtitle': {
-        type: 'f_literal',
+        type: 'f_title',
         biblatex: 'booksubtitle'
     },
     'booktitle': {
-        type: 'f_literal',
+        type: 'f_title',
         biblatex: 'booktitle',
         csl: 'container-title'
     },
     'booktitleaddon': {
-        type: 'f_literal',
+        type: 'f_title',
         biblatex: 'booktitleaddon'
     },
     'chapter': {
@@ -247,7 +247,7 @@ var BibFieldTypes = exports.BibFieldTypes = {
         csl: 'event-date'
     },
     'eventtitle': {
-        type: 'f_literal',
+        type: 'f_title',
         biblatex: 'eventtitle',
         csl: 'event'
     },
@@ -351,15 +351,15 @@ var BibFieldTypes = exports.BibFieldTypes = {
         csl: 'publisher-place'
     },
     'mainsubtitle': {
-        type: 'f_literal',
+        type: 'f_title',
         biblatex: 'mainsubtitle'
     },
     'maintitle': {
-        type: 'f_literal',
+        type: 'f_title',
         biblatex: 'maintitle'
     },
     'maintitleaddon': {
-        type: 'f_literal',
+        type: 'f_title',
         biblatex: 'maintitleaddon'
     },
     'nameaddon': {
@@ -400,7 +400,7 @@ var BibFieldTypes = exports.BibFieldTypes = {
         csl: 'original-publisher'
     },
     'origtitle': {
-        type: 'f_literal',
+        type: 'f_title',
         biblatex: 'origtitle',
         csl: 'original-title'
     },
@@ -474,16 +474,16 @@ var BibFieldTypes = exports.BibFieldTypes = {
         csl: 'title-short'
     },
     'subtitle': {
-        type: 'f_literal',
+        type: 'f_title',
         biblatex: 'subtitle'
     },
     'title': {
-        type: 'f_literal',
+        type: 'f_title',
         biblatex: 'title',
         csl: 'title'
     },
     'titleaddon': {
-        type: 'f_literal',
+        type: 'f_title',
         biblatex: 'titleaddon'
     },
     'translator': {
@@ -1018,6 +1018,9 @@ var BibLatexExporter = exports.BibLatexExporter = function () {
                         case 'f_range':
                             fValues[key] = this._escapeTeX(fValue);
                             break;
+                        case 'f_title':
+                            fValues[key] = this._reformText(fValue);
+                            break;
                         case 'f_uri':
                         case 'f_verbatim':
                             fValues[key] = this._escapeTeX(fValue);
@@ -1136,6 +1139,9 @@ var CSLExporter = exports.CSLExporter = function () {
                                 break;
                             case 'f_range':
                                 fValues[key] = _this._escapeHtml(fValue);
+                                break;
+                            case 'f_title':
+                                fValues[key] = _this._reformText(fValue);
                                 break;
                             case 'f_uri':
                             case 'f_verbatim':
@@ -1582,6 +1588,21 @@ var BibLatexParser = exports.BibLatexParser = function () {
                 }
             }
 
+            // Check for English language. If the citation is in English language,
+            // titles may use case preservation.
+            var langEnglish = true; // By default we assume everything to be written in English.
+            if (rawFields.language && rawFields.language.length) {
+                (function () {
+                    var lang = rawFields.language.toLowerCase();
+                    var englishOptions = ['american', 'british', 'canadian', 'english', 'australian', 'newzealand', 'usenglish', 'ukenglish'];
+                    if (!englishOptions.some(function (option) {
+                        return lang.includes(option);
+                    })) {
+                        langEnglish = false;
+                    }
+                })();
+            }
+
             var _loop = function _loop(bKey) {
 
                 if (bKey === 'date' || ['year', 'month'].includes(bKey) && !_this.config.parseUnknown) {
@@ -1676,6 +1697,10 @@ var BibLatexParser = exports.BibLatexParser = function () {
                         oFields[fKey] = _this._reformLiteral(fValue);
                         break;
                     case 'f_range':
+                        break;
+                    case 'f_title':
+                        oFields[fKey] = _this._reformLiteral(fValue, langEnglish);
+                        break;
                     case 'f_uri':
                     case 'f_verbatim':
                         break;
@@ -1703,9 +1728,9 @@ var BibLatexParser = exports.BibLatexParser = function () {
             };
 
             iterateFields: for (var bKey in rawFields) {
-                var _ret = _loop(bKey);
+                var _ret2 = _loop(bKey);
 
-                if (_ret === "continue|iterateFields") continue iterateFields;
+                if (_ret2 === "continue|iterateFields") continue iterateFields;
             }
         }
     }, {
@@ -1722,7 +1747,7 @@ var BibLatexParser = exports.BibLatexParser = function () {
         value: function _reformDate(dateStr) {
             var that = this;
             if (dateStr.includes('/')) {
-                var _ret2 = function () {
+                var _ret3 = function () {
                     var dateRangeParts = dateStr.split('/');
                     var dateRangeArray = [];
                     dateRangeParts.forEach(function (dateRangePart) {
@@ -1743,7 +1768,7 @@ var BibLatexParser = exports.BibLatexParser = function () {
                     };
                 }();
 
-                if ((typeof _ret2 === "undefined" ? "undefined" : _typeof(_ret2)) === "object") return _ret2.v;
+                if ((typeof _ret3 === "undefined" ? "undefined" : _typeof(_ret3)) === "object") return _ret3.v;
             }
             var month = true,
                 day = true;
@@ -1774,8 +1799,8 @@ var BibLatexParser = exports.BibLatexParser = function () {
         }
     }, {
         key: "_reformLiteral",
-        value: function _reformLiteral(theValue) {
-            var parser = new _literalParser.BibLatexLiteralParser(theValue);
+        value: function _reformLiteral(theValue, cpMode) {
+            var parser = new _literalParser.BibLatexLiteralParser(theValue, cpMode);
             return parser.output;
         }
     }, {
@@ -1921,9 +1946,12 @@ var LATEX_SPECIAL_CHARS = ['&', '%', '$', '#', '_', '{', '}', ',', '~', '^', '\'
 
 var BibLatexLiteralParser = exports.BibLatexLiteralParser = function () {
     function BibLatexLiteralParser(string) {
+        var cpMode = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+
         _classCallCheck(this, BibLatexLiteralParser);
 
         this.string = string;
+        this.cpMode = cpMode; // Whether to consider case preservation.
         this.braceLevel = 0;
         this.slen = string.length;
         this.si = 0; // string index
@@ -1969,16 +1997,18 @@ var BibLatexLiteralParser = exports.BibLatexLiteralParser = function () {
                                     this.braceLevel++;
                                     this.si += command[0].length;
                                     this.checkAndAddNewTextNode();
-                                    // If immediately inside a brace that added case protection, remove case protection. See
-                                    // http://tex.stackexchange.com/questions/276943/biblatex-how-to-emphasize-but-not-caps-protect
-                                    if (this.inCasePreserve === this.braceLevel - 1 && this.string[this.si - 1] === '{' && this.currentMarks[this.currentMarks.length - 1].type === 'nocase') {
-                                        this.currentMarks.pop();
-                                        this.inCasePreserve = false;
-                                    } else {
-                                        // Of not immediately inside a brace, any styling also
-                                        // adds case protection.
-                                        this.currentMarks.push({ type: 'nocase' });
-                                        this.inCasePreserve = this.braceLevel;
+                                    if (this.cpMode) {
+                                        // If immediately inside a brace that added case protection, remove case protection. See
+                                        // http://tex.stackexchange.com/questions/276943/biblatex-how-to-emphasize-but-not-caps-protect
+                                        if (this.inCasePreserve === this.braceLevel - 1 && this.string[this.si - 1] === '{' && this.currentMarks[this.currentMarks.length - 1].type === 'nocase') {
+                                            this.currentMarks.pop();
+                                            this.inCasePreserve = false;
+                                        } else {
+                                            // Of not immediately inside a brace, any styling also
+                                            // adds case protection.
+                                            this.currentMarks.push({ type: 'nocase' });
+                                            this.inCasePreserve = this.braceLevel;
+                                        }
                                     }
                                     this.currentMarks.push({ type: command[1] });
                                     this.textNode.marks = this.currentMarks.slice();
@@ -2069,7 +2099,7 @@ var BibLatexLiteralParser = exports.BibLatexLiteralParser = function () {
                         break;
                     case '{':
                         this.braceLevel++;
-                        if (this.inCasePreserve) {
+                        if (this.inCasePreserve || !this.cpMode) {
                             // If already inside case preservation, do not add a second
                             this.braceClosings.push(false);
                         } else {

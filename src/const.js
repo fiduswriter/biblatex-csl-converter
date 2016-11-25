@@ -41,16 +41,16 @@ export const BibFieldTypes = {
         localization: 'pagination'
     },
     'booksubtitle': {
-        type: 'f_literal',
+        type: 'f_title',
         biblatex: 'booksubtitle'
     },
     'booktitle': {
-        type: 'f_literal',
+        type: 'f_title',
         biblatex: 'booktitle',
         csl: 'container-title'
     },
     'booktitleaddon': {
-        type: 'f_literal',
+        type: 'f_title',
         biblatex: 'booktitleaddon'
     },
     'chapter': {
@@ -136,7 +136,7 @@ export const BibFieldTypes = {
         csl: 'event-date'
     },
     'eventtitle': {
-        type: 'f_literal',
+        type: 'f_title',
         biblatex: 'eventtitle',
         csl: 'event'
     },
@@ -240,15 +240,15 @@ export const BibFieldTypes = {
         csl: 'publisher-place'
     },
     'mainsubtitle': {
-        type: 'f_literal',
+        type: 'f_title',
         biblatex: 'mainsubtitle'
     },
     'maintitle': {
-        type: 'f_literal',
+        type: 'f_title',
         biblatex: 'maintitle'
     },
     'maintitleaddon': {
-        type: 'f_literal',
+        type: 'f_title',
         biblatex: 'maintitleaddon'
     },
     'nameaddon': {
@@ -289,7 +289,7 @@ export const BibFieldTypes = {
         csl: 'original-publisher'
     },
     'origtitle': {
-        type: 'f_literal',
+        type: 'f_title',
         biblatex: 'origtitle',
         csl: 'original-title'
     },
@@ -363,16 +363,16 @@ export const BibFieldTypes = {
         csl: 'title-short'
     },
     'subtitle': {
-        type: 'f_literal',
+        type: 'f_title',
         biblatex: 'subtitle'
     },
     'title': {
-        type: 'f_literal',
+        type: 'f_title',
         biblatex: 'title',
         csl: 'title'
     },
     'titleaddon': {
-        type: 'f_literal',
+        type: 'f_title',
         biblatex: 'titleaddon'
     },
     'translator': {

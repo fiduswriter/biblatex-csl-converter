@@ -269,8 +269,16 @@ export class BibLatexParser {
             }
         }
 
-
-
+        // Check for English language. If the citation is in English language,
+        // titles may use case preservation.
+        let langEnglish = true // By default we assume everything to be written in English.
+        if (rawFields.language && rawFields.language.length) {
+            let lang = rawFields.language.toLowerCase()
+            let englishOptions = ['american', 'british', 'canadian', 'english', 'australian', 'newzealand', 'usenglish', 'ukenglish']
+            if (!englishOptions.some((option)=>{return lang.includes(option)})) {
+                langEnglish = false
+            }
+        }
 
         iterateFields: for(let bKey in rawFields) {
 
@@ -369,6 +377,10 @@ export class BibLatexParser {
                     oFields[fKey] = this._reformLiteral(fValue)
                     break
                 case 'f_range':
+                    break
+                case 'f_title':
+                    oFields[fKey] = this._reformLiteral(fValue, langEnglish)
+                    break
                 case 'f_uri':
                 case 'f_verbatim':
                     break
@@ -452,8 +464,8 @@ export class BibLatexParser {
     }
 
 
-    _reformLiteral(theValue) {
-        let parser = new BibLatexLiteralParser(theValue)
+    _reformLiteral(theValue, cpMode) {
+        let parser = new BibLatexLiteralParser(theValue, cpMode)
         return parser.output
     }
 

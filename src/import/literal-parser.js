@@ -15,8 +15,9 @@ const LATEX_SPECIAL_CHARS = ['&','%','$', '#','_','{','}',',','~','^','\'']
 
 
 export class BibLatexLiteralParser {
-    constructor(string) {
+    constructor(string, cpMode = false) {
         this.string = string
+        this.cpMode = cpMode // Whether to consider case preservation.
         this.braceLevel = 0
         this.slen = string.length
         this.si = 0 // string index
@@ -51,20 +52,22 @@ export class BibLatexLiteralParser {
                             this.braceLevel++
                             this.si += command[0].length
                             this.checkAndAddNewTextNode()
-                            // If immediately inside a brace that added case protection, remove case protection. See
-                            // http://tex.stackexchange.com/questions/276943/biblatex-how-to-emphasize-but-not-caps-protect
-                            if (
-                                this.inCasePreserve===(this.braceLevel-1) &&
-                                this.string[this.si-1] === '{' &&
-                                this.currentMarks[this.currentMarks.length-1].type === 'nocase'
-                            ) {
-                                this.currentMarks.pop()
-                                this.inCasePreserve = false
-                            } else {
-                                // Of not immediately inside a brace, any styling also
-                                // adds case protection.
-                                this.currentMarks.push({type:'nocase'})
-                                this.inCasePreserve = this.braceLevel
+                            if (this.cpMode) {
+                                // If immediately inside a brace that added case protection, remove case protection. See
+                                // http://tex.stackexchange.com/questions/276943/biblatex-how-to-emphasize-but-not-caps-protect
+                                if (
+                                    this.inCasePreserve===(this.braceLevel-1) &&
+                                    this.string[this.si-1] === '{' &&
+                                    this.currentMarks[this.currentMarks.length-1].type === 'nocase'
+                                ) {
+                                    this.currentMarks.pop()
+                                    this.inCasePreserve = false
+                                } else {
+                                    // Of not immediately inside a brace, any styling also
+                                    // adds case protection.
+                                    this.currentMarks.push({type:'nocase'})
+                                    this.inCasePreserve = this.braceLevel
+                                }
                             }
                             this.currentMarks.push({type:command[1]})
                             this.textNode.marks = this.currentMarks.slice()
@@ -140,7 +143,7 @@ export class BibLatexLiteralParser {
                     break
                 case '{':
                     this.braceLevel++
-                    if (this.inCasePreserve) {
+                    if (this.inCasePreserve || !this.cpMode) {
                         // If already inside case preservation, do not add a second
                         this.braceClosings.push(false)
                     } else {

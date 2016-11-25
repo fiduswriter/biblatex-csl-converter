@@ -61,6 +61,9 @@ export class CSLExporter {
                     case 'f_range':
                         fValues[key] = this._escapeHtml(fValue)
                         break
+                    case 'f_title':
+                        fValues[key] = this._reformText(fValue)
+                        break
                     case 'f_uri':
                     case 'f_verbatim':
                         fValues[key] = this._escapeHtml(fValue)
