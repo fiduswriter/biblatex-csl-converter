@@ -2233,7 +2233,7 @@ var BibLatexNameParser = exports.BibLatexNameParser = function () {
         key: 'processFirstMiddle',
         value: function processFirstMiddle(parts) {
             this._first = this._first.concat(parts);
-            this.nameDict['given'] = this._reformLiteral(this._first.join(' '));
+            this.nameDict['given'] = this._reformLiteral(this._first.join(' ').trim());
         }
     }, {
         key: 'processVonLast',
@@ -2249,7 +2249,7 @@ var BibLatexNameParser = exports.BibLatexNameParser = function () {
             this._last = this._last.concat(von);
             this._last = this._last.concat(last);
             this._last = this._last.concat(lineage);
-            this.nameDict['family'] = this._reformLiteral(this._last.join(' '));
+            this.nameDict['family'] = this._reformLiteral(this._last.join(' ').trim());
         }
     }, {
         key: 'findFirstLowerCaseWord',
@@ -2300,7 +2300,7 @@ var BibLatexNameParser = exports.BibLatexNameParser = function () {
                 // First von Last
                 var spacedParts = this.splitTexString(this.nameString);
                 if (spacedParts.length === 1) {
-                    this.nameDict['literal'] = this._reformLiteral(spacedParts[0]);
+                    this.nameDict['literal'] = this._reformLiteral(spacedParts[0].trim());
                 } else {
                     var split = this.splitAt(spacedParts);
                     var firstMiddle = split[0];
@@ -2313,7 +2313,7 @@ var BibLatexNameParser = exports.BibLatexNameParser = function () {
                     this.processVonLast(vonLast);
                 }
             } else {
-                this.nameDict['literal'] = this._reformLiteral(this.nameString);
+                this.nameDict['literal'] = this._reformLiteral(this.nameString.trim());
             }
             return this.nameDict;
         }
