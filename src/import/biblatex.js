@@ -40,6 +40,7 @@ export class BibLatexParser {
         this.currentEntry = false
         this.currentType = ""
         this.errors = []
+        this.warnings = []
     }
 
     isWhitespace(s) {
@@ -151,7 +152,9 @@ export class BibLatexParser {
                 return k
             } else {
                 this.errors.push({
-                    type: 'value_unexpected',
+                    type: 'undeclared_variable',
+                    entry: this.currentEntry['entry_key'],
+                    variable_name: k,
                     value: this.input.substring(start)
                 })
             }
@@ -249,18 +252,22 @@ export class BibLatexParser {
             if (dateParts) {
                 fields['date'] = dateParts
             } else {
-                let field_name, value
+                let field_name, value, error_list
                 if (rawFields.date) {
                     field_name = 'date'
                     value = rawFields.date
+                    error_list = this.errors
                 } else if (rawFields.year && rawFields.month) {
                     field_name = 'year,month'
                     value = [rawFields.year, rawFields.month]
+                    error_list = this.warnings
                 } else {
                     field_name = 'year'
                     value = rawFields.year
+                    error_list = this.warnings
                 }
-                this.errors.push({
+
+                error_list.push({
                     type: 'unknown_date',
                     entry: this.currentEntry['entry_key'],
                     field_name,
@@ -291,7 +298,7 @@ export class BibLatexParser {
             let aliasKey = BiblatexFieldAliasTypes[bKey], fKey
             if (aliasKey) {
                 if (rawFields[aliasKey]) {
-                    this.errors.push({
+                    this.warnings.push({
                         type: 'alias_creates_duplicate_field',
                         entry: this.currentEntry['entry_key'],
                         field: bKey,
@@ -315,7 +322,7 @@ export class BibLatexParser {
             let bType = BibTypes[this.currentEntry['bib_type']]
 
             if('undefined' == typeof(fKey)) {
-                this.errors.push({
+                this.warnings.push({
                     type: 'unknown_field',
                     entry: this.currentEntry['entry_key'],
                     field_name: bKey
@@ -337,7 +344,7 @@ export class BibLatexParser {
                 oFields = fields
                 fType = BibFieldTypes[fKey]['type']
             } else {
-                this.errors.push({
+                this.warnings.push({
                     type: 'unexpected_field',
                     entry: this.currentEntry['entry_key'],
                     field_name: bKey

@@ -1346,6 +1346,7 @@ var BibLatexParser = exports.BibLatexParser = function () {
         this.currentEntry = false;
         this.currentType = "";
         this.errors = [];
+        this.warnings = [];
     }
 
     _createClass(BibLatexParser, [{
@@ -1462,7 +1463,9 @@ var BibLatexParser = exports.BibLatexParser = function () {
                     return k;
                 } else {
                     this.errors.push({
-                        type: 'value_unexpected',
+                        type: 'undeclared_variable',
+                        entry: this.currentEntry['entry_key'],
+                        variable_name: k,
                         value: this.input.substring(start)
                     });
                 }
@@ -1568,18 +1571,23 @@ var BibLatexParser = exports.BibLatexParser = function () {
                     fields['date'] = dateParts;
                 } else {
                     var field_name = void 0,
-                        value = void 0;
+                        value = void 0,
+                        error_list = void 0;
                     if (rawFields.date) {
                         field_name = 'date';
                         value = rawFields.date;
+                        error_list = this.errors;
                     } else if (rawFields.year && rawFields.month) {
                         field_name = 'year,month';
                         value = [rawFields.year, rawFields.month];
+                        error_list = this.warnings;
                     } else {
                         field_name = 'year';
                         value = rawFields.year;
+                        error_list = this.warnings;
                     }
-                    this.errors.push({
+
+                    error_list.push({
                         type: 'unknown_date',
                         entry: this.currentEntry['entry_key'],
                         field_name: field_name,
@@ -1615,7 +1623,7 @@ var BibLatexParser = exports.BibLatexParser = function () {
                     fKey = void 0;
                 if (aliasKey) {
                     if (rawFields[aliasKey]) {
-                        _this.errors.push({
+                        _this.warnings.push({
                             type: 'alias_creates_duplicate_field',
                             entry: _this.currentEntry['entry_key'],
                             field: bKey,
@@ -1640,7 +1648,7 @@ var BibLatexParser = exports.BibLatexParser = function () {
                 var bType = _const.BibTypes[_this.currentEntry['bib_type']];
 
                 if ('undefined' == typeof fKey) {
-                    _this.errors.push({
+                    _this.warnings.push({
                         type: 'unknown_field',
                         entry: _this.currentEntry['entry_key'],
                         field_name: bKey
@@ -1658,7 +1666,7 @@ var BibLatexParser = exports.BibLatexParser = function () {
                     oFields = fields;
                     fType = _const.BibFieldTypes[fKey]['type'];
                 } else {
-                    _this.errors.push({
+                    _this.warnings.push({
                         type: 'unexpected_field',
                         entry: _this.currentEntry['entry_key'],
                         field_name: bKey
