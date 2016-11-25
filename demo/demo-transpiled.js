@@ -1391,10 +1391,11 @@ var BibLatexParser = exports.BibLatexParser = function () {
             if (this.input.substring(this.pos, this.pos + s.length) == s) {
                 this.pos += s.length;
             } else {
+
                 this.errors.push({
                     type: 'token_mismatch',
                     expected: s,
-                    found: this.input.substring(this.pos)
+                    found: this.input.substring(this.pos, this.pos + s.length)
                 });
             }
             this.skipWhitespace();
@@ -1912,7 +1913,7 @@ var BibLatexParser = exports.BibLatexParser = function () {
             var len = _const2.TeXSpecialChars.length;
             for (var i = 0; i < len; i++) {
                 var texChar = _const2.TeXSpecialChars[i];
-                var texCharRe = new RegExp("{" + texChar[0] + "}|" + texChar[0], 'g');
+                var texCharRe = new RegExp("{(" + texChar[0] + ")}|" + texChar[0], 'g');
                 value = value.replace(texCharRe, texChar[1]);
             }
             // Delete multiple spaces

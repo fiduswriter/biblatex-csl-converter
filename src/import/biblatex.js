@@ -52,6 +52,7 @@ export class BibLatexParser {
         if (this.input.substring(this.pos, this.pos + s.length) == s) {
             this.pos += s.length
         } else {
+
             this.errors.push({
                 type: 'token_mismatch',
                 expected: s,
@@ -540,7 +541,7 @@ export class BibLatexParser {
         let len = TeXSpecialChars.length
         for (let i = 0; i < len; i++) {
             let texChar = TeXSpecialChars[i]
-            let texCharRe = new RegExp(`{${texChar[0]}}|${texChar[0]}`,'g')
+            let texCharRe = new RegExp(`{(${texChar[0]})}|${texChar[0]}`,'g')
             value = value.replace(texCharRe, texChar[1])
         }
         // Delete multiple spaces
