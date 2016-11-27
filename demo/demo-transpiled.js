@@ -5363,10 +5363,11 @@ var BibLatexExporter = exports.BibLatexExporter = function () {
                     var literal = that._reformText(name.literal);
                     names.push("{" + literal + "}");
                 } else {
-                    var family = that._reformText(name.family);
-                    var given = that._reformText(name.given);
+                    var family = name.family ? that._reformText(name.family) : '';
+                    var given = name.given ? that._reformText(name.given) : '';
                     var suffix = name.suffix ? that._reformText(name.suffix) : false;
                     var prefix = name.prefix ? that._reformText(name.prefix) : false;
+                    var useprefix = name.useprefix ? name.useprefix : false;
                     if (that.config.traditionalNames) {
                         if (suffix && prefix) {
                             names.push("{" + prefix + " " + family + "}, {" + suffix + "}, {" + given + "}");
@@ -5378,18 +5379,34 @@ var BibLatexExporter = exports.BibLatexExporter = function () {
                             names.push("{" + family + "}, {" + given + "}");
                         }
                     } else {
-                        var nameString = "given={" + given + "}, family={" + family + "}";
+                        var nameParts = [];
+                        if (given.length) {
+                            nameParts.push(that._protectNamePart("given={" + given + "}"));
+                        }
+                        if (family.length) {
+                            nameParts.push(that._protectNamePart("family={" + family + "}"));
+                        }
                         if (suffix) {
-                            nameString += ", suffix={" + suffix + "}";
+                            nameParts.push(that._protectNamePart("suffix={" + suffix + "}"));
                         }
                         if (prefix) {
-                            nameString += ", prefix={" + prefix + "}, useprefix=" + name.useprefix;
+                            nameParts.push(that._protectNamePart("prefix={" + prefix + "}"));
+                            nameParts.push("useprefix=" + name.useprefix);
                         }
-                        names.push("{" + nameString + "}");
+                        names.push("{" + nameParts.join(', ') + "}");
                     }
                 }
             });
             return names.join(' and ');
+        }
+    }, {
+        key: "_protectNamePart",
+        value: function _protectNamePart(namePart) {
+            if (namePart.includes(',')) {
+                return "\"" + namePart + "\"";
+            } else {
+                return namePart;
+            }
         }
     }, {
         key: "_escapeTeX",
@@ -6775,7 +6792,7 @@ var BibLatexNameParser = exports.BibLatexNameParser = function () {
 
             var that = this;
             parts.forEach(function (part) {
-                var attrParts = part.split('=');
+                var attrParts = part.trim().replace(/^\"|\"$/g, '').split('=');
                 var attrName = attrParts.shift().trim().toLowerCase();
                 if (['family', 'given', 'prefix', 'suffix'].includes(attrName)) {
                     _this.nameDict[attrName] = that._reformLiteral(attrParts.join('=').trim());
@@ -6797,6 +6814,7 @@ var BibLatexNameParser = exports.BibLatexNameParser = function () {
             //    sep =
             //}
             var braceLevel = 0;
+            var inQuotes = false;
             var nameStart = 0;
             var result = [];
             var stringLen = string.length;
@@ -6810,12 +6828,15 @@ var BibLatexNameParser = exports.BibLatexNameParser = function () {
                     case '}':
                         braceLevel -= 1;
                         break;
+                    case '"':
+                        inQuotes = !inQuotes;
+                        break;
                     case '\\':
                         // skip next
                         pos++;
                         break;
                     default:
-                        if (braceLevel === 0 && pos > 0) {
+                        if (braceLevel === 0 && inQuotes === false && pos > 0) {
                             var match = string.slice(pos).match(RegExp('^' + sep));
                             if (match) {
                                 var sepLen = match[0].length;

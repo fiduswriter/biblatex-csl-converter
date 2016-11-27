@@ -47,7 +47,7 @@ export class BibLatexNameParser {
     parseExtendedName(parts) {
         let that = this
         parts.forEach((part)=>{
-            let attrParts = part.split('=')
+            let attrParts = part.trim().replace(/^\"|\"$/g,'').split('=')
             let attrName = attrParts.shift().trim().toLowerCase()
             if (['family', 'given', 'prefix', 'suffix'].includes(attrName)) {
                 this.nameDict[attrName] = that._reformLiteral(attrParts.join('=').trim())
@@ -71,6 +71,7 @@ export class BibLatexNameParser {
         //    sep =
         //}
         let braceLevel = 0
+        let inQuotes = false
         let nameStart = 0
         let result = []
         let stringLen = string.length
@@ -84,12 +85,15 @@ export class BibLatexNameParser {
                 case '}':
                     braceLevel -= 1
                     break
+                case '"':
+                    inQuotes = !inQuotes
+                    break
                 case '\\':
                     // skip next
                     pos++
                     break
                 default:
-                    if (braceLevel === 0 && pos > 0) {
+                    if (braceLevel === 0 && inQuotes === false && pos > 0) {
                         let match = string.slice(pos).match(RegExp(`^${sep}`))
                         if (match) {
                             let sepLen = match[0].length

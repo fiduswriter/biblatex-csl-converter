@@ -110,10 +110,11 @@ export class BibLatexExporter {
                 let literal = that._reformText(name.literal)
                 names.push(`{${literal}}`)
             } else {
-                let family = that._reformText(name.family)
-                let given = that._reformText(name.given)
+                let family = name.family ? that._reformText(name.family) : ''
+                let given = name.given ? that._reformText(name.given): ''
                 let suffix = name.suffix ? that._reformText(name.suffix) : false
                 let prefix = name.prefix ? that._reformText(name.prefix) : false
+                let useprefix = name.useprefix ? name.useprefix: false
                 if (that.config.traditionalNames) {
                     if (suffix && prefix) {
                         names.push(`{${prefix} ${family}}, {${suffix}}, {${given}}`)
@@ -125,18 +126,33 @@ export class BibLatexExporter {
                         names.push(`{${family}}, {${given}}`)
                     }
                 } else {
-                    let nameString = `given={${given}}, family={${family}}`
+                    let nameParts = []
+                    if (given.length) {
+                        nameParts.push(that._protectNamePart(`given={${given}}`))
+                    }
+                    if (family.length) {
+                        nameParts.push(that._protectNamePart(`family={${family}}`))
+                    }
                     if (suffix) {
-                        nameString += `, suffix={${suffix}}`
+                        nameParts.push(that._protectNamePart(`suffix={${suffix}}`))
                     }
                     if (prefix) {
-                        nameString += `, prefix={${prefix}}, useprefix=${name.useprefix}`
+                        nameParts.push(that._protectNamePart(`prefix={${prefix}}`))
+                        nameParts.push(`useprefix=${name.useprefix}`)
                     }
-                    names.push(`{${nameString}}`)
+                    names.push(`{${nameParts.join(', ')}}`)
                 }
             }
         })
         return names.join(' and ')
+    }
+
+    _protectNamePart(namePart) {
+        if (namePart.includes(',')) {
+            return `"${namePart}"`
+        } else {
+            return namePart
+        }
     }
 
     _escapeTeX(theValue) {
