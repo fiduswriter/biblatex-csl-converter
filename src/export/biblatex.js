@@ -53,7 +53,7 @@ export class BibLatexExporter {
                 let key = BibFieldTypes[fKey]['biblatex']
                 switch (fType) {
                     case 'f_date':
-                        fValues[key] = this._reformDate(fValue)
+                        fValues[key] = fValue // EDTF 1.0 level 0/1 compliant string.
                         break
                     case 'f_integer':
                         fValues[key] = this._reformInteger(fValue)
@@ -96,24 +96,6 @@ export class BibLatexExporter {
         }
         this.bibtexStr = this._getBibtexString(this.bibtexArray)
         return this.bibtexStr
-    }
-
-    _reformDate(theValue) {
-        // reform date-field
-
-        let dateParts = theValue.slice()
-        if (typeof dateParts[0] === 'object') {
-            // We have a range of dates
-            return `${this._reformDate(dateParts[0])}/${this._reformDate(dateParts[1])}`
-        } else {
-            let dateStringParts = []
-            dateStringParts.push(String(dateParts.shift())) // year
-            while (dateParts.length > 0) {
-                let datePart = dateParts.shift()
-                dateStringParts.push(('0'+datePart).slice(-2)) // month + day with two characters
-            }
-            return dateStringParts.join('-')
-        }
     }
 
     _reformInteger(theValue) {

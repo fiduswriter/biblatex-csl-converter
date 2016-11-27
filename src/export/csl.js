@@ -1,4 +1,5 @@
 import {BibTypes, BibFieldTypes} from "../const"
+import edtf from "edtf"
 
 /** Converts a BibDB to a DB of the CSL type.
  * @param bibDB The bibliography database to convert.
@@ -49,7 +50,7 @@ export class CSLExporter {
                 let key = BibFieldTypes[fKey]['csl']
                 switch(fType) {
                     case 'f_date':
-                        fValues[key] = {'date-parts': fValue}
+                        fValues[key] = this._reformDate(fValue)
                         break
                     case 'f_integer':
                         fValues[key] = this._reformInteger(fValue)
@@ -159,6 +160,28 @@ export class CSLExporter {
         return html
     }
 
+    _reformDate(dateStr) {
+        let dateObj = edtf.parse(
+            dateStr.replace(/^y/, 'Y') // Convert to edtf draft spec format supported by edtf.js
+                .replace(/unknown/g, '*')
+                .replace(/open/g, '')
+                .replace(/u/g, 'X')
+                .replace(/\?~/g, '%')
+        )
+        if (dateObj.type === 'Interval') {
+            return {
+                'date-parts': [
+                    dateObj.values[0].values.slice(0,3),
+                    dateObj.values[1].values.slice(0,3)
+                ]
+            }
+        } else {
+            return {
+                'date-parts': dateObj.values.slice(0,3)
+            }
+        }
+    }
+
     _reformName(theNames) {
         let reformedNames = [], that = this
         theNames.forEach((name) => {
@@ -172,30 +195,6 @@ export class CSLExporter {
             reformedNames.push(reformedName)
         })
         return reformedNames
-    }
-
-    _reformDate(theValue) {
-        //reform date-field
-        let dates = theValue.split('/'),
-            datesValue = [],
-            len = dates.length
-        for (let i = 0; i < len; i++) {
-            let eachDate = dates[i]
-            let dateParts = eachDate.split('-')
-            let dateValue = []
-            let len2 = dateParts.length
-            for (let j = 0; j < len2; j++) {
-                let datePart = dateParts[j]
-                if (datePart != parseInt(datePart))
-                    break
-                dateValue[dateValue.length] = datePart
-            }
-            datesValue[datesValue.length] = dateValue
-        }
-
-        return {
-            'date-parts': datesValue
-        }
     }
 
 }

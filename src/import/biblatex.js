@@ -3,6 +3,8 @@ import {TeXSpecialChars, BiblatexAliasTypes, BiblatexFieldAliasTypes} from "./co
 import {BibLatexNameParser} from "./name-parser"
 import {BibLatexLiteralParser} from "./literal-parser"
 import {splitTeXString} from "./tools"
+import edtf from "edtf"
+
 
 // These variables are expected to be defined by some bibtex sources.
 let VARIABLES  = {
@@ -250,29 +252,28 @@ export class BibLatexParser {
             date = `${rawFields.year}`
         }
         if (date) {
-            let dateParts = this._reformDate(date)
-            if (dateParts) {
-                fields['date'] = dateParts
+            let cleanDate = this._reformDate(date)
+            if (cleanDate) {
+                fields['date'] = cleanDate
             } else {
-                let field_name, value, error_list
+                let fieldName, value, errorList
                 if (rawFields.date) {
-                    field_name = 'date'
+                    fieldName = 'date'
                     value = rawFields.date
-                    error_list = this.errors
+                    errorList = this.errors
                 } else if (rawFields.year && rawFields.month) {
-                    field_name = 'year,month'
+                    fieldName = 'year,month'
                     value = [rawFields.year, rawFields.month]
-                    error_list = this.warnings
+                    errorList = this.warnings
                 } else {
-                    field_name = 'year'
+                    fieldName = 'year'
                     value = rawFields.year
-                    error_list = this.warnings
+                    errorList = this.warnings
                 }
-
-                error_list.push({
+                errorList.push({
                     type: 'unknown_date',
                     entry: this.currentEntry['entry_key'],
-                    field_name,
+                    field_name: fieldName,
                     value
                 })
             }
@@ -365,9 +366,9 @@ export class BibLatexParser {
             let fValue = rawFields[bKey]
             switch(fType) {
                 case 'f_date':
-                    let dateParts = this._reformDate(fValue)
-                    if (dateParts) {
-                        oFields[fKey] = dateParts
+                    let cleanDate = this._reformDate(fValue)
+                    if (cleanDate) {
+                        oFields[fKey] = fValue
                     } else {
                         this.errors.push({
                             type: 'unknown_date',
@@ -425,51 +426,24 @@ export class BibLatexParser {
     }
 
     _reformDate(dateStr) {
-        let that = this
-        if (dateStr.includes('/')) {
-            let dateRangeParts = dateStr.split('/')
-            let dateRangeArray = []
-            dateRangeParts.forEach((dateRangePart)=>{
-                let reformedDate = that._reformDate(dateRangePart)
-                if (reformedDate) {
-                    dateRangeArray.push(reformedDate)
-                }
-            })
-            if (dateRangeArray.length > 2) {
-                dateRangeArray = dateRangeArray.splice(0,2)
-            } else if (dateRangeArray.length === 1) {
-                dateRangeArray = dateRangeArray[0]
-            } else if (dateRangeArray.length === 0) {
-                dateRangeArray = null
+        let cleanDate = dateStr.replace(/\u00A0/, '~') // revert from initial tex char replacement
+        // check if date is valid edtf string (level 0 or 1).
+        try {
+            let dateObj = edtf.parse(
+                cleanDate.replace(/^y/, 'Y') // Convert to edtf draft spec format supported by edtf.js
+                    .replace(/unknown/g, '*')
+                    .replace(/open/g, '')
+                    .replace(/u/g, 'X')
+                    .replace(/\?~/g, '%')
+            )
+            if (dateObj.level < 2) {
+                return cleanDate
+            } else {
+                return false
             }
-            return dateRangeArray
+        } catch(err) {
+            return false
         }
-        let month = true, day = true
-        let dateLen = dateStr.split(/[\s,\./\-]/g).length
-        if (dateLen === 1) {
-            month = false
-            day = false
-        } else if (dateLen === 2) {
-            day = false
-        }
-        let theDate = new Date(dateStr)
-        if ('Invalid Date' == theDate) {
-            return null
-        }
-
-        let dateArray = []
-        dateArray.push(theDate.getFullYear())
-
-        if (month) {
-            dateArray.push(theDate.getMonth()+1)
-        }
-
-        if (day) {
-            dateArray.push(theDate.getDate())
-        }
-
-        return dateArray
-
     }
 
 
