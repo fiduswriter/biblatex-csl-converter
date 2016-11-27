@@ -10,16 +10,22 @@ export function splitTeXString(texString, splitToken='and') {
         if (k === output.length) {
             output.push('')
         }
-        if ('{' === token) {
-            j += 1
-        }
-        if ('}' === token){
-            j -= 1
-        }
-        if (splitToken === token && 0 === j) {
-            k += 1
-        } else {
-            output[k] += token
+        switch (token) {
+            case '{':
+                j += 1
+                break
+            case '}':
+                j -= 1
+                break
+            case splitToken:
+                if (0===j) {
+                    k++
+                } else {
+                    output[k] += token
+                }
+                break
+            default:
+                output[k] += token
         }
     }
     return output

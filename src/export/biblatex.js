@@ -19,13 +19,14 @@ import {BibTypes, BibFieldTypes} from "../const"
 
 export class BibLatexExporter {
 
-    constructor(bibDB, pks) {
+    constructor(bibDB, pks = false, config = {}) {
         this.bibDB = bibDB // The bibliography database to export from.
         if (pks) {
             this.pks = pks // A list of pk values of the bibliography items to be exported.
         } else {
             this.pks = Object.keys(bibDB) // If none are selected, all keys are exporter
         }
+        this.config = config
         this.warnings = []
     }
 
@@ -111,7 +112,28 @@ export class BibLatexExporter {
             } else {
                 let family = that._reformText(name.family)
                 let given = that._reformText(name.given)
-                names.push(`{${family}} {${given}}`)
+                let suffix = name.suffix ? that._reformText(name.suffix) : false
+                let prefix = name.prefix ? that._reformText(name.prefix) : false
+                if (that.config.traditionalNames) {
+                    if (suffix && prefix) {
+                        names.push(`{${prefix} ${family}}, {${suffix}}, {${given}}`)
+                    } else if (suffix) {
+                        names.push(`{${family}}, {${suffix}}, {${given}}`)
+                    } else if (prefix) {
+                        names.push(`{${prefix} ${family}}, {${given}}`)
+                    } else {
+                        names.push(`{${family}}, {${given}}`)
+                    }
+                } else {
+                    let nameString = `given={${given}}, family={${family}}`
+                    if (suffix) {
+                        nameString += `, suffix={${suffix}}`
+                    }
+                    if (prefix) {
+                        nameString += `, prefix={${prefix}}, useprefix=${name.useprefix}`
+                    }
+                    names.push(`{${nameString}}`)
+                }
             }
         })
         return names.join(' and ')

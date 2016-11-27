@@ -436,7 +436,12 @@ export class BibLatexParser {
                     .replace(/u/g, 'X')
                     .replace(/\?~/g, '%')
             )
-            if (dateObj.level < 2) {
+            if (
+                dateObj.level < 2 && (
+                    (dateObj.type==='Date' && dateObj.values) ||
+                    (dateObj.type==='Interval' && dateObj.values[0].values && dateObj.values[1].values)
+                )
+            ) {
                 return cleanDate
             } else {
                 return false

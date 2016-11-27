@@ -31,6 +31,7 @@ var printObject = function printObject(object) {
                 html += '</table>';
             }
             break;
+        case 'boolean':
         case 'number':
             html += String(object);
             break;
@@ -5331,7 +5332,10 @@ var TAGS = {
 };
 
 var BibLatexExporter = exports.BibLatexExporter = function () {
-    function BibLatexExporter(bibDB, pks) {
+    function BibLatexExporter(bibDB) {
+        var pks = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+        var config = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+
         _classCallCheck(this, BibLatexExporter);
 
         this.bibDB = bibDB; // The bibliography database to export from.
@@ -5340,6 +5344,7 @@ var BibLatexExporter = exports.BibLatexExporter = function () {
         } else {
             this.pks = Object.keys(bibDB); // If none are selected, all keys are exporter
         }
+        this.config = config;
         this.warnings = [];
     }
 
@@ -5360,7 +5365,28 @@ var BibLatexExporter = exports.BibLatexExporter = function () {
                 } else {
                     var family = that._reformText(name.family);
                     var given = that._reformText(name.given);
-                    names.push("{" + family + "} {" + given + "}");
+                    var suffix = name.suffix ? that._reformText(name.suffix) : false;
+                    var prefix = name.prefix ? that._reformText(name.prefix) : false;
+                    if (that.config.traditionalNames) {
+                        if (suffix && prefix) {
+                            names.push("{" + prefix + " " + family + "}, {" + suffix + "}, {" + given + "}");
+                        } else if (suffix) {
+                            names.push("{" + family + "}, {" + suffix + "}, {" + given + "}");
+                        } else if (prefix) {
+                            names.push("{" + prefix + " " + family + "}, {" + given + "}");
+                        } else {
+                            names.push("{" + family + "}, {" + given + "}");
+                        }
+                    } else {
+                        var nameString = "given={" + given + "}, family={" + family + "}";
+                        if (suffix) {
+                            nameString += ", suffix={" + suffix + "}";
+                        }
+                        if (prefix) {
+                            nameString += ", prefix={" + prefix + "}, useprefix=" + name.useprefix;
+                        }
+                        names.push("{" + nameString + "}");
+                    }
                 }
             });
             return names.join(' and ');
@@ -5746,7 +5772,8 @@ var CSLExporter = exports.CSLExporter = function () {
     }, {
         key: "_reformDate",
         value: function _reformDate(dateStr) {
-            var dateObj = _edtf2.default.parse(dateStr.replace(/^y/, 'Y').replace(/unknown/g, '*').replace(/open/g, '').replace(/u/g, 'X').replace(/\?~/g, '%'));
+            var dateObj = _edtf2.default.parse(dateStr.replace(/^y/, 'Y') // Convert to edtf draft spec format supported by edtf.js
+            .replace(/unknown/g, '*').replace(/open/g, '').replace(/u/g, 'X').replace(/\?~/g, '%'));
             if (dateObj.type === 'Interval') {
                 return {
                     'date-parts': [dateObj.values[0].values.slice(0, 3), dateObj.values[1].values.slice(0, 3)]
@@ -5764,10 +5791,21 @@ var CSLExporter = exports.CSLExporter = function () {
                 that = this;
             theNames.forEach(function (name) {
                 var reformedName = {};
-                if (name['literal']) {
-                    reformedName['literal'] = that._reformText(name['literal']);
+                if (name.literal) {
+                    reformedName['literal'] = that._reformText(name.literal);
                 } else {
-                    reformedName['given'] = that._reformText(name['given']);
+                    reformedName['given'] = that._reformText(name.given);
+                    reformedName['family'] = that._reformText(name.family);
+                    if (name.suffix) {
+                        reformedName['suffix'] = that._reformText(name.suffix);
+                    }
+                    if (name.prefix) {
+                        if (name.useprefix === true) {
+                            reformedName['non-dropping-particle'] = that._reformText(name.prefix);
+                        } else {
+                            reformedName['dropping-particle'] = that._reformText(name.prefix);
+                        }
+                    }
                     reformedName['family'] = that._reformText(name['family']);
                 }
                 reformedNames.push(reformedName);
@@ -6099,7 +6137,6 @@ var BibLatexParser = exports.BibLatexParser = function () {
                         value = rawFields.year;
                         errorList = this.warnings;
                     }
-                    console.log(this.input);
                     errorList.push({
                         type: 'unknown_date',
                         entry: this.currentEntry['entry_key'],
@@ -6269,8 +6306,9 @@ var BibLatexParser = exports.BibLatexParser = function () {
             var cleanDate = dateStr.replace(/\u00A0/, '~'); // revert from initial tex char replacement
             // check if date is valid edtf string (level 0 or 1).
             try {
-                var dateObj = _edtf2.default.parse(cleanDate.replace(/^y/, 'Y').replace(/unknown/g, '*').replace(/open/g, '').replace(/u/g, 'X').replace(/\?~/g, '%'));
-                if (dateObj.level < 2) {
+                var dateObj = _edtf2.default.parse(cleanDate.replace(/^y/, 'Y') // Convert to edtf draft spec format supported by edtf.js
+                .replace(/unknown/g, '*').replace(/open/g, '').replace(/u/g, 'X').replace(/\?~/g, '%'));
+                if (dateObj.level < 2 && (dateObj.type === 'Date' && dateObj.values || dateObj.type === 'Interval' && dateObj.values[0].values && dateObj.values[1].values)) {
                     return cleanDate;
                 } else {
                     return false;
@@ -6691,18 +6729,73 @@ var BibLatexNameParser = exports.BibLatexNameParser = function () {
 
         this.nameString = nameString;
         this.nameDict = {};
-        this._first = [];
-        this._last = [];
+        this._particle = [];
+        this._suffix = [];
     }
 
     _createClass(BibLatexNameParser, [{
+        key: 'parseName',
+        value: function parseName() {
+            var parts = this.splitTexString(this.nameString, ',');
+            if (parts.length > 1 && this.nameString.includes('=')) {
+                // extended name detected.
+                this.parseExtendedName(parts);
+            } else if (parts.length === 3) {
+                // von Last, Jr, First
+                this.processVonLast(this.splitTexString(parts[0]), this.splitTexString(parts[1]));
+                this.processFirstMiddle(this.splitTexString(parts[2]));
+            } else if (parts.length === 2) {
+                // von Last, First
+                this.processVonLast(this.splitTexString(parts[0]));
+                this.processFirstMiddle(this.splitTexString(parts[1]));
+            } else if (parts.length === 1) {
+                // First von Last
+                var spacedParts = this.splitTexString(this.nameString);
+                if (spacedParts.length === 1) {
+                    this.nameDict['literal'] = this._reformLiteral(spacedParts[0].trim());
+                } else {
+                    var split = this.splitAt(spacedParts);
+                    var firstMiddle = split[0];
+                    var vonLast = split[1];
+                    if (vonLast.length === 0 && firstMiddle.length > 1) {
+                        var last = firstMiddle.pop();
+                        vonLast.push(last);
+                    }
+                    this.processFirstMiddle(firstMiddle);
+                    this.processVonLast(vonLast);
+                }
+            } else {
+                this.nameDict['literal'] = this._reformLiteral(this.nameString.trim());
+            }
+        }
+    }, {
+        key: 'parseExtendedName',
+        value: function parseExtendedName(parts) {
+            var _this = this;
+
+            var that = this;
+            parts.forEach(function (part) {
+                var attrParts = part.split('=');
+                var attrName = attrParts.shift().trim().toLowerCase();
+                if (['family', 'given', 'prefix', 'suffix'].includes(attrName)) {
+                    _this.nameDict[attrName] = that._reformLiteral(attrParts.join('=').trim());
+                } else if (attrName === 'useprefix') {
+                    if (attrParts.join('').trim().toLowerCase() === 'true') {
+                        _this.nameDict['useprefix'] = true;
+                    } else {
+                        _this.nameDict['useprefix'] = false;
+                    }
+                }
+            });
+        }
+    }, {
         key: 'splitTexString',
         value: function splitTexString(string) {
-            var sep = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
+            var sep = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '[\\s~]+';
 
-            if (sep === null) {
-                sep = '[\\s~]+';
-            }
+            //if (sep===null) {
+            //    sep =
+            //}
             var braceLevel = 0;
             var nameStart = 0;
             var result = [];
@@ -6710,20 +6803,30 @@ var BibLatexNameParser = exports.BibLatexNameParser = function () {
             var pos = 0;
             while (pos < stringLen) {
                 var char = string.charAt(pos);
-                if (char === '{') {
-                    braceLevel += 1;
-                } else if (char === '}') {
-                    braceLevel -= 1;
-                } else if (braceLevel === 0 && pos > 0) {
-                    var match = string.slice(pos).match(RegExp('^' + sep));
-                    if (match) {
-                        var sepLen = match[0].length;
-                        if (pos + sepLen < stringLen) {
-                            result.push(string.slice(nameStart, pos));
-                            nameStart = pos + sepLen;
+                switch (char) {
+                    case '{':
+                        braceLevel += 1;
+                        break;
+                    case '}':
+                        braceLevel -= 1;
+                        break;
+                    case '\\':
+                        // skip next
+                        pos++;
+                        break;
+                    default:
+                        if (braceLevel === 0 && pos > 0) {
+                            var match = string.slice(pos).match(RegExp('^' + sep));
+                            if (match) {
+                                var sepLen = match[0].length;
+                                if (pos + sepLen < stringLen) {
+                                    result.push(string.slice(nameStart, pos));
+                                    nameStart = pos + sepLen;
+                                }
+                            }
                         }
-                    }
                 }
+
                 pos++;
             }
             if (nameStart < stringLen) {
@@ -6734,8 +6837,7 @@ var BibLatexNameParser = exports.BibLatexNameParser = function () {
     }, {
         key: 'processFirstMiddle',
         value: function processFirstMiddle(parts) {
-            this._first = this._first.concat(parts);
-            this.nameDict['given'] = this._reformLiteral(this._first.join(' ').trim());
+            this.nameDict['given'] = this._reformLiteral(parts.join(' ').trim());
         }
     }, {
         key: 'processVonLast',
@@ -6748,10 +6850,14 @@ var BibLatexNameParser = exports.BibLatexNameParser = function () {
             if (von && !last) {
                 last.push(von.pop());
             }
-            this._last = this._last.concat(von);
-            this._last = this._last.concat(last);
-            this._last = this._last.concat(lineage);
-            this.nameDict['family'] = this._reformLiteral(this._last.join(' ').trim());
+            if (von.length) {
+                this.nameDict['prefix'] = this._reformLiteral(von.join(' ').trim());
+                this.nameDict['useprefix'] = true; // The info at hand is not clear, so we guess.
+            }
+            if (lineage.length) {
+                this.nameDict['suffix'] = this._reformLiteral(lineage.join(' ').trim());
+            }
+            this.nameDict['family'] = this._reformLiteral(last.join(' ').trim());
         }
     }, {
         key: 'findFirstLowerCaseWord',
@@ -6789,34 +6895,7 @@ var BibLatexNameParser = exports.BibLatexNameParser = function () {
     }, {
         key: 'output',
         get: function get() {
-            var parts = this.splitTexString(this.nameString, ',');
-            if (parts.length === 3) {
-                // von Last, Jr, First
-                this.processVonLast(this.splitTexString(parts[0]), this.splitTexString(parts[1]));
-                this.processFirstMiddle(this.splitTexString(parts[2]));
-            } else if (parts.length === 2) {
-                // von Last, First
-                this.processVonLast(this.splitTexString(parts[0]));
-                this.processFirstMiddle(this.splitTexString(parts[1]));
-            } else if (parts.length === 1) {
-                // First von Last
-                var spacedParts = this.splitTexString(this.nameString);
-                if (spacedParts.length === 1) {
-                    this.nameDict['literal'] = this._reformLiteral(spacedParts[0].trim());
-                } else {
-                    var split = this.splitAt(spacedParts);
-                    var firstMiddle = split[0];
-                    var vonLast = split[1];
-                    if (vonLast.length === 0 && firstMiddle.length > 1) {
-                        var last = firstMiddle.pop();
-                        vonLast.push(last);
-                    }
-                    this.processFirstMiddle(firstMiddle);
-                    this.processVonLast(vonLast);
-                }
-            } else {
-                this.nameDict['literal'] = this._reformLiteral(this.nameString.trim());
-            }
+            this.parseName();
             return this.nameDict;
         }
     }]);
@@ -6845,16 +6924,22 @@ function splitTeXString(texString) {
         if (k === output.length) {
             output.push('');
         }
-        if ('{' === token) {
-            j += 1;
-        }
-        if ('}' === token) {
-            j -= 1;
-        }
-        if (splitToken === token && 0 === j) {
-            k += 1;
-        } else {
-            output[k] += token;
+        switch (token) {
+            case '{':
+                j += 1;
+                break;
+            case '}':
+                j -= 1;
+                break;
+            case splitToken:
+                if (0 === j) {
+                    k++;
+                } else {
+                    output[k] += token;
+                }
+                break;
+            default:
+                output[k] += token;
         }
     }
     return output;

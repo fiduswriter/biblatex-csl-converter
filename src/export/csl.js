@@ -186,10 +186,21 @@ export class CSLExporter {
         let reformedNames = [], that = this
         theNames.forEach((name) => {
             let reformedName = {}
-            if (name['literal']) {
-                reformedName['literal'] = that._reformText(name['literal'])
+            if (name.literal) {
+                reformedName['literal'] = that._reformText(name.literal)
             } else {
-                reformedName['given'] = that._reformText(name['given'])
+                reformedName['given'] = that._reformText(name.given)
+                reformedName['family'] = that._reformText(name.family)
+                if (name.suffix) {
+                    reformedName['suffix'] = that._reformText(name.suffix)
+                }
+                if (name.prefix) {
+                    if(name.useprefix === true) {
+                        reformedName['non-dropping-particle'] = that._reformText(name.prefix)
+                    } else {
+                        reformedName['dropping-particle'] = that._reformText(name.prefix)
+                    }
+                }
                 reformedName['family'] = that._reformText(name['family'])
             }
             reformedNames.push(reformedName)

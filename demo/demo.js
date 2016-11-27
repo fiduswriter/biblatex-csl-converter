@@ -26,6 +26,7 @@ let printObject = function(object) {
                 html += '</table>'
             }
             break
+        case 'boolean':
         case 'number':
             html += String(object)
             break
