@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+- '6'
+after_success:
+- "./node_modules/.bin/nyc report --reporter=text-lcov | ./node_modules/.bin/coveralls"
+deploy:
+  provider: npm
+  email: mail@johanneswilm.org
+  api_key:
+    secure: Qz9syl7rkhaI4DAXHlKebDrKKVt7LVXBG0nLpEqtUcc/4MNRriKJk7fkzNneeuKZhzPPI+yCHl53v6eSdPC8EcYdj1CdRNtIo8xkov4YaosfmttaTDTCxsa4H5LWbdExMzNrO+QJOX0y3Yy3iaP9lnHlu1q4lWmy5jwYR7cVOgiOvRlAn/rZ0Mmf28grY4uQlRypE8FJ2D2q7WZa+xOk/tsYuYtvEELc++5Mun1TJSCe4tUOmPRM+2BPI4cLAIPPYqdpYtFAtT/M5DqfLC3IVv2aOCjT7Ep6H6D+Fit3kJOKZa/UUDLrTu+3xZe7Y5Z4cDTP3dV7DCAWztsXiuxrJxdTMdXVr3JhnUPNQKm9oLHDKEfiUnmp63Rv3oRknxBXhC4KqykIByhn2CedqgD2c2p5NLKyfYZAoQVCt4bArmVqfqSSgTt85d8LlSB+u/nhj9/VE5QL2x8HqSyjPUj5Zgi1/Tmy/vleVRjyzVc1wcAIXIYIwJ0rVPD1fHnLFuCH94rm5VhK7WdHPzyIRzeASDLULJNmdvSiUu6K12qWyyZBZzUK/RYtiM8qbDn2eLIn2YsgowTQtu7fIu0k5io2rUZDWZF0zxcz/x0cpY0stP6ZWw2tJtIvsDBlbiwtZ7/QpHNKCLDgCNCIi5D7G8UAwXnb4O4mJKIW4jS2mZ3p1OU=
+  on:
+    tags: true
+    repo: fiduswriter/biblatex-csl-converter
+    branch: gh-pages
