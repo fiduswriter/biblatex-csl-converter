@@ -28,20 +28,25 @@
   "homepage": "https://github.com/fiduswriter/biblatex-csl-converter#readme",
   "scripts": {
     "check_js": "jshint src/ demo/demo.js",
-    "compile": "rimraf lib/* && babel src -d lib && browserify demo/demo.js -o demo/demo-transpiled.js -t babelify",
-    "prepublish": "npm run check_js && npm run compile"
+    "pretest": "npm run check_js",
+    "precompile": "rimraf lib/* && babel src -d lib",
+    "compile": "browserify demo/demo.js -o demo/demo-transpiled.js -t babelify",
+    "prepublish": "npm run check_js && npm run compile",
+    "test": "npm run precompile && ava --verbose"
   },
   "dependencies": {
-    "babel-runtime": "^6.11.6"
+    "babel-runtime": "^6.11.6",
+    "edtf": "2.0.0"
   },
   "devDependencies": {
+    "ava": "^0.17.0",
     "babel-cli": "^6.18.0",
     "babel-core": "^6.18.0",
     "babel-preset-es2015": "^6.18.0",
-    "rimraf": "^2.5.4",
     "babelify": "7.3.0",
     "browserify": "13.1.1",
-    "jshint": "2.9.4"
+    "jshint": "2.9.4",
+    "rimraf": "^2.5.4"
   },
   "babel": {
     "presets": [

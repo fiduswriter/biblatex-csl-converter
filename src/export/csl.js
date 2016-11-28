@@ -1,5 +1,5 @@
 import {BibTypes, BibFieldTypes} from "../const"
-import edtf from "edtf"
+import {parse as edtfParse} from "edtf/src/parser"
 
 /** Converts a BibDB to a DB of the CSL type.
  * @param bibDB The bibliography database to convert.
@@ -161,7 +161,7 @@ export class CSLExporter {
     }
 
     _reformDate(dateStr) {
-        let dateObj = edtf.parse(
+        let dateObj = edtfParse(
             dateStr.replace(/^y/, 'Y') // Convert to edtf draft spec format supported by edtf.js
                 .replace(/unknown/g, '*')
                 .replace(/open/g, '')
