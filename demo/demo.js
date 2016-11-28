@@ -1,8 +1,10 @@
 import {BibLatexParser, BibLatexExporter, CSLExporter} from "../src"
+import {parse as edtfParse} from "edtf/src/parser"
 
 window.BibLatexParser = BibLatexParser
 window.BibLatexExporter = BibLatexExporter
 window.CSLExporter = CSLExporter
+window.edtfParse = edtfParse
 
 let printObject = function(object) {
     let html = ''
