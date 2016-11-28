@@ -3,7 +3,7 @@ import {TeXSpecialChars, BiblatexAliasTypes, BiblatexFieldAliasTypes} from "./co
 import {BibLatexNameParser} from "./name-parser"
 import {BibLatexLiteralParser} from "./literal-parser"
 import {splitTeXString} from "./tools"
-import {parse as edtfParse} from "edtf/src/parser"
+import {parse as edtfParse} from "../../lib/edtf/src/parser"
 
 
 // These variables are expected to be defined by some bibtex sources.

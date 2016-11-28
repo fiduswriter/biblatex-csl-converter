@@ -30,7 +30,7 @@
     "gh-pages-travis": "gh-pages-travis",
     "check_js": "jshint src/ docs/demo.js",
     "pretest": "npm run check_js",
-    "precompile": "rimraf lib/* && BABEL_ENV=production babel --out-dir lib src",
+    "precompile": "rimraf lib/* && replace '\\[24, 00, 00\\]' '[24, 0, 0]' node_modules/edtf/src/grammar.js && BABEL_ENV=production babel --out-dir lib/edtf node_modules/edtf && BABEL_ENV=production babel --out-dir lib src",
     "compile": "browserify docs/demo.js -o docs/demo-transpiled.js -t babelify",
     "prepublish": "npm run check_js && npm run compile",
     "test": "nyc ava",
@@ -53,6 +53,7 @@
     "gh-pages-travis": "^1.0.0",
     "jshint": "2.9.4",
     "nyc": "^10.0.0",
+    "replace": "^0.3.0",
     "rimraf": "^2.5.4"
   },
   "babel": {
