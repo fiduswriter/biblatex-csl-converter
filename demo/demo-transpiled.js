@@ -6178,6 +6178,8 @@ var BibLatexParser = exports.BibLatexParser = function () {
                 })();
             }
 
+            var eitherOrUsed = false; // Whether the eitheror editor/author field is used.
+
             var _loop = function _loop(bKey) {
 
                 if (bKey === 'date' || ['year', 'month'].includes(bKey) && !_this.config.parseUnknown) {
@@ -6229,7 +6231,11 @@ var BibLatexParser = exports.BibLatexParser = function () {
                     oFields = _this.currentEntry['unknown_fields'];
                     fType = _this.config.processUnknown[bKey] ? _this.config.processUnknown[bKey] : 'f_literal';
                     fKey = bKey;
-                } else if (bType['required'].includes(fKey) || bType['optional'].includes(fKey) || bType['eitheror'].includes(fKey)) {
+                } else if (bType['required'].includes(fKey) || bType['optional'].includes(fKey)) {
+                    oFields = fields;
+                    fType = _const.BibFieldTypes[fKey]['type'];
+                } else if (bType['eitheror'].includes(fKey) && eitherOrUsed === false) {
+                    eitherOrUsed = true;
                     oFields = fields;
                     fType = _const.BibFieldTypes[fKey]['type'];
                 } else {

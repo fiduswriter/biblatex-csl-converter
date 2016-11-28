@@ -290,6 +290,8 @@ export class BibLatexParser {
             }
         }
 
+        let eitherOrUsed = false // Whether the eitheror editor/author field is used.
+
         iterateFields: for(let bKey in rawFields) {
 
             if (bKey==='date' || (['year','month'].includes(bKey) && !this.config.parseUnknown)) {
@@ -341,9 +343,15 @@ export class BibLatexParser {
                 fKey = bKey
             } else if (
                 bType['required'].includes(fKey) ||
-                bType['optional'].includes(fKey) ||
-                bType['eitheror'].includes(fKey)
+                bType['optional'].includes(fKey)
             ) {
+                oFields = fields
+                fType = BibFieldTypes[fKey]['type']
+            } else if (
+                bType['eitheror'].includes(fKey) &&
+                eitherOrUsed === false
+            ) {
+                eitherOrUsed = true
                 oFields = fields
                 fType = BibFieldTypes[fKey]['type']
             } else {
