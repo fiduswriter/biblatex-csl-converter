@@ -3,3 +3,4 @@ lib/
 venv/
 .nyc_output/
 coverage/
+docs/demo-transpiled.js

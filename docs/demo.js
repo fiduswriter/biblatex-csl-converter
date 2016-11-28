@@ -1,6 +1,8 @@
 import {BibLatexParser, BibLatexExporter, CSLExporter} from "../src"
 import {parse as edtfParse} from "edtf/src/parser"
+import edtfy from "edtfy"
 
+window.edtfy = edtfy
 window.BibLatexParser = BibLatexParser
 window.BibLatexExporter = BibLatexExporter
 window.CSLExporter = CSLExporter

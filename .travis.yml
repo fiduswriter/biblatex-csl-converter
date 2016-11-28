@@ -2,7 +2,8 @@ language: node_js
 node_js:
 - '6'
 after_success:
-- "./node_modules/.bin/nyc report --reporter=text-lcov | ./node_modules/.bin/coveralls"
+  - "./node_modules/.bin/nyc report --reporter=text-lcov | ./node_modules/.bin/coveralls"
+  - npm run gh-pages-travis
 deploy:
   provider: npm
   email: mail@johanneswilm.org
@@ -11,4 +12,14 @@ deploy:
   on:
     tags: true
     repo: fiduswriter/biblatex-csl-converter
-    branch: gh-pages
+    branch: master
+branches:
+  except:
+    - gh-pages
+env:
+  global:
+    - SSH_KEY="id_rsa"
+    - GIT_NAME="Johannes Wilm"
+    - GIT_EMAIL="mail@johanneswilm.org"
+    - SOURCE_DIR="docs"
+    - DEPLOY_BRANCH="master"
