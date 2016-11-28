@@ -192,6 +192,10 @@ export class BibLatexLiteralParser {
                     // math env, just remove
                     this.si++
                     break
+                case '~':
+                    // a non-breakable space
+                    this.textNode.text += '\u00A0'
+                    break
                 case '%':
                     // An undefined variable.
                     this.removeIfEmptyTextNode()

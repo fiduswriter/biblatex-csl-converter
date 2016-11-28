@@ -252,9 +252,8 @@ export class BibLatexParser {
             date = `${rawFields.year}`
         }
         if (date) {
-            let cleanDate = this._reformDate(date)
-            if (cleanDate) {
-                fields['date'] = cleanDate
+            if (this._checkDate(date)) {
+                fields['date'] = date
             } else {
                 let fieldName, value, errorList
                 if (rawFields.date) {
@@ -374,8 +373,7 @@ export class BibLatexParser {
             let fValue = rawFields[bKey]
             switch(fType) {
                 case 'f_date':
-                    let cleanDate = this._reformDate(fValue)
-                    if (cleanDate) {
+                    if (this._checkDate(fValue)) {
                         oFields[fKey] = fValue
                     } else {
                         this.errors.push({
@@ -433,12 +431,11 @@ export class BibLatexParser {
         })
     }
 
-    _reformDate(dateStr) {
-        let cleanDate = dateStr.replace(/\u00A0/, '~') // revert from initial tex char replacement
+    _checkDate(dateStr) {
         // check if date is valid edtf string (level 0 or 1).
         try {
             let dateObj = edtfParse(
-                cleanDate.replace(/^y/, 'Y') // Convert to edtf draft spec format supported by edtf.js
+                dateStr.replace(/^y/, 'Y') // Convert to edtf draft spec format supported by edtf.js
                     .replace(/unknown/g, '*')
                     .replace(/open/g, '')
                     .replace(/u/g, 'X')
@@ -447,10 +444,11 @@ export class BibLatexParser {
             if (
                 dateObj.level < 2 && (
                     (dateObj.type==='Date' && dateObj.values) ||
+                    (dateObj.type==='Season' && dateObj.values) ||
                     (dateObj.type==='Interval' && dateObj.values[0].values && dateObj.values[1].values)
                 )
             ) {
-                return cleanDate
+                return true
             } else {
                 return false
             }
