@@ -29,10 +29,11 @@
   "scripts": {
     "check_js": "jshint src/ demo/demo.js",
     "pretest": "npm run check_js",
-    "precompile": "rimraf lib/* && babel src -d lib",
+    "precompile": "rimraf lib/* && BABEL_ENV=production babel src -d lib",
     "compile": "browserify demo/demo.js -o demo/demo-transpiled.js -t babelify",
     "prepublish": "npm run check_js && npm run compile",
-    "test": "npm run precompile && ava --verbose"
+    "test": "nyc --babel --reporter=text ava",
+    "coveralls": "jscoverage lib && YOURPACKAGE_COVERAGE=1 nodeunit --reporter=lcov test | coveralls"
   },
   "dependencies": {
     "babel-runtime": "^6.11.6",
@@ -47,12 +48,18 @@
     "browserify": "13.1.1",
     "coveralls": "^2.11.15",
     "jshint": "2.9.4",
+    "nyc": "^10.0.0",
     "rimraf": "^2.5.4"
   },
   "babel": {
     "presets": [
       "es2015"
-    ]
+    ],
+    "env": {
+      "development": {
+        "sourceMaps": "inline"
+      }
+    }
   },
   "jshintConfig": {
     "esversion": 6,
