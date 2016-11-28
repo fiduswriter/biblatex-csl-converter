@@ -1,7 +1,7 @@
 # biblatex-csl-converter
 A set of JavaScript converters: biblatex => json, json => csl, and json => biblatex
 
-Try demo [here](https://fiduswriter.github.io/biblatex-csl-converter/demo/).
+Try demo [here](https://fiduswriter.github.io/biblatex-csl-converter/).
 
 ## FAQ
 
