@@ -38,8 +38,7 @@
   },
   "dependencies": {
     "babel-runtime": "^6.18.0",
-    "edtf": "2.0.0",
-    "edtfy": "0.0.8"
+    "edtf": "2.0.0"
   },
   "devDependencies": {
     "ava": "^0.17.0",
