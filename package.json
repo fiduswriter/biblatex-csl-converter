@@ -71,6 +71,9 @@
     }
   },
   "nyc": {
+    "include": [
+      "src/"
+    ],
     "require": [
       "babel-register"
     ],
