@@ -30,7 +30,12 @@
         "howpublished": [
           {
             "type": "text",
-            "text": "̆rlhttps://github.com/retorquere/zotero-better-bibtex/issues/439"
+            "text": "https://github.com/retorquere/zotero-better-bibtex/issues/439",
+            "marks": [
+              {
+                "type": "url"
+              }
+            ]
           }
         ],
         "title": [
@@ -70,7 +75,7 @@
       "raw_fields": {
         "abstract": "zotero-better-bibtex - Make Zotero effective for us LaTeX holdouts",
         "author": "{Firstname Retorquere}",
-        "howpublished": "̆rl{https://github.com/retorquere/zotero-better-bibtex/issues/439}",
+        "howpublished": "\\url{https://github.com/retorquere/zotero-better-bibtex/issues/439}",
         "journal": "%GitHub%",
         "timestamp": "2015-02-24 12:14:36 +0100",
         "title": "Replicate {{Zotero}} Key Algorithm $·$ {{Issue}} \\#439 $·$ Retorquere/Zotero-Better-Bibtex",
@@ -146,7 +151,12 @@
         "howpublished": [
           {
             "type": "text",
-            "text": "̆rlhttps://github.com/retorquere/zotero-better-bibtex/issues/439"
+            "text": "https://github.com/retorquere/zotero-better-bibtex/issues/439",
+            "marks": [
+              {
+                "type": "url"
+              }
+            ]
           }
         ],
         "title": [
@@ -186,7 +196,7 @@
       "raw_fields": {
         "abstract": "zotero-better-bibtex - Make Zotero effective for us LaTeX holdouts",
         "author": "Retorquere, Firstname and Retorquere2, Firstname2",
-        "howpublished": "̆rl{https://github.com/retorquere/zotero-better-bibtex/issues/439}",
+        "howpublished": "\\url{https://github.com/retorquere/zotero-better-bibtex/issues/439}",
         "journal": "%GitHub%",
         "timestamp": "2015-02-24 12:14:36 +0100",
         "title": "Replicate {{Zotero}} Key Algorithm $·$ {{Issue}} \\#439 $·$ Retorquere/Zotero-Better-Bibtex",
@@ -247,7 +257,12 @@
         "howpublished": [
           {
             "type": "text",
-            "text": "̆rlhttps://github.com/retorquere/zotero-better-bibtex/issues/439"
+            "text": "https://github.com/retorquere/zotero-better-bibtex/issues/439",
+            "marks": [
+              {
+                "type": "url"
+              }
+            ]
           }
         ],
         "title": [
@@ -287,7 +302,7 @@
       "raw_fields": {
         "abstract": "zotero-better-bibtex - Make Zotero effective for us LaTeX holdouts",
         "author": "Retorquere-Double, First-Double",
-        "howpublished": "̆rl{https://github.com/retorquere/zotero-better-bibtex/issues/439}",
+        "howpublished": "\\url{https://github.com/retorquere/zotero-better-bibtex/issues/439}",
         "journal": "%GitHub%",
         "timestamp": "2015-02-24 12:14:36 +0100",
         "title": "Replicate {{Zotero}} Key Algorithm $·$ {{Issue}} \\#439 $·$ Retorquere/Zotero-Better-Bibtex",

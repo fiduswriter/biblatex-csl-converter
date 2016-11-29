@@ -120,7 +120,12 @@
         "note": [
           {
             "type": "text",
-            "text": "̆rlhttp://dx.doi.org/10.1021/ja01623a027"
+            "text": "http://dx.doi.org/10.1021/ja01623a027",
+            "marks": [
+              {
+                "type": "url"
+              }
+            ]
           }
         ],
         "number": [
@@ -196,7 +201,7 @@
         "doi": "10.1021/ja01623a027",
         "issn": "0002-7863",
         "journal": "Journal of the American Chemical Society",
-        "note": "̆rl{http://dx.doi.org/10.1021/ja01623a027}",
+        "note": "\\url{http://dx.doi.org/10.1021/ja01623a027}",
         "number": "18",
         "pages": "4781--4784",
         "timestamp": "2015-02-24 12:14:36 +0100",

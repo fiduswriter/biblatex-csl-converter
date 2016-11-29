@@ -56,7 +56,12 @@
         "note": [
           {
             "type": "text",
-            "text": "̆rlhttp://arxiv.org/abs/1508.05387"
+            "text": "http://arxiv.org/abs/1508.05387",
+            "marks": [
+              {
+                "type": "url"
+              }
+            ]
           }
         ],
         "number": [
@@ -122,7 +127,7 @@
         "journal": "Journal of High Energy Physics",
         "keywords": "Batalin-Vilkoviski formalism,_tablet,covariant string field theory,futur: 3,note: 4,printed,superstring field theory",
         "month": "February",
-        "note": "̆rl{http://arxiv.org/abs/1508.05387}",
+        "note": "\\url{http://arxiv.org/abs/1508.05387}",
         "number": "2",
         "timestamp": "2015-02-24 12:14:36 +0100",
         "title": "{{BV Master Action}} for {{Heterotic}} and {{Type II String Field Theories}}",
@@ -217,7 +222,12 @@
         "note": [
           {
             "type": "text",
-            "text": "̆rlhttp://arxiv.org/abs/1305.4904"
+            "text": "http://arxiv.org/abs/1305.4904",
+            "marks": [
+              {
+                "type": "url"
+              }
+            ]
           }
         ],
         "eprintclass": [
@@ -246,7 +256,7 @@
         "journal": "arXiv:1305.4904 [quant-ph]",
         "keywords": "Quantum Physics",
         "month": "May",
-        "note": "̆rl{http://arxiv.org/abs/1305.4904}",
+        "note": "\\url{http://arxiv.org/abs/1305.4904}",
         "primaryclass": "quant-ph",
         "timestamp": "2015-02-24 12:14:36 +0100",
         "title": "Classical Signature of Quantum Annealing",
@@ -444,7 +454,12 @@
         "note": [
           {
             "type": "text",
-            "text": "̆rlhttp://arxiv.org/abs/1401.2910"
+            "text": "http://arxiv.org/abs/1401.2910",
+            "marks": [
+              {
+                "type": "url"
+              }
+            ]
           }
         ],
         "number": [
@@ -486,7 +501,7 @@
         "journal": "Science",
         "keywords": "Quantum Physics",
         "month": "July",
-        "note": "̆rl{http://arxiv.org/abs/1401.2910}",
+        "note": "\\url{http://arxiv.org/abs/1401.2910}",
         "number": "6195",
         "pages": "420--424",
         "primaryclass": "quant-ph",

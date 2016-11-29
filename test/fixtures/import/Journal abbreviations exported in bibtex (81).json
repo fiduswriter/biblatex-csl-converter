@@ -52,7 +52,12 @@
         "note": [
           {
             "type": "text",
-            "text": "̆rlhttp://linkinghub.elsevier.com/retrieve/pii/S0096300311010137"
+            "text": "http://linkinghub.elsevier.com/retrieve/pii/S0096300311010137",
+            "marks": [
+              {
+                "type": "url"
+              }
+            ]
           }
         ],
         "number": [
@@ -82,7 +87,7 @@
         "journal": "Appl. Math. Comput.",
         "language": "en",
         "month": "November",
-        "note": "̆rl{http://linkinghub.elsevier.com/retrieve/pii/S0096300311010137}",
+        "note": "\\url{http://linkinghub.elsevier.com/retrieve/pii/S0096300311010137}",
         "number": "6",
         "pages": "2497--2508",
         "timestamp": "2015-02-24 12:14:36 +0100",

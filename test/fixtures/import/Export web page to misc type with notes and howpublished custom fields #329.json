@@ -18,7 +18,12 @@
         "howpublished": [
           {
             "type": "text",
-            "text": "̆rlhttp://www.ntp.org/ntpfaq/NTP-s-sw-clocks-quality.htm"
+            "text": "http://www.ntp.org/ntpfaq/NTP-s-sw-clocks-quality.htm",
+            "marks": [
+              {
+                "type": "url"
+              }
+            ]
           }
         ],
         "note": [
@@ -46,7 +51,7 @@
       },
       "raw_fields": {
         "author": "{NTP.org}",
-        "howpublished": "̆rl{http://www.ntp.org/ntpfaq/NTP-s-sw-clocks-quality.htm}",
+        "howpublished": "\\url{http://www.ntp.org/ntpfaq/NTP-s-sw-clocks-quality.htm}",
         "note": "(accessed 2015-02-13)",
         "timestamp": "2015-02-24 12:14:36 +0100",
         "title": "Clock {{Quality}}",
@@ -86,7 +91,12 @@
         "howpublished": [
           {
             "type": "text",
-            "text": "̆rlhttp://www.ntp.org/ntpfaq/NTP-s-sw-clocks-quality.htm"
+            "text": "http://www.ntp.org/ntpfaq/NTP-s-sw-clocks-quality.htm",
+            "marks": [
+              {
+                "type": "url"
+              }
+            ]
           }
         ],
         "title": [
@@ -107,7 +117,7 @@
       },
       "raw_fields": {
         "author": "{NTP.org}",
-        "howpublished": "̆rl{http://www.ntp.org/ntpfaq/NTP-s-sw-clocks-quality.htm}",
+        "howpublished": "\\url{http://www.ntp.org/ntpfaq/NTP-s-sw-clocks-quality.htm}",
         "timestamp": "2015-02-24 12:14:36 +0100",
         "title": "Clock {{Quality}}",
         "year": "2015"
@@ -145,7 +155,12 @@
         "howpublished": [
           {
             "type": "text",
-            "text": "̆rlhttp://www.ntp.org/ntpfaq/NTP-s-sw-clocks-quality.htm"
+            "text": "http://www.ntp.org/ntpfaq/NTP-s-sw-clocks-quality.htm",
+            "marks": [
+              {
+                "type": "url"
+              }
+            ]
           }
         ],
         "title": [
@@ -166,7 +181,7 @@
       },
       "raw_fields": {
         "author": "{NTP.org}",
-        "howpublished": "̆rl{http://www.ntp.org/ntpfaq/NTP-s-sw-clocks-quality.htm}",
+        "howpublished": "\\url{http://www.ntp.org/ntpfaq/NTP-s-sw-clocks-quality.htm}",
         "timestamp": "2015-02-24 12:14:36 +0100",
         "title": "Clock {{Quality}}",
         "year": "2015"

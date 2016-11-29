@@ -116,14 +116,10 @@
         "note": [
           {
             "type": "text",
-            "text": "̆rlhttp://link.springer.com/chapter/10.1007/978-3-642-11218-8"
-          },
-          {
-            "type": "text",
-            "text": "6",
+            "text": "http://link.springer.com/chapter/10.1007/978-3-642-11218-8_6",
             "marks": [
               {
-                "type": "sub"
+                "type": "url"
               }
             ]
           }
@@ -196,7 +192,7 @@
         "doi": "10.1007/978-3-642-11218-8_6",
         "editor": "Coello, Carlos A. Coello and Dhaenens, Clarisse and Jourdan, Laetitia",
         "isbn": "978-3-642-11217-1 978-3-642-11218-8",
-        "note": "̆rl{http://link.springer.com/chapter/10.1007/978-3-642-11218-8_6}",
+        "note": "\\url{http://link.springer.com/chapter/10.1007/978-3-642-11218-8_6}",
         "number": "272",
         "pages": "119--141",
         "publisher": "{Springer Berlin Heidelberg}",
