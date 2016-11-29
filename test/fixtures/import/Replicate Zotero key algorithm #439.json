@@ -1,0 +1,307 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "misc",
+      "entry_key": "firstname_retorquere_replicate_2015",
+      "raw_fields": {
+        "abstract": "zotero-better-bibtex - Make Zotero effective for us LaTeX holdouts",
+        "author": "{Firstname Retorquere}",
+        "howpublished": "̆rl{https://github.com/retorquere/zotero-better-bibtex/issues/439}",
+        "journal": "%GitHub%",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Replicate {{Zotero}} Key Algorithm $·$ {{Issue}} \\#439 $·$ Retorquere/Zotero-Better-Bibtex",
+        "urldate": "2016-01-29",
+        "year": "2015"
+      },
+      "fields": {
+        "date": "2015",
+        "author": [
+          {
+            "given": [
+              {
+                "type": "text",
+                "text": "Firstname"
+              }
+            ],
+            "family": [
+              {
+                "type": "text",
+                "text": "Retorquere"
+              }
+            ]
+          }
+        ],
+        "howpublished": [
+          {
+            "type": "text",
+            "text": "̆rlhttps://github.com/retorquere/zotero-better-bibtex/issues/439"
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Replicate "
+          },
+          {
+            "type": "text",
+            "text": "Zotero",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " Key Algorithm · "
+          },
+          {
+            "type": "text",
+            "text": "Issue",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " #439 · Retorquere/Zotero-Better-Bibtex"
+          }
+        ],
+        "urldate": "2016-01-29"
+      }
+    },
+    "1": {
+      "bib_type": "misc",
+      "entry_key": "retorquere_replicate_2016",
+      "raw_fields": {
+        "abstract": "zotero-better-bibtex - Make Zotero effective for us LaTeX holdouts",
+        "author": "Retorquere, Firstname and Retorquere2, Firstname2",
+        "howpublished": "̆rl{https://github.com/retorquere/zotero-better-bibtex/issues/439}",
+        "journal": "%GitHub%",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Replicate {{Zotero}} Key Algorithm $·$ {{Issue}} \\#439 $·$ Retorquere/Zotero-Better-Bibtex",
+        "urldate": "2016-01-29",
+        "year": "2016"
+      },
+      "fields": {
+        "date": "2016",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Retorquere"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Firstname"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Retorquere2"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Firstname2"
+              }
+            ]
+          }
+        ],
+        "howpublished": [
+          {
+            "type": "text",
+            "text": "̆rlhttps://github.com/retorquere/zotero-better-bibtex/issues/439"
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Replicate "
+          },
+          {
+            "type": "text",
+            "text": "Zotero",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " Key Algorithm · "
+          },
+          {
+            "type": "text",
+            "text": "Issue",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " #439 · Retorquere/Zotero-Better-Bibtex"
+          }
+        ],
+        "urldate": "2016-01-29"
+      }
+    },
+    "2": {
+      "bib_type": "misc",
+      "entry_key": "retorquere-double_replicate_????",
+      "raw_fields": {
+        "abstract": "zotero-better-bibtex - Make Zotero effective for us LaTeX holdouts",
+        "author": "Retorquere-Double, First-Double",
+        "howpublished": "̆rl{https://github.com/retorquere/zotero-better-bibtex/issues/439}",
+        "journal": "%GitHub%",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Replicate {{Zotero}} Key Algorithm $·$ {{Issue}} \\#439 $·$ Retorquere/Zotero-Better-Bibtex",
+        "urldate": "2016-01-29"
+      },
+      "fields": {
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Retorquere-Double"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "First-Double"
+              }
+            ]
+          }
+        ],
+        "howpublished": [
+          {
+            "type": "text",
+            "text": "̆rlhttps://github.com/retorquere/zotero-better-bibtex/issues/439"
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Replicate "
+          },
+          {
+            "type": "text",
+            "text": "Zotero",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " Key Algorithm · "
+          },
+          {
+            "type": "text",
+            "text": "Issue",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " #439 · Retorquere/Zotero-Better-Bibtex"
+          }
+        ],
+        "urldate": "2016-01-29"
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "undefined_variable",
+      "entry": "firstname_retorquere_replicate_2015",
+      "key": "journal",
+      "variable": "GitHub"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "firstname_retorquere_replicate_2015",
+      "field_name": "abstract"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "firstname_retorquere_replicate_2015",
+      "field_name": "journal"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "firstname_retorquere_replicate_2015",
+      "field_name": "timestamp"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "firstname_retorquere_replicate_2015",
+      "field_name": "year"
+    },
+    {
+      "type": "undefined_variable",
+      "entry": "retorquere_replicate_2016",
+      "key": "journal",
+      "variable": "GitHub"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "retorquere_replicate_2016",
+      "field_name": "abstract"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "retorquere_replicate_2016",
+      "field_name": "journal"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "retorquere_replicate_2016",
+      "field_name": "timestamp"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "retorquere_replicate_2016",
+      "field_name": "year"
+    },
+    {
+      "type": "undefined_variable",
+      "entry": "retorquere-double_replicate_????",
+      "key": "journal",
+      "variable": "GitHub"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "retorquere-double_replicate_????",
+      "field_name": "abstract"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "retorquere-double_replicate_????",
+      "field_name": "journal"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "retorquere-double_replicate_????",
+      "field_name": "timestamp"
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "book",
+      "entry_key": "geophysicsstudycommittee_continental_1980",
+      "raw_fields": {
+        "author": "{Geophysics Study Committee} and {Geophysics Research Board} and {Assembly of Mathematical and Physical Sciences, National Research Council}",
+        "isbn": "978-0-309-02928-5",
+        "note": "̆rl{http://www.nap.edu/openbook.php?record_id=203}",
+        "publisher": "{The National Academies Press}",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Continental {{Tectonics}}",
+        "year": "1980"
+      },
+      "fields": {
+        "date": "1980",
+        "author": [
+          {
+            "given": [
+              {
+                "type": "text",
+                "text": "Geophysics Study"
+              }
+            ],
+            "family": [
+              {
+                "type": "text",
+                "text": "Committee"
+              }
+            ]
+          },
+          {
+            "given": [
+              {
+                "type": "text",
+                "text": "Geophysics Research"
+              }
+            ],
+            "family": [
+              {
+                "type": "text",
+                "text": "Board"
+              }
+            ]
+          },
+          {
+            "prefix": [
+              {
+                "type": "text",
+                "text": "Assembly of Mathematical and"
+              }
+            ],
+            "useprefix": true,
+            "family": [
+              {
+                "type": "text",
+                "text": "Physical Sciences"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "National Research Council"
+              }
+            ]
+          }
+        ],
+        "isbn": [
+          {
+            "type": "text",
+            "text": "978-0-309-02928-5"
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "̆rlhttp://www.nap.edu/openbook.php?record"
+          },
+          {
+            "type": "text",
+            "text": "i",
+            "marks": [
+              {
+                "type": "sub"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "d=203"
+          }
+        ],
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "The National Academies Press"
+            }
+          ]
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Continental "
+          },
+          {
+            "type": "text",
+            "text": "Tectonics",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "entry": "geophysicsstudycommittee_continental_1980",
+      "field_name": "timestamp"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "geophysicsstudycommittee_continental_1980",
+      "field_name": "year"
+    }
+  ]
+}

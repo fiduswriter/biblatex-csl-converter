@@ -1,0 +1,175 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "incollection",
+      "entry_key": "Orlin1979SiLlaRh",
+      "raw_fields": {
+        "author": "Orlin, Eric M.",
+        "booktitle": "Studies in {{Latin}} Literature and {{Roman}} History",
+        "date": "1979",
+        "editor": "Deroux, Carl",
+        "isbn": "978-2-87031-104-2 978-2-87031-228-5 978-2-87031-179-0 978-2-87031-184-4 978-2-87031-195-0 978-2-87031-213-1 978-2-87031-256-8 978-2-87031-264-3 978-2-87031-284-1",
+        "keywords": "History,History and criticism,Latin literature,Rome",
+        "langid": "english",
+        "location": "{Bruxelles}",
+        "number": "v. 164, 168, 180, 196, 206, 217, 227, 239, 244, 254, 272, 287, 301, 315, 323, 338",
+        "pages": "70--90",
+        "publisher": "{Latomus}",
+        "series": "Collection Latomus",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Why a {{Second Temple}} for {{Venus Erycina}}?"
+      },
+      "fields": {
+        "date": "1979",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Orlin"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Eric M."
+              }
+            ]
+          }
+        ],
+        "booktitle": [
+          {
+            "type": "text",
+            "text": "Studies in "
+          },
+          {
+            "type": "text",
+            "text": "Latin",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " Literature and "
+          },
+          {
+            "type": "text",
+            "text": "Roman",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " History"
+          }
+        ],
+        "editor": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Deroux"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Carl"
+              }
+            ]
+          }
+        ],
+        "isbn": [
+          {
+            "type": "text",
+            "text": "978-2-87031-104-2 978-2-87031-228-5 978-2-87031-179-0 978-2-87031-184-4 978-2-87031-195-0 978-2-87031-213-1 978-2-87031-256-8 978-2-87031-264-3 978-2-87031-284-1"
+          }
+        ],
+        "keywords": [
+          "History",
+          "History and criticism",
+          "Latin literature",
+          "Rome"
+        ],
+        "location": [
+          [
+            {
+              "type": "text",
+              "text": "Bruxelles"
+            }
+          ]
+        ],
+        "number": [
+          {
+            "type": "text",
+            "text": "v. 164, 168, 180, 196, 206, 217, 227, 239, 244, 254, 272, 287, 301, 315, 323, 338"
+          }
+        ],
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "Latomus"
+            }
+          ]
+        ],
+        "series": [
+          {
+            "type": "text",
+            "text": "Collection Latomus"
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Why a "
+          },
+          {
+            "type": "text",
+            "text": "Second Temple",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " for "
+          },
+          {
+            "type": "text",
+            "text": "Venus Erycina",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "?"
+          }
+        ]
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "entry": "Orlin1979SiLlaRh",
+      "field_name": "langid"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "Orlin1979SiLlaRh",
+      "field_name": "timestamp"
+    }
+  ]
+}

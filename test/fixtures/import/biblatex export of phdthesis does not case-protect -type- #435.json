@@ -1,0 +1,91 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "thesis",
+      "entry_key": "TayW12",
+      "raw_fields": {
+        "author": "Tay Wo Chong Hilares, Luis Roberto",
+        "date": "2012",
+        "institution": "{TU München}",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Numerical {{Simulation}} of the {{Dynamics}} of {{Turbulent Swirling Flames}}",
+        "type": "{{PhD Thesis}}"
+      },
+      "fields": {
+        "date": "2012",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Tay Wo Chong Hilares"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Luis Roberto"
+              }
+            ]
+          }
+        ],
+        "institution": [
+          [
+            {
+              "type": "text",
+              "text": "TU München"
+            }
+          ]
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Numerical "
+          },
+          {
+            "type": "text",
+            "text": "Simulation",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " of the "
+          },
+          {
+            "type": "text",
+            "text": "Dynamics",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " of "
+          },
+          {
+            "type": "text",
+            "text": "Turbulent Swirling Flames",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "entry": "TayW12",
+      "field_name": "timestamp"
+    }
+  ]
+}

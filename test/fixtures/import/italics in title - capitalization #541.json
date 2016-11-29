@@ -1,0 +1,164 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "article",
+      "entry_key": "brill_effects_2006",
+      "raw_fields": {
+        "author": "Brill, R. W. and Bushnell, P. G.",
+        "date": "2006-09-23",
+        "doi": "10.1007/s10695-006-9104-7",
+        "issn": "0920-1742, 1573-5168",
+        "journaltitle": "Fish Physiology and Biochemistry",
+        "langid": "english",
+        "number": "4",
+        "pages": "283--294",
+        "shortjournal": "Fish Physiol Biochem",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Effects of Open- and Closed-System Temperature Changes on Blood {{O}}{\\textsubscript{2}}-Binding Characteristics of {{Atlantic}} Bluefin Tuna ({{{\\emph{Thunnus thynnus}}}})",
+        "url": "http://link.springer.com/article/10.1007/s10695-006-9104-7",
+        "urldate": "2016-08-18",
+        "volume": "32"
+      },
+      "fields": {
+        "date": "2006-09-23",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Brill"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "R. W."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Bushnell"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "P. G."
+              }
+            ]
+          }
+        ],
+        "issn": [
+          {
+            "type": "text",
+            "text": "0920-1742, 1573-5168"
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "Fish Physiology and Biochemistry"
+          }
+        ],
+        "number": [
+          {
+            "type": "text",
+            "text": "4"
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Effects of Open- and Closed-System Temperature Changes on Blood "
+          },
+          {
+            "type": "text",
+            "text": "O",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "2",
+            "marks": [
+              {
+                "type": "sub"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "-Binding Characteristics of "
+          },
+          {
+            "type": "text",
+            "text": "Atlantic",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " Bluefin Tuna ("
+          },
+          {
+            "type": "text",
+            "text": "Thunnus thynnus",
+            "marks": [
+              {
+                "type": "nocase"
+              },
+              {
+                "type": "nocase"
+              },
+              {
+                "type": "em"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ")",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          }
+        ],
+        "urldate": "2016-08-18",
+        "volume": [
+          {
+            "type": "text",
+            "text": "32"
+          }
+        ]
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "entry": "brill_effects_2006",
+      "field_name": "langid"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "brill_effects_2006",
+      "field_name": "shortjournal"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "brill_effects_2006",
+      "field_name": "timestamp"
+    }
+  ]
+}

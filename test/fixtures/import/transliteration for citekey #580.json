@@ -1,0 +1,75 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "book",
+      "entry_key": "Medvedev2002",
+      "raw_fields": {
+        "author": "Медведев, Григорий",
+        "date": "2002",
+        "keywords": "Chernobyl Nuclear Accident; Chornobylʹ; Ukraine; 1986,Nuclear industry,Nuclear reactor accidents,Radioactive wastes",
+        "langid": "russian",
+        "pagetotal": "520",
+        "publisher": "{МК-Периодика}",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Ядерный загар"
+      },
+      "fields": {
+        "date": "2002",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Медведев"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Григорий"
+              }
+            ]
+          }
+        ],
+        "keywords": [
+          "Chernobyl Nuclear Accident; Chornobylʹ; Ukraine; 1986",
+          "Nuclear industry",
+          "Nuclear reactor accidents",
+          "Radioactive wastes"
+        ],
+        "pagetotal": [
+          {
+            "type": "text",
+            "text": "520"
+          }
+        ],
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "МК-Периодика"
+            }
+          ]
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Ядерный загар"
+          }
+        ]
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "entry": "Medvedev2002",
+      "field_name": "langid"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "Medvedev2002",
+      "field_name": "timestamp"
+    }
+  ]
+}

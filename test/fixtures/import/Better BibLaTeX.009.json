@@ -1,0 +1,352 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "article",
+      "entry_key": "Adams2001",
+      "raw_fields": {
+        "author": "Adams, Nancy K and DeSilva, Shanaka L and Self, Steven and Salas, Guido and Schubring, Steven and Permenter, Jason L and Arbesman, Kendra",
+        "date": "2001",
+        "file": "Attachment:files/1/Adams_Huaynaputina.pdf:application/pdf",
+        "journaltitle": "Bulletin of Volcanology",
+        "keywords": "Vulcanian eruptions,breadcrust,plinian",
+        "pages": "493--518",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "The Physical Volcanology of the 1600 Eruption of {{Huaynaputina}}, Southern {{Peru}}",
+        "volume": "62"
+      },
+      "fields": {
+        "date": "2001",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Adams"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Nancy K"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "DeSilva"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Shanaka L"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Self"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Steven"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Salas"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Guido"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Schubring"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Steven"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Permenter"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Jason L"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Arbesman"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Kendra"
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "Bulletin of Volcanology"
+          }
+        ],
+        "keywords": [
+          "Vulcanian eruptions",
+          "breadcrust",
+          "plinian"
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "The Physical Volcanology of the 1600 Eruption of "
+          },
+          {
+            "type": "text",
+            "text": "Huaynaputina",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ", Southern "
+          },
+          {
+            "type": "text",
+            "text": "Peru",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "62"
+          }
+        ]
+      }
+    },
+    "1": {
+      "bib_type": "article",
+      "entry_key": "Adams2002",
+      "raw_fields": {
+        "author": "Adams, Nancy K and DeSilva, Shanaka L and Self, Steven and Salas, Guido and Schubring, Steven and Permenter, Jason L and Arbesman, Kendra",
+        "date": "2001",
+        "file": "Attachment:files/2/Adams_Huaynaputina.pdf:application/pdf",
+        "journaltitle": "Bulletin of Volcanology",
+        "keywords": "Vulcanian eruptions,breadcrust,plinian",
+        "pages": "493--518",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "The Physical Volcanology of the 1600 Eruption of {{Huaynaputina}}, Southern {{Peru}}",
+        "volume": "62"
+      },
+      "fields": {
+        "date": "2001",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Adams"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Nancy K"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "DeSilva"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Shanaka L"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Self"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Steven"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Salas"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Guido"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Schubring"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Steven"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Permenter"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Jason L"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Arbesman"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Kendra"
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "Bulletin of Volcanology"
+          }
+        ],
+        "keywords": [
+          "Vulcanian eruptions",
+          "breadcrust",
+          "plinian"
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "The Physical Volcanology of the 1600 Eruption of "
+          },
+          {
+            "type": "text",
+            "text": "Huaynaputina",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ", Southern "
+          },
+          {
+            "type": "text",
+            "text": "Peru",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "62"
+          }
+        ]
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unexpected_field",
+      "entry": "Adams2001",
+      "field_name": "file"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "Adams2001",
+      "field_name": "timestamp"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "Adams2002",
+      "field_name": "file"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "Adams2002",
+      "field_name": "timestamp"
+    }
+  ]
+}

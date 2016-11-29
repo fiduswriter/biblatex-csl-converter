@@ -1,0 +1,356 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "incollection",
+      "entry_key": "burgorgue-larsen_interventions_2011",
+      "raw_fields": {
+        "author": "Burgorgue-Larsen, Laurence",
+        "booktitle": "La conscience des droits. Mélanges en l'honneur de Jean-Paul Costa",
+        "date": "2011",
+        "isbn": "978-2-247-10748-3",
+        "langid": "french",
+        "location": "{Paris}",
+        "pages": "68--82",
+        "publisher": "{Dalloz}",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Les interventions \\emph{éclairées} devant la Cour européenne des droits de l'homme ou le rôle stratégique des \\emph{amici curiae}",
+        "volumes": "xxxi+710 p."
+      },
+      "fields": {
+        "date": "2011",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Burgorgue-Larsen"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Laurence"
+              }
+            ]
+          }
+        ],
+        "booktitle": [
+          {
+            "type": "text",
+            "text": "La conscience des droits. Mélanges en l'honneur de Jean-Paul Costa"
+          }
+        ],
+        "isbn": [
+          {
+            "type": "text",
+            "text": "978-2-247-10748-3"
+          }
+        ],
+        "location": [
+          [
+            {
+              "type": "text",
+              "text": "Paris"
+            }
+          ]
+        ],
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "Dalloz"
+            }
+          ]
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Les interventions "
+          },
+          {
+            "type": "text",
+            "text": "éclairées",
+            "marks": [
+              {
+                "type": "nocase"
+              },
+              {
+                "type": "em"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " devant la Cour européenne des droits de l'homme ou le rôle stratégique des "
+          },
+          {
+            "type": "text",
+            "text": "amici curiae",
+            "marks": [
+              {
+                "type": "nocase"
+              },
+              {
+                "type": "em"
+              }
+            ]
+          }
+        ],
+        "volumes": [
+          {
+            "type": "text",
+            "text": "xxxi+710 p."
+          }
+        ]
+      }
+    },
+    "1": {
+      "bib_type": "incollection",
+      "entry_key": "leveleux-teixeira_opinion_2010",
+      "raw_fields": {
+        "author": "Leveleux-Teixeira, Corinne",
+        "booktitle": "Consulter, délibérer, décider : donner son avis au Moyen Âge (France-Espagne, \\textsc{vii}\\textsuperscript{e}-\\textsc{xvi}\\textsuperscript{e} siècles)",
+        "date": "2010",
+        "editor": "Charageat, Martine and Leveleux-Teixeira, Corinne",
+        "isbn": "978-2-912025-68-5",
+        "langid": "french",
+        "location": "{Toulouse}",
+        "pages": "33--50",
+        "publisher": "{CNRS et Université de Toulouse-Le Mirail [Framespa]}",
+        "series": "Méridiennes. Études médiévales ibériques",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Opinion et conseil dans la doctrine juridique savante (\\textsc{xii}\\textsuperscript{e}-\\textsc{xiv}\\textsuperscript{e} siècles)",
+        "volumes": "355 p."
+      },
+      "fields": {
+        "date": "2010",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Leveleux-Teixeira"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Corinne"
+              }
+            ]
+          }
+        ],
+        "booktitle": [
+          {
+            "type": "text",
+            "text": "Consulter, délibérer, décider : donner son avis au Moyen Âge (France-Espagne, "
+          },
+          {
+            "type": "text",
+            "text": "vii",
+            "marks": [
+              {
+                "type": "nocase"
+              },
+              {
+                "type": "smallcaps"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "e",
+            "marks": [
+              {
+                "type": "nocase"
+              },
+              {
+                "type": "sup"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "-"
+          },
+          {
+            "type": "text",
+            "text": "xvi",
+            "marks": [
+              {
+                "type": "nocase"
+              },
+              {
+                "type": "smallcaps"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "e",
+            "marks": [
+              {
+                "type": "nocase"
+              },
+              {
+                "type": "sup"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " siècles)"
+          }
+        ],
+        "editor": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Charageat"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Martine"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Leveleux-Teixeira"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Corinne"
+              }
+            ]
+          }
+        ],
+        "isbn": [
+          {
+            "type": "text",
+            "text": "978-2-912025-68-5"
+          }
+        ],
+        "location": [
+          [
+            {
+              "type": "text",
+              "text": "Toulouse"
+            }
+          ]
+        ],
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "CNRS et Université de Toulouse-Le Mirail [Framespa]"
+            }
+          ]
+        ],
+        "series": [
+          {
+            "type": "text",
+            "text": "Méridiennes. Études médiévales ibériques"
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Opinion et conseil dans la doctrine juridique savante ("
+          },
+          {
+            "type": "text",
+            "text": "xii",
+            "marks": [
+              {
+                "type": "nocase"
+              },
+              {
+                "type": "smallcaps"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "e",
+            "marks": [
+              {
+                "type": "nocase"
+              },
+              {
+                "type": "sup"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "-"
+          },
+          {
+            "type": "text",
+            "text": "xiv",
+            "marks": [
+              {
+                "type": "nocase"
+              },
+              {
+                "type": "smallcaps"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "e",
+            "marks": [
+              {
+                "type": "nocase"
+              },
+              {
+                "type": "sup"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " siècles)"
+          }
+        ],
+        "volumes": [
+          {
+            "type": "text",
+            "text": "355 p."
+          }
+        ]
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "entry": "burgorgue-larsen_interventions_2011",
+      "field_name": "langid"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "burgorgue-larsen_interventions_2011",
+      "field_name": "timestamp"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "leveleux-teixeira_opinion_2010",
+      "field_name": "langid"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "leveleux-teixeira_opinion_2010",
+      "field_name": "timestamp"
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "incollection",
+      "entry_key": "Kaufmann1990",
+      "raw_fields": {
+        "author": "Kaufmann, Franz-Xaver",
+        "booktitle": "{Sozialpolitik und Sozialstaat: Soziologische Analysen}",
+        "doi": "10.1007/978-3-322-99962-7_7",
+        "editor": "Kauffmann, Franz-Xaver",
+        "pages": "145--160",
+        "publisher": "{VS Verlag für Sozialwissenschaften}",
+        "title": "{Sozialpolitik und Bevölkerungsprozeß{}}",
+        "year": "[1990] 2002"
+      },
+      "fields": {
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Kaufmann"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Franz-Xaver"
+              }
+            ]
+          }
+        ],
+        "booktitle": [
+          {
+            "type": "text",
+            "text": "Sozialpolitik und Sozialstaat: Soziologische Analysen",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          }
+        ],
+        "editor": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Kauffmann"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Franz-Xaver"
+              }
+            ]
+          }
+        ],
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "VS Verlag für Sozialwissenschaften"
+            }
+          ]
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Sozialpolitik und Bevölkerungsprozeß",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "1": {
+      "bib_type": "incollection",
+      "entry_key": "Kaufmann1997",
+      "raw_fields": {
+        "author": "Kaufmann, Franz-Xaver",
+        "booktitle": "{Sozialpolitik und Sozialstaat: Soziologische Analysen}",
+        "doi": "10.1007/978-3-322-99962-7_11",
+        "editor": "Kauffmann, Franz-Xaver",
+        "pages": "241--260",
+        "publisher": "{VS Verlag für Sozialwissenschaften}",
+        "title": "{Schwindet die integrative Funktion des Sozialstaates?}",
+        "year": "[1997] 2002"
+      },
+      "fields": {
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Kaufmann"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Franz-Xaver"
+              }
+            ]
+          }
+        ],
+        "booktitle": [
+          {
+            "type": "text",
+            "text": "Sozialpolitik und Sozialstaat: Soziologische Analysen",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          }
+        ],
+        "editor": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Kauffmann"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Franz-Xaver"
+              }
+            ]
+          }
+        ],
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "VS Verlag für Sozialwissenschaften"
+            }
+          ]
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Schwindet die integrative Funktion des Sozialstaates?",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unknown_date",
+      "entry": "Kaufmann1990",
+      "field_name": "year",
+      "value": "[1990] 2002"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "Kaufmann1990",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_date",
+      "entry": "Kaufmann1997",
+      "field_name": "year",
+      "value": "[1997] 2002"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "Kaufmann1997",
+      "field_name": "year"
+    }
+  ]
+}

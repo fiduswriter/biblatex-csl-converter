@@ -1,0 +1,104 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "thesis",
+      "entry_key": "Woller2011DetMultiple",
+      "raw_fields": {
+        "author": "Wøller, Sune Brøndum",
+        "language": "norsk",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "{Det multiple arkæologiske objekt. Et studie af materialitet og arkæologiske tekstiler}",
+        "year": "2011"
+      },
+      "fields": {
+        "date": "2011",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Wøller"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Sune Brøndum"
+              }
+            ]
+          }
+        ],
+        "language": [
+          "norsk"
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Det multiple arkæologiske objekt. Et studie af materialitet og arkæologiske tekstiler"
+          }
+        ]
+      }
+    },
+    "1": {
+      "bib_type": "thesis",
+      "entry_key": "Woller2011CTRDet",
+      "raw_fields": {
+        "author": "Wøller, Sune Brøndum",
+        "language": "norsk",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "{CTR Det multiple arkæologiske objekt. Et studie af materialitet og arkæologiske tekstiler}",
+        "year": "2011"
+      },
+      "fields": {
+        "date": "2011",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Wøller"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Sune Brøndum"
+              }
+            ]
+          }
+        ],
+        "language": [
+          "norsk"
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "CTR Det multiple arkæologiske objekt. Et studie af materialitet og arkæologiske tekstiler"
+          }
+        ]
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "entry": "Woller2011DetMultiple",
+      "field_name": "timestamp"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "Woller2011DetMultiple",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "Woller2011CTRDet",
+      "field_name": "timestamp"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "Woller2011CTRDet",
+      "field_name": "year"
+    }
+  ]
+}

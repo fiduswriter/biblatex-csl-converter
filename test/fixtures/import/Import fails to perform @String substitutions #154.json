@@ -1,0 +1,54 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "book",
+      "entry_key": "Bert:2001:SQL",
+      "raw_fields": {
+        "author": "R. A. Bert",
+        "title": "SQL is great",
+        "publisher": "Freds Publishing",
+        "address": "London, UK"
+      },
+      "fields": {
+        "author": [
+          {
+            "given": [
+              {
+                "type": "text",
+                "text": "R. A."
+              }
+            ],
+            "family": [
+              {
+                "type": "text",
+                "text": "Bert"
+              }
+            ]
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "SQL is great"
+          }
+        ],
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "Freds Publishing"
+            }
+          ]
+        ],
+        "location": [
+          [
+            {
+              "type": "text",
+              "text": "London, UK"
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

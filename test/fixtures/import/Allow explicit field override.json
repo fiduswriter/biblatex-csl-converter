@@ -1,0 +1,115 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "article",
+      "entry_key": "anand2014technicalreportformally",
+      "raw_fields": {
+        "author": "Anand, Abhishek and Rahli, Vincent",
+        "date": "2014",
+        "note": "http://www.nuprl.org/html/verification/",
+        "origdate": "1856",
+        "origtitle": "An Old Title",
+        "timestamp": "2011.03.22",
+        "title": "Technical {{Report}} : {{Towards}} a {{Formally Verified Proof Assistant}}",
+        "url": "http://www.nuprl.org/html/verification/"
+      },
+      "fields": {
+        "date": "2014",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Anand"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Abhishek"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Rahli"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Vincent"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "http://www.nuprl.org/html/verification/"
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Technical "
+          },
+          {
+            "type": "text",
+            "text": "Report",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " : "
+          },
+          {
+            "type": "text",
+            "text": "Towards",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " a "
+          },
+          {
+            "type": "text",
+            "text": "Formally Verified Proof Assistant",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unexpected_field",
+      "entry": "anand2014technicalreportformally",
+      "field_name": "origdate"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "anand2014technicalreportformally",
+      "field_name": "origtitle"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "anand2014technicalreportformally",
+      "field_name": "timestamp"
+    }
+  ]
+}

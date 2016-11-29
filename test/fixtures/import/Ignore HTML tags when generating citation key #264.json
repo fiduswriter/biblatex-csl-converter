@@ -1,0 +1,131 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "article",
+      "entry_key": "hannam_nodo_1998",
+      "raw_fields": {
+        "author": "Hannam, Walter A.",
+        "date": "1998",
+        "journaltitle": "Florilegium",
+        "pages": "145--165",
+        "shortjournal": "Florilegium",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "{{{\\emph{Nodo unitatis et caritatis}}}}: {{The}} Structure and Argument of {{Augustine}}'s {{{\\emph{De doctrina Christiana}}}}",
+        "url": "https://journals.lib.unb.ca/index.php/flor/article/view/14263",
+        "urldate": "2015-07-07",
+        "volume": "15"
+      },
+      "fields": {
+        "date": "1998",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Hannam"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Walter A."
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "Florilegium"
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Nodo unitatis et caritatis",
+            "marks": [
+              {
+                "type": "nocase"
+              },
+              {
+                "type": "nocase"
+              },
+              {
+                "type": "em"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ": ",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "The",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " Structure and Argument of "
+          },
+          {
+            "type": "text",
+            "text": "Augustine",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "'s "
+          },
+          {
+            "type": "text",
+            "text": "De doctrina Christiana",
+            "marks": [
+              {
+                "type": "nocase"
+              },
+              {
+                "type": "nocase"
+              },
+              {
+                "type": "em"
+              }
+            ]
+          }
+        ],
+        "urldate": "2015-07-07",
+        "volume": [
+          {
+            "type": "text",
+            "text": "15"
+          }
+        ]
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unexpected_field",
+      "entry": "hannam_nodo_1998",
+      "field_name": "shortjournal"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "hannam_nodo_1998",
+      "field_name": "timestamp"
+    }
+  ]
+}

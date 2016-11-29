@@ -1,0 +1,226 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "inproceedings",
+      "entry_key": "EmmerJaens14a",
+      "raw_fields": {
+        "address": "Krakow",
+        "author": "Emmert, Thomas and Jaensch, Stefan and Sovardi, Carlo and Polifke, Wolfgang",
+        "booktitle": "7th {{Forum Acusticum}}",
+        "keywords": "NonPerRev",
+        "month": "September",
+        "note": "̆rl{http://www.fa2014.agh.edu.pl/fa2014_cd/}",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "{{taX}} - a {{Flexible Tool}} for {{Low}}-{{Order Duct Acoustic Simulation}} in {{Time}} and {{Frequency Domain}}",
+        "year": "2014"
+      },
+      "fields": {
+        "location": [
+          [
+            {
+              "type": "text",
+              "text": "Krakow"
+            }
+          ]
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Emmert"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Thomas"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Jaensch"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Stefan"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Sovardi"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Carlo"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Polifke"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Wolfgang"
+              }
+            ]
+          }
+        ],
+        "booktitle": [
+          {
+            "type": "text",
+            "text": "7th "
+          },
+          {
+            "type": "text",
+            "text": "Forum Acusticum",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          }
+        ],
+        "keywords": [
+          "NonPerRev"
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "̆rlhttp://www.fa2014.agh.edu.pl/fa2014"
+          },
+          {
+            "type": "text",
+            "text": "c",
+            "marks": [
+              {
+                "type": "sub"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "d/"
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "taX",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " - a "
+          },
+          {
+            "type": "text",
+            "text": "Flexible Tool",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " for "
+          },
+          {
+            "type": "text",
+            "text": "Low",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "-"
+          },
+          {
+            "type": "text",
+            "text": "Order Duct Acoustic Simulation",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " in "
+          },
+          {
+            "type": "text",
+            "text": "Time",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " and "
+          },
+          {
+            "type": "text",
+            "text": "Frequency Domain",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unknown_date",
+      "entry": "EmmerJaens14a",
+      "field_name": "year,month",
+      "value": [
+        "2014",
+        "September"
+      ]
+    },
+    {
+      "type": "unknown_field",
+      "entry": "EmmerJaens14a",
+      "field_name": "month"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "EmmerJaens14a",
+      "field_name": "timestamp"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "EmmerJaens14a",
+      "field_name": "year"
+    }
+  ]
+}

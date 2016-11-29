@@ -1,0 +1,43 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "article",
+      "entry_key": "Brons:pretest",
+      "raw_fields": {
+        "author": "Brøns, Morten",
+        "note": "Hello hej ",
+        "title": "$pretest$"
+      },
+      "fields": {
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Brøns"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Morten"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "Hello hej "
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "pretest"
+          }
+        ]
+      }
+    }
+  }
+}

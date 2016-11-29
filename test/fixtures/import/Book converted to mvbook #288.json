@@ -1,0 +1,111 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "mvbook",
+      "entry_key": "russ_savoir_1990",
+      "raw_fields": {
+        "annotation": "Comprend : t. 1, La puissance du désordre ; t. 2, La fin des dogmes",
+        "author": "Russ, Jacqueline",
+        "date": "1990",
+        "isbn": "2-218-05069-2",
+        "langid": "french",
+        "location": "{Paris}",
+        "number": "746",
+        "pagetotal": "79",
+        "publisher": "{Hatier}",
+        "series": "Profil",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Savoir et pouvoir",
+        "volumes": "2"
+      },
+      "fields": {
+        "date": "1990",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Russ"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Jacqueline"
+              }
+            ]
+          }
+        ],
+        "isbn": [
+          {
+            "type": "text",
+            "text": "2-218-05069-2"
+          }
+        ],
+        "location": [
+          [
+            {
+              "type": "text",
+              "text": "Paris"
+            }
+          ]
+        ],
+        "number": [
+          {
+            "type": "text",
+            "text": "746"
+          }
+        ],
+        "pagetotal": [
+          {
+            "type": "text",
+            "text": "79"
+          }
+        ],
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "Hatier"
+            }
+          ]
+        ],
+        "series": [
+          {
+            "type": "text",
+            "text": "Profil"
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Savoir et pouvoir"
+          }
+        ],
+        "volumes": [
+          {
+            "type": "text",
+            "text": "2"
+          }
+        ]
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unexpected_field",
+      "entry": "russ_savoir_1990",
+      "field_name": "annotation"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "russ_savoir_1990",
+      "field_name": "langid"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "russ_savoir_1990",
+      "field_name": "timestamp"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "book",
+      "entry_key": "id",
+      "raw_fields": {
+        "title": "Filename character test. Relative path",
+        "file": ",. '[]\\{\\}`-=~!@#$%^&()_+.pdf:Better BibTeX.013/files/32/,. '[]\\{\\}`-=~!@#$%^&()_+.pdf:application/pdf"
+      },
+      "fields": {
+        "title": [
+          {
+            "type": "text",
+            "text": "Filename character test. Relative path"
+          }
+        ]
+      }
+    },
+    "1": {
+      "bib_type": "book",
+      "entry_key": "id2",
+      "raw_fields": {
+        "title": "Filename character test. Absolute path",
+        "file": ",. '[]\\{\\}`-=~!@#$%^&()_+.pdf:Better BibTeX.013/some/path/,. '[]\\{\\}`-=~!@#$%^&()_+.pdf:application/pdf"
+      },
+      "fields": {
+        "title": [
+          {
+            "type": "text",
+            "text": "Filename character test. Absolute path"
+          }
+        ]
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unexpected_field",
+      "entry": "id",
+      "field_name": "file"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "id2",
+      "field_name": "file"
+    }
+  ]
+}

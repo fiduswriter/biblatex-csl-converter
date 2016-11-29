@@ -1,0 +1,46 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "post-weblog",
+      "entry_key": "doe_test",
+      "raw_fields": {
+        "author": "Doe, John",
+        "date": "2014-12-31/2015-01-01",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Test"
+      },
+      "fields": {
+        "date": "2014-12-31/2015-01-01",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Doe"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "John"
+              }
+            ]
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Test"
+          }
+        ]
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "entry": "doe_test",
+      "field_name": "timestamp"
+    }
+  ]
+}

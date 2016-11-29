@@ -1,0 +1,173 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "article",
+      "entry_key": "Frit2",
+      "raw_fields": {
+        "author": "Fritz, U. and Corti, C. and Päckert, M.",
+        "date": "2012",
+        "doi": "10.1007/s13127-011-0069-8",
+        "journaltitle": "Actes du 4\\textsuperscript{ème} Congrès Français d'Acoustique",
+        "langid": "french",
+        "pages": "71--80",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Test of markupconversion: Italics, bold, superscript, subscript, and small caps: Mitochondrial DNA\\textsubscript{2} sequences suggest unexpected phylogenetic position of Corso-Sardinian grass snakes (\\emph{Natrix cetti}) and \\textbf{do not} support their \\textsc{species status}, with notes on phylogeography and subspecies delineation of grass snakes.",
+        "volume": "12"
+      },
+      "fields": {
+        "date": "2012",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Fritz"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "U."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Corti"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "C."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Päckert"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "M."
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "Actes du 4"
+          },
+          {
+            "type": "text",
+            "text": "ème",
+            "marks": [
+              {
+                "type": "sup"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " Congrès Français d'Acoustique"
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Test of markupconversion: Italics, bold, superscript, subscript, and small caps: Mitochondrial DNA"
+          },
+          {
+            "type": "text",
+            "text": "2",
+            "marks": [
+              {
+                "type": "nocase"
+              },
+              {
+                "type": "sub"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " sequences suggest unexpected phylogenetic position of Corso-Sardinian grass snakes ("
+          },
+          {
+            "type": "text",
+            "text": "Natrix cetti",
+            "marks": [
+              {
+                "type": "nocase"
+              },
+              {
+                "type": "em"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ") and "
+          },
+          {
+            "type": "text",
+            "text": "do not",
+            "marks": [
+              {
+                "type": "nocase"
+              },
+              {
+                "type": "strong"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " support their "
+          },
+          {
+            "type": "text",
+            "text": "species status",
+            "marks": [
+              {
+                "type": "nocase"
+              },
+              {
+                "type": "smallcaps"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ", with notes on phylogeography and subspecies delineation of grass snakes."
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "12"
+          }
+        ]
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "entry": "Frit2",
+      "field_name": "langid"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "Frit2",
+      "field_name": "timestamp"
+    }
+  ]
+}

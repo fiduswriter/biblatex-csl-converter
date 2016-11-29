@@ -1,0 +1,132 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "inproceedings",
+      "entry_key": "author:06",
+      "raw_fields": {
+        "title": "Some publication title",
+        "author": "Author, First and Author, Second",
+        "crossref": "conference:06",
+        "pages": "330—331"
+      },
+      "fields": {
+        "title": [
+          {
+            "type": "text",
+            "text": "Some publication title"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Author"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "First"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Author"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Second"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "1": {
+      "bib_type": "proceedings",
+      "entry_key": "conference:06",
+      "raw_fields": {
+        "editor": "Editor, First and Editor, Second",
+        "title": "Proceedings of the Xth Conference on XYZ",
+        "booktitle": "Proceedings of the Xth Conference on XYZ (Book)",
+        "year": "2006",
+        "month": "oct"
+      },
+      "fields": {
+        "editor": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Editor"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "First"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Editor"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Second"
+              }
+            ]
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Proceedings of the Xth Conference on XYZ"
+          }
+        ]
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "entry": "author:06",
+      "field_name": "crossref"
+    },
+    {
+      "type": "unknown_date",
+      "entry": "conference:06",
+      "field_name": "year,month",
+      "value": [
+        "2006",
+        "oct"
+      ]
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "conference:06",
+      "field_name": "booktitle"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "conference:06",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "conference:06",
+      "field_name": "month"
+    }
+  ]
+}

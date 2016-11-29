@@ -1,0 +1,1322 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "article",
+      "entry_key": "barker1_2016_turkey",
+      "raw_fields": {
+        "abstract": "Religious fundamentalism is a powerful force in Turkey where the military has a long history of intervening in politics to ensure the nation remains secular.",
+        "author": "Barker1, Anne",
+        "date": "2016-07-18T20:26:06",
+        "entrysubtype": "newspaper",
+        "journaltitle": "ABC News",
+        "langid": "australian",
+        "note": "Actual: 2016-07-18T20:26:06+10:00",
+        "rights": "http://www.abc.net.au/conditions.htm\\#UseOfContent",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Turkey Divided between Secular and {{Islamist}} Rule",
+        "url": "http://www.abc.net.au/news/2016-07-18/turkey-coup-attempt-shows-division-over-wish-for-islamist-rule/7639292",
+        "urldate": "2016-07-24"
+      },
+      "fields": {
+        "date": "2016-07-18T20:26:06",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Barker1"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Anne"
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "ABC News"
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "Actual: 2016-07-18T20:26:06+10:00"
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Turkey Divided between Secular and "
+          },
+          {
+            "type": "text",
+            "text": "Islamist",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " Rule"
+          }
+        ],
+        "urldate": "2016-07-24"
+      }
+    },
+    "1": {
+      "bib_type": "article",
+      "entry_key": "barker2_2016_turkey",
+      "raw_fields": {
+        "abstract": "Religious fundamentalism is a powerful force in Turkey where the military has a long history of intervening in politics to ensure the nation remains secular.",
+        "author": "Barker2, Anne",
+        "date": "2016-07-18T20:26:06+10:00",
+        "entrysubtype": "newspaper",
+        "journaltitle": "ABC News",
+        "langid": "australian",
+        "note": "Actual: 2016-07-18T20:26:06+10:00",
+        "rights": "http://www.abc.net.au/conditions.htm\\#UseOfContent",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Turkey Divided between Secular and {{Islamist}} Rule",
+        "url": "http://www.abc.net.au/news/2016-07-18/turkey-coup-attempt-shows-division-over-wish-for-islamist-rule/7639292",
+        "urldate": "2016-07-24"
+      },
+      "fields": {
+        "date": "2016-07-18T20:26:06+10:00",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Barker2"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Anne"
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "ABC News"
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "Actual: 2016-07-18T20:26:06+10:00"
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Turkey Divided between Secular and "
+          },
+          {
+            "type": "text",
+            "text": "Islamist",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " Rule"
+          }
+        ],
+        "urldate": "2016-07-24"
+      }
+    },
+    "2": {
+      "bib_type": "article",
+      "entry_key": "barker3_2016_turkey",
+      "raw_fields": {
+        "abstract": "Religious fundamentalism is a powerful force in Turkey where the military has a long history of intervening in politics to ensure the nation remains secular.",
+        "author": "Barker3, Anne",
+        "date": "2016-07-18T20:26:06Z",
+        "entrysubtype": "newspaper",
+        "journaltitle": "ABC News",
+        "langid": "australian",
+        "note": "Actual: 2016-07-18T20:26:06+10:00",
+        "rights": "http://www.abc.net.au/conditions.htm\\#UseOfContent",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Turkey Divided between Secular and {{Islamist}} Rule",
+        "url": "http://www.abc.net.au/news/2016-07-18/turkey-coup-attempt-shows-division-over-wish-for-islamist-rule/7639292",
+        "urldate": "2016-07-24"
+      },
+      "fields": {
+        "date": "2016-07-18T20:26:06Z",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Barker3"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Anne"
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "ABC News"
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "Actual: 2016-07-18T20:26:06+10:00"
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Turkey Divided between Secular and "
+          },
+          {
+            "type": "text",
+            "text": "Islamist",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " Rule"
+          }
+        ],
+        "urldate": "2016-07-24"
+      }
+    },
+    "3": {
+      "bib_type": "article",
+      "entry_key": "barker4_-876_turkey",
+      "raw_fields": {
+        "abstract": "Religious fundamentalism is a powerful force in Turkey where the military has a long history of intervening in politics to ensure the nation remains secular.",
+        "author": "Barker4, Anne",
+        "date": "-0876",
+        "entrysubtype": "newspaper",
+        "journaltitle": "ABC News",
+        "langid": "australian",
+        "note": "Actual: 2016-07-18T20:26:06+10:00",
+        "rights": "http://www.abc.net.au/conditions.htm\\#UseOfContent",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Turkey Divided between Secular and {{Islamist}} Rule",
+        "url": "http://www.abc.net.au/news/2016-07-18/turkey-coup-attempt-shows-division-over-wish-for-islamist-rule/7639292",
+        "urldate": "2016-07-24"
+      },
+      "fields": {
+        "date": "-0876",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Barker4"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Anne"
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "ABC News"
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "Actual: 2016-07-18T20:26:06+10:00"
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Turkey Divided between Secular and "
+          },
+          {
+            "type": "text",
+            "text": "Islamist",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " Rule"
+          }
+        ],
+        "urldate": "2016-07-24"
+      }
+    },
+    "4": {
+      "bib_type": "article",
+      "entry_key": "barker5_1723_turkey",
+      "raw_fields": {
+        "abstract": "Religious fundamentalism is a powerful force in Turkey where the military has a long history of intervening in politics to ensure the nation remains secular.",
+        "author": "Barker5, Anne",
+        "date": "1723~",
+        "entrysubtype": "newspaper",
+        "journaltitle": "ABC News",
+        "langid": "australian",
+        "note": "Actual: 2016-07-18T20:26:06+10:00",
+        "rights": "http://www.abc.net.au/conditions.htm\\#UseOfContent",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Turkey Divided between Secular and {{Islamist}} Rule",
+        "url": "http://www.abc.net.au/news/2016-07-18/turkey-coup-attempt-shows-division-over-wish-for-islamist-rule/7639292",
+        "urldate": "2016-07-24"
+      },
+      "fields": {
+        "date": "1723~",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Barker5"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Anne"
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "ABC News"
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "Actual: 2016-07-18T20:26:06+10:00"
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Turkey Divided between Secular and "
+          },
+          {
+            "type": "text",
+            "text": "Islamist",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " Rule"
+          }
+        ],
+        "urldate": "2016-07-24"
+      }
+    },
+    "5": {
+      "bib_type": "article",
+      "entry_key": "barker6_1723_turkey",
+      "raw_fields": {
+        "abstract": "Religious fundamentalism is a powerful force in Turkey where the military has a long history of intervening in politics to ensure the nation remains secular.",
+        "author": "Barker6, Anne",
+        "date": "1723?",
+        "entrysubtype": "newspaper",
+        "journaltitle": "ABC News",
+        "langid": "australian",
+        "note": "Actual: 2016-07-18T20:26:06+10:00",
+        "rights": "http://www.abc.net.au/conditions.htm\\#UseOfContent",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Turkey Divided between Secular and {{Islamist}} Rule",
+        "url": "http://www.abc.net.au/news/2016-07-18/turkey-coup-attempt-shows-division-over-wish-for-islamist-rule/7639292",
+        "urldate": "2016-07-24"
+      },
+      "fields": {
+        "date": "1723?",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Barker6"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Anne"
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "ABC News"
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "Actual: 2016-07-18T20:26:06+10:00"
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Turkey Divided between Secular and "
+          },
+          {
+            "type": "text",
+            "text": "Islamist",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " Rule"
+          }
+        ],
+        "urldate": "2016-07-24"
+      }
+    },
+    "6": {
+      "bib_type": "article",
+      "entry_key": "barker7_1723_turkey",
+      "raw_fields": {
+        "abstract": "Religious fundamentalism is a powerful force in Turkey where the military has a long history of intervening in politics to ensure the nation remains secular.",
+        "author": "Barker7, Anne",
+        "date": "1723?~",
+        "entrysubtype": "newspaper",
+        "journaltitle": "ABC News",
+        "langid": "australian",
+        "note": "Actual: 2016-07-18T20:26:06+10:00",
+        "rights": "http://www.abc.net.au/conditions.htm\\#UseOfContent",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Turkey Divided between Secular and {{Islamist}} Rule",
+        "url": "http://www.abc.net.au/news/2016-07-18/turkey-coup-attempt-shows-division-over-wish-for-islamist-rule/7639292",
+        "urldate": "2016-07-24"
+      },
+      "fields": {
+        "date": "1723?~",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Barker7"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Anne"
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "ABC News"
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "Actual: 2016-07-18T20:26:06+10:00"
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Turkey Divided between Secular and "
+          },
+          {
+            "type": "text",
+            "text": "Islamist",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " Rule"
+          }
+        ],
+        "urldate": "2016-07-24"
+      }
+    },
+    "7": {
+      "bib_type": "article",
+      "entry_key": "barker8_1988_turkey",
+      "raw_fields": {
+        "abstract": "Religious fundamentalism is a powerful force in Turkey where the military has a long history of intervening in politics to ensure the nation remains secular.",
+        "author": "Barker8, Anne",
+        "date": "1988/1992",
+        "entrysubtype": "newspaper",
+        "journaltitle": "ABC News",
+        "langid": "australian",
+        "note": "Actual: 2016-07-18T20:26:06+10:00",
+        "rights": "http://www.abc.net.au/conditions.htm\\#UseOfContent",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Turkey Divided between Secular and {{Islamist}} Rule",
+        "url": "http://www.abc.net.au/news/2016-07-18/turkey-coup-attempt-shows-division-over-wish-for-islamist-rule/7639292",
+        "urldate": "2016-07-24"
+      },
+      "fields": {
+        "date": "1988/1992",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Barker8"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Anne"
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "ABC News"
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "Actual: 2016-07-18T20:26:06+10:00"
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Turkey Divided between Secular and "
+          },
+          {
+            "type": "text",
+            "text": "Islamist",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " Rule"
+          }
+        ],
+        "urldate": "2016-07-24"
+      }
+    },
+    "8": {
+      "bib_type": "article",
+      "entry_key": "barker9_2004_turkey",
+      "raw_fields": {
+        "abstract": "Religious fundamentalism is a powerful force in Turkey where the military has a long history of intervening in politics to ensure the nation remains secular.",
+        "author": "Barker9, Anne",
+        "date": "2004-22",
+        "entrysubtype": "newspaper",
+        "journaltitle": "ABC News",
+        "langid": "australian",
+        "note": "Actual: 2016-07-18T20:26:06+10:00",
+        "rights": "http://www.abc.net.au/conditions.htm\\#UseOfContent",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Turkey Divided between Secular and {{Islamist}} Rule",
+        "url": "http://www.abc.net.au/news/2016-07-18/turkey-coup-attempt-shows-division-over-wish-for-islamist-rule/7639292",
+        "urldate": "2016-07-24"
+      },
+      "fields": {
+        "date": "2004-22",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Barker9"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Anne"
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "ABC News"
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "Actual: 2016-07-18T20:26:06+10:00"
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Turkey Divided between Secular and "
+          },
+          {
+            "type": "text",
+            "text": "Islamist",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " Rule"
+          }
+        ],
+        "urldate": "2016-07-24"
+      }
+    },
+    "9": {
+      "bib_type": "article",
+      "entry_key": "barker10_199u_turkey",
+      "raw_fields": {
+        "abstract": "Religious fundamentalism is a powerful force in Turkey where the military has a long history of intervening in politics to ensure the nation remains secular.",
+        "author": "Barker10, Anne",
+        "date": "199u",
+        "entrysubtype": "newspaper",
+        "journaltitle": "ABC News",
+        "langid": "australian",
+        "note": "Actual: 2016-07-18T20:26:06+10:00",
+        "rights": "http://www.abc.net.au/conditions.htm\\#UseOfContent",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Turkey Divided between Secular and {{Islamist}} Rule",
+        "url": "http://www.abc.net.au/news/2016-07-18/turkey-coup-attempt-shows-division-over-wish-for-islamist-rule/7639292",
+        "urldate": "2016-07-24"
+      },
+      "fields": {
+        "date": "199u",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Barker10"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Anne"
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "ABC News"
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "Actual: 2016-07-18T20:26:06+10:00"
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Turkey Divided between Secular and "
+          },
+          {
+            "type": "text",
+            "text": "Islamist",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " Rule"
+          }
+        ],
+        "urldate": "2016-07-24"
+      }
+    },
+    "10": {
+      "bib_type": "article",
+      "entry_key": "barker11_19uu_turkey",
+      "raw_fields": {
+        "abstract": "Religious fundamentalism is a powerful force in Turkey where the military has a long history of intervening in politics to ensure the nation remains secular.",
+        "author": "Barker11, Anne",
+        "date": "19uu",
+        "entrysubtype": "newspaper",
+        "journaltitle": "ABC News",
+        "langid": "australian",
+        "note": "Actual: 2016-07-18T20:26:06+10:00",
+        "rights": "http://www.abc.net.au/conditions.htm\\#UseOfContent",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Turkey Divided between Secular and {{Islamist}} Rule",
+        "url": "http://www.abc.net.au/news/2016-07-18/turkey-coup-attempt-shows-division-over-wish-for-islamist-rule/7639292",
+        "urldate": "2016-07-24"
+      },
+      "fields": {
+        "date": "19uu",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Barker11"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Anne"
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "ABC News"
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "Actual: 2016-07-18T20:26:06+10:00"
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Turkey Divided between Secular and "
+          },
+          {
+            "type": "text",
+            "text": "Islamist",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " Rule"
+          }
+        ],
+        "urldate": "2016-07-24"
+      }
+    },
+    "11": {
+      "bib_type": "article",
+      "entry_key": "barker12_1999_turkey",
+      "raw_fields": {
+        "abstract": "Religious fundamentalism is a powerful force in Turkey where the military has a long history of intervening in politics to ensure the nation remains secular.",
+        "author": "Barker12, Anne",
+        "date": "1999-uu",
+        "entrysubtype": "newspaper",
+        "journaltitle": "ABC News",
+        "langid": "australian",
+        "note": "Actual: 2016-07-18T20:26:06+10:00",
+        "rights": "http://www.abc.net.au/conditions.htm\\#UseOfContent",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Turkey Divided between Secular and {{Islamist}} Rule",
+        "url": "http://www.abc.net.au/news/2016-07-18/turkey-coup-attempt-shows-division-over-wish-for-islamist-rule/7639292",
+        "urldate": "2016-07-24"
+      },
+      "fields": {
+        "date": "1999-uu",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Barker12"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Anne"
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "ABC News"
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "Actual: 2016-07-18T20:26:06+10:00"
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Turkey Divided between Secular and "
+          },
+          {
+            "type": "text",
+            "text": "Islamist",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " Rule"
+          }
+        ],
+        "urldate": "2016-07-24"
+      }
+    },
+    "12": {
+      "bib_type": "article",
+      "entry_key": "barker13_1999_turkey",
+      "raw_fields": {
+        "abstract": "Religious fundamentalism is a powerful force in Turkey where the military has a long history of intervening in politics to ensure the nation remains secular.",
+        "author": "Barker13, Anne",
+        "date": "1999-01-uu",
+        "entrysubtype": "newspaper",
+        "journaltitle": "ABC News",
+        "langid": "australian",
+        "note": "Actual: 2016-07-18T20:26:06+10:00",
+        "rights": "http://www.abc.net.au/conditions.htm\\#UseOfContent",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Turkey Divided between Secular and {{Islamist}} Rule",
+        "url": "http://www.abc.net.au/news/2016-07-18/turkey-coup-attempt-shows-division-over-wish-for-islamist-rule/7639292",
+        "urldate": "2016-07-24"
+      },
+      "fields": {
+        "date": "1999-01-uu",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Barker13"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Anne"
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "ABC News"
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "Actual: 2016-07-18T20:26:06+10:00"
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Turkey Divided between Secular and "
+          },
+          {
+            "type": "text",
+            "text": "Islamist",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " Rule"
+          }
+        ],
+        "urldate": "2016-07-24"
+      }
+    },
+    "13": {
+      "bib_type": "article",
+      "entry_key": "barker14_1999_turkey",
+      "raw_fields": {
+        "abstract": "Religious fundamentalism is a powerful force in Turkey where the military has a long history of intervening in politics to ensure the nation remains secular.",
+        "author": "Barker14, Anne",
+        "date": "1999-uu-uu",
+        "entrysubtype": "newspaper",
+        "journaltitle": "ABC News",
+        "langid": "australian",
+        "note": "Actual: 2016-07-18T20:26:06+10:00",
+        "rights": "http://www.abc.net.au/conditions.htm\\#UseOfContent",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Turkey Divided between Secular and {{Islamist}} Rule",
+        "url": "http://www.abc.net.au/news/2016-07-18/turkey-coup-attempt-shows-division-over-wish-for-islamist-rule/7639292",
+        "urldate": "2016-07-24"
+      },
+      "fields": {
+        "date": "1999-uu-uu",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Barker14"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Anne"
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "ABC News"
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "Actual: 2016-07-18T20:26:06+10:00"
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Turkey Divided between Secular and "
+          },
+          {
+            "type": "text",
+            "text": "Islamist",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " Rule"
+          }
+        ],
+        "urldate": "2016-07-24"
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unexpected_field",
+      "entry": "barker1_2016_turkey",
+      "field_name": "abstract"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "barker1_2016_turkey",
+      "field_name": "entrysubtype"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "barker1_2016_turkey",
+      "field_name": "langid"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "barker1_2016_turkey",
+      "field_name": "rights"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "barker1_2016_turkey",
+      "field_name": "timestamp"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "barker2_2016_turkey",
+      "field_name": "abstract"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "barker2_2016_turkey",
+      "field_name": "entrysubtype"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "barker2_2016_turkey",
+      "field_name": "langid"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "barker2_2016_turkey",
+      "field_name": "rights"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "barker2_2016_turkey",
+      "field_name": "timestamp"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "barker3_2016_turkey",
+      "field_name": "abstract"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "barker3_2016_turkey",
+      "field_name": "entrysubtype"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "barker3_2016_turkey",
+      "field_name": "langid"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "barker3_2016_turkey",
+      "field_name": "rights"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "barker3_2016_turkey",
+      "field_name": "timestamp"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "barker4_-876_turkey",
+      "field_name": "abstract"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "barker4_-876_turkey",
+      "field_name": "entrysubtype"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "barker4_-876_turkey",
+      "field_name": "langid"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "barker4_-876_turkey",
+      "field_name": "rights"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "barker4_-876_turkey",
+      "field_name": "timestamp"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "barker5_1723_turkey",
+      "field_name": "abstract"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "barker5_1723_turkey",
+      "field_name": "entrysubtype"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "barker5_1723_turkey",
+      "field_name": "langid"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "barker5_1723_turkey",
+      "field_name": "rights"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "barker5_1723_turkey",
+      "field_name": "timestamp"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "barker6_1723_turkey",
+      "field_name": "abstract"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "barker6_1723_turkey",
+      "field_name": "entrysubtype"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "barker6_1723_turkey",
+      "field_name": "langid"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "barker6_1723_turkey",
+      "field_name": "rights"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "barker6_1723_turkey",
+      "field_name": "timestamp"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "barker7_1723_turkey",
+      "field_name": "abstract"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "barker7_1723_turkey",
+      "field_name": "entrysubtype"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "barker7_1723_turkey",
+      "field_name": "langid"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "barker7_1723_turkey",
+      "field_name": "rights"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "barker7_1723_turkey",
+      "field_name": "timestamp"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "barker8_1988_turkey",
+      "field_name": "abstract"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "barker8_1988_turkey",
+      "field_name": "entrysubtype"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "barker8_1988_turkey",
+      "field_name": "langid"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "barker8_1988_turkey",
+      "field_name": "rights"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "barker8_1988_turkey",
+      "field_name": "timestamp"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "barker9_2004_turkey",
+      "field_name": "abstract"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "barker9_2004_turkey",
+      "field_name": "entrysubtype"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "barker9_2004_turkey",
+      "field_name": "langid"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "barker9_2004_turkey",
+      "field_name": "rights"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "barker9_2004_turkey",
+      "field_name": "timestamp"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "barker10_199u_turkey",
+      "field_name": "abstract"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "barker10_199u_turkey",
+      "field_name": "entrysubtype"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "barker10_199u_turkey",
+      "field_name": "langid"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "barker10_199u_turkey",
+      "field_name": "rights"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "barker10_199u_turkey",
+      "field_name": "timestamp"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "barker11_19uu_turkey",
+      "field_name": "abstract"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "barker11_19uu_turkey",
+      "field_name": "entrysubtype"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "barker11_19uu_turkey",
+      "field_name": "langid"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "barker11_19uu_turkey",
+      "field_name": "rights"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "barker11_19uu_turkey",
+      "field_name": "timestamp"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "barker12_1999_turkey",
+      "field_name": "abstract"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "barker12_1999_turkey",
+      "field_name": "entrysubtype"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "barker12_1999_turkey",
+      "field_name": "langid"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "barker12_1999_turkey",
+      "field_name": "rights"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "barker12_1999_turkey",
+      "field_name": "timestamp"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "barker13_1999_turkey",
+      "field_name": "abstract"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "barker13_1999_turkey",
+      "field_name": "entrysubtype"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "barker13_1999_turkey",
+      "field_name": "langid"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "barker13_1999_turkey",
+      "field_name": "rights"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "barker13_1999_turkey",
+      "field_name": "timestamp"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "barker14_1999_turkey",
+      "field_name": "abstract"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "barker14_1999_turkey",
+      "field_name": "entrysubtype"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "barker14_1999_turkey",
+      "field_name": "langid"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "barker14_1999_turkey",
+      "field_name": "rights"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "barker14_1999_turkey",
+      "field_name": "timestamp"
+    }
+  ]
+}

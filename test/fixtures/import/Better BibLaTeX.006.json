@@ -1,0 +1,49 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "article",
+      "entry_key": "test-ticket1661",
+      "raw_fields": {
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Non-Breaking Space: ; Accented Characters: Ñ and Ñ; Tilde in {{URL}}: {{http://example.com/\\~{}user}}"
+      },
+      "fields": {
+        "title": [
+          {
+            "type": "text",
+            "text": "Non-Breaking Space: ; Accented Characters: Ñ and Ñ; Tilde in "
+          },
+          {
+            "type": "text",
+            "text": "URL",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ": "
+          },
+          {
+            "type": "text",
+            "text": "http://example.com/~user",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "entry": "test-ticket1661",
+      "field_name": "timestamp"
+    }
+  ]
+}

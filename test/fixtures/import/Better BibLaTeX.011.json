@@ -1,0 +1,172 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "inproceedings",
+      "entry_key": "Klassen2010",
+      "raw_fields": {
+        "author": "Klassen, Myungsook and Kim, Nyunsu and Liu, Wei Ming",
+        "bibsource": "DBLP, http://dblp.uni-trier.de",
+        "booktitle": "{{CATA}}",
+        "crossref": "DBLP:conf/cata/2010",
+        "date": "2010",
+        "file": "Klassen2010.pdf:files/1/Klassen2010.pdf:application/pdf",
+        "groups": "klasyfikacja",
+        "note": "svm liniowe najlepsze",
+        "owner": "sstudent",
+        "pages": "25--30",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Empirical {{Study}} of {{Support Vector Machine Kernels}} with {{Applications}} to {{Microarray Data}}"
+      },
+      "fields": {
+        "date": "2010",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Klassen"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Myungsook"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Kim"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Nyunsu"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Liu"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Wei Ming"
+              }
+            ]
+          }
+        ],
+        "booktitle": [
+          {
+            "type": "text",
+            "text": "CATA",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "svm liniowe najlepsze"
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Empirical "
+          },
+          {
+            "type": "text",
+            "text": "Study",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " of "
+          },
+          {
+            "type": "text",
+            "text": "Support Vector Machine Kernels",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " with "
+          },
+          {
+            "type": "text",
+            "text": "Applications",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " to "
+          },
+          {
+            "type": "text",
+            "text": "Microarray Data",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "entry": "Klassen2010",
+      "field_name": "bibsource"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "Klassen2010",
+      "field_name": "crossref"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "Klassen2010",
+      "field_name": "file"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "Klassen2010",
+      "field_name": "groups"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "Klassen2010",
+      "field_name": "owner"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "Klassen2010",
+      "field_name": "timestamp"
+    }
+  ]
+}

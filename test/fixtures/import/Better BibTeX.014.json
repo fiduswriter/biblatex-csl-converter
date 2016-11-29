@@ -1,0 +1,19 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "article",
+      "entry_key": "BibTeXEscapeTest1",
+      "raw_fields": {
+        "title": "Escaped backslash followed by \\{\\}: \\\\{"
+      },
+      "fields": {
+        "title": [
+          {
+            "type": "text",
+            "text": "Escaped backslash followed by {}: {"
+          }
+        ]
+      }
+    }
+  }
+}

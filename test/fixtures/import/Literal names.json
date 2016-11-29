@@ -1,0 +1,419 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "article",
+      "entry_key": "sasson_increasing_2013",
+      "raw_fields": {
+        "title": "Increasing cardiopulmonary resuscitation provision in communities with low bystander cardiopulmonary resuscitation rates: a science advisory from the American Heart Association for healthcare providers, policymakers, public health departments, and community leaders",
+        "volume": "127",
+        "issn": "1524-4539",
+        "shorttitle": "Increasing cardiopulmonary resuscitation provision in communities with low bystander cardiopulmonary resuscitation rates",
+        "doi": "10.1161/CIR.0b013e318288b4dd",
+        "language": "eng",
+        "number": "12",
+        "journal": "Circulation",
+        "author": "Sasson, Comilla and Meischke, Hendrika and Abella, Benjamin S and Berg, Robert A and Bobrow, Bentley J and Chan, Paul S and Root, Elisabeth Dowling and Heisler, Michele and Levy, Jerrold H and Link, Mark and Masoudi, Frederick and Ong, Marcus and Sayre, Michael R and Rumsfeld, John S and Rea, Thomas D and {American Heart Association Council on Quality of Care and Outcomes Research} and {Emergency Cardiovascular Care Committee} and {Council on Cardiopulmonary, Critical Care, Perioperative and Resuscitation} and {Council on Clinical Cardiology} and {Council on Cardiovascular Surgery and Anesthesia}",
+        "month": "mar",
+        "year": "2013",
+        "note": "{PMID:} 23439512",
+        "keywords": "Administrative Personnel, American Heart Association, Cardiopulmonary Resuscitation, Community Health Services, Health Personnel, Heart Arrest, Humans, Leadership, Public Health, United States",
+        "pages": "1342--1350"
+      },
+      "fields": {
+        "title": [
+          {
+            "type": "text",
+            "text": "Increasing cardiopulmonary resuscitation provision in communities with low bystander cardiopulmonary resuscitation rates: a science advisory from the American Heart Association for healthcare providers, policymakers, public health departments, and community leaders"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "127"
+          }
+        ],
+        "issn": [
+          {
+            "type": "text",
+            "text": "1524-4539"
+          }
+        ],
+        "language": [
+          "eng"
+        ],
+        "number": [
+          {
+            "type": "text",
+            "text": "12"
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "Circulation"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Sasson"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Comilla"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Meischke"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Hendrika"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Abella"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Benjamin S"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Berg"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Robert A"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Bobrow"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Bentley J"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Chan"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Paul S"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Root"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Elisabeth Dowling"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Heisler"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Michele"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Levy"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Jerrold H"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Link"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Mark"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Masoudi"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Frederick"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Ong"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Marcus"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Sayre"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Michael R"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Rumsfeld"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "John S"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Rea"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Thomas D"
+              }
+            ]
+          },
+          {
+            "given": [
+              {
+                "type": "text",
+                "text": "American Heart Association Council"
+              }
+            ],
+            "prefix": [
+              {
+                "type": "text",
+                "text": "on Quality of Care and"
+              }
+            ],
+            "useprefix": true,
+            "family": [
+              {
+                "type": "text",
+                "text": "Outcomes Research"
+              }
+            ]
+          },
+          {
+            "given": [
+              {
+                "type": "text",
+                "text": "Emergency Cardiovascular Care"
+              }
+            ],
+            "family": [
+              {
+                "type": "text",
+                "text": "Committee"
+              }
+            ]
+          },
+          {
+            "prefix": [
+              {
+                "type": "text",
+                "text": "Council on"
+              }
+            ],
+            "useprefix": true,
+            "suffix": [
+              {
+                "type": "text",
+                "text": "Critical Care"
+              }
+            ],
+            "family": [
+              {
+                "type": "text",
+                "text": "Cardiopulmonary"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Perioperative and Resuscitation"
+              }
+            ]
+          },
+          {
+            "given": [
+              {
+                "type": "text",
+                "text": "Council"
+              }
+            ],
+            "prefix": [
+              {
+                "type": "text",
+                "text": "on"
+              }
+            ],
+            "useprefix": true,
+            "family": [
+              {
+                "type": "text",
+                "text": "Clinical Cardiology"
+              }
+            ]
+          },
+          {
+            "given": [
+              {
+                "type": "text",
+                "text": "Council"
+              }
+            ],
+            "prefix": [
+              {
+                "type": "text",
+                "text": "on Cardiovascular Surgery and"
+              }
+            ],
+            "useprefix": true,
+            "family": [
+              {
+                "type": "text",
+                "text": "Anesthesia"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "PMID: 23439512"
+          }
+        ],
+        "keywords": [
+          "Administrative Personnel",
+          "American Heart Association",
+          "Cardiopulmonary Resuscitation",
+          "Community Health Services",
+          "Health Personnel",
+          "Heart Arrest",
+          "Humans",
+          "Leadership",
+          "Public Health",
+          "United States"
+        ]
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unknown_date",
+      "entry": "sasson_increasing_2013",
+      "field_name": "year,month",
+      "value": [
+        "2013",
+        "mar"
+      ]
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "sasson_increasing_2013",
+      "field_name": "shorttitle"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "sasson_increasing_2013",
+      "field_name": "month"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "sasson_increasing_2013",
+      "field_name": "year"
+    }
+  ]
+}

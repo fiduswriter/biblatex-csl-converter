@@ -1,0 +1,105 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "incollection",
+      "entry_key": "eisenmann_actes_1983",
+      "raw_fields": {
+        "author": "Eisenmann, Charles",
+        "booktitle": "Cours de droit administratif",
+        "crossref": "eisenmann_cours_1982",
+        "date": "1983",
+        "isbn": "2-275-01408-X",
+        "langid": "french",
+        "location": "{Paris}",
+        "pages": "9--332",
+        "publisher": "{LGDJ}",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Les actes de l’Administration [1949-1950]",
+        "volume": "t. 2",
+        "volumes": "2 vol. (786, xxiv+908 p.)"
+      },
+      "fields": {
+        "date": "1983",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Eisenmann"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Charles"
+              }
+            ]
+          }
+        ],
+        "booktitle": [
+          {
+            "type": "text",
+            "text": "Cours de droit administratif"
+          }
+        ],
+        "isbn": [
+          {
+            "type": "text",
+            "text": "2-275-01408-X"
+          }
+        ],
+        "location": [
+          [
+            {
+              "type": "text",
+              "text": "Paris"
+            }
+          ]
+        ],
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "LGDJ"
+            }
+          ]
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Les actes de l’Administration [1949-1950]"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "t. 2"
+          }
+        ],
+        "volumes": [
+          {
+            "type": "text",
+            "text": "2 vol. (786, xxiv+908 p.)"
+          }
+        ]
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "entry": "eisenmann_actes_1983",
+      "field_name": "crossref"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "eisenmann_actes_1983",
+      "field_name": "langid"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "eisenmann_actes_1983",
+      "field_name": "timestamp"
+    }
+  ]
+}

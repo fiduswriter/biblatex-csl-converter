@@ -1,0 +1,119 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "article",
+      "entry_key": "sanders_largest_2016",
+      "raw_fields": {
+        "author": "Sanders, Bernie",
+        "date": "2016-04-06",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "The Largest {{U}}.{{S}}. Companies Would Owe \\$620 Billion in {{U}}.{{S}}. Taxes on the Cash They Store in Tax Havens, the Equivalent of Our Defense Budget. [{{Tweet}}]",
+        "titleaddon": "SenSanders",
+        "url": "https://twitter.com/SenSanders/status/717771426284060673"
+      },
+      "fields": {
+        "date": "2016-04-06",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Sanders"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Bernie"
+              }
+            ]
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "The Largest "
+          },
+          {
+            "type": "text",
+            "text": "U",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "."
+          },
+          {
+            "type": "text",
+            "text": "S",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ". Companies Would Owe $620 Billion in "
+          },
+          {
+            "type": "text",
+            "text": "U",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "."
+          },
+          {
+            "type": "text",
+            "text": "S",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ". Taxes on the Cash They Store in Tax Havens, the Equivalent of Our Defense Budget. ["
+          },
+          {
+            "type": "text",
+            "text": "Tweet",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "]"
+          }
+        ],
+        "titleaddon": [
+          {
+            "type": "text",
+            "text": "SenSanders"
+          }
+        ]
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "entry": "sanders_largest_2016",
+      "field_name": "timestamp"
+    }
+  ]
+}

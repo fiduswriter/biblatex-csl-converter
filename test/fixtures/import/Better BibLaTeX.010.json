@@ -1,0 +1,316 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "inproceedings",
+      "entry_key": "Hulse2009",
+      "raw_fields": {
+        "author": "Hulse, Jason Van and Khoshgoftaar, Taghi M. and Napolitano, Amri and Wald, Randall",
+        "biburl": "http://www.bibsonomy.org/bibtex/2c97a29e90fbd958a0990360f70252458/dblp",
+        "booktitle": "{{ICDM Workshops}}",
+        "crossref": "conf/icdm/2009w",
+        "date": "2010-01-27",
+        "description": "dblp",
+        "editor": "Saygin, Yücel and Yu, Jeffrey Xu and Kargupta, Hillol and Wang, Wei and Ranka, Sanjay and Yu, Philip S. and Wu, Xindong",
+        "ee": "http://doi.ieeecomputersociety.org/10.1109/ICDMW.2009.35",
+        "file": "Attachment:files/1/Hulse2009.pdf:application/pdf",
+        "groups": "selekcja",
+        "interhash": "aad604c231737dbf8f6155082e3535ae",
+        "intrahash": "c97a29e90fbd958a0990360f70252458",
+        "isbn": "978-0-7695-3902-7",
+        "keywords": "dblp",
+        "owner": "sstudent",
+        "pages": "507--514",
+        "publisher": "{IEEE Computer Society}",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Feature {{Selection}} with {{High}}-{{Dimensional Imbalanced Data}}.",
+        "url": "http://dblp.uni-trier.de/db/conf/icdm/icdmw2009.htmlHulseKNW09"
+      },
+      "fields": {
+        "date": "2010-01-27",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Hulse"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Jason Van"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Khoshgoftaar"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Taghi M."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Napolitano"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Amri"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Wald"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Randall"
+              }
+            ]
+          }
+        ],
+        "booktitle": [
+          {
+            "type": "text",
+            "text": "ICDM Workshops",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          }
+        ],
+        "editor": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Saygin"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Yücel"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Yu"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Jeffrey Xu"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Kargupta"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Hillol"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Wang"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Wei"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Ranka"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Sanjay"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Yu"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Philip S."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Wu"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Xindong"
+              }
+            ]
+          }
+        ],
+        "isbn": [
+          {
+            "type": "text",
+            "text": "978-0-7695-3902-7"
+          }
+        ],
+        "keywords": [
+          "dblp"
+        ],
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "IEEE Computer Society"
+            }
+          ]
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Feature "
+          },
+          {
+            "type": "text",
+            "text": "Selection",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " with "
+          },
+          {
+            "type": "text",
+            "text": "High",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "-"
+          },
+          {
+            "type": "text",
+            "text": "Dimensional Imbalanced Data",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "entry": "Hulse2009",
+      "field_name": "biburl"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "Hulse2009",
+      "field_name": "crossref"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "Hulse2009",
+      "field_name": "description"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "Hulse2009",
+      "field_name": "ee"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "Hulse2009",
+      "field_name": "file"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "Hulse2009",
+      "field_name": "groups"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "Hulse2009",
+      "field_name": "interhash"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "Hulse2009",
+      "field_name": "intrahash"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "Hulse2009",
+      "field_name": "owner"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "Hulse2009",
+      "field_name": "timestamp"
+    }
+  ]
+}

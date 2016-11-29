@@ -1,0 +1,62 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "misc",
+      "entry_key": "american_rights_at_work_public_2012",
+      "raw_fields": {
+        "title": "Public Service Research Foundation",
+        "url": "http://www.americanrightsatwork.org/blogcategory-275/",
+        "urldate": "2012-07-27",
+        "author": "at Work, American Rights",
+        "year": "2012",
+        "howpublished": "http://www.americanrightsatwork.org/blogcategory-275/"
+      },
+      "fields": {
+        "date": "2012",
+        "title": [
+          {
+            "type": "text",
+            "text": "Public Service Research Foundation"
+          }
+        ],
+        "urldate": "2012-07-27",
+        "author": [
+          {
+            "prefix": [
+              {
+                "type": "text",
+                "text": "at"
+              }
+            ],
+            "useprefix": true,
+            "family": [
+              {
+                "type": "text",
+                "text": "Work"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "American Rights"
+              }
+            ]
+          }
+        ],
+        "howpublished": [
+          {
+            "type": "text",
+            "text": "http://www.americanrightsatwork.org/blogcategory-275/"
+          }
+        ]
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "entry": "american_rights_at_work_public_2012",
+      "field_name": "year"
+    }
+  ]
+}

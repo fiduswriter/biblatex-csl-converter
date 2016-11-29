@@ -1,0 +1,93 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "article",
+      "entry_key": "BaltesStaudinger2000Am.Psychol.",
+      "raw_fields": {
+        "author": "Baltes, Paul B and Staudinger, Ursula M",
+        "file": "Baltes_Staudinger_2000_Wisdom.pdf:files/1/Baltes_Staudinger_2000_Wisdom.pdf:application/pdf",
+        "journal": "Am. Psychol.",
+        "number": "1",
+        "pages": "122",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Wisdom: A Metaheuristic (Pragmatic) to Orchestrate Mind and Virtue toward Excellence.",
+        "volume": "55",
+        "year": "2000"
+      },
+      "fields": {
+        "date": "2000",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Baltes"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Paul B"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Staudinger"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Ursula M"
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "Am. Psychol."
+          }
+        ],
+        "number": [
+          {
+            "type": "text",
+            "text": "1"
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Wisdom: A Metaheuristic (Pragmatic) to Orchestrate Mind and Virtue toward Excellence."
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "55"
+          }
+        ]
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unexpected_field",
+      "entry": "BaltesStaudinger2000Am.Psychol.",
+      "field_name": "file"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "BaltesStaudinger2000Am.Psychol.",
+      "field_name": "timestamp"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "BaltesStaudinger2000Am.Psychol.",
+      "field_name": "year"
+    }
+  ]
+}

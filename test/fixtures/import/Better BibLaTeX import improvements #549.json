@@ -1,0 +1,490 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "article",
+      "entry_key": "1e",
+      "raw_fields": {
+        "author": "01e",
+        "title": "Blah \\emph{emph} and \\enquote{enquote}."
+      },
+      "fields": {
+        "author": [
+          {
+            "literal": [
+              {
+                "type": "text",
+                "text": "01e"
+              }
+            ]
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Blah "
+          },
+          {
+            "type": "text",
+            "text": "emph",
+            "marks": [
+              {
+                "type": "nocase"
+              },
+              {
+                "type": "em"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " and "
+          },
+          {
+            "type": "text",
+            "text": "enquote",
+            "marks": [
+              {
+                "type": "nocase"
+              },
+              {
+                "type": "enquote"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      }
+    },
+    "1": {
+      "bib_type": "article",
+      "entry_key": "1b",
+      "raw_fields": {
+        "author": "01b",
+        "title": "Blah \\mkbibemph{mkbibemph} and \\mkbibquote{mkbibquote}."
+      },
+      "fields": {
+        "author": [
+          {
+            "literal": [
+              {
+                "type": "text",
+                "text": "01b"
+              }
+            ]
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Blah "
+          },
+          {
+            "type": "text",
+            "text": "mkbibemph",
+            "marks": [
+              {
+                "type": "nocase"
+              },
+              {
+                "type": "em"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " and mkbibquote."
+          }
+        ]
+      }
+    },
+    "2": {
+      "bib_type": "book",
+      "entry_key": "2e",
+      "raw_fields": {
+        "author": "02e",
+        "title": "Blah \\emph{emph} and \\enquote{enquote}."
+      },
+      "fields": {
+        "author": [
+          {
+            "literal": [
+              {
+                "type": "text",
+                "text": "02e"
+              }
+            ]
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Blah "
+          },
+          {
+            "type": "text",
+            "text": "emph",
+            "marks": [
+              {
+                "type": "nocase"
+              },
+              {
+                "type": "em"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " and "
+          },
+          {
+            "type": "text",
+            "text": "enquote",
+            "marks": [
+              {
+                "type": "nocase"
+              },
+              {
+                "type": "enquote"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      }
+    },
+    "3": {
+      "bib_type": "book",
+      "entry_key": "2b",
+      "raw_fields": {
+        "author": "02b",
+        "title": "Blah \\mkbibemph{mkbibemph} and \\mkbibquote{mkbibquote}."
+      },
+      "fields": {
+        "author": [
+          {
+            "literal": [
+              {
+                "type": "text",
+                "text": "02b"
+              }
+            ]
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Blah "
+          },
+          {
+            "type": "text",
+            "text": "mkbibemph",
+            "marks": [
+              {
+                "type": "nocase"
+              },
+              {
+                "type": "em"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " and mkbibquote."
+          }
+        ]
+      }
+    },
+    "4": {
+      "bib_type": "thesis",
+      "entry_key": "Bennett2003",
+      "raw_fields": {
+        "title": "Xenonika: medical texts associated with xenones in the late Byzantine period",
+        "author": "Bennett, David Christopher",
+        "date": "2003",
+        "institution": "University of London",
+        "type": "Ph.D."
+      },
+      "fields": {
+        "date": "2003",
+        "title": [
+          {
+            "type": "text",
+            "text": "Xenonika: medical texts associated with xenones in the late Byzantine period"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Bennett"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "David Christopher"
+              }
+            ]
+          }
+        ],
+        "institution": [
+          [
+            {
+              "type": "text",
+              "text": "University of London"
+            }
+          ]
+        ]
+      }
+    },
+    "5": {
+      "bib_type": "incollection",
+      "entry_key": "Cooper2013",
+      "raw_fields": {
+        "title": "Byzantium between East and West: Competing Hellenisms in the \\mkbibemph{Alexiad} of Anna Komnene and her Contemporaries",
+        "author": "Glen Cooper",
+        "crossref": "Classen2013",
+        "date": "2013",
+        "pages": "263-87"
+      },
+      "fields": {
+        "date": "2013",
+        "title": [
+          {
+            "type": "text",
+            "text": "Byzantium between East and West: Competing Hellenisms in the "
+          },
+          {
+            "type": "text",
+            "text": "Alexiad",
+            "marks": [
+              {
+                "type": "nocase"
+              },
+              {
+                "type": "em"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " of Anna Komnene and her Contemporaries"
+          }
+        ],
+        "author": [
+          {
+            "given": [
+              {
+                "type": "text",
+                "text": "Glen"
+              }
+            ],
+            "family": [
+              {
+                "type": "text",
+                "text": "Cooper"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "6": {
+      "bib_type": "article",
+      "entry_key": "Correns1891",
+      "raw_fields": {
+        "title": "Die dem Boethius fälschlich zugeschriebene Abhandlung des Dominicus Gundisalvi {'De} unitate'",
+        "date": "1891",
+        "journaltitle": "Beiträge zur Geschichte der Philosophie des Mittelalters",
+        "pages": "1-11",
+        "volume": "1",
+        "editor": "Correns, Paul"
+      },
+      "fields": {
+        "date": "1891",
+        "title": [
+          {
+            "type": "text",
+            "text": "Die dem Boethius fälschlich zugeschriebene Abhandlung des Dominicus Gundisalvi "
+          },
+          {
+            "type": "text",
+            "text": "'De",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " unitate'"
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "Beiträge zur Geschichte der Philosophie des Mittelalters"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "1"
+          }
+        ],
+        "editor": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Correns"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Paul"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "7": {
+      "bib_type": "inreference",
+      "entry_key": "Algar1985",
+      "raw_fields": {
+        "title": "Encyclopedia Iranica",
+        "lista": "Besmallah: in exegesis, jurisprudence, and cultural life",
+        "author": "Algar, Hamid",
+        "date": "1985",
+        "pages": "172-4",
+        "volume": "4"
+      },
+      "fields": {
+        "date": "1985",
+        "title": [
+          {
+            "type": "text",
+            "text": "Encyclopedia Iranica"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Algar"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Hamid"
+              }
+            ]
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "4"
+          }
+        ]
+      }
+    },
+    "8": {
+      "bib_type": "collection",
+      "entry_key": "Arsdall2012",
+      "raw_fields": {
+        "title": "Herbs and Healers from the Ancient Mediterranean through the Medieval West: Essays in Honor of John M. Riddle",
+        "date": "2012",
+        "editor": "Anne van Arsdall and Timothy Graham",
+        "location": "Burlington, VT",
+        "publisher": "Ashgate"
+      },
+      "fields": {
+        "date": "2012",
+        "title": [
+          {
+            "type": "text",
+            "text": "Herbs and Healers from the Ancient Mediterranean through the Medieval West: Essays in Honor of John M. Riddle"
+          }
+        ],
+        "editor": [
+          {
+            "given": [
+              {
+                "type": "text",
+                "text": "Anne"
+              }
+            ],
+            "prefix": [
+              {
+                "type": "text",
+                "text": "van"
+              }
+            ],
+            "useprefix": true,
+            "family": [
+              {
+                "type": "text",
+                "text": "Arsdall"
+              }
+            ]
+          },
+          {
+            "given": [
+              {
+                "type": "text",
+                "text": "Timothy"
+              }
+            ],
+            "family": [
+              {
+                "type": "text",
+                "text": "Graham"
+              }
+            ]
+          }
+        ],
+        "location": [
+          [
+            {
+              "type": "text",
+              "text": "Burlington, VT"
+            }
+          ]
+        ],
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "Ashgate"
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "entry": "Cooper2013",
+      "field_name": "crossref"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "Algar1985",
+      "field_name": "lista"
+    }
+  ]
+}

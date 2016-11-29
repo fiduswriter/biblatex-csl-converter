@@ -1,0 +1,156 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "incollection",
+      "entry_key": "BartoliniForthcoming",
+      "raw_fields": {
+        "author": "Bartolini, Stefano and Bilancini, Ennio and Sarracino, Francesco",
+        "booktitle": "Policies for {{Happiness}}",
+        "location": "{Oxford}",
+        "publisher": "{Oxford University Press}",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Social {{Capital Predicts Happiness}}: {{World}}-{{Wide Evidence From Time Series}}",
+        "url": "http://www.econ-pol.unisi.it/bartolini/papers/BARTOLINI-BILANCINI-SARRACINO.pdf",
+        "urldate": "2015-02-07",
+        "year": "Forthcoming"
+      },
+      "fields": {
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Bartolini"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Stefano"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Bilancini"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Ennio"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Sarracino"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Francesco"
+              }
+            ]
+          }
+        ],
+        "booktitle": [
+          {
+            "type": "text",
+            "text": "Policies for "
+          },
+          {
+            "type": "text",
+            "text": "Happiness",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          }
+        ],
+        "location": [
+          [
+            {
+              "type": "text",
+              "text": "Oxford"
+            }
+          ]
+        ],
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "Oxford University Press"
+            }
+          ]
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Social "
+          },
+          {
+            "type": "text",
+            "text": "Capital Predicts Happiness",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ": "
+          },
+          {
+            "type": "text",
+            "text": "World",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "-"
+          },
+          {
+            "type": "text",
+            "text": "Wide Evidence From Time Series",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          }
+        ],
+        "urldate": "2015-02-07"
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unknown_date",
+      "entry": "BartoliniForthcoming",
+      "field_name": "year",
+      "value": "Forthcoming"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "BartoliniForthcoming",
+      "field_name": "timestamp"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "BartoliniForthcoming",
+      "field_name": "year"
+    }
+  ]
+}

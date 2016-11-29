@@ -1,0 +1,75 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "misc",
+      "entry_key": "MacFarlaneJohna",
+      "raw_fields": {
+        "author": "MacFarlane, John",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Pandoc {{User}}’s {{Guide}}",
+        "url": "http://johnmacfarlane.net/pandoc/README.html#citations",
+        "urldate": "2015-01-31"
+      },
+      "fields": {
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "MacFarlane"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "John"
+              }
+            ]
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Pandoc "
+          },
+          {
+            "type": "text",
+            "text": "User",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "’s "
+          },
+          {
+            "type": "text",
+            "text": "Guide",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          }
+        ],
+        "urldate": "2015-01-31"
+      }
+    }
+  },
+  "errors": [
+    {
+      "type": "unknown_type",
+      "type_name": "archived"
+    }
+  ],
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "entry": "MacFarlaneJohna",
+      "field_name": "timestamp"
+    }
+  ]
+}

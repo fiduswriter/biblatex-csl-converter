@@ -1,0 +1,142 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "article",
+      "entry_key": "Wendt2008BrainW.L.W.H.H+",
+      "raw_fields": {
+        "author": "Wendt, Julia and Lotze, Martin and Weike, Almut I. and Hosten, Norbert and Hamm, Alfons O.",
+        "date": "2008-03-01",
+        "doi": "10.1111/j.1469-8986.2007.00620.x",
+        "journaltitle": "Psychophysiology",
+        "keywords": "Amygdala,Insula,Spider phobia,Startle,fMRI",
+        "langid": "english",
+        "number": "2",
+        "pages": "205--215",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Brain Activation and Defensive Response Mobilization during Sustained Exposure to Phobia-Related and Other Affective Pictures in Spider Phobia",
+        "url": "http://onlinelibrary.wiley.com/doi/10.1111/j.1469-8986.2007.00620.x/abstract",
+        "urldate": "2014-05-12",
+        "volume": "45"
+      },
+      "fields": {
+        "date": "2008-03-01",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Wendt"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Julia"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Lotze"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Martin"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Weike"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Almut I."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Hosten"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Norbert"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Hamm"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Alfons O."
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "Psychophysiology"
+          }
+        ],
+        "keywords": [
+          "Amygdala",
+          "Insula",
+          "Spider phobia",
+          "Startle",
+          "fMRI"
+        ],
+        "number": [
+          {
+            "type": "text",
+            "text": "2"
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Brain Activation and Defensive Response Mobilization during Sustained Exposure to Phobia-Related and Other Affective Pictures in Spider Phobia"
+          }
+        ],
+        "urldate": "2014-05-12",
+        "volume": [
+          {
+            "type": "text",
+            "text": "45"
+          }
+        ]
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "entry": "Wendt2008BrainW.L.W.H.H+",
+      "field_name": "langid"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "Wendt2008BrainW.L.W.H.H+",
+      "field_name": "timestamp"
+    }
+  ]
+}

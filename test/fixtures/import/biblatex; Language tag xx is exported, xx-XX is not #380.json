@@ -1,0 +1,82 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "article",
+      "entry_key": "Spitzer1941",
+      "raw_fields": {
+        "author": "Spitzer, Leo",
+        "date": "1941",
+        "doi": "10.2307/2911510",
+        "issn": "01496611",
+        "journaltitle": "Modern Language Notes",
+        "langid": "french",
+        "number": "2",
+        "pages": "110--113",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Le poêle de Descartes",
+        "volume": "56"
+      },
+      "fields": {
+        "date": "1941",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Spitzer"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Leo"
+              }
+            ]
+          }
+        ],
+        "issn": [
+          {
+            "type": "text",
+            "text": "01496611"
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "Modern Language Notes"
+          }
+        ],
+        "number": [
+          {
+            "type": "text",
+            "text": "2"
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Le poêle de Descartes"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "56"
+          }
+        ]
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "entry": "Spitzer1941",
+      "field_name": "langid"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "Spitzer1941",
+      "field_name": "timestamp"
+    }
+  ]
+}

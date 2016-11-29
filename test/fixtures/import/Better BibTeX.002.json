@@ -1,0 +1,148 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "book",
+      "entry_key": "abramowitz+stegun",
+      "raw_fields": {
+        "author": "{Abramowitz}, Milton and {Stegun}, Irene A.",
+        "title": "Handbook of Mathematical Functions with Formulas, Graphs, and Mathematical Tables",
+        "publisher": "Dover",
+        "year": "1964",
+        "address": "New York",
+        "edition": "ninth Dover printing, tenth GPO printing"
+      },
+      "fields": {
+        "date": "1964",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Abramowitz"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Milton"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Stegun"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Irene A."
+              }
+            ]
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Handbook of Mathematical Functions with Formulas, Graphs, and Mathematical Tables"
+          }
+        ],
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "Dover"
+            }
+          ]
+        ],
+        "location": [
+          [
+            {
+              "type": "text",
+              "text": "New York"
+            }
+          ]
+        ],
+        "edition": 0
+      }
+    },
+    "1": {
+      "bib_type": "book",
+      "entry_key": "Torre2008",
+      "raw_fields": {
+        "author": "Torre, Joe and Verducci, Tom",
+        "publisher": "Doubleday",
+        "title": "The Yankee Years",
+        "year": "2008",
+        "isbn": "0385527403"
+      },
+      "fields": {
+        "date": "2008",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Torre"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Joe"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Verducci"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Tom"
+              }
+            ]
+          }
+        ],
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "Doubleday"
+            }
+          ]
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "The Yankee Years"
+          }
+        ],
+        "isbn": [
+          {
+            "type": "text",
+            "text": "0385527403"
+          }
+        ]
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "entry": "abramowitz+stegun",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "Torre2008",
+      "field_name": "year"
+    }
+  ]
+}

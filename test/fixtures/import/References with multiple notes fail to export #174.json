@@ -1,0 +1,77 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "misc",
+      "entry_key": "Torre2008",
+      "raw_fields": {
+        "annotation": "note 2",
+        "author": "Torre, Joe and Verducci, Tom",
+        "date": "2008",
+        "publisher": "{Doubleday}",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "{{XYZZY}}"
+      },
+      "fields": {
+        "date": "2008",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Torre"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Joe"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Verducci"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Tom"
+              }
+            ]
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "XYZZY",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unexpected_field",
+      "entry": "Torre2008",
+      "field_name": "annotation"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "Torre2008",
+      "field_name": "publisher"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "Torre2008",
+      "field_name": "timestamp"
+    }
+  ]
+}

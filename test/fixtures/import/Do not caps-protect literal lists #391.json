@@ -1,0 +1,99 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "book",
+      "entry_key": "publisher",
+      "raw_fields": {
+        "location": "{Trinidad and Tobago}",
+        "origlocation": "{Saint Kitts and Nevis}",
+        "origpublisher": "{Doe and Company}",
+        "publisher": "{Miller, Smith and Jones}",
+        "title": "Publisher"
+      },
+      "fields": {
+        "location": [
+          [
+            {
+              "type": "text",
+              "text": "Trinidad and Tobago"
+            }
+          ]
+        ],
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "Miller, Smith and Jones"
+            }
+          ]
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Publisher"
+          }
+        ]
+      }
+    },
+    "1": {
+      "bib_type": "report",
+      "entry_key": "institution",
+      "raw_fields": {
+        "institution": "{Office of Information Management and Communications}",
+        "title": "Institution"
+      },
+      "fields": {
+        "institution": [
+          [
+            {
+              "type": "text",
+              "text": "Office of Information Management and Communications"
+            }
+          ]
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Institution"
+          }
+        ]
+      }
+    },
+    "2": {
+      "bib_type": "thesis",
+      "entry_key": "university",
+      "raw_fields": {
+        "institution": "{University of Saint Kitts and Nevis}",
+        "title": "University"
+      },
+      "fields": {
+        "institution": [
+          [
+            {
+              "type": "text",
+              "text": "University of Saint Kitts and Nevis"
+            }
+          ]
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "University"
+          }
+        ]
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unexpected_field",
+      "entry": "publisher",
+      "field_name": "origlocation"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "publisher",
+      "field_name": "origpublisher"
+    }
+  ]
+}

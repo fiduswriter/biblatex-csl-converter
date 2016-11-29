@@ -1,0 +1,58 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "article",
+      "entry_key": "zotero-1855286-1414",
+      "raw_fields": {
+        "note": "̆rl{http://www.patanalyse.com/sample-analysis.html}",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Patent {{Landscape}} Analysis: Sample from {{S40RTS}}",
+        "urldate": "2014-10-18"
+      },
+      "fields": {
+        "note": [
+          {
+            "type": "text",
+            "text": "̆rlhttp://www.patanalyse.com/sample-analysis.html"
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Patent "
+          },
+          {
+            "type": "text",
+            "text": "Landscape",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " Analysis: Sample from "
+          },
+          {
+            "type": "text",
+            "text": "S40RTS",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          }
+        ],
+        "urldate": "2014-10-18"
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "entry": "zotero-1855286-1414",
+      "field_name": "timestamp"
+    }
+  ]
+}

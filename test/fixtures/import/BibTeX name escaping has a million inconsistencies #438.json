@@ -1,0 +1,181 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "article",
+      "entry_key": "Nome2014",
+      "raw_fields": {
+        "author": "Nöme, Name",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Why {{Is Apple Launching}} a {{New Version}} of the {{iPod}}?",
+        "year": "2014"
+      },
+      "fields": {
+        "date": "2014",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Nöme"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Name"
+              }
+            ]
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Why "
+          },
+          {
+            "type": "text",
+            "text": "Is Apple Launching",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " a "
+          },
+          {
+            "type": "text",
+            "text": "New Version",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " of the "
+          },
+          {
+            "type": "text",
+            "text": "iPod",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "?"
+          }
+        ]
+      }
+    },
+    "1": {
+      "bib_type": "article",
+      "entry_key": "vanGogh2014",
+      "raw_fields": {
+        "author": "{van Gögh}, Vincent",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Why {{Is Apple Launching}} a {{New Version}} of the {{iPod}}?",
+        "year": "2014"
+      },
+      "fields": {
+        "date": "2014",
+        "author": [
+          {
+            "prefix": [
+              {
+                "type": "text",
+                "text": "van"
+              }
+            ],
+            "useprefix": true,
+            "family": [
+              {
+                "type": "text",
+                "text": "Gögh"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Vincent"
+              }
+            ]
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Why "
+          },
+          {
+            "type": "text",
+            "text": "Is Apple Launching",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " a "
+          },
+          {
+            "type": "text",
+            "text": "New Version",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " of the "
+          },
+          {
+            "type": "text",
+            "text": "iPod",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "?"
+          }
+        ]
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "entry": "Nome2014",
+      "field_name": "timestamp"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "Nome2014",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "vanGogh2014",
+      "field_name": "timestamp"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "vanGogh2014",
+      "field_name": "year"
+    }
+  ]
+}

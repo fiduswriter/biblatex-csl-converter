@@ -1,0 +1,46 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "book",
+      "entry_key": "Ohara2015",
+      "raw_fields": {
+        "author": "O'hara, james",
+        "date": "2015",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "A Testbook"
+      },
+      "fields": {
+        "date": "2015",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "O'hara"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "james"
+              }
+            ]
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "A Testbook"
+          }
+        ]
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "entry": "Ohara2015",
+      "field_name": "timestamp"
+    }
+  ]
+}

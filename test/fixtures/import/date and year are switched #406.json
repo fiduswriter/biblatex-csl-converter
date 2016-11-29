@@ -1,0 +1,407 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "book",
+      "entry_key": "west_introduction_2000",
+      "raw_fields": {
+        "author": "West, Douglas Brent",
+        "date": "2000-08-22",
+        "edition": "2",
+        "isbn": "978-0-13-014400-3",
+        "pagetotal": "470",
+        "publisher": "{Prentice Hall}",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Introduction to {{Graph Theory}}"
+      },
+      "fields": {
+        "date": "2000-08-22",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "West"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Douglas Brent"
+              }
+            ]
+          }
+        ],
+        "edition": 2,
+        "isbn": [
+          {
+            "type": "text",
+            "text": "978-0-13-014400-3"
+          }
+        ],
+        "pagetotal": [
+          {
+            "type": "text",
+            "text": "470"
+          }
+        ],
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "Prentice Hall"
+            }
+          ]
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Introduction to "
+          },
+          {
+            "type": "text",
+            "text": "Graph Theory",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "1": {
+      "bib_type": "book",
+      "entry_key": "skubala_modellierung_2012",
+      "raw_fields": {
+        "author": "Skubala, Adam",
+        "date": "2012-09-27",
+        "location": "{Masterthesis, Fakultät Statistik}",
+        "publisher": "{TU Dortmund}",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Modellierung Niederfrequenter {{Schwingungen}} in Einem Elektrischen {{Energienetz}}"
+      },
+      "fields": {
+        "date": "2012-09-27",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Skubala"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Adam"
+              }
+            ]
+          }
+        ],
+        "location": [
+          [
+            {
+              "type": "text",
+              "text": "Masterthesis, Fakultät Statistik"
+            }
+          ]
+        ],
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "TU Dortmund"
+            }
+          ]
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Modellierung Niederfrequenter "
+          },
+          {
+            "type": "text",
+            "text": "Schwingungen",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " in Einem Elektrischen "
+          },
+          {
+            "type": "text",
+            "text": "Energienetz",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2": {
+      "bib_type": "article",
+      "entry_key": "michigami_development_1995",
+      "raw_fields": {
+        "author": "Michigami, Tsutomu",
+        "date": "1995-12",
+        "doi": "10.1002/eej.4391150705",
+        "journaltitle": "Electrical Engineering in Japan",
+        "number": "7",
+        "pages": "49 -- 68",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Development of a New Two-Input {{PSS}} to Control Low-Frequency Oscillation in Interconnecting Power Systems and the Study of a Low-Frequency Oscillation Model",
+        "volume": "115"
+      },
+      "fields": {
+        "date": "1995-12",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Michigami"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Tsutomu"
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "Electrical Engineering in Japan"
+          }
+        ],
+        "number": [
+          {
+            "type": "text",
+            "text": "7"
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Development of a New Two-Input "
+          },
+          {
+            "type": "text",
+            "text": "PSS",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " to Control Low-Frequency Oscillation in Interconnecting Power Systems and the Study of a Low-Frequency Oscillation Model"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "115"
+          }
+        ]
+      }
+    },
+    "3": {
+      "bib_type": "report",
+      "entry_key": "brato_stability_2014",
+      "raw_fields": {
+        "author": "Brato, Sebastian and Surmann, Dirk and Krey, Sebastian and Götze, Jürgen and Ligges, Uwe and Weihs, Claus",
+        "date": "2014-02-11",
+        "institution": "{Technische Universität Dortmund}",
+        "location": "{Eldorado}",
+        "number": "2003/32864",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Stability {{Analysis}} and {{Clustering}} of {{Electrical Transmission Systems}}",
+        "url": "http://dx.doi.org/10.17877/DE290R-13190"
+      },
+      "fields": {
+        "date": "2014-02-11",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Brato"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Sebastian"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Surmann"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Dirk"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Krey"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Sebastian"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Götze"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Jürgen"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Ligges"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Uwe"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Weihs"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Claus"
+              }
+            ]
+          }
+        ],
+        "institution": [
+          [
+            {
+              "type": "text",
+              "text": "Technische Universität Dortmund"
+            }
+          ]
+        ],
+        "location": [
+          [
+            {
+              "type": "text",
+              "text": "Eldorado"
+            }
+          ]
+        ],
+        "number": [
+          {
+            "type": "text",
+            "text": "2003/32864"
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Stability "
+          },
+          {
+            "type": "text",
+            "text": "Analysis",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " and "
+          },
+          {
+            "type": "text",
+            "text": "Clustering",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " of "
+          },
+          {
+            "type": "text",
+            "text": "Electrical Transmission Systems",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "entry": "west_introduction_2000",
+      "field_name": "timestamp"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "skubala_modellierung_2012",
+      "field_name": "timestamp"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "michigami_development_1995",
+      "field_name": "timestamp"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "brato_stability_2014",
+      "field_name": "timestamp"
+    }
+  ]
+}

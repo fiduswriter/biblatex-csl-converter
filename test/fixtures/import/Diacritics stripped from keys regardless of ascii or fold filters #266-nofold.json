@@ -1,0 +1,122 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "article",
+      "entry_key": "VlčekVácha2014HistoryLatin",
+      "raw_fields": {
+        "author": "Vlček, Martin and Vácha, Marek",
+        "date": "2014-05-15",
+        "doi": "10.1007/s00276-014-1305-7",
+        "eprint": "24828123",
+        "eprinttype": "pmid",
+        "issn": "1279-8517",
+        "journaltitle": "Surgical and Radiologic Anatomy",
+        "langid": "english",
+        "shortjournal": "Surg Radiol Anat",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "The History of {{Latin}} Terminology of Human Skeletal Muscles (from {{Vesalius}} to the Present)",
+        "url": "http://link.springer.com/10.1007/s00276-014-1305-7"
+      },
+      "fields": {
+        "date": "2014-05-15",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Vlček"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Martin"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Vácha"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Marek"
+              }
+            ]
+          }
+        ],
+        "eprinttype": [
+          {
+            "type": "text",
+            "text": "pmid"
+          }
+        ],
+        "issn": [
+          {
+            "type": "text",
+            "text": "1279-8517"
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "Surgical and Radiologic Anatomy"
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "The History of "
+          },
+          {
+            "type": "text",
+            "text": "Latin",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " Terminology of Human Skeletal Muscles (from "
+          },
+          {
+            "type": "text",
+            "text": "Vesalius",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " to the Present)"
+          }
+        ]
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "entry": "VlčekVácha2014HistoryLatin",
+      "field_name": "langid"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "VlčekVácha2014HistoryLatin",
+      "field_name": "shortjournal"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "VlčekVácha2014HistoryLatin",
+      "field_name": "timestamp"
+    }
+  ]
+}

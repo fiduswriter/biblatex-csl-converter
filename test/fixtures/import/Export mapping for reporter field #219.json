@@ -1,0 +1,108 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "misc",
+      "entry_key": "kartinyeri",
+      "raw_fields": {
+        "author": "Kaetinyeri v Commonwealth",
+        "date": "1998-04-01",
+        "institution": "{HCA}",
+        "journaltitle": "CLR",
+        "keywords": "au",
+        "pages": "337",
+        "shorttitle": "Kartinyeri",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Kartinyeri v {{Commonwealth}}",
+        "translator": "Kartinyeri",
+        "volume": "195"
+      },
+      "fields": {
+        "date": "1998-04-01",
+        "author": [
+          {
+            "given": [
+              {
+                "type": "text",
+                "text": "Kaetinyeri"
+              }
+            ],
+            "prefix": [
+              {
+                "type": "text",
+                "text": "v"
+              }
+            ],
+            "useprefix": true,
+            "family": [
+              {
+                "type": "text",
+                "text": "Commonwealth"
+              }
+            ]
+          }
+        ],
+        "keywords": [
+          "au"
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Kartinyeri v "
+          },
+          {
+            "type": "text",
+            "text": "Commonwealth",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "errors": [
+    {
+      "type": "unknown_type",
+      "type_name": "jurisdiction"
+    }
+  ],
+  "warnings": [
+    {
+      "type": "unexpected_field",
+      "entry": "kartinyeri",
+      "field_name": "institution"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "kartinyeri",
+      "field_name": "journaltitle"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "kartinyeri",
+      "field_name": "pages"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "kartinyeri",
+      "field_name": "shorttitle"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "kartinyeri",
+      "field_name": "timestamp"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "kartinyeri",
+      "field_name": "translator"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "kartinyeri",
+      "field_name": "volume"
+    }
+  ]
+}

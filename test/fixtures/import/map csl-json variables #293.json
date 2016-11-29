@@ -1,0 +1,244 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "book",
+      "entry_key": "latour_ny_2008",
+      "raw_fields": {
+        "author": "Latour, Bruno",
+        "date": "2008",
+        "langid": "danish",
+        "location": "{København}",
+        "origdate": "2005",
+        "origlocation": "{origlocation}",
+        "origpublisher": "{origpublisher}",
+        "origtitle": "origtitle",
+        "publisher": "{Akademisk Forlag}",
+        "shorttitle": "En ny sociologi",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "En ny sociologi for et nyt samfund. Introduktion til Aktør-Netværk-Teori"
+      },
+      "fields": {
+        "date": "2008",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Latour"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Bruno"
+              }
+            ]
+          }
+        ],
+        "location": [
+          [
+            {
+              "type": "text",
+              "text": "København"
+            }
+          ]
+        ],
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "Akademisk Forlag"
+            }
+          ]
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "En ny sociologi for et nyt samfund. Introduktion til Aktør-Netværk-Teori"
+          }
+        ]
+      }
+    },
+    "1": {
+      "bib_type": "book",
+      "entry_key": "kelsen_democratie_2004",
+      "raw_fields": {
+        "abstract": "Préface de Ph. Raynaud.\nTrad. de : \"Vom Wesen und Wert der Demokratie\" - Tübingen : J.C.B. Mohr, 1929.\nFac-sim. de la 2e éd., Paris : Sirey : 1932.",
+        "author": "Kelsen, Hans",
+        "edition": "2",
+        "isbn": "2-247-04268-6",
+        "langid": "french",
+        "location": "{Paris}",
+        "origdate": "1929",
+        "origlocation": "{Tübingen}",
+        "origpublisher": "{J.C.B. Mohr}",
+        "origtitle": "Vom Wesen und Wert der Demokratie",
+        "pagetotal": "x+121",
+        "publisher": "{Dalloz}",
+        "series": "Bibliothèque Dalloz",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "La démocratie. Sa nature, sa valeur",
+        "translator": "Eisenmann, Charles",
+        "year": "2004 [1929]"
+      },
+      "fields": {
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Kelsen"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Hans"
+              }
+            ]
+          }
+        ],
+        "edition": 2,
+        "isbn": [
+          {
+            "type": "text",
+            "text": "2-247-04268-6"
+          }
+        ],
+        "location": [
+          [
+            {
+              "type": "text",
+              "text": "Paris"
+            }
+          ]
+        ],
+        "pagetotal": [
+          {
+            "type": "text",
+            "text": "x+121"
+          }
+        ],
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "Dalloz"
+            }
+          ]
+        ],
+        "series": [
+          {
+            "type": "text",
+            "text": "Bibliothèque Dalloz"
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "La démocratie. Sa nature, sa valeur"
+          }
+        ],
+        "translator": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Eisenmann"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Charles"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "entry": "latour_ny_2008",
+      "field_name": "langid"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "latour_ny_2008",
+      "field_name": "origdate"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "latour_ny_2008",
+      "field_name": "origlocation"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "latour_ny_2008",
+      "field_name": "origpublisher"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "latour_ny_2008",
+      "field_name": "origtitle"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "latour_ny_2008",
+      "field_name": "shorttitle"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "latour_ny_2008",
+      "field_name": "timestamp"
+    },
+    {
+      "type": "unknown_date",
+      "entry": "kelsen_democratie_2004",
+      "field_name": "year",
+      "value": "2004 [1929]"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "kelsen_democratie_2004",
+      "field_name": "abstract"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "kelsen_democratie_2004",
+      "field_name": "langid"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "kelsen_democratie_2004",
+      "field_name": "origdate"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "kelsen_democratie_2004",
+      "field_name": "origlocation"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "kelsen_democratie_2004",
+      "field_name": "origpublisher"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "kelsen_democratie_2004",
+      "field_name": "origtitle"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "kelsen_democratie_2004",
+      "field_name": "timestamp"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "kelsen_democratie_2004",
+      "field_name": "year"
+    }
+  ]
+}

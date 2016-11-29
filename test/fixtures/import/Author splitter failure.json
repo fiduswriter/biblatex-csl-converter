@@ -1,0 +1,132 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "article",
+      "entry_key": "Abu-Zeid_1986",
+      "raw_fields": {
+        "title": "Determination of the Thickness and Refractive Index of {Cu$_2$O} Thin Film Using Thermal and Optical\nInterferometry",
+        "author": "Abu-Zeid, M. E. and Rakhshani, A. E. and Al-Jassar, A. A. and Youssef, Y. A.",
+        "journal": "Physica Status Solidi (a)",
+        "year": "1986",
+        "pages": "613--620",
+        "volume": "93",
+        "doi": "10.1002/pssa.2210930226"
+      },
+      "fields": {
+        "date": "1986",
+        "title": [
+          {
+            "type": "text",
+            "text": "Determination of the Thickness and Refractive Index of "
+          },
+          {
+            "type": "text",
+            "text": "Cu",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "2",
+            "marks": [
+              {
+                "type": "nocase"
+              },
+              {
+                "type": "sub"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "O"
+          },
+          {
+            "type": "text",
+            "text": " Thin Film Using Thermal and Optical\nInterferometry"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Abu-Zeid"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "M. E."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Rakhshani"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "A. E."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Al-Jassar"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "A. A."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Youssef"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Y. A."
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "Physica Status Solidi (a)"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "93"
+          }
+        ]
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "entry": "Abu-Zeid_1986",
+      "field_name": "year"
+    }
+  ]
+}

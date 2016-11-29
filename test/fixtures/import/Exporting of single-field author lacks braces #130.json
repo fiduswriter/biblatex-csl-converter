@@ -1,0 +1,153 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "book",
+      "entry_key": "Kolawa2007",
+      "raw_fields": {
+        "author": "Kolawa, Adam and Huizinga, Dorota and {Wiley InterScience (Online service)}",
+        "date": "2007",
+        "isbn": "978-0-470-16516-4",
+        "keywords": "Computer programs -- Correctness.,Computer programs -- Testing -- Data processing.,Debugging in computer science -- Automatic control.,Software failures -- Prevention -- Data processing.,Software maintenance -- Data processing.",
+        "location": "{Hoboken, NJ, USA}",
+        "publisher": "{IEEE Computer Society Press}",
+        "shorttitle": "Automated {{Defect Prevention}}",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Automated {{Defect Prevention}} : {{Best Practices}} in {{Software Management}}",
+        "url": "http://site.ebrary.com/lib/alltitles/docDetail.action?docID=10296302",
+        "urldate": "2015-01-09"
+      },
+      "fields": {
+        "date": "2007",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Kolawa"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Adam"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Huizinga"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Dorota"
+              }
+            ]
+          },
+          {
+            "given": [
+              {
+                "type": "text",
+                "text": "Wiley InterScience (Online"
+              }
+            ],
+            "prefix": [
+              {
+                "type": "text",
+                "text": "service)"
+              }
+            ],
+            "useprefix": true,
+            "family": []
+          }
+        ],
+        "isbn": [
+          {
+            "type": "text",
+            "text": "978-0-470-16516-4"
+          }
+        ],
+        "keywords": [
+          "Computer programs -- Correctness.",
+          "Computer programs -- Testing -- Data processing.",
+          "Debugging in computer science -- Automatic control.",
+          "Software failures -- Prevention -- Data processing.",
+          "Software maintenance -- Data processing."
+        ],
+        "location": [
+          [
+            {
+              "type": "text",
+              "text": "Hoboken, NJ, USA"
+            }
+          ]
+        ],
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "IEEE Computer Society Press"
+            }
+          ]
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Automated "
+          },
+          {
+            "type": "text",
+            "text": "Defect Prevention",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " : "
+          },
+          {
+            "type": "text",
+            "text": "Best Practices",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " in "
+          },
+          {
+            "type": "text",
+            "text": "Software Management",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          }
+        ],
+        "urldate": "2015-01-09"
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unexpected_field",
+      "entry": "Kolawa2007",
+      "field_name": "shorttitle"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "Kolawa2007",
+      "field_name": "timestamp"
+    }
+  ]
+}

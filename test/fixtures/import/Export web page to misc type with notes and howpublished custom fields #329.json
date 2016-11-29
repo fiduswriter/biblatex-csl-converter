@@ -1,0 +1,180 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "misc",
+      "entry_key": "ntp.org_clock_2015",
+      "raw_fields": {
+        "author": "{NTP.org}",
+        "howpublished": "̆rl{http://www.ntp.org/ntpfaq/NTP-s-sw-clocks-quality.htm}",
+        "note": "(accessed 2015-02-13)",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Clock {{Quality}}",
+        "urldate": "2015-02-13",
+        "year": "2015"
+      },
+      "fields": {
+        "date": "2015",
+        "author": [
+          {
+            "literal": [
+              {
+                "type": "text",
+                "text": "NTP.org"
+              }
+            ]
+          }
+        ],
+        "howpublished": [
+          {
+            "type": "text",
+            "text": "̆rlhttp://www.ntp.org/ntpfaq/NTP-s-sw-clocks-quality.htm"
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "(accessed 2015-02-13)"
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Clock "
+          },
+          {
+            "type": "text",
+            "text": "Quality",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          }
+        ],
+        "urldate": "2015-02-13"
+      }
+    },
+    "1": {
+      "bib_type": "misc",
+      "entry_key": "ntp.org_clock_2015-1",
+      "raw_fields": {
+        "author": "{NTP.org}",
+        "howpublished": "̆rl{http://www.ntp.org/ntpfaq/NTP-s-sw-clocks-quality.htm}",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Clock {{Quality}}",
+        "year": "2015"
+      },
+      "fields": {
+        "date": "2015",
+        "author": [
+          {
+            "literal": [
+              {
+                "type": "text",
+                "text": "NTP.org"
+              }
+            ]
+          }
+        ],
+        "howpublished": [
+          {
+            "type": "text",
+            "text": "̆rlhttp://www.ntp.org/ntpfaq/NTP-s-sw-clocks-quality.htm"
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Clock "
+          },
+          {
+            "type": "text",
+            "text": "Quality",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2": {
+      "bib_type": "misc",
+      "entry_key": "ntp.org_clock_2015-2",
+      "raw_fields": {
+        "author": "{NTP.org}",
+        "howpublished": "̆rl{http://www.ntp.org/ntpfaq/NTP-s-sw-clocks-quality.htm}",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Clock {{Quality}}",
+        "year": "2015"
+      },
+      "fields": {
+        "date": "2015",
+        "author": [
+          {
+            "literal": [
+              {
+                "type": "text",
+                "text": "NTP.org"
+              }
+            ]
+          }
+        ],
+        "howpublished": [
+          {
+            "type": "text",
+            "text": "̆rlhttp://www.ntp.org/ntpfaq/NTP-s-sw-clocks-quality.htm"
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Clock "
+          },
+          {
+            "type": "text",
+            "text": "Quality",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "entry": "ntp.org_clock_2015",
+      "field_name": "timestamp"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "ntp.org_clock_2015",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "ntp.org_clock_2015-1",
+      "field_name": "timestamp"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "ntp.org_clock_2015-1",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "ntp.org_clock_2015-2",
+      "field_name": "timestamp"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "ntp.org_clock_2015-2",
+      "field_name": "year"
+    }
+  ]
+}

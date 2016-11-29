@@ -1,0 +1,65 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "article",
+      "entry_key": "american_rights_at_work_public_2012",
+      "raw_fields": {
+        "author": "at Work, American Rights",
+        "date": "2012",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Public {{Service Research Foundation}}",
+        "url": "http://www.americanrightsatwork.org/blogcategory_275/",
+        "urldate": "2012-07-27"
+      },
+      "fields": {
+        "date": "2012",
+        "author": [
+          {
+            "prefix": [
+              {
+                "type": "text",
+                "text": "at"
+              }
+            ],
+            "useprefix": true,
+            "family": [
+              {
+                "type": "text",
+                "text": "Work"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "American Rights"
+              }
+            ]
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Public "
+          },
+          {
+            "type": "text",
+            "text": "Service Research Foundation",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          }
+        ],
+        "urldate": "2012-07-27"
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "entry": "american_rights_at_work_public_2012",
+      "field_name": "timestamp"
+    }
+  ]
+}

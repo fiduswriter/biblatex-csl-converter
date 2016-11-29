@@ -1,0 +1,118 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "book",
+      "entry_key": "hicks2001",
+      "raw_fields": {
+        "author": "von Hicks, III, Michael",
+        "date": "2001",
+        "edition": "1st,",
+        "isbn": "0-69-697269-4",
+        "location": "{Palo Alto}",
+        "options": "useprefix=true",
+        "publisher": "{Stanford Press}",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Design of a {{Carbon Fiber Composite Grid Structure}} for the {{GLAST}} Spacecraft Using a Novel Manufacturing Technique"
+      },
+      "fields": {
+        "date": "2001",
+        "author": [
+          {
+            "prefix": [
+              {
+                "type": "text",
+                "text": "von"
+              }
+            ],
+            "useprefix": true,
+            "suffix": [
+              {
+                "type": "text",
+                "text": "III"
+              }
+            ],
+            "family": [
+              {
+                "type": "text",
+                "text": "Hicks"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Michael"
+              }
+            ]
+          }
+        ],
+        "edition": 1,
+        "isbn": [
+          {
+            "type": "text",
+            "text": "0-69-697269-4"
+          }
+        ],
+        "location": [
+          [
+            {
+              "type": "text",
+              "text": "Palo Alto"
+            }
+          ]
+        ],
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "Stanford Press"
+            }
+          ]
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Design of a "
+          },
+          {
+            "type": "text",
+            "text": "Carbon Fiber Composite Grid Structure",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " for the "
+          },
+          {
+            "type": "text",
+            "text": "GLAST",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " Spacecraft Using a Novel Manufacturing Technique"
+          }
+        ]
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "entry": "hicks2001",
+      "field_name": "options"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "hicks2001",
+      "field_name": "timestamp"
+    }
+  ]
+}

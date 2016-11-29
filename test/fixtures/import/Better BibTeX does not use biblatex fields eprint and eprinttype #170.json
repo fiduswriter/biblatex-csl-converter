@@ -1,0 +1,161 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "article",
+      "entry_key": "BachmannDybalskiNaaijkens14",
+      "raw_fields": {
+        "archiveprefix": "arXiv",
+        "author": "Bachmann, Sven and Dybalski, Wojciech and Naaijkens, Pieter",
+        "date": "2014-12-09",
+        "eprint": "1412.2970",
+        "eprinttype": "arxiv",
+        "keywords": "Lieb-Robinson bounds,Mathematical Physics,Quantum Physics",
+        "primaryclass": "math-ph, physics:quant-ph",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Lieb-{{Robinson}} Bounds, {{Arveson}} Spectrum and {{Haag}}-{{Ruelle}} Scattering Theory for Gapped Quantum Spin Systems",
+        "url": "http://arxiv.org/abs/1412.2970",
+        "urldate": "2015-02-07"
+      },
+      "fields": {
+        "date": "2014-12-09",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Bachmann"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Sven"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Dybalski"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Wojciech"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Naaijkens"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Pieter"
+              }
+            ]
+          }
+        ],
+        "eprinttype": [
+          {
+            "type": "text",
+            "text": "arxiv"
+          }
+        ],
+        "keywords": [
+          "Lieb-Robinson bounds",
+          "Mathematical Physics",
+          "Quantum Physics"
+        ],
+        "eprintclass": [
+          [
+            {
+              "type": "text",
+              "text": "math-ph, physics:quant-ph"
+            }
+          ]
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Lieb-"
+          },
+          {
+            "type": "text",
+            "text": "Robinson",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " Bounds, "
+          },
+          {
+            "type": "text",
+            "text": "Arveson",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " Spectrum and "
+          },
+          {
+            "type": "text",
+            "text": "Haag",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "-"
+          },
+          {
+            "type": "text",
+            "text": "Ruelle",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " Scattering Theory for Gapped Quantum Spin Systems"
+          }
+        ],
+        "urldate": "2015-02-07"
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "alias_creates_duplicate_field",
+      "entry": "BachmannDybalskiNaaijkens14",
+      "field": "archiveprefix",
+      "alias_of": "eprinttype",
+      "value": "arXiv",
+      "alias_of_value": "arxiv"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "BachmannDybalskiNaaijkens14",
+      "field_name": "timestamp"
+    }
+  ]
+}

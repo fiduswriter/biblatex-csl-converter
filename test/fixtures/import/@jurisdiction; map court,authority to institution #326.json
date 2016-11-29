@@ -1,0 +1,71 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "misc",
+      "entry_key": "_dalain_2010",
+      "raw_fields": {
+        "date": "2010-12-23",
+        "institution": "{CE, Ass.}",
+        "journaltitle": "Rec.",
+        "langid": "french",
+        "number": "337033",
+        "pages": "649",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Dalain",
+        "volume": "I"
+      },
+      "fields": {
+        "date": "2010-12-23",
+        "title": [
+          {
+            "type": "text",
+            "text": "Dalain"
+          }
+        ]
+      }
+    }
+  },
+  "errors": [
+    {
+      "type": "unknown_type",
+      "type_name": "jurisdiction"
+    }
+  ],
+  "warnings": [
+    {
+      "type": "unexpected_field",
+      "entry": "_dalain_2010",
+      "field_name": "institution"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "_dalain_2010",
+      "field_name": "journaltitle"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "_dalain_2010",
+      "field_name": "langid"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "_dalain_2010",
+      "field_name": "number"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "_dalain_2010",
+      "field_name": "pages"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "_dalain_2010",
+      "field_name": "timestamp"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "_dalain_2010",
+      "field_name": "volume"
+    }
+  ]
+}
