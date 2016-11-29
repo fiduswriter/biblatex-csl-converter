@@ -23,7 +23,9 @@ Try demo [here](https://fiduswriter.github.io/biblatex-csl-converter/).
 
 **Q:** What if I need to process fields that don't follow the biblatex definition?
 
-**A:** You can initialize the parser with a config object like this: ```new BibLatexParser(inputString, {parseUnexpected: true, parseUnknown: {collaborator: 'l_name'}})```. The ```parseUnexpected``` setting will enable parsing of fields that are known, but shouldn't be in the bibliography entry due to its type. The ```parseUnknown``` will allow parsing of fields that are entirely unknown. You can either set it to `true`, or you can set it to an object containing descriptions for the field types these unknown fields should be processed as. If a field is not specified, it will be processed as a literal field (`f_literal`). These fields will be available under ```entry.unexpected_fields[FIELD_NAME]``` and ```entry.unknown_fields[FIELD_NAME]``` respectively.
+**A:** You can initialize the parser with a config object like this: ```new BibLatexParser(inputString,
+{processUnexpected: true, processUnknown: {collaborator: 'l_name'}})```. The ```processUnexpected``` setting will enable
+parsing of fields that are known, but shouldn't be in the bibliography entry due to its type. The ```processUnknown``` will allow parsing of fields that are entirely unknown. You can either set it to `true`, or you can set it to an object containing descriptions for the field types these unknown fields should be processed as. If a field is not specified, it will be processed as a literal field (`f_literal`). These fields will be available under ```entry.unexpected_fields[FIELD_NAME]``` and ```entry.unknown_fields[FIELD_NAME]``` respectively.
 
 **Q:** I use variables in my biblatex files. Will your converter read them?
 

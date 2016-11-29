@@ -1,0 +1,344 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "inproceedings",
+      "entry_key": "test_citation1",
+      "fields": {
+        "title": [
+          {
+            "type": "text",
+            "text": "T",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "est "
+          },
+          {
+            "type": "text",
+            "text": "T",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "itle "
+          },
+          {
+            "type": "text",
+            "text": "W",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "ith 100 μ"
+          },
+          {
+            "type": "text",
+            "text": "J",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ", 200 "
+          },
+          {
+            "type": "text",
+            "text": "μ",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "J",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " "
+          },
+          {
+            "type": "text",
+            "text": "E",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "nergy, and ±0.1% "
+          },
+          {
+            "type": "text",
+            "text": "A",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "ccuracy, 0.2 mm"
+          },
+          {
+            "type": "text",
+            "text": "2",
+            "marks": [
+              {
+                "type": "sup"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " "
+          },
+          {
+            "type": "text",
+            "text": "S",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "ize, and -50 d"
+          },
+          {
+            "type": "text",
+            "text": "B",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " "
+          },
+          {
+            "type": "text",
+            "text": "A",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "ttenuation"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Doe"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "J."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Smith"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "R."
+              }
+            ]
+          }
+        ],
+        "booktitle": [
+          {
+            "type": "variable",
+            "attrs": {
+              "variable": "IEEE_J_PROC"
+            }
+          }
+        ],
+        "abstract": [
+          {
+            "type": "text",
+            "text": "Abstract here"
+          }
+        ],
+        "keywords": [
+          "Keyword 1; Keyword 2"
+        ]
+      }
+    },
+    "1": {
+      "bib_type": "inproceedings",
+      "entry_key": "test_citation2",
+      "fields": {
+        "title": [
+          {
+            "type": "text",
+            "text": "T",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "est "
+          },
+          {
+            "type": "text",
+            "text": "T",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "itle with space  quad, space semi-colon, space colon, space comma, space nbsp"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Doe"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "J."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Smith"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "R."
+              }
+            ]
+          }
+        ],
+        "booktitle": [
+          {
+            "type": "variable",
+            "attrs": {
+              "variable": "IEEE_J_PROC"
+            }
+          }
+        ],
+        "abstract": [
+          {
+            "type": "text",
+            "text": "Abstract here"
+          }
+        ],
+        "keywords": [
+          "Keyword 1; Keyword 2"
+        ]
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "undefined_variable",
+      "entry": "test_citation1",
+      "key": "booktitle",
+      "variable": "IEEE_J_PROC"
+    },
+    {
+      "type": "unknown_date",
+      "entry": "test_citation1",
+      "field_name": "year,month",
+      "value": [
+        "2016",
+        "Feb"
+      ]
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "test_citation1",
+      "field_name": "file"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "test_citation1",
+      "field_name": "issn"
+    },
+    {
+      "type": "undefined_variable",
+      "entry": "test_citation2",
+      "key": "booktitle",
+      "variable": "IEEE_J_PROC"
+    },
+    {
+      "type": "unknown_date",
+      "entry": "test_citation2",
+      "field_name": "year,month",
+      "value": [
+        "2016",
+        "Feb"
+      ]
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "test_citation2",
+      "field_name": "file"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "test_citation2",
+      "field_name": "issn"
+    }
+  ]
+}

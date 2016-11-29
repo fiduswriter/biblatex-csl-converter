@@ -6,13 +6,6 @@ const fs = require('fs');
 const path = require('path');
 
 const verify = bibfile => {
-  // these hang the parser, exclude them for now
-  if (bibfile.indexOf('xref') >= 0) { return; }
-  if (bibfile.indexOf('Better BibTeX.006.bib') >= 0) { return; }
-  if (bibfile.indexOf('Capitalize all title-fields for language en #383.biblatex') >= 0) { return; }
-  if (bibfile.indexOf('Math markup to unicode not always imported correctly #472.bib') >= 0) { return; }
-  if (bibfile.indexOf('Math markup to unicode not always imported correctly #472.roundtrip.bib') >= 0) { return; }
-
   let input = fs.readFileSync(bibfile, 'utf8');
   let parser = new BibLatexParser(input, {parseUnexpected: true, parseUnknown: true});
   let name = path.basename(bibfile, path.extname(bibfile));

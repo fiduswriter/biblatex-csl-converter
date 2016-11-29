@@ -1,0 +1,275 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "inproceedings",
+      "entry_key": "test_citation1",
+      "fields": {
+        "abstract": [
+          {
+            "type": "text",
+            "text": "Abstract here"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Doe"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "J."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Smith"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "R."
+              }
+            ]
+          }
+        ],
+        "booktitle": [
+          {
+            "type": "variable",
+            "attrs": {
+              "variable": "IEEE_J_PROC"
+            }
+          }
+        ],
+        "keywords": [
+          "Keyword 1",
+          "Keyword 2"
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Test "
+          },
+          {
+            "type": "text",
+            "text": "Title With",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " 100 "
+          },
+          {
+            "type": "text",
+            "text": "μJ",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ", 200 "
+          },
+          {
+            "type": "text",
+            "text": "μJ Energy",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ", and ±0.1% "
+          },
+          {
+            "type": "text",
+            "text": "Accuracy",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ", 0.2 Mm"
+          },
+          {
+            "type": "text",
+            "text": "2",
+            "marks": [
+              {
+                "type": "sup"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " "
+          },
+          {
+            "type": "text",
+            "text": "Size",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ", and -50 "
+          },
+          {
+            "type": "text",
+            "text": "dB Attenuation",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "1": {
+      "bib_type": "inproceedings",
+      "entry_key": "test_citation2",
+      "fields": {
+        "abstract": [
+          {
+            "type": "text",
+            "text": "Abstract here"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Doe"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "J."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Smith"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "R."
+              }
+            ]
+          }
+        ],
+        "booktitle": [
+          {
+            "type": "variable",
+            "attrs": {
+              "variable": "IEEE_J_PROC"
+            }
+          }
+        ],
+        "keywords": [
+          "Keyword 1",
+          "Keyword 2"
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Test "
+          },
+          {
+            "type": "text",
+            "text": "Title",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " with Space "
+          },
+          {
+            "type": "text",
+            "text": "Quad, Space Semi-Colon, Space Colon, Space Comma, Space Nbsp",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "undefined_variable",
+      "entry": "test_citation1",
+      "key": "booktitle",
+      "variable": "IEEE_J_PROC"
+    },
+    {
+      "type": "unknown_date",
+      "entry": "test_citation1",
+      "field_name": "year,month",
+      "value": [
+        "2016",
+        "February"
+      ]
+    },
+    {
+      "type": "unknown_field",
+      "entry": "test_citation1",
+      "field_name": "timestamp"
+    },
+    {
+      "type": "undefined_variable",
+      "entry": "test_citation2",
+      "key": "booktitle",
+      "variable": "IEEE_J_PROC"
+    },
+    {
+      "type": "unknown_date",
+      "entry": "test_citation2",
+      "field_name": "year,month",
+      "value": [
+        "2016",
+        "February"
+      ]
+    },
+    {
+      "type": "unknown_field",
+      "entry": "test_citation2",
+      "field_name": "timestamp"
+    }
+  ]
+}

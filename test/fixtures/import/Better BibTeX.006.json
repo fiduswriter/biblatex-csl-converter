@@ -1,0 +1,25 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "article",
+      "entry_key": "test-ticket1661",
+      "fields": {
+        "title": [
+          {
+            "type": "text",
+            "text": "non-braking space:  ; accented characters: ñ and ñ; tilde in URL: ̆rl"
+          },
+          {
+            "type": "text",
+            "text": "http://example.com/ user",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

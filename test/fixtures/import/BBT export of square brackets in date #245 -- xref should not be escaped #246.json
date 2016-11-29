@@ -1,0 +1,288 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "article",
+      "entry_key": "bentley_academic_2011",
+      "fields": {
+        "abstract": [
+          {
+            "type": "text",
+            "text": "State planning has been a defining means for modern subjects to regulate the passage of time. In practice, it is the focus of multiple conflicts and doubts, which planners attempt to mediate. In this paper, I address the regimes of time that planning both promotes and encounters, and tease out what these imply for anthropology. Using ethnography of Norwegian and Swedish planning offices and their encounters with participatory planning, I question recent claims that there has been an evacuation of the near future or a retreat of administrative intervention. I also suggest that recent anthropological concerns with time have been confined by their attempts to characterize the changing timescapes of specific modal shifts, such as from the modern to the neoliberal. Instead, in my ethnography, I focus not on tracking epochal breaks in time, but on demonstrating how time is manipulated, and how multiple temporalities are performed in ongoing projects of democratic planning."
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Abram"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Simone"
+              }
+            ]
+          }
+        ],
+        "issn": [
+          {
+            "type": "text",
+            "text": "1467-9655"
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "Journal of the Royal Anthropological Institute"
+          }
+        ],
+        "keywords": [
+          "måske"
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "6 "
+          },
+          {
+            "type": "text",
+            "text": "The",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " Time It Takes: Temporalities of Planning"
+          }
+        ],
+        "urldate": "2014-12-27",
+        "volume": [
+          {
+            "type": "text",
+            "text": "20"
+          }
+        ]
+      }
+    },
+    "1": {
+      "bib_type": "article",
+      "entry_key": "pollard_bicycle_2007",
+      "fields": {
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Pollard"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "A. Mark"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Bray"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Peter"
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "Annu. Rev. Anthropol."
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "A Bicycle Made for Two? "
+          },
+          {
+            "type": "text",
+            "text": "The",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " Integration of Scientific Techniques into Archaeological Interpretation"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "36"
+          }
+        ]
+      }
+    },
+    "2": {
+      "bib_type": "misc",
+      "entry_key": "kartinyeri",
+      "fields": {
+        "date": "1998-04-01",
+        "author": [
+          {
+            "given": [
+              {
+                "type": "text",
+                "text": "Kaetinyeri"
+              }
+            ],
+            "prefix": [
+              {
+                "type": "text",
+                "text": "v"
+              }
+            ],
+            "useprefix": true,
+            "family": [
+              {
+                "type": "text",
+                "text": "Commonwealth"
+              }
+            ]
+          }
+        ],
+        "keywords": [
+          "au"
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Kartinyeri v "
+          },
+          {
+            "type": "text",
+            "text": "Commonwealth",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "errors": [
+    {
+      "type": "unknown_type",
+      "type_name": "jurisdiction"
+    }
+  ],
+  "warnings": [
+    {
+      "type": "unknown_date",
+      "entry": "bentley_academic_2011",
+      "field_name": "year",
+      "value": "[2014]"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "bentley_academic_2011",
+      "field_name": "annotation"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "bentley_academic_2011",
+      "field_name": "langid"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "bentley_academic_2011",
+      "field_name": "rights"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "bentley_academic_2011",
+      "field_name": "shortjournal"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "bentley_academic_2011",
+      "field_name": "shorttitle"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "bentley_academic_2011",
+      "field_name": "timestamp"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "bentley_academic_2011",
+      "field_name": "xref"
+    },
+    {
+      "type": "unknown_date",
+      "entry": "pollard_bicycle_2007",
+      "field_name": "year",
+      "value": "[2007]"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "pollard_bicycle_2007",
+      "field_name": "shortjournal"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "pollard_bicycle_2007",
+      "field_name": "timestamp"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "kartinyeri",
+      "field_name": "institution"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "kartinyeri",
+      "field_name": "journaltitle"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "kartinyeri",
+      "field_name": "pages"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "kartinyeri",
+      "field_name": "shorttitle"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "kartinyeri",
+      "field_name": "timestamp"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "kartinyeri",
+      "field_name": "translator"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "kartinyeri",
+      "field_name": "volume"
+    }
+  ]
+}
