@@ -18,17 +18,6 @@ const output1 = {
     "0": {
         "bib_type": "article",
         "entry_key": "wilm10",
-        "raw_fields": {
-            "author": "Johannes Wilm",
-            "title": "{Cuba}: Economic {\\textbf{changes}} and the future of socialism",
-            "journaltitle": "\\textit{Links} International Journal of Socialist Renewal",
-            "year": "2010",
-            "subtitle": "Interview with Cuban professor {José Bell Lara}",
-            "language": "english",
-            "url": "http://links.org.au/node/1916",
-            "urldate": "2010-10-31",
-            "location": "Sydney"
-        },
         "fields": {
             "date": "2010",
             "author": [{
@@ -105,16 +94,6 @@ const output2 = {
     "0": {
         "bib_type": "misc",
         "entry_key": "wilm09",
-        "raw_fields": {
-            "author": "Johannes Wilm",
-            "editor": "{PuenteSur}",
-            "title": "La Joven Revolución {Hondureña}",
-            "year": "2009",
-            "language": "spanish",
-            "type": "movie",
-            "url": "http://www.johanneswilm.org/honduras/",
-            "urldate": "2010-11-02"
-        },
         "fields": {
             "date": "2009",
             "author": [{
@@ -153,13 +132,6 @@ const output3 = {
     "0": {
         "bib_type": "book",
         "entry_key": "wilm_nicaragua_2011",
-        "raw_fields": {
-            "location": "Oslo, Norway & Tucson, {AZ}",
-            "title": "{Nicaragua}, Back from the Dead? An Anthropological View of the {{Sandinista}} Movement in the early 21$^{st}$ Century.",
-            "publisher": "New Left Notes",
-            "author": "given=Johannes,family=Wilm,suffix=Dr.",
-            "date": "2011"
-        },
         "fields": {
             "date": "2011",
             "location": [
@@ -222,4 +194,4 @@ const output3 = {
 
 let parser3 = new BibLatexParser(input3)
 
-test('nocase in English title field and sup styling', t => t.deepEqual(output3, parser3.output))
+test('can nocase in English title field and sup styling', t => t.deepEqual(output3, parser3.output))
