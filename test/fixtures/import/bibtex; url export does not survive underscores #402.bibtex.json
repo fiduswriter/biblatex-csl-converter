@@ -91,20 +91,12 @@
         "note": [
           {
             "type": "text",
-            "text": "̆rlhttp://www.fa2014.agh.edu.pl/fa2014"
-          },
-          {
-            "type": "text",
-            "text": "c",
+            "text": "http://www.fa2014.agh.edu.pl/fa2014_cd/",
             "marks": [
               {
-                "type": "sub"
+                "type": "url"
               }
             ]
-          },
-          {
-            "type": "text",
-            "text": "d/"
           }
         ],
         "title": [
@@ -190,7 +182,7 @@
         "booktitle": "7th {{Forum Acusticum}}",
         "keywords": "NonPerRev",
         "month": "September",
-        "note": "̆rl{http://www.fa2014.agh.edu.pl/fa2014_cd/}",
+        "note": "\\url{http://www.fa2014.agh.edu.pl/fa2014_cd/}",
         "timestamp": "2015-02-24 12:14:36 +0100",
         "title": "{{taX}} - a {{Flexible Tool}} for {{Low}}-{{Order Duct Acoustic Simulation}} in {{Time}} and {{Frequency Domain}}",
         "year": "2014"

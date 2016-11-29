@@ -537,7 +537,7 @@ export class BibLatexParser {
         return bibType
     }
 
-    newEntry() {
+    createNewEntry() {
         this.currentEntry = {
             'bib_type': this.bibType(),
             'entry_key': this.key(),
@@ -582,7 +582,7 @@ export class BibLatexParser {
         return
     }
 
-    bibtex() {
+    stepThroughBibtex() {
         while (this.skipToNext()) {
             let d = this.directive()
             this.match("{")
@@ -593,7 +593,7 @@ export class BibLatexParser {
             } else if (d == "@comment") {
                 continue
             } else {
-                this.newEntry()
+                this.createNewEntry()
             }
             this.match("}")
         }
@@ -608,7 +608,7 @@ export class BibLatexParser {
 
     get output() {
         this.replaceTeXChars()
-        this.bibtex()
+        this.stepThroughBibtex()
         this.createBibDB()
         return this.bibDB
     }

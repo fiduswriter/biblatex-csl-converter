@@ -65,20 +65,12 @@
         "note": [
           {
             "type": "text",
-            "text": "̆rlhttp://www.nap.edu/openbook.php?record"
-          },
-          {
-            "type": "text",
-            "text": "i",
+            "text": "http://www.nap.edu/openbook.php?record_id=203",
             "marks": [
               {
-                "type": "sub"
+                "type": "url"
               }
             ]
-          },
-          {
-            "type": "text",
-            "text": "d=203"
           }
         ],
         "publisher": [
@@ -108,7 +100,7 @@
       "raw_fields": {
         "author": "{Geophysics Study Committee} and {Geophysics Research Board} and {Assembly of Mathematical and Physical Sciences, National Research Council}",
         "isbn": "978-0-309-02928-5",
-        "note": "̆rl{http://www.nap.edu/openbook.php?record_id=203}",
+        "note": "\\url{http://www.nap.edu/openbook.php?record_id=203}",
         "publisher": "{The National Academies Press}",
         "timestamp": "2015-02-24 12:14:36 +0100",
         "title": "Continental {{Tectonics}}",

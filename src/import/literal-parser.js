@@ -1,4 +1,4 @@
-const LATEX_COMMANDS = [
+const LATEX_COMMANDS = [ // commands that can can contain richtext.
     ['\\textbf{', 'strong'],
     ['\\mkbibbold{', 'strong'],
     ['\\mkbibitalic{', 'em'],
@@ -11,8 +11,11 @@ const LATEX_COMMANDS = [
     ['\\textsuperscript{', 'sup']
 ]
 
-const LATEX_SPECIAL_CHARS = ['&','%','$', '#','_','{','}',',','~','^','\'']
+const LATEX_VERBATIM_COMMANDS = [ // commands that can only contain plaintext.
+    ['\\url{', 'url']
+]
 
+const LATEX_SPECIAL_CHARS = ['&','%','$', '#','_','{','}',',','~','^','\'']
 
 export class BibLatexLiteralParser {
     constructor(string, cpMode = false) {
@@ -79,6 +82,37 @@ export class BibLatexLiteralParser {
                             this.currentMarks.push({type:command[1]})
                             this.textNode.marks = this.currentMarks.slice()
                             this.braceClosings.push(true)
+                            continue parseString
+                        }
+                    }
+                    for (let command of LATEX_VERBATIM_COMMANDS) {
+                        if (this.string.substring(this.si, this.si + command[0].length) === command[0]) {
+                            this.checkAndAddNewTextNode()
+                            this.textNode.marks = this.currentMarks.slice()
+                            this.textNode.marks.push({type:command[1]})
+                            this.si += command[0].length
+                            let sj = this.si
+                            let internalBraceLevel = 0
+                            while (
+                                sj < this.slen &&
+                                (
+                                    this.string[sj] !== '}' ||
+                                    internalBraceLevel > 0
+                                )
+                            ) {
+                                switch (this.string[sj]) {
+                                    case '{':
+                                        internalBraceLevel++
+                                        break
+                                    case '}':
+                                        internalBraceLevel--
+                                        break
+                                }
+                                sj++
+                            }
+                            this.textNode.text = this.string.substring(this.si,sj)
+                            this.addNewTextNode()
+                            this.si = sj + 1
                             continue parseString
                         }
                     }

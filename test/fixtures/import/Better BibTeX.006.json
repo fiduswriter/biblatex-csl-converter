@@ -7,21 +7,21 @@
         "title": [
           {
             "type": "text",
-            "text": "non-braking space:  ; accented characters: ñ and ñ; tilde in URL: ̆rl"
+            "text": "non-braking space:  ; accented characters: ñ and ñ; tilde in URL: "
           },
           {
             "type": "text",
-            "text": "http://example.com/ user",
+            "text": "http://example.com/~user",
             "marks": [
               {
-                "type": "nocase"
+                "type": "url"
               }
             ]
           }
         ]
       },
       "raw_fields": {
-        "title": "non-braking space: ~; accented characters: ñ and ñ; tilde in URL: ̆rl{http://example.com/~user}"
+        "title": "non-braking space: ~; accented characters: ñ and ñ; tilde in URL: \\url{http://example.com/~user}"
       }
     }
   }
