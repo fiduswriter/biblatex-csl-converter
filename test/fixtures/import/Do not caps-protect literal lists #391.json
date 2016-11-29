@@ -3,13 +3,6 @@
     "0": {
       "bib_type": "book",
       "entry_key": "publisher",
-      "raw_fields": {
-        "location": "{Trinidad and Tobago}",
-        "origlocation": "{Saint Kitts and Nevis}",
-        "origpublisher": "{Doe and Company}",
-        "publisher": "{Miller, Smith and Jones}",
-        "title": "Publisher"
-      },
       "fields": {
         "location": [
           [
@@ -33,15 +26,36 @@
             "text": "Publisher"
           }
         ]
+      },
+      "raw_fields": {
+        "location": "{Trinidad and Tobago}",
+        "origlocation": "{Saint Kitts and Nevis}",
+        "origpublisher": "{Doe and Company}",
+        "publisher": "{Miller, Smith and Jones}",
+        "title": "Publisher"
+      },
+      "unexpected_fields": {
+        "origlocation": [
+          [
+            {
+              "type": "text",
+              "text": "Saint Kitts and Nevis"
+            }
+          ]
+        ],
+        "origpublisher": [
+          [
+            {
+              "type": "text",
+              "text": "Doe and Company"
+            }
+          ]
+        ]
       }
     },
     "1": {
       "bib_type": "report",
       "entry_key": "institution",
-      "raw_fields": {
-        "institution": "{Office of Information Management and Communications}",
-        "title": "Institution"
-      },
       "fields": {
         "institution": [
           [
@@ -57,15 +71,15 @@
             "text": "Institution"
           }
         ]
+      },
+      "raw_fields": {
+        "institution": "{Office of Information Management and Communications}",
+        "title": "Institution"
       }
     },
     "2": {
       "bib_type": "thesis",
       "entry_key": "university",
-      "raw_fields": {
-        "institution": "{University of Saint Kitts and Nevis}",
-        "title": "University"
-      },
       "fields": {
         "institution": [
           [
@@ -81,6 +95,10 @@
             "text": "University"
           }
         ]
+      },
+      "raw_fields": {
+        "institution": "{University of Saint Kitts and Nevis}",
+        "title": "University"
       }
     }
   },

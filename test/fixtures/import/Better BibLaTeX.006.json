@@ -3,10 +3,6 @@
     "0": {
       "bib_type": "article",
       "entry_key": "test-ticket1661",
-      "raw_fields": {
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "Non-Breaking Space: ; Accented Characters: Ñ and Ñ; Tilde in {{URL}}: {{http://example.com/\\~{}user}}"
-      },
       "fields": {
         "title": [
           {
@@ -34,6 +30,18 @@
                 "type": "nocase"
               }
             ]
+          }
+        ]
+      },
+      "raw_fields": {
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Non-Breaking Space: ; Accented Characters: Ñ and Ñ; Tilde in {{URL}}: {{http://example.com/\\~{}user}}"
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
           }
         ]
       }

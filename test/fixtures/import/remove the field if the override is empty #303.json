@@ -3,18 +3,6 @@
     "0": {
       "bib_type": "article",
       "entry_key": "pattaro_dimensions_1988",
-      "raw_fields": {
-        "author": "Pattaro, Enrico",
-        "date": "1988",
-        "journaltitle": "Revue interdisciplinaire d’études juridiques",
-        "langid": "french",
-        "number": "spécial anniversaire 1978-1988",
-        "pages": "135--162",
-        "shortjournal": "RIEJ",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "Dimensions du savoir juridique et orientations philosophiques",
-        "volume": "21"
-      },
       "fields": {
         "date": "1988",
         "author": [
@@ -55,6 +43,40 @@
           {
             "type": "text",
             "text": "21"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "Pattaro, Enrico",
+        "date": "1988",
+        "journaltitle": "Revue interdisciplinaire d’études juridiques",
+        "langid": "french",
+        "number": "spécial anniversaire 1978-1988",
+        "pages": "135--162",
+        "shortjournal": "RIEJ",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Dimensions du savoir juridique et orientations philosophiques",
+        "volume": "21"
+      },
+      "unknown_fields": {
+        "langid": [
+          {
+            "type": "text",
+            "text": "french"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
+      },
+      "unexpected_fields": {
+        "shortjournal": [
+          {
+            "type": "text",
+            "text": "RIEJ"
           }
         ]
       }

@@ -205,6 +205,41 @@
         "keywords": [
           "Keyword 1; Keyword 2"
         ]
+      },
+      "raw_fields": {
+        "title": "{T}est {T}itle {W}ith 100~$μ${J}, 200 {\\mbox{$μ$}}{J} {E}nergy, and $±$0.1\\% {A}ccuracy, 0.2 mm$^2$ {S}ize, and $-$50 d{B} {A}ttenuation",
+        "author": "Doe, J. and Smith, R.",
+        "booktitle": "%IEEE_J_PROC%",
+        "year": "2016",
+        "month": "Feb",
+        "pages": "300--301",
+        "abstract": "Abstract here",
+        "doi": "10.1109/JPROC.2016.2526118",
+        "file": "File.pdf:File.pdf:PDF",
+        "issn": "0193-6530",
+        "keywords": "Keyword 1; Keyword 2"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "2016"
+          }
+        ],
+        "month": [
+          {
+            "type": "text",
+            "text": "Feb"
+          }
+        ]
+      },
+      "unexpected_fields": {
+        "issn": [
+          {
+            "type": "text",
+            "text": "0193-6530"
+          }
+        ]
       }
     },
     "1": {
@@ -286,6 +321,41 @@
         "keywords": [
           "Keyword 1; Keyword 2"
         ]
+      },
+      "raw_fields": {
+        "title": "{T}est {T}itle with space  quad, space semi-colon, space colon, space comma, space~nbsp",
+        "author": "Doe, J. and Smith, R.",
+        "booktitle": "%IEEE_J_PROC%",
+        "year": "2016",
+        "month": "Feb",
+        "pages": "300--301",
+        "abstract": "Abstract here",
+        "doi": "10.1109/JPROC.2016.2526118",
+        "file": "File.pdf:File.pdf:PDF",
+        "issn": "0193-6530",
+        "keywords": "Keyword 1; Keyword 2"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "2016"
+          }
+        ],
+        "month": [
+          {
+            "type": "text",
+            "text": "Feb"
+          }
+        ]
+      },
+      "unexpected_fields": {
+        "issn": [
+          {
+            "type": "text",
+            "text": "0193-6530"
+          }
+        ]
       }
     }
   },
@@ -304,6 +374,16 @@
         "2016",
         "Feb"
       ]
+    },
+    {
+      "type": "unknown_field",
+      "entry": "test_citation1",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "test_citation1",
+      "field_name": "month"
     },
     {
       "type": "unexpected_field",
@@ -329,6 +409,16 @@
         "2016",
         "Feb"
       ]
+    },
+    {
+      "type": "unknown_field",
+      "entry": "test_citation2",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "test_citation2",
+      "field_name": "month"
     },
     {
       "type": "unexpected_field",

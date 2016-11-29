@@ -3,16 +3,6 @@
     "0": {
       "bib_type": "incollection",
       "entry_key": "Kaufmann1990",
-      "raw_fields": {
-        "author": "Kaufmann, Franz-Xaver",
-        "booktitle": "{Sozialpolitik und Sozialstaat: Soziologische Analysen}",
-        "doi": "10.1007/978-3-322-99962-7_7",
-        "editor": "Kauffmann, Franz-Xaver",
-        "pages": "145--160",
-        "publisher": "{VS Verlag für Sozialwissenschaften}",
-        "title": "{Sozialpolitik und Bevölkerungsprozeß{}}",
-        "year": "[1990] 2002"
-      },
       "fields": {
         "author": [
           {
@@ -76,21 +66,29 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "Kaufmann, Franz-Xaver",
+        "booktitle": "{Sozialpolitik und Sozialstaat: Soziologische Analysen}",
+        "doi": "10.1007/978-3-322-99962-7_7",
+        "editor": "Kauffmann, Franz-Xaver",
+        "pages": "145--160",
+        "publisher": "{VS Verlag für Sozialwissenschaften}",
+        "title": "{Sozialpolitik und Bevölkerungsprozeß{}}",
+        "year": "[1990] 2002"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "[1990] 2002"
+          }
+        ]
       }
     },
     "1": {
       "bib_type": "incollection",
       "entry_key": "Kaufmann1997",
-      "raw_fields": {
-        "author": "Kaufmann, Franz-Xaver",
-        "booktitle": "{Sozialpolitik und Sozialstaat: Soziologische Analysen}",
-        "doi": "10.1007/978-3-322-99962-7_11",
-        "editor": "Kauffmann, Franz-Xaver",
-        "pages": "241--260",
-        "publisher": "{VS Verlag für Sozialwissenschaften}",
-        "title": "{Schwindet die integrative Funktion des Sozialstaates?}",
-        "year": "[1997] 2002"
-      },
       "fields": {
         "author": [
           {
@@ -152,6 +150,24 @@
                 "type": "nocase"
               }
             ]
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "Kaufmann, Franz-Xaver",
+        "booktitle": "{Sozialpolitik und Sozialstaat: Soziologische Analysen}",
+        "doi": "10.1007/978-3-322-99962-7_11",
+        "editor": "Kauffmann, Franz-Xaver",
+        "pages": "241--260",
+        "publisher": "{VS Verlag für Sozialwissenschaften}",
+        "title": "{Schwindet die integrative Funktion des Sozialstaates?}",
+        "year": "[1997] 2002"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "[1997] 2002"
           }
         ]
       }

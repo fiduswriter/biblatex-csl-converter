@@ -3,16 +3,6 @@
     "0": {
       "bib_type": "article",
       "entry_key": "arbesmanvonsecondname2001",
-      "raw_fields": {
-        "author": "Arbesman von Secondname, Kendra",
-        "date": "2001",
-        "doi": "10.1175/1520-0493(1987)115<1606:GARSPP>2.0.CO;2",
-        "journaltitle": "Title, with comma",
-        "keywords": "Vulcanian eruptions,breadcrust,plinian",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "The Physical: Violent Volcanology of the 1600 Eruption of {{Huaynaputina}}, Southern {{Peru}}",
-        "volume": "62"
-      },
       "fields": {
         "date": "2001",
         "author": [
@@ -81,6 +71,24 @@
           {
             "type": "text",
             "text": "62"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "Arbesman von Secondname, Kendra",
+        "date": "2001",
+        "doi": "10.1175/1520-0493(1987)115<1606:GARSPP>2.0.CO;2",
+        "journaltitle": "Title, with comma",
+        "keywords": "Vulcanian eruptions,breadcrust,plinian",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "The Physical: Violent Volcanology of the 1600 Eruption of {{Huaynaputina}}, Southern {{Peru}}",
+        "volume": "62"
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
           }
         ]
       }

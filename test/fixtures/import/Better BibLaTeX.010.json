@@ -3,28 +3,6 @@
     "0": {
       "bib_type": "inproceedings",
       "entry_key": "Hulse2009",
-      "raw_fields": {
-        "author": "Hulse, Jason Van and Khoshgoftaar, Taghi M. and Napolitano, Amri and Wald, Randall",
-        "biburl": "http://www.bibsonomy.org/bibtex/2c97a29e90fbd958a0990360f70252458/dblp",
-        "booktitle": "{{ICDM Workshops}}",
-        "crossref": "conf/icdm/2009w",
-        "date": "2010-01-27",
-        "description": "dblp",
-        "editor": "Saygin, Yücel and Yu, Jeffrey Xu and Kargupta, Hillol and Wang, Wei and Ranka, Sanjay and Yu, Philip S. and Wu, Xindong",
-        "ee": "http://doi.ieeecomputersociety.org/10.1109/ICDMW.2009.35",
-        "file": "Attachment:files/1/Hulse2009.pdf:application/pdf",
-        "groups": "selekcja",
-        "interhash": "aad604c231737dbf8f6155082e3535ae",
-        "intrahash": "c97a29e90fbd958a0990360f70252458",
-        "isbn": "978-0-7695-3902-7",
-        "keywords": "dblp",
-        "owner": "sstudent",
-        "pages": "507--514",
-        "publisher": "{IEEE Computer Society}",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "Feature {{Selection}} with {{High}}-{{Dimensional Imbalanced Data}}.",
-        "url": "http://dblp.uni-trier.de/db/conf/icdm/icdmw2009.htmlHulseKNW09"
-      },
       "fields": {
         "date": "2010-01-27",
         "author": [
@@ -258,7 +236,86 @@
             "text": "."
           }
         ]
-      }
+      },
+      "raw_fields": {
+        "author": "Hulse, Jason Van and Khoshgoftaar, Taghi M. and Napolitano, Amri and Wald, Randall",
+        "biburl": "http://www.bibsonomy.org/bibtex/2c97a29e90fbd958a0990360f70252458/dblp",
+        "booktitle": "{{ICDM Workshops}}",
+        "crossref": "conf/icdm/2009w",
+        "date": "2010-01-27",
+        "description": "dblp",
+        "editor": "Saygin, Yücel and Yu, Jeffrey Xu and Kargupta, Hillol and Wang, Wei and Ranka, Sanjay and Yu, Philip S. and Wu, Xindong",
+        "ee": "http://doi.ieeecomputersociety.org/10.1109/ICDMW.2009.35",
+        "file": "Attachment:files/1/Hulse2009.pdf:application/pdf",
+        "groups": "selekcja",
+        "interhash": "aad604c231737dbf8f6155082e3535ae",
+        "intrahash": "c97a29e90fbd958a0990360f70252458",
+        "isbn": "978-0-7695-3902-7",
+        "keywords": "dblp",
+        "owner": "sstudent",
+        "pages": "507--514",
+        "publisher": "{IEEE Computer Society}",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Feature {{Selection}} with {{High}}-{{Dimensional Imbalanced Data}}.",
+        "url": "http://dblp.uni-trier.de/db/conf/icdm/icdmw2009.htmlHulseKNW09"
+      },
+      "unknown_fields": {
+        "biburl": [
+          {
+            "type": "text",
+            "text": "http://www.bibsonomy.org/bibtex/2c97a29e90fbd958a0990360f70252458/dblp"
+          }
+        ],
+        "crossref": [
+          {
+            "type": "text",
+            "text": "conf/icdm/2009w"
+          }
+        ],
+        "description": [
+          {
+            "type": "text",
+            "text": "dblp"
+          }
+        ],
+        "ee": [
+          {
+            "type": "text",
+            "text": "http://doi.ieeecomputersociety.org/10.1109/ICDMW.2009.35"
+          }
+        ],
+        "groups": [
+          {
+            "type": "text",
+            "text": "selekcja"
+          }
+        ],
+        "interhash": [
+          {
+            "type": "text",
+            "text": "aad604c231737dbf8f6155082e3535ae"
+          }
+        ],
+        "intrahash": [
+          {
+            "type": "text",
+            "text": "c97a29e90fbd958a0990360f70252458"
+          }
+        ],
+        "owner": [
+          {
+            "type": "text",
+            "text": "sstudent"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
+      },
+      "unexpected_fields": {}
     }
   },
   "warnings": [

@@ -3,12 +3,6 @@
     "0": {
       "bib_type": "article",
       "entry_key": "zotero-1855286-1414",
-      "raw_fields": {
-        "note": "̆rl{http://www.patanalyse.com/sample-analysis.html}",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "Patent {{Landscape}} Analysis: Sample from {{S40RTS}}",
-        "urldate": "2014-10-18"
-      },
       "fields": {
         "note": [
           {
@@ -45,6 +39,20 @@
           }
         ],
         "urldate": "2014-10-18"
+      },
+      "raw_fields": {
+        "note": "̆rl{http://www.patanalyse.com/sample-analysis.html}",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Patent {{Landscape}} Analysis: Sample from {{S40RTS}}",
+        "urldate": "2014-10-18"
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     }
   },

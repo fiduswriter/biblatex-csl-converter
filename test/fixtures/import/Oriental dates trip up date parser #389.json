@@ -3,23 +3,13 @@
     "0": {
       "bib_type": "article",
       "entry_key": "Sammut1976",
-      "raw_fields": {
-        "abstract": "Because they are not proper spectral modes, leaky modes do not obey the usual power orthogonality relations for an ideal waveguide. Two methods for circumventing this problem are presented in this paper. One approach is to use the fact that weakly leaky modes are approximately power orthogonal within a restricted region of space to define a new set of slightly coupled modes. The other is to abandon power orthogonality in favor of a more general, mathematically exact orthogonality relation. The relative merits of these two approaches are discussed.",
-        "author": "Sammut, Rowland and Snyder, Allan W.",
-        "doi": "10.1364/AO.15.001040",
-        "journaltitle": "Applied Optics",
-        "number": "4",
-        "pages": "1040--1044",
-        "shortjournal": "Appl. Opt.",
-        "shorttitle": "Leaky Modes on a Dielectric Waveguide",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "Leaky Modes on a Dielectric Waveguide: Orthogonality and Excitation",
-        "url": "http://ao.osa.org/abstract.cfm?URI=ao-15-4-1040",
-        "urldate": "2015-04-02",
-        "volume": "15",
-        "year": "四月 1, 1976"
-      },
       "fields": {
+        "abstract": [
+          {
+            "type": "text",
+            "text": "Because they are not proper spectral modes, leaky modes do not obey the usual power orthogonality relations for an ideal waveguide. Two methods for circumventing this problem are presented in this paper. One approach is to use the fact that weakly leaky modes are approximately power orthogonal within a restricted region of space to define a new set of slightly coupled modes. The other is to abandon power orthogonality in favor of a more general, mathematically exact orthogonality relation. The relative merits of these two approaches are discussed."
+          }
+        ],
         "author": [
           {
             "family": [
@@ -75,6 +65,50 @@
             "text": "15"
           }
         ]
+      },
+      "raw_fields": {
+        "abstract": "Because they are not proper spectral modes, leaky modes do not obey the usual power orthogonality relations for an ideal waveguide. Two methods for circumventing this problem are presented in this paper. One approach is to use the fact that weakly leaky modes are approximately power orthogonal within a restricted region of space to define a new set of slightly coupled modes. The other is to abandon power orthogonality in favor of a more general, mathematically exact orthogonality relation. The relative merits of these two approaches are discussed.",
+        "author": "Sammut, Rowland and Snyder, Allan W.",
+        "doi": "10.1364/AO.15.001040",
+        "journaltitle": "Applied Optics",
+        "number": "4",
+        "pages": "1040--1044",
+        "shortjournal": "Appl. Opt.",
+        "shorttitle": "Leaky Modes on a Dielectric Waveguide",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Leaky Modes on a Dielectric Waveguide: Orthogonality and Excitation",
+        "url": "http://ao.osa.org/abstract.cfm?URI=ao-15-4-1040",
+        "urldate": "2015-04-02",
+        "volume": "15",
+        "year": "四月 1, 1976"
+      },
+      "unexpected_fields": {
+        "shortjournal": [
+          {
+            "type": "text",
+            "text": "Appl. Opt."
+          }
+        ],
+        "shorttitle": [
+          {
+            "type": "text",
+            "text": "Leaky Modes on a Dielectric Waveguide"
+          }
+        ]
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ],
+        "year": [
+          {
+            "type": "text",
+            "text": "四月 1, 1976"
+          }
+        ]
       }
     }
   },
@@ -84,11 +118,6 @@
       "entry": "Sammut1976",
       "field_name": "year",
       "value": "四月 1, 1976"
-    },
-    {
-      "type": "unexpected_field",
-      "entry": "Sammut1976",
-      "field_name": "abstract"
     },
     {
       "type": "unexpected_field",

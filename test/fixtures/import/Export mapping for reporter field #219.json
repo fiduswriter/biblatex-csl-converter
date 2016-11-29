@@ -3,19 +3,6 @@
     "0": {
       "bib_type": "misc",
       "entry_key": "kartinyeri",
-      "raw_fields": {
-        "author": "Kaetinyeri v Commonwealth",
-        "date": "1998-04-01",
-        "institution": "{HCA}",
-        "journaltitle": "CLR",
-        "keywords": "au",
-        "pages": "337",
-        "shorttitle": "Kartinyeri",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "Kartinyeri v {{Commonwealth}}",
-        "translator": "Kartinyeri",
-        "volume": "195"
-      },
       "fields": {
         "date": "1998-04-01",
         "author": [
@@ -57,6 +44,65 @@
                 "type": "nocase"
               }
             ]
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "Kaetinyeri v Commonwealth",
+        "date": "1998-04-01",
+        "institution": "{HCA}",
+        "journaltitle": "CLR",
+        "keywords": "au",
+        "pages": "337",
+        "shorttitle": "Kartinyeri",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Kartinyeri v {{Commonwealth}}",
+        "translator": "Kartinyeri",
+        "volume": "195"
+      },
+      "unexpected_fields": {
+        "institution": [
+          [
+            {
+              "type": "text",
+              "text": "HCA"
+            }
+          ]
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "CLR"
+          }
+        ],
+        "shorttitle": [
+          {
+            "type": "text",
+            "text": "Kartinyeri"
+          }
+        ],
+        "translator": [
+          {
+            "literal": [
+              {
+                "type": "text",
+                "text": "Kartinyeri"
+              }
+            ]
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "195"
+          }
+        ]
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
           }
         ]
       }

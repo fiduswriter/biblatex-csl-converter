@@ -3,18 +3,6 @@
     "0": {
       "bib_type": "article",
       "entry_key": "tusseau_critique_2009",
-      "raw_fields": {
-        "author": "Tusseau, Guillaume",
-        "date": "2009",
-        "journaltitle": "Revue française de droit administratif",
-        "langid": "french",
-        "number": "4",
-        "pages": "641--656",
-        "shortjournal": "RFDA",
-        "shorttitle": "Critique d'une métanotion fonctionnelle",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "Critique d'une métanotion fonctionnelle. La notion (trop) fonctionnelle de \\mkbibquote{notion fonctionnelle}"
-      },
       "fields": {
         "date": "2009",
         "author": [
@@ -51,24 +39,51 @@
             "text": "Critique d'une métanotion fonctionnelle. La notion (trop) fonctionnelle de notion fonctionnelle"
           }
         ]
+      },
+      "raw_fields": {
+        "author": "Tusseau, Guillaume",
+        "date": "2009",
+        "journaltitle": "Revue française de droit administratif",
+        "langid": "french",
+        "number": "4",
+        "pages": "641--656",
+        "shortjournal": "RFDA",
+        "shorttitle": "Critique d'une métanotion fonctionnelle",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Critique d'une métanotion fonctionnelle. La notion (trop) fonctionnelle de \\mkbibquote{notion fonctionnelle}"
+      },
+      "unknown_fields": {
+        "langid": [
+          {
+            "type": "text",
+            "text": "french"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
+      },
+      "unexpected_fields": {
+        "shortjournal": [
+          {
+            "type": "text",
+            "text": "RFDA"
+          }
+        ],
+        "shorttitle": [
+          {
+            "type": "text",
+            "text": "Critique d'une métanotion fonctionnelle"
+          }
+        ]
       }
     },
     "1": {
       "bib_type": "article",
       "entry_key": "searle_how_1964",
-      "raw_fields": {
-        "author": "Searle, John R.",
-        "date": "1964",
-        "doi": "10.2307/2183201",
-        "issn": "00318108",
-        "journaltitle": "The Philosophical Review",
-        "langid": "english",
-        "number": "1",
-        "pages": "43--58",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "How to derive \"{{Ought}}\" from \"{{Is}}\"",
-        "volume": "73"
-      },
       "fields": {
         "date": "1964",
         "author": [
@@ -141,6 +156,33 @@
           {
             "type": "text",
             "text": "73"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "Searle, John R.",
+        "date": "1964",
+        "doi": "10.2307/2183201",
+        "issn": "00318108",
+        "journaltitle": "The Philosophical Review",
+        "langid": "english",
+        "number": "1",
+        "pages": "43--58",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "How to derive \"{{Ought}}\" from \"{{Is}}\"",
+        "volume": "73"
+      },
+      "unknown_fields": {
+        "langid": [
+          {
+            "type": "text",
+            "text": "english"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
           }
         ]
       }

@@ -3,9 +3,6 @@
     "0": {
       "bib_type": "article",
       "entry_key": "BibTeXEscapeTest1",
-      "raw_fields": {
-        "title": "Escaped backslash followed by \\{\\}: \\\\{"
-      },
       "fields": {
         "title": [
           {
@@ -13,6 +10,9 @@
             "text": "Escaped backslash followed by {}: {"
           }
         ]
+      },
+      "raw_fields": {
+        "title": "Escaped backslash followed by \\{\\}: \\\\{"
       }
     }
   }

@@ -3,10 +3,6 @@
     "0": {
       "bib_type": "book",
       "entry_key": "id",
-      "raw_fields": {
-        "title": "Filename character test. Relative path",
-        "file": ",. '[]\\{\\}`-=~!@#$%^&()_+.pdf:Better BibTeX.013/files/32/,. '[]\\{\\}`-=~!@#$%^&()_+.pdf:application/pdf"
-      },
       "fields": {
         "title": [
           {
@@ -14,15 +10,16 @@
             "text": "Filename character test. Relative path"
           }
         ]
-      }
+      },
+      "raw_fields": {
+        "title": "Filename character test. Relative path",
+        "file": ",. '[]\\{\\}`-=~!@#$%^&()_+.pdf:Better BibTeX.013/files/32/,. '[]\\{\\}`-=~!@#$%^&()_+.pdf:application/pdf"
+      },
+      "unexpected_fields": {}
     },
     "1": {
       "bib_type": "book",
       "entry_key": "id2",
-      "raw_fields": {
-        "title": "Filename character test. Absolute path",
-        "file": ",. '[]\\{\\}`-=~!@#$%^&()_+.pdf:Better BibTeX.013/some/path/,. '[]\\{\\}`-=~!@#$%^&()_+.pdf:application/pdf"
-      },
       "fields": {
         "title": [
           {
@@ -30,7 +27,12 @@
             "text": "Filename character test. Absolute path"
           }
         ]
-      }
+      },
+      "raw_fields": {
+        "title": "Filename character test. Absolute path",
+        "file": ",. '[]\\{\\}`-=~!@#$%^&()_+.pdf:Better BibTeX.013/some/path/,. '[]\\{\\}`-=~!@#$%^&()_+.pdf:application/pdf"
+      },
+      "unexpected_fields": {}
     }
   },
   "warnings": [

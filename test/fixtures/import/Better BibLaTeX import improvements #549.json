@@ -3,10 +3,6 @@
     "0": {
       "bib_type": "article",
       "entry_key": "1e",
-      "raw_fields": {
-        "author": "01e",
-        "title": "Blah \\emph{emph} and \\enquote{enquote}."
-      },
       "fields": {
         "author": [
           {
@@ -56,15 +52,15 @@
             "text": "."
           }
         ]
+      },
+      "raw_fields": {
+        "author": "01e",
+        "title": "Blah \\emph{emph} and \\enquote{enquote}."
       }
     },
     "1": {
       "bib_type": "article",
       "entry_key": "1b",
-      "raw_fields": {
-        "author": "01b",
-        "title": "Blah \\mkbibemph{mkbibemph} and \\mkbibquote{mkbibquote}."
-      },
       "fields": {
         "author": [
           {
@@ -98,15 +94,15 @@
             "text": " and mkbibquote."
           }
         ]
+      },
+      "raw_fields": {
+        "author": "01b",
+        "title": "Blah \\mkbibemph{mkbibemph} and \\mkbibquote{mkbibquote}."
       }
     },
     "2": {
       "bib_type": "book",
       "entry_key": "2e",
-      "raw_fields": {
-        "author": "02e",
-        "title": "Blah \\emph{emph} and \\enquote{enquote}."
-      },
       "fields": {
         "author": [
           {
@@ -156,15 +152,15 @@
             "text": "."
           }
         ]
+      },
+      "raw_fields": {
+        "author": "02e",
+        "title": "Blah \\emph{emph} and \\enquote{enquote}."
       }
     },
     "3": {
       "bib_type": "book",
       "entry_key": "2b",
-      "raw_fields": {
-        "author": "02b",
-        "title": "Blah \\mkbibemph{mkbibemph} and \\mkbibquote{mkbibquote}."
-      },
       "fields": {
         "author": [
           {
@@ -198,18 +194,15 @@
             "text": " and mkbibquote."
           }
         ]
+      },
+      "raw_fields": {
+        "author": "02b",
+        "title": "Blah \\mkbibemph{mkbibemph} and \\mkbibquote{mkbibquote}."
       }
     },
     "4": {
       "bib_type": "thesis",
       "entry_key": "Bennett2003",
-      "raw_fields": {
-        "title": "Xenonika: medical texts associated with xenones in the late Byzantine period",
-        "author": "Bennett, David Christopher",
-        "date": "2003",
-        "institution": "University of London",
-        "type": "Ph.D."
-      },
       "fields": {
         "date": "2003",
         "title": [
@@ -242,18 +235,18 @@
             }
           ]
         ]
+      },
+      "raw_fields": {
+        "title": "Xenonika: medical texts associated with xenones in the late Byzantine period",
+        "author": "Bennett, David Christopher",
+        "date": "2003",
+        "institution": "University of London",
+        "type": "Ph.D."
       }
     },
     "5": {
       "bib_type": "incollection",
       "entry_key": "Cooper2013",
-      "raw_fields": {
-        "title": "Byzantium between East and West: Competing Hellenisms in the \\mkbibemph{Alexiad} of Anna Komnene and her Contemporaries",
-        "author": "Glen Cooper",
-        "crossref": "Classen2013",
-        "date": "2013",
-        "pages": "263-87"
-      },
       "fields": {
         "date": "2013",
         "title": [
@@ -294,19 +287,26 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "title": "Byzantium between East and West: Competing Hellenisms in the \\mkbibemph{Alexiad} of Anna Komnene and her Contemporaries",
+        "author": "Glen Cooper",
+        "crossref": "Classen2013",
+        "date": "2013",
+        "pages": "263-87"
+      },
+      "unknown_fields": {
+        "crossref": [
+          {
+            "type": "text",
+            "text": "Classen2013"
+          }
+        ]
       }
     },
     "6": {
       "bib_type": "article",
       "entry_key": "Correns1891",
-      "raw_fields": {
-        "title": "Die dem Boethius fälschlich zugeschriebene Abhandlung des Dominicus Gundisalvi {'De} unitate'",
-        "date": "1891",
-        "journaltitle": "Beiträge zur Geschichte der Philosophie des Mittelalters",
-        "pages": "1-11",
-        "volume": "1",
-        "editor": "Correns, Paul"
-      },
       "fields": {
         "date": "1891",
         "title": [
@@ -356,19 +356,19 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "title": "Die dem Boethius fälschlich zugeschriebene Abhandlung des Dominicus Gundisalvi {'De} unitate'",
+        "date": "1891",
+        "journaltitle": "Beiträge zur Geschichte der Philosophie des Mittelalters",
+        "pages": "1-11",
+        "volume": "1",
+        "editor": "Correns, Paul"
       }
     },
     "7": {
       "bib_type": "inreference",
       "entry_key": "Algar1985",
-      "raw_fields": {
-        "title": "Encyclopedia Iranica",
-        "lista": "Besmallah: in exegesis, jurisprudence, and cultural life",
-        "author": "Algar, Hamid",
-        "date": "1985",
-        "pages": "172-4",
-        "volume": "4"
-      },
       "fields": {
         "date": "1985",
         "title": [
@@ -399,18 +399,27 @@
             "text": "4"
           }
         ]
+      },
+      "raw_fields": {
+        "title": "Encyclopedia Iranica",
+        "lista": "Besmallah: in exegesis, jurisprudence, and cultural life",
+        "author": "Algar, Hamid",
+        "date": "1985",
+        "pages": "172-4",
+        "volume": "4"
+      },
+      "unknown_fields": {
+        "lista": [
+          {
+            "type": "text",
+            "text": "Besmallah: in exegesis, jurisprudence, and cultural life"
+          }
+        ]
       }
     },
     "8": {
       "bib_type": "collection",
       "entry_key": "Arsdall2012",
-      "raw_fields": {
-        "title": "Herbs and Healers from the Ancient Mediterranean through the Medieval West: Essays in Honor of John M. Riddle",
-        "date": "2012",
-        "editor": "Anne van Arsdall and Timothy Graham",
-        "location": "Burlington, VT",
-        "publisher": "Ashgate"
-      },
       "fields": {
         "date": "2012",
         "title": [
@@ -472,6 +481,13 @@
             }
           ]
         ]
+      },
+      "raw_fields": {
+        "title": "Herbs and Healers from the Ancient Mediterranean through the Medieval West: Essays in Honor of John M. Riddle",
+        "date": "2012",
+        "editor": "Anne van Arsdall and Timothy Graham",
+        "location": "Burlington, VT",
+        "publisher": "Ashgate"
       }
     }
   },

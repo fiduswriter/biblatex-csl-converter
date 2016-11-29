@@ -3,15 +3,6 @@
     "0": {
       "bib_type": "article",
       "entry_key": "Oliveira_2009",
-      "raw_fields": {
-        "title": "USGS monitoring ecological impacts",
-        "volume": "107",
-        "number": "29",
-        "journal": "Oil \\& Gas Journal",
-        "author": "Oliveira, A",
-        "year": "2009",
-        "pages": "29"
-      },
       "fields": {
         "date": "2009",
         "title": [
@@ -52,6 +43,23 @@
                 "text": "A"
               }
             ]
+          }
+        ]
+      },
+      "raw_fields": {
+        "title": "USGS monitoring ecological impacts",
+        "volume": "107",
+        "number": "29",
+        "journal": "Oil \\& Gas Journal",
+        "author": "Oliveira, A",
+        "year": "2009",
+        "pages": "29"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "2009"
           }
         ]
       }

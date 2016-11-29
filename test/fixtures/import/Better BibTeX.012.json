@@ -3,13 +3,6 @@
     "0": {
       "bib_type": "incollection",
       "entry_key": "moller2012conceptsrisksafety",
-      "raw_fields": {
-        "title": "{The Concepts of Risk and Safety}",
-        "booktitle": "{Handbook of Risk Theory: Epistemology, Decision Theory, Ethics, and Social Implications of Risk}",
-        "publisher": "{Springer}",
-        "author": "Möller, Niklas",
-        "year": "2012"
-      },
       "fields": {
         "date": "2012",
         "title": [
@@ -56,6 +49,21 @@
                 "text": "Niklas"
               }
             ]
+          }
+        ]
+      },
+      "raw_fields": {
+        "title": "{The Concepts of Risk and Safety}",
+        "booktitle": "{Handbook of Risk Theory: Epistemology, Decision Theory, Ethics, and Social Implications of Risk}",
+        "publisher": "{Springer}",
+        "author": "Möller, Niklas",
+        "year": "2012"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "2012"
           }
         ]
       }

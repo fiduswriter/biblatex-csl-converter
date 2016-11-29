@@ -3,12 +3,6 @@
     "0": {
       "bib_type": "article",
       "entry_key": "abbot3",
-      "raw_fields": {
-        "author": "abbé d' Aubignac, François Hédelin",
-        "options": "useprefix=true",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "{{(abbé d' Aubignac) (François Hédelin)}}"
-      },
       "fields": {
         "author": [
           {
@@ -44,17 +38,31 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "abbé d' Aubignac, François Hédelin",
+        "options": "useprefix=true",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "{{(abbé d' Aubignac) (François Hédelin)}}"
+      },
+      "unknown_fields": {
+        "options": [
+          {
+            "type": "text",
+            "text": "useprefix=true"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "1": {
       "bib_type": "article",
       "entry_key": "abbot1",
-      "raw_fields": {
-        "author": "Aubignac, abbé d', François Hédelin",
-        "note": "relies on paricleParser fallback detection",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "{{(Aubignac) (François Hédelin, abbé d')}}"
-      },
       "fields": {
         "author": [
           {
@@ -95,25 +103,25 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "Aubignac, abbé d', François Hédelin",
+        "note": "relies on paricleParser fallback detection",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "{{(Aubignac) (François Hédelin, abbé d')}}"
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "2": {
       "bib_type": "book",
       "entry_key": "fixedkey",
-      "raw_fields": {
-        "author": "von Humboldt, Alexander and Gooding, Jr., Cuba and de La Fontaine, Jean and von Wright, Georg Henrik Auto and {von Wright}, Georg Henrik Explicit",
-        "date": "1963",
-        "isbn": "0-7100-3616-7",
-        "langid": "anglais",
-        "location": "{Londres}",
-        "options": "useprefix=true",
-        "pagetotal": "xviii+214",
-        "publisher": "{Routledge \\& Kegan Paul}",
-        "series": "International Library of Philosophy and Scientific Method",
-        "shorttitle": "Norm and Action",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "Norm and Action. A Logical Enquiry"
-      },
       "fields": {
         "date": "1963",
         "author": [
@@ -262,22 +270,53 @@
             "text": "Norm and Action. A Logical Enquiry"
           }
         ]
+      },
+      "raw_fields": {
+        "author": "von Humboldt, Alexander and Gooding, Jr., Cuba and de La Fontaine, Jean and von Wright, Georg Henrik Auto and {von Wright}, Georg Henrik Explicit",
+        "date": "1963",
+        "isbn": "0-7100-3616-7",
+        "langid": "anglais",
+        "location": "{Londres}",
+        "options": "useprefix=true",
+        "pagetotal": "xviii+214",
+        "publisher": "{Routledge \\& Kegan Paul}",
+        "series": "International Library of Philosophy and Scientific Method",
+        "shorttitle": "Norm and Action",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Norm and Action. A Logical Enquiry"
+      },
+      "unknown_fields": {
+        "langid": [
+          {
+            "type": "text",
+            "text": "anglais"
+          }
+        ],
+        "options": [
+          {
+            "type": "text",
+            "text": "useprefix=true"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
+      },
+      "unexpected_fields": {
+        "shorttitle": [
+          {
+            "type": "text",
+            "text": "Norm and Action"
+          }
+        ]
       }
     },
     "3": {
       "bib_type": "collection",
       "entry_key": "almeida_reading_2013",
-      "raw_fields": {
-        "date": "2013",
-        "editor": "d' Almeida, Luís and Edwards, James and Dolcetti, Andrea",
-        "isbn": "978-1-84946-324-9",
-        "langid": "english",
-        "location": "{Oxford}",
-        "pagetotal": "vi+309",
-        "publisher": "{Hart Publishing}",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "Reading {{HLA Hart}}'s: {{{\\emph{The Concept}}}}{\\emph{ of }}{{{\\emph{Law}}}}"
-      },
       "fields": {
         "date": "2013",
         "editor": [
@@ -417,21 +456,36 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "date": "2013",
+        "editor": "d' Almeida, Luís and Edwards, James and Dolcetti, Andrea",
+        "isbn": "978-1-84946-324-9",
+        "langid": "english",
+        "location": "{Oxford}",
+        "pagetotal": "vi+309",
+        "publisher": "{Hart Publishing}",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Reading {{HLA Hart}}'s: {{{\\emph{The Concept}}}}{\\emph{ of }}{{{\\emph{Law}}}}"
+      },
+      "unknown_fields": {
+        "langid": [
+          {
+            "type": "text",
+            "text": "english"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "4": {
       "bib_type": "book",
       "entry_key": "bennett_citations_2013",
-      "raw_fields": {
-        "author": "Bennett, Jr., Frank G.",
-        "date": "2013",
-        "isbn": "978-1-4793-4771-1",
-        "location": "{Lexington Kentucky}",
-        "pagetotal": "137",
-        "publisher": "{CreateSpace Independent Publishing Platform}",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "Citations, {{Out}} of the {{Box}}"
-      },
       "fields": {
         "date": "2013",
         "author": [
@@ -512,20 +566,29 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "Bennett, Jr., Frank G.",
+        "date": "2013",
+        "isbn": "978-1-4793-4771-1",
+        "location": "{Lexington Kentucky}",
+        "pagetotal": "137",
+        "publisher": "{CreateSpace Independent Publishing Platform}",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Citations, {{Out}} of the {{Box}}"
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "5": {
       "bib_type": "book",
       "entry_key": "king_have_1968",
-      "raw_fields": {
-        "author": "King, Jr., Martin Luther",
-        "date": "1968",
-        "location": "{New York}",
-        "pagetotal": "154",
-        "publisher": "{Grosset \\& Dunlap}",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "\"{{I}} Have a Dream\" : The Quotations of {{Martin Luther King JR}}"
-      },
       "fields": {
         "date": "1968",
         "author": [
@@ -600,18 +663,28 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "King, Jr., Martin Luther",
+        "date": "1968",
+        "location": "{New York}",
+        "pagetotal": "154",
+        "publisher": "{Grosset \\& Dunlap}",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "\"{{I}} Have a Dream\" : The Quotations of {{Martin Luther King JR}}"
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "6": {
       "bib_type": "article",
       "entry_key": "bugreports_ApostropheOnParticle",
-      "raw_fields": {
-        "author": "d' Jones, John",
-        "keywords": "imported",
-        "options": "useprefix=true",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "bugreports\\_{{ApostropheOnParticle}}"
-      },
       "fields": {
         "author": [
           {
@@ -654,17 +727,32 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "d' Jones, John",
+        "keywords": "imported",
+        "options": "useprefix=true",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "bugreports\\_{{ApostropheOnParticle}}"
+      },
+      "unknown_fields": {
+        "options": [
+          {
+            "type": "text",
+            "text": "useprefix=true"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "7": {
       "bib_type": "article",
       "entry_key": "bugreports_AsmJournals",
-      "raw_fields": {
-        "author": "Doe Co.",
-        "keywords": "imported",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "bugreports\\_{{AsmJournals}}"
-      },
       "fields": {
         "author": [
           {
@@ -700,17 +788,25 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "Doe Co.",
+        "keywords": "imported",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "bugreports\\_{{AsmJournals}}"
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "8": {
       "bib_type": "article",
       "entry_key": "bugreports_DemoPageFullCiteCruftOnSubsequent",
-      "raw_fields": {
-        "author": "{U.S. Bureau of the Census}",
-        "keywords": "imported",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "bugreports\\_{{DemoPageFullCiteCruftOnSubsequent}}"
-      },
       "fields": {
         "author": [
           {
@@ -753,17 +849,25 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "{U.S. Bureau of the Census}",
+        "keywords": "imported",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "bugreports\\_{{DemoPageFullCiteCruftOnSubsequent}}"
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "9": {
       "bib_type": "article",
       "entry_key": "bugreports_DuplicateSpaces",
-      "raw_fields": {
-        "author": "D'Arcus, Bruce",
-        "keywords": "imported",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "bugreports\\_{{DuplicateSpaces}}"
-      },
       "fields": {
         "author": [
           {
@@ -799,17 +903,25 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "D'Arcus, Bruce",
+        "keywords": "imported",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "bugreports\\_{{DuplicateSpaces}}"
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "10": {
       "bib_type": "article",
       "entry_key": "bugreports_DuplicateSpaces3",
-      "raw_fields": {
-        "author": "Family Name, N",
-        "keywords": "imported",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "bugreports\\_{{DuplicateSpaces3}}"
-      },
       "fields": {
         "author": [
           {
@@ -845,17 +957,25 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "Family Name, N",
+        "keywords": "imported",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "bugreports\\_{{DuplicateSpaces3}}"
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "11": {
       "bib_type": "article",
       "entry_key": "bugreports_GreekStyleProblems",
-      "raw_fields": {
-        "author": "Καρυωτάκης, Κώστας",
-        "keywords": "imported",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "bugreports\\_{{GreekStyleProblems}}"
-      },
       "fields": {
         "author": [
           {
@@ -891,17 +1011,25 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "Καρυωτάκης, Κώστας",
+        "keywords": "imported",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "bugreports\\_{{GreekStyleProblems}}"
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "12": {
       "bib_type": "article",
       "entry_key": "bugreports_ProcessorHang1",
-      "raw_fields": {
-        "author": "Reynoso-Santos, R. and Soto-Pinto, L. and Tejeda-Cruz, C. and Williams-Linera, G.",
-        "keywords": "imported",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "bugreports\\_{{ProcessorHang1}}"
-      },
       "fields": {
         "author": [
           {
@@ -979,17 +1107,25 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "Reynoso-Santos, R. and Soto-Pinto, L. and Tejeda-Cruz, C. and Williams-Linera, G.",
+        "keywords": "imported",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "bugreports\\_{{ProcessorHang1}}"
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "13": {
       "bib_type": "article",
       "entry_key": "bugreports_YearSuffixInHarvard1",
-      "raw_fields": {
-        "author": "{Africa News}",
-        "keywords": "imported",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "bugreports\\_{{YearSuffixInHarvard1}}"
-      },
       "fields": {
         "author": [
           {
@@ -1025,18 +1161,25 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "{Africa News}",
+        "keywords": "imported",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "bugreports\\_{{YearSuffixInHarvard1}}"
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "14": {
       "bib_type": "article",
       "entry_key": "bugreports_parseName",
-      "raw_fields": {
-        "author": "van Happel, Eduard and von Hoppel, Gustav",
-        "keywords": "imported",
-        "options": "useprefix=true",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "bugreports\\_{{parseName}}"
-      },
       "fields": {
         "author": [
           {
@@ -1100,18 +1243,32 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "van Happel, Eduard and von Hoppel, Gustav",
+        "keywords": "imported",
+        "options": "useprefix=true",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "bugreports\\_{{parseName}}"
+      },
+      "unknown_fields": {
+        "options": [
+          {
+            "type": "text",
+            "text": "useprefix=true"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "15": {
       "bib_type": "article",
       "entry_key": "decorations_AndTermUnaffectedByNameDecorations",
-      "raw_fields": {
-        "author": "Doe, III, John and van Roe, Jane",
-        "keywords": "imported",
-        "options": "useprefix=true",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "decorations\\_{{AndTermUnaffectedByNameDecorations}}"
-      },
       "fields": {
         "author": [
           {
@@ -1174,18 +1331,32 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "Doe, III, John and van Roe, Jane",
+        "keywords": "imported",
+        "options": "useprefix=true",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "decorations\\_{{AndTermUnaffectedByNameDecorations}}"
+      },
+      "unknown_fields": {
+        "options": [
+          {
+            "type": "text",
+            "text": "useprefix=true"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "16": {
       "bib_type": "article",
       "entry_key": "disambiguate_CitationLabelInData",
-      "raw_fields": {
-        "author": "von Dipheria, Doug",
-        "keywords": "imported",
-        "options": "useprefix=true",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "disambiguate\\_{{CitationLabelInData}}"
-      },
       "fields": {
         "author": [
           {
@@ -1228,17 +1399,32 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "von Dipheria, Doug",
+        "keywords": "imported",
+        "options": "useprefix=true",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "disambiguate\\_{{CitationLabelInData}}"
+      },
+      "unknown_fields": {
+        "options": [
+          {
+            "type": "text",
+            "text": "useprefix=true"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "17": {
       "bib_type": "article",
       "entry_key": "disambiguate_FailWithYearSuffix",
-      "raw_fields": {
-        "author": "{Caritas Europa} and {JRS-Europe}",
-        "keywords": "imported",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "disambiguate\\_{{FailWithYearSuffix}}"
-      },
       "fields": {
         "author": [
           {
@@ -1282,17 +1468,25 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "{Caritas Europa} and {JRS-Europe}",
+        "keywords": "imported",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "disambiguate\\_{{FailWithYearSuffix}}"
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "18": {
       "bib_type": "article",
       "entry_key": "disambiguate_YearCollapseWithInstitution",
-      "raw_fields": {
-        "author": "Smith Co",
-        "keywords": "imported",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "disambiguate\\_{{YearCollapseWithInstitution}}"
-      },
       "fields": {
         "author": [
           {
@@ -1328,17 +1522,25 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "Smith Co",
+        "keywords": "imported",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "disambiguate\\_{{YearCollapseWithInstitution}}"
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "19": {
       "bib_type": "article",
       "entry_key": "display_SecondFieldAlignMigratePunctuation",
-      "raw_fields": {
-        "author": "Bennett, Jr., Frank G.",
-        "keywords": "imported",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "display\\_{{SecondFieldAlignMigratePunctuation}}"
-      },
       "fields": {
         "author": [
           {
@@ -1380,17 +1582,25 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "Bennett, Jr., Frank G.",
+        "keywords": "imported",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "display\\_{{SecondFieldAlignMigratePunctuation}}"
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "20": {
       "bib_type": "article",
       "entry_key": "group_ComplexNesting",
-      "raw_fields": {
-        "author": "Doe Inc.",
-        "keywords": "imported",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "group\\_{{ComplexNesting}}"
-      },
       "fields": {
         "author": [
           {
@@ -1426,18 +1636,25 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "Doe Inc.",
+        "keywords": "imported",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "group\\_{{ComplexNesting}}"
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "21": {
       "bib_type": "article",
       "entry_key": "integration_DuplicateItem",
-      "raw_fields": {
-        "author": "la Berge, S. P",
-        "keywords": "imported",
-        "options": "useprefix=true",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "integration\\_{{DuplicateItem}}"
-      },
       "fields": {
         "author": [
           {
@@ -1480,18 +1697,32 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "la Berge, S. P",
+        "keywords": "imported",
+        "options": "useprefix=true",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "integration\\_{{DuplicateItem}}"
+      },
+      "unknown_fields": {
+        "options": [
+          {
+            "type": "text",
+            "text": "useprefix=true"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "22": {
       "bib_type": "article",
       "entry_key": "magic_CapitalizeFirstOccurringNameParticle",
-      "raw_fields": {
-        "author": "de Simone, Samuel",
-        "keywords": "imported",
-        "options": "useprefix=true",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "magic\\_{{CapitalizeFirstOccurringNameParticle}}"
-      },
       "fields": {
         "author": [
           {
@@ -1534,18 +1765,32 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "de Simone, Samuel",
+        "keywords": "imported",
+        "options": "useprefix=true",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "magic\\_{{CapitalizeFirstOccurringNameParticle}}"
+      },
+      "unknown_fields": {
+        "options": [
+          {
+            "type": "text",
+            "text": "useprefix=true"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "23": {
       "bib_type": "article",
       "entry_key": "magic_NameParticle",
-      "raw_fields": {
-        "author": "von Doe, John",
-        "keywords": "imported",
-        "options": "useprefix=true",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "magic\\_{{NameParticle}}"
-      },
       "fields": {
         "author": [
           {
@@ -1588,17 +1833,32 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "von Doe, John",
+        "keywords": "imported",
+        "options": "useprefix=true",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "magic\\_{{NameParticle}}"
+      },
+      "unknown_fields": {
+        "options": [
+          {
+            "type": "text",
+            "text": "useprefix=true"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "24": {
       "bib_type": "article",
       "entry_key": "magic_SuppressDuplicateVariableRendering",
-      "raw_fields": {
-        "author": "{Blob}",
-        "keywords": "imported",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "magic\\_{{SuppressDuplicateVariableRendering}}"
-      },
       "fields": {
         "author": [
           {
@@ -1628,17 +1888,25 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "{Blob}",
+        "keywords": "imported",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "magic\\_{{SuppressDuplicateVariableRendering}}"
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "25": {
       "bib_type": "article",
       "entry_key": "name_ArticularNameAsSortOrder",
-      "raw_fields": {
-        "author": "Doe, III, James",
-        "keywords": "imported",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "name\\_{{ArticularNameAsSortOrder}}"
-      },
       "fields": {
         "author": [
           {
@@ -1680,17 +1948,25 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "Doe, III, James",
+        "keywords": "imported",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "name\\_{{ArticularNameAsSortOrder}}"
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "26": {
       "bib_type": "article",
       "entry_key": "name_ArticularShortFormCommaSuffix",
-      "raw_fields": {
-        "author": "Doe, Jr, James",
-        "keywords": "imported",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "name\\_{{ArticularShortFormCommaSuffix}}"
-      },
       "fields": {
         "author": [
           {
@@ -1732,17 +2008,25 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "Doe, Jr, James",
+        "keywords": "imported",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "name\\_{{ArticularShortFormCommaSuffix}}"
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "27": {
       "bib_type": "article",
       "entry_key": "name_ArticularWithComma",
-      "raw_fields": {
-        "author": "Doe, Jr., Jeffrey",
-        "keywords": "imported",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "name\\_{{ArticularWithComma}}"
-      },
       "fields": {
         "author": [
           {
@@ -1784,17 +2068,25 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "Doe, Jr., Jeffrey",
+        "keywords": "imported",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "name\\_{{ArticularWithComma}}"
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "28": {
       "bib_type": "article",
       "entry_key": "name_Delimiter",
-      "raw_fields": {
-        "author": "Noakes Inc.",
-        "keywords": "imported",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "name\\_{{Delimiter}}"
-      },
       "fields": {
         "author": [
           {
@@ -1830,18 +2122,25 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "Noakes Inc.",
+        "keywords": "imported",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "name\\_{{Delimiter}}"
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "29": {
       "bib_type": "article",
       "entry_key": "name_FormattingOfParticles",
-      "raw_fields": {
-        "author": "van der Meer, Gerard",
-        "keywords": "imported",
-        "options": "useprefix=true",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "name\\_{{FormattingOfParticles}}"
-      },
       "fields": {
         "author": [
           {
@@ -1884,18 +2183,32 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "van der Meer, Gerard",
+        "keywords": "imported",
+        "options": "useprefix=true",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "name\\_{{FormattingOfParticles}}"
+      },
+      "unknown_fields": {
+        "options": [
+          {
+            "type": "text",
+            "text": "useprefix=true"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "30": {
       "bib_type": "article",
       "entry_key": "name_HyphenatedNonDroppingParticle1",
-      "raw_fields": {
-        "author": "al- One, Alan",
-        "keywords": "imported",
-        "options": "useprefix=true",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "name\\_{{HyphenatedNonDroppingParticle1}}"
-      },
       "fields": {
         "author": [
           {
@@ -1938,17 +2251,32 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "al- One, Alan",
+        "keywords": "imported",
+        "options": "useprefix=true",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "name\\_{{HyphenatedNonDroppingParticle1}}"
+      },
+      "unknown_fields": {
+        "options": [
+          {
+            "type": "text",
+            "text": "useprefix=true"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "31": {
       "bib_type": "article",
       "entry_key": "name_Institution",
-      "raw_fields": {
-        "author": "{Multi-National United}",
-        "keywords": "imported",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "name\\_{{Institution}}"
-      },
       "fields": {
         "author": [
           {
@@ -1984,17 +2312,25 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "{Multi-National United}",
+        "keywords": "imported",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "name\\_{{Institution}}"
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "32": {
       "bib_type": "article",
       "entry_key": "name_InstitutionDecoration",
-      "raw_fields": {
-        "author": "{São Paulo (Estado)}",
-        "keywords": "imported",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "name\\_{{InstitutionDecoration}}"
-      },
       "fields": {
         "author": [
           {
@@ -2030,18 +2366,25 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "{São Paulo (Estado)}",
+        "keywords": "imported",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "name\\_{{InstitutionDecoration}}"
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "33": {
       "bib_type": "article",
       "entry_key": "name_MixedFormatsInitialSortOrderAllWithDecorationsEtAl",
-      "raw_fields": {
-        "author": "van Winkle, Rip and Thucydides, III, Carl",
-        "keywords": "imported",
-        "options": "useprefix=true",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "name\\_{{MixedFormatsInitialSortOrderAllWithDecorationsEtAl}}"
-      },
       "fields": {
         "author": [
           {
@@ -2104,17 +2447,32 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "van Winkle, Rip and Thucydides, III, Carl",
+        "keywords": "imported",
+        "options": "useprefix=true",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "name\\_{{MixedFormatsInitialSortOrderAllWithDecorationsEtAl}}"
+      },
+      "unknown_fields": {
+        "options": [
+          {
+            "type": "text",
+            "text": "useprefix=true"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "34": {
       "bib_type": "article",
       "entry_key": "name_MultipleLiteral",
-      "raw_fields": {
-        "author": "{Alfred Benzon Foundation} and {James Benson Foundation} and {John Candy Foundation}",
-        "keywords": "imported",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "name\\_{{MultipleLiteral}}"
-      },
       "fields": {
         "author": [
           {
@@ -2178,18 +2536,25 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "{Alfred Benzon Foundation} and {James Benson Foundation} and {John Candy Foundation}",
+        "keywords": "imported",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "name\\_{{MultipleLiteral}}"
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "35": {
       "bib_type": "article",
       "entry_key": "name_ParseNames",
-      "raw_fields": {
-        "author": "van der Vlist, Eric and van Gogh, Vincent",
-        "keywords": "imported",
-        "options": "useprefix=true",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "name\\_{{ParseNames}}"
-      },
       "fields": {
         "author": [
           {
@@ -2253,17 +2618,32 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "van der Vlist, Eric and van Gogh, Vincent",
+        "keywords": "imported",
+        "options": "useprefix=true",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "name\\_{{ParseNames}}"
+      },
+      "unknown_fields": {
+        "options": [
+          {
+            "type": "text",
+            "text": "useprefix=true"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "36": {
       "bib_type": "article",
       "entry_key": "name_ParsedDroppingParticleWithAffixes",
-      "raw_fields": {
-        "author": "de La Fontaine, Jean",
-        "keywords": "imported",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "name\\_{{ParsedDroppingParticleWithAffixes}}"
-      },
       "fields": {
         "author": [
           {
@@ -2306,18 +2686,25 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "de La Fontaine, Jean",
+        "keywords": "imported",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "name\\_{{ParsedDroppingParticleWithAffixes}}"
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "37": {
       "bib_type": "article",
       "entry_key": "name_ParsedNonDroppingParticleWithAffixes",
-      "raw_fields": {
-        "author": "de la Fontaine, Jean",
-        "keywords": "imported",
-        "options": "useprefix=true",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "name\\_{{ParsedNonDroppingParticleWithAffixes}}"
-      },
       "fields": {
         "author": [
           {
@@ -2360,18 +2747,32 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "de la Fontaine, Jean",
+        "keywords": "imported",
+        "options": "useprefix=true",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "name\\_{{ParsedNonDroppingParticleWithAffixes}}"
+      },
+      "unknown_fields": {
+        "options": [
+          {
+            "type": "text",
+            "text": "useprefix=true"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "38": {
       "bib_type": "article",
       "entry_key": "name_ParsedNonDroppingParticleWithApostrophe",
-      "raw_fields": {
-        "author": "d' Aubignac, abbé d', François Hédelin",
-        "keywords": "imported",
-        "options": "useprefix=true",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "name\\_{{ParsedNonDroppingParticleWithApostrophe}}"
-      },
       "fields": {
         "author": [
           {
@@ -2420,18 +2821,32 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "d' Aubignac, abbé d', François Hédelin",
+        "keywords": "imported",
+        "options": "useprefix=true",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "name\\_{{ParsedNonDroppingParticleWithApostrophe}}"
+      },
+      "unknown_fields": {
+        "options": [
+          {
+            "type": "text",
+            "text": "useprefix=true"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "39": {
       "bib_type": "article",
       "entry_key": "name_ParticleCaps1",
-      "raw_fields": {
-        "author": "van One, Onename and van Two, Twoname and van Three, Threename and Van Four, Fourname",
-        "keywords": "imported",
-        "options": "useprefix=true",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "name\\_{{ParticleCaps1}}"
-      },
       "fields": {
         "author": [
           {
@@ -2530,17 +2945,32 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "van One, Onename and van Two, Twoname and van Three, Threename and Van Four, Fourname",
+        "keywords": "imported",
+        "options": "useprefix=true",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "name\\_{{ParticleCaps1}}"
+      },
+      "unknown_fields": {
+        "options": [
+          {
+            "type": "text",
+            "text": "useprefix=true"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "40": {
       "bib_type": "article",
       "entry_key": "name_ParticleCaps3",
-      "raw_fields": {
-        "author": "{Van Dyke}, Dick",
-        "keywords": "imported",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "name\\_{{ParticleCaps3}}"
-      },
       "fields": {
         "author": [
           {
@@ -2576,18 +3006,25 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "{Van Dyke}, Dick",
+        "keywords": "imported",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "name\\_{{ParticleCaps3}}"
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "41": {
       "bib_type": "article",
       "entry_key": "name_ParticleFormatting",
-      "raw_fields": {
-        "author": "de la Doe, John",
-        "keywords": "imported",
-        "options": "useprefix=true",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "name\\_{{ParticleFormatting}}"
-      },
       "fields": {
         "author": [
           {
@@ -2630,18 +3067,32 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "de la Doe, John",
+        "keywords": "imported",
+        "options": "useprefix=true",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "name\\_{{ParticleFormatting}}"
+      },
+      "unknown_fields": {
+        "options": [
+          {
+            "type": "text",
+            "text": "useprefix=true"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "42": {
       "bib_type": "article",
       "entry_key": "name_ParticlesDemoteNonDroppingNever",
-      "raw_fields": {
-        "author": "de Las Familyname, Givenname and del Familyname, Givenname and Di Familyname, Givenname and Da Familyname, Givenname and Do Familyname, Givenname and Des Familyname, Givenname and Lou Familyname, Givenname and Pietro Familyname, Givenname and de Familyname, Givenname and de La Familyname, Givenname and Le Familyname, Givenname and La Familyname, Givenname and L'Familyname, Givenname and Saint Familyname, Givenname and Sainte Familyname, Givenname and St. Familyname, Givenname and Ste. Familyname, Givenname and van Familyname, Givenname and van de Familyname, Givenname and van der Familyname, Givenname and van den Familyname, Givenname and vander Familyname, Givenname and v.d. Familyname, Givenname and vd Familyname, Givenname and van het Familyname, Givenname and ver Familyname, Givenname",
-        "keywords": "imported",
-        "options": "useprefix=true",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "name\\_{{ParticlesDemoteNonDroppingNever}}"
-      },
       "fields": {
         "author": [
           {
@@ -3118,18 +3569,32 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "de Las Familyname, Givenname and del Familyname, Givenname and Di Familyname, Givenname and Da Familyname, Givenname and Do Familyname, Givenname and Des Familyname, Givenname and Lou Familyname, Givenname and Pietro Familyname, Givenname and de Familyname, Givenname and de La Familyname, Givenname and Le Familyname, Givenname and La Familyname, Givenname and L'Familyname, Givenname and Saint Familyname, Givenname and Sainte Familyname, Givenname and St. Familyname, Givenname and Ste. Familyname, Givenname and van Familyname, Givenname and van de Familyname, Givenname and van der Familyname, Givenname and van den Familyname, Givenname and vander Familyname, Givenname and v.d. Familyname, Givenname and vd Familyname, Givenname and van het Familyname, Givenname and ver Familyname, Givenname",
+        "keywords": "imported",
+        "options": "useprefix=true",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "name\\_{{ParticlesDemoteNonDroppingNever}}"
+      },
+      "unknown_fields": {
+        "options": [
+          {
+            "type": "text",
+            "text": "useprefix=true"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "43": {
       "bib_type": "article",
       "entry_key": "name_WesternArticularLowercase",
-      "raw_fields": {
-        "author": "van Doe, Jacques",
-        "keywords": "imported",
-        "options": "useprefix=true",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "name\\_{{WesternArticularLowercase}}"
-      },
       "fields": {
         "author": [
           {
@@ -3172,18 +3637,32 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "van Doe, Jacques",
+        "keywords": "imported",
+        "options": "useprefix=true",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "name\\_{{WesternArticularLowercase}}"
+      },
+      "unknown_fields": {
+        "options": [
+          {
+            "type": "text",
+            "text": "useprefix=true"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "44": {
       "bib_type": "article",
       "entry_key": "name_namepartAffixes",
-      "raw_fields": {
-        "author": "de La Fontaine, III, Jean",
-        "keywords": "imported",
-        "options": "useprefix=true",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "name\\_{{namepartAffixes}}"
-      },
       "fields": {
         "author": [
           {
@@ -3232,18 +3711,32 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "de La Fontaine, III, Jean",
+        "keywords": "imported",
+        "options": "useprefix=true",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "name\\_{{namepartAffixes}}"
+      },
+      "unknown_fields": {
+        "options": [
+          {
+            "type": "text",
+            "text": "useprefix=true"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "45": {
       "bib_type": "article",
       "entry_key": "nameorder_Long",
-      "raw_fields": {
-        "author": "de la Martinière, III, Gérard",
-        "keywords": "imported",
-        "options": "useprefix=true",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "nameorder\\_{{Long}}"
-      },
       "fields": {
         "author": [
           {
@@ -3292,17 +3785,32 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "de la Martinière, III, Gérard",
+        "keywords": "imported",
+        "options": "useprefix=true",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "nameorder\\_{{Long}}"
+      },
+      "unknown_fields": {
+        "options": [
+          {
+            "type": "text",
+            "text": "useprefix=true"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "46": {
       "bib_type": "article",
       "entry_key": "position_IbidWithSuffix",
-      "raw_fields": {
-        "author": "Al-Khatib Organization",
-        "keywords": "imported",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "position\\_{{IbidWithSuffix}}"
-      },
       "fields": {
         "author": [
           {
@@ -3338,17 +3846,25 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "Al-Khatib Organization",
+        "keywords": "imported",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "position\\_{{IbidWithSuffix}}"
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "47": {
       "bib_type": "article",
       "entry_key": "sort_ChangeInNameSort",
-      "raw_fields": {
-        "author": "{De Quincey}, Alan",
-        "keywords": "imported",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "sort\\_{{ChangeInNameSort}}"
-      },
       "fields": {
         "author": [
           {
@@ -3384,17 +3900,25 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "{De Quincey}, Alan",
+        "keywords": "imported",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "sort\\_{{ChangeInNameSort}}"
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "48": {
       "bib_type": "article",
       "entry_key": "sort_ChicagoYearSuffix1",
-      "raw_fields": {
-        "author": "Beijing Zoo and {Beijing Zoo}",
-        "keywords": "imported",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "sort\\_{{ChicagoYearSuffix1}}"
-      },
       "fields": {
         "author": [
           {
@@ -3444,17 +3968,25 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "Beijing Zoo and {Beijing Zoo}",
+        "keywords": "imported",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "sort\\_{{ChicagoYearSuffix1}}"
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "49": {
       "bib_type": "article",
       "entry_key": "sort_FamilyOnly",
-      "raw_fields": {
-        "author": "ANZ Group",
-        "keywords": "imported",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "sort\\_{{FamilyOnly}}"
-      },
       "fields": {
         "author": [
           {
@@ -3490,18 +4022,25 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "ANZ Group",
+        "keywords": "imported",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "sort\\_{{FamilyOnly}}"
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "50": {
       "bib_type": "article",
       "entry_key": "sort_LeadingApostropheOnNameParticle",
-      "raw_fields": {
-        "author": "'t Horvath, Peter A.C. and in 't Horvath, Peter A.D.",
-        "keywords": "imported",
-        "options": "useprefix=true",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "sort\\_{{LeadingApostropheOnNameParticle}}"
-      },
       "fields": {
         "author": [
           {
@@ -3565,18 +4104,32 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "'t Horvath, Peter A.C. and in 't Horvath, Peter A.D.",
+        "keywords": "imported",
+        "options": "useprefix=true",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "sort\\_{{LeadingApostropheOnNameParticle}}"
+      },
+      "unknown_fields": {
+        "options": [
+          {
+            "type": "text",
+            "text": "useprefix=true"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "51": {
       "bib_type": "article",
       "entry_key": "sort_NameParticleInNameSortFalse",
-      "raw_fields": {
-        "author": "di Noakes, John",
-        "keywords": "imported",
-        "options": "useprefix=true",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "sort\\_{{NameParticleInNameSortFalse}}"
-      },
       "fields": {
         "author": [
           {
@@ -3619,17 +4172,32 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "di Noakes, John",
+        "keywords": "imported",
+        "options": "useprefix=true",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "sort\\_{{NameParticleInNameSortFalse}}"
+      },
+      "unknown_fields": {
+        "options": [
+          {
+            "type": "text",
+            "text": "useprefix=true"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "52": {
       "bib_type": "article",
       "entry_key": "sort_NameVariable",
-      "raw_fields": {
-        "author": "[F]linders, Jacob",
-        "keywords": "imported",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "sort\\_{{NameVariable}}"
-      },
       "fields": {
         "author": [
           {
@@ -3663,6 +4231,20 @@
                 "type": "nocase"
               }
             ]
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "[F]linders, Jacob",
+        "keywords": "imported",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "sort\\_{{NameVariable}}"
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
           }
         ]
       }

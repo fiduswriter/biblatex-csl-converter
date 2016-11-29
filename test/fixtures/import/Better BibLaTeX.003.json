@@ -3,13 +3,6 @@
     "0": {
       "bib_type": "inproceedings",
       "entry_key": "author:06",
-      "raw_fields": {
-        "author": "Author, First and Author, Second",
-        "crossref": "conference:06",
-        "pages": "330--331",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "Some Publication Title"
-      },
       "fields": {
         "author": [
           {
@@ -47,17 +40,32 @@
             "text": "Some Publication Title"
           }
         ]
+      },
+      "raw_fields": {
+        "author": "Author, First and Author, Second",
+        "crossref": "conference:06",
+        "pages": "330--331",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Some Publication Title"
+      },
+      "unknown_fields": {
+        "crossref": [
+          {
+            "type": "text",
+            "text": "conference:06"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "1": {
       "bib_type": "collection",
       "entry_key": "conference:06",
-      "raw_fields": {
-        "date": "2006-10",
-        "editor": "Editor, First and Editor, Second",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "Proceedings of the {{Xth}} Conference on {{XYZ}}"
-      },
       "fields": {
         "date": "2006-10",
         "editor": [
@@ -116,6 +124,20 @@
                 "type": "nocase"
               }
             ]
+          }
+        ]
+      },
+      "raw_fields": {
+        "date": "2006-10",
+        "editor": "Editor, First and Editor, Second",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Proceedings of the {{Xth}} Conference on {{XYZ}}"
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
           }
         ]
       }

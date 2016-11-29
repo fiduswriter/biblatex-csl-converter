@@ -3,19 +3,6 @@
     "0": {
       "bib_type": "post-weblog",
       "entry_key": "leishuku",
-      "raw_fields": {
-        "author": "{愛如生}",
-        "langid": "pinyin",
-        "shorttitle": "leishuku",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "中國類書庫",
-        "titleaddon": "Zhōngguó lèishū kù",
-        "type": "Full-text databse",
-        "url": "http://server.wenzibase.com",
-        "urldate": "2016-04-20",
-        "usere": "Database of Chinese Encyclopeadias",
-        "year": "n.d."
-      },
       "fields": {
         "author": [
           {
@@ -40,23 +27,58 @@
           }
         ],
         "urldate": "2016-04-20"
+      },
+      "raw_fields": {
+        "author": "{愛如生}",
+        "langid": "pinyin",
+        "shorttitle": "leishuku",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "中國類書庫",
+        "titleaddon": "Zhōngguó lèishū kù",
+        "type": "Full-text databse",
+        "url": "http://server.wenzibase.com",
+        "urldate": "2016-04-20",
+        "usere": "Database of Chinese Encyclopeadias",
+        "year": "n.d."
+      },
+      "unknown_fields": {
+        "langid": [
+          {
+            "type": "text",
+            "text": "pinyin"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ],
+        "usere": [
+          {
+            "type": "text",
+            "text": "Database of Chinese Encyclopeadias"
+          }
+        ],
+        "year": [
+          {
+            "type": "text",
+            "text": "n.d."
+          }
+        ]
+      },
+      "unexpected_fields": {
+        "shorttitle": [
+          {
+            "type": "text",
+            "text": "leishuku"
+          }
+        ]
       }
     },
     "1": {
       "bib_type": "thesis",
       "entry_key": "yan_cairong__2003",
-      "raw_fields": {
-        "author": "{顏采容}",
-        "date": "2003",
-        "institution": "{國立暨南國際大學}",
-        "langid": "Chinese",
-        "pagetotal": "214",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "明清時期出版與文化─以「才子佳人」小說為中心",
-        "titleaddon": "Publishing and Culture in Ming-Qing period : The Scholar-Beauty Novels as an Example",
-        "type": "Ph.D. Dissertation",
-        "url": "http://ndltd.ncl.edu.tw/cgi-bin/gs32/gsweb.cgi?o=dnclcdr&s=id=%22091NCNU0493006%22.&searchmode=basic"
-      },
       "fields": {
         "date": "2003",
         "author": [
@@ -93,6 +115,32 @@
           {
             "type": "text",
             "text": "Publishing and Culture in Ming-Qing period : The Scholar-Beauty Novels as an Example"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "{顏采容}",
+        "date": "2003",
+        "institution": "{國立暨南國際大學}",
+        "langid": "Chinese",
+        "pagetotal": "214",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "明清時期出版與文化─以「才子佳人」小說為中心",
+        "titleaddon": "Publishing and Culture in Ming-Qing period : The Scholar-Beauty Novels as an Example",
+        "type": "Ph.D. Dissertation",
+        "url": "http://ndltd.ncl.edu.tw/cgi-bin/gs32/gsweb.cgi?o=dnclcdr&s=id=%22091NCNU0493006%22.&searchmode=basic"
+      },
+      "unknown_fields": {
+        "langid": [
+          {
+            "type": "text",
+            "text": "Chinese"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
           }
         ]
       }

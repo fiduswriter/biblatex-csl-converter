@@ -3,20 +3,6 @@
     "0": {
       "bib_type": "incollection",
       "entry_key": "Madelung_1998_LB_10681727_56",
-      "raw_fields": {
-        "title": "Cuprous oxide ({Cu$_2$O}) crystal structure, lattice parameters",
-        "author": "Madelung, O. and others",
-        "booktitle": "{L}andolt-{B}örnstein",
-        "publisher": "Springer-Verlag",
-        "year": "1998",
-        "editor": "Madelung, O. and Rössler, U. and Schulz, M.",
-        "series": "SpringerMaterials - The Landolt-Börnstein Database",
-        "volume": "III/41c",
-        "doi": "10.1007/10681727_56",
-        "file": "Madelung_1998_LB_10681727_56.pdf:CopperOxides\\Madelung_1998_LB_10681727_56.pdf:PDF",
-        "owner": "Francesco",
-        "timestamp": "2010.02.22"
-      },
       "fields": {
         "date": "1998",
         "title": [
@@ -170,7 +156,42 @@
             "text": "III/41c"
           }
         ]
-      }
+      },
+      "raw_fields": {
+        "title": "Cuprous oxide ({Cu$_2$O}) crystal structure, lattice parameters",
+        "author": "Madelung, O. and others",
+        "booktitle": "{L}andolt-{B}örnstein",
+        "publisher": "Springer-Verlag",
+        "year": "1998",
+        "editor": "Madelung, O. and Rössler, U. and Schulz, M.",
+        "series": "SpringerMaterials - The Landolt-Börnstein Database",
+        "volume": "III/41c",
+        "doi": "10.1007/10681727_56",
+        "file": "Madelung_1998_LB_10681727_56.pdf:CopperOxides\\Madelung_1998_LB_10681727_56.pdf:PDF",
+        "owner": "Francesco",
+        "timestamp": "2010.02.22"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "1998"
+          }
+        ],
+        "owner": [
+          {
+            "type": "text",
+            "text": "Francesco"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2010.02.22"
+          }
+        ]
+      },
+      "unexpected_fields": {}
     }
   },
   "warnings": [

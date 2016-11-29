@@ -3,12 +3,6 @@
     "0": {
       "bib_type": "inproceedings",
       "entry_key": "author:06",
-      "raw_fields": {
-        "title": "Some publication title",
-        "author": "Author, First and Author, Second",
-        "crossref": "conference:06",
-        "pages": "330—331"
-      },
       "fields": {
         "title": [
           {
@@ -46,18 +40,25 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "title": "Some publication title",
+        "author": "Author, First and Author, Second",
+        "crossref": "conference:06",
+        "pages": "330—331"
+      },
+      "unknown_fields": {
+        "crossref": [
+          {
+            "type": "text",
+            "text": "conference:06"
+          }
+        ]
       }
     },
     "1": {
       "bib_type": "proceedings",
       "entry_key": "conference:06",
-      "raw_fields": {
-        "editor": "Editor, First and Editor, Second",
-        "title": "Proceedings of the Xth Conference on XYZ",
-        "booktitle": "Proceedings of the Xth Conference on XYZ (Book)",
-        "year": "2006",
-        "month": "oct"
-      },
       "fields": {
         "editor": [
           {
@@ -93,6 +94,35 @@
           {
             "type": "text",
             "text": "Proceedings of the Xth Conference on XYZ"
+          }
+        ]
+      },
+      "raw_fields": {
+        "editor": "Editor, First and Editor, Second",
+        "title": "Proceedings of the Xth Conference on XYZ",
+        "booktitle": "Proceedings of the Xth Conference on XYZ (Book)",
+        "year": "2006",
+        "month": "oct"
+      },
+      "unexpected_fields": {
+        "booktitle": [
+          {
+            "type": "text",
+            "text": "Proceedings of the Xth Conference on XYZ (Book)"
+          }
+        ]
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "2006"
+          }
+        ],
+        "month": [
+          {
+            "type": "text",
+            "text": "oct"
           }
         ]
       }

@@ -3,12 +3,6 @@
     "0": {
       "bib_type": "unpublished",
       "entry_key": "traumNDcomputationalmodelsnoncooperative",
-      "raw_fields": {
-        "author": "Traum, David",
-        "file": "Traum - Computational Models of Non-cooperative dialogue.pdf:files/1/Traum - Computational Models of Non-cooperative dialogue.pdf:application/pdf",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "Computational {{Models}} of {{Non}}-Cooperative Dialogue"
-      },
       "fields": {
         "author": [
           {
@@ -56,6 +50,21 @@
           {
             "type": "text",
             "text": "-Cooperative Dialogue"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "Traum, David",
+        "file": "Traum - Computational Models of Non-cooperative dialogue.pdf:files/1/Traum - Computational Models of Non-cooperative dialogue.pdf:application/pdf",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Computational {{Models}} of {{Non}}-Cooperative Dialogue"
+      },
+      "unexpected_fields": {},
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
           }
         ]
       }

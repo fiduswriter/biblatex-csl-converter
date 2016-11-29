@@ -3,18 +3,6 @@
     "0": {
       "bib_type": "article",
       "entry_key": "hannam_nodo_1998",
-      "raw_fields": {
-        "author": "Hannam, Walter A.",
-        "date": "1998",
-        "journaltitle": "Florilegium",
-        "pages": "145--165",
-        "shortjournal": "Florilegium",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "{{{\\emph{Nodo unitatis et caritatis}}}}: {{The}} Structure and Argument of {{Augustine}}'s {{{\\emph{De doctrina Christiana}}}}",
-        "url": "https://journals.lib.unb.ca/index.php/flor/article/view/14263",
-        "urldate": "2015-07-07",
-        "volume": "15"
-      },
       "fields": {
         "date": "1998",
         "author": [
@@ -111,6 +99,34 @@
           {
             "type": "text",
             "text": "15"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "Hannam, Walter A.",
+        "date": "1998",
+        "journaltitle": "Florilegium",
+        "pages": "145--165",
+        "shortjournal": "Florilegium",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "{{{\\emph{Nodo unitatis et caritatis}}}}: {{The}} Structure and Argument of {{Augustine}}'s {{{\\emph{De doctrina Christiana}}}}",
+        "url": "https://journals.lib.unb.ca/index.php/flor/article/view/14263",
+        "urldate": "2015-07-07",
+        "volume": "15"
+      },
+      "unexpected_fields": {
+        "shortjournal": [
+          {
+            "type": "text",
+            "text": "Florilegium"
+          }
+        ]
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
           }
         ]
       }

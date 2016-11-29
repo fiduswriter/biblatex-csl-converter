@@ -3,16 +3,6 @@
     "0": {
       "bib_type": "incollection",
       "entry_key": "koopman_efficient_99",
-      "raw_fields": {
-        "author": "Koopman, Pieter and Plasmeijer, Rinus",
-        "booktitle": "Implementation of {{Functional Languages}}",
-        "date": "1999",
-        "doi": "10.1007/3-540-48515-5_8",
-        "pages": "120--136",
-        "publisher": "{Springer}",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "Efficient Combinator Parsers"
-      },
       "fields": {
         "date": "1999",
         "author": [
@@ -72,6 +62,24 @@
           {
             "type": "text",
             "text": "Efficient Combinator Parsers"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "Koopman, Pieter and Plasmeijer, Rinus",
+        "booktitle": "Implementation of {{Functional Languages}}",
+        "date": "1999",
+        "doi": "10.1007/3-540-48515-5_8",
+        "pages": "120--136",
+        "publisher": "{Springer}",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Efficient Combinator Parsers"
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
           }
         ]
       }

@@ -3,12 +3,6 @@
     "0": {
       "bib_type": "book",
       "entry_key": "doe_title_????",
-      "raw_fields": {
-        "author": "Doe, John",
-        "pubstate": "forthcoming",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "Title"
-      },
       "fields": {
         "author": [
           {
@@ -30,6 +24,20 @@
           {
             "type": "text",
             "text": "Title"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "Doe, John",
+        "pubstate": "forthcoming",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Title"
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
           }
         ]
       }

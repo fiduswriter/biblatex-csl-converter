@@ -3,18 +3,6 @@
     "0": {
       "bib_type": "article",
       "entry_key": "10.1000/182+physical_volcanology_1600_eruption",
-      "raw_fields": {
-        "author": "Adams, Nancy K and DeSilva, Shanaka L and Self, Steven and Salas, Guido and Schubring, Steven and Permenter, Jason L and Arbesman, Kendra",
-        "date": "2001",
-        "doi": "10.1000/182",
-        "file": "Attachment:files/1/Adams_Huaynaputina.pdf:application/pdf",
-        "journaltitle": "Bulletin of Volcanology",
-        "keywords": "Vulcanian eruptions,breadcrust,plinian",
-        "pages": "493--518",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "The Physical Volcanology of the 1600 Eruption of {{Huaynaputina}}, Southern {{Peru}}",
-        "volume": "62"
-      },
       "fields": {
         "date": "2001",
         "author": [
@@ -160,6 +148,27 @@
           {
             "type": "text",
             "text": "62"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "Adams, Nancy K and DeSilva, Shanaka L and Self, Steven and Salas, Guido and Schubring, Steven and Permenter, Jason L and Arbesman, Kendra",
+        "date": "2001",
+        "doi": "10.1000/182",
+        "file": "Attachment:files/1/Adams_Huaynaputina.pdf:application/pdf",
+        "journaltitle": "Bulletin of Volcanology",
+        "keywords": "Vulcanian eruptions,breadcrust,plinian",
+        "pages": "493--518",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "The Physical Volcanology of the 1600 Eruption of {{Huaynaputina}}, Southern {{Peru}}",
+        "volume": "62"
+      },
+      "unexpected_fields": {},
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
           }
         ]
       }

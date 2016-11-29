@@ -3,12 +3,6 @@
     "0": {
       "bib_type": "book",
       "entry_key": "Ohara2015",
-      "raw_fields": {
-        "author": "O'hara, james",
-        "date": "2015",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "A Testbook"
-      },
       "fields": {
         "date": "2015",
         "author": [
@@ -31,6 +25,20 @@
           {
             "type": "text",
             "text": "A Testbook"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "O'hara, james",
+        "date": "2015",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "A Testbook"
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
           }
         ]
       }

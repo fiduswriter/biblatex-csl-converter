@@ -3,17 +3,6 @@
     "0": {
       "bib_type": "incollection",
       "entry_key": "BartoliniForthcoming",
-      "raw_fields": {
-        "author": "Bartolini, Stefano and Bilancini, Ennio and Sarracino, Francesco",
-        "booktitle": "Policies for {{Happiness}}",
-        "location": "{Oxford}",
-        "publisher": "{Oxford University Press}",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "Social {{Capital Predicts Happiness}}: {{World}}-{{Wide Evidence From Time Series}}",
-        "url": "http://www.econ-pol.unisi.it/bartolini/papers/BARTOLINI-BILANCINI-SARRACINO.pdf",
-        "urldate": "2015-02-07",
-        "year": "Forthcoming"
-      },
       "fields": {
         "author": [
           {
@@ -132,6 +121,31 @@
           }
         ],
         "urldate": "2015-02-07"
+      },
+      "raw_fields": {
+        "author": "Bartolini, Stefano and Bilancini, Ennio and Sarracino, Francesco",
+        "booktitle": "Policies for {{Happiness}}",
+        "location": "{Oxford}",
+        "publisher": "{Oxford University Press}",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Social {{Capital Predicts Happiness}}: {{World}}-{{Wide Evidence From Time Series}}",
+        "url": "http://www.econ-pol.unisi.it/bartolini/papers/BARTOLINI-BILANCINI-SARRACINO.pdf",
+        "urldate": "2015-02-07",
+        "year": "Forthcoming"
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ],
+        "year": [
+          {
+            "type": "text",
+            "text": "Forthcoming"
+          }
+        ]
       }
     }
   },

@@ -3,16 +3,6 @@
     "0": {
       "bib_type": "misc",
       "entry_key": "_loi_2011",
-      "raw_fields": {
-        "date": "2011-05-18",
-        "journaltitle": "JORF",
-        "langid": "french",
-        "number": "BCRX0929142L",
-        "pages": "8537",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "Loi n\\textsuperscript{o} 2011-525 du 17 mai 2011 de simplification et d'amélioration de la qualité du droit",
-        "url": "http://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000024021430&categorieLien=id"
-      },
       "fields": {
         "date": "2011-05-18",
         "title": [
@@ -35,6 +25,44 @@
           {
             "type": "text",
             "text": " 2011-525 du 17 mai 2011 de simplification et d'amélioration de la qualité du droit"
+          }
+        ]
+      },
+      "raw_fields": {
+        "date": "2011-05-18",
+        "journaltitle": "JORF",
+        "langid": "french",
+        "number": "BCRX0929142L",
+        "pages": "8537",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Loi n\\textsuperscript{o} 2011-525 du 17 mai 2011 de simplification et d'amélioration de la qualité du droit",
+        "url": "http://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000024021430&categorieLien=id"
+      },
+      "unexpected_fields": {
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "JORF"
+          }
+        ],
+        "number": [
+          {
+            "type": "text",
+            "text": "BCRX0929142L"
+          }
+        ]
+      },
+      "unknown_fields": {
+        "langid": [
+          {
+            "type": "text",
+            "text": "french"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
           }
         ]
       }

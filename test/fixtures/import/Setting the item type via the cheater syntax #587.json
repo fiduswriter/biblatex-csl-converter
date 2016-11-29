@@ -3,17 +3,14 @@
     "0": {
       "bib_type": "booklet",
       "entry_key": "clark_mesopotamia:_1957",
-      "raw_fields": {
-        "abstract": "Example from CMoS, 16e, 14.249",
-        "address": "Mesopotamia, OH",
-        "author": "Clark, Hazel V.",
-        "publisher": "{Trumbull County Historical Society}",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "Mesopotamia: Between Two Rivers",
-        "year": "1957"
-      },
       "fields": {
         "date": "1957",
+        "abstract": [
+          {
+            "type": "text",
+            "text": "Example from CMoS, 16e, 14.249"
+          }
+        ],
         "location": [
           [
             {
@@ -44,19 +41,51 @@
             "text": "Mesopotamia: Between Two Rivers"
           }
         ]
+      },
+      "raw_fields": {
+        "abstract": "Example from CMoS, 16e, 14.249",
+        "address": "Mesopotamia, OH",
+        "author": "Clark, Hazel V.",
+        "publisher": "{Trumbull County Historical Society}",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Mesopotamia: Between Two Rivers",
+        "year": "1957"
+      },
+      "unexpected_fields": {
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "Trumbull County Historical Society"
+            }
+          ]
+        ]
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ],
+        "year": [
+          {
+            "type": "text",
+            "text": "1957"
+          }
+        ]
       }
     },
     "1": {
       "bib_type": "misc",
       "entry_key": "_object_????",
-      "raw_fields": {
-        "abstract": "Example from CMoS, 16e, 14.272",
-        "journal": "NASA/IPAC Extragalactic Database",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "Object Name {{IRAS F00400}}+4059",
-        "urldate": "2009-10-06"
-      },
       "fields": {
+        "abstract": [
+          {
+            "type": "text",
+            "text": "Example from CMoS, 16e, 14.272"
+          }
+        ],
         "title": [
           {
             "type": "text",
@@ -77,24 +106,42 @@
           }
         ],
         "urldate": "2009-10-06"
+      },
+      "raw_fields": {
+        "abstract": "Example from CMoS, 16e, 14.272",
+        "journal": "NASA/IPAC Extragalactic Database",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Object Name {{IRAS F00400}}+4059",
+        "urldate": "2009-10-06"
+      },
+      "unexpected_fields": {
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "NASA/IPAC Extragalactic Database"
+          }
+        ]
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "2": {
       "bib_type": "misc",
       "entry_key": "mozart_sonatas_1960",
-      "raw_fields": {
-        "abstract": "Example from CMoS, 16e, 14.269\n``Prepared from the autographs and earliest printed sources by Nathan\nBroder''",
-        "address": "Bryn Mawr, PA",
-        "author": "Mozart, Wolfgang Amadeus",
-        "edition": "Rev. ed.",
-        "editor": "Broder, Nathan",
-        "publisher": "{Theodore Presser}",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "Sonatas and Fantasies for the Piano",
-        "year": "1960"
-      },
       "fields": {
         "date": "1960",
+        "abstract": [
+          {
+            "type": "text",
+            "text": "Example from CMoS, 16e, 14.269\n``Prepared from the autographs and earliest printed sources by Nathan\nBroder''"
+          }
+        ],
         "location": [
           [
             {
@@ -125,26 +172,70 @@
             "text": "Sonatas and Fantasies for the Piano"
           }
         ]
+      },
+      "raw_fields": {
+        "abstract": "Example from CMoS, 16e, 14.269\n``Prepared from the autographs and earliest printed sources by Nathan\nBroder''",
+        "address": "Bryn Mawr, PA",
+        "author": "Mozart, Wolfgang Amadeus",
+        "edition": "Rev. ed.",
+        "editor": "Broder, Nathan",
+        "publisher": "{Theodore Presser}",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Sonatas and Fantasies for the Piano",
+        "year": "1960"
+      },
+      "unexpected_fields": {
+        "edition": 0,
+        "editor": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Broder"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Nathan"
+              }
+            ]
+          }
+        ],
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "Theodore Presser"
+            }
+          ]
+        ]
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ],
+        "year": [
+          {
+            "type": "text",
+            "text": "1960"
+          }
+        ]
       }
     },
     "3": {
       "bib_type": "article",
       "entry_key": "ratliff_mystery_1999",
-      "raw_fields": {
-        "abstract": "Example from CMoS, 16e, 14.215\n``ed. and trans. John Charles Chasteen''",
-        "annote": "biblatex-chicago example, adapted from http://mirrors.ctan.org/macros/latex/contrib/biblatex-contrib/biblatex-chicago/doc/examples/dates-test.bib\nOriginal annotation:\n*16th edition only.* A Review entry presenting a review from a scholarly journaltitle, hence no entrysubtype needed.~~Note the bibstrings in the title of the review, and the formatting of the title of the book reviewed there.~~Also note the use of $\\$parteditandtrans.~~The author-date system doesn't absolutely require the use of these mechanisms, which were invented to cope with the differences between notes and bibliography in the other Chicago style.~~Still, although simply writing \"edited and translated by\" yourself will suffice, using these mechanisms will make your .bib file work across multiple languages, and will also allow it to work, with fewer modifications, in the notes $\\$\\& bibliography style, should that be needed.~~See next entry.\n~\nExample from CMoS, 16e, 14.125",
-        "author": "Ratliff, Ben",
-        "collaborator": "{Hermano Vianna}",
-        "journal": "Lingua Franca",
-        "language": "en-US",
-        "month": "April",
-        "pages": "B13--B14",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "The Mystery of Samba: {{Popular}} Music and National Identity in {{Brazil}}",
-        "volume": "9",
-        "year": "1999"
-      },
       "fields": {
+        "abstract": [
+          {
+            "type": "text",
+            "text": "Example from CMoS, 16e, 14.215\n``ed. and trans. John Charles Chasteen''"
+          }
+        ],
         "author": [
           {
             "family": [
@@ -182,23 +273,66 @@
             "text": "9"
           }
         ]
+      },
+      "raw_fields": {
+        "abstract": "Example from CMoS, 16e, 14.215\n``ed. and trans. John Charles Chasteen''",
+        "annote": "biblatex-chicago example, adapted from http://mirrors.ctan.org/macros/latex/contrib/biblatex-contrib/biblatex-chicago/doc/examples/dates-test.bib\nOriginal annotation:\n*16th edition only.* A Review entry presenting a review from a scholarly journaltitle, hence no entrysubtype needed.~~Note the bibstrings in the title of the review, and the formatting of the title of the book reviewed there.~~Also note the use of $\\$parteditandtrans.~~The author-date system doesn't absolutely require the use of these mechanisms, which were invented to cope with the differences between notes and bibliography in the other Chicago style.~~Still, although simply writing \"edited and translated by\" yourself will suffice, using these mechanisms will make your .bib file work across multiple languages, and will also allow it to work, with fewer modifications, in the notes $\\$\\& bibliography style, should that be needed.~~See next entry.\n~\nExample from CMoS, 16e, 14.125",
+        "author": "Ratliff, Ben",
+        "collaborator": "{Hermano Vianna}",
+        "journal": "Lingua Franca",
+        "language": "en-US",
+        "month": "April",
+        "pages": "B13--B14",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "The Mystery of Samba: {{Popular}} Music and National Identity in {{Brazil}}",
+        "volume": "9",
+        "year": "1999"
+      },
+      "unexpected_fields": {
+        "annotation": [
+          {
+            "type": "text",
+            "text": "biblatex-chicago example, adapted from http://mirrors.ctan.org/macros/latex/contrib/biblatex-contrib/biblatex-chicago/doc/examples/dates-test.bib\nOriginal annotation:\n*16th edition only.* A Review entry presenting a review from a scholarly journaltitle, hence no entrysubtype needed.  Note the bibstrings in the title of the review, and the formatting of the title of the book reviewed there.  Also note the use of $parteditandtrans.  The author-date system doesn't absolutely require the use of these mechanisms, which were invented to cope with the differences between notes and bibliography in the other Chicago style.  Still, although simply writing \"edited and translated by\" yourself will suffice, using these mechanisms will make your .bib file work across multiple languages, and will also allow it to work, with fewer modifications, in the notes $& bibliography style, should that be needed.  See next entry.\n \nExample from CMoS, 16e, 14.125"
+          }
+        ]
+      },
+      "unknown_fields": {
+        "collaborator": [
+          {
+            "type": "text",
+            "text": "Hermano Vianna"
+          }
+        ],
+        "month": [
+          {
+            "type": "text",
+            "text": "April"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ],
+        "year": [
+          {
+            "type": "text",
+            "text": "1999"
+          }
+        ]
       }
     },
     "4": {
       "bib_type": "article",
       "entry_key": "kamp_deconstructing_2006",
-      "raw_fields": {
-        "abstract": "Example from CMoS, 16e, 14.125",
-        "author": "Kamp, David",
-        "chapter": "Sunday Book Review",
-        "collaborator": "Pollan, Michael",
-        "language": "en-US",
-        "month": "April",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "Deconstructing Dinner",
-        "year": "2006"
-      },
       "fields": {
+        "abstract": [
+          {
+            "type": "text",
+            "text": "Example from CMoS, 16e, 14.125"
+          }
+        ],
         "author": [
           {
             "family": [
@@ -224,15 +358,55 @@
             "text": "Deconstructing Dinner"
           }
         ]
+      },
+      "raw_fields": {
+        "abstract": "Example from CMoS, 16e, 14.125",
+        "author": "Kamp, David",
+        "chapter": "Sunday Book Review",
+        "collaborator": "Pollan, Michael",
+        "language": "en-US",
+        "month": "April",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Deconstructing Dinner",
+        "year": "2006"
+      },
+      "unexpected_fields": {
+        "chapter": [
+          {
+            "type": "text",
+            "text": "Sunday Book Review"
+          }
+        ]
+      },
+      "unknown_fields": {
+        "collaborator": [
+          {
+            "type": "text",
+            "text": "Pollan, Michael"
+          }
+        ],
+        "month": [
+          {
+            "type": "text",
+            "text": "April"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ],
+        "year": [
+          {
+            "type": "text",
+            "text": "2006"
+          }
+        ]
       }
     }
   },
   "warnings": [
-    {
-      "type": "unexpected_field",
-      "entry": "clark_mesopotamia:_1957",
-      "field_name": "abstract"
-    },
     {
       "type": "unexpected_field",
       "entry": "clark_mesopotamia:_1957",
@@ -251,22 +425,12 @@
     {
       "type": "unexpected_field",
       "entry": "_object_????",
-      "field_name": "abstract"
-    },
-    {
-      "type": "unexpected_field",
-      "entry": "_object_????",
       "field_name": "journal"
     },
     {
       "type": "unknown_field",
       "entry": "_object_????",
       "field_name": "timestamp"
-    },
-    {
-      "type": "unexpected_field",
-      "entry": "mozart_sonatas_1960",
-      "field_name": "abstract"
     },
     {
       "type": "unexpected_field",
@@ -305,11 +469,6 @@
     {
       "type": "unexpected_field",
       "entry": "ratliff_mystery_1999",
-      "field_name": "abstract"
-    },
-    {
-      "type": "unexpected_field",
-      "entry": "ratliff_mystery_1999",
       "field_name": "annote"
     },
     {
@@ -340,11 +499,6 @@
         "2006",
         "April"
       ]
-    },
-    {
-      "type": "unexpected_field",
-      "entry": "kamp_deconstructing_2006",
-      "field_name": "abstract"
     },
     {
       "type": "unexpected_field",

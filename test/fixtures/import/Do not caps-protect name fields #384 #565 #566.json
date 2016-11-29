@@ -3,10 +3,6 @@
     "0": {
       "bib_type": "book",
       "entry_key": "vangogh",
-      "raw_fields": {
-        "author": "{van Gogh}, Vincent",
-        "note": "[van Gogh][Vincent]"
-      },
       "fields": {
         "author": [
           {
@@ -37,15 +33,15 @@
             "text": "[van Gogh][Vincent]"
           }
         ]
+      },
+      "raw_fields": {
+        "author": "{van Gogh}, Vincent",
+        "note": "[van Gogh][Vincent]"
       }
     },
     "1": {
       "bib_type": "book",
       "entry_key": "humboldt",
-      "raw_fields": {
-        "author": "von Humboldt, Alexander",
-        "note": "[Humboldt][Alexander von]"
-      },
       "fields": {
         "author": [
           {
@@ -76,15 +72,15 @@
             "text": "[Humboldt][Alexander von]"
           }
         ]
+      },
+      "raw_fields": {
+        "author": "von Humboldt, Alexander",
+        "note": "[Humboldt][Alexander von]"
       }
     },
     "2": {
       "bib_type": "book",
       "entry_key": "beauvoir",
-      "raw_fields": {
-        "author": "de Beauvoir, Simone",
-        "note": "[Beauvoir][Simone de]"
-      },
       "fields": {
         "author": [
           {
@@ -115,15 +111,15 @@
             "text": "[Beauvoir][Simone de]"
           }
         ]
+      },
+      "raw_fields": {
+        "author": "de Beauvoir, Simone",
+        "note": "[Beauvoir][Simone de]"
       }
     },
     "3": {
       "bib_type": "book",
       "entry_key": "degaulle",
-      "raw_fields": {
-        "author": "{de Gaulle}, Charles",
-        "note": "[\"de Gaulle\"][Charles]"
-      },
       "fields": {
         "author": [
           {
@@ -154,15 +150,15 @@
             "text": "[\"de Gaulle\"][Charles]"
           }
         ]
+      },
+      "raw_fields": {
+        "author": "{de Gaulle}, Charles",
+        "note": "[\"de Gaulle\"][Charles]"
       }
     },
     "4": {
       "bib_type": "book",
       "entry_key": "king",
-      "raw_fields": {
-        "author": "King, Jr., Martin Luther",
-        "note": "[King][Martin Luther, Jr.]"
-      },
       "fields": {
         "author": [
           {
@@ -192,15 +188,15 @@
             "text": "[King][Martin Luther, Jr.]"
           }
         ]
+      },
+      "raw_fields": {
+        "author": "King, Jr., Martin Luther",
+        "note": "[King][Martin Luther, Jr.]"
       }
     },
     "5": {
       "bib_type": "book",
       "entry_key": "stevenson",
-      "raw_fields": {
-        "author": "Stevenson, III, Adlai E.",
-        "note": "[Stevenson][Adlai E.,! III]"
-      },
       "fields": {
         "author": [
           {
@@ -230,15 +226,15 @@
             "text": "[Stevenson][Adlai E.,! III]"
           }
         ]
+      },
+      "raw_fields": {
+        "author": "Stevenson, III, Adlai E.",
+        "note": "[Stevenson][Adlai E.,! III]"
       }
     },
     "6": {
       "bib_type": "book",
       "entry_key": "nationalaeronauticsandspaceadministration",
-      "raw_fields": {
-        "author": "{National Aeronautics and Space Administration}",
-        "note": "[[National Aeronautics and Space Administration]]"
-      },
       "fields": {
         "author": [
           {
@@ -269,15 +265,15 @@
             "text": "[[National Aeronautics and Space Administration]]"
           }
         ]
+      },
+      "raw_fields": {
+        "author": "{National Aeronautics and Space Administration}",
+        "note": "[[National Aeronautics and Space Administration]]"
       }
     },
     "7": {
       "bib_type": "book",
       "entry_key": "bovendeert",
-      "raw_fields": {
-        "author": "{boven d'Eert}, Christianus",
-        "note": "[boven d'Eert][Christianus]"
-      },
       "fields": {
         "author": [
           {
@@ -308,15 +304,15 @@
             "text": "[boven d'Eert][Christianus]"
           }
         ]
+      },
+      "raw_fields": {
+        "author": "{boven d'Eert}, Christianus",
+        "note": "[boven d'Eert][Christianus]"
       }
     },
     "8": {
       "bib_type": "book",
       "entry_key": "s-gravesande",
-      "raw_fields": {
-        "author": "{'s-Gravesande}, Goverdus",
-        "note": "['s-Gravesande][Goverdus]"
-      },
       "fields": {
         "author": [
           {
@@ -340,15 +336,15 @@
             "text": "['s-Gravesande][Goverdus]"
           }
         ]
+      },
+      "raw_fields": {
+        "author": "{'s-Gravesande}, Goverdus",
+        "note": "['s-Gravesande][Goverdus]"
       }
     },
     "9": {
       "bib_type": "book",
       "entry_key": "dequincey",
-      "raw_fields": {
-        "author": "De Quincey, Thomas",
-        "note": "[De Quincey][Thomas]"
-      },
       "fields": {
         "author": [
           {
@@ -372,15 +368,15 @@
             "text": "[De Quincey][Thomas]"
           }
         ]
+      },
+      "raw_fields": {
+        "author": "De Quincey, Thomas",
+        "note": "[De Quincey][Thomas]"
       }
     },
     "10": {
       "bib_type": "book",
       "entry_key": "ortegaygasset",
-      "raw_fields": {
-        "author": "{Ortega y Gasset}, José",
-        "note": "[Ortega y Gasset][José]"
-      },
       "fields": {
         "author": [
           {
@@ -411,15 +407,15 @@
             "text": "[Ortega y Gasset][José]"
           }
         ]
+      },
+      "raw_fields": {
+        "author": "{Ortega y Gasset}, José",
+        "note": "[Ortega y Gasset][José]"
       }
     },
     "11": {
       "bib_type": "book",
       "entry_key": "damato",
-      "raw_fields": {
-        "author": "D'Amato, Alfonse",
-        "note": "[D'Amato][Alfonse]"
-      },
       "fields": {
         "author": [
           {
@@ -443,15 +439,15 @@
             "text": "[D'Amato][Alfonse]"
           }
         ]
+      },
+      "raw_fields": {
+        "author": "D'Amato, Alfonse",
+        "note": "[D'Amato][Alfonse]"
       }
     },
     "12": {
       "bib_type": "book",
       "entry_key": "sadat",
-      "raw_fields": {
-        "author": "el-{\\aftergroupıgnorespaces} Sadat, Anwar",
-        "note": "[Sadat][Anwar el-]"
-      },
       "fields": {
         "author": [
           {
@@ -482,15 +478,15 @@
             "text": "[Sadat][Anwar el-]"
           }
         ]
+      },
+      "raw_fields": {
+        "author": "el-{\\aftergroupıgnorespaces} Sadat, Anwar",
+        "note": "[Sadat][Anwar el-]"
       }
     },
     "13": {
       "bib_type": "book",
       "entry_key": "lafollette",
-      "raw_fields": {
-        "author": "La Follette, Sr., Robert M.",
-        "note": "[La Follette][Robert M., Sr.]"
-      },
       "fields": {
         "author": [
           {
@@ -520,15 +516,15 @@
             "text": "[La Follette][Robert M., Sr.]"
           }
         ]
+      },
+      "raw_fields": {
+        "author": "La Follette, Sr., Robert M.",
+        "note": "[La Follette][Robert M., Sr.]"
       }
     },
     "14": {
       "bib_type": "book",
       "entry_key": "delamare",
-      "raw_fields": {
-        "author": "{de la Mare}, Walter",
-        "note": "[\"de la Mare\"][Walter]"
-      },
       "fields": {
         "author": [
           {
@@ -559,15 +555,15 @@
             "text": "[\"de la Mare\"][Walter]"
           }
         ]
+      },
+      "raw_fields": {
+        "author": "{de la Mare}, Walter",
+        "note": "[\"de la Mare\"][Walter]"
       }
     },
     "15": {
       "bib_type": "book",
       "entry_key": "degette",
-      "raw_fields": {
-        "author": "DeGette, Diana",
-        "note": "[DeGette][Diana]"
-      },
       "fields": {
         "author": [
           {
@@ -591,15 +587,15 @@
             "text": "[DeGette][Diana]"
           }
         ]
+      },
+      "raw_fields": {
+        "author": "DeGette, Diana",
+        "note": "[DeGette][Diana]"
       }
     },
     "16": {
       "bib_type": "book",
       "entry_key": "saunders",
-      "raw_fields": {
-        "author": "Saunders, John Bertrand de Cusance Morant",
-        "note": "[Saunders][John Bertrand de Cusance Morant]"
-      },
       "fields": {
         "author": [
           {
@@ -623,15 +619,15 @@
             "text": "[Saunders][John Bertrand de Cusance Morant]"
           }
         ]
+      },
+      "raw_fields": {
+        "author": "Saunders, John Bertrand de Cusance Morant",
+        "note": "[Saunders][John Bertrand de Cusance Morant]"
       }
     },
     "17": {
       "bib_type": "book",
       "entry_key": "marcusaurelius",
-      "raw_fields": {
-        "author": "{Marcus Aurelius}",
-        "note": "[[Marcus Aurelius]]"
-      },
       "fields": {
         "author": [
           {
@@ -655,15 +651,15 @@
             "text": "[[Marcus Aurelius]]"
           }
         ]
+      },
+      "raw_fields": {
+        "author": "{Marcus Aurelius}",
+        "note": "[[Marcus Aurelius]]"
       }
     },
     "18": {
       "bib_type": "book",
       "entry_key": "dumas",
-      "raw_fields": {
-        "author": "Dumas, père, Alexandre",
-        "note": "[Dumas][Alexandre, père]"
-      },
       "fields": {
         "author": [
           {
@@ -693,15 +689,15 @@
             "text": "[Dumas][Alexandre, père]"
           }
         ]
+      },
+      "raw_fields": {
+        "author": "Dumas, père, Alexandre",
+        "note": "[Dumas][Alexandre, père]"
       }
     },
     "19": {
       "bib_type": "book",
       "entry_key": "vanrensselaer",
-      "raw_fields": {
-        "author": "Van Rensselaer, Stephen",
-        "note": "[Van Rensselaer][Stephen]"
-      },
       "fields": {
         "author": [
           {
@@ -725,15 +721,15 @@
             "text": "[Van Rensselaer][Stephen]"
           }
         ]
+      },
+      "raw_fields": {
+        "author": "Van Rensselaer, Stephen",
+        "note": "[Van Rensselaer][Stephen]"
       }
     },
     "20": {
       "bib_type": "book",
       "entry_key": "lenfant",
-      "raw_fields": {
-        "author": "L'Enfant, Pierre-Charles",
-        "note": "[L'Enfant][Pierre-Charles]"
-      },
       "fields": {
         "author": [
           {
@@ -757,15 +753,15 @@
             "text": "[L'Enfant][Pierre-Charles]"
           }
         ]
+      },
+      "raw_fields": {
+        "author": "L'Enfant, Pierre-Charles",
+        "note": "[L'Enfant][Pierre-Charles]"
       }
     },
     "21": {
       "bib_type": "book",
       "entry_key": "vangulik",
-      "raw_fields": {
-        "author": "{van Gulik}, Robert",
-        "note": "[\"van Gulik\"][Robert]"
-      },
       "fields": {
         "author": [
           {
@@ -796,15 +792,15 @@
             "text": "[\"van Gulik\"][Robert]"
           }
         ]
+      },
+      "raw_fields": {
+        "author": "{van Gulik}, Robert",
+        "note": "[\"van Gulik\"][Robert]"
       }
     },
     "22": {
       "bib_type": "book",
       "entry_key": "sackville-west",
-      "raw_fields": {
-        "author": "Sackville-West, Victoria",
-        "note": "[Sackville-West][Victoria]"
-      },
       "fields": {
         "author": [
           {
@@ -828,15 +824,15 @@
             "text": "[Sackville-West][Victoria]"
           }
         ]
+      },
+      "raw_fields": {
+        "author": "Sackville-West, Victoria",
+        "note": "[Sackville-West][Victoria]"
       }
     },
     "23": {
       "bib_type": "book",
       "entry_key": "vaughanwilliams",
-      "raw_fields": {
-        "author": "Vaughan Williams, Ralph",
-        "note": "[Vaughan Williams][Ralph]"
-      },
       "fields": {
         "author": [
           {
@@ -860,15 +856,15 @@
             "text": "[Vaughan Williams][Ralph]"
           }
         ]
+      },
+      "raw_fields": {
+        "author": "Vaughan Williams, Ralph",
+        "note": "[Vaughan Williams][Ralph]"
       }
     },
     "24": {
       "bib_type": "book",
       "entry_key": "miesvanderrohe",
-      "raw_fields": {
-        "author": "{Mies van der Rohe}, Ludwig",
-        "note": "[Mies van der Rohe][Ludwig]"
-      },
       "fields": {
         "author": [
           {
@@ -899,15 +895,15 @@
             "text": "[Mies van der Rohe][Ludwig]"
           }
         ]
+      },
+      "raw_fields": {
+        "author": "{Mies van der Rohe}, Ludwig",
+        "note": "[Mies van der Rohe][Ludwig]"
       }
     },
     "25": {
       "bib_type": "book",
       "entry_key": "dalembert",
-      "raw_fields": {
-        "author": "{d'Alembert}, Jean le Rond",
-        "note": "[d'Alembert][Jean le Rond]"
-      },
       "fields": {
         "author": [
           {
@@ -931,15 +927,15 @@
             "text": "[d'Alembert][Jean le Rond]"
           }
         ]
+      },
+      "raw_fields": {
+        "author": "{d'Alembert}, Jean le Rond",
+        "note": "[d'Alembert][Jean le Rond]"
       }
     },
     "26": {
       "bib_type": "book",
       "entry_key": "tocqueville",
-      "raw_fields": {
-        "author": "de Tocqueville, Alexis",
-        "note": "[Tocqueville][Alexis de]"
-      },
       "fields": {
         "author": [
           {
@@ -970,15 +966,15 @@
             "text": "[Tocqueville][Alexis de]"
           }
         ]
+      },
+      "raw_fields": {
+        "author": "de Tocqueville, Alexis",
+        "note": "[Tocqueville][Alexis de]"
       }
     },
     "27": {
       "bib_type": "book",
       "entry_key": "lafontaine",
-      "raw_fields": {
-        "author": "de La Fontaine, Jean",
-        "note": "[La Fontaine][Jean de]"
-      },
       "fields": {
         "author": [
           {
@@ -1009,15 +1005,15 @@
             "text": "[La Fontaine][Jean de]"
           }
         ]
+      },
+      "raw_fields": {
+        "author": "de La Fontaine, Jean",
+        "note": "[La Fontaine][Jean de]"
       }
     },
     "28": {
       "bib_type": "book",
       "entry_key": "lasalle",
-      "raw_fields": {
-        "author": "de La Salle, René-Robert Cavelier",
-        "note": "[La Salle][René-Robert Cavelier de]"
-      },
       "fields": {
         "author": [
           {
@@ -1048,15 +1044,15 @@
             "text": "[La Salle][René-Robert Cavelier de]"
           }
         ]
+      },
+      "raw_fields": {
+        "author": "de La Salle, René-Robert Cavelier",
+        "note": "[La Salle][René-Robert Cavelier de]"
       }
     },
     "29": {
       "bib_type": "book",
       "entry_key": "dupuydeclinchamps",
-      "raw_fields": {
-        "author": "{du Puy de Clinchamps}, {˚elax Ph}ilippe",
-        "note": "[du Puy de Clinchamps][PhU+0097ilippe]"
-      },
       "fields": {
         "author": [
           {
@@ -1087,15 +1083,15 @@
             "text": "[du Puy de Clinchamps][PhU+0097ilippe]"
           }
         ]
+      },
+      "raw_fields": {
+        "author": "{du Puy de Clinchamps}, {˚elax Ph}ilippe",
+        "note": "[du Puy de Clinchamps][PhU+0097ilippe]"
       }
     },
     "30": {
       "bib_type": "book",
       "entry_key": "stein",
-      "raw_fields": {
-        "author": "vom und zum Stein, Heinrich Friedrich Karl",
-        "note": "[Stein][Heinrich Friedrich Karl vom und zum]"
-      },
       "fields": {
         "author": [
           {
@@ -1126,15 +1122,15 @@
             "text": "[Stein][Heinrich Friedrich Karl vom und zum]"
           }
         ]
+      },
+      "raw_fields": {
+        "author": "vom und zum Stein, Heinrich Friedrich Karl",
+        "note": "[Stein][Heinrich Friedrich Karl vom und zum]"
       }
     },
     "31": {
       "bib_type": "book",
       "entry_key": "silva",
-      "raw_fields": {
-        "author": "da Silva, Agostinho",
-        "note": "[Silva][Agostinho da]"
-      },
       "fields": {
         "author": [
           {
@@ -1165,15 +1161,15 @@
             "text": "[Silva][Agostinho da]"
           }
         ]
+      },
+      "raw_fields": {
+        "author": "da Silva, Agostinho",
+        "note": "[Silva][Agostinho da]"
       }
     },
     "32": {
       "bib_type": "book",
       "entry_key": "dagama",
-      "raw_fields": {
-        "author": "{da Gama}, Vasco",
-        "note": "[\"da Gama\"][Vasco]"
-      },
       "fields": {
         "author": [
           {
@@ -1204,15 +1200,15 @@
             "text": "[\"da Gama\"][Vasco]"
           }
         ]
+      },
+      "raw_fields": {
+        "author": "{da Gama}, Vasco",
+        "note": "[\"da Gama\"][Vasco]"
       }
     },
     "33": {
       "bib_type": "book",
       "entry_key": "dannunzio",
-      "raw_fields": {
-        "author": "D'Annunzio, Gabriele",
-        "note": "[D'Annunzio][Gabriele]"
-      },
       "fields": {
         "author": [
           {
@@ -1236,15 +1232,15 @@
             "text": "[D'Annunzio][Gabriele]"
           }
         ]
+      },
+      "raw_fields": {
+        "author": "D'Annunzio, Gabriele",
+        "note": "[D'Annunzio][Gabriele]"
       }
     },
     "34": {
       "bib_type": "book",
       "entry_key": "daponte",
-      "raw_fields": {
-        "author": "Da Ponte, Lorenzo",
-        "note": "[Da Ponte][Lorenzo]"
-      },
       "fields": {
         "author": [
           {
@@ -1268,15 +1264,15 @@
             "text": "[Da Ponte][Lorenzo]"
           }
         ]
+      },
+      "raw_fields": {
+        "author": "Da Ponte, Lorenzo",
+        "note": "[Da Ponte][Lorenzo]"
       }
     },
     "35": {
       "bib_type": "book",
       "entry_key": "dellarobbia",
-      "raw_fields": {
-        "author": "Della Robbia, Luca",
-        "note": "[Della Robbia][Luca]"
-      },
       "fields": {
         "author": [
           {
@@ -1300,15 +1296,15 @@
             "text": "[Della Robbia][Luca]"
           }
         ]
+      },
+      "raw_fields": {
+        "author": "Della Robbia, Luca",
+        "note": "[Della Robbia][Luca]"
       }
     },
     "36": {
       "bib_type": "book",
       "entry_key": "este",
-      "raw_fields": {
-        "author": "d'{\\aftergroupıgnorespaces} Este, Beatrice",
-        "note": "[Este][Beatrice d']"
-      },
       "fields": {
         "author": [
           {
@@ -1339,15 +1335,15 @@
             "text": "[Este][Beatrice d']"
           }
         ]
+      },
+      "raw_fields": {
+        "author": "d'{\\aftergroupıgnorespaces} Este, Beatrice",
+        "note": "[Este][Beatrice d']"
       }
     },
     "37": {
       "bib_type": "book",
       "entry_key": "medici",
-      "raw_fields": {
-        "author": "de'\\mbox{} Medici, Lorenzo",
-        "note": "[Medici][Lorenzo de'U+200B]"
-      },
       "fields": {
         "author": [
           {
@@ -1378,15 +1374,15 @@
             "text": "[Medici][Lorenzo de'U+200B]"
           }
         ]
+      },
+      "raw_fields": {
+        "author": "de'\\mbox{} Medici, Lorenzo",
+        "note": "[Medici][Lorenzo de'U+200B]"
       }
     },
     "38": {
       "bib_type": "book",
       "entry_key": "al-hakim",
-      "raw_fields": {
-        "author": "{al-Hakim}, Tawfiq",
-        "note": "[al-Hakim][Tawfiq]"
-      },
       "fields": {
         "author": [
           {
@@ -1410,15 +1406,15 @@
             "text": "[al-Hakim][Tawfiq]"
           }
         ]
+      },
+      "raw_fields": {
+        "author": "{al-Hakim}, Tawfiq",
+        "note": "[al-Hakim][Tawfiq]"
       }
     },
     "39": {
       "bib_type": "book",
       "entry_key": "levayer",
-      "raw_fields": {
-        "author": "Le Vayer, François de La Mothe",
-        "note": "[Le Vayer][François de La Mothe]"
-      },
       "fields": {
         "author": [
           {
@@ -1442,6 +1438,10 @@
             "text": "[Le Vayer][François de La Mothe]"
           }
         ]
+      },
+      "raw_fields": {
+        "author": "Le Vayer, François de La Mothe",
+        "note": "[Le Vayer][François de La Mothe]"
       }
     }
   }

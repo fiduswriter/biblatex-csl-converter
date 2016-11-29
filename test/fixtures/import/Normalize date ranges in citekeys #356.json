@@ -3,17 +3,6 @@
     "0": {
       "bib_type": "mvbook",
       "entry_key": "descartes_oeuvres_1897",
-      "raw_fields": {
-        "author": "Descartes, René",
-        "date": "1897/1913",
-        "editor": "Adam, Charles and Tannery, Paul",
-        "langid": "french",
-        "location": "{Paris}",
-        "publisher": "{Cerf}",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "Œuvres de Descartes",
-        "volumes": "13"
-      },
       "fields": {
         "date": "1897/1913",
         "author": [
@@ -88,6 +77,31 @@
           {
             "type": "text",
             "text": "13"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "Descartes, René",
+        "date": "1897/1913",
+        "editor": "Adam, Charles and Tannery, Paul",
+        "langid": "french",
+        "location": "{Paris}",
+        "publisher": "{Cerf}",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Œuvres de Descartes",
+        "volumes": "13"
+      },
+      "unknown_fields": {
+        "langid": [
+          {
+            "type": "text",
+            "text": "french"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
           }
         ]
       }
@@ -95,17 +109,6 @@
     "1": {
       "bib_type": "mvbook",
       "entry_key": "descartes_oeuvres_1897-1",
-      "raw_fields": {
-        "author": "Descartes, René",
-        "date": "1897/1913",
-        "editor": "Adam, Charles and Tannery, Paul",
-        "langid": "french",
-        "location": "{Paris}",
-        "publisher": "{Cerf}",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "Œuvres de Descartes",
-        "volumes": "13"
-      },
       "fields": {
         "date": "1897/1913",
         "author": [
@@ -182,11 +185,7 @@
             "text": "13"
           }
         ]
-      }
-    },
-    "2": {
-      "bib_type": "mvbook",
-      "entry_key": "descartes_oeuvres_1897-2",
+      },
       "raw_fields": {
         "author": "Descartes, René",
         "date": "1897/1913",
@@ -198,6 +197,24 @@
         "title": "Œuvres de Descartes",
         "volumes": "13"
       },
+      "unknown_fields": {
+        "langid": [
+          {
+            "type": "text",
+            "text": "french"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
+      }
+    },
+    "2": {
+      "bib_type": "mvbook",
+      "entry_key": "descartes_oeuvres_1897-2",
       "fields": {
         "date": "1897/1913",
         "author": [
@@ -272,6 +289,31 @@
           {
             "type": "text",
             "text": "13"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "Descartes, René",
+        "date": "1897/1913",
+        "editor": "Adam, Charles and Tannery, Paul",
+        "langid": "french",
+        "location": "{Paris}",
+        "publisher": "{Cerf}",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Œuvres de Descartes",
+        "volumes": "13"
+      },
+      "unknown_fields": {
+        "langid": [
+          {
+            "type": "text",
+            "text": "french"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
           }
         ]
       }

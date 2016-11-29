@@ -145,6 +145,38 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "abstract": "Abstract here",
+        "author": "Doe, J. and Smith, R.",
+        "booktitle": "%IEEE_J_PROC%",
+        "doi": "10.1109/JPROC.2016.2526118",
+        "keywords": "Keyword 1,Keyword 2",
+        "month": "February",
+        "pages": "300--301",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Test {{Title With}} 100~{{$μ$J}}, 200 {{$μ$J Energy}}, and $±$0.1\\% {{Accuracy}}, 0.2 Mm$^2$ {{Size}}, and -50 {{dB Attenuation}}",
+        "year": "2016"
+      },
+      "unknown_fields": {
+        "month": [
+          {
+            "type": "text",
+            "text": "February"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ],
+        "year": [
+          {
+            "type": "text",
+            "text": "2016"
+          }
+        ]
       }
     },
     "1": {
@@ -227,6 +259,38 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "abstract": "Abstract here",
+        "author": "Doe, J. and Smith, R.",
+        "booktitle": "%IEEE_J_PROC%",
+        "doi": "10.1109/JPROC.2016.2526118",
+        "keywords": "Keyword 1,Keyword 2",
+        "month": "February",
+        "pages": "300--301",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Test {{Title}} with Space {}Quad, Space Semi-Colon, Space Colon, Space Comma, Space~Nbsp",
+        "year": "2016"
+      },
+      "unknown_fields": {
+        "month": [
+          {
+            "type": "text",
+            "text": "February"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ],
+        "year": [
+          {
+            "type": "text",
+            "text": "2016"
+          }
+        ]
       }
     }
   },
@@ -249,7 +313,17 @@
     {
       "type": "unknown_field",
       "entry": "test_citation1",
+      "field_name": "month"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "test_citation1",
       "field_name": "timestamp"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "test_citation1",
+      "field_name": "year"
     },
     {
       "type": "undefined_variable",
@@ -269,7 +343,17 @@
     {
       "type": "unknown_field",
       "entry": "test_citation2",
+      "field_name": "month"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "test_citation2",
       "field_name": "timestamp"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "test_citation2",
+      "field_name": "year"
     }
   ]
 }

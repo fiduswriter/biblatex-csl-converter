@@ -3,16 +3,6 @@
     "0": {
       "bib_type": "book",
       "entry_key": "west_introduction_2000",
-      "raw_fields": {
-        "author": "West, Douglas Brent",
-        "date": "2000-08-22",
-        "edition": "2",
-        "isbn": "978-0-13-014400-3",
-        "pagetotal": "470",
-        "publisher": "{Prentice Hall}",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "Introduction to {{Graph Theory}}"
-      },
       "fields": {
         "date": "2000-08-22",
         "author": [
@@ -67,19 +57,29 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "West, Douglas Brent",
+        "date": "2000-08-22",
+        "edition": "2",
+        "isbn": "978-0-13-014400-3",
+        "pagetotal": "470",
+        "publisher": "{Prentice Hall}",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Introduction to {{Graph Theory}}"
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "1": {
       "bib_type": "book",
       "entry_key": "skubala_modellierung_2012",
-      "raw_fields": {
-        "author": "Skubala, Adam",
-        "date": "2012-09-27",
-        "location": "{Masterthesis, Fakultät Statistik}",
-        "publisher": "{TU Dortmund}",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "Modellierung Niederfrequenter {{Schwingungen}} in Einem Elektrischen {{Energienetz}}"
-      },
       "fields": {
         "date": "2012-09-27",
         "author": [
@@ -142,22 +142,27 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "author": "Skubala, Adam",
+        "date": "2012-09-27",
+        "location": "{Masterthesis, Fakultät Statistik}",
+        "publisher": "{TU Dortmund}",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Modellierung Niederfrequenter {{Schwingungen}} in Einem Elektrischen {{Energienetz}}"
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "2": {
       "bib_type": "article",
       "entry_key": "michigami_development_1995",
-      "raw_fields": {
-        "author": "Michigami, Tsutomu",
-        "date": "1995-12",
-        "doi": "10.1002/eej.4391150705",
-        "journaltitle": "Electrical Engineering in Japan",
-        "number": "7",
-        "pages": "49 -- 68",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "Development of a New Two-Input {{PSS}} to Control Low-Frequency Oscillation in Interconnecting Power Systems and the Study of a Low-Frequency Oscillation Model",
-        "volume": "115"
-      },
       "fields": {
         "date": "1995-12",
         "author": [
@@ -213,21 +218,30 @@
             "text": "115"
           }
         ]
+      },
+      "raw_fields": {
+        "author": "Michigami, Tsutomu",
+        "date": "1995-12",
+        "doi": "10.1002/eej.4391150705",
+        "journaltitle": "Electrical Engineering in Japan",
+        "number": "7",
+        "pages": "49 -- 68",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Development of a New Two-Input {{PSS}} to Control Low-Frequency Oscillation in Interconnecting Power Systems and the Study of a Low-Frequency Oscillation Model",
+        "volume": "115"
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "3": {
       "bib_type": "report",
       "entry_key": "brato_stability_2014",
-      "raw_fields": {
-        "author": "Brato, Sebastian and Surmann, Dirk and Krey, Sebastian and Götze, Jürgen and Ligges, Uwe and Weihs, Claus",
-        "date": "2014-02-11",
-        "institution": "{Technische Universität Dortmund}",
-        "location": "{Eldorado}",
-        "number": "2003/32864",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "Stability {{Analysis}} and {{Clustering}} of {{Electrical Transmission Systems}}",
-        "url": "http://dx.doi.org/10.17877/DE290R-13190"
-      },
       "fields": {
         "date": "2014-02-11",
         "author": [
@@ -377,6 +391,24 @@
                 "type": "nocase"
               }
             ]
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "Brato, Sebastian and Surmann, Dirk and Krey, Sebastian and Götze, Jürgen and Ligges, Uwe and Weihs, Claus",
+        "date": "2014-02-11",
+        "institution": "{Technische Universität Dortmund}",
+        "location": "{Eldorado}",
+        "number": "2003/32864",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Stability {{Analysis}} and {{Clustering}} of {{Electrical Transmission Systems}}",
+        "url": "http://dx.doi.org/10.17877/DE290R-13190"
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
           }
         ]
       }

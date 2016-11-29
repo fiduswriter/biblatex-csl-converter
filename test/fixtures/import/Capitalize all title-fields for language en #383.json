@@ -36,6 +36,18 @@
             "text": " Coupling Reactions"
           }
         ]
+      },
+      "raw_fields": {
+        "langid": "british",
+        "title": "A Carbocyclic Carbene as an Efficient Catalyst Ligand for {{C}}–{{C}} Coupling Reactions"
+      },
+      "unknown_fields": {
+        "langid": [
+          {
+            "type": "text",
+            "text": "british"
+          }
+        ]
       }
     },
     "1": {
@@ -55,6 +67,18 @@
                 "type": "nocase"
               }
             ]
+          }
+        ]
+      },
+      "raw_fields": {
+        "langid": "american",
+        "title": "Alkanethiolate Gold Cluster Molecules with Core Diameters from 1.5 to 5.2~{{nm}}"
+      },
+      "unknown_fields": {
+        "langid": [
+          {
+            "type": "text",
+            "text": "american"
           }
         ]
       }
@@ -80,6 +104,18 @@
           {
             "type": "text",
             "text": " Congestion Avoidance and Control"
+          }
+        ]
+      },
+      "raw_fields": {
+        "langid": "american",
+        "title": "A Stochastic Model of {{TCP Reno}} Congestion Avoidance and Control"
+      },
+      "unknown_fields": {
+        "langid": [
+          {
+            "type": "text",
+            "text": "american"
           }
         ]
       }
@@ -146,6 +182,18 @@
             "text": " Reactions"
           }
         ]
+      },
+      "raw_fields": {
+        "langid": "american",
+        "title": "Effect of Immobilization on Catalytic Characteristics of Saturated {{Pd}}-{{N}}-Heterocyclic Carbenes in {{Mizoroki}}-{{Heck}} Reactions"
+      },
+      "unknown_fields": {
+        "langid": [
+          {
+            "type": "text",
+            "text": "american"
+          }
+        ]
       }
     },
     "4": {
@@ -162,6 +210,19 @@
           {
             "type": "text",
             "text": "Estimateur d'un défaut de fonctionnement d'un modulateur en quadrature et étage de modulation l'utilisant"
+          }
+        ]
+      },
+      "raw_fields": {
+        "abstract": "in French, so no case conversion, nor protection.",
+        "langid": "french",
+        "title": "Estimateur d'un défaut de fonctionnement d'un modulateur en quadrature et étage de modulation l'utilisant"
+      },
+      "unknown_fields": {
+        "langid": [
+          {
+            "type": "text",
+            "text": "french"
           }
         ]
       }
@@ -187,6 +248,18 @@
           {
             "type": "text",
             "text": " Converter"
+          }
+        ]
+      },
+      "raw_fields": {
+        "langid": "american",
+        "title": "High-Speed Digital-to-{{RF}} Converter"
+      },
+      "unknown_fields": {
+        "langid": [
+          {
+            "type": "text",
+            "text": "american"
           }
         ]
       }
@@ -247,6 +320,18 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "langid": "british",
+        "title": "Pleistocene {{{\\emph{Homo sapiens}}}} from {{Middle Awash}}, {{Ethiopia}}"
+      },
+      "unknown_fields": {
+        "langid": [
+          {
+            "type": "text",
+            "text": "british"
+          }
+        ]
       }
     },
     "7": {
@@ -291,6 +376,10 @@
             "text": "-Matrix for Black Holes"
           }
         ]
+      },
+      "raw_fields": {
+        "abstract": "Zotero’s “Language” field empty, so “en-US” is assumed.",
+        "title": "Some Remarks on {{’t Hooft’s}} {{S}}-Matrix for Black Holes"
       }
     }
   },

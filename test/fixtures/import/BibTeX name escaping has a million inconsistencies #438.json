@@ -3,12 +3,6 @@
     "0": {
       "bib_type": "article",
       "entry_key": "Nome2014",
-      "raw_fields": {
-        "author": "Nöme, Name",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "Why {{Is Apple Launching}} a {{New Version}} of the {{iPod}}?",
-        "year": "2014"
-      },
       "fields": {
         "date": "2014",
         "author": [
@@ -72,17 +66,31 @@
             "text": "?"
           }
         ]
+      },
+      "raw_fields": {
+        "author": "Nöme, Name",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Why {{Is Apple Launching}} a {{New Version}} of the {{iPod}}?",
+        "year": "2014"
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ],
+        "year": [
+          {
+            "type": "text",
+            "text": "2014"
+          }
+        ]
       }
     },
     "1": {
       "bib_type": "article",
       "entry_key": "vanGogh2014",
-      "raw_fields": {
-        "author": "{van Gögh}, Vincent",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "Why {{Is Apple Launching}} a {{New Version}} of the {{iPod}}?",
-        "year": "2014"
-      },
       "fields": {
         "date": "2014",
         "author": [
@@ -151,6 +159,26 @@
           {
             "type": "text",
             "text": "?"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "{van Gögh}, Vincent",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Why {{Is Apple Launching}} a {{New Version}} of the {{iPod}}?",
+        "year": "2014"
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ],
+        "year": [
+          {
+            "type": "text",
+            "text": "2014"
           }
         ]
       }

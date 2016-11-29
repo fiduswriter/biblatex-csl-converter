@@ -3,13 +3,6 @@
     "0": {
       "bib_type": "thesis",
       "entry_key": "Woller2011DetMultiple",
-      "raw_fields": {
-        "author": "Wøller, Sune Brøndum",
-        "language": "norsk",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "{Det multiple arkæologiske objekt. Et studie af materialitet og arkæologiske tekstiler}",
-        "year": "2011"
-      },
       "fields": {
         "date": "2011",
         "author": [
@@ -37,18 +30,32 @@
             "text": "Det multiple arkæologiske objekt. Et studie af materialitet og arkæologiske tekstiler"
           }
         ]
+      },
+      "raw_fields": {
+        "author": "Wøller, Sune Brøndum",
+        "language": "norsk",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "{Det multiple arkæologiske objekt. Et studie af materialitet og arkæologiske tekstiler}",
+        "year": "2011"
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ],
+        "year": [
+          {
+            "type": "text",
+            "text": "2011"
+          }
+        ]
       }
     },
     "1": {
       "bib_type": "thesis",
       "entry_key": "Woller2011CTRDet",
-      "raw_fields": {
-        "author": "Wøller, Sune Brøndum",
-        "language": "norsk",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "{CTR Det multiple arkæologiske objekt. Et studie af materialitet og arkæologiske tekstiler}",
-        "year": "2011"
-      },
       "fields": {
         "date": "2011",
         "author": [
@@ -74,6 +81,27 @@
           {
             "type": "text",
             "text": "CTR Det multiple arkæologiske objekt. Et studie af materialitet og arkæologiske tekstiler"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "Wøller, Sune Brøndum",
+        "language": "norsk",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "{CTR Det multiple arkæologiske objekt. Et studie af materialitet og arkæologiske tekstiler}",
+        "year": "2011"
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ],
+        "year": [
+          {
+            "type": "text",
+            "text": "2011"
           }
         ]
       }

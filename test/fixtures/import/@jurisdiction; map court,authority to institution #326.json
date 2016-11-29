@@ -3,6 +3,15 @@
     "0": {
       "bib_type": "misc",
       "entry_key": "_dalain_2010",
+      "fields": {
+        "date": "2010-12-23",
+        "title": [
+          {
+            "type": "text",
+            "text": "Dalain"
+          }
+        ]
+      },
       "raw_fields": {
         "date": "2010-12-23",
         "institution": "{CE, Ass.}",
@@ -14,12 +23,45 @@
         "title": "Dalain",
         "volume": "I"
       },
-      "fields": {
-        "date": "2010-12-23",
-        "title": [
+      "unexpected_fields": {
+        "institution": [
+          [
+            {
+              "type": "text",
+              "text": "CE, Ass."
+            }
+          ]
+        ],
+        "journaltitle": [
           {
             "type": "text",
-            "text": "Dalain"
+            "text": "Rec."
+          }
+        ],
+        "number": [
+          {
+            "type": "text",
+            "text": "337033"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "I"
+          }
+        ]
+      },
+      "unknown_fields": {
+        "langid": [
+          {
+            "type": "text",
+            "text": "french"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
           }
         ]
       }

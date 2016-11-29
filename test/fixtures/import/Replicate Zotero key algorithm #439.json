@@ -3,18 +3,14 @@
     "0": {
       "bib_type": "misc",
       "entry_key": "firstname_retorquere_replicate_2015",
-      "raw_fields": {
-        "abstract": "zotero-better-bibtex - Make Zotero effective for us LaTeX holdouts",
-        "author": "{Firstname Retorquere}",
-        "howpublished": "̆rl{https://github.com/retorquere/zotero-better-bibtex/issues/439}",
-        "journal": "%GitHub%",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "Replicate {{Zotero}} Key Algorithm $·$ {{Issue}} \\#439 $·$ Retorquere/Zotero-Better-Bibtex",
-        "urldate": "2016-01-29",
-        "year": "2015"
-      },
       "fields": {
         "date": "2015",
+        "abstract": [
+          {
+            "type": "text",
+            "text": "zotero-better-bibtex - Make Zotero effective for us LaTeX holdouts"
+          }
+        ],
         "author": [
           {
             "given": [
@@ -70,23 +66,53 @@
           }
         ],
         "urldate": "2016-01-29"
-      }
-    },
-    "1": {
-      "bib_type": "misc",
-      "entry_key": "retorquere_replicate_2016",
+      },
       "raw_fields": {
         "abstract": "zotero-better-bibtex - Make Zotero effective for us LaTeX holdouts",
-        "author": "Retorquere, Firstname and Retorquere2, Firstname2",
+        "author": "{Firstname Retorquere}",
         "howpublished": "̆rl{https://github.com/retorquere/zotero-better-bibtex/issues/439}",
         "journal": "%GitHub%",
         "timestamp": "2015-02-24 12:14:36 +0100",
         "title": "Replicate {{Zotero}} Key Algorithm $·$ {{Issue}} \\#439 $·$ Retorquere/Zotero-Better-Bibtex",
         "urldate": "2016-01-29",
-        "year": "2016"
+        "year": "2015"
       },
+      "unexpected_fields": {
+        "journaltitle": [
+          {
+            "type": "variable",
+            "attrs": {
+              "variable": "GitHub"
+            }
+          }
+        ]
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ],
+        "year": [
+          {
+            "type": "text",
+            "text": "2015"
+          }
+        ]
+      }
+    },
+    "1": {
+      "bib_type": "misc",
+      "entry_key": "retorquere_replicate_2016",
       "fields": {
         "date": "2016",
+        "abstract": [
+          {
+            "type": "text",
+            "text": "zotero-better-bibtex - Make Zotero effective for us LaTeX holdouts"
+          }
+        ],
         "author": [
           {
             "family": [
@@ -156,21 +182,52 @@
           }
         ],
         "urldate": "2016-01-29"
+      },
+      "raw_fields": {
+        "abstract": "zotero-better-bibtex - Make Zotero effective for us LaTeX holdouts",
+        "author": "Retorquere, Firstname and Retorquere2, Firstname2",
+        "howpublished": "̆rl{https://github.com/retorquere/zotero-better-bibtex/issues/439}",
+        "journal": "%GitHub%",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Replicate {{Zotero}} Key Algorithm $·$ {{Issue}} \\#439 $·$ Retorquere/Zotero-Better-Bibtex",
+        "urldate": "2016-01-29",
+        "year": "2016"
+      },
+      "unexpected_fields": {
+        "journaltitle": [
+          {
+            "type": "variable",
+            "attrs": {
+              "variable": "GitHub"
+            }
+          }
+        ]
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ],
+        "year": [
+          {
+            "type": "text",
+            "text": "2016"
+          }
+        ]
       }
     },
     "2": {
       "bib_type": "misc",
       "entry_key": "retorquere-double_replicate_????",
-      "raw_fields": {
-        "abstract": "zotero-better-bibtex - Make Zotero effective for us LaTeX holdouts",
-        "author": "Retorquere-Double, First-Double",
-        "howpublished": "̆rl{https://github.com/retorquere/zotero-better-bibtex/issues/439}",
-        "journal": "%GitHub%",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "Replicate {{Zotero}} Key Algorithm $·$ {{Issue}} \\#439 $·$ Retorquere/Zotero-Better-Bibtex",
-        "urldate": "2016-01-29"
-      },
       "fields": {
+        "abstract": [
+          {
+            "type": "text",
+            "text": "zotero-better-bibtex - Make Zotero effective for us LaTeX holdouts"
+          }
+        ],
         "author": [
           {
             "family": [
@@ -226,6 +283,33 @@
           }
         ],
         "urldate": "2016-01-29"
+      },
+      "raw_fields": {
+        "abstract": "zotero-better-bibtex - Make Zotero effective for us LaTeX holdouts",
+        "author": "Retorquere-Double, First-Double",
+        "howpublished": "̆rl{https://github.com/retorquere/zotero-better-bibtex/issues/439}",
+        "journal": "%GitHub%",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Replicate {{Zotero}} Key Algorithm $·$ {{Issue}} \\#439 $·$ Retorquere/Zotero-Better-Bibtex",
+        "urldate": "2016-01-29"
+      },
+      "unexpected_fields": {
+        "journaltitle": [
+          {
+            "type": "variable",
+            "attrs": {
+              "variable": "GitHub"
+            }
+          }
+        ]
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     }
   },
@@ -239,11 +323,6 @@
     {
       "type": "unexpected_field",
       "entry": "firstname_retorquere_replicate_2015",
-      "field_name": "abstract"
-    },
-    {
-      "type": "unexpected_field",
-      "entry": "firstname_retorquere_replicate_2015",
       "field_name": "journal"
     },
     {
@@ -265,11 +344,6 @@
     {
       "type": "unexpected_field",
       "entry": "retorquere_replicate_2016",
-      "field_name": "abstract"
-    },
-    {
-      "type": "unexpected_field",
-      "entry": "retorquere_replicate_2016",
       "field_name": "journal"
     },
     {
@@ -287,11 +361,6 @@
       "entry": "retorquere-double_replicate_????",
       "key": "journal",
       "variable": "GitHub"
-    },
-    {
-      "type": "unexpected_field",
-      "entry": "retorquere-double_replicate_????",
-      "field_name": "abstract"
     },
     {
       "type": "unexpected_field",

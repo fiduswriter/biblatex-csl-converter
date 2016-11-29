@@ -19,6 +19,9 @@
             ]
           }
         ]
+      },
+      "raw_fields": {
+        "title": "non-braking space: ~; accented characters: ñ and ñ; tilde in URL: ̆rl{http://example.com/~user}"
       }
     }
   }

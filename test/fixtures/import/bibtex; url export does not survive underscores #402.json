@@ -3,17 +3,6 @@
     "0": {
       "bib_type": "inproceedings",
       "entry_key": "EmmerJaens14a",
-      "raw_fields": {
-        "address": "Krakow",
-        "author": "Emmert, Thomas and Jaensch, Stefan and Sovardi, Carlo and Polifke, Wolfgang",
-        "booktitle": "7th {{Forum Acusticum}}",
-        "keywords": "NonPerRev",
-        "month": "September",
-        "note": "̆rl{http://www.fa2014.agh.edu.pl/fa2014_cd/}",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "{{taX}} - a {{Flexible Tool}} for {{Low}}-{{Order Duct Acoustic Simulation}} in {{Time}} and {{Frequency Domain}}",
-        "year": "2014"
-      },
       "fields": {
         "location": [
           [
@@ -192,6 +181,37 @@
                 "type": "nocase"
               }
             ]
+          }
+        ]
+      },
+      "raw_fields": {
+        "address": "Krakow",
+        "author": "Emmert, Thomas and Jaensch, Stefan and Sovardi, Carlo and Polifke, Wolfgang",
+        "booktitle": "7th {{Forum Acusticum}}",
+        "keywords": "NonPerRev",
+        "month": "September",
+        "note": "̆rl{http://www.fa2014.agh.edu.pl/fa2014_cd/}",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "{{taX}} - a {{Flexible Tool}} for {{Low}}-{{Order Duct Acoustic Simulation}} in {{Time}} and {{Frequency Domain}}",
+        "year": "2014"
+      },
+      "unknown_fields": {
+        "month": [
+          {
+            "type": "text",
+            "text": "September"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ],
+        "year": [
+          {
+            "type": "text",
+            "text": "2014"
           }
         ]
       }

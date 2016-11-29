@@ -3,11 +3,6 @@
     "0": {
       "bib_type": "article",
       "entry_key": "Brons:pretest",
-      "raw_fields": {
-        "author": "Brøns, Morten",
-        "note": "Hello hej ",
-        "title": "$pretest$"
-      },
       "fields": {
         "author": [
           {
@@ -37,6 +32,11 @@
             "text": "pretest"
           }
         ]
+      },
+      "raw_fields": {
+        "author": "Brøns, Morten",
+        "note": "Hello hej ",
+        "title": "$pretest$"
       }
     }
   }

@@ -3,14 +3,6 @@
     "0": {
       "bib_type": "misc",
       "entry_key": "Torre2008",
-      "raw_fields": {
-        "annotation": "note 2",
-        "author": "Torre, Joe and Verducci, Tom",
-        "date": "2008",
-        "publisher": "{Doubleday}",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "{{XYZZY}}"
-      },
       "fields": {
         "date": "2008",
         "author": [
@@ -52,6 +44,38 @@
                 "type": "nocase"
               }
             ]
+          }
+        ]
+      },
+      "raw_fields": {
+        "annotation": "note 2",
+        "author": "Torre, Joe and Verducci, Tom",
+        "date": "2008",
+        "publisher": "{Doubleday}",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "{{XYZZY}}"
+      },
+      "unexpected_fields": {
+        "annotation": [
+          {
+            "type": "text",
+            "text": "note 2"
+          }
+        ],
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "Doubleday"
+            }
+          ]
+        ]
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
           }
         ]
       }

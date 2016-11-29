@@ -3,20 +3,6 @@
     "0": {
       "bib_type": "article",
       "entry_key": "vlcek_historylatinterminology_2014",
-      "raw_fields": {
-        "author": "Vlček, Martin and Vácha, Marek",
-        "date": "2014-05-15",
-        "doi": "10.1007/s00276-014-1305-7",
-        "eprint": "24828123",
-        "eprinttype": "pmid",
-        "issn": "1279-8517",
-        "journaltitle": "Surgical and Radiologic Anatomy",
-        "langid": "english",
-        "shortjournal": "Surg Radiol Anat",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "The History of {{Latin}} Terminology of Human Skeletal Muscles (from {{Vesalius}} to the Present)",
-        "url": "http://link.springer.com/10.1007/s00276-014-1305-7"
-      },
       "fields": {
         "date": "2014-05-15",
         "author": [
@@ -97,6 +83,42 @@
           {
             "type": "text",
             "text": " to the Present)"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "Vlček, Martin and Vácha, Marek",
+        "date": "2014-05-15",
+        "doi": "10.1007/s00276-014-1305-7",
+        "eprint": "24828123",
+        "eprinttype": "pmid",
+        "issn": "1279-8517",
+        "journaltitle": "Surgical and Radiologic Anatomy",
+        "langid": "english",
+        "shortjournal": "Surg Radiol Anat",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "The History of {{Latin}} Terminology of Human Skeletal Muscles (from {{Vesalius}} to the Present)",
+        "url": "http://link.springer.com/10.1007/s00276-014-1305-7"
+      },
+      "unknown_fields": {
+        "langid": [
+          {
+            "type": "text",
+            "text": "english"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
+      },
+      "unexpected_fields": {
+        "shortjournal": [
+          {
+            "type": "text",
+            "text": "Surg Radiol Anat"
           }
         ]
       }

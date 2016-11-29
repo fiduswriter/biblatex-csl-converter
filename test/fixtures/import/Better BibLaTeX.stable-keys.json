@@ -3,16 +3,6 @@
     "0": {
       "bib_type": "article",
       "entry_key": "Fritz2012",
-      "raw_fields": {
-        "author": "Fritz, U. and Corti, C. and Päckert, M.",
-        "date": "2012",
-        "doi": "10.1007/s13127-011-0069-8",
-        "journaltitle": "Actes du 4\\textsuperscript{ème} Congrès Français d'Acoustique",
-        "pages": "71--80",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "Fritz2012",
-        "volume": "12"
-      },
       "fields": {
         "date": "2012",
         "author": [
@@ -90,11 +80,7 @@
             "text": "12"
           }
         ]
-      }
-    },
-    "1": {
-      "bib_type": "article",
-      "entry_key": "Fritz2012a",
+      },
       "raw_fields": {
         "author": "Fritz, U. and Corti, C. and Päckert, M.",
         "date": "2012",
@@ -102,9 +88,21 @@
         "journaltitle": "Actes du 4\\textsuperscript{ème} Congrès Français d'Acoustique",
         "pages": "71--80",
         "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "Fritz2012a",
+        "title": "Fritz2012",
         "volume": "12"
       },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
+      }
+    },
+    "1": {
+      "bib_type": "article",
+      "entry_key": "Fritz2012a",
       "fields": {
         "date": "2012",
         "author": [
@@ -182,11 +180,7 @@
             "text": "12"
           }
         ]
-      }
-    },
-    "2": {
-      "bib_type": "article",
-      "entry_key": "Fritz2012b",
+      },
       "raw_fields": {
         "author": "Fritz, U. and Corti, C. and Päckert, M.",
         "date": "2012",
@@ -194,9 +188,21 @@
         "journaltitle": "Actes du 4\\textsuperscript{ème} Congrès Français d'Acoustique",
         "pages": "71--80",
         "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "Fritz2012b",
+        "title": "Fritz2012a",
         "volume": "12"
       },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
+      }
+    },
+    "2": {
+      "bib_type": "article",
+      "entry_key": "Fritz2012b",
       "fields": {
         "date": "2012",
         "author": [
@@ -274,11 +280,7 @@
             "text": "12"
           }
         ]
-      }
-    },
-    "3": {
-      "bib_type": "article",
-      "entry_key": "Fritz2012c",
+      },
       "raw_fields": {
         "author": "Fritz, U. and Corti, C. and Päckert, M.",
         "date": "2012",
@@ -286,9 +288,21 @@
         "journaltitle": "Actes du 4\\textsuperscript{ème} Congrès Français d'Acoustique",
         "pages": "71--80",
         "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "Fritz2012c",
+        "title": "Fritz2012b",
         "volume": "12"
       },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
+      }
+    },
+    "3": {
+      "bib_type": "article",
+      "entry_key": "Fritz2012c",
       "fields": {
         "date": "2012",
         "author": [
@@ -366,11 +380,7 @@
             "text": "12"
           }
         ]
-      }
-    },
-    "4": {
-      "bib_type": "article",
-      "entry_key": "Fritz2012d",
+      },
       "raw_fields": {
         "author": "Fritz, U. and Corti, C. and Päckert, M.",
         "date": "2012",
@@ -378,9 +388,21 @@
         "journaltitle": "Actes du 4\\textsuperscript{ème} Congrès Français d'Acoustique",
         "pages": "71--80",
         "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "Fritz2012d",
+        "title": "Fritz2012c",
         "volume": "12"
       },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
+      }
+    },
+    "4": {
+      "bib_type": "article",
+      "entry_key": "Fritz2012d",
       "fields": {
         "date": "2012",
         "author": [
@@ -458,11 +480,7 @@
             "text": "12"
           }
         ]
-      }
-    },
-    "5": {
-      "bib_type": "article",
-      "entry_key": "Fritz2012e",
+      },
       "raw_fields": {
         "author": "Fritz, U. and Corti, C. and Päckert, M.",
         "date": "2012",
@@ -470,9 +488,21 @@
         "journaltitle": "Actes du 4\\textsuperscript{ème} Congrès Français d'Acoustique",
         "pages": "71--80",
         "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "Fritz2012e",
+        "title": "Fritz2012d",
         "volume": "12"
       },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
+      }
+    },
+    "5": {
+      "bib_type": "article",
+      "entry_key": "Fritz2012e",
       "fields": {
         "date": "2012",
         "author": [
@@ -548,6 +578,24 @@
           {
             "type": "text",
             "text": "12"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "Fritz, U. and Corti, C. and Päckert, M.",
+        "date": "2012",
+        "doi": "10.1007/s13127-011-0069-8",
+        "journaltitle": "Actes du 4\\textsuperscript{ème} Congrès Français d'Acoustique",
+        "pages": "71--80",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Fritz2012e",
+        "volume": "12"
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
           }
         ]
       }

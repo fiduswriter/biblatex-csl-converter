@@ -3,21 +3,14 @@
     "0": {
       "bib_type": "article",
       "entry_key": "barker_2016_swiss",
-      "raw_fields": {
-        "abstract": "Voters in Switzerland overwhelmingly reject a proposal to introduce a guaranteed monthly income for all citizens.",
-        "author": "Barker, Anne",
-        "date": "2016-06-06",
-        "entrysubtype": "newspaper",
-        "journaltitle": "ABC News",
-        "langid": "australian",
-        "rights": "http://www.abc.net.au/conditions.htm\\#UseOfContent",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "Swiss Voters Say No to Guaranteed Free Money",
-        "url": "http://www.abc.net.au/news/2016-06-06/swiss-voters-reject-basic-income-proposal/7481672",
-        "urldate": "2017-12-06"
-      },
       "fields": {
         "date": "2016-06-06",
+        "abstract": [
+          {
+            "type": "text",
+            "text": "Voters in Switzerland overwhelmingly reject a proposal to introduce a guaranteed monthly income for all citizens."
+          }
+        ],
         "author": [
           {
             "family": [
@@ -47,15 +40,51 @@
           }
         ],
         "urldate": "2017-12-06"
+      },
+      "raw_fields": {
+        "abstract": "Voters in Switzerland overwhelmingly reject a proposal to introduce a guaranteed monthly income for all citizens.",
+        "author": "Barker, Anne",
+        "date": "2016-06-06",
+        "entrysubtype": "newspaper",
+        "journaltitle": "ABC News",
+        "langid": "australian",
+        "rights": "http://www.abc.net.au/conditions.htm\\#UseOfContent",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Swiss Voters Say No to Guaranteed Free Money",
+        "url": "http://www.abc.net.au/news/2016-06-06/swiss-voters-reject-basic-income-proposal/7481672",
+        "urldate": "2017-12-06"
+      },
+      "unexpected_fields": {
+        "entrysubtype": [
+          {
+            "type": "text",
+            "text": "newspaper"
+          }
+        ]
+      },
+      "unknown_fields": {
+        "langid": [
+          {
+            "type": "text",
+            "text": "australian"
+          }
+        ],
+        "rights": [
+          {
+            "type": "text",
+            "text": "http://www.abc.net.au/conditions.htm#UseOfContent"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     }
   },
   "warnings": [
-    {
-      "type": "unexpected_field",
-      "entry": "barker_2016_swiss",
-      "field_name": "abstract"
-    },
     {
       "type": "unexpected_field",
       "entry": "barker_2016_swiss",

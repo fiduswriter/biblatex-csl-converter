@@ -3,14 +3,6 @@
     "0": {
       "bib_type": "misc",
       "entry_key": "Doe2015",
-      "raw_fields": {
-        "date": "2015",
-        "director": "Doe, John and Roe, Rob",
-        "location": "{US/GB}",
-        "publisher": "{The Distributor}",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "A Film"
-      },
       "fields": {
         "date": "2015",
         "location": [
@@ -27,23 +19,43 @@
             "text": "A Film"
           }
         ]
+      },
+      "raw_fields": {
+        "date": "2015",
+        "director": "Doe, John and Roe, Rob",
+        "location": "{US/GB}",
+        "publisher": "{The Distributor}",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "A Film"
+      },
+      "unknown_fields": {
+        "director": [
+          {
+            "type": "text",
+            "text": "Doe, John and Roe, Rob"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
+      },
+      "unexpected_fields": {
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "The Distributor"
+            }
+          ]
+        ]
       }
     },
     "1": {
       "bib_type": "report",
       "entry_key": "Author2015",
-      "raw_fields": {
-        "author": "Author, Ann",
-        "date": "2015",
-        "editor": "Editrix, Emma and Editor, Ed",
-        "institution": "{Institution}",
-        "location": "{Place}",
-        "note": "\\{:X-genre: xxx\\}",
-        "number": "77",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "A Report",
-        "type": "Working Paper"
-      },
       "fields": {
         "date": "2015",
         "author": [
@@ -96,18 +108,63 @@
             "text": "A Report"
           }
         ]
+      },
+      "raw_fields": {
+        "author": "Author, Ann",
+        "date": "2015",
+        "editor": "Editrix, Emma and Editor, Ed",
+        "institution": "{Institution}",
+        "location": "{Place}",
+        "note": "\\{:X-genre: xxx\\}",
+        "number": "77",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "A Report",
+        "type": "Working Paper"
+      },
+      "unexpected_fields": {
+        "editor": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Editrix"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Emma"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Editor"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Ed"
+              }
+            ]
+          }
+        ]
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "2": {
       "bib_type": "misc",
       "entry_key": "Kubrick1964",
-      "raw_fields": {
-        "date": "1964",
-        "director": "Kubrick, Stanley",
-        "shorttitle": "Dr. {{Strangelove}}",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "Dr. {{Strangelove}} or: How {{I}} Learned to Stop Worrying and Love the Bomb"
-      },
       "fields": {
         "date": "1964",
         "title": [
@@ -142,25 +199,40 @@
             "text": " Learned to Stop Worrying and Love the Bomb"
           }
         ]
+      },
+      "raw_fields": {
+        "date": "1964",
+        "director": "Kubrick, Stanley",
+        "shorttitle": "Dr. {{Strangelove}}",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Dr. {{Strangelove}} or: How {{I}} Learned to Stop Worrying and Love the Bomb"
+      },
+      "unknown_fields": {
+        "director": [
+          {
+            "type": "text",
+            "text": "Kubrick, Stanley"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
+      },
+      "unexpected_fields": {
+        "shorttitle": [
+          {
+            "type": "text",
+            "text": "Dr. Strangelove"
+          }
+        ]
       }
     },
     "3": {
       "bib_type": "misc",
       "entry_key": "friends:leia:tv",
-      "raw_fields": {
-        "booktitle": "Friends",
-        "date": "1996-09-16",
-        "director": "Mancuso, Gail",
-        "journaltitle": "Friends",
-        "langid": "american",
-        "location": "{US}",
-        "number": "1",
-        "publisher": "{NBC}",
-        "scriptwriter": "Curtis, Michael and Malins, Gregory S.",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "The One with the {{Princess Leia}} Fantasy",
-        "volume": "3"
-      },
       "fields": {
         "date": "1996-09-16",
         "location": [
@@ -190,11 +262,115 @@
             "text": " Fantasy"
           }
         ]
+      },
+      "raw_fields": {
+        "booktitle": "Friends",
+        "date": "1996-09-16",
+        "director": "Mancuso, Gail",
+        "journaltitle": "Friends",
+        "langid": "american",
+        "location": "{US}",
+        "number": "1",
+        "publisher": "{NBC}",
+        "scriptwriter": "Curtis, Michael and Malins, Gregory S.",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "The One with the {{Princess Leia}} Fantasy",
+        "volume": "3"
+      },
+      "unexpected_fields": {
+        "booktitle": [
+          {
+            "type": "text",
+            "text": "Friends"
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "Friends"
+          }
+        ],
+        "number": [
+          {
+            "type": "text",
+            "text": "1"
+          }
+        ],
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "NBC"
+            }
+          ]
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "3"
+          }
+        ]
+      },
+      "unknown_fields": {
+        "director": [
+          {
+            "type": "text",
+            "text": "Mancuso, Gail"
+          }
+        ],
+        "langid": [
+          {
+            "type": "text",
+            "text": "american"
+          }
+        ],
+        "scriptwriter": [
+          {
+            "type": "text",
+            "text": "Curtis, Michael and Malins, Gregory S."
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     },
     "4": {
       "bib_type": "misc",
       "entry_key": "friends:leia:dvd",
+      "fields": {
+        "date": "2003",
+        "location": [
+          [
+            {
+              "type": "text",
+              "text": "US"
+            }
+          ]
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "The One with the "
+          },
+          {
+            "type": "text",
+            "text": "Princess Leia",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " Fantasy"
+          }
+        ]
+      },
       "raw_fields": {
         "booktitle": "Friends",
         "date": "2003",
@@ -210,33 +386,66 @@
         "title": "The One with the {{Princess Leia}} Fantasy",
         "volume": "3"
       },
-      "fields": {
-        "date": "2003",
-        "location": [
+      "unexpected_fields": {
+        "booktitle": [
+          {
+            "type": "text",
+            "text": "Friends"
+          }
+        ],
+        "number": [
+          {
+            "type": "text",
+            "text": "1"
+          }
+        ],
+        "origdate": "1996-09-16",
+        "origpublisher": [
           [
             {
               "type": "text",
-              "text": "US"
+              "text": "NBC"
             }
           ]
         ],
-        "title": [
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "Warner Home Video"
+            }
+          ]
+        ],
+        "volume": [
           {
             "type": "text",
-            "text": "The One with the "
-          },
+            "text": "3"
+          }
+        ]
+      },
+      "unknown_fields": {
+        "director": [
           {
             "type": "text",
-            "text": "Princess Leia",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
+            "text": "Mancuso, Gail"
+          }
+        ],
+        "langid": [
           {
             "type": "text",
-            "text": " Fantasy"
+            "text": "american"
+          }
+        ],
+        "scriptwriter": [
+          {
+            "type": "text",
+            "text": "Curtis, Michael and Malins, Gregory S."
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
           }
         ]
       }
@@ -244,11 +453,6 @@
     "5": {
       "bib_type": "inreference",
       "entry_key": "emptybook",
-      "raw_fields": {
-        "editor": "{Xxx}",
-        "note": "\\{:X-genre: xxx\\}",
-        "timestamp": "2015-02-24 12:14:36 +0100"
-      },
       "fields": {
         "editor": [
           {
@@ -264,6 +468,19 @@
           {
             "type": "text",
             "text": "{:X-genre: xxx}"
+          }
+        ]
+      },
+      "raw_fields": {
+        "editor": "{Xxx}",
+        "note": "\\{:X-genre: xxx\\}",
+        "timestamp": "2015-02-24 12:14:36 +0100"
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
           }
         ]
       }

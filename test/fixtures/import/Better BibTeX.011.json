@@ -3,20 +3,6 @@
     "0": {
       "bib_type": "inproceedings",
       "entry_key": "Klassen2010",
-      "raw_fields": {
-        "author": "Klassen, Myungsook and Kim, Nyunsu and Liu, Wei Ming",
-        "title": "Empirical Study of Support Vector Machine Kernels with Applications\r to Microarray Data",
-        "booktitle": "CATA",
-        "year": "2010",
-        "pages": "25-30",
-        "note": "svm liniowe najlepsze",
-        "bibsource": "DBLP, http://dblp.uni-trier.de",
-        "crossref": "DBLP:conf/cata/2010",
-        "file": "Klassen2010.pdf:Better BibTeX.011/klasyfikatory/Klassen2010.pdf:PDF",
-        "groups": "klasyfikacja",
-        "owner": "sstudent",
-        "timestamp": "2011.03.22"
-      },
       "fields": {
         "date": "2010",
         "author": [
@@ -81,7 +67,60 @@
             "text": "svm liniowe najlepsze"
           }
         ]
-      }
+      },
+      "raw_fields": {
+        "author": "Klassen, Myungsook and Kim, Nyunsu and Liu, Wei Ming",
+        "title": "Empirical Study of Support Vector Machine Kernels with Applications\r to Microarray Data",
+        "booktitle": "CATA",
+        "year": "2010",
+        "pages": "25-30",
+        "note": "svm liniowe najlepsze",
+        "bibsource": "DBLP, http://dblp.uni-trier.de",
+        "crossref": "DBLP:conf/cata/2010",
+        "file": "Klassen2010.pdf:Better BibTeX.011/klasyfikatory/Klassen2010.pdf:PDF",
+        "groups": "klasyfikacja",
+        "owner": "sstudent",
+        "timestamp": "2011.03.22"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "2010"
+          }
+        ],
+        "bibsource": [
+          {
+            "type": "text",
+            "text": "DBLP, http://dblp.uni-trier.de"
+          }
+        ],
+        "crossref": [
+          {
+            "type": "text",
+            "text": "DBLP:conf/cata/2010"
+          }
+        ],
+        "groups": [
+          {
+            "type": "text",
+            "text": "klasyfikacja"
+          }
+        ],
+        "owner": [
+          {
+            "type": "text",
+            "text": "sstudent"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2011.03.22"
+          }
+        ]
+      },
+      "unexpected_fields": {}
     }
   },
   "warnings": [
