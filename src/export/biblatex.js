@@ -14,7 +14,8 @@ import {BibTypes, BibFieldTypes} from "../const"
      'nocase': {open:'{{', close: '}}'},
      'sub': {open:'_{', close: '}'},
      'sup': {open:'^{', close: '}'},
-     'math': {open:'$', close: '$'}
+     'math': {open:'$', close: '$'},
+     'url': {open:'\\url{', close: '}', verbatim: true}
   }
 
 export class BibLatexExporter {
@@ -218,7 +219,7 @@ export class BibLatexExporter {
 
             })
             // open all new tags that were not present in the last text node.
-            let opening = false
+            let opening = false, verbatim = false
             newMarks.forEach((mark, index)=>{
                 if (mark != lastMarks[index]) {
                     opening = true
@@ -229,9 +230,16 @@ export class BibLatexExporter {
                         latex += '{'
                     }
                     latex += TAGS[mark].open
+                    if (TAGS[mark].verbatim) {
+                        verbatim = true
+                    }
                 }
             })
-            latex += that._escapeTeX(node.text)
+            if (verbatim) {
+                latex += node.text
+            } else {
+                latex += that._escapeTeX(node.text)
+            }
             lastMarks = newMarks
         })
         // Close all still open tags

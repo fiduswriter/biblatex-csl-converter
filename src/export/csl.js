@@ -13,6 +13,7 @@ const TAGS = {
     'smallcaps': {open:'<span style="font-variant: small-caps;">', close: '</span>'},
     'nocase': {open:'<span class="nocase">', close: '</span>'},
     'enquote': {open:'&ldquo;', close: '&rdquo;'},
+    'url': {open:'', close: ''},
     'undefined': {open:'<span class="undef-variable">', close: '</span>'}
  }
 
