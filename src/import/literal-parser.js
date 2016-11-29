@@ -195,6 +195,7 @@ export class BibLatexLiteralParser {
                 case '~':
                     // a non-breakable space
                     this.textNode.text += '\u00A0'
+                    this.si++
                     break
                 case '%':
                     // An undefined variable.
