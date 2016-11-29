@@ -10,7 +10,7 @@ const verify = bibfile => {
   let parser = new BibLatexParser(input, {rawFields: true, processUnexpected: true, processUnknown: true});
   let name = path.basename(bibfile, path.extname(bibfile));
 
-  // this must be called before requesting warnins or errors
+  // this must be called before requesting warnings or errors
   let references = parser.output;
   let found = { references, errors: parser.errors, warnings: parser.warnings };
   if (!found.errors || found.errors.length == 0)            { delete found.errors; }
