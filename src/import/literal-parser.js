@@ -92,9 +92,21 @@ export class BibLatexLiteralParser {
                             this.textNode.marks.push({type:command[1]})
                             this.si += command[0].length
                             let sj = this.si
-                            while (sj < this.slen && this.string[sj] !== '}') {
-                                if (this.string[sj] == '\\') {
-                                    sj++
+                            let internalBraceLevel = 0
+                            while (
+                                sj < this.slen &&
+                                (
+                                    this.string[sj] !== '}' ||
+                                    internalBraceLevel > 0
+                                )
+                            ) {
+                                switch (this.string[sj]) {
+                                    case '{':
+                                        internalBraceLevel++
+                                        break
+                                    case '}':
+                                        internalBraceLevel--
+                                        break
                                 }
                                 sj++
                             }
