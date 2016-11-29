@@ -37,6 +37,10 @@ const output1 = {
         },
         "fields": {
             "date": "2016-07-18T20:26:06",
+            "abstract": [{
+                "type": "text",
+                "text": "Religious fundamentalism is a powerful force in Turkey where the military has a long history of intervening in politics to ensure the nation remains secular."
+            }],
             "author": [{
                 "family": [{
                     "type": "text",
@@ -112,6 +116,10 @@ const output2 = {
         },
         "fields": {
             "date": "2016-07-18T20:26:06+10:00",
+            "abstract": [{
+                "type": "text",
+                "text": "Religious fundamentalism is a powerful force in Turkey where the military has a long history of intervening in politics to ensure the nation remains secular."
+            }],
             "author": [{
                 "family": [{
                     "type": "text",
@@ -187,6 +195,10 @@ const output3 = {
         },
         "fields": {
             "date": "2016-07-18T20:26:06Z",
+            "abstract": [{
+                "type": "text",
+                "text": "Religious fundamentalism is a powerful force in Turkey where the military has a long history of intervening in politics to ensure the nation remains secular."
+            }],
             "author": [{
                 "family": [{
                     "type": "text",
@@ -262,6 +274,10 @@ const output4 = {
         },
         "fields": {
             "date": "-0876",
+            "abstract": [{
+                "type": "text",
+                "text": "Religious fundamentalism is a powerful force in Turkey where the military has a long history of intervening in politics to ensure the nation remains secular."
+            }],
             "author": [{
                 "family": [{
                     "type": "text",
@@ -337,6 +353,10 @@ const output5 = {
         },
         "fields": {
             "date": "1723~",
+            "abstract": [{
+                "type": "text",
+                "text": "Religious fundamentalism is a powerful force in Turkey where the military has a long history of intervening in politics to ensure the nation remains secular."
+            }],
             "author": [{
                 "family": [{
                     "type": "text",
@@ -413,6 +433,10 @@ const output6 = {
         },
         "fields": {
             "date": "1723?",
+            "abstract": [{
+                "type": "text",
+                "text": "Religious fundamentalism is a powerful force in Turkey where the military has a long history of intervening in politics to ensure the nation remains secular."
+            }],
             "author": [{
                 "family": [{
                     "type": "text",
@@ -488,6 +512,10 @@ const output7 = {
         },
         "fields": {
             "date": "1723?~",
+            "abstract": [{
+                "type": "text",
+                "text": "Religious fundamentalism is a powerful force in Turkey where the military has a long history of intervening in politics to ensure the nation remains secular."
+            }],
             "author": [{
                 "family": [{
                     "type": "text",
@@ -563,6 +591,10 @@ const output8 = {
         },
         "fields": {
             "date": "1988/1992",
+            "abstract": [{
+                "type": "text",
+                "text": "Religious fundamentalism is a powerful force in Turkey where the military has a long history of intervening in politics to ensure the nation remains secular."
+            }],
             "author": [{
                 "family": [{
                     "type": "text",
@@ -638,6 +670,10 @@ const output9 = {
         },
         "fields": {
             "date": "2004-22",
+            "abstract": [{
+                "type": "text",
+                "text": "Religious fundamentalism is a powerful force in Turkey where the military has a long history of intervening in politics to ensure the nation remains secular."
+            }],
             "author": [{
                 "family": [{
                     "type": "text",
@@ -713,6 +749,10 @@ const output10 = {
         },
         "fields": {
             "date": "199u",
+            "abstract": [{
+                "type": "text",
+                "text": "Religious fundamentalism is a powerful force in Turkey where the military has a long history of intervening in politics to ensure the nation remains secular."
+            }],
             "author": [{
                 "family": [{
                     "type": "text",
@@ -788,6 +828,10 @@ const output11 = {
         },
         "fields": {
             "date": "19uu",
+            "abstract": [{
+                "type": "text",
+                "text": "Religious fundamentalism is a powerful force in Turkey where the military has a long history of intervening in politics to ensure the nation remains secular."
+            }],
             "author": [{
                 "family": [{
                     "type": "text",
@@ -863,6 +907,10 @@ const output12 = {
         },
         "fields": {
             "date": "1999-uu",
+            "abstract": [{
+                "type": "text",
+                "text": "Religious fundamentalism is a powerful force in Turkey where the military has a long history of intervening in politics to ensure the nation remains secular."
+            }],
             "author": [{
                 "family": [{
                     "type": "text",
@@ -938,6 +986,10 @@ const output13 = {
         },
         "fields": {
             "date": "1999-01-uu",
+            "abstract": [{
+                "type": "text",
+                "text": "Religious fundamentalism is a powerful force in Turkey where the military has a long history of intervening in politics to ensure the nation remains secular."
+            }],
             "author": [{
                 "family": [{
                     "type": "text",
@@ -1013,6 +1065,10 @@ const output14 = {
         },
         "fields": {
             "date": "1999-uu-uu",
+            "abstract": [{
+                "type": "text",
+                "text": "Religious fundamentalism is a powerful force in Turkey where the military has a long history of intervening in politics to ensure the nation remains secular."
+            }],
             "author": [{
                 "family": [{
                     "type": "text",
