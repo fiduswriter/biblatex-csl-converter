@@ -1,0 +1,1555 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "book",
+      "entry_key": "vangogh",
+      "fields": {
+        "author": [
+          {
+            "prefix": [
+              {
+                "type": "text",
+                "text": "van"
+              }
+            ],
+            "useprefix": true,
+            "family": [
+              {
+                "type": "text",
+                "text": "Gogh"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Vincent"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "[van Gogh][Vincent]"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "van Gogh, Vincent",
+        "note": "[van Gogh][Vincent]",
+        "options": "useprefix=true"
+      },
+      "unknown_fields": {
+        "options": [
+          {
+            "type": "text",
+            "text": "useprefix=true"
+          }
+        ]
+      }
+    },
+    "1": {
+      "bib_type": "book",
+      "entry_key": "humboldt",
+      "fields": {
+        "author": [
+          {
+            "prefix": [
+              {
+                "type": "text",
+                "text": "von"
+              }
+            ],
+            "useprefix": true,
+            "family": [
+              {
+                "type": "text",
+                "text": "Humboldt"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Alexander"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "[Humboldt][Alexander von]"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "von Humboldt, Alexander",
+        "note": "[Humboldt][Alexander von]"
+      }
+    },
+    "2": {
+      "bib_type": "book",
+      "entry_key": "beauvoir",
+      "fields": {
+        "author": [
+          {
+            "prefix": [
+              {
+                "type": "text",
+                "text": "de"
+              }
+            ],
+            "useprefix": true,
+            "family": [
+              {
+                "type": "text",
+                "text": "Beauvoir"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Simone"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "[Beauvoir][Simone de]"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "de Beauvoir, Simone",
+        "note": "[Beauvoir][Simone de]"
+      }
+    },
+    "3": {
+      "bib_type": "book",
+      "entry_key": "degaulle",
+      "fields": {
+        "author": [
+          {
+            "prefix": [
+              {
+                "type": "text",
+                "text": "de"
+              }
+            ],
+            "useprefix": true,
+            "family": [
+              {
+                "type": "text",
+                "text": "Gaulle"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Charles"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "[\"de Gaulle\"][Charles]"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "{de Gaulle}, Charles",
+        "note": "[\"de Gaulle\"][Charles]"
+      }
+    },
+    "4": {
+      "bib_type": "book",
+      "entry_key": "king",
+      "fields": {
+        "author": [
+          {
+            "suffix": [
+              {
+                "type": "text",
+                "text": "Jr."
+              }
+            ],
+            "family": [
+              {
+                "type": "text",
+                "text": "King"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Martin Luther"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "[King][Martin Luther, Jr.]"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "King, Jr., Martin Luther",
+        "note": "[King][Martin Luther, Jr.]"
+      }
+    },
+    "5": {
+      "bib_type": "book",
+      "entry_key": "stevenson",
+      "fields": {
+        "author": [
+          {
+            "suffix": [
+              {
+                "type": "text",
+                "text": "III"
+              }
+            ],
+            "family": [
+              {
+                "type": "text",
+                "text": "Stevenson"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Adlai E."
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "[Stevenson][Adlai E.,! III]"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "Stevenson, III, Adlai E.",
+        "note": "[Stevenson][Adlai E.,! III]"
+      }
+    },
+    "6": {
+      "bib_type": "book",
+      "entry_key": "nationalaeronauticsandspaceadministration",
+      "fields": {
+        "author": [
+          {
+            "given": [
+              {
+                "type": "text",
+                "text": "National Aeronautics"
+              }
+            ],
+            "prefix": [
+              {
+                "type": "text",
+                "text": "and"
+              }
+            ],
+            "useprefix": true,
+            "family": [
+              {
+                "type": "text",
+                "text": "Space Administration"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "[[National Aeronautics and Space Administration]]"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "{National Aeronautics and Space Administration}",
+        "note": "[[National Aeronautics and Space Administration]]"
+      }
+    },
+    "7": {
+      "bib_type": "book",
+      "entry_key": "bovendeert",
+      "fields": {
+        "author": [
+          {
+            "prefix": [
+              {
+                "type": "text",
+                "text": "boven d'"
+              }
+            ],
+            "useprefix": true,
+            "family": [
+              {
+                "type": "text",
+                "text": "Eert"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Christianus"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "[boven d'Eert][Christianus]"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "boven d' Eert, Christianus",
+        "note": "[boven d'Eert][Christianus]",
+        "options": "useprefix=true"
+      },
+      "unknown_fields": {
+        "options": [
+          {
+            "type": "text",
+            "text": "useprefix=true"
+          }
+        ]
+      }
+    },
+    "8": {
+      "bib_type": "book",
+      "entry_key": "s-gravesande",
+      "fields": {
+        "author": [
+          {
+            "prefix": [
+              {
+                "type": "text",
+                "text": "'s-"
+              }
+            ],
+            "useprefix": true,
+            "family": [
+              {
+                "type": "text",
+                "text": "Gravesande"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Goverdus"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "['s-Gravesande][Goverdus]"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "'s- Gravesande, Goverdus",
+        "note": "['s-Gravesande][Goverdus]",
+        "options": "useprefix=true"
+      },
+      "unknown_fields": {
+        "options": [
+          {
+            "type": "text",
+            "text": "useprefix=true"
+          }
+        ]
+      }
+    },
+    "9": {
+      "bib_type": "book",
+      "entry_key": "dequincey",
+      "fields": {
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "De Quincey"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Thomas"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "[De Quincey][Thomas]"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "De Quincey, Thomas",
+        "note": "[De Quincey][Thomas]"
+      }
+    },
+    "10": {
+      "bib_type": "book",
+      "entry_key": "ortegaygasset",
+      "fields": {
+        "author": [
+          {
+            "prefix": [
+              {
+                "type": "text",
+                "text": "Ortega y"
+              }
+            ],
+            "useprefix": true,
+            "family": [
+              {
+                "type": "text",
+                "text": "Gasset"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "José"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "[Ortega y Gasset][José]"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "Ortega y Gasset, José",
+        "note": "[Ortega y Gasset][José]"
+      }
+    },
+    "11": {
+      "bib_type": "book",
+      "entry_key": "damato",
+      "fields": {
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "D’Amato"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Alfonse"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "[D’Amato][Alfonse]"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "D’Amato, Alfonse",
+        "note": "[D’Amato][Alfonse]"
+      }
+    },
+    "12": {
+      "bib_type": "book",
+      "entry_key": "sadat",
+      "fields": {
+        "author": [
+          {
+            "prefix": [
+              {
+                "type": "text",
+                "text": "el-"
+              }
+            ],
+            "useprefix": true,
+            "family": [
+              {
+                "type": "text",
+                "text": "Sadat"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Anwar"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "[Sadat][Anwar el-]"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "el- Sadat, Anwar",
+        "note": "[Sadat][Anwar el-]"
+      }
+    },
+    "13": {
+      "bib_type": "book",
+      "entry_key": "lafollette",
+      "fields": {
+        "author": [
+          {
+            "suffix": [
+              {
+                "type": "text",
+                "text": "Sr."
+              }
+            ],
+            "family": [
+              {
+                "type": "text",
+                "text": "La Follette"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Robert M."
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "[La Follette][Robert M., Sr.]"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "La Follette, Sr., Robert M.",
+        "note": "[La Follette][Robert M., Sr.]"
+      }
+    },
+    "14": {
+      "bib_type": "book",
+      "entry_key": "delamare",
+      "fields": {
+        "author": [
+          {
+            "prefix": [
+              {
+                "type": "text",
+                "text": "de la"
+              }
+            ],
+            "useprefix": true,
+            "family": [
+              {
+                "type": "text",
+                "text": "Mare"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Walter"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "[\"de la Mare\"][Walter]"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "{de la Mare}, Walter",
+        "note": "[\"de la Mare\"][Walter]"
+      }
+    },
+    "15": {
+      "bib_type": "book",
+      "entry_key": "degette",
+      "fields": {
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "DeGette"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Diana"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "[DeGette][Diana]"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "DeGette, Diana",
+        "note": "[DeGette][Diana]"
+      }
+    },
+    "16": {
+      "bib_type": "book",
+      "entry_key": "saunders",
+      "fields": {
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Saunders"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "John Bertrand de Cusance Morant"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "[Saunders][John Bertrand de Cusance Morant]"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "Saunders, John Bertrand de Cusance Morant",
+        "note": "[Saunders][John Bertrand de Cusance Morant]"
+      }
+    },
+    "17": {
+      "bib_type": "book",
+      "entry_key": "marcusaurelius",
+      "fields": {
+        "author": [
+          {
+            "given": [
+              {
+                "type": "text",
+                "text": "Marcus"
+              }
+            ],
+            "family": [
+              {
+                "type": "text",
+                "text": "Aurelius"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "[[Marcus Aurelius]]"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "{Marcus Aurelius}",
+        "note": "[[Marcus Aurelius]]"
+      }
+    },
+    "18": {
+      "bib_type": "book",
+      "entry_key": "dumas",
+      "fields": {
+        "author": [
+          {
+            "suffix": [
+              {
+                "type": "text",
+                "text": "père"
+              }
+            ],
+            "family": [
+              {
+                "type": "text",
+                "text": "Dumas"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Alexandre"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "[Dumas][Alexandre, père]"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "Dumas, père, Alexandre",
+        "note": "[Dumas][Alexandre, père]"
+      }
+    },
+    "19": {
+      "bib_type": "book",
+      "entry_key": "vanrensselaer",
+      "fields": {
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Van Rensselaer"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Stephen"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "[Van Rensselaer][Stephen]"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "Van Rensselaer, Stephen",
+        "note": "[Van Rensselaer][Stephen]"
+      }
+    },
+    "20": {
+      "bib_type": "book",
+      "entry_key": "lenfant",
+      "fields": {
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "L’Enfant"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Pierre-Charles"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "[L’Enfant][Pierre-Charles]"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "L’Enfant, Pierre-Charles",
+        "note": "[L’Enfant][Pierre-Charles]"
+      }
+    },
+    "21": {
+      "bib_type": "book",
+      "entry_key": "vangulik",
+      "fields": {
+        "author": [
+          {
+            "prefix": [
+              {
+                "type": "text",
+                "text": "van"
+              }
+            ],
+            "useprefix": true,
+            "family": [
+              {
+                "type": "text",
+                "text": "Gulik"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Robert"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "[\"van Gulik\"][Robert]"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "{van Gulik}, Robert",
+        "note": "[\"van Gulik\"][Robert]"
+      }
+    },
+    "22": {
+      "bib_type": "book",
+      "entry_key": "sackville-west",
+      "fields": {
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Sackville-West"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Victoria"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "[Sackville-West][Victoria]"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "Sackville-West, Victoria",
+        "note": "[Sackville-West][Victoria]"
+      }
+    },
+    "23": {
+      "bib_type": "book",
+      "entry_key": "vaughanwilliams",
+      "fields": {
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Vaughan Williams"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Ralph"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "[Vaughan Williams][Ralph]"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "Vaughan Williams, Ralph",
+        "note": "[Vaughan Williams][Ralph]"
+      }
+    },
+    "24": {
+      "bib_type": "book",
+      "entry_key": "miesvanderrohe",
+      "fields": {
+        "author": [
+          {
+            "prefix": [
+              {
+                "type": "text",
+                "text": "Mies van der"
+              }
+            ],
+            "useprefix": true,
+            "family": [
+              {
+                "type": "text",
+                "text": "Rohe"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Ludwig"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "[Mies van der Rohe][Ludwig]"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "Mies van der Rohe, Ludwig",
+        "note": "[Mies van der Rohe][Ludwig]"
+      }
+    },
+    "25": {
+      "bib_type": "book",
+      "entry_key": "dalembert",
+      "fields": {
+        "author": [
+          {
+            "prefix": [
+              {
+                "type": "text",
+                "text": "d’"
+              }
+            ],
+            "useprefix": true,
+            "family": [
+              {
+                "type": "text",
+                "text": "Alembert"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Jean le Rond"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "[d’Alembert][Jean le Rond]"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "d’ Alembert, Jean le Rond",
+        "note": "[d’Alembert][Jean le Rond]",
+        "options": "useprefix=true"
+      },
+      "unknown_fields": {
+        "options": [
+          {
+            "type": "text",
+            "text": "useprefix=true"
+          }
+        ]
+      }
+    },
+    "26": {
+      "bib_type": "book",
+      "entry_key": "tocqueville",
+      "fields": {
+        "author": [
+          {
+            "prefix": [
+              {
+                "type": "text",
+                "text": "de"
+              }
+            ],
+            "useprefix": true,
+            "family": [
+              {
+                "type": "text",
+                "text": "Tocqueville"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Alexis"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "[Tocqueville][Alexis de]"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "de Tocqueville, Alexis",
+        "note": "[Tocqueville][Alexis de]"
+      }
+    },
+    "27": {
+      "bib_type": "book",
+      "entry_key": "lafontaine",
+      "fields": {
+        "author": [
+          {
+            "prefix": [
+              {
+                "type": "text",
+                "text": "de"
+              }
+            ],
+            "useprefix": true,
+            "family": [
+              {
+                "type": "text",
+                "text": "La Fontaine"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Jean"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "[La Fontaine][Jean de]"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "de La Fontaine, Jean",
+        "note": "[La Fontaine][Jean de]"
+      }
+    },
+    "28": {
+      "bib_type": "book",
+      "entry_key": "lasalle",
+      "fields": {
+        "author": [
+          {
+            "prefix": [
+              {
+                "type": "text",
+                "text": "de"
+              }
+            ],
+            "useprefix": true,
+            "family": [
+              {
+                "type": "text",
+                "text": "La Salle"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "René-Robert Cavelier"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "[La Salle][René-Robert Cavelier de]"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "de La Salle, René-Robert Cavelier",
+        "note": "[La Salle][René-Robert Cavelier de]"
+      }
+    },
+    "29": {
+      "bib_type": "book",
+      "entry_key": "dupuydeclinchamps",
+      "fields": {
+        "author": [
+          {
+            "prefix": [
+              {
+                "type": "text",
+                "text": "du Puy de"
+              }
+            ],
+            "useprefix": true,
+            "family": [
+              {
+                "type": "text",
+                "text": "Clinchamps"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "˚elax Philippe"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "[du Puy de Clinchamps][PhU+0097ilippe]"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "du Puy de Clinchamps, {˚elax Ph}ilippe",
+        "note": "[du Puy de Clinchamps][PhU+0097ilippe]",
+        "options": "useprefix=true"
+      },
+      "unknown_fields": {
+        "options": [
+          {
+            "type": "text",
+            "text": "useprefix=true"
+          }
+        ]
+      }
+    },
+    "30": {
+      "bib_type": "book",
+      "entry_key": "stein",
+      "fields": {
+        "author": [
+          {
+            "prefix": [
+              {
+                "type": "text",
+                "text": "vom und zum"
+              }
+            ],
+            "useprefix": true,
+            "family": [
+              {
+                "type": "text",
+                "text": "Stein"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Heinrich Friedrich Karl"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "[Stein][Heinrich Friedrich Karl vom und zum]"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "vom und zum Stein, Heinrich Friedrich Karl",
+        "note": "[Stein][Heinrich Friedrich Karl vom und zum]"
+      }
+    },
+    "31": {
+      "bib_type": "book",
+      "entry_key": "silva",
+      "fields": {
+        "author": [
+          {
+            "prefix": [
+              {
+                "type": "text",
+                "text": "da"
+              }
+            ],
+            "useprefix": true,
+            "family": [
+              {
+                "type": "text",
+                "text": "Silva"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Agostinho"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "[Silva][Agostinho da]"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "da Silva, Agostinho",
+        "note": "[Silva][Agostinho da]"
+      }
+    },
+    "32": {
+      "bib_type": "book",
+      "entry_key": "dagama",
+      "fields": {
+        "author": [
+          {
+            "prefix": [
+              {
+                "type": "text",
+                "text": "da"
+              }
+            ],
+            "useprefix": true,
+            "family": [
+              {
+                "type": "text",
+                "text": "Gama"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Vasco"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "[\"da Gama\"][Vasco]"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "{da Gama}, Vasco",
+        "note": "[\"da Gama\"][Vasco]"
+      }
+    },
+    "33": {
+      "bib_type": "book",
+      "entry_key": "dannunzio",
+      "fields": {
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "D’Annunzio"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Gabriele"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "[D’Annunzio][Gabriele]"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "D’Annunzio, Gabriele",
+        "note": "[D’Annunzio][Gabriele]"
+      }
+    },
+    "34": {
+      "bib_type": "book",
+      "entry_key": "daponte",
+      "fields": {
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Da Ponte"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Lorenzo"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "[Da Ponte][Lorenzo]"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "Da Ponte, Lorenzo",
+        "note": "[Da Ponte][Lorenzo]"
+      }
+    },
+    "35": {
+      "bib_type": "book",
+      "entry_key": "dellarobbia",
+      "fields": {
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Della Robbia"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Luca"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "[Della Robbia][Luca]"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "Della Robbia, Luca",
+        "note": "[Della Robbia][Luca]"
+      }
+    },
+    "36": {
+      "bib_type": "book",
+      "entry_key": "este",
+      "fields": {
+        "author": [
+          {
+            "prefix": [
+              {
+                "type": "text",
+                "text": "d’"
+              }
+            ],
+            "useprefix": true,
+            "family": [
+              {
+                "type": "text",
+                "text": "Este"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Beatrice"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "[Este][Beatrice d’]"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "d’ Este, Beatrice",
+        "note": "[Este][Beatrice d’]"
+      }
+    },
+    "37": {
+      "bib_type": "book",
+      "entry_key": "medici",
+      "fields": {
+        "author": [
+          {
+            "prefix": [
+              {
+                "type": "text",
+                "text": "de’"
+              }
+            ],
+            "useprefix": true,
+            "family": [
+              {
+                "type": "text",
+                "text": "Medici"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Lorenzo"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "[Medici][Lorenzo de’U+200B]"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "de’\\mbox{} Medici, Lorenzo",
+        "note": "[Medici][Lorenzo de’U+200B]"
+      }
+    },
+    "38": {
+      "bib_type": "book",
+      "entry_key": "al-hakim",
+      "fields": {
+        "author": [
+          {
+            "prefix": [
+              {
+                "type": "text",
+                "text": "al-"
+              }
+            ],
+            "useprefix": true,
+            "family": [
+              {
+                "type": "text",
+                "text": "Hakim"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Tawfiq"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "[al-Hakim][Tawfiq]"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "al- Hakim, Tawfiq",
+        "note": "[al-Hakim][Tawfiq]",
+        "options": "useprefix=true"
+      },
+      "unknown_fields": {
+        "options": [
+          {
+            "type": "text",
+            "text": "useprefix=true"
+          }
+        ]
+      }
+    },
+    "39": {
+      "bib_type": "book",
+      "entry_key": "levayer",
+      "fields": {
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Le Vayer"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "François de La Mothe"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "type": "text",
+            "text": "[Le Vayer][François de La Mothe]"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "Le Vayer, François de La Mothe",
+        "note": "[Le Vayer][François de La Mothe]"
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "entry": "vangogh",
+      "field_name": "options"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "bovendeert",
+      "field_name": "options"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "s-gravesande",
+      "field_name": "options"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "dalembert",
+      "field_name": "options"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "dupuydeclinchamps",
+      "field_name": "options"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "al-hakim",
+      "field_name": "options"
+    }
+  ]
+}

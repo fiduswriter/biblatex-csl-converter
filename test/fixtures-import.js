@@ -17,11 +17,6 @@ const verify = bibfile => {
   if (!found.warnings || found.warnings.length == 0)        { delete found.warnings; }
 
   let expected = path.join(path.dirname(bibfile), name + '.json');
-
-  // I don't know why the tests aren't repeatable, but this generates them anew
-  // TODO: THIS MUST ABSOLUTELY BE REMOVED, NOT JUST COMMENTED OUT, AFTER WE FIGURE THIS OUT
-  // // // fs.writeFileSync(expected, JSON.stringify(found, null, 2))
-
   expected = JSON.parse(fs.readFileSync(expected, 'utf8'));
   if (!expected.errors || expected.errors.length == 0)      { delete expected.errors; }
   if (!expected.warnings || expected.warnings.length == 0)  { delete expected.warnings; }
@@ -33,6 +28,6 @@ const fixtures = path.join(__dirname, 'fixtures/import');
 const bibfiles = fs.readdirSync(fixtures);
 for (let i in bibfiles) {
   let fixture = path.join(fixtures, bibfiles[i]);
-  if (path.extname(fixture) == '.json') { continue; }
+  if (path.extname(fixture) != '.bib') { continue; }
   verify(fixture)
 }

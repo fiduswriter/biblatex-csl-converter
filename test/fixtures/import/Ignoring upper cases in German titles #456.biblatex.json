@@ -1,0 +1,216 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "incollection",
+      "entry_key": "Kaufmann1990",
+      "fields": {
+        "date": "2002",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Kaufmann"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Franz-Xaver"
+              }
+            ]
+          }
+        ],
+        "booktitle": [
+          {
+            "type": "text",
+            "text": "Sozialpolitik und Sozialstaat: Soziologische Analysen"
+          }
+        ],
+        "editor": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Kauffmann"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Franz-Xaver"
+              }
+            ]
+          }
+        ],
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "VS Verlag für Sozialwissenschaften"
+            }
+          ]
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Sozialpolitik und Bevölkerungsprozeß"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "Kaufmann, Franz-Xaver",
+        "booktitle": "Sozialpolitik und Sozialstaat: Soziologische Analysen",
+        "date": "2002",
+        "doi": "10.1007/978-3-322-99962-7_7",
+        "editor": "Kauffmann, Franz-Xaver",
+        "langid": "german",
+        "origdate": "1990",
+        "pages": "145--160",
+        "publisher": "{VS Verlag für Sozialwissenschaften}",
+        "rights": "©2002 VS Verlag für Sozialwissenschaften | Springer Fachmedien Wiesbaden GmbH, Wiesbaden",
+        "title": "Sozialpolitik und Bevölkerungsprozeß",
+        "url": "http://link.springer.com/chapter/10.1007/978-3-322-99962-7_7"
+      },
+      "unknown_fields": {
+        "langid": [
+          {
+            "type": "text",
+            "text": "german"
+          }
+        ],
+        "rights": [
+          {
+            "type": "text",
+            "text": "©2002 VS Verlag für Sozialwissenschaften | Springer Fachmedien Wiesbaden GmbH, Wiesbaden"
+          }
+        ]
+      },
+      "unexpected_fields": {
+        "origdate": "1990"
+      }
+    },
+    "1": {
+      "bib_type": "incollection",
+      "entry_key": "Kaufmann1997",
+      "fields": {
+        "date": "2002",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Kaufmann"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Franz-Xaver"
+              }
+            ]
+          }
+        ],
+        "booktitle": [
+          {
+            "type": "text",
+            "text": "Sozialpolitik und Sozialstaat: Soziologische Analysen"
+          }
+        ],
+        "editor": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Kauffmann"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Franz-Xaver"
+              }
+            ]
+          }
+        ],
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "VS Verlag für Sozialwissenschaften"
+            }
+          ]
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Schwindet die integrative Funktion des Sozialstaates?"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "Kaufmann, Franz-Xaver",
+        "booktitle": "Sozialpolitik und Sozialstaat: Soziologische Analysen",
+        "date": "2002",
+        "doi": "10.1007/978-3-322-99962-7_11",
+        "editor": "Kauffmann, Franz-Xaver",
+        "langid": "german",
+        "origdate": "1997",
+        "pages": "241--260",
+        "publisher": "{VS Verlag für Sozialwissenschaften}",
+        "rights": "©2002 VS Verlag für Sozialwissenschaften | Springer Fachmedien Wiesbaden GmbH, Wiesbaden",
+        "title": "Schwindet die integrative Funktion des Sozialstaates?",
+        "url": "http://link.springer.com/chapter/10.1007/978-3-322-99962-7_11"
+      },
+      "unknown_fields": {
+        "langid": [
+          {
+            "type": "text",
+            "text": "german"
+          }
+        ],
+        "rights": [
+          {
+            "type": "text",
+            "text": "©2002 VS Verlag für Sozialwissenschaften | Springer Fachmedien Wiesbaden GmbH, Wiesbaden"
+          }
+        ]
+      },
+      "unexpected_fields": {
+        "origdate": "1997"
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "entry": "Kaufmann1990",
+      "field_name": "langid"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "Kaufmann1990",
+      "field_name": "origdate"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "Kaufmann1990",
+      "field_name": "rights"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "Kaufmann1997",
+      "field_name": "langid"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "Kaufmann1997",
+      "field_name": "origdate"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "Kaufmann1997",
+      "field_name": "rights"
+    }
+  ]
+}

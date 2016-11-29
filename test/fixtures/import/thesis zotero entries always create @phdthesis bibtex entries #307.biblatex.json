@@ -1,0 +1,126 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "thesis",
+      "entry_key": "Woller2011DetMultiple",
+      "fields": {
+        "date": "2011",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Wøller"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Sune Brøndum"
+              }
+            ]
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Det multiple arkæologiske objekt. Et studie af materialitet og arkæologiske tekstiler"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "Wøller, Sune Brøndum",
+        "date": "2011",
+        "langid": "norsk",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "Det multiple arkæologiske objekt. Et studie af materialitet og arkæologiske tekstiler"
+      },
+      "unknown_fields": {
+        "langid": [
+          {
+            "type": "text",
+            "text": "norsk"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
+      }
+    },
+    "1": {
+      "bib_type": "thesis",
+      "entry_key": "Woller2011CTRDet",
+      "fields": {
+        "date": "2011",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Wøller"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Sune Brøndum"
+              }
+            ]
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "CTR Det multiple arkæologiske objekt. Et studie af materialitet og arkæologiske tekstiler"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "Wøller, Sune Brøndum",
+        "date": "2011",
+        "langid": "norsk",
+        "timestamp": "2015-02-24 12:14:36 +0100",
+        "title": "CTR Det multiple arkæologiske objekt. Et studie af materialitet og arkæologiske tekstiler"
+      },
+      "unknown_fields": {
+        "langid": [
+          {
+            "type": "text",
+            "text": "norsk"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "entry": "Woller2011DetMultiple",
+      "field_name": "langid"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "Woller2011DetMultiple",
+      "field_name": "timestamp"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "Woller2011CTRDet",
+      "field_name": "langid"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "Woller2011CTRDet",
+      "field_name": "timestamp"
+    }
+  ]
+}
