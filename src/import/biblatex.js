@@ -5,29 +5,59 @@ import {BibLatexLiteralParser} from "./literal-parser"
 import {splitTeXString} from "./tools"
 import {parse as edtfParse} from "../../lib/edtf/src/parser"
 
-
-// These variables are expected to be defined by some bibtex sources.
-let VARIABLES  = {
-    JAN: "January",
-    FEB: "February",
-    MAR: "March",
-    APR: "April",
-    MAY: "May",
-    JUN: "June",
-    JUL: "July",
-    AUG: "August",
-    SEP: "September",
-    OCT: "October",
-    NOV: "November",
-    DEC: "December"
-}
-
 /** Parses files in BibTeX/BibLaTeX format
  */
 
  /* Based on original work by Henrik Muehe (c) 2010,
   * licensed under the MIT license,
   * https://code.google.com/archive/p/bibtex-js/
+  */
+
+  /* Config options (default value for every option is false)
+
+    - rawFields (false/true):
+
+    Adds a `raw_fields` object to each entry which contains all fields with only
+    TeX character replacement and no other processing.
+
+    - processUnexpected (false/true):
+
+    Processes fields with names that are known, but are not expected for the given bibtype,
+    adding them to an `unexpected_fields` object to each entry.
+
+    - processUnknown (false/true/object [specifying content type for specific unknown]):
+
+    Processes fields with names that are unknown, adding them to an `unknown_fields`
+    object to each entry.
+
+    example:
+        > a = new BibLatexParser(..., {processUnknown: true})
+        > a.output
+        {
+            "0:": {
+                ...
+                unknown_fields: {
+                    ...
+                }
+            }
+        }
+
+        > a = new BibLatexParser(..., {processUnknown: {commentator: 'l_name'}})
+        > a.output
+        {
+            "0:": {
+                ...
+                unknown_fields: {
+                    commentator: [
+                        {
+                            given: ...,
+                            family: ...
+                        }
+                    ]
+                    ...
+                }
+            }
+        }
   */
 
 export class BibLatexParser {
@@ -43,6 +73,21 @@ export class BibLatexParser {
         this.currentType = ""
         this.errors = []
         this.warnings = []
+        // These variables are expected to be defined by some bibtex sources.
+        this.variables = {
+            JAN: "January",
+            FEB: "February",
+            MAR: "March",
+            APR: "April",
+            MAY: "May",
+            JUN: "June",
+            JUL: "July",
+            AUG: "August",
+            SEP: "September",
+            OCT: "October",
+            NOV: "November",
+            DEC: "December"
+        }
     }
 
     isWhitespace(s) {
@@ -149,8 +194,8 @@ export class BibLatexParser {
             return this.valueQuotes()
         } else {
             let k = this.key()
-            if (VARIABLES[k.toUpperCase()]) {
-                return VARIABLES[k.toUpperCase()]
+            if (this.variables[k.toUpperCase()]) {
+                return this.variables[k.toUpperCase()]
             } else if (k.match("^[0-9]+$")) {
                 return k
             } else {
@@ -213,7 +258,7 @@ export class BibLatexParser {
             this.entries.pop()
             return
         }
-        let rawFields = this.currentEntry['raw_fields']
+        let rawFields = this.currentRawFields
         rawFields[kv[0]] = kv[1]
         while (this.tryMatch(",")) {
             this.match(",")
@@ -234,7 +279,7 @@ export class BibLatexParser {
     }
 
     processFields() {
-        let rawFields = this.currentEntry['raw_fields']
+        let rawFields = this.currentRawFields
         let fields = this.currentEntry['fields']
 
         // date may come either as year, year + month or as date field.
@@ -293,7 +338,7 @@ export class BibLatexParser {
 
         iterateFields: for(let bKey in rawFields) {
 
-            if (bKey==='date' || (['year','month'].includes(bKey) && !this.config.parseUnknown)) {
+            if (bKey==='date' || (['year','month'].includes(bKey) && !this.config.processUnknown)) {
                 // Handled above
                 continue iterateFields
             }
@@ -496,8 +541,11 @@ export class BibLatexParser {
         this.currentEntry = {
             'bib_type': this.bibType(),
             'entry_key': this.key(),
-            'raw_fields': {},
             'fields': {}
+        }
+        this.currentRawFields = {}
+        if (this.config.rawFields) {
+            this.currentEntry['raw_fields'] = this.currentRawFields
         }
         this.entries.push(this.currentEntry)
         this.match(",")
@@ -513,7 +561,7 @@ export class BibLatexParser {
 
     string() {
         let kv = this.keyEqualsValue()
-        VARIABLES[kv[0].toUpperCase()] = kv[1]
+        this.variables[kv[0].toUpperCase()] = kv[1]
     }
 
     preamble() {
