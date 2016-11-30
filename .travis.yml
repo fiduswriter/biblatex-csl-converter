@@ -18,11 +18,11 @@ branches:
   - gh-pages
 env:
   global:
-  - SSH_KEY="id_rsa"
+  - SSH_KEY="./travis/id_rsa"
   - GIT_NAME="Johannes Wilm"
   - GIT_EMAIL="mail@johanneswilm.org"
   - SOURCE_DIR="docs"
   - DEPLOY_BRANCH="master"
 before_install:
-- openssl aes-256-cbc -K $encrypted_0f3596143eec_key -iv $encrypted_0f3596143eec_iv
-  -in id_rsa.enc -out id_rsa -d
+- openssl aes-256-cbc -K $encrypted_715d402dd6c0_key -iv $encrypted_715d402dd6c0_iv
+  -in .travis/id_rsa.enc -out ./travis/id_rsa -d
