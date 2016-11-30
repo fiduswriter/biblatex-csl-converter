@@ -165,7 +165,7 @@ let parser2 = new BibLatexParser(input2)
 test('can parse dropping and non-dropping prefix in extended names', t => t.deepEqual(output2, parser2.output))
 
 const input3 = `@article{doi:10.1056/NEJM197806222982503,
-author = { Goldenberg ,  David M.  and  DeLand ,  Frank  and  Kim ,  Euishin  and  Bennett ,  Sidney  and  Primus ,  F. James  and  {family=Nagell, prefix=van, given=John R., suffix=Jr.}  and  Estes ,  Norman  and  DeSimone ,  Philip  and  Rayburn ,  Pam },
+author = { Goldenberg ,  David M.  and  DeLand ,  Frank  and  Kim ,  Euishin  and  Bennett ,  Sidney  and  Primus ,  F. James  and  {family=Nagell, prefix=van, "given={John R.}", suffix=Jr.}  and  Estes ,  Norman  and  DeSimone ,  Philip  and  Rayburn ,  Pam },
 title = {Use of Radio-Labeled Antibodies to Carcinoembryonic Antigen for the Detection and Localization of Diverse Cancers by External Photoscanning},
 journal = {New England Journal of Medicine},
 volume = {298},
