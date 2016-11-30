@@ -18,7 +18,7 @@ branches:
   - gh-pages
 env:
   global:
-  - SSH_KEY="./travis/id_rsa"
+  - SSH_KEY=".travis/id_rsa"
   - GIT_NAME="Johannes Wilm"
   - GIT_EMAIL="mail@johanneswilm.org"
   - SOURCE_DIR="docs"
