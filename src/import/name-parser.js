@@ -67,9 +67,6 @@ export class BibLatexNameParser {
     }
 
     splitTexString(string, sep='[\\s~]+') {
-        //if (sep===null) {
-        //    sep =
-        //}
         let braceLevel = 0
         let inQuotes = false
         let nameStart = 0
