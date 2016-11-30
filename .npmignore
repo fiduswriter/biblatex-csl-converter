@@ -1,2 +1,6 @@
-docs
+docs/
 !lib/*
+.travis/
+test/
+.nyc_output/
+.travis.yml
