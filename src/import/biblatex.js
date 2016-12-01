@@ -643,6 +643,8 @@ export class BibLatexParser {
 
       // simplify parsing by taking the whole comment, throw away newlines, replace the escaped separators with tabs, and
       // then split on the remaining non-secaped separators
+      // \u2004 is magic because \; is replaced by \u2004 in the earliest phase of the parser. I re-replace it here
+      // because \\\n; is not picked up by the previous phase
       let lines = this.input.substring(start, this.pos).replace(/[\r\n]/g, '').replace(/\\;/g, '\u2004').split(';')
 
       let levels = { '0': { references: [], groups: [] } }
