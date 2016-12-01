@@ -254,15 +254,15 @@ export class BibLatexExporter {
             str = ''
         for (let i = 0; i < len; i++) {
             if (0 < i) {
-                str += '\r\n\r\n'
+                str += '\n\n'
             }
             let data = biblist[i]
             str += `@${data.type}{${data.key}`
             for (let vKey in data.values) {
                 let value = `{${data.values[vKey]}}`.replace(/\{\} \# /g,'').replace(/\# \{\}/g,'')
-                str += `,\r\n${vKey} = ${value}`
+                str += `,\n${vKey} = ${value}`
             }
-            str += "\r\n}"
+            str += "\n}"
         }
         return str
     }
