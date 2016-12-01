@@ -599,7 +599,6 @@ export class BibLatexParser {
         }
     }
 
-
     parseGroups() {
       const prefix = 'jabref-meta: groupstree:'
       let pos = this.input.indexOf(prefix, this.pos)
@@ -623,26 +622,34 @@ export class BibLatexParser {
       // skip any whitespace after the identifying string */
       while ((this.input.length > this.pos) && ('\r\n '.indexOf(this.input[this.pos]) >= 0)) { this.pos++ }
 
-      // find the end of the comment. This format is too wacky to parse normally, and it doesn't support braces in the comment anyhow. If
-      // you add a brace in a group name (which is totally possible in JabRef) and save, JabRef can't read the file
-      // anymore
-      let end = this.input.indexOf('}', this.pos)
+      let start = this.pos
+      let braces = 1
+      while (this.input.length > this.pos && braces > 0) {
+        switch (this.input[this.pos]) {
+          case '{':
+            braces += 1
+            break
+          case '}':
+            braces -= 1
+        }
+        this.pos++
+      }
 
-      if (!end) { return }
+      // no ending brace found
+      if (braces !== 0) { return }
+
+      // leave the ending brace for the main parser to pick up
+      this.pos--
 
       // simplify parsing by taking the whole comment, throw away newlines, replace the escaped separators with tabs, and
       // then split on the remaining non-secaped separators
-      let lines = this.input.substring(this.pos, end).replace(/[\r\n]/g, '')/*.replace(/\\;/g, '\u2004')*/.split(';')
-      this.pos = end
+      let lines = this.input.substring(start, this.pos).replace(/[\r\n]/g, '').replace(/\\;/g, '\u2004').split(';')
 
       let levels = { '0': { references: [], groups: [] } }
       for (let line of lines) {
         if (line === '') { continue }
         let match = line.match(/^([0-9])\s+([^:]+):(.*)/)
-        if (!match) {
-          console.log(line)
-          return
-        }
+        if (!match) { return }
         let level = parseInt(match[1])
         let type = match[2]
         let references = match[3]
