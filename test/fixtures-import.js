@@ -18,7 +18,7 @@ const verify = bibfile => {
 
   // this must be called before requesting warnings or errors
   let references = parser.output;
-  let found = { references, errors: parser.errors, warnings: parser.warnings };
+  let found = { references, groups: parser.groups, errors: parser.errors, warnings: parser.warnings };
   clean(found)
 
   let expected = path.join(path.dirname(bibfile), name + '.json');

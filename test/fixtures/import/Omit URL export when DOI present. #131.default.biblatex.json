@@ -540,6 +540,17 @@
       }
     }
   },
+  "groups": [
+    {
+      "name": "Omit URL export when DOI present. #131",
+      "groups": [],
+      "references": [
+        "CapEA11",
+        "CumEA14",
+        "TayEA11"
+      ]
+    }
+  ],
   "warnings": [
     {
       "type": "unknown_field",

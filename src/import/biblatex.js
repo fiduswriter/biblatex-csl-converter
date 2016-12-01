@@ -632,7 +632,7 @@ export class BibLatexParser {
 
       // simplify parsing by taking the whole comment, throw away newlines, replace the escaped separators with tabs, and
       // then split on the remaining non-secaped separators
-      let lines = this.input.substring(this.pos, end).replace(/[\r\n]/g, '').replace(/\\;/g, '\t').split(';')
+      let lines = this.input.substring(this.pos, end).replace(/[\r\n]/g, '')/*.replace(/\\;/g, '\u2004')*/.split(';')
       this.pos = end
 
       let levels = { '0': { references: [], groups: [] } }
@@ -646,7 +646,7 @@ export class BibLatexParser {
         let level = parseInt(match[1])
         let type = match[2]
         let references = match[3]
-        references = references ? references.split('\t').filter(key => key) : []
+        references = references ? references.split('\u2004').filter(key => key) : []
         let name = references.shift()
         let intersection = references.shift() // 0 = independent, 1 = intersection, 2 = union
 
