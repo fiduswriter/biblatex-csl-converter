@@ -527,7 +527,7 @@ export class BibLatexParser {
         })
 
         if(typeof bibType === 'undefined') {
-            this.errors.push({
+            this.warnings.push({
                 type: 'unknown_type',
                 type_name: biblatexType
             })
