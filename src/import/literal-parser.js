@@ -15,7 +15,20 @@ const LATEX_VERBATIM_COMMANDS = [ // commands that can only contain plaintext.
     ['\\url{', 'url']
 ]
 
-const LATEX_SPECIAL_CHARS = ['&','%','$', '#','_','{','}',',','~','^','\'']
+const LATEX_SPECIAL_CHARS = {
+    '&': '&',
+    '%': '%',
+    '$': '$',
+    '#': '#',
+    '_': '_',
+    '{': '{',
+    '}': '}',
+    ',': ',',
+    '~': '~',
+    '^': '^',
+    '\'': '\'',
+    ';': '\u2004'
+}
 
 export class BibLatexLiteralParser {
     constructor(string, cpMode = false) {
@@ -116,8 +129,8 @@ export class BibLatexLiteralParser {
                             continue parseString
                         }
                     }
-                    if (LATEX_SPECIAL_CHARS.includes(this.string[this.si+1])) {
-                        this.textNode.text += this.string[this.si+1]
+                    if (LATEX_SPECIAL_CHARS[this.string[this.si+1]]) {
+                        this.textNode.text += LATEX_SPECIAL_CHARS[this.string[this.si+1]]
                         this.si += 2
                     } else {
                         // We don't know the command and skip it.

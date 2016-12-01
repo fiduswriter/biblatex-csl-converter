@@ -368,7 +368,7 @@ export const TeXSpecialChars = [
   ["\\\\varcarriagereturn", '\u23CE'],
   ["\\\\cyrchar\\\\CYRSCHWA", '\u04D8'],
   ["\\\\cyrchar\\\\cyrschwa", '\u04D9'],
-  ["\\\\;|\\\\hspace\\{0\\.33em\\}", '\u2004'],
+  ["\\\\hspace\\{0\\.33em\\}", '\u2004'],
   ["\\\\hspace\\{0\\.25em\\}", '\u2005'],
   ["\\\\textquotedblright", '\u201D'],
   ["\\\\textthreequarters", '\u00BE'],
