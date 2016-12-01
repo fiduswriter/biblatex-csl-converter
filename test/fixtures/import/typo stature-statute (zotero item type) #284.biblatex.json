@@ -59,13 +59,11 @@
       }
     }
   },
-  "errors": [
+  "warnings": [
     {
       "type": "unknown_type",
       "type_name": "legislation"
-    }
-  ],
-  "warnings": [
+    },
     {
       "type": "unexpected_field",
       "entry": "_loi_2009",

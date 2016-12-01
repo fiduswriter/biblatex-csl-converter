@@ -376,12 +376,6 @@
       }
     }
   },
-  "errors": [
-    {
-      "type": "unknown_type",
-      "type_name": "jurisdiction"
-    }
-  ],
   "warnings": [
     {
       "type": "unknown_date",
@@ -449,6 +443,10 @@
       "type": "unknown_field",
       "entry": "pollard_bicycle_2007",
       "field_name": "year"
+    },
+    {
+      "type": "unknown_type",
+      "type_name": "jurisdiction"
     },
     {
       "type": "unexpected_field",

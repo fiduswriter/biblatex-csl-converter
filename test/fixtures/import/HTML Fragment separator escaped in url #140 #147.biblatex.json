@@ -67,13 +67,11 @@
       }
     }
   },
-  "errors": [
+  "warnings": [
     {
       "type": "unknown_type",
       "type_name": "archived"
-    }
-  ],
-  "warnings": [
+    },
     {
       "type": "unknown_field",
       "entry": "MacFarlaneJohna",

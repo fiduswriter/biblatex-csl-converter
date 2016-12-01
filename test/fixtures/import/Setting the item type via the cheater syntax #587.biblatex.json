@@ -415,24 +415,6 @@
       }
     }
   },
-  "errors": [
-    {
-      "type": "unknown_type",
-      "type_name": "data"
-    },
-    {
-      "type": "unknown_type",
-      "type_name": "audio"
-    },
-    {
-      "type": "unknown_type",
-      "type_name": "review"
-    },
-    {
-      "type": "unknown_type",
-      "type_name": "review"
-    }
-  ],
   "warnings": [
     {
       "type": "unexpected_field",
@@ -445,6 +427,10 @@
       "field_name": "timestamp"
     },
     {
+      "type": "unknown_type",
+      "type_name": "data"
+    },
+    {
       "type": "unexpected_field",
       "entry": "_object_????",
       "field_name": "journaltitle"
@@ -453,6 +439,10 @@
       "type": "unknown_field",
       "entry": "_object_????",
       "field_name": "timestamp"
+    },
+    {
+      "type": "unknown_type",
+      "type_name": "audio"
     },
     {
       "type": "unexpected_field",
@@ -473,6 +463,10 @@
       "type": "unknown_field",
       "entry": "mozart_sonatas_1960",
       "field_name": "timestamp"
+    },
+    {
+      "type": "unknown_type",
+      "type_name": "review"
     },
     {
       "type": "unexpected_field",
@@ -513,6 +507,10 @@
       "type": "unexpected_field",
       "entry": "ratliff_mystery_1999",
       "field_name": "volume"
+    },
+    {
+      "type": "unknown_type",
+      "type_name": "review"
     },
     {
       "type": "unexpected_field",

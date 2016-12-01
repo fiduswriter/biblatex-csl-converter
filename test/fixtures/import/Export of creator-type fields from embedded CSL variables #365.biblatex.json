@@ -486,25 +486,11 @@
       }
     }
   },
-  "errors": [
+  "warnings": [
     {
       "type": "unknown_type",
       "type_name": "movie"
     },
-    {
-      "type": "unknown_type",
-      "type_name": "video"
-    },
-    {
-      "type": "unknown_type",
-      "type_name": "video"
-    },
-    {
-      "type": "unknown_type",
-      "type_name": "video"
-    }
-  ],
-  "warnings": [
     {
       "type": "unknown_field",
       "entry": "Doe2015",
@@ -531,6 +517,10 @@
       "field_name": "timestamp"
     },
     {
+      "type": "unknown_type",
+      "type_name": "video"
+    },
+    {
       "type": "unknown_field",
       "entry": "Kubrick1964",
       "field_name": "director"
@@ -544,6 +534,10 @@
       "type": "unknown_field",
       "entry": "Kubrick1964",
       "field_name": "timestamp"
+    },
+    {
+      "type": "unknown_type",
+      "type_name": "video"
     },
     {
       "type": "unexpected_field",
@@ -589,6 +583,10 @@
       "type": "unexpected_field",
       "entry": "friends:leia:tv",
       "field_name": "volume"
+    },
+    {
+      "type": "unknown_type",
+      "type_name": "video"
     },
     {
       "type": "unexpected_field",

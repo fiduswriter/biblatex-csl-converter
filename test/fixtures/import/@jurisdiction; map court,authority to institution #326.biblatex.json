@@ -67,13 +67,11 @@
       }
     }
   },
-  "errors": [
+  "warnings": [
     {
       "type": "unknown_type",
       "type_name": "jurisdiction"
-    }
-  ],
-  "warnings": [
+    },
     {
       "type": "unexpected_field",
       "entry": "_dalain_2010",
