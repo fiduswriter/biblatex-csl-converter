@@ -1,6 +1,6 @@
 {
   "name": "biblatex-csl-converter",
-  "version": "0.16.2",
+  "version": "0.17.5",
   "description": "a set of converters: biblatex => json, json => biblatex, json => CSL",
   "main": "lib/index.js",
   "repository": {
@@ -37,7 +37,9 @@
     "coveralls": "jscoverage lib && YOURPACKAGE_COVERAGE=1 nodeunit --reporter=lcov test | coveralls"
   },
   "dependencies": {
-    "babel-runtime": "^6.18.0"
+    "babel-runtime": "^6.18.0",
+    "nearley": "^2.5.0",
+    "randexp": "^0.4.2"
   },
   "devDependencies": {
     "edtf": "^2.0.1",
