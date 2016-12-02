@@ -134,7 +134,7 @@
         "abstract": [
           {
             "type": "text",
-            "text": "Example from CMoS, 16e, 14.269\n“Prepared from the autographs and earliest printed sources by Nathan\nBroder”"
+            "text": "Example from CMoS, 16e, 14.269 “Prepared from the autographs and earliest printed sources by Nathan Broder”"
           }
         ],
         "author": [
@@ -223,7 +223,7 @@
         "abstract": [
           {
             "type": "text",
-            "text": "Example from CMoS, 16e, 14.215\n“ed. and trans. John Charles Chasteen”"
+            "text": "Example from CMoS, 16e, 14.215 “ed. and trans. John Charles Chasteen”"
           }
         ],
         "author": [
@@ -289,7 +289,7 @@
         "annotation": [
           {
             "type": "text",
-            "text": "biblatex-chicago example, adapted from http://mirrors.ctan.org/macros/latex/contrib/biblatex-contrib/biblatex-chicago/doc/examples/dates-test.bib\nOriginal annotation:\n*16th edition only.* A Review entry presenting a review from a scholarly journaltitle, hence no entrysubtype needed.  Note the bibstrings in the title of the review, and the formatting of the title of the book reviewed there.  Also note the use of $parteditandtrans.  The author-date system doesn't absolutely require the use of these mechanisms, which were invented to cope with the differences between notes and bibliography in the other Chicago style.  Still, although simply writing \"edited and translated by\" yourself will suffice, using these mechanisms will make your .bib file work across multiple languages, and will also allow it to work, with fewer modifications, in the notes $& bibliography style, should that be needed.  See next entry.\n \nExample from CMoS, 16e, 14.125"
+            "text": "biblatex-chicago example, adapted from http://mirrors.ctan.org/macros/latex/contrib/biblatex-contrib/biblatex-chicago/doc/examples/dates-test.bib Original annotation: *16th edition only.* A Review entry presenting a review from a scholarly journaltitle, hence no entrysubtype needed.  Note the bibstrings in the title of the review, and the formatting of the title of the book reviewed there.  Also note the use of $parteditandtrans.  The author-date system doesn't absolutely require the use of these mechanisms, which were invented to cope with the differences between notes and bibliography in the other Chicago style.  Still, although simply writing \"edited and translated by\" yourself will suffice, using these mechanisms will make your .bib file work across multiple languages, and will also allow it to work, with fewer modifications, in the notes $& bibliography style, should that be needed.  See next entry.   Example from CMoS, 16e, 14.125"
           }
         ],
         "editora": [

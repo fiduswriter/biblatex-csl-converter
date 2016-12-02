@@ -256,6 +256,21 @@ export class BibLatexLiteralParser {
                     this.addNewTextNode()
                     this.si = sj + 1
                     break
+                case '\r':
+                    this.si++
+                    break
+                case '\n':
+                    if (['\r','\n'].includes(this.string[this.si+1]) || (
+                            this.textNode.text.length &&
+                            this.textNode.text[this.textNode.text.length-1] === '\n'
+                        )
+                    ) {
+                        this.textNode.text += '\n'
+                    } else {
+                        this.textNode.text += ' '
+                    }
+                    this.si++
+                    break
                 default:
                     this.textNode.text += this.string[this.si]
                     this.si++
