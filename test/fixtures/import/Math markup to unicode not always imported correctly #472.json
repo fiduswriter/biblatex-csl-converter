@@ -323,7 +323,7 @@
         ]
       },
       "raw_fields": {
-        "title": "{T}est {T}itle with space  quad, space semi-colon, space colon, space comma, space~nbsp",
+        "title": "{T}est {T}itle with space  quad, space\\;semi-colon, space colon, space comma, space~nbsp",
         "author": "Doe, J. and Smith, R.",
         "booktitle": "%IEEE_J_PROC%",
         "year": "2016",

@@ -462,6 +462,7 @@ export class BibLatexParser {
                     oFields[fKey] = this._reformNameList(fValue)
                     break
                 default:
+                    // Something must be wrong in the code.
                     console.warn(`Unrecognized type: ${fType}!`)
             }
         }
@@ -643,10 +644,11 @@ export class BibLatexParser {
 
       // simplify parsing by taking the whole comment, throw away newlines, replace the escaped separators with tabs, and
       // then split on the remaining non-secaped separators
-      // \u2004 is magic because \; is replaced by \u2004 in the earliest phase of the parser. I re-replace it here
-      // because \\\n; is not picked up by the previous phase
-      let lines = this.input.substring(start, this.pos).replace(/[\r\n]/g, '').replace(/\\;/g, '\u2004').split(';')
-
+      // I use \u2004 to protect \; and \u2005 to protect \\\; (the escaped version of ';') when splitting lines at ;
+      let lines = this.input.substring(start, this.pos).replace(/[\r\n]/g, '').replace(/\\\\\\;/g, '\u2005').replace(/\\;/g, '\u2004').split(';')
+      lines = lines.map(line => {
+          return line.replace(/\u2005/g,';')
+      })
       let levels = { '0': { references: [], groups: [] } }
       for (let line of lines) {
         if (line === '') { continue }
@@ -669,7 +671,10 @@ export class BibLatexParser {
 
         // treat all groups as explicit
         if (type != 'ExplicitGroup') {
-          console.log(`warning: jabref group type ${type} is not supported`)
+            this.warnings.push({
+                type: 'unsupported_jabref_group',
+                group_type: type
+            })
         }
 
         switch (intersection) {
