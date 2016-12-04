@@ -170,9 +170,8 @@ export class BibLatexParser {
     valueQuotes() {
         this.match('"')
         let start = this.pos
-        while (true) {
-            if (this.input[this.pos] == '"' && this.input[this.pos - 1] !=
-                '\\') {
+        while (this.pos < this.input.length) {
+            if (this.input[this.pos] === '"' && this.input[this.pos - 1] != '\\') {
                 let end = this.pos
                 this.match('"')
                 return this.input.substring(start, end)
@@ -236,7 +235,17 @@ export class BibLatexParser {
     }
 
     keyEqualsValue() {
-        this.currentKey = this.key().toLowerCase()
+        let key = this.key()
+        if (!key) {
+            this.errors.push({
+                type: 'cut_off_citation',
+                entry: this.currentEntry['entry_key']
+            })
+            // The citation is not full, we remove the existing parts.
+            this.currentEntry['incomplete'] = true
+            return
+        }
+        this.currentKey = key.toLowerCase()
         if (this.tryMatch("=")) {
             this.match("=")
             let val = this.value()
