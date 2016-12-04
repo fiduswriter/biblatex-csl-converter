@@ -38,7 +38,7 @@ export const BibFieldTypes = {
     'bookpagination': {
         type: 'f_key',
         biblatex: 'bookpagination',
-        localization: 'pagination'
+        options: ['page', 'column', 'section', 'paragraph', 'verse', 'line']
     },
     'booksubtitle': {
         type: 'f_title',
@@ -96,19 +96,23 @@ export const BibFieldTypes = {
     },
     'editortype': {
         type: 'f_key',
-        biblatex: 'editortype'
+        biblatex: 'editortype',
+        options: ['editor', 'compiler', 'founder', 'continuator', 'redactor', 'reviser', 'collaborator']
     },
     'editoratype': {
         type: 'f_key',
-        biblatex: 'editoratype'
+        biblatex: 'editoratype',
+        options: ['editor', 'compiler', 'founder', 'continuator', 'redactor', 'reviser', 'collaborator']
     },
     'editorbtype': {
         type: 'f_key',
-        biblatex: 'editorbtype'
+        biblatex: 'editorbtype',
+        options: ['editor', 'compiler', 'founder', 'continuator', 'redactor', 'reviser', 'collaborator']
     },
     'editorctype': {
         type: 'f_key',
-        biblatex: 'editorctype'
+        biblatex: 'editorctype',
+        options: ['editor', 'compiler', 'founder', 'continuator', 'redactor', 'reviser', 'collaborator']
     },
     'eid': {
         type: 'f_literal',
@@ -306,7 +310,7 @@ export const BibFieldTypes = {
     'pagination': {
         type: 'f_key',
         biblatex: 'pagination',
-        localization: 'pagination'
+        options: ['page', 'column', 'section', 'paragraph', 'verse', 'line']
     },
     'part': {
         type: 'f_literal',
@@ -321,7 +325,7 @@ export const BibFieldTypes = {
         type: 'f_key',
         biblatex: 'pubstate',
         csl: 'status',
-        localization: 'publication_state'
+        options: ['inpreparation', 'submitted', 'forthcoming', 'inpress', 'prepublished']
     },
     'reprinttitle': {
         type: 'f_literal',
@@ -383,7 +387,7 @@ export const BibFieldTypes = {
     'type': {
         type: 'f_key',
         biblatex: 'type',
-        localization: 'types'
+        options: ['manual', 'patent', 'report', 'thesis', 'mathesis', 'phdthesis', 'candthesis', 'techreport', 'resreport', 'software', 'datacd', 'audiocd']
     },
     'url': {
         type: 'f_uri',
