@@ -1,0 +1,48 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "article",
+      "entry_key": "RID:1118130922631-13",
+      "fields": {
+        "date": "2003",
+        "title": [ { "type": "text", "text": "Synthesis and structural characterization of unprecedented bis-asymmetric heteroscorpionate U(III) complexes: [U" }, { "type": "text", "text": "kappa(3)-H2B(pz(tBu),(Me))(pz(Me,tBu))", "marks": [ { "type": "nocase" } ] }, { "type": "text", "text": "(2)I] and [U" }, { "type": "text", "text": "kappa(3) -H2B(pz(tBu,Me))( pz(Me2))", "marks": [ { "type": "nocase" } ] }, { "type": "text", "text": "(2)I]" } ],
+        "journaltitle": [ { "type": "text", "text": "Inorganic Chemistry" } ],
+        "author": [
+          {
+            "family": [ { "type": "text", "text": "Maria" } ],
+            "given": [ { "type": "text", "text": "L" } ]
+          },
+          {
+            "family": [ { "type": "text", "text": "Domingos" } ],
+            "given": [ { "type": "text", "text": "A" } ]
+          },
+          {
+            "family": [ { "type": "text", "text": "Santos" } ],
+            "given": [ { "type": "text", "text": "I" } ]
+          }
+        ],
+        "volume": [ { "type": "text", "text": "42" } ],
+        "number": [ { "type": "text", "text": "10" } ]
+      },
+      "raw_fields": {
+        "title": "Synthesis and structural characterization of unprecedented bis-asymmetric heteroscorpionate U(III) complexes: [U{kappa(3)-H2B(pz(tBu),(Me))(pz(Me,tBu))}(2)I] and [U{kappa(3) -H2B(pz(tBu,Me))( pz(Me2))}(2)I]",
+        "journal": "Inorganic Chemistry",
+        "year": "2003",
+        "author": "Maria, L and Domingos, A and Santos, I",
+        "volume": "42",
+        "number": "10",
+        "pages": "3323-3330"
+      },
+      "unknown_fields": {
+        "year": [ { "type": "text", "text": "2003" } ]
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "entry": "RID:1118130922631-13",
+      "field_name": "year"
+    }
+  ]
+}

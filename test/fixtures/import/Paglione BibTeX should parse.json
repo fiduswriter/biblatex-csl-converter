@@ -1,0 +1,6152 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "article",
+      "entry_key": "paglione2001mapping",
+      "fields": {
+        "date": "2001",
+        "title": [ { "type": "text", "text": "A Mapping Survey of the 13CO and 12CO Emission in Galaxies" } ],
+        "author": [
+          {
+            "family": [ { "type": "text", "text": "Paglione" } ],
+            "given": [ { "type": "text", "text": "T.A.D." } ]
+          },
+          {
+            "family": [ { "type": "text", "text": "Wall" } ],
+            "given": [ { "type": "text", "text": "WF" } ]
+          },
+          {
+            "family": [ { "type": "text", "text": "Young" } ],
+            "given": [ { "type": "text", "text": "J.S." } ]
+          },
+          {
+            "family": [ { "type": "text", "text": "Heyer" } ],
+            "given": [ { "type": "text", "text": "M.H." } ]
+          },
+          {
+            "family": [ { "type": "text", "text": "Richard" } ],
+            "given": [ { "type": "text", "text": "M." } ]
+          },
+          {
+            "family": [ { "type": "text", "text": "Goldstein" } ],
+            "given": [ { "type": "text", "text": "M." } ]
+          },
+          {
+            "family": [ { "type": "text", "text": "Kaufman" } ],
+            "given": [ { "type": "text", "text": "Z." } ]
+          },
+          {
+            "family": [ { "type": "text", "text": "Nantais" } ],
+            "given": [ { "type": "text", "text": "J." } ]
+          },
+          {
+            "family": [ { "type": "text", "text": "Perry" } ],
+            "given": [ { "type": "text", "text": "G." } ]
+          }
+        ],
+        "journaltitle": [ { "type": "text", "text": "The Astrophysical Journal Supplement Series" } ],
+        "volume": [ { "type": "text", "text": "135" } ]
+      },
+      "raw_fields": {
+        "title": "A Mapping Survey of the 13CO and 12CO Emission in Galaxies",
+        "author": "Paglione, T.A.D. and Wall, WF and Young, J.S. and Heyer, M.H. and Richard, M. and Goldstein, M. and Kaufman, Z. and Nantais, J. and Perry, G.",
+        "journal": "The Astrophysical Journal Supplement Series",
+        "volume": "135",
+        "pages": "183",
+        "year": "2001",
+        "publisher": "IOP Publishing"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "2001"
+          }
+        ]
+      },
+      "unexpected_fields": {
+        "publisher": [ [ { "type": "text", "text": "IOP Publishing" } ] ]
+      }
+    },
+    "1": {
+      "bib_type": "article",
+      "entry_key": "jackson418nguyen",
+      "fields": {
+        "title": [ { "type": "text", "text": "Nguyen-Q-Rieu. 1993" } ],
+        "author": [
+          {
+            "family": [ { "type": "text", "text": "Jackson" } ],
+            "given": [ { "type": "text", "text": "J.M." } ]
+          },
+          {
+            "family": [ { "type": "text", "text": "Paglione" } ],
+            "given": [ { "type": "text", "text": "T.A.D." } ]
+          },
+          {
+            "family": [ { "type": "text", "text": "Ishizuki" } ],
+            "given": [ { "type": "text", "text": "S." } ]
+          }
+        ],
+        "journaltitle": [ { "type": "text", "text": "ApJ" } ],
+        "volume": [ { "type": "text", "text": "418" } ]
+      },
+      "raw_fields": {
+        "title": "Nguyen-Q-Rieu. 1993",
+        "author": "Jackson, J.M. and Paglione, T.A.D. and Ishizuki, S.",
+        "journal": "ApJ",
+        "volume": "418",
+        "pages": "L13"
+      }
+    },
+    "2": {
+      "bib_type": "article",
+      "entry_key": "jackson1996hcn",
+      "fields": {
+        "date": "1996",
+        "title": [ { "type": "text", "text": "HCN and CO in the Central 630 Parsecs of the Galaxy" } ],
+        "author": [
+          {
+            "family": [ { "type": "text", "text": "Jackson" } ],
+            "given": [ { "type": "text", "text": "J.M." } ]
+          },
+          {
+            "family": [ { "type": "text", "text": "Heyer" } ],
+            "given": [ { "type": "text", "text": "M.H." } ]
+          },
+          {
+            "family": [ { "type": "text", "text": "Paglione" } ],
+            "given": [ { "type": "text", "text": "T.A.D." } ]
+          },
+          {
+            "family": [ { "type": "text", "text": "Bolatto" } ],
+            "given": [ { "type": "text", "text": "A.D." } ]
+          }
+        ],
+        "journaltitle": [ { "type": "text", "text": "The Astrophysical Journal Letters" } ],
+        "volume": [ { "type": "text", "text": "456" } ]
+      },
+      "raw_fields": {
+        "title": "HCN and CO in the Central 630 Parsecs of the Galaxy",
+        "author": "Jackson, J.M. and Heyer, M.H. and Paglione, T.A.D. and Bolatto, A.D.",
+        "journal": "The Astrophysical Journal Letters",
+        "volume": "456",
+        "pages": "L91",
+        "year": "1996",
+        "publisher": "IOP Publishing"
+      },
+      "unknown_fields": {
+        "year": [ { "type": "text", "text": "1996" } ]
+      },
+      "unexpected_fields": {
+        "publisher": [ [ { "type": "text", "text": "IOP Publishing" } ] ]
+      }
+    },
+    "3": {
+      "bib_type": "article",
+      "entry_key": "paglione1996diffuse",
+      "fields": {
+        "date": "1996",
+        "title": [ { "type": "text", "text": "Diffuse Gamma-Ray Emission from the Starburst Galaxy NGC 253" } ],
+        "author": [
+          {
+            "family": [ { "type": "text", "text": "Paglione" } ],
+            "given": [ { "type": "text", "text": "T.A.D." } ]
+          },
+          {
+            "family": [ { "type": "text", "text": "Marscher" } ],
+            "given": [ { "type": "text", "text": "A.P." } ]
+          },
+          {
+            "family": [ { "type": "text", "text": "Jackson" } ],
+            "given": [ { "type": "text", "text": "J.M." } ]
+          },
+          {
+            "family": [ { "type": "text", "text": "Bertsch" } ],
+            "given": [ { "type": "text", "text": "D.L." } ]
+          }
+        ],
+        "journaltitle": [ { "type": "text", "text": "The Astrophysical Journal" } ],
+        "volume": [ { "type": "text", "text": "460" } ]
+      },
+      "raw_fields": {
+        "title": "Diffuse Gamma-Ray Emission from the Starburst Galaxy NGC 253",
+        "author": "Paglione, T.A.D. and Marscher, A.P. and Jackson, J.M. and Bertsch, D.L.",
+        "journal": "The Astrophysical Journal",
+        "volume": "460",
+        "pages": "295",
+        "year": "1996"
+      },
+      "unknown_fields": {
+        "year": [ { "type": "text", "text": "1996" } ]
+      }
+    },
+    "4": {
+      "bib_type": "article",
+      "entry_key": "paglione1995distribution",
+      "fields": {
+        "date": "1995",
+        "title": [ { "type": "text", "text": "The Distribution of the Dense Clouds in the Starburst Nucleus of NGC 253" } ],
+        "author": [
+          {
+            "family": [ { "type": "text", "text": "Paglione" } ],
+            "given": [ { "type": "text", "text": "T.A.D." } ]
+          },
+          {
+            "family": [ { "type": "text", "text": "Tosaki" } ],
+            "given": [ { "type": "text", "text": "T." } ]
+          },
+          {
+            "family": [ { "type": "text", "text": "Jackson" } ],
+            "given": [ { "type": "text", "text": "J.M." } ]
+          }
+        ],
+        "journaltitle": [ { "type": "text", "text": "The Astrophysical Journal Letters" } ],
+        "volume": [ { "type": "text", "text": "454" } ]
+      },
+      "raw_fields": {
+        "title": "The Distribution of the Dense Clouds in the Starburst Nucleus of NGC 253",
+        "author": "Paglione, T.A.D. and Tosaki, T. and Jackson, J.M.",
+        "journal": "The Astrophysical Journal Letters",
+        "volume": "454",
+        "pages": "L117",
+        "year": "1995",
+        "publisher": "IOP Publishing"
+      },
+      "unknown_fields": {
+        "year": [ { "type": "text", "text": "1995" } ]
+      },
+      "unexpected_fields": {
+        "publisher": [ [ { "type": "text", "text": "IOP Publishing" } ] ]
+      }
+    },
+    "5": {
+      "bib_type": "article",
+      "entry_key": "blom1999diffuse",
+      "fields": {
+        "date": "1999",
+        "title": [ { "type": "text", "text": "Diffuse gamma-ray emission from starburst galaxies and M31" } ],
+        "author": [
+          {
+            "family": [ { "type": "text", "text": "Blom" } ],
+            "given": [ { "type": "text", "text": "J.J." } ]
+          },
+          {
+            "family": [ { "type": "text", "text": "Paglione" } ],
+            "given": [ { "type": "text", "text": "T.A.D." } ]
+          },
+          {
+            "prefix isn't parsed correctly": true,
+            "prefix": [ { "type": "text", "text": "Carrami nana" } ],
+            "useprefix": true,
+            "family": [],
+            "given": [ { "type": "text", "text": "A." } ]
+          }
+        ],
+        "journaltitle": [ { "type": "text", "text": "The Astrophysical Journal" } ],
+        "volume": [ { "type": "text", "text": "516" } ]
+      },
+      "raw_fields": {
+        "title": "Diffuse gamma-ray emission from starburst galaxies and M31",
+        "author": "Blom, J.J. and Paglione, T.A.D. and Carrami{~n}ana, A.",
+        "journal": "The Astrophysical Journal",
+        "volume": "516",
+        "pages": "744",
+        "year": "1999",
+        "publisher": "IOP Publishing"
+      },
+      "unknown_fields": {
+        "year": [ { "type": "text", "text": "1999" } ]
+      },
+      "unexpected_fields": {
+        "publisher": [ [ { "type": "text", "text": "IOP Publishing" } ] ]
+      }
+    },
+    "6": {
+      "bib_type": "article",
+      "entry_key": "smolvcic2009cosmic",
+      "fields": {
+        "date": "2009",
+        "title": [ { "type": "text", "text": "Cosmic evolution of radio selected active galactic nuclei in the COSMOS field" } ],
+        "author": [
+          {
+            "prefix problem": true,
+            "prefix": [ { "type": "text", "text": "Smol ci'c" } ],
+            "useprefix": true,
+            "family": [],
+            "given": [ { "type": "text", "text": "V." } ]
+          },
+          {
+            "family": [ { "type": "text", "text": "Zamorani" } ],
+            "given": [ { "type": "text", "text": "G." } ]
+          },
+          {
+            "family": [ { "type": "text", "text": "Schinnerer" } ],
+            "given": [ { "type": "text", "text": "E." } ]
+          },
+          {
+            "family": [ { "type": "text", "text": "Bardelli" } ],
+            "given": [ { "type": "text", "text": "S." } ]
+          },
+          {
+            "family": [ { "type": "text", "text": "Bondi" } ],
+            "given": [ { "type": "text", "text": "M." } ]
+          },
+          {
+            "family": [ { "type": "text", "text": "B" }, { "type": "text", "text": "i", "marks": [ { "type": "sup" } ] }, { "type": "text", "text": "rzan" } ],
+            "given": [ { "type": "text", "text": "L." } ]
+          },
+          {
+            "family": [ { "type": "text", "text": "Carilli" } ],
+            "given": [ { "type": "text", "text": "CL" } ]
+          },
+          {
+            "family": [ { "type": "text", "text": "Ciliegi" } ],
+            "given": [ { "type": "text", "text": "P." } ]
+          },
+          {
+            "family": [ { "type": "text", "text": "Elvis" } ],
+            "given": [ { "type": "text", "text": "M." } ]
+          },
+          {
+            "family": [ { "type": "text", "text": "Impey" } ],
+            "given": [ { "type": "text", "text": "CD" } ]
+          },
+          {
+            "literal": [ { "type": "text", "text": "others" } ]
+          }
+        ],
+        "journaltitle": [ { "type": "text", "text": "The Astrophysical Journal" } ],
+        "volume": [ { "type": "text", "text": "696" } ]
+      },
+      "raw_fields": {
+        "title": "Cosmic evolution of radio selected active galactic nuclei in the COSMOS field",
+        "author": "Smol{\u000b{c}}i{'c}, V. and Zamorani, G. and Schinnerer, E. and Bardelli, S. and Bondi, M. and B{^i}rzan, L. and Carilli, CL and Ciliegi, P. and Elvis, M. and Impey, CD and others",
+        "journal": "The Astrophysical Journal",
+        "volume": "696",
+        "pages": "24",
+        "year": "2009",
+        "publisher": "IOP Publishing"
+      },
+      "unknown_fields": {
+        "year": [ { "type": "text", "text": "2009" } ]
+      },
+      "unexpected_fields": {
+        "publisher": [ [ { "type": "text", "text": "IOP Publishing" } ] ]
+      }
+    },
+    "7": {
+      "bib_type": "article",
+      "entry_key": "paglione1997average",
+      "fields": {
+        "date": "1997",
+        "title": [ { "type": "text", "text": "The average properties of the dense molecular gas in galaxies" } ],
+        "author": [
+          {
+            "family": [ { "type": "text", "text": "Paglione" } ],
+            "given": [ { "type": "text", "text": "T.A.D." } ]
+          },
+          {
+            "family": [ { "type": "text", "text": "Jackson" } ],
+            "given": [ { "type": "text", "text": "J.M." } ]
+          },
+          {
+            "family": [ { "type": "text", "text": "Ishizuki" } ],
+            "given": [ { "type": "text", "text": "S." } ]
+          }
+        ],
+        "journaltitle": [ { "type": "text", "text": "The Astrophysical Journal" } ],
+        "volume": [ { "type": "text", "text": "484" } ]
+      },
+      "raw_fields": {
+        "title": "The average properties of the dense molecular gas in galaxies",
+        "author": "Paglione, T.A.D. and Jackson, J.M. and Ishizuki, S.",
+        "journal": "The Astrophysical Journal",
+        "volume": "484",
+        "pages": "656",
+        "year": "1997",
+        "publisher": "IOP Publishing"
+      },
+      "unknown_fields": {
+        "year": [ { "type": "text", "text": "1997" } ]
+      },
+      "unexpected_fields": {
+        "publisher": [ [ { "type": "text", "text": "IOP Publishing" } ] ]
+      }
+    },
+    "8": {
+      "bib_type": "article",
+      "entry_key": "jackson1995submillimeter",
+      "fields": {
+        "date": "1995",
+        "title": [ { "type": "text", "text": "Submillimeter HCN and HCO (+) emission from galaxies" } ],
+        "author": [
+          {
+            "family": [ { "type": "text", "text": "Jackson" } ],
+            "given": [ { "type": "text", "text": "J.M." } ]
+          },
+          {
+            "family": [ { "type": "text", "text": "Paglione" } ],
+            "given": [ { "type": "text", "text": "T.A.D." } ]
+          },
+          {
+            "family": [ { "type": "text", "text": "Carlstrom" } ],
+            "given": [ { "type": "text", "text": "J.E." } ]
+          },
+          {
+            "family": [ { "type": "text", "text": "Rieu" } ],
+            "given": [ { "type": "text", "text": "N.Q." } ]
+          }
+        ],
+        "journaltitle": [ { "type": "text", "text": "The Astrophysical Journal" } ],
+        "volume": [ { "type": "text", "text": "438" } ]
+      },
+      "raw_fields": {
+        "title": "Submillimeter HCN and HCO (+) emission from galaxies",
+        "author": "Jackson, J.M. and Paglione, T.A.D. and Carlstrom, J.E. and Rieu, N.Q.",
+        "journal": "The Astrophysical Journal",
+        "volume": "438",
+        "pages": "695--701",
+        "year": "1995"
+      },
+      "unknown_fields": {
+        "year": [ { "type": "text", "text": "1995" } ]
+      }
+    },
+    "9": {
+      "bib_type": "article",
+      "entry_key": "paglione1998interpreting",
+      "fields": {
+        "date": "1998",
+        "title": [ { "type": "text", "text": "Interpreting the HCN/CO intensity ratio in the galactic center" } ],
+        "author": [
+          {
+            "family": [ { "type": "text", "text": "Paglione" } ],
+            "given": [ { "type": "text", "text": "T.A.D." } ]
+          },
+          {
+            "family": [ { "type": "text", "text": "Jackson" } ],
+            "given": [ { "type": "text", "text": "J.M." } ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Bolatto"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "A.D."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Heyer"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "M.H."
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "The Astrophysical Journal"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "493"
+          }
+        ]
+      },
+      "raw_fields": {
+        "title": "Interpreting the HCN/CO intensity ratio in the galactic center",
+        "author": "Paglione, T.A.D. and Jackson, J.M. and Bolatto, A.D. and Heyer, M.H.",
+        "journal": "The Astrophysical Journal",
+        "volume": "493",
+        "pages": "680",
+        "year": "1998",
+        "publisher": "IOP Publishing"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "1998"
+          }
+        ]
+      },
+      "unexpected_fields": {
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "IOP Publishing"
+            }
+          ]
+        ]
+      }
+    },
+    "10": {
+      "bib_type": "article",
+      "entry_key": "smolvcic2009dust",
+      "fields": {
+        "date": "2009",
+        "title": [
+          {
+            "type": "text",
+            "text": "The Dust-Unbiased Cosmic Star-Formation History from the 20 CM VLA-COSMOS Survey"
+          }
+        ],
+        "author": [
+          {
+            "prefix": [
+              {
+                "type": "text",
+                "text": "Smol ci'c"
+              }
+            ],
+            "useprefix": true,
+            "family": [],
+            "given": [
+              {
+                "type": "text",
+                "text": "V."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Schinnerer"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "E."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Zamorani"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "G."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Bell"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "EF"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Bondi"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "M."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Carilli"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "CL"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Ciliegi"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "P."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Mobasher"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "B."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Paglione"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "T."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Scodeggio"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "M."
+              }
+            ]
+          },
+          {
+            "literal": [
+              {
+                "type": "text",
+                "text": "others"
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "The Astrophysical Journal"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "690"
+          }
+        ]
+      },
+      "raw_fields": {
+        "title": "The Dust-Unbiased Cosmic Star-Formation History from the 20 CM VLA-COSMOS Survey",
+        "author": "Smol{\u000b{c}}i{'c}, V. and Schinnerer, E. and Zamorani, G. and Bell, EF and Bondi, M. and Carilli, CL and Ciliegi, P. and Mobasher, B. and Paglione, T. and Scodeggio, M. and others",
+        "journal": "The Astrophysical Journal",
+        "volume": "690",
+        "pages": "610",
+        "year": "2009",
+        "publisher": "IOP Publishing"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "2009"
+          }
+        ]
+      },
+      "unexpected_fields": {
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "IOP Publishing"
+            }
+          ]
+        ]
+      }
+    },
+    "11": {
+      "bib_type": "article",
+      "entry_key": "jackson1993dense",
+      "fields": {
+        "date": "1993",
+        "title": [
+          {
+            "type": "text",
+            "text": "Dense molecular gas toward the nucleus of the Seyfert galaxy NGC 1068"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Jackson"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "J.M."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Paglione"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "T.A.D."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Ishizuki"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "S."
+              }
+            ]
+          },
+          {
+            "literal": [
+              {
+                "type": "text",
+                "text": "others"
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "The Astrophysical Journal"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "418"
+          }
+        ]
+      },
+      "raw_fields": {
+        "title": "Dense molecular gas toward the nucleus of the Seyfert galaxy NGC 1068",
+        "author": "Jackson, J.M. and Paglione, T.A.D. and Ishizuki, S. and others",
+        "journal": "The Astrophysical Journal",
+        "volume": "418",
+        "pages": "L13",
+        "year": "1993"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "1993"
+          }
+        ]
+      }
+    },
+    "12": {
+      "bib_type": "article",
+      "entry_key": "paglione2004structure",
+      "fields": {
+        "date": "2004",
+        "title": [
+          {
+            "type": "text",
+            "text": "The structure, kinematics, and physical properties of the molecular gas in the starburst nucleus of NGC 253"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Paglione"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "T.A.D."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Yam"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "O."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Tosaki"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "T."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Jackson"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "J.M."
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "The Astrophysical Journal"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "611"
+          }
+        ]
+      },
+      "raw_fields": {
+        "title": "The structure, kinematics, and physical properties of the molecular gas in the starburst nucleus of NGC 253",
+        "author": "Paglione, T.A.D. and Yam, O. and Tosaki, T. and Jackson, J.M.",
+        "journal": "The Astrophysical Journal",
+        "volume": "611",
+        "pages": "835",
+        "year": "2004",
+        "publisher": "IOP Publishing"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "2004"
+          }
+        ]
+      },
+      "unexpected_fields": {
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "IOP Publishing"
+            }
+          ]
+        ]
+      }
+    },
+    "13": {
+      "bib_type": "article",
+      "entry_key": "kraemer19972000",
+      "fields": {
+        "date": "1997",
+        "title": [
+          {
+            "type": "text",
+            "text": "A 2000 M Rotating Molecular Disk Around NGC 6334A"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Kraemer"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "K.E."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Jackson"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "J.M."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Paglione"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "T.A.D."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Bolatto"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "A.D."
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "The Astrophysical Journal"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "478"
+          }
+        ]
+      },
+      "raw_fields": {
+        "title": "A 2000 M Rotating Molecular Disk Around NGC 6334A",
+        "author": "Kraemer, K.E. and Jackson, J.M. and Paglione, T.A.D. and Bolatto, A.D.",
+        "journal": "The Astrophysical Journal",
+        "volume": "478",
+        "pages": "614",
+        "year": "1997",
+        "publisher": "IOP Publishing"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "1997"
+          }
+        ]
+      },
+      "unexpected_fields": {
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "IOP Publishing"
+            }
+          ]
+        ]
+      }
+    },
+    "14": {
+      "bib_type": "article",
+      "entry_key": "liu2008faint",
+      "fields": {
+        "date": "2008",
+        "title": [
+          {
+            "type": "text",
+            "text": "The faint-end slopes of galaxy luminosity functions in the COSMOS field"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Liu"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "C.T."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Capak"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "P."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Mobasher"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "B."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Paglione"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "T.A.D."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Rich"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "R.M."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Scoville"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "N.Z."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Tribiano"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "S.M."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Tyson"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "N.D."
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "The Astrophysical Journal"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "672"
+          }
+        ]
+      },
+      "raw_fields": {
+        "title": "The faint-end slopes of galaxy luminosity functions in the COSMOS field",
+        "author": "Liu, C.T. and Capak, P. and Mobasher, B. and Paglione, T.A.D. and Rich, R.M. and Scoville, N.Z. and Tribiano, S.M. and Tyson, N.D.",
+        "journal": "The Astrophysical Journal",
+        "volume": "672",
+        "pages": "198",
+        "year": "2008",
+        "publisher": "IOP Publishing"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "2008"
+          }
+        ]
+      },
+      "unexpected_fields": {
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "IOP Publishing"
+            }
+          ]
+        ]
+      }
+    },
+    "15": {
+      "bib_type": "article",
+      "entry_key": "paglione1995first",
+      "fields": {
+        "date": "1995",
+        "title": [
+          {
+            "type": "text",
+            "text": "First Observations of extragalactic CSJ= 1 goes to 0"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Paglione"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "T.A.D."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Jackson"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "J.M."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Ishizuki"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "S."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Rieu"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "N.Q."
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "The Astronomical Journal"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "109"
+          }
+        ]
+      },
+      "raw_fields": {
+        "title": "First Observations of extragalactic CSJ= 1 goes to 0",
+        "author": "Paglione, T.A.D. and Jackson, J.M. and Ishizuki, S. and Rieu, N.Q.",
+        "journal": "The Astronomical Journal",
+        "volume": "109",
+        "pages": "1716--1723",
+        "year": "1995"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "1995"
+          }
+        ]
+      }
+    },
+    "16": {
+      "bib_type": "article",
+      "entry_key": "jackson1996apj",
+      "fields": {
+        "date": "1996",
+        "title": [
+          {
+            "type": "text",
+            "text": "ApJ, 456"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Jackson"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "JM"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Heyer"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "MH"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Paglione"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "TAD"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Bolatto"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "AD"
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "L91 First citation in article| CrossRef link| IOP Article| Abstract at Astrophysics Data System"
+          }
+        ]
+      },
+      "raw_fields": {
+        "title": "ApJ, 456",
+        "author": "Jackson, JM and Heyer, MH and Paglione, TAD and Bolatto, AD",
+        "journal": "L91 First citation in article| CrossRef link| IOP Article| Abstract at Astrophysics Data System",
+        "year": "1996"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "1996"
+          }
+        ]
+      }
+    },
+    "17": {
+      "bib_type": "article",
+      "entry_key": "paglione1995apj",
+      "fields": {
+        "date": "1995",
+        "title": [
+          {
+            "type": "text",
+            "text": "ApJ, 454"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Paglione"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "TAD"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Tosaki"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "T."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Jackson"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "JM"
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "L117 First citation in article| IOP Article| CrossRef link| Abstract at Astrophysics Data System"
+          }
+        ]
+      },
+      "raw_fields": {
+        "title": "ApJ, 454",
+        "author": "Paglione, TAD and Tosaki, T. and Jackson, JM",
+        "journal": "L117 First citation in article| IOP Article| CrossRef link| Abstract at Astrophysics Data System",
+        "year": "1995"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "1995"
+          }
+        ]
+      }
+    },
+    "18": {
+      "bib_type": "article",
+      "entry_key": "paglione1716nguyen",
+      "fields": {
+        "date": "1716",
+        "title": [
+          {
+            "type": "text",
+            "text": "Nguyen-Q-Rieu 1995"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Paglione"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "TAD"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Jackson"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "JM"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Ishizuki"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "S."
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "AJ"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "109"
+          }
+        ]
+      },
+      "raw_fields": {
+        "title": "Nguyen-Q-Rieu 1995",
+        "author": "Paglione, TAD and Jackson, JM and Ishizuki, S.",
+        "journal": "AJ",
+        "volume": "109",
+        "pages": "1716",
+        "year": "1716"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "1716"
+          }
+        ]
+      }
+    },
+    "19": {
+      "bib_type": "article",
+      "entry_key": "kraemer2000properties",
+      "fields": {
+        "date": "2000",
+        "title": [
+          {
+            "type": "text",
+            "text": "Properties of the Photodissociated Gas in NGC 6334"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Kraemer"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "K.E."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Jackson"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "J.M."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Lane"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "A.P."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Paglione"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "T.A.D."
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "The Astrophysical Journal"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "542"
+          }
+        ]
+      },
+      "raw_fields": {
+        "title": "Properties of the Photodissociated Gas in NGC 6334",
+        "author": "Kraemer, K.E. and Jackson, J.M. and Lane, A.P. and Paglione, T.A.D.",
+        "journal": "The Astrophysical Journal",
+        "volume": "542",
+        "pages": "946",
+        "year": "2000",
+        "publisher": "IOP Publishing"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "2000"
+          }
+        ]
+      },
+      "unexpected_fields": {
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "IOP Publishing"
+            }
+          ]
+        ]
+      }
+    },
+    "20": {
+      "bib_type": "article",
+      "entry_key": "smith2000measurements",
+      "fields": {
+        "date": "2000",
+        "title": [
+          {
+            "type": "text",
+            "text": "Measurements of dynamic pointing variations of a large radio telescope"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Smith"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "D.R."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Paglione"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "T.A.D."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Lovell"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "A.J."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Ukita"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "N."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Matsuo"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "H."
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "Proceedings of SPIE"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "4015"
+          }
+        ]
+      },
+      "raw_fields": {
+        "title": "Measurements of dynamic pointing variations of a large radio telescope",
+        "author": "Smith, D.R. and Paglione, T.A.D. and Lovell, A.J. and Ukita, N. and Matsuo, H.",
+        "journal": "Proceedings of SPIE",
+        "volume": "4015",
+        "pages": "467",
+        "year": "2000"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "2000"
+          }
+        ]
+      }
+    },
+    "21": {
+      "bib_type": "inproceedings",
+      "entry_key": "paglione2002cn",
+      "fields": {
+        "date": "2002",
+        "title": [
+          {
+            "type": "text",
+            "text": "CN/HCN: A Global Indicator of Star Formation?"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Paglione"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "TAD"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Jackson"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "JM"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Bergin"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "EA"
+              }
+            ]
+          }
+        ],
+        "booktitle": [
+          {
+            "type": "text",
+            "text": "Bulletin of the American Astronomical Society"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "34"
+          }
+        ]
+      },
+      "raw_fields": {
+        "title": "CN/HCN: A Global Indicator of Star Formation?",
+        "author": "Paglione, TAD and Jackson, JM and Bergin, EA",
+        "booktitle": "Bulletin of the American Astronomical Society",
+        "volume": "34",
+        "pages": "1229",
+        "year": "2002"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "2002"
+          }
+        ]
+      }
+    },
+    "22": {
+      "bib_type": "article",
+      "entry_key": "smolcic2010erratum",
+      "fields": {
+        "date": "2010",
+        "title": [
+          {
+            "type": "text",
+            "text": "ERRATUM"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Smolcic"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "V."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Zamorani"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "G."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Schinnerer"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "E."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Bardelli"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "S."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Bondi"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "M."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "B"
+              },
+              {
+                "type": "text",
+                "text": "i",
+                "marks": [
+                  {
+                    "type": "sup"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "rzan"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "L."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Carilli"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "CL"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Ciliegi"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "P."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Elvis"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "M."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Impey"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "CD"
+              }
+            ]
+          },
+          {
+            "literal": [
+              {
+                "type": "text",
+                "text": "others"
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "The Astrophysical Journal"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "708"
+          }
+        ]
+      },
+      "raw_fields": {
+        "title": "ERRATUM",
+        "author": "Smolcic, V. and Zamorani, G. and Schinnerer, E. and Bardelli, S. and Bondi, M. and B{^i}rzan, L. and Carilli, CL and Ciliegi, P. and Elvis, M. and Impey, CD and others",
+        "journal": "The Astrophysical Journal",
+        "volume": "708",
+        "pages": "909",
+        "year": "2010"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "2010"
+          }
+        ]
+      }
+    },
+    "23": {
+      "bib_type": "article",
+      "entry_key": "smolvcic2010erratum",
+      "fields": {
+        "date": "2010",
+        "title": [
+          {
+            "type": "text",
+            "text": "ERRATUM"
+          }
+        ],
+        "author": [
+          {
+            "prefix": [
+              {
+                "type": "text",
+                "text": "Smol ci'c"
+              }
+            ],
+            "useprefix": true,
+            "family": [],
+            "given": [
+              {
+                "type": "text",
+                "text": "V."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Zamorani"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "G."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Schinnerer"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "E."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Bardelli"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "S."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Bondi"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "M."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "B"
+              },
+              {
+                "type": "text",
+                "text": "i",
+                "marks": [
+                  {
+                    "type": "sup"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "rzan"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "L."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Carilli"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "CL"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Ciliegi"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "P."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Elvis"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "M."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Impey"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "CD"
+              }
+            ]
+          },
+          {
+            "literal": [
+              {
+                "type": "text",
+                "text": "others"
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "The Astrophysical Journal"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "708"
+          }
+        ]
+      },
+      "raw_fields": {
+        "title": "ERRATUM",
+        "author": "Smol{\u000b{c}}i{'c}, V. and Zamorani, G. and Schinnerer, E. and Bardelli, S. and Bondi, M. and B{^i}rzan, L. and Carilli, CL and Ciliegi, P. and Elvis, M. and Impey, CD and others",
+        "journal": "The Astrophysical Journal",
+        "volume": "708",
+        "pages": "909",
+        "year": "2010",
+        "publisher": "IOP Publishing"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "2010"
+          }
+        ]
+      },
+      "unexpected_fields": {
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "IOP Publishing"
+            }
+          ]
+        ]
+      }
+    },
+    "24": {
+      "bib_type": "article",
+      "entry_key": "blom1999gamma",
+      "fields": {
+        "date": "1999",
+        "title": [
+          {
+            "type": "text",
+            "text": "Gamma-Rays from Starbursts and M31"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Blom"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "JJ"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Paglione"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "TAD"
+              }
+            ]
+          },
+          {
+            "prefix": [
+              {
+                "type": "text",
+                "text": "Carrami nana"
+              }
+            ],
+            "useprefix": true,
+            "family": [],
+            "given": [
+              {
+                "type": "text",
+                "text": "A."
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "Astrophysical Letters and Communications"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "39"
+          }
+        ]
+      },
+      "raw_fields": {
+        "title": "Gamma-Rays from Starbursts and M31",
+        "author": "Blom, JJ and Paglione, TAD and Carrami{~n}ana, A.",
+        "journal": "Astrophysical Letters and Communications",
+        "volume": "39",
+        "pages": "169",
+        "year": "1999"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "1999"
+          }
+        ]
+      }
+    },
+    "25": {
+      "bib_type": "article",
+      "entry_key": "paglione2001mapping",
+      "fields": {
+        "date": "2001",
+        "title": [
+          {
+            "type": "text",
+            "text": "A mapping survey of the (CO)-C-13 and (CO)-C-12 emission in galaxies"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Paglione"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "TAD"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Wall"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "WF"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Young"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "JS"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Heyer"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "MH"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Richard"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "M."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Goldstein"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "M."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Kaufman"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Z."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Nantais"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "J."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Perry"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "G."
+              }
+            ]
+          }
+        ]
+      },
+      "raw_fields": {
+        "title": "A mapping survey of the (CO)-C-13 and (CO)-C-12 emission in galaxies",
+        "author": "Paglione, TAD and Wall, WF and Young, JS and Heyer, MH and Richard, M. and Goldstein, M. and Kaufman, Z. and Nantais, J. and Perry, G.",
+        "year": "2001"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "2001"
+          }
+        ]
+      }
+    },
+    "26": {
+      "bib_type": "article",
+      "entry_key": "paglionesource",
+      "fields": {
+        "title": [
+          {
+            "type": "text",
+            "text": "The Source of Diffuse Gamma-rays from the Seyfert/Starburst NGC 4945"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Paglione"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "T.A.D."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Georganopoulos"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "M."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Hunt-Walker"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "N."
+              }
+            ]
+          }
+        ]
+      },
+      "raw_fields": {
+        "title": "The Source of Diffuse Gamma-rays from the Seyfert/Starburst NGC 4945",
+        "author": "Paglione, T.A.D. and Georganopoulos, M. and Hunt-Walker, N."
+      }
+    },
+    "27": {
+      "bib_type": "article",
+      "entry_key": "smoli2009cosmic",
+      "fields": {
+        "date": "2009",
+        "title": [
+          {
+            "type": "text",
+            "text": "COSMIC EVOLUTION OF RADIO SELECTED ACTIVE GALACTIC NUCLEI IN THE COSMOS FIELDBased on observations with the National Radio Astronomy Observatory which is a facility of the National Science Foundation operated under cooperative agreement by Associated Universities, Inc."
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Smoli"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "V."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Zamorani"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "G."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Schinnerer"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "E."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Bardelli"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "S."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Bondi"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "M."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "B"
+              },
+              {
+                "type": "text",
+                "text": "i",
+                "marks": [
+                  {
+                    "type": "sup"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "rzan"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "L."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Carilli"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "CL"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Ciliegi"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "P."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Elvis"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "M."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Impey"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "CD"
+              }
+            ]
+          },
+          {
+            "literal": [
+              {
+                "type": "text",
+                "text": "others"
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "Astrophysical Journal"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "696"
+          }
+        ],
+        "number": [
+          {
+            "type": "text",
+            "text": "1"
+          }
+        ]
+      },
+      "raw_fields": {
+        "title": "COSMIC EVOLUTION OF RADIO SELECTED ACTIVE GALACTIC NUCLEI IN THE COSMOS FIELDBased on observations with the National Radio Astronomy Observatory which is a facility of the National Science Foundation operated under cooperative agreement by Associated Universities, Inc.",
+        "author": "Smoli, V. and Zamorani, G. and Schinnerer, E. and Bardelli, S. and Bondi, M. and B{^i}rzan, L. and Carilli, CL and Ciliegi, P. and Elvis, M. and Impey, CD and others",
+        "journal": "Astrophysical Journal",
+        "volume": "696",
+        "number": "1",
+        "pages": "24",
+        "year": "2009"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "2009"
+          }
+        ]
+      }
+    },
+    "28": {
+      "bib_type": "inproceedings",
+      "entry_key": "spergel2002utilizing",
+      "fields": {
+        "date": "2002",
+        "title": [
+          {
+            "type": "text",
+            "text": "Utilizing the light curves of binary stars in undergraduate and secondary school education"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Spergel"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "M."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Paglione"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "T."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Paczynski"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "B."
+              }
+            ]
+          }
+        ],
+        "booktitle": [
+          {
+            "type": "text",
+            "text": "34th COSPAR Scientific Assembly"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "34"
+          }
+        ]
+      },
+      "raw_fields": {
+        "title": "Utilizing the light curves of binary stars in undergraduate and secondary school education",
+        "author": "Spergel, M. and Paglione, T. and Paczynski, B.",
+        "booktitle": "34th COSPAR Scientific Assembly",
+        "volume": "34",
+        "pages": "3142",
+        "year": "2002"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "2002"
+          }
+        ]
+      }
+    },
+    "29": {
+      "bib_type": "article",
+      "entry_key": "paglione1997properties",
+      "fields": {
+        "date": "1997",
+        "title": [
+          {
+            "type": "text",
+            "text": "The properties of the dense gas in the nuclei of spiral galaxies"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Paglione"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "T.A.D."
+              }
+            ]
+          }
+        ]
+      },
+      "raw_fields": {
+        "title": "The properties of the dense gas in the nuclei of spiral galaxies",
+        "author": "Paglione, T.A.D.",
+        "year": "1997"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "1997"
+          }
+        ]
+      }
+    },
+    "30": {
+      "bib_type": "inproceedings",
+      "entry_key": "paglione1993observations",
+      "fields": {
+        "date": "1993",
+        "title": [
+          {
+            "type": "text",
+            "text": "Observations of the CS J= 1-> 0 Line in Galaxies"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Paglione"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "TAD"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Jackson"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "JM"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Ishizuki"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "S."
+              }
+            ]
+          }
+        ],
+        "booktitle": [
+          {
+            "type": "text",
+            "text": "Bulletin of the American Astronomical Society"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "25"
+          }
+        ]
+      },
+      "raw_fields": {
+        "title": "Observations of the CS J= 1-> 0 Line in Galaxies",
+        "author": "Paglione, TAD and Jackson, JM and Ishizuki, S.",
+        "booktitle": "Bulletin of the American Astronomical Society",
+        "volume": "25",
+        "pages": "1328",
+        "year": "1993"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "1993"
+          }
+        ]
+      }
+    },
+    "31": {
+      "bib_type": "article",
+      "entry_key": "paglioneumigs",
+      "fields": {
+        "title": [
+          {
+            "type": "text",
+            "text": "UMIGS Home"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Paglione"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "TAD"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Wall"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "WF"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Heyer"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "MH"
+              }
+            ]
+          }
+        ]
+      },
+      "raw_fields": {
+        "title": "UMIGS Home",
+        "author": "Paglione, TAD and Wall, WF and Heyer, MH"
+      }
+    },
+    "32": {
+      "bib_type": "inproceedings",
+      "entry_key": "paglione2004molecular",
+      "fields": {
+        "date": "2004",
+        "title": [
+          {
+            "type": "text",
+            "text": "Molecular Photodissociation Regions in NGC 253"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Paglione"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "T."
+              }
+            ]
+          }
+        ],
+        "booktitle": [
+          {
+            "type": "text",
+            "text": "The Neutral ISM in Starburst Galaxies"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "320"
+          }
+        ]
+      },
+      "raw_fields": {
+        "title": "Molecular Photodissociation Regions in NGC 253",
+        "author": "Paglione, T.",
+        "booktitle": "The Neutral ISM in Starburst Galaxies",
+        "volume": "320",
+        "pages": "47",
+        "year": "2004"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "2004"
+          }
+        ]
+      }
+    },
+    "33": {
+      "bib_type": "inproceedings",
+      "entry_key": "paglione2002york",
+      "fields": {
+        "date": "2002",
+        "title": [
+          {
+            "type": "text",
+            "text": "The York College observatory outreach program"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Paglione"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "T."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Spergel"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "M."
+              }
+            ]
+          }
+        ],
+        "booktitle": [
+          {
+            "type": "text",
+            "text": "34th COSPAR Scientific Assembly"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "34"
+          }
+        ]
+      },
+      "raw_fields": {
+        "title": "The York College observatory outreach program",
+        "author": "Paglione, T. and Spergel, M.",
+        "booktitle": "34th COSPAR Scientific Assembly",
+        "volume": "34",
+        "pages": "3144",
+        "year": "2002"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "2002"
+          }
+        ]
+      }
+    },
+    "34": {
+      "bib_type": "inproceedings",
+      "entry_key": "paglione2010diffuse",
+      "fields": {
+        "date": "2010",
+        "title": [
+          {
+            "type": "text",
+            "text": "Diffuse Gamma-rays from Star Forming Galaxies"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Paglione"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "T."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Crocker"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "M."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Hunt-Walker"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "N."
+              }
+            ]
+          }
+        ],
+        "booktitle": [
+          {
+            "type": "text",
+            "text": "Bulletin of the American Astronomical Society"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "42"
+          }
+        ]
+      },
+      "raw_fields": {
+        "title": "Diffuse Gamma-rays from Star Forming Galaxies",
+        "author": "Paglione, T. and Crocker, M. and Hunt-Walker, N.",
+        "booktitle": "Bulletin of the American Astronomical Society",
+        "volume": "42",
+        "pages": "248",
+        "year": "2010"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "2010"
+          }
+        ]
+      }
+    },
+    "35": {
+      "bib_type": "article",
+      "entry_key": "bertsch1995diffuse",
+      "fields": {
+        "date": "1995",
+        "title": [
+          {
+            "type": "text",
+            "text": "Diffuse Gamma-Ray Emission from the Starburst Galaxy NGC 253"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Bertsch"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "D.L."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Paglione"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "T.A.D."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Marscher"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "A.P."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Jackson"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "J.M."
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "NASA"
+          }
+        ],
+        "number": [
+          {
+            "type": "text",
+            "text": "19980019305"
+          }
+        ]
+      },
+      "raw_fields": {
+        "title": "Diffuse Gamma-Ray Emission from the Starburst Galaxy NGC 253",
+        "author": "Bertsch, D.L. and Paglione, T.A.D. and Marscher, A.P. and Jackson, J.M.",
+        "journal": "NASA",
+        "number": "19980019305",
+        "year": "1995"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "1995"
+          }
+        ]
+      }
+    },
+    "36": {
+      "bib_type": "inproceedings",
+      "entry_key": "bolatto1996dense",
+      "fields": {
+        "date": "1996",
+        "title": [
+          {
+            "type": "text",
+            "text": "The Dense Interstellar Medium in the Central 600 PC of the Milky way"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Bolatto"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "AD"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Paglione"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "TAD"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Jackson"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "JM"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Heyer"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "MH"
+              }
+            ]
+          }
+        ],
+        "booktitle": [
+          {
+            "type": "text",
+            "text": "Revista Mexicana de Astronomia y Astrofisica Conference Series"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "4"
+          }
+        ]
+      },
+      "raw_fields": {
+        "title": "The Dense Interstellar Medium in the Central 600 PC of the Milky way",
+        "author": "Bolatto, AD and Paglione, TAD and Jackson, JM and Heyer, MH",
+        "booktitle": "Revista Mexicana de Astronomia y Astrofisica Conference Series",
+        "volume": "4",
+        "pages": "120",
+        "year": "1996"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "1996"
+          }
+        ]
+      }
+    },
+    "37": {
+      "bib_type": "inproceedings",
+      "entry_key": "yam1998properties",
+      "fields": {
+        "date": "1998",
+        "title": [
+          {
+            "type": "text",
+            "text": "The properties of the dense molecular gas in the Galactic center"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Yam"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "O."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Paglione"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "TAD"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Jackson"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "JM"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Bolatto"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "AD"
+              }
+            ]
+          }
+        ],
+        "booktitle": [
+          {
+            "type": "text",
+            "text": "IX Latin American Regional IAU Meeting,"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "1"
+          }
+        ]
+      },
+      "raw_fields": {
+        "title": "The properties of the dense molecular gas in the Galactic center",
+        "author": "Yam, O. and Paglione, TAD and Jackson, JM and Bolatto, AD",
+        "booktitle": "IX Latin American Regional IAU Meeting,",
+        "volume": "1",
+        "pages": "80",
+        "year": "1998"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "1998"
+          }
+        ]
+      }
+    },
+    "38": {
+      "bib_type": "inproceedings",
+      "entry_key": "liu2005local",
+      "fields": {
+        "date": "2005",
+        "title": [
+          {
+            "type": "text",
+            "text": "The Local Starburst Galaxy Luminosity Function In The COSMOS 2 Square Degree Field"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Liu"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "CT"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Paglione"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "TAD"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Tribiano"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "S."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Tyson"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "ND"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Collaboration"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "C."
+              }
+            ]
+          }
+        ],
+        "booktitle": [
+          {
+            "type": "text",
+            "text": "Bulletin of the American Astronomical Society"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "37"
+          }
+        ]
+      },
+      "raw_fields": {
+        "title": "The Local Starburst Galaxy Luminosity Function In The COSMOS 2 Square Degree Field",
+        "author": "Liu, CT and Paglione, TAD and Tribiano, S. and Tyson, ND and Collaboration, C.",
+        "booktitle": "Bulletin of the American Astronomical Society",
+        "volume": "37",
+        "pages": "1245",
+        "year": "2005"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "2005"
+          }
+        ]
+      }
+    },
+    "39": {
+      "bib_type": "inproceedings",
+      "entry_key": "paglione1999umass",
+      "fields": {
+        "date": "1999",
+        "title": [
+          {
+            "type": "text",
+            "text": "The UMass/INAOE Galaxy Survey"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Paglione"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "TAD"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Heyer"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "MH"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Young"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "JS"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Belniak"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "M."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Cartel"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "N."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Cameron"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "H."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Goldstein"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "M."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Gruol"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "M."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Kaufman"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Z."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Litchfield"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "S."
+              }
+            ]
+          },
+          {
+            "literal": [
+              {
+                "type": "text",
+                "text": "others"
+              }
+            ]
+          }
+        ],
+        "booktitle": [
+          {
+            "type": "text",
+            "text": "Bulletin of the American Astronomical Society"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "31"
+          }
+        ]
+      },
+      "raw_fields": {
+        "title": "The UMass/INAOE Galaxy Survey",
+        "author": "Paglione, TAD and Heyer, MH and Young, JS and Belniak, M. and Cartel, N. and Cameron, H. and Goldstein, M. and Gruol, M. and Kaufman, Z. and Litchfield, S. and others",
+        "booktitle": "Bulletin of the American Astronomical Society",
+        "volume": "31",
+        "pages": "892",
+        "year": "1999"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "1999"
+          }
+        ]
+      }
+    },
+    "40": {
+      "bib_type": "article",
+      "entry_key": "paglione2001mapping",
+      "fields": {
+        "date": "2001",
+        "title": [
+          {
+            "type": "text",
+            "text": "Mapping 13CO and 12CO in Galaxies"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Paglione"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "T.A.D."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Wall"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "WF"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Young"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "J.S."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Heyer"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "M.H."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Richard"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "M."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Goldstein"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "M."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Kaufman"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Z."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Nantais"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "J."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Perry"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "G."
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "The Astrophysical Journal Supplement Series"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "135"
+          }
+        ]
+      },
+      "raw_fields": {
+        "title": "Mapping 13CO and 12CO in Galaxies",
+        "author": "Paglione, T.A.D. and Wall, WF and Young, J.S. and Heyer, M.H. and Richard, M. and Goldstein, M. and Kaufman, Z. and Nantais, J. and Perry, G.",
+        "journal": "The Astrophysical Journal Supplement Series",
+        "volume": "135",
+        "pages": "183--200",
+        "year": "2001",
+        "publisher": "Institute of Physics Publishing"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "2001"
+          }
+        ]
+      },
+      "unexpected_fields": {
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "Institute of Physics Publishing"
+            }
+          ]
+        ]
+      }
+    },
+    "41": {
+      "bib_type": "article",
+      "entry_key": "jackson1993submillimeter",
+      "fields": {
+        "date": "1993",
+        "title": [
+          {
+            "type": "text",
+            "text": "Submillimeter HCN and HCO+ lines in galaxies."
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Jackson"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "J.M."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Paglione"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "T.A."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Carlstrom"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "J.E."
+              }
+            ]
+          },
+          {
+            "literal": [
+              {
+                "type": "text",
+                "text": "others"
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "Star formation, galaxies and the interstellar medium: proceedings of the 4th EIPC Astrophysical Workshop held at the Elba International Physics Center, Marciana Marina, Elba Island, Italy, June 1-6, 1992"
+          }
+        ]
+      },
+      "raw_fields": {
+        "title": "Submillimeter HCN and HCO+ lines in galaxies.",
+        "author": "Jackson, J.M. and Paglione, T.A. and Carlstrom, J.E. and others",
+        "journal": "Star formation, galaxies and the interstellar medium: proceedings of the 4th EIPC Astrophysical Workshop held at the Elba International Physics Center, Marciana Marina, Elba Island, Italy, June 1-6, 1992",
+        "pages": "177",
+        "year": "1993",
+        "publisher": "Cambridge Univ Pr"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "1993"
+          }
+        ]
+      },
+      "unexpected_fields": {
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "Cambridge Univ Pr"
+            }
+          ]
+        ]
+      }
+    },
+    "42": {
+      "bib_type": "article",
+      "entry_key": "paglione2012properties",
+      "fields": {
+        "date": "2012",
+        "title": [
+          {
+            "type": "text",
+            "text": "Properties of Nearby Starburst Galaxies Based on their Diffuse Gamma-ray Emission"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Paglione"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "T.A.D."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Abrahams"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "R.D."
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "Arxiv preprint arXiv:1206.3530"
+          }
+        ]
+      },
+      "raw_fields": {
+        "title": "Properties of Nearby Starburst Galaxies Based on their Diffuse Gamma-ray Emission",
+        "author": "Paglione, T.A.D. and Abrahams, R.D.",
+        "journal": "Arxiv preprint arXiv:1206.3530",
+        "year": "2012"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "2012"
+          }
+        ]
+      }
+    },
+    "43": {
+      "bib_type": "inproceedings",
+      "entry_key": "paglione1996dense",
+      "fields": {
+        "date": "1996",
+        "title": [
+          {
+            "type": "text",
+            "text": "Dense Molecular Gas in the Central 630 Parsecs of the Milky Way"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Paglione"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "T."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Jackson"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "J."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Heyer"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "M."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Bolatto"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "A."
+              }
+            ]
+          }
+        ],
+        "booktitle": [
+          {
+            "type": "text",
+            "text": "Bulletin of the American Astronomical Society"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "28"
+          }
+        ]
+      },
+      "raw_fields": {
+        "title": "Dense Molecular Gas in the Central 630 Parsecs of the Milky Way",
+        "author": "Paglione, T. and Jackson, J. and Heyer, M. and Bolatto, A.",
+        "booktitle": "Bulletin of the American Astronomical Society",
+        "volume": "28",
+        "pages": "888",
+        "year": "1996"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "1996"
+          }
+        ]
+      }
+    },
+    "44": {
+      "bib_type": "inproceedings",
+      "entry_key": "paglione2002urban",
+      "fields": {
+        "date": "2002",
+        "title": [
+          {
+            "type": "text",
+            "text": "An Urban Observatory for Research, Education and Outreach"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Paglione"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "TAD"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Spergel"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "M."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Schlein"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "J."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Denecke"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "E."
+              }
+            ]
+          }
+        ],
+        "booktitle": [
+          {
+            "type": "text",
+            "text": "Bulletin of the American Astronomical Society"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "34"
+          }
+        ]
+      },
+      "raw_fields": {
+        "title": "An Urban Observatory for Research, Education and Outreach",
+        "author": "Paglione, TAD and Spergel, M. and Schlein, J. and Denecke, E.",
+        "booktitle": "Bulletin of the American Astronomical Society",
+        "volume": "34",
+        "pages": "1106",
+        "year": "2002"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "2002"
+          }
+        ]
+      }
+    },
+    "45": {
+      "bib_type": "inproceedings",
+      "entry_key": "paglione1997tracing",
+      "fields": {
+        "date": "1997",
+        "title": [
+          {
+            "type": "text",
+            "text": "Tracing the Mass of Dense Gas in Giant Molecular Clouds"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Paglione"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "TAD"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Yam"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "O."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Heyer"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "MH"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Jackson"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "JM"
+              }
+            ]
+          }
+        ],
+        "booktitle": [
+          {
+            "type": "text",
+            "text": "Bulletin of the American Astronomical Society"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "29"
+          }
+        ]
+      },
+      "raw_fields": {
+        "title": "Tracing the Mass of Dense Gas in Giant Molecular Clouds",
+        "author": "Paglione, TAD and Yam, O. and Heyer, MH and Jackson, JM",
+        "booktitle": "Bulletin of the American Astronomical Society",
+        "volume": "29",
+        "pages": "785",
+        "year": "1997"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "1997"
+          }
+        ]
+      }
+    },
+    "46": {
+      "bib_type": "inproceedings",
+      "entry_key": "tribiano2005evolution",
+      "fields": {
+        "date": "2005",
+        "title": [
+          {
+            "type": "text",
+            "text": "Evolution of Clustering of Starburst Galaxies in the COSMOS Field"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Tribiano"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "SM"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Paglione"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "TAD"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Shopbell"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "PL"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Capek"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "P."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Liu"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "C."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Tyson"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "ND"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "COSMOS"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "T."
+              }
+            ]
+          }
+        ],
+        "booktitle": [
+          {
+            "type": "text",
+            "text": "Bulletin of the American Astronomical Society"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "37"
+          }
+        ]
+      },
+      "raw_fields": {
+        "title": "Evolution of Clustering of Starburst Galaxies in the COSMOS Field",
+        "author": "Tribiano, SM and Paglione, TAD and Shopbell, PL and Capek, P. and Liu, C. and Tyson, ND and COSMOS, T.",
+        "booktitle": "Bulletin of the American Astronomical Society",
+        "volume": "37",
+        "pages": "1245",
+        "year": "2005"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "2005"
+          }
+        ]
+      }
+    },
+    "47": {
+      "bib_type": "article",
+      "entry_key": "smoli2009dust",
+      "fields": {
+        "date": "2009",
+        "title": [
+          {
+            "type": "text",
+            "text": "THE DUST-UNBIASED COSMIC STAR-FORMATION HISTORY FROM THE 20 CM VLA-COSMOS SURVEYBased on observations with the National Radio Astronomy Observatory which is a facility of the National Science Foundation operated under cooperative agreement by Associated Universities, Inc."
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Smoli"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "V."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Schinnerer"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "E."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Zamorani"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "G."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Bell"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "EF"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Bondi"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "M."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Carilli"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "CL"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Ciliegi"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "P."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Mobasher"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "B."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Paglione"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "T."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Scodeggio"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "M."
+              }
+            ]
+          },
+          {
+            "literal": [
+              {
+                "type": "text",
+                "text": "others"
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "Astrophysical Journal"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "690"
+          }
+        ],
+        "number": [
+          {
+            "type": "text",
+            "text": "1"
+          }
+        ]
+      },
+      "raw_fields": {
+        "title": "THE DUST-UNBIASED COSMIC STAR-FORMATION HISTORY FROM THE 20 CM VLA-COSMOS SURVEYBased on observations with the National Radio Astronomy Observatory which is a facility of the National Science Foundation operated under cooperative agreement by Associated Universities, Inc.",
+        "author": "Smoli, V. and Schinnerer, E. and Zamorani, G. and Bell, EF and Bondi, M. and Carilli, CL and Ciliegi, P. and Mobasher, B. and Paglione, T. and Scodeggio, M. and others",
+        "journal": "Astrophysical Journal",
+        "volume": "690",
+        "number": "1",
+        "pages": "610",
+        "year": "2009"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "2009"
+          }
+        ]
+      }
+    },
+    "48": {
+      "bib_type": "article",
+      "entry_key": "paglionesession",
+      "fields": {
+        "title": [
+          {
+            "type": "text",
+            "text": "Session 47. Between the Stars I: The ISM, Galactic and Extragalactic Display, Tuesday, June 1, 1999, 10: 00am-7: 00pm, Southwest Exhibit Hall"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Paglione"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "TAD"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Heyer"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "MH"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Young"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "JS"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Belniak"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "M."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Cartel"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "N."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Cameron"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "H."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Goldstein"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "M."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Gruol"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "M."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Kaufman"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Z."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Litchfield"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "S."
+              }
+            ]
+          },
+          {
+            "literal": [
+              {
+                "type": "text",
+                "text": "others"
+              }
+            ]
+          }
+        ]
+      },
+      "raw_fields": {
+        "title": "Session 47. Between the Stars I: The ISM, Galactic and Extragalactic Display, Tuesday, June 1, 1999, 10: 00am-7: 00pm, Southwest Exhibit Hall",
+        "author": "Paglione, TAD and Heyer, MH and Young, JS and Belniak, M. and Cartel, N. and Cameron, H. and Goldstein, M. and Gruol, M. and Kaufman, Z. and Litchfield, S. and others"
+      }
+    },
+    "49": {
+      "bib_type": "inproceedings",
+      "entry_key": "paglione1997distribution",
+      "fields": {
+        "date": "1997",
+        "title": [
+          {
+            "type": "text",
+            "text": "The Distribution of Molecular Gas in the Starburst Galaxy NGC 253"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Paglione"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "TAD"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Yam"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "O."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Tosaki"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "T."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Jackson"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "JM"
+              }
+            ]
+          }
+        ],
+        "booktitle": [
+          {
+            "type": "text",
+            "text": "Bulletin of the American Astronomical Society"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "29"
+          }
+        ]
+      },
+      "raw_fields": {
+        "title": "The Distribution of Molecular Gas in the Starburst Galaxy NGC 253",
+        "author": "Paglione, TAD and Yam, O. and Tosaki, T. and Jackson, JM",
+        "booktitle": "Bulletin of the American Astronomical Society",
+        "volume": "29",
+        "pages": "1247",
+        "year": "1997"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "1997"
+          }
+        ]
+      }
+    },
+    "50": {
+      "bib_type": "inproceedings",
+      "entry_key": "liu2006faint",
+      "fields": {
+        "date": "2006",
+        "title": [
+          {
+            "type": "text",
+            "text": "The Faint End Slope Of Starburst Galaxy Luminosity Functions In The COSMOS 2-Square Degree Field"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Liu"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "C."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Capak"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "P."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Mobasher"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "B."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Paglione"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "TA"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Rich"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "RM"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Scoville"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "NZ"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Tribiano"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "SM"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Tyson"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "N."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Collaboration"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "C."
+              }
+            ]
+          }
+        ],
+        "booktitle": [
+          {
+            "type": "text",
+            "text": "Bulletin of the American Astronomical Society"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "38"
+          }
+        ]
+      },
+      "raw_fields": {
+        "title": "The Faint End Slope Of Starburst Galaxy Luminosity Functions In The COSMOS 2-Square Degree Field",
+        "author": "Liu, C. and Capak, P. and Mobasher, B. and Paglione, TA and Rich, RM and Scoville, NZ and Tribiano, SM and Tyson, N. and Collaboration, C.",
+        "booktitle": "Bulletin of the American Astronomical Society",
+        "volume": "38",
+        "pages": "1005",
+        "year": "2006"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "2006"
+          }
+        ]
+      }
+    },
+    "51": {
+      "bib_type": "inproceedings",
+      "entry_key": "kraemer1995molecular",
+      "fields": {
+        "date": "1995",
+        "title": [
+          {
+            "type": "text",
+            "text": "Molecular, atomic, and ionized gas in the NGC 6334 star forming region"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Kraemer"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "KE"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Jackson"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "JM"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Paglione"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "TAD"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Lane"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "AP"
+              }
+            ]
+          }
+        ],
+        "booktitle": [
+          {
+            "type": "text",
+            "text": "From Gas to Stars to Dust"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "73"
+          }
+        ]
+      },
+      "raw_fields": {
+        "title": "Molecular, atomic, and ionized gas in the NGC 6334 star forming region",
+        "author": "Kraemer, KE and Jackson, JM and Paglione, TAD and Lane, AP",
+        "booktitle": "From Gas to Stars to Dust",
+        "volume": "73",
+        "pages": "83--86",
+        "year": "1995"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "1995"
+          }
+        ]
+      }
+    },
+    "52": {
+      "bib_type": "inproceedings",
+      "entry_key": "jackson1993hcn",
+      "fields": {
+        "date": "1993",
+        "title": [
+          {
+            "type": "text",
+            "text": "HCN in the Central 300 PC of the Galaxy"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Jackson"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "JM"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Heyer"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "MH"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Paglione"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "TAD"
+              }
+            ]
+          }
+        ],
+        "booktitle": [
+          {
+            "type": "text",
+            "text": "Bulletin of the American Astronomical Society"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "25"
+          }
+        ]
+      },
+      "raw_fields": {
+        "title": "HCN in the Central 300 PC of the Galaxy",
+        "author": "Jackson, JM and Heyer, MH and Paglione, TAD",
+        "booktitle": "Bulletin of the American Astronomical Society",
+        "volume": "25",
+        "pages": "1467",
+        "year": "1993"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "1993"
+          }
+        ]
+      }
+    },
+    "53": {
+      "bib_type": "inproceedings",
+      "entry_key": "paglione2006luminosity",
+      "fields": {
+        "date": "2006",
+        "title": [
+          {
+            "type": "text",
+            "text": "The Luminosity Function of COSMOS Radio Sources"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Paglione"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "T."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Smolcic"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "V."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Schinnerer"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "E."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Salvador"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "K."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Ciliegi"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "P."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Bondi"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "M."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Tribiano"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "S."
+              }
+            ]
+          }
+        ],
+        "booktitle": [
+          {
+            "type": "text",
+            "text": "Bulletin of the American Astronomical Society"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "38"
+          }
+        ]
+      },
+      "raw_fields": {
+        "title": "The Luminosity Function of COSMOS Radio Sources",
+        "author": "Paglione, T. and Smolcic, V. and Schinnerer, E. and Salvador, K. and Ciliegi, P. and Bondi, M. and Tribiano, S.",
+        "booktitle": "Bulletin of the American Astronomical Society",
+        "volume": "38",
+        "pages": "1005",
+        "year": "2006"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "2006"
+          }
+        ]
+      }
+    },
+    "54": {
+      "bib_type": "article",
+      "entry_key": "smoli2010erratum",
+      "fields": {
+        "date": "2010",
+        "title": [
+          {
+            "type": "text",
+            "text": "ERRATUM:\" COSMIC EVOLUTION OF RADIO SELECTED ACTIVE GALACTIC NUCLEI IN THE COSMOS FIELD\"(2009, ApJ, 696, 24)"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Smoli"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "V."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Zamorani"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "G."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Schinnerer"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "E."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Bardelli"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "S."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Bondi"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "M."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "B"
+              },
+              {
+                "type": "text",
+                "text": "i",
+                "marks": [
+                  {
+                    "type": "sup"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "rzan"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "L."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Carilli"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "CL"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Ciliegi"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "P."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Elvis"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "M."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Impey"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "CD"
+              }
+            ]
+          },
+          {
+            "literal": [
+              {
+                "type": "text",
+                "text": "others"
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "Astrophysical Journal"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "708"
+          }
+        ],
+        "number": [
+          {
+            "type": "text",
+            "text": "1"
+          }
+        ]
+      },
+      "raw_fields": {
+        "title": "ERRATUM:\" COSMIC EVOLUTION OF RADIO SELECTED ACTIVE GALACTIC NUCLEI IN THE COSMOS FIELD\"(2009, ApJ, 696, 24)",
+        "author": "Smoli, V. and Zamorani, G. and Schinnerer, E. and Bardelli, S. and Bondi, M. and B{^i}rzan, L. and Carilli, CL and Ciliegi, P. and Elvis, M. and Impey, CD and others",
+        "journal": "Astrophysical Journal",
+        "volume": "708",
+        "number": "1",
+        "pages": "909",
+        "year": "2010"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "2010"
+          }
+        ]
+      }
+    }
+  },
+  "errors": [
+    {
+      "type": "token_mismatch",
+      "expected": "}",
+      "found": "\""
+    },
+    {
+      "type": "token_mismatch",
+      "expected": "}",
+      "found": "p"
+    }
+  ],
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "entry": "paglione2001mapping",
+      "field_name": "year"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "paglione2001mapping",
+      "field_name": "publisher"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "jackson1996hcn",
+      "field_name": "year"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "jackson1996hcn",
+      "field_name": "publisher"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "paglione1996diffuse",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "paglione1995distribution",
+      "field_name": "year"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "paglione1995distribution",
+      "field_name": "publisher"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "blom1999diffuse",
+      "field_name": "year"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "blom1999diffuse",
+      "field_name": "publisher"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "smolvcic2009cosmic",
+      "field_name": "year"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "smolvcic2009cosmic",
+      "field_name": "publisher"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "paglione1997average",
+      "field_name": "year"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "paglione1997average",
+      "field_name": "publisher"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "jackson1995submillimeter",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "paglione1998interpreting",
+      "field_name": "year"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "paglione1998interpreting",
+      "field_name": "publisher"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "smolvcic2009dust",
+      "field_name": "year"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "smolvcic2009dust",
+      "field_name": "publisher"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "jackson1993dense",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "paglione2004structure",
+      "field_name": "year"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "paglione2004structure",
+      "field_name": "publisher"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "kraemer19972000",
+      "field_name": "year"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "kraemer19972000",
+      "field_name": "publisher"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "liu2008faint",
+      "field_name": "year"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "liu2008faint",
+      "field_name": "publisher"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "paglione1995first",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "jackson1996apj",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "paglione1995apj",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "paglione1716nguyen",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "kraemer2000properties",
+      "field_name": "year"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "kraemer2000properties",
+      "field_name": "publisher"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "smith2000measurements",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "paglione2002cn",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "smolcic2010erratum",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "smolvcic2010erratum",
+      "field_name": "year"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "smolvcic2010erratum",
+      "field_name": "publisher"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "blom1999gamma",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "paglione2001mapping",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "smoli2009cosmic",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "spergel2002utilizing",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "paglione1997properties",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "paglione1993observations",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "paglione2004molecular",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "paglione2002york",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "paglione2010diffuse",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "bertsch1995diffuse",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "bolatto1996dense",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "yam1998properties",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "liu2005local",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "paglione1999umass",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "paglione2001mapping",
+      "field_name": "year"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "paglione2001mapping",
+      "field_name": "publisher"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "jackson1993submillimeter",
+      "field_name": "year"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "jackson1993submillimeter",
+      "field_name": "publisher"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "paglione2012properties",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "paglione1996dense",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "paglione2002urban",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "paglione1997tracing",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "tribiano2005evolution",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "smoli2009dust",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "paglione1997distribution",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "liu2006faint",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "kraemer1995molecular",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "jackson1993hcn",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "paglione2006luminosity",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "smoli2010erratum",
+      "field_name": "year"
+    }
+  ]
+}

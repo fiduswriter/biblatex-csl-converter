@@ -1,0 +1,62 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "book",
+      "entry_key": "book",
+      "fields": {
+        "author": [
+          {
+            "given": [ { "type": "text", "text": "Peter" } ],
+            "family": [ { "type": "text", "text": "Babington" } ]
+          }
+        ],
+        "title": [ { "type": "text", "text": "The title of the work" } ],
+        "publisher": [ [ { "type": "text", "text": "The name of the publisher" } ] ],
+        "volume": [ { "type": "text", "text": "4" } ],
+        "series": [ { "type": "text", "text": "10" } ],
+        "location": [ [ { "type": "text", "text": "The address" } ] ],
+        "edition": 3,
+        "note": [ { "type": "text", "text": "An optional note" } ],
+        "isbn": [ { "type": "text", "text": "3257227892" } ]
+      },
+      "raw_fields": {
+        "author": "Peter Babington",
+        "title": "The title of the work",
+        "publisher": "The name of the publisher",
+        "year": "1993",
+        "volume": "4",
+        "series": "10",
+        "address": "The address",
+        "edition": "3",
+        "month": "7",
+        "note": "An optional note",
+        "isbn": "3257227892"
+      },
+      "unknown_fields": {
+        "year": [ { "type": "text", "text": "1993" } ],
+        "month": [ { "type": "text", "text": "7" } ]
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unknown_date",
+      "entry": "book",
+      "field_name": "year,month",
+      "value": [
+        "1993",
+        "7"
+      ]
+    },
+    {
+      "type": "unknown_field",
+      "entry": "book",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "book",
+      "field_name": "month"
+    }
+  ]
+}

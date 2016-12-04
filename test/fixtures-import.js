@@ -15,6 +15,7 @@ const verify = bibfile => {
   let input = fs.readFileSync(bibfile, 'utf8')
   let parser = new BibLatexParser(input, {rawFields: true, processUnexpected: true, processUnknown: true})
   let name = path.basename(bibfile, path.extname(bibfile))
+  console.log(name)
 
   // this must be called before requesting warnings or errors
   let references = parser.output

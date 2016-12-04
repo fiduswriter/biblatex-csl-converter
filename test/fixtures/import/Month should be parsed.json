@@ -1,0 +1,242 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "article",
+      "entry_key": "2012ApJ...744...93B",
+      "fields": {
+        "author": [
+          {
+            "family": [ { "type": "text", "text": "Battisti" } ],
+            "given": [ { "type": "text", "text": "A. J." } ]
+          },
+          {
+            "family": [ { "type": "text", "text": "Meiring" } ],
+            "given": [ { "type": "text", "text": "J. D." } ]
+          },
+          {
+            "family": [ { "type": "text", "text": "Tripp" } ],
+            "given": [ { "type": "text", "text": "T. M." } ]
+          },
+          {
+            "prefix": [],
+            "useprefix": true,
+            "family": [ { "type": "text", "text": "Prochaska" } ],
+            "given": [ { "type": "text", "text": "J. X." } ]
+          },
+          {
+            "family": [ { "type": "text", "text": "Werk" } ],
+            "given": [ { "type": "text", "text": "J. K." } ]
+          },
+          {
+            "family": [ { "type": "text", "text": "Jenkins" } ],
+            "given": [ { "type": "text", "text": "E. B." } ]
+          },
+          {
+            "prefix": [],
+            "useprefix": true,
+            "family": [ { "type": "text", "text": "Lehner" } ],
+            "given": [ { "type": "text", "text": "N." } ]
+          },
+          {
+            "family": [ { "type": "text", "text": "Tumlinson" } ],
+            "given": [ { "type": "text", "text": "J." } ]
+          },
+          {
+            "family": [ { "type": "text", "text": "Thom" } ],
+            "given": [ { "type": "text", "text": "C." } ]
+          }
+        ],
+        "title": [ { "type": "text", "text": "The First Observations of Low-redshift Damped Lyalpha Systems with the Cosmic Origins Spectrograph: Chemical Abundances and Affiliated Galaxies", "marks": [ { "type": "nocase" } ] } ],
+        "journaltitle": [ { "type": "text", "text": "apj" } ],
+        "eprinttype": [ { "type": "text", "text": "arXiv" } ],
+        "eprintclass": [ [ { "type": "text", "text": "astro-ph.CO" } ] ],
+        "keywords": [ "galaxies: abundances", "galaxies: ISM", "quasars: absorption lines" ],
+        "volume": [ { "type": "text", "text": "744" } ],
+        "eid": [ { "type": "text", "text": "93" } ]
+      },
+      "raw_fields": {
+        "author": "{Battisti}, A.~J. and {Meiring}, J.~D. and {Tripp}, T.~M. and \n {Prochaska}, J.~X. and {Werk}, J.~K. and {Jenkins}, E.~B. and \n {Lehner}, N. and {Tumlinson}, J. and {Thom}, C.",
+        "title": "{The First Observations of Low-redshift Damped Ly{$alpha$} Systems with the Cosmic Origins Spectrograph: Chemical Abundances and Affiliated Galaxies}",
+        "journal": "apj",
+        "archiveprefix": "arXiv",
+        "eprint": "1110.4557",
+        "primaryclass": "astro-ph.CO",
+        "keywords": "galaxies: abundances, galaxies: ISM, quasars: absorption lines",
+        "year": "2012",
+        "month": "January",
+        "volume": "744",
+        "eid": "93",
+        "pages": "93",
+        "doi": "10.1088/0004-637X/744/2/93",
+        "adsurl": "http://adsabs.harvard.edu/abs/2012ApJ...744...93B",
+        "adsnote": "Provided by the SAO/NASA Astrophysics Data System"
+      },
+      "unknown_fields": {
+        "year": [ { "type": "text", "text": "2012" } ],
+        "month": [ { "type": "text", "text": "January" } ],
+        "adsurl": [ { "type": "text", "text": "http://adsabs.harvard.edu/abs/2012ApJ...744...93B" } ],
+        "adsnote": [ { "type": "text", "text": "Provided by the SAO/NASA Astrophysics Data System" } ]
+      }
+    },
+    "1": {
+      "bib_type": "article",
+      "entry_key": "2012ApJ...744...93C",
+      "fields": {
+        "author": [
+          {
+            "family": [ { "type": "text", "text": "Battisti" } ],
+            "given": [ { "type": "text", "text": "A. J." } ]
+          },
+          {
+            "family": [ { "type": "text", "text": "Meiring" } ],
+            "given": [ { "type": "text", "text": "J. D." } ]
+          },
+          {
+            "family": [ { "type": "text", "text": "Tripp" } ],
+            "given": [ { "type": "text", "text": "T. M." } ]
+          },
+          {
+            "prefix": [],
+            "useprefix": true,
+            "why useprefix?": true,
+            "family": [ { "type": "text", "text": "Prochaska" } ],
+            "given": [ { "type": "text", "text": "J. X." } ]
+          },
+          {
+            "family": [ { "type": "text", "text": "Werk" } ],
+            "given": [ { "type": "text", "text": "J. K." } ]
+          },
+          {
+            "family": [ { "type": "text", "text": "Jenkins" } ],
+            "given": [ { "type": "text", "text": "E. B." } ]
+          },
+          {
+            "prefix": [],
+            "useprefix": true,
+            "why useprefix?": true,
+            "family": [ { "type": "text", "text": "Lehner" } ],
+            "given": [ { "type": "text", "text": "N." } ]
+          },
+          {
+            "family": [ { "type": "text", "text": "Tumlinson" } ],
+            "given": [ { "type": "text", "text": "J." } ]
+          },
+          {
+            "family": [ { "type": "text", "text": "Thom" } ],
+            "given": [ { "type": "text", "text": "C." } ]
+          }
+        ],
+        "title": [ { "type": "text", "text": "The First Observations of Low-redshift Damped Lyalpha Systems with the Cosmic Origins Spectrograph: Chemical Abundances and Affiliated Galaxies", "marks": [ { "type": "nocase" } ] } ],
+        "journaltitle": [ { "type": "text", "text": "apj" } ],
+        "eprinttype": [ { "type": "text", "text": "arXiv" } ],
+        "eprintclass": [ [ { "type": "text", "text": "astro-ph.CO" } ] ],
+        "keywords": [ "galaxies: abundances", "galaxies: ISM", "quasars: absorption lines" ],
+        "volume": [ { "type": "text", "text": "744" } ],
+        "eid": [ { "type": "text", "text": "93" } ]
+      },
+      "raw_fields": {
+        "author": "{Battisti}, A.~J. and {Meiring}, J.~D. and {Tripp}, T.~M. and\n {Prochaska}, J.~X. and {Werk}, J.~K. and {Jenkins}, E.~B. and\n {Lehner}, N. and {Tumlinson}, J. and {Thom}, C.",
+        "title": "{The First Observations of Low-redshift Damped Ly{$alpha$} Systems with the Cosmic Origins Spectrograph: Chemical Abundances and Affiliated Galaxies}",
+        "journal": "apj",
+        "archiveprefix": "arXiv",
+        "eprint": "1110.4557",
+        "primaryclass": "astro-ph.CO",
+        "keywords": "galaxies: abundances, galaxies: ISM, quasars: absorption lines",
+        "year": "2012",
+        "month": "January",
+        "volume": "744",
+        "eid": "93",
+        "pages": "93",
+        "doi": "10.1088/0004-637X/744/2/93",
+        "adsurl": "http://adsabs.harvard.edu/abs/2012ApJ...744...93B",
+        "adsnote": "Provided by the SAO/NASA Astrophysics Data System"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "2012"
+          }
+        ],
+        "month": [
+          {
+            "type": "text",
+            "text": "January"
+          }
+        ],
+        "adsurl": [
+          {
+            "type": "text",
+            "text": "http://adsabs.harvard.edu/abs/2012ApJ...744...93B"
+          }
+        ],
+        "adsnote": [
+          {
+            "type": "text",
+            "text": "Provided by the SAO/NASA Astrophysics Data System"
+          }
+        ]
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unknown_date",
+      "entry": "2012ApJ...744...93B",
+      "field_name": "year,month",
+      "value": [
+        "2012",
+        "January"
+      ]
+    },
+    {
+      "type": "unknown_field",
+      "entry": "2012ApJ...744...93B",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "2012ApJ...744...93B",
+      "field_name": "month"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "2012ApJ...744...93B",
+      "field_name": "adsurl"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "2012ApJ...744...93B",
+      "field_name": "adsnote"
+    },
+    {
+      "type": "unknown_date",
+      "entry": "2012ApJ...744...93C",
+      "field_name": "year,month",
+      "value": [
+        "2012",
+        "January"
+      ]
+    },
+    {
+      "type": "unknown_field",
+      "entry": "2012ApJ...744...93C",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "2012ApJ...744...93C",
+      "field_name": "month"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "2012ApJ...744...93C",
+      "field_name": "adsurl"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "2012ApJ...744...93C",
+      "field_name": "adsnote"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "thesis",
+      "entry_key": "2013current",
+      "fields": {
+        "date": "2013",
+        "author": [
+          {
+            "family": [ { "type": "text", "text": "Lack" } ],
+            "given": [ { "type": "text", "text": "Kelly A." } ]
+          }
+        ],
+        "institution": [ [ { "type": "text", "text": "Ithaka S+R" } ] ],
+        "keywords": [ "0sotl" ],
+        "title": [ { "type": "text", "text": "Current Status of Research on Online Learning in Postsecondary Education" } ]
+      },
+      "raw_fields": {
+        "author": "Lack, Kelly A.",
+        "date-added": "2013-04-09 19:09:56 +0000",
+        "date-modified": "2013-04-09 19:10:58 +0000",
+        "institution": "Ithaka S+R",
+        "keywords": "0sotl",
+        "oa-url": "http://www.sr.ithaka.org/sites/default/files/reports/ithaka-sr-online-learning-postsecondary-education-may2012.pdf",
+        "title": "Current Status of Research on Online Learning in Postsecondary Education",
+        "year": "2013"
+      },
+      "unknown_fields": {
+        "date-added": [ { "type": "text", "text": "2013-04-09 19:09:56 +0000" } ],
+        "date-modified": [ { "type": "text", "text": "2013-04-09 19:10:58 +0000" } ],
+        "oa-url": [ { "type": "text", "text": "http://www.sr.ithaka.org/sites/default/files/reports/ithaka-sr-online-learning-postsecondary-education-may2012.pdf" } ],
+        "year": [ { "type": "text", "text": "2013" } ]
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "entry": "2013current",
+      "field_name": "date-added"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "2013current",
+      "field_name": "date-modified"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "2013current",
+      "field_name": "oa-url"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "2013current",
+      "field_name": "year"
+    }
+  ]
+}
