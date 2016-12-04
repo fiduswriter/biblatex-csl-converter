@@ -61,12 +61,10 @@
           "Quantum Physics"
         ],
         "eprintclass": [
-          [
-            {
-              "type": "text",
-              "text": "math-ph, physics:quant-ph"
-            }
-          ]
+          {
+            "type": "text",
+            "text": "math-ph, physics:quant-ph"
+          }
         ],
         "title": [
           {

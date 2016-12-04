@@ -226,10 +226,10 @@ export class BibLatexParser {
                 this.errors.push({type: 'runaway_key'})
                 return
             }
-            if (this.input[this.pos].match("[a-zA-Z0-9\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u017F_:;`\\.\\\?+/-]")) {
-                this.pos++
-            } else {
+            if ([',','{','}',' ','='].includes(this.input[this.pos])) {
                 return this.input.substring(start, this.pos)
+            } else {
+                this.pos++
             }
         }
     }
