@@ -123,7 +123,7 @@ export const BibFieldTypes = {
         biblatex: 'eprint'
     },
     'eprintclass': {
-        type: 'l_literal',
+        type: 'f_literal',
         biblatex: 'eprintclass'
     },
     'eprinttype': {
