@@ -63,7 +63,7 @@ export class CSLExporter {
                         fValues[key] = this._reformText(fValue)
                         break
                     case 'f_range':
-                        fValues[key] = this._escapeHtml(fValue)
+                        fValues[key] = this._reformRange(fValue)
                         break
                     case 'f_title':
                         fValues[key] = this._reformText(fValue)
@@ -103,6 +103,13 @@ export class CSLExporter {
          .replace(/>/g, "&gt;")
          .replace(/'/g, "&apos;")
          .replace(/"/g, "&quot;")
+    }
+
+    _reformRange(theValue) {
+        let that = this
+        return theValue.map(range=>{
+            return that._escapeHtml(range.join('--'))
+        }).join(',')
     }
 
     _reformInteger(theValue) {
