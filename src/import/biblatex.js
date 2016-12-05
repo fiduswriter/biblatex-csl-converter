@@ -445,7 +445,7 @@ export class BibLatexParser {
                     if (BibFieldTypes[fKey]['options'] && BibFieldTypes[fKey]['options'].includes(fValue)) {
                         oFields[fKey] = fValue
                     } else {
-                        oFields[fKey] = this._reformInteger(fValue)
+                        oFields[fKey] = this._reformLiteral(fValue)
                     }
                     break
                 case 'f_literal':
