@@ -26,10 +26,6 @@ export const BibFieldTypes = {
         biblatex: 'author',
         csl: 'author'
     },
-    'authortype': {
-        type: 'f_key',
-        biblatex: 'authortype'
-    },
     'bookauthor': {
         type: 'l_name',
         biblatex: 'bookauthor',
@@ -230,8 +226,9 @@ export const BibFieldTypes = {
         biblatex: 'label'
     },
     'language': {
-        type: 'l_literal',
-        biblatex: 'language'
+        type: 'l_key',
+        biblatex: 'language',
+        options: ['american','brazilian','catalan','croation','czech','danish','dutch','english','finnish','french','german','greek', 'italian', 'latin','norwegian','polish','portuguese','russian','slovene','spanish','swedish']
     },
     'langid': {
         type: 'f_lang',
@@ -283,8 +280,9 @@ export const BibFieldTypes = {
         csl: 'original-date'
     },
     'origlanguage': {
-        type: 'f_literal',
-        biblatex: 'origlanguage'
+        type: 'f_key',
+        biblatex: 'origlanguage',
+        options: ['american','brazilian','catalan','croation','czech','danish','dutch','english','finnish','french','german','greek', 'italian', 'latin','norwegian','polish','portuguese','russian','slovene','spanish','swedish']
     },
     'origlocation': {
         type: 'l_literal',
@@ -631,268 +629,268 @@ export const BibLanguages = {
 
 /** A list of all bib types and their fields. */
 export const BibTypes = {
-    'article': {
-        order: 1,
-        biblatex: 'article',
-        csl: 'article',
-        required: ['journaltitle', 'title', 'author', 'date'],
-        eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'annotator', 'commentator', 'doi', 'editor', 'editora', 'editorb', 'editorc', 'eid', 'eprint', 'eprintclass', 'eprinttype', 'issn', 'issue', 'issuesubtitle', 'issuetitle', 'journalsubtitle', 'language', 'langid', 'note', 'number', 'origlanguage', 'pages', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'version', 'volume']
+    "article": {
+        "order": 1,
+        "biblatex": "article",
+        "csl": "article",
+        "required": ["journaltitle", "title", "author", "date"],
+        "eitheror": [],
+        "optional": ["abstract", "addendum", "annotator", "commentator", "doi", "editor", "editora", "editorb", "editorc", "eid", "eprint", "eprintclass", "eprinttype", "issn", "issue", "issuesubtitle", "issuetitle", "journalsubtitle", "language", "langid", "note", "number", "origlanguage", "pages", "pubstate", "series", "subtitle", "titleaddon", "translator", "url", "urldate", "version", "volume", "annotation", "keywords"]
     },
-    'article-magazine': {
-        order: 2,
-        biblatex: 'article',
-        csl: 'article-magazine',
-        required: ['journaltitle', 'title', 'author', 'date'],
-        eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'annotator', 'commentator', 'doi', 'editor', 'editora', 'editorb', 'editorc', 'eid', 'eprint', 'eprintclass', 'eprinttype', 'issn', 'issue', 'issuesubtitle', 'issuetitle', 'journalsubtitle', 'language', 'langid', 'note', 'number', 'origlanguage', 'pages', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'version', 'volume']
+    "article-magazine": {
+        "order": 2,
+        "biblatex": "article",
+        "csl": "article-magazine",
+        "required": ["journaltitle", "title", "author", "date"],
+        "eitheror": [],
+        "optional": ["abstract", "addendum", "annotator", "commentator", "doi", "editor", "editora", "editorb", "editorc", "eid", "eprint", "eprintclass", "eprinttype", "issn", "issue", "issuesubtitle", "issuetitle", "journalsubtitle", "language", "langid", "note", "number", "origlanguage", "pages", "pubstate", "series", "subtitle", "titleaddon", "translator", "url", "urldate", "version", "volume", "annotation", "keywords"]
     },
-    'article-newspaper': {
-        order: 3,
-        biblatex: 'article',
-        csl: 'article-newspaper',
-        required: ['journaltitle', 'title', 'author', 'date'],
-        eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'annotator', 'commentator', 'doi', 'editor', 'editora', 'editorb', 'editorc', 'eid', 'eprint', 'eprintclass', 'eprinttype', 'issn', 'issue', 'issuesubtitle', 'issuetitle', 'journalsubtitle', 'language', 'langid', 'note', 'number', 'origlanguage', 'pages', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'version', 'volume']
+    "article-newspaper": {
+        "order": 3,
+        "biblatex": "article",
+        "csl": "article-newspaper",
+        "required": ["journaltitle", "title", "author", "date"],
+        "eitheror": [],
+        "optional": ["abstract", "addendum", "annotator", "commentator", "doi", "editor", "editora", "editorb", "editorc", "eid", "eprint", "eprintclass", "eprinttype", "issn", "issue", "issuesubtitle", "issuetitle", "journalsubtitle", "language", "langid", "note", "number", "origlanguage", "pages", "pubstate", "series", "subtitle", "titleaddon", "translator", "url", "urldate", "version", "volume", "annotation", "keywords"]
     },
-    'article-journal': {
-        order: 4,
-        biblatex: 'article',
-        csl: 'article-journal',
-        required: ['journaltitle', 'title', 'author', 'date'],
-        eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'annotator', 'commentator', 'doi', 'editor', 'editora', 'editorb', 'editorc', 'eid', 'eprint', 'eprintclass', 'eprinttype', 'issn', 'issue', 'issuesubtitle', 'issuetitle', 'journalsubtitle', 'language', 'langid', 'note', 'number', 'origlanguage', 'pages', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'version', 'volume']
+    "article-journal": {
+        "order": 4,
+        "biblatex": "article",
+        "csl": "article-journal",
+        "required": ["journaltitle", "title", "author", "date"],
+        "eitheror": [],
+        "optional": ["abstract", "addendum", "annotator", "commentator", "doi", "editor", "editora", "editorb", "editorc", "eid", "eprint", "eprintclass", "eprinttype", "issn", "issue", "issuesubtitle", "issuetitle", "journalsubtitle", "language", "langid", "note", "number", "origlanguage", "pages", "pubstate", "series", "subtitle", "titleaddon", "translator", "url", "urldate", "version", "volume", "annotation", "keywords"]
     },
-    'post-weblog': {
-        order: 5,
-        biblatex: 'online',
-        csl: 'post-weblog',
-        required: ['date', 'title', 'url'],
-        eitheror: ['editor', 'author'],
-        optional: ['abstract', 'keywords', 'addendum', 'pubstate', 'subtitle', 'language', 'langid', 'urldate', 'titleaddon', 'version', 'note', 'organization']
+    "post-weblog": {
+        "order": 5,
+        "biblatex": "online",
+        "csl": "post-weblog",
+        "required": ["date", "title", "url"],
+        "eitheror": ["editor", "author"],
+        "optional": ["abstract", "addendum", "pubstate", "subtitle", "language", "langid", "urldate", "titleaddon", "version", "note", "organization", "annotation", "keywords"]
     },
-    'book': {
-        order: 10,
-        biblatex: 'book',
-        csl: 'book',
-        required: ['title', 'author', 'date'],
-        eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'afterword', 'annotator', 'chapter', 'commentator', 'doi', 'edition', 'editor', 'editora', 'editorb', 'editorc', 'eprint', 'eprintclass', 'eprinttype', 'foreword', 'introduction', 'isbn', 'language', 'langid', 'location', 'mainsubtitle', 'maintitle', 'maintitleaddon', 'note', 'number', 'origlanguage', 'pages', 'pagetotal', 'part', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'volume', 'volumes']
+    "book": {
+        "order": 10,
+        "biblatex": "book",
+        "csl": "book",
+        "required": ["title", "author", "date"],
+        "eitheror": [],
+        "optional": ["abstract", "addendum", "afterword", "annotator", "chapter", "commentator", "doi", "edition", "editor", "editora", "editorb", "editorc", "eprint", "eprintclass", "eprinttype", "foreword", "introduction", "isbn", "language", "langid", "location", "mainsubtitle", "maintitle", "maintitleaddon", "note", "number", "origlanguage", "pages", "pagetotal", "part", "publisher", "pubstate", "series", "subtitle", "titleaddon", "translator", "url", "urldate", "volume", "volumes", "annotation", "keywords"]
     },
-    'mvbook': {
-        order: 11,
-        biblatex: 'mvbook',
-        csl: 'book',
-        required: ['title', 'author', 'date'],
-        eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'afterword', 'annotator', 'commentator', 'doi', 'edition', 'editor', 'editora', 'editorb', 'editorc', 'eprint', 'eprintclass', 'eprinttype', 'foreword', 'introduction', 'isbn', 'language', 'langid', 'location', 'note', 'number', 'origlanguage', 'pagetotal', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'volumes']
+    "mvbook": {
+        "order": 11,
+        "biblatex": "mvbook",
+        "csl": "book",
+        "required": ["title", "author", "date"],
+        "eitheror": [],
+        "optional": ["abstract", "addendum", "afterword", "annotator", "commentator", "doi", "edition", "editor", "editora", "editorb", "editorc", "eprint", "eprintclass", "eprinttype", "foreword", "introduction", "isbn", "language", "langid", "location", "note", "number", "origlanguage", "pagetotal", "publisher", "pubstate", "series", "subtitle", "titleaddon", "translator", "url", "urldate", "volumes", "annotation", "keywords"]
     },
-    'inbook': {
-        order: 12,
-        biblatex: 'inbook',
-        csl: 'chapter',
-        required: ['title', 'booktitle', 'author', 'date'],
-        eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'afterword', 'annotator', 'bookauthor', 'booksubtitle', 'booktitleaddon', 'chapter', 'commentator', 'doi', 'edition', 'editor', 'editora', 'editorb', 'editorc', 'eprint', 'eprintclass', 'eprinttype', 'foreword', 'introduction', 'isbn', 'language', 'langid', 'location', 'mainsubtitle', 'maintitle', 'maintitleaddon', 'note', 'number', 'origlanguage', 'pages', 'part', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'volume', 'volumes']
+    "inbook": {
+        "order": 12,
+        "biblatex": "inbook",
+        "csl": "chapter",
+        "required": ["title", "booktitle", "author", "date"],
+        "eitheror": [],
+        "optional": ["abstract", "addendum", "afterword", "annotator", "bookauthor", "booksubtitle", "booktitleaddon", "chapter", "commentator", "doi", "edition", "editor", "editora", "editorb", "editorc", "eprint", "eprintclass", "eprinttype", "foreword", "introduction", "isbn", "language", "langid", "location", "mainsubtitle", "maintitle", "maintitleaddon", "note", "number", "origlanguage", "pages", "part", "publisher", "pubstate", "series", "subtitle", "titleaddon", "translator", "url", "urldate", "volume", "volumes", "annotation", "keywords"]
     },
-    'bookinbook': {
-        order: 13,
-        biblatex: 'bookinbook',
-        csl: 'chapter',
-        required: ['title', 'booktitle', 'author', 'date'],
-        eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'afterword', 'annotator', 'bookauthor', 'booksubtitle', 'booktitleaddon', 'chapter', 'commentator', 'doi', 'edition', 'editor', 'editora', 'editorb', 'editorc', 'eprint', 'eprintclass', 'eprinttype', 'foreword', 'introduction', 'isbn', 'language', 'langid', 'location', 'mainsubtitle', 'maintitle', 'maintitleaddon', 'note', 'number', 'origlanguage', 'pages', 'part', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'volume', 'volumes']
+    "bookinbook": {
+        "order": 13,
+        "biblatex": "bookinbook",
+        "csl": "chapter",
+        "required": ["title", "booktitle", "author", "date"],
+        "eitheror": [],
+        "optional": ["abstract", "addendum", "afterword", "annotator", "bookauthor", "booksubtitle", "booktitleaddon", "chapter", "commentator", "doi", "edition", "editor", "editora", "editorb", "editorc", "eprint", "eprintclass", "eprinttype", "foreword", "introduction", "isbn", "language", "langid", "location", "mainsubtitle", "maintitle", "maintitleaddon", "note", "number", "origlanguage", "pages", "part", "publisher", "pubstate", "series", "subtitle", "titleaddon", "translator", "url", "urldate", "volume", "volumes", "annotation", "keywords"]
     },
-    'suppbook': {
-        order: 14,
-        biblatex: 'suppbook',
-        csl: 'chapter',
-        required: ['title', 'booktitle', 'author', 'date'],
-        eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'afterword', 'annotator', 'bookauthor', 'booksubtitle', 'booktitleaddon', 'chapter', 'commentator', 'doi', 'edition', 'editor', 'editora', 'editorb', 'editorc', 'eprint', 'eprintclass', 'eprinttype', 'foreword', 'introduction', 'isbn', 'language', 'langid', 'location', 'mainsubtitle', 'maintitle', 'maintitleaddon', 'note', 'number', 'origlanguage', 'pages', 'part', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'volume', 'volumes']
+    "suppbook": {
+        "order": 14,
+        "biblatex": "suppbook",
+        "csl": "chapter",
+        "required": ["title", "booktitle", "author", "date"],
+        "eitheror": [],
+        "optional": ["abstract", "addendum", "afterword", "annotator", "bookauthor", "booksubtitle", "booktitleaddon", "chapter", "commentator", "doi", "edition", "editor", "editora", "editorb", "editorc", "eprint", "eprintclass", "eprinttype", "foreword", "introduction", "isbn", "language", "langid", "location", "mainsubtitle", "maintitle", "maintitleaddon", "note", "number", "origlanguage", "pages", "part", "publisher", "pubstate", "series", "subtitle", "titleaddon", "translator", "url", "urldate", "volume", "volumes", "annotation", "keywords"]
     },
-    'booklet': {
-        order: 15,
-        biblatex: 'booklet',
-        csl: 'pamphlet',
-        required: ['title', 'date'],
-        eitheror: ['editor', 'author'],
-        optional: ['abstract', 'keywords', 'titleaddon', 'addendum', 'pages', 'howpublished', 'type', 'pubstate', 'chapter', 'doi', 'subtitle', 'language', 'langid', 'location', 'url', 'urldate', 'pagetotal', 'note', 'eprint', 'eprintclass', 'eprinttype']
+    "booklet": {
+        "order": 15,
+        "biblatex": "booklet",
+        "csl": "pamphlet",
+        "required": ["title", "date"],
+        "eitheror": ["editor", "author"],
+        "optional": ["abstract", "titleaddon", "addendum", "pages", "howpublished", "type", "pubstate", "chapter", "doi", "subtitle", "language", "langid", "location", "url", "urldate", "pagetotal", "note", "eprint", "eprintclass", "eprinttype", "annotation", "keywords"]
     },
-    'collection': {
-        order: 20,
-        biblatex: 'collection',
-        csl: 'dataset',
-        required: ['editor', 'title', 'date'],
-        eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'afterword', 'annotator', 'chapter', 'commentator', 'doi', 'edition', 'editora', 'editorb', 'editorc', 'eprint', 'eprintclass', 'eprinttype', 'foreword', 'introduction', 'isbn', 'language', 'langid', 'location', 'mainsubtitle', 'maintitle', 'maintitleaddon', 'note', 'number', 'origlanguage', 'pages', 'pagetotal', 'part', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'volume', 'volumes']
+    "collection": {
+        "order": 20,
+        "biblatex": "collection",
+        "csl": "dataset",
+        "required": ["editor", "title", "date"],
+        "eitheror": [],
+        "optional": ["abstract", "addendum", "afterword", "annotator", "chapter", "commentator", "doi", "edition", "editora", "editorb", "editorc", "eprint", "eprintclass", "eprinttype", "foreword", "introduction", "isbn", "language", "langid", "location", "mainsubtitle", "maintitle", "maintitleaddon", "note", "number", "origlanguage", "pages", "pagetotal", "part", "publisher", "pubstate", "series", "subtitle", "titleaddon", "translator", "url", "urldate", "volume", "volumes", "annotation", "keywords"]
     },
-    'mvcollection': {
-        order: 21,
-        biblatex: 'mvcollection',
-        csl: 'dataset',
-        required: ['editor', 'title', 'date'],
-        eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'afterword', 'annotator', 'commentator', 'doi', 'edition', 'editora', 'editorb', 'editorc', 'eprint', 'eprintclass', 'eprinttype', 'foreword', 'introduction', 'isbn', 'language', 'langid', 'location', 'note', 'number', 'origlanguage', 'pagetotal', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'volumes']
+    "mvcollection": {
+        "order": 21,
+        "biblatex": "mvcollection",
+        "csl": "dataset",
+        "required": ["editor", "title", "date"],
+        "eitheror": [],
+        "optional": ["abstract", "addendum", "afterword", "annotator", "commentator", "doi", "edition", "editora", "editorb", "editorc", "eprint", "eprintclass", "eprinttype", "foreword", "introduction", "isbn", "language", "langid", "location", "note", "number", "origlanguage", "pagetotal", "publisher", "pubstate", "series", "subtitle", "titleaddon", "translator", "url", "urldate", "volumes", "annotation", "keywords"]
     },
-    'incollection': {
-        order: 22,
-        biblatex: 'incollection',
-        csl: 'entry',
-        required: ['title', 'editor', 'booktitle', 'author', 'date'],
-        eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'afterword', 'annotator', 'booksubtitle', 'booktitleaddon', 'chapter', 'commentator', 'doi', 'edition', 'editora', 'editorb', 'editorc', 'eprint', 'eprintclass', 'eprinttype', 'foreword', 'introduction', 'isbn', 'language', 'langid', 'location', 'mainsubtitle', 'maintitle', 'maintitleaddon', 'note', 'number', 'origlanguage', 'pages', 'part', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'volume', 'volumes']
+    "incollection": {
+        "order": 22,
+        "biblatex": "incollection",
+        "csl": "entry",
+        "required": ["title", "editor", "booktitle", "author", "date"],
+        "eitheror": [],
+        "optional": ["abstract", "addendum", "afterword", "annotator", "booksubtitle", "booktitleaddon", "chapter", "commentator", "doi", "edition", "editora", "editorb", "editorc", "eprint", "eprintclass", "eprinttype", "foreword", "introduction", "isbn", "language", "langid", "location", "mainsubtitle", "maintitle", "maintitleaddon", "note", "number", "origlanguage", "pages", "part", "publisher", "pubstate", "series", "subtitle", "titleaddon", "translator", "url", "urldate", "volume", "volumes", "annotation", "keywords"]
     },
-    'suppcollection': {
-        order: 23,
-        biblatex: 'suppcollection',
-        csl: 'entry',
-        required: ['title', 'editor', 'booktitle', 'author', 'date'],
-        eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'afterword', 'annotator', 'booksubtitle', 'booktitleaddon', 'chapter', 'commentator', 'doi', 'edition', 'editora', 'editorb', 'editorc', 'eprint', 'eprintclass', 'eprinttype', 'foreword', 'introduction', 'isbn', 'language', 'langid', 'location', 'mainsubtitle', 'maintitle', 'maintitleaddon', 'note', 'number', 'origlanguage', 'pages', 'part', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'volume', 'volumes']
+    "suppcollection": {
+        "order": 23,
+        "biblatex": "suppcollection",
+        "csl": "entry",
+        "required": ["title", "editor", "booktitle", "author", "date"],
+        "eitheror": [],
+        "optional": ["abstract", "addendum", "afterword", "annotator", "booksubtitle", "booktitleaddon", "chapter", "commentator", "doi", "edition", "editora", "editorb", "editorc", "eprint", "eprintclass", "eprinttype", "foreword", "introduction", "isbn", "language", "langid", "location", "mainsubtitle", "maintitle", "maintitleaddon", "note", "number", "origlanguage", "pages", "part", "publisher", "pubstate", "series", "subtitle", "titleaddon", "translator", "url", "urldate", "volume", "volumes", "annotation", "keywords"]
     },
-    'post': {
-        order: 30,
-        biblatex: 'online',
-        csl: 'post',
-        required: ['date', 'title', 'url'],
-        eitheror: ['editor', 'author'],
-        optional: ['abstract', 'keywords', 'addendum', 'pubstate', 'subtitle', 'language', 'langid', 'urldate', 'titleaddon', 'version', 'note', 'organization']
+    "post": {
+        "order": 30,
+        "biblatex": "online",
+        "csl": "post",
+        "required": ["date", "title", "url"],
+        "eitheror": ["editor", "author"],
+        "optional": ["abstract", "addendum", "pubstate", "subtitle", "language", "langid", "urldate", "titleaddon", "version", "note", "organization", "annotation", "keywords"]
     },
-    'manual': {
-        order: 40,
-        biblatex: 'manual',
-        csl: 'book',
-        required: ['title', 'date'],
-        eitheror: ['editor', 'author'],
-        optional: ['abstract', 'keywords', 'addendum', 'chapter', 'doi', 'edition', 'eprint', 'eprintclass', 'eprinttype', 'isbn', 'language', 'langid', 'location', 'note', 'number', 'organization', 'pages', 'pagetotal', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'type', 'url', 'urldate', 'version']
+    "manual": {
+        "order": 40,
+        "biblatex": "manual",
+        "csl": "book",
+        "required": ["title", "date"],
+        "eitheror": ["editor", "author"],
+        "optional": ["abstract", "addendum", "chapter", "doi", "edition", "eprint", "eprintclass", "eprinttype", "isbn", "language", "langid", "location", "note", "number", "organization", "pages", "pagetotal", "publisher", "pubstate", "series", "subtitle", "titleaddon", "type", "url", "urldate", "version", "annotation", "keywords"]
     },
-    'misc': {
-        order: 41,
-        biblatex: 'misc',
-        csl: 'entry',
-        required: ['title', 'date'],
-        eitheror: ['editor', 'author'],
-        optional: ['abstract', 'keywords', 'addendum', 'howpublished', 'type', 'pubstate', 'organization', 'doi', 'subtitle', 'language', 'langid', 'location', 'url', 'urldate', 'titleaddon', 'version', 'note', 'eprint', 'eprintclass', 'eprinttype']
+    "misc": {
+        "order": 41,
+        "biblatex": "misc",
+        "csl": "entry",
+        "required": ["title", "date"],
+        "eitheror": ["editor", "author"],
+        "optional": ["abstract", "addendum", "howpublished", "type", "pubstate", "organization", "doi", "subtitle", "language", "langid", "location", "url", "urldate", "titleaddon", "version", "note", "eprint", "eprintclass", "eprinttype", "annotation", "keywords"]
     },
-    'online': {
-        order: 42,
-        biblatex: 'online',
-        csl: 'webpage',
-        required: ['date', 'title', 'url'],
-        eitheror: ['editor', 'author'],
-        optional: ['abstract', 'keywords', 'addendum', 'pubstate', 'subtitle', 'language', 'langid', 'urldate', 'titleaddon', 'version', 'note', 'organization']
+    "online": {
+        "order": 42,
+        "biblatex": "online",
+        "csl": "webpage",
+        "required": ["date", "title", "url"],
+        "eitheror": ["editor", "author"],
+        "optional": ["abstract", "addendum", "pubstate", "subtitle", "language", "langid", "urldate", "titleaddon", "version", "note", "organization", "annotation", "keywords"]
     },
-    'patent': {
-        order: 43,
-        biblatex: 'patent',
-        csl: 'patent',
-        required: ['title', 'number', 'author', 'date'],
-        eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'holder', 'location', 'pubstate', 'doi', 'subtitle', 'titleaddon', 'type', 'url', 'urldate', 'version', 'note', 'eprint', 'eprintclass', 'eprinttype']
+    "patent": {
+        "order": 43,
+        "biblatex": "patent",
+        "csl": "patent",
+        "required": ["title", "number", "author", "date"],
+        "eitheror": [],
+        "optional": ["abstract", "addendum", "holder", "location", "pubstate", "doi", "subtitle", "titleaddon", "type", "url", "urldate", "version", "note", "eprint", "eprintclass", "eprinttype", "annotation", "keywords"]
     },
-    'periodical': {
-        order: 50,
-        biblatex: 'periodical',
-        csl: 'book',
-        required: ['editor', 'title', 'date'],
-        eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'volume', 'pubstate', 'number', 'series', 'issn', 'issue', 'issuesubtitle', 'issuetitle', 'doi', 'subtitle', 'editora', 'editorb', 'editorc', 'url', 'urldate', 'language', 'langid', 'note', 'eprint', 'eprintclass', 'eprinttype']
+    "periodical": {
+        "order": 50,
+        "biblatex": "periodical",
+        "csl": "book",
+        "required": ["editor", "title", "date"],
+        "eitheror": [],
+        "optional": ["abstract", "addendum", "volume", "pubstate", "number", "series", "issn", "issue", "issuesubtitle", "issuetitle", "doi", "subtitle", "editora", "editorb", "editorc", "url", "urldate", "language", "langid", "note", "eprint", "eprintclass", "eprinttype", "annotation", "keywords"]
     },
-    'suppperiodical': {
-        order: 51,
-        biblatex: 'suppperiodical',
-        csl: 'entry',
-        required: ['journaltitle', 'title', 'author', 'date'],
-        eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'annotator', 'commentator', 'doi', 'editor', 'editora', 'editorb', 'editorc', 'eid', 'eprint', 'eprintclass', 'eprinttype', 'issn', 'issue', 'issuesubtitle', 'issuetitle', 'journalsubtitle', 'language', 'langid', 'note', 'number', 'origlanguage', 'pages', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'version', 'volume']
+    "suppperiodical": {
+        "order": 51,
+        "biblatex": "suppperiodical",
+        "csl": "entry",
+        "required": ["journaltitle", "title", "author", "date"],
+        "eitheror": [],
+        "optional": ["abstract", "addendum", "annotator", "commentator", "doi", "editor", "editora", "editorb", "editorc", "eid", "eprint", "eprintclass", "eprinttype", "issn", "issue", "issuesubtitle", "issuetitle", "journalsubtitle", "language", "langid", "note", "number", "origlanguage", "pages", "pubstate", "series", "subtitle", "titleaddon", "translator", "url", "urldate", "version", "volume", "annotation", "keywords"]
     },
-    'proceedings': {
-        order: 60,
-        biblatex: 'proceedings',
-        csl: 'entry',
-        required: ['editor', 'title', 'date'],
-        eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'chapter', 'doi', 'eprint', 'eprintclass', 'eprinttype', 'eventdate', 'eventtitle', 'isbn', 'language', 'langid', 'location', 'mainsubtitle', 'maintitle', 'maintitleaddon', 'note', 'number', 'organization', 'pages', 'pagetotal', 'part', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'url', 'urldate', 'venue', 'volume', 'volumes']
+    "proceedings": {
+        "order": 60,
+        "biblatex": "proceedings",
+        "csl": "entry",
+        "required": ["editor", "title", "date"],
+        "eitheror": [],
+        "optional": ["abstract", "addendum", "chapter", "doi", "eprint", "eprintclass", "eprinttype", "eventdate", "eventtitle", "isbn", "language", "langid", "location", "mainsubtitle", "maintitle", "maintitleaddon", "note", "number", "organization", "pages", "pagetotal", "part", "publisher", "pubstate", "series", "subtitle", "titleaddon", "url", "urldate", "venue", "volume", "volumes", "annotation", "keywords"]
     },
-    'mvproceedings': {
-        order: 61,
-        biblatex: 'mvproceedings',
-        csl: 'entry',
-        required: ['editor', 'title', 'date'],
-        eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'doi', 'eprint', 'eprintclass', 'eprinttype', 'eventdate', 'eventtitle', 'isbn', 'language', 'langid', 'location', 'note', 'number', 'organization', 'pagetotal', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'url', 'urldate', 'venue', 'volumes']
+    "mvproceedings": {
+        "order": 61,
+        "biblatex": "mvproceedings",
+        "csl": "entry",
+        "required": ["editor", "title", "date"],
+        "eitheror": [],
+        "optional": ["abstract", "addendum", "doi", "eprint", "eprintclass", "eprinttype", "eventdate", "eventtitle", "isbn", "language", "langid", "location", "note", "number", "organization", "pagetotal", "publisher", "pubstate", "series", "subtitle", "titleaddon", "url", "urldate", "venue", "volumes", "annotation", "keywords"]
     },
-    'inproceedings': {
-        order: 62,
-        biblatex: 'inproceedings',
-        csl: 'paper-conference',
-        required: ['title', 'editor', 'booktitle', 'author', 'date'],
-        eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'booksubtitle', 'booktitleaddon', 'chapter', 'doi', 'eprint', 'eprintclass', 'eprinttype', 'eventdate', 'eventtitle', 'isbn', 'language', 'langid', 'location', 'mainsubtitle', 'maintitle', 'maintitleaddon', 'note', 'number', 'organization', 'pages', 'part', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'url', 'urldate', 'venue', 'volume', 'volumes']
+    "inproceedings": {
+        "order": 62,
+        "biblatex": "inproceedings",
+        "csl": "paper-conference",
+        "required": ["title", "editor", "booktitle", "author", "date"],
+        "eitheror": [],
+        "optional": ["abstract", "addendum", "booksubtitle", "booktitleaddon", "chapter", "doi", "eprint", "eprintclass", "eprinttype", "eventdate", "eventtitle", "isbn", "language", "langid", "location", "mainsubtitle", "maintitle", "maintitleaddon", "note", "number", "organization", "pages", "part", "publisher", "pubstate", "series", "subtitle", "titleaddon", "url", "urldate", "venue", "volume", "volumes", "annotation", "keywords"]
     },
-    'reference': {
-        order: 70,
-        biblatex: 'book',
-        csl: 'reference',
-        required: ['editor', 'title', 'date'],
-        eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'afterword', 'annotator', 'chapter', 'commentator', 'doi', 'edition', 'editora', 'editorb', 'editorc', 'eprint', 'eprintclass', 'eprinttype', 'foreword', 'introduction', 'isbn', 'language', 'langid', 'location', 'mainsubtitle', 'maintitle', 'maintitleaddon', 'note', 'number', 'origlanguage', 'pages', 'pagetotal', 'part', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'volume', 'volumes']
+    "reference": {
+        "order": 70,
+        "biblatex": "book",
+        "csl": "reference",
+        "required": ["editor", "title", "date"],
+        "eitheror": [],
+        "optional": ["abstract", "addendum", "afterword", "annotator", "chapter", "commentator", "doi", "edition", "editora", "editorb", "editorc", "eprint", "eprintclass", "eprinttype", "foreword", "introduction", "isbn", "language", "langid", "location", "mainsubtitle", "maintitle", "maintitleaddon", "note", "number", "origlanguage", "pages", "pagetotal", "part", "publisher", "pubstate", "series", "subtitle", "titleaddon", "translator", "url", "urldate", "volume", "volumes", "annotation", "keywords"]
     },
-    'mvreference': {
-        order: 71,
-        biblatex: 'mvreference',
-        csl: 'book',
-        required: ['editor', 'title', 'date'],
-        eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'afterword', 'annotator', 'commentator', 'doi', 'edition', 'editora', 'editorb', 'editorc', 'eprint', 'eprintclass', 'eprinttype', 'foreword', 'introduction', 'isbn', 'language', 'langid', 'location', 'note', 'number', 'origlanguage', 'pagetotal', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'volumes']
+    "mvreference": {
+        "order": 71,
+        "biblatex": "mvreference",
+        "csl": "book",
+        "required": ["editor", "title", "date"],
+        "eitheror": [],
+        "optional": ["abstract", "addendum", "afterword", "annotator", "commentator", "doi", "edition", "editora", "editorb", "editorc", "eprint", "eprintclass", "eprinttype", "foreword", "introduction", "isbn", "language", "langid", "location", "note", "number", "origlanguage", "pagetotal", "publisher", "pubstate", "series", "subtitle", "titleaddon", "translator", "url", "urldate", "volumes", "annotation", "keywords"]
     },
-    'inreference': {
-        order: 72,
-        biblatex: 'inreference',
-        csl: 'entry',
-        required: ['title', 'editor', 'booktitle', 'author', 'date'],
-        eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'afterword', 'annotator', 'booksubtitle', 'booktitleaddon', 'chapter', 'commentator', 'doi', 'edition', 'editora', 'editorb', 'editorc', 'eprint', 'eprintclass', 'eprinttype', 'foreword', 'introduction', 'isbn', 'language', 'langid', 'location', 'mainsubtitle', 'maintitle', 'maintitleaddon', 'note', 'number', 'origlanguage', 'pages', 'part', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'volume', 'volumes']
+    "inreference": {
+        "order": 72,
+        "biblatex": "inreference",
+        "csl": "entry",
+        "required": ["title", "editor", "booktitle", "author", "date"],
+        "eitheror": [],
+        "optional": ["abstract", "addendum", "afterword", "annotator", "booksubtitle", "booktitleaddon", "chapter", "commentator", "doi", "edition", "editora", "editorb", "editorc", "eprint", "eprintclass", "eprinttype", "foreword", "introduction", "isbn", "language", "langid", "location", "mainsubtitle", "maintitle", "maintitleaddon", "note", "number", "origlanguage", "pages", "part", "publisher", "pubstate", "series", "subtitle", "titleaddon", "translator", "url", "urldate", "volume", "volumes", "annotation", "keywords"]
     },
-    'entry-encyclopedia': {
-        order: 73,
-        biblatex: 'inreference',
-        csl: 'entry-encyclopedia',
-        required: ['title', 'editor', 'booktitle', 'author', 'date'],
-        eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'afterword', 'annotator', 'booksubtitle', 'booktitleaddon', 'chapter', 'commentator', 'doi', 'edition', 'editora', 'editorb', 'editorc', 'eprint', 'eprintclass', 'eprinttype', 'foreword', 'introduction', 'isbn', 'language', 'langid', 'location', 'mainsubtitle', 'maintitle', 'maintitleaddon', 'note', 'number', 'origlanguage', 'pages', 'part', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'volume', 'volumes']
+    "entry-encyclopedia": {
+        "order": 73,
+        "biblatex": "inreference",
+        "csl": "entry-encyclopedia",
+        "required": ["title", "editor", "booktitle", "author", "date"],
+        "eitheror": [],
+        "optional": ["abstract", "addendum", "afterword", "annotator", "booksubtitle", "booktitleaddon", "chapter", "commentator", "doi", "edition", "editora", "editorb", "editorc", "eprint", "eprintclass", "eprinttype", "foreword", "introduction", "isbn", "language", "langid", "location", "mainsubtitle", "maintitle", "maintitleaddon", "note", "number", "origlanguage", "pages", "part", "publisher", "pubstate", "series", "subtitle", "titleaddon", "translator", "url", "urldate", "volume", "volumes", "annotation", "keywords"]
     },
-    'entry-dictionary': {
-        order: 74,
-        biblatex: 'inreference',
-        csl: 'entry-dictionary',
-        required: ['title', 'editor', 'booktitle', 'author', 'date'],
-        eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'afterword', 'annotator', 'booksubtitle', 'booktitleaddon', 'chapter', 'commentator', 'doi', 'edition', 'editora', 'editorb', 'editorc', 'eprint', 'eprintclass', 'eprinttype', 'foreword', 'introduction', 'isbn', 'language', 'langid', 'location', 'mainsubtitle', 'maintitle', 'maintitleaddon', 'note', 'number', 'origlanguage', 'pages', 'part', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'volume', 'volumes']
+    "entry-dictionary": {
+        "order": 74,
+        "biblatex": "inreference",
+        "csl": "entry-dictionary",
+        "required": ["title", "editor", "booktitle", "author", "date"],
+        "eitheror": [],
+        "optional": ["abstract", "addendum", "afterword", "annotator", "booksubtitle", "booktitleaddon", "chapter", "commentator", "doi", "edition", "editora", "editorb", "editorc", "eprint", "eprintclass", "eprinttype", "foreword", "introduction", "isbn", "language", "langid", "location", "mainsubtitle", "maintitle", "maintitleaddon", "note", "number", "origlanguage", "pages", "part", "publisher", "pubstate", "series", "subtitle", "titleaddon", "translator", "url", "urldate", "volume", "volumes", "annotation", "keywords"]
     },
-    'report': {
-        order: 80,
-        biblatex: 'report',
-        csl: 'report',
-        required: ['author', 'title', 'type', 'institution', 'date'],
-        eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'pages', 'pagetotal', 'pubstate', 'number', 'isrn', 'chapter', 'doi', 'subtitle', 'language', 'langid', 'location', 'url', 'urldate', 'titleaddon', 'version', 'note', 'eprint', 'eprintclass', 'eprinttype']
+    "report": {
+        "order": 80,
+        "biblatex": "report",
+        "csl": "report",
+        "required": ["author", "title", "type", "institution", "date"],
+        "eitheror": [],
+        "optional": ["abstract", "addendum", "pages", "pagetotal", "pubstate", "number", "isrn", "chapter", "doi", "subtitle", "language", "langid", "location", "url", "urldate", "titleaddon", "version", "note", "eprint", "eprintclass", "eprinttype", "annotation", "keywords"]
     },
-    'thesis': {
-        order: 81,
-        biblatex: 'thesis',
-        csl: 'thesis',
-        required: ['author', 'title', 'type', 'institution', 'date'],
-        eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'pages', 'pagetotal', 'pubstate', 'isbn', 'chapter', 'doi', 'subtitle', 'language', 'langid', 'location', 'url', 'urldate', 'titleaddon', 'note', 'eprint', 'eprintclass', 'eprinttype']
+    "thesis": {
+        "order": 81,
+        "biblatex": "thesis",
+        "csl": "thesis",
+        "required": ["author", "title", "type", "institution", "date"],
+        "eitheror": [],
+        "optional": ["abstract", "addendum", "pages", "pagetotal", "pubstate", "isbn", "chapter", "doi", "subtitle", "language", "langid", "location", "url", "urldate", "titleaddon", "note", "eprint", "eprintclass", "eprinttype", "annotation", "keywords"]
     },
-    'unpublished': {
-        order: 90,
-        biblatex: 'unpublished',
-        csl: 'manuscript',
-        required: ['title', 'author', 'date'],
-        eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'howpublished', 'pubstate', 'isbn', 'date', 'subtitle', 'language', 'langid', 'location', 'url', 'urldate', 'titleaddon', 'note']
+    "unpublished": {
+        "order": 90,
+        "biblatex": "unpublished",
+        "csl": "manuscript",
+        "required": ["title", "author", "date"],
+        "eitheror": [],
+        "optional": ["abstract", "addendum", "howpublished", "pubstate", "isbn", "date", "subtitle", "language", "langid", "location", "url", "urldate", "titleaddon", "note", "annotation", "keywords"]
     }
 }
