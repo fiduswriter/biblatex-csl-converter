@@ -5,47 +5,157 @@
       "entry_key": "paglione2001mapping",
       "fields": {
         "date": "2001",
-        "title": [ { "type": "text", "text": "A Mapping Survey of the 13CO and 12CO Emission in Galaxies" } ],
-        "author": [
+        "title": [
           {
-            "family": [ { "type": "text", "text": "Paglione" } ],
-            "given": [ { "type": "text", "text": "T.A.D." } ]
-          },
-          {
-            "family": [ { "type": "text", "text": "Wall" } ],
-            "given": [ { "type": "text", "text": "WF" } ]
-          },
-          {
-            "family": [ { "type": "text", "text": "Young" } ],
-            "given": [ { "type": "text", "text": "J.S." } ]
-          },
-          {
-            "family": [ { "type": "text", "text": "Heyer" } ],
-            "given": [ { "type": "text", "text": "M.H." } ]
-          },
-          {
-            "family": [ { "type": "text", "text": "Richard" } ],
-            "given": [ { "type": "text", "text": "M." } ]
-          },
-          {
-            "family": [ { "type": "text", "text": "Goldstein" } ],
-            "given": [ { "type": "text", "text": "M." } ]
-          },
-          {
-            "family": [ { "type": "text", "text": "Kaufman" } ],
-            "given": [ { "type": "text", "text": "Z." } ]
-          },
-          {
-            "family": [ { "type": "text", "text": "Nantais" } ],
-            "given": [ { "type": "text", "text": "J." } ]
-          },
-          {
-            "family": [ { "type": "text", "text": "Perry" } ],
-            "given": [ { "type": "text", "text": "G." } ]
+            "type": "text",
+            "text": "A Mapping Survey of the 13CO and 12CO Emission in Galaxies"
           }
         ],
-        "journaltitle": [ { "type": "text", "text": "The Astrophysical Journal Supplement Series" } ],
-        "volume": [ { "type": "text", "text": "135" } ]
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Paglione"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "T.A.D."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Wall"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "WF"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Young"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "J.S."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Heyer"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "M.H."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Richard"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "M."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Goldstein"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "M."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Kaufman"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Z."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Nantais"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "J."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Perry"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "G."
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "The Astrophysical Journal Supplement Series"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "135"
+          }
+        ],
+        "pages": [
+          [
+            "183"
+          ]
+        ]
       },
       "raw_fields": {
         "title": "A Mapping Survey of the 13CO and 12CO Emission in Galaxies",
@@ -65,30 +175,87 @@
         ]
       },
       "unexpected_fields": {
-        "publisher": [ [ { "type": "text", "text": "IOP Publishing" } ] ]
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "IOP Publishing"
+            }
+          ]
+        ]
       }
     },
     "1": {
       "bib_type": "article",
       "entry_key": "jackson418nguyen",
       "fields": {
-        "title": [ { "type": "text", "text": "Nguyen-Q-Rieu. 1993" } ],
-        "author": [
+        "title": [
           {
-            "family": [ { "type": "text", "text": "Jackson" } ],
-            "given": [ { "type": "text", "text": "J.M." } ]
-          },
-          {
-            "family": [ { "type": "text", "text": "Paglione" } ],
-            "given": [ { "type": "text", "text": "T.A.D." } ]
-          },
-          {
-            "family": [ { "type": "text", "text": "Ishizuki" } ],
-            "given": [ { "type": "text", "text": "S." } ]
+            "type": "text",
+            "text": "Nguyen-Q-Rieu. 1993"
           }
         ],
-        "journaltitle": [ { "type": "text", "text": "ApJ" } ],
-        "volume": [ { "type": "text", "text": "418" } ]
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Jackson"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "J.M."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Paglione"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "T.A.D."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Ishizuki"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "S."
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "ApJ"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "418"
+          }
+        ],
+        "pages": [
+          [
+            "L13"
+          ]
+        ]
       },
       "raw_fields": {
         "title": "Nguyen-Q-Rieu. 1993",
@@ -103,27 +270,87 @@
       "entry_key": "jackson1996hcn",
       "fields": {
         "date": "1996",
-        "title": [ { "type": "text", "text": "HCN and CO in the Central 630 Parsecs of the Galaxy" } ],
-        "author": [
+        "title": [
           {
-            "family": [ { "type": "text", "text": "Jackson" } ],
-            "given": [ { "type": "text", "text": "J.M." } ]
-          },
-          {
-            "family": [ { "type": "text", "text": "Heyer" } ],
-            "given": [ { "type": "text", "text": "M.H." } ]
-          },
-          {
-            "family": [ { "type": "text", "text": "Paglione" } ],
-            "given": [ { "type": "text", "text": "T.A.D." } ]
-          },
-          {
-            "family": [ { "type": "text", "text": "Bolatto" } ],
-            "given": [ { "type": "text", "text": "A.D." } ]
+            "type": "text",
+            "text": "HCN and CO in the Central 630 Parsecs of the Galaxy"
           }
         ],
-        "journaltitle": [ { "type": "text", "text": "The Astrophysical Journal Letters" } ],
-        "volume": [ { "type": "text", "text": "456" } ]
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Jackson"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "J.M."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Heyer"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "M.H."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Paglione"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "T.A.D."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Bolatto"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "A.D."
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "The Astrophysical Journal Letters"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "456"
+          }
+        ],
+        "pages": [
+          [
+            "L91"
+          ]
+        ]
       },
       "raw_fields": {
         "title": "HCN and CO in the Central 630 Parsecs of the Galaxy",
@@ -135,10 +362,22 @@
         "publisher": "IOP Publishing"
       },
       "unknown_fields": {
-        "year": [ { "type": "text", "text": "1996" } ]
+        "year": [
+          {
+            "type": "text",
+            "text": "1996"
+          }
+        ]
       },
       "unexpected_fields": {
-        "publisher": [ [ { "type": "text", "text": "IOP Publishing" } ] ]
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "IOP Publishing"
+            }
+          ]
+        ]
       }
     },
     "3": {
@@ -146,27 +385,87 @@
       "entry_key": "paglione1996diffuse",
       "fields": {
         "date": "1996",
-        "title": [ { "type": "text", "text": "Diffuse Gamma-Ray Emission from the Starburst Galaxy NGC 253" } ],
-        "author": [
+        "title": [
           {
-            "family": [ { "type": "text", "text": "Paglione" } ],
-            "given": [ { "type": "text", "text": "T.A.D." } ]
-          },
-          {
-            "family": [ { "type": "text", "text": "Marscher" } ],
-            "given": [ { "type": "text", "text": "A.P." } ]
-          },
-          {
-            "family": [ { "type": "text", "text": "Jackson" } ],
-            "given": [ { "type": "text", "text": "J.M." } ]
-          },
-          {
-            "family": [ { "type": "text", "text": "Bertsch" } ],
-            "given": [ { "type": "text", "text": "D.L." } ]
+            "type": "text",
+            "text": "Diffuse Gamma-Ray Emission from the Starburst Galaxy NGC 253"
           }
         ],
-        "journaltitle": [ { "type": "text", "text": "The Astrophysical Journal" } ],
-        "volume": [ { "type": "text", "text": "460" } ]
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Paglione"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "T.A.D."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Marscher"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "A.P."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Jackson"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "J.M."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Bertsch"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "D.L."
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "The Astrophysical Journal"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "460"
+          }
+        ],
+        "pages": [
+          [
+            "295"
+          ]
+        ]
       },
       "raw_fields": {
         "title": "Diffuse Gamma-Ray Emission from the Starburst Galaxy NGC 253",
@@ -177,7 +476,12 @@
         "year": "1996"
       },
       "unknown_fields": {
-        "year": [ { "type": "text", "text": "1996" } ]
+        "year": [
+          {
+            "type": "text",
+            "text": "1996"
+          }
+        ]
       }
     },
     "4": {
@@ -185,23 +489,73 @@
       "entry_key": "paglione1995distribution",
       "fields": {
         "date": "1995",
-        "title": [ { "type": "text", "text": "The Distribution of the Dense Clouds in the Starburst Nucleus of NGC 253" } ],
-        "author": [
+        "title": [
           {
-            "family": [ { "type": "text", "text": "Paglione" } ],
-            "given": [ { "type": "text", "text": "T.A.D." } ]
-          },
-          {
-            "family": [ { "type": "text", "text": "Tosaki" } ],
-            "given": [ { "type": "text", "text": "T." } ]
-          },
-          {
-            "family": [ { "type": "text", "text": "Jackson" } ],
-            "given": [ { "type": "text", "text": "J.M." } ]
+            "type": "text",
+            "text": "The Distribution of the Dense Clouds in the Starburst Nucleus of NGC 253"
           }
         ],
-        "journaltitle": [ { "type": "text", "text": "The Astrophysical Journal Letters" } ],
-        "volume": [ { "type": "text", "text": "454" } ]
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Paglione"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "T.A.D."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Tosaki"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "T."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Jackson"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "J.M."
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "The Astrophysical Journal Letters"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "454"
+          }
+        ],
+        "pages": [
+          [
+            "L117"
+          ]
+        ]
       },
       "raw_fields": {
         "title": "The Distribution of the Dense Clouds in the Starburst Nucleus of NGC 253",
@@ -213,10 +567,22 @@
         "publisher": "IOP Publishing"
       },
       "unknown_fields": {
-        "year": [ { "type": "text", "text": "1995" } ]
+        "year": [
+          {
+            "type": "text",
+            "text": "1995"
+          }
+        ]
       },
       "unexpected_fields": {
-        "publisher": [ [ { "type": "text", "text": "IOP Publishing" } ] ]
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "IOP Publishing"
+            }
+          ]
+        ]
       }
     },
     "5": {
@@ -224,26 +590,75 @@
       "entry_key": "blom1999diffuse",
       "fields": {
         "date": "1999",
-        "title": [ { "type": "text", "text": "Diffuse gamma-ray emission from starburst galaxies and M31" } ],
-        "author": [
+        "title": [
           {
-            "family": [ { "type": "text", "text": "Blom" } ],
-            "given": [ { "type": "text", "text": "J.J." } ]
-          },
-          {
-            "family": [ { "type": "text", "text": "Paglione" } ],
-            "given": [ { "type": "text", "text": "T.A.D." } ]
-          },
-          {
-            "prefix isn't parsed correctly": true,
-            "prefix": [ { "type": "text", "text": "Carrami nana" } ],
-            "useprefix": true,
-            "family": [],
-            "given": [ { "type": "text", "text": "A." } ]
+            "type": "text",
+            "text": "Diffuse gamma-ray emission from starburst galaxies and M31"
           }
         ],
-        "journaltitle": [ { "type": "text", "text": "The Astrophysical Journal" } ],
-        "volume": [ { "type": "text", "text": "516" } ]
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Blom"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "J.J."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Paglione"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "T.A.D."
+              }
+            ]
+          },
+          {
+            "prefix": [
+              {
+                "type": "text",
+                "text": "Carrami nana"
+              }
+            ],
+            "useprefix": true,
+            "family": [],
+            "given": [
+              {
+                "type": "text",
+                "text": "A."
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "The Astrophysical Journal"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "516"
+          }
+        ],
+        "pages": [
+          [
+            "744"
+          ]
+        ]
       },
       "raw_fields": {
         "title": "Diffuse gamma-ray emission from starburst galaxies and M31",
@@ -255,10 +670,22 @@
         "publisher": "IOP Publishing"
       },
       "unknown_fields": {
-        "year": [ { "type": "text", "text": "1999" } ]
+        "year": [
+          {
+            "type": "text",
+            "text": "1999"
+          }
+        ]
       },
       "unexpected_fields": {
-        "publisher": [ [ { "type": "text", "text": "IOP Publishing" } ] ]
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "IOP Publishing"
+            }
+          ]
+        ]
       }
     },
     "6": {
@@ -266,57 +693,194 @@
       "entry_key": "smolvcic2009cosmic",
       "fields": {
         "date": "2009",
-        "title": [ { "type": "text", "text": "Cosmic evolution of radio selected active galactic nuclei in the COSMOS field" } ],
-        "author": [
+        "title": [
           {
-            "prefix problem": true,
-            "prefix": [ { "type": "text", "text": "Smol ci'c" } ],
-            "useprefix": true,
-            "family": [],
-            "given": [ { "type": "text", "text": "V." } ]
-          },
-          {
-            "family": [ { "type": "text", "text": "Zamorani" } ],
-            "given": [ { "type": "text", "text": "G." } ]
-          },
-          {
-            "family": [ { "type": "text", "text": "Schinnerer" } ],
-            "given": [ { "type": "text", "text": "E." } ]
-          },
-          {
-            "family": [ { "type": "text", "text": "Bardelli" } ],
-            "given": [ { "type": "text", "text": "S." } ]
-          },
-          {
-            "family": [ { "type": "text", "text": "Bondi" } ],
-            "given": [ { "type": "text", "text": "M." } ]
-          },
-          {
-            "family": [ { "type": "text", "text": "B" }, { "type": "text", "text": "i", "marks": [ { "type": "sup" } ] }, { "type": "text", "text": "rzan" } ],
-            "given": [ { "type": "text", "text": "L." } ]
-          },
-          {
-            "family": [ { "type": "text", "text": "Carilli" } ],
-            "given": [ { "type": "text", "text": "CL" } ]
-          },
-          {
-            "family": [ { "type": "text", "text": "Ciliegi" } ],
-            "given": [ { "type": "text", "text": "P." } ]
-          },
-          {
-            "family": [ { "type": "text", "text": "Elvis" } ],
-            "given": [ { "type": "text", "text": "M." } ]
-          },
-          {
-            "family": [ { "type": "text", "text": "Impey" } ],
-            "given": [ { "type": "text", "text": "CD" } ]
-          },
-          {
-            "literal": [ { "type": "text", "text": "others" } ]
+            "type": "text",
+            "text": "Cosmic evolution of radio selected active galactic nuclei in the COSMOS field"
           }
         ],
-        "journaltitle": [ { "type": "text", "text": "The Astrophysical Journal" } ],
-        "volume": [ { "type": "text", "text": "696" } ]
+        "author": [
+          {
+            "prefix": [
+              {
+                "type": "text",
+                "text": "Smol ci'c"
+              }
+            ],
+            "useprefix": true,
+            "family": [],
+            "given": [
+              {
+                "type": "text",
+                "text": "V."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Zamorani"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "G."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Schinnerer"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "E."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Bardelli"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "S."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Bondi"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "M."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "B"
+              },
+              {
+                "type": "text",
+                "text": "i",
+                "marks": [
+                  {
+                    "type": "sup"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "rzan"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "L."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Carilli"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "CL"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Ciliegi"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "P."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Elvis"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "M."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Impey"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "CD"
+              }
+            ]
+          },
+          {
+            "literal": [
+              {
+                "type": "text",
+                "text": "others"
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "The Astrophysical Journal"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "696"
+          }
+        ],
+        "pages": [
+          [
+            "24"
+          ]
+        ]
       },
       "raw_fields": {
         "title": "Cosmic evolution of radio selected active galactic nuclei in the COSMOS field",
@@ -328,10 +892,22 @@
         "publisher": "IOP Publishing"
       },
       "unknown_fields": {
-        "year": [ { "type": "text", "text": "2009" } ]
+        "year": [
+          {
+            "type": "text",
+            "text": "2009"
+          }
+        ]
       },
       "unexpected_fields": {
-        "publisher": [ [ { "type": "text", "text": "IOP Publishing" } ] ]
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "IOP Publishing"
+            }
+          ]
+        ]
       }
     },
     "7": {
@@ -339,23 +915,73 @@
       "entry_key": "paglione1997average",
       "fields": {
         "date": "1997",
-        "title": [ { "type": "text", "text": "The average properties of the dense molecular gas in galaxies" } ],
-        "author": [
+        "title": [
           {
-            "family": [ { "type": "text", "text": "Paglione" } ],
-            "given": [ { "type": "text", "text": "T.A.D." } ]
-          },
-          {
-            "family": [ { "type": "text", "text": "Jackson" } ],
-            "given": [ { "type": "text", "text": "J.M." } ]
-          },
-          {
-            "family": [ { "type": "text", "text": "Ishizuki" } ],
-            "given": [ { "type": "text", "text": "S." } ]
+            "type": "text",
+            "text": "The average properties of the dense molecular gas in galaxies"
           }
         ],
-        "journaltitle": [ { "type": "text", "text": "The Astrophysical Journal" } ],
-        "volume": [ { "type": "text", "text": "484" } ]
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Paglione"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "T.A.D."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Jackson"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "J.M."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Ishizuki"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "S."
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "The Astrophysical Journal"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "484"
+          }
+        ],
+        "pages": [
+          [
+            "656"
+          ]
+        ]
       },
       "raw_fields": {
         "title": "The average properties of the dense molecular gas in galaxies",
@@ -367,10 +993,22 @@
         "publisher": "IOP Publishing"
       },
       "unknown_fields": {
-        "year": [ { "type": "text", "text": "1997" } ]
+        "year": [
+          {
+            "type": "text",
+            "text": "1997"
+          }
+        ]
       },
       "unexpected_fields": {
-        "publisher": [ [ { "type": "text", "text": "IOP Publishing" } ] ]
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "IOP Publishing"
+            }
+          ]
+        ]
       }
     },
     "8": {
@@ -378,27 +1016,88 @@
       "entry_key": "jackson1995submillimeter",
       "fields": {
         "date": "1995",
-        "title": [ { "type": "text", "text": "Submillimeter HCN and HCO (+) emission from galaxies" } ],
-        "author": [
+        "title": [
           {
-            "family": [ { "type": "text", "text": "Jackson" } ],
-            "given": [ { "type": "text", "text": "J.M." } ]
-          },
-          {
-            "family": [ { "type": "text", "text": "Paglione" } ],
-            "given": [ { "type": "text", "text": "T.A.D." } ]
-          },
-          {
-            "family": [ { "type": "text", "text": "Carlstrom" } ],
-            "given": [ { "type": "text", "text": "J.E." } ]
-          },
-          {
-            "family": [ { "type": "text", "text": "Rieu" } ],
-            "given": [ { "type": "text", "text": "N.Q." } ]
+            "type": "text",
+            "text": "Submillimeter HCN and HCO (+) emission from galaxies"
           }
         ],
-        "journaltitle": [ { "type": "text", "text": "The Astrophysical Journal" } ],
-        "volume": [ { "type": "text", "text": "438" } ]
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Jackson"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "J.M."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Paglione"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "T.A.D."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Carlstrom"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "J.E."
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Rieu"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "N.Q."
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "The Astrophysical Journal"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "438"
+          }
+        ],
+        "pages": [
+          [
+            "695",
+            "701"
+          ]
+        ]
       },
       "raw_fields": {
         "title": "Submillimeter HCN and HCO (+) emission from galaxies",
@@ -409,7 +1108,12 @@
         "year": "1995"
       },
       "unknown_fields": {
-        "year": [ { "type": "text", "text": "1995" } ]
+        "year": [
+          {
+            "type": "text",
+            "text": "1995"
+          }
+        ]
       }
     },
     "9": {
@@ -417,15 +1121,40 @@
       "entry_key": "paglione1998interpreting",
       "fields": {
         "date": "1998",
-        "title": [ { "type": "text", "text": "Interpreting the HCN/CO intensity ratio in the galactic center" } ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Interpreting the HCN/CO intensity ratio in the galactic center"
+          }
+        ],
         "author": [
           {
-            "family": [ { "type": "text", "text": "Paglione" } ],
-            "given": [ { "type": "text", "text": "T.A.D." } ]
+            "family": [
+              {
+                "type": "text",
+                "text": "Paglione"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "T.A.D."
+              }
+            ]
           },
           {
-            "family": [ { "type": "text", "text": "Jackson" } ],
-            "given": [ { "type": "text", "text": "J.M." } ]
+            "family": [
+              {
+                "type": "text",
+                "text": "Jackson"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "J.M."
+              }
+            ]
           },
           {
             "family": [
@@ -467,6 +1196,11 @@
             "type": "text",
             "text": "493"
           }
+        ],
+        "pages": [
+          [
+            "680"
+          ]
         ]
       },
       "raw_fields": {
@@ -671,6 +1405,11 @@
             "type": "text",
             "text": "690"
           }
+        ],
+        "pages": [
+          [
+            "610"
+          ]
         ]
       },
       "raw_fields": {
@@ -775,6 +1514,11 @@
             "type": "text",
             "text": "418"
           }
+        ],
+        "pages": [
+          [
+            "L13"
+          ]
         ]
       },
       "raw_fields": {
@@ -874,6 +1618,11 @@
             "type": "text",
             "text": "611"
           }
+        ],
+        "pages": [
+          [
+            "835"
+          ]
         ]
       },
       "raw_fields": {
@@ -984,6 +1733,11 @@
             "type": "text",
             "text": "478"
           }
+        ],
+        "pages": [
+          [
+            "614"
+          ]
         ]
       },
       "raw_fields": {
@@ -1150,6 +1904,11 @@
             "type": "text",
             "text": "672"
           }
+        ],
+        "pages": [
+          [
+            "198"
+          ]
         ]
       },
       "raw_fields": {
@@ -1260,6 +2019,12 @@
             "type": "text",
             "text": "109"
           }
+        ],
+        "pages": [
+          [
+            "1716",
+            "1723"
+          ]
         ]
       },
       "raw_fields": {
@@ -1513,6 +2278,11 @@
             "type": "text",
             "text": "109"
           }
+        ],
+        "pages": [
+          [
+            "1716"
+          ]
         ]
       },
       "raw_fields": {
@@ -1612,6 +2382,11 @@
             "type": "text",
             "text": "542"
           }
+        ],
+        "pages": [
+          [
+            "946"
+          ]
         ]
       },
       "raw_fields": {
@@ -1736,6 +2511,11 @@
             "type": "text",
             "text": "4015"
           }
+        ],
+        "pages": [
+          [
+            "467"
+          ]
         ]
       },
       "raw_fields": {
@@ -1821,6 +2601,11 @@
             "type": "text",
             "text": "34"
           }
+        ],
+        "pages": [
+          [
+            "1229"
+          ]
         ]
       },
       "raw_fields": {
@@ -2025,6 +2810,11 @@
             "type": "text",
             "text": "708"
           }
+        ],
+        "pages": [
+          [
+            "909"
+          ]
         ]
       },
       "raw_fields": {
@@ -2231,6 +3021,11 @@
             "type": "text",
             "text": "708"
           }
+        ],
+        "pages": [
+          [
+            "909"
+          ]
         ]
       },
       "raw_fields": {
@@ -2329,6 +3124,11 @@
             "type": "text",
             "text": "39"
           }
+        ],
+        "pages": [
+          [
+            "169"
+          ]
         ]
       },
       "raw_fields": {
@@ -2753,6 +3553,11 @@
             "type": "text",
             "text": "1"
           }
+        ],
+        "pages": [
+          [
+            "24"
+          ]
         ]
       },
       "raw_fields": {
@@ -2839,6 +3644,11 @@
             "type": "text",
             "text": "34"
           }
+        ],
+        "pages": [
+          [
+            "3142"
+          ]
         ]
       },
       "raw_fields": {
@@ -2966,6 +3776,11 @@
             "type": "text",
             "text": "25"
           }
+        ],
+        "pages": [
+          [
+            "1328"
+          ]
         ]
       },
       "raw_fields": {
@@ -3083,6 +3898,11 @@
             "type": "text",
             "text": "320"
           }
+        ],
+        "pages": [
+          [
+            "47"
+          ]
         ]
       },
       "raw_fields": {
@@ -3154,6 +3974,11 @@
             "type": "text",
             "text": "34"
           }
+        ],
+        "pages": [
+          [
+            "3144"
+          ]
         ]
       },
       "raw_fields": {
@@ -3239,6 +4064,11 @@
             "type": "text",
             "text": "42"
           }
+        ],
+        "pages": [
+          [
+            "248"
+          ]
         ]
       },
       "raw_fields": {
@@ -3436,6 +4266,11 @@
             "type": "text",
             "text": "4"
           }
+        ],
+        "pages": [
+          [
+            "120"
+          ]
         ]
       },
       "raw_fields": {
@@ -3535,6 +4370,11 @@
             "type": "text",
             "text": "1"
           }
+        ],
+        "pages": [
+          [
+            "80"
+          ]
         ]
       },
       "raw_fields": {
@@ -3648,6 +4488,11 @@
             "type": "text",
             "text": "37"
           }
+        ],
+        "pages": [
+          [
+            "1245"
+          ]
         ]
       },
       "raw_fields": {
@@ -3839,6 +4684,11 @@
             "type": "text",
             "text": "31"
           }
+        ],
+        "pages": [
+          [
+            "892"
+          ]
         ]
       },
       "raw_fields": {
@@ -4008,6 +4858,12 @@
             "type": "text",
             "text": "135"
           }
+        ],
+        "pages": [
+          [
+            "183",
+            "200"
+          ]
         ]
       },
       "raw_fields": {
@@ -4106,6 +4962,11 @@
             "type": "text",
             "text": "Star formation, galaxies and the interstellar medium: proceedings of the 4th EIPC Astrophysical Workshop held at the Elba International Physics Center, Marciana Marina, Elba Island, Italy, June 1-6, 1992"
           }
+        ],
+        "pages": [
+          [
+            "177"
+          ]
         ]
       },
       "raw_fields": {
@@ -4278,6 +5139,11 @@
             "type": "text",
             "text": "28"
           }
+        ],
+        "pages": [
+          [
+            "888"
+          ]
         ]
       },
       "raw_fields": {
@@ -4377,6 +5243,11 @@
             "type": "text",
             "text": "34"
           }
+        ],
+        "pages": [
+          [
+            "1106"
+          ]
         ]
       },
       "raw_fields": {
@@ -4476,6 +5347,11 @@
             "type": "text",
             "text": "29"
           }
+        ],
+        "pages": [
+          [
+            "785"
+          ]
         ]
       },
       "raw_fields": {
@@ -4617,6 +5493,11 @@
             "type": "text",
             "text": "37"
           }
+        ],
+        "pages": [
+          [
+            "1245"
+          ]
         ]
       },
       "raw_fields": {
@@ -4814,6 +5695,11 @@
             "type": "text",
             "text": "1"
           }
+        ],
+        "pages": [
+          [
+            "610"
+          ]
         ]
       },
       "raw_fields": {
@@ -5080,6 +5966,11 @@
             "type": "text",
             "text": "29"
           }
+        ],
+        "pages": [
+          [
+            "1247"
+          ]
         ]
       },
       "raw_fields": {
@@ -5249,6 +6140,11 @@
             "type": "text",
             "text": "38"
           }
+        ],
+        "pages": [
+          [
+            "1005"
+          ]
         ]
       },
       "raw_fields": {
@@ -5348,6 +6244,12 @@
             "type": "text",
             "text": "73"
           }
+        ],
+        "pages": [
+          [
+            "83",
+            "86"
+          ]
         ]
       },
       "raw_fields": {
@@ -5433,6 +6335,11 @@
             "type": "text",
             "text": "25"
           }
+        ],
+        "pages": [
+          [
+            "1467"
+          ]
         ]
       },
       "raw_fields": {
@@ -5574,6 +6481,11 @@
             "type": "text",
             "text": "38"
           }
+        ],
+        "pages": [
+          [
+            "1005"
+          ]
         ]
       },
       "raw_fields": {
@@ -5784,6 +6696,11 @@
             "type": "text",
             "text": "1"
           }
+        ],
+        "pages": [
+          [
+            "909"
+          ]
         ]
       },
       "raw_fields": {

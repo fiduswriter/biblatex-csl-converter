@@ -107,6 +107,12 @@
             "type": "text",
             "text": "A Report"
           }
+        ],
+        "type": [
+          {
+            "type": "text",
+            "text": "Working Paper"
+          }
         ]
       },
       "raw_fields": {

@@ -15,7 +15,9 @@
         "title": "Filename character test. Relative path",
         "file": ",.\\;'[]\\{\\}`-=~!@#$%^&()_+.pdf:Better BibTeX.013/files/32/,.\\;'[]\\{\\}`-=~!@#$%^&()_+.pdf:application/pdf"
       },
-      "unexpected_fields": {}
+      "unexpected_fields": {
+        "file": ",.\\;'[]\\{\\}`-=~!@#$%^&()_+.pdf:Better BibTeX.013/files/32/,.\\;'[]\\{\\}`-=~!@#$%^&()_+.pdf:application/pdf"
+      }
     },
     "1": {
       "bib_type": "book",
@@ -32,7 +34,9 @@
         "title": "Filename character test. Absolute path",
         "file": ",.\\;'[]\\{\\}`-=~!@#$%^&()_+.pdf:Better BibTeX.013/some/path/,.\\;'[]\\{\\}`-=~!@#$%^&()_+.pdf:application/pdf"
       },
-      "unexpected_fields": {}
+      "unexpected_fields": {
+        "file": ",.\\;'[]\\{\\}`-=~!@#$%^&()_+.pdf:Better BibTeX.013/some/path/,.\\;'[]\\{\\}`-=~!@#$%^&()_+.pdf:application/pdf"
+      }
     }
   },
   "warnings": [

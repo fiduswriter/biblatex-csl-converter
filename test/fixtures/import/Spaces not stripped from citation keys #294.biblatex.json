@@ -35,6 +35,8 @@
             ]
           }
         ],
+        "doi": "10.1007/s00276-014-1305-7",
+        "eprint": "24828123",
         "eprinttype": [
           {
             "type": "text",
@@ -84,7 +86,8 @@
             "type": "text",
             "text": " to the Present)"
           }
-        ]
+        ],
+        "url": "http://link.springer.com/10.1007/s00276-014-1305-7"
       },
       "raw_fields": {
         "author": "Vlček, Martin and Vácha, Marek",

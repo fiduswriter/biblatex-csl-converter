@@ -77,6 +77,7 @@
             ]
           }
         ],
+        "doi": "10.1111/j.1469-8986.2007.00620.x",
         "journaltitle": [
           {
             "type": "text",
@@ -96,12 +97,19 @@
             "text": "2"
           }
         ],
+        "pages": [
+          [
+            "205",
+            "215"
+          ]
+        ],
         "title": [
           {
             "type": "text",
             "text": "Brain Activation and Defensive Response Mobilization during Sustained Exposure to Phobia-Related and Other Affective Pictures in Spider Phobia"
           }
         ],
+        "url": "http://onlinelibrary.wiley.com/doi/10.1111/j.1469-8986.2007.00620.x/abstract",
         "urldate": "2014-05-12",
         "volume": [
           {

@@ -59,6 +59,12 @@
             "text": "1"
           }
         ],
+        "pages": [
+          [
+            "185",
+            "199"
+          ]
+        ],
         "title": [
           {
             "type": "text",
@@ -91,6 +97,7 @@
             "text": " Linkage Maps."
           }
         ],
+        "url": "http://www.genetics.org/content/121/1/185",
         "urldate": "2014-10-13",
         "volume": [
           {

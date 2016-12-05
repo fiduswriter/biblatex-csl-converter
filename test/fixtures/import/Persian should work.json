@@ -1,2 +1,100 @@
 {
+  "references": {
+    "0": {
+      "bib_type": "article",
+      "entry_key": "داودی2015بررسی",
+      "fields": {
+        "date": "2015",
+        "title": [
+          {
+            "type": "text",
+            "text": "بررسی مکانیزمهای سایش و عمر ابزار در تراشکاری سوپرآلیاژ پایه آهن-نیکل N-155 "
+          }
+        ],
+        "author": [
+          {
+            "prefix": [
+              {
+                "type": "text",
+                "text": "داودی"
+              }
+            ],
+            "useprefix": true,
+            "family": [],
+            "given": [
+              {
+                "type": "text",
+                "text": "بهنام"
+              }
+            ]
+          },
+          {
+            "literal": [
+              {
+                "type": "text",
+                "text": "بهنام"
+              }
+            ]
+          },
+          {
+            "literal": [
+              {
+                "type": "text",
+                "text": "اسکندری"
+              }
+            ]
+          },
+          {
+            "literal": [
+              {
+                "type": "text",
+                "text": "بهزاد"
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "مهندسی مکانیک مدرس"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "14"
+          }
+        ],
+        "pages": [
+          [
+            "51",
+            "58"
+          ]
+        ]
+      },
+      "raw_fields": {
+        "title": "بررسی مکانیزمهای سایش و عمر ابزار در تراشکاری سوپرآلیاژ پایه آهن-نیکل N-155 ",
+        "author": "داودی, بهنام and بهنام and اسکندری and بهزاد",
+        "journal": "مهندسی مکانیک مدرس",
+        "volume": "14",
+        "pages": "51--58",
+        "year": "2015"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "2015"
+          }
+        ]
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "entry": "داودی2015بررسی",
+      "field_name": "year"
+    }
+  ]
 }

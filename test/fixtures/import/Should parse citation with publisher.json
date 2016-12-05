@@ -5,15 +5,48 @@
       "entry_key": "hennemann2009vernetzung",
       "fields": {
         "date": "2009",
-        "title": [ { "type": "text", "text": "Vernetzung in der Grundlagenforschung" } ],
-        "author": [
+        "title": [
           {
-            "family": [ { "type": "text", "text": "Hennemann" } ],
-            "given": [ { "type": "text", "text": "S." } ]
+            "type": "text",
+            "text": "Vernetzung in der Grundlagenforschung"
           }
         ],
-        "booktitle": [ { "type": "text", "text": "Planungsverband Ballungsraum Frankfurt-Rhein-Main (Hrsg.): Wissensatlas FrankfurtRheinMain: die Wissensregion stellt sich vor" } ],
-        "publisher": [ [ { "type": "text", "text": "Planungsverband, Frankfurt-Rhein-Main" } ] ]
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Hennemann"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "S."
+              }
+            ]
+          }
+        ],
+        "booktitle": [
+          {
+            "type": "text",
+            "text": "Planungsverband Ballungsraum Frankfurt-Rhein-Main (Hrsg.): Wissensatlas FrankfurtRheinMain: die Wissensregion stellt sich vor"
+          }
+        ],
+        "pages": [
+          [
+            "33",
+            "36"
+          ]
+        ],
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "Planungsverband, Frankfurt-Rhein-Main"
+            }
+          ]
+        ]
       },
       "raw_fields": {
         "title": "Vernetzung in der Grundlagenforschung",
@@ -24,7 +57,12 @@
         "publisher": "Planungsverband, Frankfurt-Rhein-Main"
       },
       "unknown_fields": {
-        "year": [ { "type": "text", "text": "2009" } ]
+        "year": [
+          {
+            "type": "text",
+            "text": "2009"
+          }
+        ]
       }
     }
   },

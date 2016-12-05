@@ -59,7 +59,9 @@
         "timestamp": "2015-02-24 12:14:36 +0100",
         "title": "Computational {{Models}} of {{Non}}-Cooperative Dialogue"
       },
-      "unexpected_fields": {},
+      "unexpected_fields": {
+        "file": "Traum - Computational Models of Non-cooperative dialogue.pdf:files/1/Traum - Computational Models of Non-cooperative dialogue.pdf:application/pdf"
+      },
       "unknown_fields": {
         "timestamp": [
           {

@@ -47,6 +47,12 @@
             "text": "1"
           }
         ],
+        "pages": [
+          [
+            "1",
+            "155"
+          ]
+        ],
         "title": [
           {
             "type": "text",
@@ -79,6 +85,7 @@
             "text": "⩽ 103"
           }
         ],
+        "url": "http://www.sciencedirect.com/science/article/pii/0092640X85900166",
         "urldate": "2013-01-11",
         "volume": [
           {

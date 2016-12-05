@@ -128,6 +128,12 @@
             "text": "62"
           }
         ],
+        "pages": [
+          [
+            "493",
+            "518"
+          ]
+        ],
         "keywords": [
           "Vulcanian eruptions",
           "breadcrust",
@@ -152,7 +158,9 @@
           }
         ]
       },
-      "unexpected_fields": {}
+      "unexpected_fields": {
+        "file": ":Better BibTeX.001/Users/heatherwright/Documents/Scientific Papers/AVX3W9~F.PDF:PDF"
+      }
     }
   },
   "warnings": [

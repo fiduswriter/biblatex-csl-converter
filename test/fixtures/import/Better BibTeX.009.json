@@ -116,6 +116,12 @@
           "breadcrust",
           "plinian"
         ],
+        "pages": [
+          [
+            "493",
+            "518"
+          ]
+        ],
         "title": [
           {
             "type": "text",
@@ -144,7 +150,9 @@
         "volume": "62",
         "year": "2001"
       },
-      "unexpected_fields": {},
+      "unexpected_fields": {
+        "file": ":Better BibTeX.009/Users/heatherwright/Documents/Scientific Papers/Adams\\_Huaynaputina.pdf:pdf"
+      },
       "unknown_fields": {
         "year": [
           {
@@ -270,6 +278,12 @@
           "breadcrust",
           "plinian"
         ],
+        "pages": [
+          [
+            "493",
+            "518"
+          ]
+        ],
         "title": [
           {
             "type": "text",
@@ -298,7 +312,9 @@
         "volume": "62",
         "year": "2001"
       },
-      "unexpected_fields": {},
+      "unexpected_fields": {
+        "file": ":Better BibTeX.009/Users/heatherwright/Documents/Scientific Papers/Adams\\_Huaynaputina.pdf:pdf"
+      },
       "unknown_fields": {
         "year": [
           {
@@ -311,8 +327,7 @@
   },
   "errors": [
     {
-      "type": "missing_equal_sign",
-      "key": "",
+      "type": "cut_off_citation",
       "entry": "emptyreference"
     }
   ],

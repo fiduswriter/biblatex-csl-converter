@@ -61,6 +61,12 @@
             "text": "CATA"
           }
         ],
+        "pages": [
+          [
+            "25",
+            "30"
+          ]
+        ],
         "note": [
           {
             "type": "text",
@@ -120,7 +126,9 @@
           }
         ]
       },
-      "unexpected_fields": {}
+      "unexpected_fields": {
+        "file": "Klassen2010.pdf:Better BibTeX.011/klasyfikatory/Klassen2010.pdf:PDF"
+      }
     }
   },
   "warnings": [

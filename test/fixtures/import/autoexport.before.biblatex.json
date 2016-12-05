@@ -96,9 +96,16 @@
             "text": "), 2011 18th International Conference on"
           }
         ],
+        "doi": "10.1109/HiPC.2011.6152428",
         "keywords": [
           "bdec15",
           "zotero_testcase"
+        ],
+        "pages": [
+          [
+            "1",
+            "10"
+          ]
         ],
         "publisher": [
           [
@@ -123,6 +130,7 @@
             ]
           }
         ],
+        "url": "http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6152428",
         "urldate": "2014-10-23"
       },
       "raw_fields": {
@@ -298,6 +306,7 @@
             ]
           }
         ],
+        "doi": "10.1109/SC.2014.72",
         "isbn": [
           {
             "type": "text",
@@ -314,6 +323,12 @@
               "type": "text",
               "text": "Piscataway, NJ, USA"
             }
+          ]
+        ],
+        "pages": [
+          [
+            "819",
+            "829"
           ]
         ],
         "publisher": [
@@ -362,6 +377,7 @@
             "text": " Systems"
           }
         ],
+        "url": "http://dx.doi.org/10.1109/SC.2014.72",
         "urldate": "2015-01-12"
       },
       "raw_fields": {
@@ -439,6 +455,7 @@
             ]
           }
         ],
+        "doi": "10.1175/BAMS-D-11-00094.1",
         "issn": [
           {
             "type": "text",
@@ -457,6 +474,12 @@
           "p-12-iam",
           "p-gmdm41",
           "zotero_testcase"
+        ],
+        "pages": [
+          [
+            "485",
+            "498"
+          ]
         ],
         "title": [
           {
@@ -486,6 +509,7 @@
             ]
           }
         ],
+        "url": "http://journals.ametsoc.org/doi/abs/10.1175/BAMS-D-11-00094.1",
         "urldate": "2012-04-17",
         "volume": [
           {

@@ -4,7 +4,12 @@
       "bib_type": "article",
       "entry_key": "sample1",
       "fields": {
-        "title": [ { "type": "text", "text": "sample title" } ]
+        "title": [
+          {
+            "type": "text",
+            "text": "sample title"
+          }
+        ]
       },
       "raw_fields": {
         "title": "sample title"

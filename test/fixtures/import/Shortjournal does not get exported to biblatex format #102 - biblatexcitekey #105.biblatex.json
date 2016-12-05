@@ -55,6 +55,7 @@
             ]
           }
         ],
+        "doi": "10.1103/PhysRevLett.97.120405",
         "journaltitle": [
           {
             "type": "text",
@@ -66,6 +67,11 @@
             "type": "text",
             "text": "12"
           }
+        ],
+        "pages": [
+          [
+            "120405"
+          ]
         ],
         "title": [
           {
@@ -99,6 +105,7 @@
             "text": " to Secure Quantum Key Distribution"
           }
         ],
+        "url": "http://link.aps.org/doi/10.1103/PhysRevLett.97.120405",
         "urldate": "2014-08-20",
         "volume": [
           {

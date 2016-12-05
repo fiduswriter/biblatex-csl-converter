@@ -1,1 +1,137 @@
-{}
+{
+  "references": {
+    "0": {
+      "bib_type": "article",
+      "entry_key": "Chen:2014oha",
+      "fields": {
+        "date": "2014",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Chen"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Chien-Yi"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Davoudiasl"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Hooman"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Kim"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Doojin"
+              }
+            ]
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Warped Graviton \"Z + Missing Energy\" Signal at Hadron  Colliders"
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "Phys.Rev."
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "D89"
+          }
+        ],
+        "pages": [
+          [
+            "096007"
+          ]
+        ],
+        "doi": "10.1103/PhysRevD.89.096007",
+        "eprint": "1403.3399",
+        "eprinttype": [
+          {
+            "type": "text",
+            "text": "arXiv"
+          }
+        ],
+        "eprintclass": [
+          {
+            "type": "text",
+            "text": "hep-ph"
+          }
+        ]
+      },
+      "raw_fields": {
+        "author": "Chen, Chien-Yi and Davoudiasl, Hooman and Kim, Doojin",
+        "title": "Warped Graviton \"Z + Missing Energy\" Signal at Hadron\n Colliders",
+        "journal": "Phys.Rev.",
+        "volume": "D89",
+        "pages": "096007",
+        "doi": "10.1103/PhysRevD.89.096007",
+        "year": "2014",
+        "eprint": "1403.3399",
+        "archiveprefix": "arXiv",
+        "primaryclass": "hep-ph",
+        "slaccitation": ""
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "2014"
+          }
+        ],
+        "slaccitation": []
+      }
+    }
+  },
+  "errors": [
+    {
+      "type": "unterminated_value",
+      "value": "}\n"
+    },
+    {
+      "type": "token_mismatch",
+      "expected": "}",
+      "found": ""
+    }
+  ],
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "entry": "Chen:2014oha",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "Chen:2014oha",
+      "field_name": "slaccitation"
+    }
+  ]
+}

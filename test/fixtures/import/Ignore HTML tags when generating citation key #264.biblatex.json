@@ -27,6 +27,12 @@
             "text": "Florilegium"
           }
         ],
+        "pages": [
+          [
+            "145",
+            "165"
+          ]
+        ],
         "title": [
           {
             "type": "text",
@@ -94,6 +100,7 @@
             ]
           }
         ],
+        "url": "https://journals.lib.unb.ca/index.php/flor/article/view/14263",
         "urldate": "2015-07-07",
         "volume": [
           {

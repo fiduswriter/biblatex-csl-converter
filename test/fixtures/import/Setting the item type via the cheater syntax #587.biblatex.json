@@ -99,6 +99,7 @@
             "text": "+4059"
           }
         ],
+        "url": "http://nedwww.ipac.caltech.edu/",
         "urldate": "2009-10-06"
       },
       "raw_fields": {
@@ -308,11 +309,18 @@
             ]
           }
         ],
+        "editoratype": "collaborator",
         "journaltitle": [
           {
             "type": "text",
             "text": "Lingua Franca"
           }
+        ],
+        "pages": [
+          [
+            "B13",
+            "B14"
+          ]
         ],
         "volume": [
           {
@@ -368,7 +376,8 @@
             "type": "text",
             "text": "Deconstructing Dinner"
           }
-        ]
+        ],
+        "url": "http://www.nytimes.com/2006/04/23/books/review/23kamp.html."
       },
       "raw_fields": {
         "abstract": "Example from CMoS, 16e, 14.125",
@@ -397,7 +406,8 @@
               }
             ]
           }
-        ]
+        ],
+        "editoratype": "collaborator"
       },
       "unknown_fields": {
         "langid": [

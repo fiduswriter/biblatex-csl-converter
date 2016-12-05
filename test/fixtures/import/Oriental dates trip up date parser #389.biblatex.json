@@ -40,6 +40,7 @@
             ]
           }
         ],
+        "doi": "10.1364/AO.15.001040",
         "journaltitle": [
           {
             "type": "text",
@@ -52,12 +53,19 @@
             "text": "4"
           }
         ],
+        "pages": [
+          [
+            "1040",
+            "1044"
+          ]
+        ],
         "title": [
           {
             "type": "text",
             "text": "Leaky Modes on a Dielectric Waveguide: Orthogonality and Excitation"
           }
         ],
+        "url": "http://ao.osa.org/abstract.cfm?URI=ao-15-4-1040",
         "urldate": "2015-04-02",
         "volume": [
           {

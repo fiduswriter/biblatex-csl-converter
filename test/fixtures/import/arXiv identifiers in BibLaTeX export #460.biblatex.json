@@ -27,6 +27,8 @@
             ]
           }
         ],
+        "doi": "10.1007/JHEP02(2016)087",
+        "eprint": "1508.05387",
         "eprinttype": [
           {
             "type": "text",
@@ -97,6 +99,7 @@
             ]
           }
         ],
+        "url": "http://arxiv.org/abs/1508.05387",
         "urldate": "2016-04-17",
         "volume": [
           {
@@ -182,6 +185,7 @@
             ]
           }
         ],
+        "eprint": "1305.4904",
         "eprinttype": [
           {
             "type": "text",
@@ -192,12 +196,10 @@
           "Quantum Physics"
         ],
         "eprintclass": [
-          [
-            {
-              "type": "text",
-              "text": "quant-ph"
-            }
-          ]
+          {
+            "type": "text",
+            "text": "quant-ph"
+          }
         ],
         "title": [
           {
@@ -205,6 +207,7 @@
             "text": "Classical Signature of Quantum Annealing"
           }
         ],
+        "url": "http://arxiv.org/abs/1305.4904",
         "urldate": "2016-04-18"
       },
       "raw_fields": {
@@ -378,6 +381,8 @@
             ]
           }
         ],
+        "doi": "10.1126/science.1252319",
+        "eprint": "1401.2910",
         "eprinttype": [
           {
             "type": "text",
@@ -405,13 +410,17 @@
             "text": "6195"
           }
         ],
-        "eprintclass": [
+        "pages": [
           [
-            {
-              "type": "text",
-              "text": "quant-ph"
-            }
+            "420",
+            "424"
           ]
+        ],
+        "eprintclass": [
+          {
+            "type": "text",
+            "text": "quant-ph"
+          }
         ],
         "title": [
           {
@@ -419,6 +428,7 @@
             "text": "Defining and Detecting Quantum Speedup"
           }
         ],
+        "url": "http://arxiv.org/abs/1401.2910",
         "urldate": "2016-04-18",
         "volume": [
           {

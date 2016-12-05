@@ -152,6 +152,7 @@
             ]
           }
         ],
+        "eprint": "1412.4006",
         "eprinttype": [
           {
             "type": "text",
@@ -168,12 +169,10 @@
           "Quantum Physics"
         ],
         "eprintclass": [
-          [
-            {
-              "type": "text",
-              "text": "quant-ph"
-            }
-          ]
+          {
+            "type": "text",
+            "text": "quant-ph"
+          }
         ],
         "title": [
           {

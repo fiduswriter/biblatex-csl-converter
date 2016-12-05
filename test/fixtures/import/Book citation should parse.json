@@ -6,18 +6,67 @@
       "fields": {
         "author": [
           {
-            "given": [ { "type": "text", "text": "Peter" } ],
-            "family": [ { "type": "text", "text": "Babington" } ]
+            "given": [
+              {
+                "type": "text",
+                "text": "Peter"
+              }
+            ],
+            "family": [
+              {
+                "type": "text",
+                "text": "Babington"
+              }
+            ]
           }
         ],
-        "title": [ { "type": "text", "text": "The title of the work" } ],
-        "publisher": [ [ { "type": "text", "text": "The name of the publisher" } ] ],
-        "volume": [ { "type": "text", "text": "4" } ],
-        "series": [ { "type": "text", "text": "10" } ],
-        "location": [ [ { "type": "text", "text": "The address" } ] ],
+        "title": [
+          {
+            "type": "text",
+            "text": "The title of the work"
+          }
+        ],
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "The name of the publisher"
+            }
+          ]
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "4"
+          }
+        ],
+        "series": [
+          {
+            "type": "text",
+            "text": "10"
+          }
+        ],
+        "location": [
+          [
+            {
+              "type": "text",
+              "text": "The address"
+            }
+          ]
+        ],
         "edition": 3,
-        "note": [ { "type": "text", "text": "An optional note" } ],
-        "isbn": [ { "type": "text", "text": "3257227892" } ]
+        "note": [
+          {
+            "type": "text",
+            "text": "An optional note"
+          }
+        ],
+        "isbn": [
+          {
+            "type": "text",
+            "text": "3257227892"
+          }
+        ]
       },
       "raw_fields": {
         "author": "Peter Babington",
@@ -33,8 +82,18 @@
         "isbn": "3257227892"
       },
       "unknown_fields": {
-        "year": [ { "type": "text", "text": "1993" } ],
-        "month": [ { "type": "text", "text": "7" } ]
+        "year": [
+          {
+            "type": "text",
+            "text": "1993"
+          }
+        ],
+        "month": [
+          {
+            "type": "text",
+            "text": "7"
+          }
+        ]
       }
     }
   },

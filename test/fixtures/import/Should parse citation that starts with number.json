@@ -7,13 +7,37 @@
         "date": "2013",
         "author": [
           {
-            "family": [ { "type": "text", "text": "Lack" } ],
-            "given": [ { "type": "text", "text": "Kelly A." } ]
+            "family": [
+              {
+                "type": "text",
+                "text": "Lack"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Kelly A."
+              }
+            ]
           }
         ],
-        "institution": [ [ { "type": "text", "text": "Ithaka S+R" } ] ],
-        "keywords": [ "0sotl" ],
-        "title": [ { "type": "text", "text": "Current Status of Research on Online Learning in Postsecondary Education" } ]
+        "institution": [
+          [
+            {
+              "type": "text",
+              "text": "Ithaka S+R"
+            }
+          ]
+        ],
+        "keywords": [
+          "0sotl"
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Current Status of Research on Online Learning in Postsecondary Education"
+          }
+        ]
       },
       "raw_fields": {
         "author": "Lack, Kelly A.",
@@ -26,10 +50,30 @@
         "year": "2013"
       },
       "unknown_fields": {
-        "date-added": [ { "type": "text", "text": "2013-04-09 19:09:56 +0000" } ],
-        "date-modified": [ { "type": "text", "text": "2013-04-09 19:10:58 +0000" } ],
-        "oa-url": [ { "type": "text", "text": "http://www.sr.ithaka.org/sites/default/files/reports/ithaka-sr-online-learning-postsecondary-education-may2012.pdf" } ],
-        "year": [ { "type": "text", "text": "2013" } ]
+        "date-added": [
+          {
+            "type": "text",
+            "text": "2013-04-09 19:09:56 +0000"
+          }
+        ],
+        "date-modified": [
+          {
+            "type": "text",
+            "text": "2013-04-09 19:10:58 +0000"
+          }
+        ],
+        "oa-url": [
+          {
+            "type": "text",
+            "text": "http://www.sr.ithaka.org/sites/default/files/reports/ithaka-sr-online-learning-postsecondary-education-may2012.pdf"
+          }
+        ],
+        "year": [
+          {
+            "type": "text",
+            "text": "2013"
+          }
+        ]
       }
     }
   },

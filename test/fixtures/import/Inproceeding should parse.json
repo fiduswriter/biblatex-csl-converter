@@ -7,24 +7,96 @@
         "date": "2010",
         "author": [
           {
-            "family": [ { "type": "text", "text": "Lysenko" } ],
-            "given": [ { "type": "text", "text": "Mikola" } ]
+            "family": [
+              {
+                "type": "text",
+                "text": "Lysenko"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Mikola"
+              }
+            ]
           },
           {
-            "family": [ { "type": "text", "text": "Nelaturi" } ],
-            "given": [ { "type": "text", "text": "Saigopal" } ]
+            "family": [
+              {
+                "type": "text",
+                "text": "Nelaturi"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Saigopal"
+              }
+            ]
           },
           {
-            "family": [ { "type": "text", "text": "Shapiro" } ],
-            "given": [ { "type": "text", "text": "Vadim" } ]
+            "family": [
+              {
+                "type": "text",
+                "text": "Shapiro"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Vadim"
+              }
+            ]
           }
         ],
-        "title": [ { "type": "text", "text": "Group morphology with convolution algebras" } ],
-        "booktitle": [ { "type": "text", "text": "Proceedings of the 14th ACM Symposium on Solid and Physical Modeling" } ],
-        "series": [ { "type": "text", "text": "SPM '10" } ],
-        "isbn": [ { "type": "text", "text": "978-1-60558-984-8" } ],
-        "location": [ [ { "type": "text", "text": "Haifa, Israel" } ] ],
-        "publisher": [ [ { "type": "text", "text": "ACM" } ] ]
+        "title": [
+          {
+            "type": "text",
+            "text": "Group morphology with convolution algebras"
+          }
+        ],
+        "booktitle": [
+          {
+            "type": "text",
+            "text": "Proceedings of the 14th ACM Symposium on Solid and Physical Modeling"
+          }
+        ],
+        "series": [
+          {
+            "type": "text",
+            "text": "SPM '10"
+          }
+        ],
+        "isbn": [
+          {
+            "type": "text",
+            "text": "978-1-60558-984-8"
+          }
+        ],
+        "location": [
+          [
+            {
+              "type": "text",
+              "text": "Haifa, Israel"
+            }
+          ]
+        ],
+        "pages": [
+          [
+            "11",
+            "22"
+          ]
+        ],
+        "url": "http://doi.acm.org/10.1145/1839778.1839781",
+        "doi": "10.1145/1839778.1839781",
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "ACM"
+            }
+          ]
+        ]
       },
       "raw_fields": {
         "author": "Lysenko, Mikola and Nelaturi, Saigopal and Shapiro, Vadim",
@@ -43,9 +115,24 @@
         "address": "New York, NY, USA"
       },
       "unknown_fields": {
-        "year": [ { "type": "text", "text": "2010" } ],
-        "numpages": [ { "type": "text", "text": "12" } ],
-        "acmid": [ { "type": "text", "text": "1839781" } ]
+        "year": [
+          {
+            "type": "text",
+            "text": "2010"
+          }
+        ],
+        "numpages": [
+          {
+            "type": "text",
+            "text": "12"
+          }
+        ],
+        "acmid": [
+          {
+            "type": "text",
+            "text": "1839781"
+          }
+        ]
       }
     }
   },

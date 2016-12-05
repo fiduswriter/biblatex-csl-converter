@@ -54,6 +54,7 @@
             ]
           }
         ],
+        "doi": "10.1016/j.ajem.2014.05.052",
         "issn": [
           {
             "type": "text",
@@ -74,6 +75,12 @@
             "type": "text",
             "text": "9"
           }
+        ],
+        "pages": [
+          [
+            "1016",
+            "1023"
+          ]
         ],
         "title": [
           {
@@ -229,6 +236,7 @@
             ]
           }
         ],
+        "doi": "10.1038/srep08154",
         "issn": [
           {
             "type": "text",
@@ -240,6 +248,11 @@
             "type": "text",
             "text": "Scientific Reports"
           }
+        ],
+        "pages": [
+          [
+            "8154"
+          ]
         ],
         "title": [
           {

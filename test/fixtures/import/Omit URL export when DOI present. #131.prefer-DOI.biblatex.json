@@ -109,9 +109,16 @@
             "text": "), 2011 18th International Conference on"
           }
         ],
+        "doi": "10.1109/HiPC.2011.6152428",
         "keywords": [
           "bdec15",
           "zotero_testcase"
+        ],
+        "pages": [
+          [
+            "1",
+            "10"
+          ]
         ],
         "publisher": [
           [
@@ -310,6 +317,7 @@
             ]
           }
         ],
+        "doi": "10.1109/SC.2014.72",
         "isbn": [
           {
             "type": "text",
@@ -326,6 +334,12 @@
               "type": "text",
               "text": "Piscataway, NJ, USA"
             }
+          ]
+        ],
+        "pages": [
+          [
+            "819",
+            "829"
           ]
         ],
         "publisher": [
@@ -450,6 +464,7 @@
             ]
           }
         ],
+        "doi": "10.1175/BAMS-D-11-00094.1",
         "issn": [
           {
             "type": "text",
@@ -468,6 +483,12 @@
           "p-12-iam",
           "p-gmdm41",
           "zotero_testcase"
+        ],
+        "pages": [
+          [
+            "485",
+            "498"
+          ]
         ],
         "title": [
           {

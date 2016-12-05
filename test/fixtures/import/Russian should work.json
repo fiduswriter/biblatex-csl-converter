@@ -1,2 +1,646 @@
 {
+  "references": {
+    "0": {
+      "bib_type": "article",
+      "entry_key": "nazarenko2009new",
+      "fields": {
+        "date": "2009",
+        "title": [
+          {
+            "type": "text",
+            "text": "A new genus and species of dryophthorid weevils (Coleoptera, Dryophthoridae: Stromboscerinae) from the Rovno amber"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Nazarenko"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "V Yu"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Perkovsky"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "EE"
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "Paleontological Journal"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "43"
+          }
+        ],
+        "number": [
+          {
+            "type": "text",
+            "text": "9"
+          }
+        ],
+        "pages": [
+          [
+            "1097",
+            "1100"
+          ]
+        ]
+      },
+      "raw_fields": {
+        "title": "A new genus and species of dryophthorid weevils (Coleoptera, Dryophthoridae: Stromboscerinae) from the Rovno amber",
+        "author": "Nazarenko, V Yu and Perkovsky, EE",
+        "journal": "Paleontological Journal",
+        "volume": "43",
+        "number": "9",
+        "pages": "1097--1100",
+        "year": "2009",
+        "publisher": "SP MAIK Nauka/Interperiodica"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "2009"
+          }
+        ]
+      },
+      "unexpected_fields": {
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "SP MAIK Nauka/Interperiodica"
+            }
+          ]
+        ]
+      }
+    },
+    "1": {
+      "bib_type": "article",
+      "entry_key": "nazarenko2011new",
+      "fields": {
+        "date": "2011",
+        "title": [
+          {
+            "type": "text",
+            "text": "A new species of the genus Caulophilus Woll.(Coleoptera: Curculionidae: Cossoninae) from the Rovno amber"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Nazarenko"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "V Yu"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Legalov"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "AA"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Perkovsky"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "EE"
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "Paleontological Journal"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "45"
+          }
+        ],
+        "number": [
+          {
+            "type": "text",
+            "text": "3"
+          }
+        ],
+        "pages": [
+          [
+            "287",
+            "290"
+          ]
+        ]
+      },
+      "raw_fields": {
+        "title": "A new species of the genus Caulophilus Woll.(Coleoptera: Curculionidae: Cossoninae) from the Rovno amber",
+        "author": "Nazarenko, V Yu and Legalov, AA and Perkovsky, EE",
+        "journal": "Paleontological Journal",
+        "volume": "45",
+        "number": "3",
+        "pages": "287--290",
+        "year": "2011",
+        "publisher": "SP MAIK Nauka/Interperiodica"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "2011"
+          }
+        ]
+      },
+      "unexpected_fields": {
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "SP MAIK Nauka/Interperiodica"
+            }
+          ]
+        ]
+      }
+    },
+    "2": {
+      "bib_type": "article",
+      "entry_key": "назаренко2007долгоносикообразные",
+      "fields": {
+        "date": "2007",
+        "title": [
+          {
+            "type": "text",
+            "text": "Долгоносикообразные жуки (Coleoptera, Curculionoidea) водоемов г. Киева"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Назаренко"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "ВЮ"
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "VII з’їзд Укр. ентомол. т--ва, Ніжин"
+          }
+        ],
+        "pages": [
+          [
+            "14",
+            "18"
+          ]
+        ]
+      },
+      "raw_fields": {
+        "title": "Долгоносикообразные жуки (Coleoptera, Curculionoidea) водоемов г. Киева",
+        "author": "Назаренко, ВЮ",
+        "journal": "VII з’їзд Укр. ентомол. т--ва, Ніжин",
+        "pages": "14--18",
+        "year": "2007"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "2007"
+          }
+        ]
+      }
+    },
+    "3": {
+      "bib_type": "inproceedings",
+      "entry_key": "назаренко2012долгоносикообразные",
+      "fields": {
+        "date": "2012",
+        "title": [
+          {
+            "type": "text",
+            "text": "ДОЛГОНОСИКООБРАЗНЫЕ ЖУКИ (COLEOPTERA, CURCULIONOIDEA) ПРИБРЕЖНЫХ БИОТОПОВ ОСТРОВА ОБОЛОНСКОЙ КОСЫ (г. КИЕВ)"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Назаренко"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Виталий Юрьевич"
+              }
+            ]
+          }
+        ],
+        "booktitle": [
+          {
+            "type": "text",
+            "text": "ПРОБЛЕМЫ ИЗУЧЕНИЯ КРАЕВЫХ СТРУКТУР БИОЦЕНОЗОВ"
+          }
+        ],
+        "pages": [
+          [
+            "189",
+            "193"
+          ]
+        ],
+        "organization": [
+          [
+            {
+              "type": "text",
+              "text": "Изд-во Сарат. ун-та"
+            }
+          ]
+        ]
+      },
+      "raw_fields": {
+        "title": "ДОЛГОНОСИКООБРАЗНЫЕ ЖУКИ (COLEOPTERA, CURCULIONOIDEA) ПРИБРЕЖНЫХ БИОТОПОВ ОСТРОВА ОБОЛОНСКОЙ КОСЫ (г. КИЕВ)",
+        "author": "Назаренко, Виталий Юрьевич",
+        "booktitle": "ПРОБЛЕМЫ ИЗУЧЕНИЯ КРАЕВЫХ СТРУКТУР БИОЦЕНОЗОВ",
+        "pages": "189--193",
+        "year": "2012",
+        "organization": "Изд-во Сарат. ун-та"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "2012"
+          }
+        ]
+      }
+    },
+    "4": {
+      "bib_type": "inproceedings",
+      "entry_key": "назаренко2012долгоносикообразные",
+      "fields": {
+        "date": "2012",
+        "title": [
+          {
+            "type": "text",
+            "text": "ДОЛГОНОСИКООБРАЗНЫЕ ЖУКИ (COLEOPTERA, CURCULIONOIDEA) ОСТРОВА ДИКОГО (Г. КИЕВ)"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Назаренко"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Виталий Юрьевич"
+              }
+            ]
+          }
+        ],
+        "booktitle": [
+          {
+            "type": "text",
+            "text": "БИОРАЗНООБРАЗИЕ И УСТОЙЧИВОЕ РАЗВИТИЕ"
+          }
+        ],
+        "pages": [
+          [
+            "218",
+            "221"
+          ]
+        ]
+      },
+      "raw_fields": {
+        "title": "ДОЛГОНОСИКООБРАЗНЫЕ ЖУКИ (COLEOPTERA, CURCULIONOIDEA) ОСТРОВА ДИКОГО (Г. КИЕВ)",
+        "author": "Назаренко, Виталий Юрьевич",
+        "booktitle": "БИОРАЗНООБРАЗИЕ И УСТОЙЧИВОЕ РАЗВИТИЕ",
+        "pages": "218--221",
+        "year": "2012"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "2012"
+          }
+        ]
+      }
+    },
+    "5": {
+      "bib_type": "inproceedings",
+      "entry_key": "назаренко2010водные",
+      "fields": {
+        "date": "2010",
+        "title": [
+          {
+            "type": "text",
+            "text": "Водные жуки-долгоносики (Insecta: Coleoptera, Curculionoidea) Днепровских островов г. Киева"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Назаренко"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "В. Ю."
+              }
+            ]
+          }
+        ],
+        "booktitle": [
+          {
+            "type": "text",
+            "text": "Экология водных беспозвоночных"
+          }
+        ],
+        "pages": [
+          [
+            "210",
+            "211"
+          ]
+        ],
+        "organization": [
+          [
+            {
+              "type": "text",
+              "text": "Принтхаус"
+            }
+          ]
+        ]
+      },
+      "raw_fields": {
+        "title": "Водные жуки-долгоносики (Insecta: Coleoptera, Curculionoidea) Днепровских островов г. Киева",
+        "author": "Назаренко, В. Ю.",
+        "booktitle": "Экология водных беспозвоночных",
+        "pages": "210--211",
+        "year": "2010",
+        "organization": "Принтхаус"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "2010"
+          }
+        ]
+      }
+    },
+    "6": {
+      "bib_type": "article",
+      "entry_key": "пучков2013предварительный",
+      "fields": {
+        "date": "2013",
+        "title": [
+          {
+            "type": "text",
+            "text": "Предварительный обзор колеоптерофауны (Coleoptera) Казантипского природного заповедника"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Пучков"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "АВ"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Маркина"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "ТЮ"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Назаренко"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "ВЮ"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Петренко"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "АА"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Прохоров"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "АВ"
+              }
+            ]
+          },
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Черней"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "ЛС"
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "Наукові записки Державного природознавчого музею"
+          }
+        ],
+        "number": [
+          {
+            "type": "text",
+            "text": "29"
+          }
+        ],
+        "pages": [
+          [
+            "129",
+            "135"
+          ]
+        ]
+      },
+      "raw_fields": {
+        "title": "Предварительный обзор колеоптерофауны (Coleoptera) Казантипского природного заповедника",
+        "author": "Пучков, АВ and Маркина, ТЮ and Назаренко, ВЮ and Петренко, АА and Прохоров, АВ and Черней, ЛС",
+        "journal": "Наукові записки Державного природознавчого музею",
+        "number": "29",
+        "pages": "129--135",
+        "year": "2013",
+        "publisher": "Національна академія наук України"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "2013"
+          }
+        ]
+      },
+      "unexpected_fields": {
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "Національна академія наук України"
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "entry": "nazarenko2009new",
+      "field_name": "year"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "nazarenko2009new",
+      "field_name": "publisher"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "nazarenko2011new",
+      "field_name": "year"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "nazarenko2011new",
+      "field_name": "publisher"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "назаренко2007долгоносикообразные",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "назаренко2012долгоносикообразные",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "назаренко2012долгоносикообразные",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "назаренко2010водные",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "пучков2013предварительный",
+      "field_name": "year"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "пучков2013предварительный",
+      "field_name": "publisher"
+    }
+  ]
 }

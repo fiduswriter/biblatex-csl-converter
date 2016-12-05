@@ -81,7 +81,8 @@
               }
             ]
           }
-        ]
+        ],
+        "url": "http://www.nuprl.org/html/verification/"
       },
       "raw_fields": {
         "author": "Anand, Abhishek and Rahli, Vincent",

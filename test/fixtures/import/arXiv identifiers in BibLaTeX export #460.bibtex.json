@@ -26,6 +26,8 @@
             ]
           }
         ],
+        "doi": "10.1007/JHEP02(2016)087",
+        "eprint": "1508.05387",
         "eprinttype": [
           {
             "type": "text",
@@ -204,6 +206,7 @@
             ]
           }
         ],
+        "eprint": "1305.4904",
         "eprinttype": [
           {
             "type": "text",
@@ -231,12 +234,10 @@
           }
         ],
         "eprintclass": [
-          [
-            {
-              "type": "text",
-              "text": "quant-ph"
-            }
-          ]
+          {
+            "type": "text",
+            "text": "quant-ph"
+          }
         ],
         "title": [
           {
@@ -430,6 +431,8 @@
             ]
           }
         ],
+        "doi": "10.1126/science.1252319",
+        "eprint": "1401.2910",
         "eprinttype": [
           {
             "type": "text",
@@ -468,13 +471,17 @@
             "text": "6195"
           }
         ],
-        "eprintclass": [
+        "pages": [
           [
-            {
-              "type": "text",
-              "text": "quant-ph"
-            }
+            "420",
+            "424"
           ]
+        ],
+        "eprintclass": [
+          {
+            "type": "text",
+            "text": "quant-ph"
+          }
         ],
         "title": [
           {

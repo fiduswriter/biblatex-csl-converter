@@ -234,6 +234,12 @@
               "text": "University of London"
             }
           ]
+        ],
+        "type": [
+          {
+            "type": "text",
+            "text": "Ph.D."
+          }
         ]
       },
       "raw_fields": {
@@ -286,6 +292,12 @@
               }
             ]
           }
+        ],
+        "pages": [
+          [
+            "263",
+            "87"
+          ]
         ]
       },
       "raw_fields": {
@@ -333,6 +345,12 @@
             "type": "text",
             "text": "Beiträge zur Geschichte der Philosophie des Mittelalters"
           }
+        ],
+        "pages": [
+          [
+            "1",
+            "11"
+          ]
         ],
         "volume": [
           {
@@ -392,6 +410,12 @@
               }
             ]
           }
+        ],
+        "pages": [
+          [
+            "172",
+            "4"
+          ]
         ],
         "volume": [
           {

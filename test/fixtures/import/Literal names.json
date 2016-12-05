@@ -22,6 +22,7 @@
             "text": "1524-4539"
           }
         ],
+        "doi": "10.1161/CIR.0b013e318288b4dd",
         "language": [
           "eng"
         ],
@@ -370,6 +371,12 @@
           "Leadership",
           "Public Health",
           "United States"
+        ],
+        "pages": [
+          [
+            "1342",
+            "1350"
+          ]
         ]
       },
       "raw_fields": {

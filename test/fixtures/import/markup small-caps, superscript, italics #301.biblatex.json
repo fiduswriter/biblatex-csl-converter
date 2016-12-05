@@ -41,6 +41,12 @@
             }
           ]
         ],
+        "pages": [
+          [
+            "68",
+            "82"
+          ]
+        ],
         "publisher": [
           [
             {
@@ -243,6 +249,12 @@
               "type": "text",
               "text": "Toulouse"
             }
+          ]
+        ],
+        "pages": [
+          [
+            "33",
+            "50"
           ]
         ],
         "publisher": [

@@ -196,12 +196,19 @@
             }
           }
         ],
+        "pages": [
+          [
+            "300",
+            "301"
+          ]
+        ],
         "abstract": [
           {
             "type": "text",
             "text": "Abstract here"
           }
         ],
+        "doi": "10.1109/JPROC.2016.2526118",
         "keywords": [
           "Keyword 1; Keyword 2"
         ]
@@ -234,6 +241,7 @@
         ]
       },
       "unexpected_fields": {
+        "file": "File.pdf:File.pdf:PDF",
         "issn": [
           {
             "type": "text",
@@ -312,12 +320,19 @@
             }
           }
         ],
+        "pages": [
+          [
+            "300",
+            "301"
+          ]
+        ],
         "abstract": [
           {
             "type": "text",
             "text": "Abstract here"
           }
         ],
+        "doi": "10.1109/JPROC.2016.2526118",
         "keywords": [
           "Keyword 1; Keyword 2"
         ]
@@ -350,6 +365,7 @@
         ]
       },
       "unexpected_fields": {
+        "file": "File.pdf:File.pdf:PDF",
         "issn": [
           {
             "type": "text",

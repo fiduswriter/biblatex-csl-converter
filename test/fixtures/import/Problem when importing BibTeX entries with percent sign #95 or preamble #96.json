@@ -67,6 +67,12 @@
             "text": "24"
           }
         ],
+        "pages": [
+          [
+            "6700",
+            "6706"
+          ]
+        ],
         "volume": [
           {
             "type": "text",
@@ -95,6 +101,7 @@
             }
           }
         ],
+        "doi": "10.1016/j.tsf.2009.05.016",
         "issn": [
           {
             "type": "text",
@@ -146,7 +153,9 @@
           }
         ]
       },
-      "unexpected_fields": {}
+      "unexpected_fields": {
+        "file": "Akhavan_2009.pdf:CopperOxides\\Akhavan_2009.pdf:PDF"
+      }
     }
   },
   "warnings": [

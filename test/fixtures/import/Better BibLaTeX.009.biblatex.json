@@ -116,6 +116,12 @@
           "breadcrust",
           "plinian"
         ],
+        "pages": [
+          [
+            "493",
+            "518"
+          ]
+        ],
         "title": [
           {
             "type": "text",
@@ -162,7 +168,9 @@
         "title": "The Physical Volcanology of the 1600 Eruption of {{Huaynaputina}}, Southern {{Peru}}",
         "volume": "62"
       },
-      "unexpected_fields": {},
+      "unexpected_fields": {
+        "file": "Attachment:files/1/Adams_Huaynaputina.pdf:application/pdf"
+      },
       "unknown_fields": {
         "timestamp": [
           {
@@ -288,6 +296,12 @@
           "breadcrust",
           "plinian"
         ],
+        "pages": [
+          [
+            "493",
+            "518"
+          ]
+        ],
         "title": [
           {
             "type": "text",
@@ -334,7 +348,9 @@
         "title": "The Physical Volcanology of the 1600 Eruption of {{Huaynaputina}}, Southern {{Peru}}",
         "volume": "62"
       },
-      "unexpected_fields": {},
+      "unexpected_fields": {
+        "file": "Attachment:files/2/Adams_Huaynaputina.pdf:application/pdf"
+      },
       "unknown_fields": {
         "timestamp": [
           {

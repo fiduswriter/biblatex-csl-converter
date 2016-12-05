@@ -104,12 +104,19 @@
             "text": "Physica Status Solidi (a)"
           }
         ],
+        "pages": [
+          [
+            "613",
+            "620"
+          ]
+        ],
         "volume": [
           {
             "type": "text",
             "text": "93"
           }
-        ]
+        ],
+        "doi": "10.1002/pssa.2210930226"
       },
       "raw_fields": {
         "title": "Determination of the Thickness and Refractive Index of {Cu$_2$O} Thin Film Using Thermal and Optical\nInterferometry",

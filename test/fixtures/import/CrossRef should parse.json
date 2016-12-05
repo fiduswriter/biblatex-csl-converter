@@ -5,15 +5,52 @@
       "entry_key": "Peters_2004",
       "fields": {
         "date": "2004",
-        "title": [ { "type": "text", "text": "Bibtex from CrossRef" } ],
-        "issn": [ { "type": "text", "text": "0263-9475" } ],
-        "number": [ { "type": "text", "text": "109" } ],
-        "journaltitle": [ { "type": "text", "text": "Circa" } ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Bibtex from CrossRef"
+          }
+        ],
+        "issn": [
+          {
+            "type": "text",
+            "text": "0263-9475"
+          }
+        ],
+        "url": "http://dx.doi.org/10.2307/25564177",
+        "doi": "10.2307/25564177",
+        "number": [
+          {
+            "type": "text",
+            "text": "109"
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "Circa"
+          }
+        ],
         "author": [
           {
-            "family": [ { "type": "text", "text": "Peters" } ],
-            "given": [ { "type": "text", "text": "Robert" } ]
+            "family": [
+              {
+                "type": "text",
+                "text": "Peters"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Robert"
+              }
+            ]
           }
+        ],
+        "pages": [
+          [
+            "24"
+          ]
         ]
       },
       "raw_fields": {
@@ -29,10 +66,22 @@
         "pages": "24"
       },
       "unexpected_fields": {
-        "publisher": [ [ { "type": "text", "text": "JSTOR" } ] ]
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "JSTOR"
+            }
+          ]
+        ]
       },
       "unknown_fields": {
-        "year": [ { "type": "text", "text": "2004" } ]
+        "year": [
+          {
+            "type": "text",
+            "text": "2004"
+          }
+        ]
       }
     }
   },

@@ -84,12 +84,19 @@
             ]
           }
         ],
+        "doi": "http://alexandria.tue.nl/campusonly/Metis215145.pdf",
         "location": [
           [
             {
               "type": "text",
               "text": "Barcelona"
             }
+          ]
+        ],
+        "pages": [
+          [
+            "195",
+            "203"
           ]
         ],
         "publisher": [
@@ -118,7 +125,8 @@
             "type": "text",
             "text": ")"
           }
-        ]
+        ],
+        "url": "http://repository.tue.nl/663080"
       },
       "raw_fields": {
         "author": "de Kort, Y.A.W. and IJsselsteijn, W.A. and Poels, K.",

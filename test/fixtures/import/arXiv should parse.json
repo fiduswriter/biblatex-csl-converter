@@ -6,19 +6,77 @@
       "fields": {
         "author": [
           {
-            "family": [ { "type": "text", "text": "Chru'sci'nski" } ],
-            "given": [ { "type": "text", "text": "D." } ]
+            "family": [
+              {
+                "type": "text",
+                "text": "Chru'sci'nski"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "D."
+              }
+            ]
           },
           {
-            "family": [ { "type": "text", "text": "Kossakowski" } ],
-            "given": [ { "type": "text", "text": "A." } ]
+            "family": [
+              {
+                "type": "text",
+                "text": "Kossakowski"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "A."
+              }
+            ]
           }
         ],
-        "title": [ { "type": "text", "text": "Geometry of quantum states: New construction of positive maps", "marks": [ { "type": "nocase" } ] } ],
-        "journaltitle": [ { "type": "text", "text": "Physics Letters A" } ],
-        "eprinttype": [ { "type": "text", "text": "arXiv" } ],
-        "eprintclass": [ [ { "type": "text", "text": "quant-ph" } ] ],
-        "volume": [ { "type": "text", "text": "373" } ]
+        "title": [
+          {
+            "type": "text",
+            "text": "Geometry of quantum states: New construction of positive maps",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "Physics Letters A"
+          }
+        ],
+        "eprinttype": [
+          {
+            "type": "text",
+            "text": "arXiv"
+          }
+        ],
+        "eprint": "0902.0885",
+        "eprintclass": [
+          {
+            "type": "text",
+            "text": "quant-ph"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "373"
+          }
+        ],
+        "pages": [
+          [
+            "2301",
+            "2305"
+          ]
+        ],
+        "doi": "10.1016/j.physleta.2009.04.068"
       },
       "raw_fields": {
         "author": "{Chru{'s}ci{'n}ski}, D. and {Kossakowski}, A.",
@@ -36,10 +94,30 @@
         "adsnote": "Provided by the SAO/NASA Astrophysics Data System"
       },
       "unknown_fields": {
-        "year": [ { "type": "text", "text": "2009" } ],
-        "month": [ { "type": "text", "text": "June" } ],
-        "adsurl": [ { "type": "text", "text": "http://adsabs.harvard.edu/abs/2009PhLA..373.2301C" } ],
-        "adsnote": [ { "type": "text", "text": "Provided by the SAO/NASA Astrophysics Data System" } ]
+        "year": [
+          {
+            "type": "text",
+            "text": "2009"
+          }
+        ],
+        "month": [
+          {
+            "type": "text",
+            "text": "June"
+          }
+        ],
+        "adsurl": [
+          {
+            "type": "text",
+            "text": "http://adsabs.harvard.edu/abs/2009PhLA..373.2301C"
+          }
+        ],
+        "adsnote": [
+          {
+            "type": "text",
+            "text": "Provided by the SAO/NASA Astrophysics Data System"
+          }
+        ]
       }
     }
   },

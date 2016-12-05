@@ -63,6 +63,7 @@
             ]
           }
         ],
+        "doi": "10.1007/978-3-642-11218-8_6",
         "editor": [
           {
             "family": [
@@ -119,6 +120,12 @@
             "text": "272"
           }
         ],
+        "pages": [
+          [
+            "119",
+            "141"
+          ]
+        ],
         "publisher": [
           [
             {
@@ -173,7 +180,8 @@
               }
             ]
           }
-        ]
+        ],
+        "url": "http://link.springer.com/chapter/10.1007/978-3-642-11218-8_6"
       },
       "raw_fields": {
         "author": "Lust, Thibaut and Teghem, Jacques",

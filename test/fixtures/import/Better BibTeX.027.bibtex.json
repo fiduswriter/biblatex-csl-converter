@@ -47,6 +47,11 @@
             "text": "1"
           }
         ],
+        "pages": [
+          [
+            "122"
+          ]
+        ],
         "title": [
           {
             "type": "text",
@@ -71,7 +76,9 @@
         "volume": "55",
         "year": "2000"
       },
-      "unexpected_fields": {},
+      "unexpected_fields": {
+        "file": "Baltes_Staudinger_2000_Wisdom.pdf:files/1/Baltes_Staudinger_2000_Wisdom.pdf:application/pdf"
+      },
       "unknown_fields": {
         "timestamp": [
           {

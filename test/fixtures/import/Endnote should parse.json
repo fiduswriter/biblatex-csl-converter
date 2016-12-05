@@ -1,3 +1,19 @@
 {
-  "not parsed correctly": true
+  "references": {},
+  "errors": [
+    {
+      "type": "token_mismatch",
+      "expected": ",",
+      "found": "="
+    },
+    {
+      "type": "cut_off_citation",
+      "entry": "author"
+    },
+    {
+      "type": "token_mismatch",
+      "expected": "}",
+      "found": "="
+    }
+  ]
 }

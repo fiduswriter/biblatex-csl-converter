@@ -66,6 +66,12 @@
             "text": "svm liniowe najlepsze"
           }
         ],
+        "pages": [
+          [
+            "25",
+            "30"
+          ]
+        ],
         "title": [
           {
             "type": "text",
@@ -167,7 +173,9 @@
           }
         ]
       },
-      "unexpected_fields": {}
+      "unexpected_fields": {
+        "file": "Klassen2010.pdf:files/1/Klassen2010.pdf:application/pdf"
+      }
     }
   },
   "warnings": [

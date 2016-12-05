@@ -54,6 +54,7 @@
             ]
           }
         ],
+        "eprint": "1407.5694",
         "eprinttype": [
           {
             "type": "text",
@@ -84,12 +85,10 @@
           }
         ],
         "eprintclass": [
-          [
-            {
-              "type": "text",
-              "text": "math"
-            }
-          ]
+          {
+            "type": "text",
+            "text": "math"
+          }
         ],
         "title": [
           {

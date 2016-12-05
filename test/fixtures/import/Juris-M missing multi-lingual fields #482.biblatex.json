@@ -20,6 +20,7 @@
             "text": "中國類書庫"
           }
         ],
+        "url": "http://server.wenzibase.com",
         "urldate": "2016-04-20"
       },
       "raw_fields": {
@@ -59,6 +60,12 @@
             "type": "text",
             "text": "leishuku"
           }
+        ],
+        "type": [
+          {
+            "type": "text",
+            "text": "Full-text databse"
+          }
         ]
       }
     },
@@ -96,7 +103,14 @@
             "type": "text",
             "text": "明清時期出版與文化─以「才子佳人」小說為中心"
           }
-        ]
+        ],
+        "type": [
+          {
+            "type": "text",
+            "text": "Ph.D. Dissertation"
+          }
+        ],
+        "url": "http://ndltd.ncl.edu.tw/cgi-bin/gs32/gsweb.cgi?o=dnclcdr&s=id=%22091NCNU0493006%22.&searchmode=basic"
       },
       "raw_fields": {
         "author": "{顏采容}",

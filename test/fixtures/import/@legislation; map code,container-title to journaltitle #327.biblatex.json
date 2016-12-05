@@ -26,7 +26,8 @@
             "type": "text",
             "text": " 2011-525 du 17 mai 2011 de simplification et d'amélioration de la qualité du droit"
           }
-        ]
+        ],
+        "url": "http://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000024021430&categorieLien=id"
       },
       "raw_fields": {
         "date": "2011-05-18",
@@ -50,6 +51,11 @@
             "type": "text",
             "text": "BCRX0929142L"
           }
+        ],
+        "pages": [
+          [
+            "8537"
+          ]
         ]
       },
       "unknown_fields": {

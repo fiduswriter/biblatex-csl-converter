@@ -183,6 +183,12 @@
         "keywords": [
           "dblp"
         ],
+        "pages": [
+          [
+            "507",
+            "514"
+          ]
+        ],
         "publisher": [
           [
             {
@@ -235,7 +241,8 @@
             "type": "text",
             "text": "."
           }
-        ]
+        ],
+        "url": "http://dblp.uni-trier.de/db/conf/icdm/icdmw2009.htmlHulseKNW09"
       },
       "raw_fields": {
         "author": "Hulse, Jason Van and Khoshgoftaar, Taghi M. and Napolitano, Amri and Wald, Randall",
@@ -315,7 +322,9 @@
           }
         ]
       },
-      "unexpected_fields": {}
+      "unexpected_fields": {
+        "file": "Attachment:files/1/Hulse2009.pdf:application/pdf"
+      }
     }
   },
   "warnings": [

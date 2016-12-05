@@ -261,6 +261,12 @@
         "language": [
           "en-US"
         ],
+        "pages": [
+          [
+            "B13",
+            "B14"
+          ]
+        ],
         "title": [
           {
             "type": "text",

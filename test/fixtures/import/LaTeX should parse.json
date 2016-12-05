@@ -4,7 +4,21 @@
       "bib_type": "article",
       "entry_key": "sample1",
       "fields": {
-        "title": [ { "type": "text", "text": "'Isample title\textregistered  n " }, { "type": "text", "text": " n", "marks": [ { "type": "nocase" } ] } ]
+        "title": [
+          {
+            "type": "text",
+            "text": "'Isample title\textregistered  n "
+          },
+          {
+            "type": "text",
+            "text": " n",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          }
+        ]
       },
       "raw_fields": {
         "title": "'Isample title\textregistered ~n {~n}"

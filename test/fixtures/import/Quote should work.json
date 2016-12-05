@@ -4,14 +4,24 @@
       "bib_type": "article",
       "entry_key": "sample1",
       "fields": {
-        "title": [ { "type": "text", "text": "sample \"Quote\" title" } ]
+        "title": [
+          {
+            "type": "text",
+            "text": "sample \"Quote\" title"
+          }
+        ]
       },
       "raw_fields": {
         "title": "sample \"Quote\" title",
         "name": "sample \"Quote\" title\""
       },
       "unknown_fields": {
-        "name": [ { "type": "text", "text": "sample \"Quote\" title\"" } ]
+        "name": [
+          {
+            "type": "text",
+            "text": "sample \"Quote\" title\""
+          }
+        ]
       }
     }
   },
