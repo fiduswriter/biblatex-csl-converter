@@ -1,0 +1,304 @@
+{
+  "references": {
+    "0": {
+      "bib_type": "article",
+      "entry_key": "wilm10",
+      "fields": {
+        "date": "2010",
+        "author": [
+          {
+            "given": [
+              {
+                "type": "text",
+                "text": "Johannes"
+              }
+            ],
+            "family": [
+              {
+                "type": "text",
+                "text": "Wilm"
+              }
+            ]
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Cuba",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ": Economic "
+          },
+          {
+            "type": "text",
+            "text": "changes",
+            "marks": [
+              {
+                "type": "strong"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " and the future of socialism"
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "Links",
+            "marks": [
+              {
+                "type": "em"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " International Journal of Socialist Renewal"
+          }
+        ],
+        "subtitle": [
+          {
+            "type": "text",
+            "text": "Interview with Cuban professor "
+          },
+          {
+            "type": "text",
+            "text": "José Bell Lara",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          }
+        ],
+        "language": [
+          "english"
+        ],
+        "url": "http://links.org.au/node/1916",
+        "urldate": "2010-10-31"
+      },
+      "raw_fields": {
+        "author": "Johannes Wilm",
+        "title": "{Cuba}: Economic {\\\\textbf{changes}} and the future of socialism",
+        "journaltitle": "\\\\textit{Links} International Journal of Socialist Renewal",
+        "year": "2010",
+        "subtitle": "Interview with Cuban professor {José Bell Lara}",
+        "language": "english",
+        "url": "http://links.org.au/node/1916",
+        "urldate": "2010-10-31",
+        "location": "Sydney"
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "2010"
+          }
+        ]
+      },
+      "unexpected_fields": {
+        "location": [
+          [
+            {
+              "type": "text",
+              "text": "Sydney"
+            }
+          ]
+        ]
+      }
+    },
+    "1": {
+      "bib_type": "misc",
+      "entry_key": "wilm09",
+      "fields": {
+        "date": "2009",
+        "author": [
+          {
+            "given": [
+              {
+                "type": "text",
+                "text": "Johannes"
+              }
+            ],
+            "family": [
+              {
+                "type": "text",
+                "text": "Wilm"
+              }
+            ]
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "La Joven Revolución Hondureña"
+          }
+        ],
+        "language": [
+          "spanish"
+        ],
+        "type": [
+          {
+            "type": "text",
+            "text": "movie"
+          }
+        ],
+        "url": "http://www.johanneswilm.org/honduras/",
+        "urldate": "2010-11-02"
+      },
+      "raw_fields": {
+        "author": "Johannes Wilm",
+        "editor": "{PuenteSur}",
+        "title": "La Joven Revolución {Hondureña}",
+        "year": "2009",
+        "language": "spanish",
+        "type": "movie",
+        "url": "http://www.johanneswilm.org/honduras/",
+        "urldate": "2010-11-02"
+      },
+      "unexpected_fields": {
+        "editor": [
+          {
+            "literal": [
+              {
+                "type": "text",
+                "text": "PuenteSur"
+              }
+            ]
+          }
+        ]
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "2009"
+          }
+        ]
+      }
+    },
+    "2": {
+      "bib_type": "book",
+      "entry_key": "wilm_nicaragua_2011",
+      "fields": {
+        "date": "2011",
+        "location": [
+          [
+            {
+              "type": "text",
+              "text": "Oslo, Norway & Tucson, AZ"
+            }
+          ]
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "Nicaragua",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ", Back from the Dead? An Anthropological View of the "
+          },
+          {
+            "type": "text",
+            "text": "Sandinista",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " Movement in the early 21"
+          },
+          {
+            "type": "text",
+            "text": "st",
+            "marks": [
+              {
+                "type": "sup"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " Century."
+          }
+        ],
+        "publisher": [
+          [
+            {
+              "type": "text",
+              "text": "New Left Notes"
+            }
+          ]
+        ],
+        "author": [
+          {
+            "given": [
+              {
+                "type": "text",
+                "text": "Johannes"
+              }
+            ],
+            "family": [
+              {
+                "type": "text",
+                "text": "Wilm"
+              }
+            ],
+            "suffix": [
+              {
+                "type": "text",
+                "text": "Dr."
+              }
+            ]
+          }
+        ]
+      },
+      "raw_fields": {
+        "location": "Oslo, Norway \\& Tucson, {AZ}",
+        "title": "{Nicaragua}, Back from the Dead? An Anthropological View of the {{Sandinista}} Movement in the early 21$^{st}$ Century.",
+        "publisher": "New Left Notes",
+        "author": "given=Johannes,family=Wilm,suffix=Dr.",
+        "date": "2011"
+      }
+    }
+  },
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "entry": "wilm10",
+      "field_name": "year"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "wilm10",
+      "field_name": "location"
+    },
+    {
+      "type": "unexpected_field",
+      "entry": "wilm09",
+      "field_name": "editor"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "wilm09",
+      "field_name": "year"
+    }
+  ]
+}
