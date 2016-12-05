@@ -458,6 +458,7 @@ export class BibLatexParser {
                     oFields[fKey] = this._reformKey(fValue, fKey)
                     break
                 case 'f_literal':
+                case 'f_long_literal':
                     oFields[fKey] = this._reformLiteral(fValue)
                     break
                 case 'f_range':

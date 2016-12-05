@@ -63,6 +63,7 @@ export class CSLExporter {
                         fValues[key] = BibLanguages[fValue]['csl']
                         break
                     case 'f_literal':
+                    case 'f_long_literal':
                         fValues[key] = this._reformText(fValue)
                         break
                     case 'f_range':

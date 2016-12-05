@@ -1,7 +1,7 @@
 /** A list of field types of Bibligraphy DB with lookup by field name. */
 export const BibFieldTypes = {
     'abstract': {
-        type: 'f_literal',
+        type: 'f_long_literal',
         biblatex: 'abstract',
         csl: 'abstract'
     },
@@ -14,7 +14,7 @@ export const BibFieldTypes = {
         biblatex: 'afterword'
     },
     'annotation': {
-        type: 'f_literal',
+        type: 'f_long_literal',
         biblatex: 'annotation'
     },
     'annotator': {
