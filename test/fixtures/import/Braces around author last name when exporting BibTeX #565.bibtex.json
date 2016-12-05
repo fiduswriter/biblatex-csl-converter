@@ -305,6 +305,7 @@
       "entry_key": "vand95",
       "fields": {
         "date": "1995",
+        "langid": "french",
         "location": [
           [
             {
@@ -343,7 +344,12 @@
           }
         ],
         "language": [
-          "French"
+          [
+            {
+              "type": "text",
+              "text": "French"
+            }
+          ]
         ],
         "publisher": [
           [
@@ -390,6 +396,7 @@
       "entry_key": "desw98",
       "fields": {
         "date": "1998",
+        "langid": "usenglish",
         "author": [
           {
             "prefix": [
@@ -427,7 +434,12 @@
           }
         ],
         "language": [
-          "en"
+          [
+            {
+              "type": "text",
+              "text": "en"
+            }
+          ]
         ],
         "number": [
           {
@@ -444,7 +456,29 @@
         "title": [
           {
             "type": "text",
-            "text": "Aspect Shift and Coercion"
+            "text": "Aspect "
+          },
+          {
+            "type": "text",
+            "text": "Shift",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " and "
+          },
+          {
+            "type": "text",
+            "text": "Coercion",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
           }
         ],
         "urldate": "2015-10-09",

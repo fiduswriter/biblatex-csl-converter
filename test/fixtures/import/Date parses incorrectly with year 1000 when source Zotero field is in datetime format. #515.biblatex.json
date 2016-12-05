@@ -33,6 +33,7 @@
             "text": "ABC News"
           }
         ],
+        "langid": "auenglish",
         "title": [
           {
             "type": "text",
@@ -64,12 +65,6 @@
         ]
       },
       "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "australian"
-          }
-        ],
         "rights": [
           {
             "type": "text",
@@ -90,11 +85,6 @@
       "type": "unexpected_field",
       "entry": "barker_2016_swiss",
       "field_name": "entrysubtype"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "barker_2016_swiss",
-      "field_name": "langid"
     },
     {
       "type": "unknown_field",

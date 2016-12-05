@@ -97,6 +97,7 @@
             "text": "0-89791-875-4"
           }
         ],
+        "langid": "usenglish",
         "pages": [
           [
             "197",
@@ -168,12 +169,6 @@
         "title": "A Sequence of Series for the {{Lambert}} {{{\\emph{W}}}} Function"
       },
       "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "english"
-          }
-        ],
         "timestamp": [
           {
             "type": "text",
@@ -184,11 +179,6 @@
     }
   },
   "warnings": [
-    {
-      "type": "unknown_field",
-      "entry": "CorlessJeffreyKnuth1997Proc1997IntSympSymbAlgebrComput",
-      "field_name": "langid"
-    },
     {
       "type": "unknown_field",
       "entry": "CorlessJeffreyKnuth1997Proc1997IntSympSymbAlgebrComput",

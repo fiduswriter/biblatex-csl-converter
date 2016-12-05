@@ -236,6 +236,7 @@
             "text": "0-7100-3616-7"
           }
         ],
+        "langid": "usenglish",
         "location": [
           [
             {
@@ -286,12 +287,6 @@
         "title": "Norm and Action. A Logical Enquiry"
       },
       "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "anglais"
-          }
-        ],
         "options": [
           {
             "type": "text",
@@ -376,6 +371,7 @@
             "text": "978-1-84946-324-9"
           }
         ],
+        "langid": "usenglish",
         "location": [
           [
             {
@@ -469,12 +465,6 @@
         "title": "Reading {{HLA Hart}}'s: {{{\\emph{The Concept}}}}{\\emph{ of }}{{{\\emph{Law}}}}"
       },
       "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "english"
-          }
-        ],
         "timestamp": [
           {
             "type": "text",
@@ -4269,11 +4259,6 @@
     {
       "type": "unknown_field",
       "entry": "fixedkey",
-      "field_name": "langid"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "fixedkey",
       "field_name": "options"
     },
     {
@@ -4285,11 +4270,6 @@
       "type": "unknown_field",
       "entry": "fixedkey",
       "field_name": "timestamp"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "almeida_reading_2013",
-      "field_name": "langid"
     },
     {
       "type": "unknown_field",

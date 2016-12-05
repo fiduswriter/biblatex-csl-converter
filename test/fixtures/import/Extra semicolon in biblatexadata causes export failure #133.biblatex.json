@@ -40,6 +40,7 @@
           "modified Tikhonov  regularization",
           "numerical analytic continuation"
         ],
+        "langid": "usenglish",
         "note": [
           {
             "type": "text",
@@ -104,12 +105,6 @@
             "text": "Fu, CL (Reprint Author), Lanzhou Univ, Sch Math & Stat, Lanzhou 730000, Peoples R China."
           }
         ],
-        "langid": [
-          {
-            "type": "text",
-            "text": "english"
-          }
-        ],
         "timestamp": [
           {
             "type": "text",
@@ -158,6 +153,7 @@
           "modified Tikhonov  regularization",
           "numerical analytic continuation"
         ],
+        "langid": "usenglish",
         "number": [
           {
             "type": "text",
@@ -260,12 +256,6 @@
             "text": "TRANSFORM"
           }
         ],
-        "langid": [
-          {
-            "type": "text",
-            "text": "english"
-          }
-        ],
         "number-of-cited-references": [
           {
             "type": "text",
@@ -298,11 +288,6 @@
       "type": "unknown_field",
       "entry": "ISI:000270196200011",
       "field_name": "affiliation"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "ISI:000270196200011",
-      "field_name": "langid"
     },
     {
       "type": "unknown_field",
@@ -343,11 +328,6 @@
       "type": "unknown_field",
       "entry": "ISI:000270196200011",
       "field_name": "keywords-plus"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "ISI:000270196200011",
-      "field_name": "langid"
     },
     {
       "type": "unknown_field",

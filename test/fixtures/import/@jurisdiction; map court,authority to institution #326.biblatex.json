@@ -5,6 +5,7 @@
       "entry_key": "_dalain_2010",
       "fields": {
         "date": "2010-12-23",
+        "langid": "french",
         "title": [
           {
             "type": "text",
@@ -57,12 +58,6 @@
         ]
       },
       "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "french"
-          }
-        ],
         "timestamp": [
           {
             "type": "text",
@@ -86,11 +81,6 @@
       "type": "unexpected_field",
       "entry": "_dalain_2010",
       "field_name": "journaltitle"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "_dalain_2010",
-      "field_name": "langid"
     },
     {
       "type": "unexpected_field",

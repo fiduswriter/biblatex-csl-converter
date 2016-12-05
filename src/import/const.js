@@ -24,6 +24,8 @@ export const BiblatexAliasLanguages = {
     'english': 'usenglish',
     'american': 'usenglish',
     'british': 'ukenglish',
+    'en': 'usenglish',
+    'anglais': 'usenglish',
     'francais': 'french',
     'austrian': 'naustrian',
     'german': 'ngerman',

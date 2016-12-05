@@ -27,6 +27,7 @@
             "text": "3-8007-2141-4 978-3-8007-2141-2 3-8022-0469-7 978-3-8022-0469-2"
           }
         ],
+        "langid": "german",
         "location": [
           [
             {
@@ -70,12 +71,6 @@
         ]
       },
       "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "german"
-          }
-        ],
         "timestamp": [
           {
             "type": "text",
@@ -90,11 +85,6 @@
       "type": "unexpected_field",
       "entry": "Kaufmann1995",
       "field_name": "annotation"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "Kaufmann1995",
-      "field_name": "langid"
     },
     {
       "type": "unknown_field",

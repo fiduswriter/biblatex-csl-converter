@@ -147,6 +147,7 @@
           "Numeric Computing",
           "data structures"
         ],
+        "langid": "usenglish",
         "number": [
           {
             "type": "text",
@@ -225,12 +226,6 @@
         "urldate": "2015-11-16"
       },
       "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "english"
-          }
-        ],
         "rights": [
           {
             "type": "text",
@@ -247,11 +242,6 @@
     }
   },
   "warnings": [
-    {
-      "type": "unknown_field",
-      "entry": "bonomi_improved_2006",
-      "field_name": "langid"
-    },
     {
       "type": "unknown_field",
       "entry": "bonomi_improved_2006",

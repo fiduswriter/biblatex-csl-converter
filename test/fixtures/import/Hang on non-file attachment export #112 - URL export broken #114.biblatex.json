@@ -36,6 +36,7 @@
         "keywords": [
           "Law / General"
         ],
+        "langid": "usenglish",
         "pagetotal": [
           {
             "type": "text",
@@ -94,12 +95,6 @@
         "url": "http://www.google.com"
       },
       "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "english"
-          }
-        ],
         "timestamp": [
           {
             "type": "text",
@@ -144,6 +139,7 @@
         "keywords": [
           "Fiction / Literary"
         ],
+        "langid": "usenglish",
         "pagetotal": [
           {
             "type": "text",
@@ -200,12 +196,6 @@
         "title": "Uncle {{Tom}}'s {{Cabin}}"
       },
       "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "english"
-          }
-        ],
         "timestamp": [
           {
             "type": "text",
@@ -219,17 +209,7 @@
     {
       "type": "unknown_field",
       "entry": "Rawls2009",
-      "field_name": "langid"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "Rawls2009",
       "field_name": "timestamp"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "Stowe2009",
-      "field_name": "langid"
     },
     {
       "type": "unknown_field",

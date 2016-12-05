@@ -91,6 +91,7 @@
           "Startle",
           "fMRI"
         ],
+        "langid": "usenglish",
         "number": [
           {
             "type": "text",
@@ -134,12 +135,6 @@
         "volume": "45"
       },
       "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "english"
-          }
-        ],
         "timestamp": [
           {
             "type": "text",
@@ -150,11 +145,6 @@
     }
   },
   "warnings": [
-    {
-      "type": "unknown_field",
-      "entry": "Wendt2008BrainW.L.W.H.H+",
-      "field_name": "langid"
-    },
     {
       "type": "unknown_field",
       "entry": "Wendt2008BrainW.L.W.H.H+",

@@ -32,6 +32,7 @@
           "Literary Criticism / European / Spanish & Portuguese",
           "Portuguese literature"
         ],
+        "langid": "portuguese",
         "location": [
           [
             {
@@ -73,25 +74,19 @@
         "timestamp": "2015-02-24 12:14:36 +0100",
         "title": "Catalogo dos livros, que se haõ de ler para a continuaçaõ do diccionario da lingua Portugueza: mandado publicar pela Academia Real das Sciencias de Lisboa"
       },
-      "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "portuguese"
-          }
-        ],
-        "timestamp": [
-          {
-            "type": "text",
-            "text": "2015-02-24 12:14:36 +0100"
-          }
-        ]
-      },
       "unexpected_fields": {
         "shorttitle": [
           {
             "type": "text",
             "text": "Catalogo dos livros, que se haõ de ler..."
+          }
+        ]
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
           }
         ]
       }
@@ -177,11 +172,6 @@
     }
   },
   "warnings": [
-    {
-      "type": "unknown_field",
-      "entry": "macedo_catalogo_1799",
-      "field_name": "langid"
-    },
     {
       "type": "unexpected_field",
       "entry": "macedo_catalogo_1799",

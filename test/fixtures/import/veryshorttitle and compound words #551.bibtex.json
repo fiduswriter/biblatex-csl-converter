@@ -4,6 +4,7 @@
       "bib_type": "article",
       "entry_key": "puurtinen_betweengroup_2009",
       "fields": {
+        "langid": "usenglish",
         "abstract": [
           {
             "type": "text",
@@ -54,7 +55,12 @@
           }
         ],
         "language": [
-          "en"
+          [
+            {
+              "type": "text",
+              "text": "en"
+            }
+          ]
         ],
         "number": [
           {
@@ -131,6 +137,7 @@
       "entry_key": "bowles_coevolution_2003",
       "fields": {
         "date": "2003",
+        "langid": "usenglish",
         "location": [
           [
             {
@@ -257,7 +264,12 @@
           }
         ],
         "language": [
-          "English"
+          [
+            {
+              "type": "text",
+              "text": "English"
+            }
+          ]
         ],
         "publisher": [
           [
@@ -306,6 +318,7 @@
       "entry_key": "sumner_folkways_1906",
       "fields": {
         "date": "1906",
+        "langid": "usenglish",
         "location": [
           [
             {
@@ -331,7 +344,12 @@
           }
         ],
         "language": [
-          "English"
+          [
+            {
+              "type": "text",
+              "text": "English"
+            }
+          ]
         ],
         "publisher": [
           [
@@ -386,6 +404,7 @@
       "entry_key": "bauer_war_2014",
       "fields": {
         "date": "2014",
+        "langid": "usenglish",
         "abstract": [
           {
             "type": "text",
@@ -464,7 +483,12 @@
           }
         ],
         "language": [
-          "en"
+          [
+            {
+              "type": "text",
+              "text": "en"
+            }
+          ]
         ],
         "number": [
           {
@@ -481,7 +505,68 @@
         "title": [
           {
             "type": "text",
-            "text": "War's Enduring Effects on the Development of Egalitarian Motivations and In-Group Biases"
+            "text": "War's "
+          },
+          {
+            "type": "text",
+            "text": "Enduring Effects",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " on the "
+          },
+          {
+            "type": "text",
+            "text": "Development",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " of "
+          },
+          {
+            "type": "text",
+            "text": "Egalitarian Motivations",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " and "
+          },
+          {
+            "type": "text",
+            "text": "In",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "-"
+          },
+          {
+            "type": "text",
+            "text": "Group Biases",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
           }
         ],
         "urldate": "2014-01-08",

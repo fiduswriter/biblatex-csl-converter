@@ -60,6 +60,7 @@
             "text": "Genetics"
           }
         ],
+        "langid": "usenglish",
         "note": [
           {
             "type": "text",
@@ -138,20 +139,6 @@
         "urldate": "2014-10-13",
         "volume": "121"
       },
-      "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "english"
-          }
-        ],
-        "timestamp": [
-          {
-            "type": "text",
-            "text": "2015-02-24 12:14:36 +0100"
-          }
-        ]
-      },
       "unexpected_fields": {
         "shortjournal": [
           {
@@ -159,15 +146,18 @@
             "text": "Genetics"
           }
         ]
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     }
   },
   "warnings": [
-    {
-      "type": "unknown_field",
-      "entry": "Lander1989",
-      "field_name": "langid"
-    },
     {
       "type": "unexpected_field",
       "entry": "Lander1989",

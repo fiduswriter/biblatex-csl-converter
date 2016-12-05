@@ -33,6 +33,7 @@
             "text": "2-275-01408-X"
           }
         ],
+        "langid": "french",
         "location": [
           [
             {
@@ -89,12 +90,6 @@
         "volumes": "2 vol. (786, xxiv+908 p.)"
       },
       "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "french"
-          }
-        ],
         "timestamp": [
           {
             "type": "text",
@@ -105,11 +100,6 @@
     }
   },
   "warnings": [
-    {
-      "type": "unknown_field",
-      "entry": "eisenmann_problemes_1982",
-      "field_name": "langid"
-    },
     {
       "type": "unknown_field",
       "entry": "eisenmann_problemes_1982",

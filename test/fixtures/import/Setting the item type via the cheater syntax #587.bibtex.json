@@ -259,7 +259,12 @@
           }
         ],
         "language": [
-          "en-US"
+          [
+            {
+              "type": "text",
+              "text": "en-US"
+            }
+          ]
         ],
         "pages": [
           [
@@ -270,7 +275,29 @@
         "title": [
           {
             "type": "text",
-            "text": "The Mystery of Samba: Popular Music and National Identity in Brazil"
+            "text": "The Mystery of Samba: "
+          },
+          {
+            "type": "text",
+            "text": "Popular",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " Music and National Identity in "
+          },
+          {
+            "type": "text",
+            "text": "Brazil",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
           }
         ],
         "volume": [
@@ -356,7 +383,12 @@
           }
         ],
         "language": [
-          "en-US"
+          [
+            {
+              "type": "text",
+              "text": "en-US"
+            }
+          ]
         ],
         "title": [
           {

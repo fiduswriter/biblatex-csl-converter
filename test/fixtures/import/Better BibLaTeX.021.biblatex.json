@@ -55,6 +55,7 @@
             "text": "The Journal of Chemical Thermodynamics"
           }
         ],
+        "langid": "usenglish",
         "number": [
           {
             "type": "text",
@@ -116,12 +117,6 @@
         "file": "de Oliveira, Aznar-2010-(Liquid+liquid) equilibrium of \\{water+phenol+(1-butanol, or 2-butanol, or2.pdf:files/1/de Oliveira, Aznar-2010-(Liquid+liquid) equilibrium of water+phenol+(1-butanol, or 2-butanol, or2.pdf:application/pdf"
       },
       "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "english"
-          }
-        ],
         "options": [
           {
             "type": "text",
@@ -142,11 +137,6 @@
       "type": "unexpected_field",
       "entry": "deOliveira2010",
       "field_name": "file"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "deOliveira2010",
-      "field_name": "langid"
     },
     {
       "type": "unknown_field",

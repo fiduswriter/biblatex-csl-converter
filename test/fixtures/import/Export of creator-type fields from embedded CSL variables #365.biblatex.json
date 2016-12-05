@@ -241,6 +241,7 @@
       "entry_key": "friends:leia:tv",
       "fields": {
         "date": "1996-09-16",
+        "langid": "usenglish",
         "location": [
           [
             {
@@ -324,12 +325,6 @@
             "text": "Mancuso, Gail"
           }
         ],
-        "langid": [
-          {
-            "type": "text",
-            "text": "american"
-          }
-        ],
         "scriptwriter": [
           {
             "type": "text",
@@ -349,6 +344,7 @@
       "entry_key": "friends:leia:dvd",
       "fields": {
         "date": "2003",
+        "langid": "usenglish",
         "location": [
           [
             {
@@ -434,12 +430,6 @@
           {
             "type": "text",
             "text": "Mancuso, Gail"
-          }
-        ],
-        "langid": [
-          {
-            "type": "text",
-            "text": "american"
           }
         ],
         "scriptwriter": [
@@ -561,11 +551,6 @@
       "field_name": "journaltitle"
     },
     {
-      "type": "unknown_field",
-      "entry": "friends:leia:tv",
-      "field_name": "langid"
-    },
-    {
       "type": "unexpected_field",
       "entry": "friends:leia:tv",
       "field_name": "number"
@@ -603,11 +588,6 @@
       "type": "unknown_field",
       "entry": "friends:leia:dvd",
       "field_name": "director"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "friends:leia:dvd",
-      "field_name": "langid"
     },
     {
       "type": "unexpected_field",

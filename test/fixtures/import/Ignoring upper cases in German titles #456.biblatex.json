@@ -44,6 +44,7 @@
             ]
           }
         ],
+        "langid": "german",
         "pages": [
           [
             "145",
@@ -80,22 +81,16 @@
         "title": "Sozialpolitik und Bevölkerungsprozeß",
         "url": "http://link.springer.com/chapter/10.1007/978-3-322-99962-7_7"
       },
+      "unexpected_fields": {
+        "origdate": "1990"
+      },
       "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "german"
-          }
-        ],
         "rights": [
           {
             "type": "text",
             "text": "©2002 VS Verlag für Sozialwissenschaften | Springer Fachmedien Wiesbaden GmbH, Wiesbaden"
           }
         ]
-      },
-      "unexpected_fields": {
-        "origdate": "1990"
       }
     },
     "1": {
@@ -142,6 +137,7 @@
             ]
           }
         ],
+        "langid": "german",
         "pages": [
           [
             "241",
@@ -178,31 +174,20 @@
         "title": "Schwindet die integrative Funktion des Sozialstaates?",
         "url": "http://link.springer.com/chapter/10.1007/978-3-322-99962-7_11"
       },
+      "unexpected_fields": {
+        "origdate": "1997"
+      },
       "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "german"
-          }
-        ],
         "rights": [
           {
             "type": "text",
             "text": "©2002 VS Verlag für Sozialwissenschaften | Springer Fachmedien Wiesbaden GmbH, Wiesbaden"
           }
         ]
-      },
-      "unexpected_fields": {
-        "origdate": "1997"
       }
     }
   },
   "warnings": [
-    {
-      "type": "unknown_field",
-      "entry": "Kaufmann1990",
-      "field_name": "langid"
-    },
     {
       "type": "unexpected_field",
       "entry": "Kaufmann1990",
@@ -212,11 +197,6 @@
       "type": "unknown_field",
       "entry": "Kaufmann1990",
       "field_name": "rights"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "Kaufmann1997",
-      "field_name": "langid"
     },
     {
       "type": "unexpected_field",

@@ -4,6 +4,7 @@
       "bib_type": "article",
       "entry_key": "araz_using_2014",
       "fields": {
+        "langid": "usenglish",
         "abstract": [
           {
             "type": "text",
@@ -68,7 +69,12 @@
           }
         ],
         "language": [
-          "English"
+          [
+            {
+              "type": "text",
+              "text": "English"
+            }
+          ]
         ],
         "number": [
           {

@@ -42,6 +42,7 @@
           "evaluation",
           "monitoring"
         ],
+        "langid": "usenglish",
         "location": [
           [
             {
@@ -89,12 +90,6 @@
         "urldate": "2014-05-26"
       },
       "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "english"
-          }
-        ],
         "timestamp": [
           {
             "type": "text",
@@ -105,11 +100,6 @@
     }
   },
   "warnings": [
-    {
-      "type": "unknown_field",
-      "entry": "oecd_making_2014",
-      "field_name": "langid"
-    },
     {
       "type": "unknown_field",
       "entry": "oecd_making_2014",

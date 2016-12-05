@@ -33,6 +33,7 @@
             "text": "ABC News"
           }
         ],
+        "langid": "auenglish",
         "note": [
           {
             "type": "text",
@@ -84,12 +85,6 @@
         ]
       },
       "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "australian"
-          }
-        ],
         "rights": [
           {
             "type": "text",
@@ -137,6 +132,7 @@
             "text": "ABC News"
           }
         ],
+        "langid": "auenglish",
         "note": [
           {
             "type": "text",
@@ -188,12 +184,6 @@
         ]
       },
       "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "australian"
-          }
-        ],
         "rights": [
           {
             "type": "text",
@@ -241,6 +231,7 @@
             "text": "ABC News"
           }
         ],
+        "langid": "auenglish",
         "note": [
           {
             "type": "text",
@@ -292,12 +283,6 @@
         ]
       },
       "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "australian"
-          }
-        ],
         "rights": [
           {
             "type": "text",
@@ -345,6 +330,7 @@
             "text": "ABC News"
           }
         ],
+        "langid": "auenglish",
         "note": [
           {
             "type": "text",
@@ -396,12 +382,6 @@
         ]
       },
       "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "australian"
-          }
-        ],
         "rights": [
           {
             "type": "text",
@@ -449,6 +429,7 @@
             "text": "ABC News"
           }
         ],
+        "langid": "auenglish",
         "note": [
           {
             "type": "text",
@@ -500,12 +481,6 @@
         ]
       },
       "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "australian"
-          }
-        ],
         "rights": [
           {
             "type": "text",
@@ -553,6 +528,7 @@
             "text": "ABC News"
           }
         ],
+        "langid": "auenglish",
         "note": [
           {
             "type": "text",
@@ -604,12 +580,6 @@
         ]
       },
       "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "australian"
-          }
-        ],
         "rights": [
           {
             "type": "text",
@@ -657,6 +627,7 @@
             "text": "ABC News"
           }
         ],
+        "langid": "auenglish",
         "note": [
           {
             "type": "text",
@@ -708,12 +679,6 @@
         ]
       },
       "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "australian"
-          }
-        ],
         "rights": [
           {
             "type": "text",
@@ -761,6 +726,7 @@
             "text": "ABC News"
           }
         ],
+        "langid": "auenglish",
         "note": [
           {
             "type": "text",
@@ -812,12 +778,6 @@
         ]
       },
       "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "australian"
-          }
-        ],
         "rights": [
           {
             "type": "text",
@@ -865,6 +825,7 @@
             "text": "ABC News"
           }
         ],
+        "langid": "auenglish",
         "note": [
           {
             "type": "text",
@@ -916,12 +877,6 @@
         ]
       },
       "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "australian"
-          }
-        ],
         "rights": [
           {
             "type": "text",
@@ -969,6 +924,7 @@
             "text": "ABC News"
           }
         ],
+        "langid": "auenglish",
         "note": [
           {
             "type": "text",
@@ -1020,12 +976,6 @@
         ]
       },
       "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "australian"
-          }
-        ],
         "rights": [
           {
             "type": "text",
@@ -1073,6 +1023,7 @@
             "text": "ABC News"
           }
         ],
+        "langid": "auenglish",
         "note": [
           {
             "type": "text",
@@ -1124,12 +1075,6 @@
         ]
       },
       "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "australian"
-          }
-        ],
         "rights": [
           {
             "type": "text",
@@ -1177,6 +1122,7 @@
             "text": "ABC News"
           }
         ],
+        "langid": "auenglish",
         "note": [
           {
             "type": "text",
@@ -1228,12 +1174,6 @@
         ]
       },
       "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "australian"
-          }
-        ],
         "rights": [
           {
             "type": "text",
@@ -1281,6 +1221,7 @@
             "text": "ABC News"
           }
         ],
+        "langid": "auenglish",
         "note": [
           {
             "type": "text",
@@ -1332,12 +1273,6 @@
         ]
       },
       "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "australian"
-          }
-        ],
         "rights": [
           {
             "type": "text",
@@ -1385,6 +1320,7 @@
             "text": "ABC News"
           }
         ],
+        "langid": "auenglish",
         "note": [
           {
             "type": "text",
@@ -1436,12 +1372,6 @@
         ]
       },
       "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "australian"
-          }
-        ],
         "rights": [
           {
             "type": "text",
@@ -1466,11 +1396,6 @@
     {
       "type": "unknown_field",
       "entry": "barker1_2016_turkey",
-      "field_name": "langid"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "barker1_2016_turkey",
       "field_name": "rights"
     },
     {
@@ -1486,11 +1411,6 @@
     {
       "type": "unknown_field",
       "entry": "barker2_2016_turkey",
-      "field_name": "langid"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "barker2_2016_turkey",
       "field_name": "rights"
     },
     {
@@ -1506,11 +1426,6 @@
     {
       "type": "unknown_field",
       "entry": "barker3_2016_turkey",
-      "field_name": "langid"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "barker3_2016_turkey",
       "field_name": "rights"
     },
     {
@@ -1526,11 +1441,6 @@
     {
       "type": "unknown_field",
       "entry": "barker4_-876_turkey",
-      "field_name": "langid"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "barker4_-876_turkey",
       "field_name": "rights"
     },
     {
@@ -1546,11 +1456,6 @@
     {
       "type": "unknown_field",
       "entry": "barker5_1723_turkey",
-      "field_name": "langid"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "barker5_1723_turkey",
       "field_name": "rights"
     },
     {
@@ -1566,11 +1471,6 @@
     {
       "type": "unknown_field",
       "entry": "barker6_1723_turkey",
-      "field_name": "langid"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "barker6_1723_turkey",
       "field_name": "rights"
     },
     {
@@ -1586,11 +1486,6 @@
     {
       "type": "unknown_field",
       "entry": "barker7_1723_turkey",
-      "field_name": "langid"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "barker7_1723_turkey",
       "field_name": "rights"
     },
     {
@@ -1606,11 +1501,6 @@
     {
       "type": "unknown_field",
       "entry": "barker8_1988_turkey",
-      "field_name": "langid"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "barker8_1988_turkey",
       "field_name": "rights"
     },
     {
@@ -1626,11 +1516,6 @@
     {
       "type": "unknown_field",
       "entry": "barker9_2004_turkey",
-      "field_name": "langid"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "barker9_2004_turkey",
       "field_name": "rights"
     },
     {
@@ -1646,11 +1531,6 @@
     {
       "type": "unknown_field",
       "entry": "barker10_199u_turkey",
-      "field_name": "langid"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "barker10_199u_turkey",
       "field_name": "rights"
     },
     {
@@ -1666,11 +1546,6 @@
     {
       "type": "unknown_field",
       "entry": "barker11_19uu_turkey",
-      "field_name": "langid"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "barker11_19uu_turkey",
       "field_name": "rights"
     },
     {
@@ -1686,11 +1561,6 @@
     {
       "type": "unknown_field",
       "entry": "barker12_1999_turkey",
-      "field_name": "langid"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "barker12_1999_turkey",
       "field_name": "rights"
     },
     {
@@ -1706,11 +1576,6 @@
     {
       "type": "unknown_field",
       "entry": "barker13_1999_turkey",
-      "field_name": "langid"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "barker13_1999_turkey",
       "field_name": "rights"
     },
     {
@@ -1722,11 +1587,6 @@
       "type": "unexpected_field",
       "entry": "barker14_1999_turkey",
       "field_name": "entrysubtype"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "barker14_1999_turkey",
-      "field_name": "langid"
     },
     {
       "type": "unknown_field",

@@ -42,6 +42,7 @@
         "keywords": [
           "måske"
         ],
+        "langid": "usenglish",
         "pages": [
           [
             "129",
@@ -118,12 +119,6 @@
         ]
       },
       "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "english"
-          }
-        ],
         "rights": [
           {
             "type": "text",
@@ -407,11 +402,6 @@
       "type": "unexpected_field",
       "entry": "bentley_academic_2011",
       "field_name": "annotation"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "bentley_academic_2011",
-      "field_name": "langid"
     },
     {
       "type": "unknown_field",

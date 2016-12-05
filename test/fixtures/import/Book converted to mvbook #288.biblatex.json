@@ -27,6 +27,7 @@
             "text": "2-218-05069-2"
           }
         ],
+        "langid": "french",
         "location": [
           [
             {
@@ -98,12 +99,6 @@
         ]
       },
       "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "french"
-          }
-        ],
         "timestamp": [
           {
             "type": "text",
@@ -118,11 +113,6 @@
       "type": "unexpected_field",
       "entry": "russ_savoir_1990",
       "field_name": "annotation"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "russ_savoir_1990",
-      "field_name": "langid"
     },
     {
       "type": "unknown_field",

@@ -11,6 +11,7 @@
             "text": "JORF n°0137 du 16 juin 2009 page 9784 texte n° 1"
           }
         ],
+        "langid": "french",
         "title": [
           {
             "type": "text",
@@ -50,12 +51,6 @@
         ]
       },
       "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "french"
-          }
-        ],
         "timestamp": [
           {
             "type": "text",
@@ -74,11 +69,6 @@
       "type": "unexpected_field",
       "entry": "_loi_2009",
       "field_name": "journaltitle"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "_loi_2009",
-      "field_name": "langid"
     },
     {
       "type": "unexpected_field",

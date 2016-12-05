@@ -24,7 +24,12 @@
         ],
         "doi": "10.1161/CIR.0b013e318288b4dd",
         "language": [
-          "eng"
+          [
+            {
+              "type": "text",
+              "text": "eng"
+            }
+          ]
         ],
         "number": [
           {

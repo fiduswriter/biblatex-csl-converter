@@ -243,6 +243,7 @@
             ]
           }
         ],
+        "langid": "usenglish",
         "title": [
           {
             "type": "text",
@@ -330,12 +331,6 @@
         ]
       },
       "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "american"
-          }
-        ],
         "timestamp": [
           {
             "type": "text",
@@ -371,6 +366,7 @@
             ]
           }
         ],
+        "langid": "usenglish",
         "title": [
           {
             "type": "text",
@@ -410,12 +406,6 @@
         "editoratype": "collaborator"
       },
       "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "american"
-          }
-        ],
         "timestamp": [
           {
             "type": "text",
@@ -499,11 +489,6 @@
       "field_name": "journaltitle"
     },
     {
-      "type": "unknown_field",
-      "entry": "ratliff_mystery_1999",
-      "field_name": "langid"
-    },
-    {
       "type": "unexpected_field",
       "entry": "ratliff_mystery_1999",
       "field_name": "pages"
@@ -531,11 +516,6 @@
       "type": "unexpected_field",
       "entry": "kamp_deconstructing_2006",
       "field_name": "editoratype"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "kamp_deconstructing_2006",
-      "field_name": "langid"
     },
     {
       "type": "unknown_field",

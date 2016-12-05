@@ -4,6 +4,7 @@
       "bib_type": "article",
       "entry_key": "HammondBortz2011ApplMathComput",
       "fields": {
+        "langid": "usenglish",
         "author": [
           {
             "family": [
@@ -48,7 +49,12 @@
           }
         ],
         "language": [
-          "en"
+          [
+            {
+              "type": "text",
+              "text": "en"
+            }
+          ]
         ],
         "note": [
           {
@@ -76,7 +82,20 @@
         "title": [
           {
             "type": "text",
-            "text": "Analytical Solutions to Fisher's Equation with Time-Variable Coefficients"
+            "text": "Analytical Solutions to "
+          },
+          {
+            "type": "text",
+            "text": "Fisher",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "'s Equation with Time-Variable Coefficients"
           }
         ],
         "urldate": "2014-07-02",

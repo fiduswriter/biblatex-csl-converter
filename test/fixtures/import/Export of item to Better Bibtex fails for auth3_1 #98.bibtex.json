@@ -4,6 +4,7 @@
       "bib_type": "article",
       "entry_key": "MauSey14",
       "fields": {
+        "langid": "usenglish",
         "abstract": [
           {
             "type": "text",
@@ -55,7 +56,12 @@
           "walking"
         ],
         "language": [
-          "en"
+          [
+            {
+              "type": "text",
+              "text": "en"
+            }
+          ]
         ],
         "number": [
           {

@@ -51,6 +51,7 @@
             ]
           }
         ],
+        "langid": "french",
         "location": [
           [
             {
@@ -92,12 +93,6 @@
         "volumes": "13"
       },
       "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "french"
-          }
-        ],
         "timestamp": [
           {
             "type": "text",
@@ -157,6 +152,7 @@
             ]
           }
         ],
+        "langid": "french",
         "location": [
           [
             {
@@ -198,12 +194,6 @@
         "volumes": "13"
       },
       "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "french"
-          }
-        ],
         "timestamp": [
           {
             "type": "text",
@@ -263,6 +253,7 @@
             ]
           }
         ],
+        "langid": "french",
         "location": [
           [
             {
@@ -304,12 +295,6 @@
         "volumes": "13"
       },
       "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "french"
-          }
-        ],
         "timestamp": [
           {
             "type": "text",
@@ -323,27 +308,12 @@
     {
       "type": "unknown_field",
       "entry": "descartes_oeuvres_1897",
-      "field_name": "langid"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "descartes_oeuvres_1897",
       "field_name": "timestamp"
     },
     {
       "type": "unknown_field",
       "entry": "descartes_oeuvres_1897-1",
-      "field_name": "langid"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "descartes_oeuvres_1897-1",
       "field_name": "timestamp"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "descartes_oeuvres_1897-2",
-      "field_name": "langid"
     },
     {
       "type": "unknown_field",

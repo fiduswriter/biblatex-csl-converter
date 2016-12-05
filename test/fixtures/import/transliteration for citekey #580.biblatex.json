@@ -27,6 +27,7 @@
           "Nuclear reactor accidents",
           "Radioactive wastes"
         ],
+        "langid": "russian",
         "pagetotal": [
           {
             "type": "text",
@@ -59,12 +60,6 @@
         "title": "Ядерный загар"
       },
       "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "russian"
-          }
-        ],
         "timestamp": [
           {
             "type": "text",
@@ -75,11 +70,6 @@
     }
   },
   "warnings": [
-    {
-      "type": "unknown_field",
-      "entry": "Medvedev2002",
-      "field_name": "langid"
-    },
     {
       "type": "unknown_field",
       "entry": "Medvedev2002",

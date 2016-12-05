@@ -34,6 +34,7 @@
             "text": "Modern Language Notes"
           }
         ],
+        "langid": "french",
         "number": [
           {
             "type": "text",
@@ -73,12 +74,6 @@
         "volume": "56"
       },
       "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "french"
-          }
-        ],
         "timestamp": [
           {
             "type": "text",
@@ -89,11 +84,6 @@
     }
   },
   "warnings": [
-    {
-      "type": "unknown_field",
-      "entry": "Spitzer1941",
-      "field_name": "langid"
-    },
     {
       "type": "unknown_field",
       "entry": "Spitzer1941",

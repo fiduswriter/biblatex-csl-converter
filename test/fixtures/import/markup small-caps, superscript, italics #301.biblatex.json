@@ -33,6 +33,7 @@
             "text": "978-2-247-10748-3"
           }
         ],
+        "langid": "french",
         "location": [
           [
             {
@@ -65,9 +66,6 @@
             "text": "éclairées",
             "marks": [
               {
-                "type": "nocase"
-              },
-              {
                 "type": "em"
               }
             ]
@@ -80,9 +78,6 @@
             "type": "text",
             "text": "amici curiae",
             "marks": [
-              {
-                "type": "nocase"
-              },
               {
                 "type": "em"
               }
@@ -110,12 +105,6 @@
         "volumes": "xxxi+710 p."
       },
       "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "french"
-          }
-        ],
         "timestamp": [
           {
             "type": "text",
@@ -155,9 +144,6 @@
             "text": "vii",
             "marks": [
               {
-                "type": "nocase"
-              },
-              {
                 "type": "smallcaps"
               }
             ]
@@ -166,9 +152,6 @@
             "type": "text",
             "text": "e",
             "marks": [
-              {
-                "type": "nocase"
-              },
               {
                 "type": "sup"
               }
@@ -183,9 +166,6 @@
             "text": "xvi",
             "marks": [
               {
-                "type": "nocase"
-              },
-              {
                 "type": "smallcaps"
               }
             ]
@@ -194,9 +174,6 @@
             "type": "text",
             "text": "e",
             "marks": [
-              {
-                "type": "nocase"
-              },
               {
                 "type": "sup"
               }
@@ -243,6 +220,7 @@
             "text": "978-2-912025-68-5"
           }
         ],
+        "langid": "french",
         "location": [
           [
             {
@@ -281,9 +259,6 @@
             "text": "xii",
             "marks": [
               {
-                "type": "nocase"
-              },
-              {
                 "type": "smallcaps"
               }
             ]
@@ -292,9 +267,6 @@
             "type": "text",
             "text": "e",
             "marks": [
-              {
-                "type": "nocase"
-              },
               {
                 "type": "sup"
               }
@@ -309,9 +281,6 @@
             "text": "xiv",
             "marks": [
               {
-                "type": "nocase"
-              },
-              {
                 "type": "smallcaps"
               }
             ]
@@ -320,9 +289,6 @@
             "type": "text",
             "text": "e",
             "marks": [
-              {
-                "type": "nocase"
-              },
               {
                 "type": "sup"
               }
@@ -356,12 +322,6 @@
         "volumes": "355 p."
       },
       "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "french"
-          }
-        ],
         "timestamp": [
           {
             "type": "text",
@@ -375,17 +335,7 @@
     {
       "type": "unknown_field",
       "entry": "burgorgue-larsen_interventions_2011",
-      "field_name": "langid"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "burgorgue-larsen_interventions_2011",
       "field_name": "timestamp"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "leveleux-teixeira_opinion_2010",
-      "field_name": "langid"
     },
     {
       "type": "unknown_field",

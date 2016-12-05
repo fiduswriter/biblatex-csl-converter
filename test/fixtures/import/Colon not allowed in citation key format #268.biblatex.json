@@ -40,6 +40,7 @@
           "Neckam; Alexander; 1157-1217",
           "Political Science / Human Rights"
         ],
+        "langid": "usenglish",
         "location": [
           [
             {
@@ -112,12 +113,6 @@
         ]
       },
       "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "english"
-          }
-        ],
         "timestamp": [
           {
             "type": "text",
@@ -132,11 +127,6 @@
       "type": "unexpected_field",
       "entry": "coates:1999english",
       "field_name": "annotation"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "coates:1999english",
-      "field_name": "langid"
     },
     {
       "type": "unexpected_field",

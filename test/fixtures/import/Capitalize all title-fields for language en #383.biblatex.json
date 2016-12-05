@@ -4,6 +4,7 @@
       "bib_type": "article",
       "entry_key": "_carbocyclic",
       "fields": {
+        "langid": "ukenglish",
         "title": [
           {
             "type": "text",
@@ -40,20 +41,13 @@
       "raw_fields": {
         "langid": "british",
         "title": "A Carbocyclic Carbene as an Efficient Catalyst Ligand for {{C}}–{{C}} Coupling Reactions"
-      },
-      "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "british"
-          }
-        ]
       }
     },
     "1": {
       "bib_type": "book",
       "entry_key": "_alkanethiolate",
       "fields": {
+        "langid": "usenglish",
         "title": [
           {
             "type": "text",
@@ -73,20 +67,13 @@
       "raw_fields": {
         "langid": "american",
         "title": "Alkanethiolate Gold Cluster Molecules with Core Diameters from 1.5 to 5.2~{{nm}}"
-      },
-      "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "american"
-          }
-        ]
       }
     },
     "2": {
       "bib_type": "book",
       "entry_key": "_stochastic",
       "fields": {
+        "langid": "usenglish",
         "title": [
           {
             "type": "text",
@@ -110,20 +97,13 @@
       "raw_fields": {
         "langid": "american",
         "title": "A Stochastic Model of {{TCP Reno}} Congestion Avoidance and Control"
-      },
-      "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "american"
-          }
-        ]
       }
     },
     "3": {
       "bib_type": "article",
       "entry_key": "_effect",
       "fields": {
+        "langid": "usenglish",
         "title": [
           {
             "type": "text",
@@ -186,14 +166,6 @@
       "raw_fields": {
         "langid": "american",
         "title": "Effect of Immobilization on Catalytic Characteristics of Saturated {{Pd}}-{{N}}-Heterocyclic Carbenes in {{Mizoroki}}-{{Heck}} Reactions"
-      },
-      "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "american"
-          }
-        ]
       }
     },
     "4": {
@@ -206,6 +178,7 @@
             "text": "in French, so no case conversion, nor protection."
           }
         ],
+        "langid": "french",
         "title": [
           {
             "type": "text",
@@ -217,20 +190,13 @@
         "abstract": "in French, so no case conversion, nor protection.",
         "langid": "french",
         "title": "Estimateur d'un défaut de fonctionnement d'un modulateur en quadrature et étage de modulation l'utilisant"
-      },
-      "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "french"
-          }
-        ]
       }
     },
     "5": {
       "bib_type": "book",
       "entry_key": "_highspeed",
       "fields": {
+        "langid": "usenglish",
         "title": [
           {
             "type": "text",
@@ -254,20 +220,13 @@
       "raw_fields": {
         "langid": "american",
         "title": "High-Speed Digital-to-{{RF}} Converter"
-      },
-      "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "american"
-          }
-        ]
       }
     },
     "6": {
       "bib_type": "article",
       "entry_key": "_pleistocene",
       "fields": {
+        "langid": "ukenglish",
         "title": [
           {
             "type": "text",
@@ -324,14 +283,6 @@
       "raw_fields": {
         "langid": "british",
         "title": "Pleistocene {{{\\emph{Homo sapiens}}}} from {{Middle Awash}}, {{Ethiopia}}"
-      },
-      "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "british"
-          }
-        ]
       }
     },
     "7": {
@@ -382,42 +333,5 @@
         "title": "Some Remarks on {{’t Hooft’s}} {{S}}-Matrix for Black Holes"
       }
     }
-  },
-  "warnings": [
-    {
-      "type": "unknown_field",
-      "entry": "_carbocyclic",
-      "field_name": "langid"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "_alkanethiolate",
-      "field_name": "langid"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "_stochastic",
-      "field_name": "langid"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "_effect",
-      "field_name": "langid"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "_estimateur",
-      "field_name": "langid"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "_highspeed",
-      "field_name": "langid"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "_pleistocene",
-      "field_name": "langid"
-    }
-  ]
+  }
 }

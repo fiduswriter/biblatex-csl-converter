@@ -27,6 +27,7 @@
             "text": "Revue française de droit administratif"
           }
         ],
+        "langid": "french",
         "number": [
           {
             "type": "text",
@@ -58,20 +59,6 @@
         "timestamp": "2015-02-24 12:14:36 +0100",
         "title": "Critique d'une métanotion fonctionnelle. La notion (trop) fonctionnelle de \\mkbibquote{notion fonctionnelle}"
       },
-      "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "french"
-          }
-        ],
-        "timestamp": [
-          {
-            "type": "text",
-            "text": "2015-02-24 12:14:36 +0100"
-          }
-        ]
-      },
       "unexpected_fields": {
         "shortjournal": [
           {
@@ -83,6 +70,14 @@
           {
             "type": "text",
             "text": "Critique d'une métanotion fonctionnelle"
+          }
+        ]
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
           }
         ]
       }
@@ -121,6 +116,7 @@
             "text": "The Philosophical Review"
           }
         ],
+        "langid": "usenglish",
         "number": [
           {
             "type": "text",
@@ -186,12 +182,6 @@
         "volume": "73"
       },
       "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "english"
-          }
-        ],
         "timestamp": [
           {
             "type": "text",
@@ -202,11 +192,6 @@
     }
   },
   "warnings": [
-    {
-      "type": "unknown_field",
-      "entry": "tusseau_critique_2009",
-      "field_name": "langid"
-    },
     {
       "type": "unexpected_field",
       "entry": "tusseau_critique_2009",
@@ -221,11 +206,6 @@
       "type": "unknown_field",
       "entry": "tusseau_critique_2009",
       "field_name": "timestamp"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "searle_how_1964",
-      "field_name": "langid"
     },
     {
       "type": "unknown_field",

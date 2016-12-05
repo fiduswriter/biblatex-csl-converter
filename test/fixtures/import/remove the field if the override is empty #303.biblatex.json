@@ -27,6 +27,7 @@
             "text": "Revue interdisciplinaire d’études juridiques"
           }
         ],
+        "langid": "french",
         "number": [
           {
             "type": "text",
@@ -64,20 +65,6 @@
         "title": "Dimensions du savoir juridique et orientations philosophiques",
         "volume": "21"
       },
-      "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "french"
-          }
-        ],
-        "timestamp": [
-          {
-            "type": "text",
-            "text": "2015-02-24 12:14:36 +0100"
-          }
-        ]
-      },
       "unexpected_fields": {
         "shortjournal": [
           {
@@ -85,15 +72,18 @@
             "text": "RIEJ"
           }
         ]
+      },
+      "unknown_fields": {
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2015-02-24 12:14:36 +0100"
+          }
+        ]
       }
     }
   },
   "warnings": [
-    {
-      "type": "unknown_field",
-      "entry": "pattaro_dimensions_1988",
-      "field_name": "langid"
-    },
     {
       "type": "unexpected_field",
       "entry": "pattaro_dimensions_1988",

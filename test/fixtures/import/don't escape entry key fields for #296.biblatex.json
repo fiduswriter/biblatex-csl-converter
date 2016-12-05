@@ -33,6 +33,7 @@
             "text": "2-275-01408-X"
           }
         ],
+        "langid": "french",
         "location": [
           [
             {
@@ -122,12 +123,6 @@
             "text": "982"
           }
         ],
-        "langid": [
-          {
-            "type": "text",
-            "text": "french"
-          }
-        ],
         "timestamp": [
           {
             "type": "text",
@@ -142,11 +137,6 @@
       "type": "unknown_field",
       "entry": "eisenmann_actes_1983",
       "field_name": "crossref"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "eisenmann_actes_1983",
-      "field_name": "langid"
     },
     {
       "type": "unknown_field",

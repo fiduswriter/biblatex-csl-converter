@@ -5,6 +5,7 @@
       "entry_key": "Woller2011DetMultiple",
       "fields": {
         "date": "2011",
+        "langid": "norwegian",
         "author": [
           {
             "family": [
@@ -22,7 +23,12 @@
           }
         ],
         "language": [
-          "norsk"
+          [
+            {
+              "type": "text",
+              "text": "norsk"
+            }
+          ]
         ],
         "title": [
           {
@@ -58,6 +64,7 @@
       "entry_key": "Woller2011CTRDet",
       "fields": {
         "date": "2011",
+        "langid": "norwegian",
         "author": [
           {
             "family": [
@@ -75,7 +82,12 @@
           }
         ],
         "language": [
-          "norsk"
+          [
+            {
+              "type": "text",
+              "text": "norsk"
+            }
+          ]
         ],
         "title": [
           {

@@ -5,6 +5,7 @@
       "entry_key": "wilm10",
       "fields": {
         "date": "2010",
+        "langid": "usenglish",
         "author": [
           {
             "given": [
@@ -80,7 +81,12 @@
           }
         ],
         "language": [
-          "english"
+          [
+            {
+              "type": "text",
+              "text": "english"
+            }
+          ]
         ],
         "url": "http://links.org.au/node/1916",
         "urldate": "2010-10-31"
@@ -120,6 +126,7 @@
       "entry_key": "wilm09",
       "fields": {
         "date": "2009",
+        "langid": "spanish",
         "author": [
           {
             "given": [
@@ -143,7 +150,12 @@
           }
         ],
         "language": [
-          "spanish"
+          [
+            {
+              "type": "text",
+              "text": "spanish"
+            }
+          ]
         ],
         "type": [
           {

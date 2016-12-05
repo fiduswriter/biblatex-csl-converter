@@ -31,6 +31,7 @@
             ]
           }
         ],
+        "langid": "ukenglish",
         "location": [
           [
             {
@@ -121,12 +122,6 @@
         "volume": "4"
       },
       "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "british"
-          }
-        ],
         "timestamp": [
           {
             "type": "text",
@@ -207,6 +202,7 @@
             ]
           }
         ],
+        "langid": "ukenglish",
         "location": [
           [
             {
@@ -270,12 +266,6 @@
         "volume": "4"
       },
       "unknown_fields": {
-        "langid": [
-          {
-            "type": "text",
-            "text": "british"
-          }
-        ],
         "timestamp": [
           {
             "type": "text",
@@ -289,17 +279,7 @@
     {
       "type": "unknown_field",
       "entry": "Plato1902",
-      "field_name": "langid"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "Plato1902",
       "field_name": "timestamp"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "Plato1902a",
-      "field_name": "langid"
     },
     {
       "type": "unknown_field",
