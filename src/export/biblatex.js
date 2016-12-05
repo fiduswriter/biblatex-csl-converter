@@ -1,5 +1,5 @@
 import {TexSpecialChars} from "./const"
-import {BibTypes, BibFieldTypes} from "../const"
+import {BibTypes, BibFieldTypes, BibLanguages} from "../const"
 
 /** Export a list of bibliography items to bibLateX and serve the file to the user as a ZIP-file.
  * @class BibLatexExporter
@@ -66,6 +66,9 @@ export class BibLatexExporter {
                         } else {
                             fValues[key] = this._reformText(fValue)
                         }
+                        break
+                    case 'f_lang':
+                        fValues[key] = BibLanguages[fValue]['biblatex']
                         break
                     case 'f_literal':
                         fValues[key] = this._reformText(fValue)

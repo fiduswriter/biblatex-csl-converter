@@ -1,4 +1,4 @@
-import {BibTypes, BibFieldTypes} from "../const"
+import {BibTypes, BibFieldTypes, BibLanguages} from "../const"
 import {parse as edtfParse} from "../../lib/edtf/src/parser"
 
 /** Converts a BibDB to a DB of the CSL type.
@@ -62,6 +62,9 @@ export class CSLExporter {
                         } else {
                             fValues[key] = this._reformText(fValue)
                         }
+                        break
+                    case 'f_lang':
+                        fValues[key] = BibLanguages[fValue]['csl']
                         break
                     case 'f_literal':
                         fValues[key] = this._reformText(fValue)

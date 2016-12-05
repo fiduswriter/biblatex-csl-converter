@@ -230,8 +230,12 @@ export const BibFieldTypes = {
         biblatex: 'label'
     },
     'language': {
-        type: 'l_key',
-        biblatex: 'language',
+        type: 'l_literal',
+        biblatex: 'language'
+    },
+    'langid': {
+        type: 'f_lang',
+        biblatex: 'langid',
         csl: 'language'
     },
     'library': {
@@ -279,7 +283,7 @@ export const BibFieldTypes = {
         csl: 'original-date'
     },
     'origlanguage': {
-        type: 'f_key',
+        type: 'f_literal',
         biblatex: 'origlanguage'
     },
     'origlocation': {
@@ -421,6 +425,210 @@ export const BibFieldTypes = {
     }
 }
 
+/** A list of supported languages (without aliases) */
+export const BibLanguages = {
+    "usenglish": {
+        "csl": "en-US",
+        "biblatex": "usenglish"
+    },
+    "ukenglish": {
+        "csl": "en-GB",
+        "biblatex": "ukenglish"
+    },
+    "caenglish": {
+        "csl": "en-US",
+        "biblatex": "canadian"
+    },
+    "auenglish": {
+        "csl": "en-GB",
+        "biblatex": "australian"
+    },
+    "nzenglish": {
+        "csl": "en-GB",
+        "biblatex": "newzealand"
+    },
+    "afrikaans": {
+        "csl": "af-ZA",
+        "biblatex": "afrikaans"
+    },
+    "arabic": {
+        "csl": "ar",
+        "biblatex": "arabic"
+    },
+    "basque": {
+        "csl": "eu",
+        "biblatex": "basque"
+    },
+    "bulgarian": {
+        "csl": "bg-BG",
+        "biblatex": "bulgarian"
+    },
+    "catalan": {
+        "csl": "ca-AD",
+        "biblatex": "catalan"
+    },
+    "croatian": {
+        "csl": "hr-HR",
+        "biblatex": "croatian"
+    },
+    "czech": {
+        "csl": "cs-CZ",
+        "biblatex": "czech"
+    },
+    "danish": {
+        "csl": "da-DK",
+        "biblatex": "danish"
+    },
+    "dutch": {
+        "csl": "nl-NL",
+        "biblatex": "dutch"
+    },
+    "estonian": {
+        "csl": "et-EE",
+        "biblatex": "estonian"
+    },
+    "finnish": {
+        "csl": "fi-FI",
+        "biblatex": "finnish"
+    },
+    "cafrench": {
+        "csl": "fr-CA",
+        "biblatex": "canadien"
+    },
+    "acadian": {
+        "csl": "fr-CA",
+        "biblatex": "acadian"
+    },
+    "french": {
+        "csl": "fr-FR",
+        "biblatex": "french"
+    },
+    "atgerman": {
+        "csl": "de-AT",
+        "biblatex": "naustrian"
+    },
+    "german": {
+        "csl": "de-DE",
+        "biblatex": "ngerman"
+    },
+    "greek": {
+        "csl": "el-GR",
+        "biblatex": "greek"
+    },
+    "hebrew": {
+        "csl": "he-IL",
+        "biblatex": "hebrew"
+    },
+    "hungarian": {
+        "csl": "hu-HU",
+        "biblatex": "hungarian"
+    },
+    "icelandic": {
+        "csl": "is-IS",
+        "biblatex": "icelandic"
+    },
+    "italian": {
+        "csl": "it-IT",
+        "biblatex": "italian"
+    },
+    "japanese": {
+        "csl": "ja-JP",
+        "biblatex": "japanese"
+    },
+    "latvian": {
+        "csl": "lv-LV",
+        "biblatex": "latvian"
+    },
+    "lithuanian": {
+        "csl": "lt-LT",
+        "biblatex": "lithuanian"
+    },
+    "magyar": {
+        "csl": "hu-HU",
+        "biblatex": "magyar"
+    },
+    "mongolian": {
+        "csl": "mn-MN",
+        "biblatex": "mongolian"
+    },
+    "newnorwegian": {
+        "csl": "nn-NO",
+        "biblatex": "nynorsk"
+    },
+    "norwegian": {
+        "csl": "nb-NO",
+        "biblatex": "norsk"
+    },
+    "farsi": {
+        "csl": "fa-IR",
+        "biblatex": "farsi"
+    },
+    "polish": {
+        "csl": "pl-PL",
+        "biblatex": "polish"
+    },
+    "brportuguese": {
+        "csl": "pt-BR",
+        "biblatex": "brazilian"
+    },
+    "portuguese": {
+        "csl": "pt-PT",
+        "biblatex": "portuguese"
+    },
+    "romanian": {
+        "csl": "ro-RO",
+        "biblatex": "romanian"
+    },
+    "russian": {
+        "csl": "ru-RU",
+        "biblatex": "russian"
+    },
+    "serbian": {
+        "csl": "sr-RS",
+        "biblatex": "serbian"
+    },
+    "cyrillicserbian": {
+        "csl": "sr-RS",
+        "biblatex": "serbianc"
+    },
+    "slovak": {
+        "csl": "sk-SK",
+        "biblatex": "slovak"
+    },
+    "slovene": {
+        "csl": "sl-SL",
+        "biblatex": "slovene"
+    },
+    "spanish": {
+        "csl": "es-ES",
+        "biblatex": "spanish"
+    },
+    "swedish": {
+        "csl": "sv-SE",
+        "biblatex": "swedish"
+    },
+    "thai": {
+        "csl": "th-TH",
+        "biblatex": "thai"
+    },
+    "turkish": {
+        "csl": "tr-TR",
+        "biblatex": "turkish"
+    },
+    "ukrainian": {
+        "csl": "uk-UA",
+        "biblatex": "ukrainian"
+    },
+    "vietnamese": {
+        "csl": "vi-VN",
+        "biblatex": "vietnamese"
+    },
+    "latin": {
+        "csl": "la",
+        "biblatex": "latin"
+    }
+}
+
 /** A list of all bib types and their fields. */
 export const BibTypes = {
     'article': {
@@ -429,7 +637,7 @@ export const BibTypes = {
         csl: 'article',
         required: ['journaltitle', 'title', 'author', 'date'],
         eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'annotator', 'commentator', 'doi', 'editor', 'editora', 'editorb', 'editorc', 'eid', 'eprint', 'eprintclass', 'eprinttype', 'issn', 'issue', 'issuesubtitle', 'issuetitle', 'journalsubtitle', 'language', 'note', 'number', 'origlanguage', 'pages', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'version', 'volume']
+        optional: ['abstract', 'keywords', 'addendum', 'annotator', 'commentator', 'doi', 'editor', 'editora', 'editorb', 'editorc', 'eid', 'eprint', 'eprintclass', 'eprinttype', 'issn', 'issue', 'issuesubtitle', 'issuetitle', 'journalsubtitle', 'language', 'langid', 'note', 'number', 'origlanguage', 'pages', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'version', 'volume']
     },
     'article-magazine': {
         order: 2,
@@ -437,7 +645,7 @@ export const BibTypes = {
         csl: 'article-magazine',
         required: ['journaltitle', 'title', 'author', 'date'],
         eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'annotator', 'commentator', 'doi', 'editor', 'editora', 'editorb', 'editorc', 'eid', 'eprint', 'eprintclass', 'eprinttype', 'issn', 'issue', 'issuesubtitle', 'issuetitle', 'journalsubtitle', 'language', 'note', 'number', 'origlanguage', 'pages', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'version', 'volume']
+        optional: ['abstract', 'keywords', 'addendum', 'annotator', 'commentator', 'doi', 'editor', 'editora', 'editorb', 'editorc', 'eid', 'eprint', 'eprintclass', 'eprinttype', 'issn', 'issue', 'issuesubtitle', 'issuetitle', 'journalsubtitle', 'language', 'langid', 'note', 'number', 'origlanguage', 'pages', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'version', 'volume']
     },
     'article-newspaper': {
         order: 3,
@@ -445,7 +653,7 @@ export const BibTypes = {
         csl: 'article-newspaper',
         required: ['journaltitle', 'title', 'author', 'date'],
         eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'annotator', 'commentator', 'doi', 'editor', 'editora', 'editorb', 'editorc', 'eid', 'eprint', 'eprintclass', 'eprinttype', 'issn', 'issue', 'issuesubtitle', 'issuetitle', 'journalsubtitle', 'language', 'note', 'number', 'origlanguage', 'pages', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'version', 'volume']
+        optional: ['abstract', 'keywords', 'addendum', 'annotator', 'commentator', 'doi', 'editor', 'editora', 'editorb', 'editorc', 'eid', 'eprint', 'eprintclass', 'eprinttype', 'issn', 'issue', 'issuesubtitle', 'issuetitle', 'journalsubtitle', 'language', 'langid', 'note', 'number', 'origlanguage', 'pages', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'version', 'volume']
     },
     'article-journal': {
         order: 4,
@@ -453,7 +661,7 @@ export const BibTypes = {
         csl: 'article-journal',
         required: ['journaltitle', 'title', 'author', 'date'],
         eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'annotator', 'commentator', 'doi', 'editor', 'editora', 'editorb', 'editorc', 'eid', 'eprint', 'eprintclass', 'eprinttype', 'issn', 'issue', 'issuesubtitle', 'issuetitle', 'journalsubtitle', 'language', 'note', 'number', 'origlanguage', 'pages', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'version', 'volume']
+        optional: ['abstract', 'keywords', 'addendum', 'annotator', 'commentator', 'doi', 'editor', 'editora', 'editorb', 'editorc', 'eid', 'eprint', 'eprintclass', 'eprinttype', 'issn', 'issue', 'issuesubtitle', 'issuetitle', 'journalsubtitle', 'language', 'langid', 'note', 'number', 'origlanguage', 'pages', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'version', 'volume']
     },
     'post-weblog': {
         order: 5,
@@ -461,7 +669,7 @@ export const BibTypes = {
         csl: 'post-weblog',
         required: ['date', 'title', 'url'],
         eitheror: ['editor', 'author'],
-        optional: ['abstract', 'keywords', 'addendum', 'pubstate', 'subtitle', 'language', 'urldate', 'titleaddon', 'version', 'note', 'organization']
+        optional: ['abstract', 'keywords', 'addendum', 'pubstate', 'subtitle', 'language', 'langid', 'urldate', 'titleaddon', 'version', 'note', 'organization']
     },
     'book': {
         order: 10,
@@ -469,7 +677,7 @@ export const BibTypes = {
         csl: 'book',
         required: ['title', 'author', 'date'],
         eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'afterword', 'annotator', 'chapter', 'commentator', 'doi', 'edition', 'editor', 'editora', 'editorb', 'editorc', 'eprint', 'eprintclass', 'eprinttype', 'foreword', 'introduction', 'isbn', 'language', 'location', 'mainsubtitle', 'maintitle', 'maintitleaddon', 'note', 'number', 'origlanguage', 'pages', 'pagetotal', 'part', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'volume', 'volumes']
+        optional: ['abstract', 'keywords', 'addendum', 'afterword', 'annotator', 'chapter', 'commentator', 'doi', 'edition', 'editor', 'editora', 'editorb', 'editorc', 'eprint', 'eprintclass', 'eprinttype', 'foreword', 'introduction', 'isbn', 'language', 'langid', 'location', 'mainsubtitle', 'maintitle', 'maintitleaddon', 'note', 'number', 'origlanguage', 'pages', 'pagetotal', 'part', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'volume', 'volumes']
     },
     'mvbook': {
         order: 11,
@@ -477,7 +685,7 @@ export const BibTypes = {
         csl: 'book',
         required: ['title', 'author', 'date'],
         eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'afterword', 'annotator', 'commentator', 'doi', 'edition', 'editor', 'editora', 'editorb', 'editorc', 'eprint', 'eprintclass', 'eprinttype', 'foreword', 'introduction', 'isbn', 'language', 'location', 'note', 'number', 'origlanguage', 'pagetotal', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'volumes']
+        optional: ['abstract', 'keywords', 'addendum', 'afterword', 'annotator', 'commentator', 'doi', 'edition', 'editor', 'editora', 'editorb', 'editorc', 'eprint', 'eprintclass', 'eprinttype', 'foreword', 'introduction', 'isbn', 'language', 'langid', 'location', 'note', 'number', 'origlanguage', 'pagetotal', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'volumes']
     },
     'inbook': {
         order: 12,
@@ -485,7 +693,7 @@ export const BibTypes = {
         csl: 'chapter',
         required: ['title', 'booktitle', 'author', 'date'],
         eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'afterword', 'annotator', 'bookauthor', 'booksubtitle', 'booktitleaddon', 'chapter', 'commentator', 'doi', 'edition', 'editor', 'editora', 'editorb', 'editorc', 'eprint', 'eprintclass', 'eprinttype', 'foreword', 'introduction', 'isbn', 'language', 'location', 'mainsubtitle', 'maintitle', 'maintitleaddon', 'note', 'number', 'origlanguage', 'pages', 'part', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'volume', 'volumes']
+        optional: ['abstract', 'keywords', 'addendum', 'afterword', 'annotator', 'bookauthor', 'booksubtitle', 'booktitleaddon', 'chapter', 'commentator', 'doi', 'edition', 'editor', 'editora', 'editorb', 'editorc', 'eprint', 'eprintclass', 'eprinttype', 'foreword', 'introduction', 'isbn', 'language', 'langid', 'location', 'mainsubtitle', 'maintitle', 'maintitleaddon', 'note', 'number', 'origlanguage', 'pages', 'part', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'volume', 'volumes']
     },
     'bookinbook': {
         order: 13,
@@ -493,7 +701,7 @@ export const BibTypes = {
         csl: 'chapter',
         required: ['title', 'booktitle', 'author', 'date'],
         eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'afterword', 'annotator', 'bookauthor', 'booksubtitle', 'booktitleaddon', 'chapter', 'commentator', 'doi', 'edition', 'editor', 'editora', 'editorb', 'editorc', 'eprint', 'eprintclass', 'eprinttype', 'foreword', 'introduction', 'isbn', 'language', 'location', 'mainsubtitle', 'maintitle', 'maintitleaddon', 'note', 'number', 'origlanguage', 'pages', 'part', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'volume', 'volumes']
+        optional: ['abstract', 'keywords', 'addendum', 'afterword', 'annotator', 'bookauthor', 'booksubtitle', 'booktitleaddon', 'chapter', 'commentator', 'doi', 'edition', 'editor', 'editora', 'editorb', 'editorc', 'eprint', 'eprintclass', 'eprinttype', 'foreword', 'introduction', 'isbn', 'language', 'langid', 'location', 'mainsubtitle', 'maintitle', 'maintitleaddon', 'note', 'number', 'origlanguage', 'pages', 'part', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'volume', 'volumes']
     },
     'suppbook': {
         order: 14,
@@ -501,7 +709,7 @@ export const BibTypes = {
         csl: 'chapter',
         required: ['title', 'booktitle', 'author', 'date'],
         eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'afterword', 'annotator', 'bookauthor', 'booksubtitle', 'booktitleaddon', 'chapter', 'commentator', 'doi', 'edition', 'editor', 'editora', 'editorb', 'editorc', 'eprint', 'eprintclass', 'eprinttype', 'foreword', 'introduction', 'isbn', 'language', 'location', 'mainsubtitle', 'maintitle', 'maintitleaddon', 'note', 'number', 'origlanguage', 'pages', 'part', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'volume', 'volumes']
+        optional: ['abstract', 'keywords', 'addendum', 'afterword', 'annotator', 'bookauthor', 'booksubtitle', 'booktitleaddon', 'chapter', 'commentator', 'doi', 'edition', 'editor', 'editora', 'editorb', 'editorc', 'eprint', 'eprintclass', 'eprinttype', 'foreword', 'introduction', 'isbn', 'language', 'langid', 'location', 'mainsubtitle', 'maintitle', 'maintitleaddon', 'note', 'number', 'origlanguage', 'pages', 'part', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'volume', 'volumes']
     },
     'booklet': {
         order: 15,
@@ -509,7 +717,7 @@ export const BibTypes = {
         csl: 'pamphlet',
         required: ['title', 'date'],
         eitheror: ['editor', 'author'],
-        optional: ['abstract', 'keywords', 'titleaddon', 'addendum', 'pages', 'howpublished', 'type', 'pubstate', 'chapter', 'doi', 'subtitle', 'language', 'location', 'url', 'urldate', 'pagetotal', 'note', 'eprint', 'eprintclass', 'eprinttype']
+        optional: ['abstract', 'keywords', 'titleaddon', 'addendum', 'pages', 'howpublished', 'type', 'pubstate', 'chapter', 'doi', 'subtitle', 'language', 'langid', 'location', 'url', 'urldate', 'pagetotal', 'note', 'eprint', 'eprintclass', 'eprinttype']
     },
     'collection': {
         order: 20,
@@ -517,7 +725,7 @@ export const BibTypes = {
         csl: 'dataset',
         required: ['editor', 'title', 'date'],
         eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'afterword', 'annotator', 'chapter', 'commentator', 'doi', 'edition', 'editora', 'editorb', 'editorc', 'eprint', 'eprintclass', 'eprinttype', 'foreword', 'introduction', 'isbn', 'language', 'location', 'mainsubtitle', 'maintitle', 'maintitleaddon', 'note', 'number', 'origlanguage', 'pages', 'pagetotal', 'part', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'volume', 'volumes']
+        optional: ['abstract', 'keywords', 'addendum', 'afterword', 'annotator', 'chapter', 'commentator', 'doi', 'edition', 'editora', 'editorb', 'editorc', 'eprint', 'eprintclass', 'eprinttype', 'foreword', 'introduction', 'isbn', 'language', 'langid', 'location', 'mainsubtitle', 'maintitle', 'maintitleaddon', 'note', 'number', 'origlanguage', 'pages', 'pagetotal', 'part', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'volume', 'volumes']
     },
     'mvcollection': {
         order: 21,
@@ -525,7 +733,7 @@ export const BibTypes = {
         csl: 'dataset',
         required: ['editor', 'title', 'date'],
         eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'afterword', 'annotator', 'commentator', 'doi', 'edition', 'editora', 'editorb', 'editorc', 'eprint', 'eprintclass', 'eprinttype', 'foreword', 'introduction', 'isbn', 'language', 'location', 'note', 'number', 'origlanguage', 'pagetotal', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'volumes']
+        optional: ['abstract', 'keywords', 'addendum', 'afterword', 'annotator', 'commentator', 'doi', 'edition', 'editora', 'editorb', 'editorc', 'eprint', 'eprintclass', 'eprinttype', 'foreword', 'introduction', 'isbn', 'language', 'langid', 'location', 'note', 'number', 'origlanguage', 'pagetotal', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'volumes']
     },
     'incollection': {
         order: 22,
@@ -533,7 +741,7 @@ export const BibTypes = {
         csl: 'entry',
         required: ['title', 'editor', 'booktitle', 'author', 'date'],
         eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'afterword', 'annotator', 'booksubtitle', 'booktitleaddon', 'chapter', 'commentator', 'doi', 'edition', 'editora', 'editorb', 'editorc', 'eprint', 'eprintclass', 'eprinttype', 'foreword', 'introduction', 'isbn', 'language', 'location', 'mainsubtitle', 'maintitle', 'maintitleaddon', 'note', 'number', 'origlanguage', 'pages', 'part', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'volume', 'volumes']
+        optional: ['abstract', 'keywords', 'addendum', 'afterword', 'annotator', 'booksubtitle', 'booktitleaddon', 'chapter', 'commentator', 'doi', 'edition', 'editora', 'editorb', 'editorc', 'eprint', 'eprintclass', 'eprinttype', 'foreword', 'introduction', 'isbn', 'language', 'langid', 'location', 'mainsubtitle', 'maintitle', 'maintitleaddon', 'note', 'number', 'origlanguage', 'pages', 'part', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'volume', 'volumes']
     },
     'suppcollection': {
         order: 23,
@@ -541,7 +749,7 @@ export const BibTypes = {
         csl: 'entry',
         required: ['title', 'editor', 'booktitle', 'author', 'date'],
         eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'afterword', 'annotator', 'booksubtitle', 'booktitleaddon', 'chapter', 'commentator', 'doi', 'edition', 'editora', 'editorb', 'editorc', 'eprint', 'eprintclass', 'eprinttype', 'foreword', 'introduction', 'isbn', 'language', 'location', 'mainsubtitle', 'maintitle', 'maintitleaddon', 'note', 'number', 'origlanguage', 'pages', 'part', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'volume', 'volumes']
+        optional: ['abstract', 'keywords', 'addendum', 'afterword', 'annotator', 'booksubtitle', 'booktitleaddon', 'chapter', 'commentator', 'doi', 'edition', 'editora', 'editorb', 'editorc', 'eprint', 'eprintclass', 'eprinttype', 'foreword', 'introduction', 'isbn', 'language', 'langid', 'location', 'mainsubtitle', 'maintitle', 'maintitleaddon', 'note', 'number', 'origlanguage', 'pages', 'part', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'volume', 'volumes']
     },
     'post': {
         order: 30,
@@ -549,7 +757,7 @@ export const BibTypes = {
         csl: 'post',
         required: ['date', 'title', 'url'],
         eitheror: ['editor', 'author'],
-        optional: ['abstract', 'keywords', 'addendum', 'pubstate', 'subtitle', 'language', 'urldate', 'titleaddon', 'version', 'note', 'organization']
+        optional: ['abstract', 'keywords', 'addendum', 'pubstate', 'subtitle', 'language', 'langid', 'urldate', 'titleaddon', 'version', 'note', 'organization']
     },
     'manual': {
         order: 40,
@@ -557,7 +765,7 @@ export const BibTypes = {
         csl: 'book',
         required: ['title', 'date'],
         eitheror: ['editor', 'author'],
-        optional: ['abstract', 'keywords', 'addendum', 'chapter', 'doi', 'edition', 'eprint', 'eprintclass', 'eprinttype', 'isbn', 'language', 'location', 'note', 'number', 'organization', 'pages', 'pagetotal', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'type', 'url', 'urldate', 'version']
+        optional: ['abstract', 'keywords', 'addendum', 'chapter', 'doi', 'edition', 'eprint', 'eprintclass', 'eprinttype', 'isbn', 'language', 'langid', 'location', 'note', 'number', 'organization', 'pages', 'pagetotal', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'type', 'url', 'urldate', 'version']
     },
     'misc': {
         order: 41,
@@ -565,7 +773,7 @@ export const BibTypes = {
         csl: 'entry',
         required: ['title', 'date'],
         eitheror: ['editor', 'author'],
-        optional: ['abstract', 'keywords', 'addendum', 'howpublished', 'type', 'pubstate', 'organization', 'doi', 'subtitle', 'language', 'location', 'url', 'urldate', 'titleaddon', 'version', 'note', 'eprint', 'eprintclass', 'eprinttype']
+        optional: ['abstract', 'keywords', 'addendum', 'howpublished', 'type', 'pubstate', 'organization', 'doi', 'subtitle', 'language', 'langid', 'location', 'url', 'urldate', 'titleaddon', 'version', 'note', 'eprint', 'eprintclass', 'eprinttype']
     },
     'online': {
         order: 42,
@@ -573,7 +781,7 @@ export const BibTypes = {
         csl: 'webpage',
         required: ['date', 'title', 'url'],
         eitheror: ['editor', 'author'],
-        optional: ['abstract', 'keywords', 'addendum', 'pubstate', 'subtitle', 'language', 'urldate', 'titleaddon', 'version', 'note', 'organization']
+        optional: ['abstract', 'keywords', 'addendum', 'pubstate', 'subtitle', 'language', 'langid', 'urldate', 'titleaddon', 'version', 'note', 'organization']
     },
     'patent': {
         order: 43,
@@ -589,7 +797,7 @@ export const BibTypes = {
         csl: 'book',
         required: ['editor', 'title', 'date'],
         eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'volume', 'pubstate', 'number', 'series', 'issn', 'issue', 'issuesubtitle', 'issuetitle', 'doi', 'subtitle', 'editora', 'editorb', 'editorc', 'url', 'urldate', 'language', 'note', 'eprint', 'eprintclass', 'eprinttype']
+        optional: ['abstract', 'keywords', 'addendum', 'volume', 'pubstate', 'number', 'series', 'issn', 'issue', 'issuesubtitle', 'issuetitle', 'doi', 'subtitle', 'editora', 'editorb', 'editorc', 'url', 'urldate', 'language', 'langid', 'note', 'eprint', 'eprintclass', 'eprinttype']
     },
     'suppperiodical': {
         order: 51,
@@ -597,7 +805,7 @@ export const BibTypes = {
         csl: 'entry',
         required: ['journaltitle', 'title', 'author', 'date'],
         eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'annotator', 'commentator', 'doi', 'editor', 'editora', 'editorb', 'editorc', 'eid', 'eprint', 'eprintclass', 'eprinttype', 'issn', 'issue', 'issuesubtitle', 'issuetitle', 'journalsubtitle', 'language', 'note', 'number', 'origlanguage', 'pages', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'version', 'volume']
+        optional: ['abstract', 'keywords', 'addendum', 'annotator', 'commentator', 'doi', 'editor', 'editora', 'editorb', 'editorc', 'eid', 'eprint', 'eprintclass', 'eprinttype', 'issn', 'issue', 'issuesubtitle', 'issuetitle', 'journalsubtitle', 'language', 'langid', 'note', 'number', 'origlanguage', 'pages', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'version', 'volume']
     },
     'proceedings': {
         order: 60,
@@ -605,7 +813,7 @@ export const BibTypes = {
         csl: 'entry',
         required: ['editor', 'title', 'date'],
         eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'chapter', 'doi', 'eprint', 'eprintclass', 'eprinttype', 'eventdate', 'eventtitle', 'isbn', 'language', 'location', 'mainsubtitle', 'maintitle', 'maintitleaddon', 'note', 'number', 'organization', 'pages', 'pagetotal', 'part', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'url', 'urldate', 'venue', 'volume', 'volumes']
+        optional: ['abstract', 'keywords', 'addendum', 'chapter', 'doi', 'eprint', 'eprintclass', 'eprinttype', 'eventdate', 'eventtitle', 'isbn', 'language', 'langid', 'location', 'mainsubtitle', 'maintitle', 'maintitleaddon', 'note', 'number', 'organization', 'pages', 'pagetotal', 'part', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'url', 'urldate', 'venue', 'volume', 'volumes']
     },
     'mvproceedings': {
         order: 61,
@@ -613,7 +821,7 @@ export const BibTypes = {
         csl: 'entry',
         required: ['editor', 'title', 'date'],
         eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'doi', 'eprint', 'eprintclass', 'eprinttype', 'eventdate', 'eventtitle', 'isbn', 'language', 'location', 'note', 'number', 'organization', 'pagetotal', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'url', 'urldate', 'venue', 'volumes']
+        optional: ['abstract', 'keywords', 'addendum', 'doi', 'eprint', 'eprintclass', 'eprinttype', 'eventdate', 'eventtitle', 'isbn', 'language', 'langid', 'location', 'note', 'number', 'organization', 'pagetotal', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'url', 'urldate', 'venue', 'volumes']
     },
     'inproceedings': {
         order: 62,
@@ -621,7 +829,7 @@ export const BibTypes = {
         csl: 'paper-conference',
         required: ['title', 'editor', 'booktitle', 'author', 'date'],
         eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'booksubtitle', 'booktitleaddon', 'chapter', 'doi', 'eprint', 'eprintclass', 'eprinttype', 'eventdate', 'eventtitle', 'isbn', 'language', 'location', 'mainsubtitle', 'maintitle', 'maintitleaddon', 'note', 'number', 'organization', 'pages', 'part', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'url', 'urldate', 'venue', 'volume', 'volumes']
+        optional: ['abstract', 'keywords', 'addendum', 'booksubtitle', 'booktitleaddon', 'chapter', 'doi', 'eprint', 'eprintclass', 'eprinttype', 'eventdate', 'eventtitle', 'isbn', 'language', 'langid', 'location', 'mainsubtitle', 'maintitle', 'maintitleaddon', 'note', 'number', 'organization', 'pages', 'part', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'url', 'urldate', 'venue', 'volume', 'volumes']
     },
     'reference': {
         order: 70,
@@ -629,7 +837,7 @@ export const BibTypes = {
         csl: 'reference',
         required: ['editor', 'title', 'date'],
         eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'afterword', 'annotator', 'chapter', 'commentator', 'doi', 'edition', 'editora', 'editorb', 'editorc', 'eprint', 'eprintclass', 'eprinttype', 'foreword', 'introduction', 'isbn', 'language', 'location', 'mainsubtitle', 'maintitle', 'maintitleaddon', 'note', 'number', 'origlanguage', 'pages', 'pagetotal', 'part', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'volume', 'volumes']
+        optional: ['abstract', 'keywords', 'addendum', 'afterword', 'annotator', 'chapter', 'commentator', 'doi', 'edition', 'editora', 'editorb', 'editorc', 'eprint', 'eprintclass', 'eprinttype', 'foreword', 'introduction', 'isbn', 'language', 'langid', 'location', 'mainsubtitle', 'maintitle', 'maintitleaddon', 'note', 'number', 'origlanguage', 'pages', 'pagetotal', 'part', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'volume', 'volumes']
     },
     'mvreference': {
         order: 71,
@@ -637,7 +845,7 @@ export const BibTypes = {
         csl: 'book',
         required: ['editor', 'title', 'date'],
         eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'afterword', 'annotator', 'commentator', 'doi', 'edition', 'editora', 'editorb', 'editorc', 'eprint', 'eprintclass', 'eprinttype', 'foreword', 'introduction', 'isbn', 'language', 'location', 'note', 'number', 'origlanguage', 'pagetotal', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'volumes']
+        optional: ['abstract', 'keywords', 'addendum', 'afterword', 'annotator', 'commentator', 'doi', 'edition', 'editora', 'editorb', 'editorc', 'eprint', 'eprintclass', 'eprinttype', 'foreword', 'introduction', 'isbn', 'language', 'langid', 'location', 'note', 'number', 'origlanguage', 'pagetotal', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'volumes']
     },
     'inreference': {
         order: 72,
@@ -645,7 +853,7 @@ export const BibTypes = {
         csl: 'entry',
         required: ['title', 'editor', 'booktitle', 'author', 'date'],
         eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'afterword', 'annotator', 'booksubtitle', 'booktitleaddon', 'chapter', 'commentator', 'doi', 'edition', 'editora', 'editorb', 'editorc', 'eprint', 'eprintclass', 'eprinttype', 'foreword', 'introduction', 'isbn', 'language', 'location', 'mainsubtitle', 'maintitle', 'maintitleaddon', 'note', 'number', 'origlanguage', 'pages', 'part', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'volume', 'volumes']
+        optional: ['abstract', 'keywords', 'addendum', 'afterword', 'annotator', 'booksubtitle', 'booktitleaddon', 'chapter', 'commentator', 'doi', 'edition', 'editora', 'editorb', 'editorc', 'eprint', 'eprintclass', 'eprinttype', 'foreword', 'introduction', 'isbn', 'language', 'langid', 'location', 'mainsubtitle', 'maintitle', 'maintitleaddon', 'note', 'number', 'origlanguage', 'pages', 'part', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'volume', 'volumes']
     },
     'entry-encyclopedia': {
         order: 73,
@@ -653,7 +861,7 @@ export const BibTypes = {
         csl: 'entry-encyclopedia',
         required: ['title', 'editor', 'booktitle', 'author', 'date'],
         eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'afterword', 'annotator', 'booksubtitle', 'booktitleaddon', 'chapter', 'commentator', 'doi', 'edition', 'editora', 'editorb', 'editorc', 'eprint', 'eprintclass', 'eprinttype', 'foreword', 'introduction', 'isbn', 'language', 'location', 'mainsubtitle', 'maintitle', 'maintitleaddon', 'note', 'number', 'origlanguage', 'pages', 'part', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'volume', 'volumes']
+        optional: ['abstract', 'keywords', 'addendum', 'afterword', 'annotator', 'booksubtitle', 'booktitleaddon', 'chapter', 'commentator', 'doi', 'edition', 'editora', 'editorb', 'editorc', 'eprint', 'eprintclass', 'eprinttype', 'foreword', 'introduction', 'isbn', 'language', 'langid', 'location', 'mainsubtitle', 'maintitle', 'maintitleaddon', 'note', 'number', 'origlanguage', 'pages', 'part', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'volume', 'volumes']
     },
     'entry-dictionary': {
         order: 74,
@@ -661,7 +869,7 @@ export const BibTypes = {
         csl: 'entry-dictionary',
         required: ['title', 'editor', 'booktitle', 'author', 'date'],
         eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'afterword', 'annotator', 'booksubtitle', 'booktitleaddon', 'chapter', 'commentator', 'doi', 'edition', 'editora', 'editorb', 'editorc', 'eprint', 'eprintclass', 'eprinttype', 'foreword', 'introduction', 'isbn', 'language', 'location', 'mainsubtitle', 'maintitle', 'maintitleaddon', 'note', 'number', 'origlanguage', 'pages', 'part', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'volume', 'volumes']
+        optional: ['abstract', 'keywords', 'addendum', 'afterword', 'annotator', 'booksubtitle', 'booktitleaddon', 'chapter', 'commentator', 'doi', 'edition', 'editora', 'editorb', 'editorc', 'eprint', 'eprintclass', 'eprinttype', 'foreword', 'introduction', 'isbn', 'language', 'langid', 'location', 'mainsubtitle', 'maintitle', 'maintitleaddon', 'note', 'number', 'origlanguage', 'pages', 'part', 'publisher', 'pubstate', 'series', 'subtitle', 'titleaddon', 'translator', 'url', 'urldate', 'volume', 'volumes']
     },
     'report': {
         order: 80,
@@ -669,7 +877,7 @@ export const BibTypes = {
         csl: 'report',
         required: ['author', 'title', 'type', 'institution', 'date'],
         eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'pages', 'pagetotal', 'pubstate', 'number', 'isrn', 'chapter', 'doi', 'subtitle', 'language', 'location', 'url', 'urldate', 'titleaddon', 'version', 'note', 'eprint', 'eprintclass', 'eprinttype']
+        optional: ['abstract', 'keywords', 'addendum', 'pages', 'pagetotal', 'pubstate', 'number', 'isrn', 'chapter', 'doi', 'subtitle', 'language', 'langid', 'location', 'url', 'urldate', 'titleaddon', 'version', 'note', 'eprint', 'eprintclass', 'eprinttype']
     },
     'thesis': {
         order: 81,
@@ -677,7 +885,7 @@ export const BibTypes = {
         csl: 'thesis',
         required: ['author', 'title', 'type', 'institution', 'date'],
         eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'pages', 'pagetotal', 'pubstate', 'isbn', 'chapter', 'doi', 'subtitle', 'language', 'location', 'url', 'urldate', 'titleaddon', 'note', 'eprint', 'eprintclass', 'eprinttype']
+        optional: ['abstract', 'keywords', 'addendum', 'pages', 'pagetotal', 'pubstate', 'isbn', 'chapter', 'doi', 'subtitle', 'language', 'langid', 'location', 'url', 'urldate', 'titleaddon', 'note', 'eprint', 'eprintclass', 'eprinttype']
     },
     'unpublished': {
         order: 90,
@@ -685,6 +893,6 @@ export const BibTypes = {
         csl: 'manuscript',
         required: ['title', 'author', 'date'],
         eitheror: [],
-        optional: ['abstract', 'keywords', 'addendum', 'howpublished', 'pubstate', 'isbn', 'date', 'subtitle', 'language', 'location', 'url', 'urldate', 'titleaddon', 'note']
+        optional: ['abstract', 'keywords', 'addendum', 'howpublished', 'pubstate', 'isbn', 'date', 'subtitle', 'language', 'langid', 'location', 'url', 'urldate', 'titleaddon', 'note']
     }
 }

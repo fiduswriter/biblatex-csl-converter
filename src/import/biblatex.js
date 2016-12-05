@@ -1,5 +1,5 @@
-import {BibFieldTypes, BibTypes} from "../const"
-import {TeXSpecialChars, BiblatexAliasTypes, BiblatexFieldAliasTypes} from "./const"
+import {BibFieldTypes, BibTypes, BibLanguages} from "../const"
+import {TeXSpecialChars, BiblatexAliasTypes, BiblatexFieldAliasTypes, BiblatexAliasLanguages} from "./const"
 import {BibLatexNameParser} from "./name-parser"
 import {BibLatexLiteralParser} from "./literal-parser"
 import {splitTeXString} from "./tools"
@@ -331,15 +331,27 @@ export class BibLatexParser {
                 })
             }
         }
-
         // Check for English language. If the citation is in English language,
         // titles may use case preservation.
         let langEnglish = true // By default we assume everything to be written in English.
-        if (rawFields.language && rawFields.language.length) {
-            let lang = rawFields.language.toLowerCase()
-            let englishOptions = ['american', 'british', 'canadian', 'english', 'australian', 'newzealand', 'usenglish', 'ukenglish']
-            if (!englishOptions.some((option)=>{return lang.includes(option)})) {
+        if (rawFields.langid && rawFields.langid.length) {
+            let langString = rawFields.langid.toLowerCase().trim()
+            let englishOptions = ['english', 'american', 'british', 'usenglish', 'ukenglish', 'canadian', 'australian', 'newzealand']
+            if (!englishOptions.some((option)=>{return langString === option})) {
                 langEnglish = false
+            }
+        } else if (rawFields.language) {
+            // langid and language. The two mean different things, see discussion https://forums.zotero.org/discussion/33960/biblatex-import-export-csl-language-biblatex-langid
+            // but in bibtex, language is often used for what is essentially langid.
+            // If there is no langid, but a language, and the language happens to be
+            // a known langid, set the langid to be equal to the language.
+            let langString = rawFields.language.toLowerCase().trim()
+            let langid = this._reformLang(langString)
+            if (langid) {
+                fields['langid'] = langid
+                if (!['usenglish', 'ukenglish', 'caenglish', 'auenglish', 'nzenglish'].includes(langid)) {
+                    langEnglish = false
+                }
             }
         }
 
@@ -488,12 +500,36 @@ export class BibLatexParser {
                 case 'l_name':
                     oFields[fKey] = this._reformNameList(fValue)
                     break
+                case 'f_lang':
+                    let langId = this._reformLang(fValue)
+                    if (langId) {
+                        oFields[fKey] = langId
+                    } else {
+                        this.errors.push({
+                            type: 'unknown_language_key',
+                            entry: this.currentEntry['entry_key'],
+                            field_name: fKey,
+                            value: fValue
+                        })
+                    }
+
+                    break
                 default:
                     // Something must be wrong in the code.
                     console.warn(`Unrecognized type: ${fType}!`)
             }
         }
 
+    }
+
+    _reformLang(langString) {
+        langString = langString.trim()
+        if (BiblatexAliasLanguages[langString]) {
+            langString = BiblatexAliasLanguages[langString]
+        }
+        return Object.keys(BibLanguages).find((bLang) => {
+            return BibLanguages[bLang]['biblatex'] === langString
+        })
     }
 
     _checkURI(uriString) {

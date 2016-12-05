@@ -19,6 +19,20 @@ export const BiblatexAliasTypes = {
     'www': 'online'
 }
 
+/** A list of aliases for languages known by biblatex/babel/polyglosia and what they refer to. */
+export const BiblatexAliasLanguages = {
+    'english': 'usenglish',
+    'american': 'usenglish',
+    'british': 'ukenglish',
+    'francais': 'french',
+    'austrian': 'naustrian',
+    'german': 'ngerman',
+    'germanb': 'german',
+    'polutonikogreek': 'greek',
+    'brazil': 'brazilian',
+    'portugues': 'portuguese'
+}
+
 /** A list of special chars in Tex and their unicode equivalent. */
 
 /* The copyright holder of the below composition is Emiliano Heyns, and it is made available under the MIT license.
