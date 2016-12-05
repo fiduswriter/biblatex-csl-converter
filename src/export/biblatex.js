@@ -61,11 +61,7 @@ export class BibLatexExporter {
                         fValues[key] = this._reformInteger(fValue)
                         break
                     case 'f_key':
-                        if (typeof fValue==='string') {
-                            fValues[key] = this._escapeTeX(fValue)
-                        } else {
-                            fValues[key] = this._reformText(fValue)
-                        }
+                        fValues[key] = this._reformKey(fValue)
                         break
                     case 'f_lang':
                         fValues[key] = BibLanguages[fValue]['biblatex']
@@ -84,7 +80,7 @@ export class BibLatexExporter {
                         fValues[key] = fValue.replace(/{|}/g, '') // TODO: balanced braces should probably be ok here.
                         break
                     case 'l_key':
-                        fValues[key] = this._escapeTeX(fValue.join(' and '))
+                        fValues[key] = this._escapeTeX(fValue.map(key=>{return that._reformKey(key)}).join(' and '))
                         break
                     case 'l_literal':
                         fValues[key] = fValue.map((text)=>{return that._reformText(text)}).join(' and ')
@@ -105,6 +101,14 @@ export class BibLatexExporter {
         }
         this.bibtexStr = this._getBibtexString(this.bibtexArray)
         return this.bibtexStr
+    }
+
+    _reformKey(theValue) {
+        if (typeof theValue==='string') {
+            return this._escapeTeX(theValue)
+        } else {
+            return this._reformText(theValue)
+        }
     }
 
     _reformRange(theValue) {

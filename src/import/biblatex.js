@@ -1,5 +1,5 @@
 import {BibFieldTypes, BibTypes, BibLanguages} from "../const"
-import {TeXSpecialChars, BiblatexAliasTypes, BiblatexFieldAliasTypes, BiblatexAliasLanguages} from "./const"
+import {TeXSpecialChars, BiblatexAliasTypes, BiblatexFieldAliasTypes, BiblatexAliasLanguages, BiblatexAliasKeys} from "./const"
 import {BibLatexNameParser} from "./name-parser"
 import {BibLatexLiteralParser} from "./literal-parser"
 import {splitTeXString} from "./tools"
@@ -288,6 +288,7 @@ export class BibLatexParser {
     }
 
     processFields() {
+        let that = this
         let rawFields = this.currentRawFields
         let fields = this.currentEntry['fields']
 
@@ -454,11 +455,7 @@ export class BibLatexParser {
                     oFields[fKey] = this._reformInteger(fValue)
                     break
                 case 'f_key':
-                    if (BibFieldTypes[fKey]['options'] && BibFieldTypes[fKey]['options'].includes(fValue)) {
-                        oFields[fKey] = fValue
-                    } else {
-                        oFields[fKey] = this._reformLiteral(fValue)
-                    }
+                    oFields[fKey] = this._reformKey(fValue, fKey)
                     break
                 case 'f_literal':
                     oFields[fKey] = this._reformLiteral(fValue)
@@ -485,7 +482,7 @@ export class BibLatexParser {
                     oFields[fKey] = fValue
                     break
                 case 'l_key':
-                    oFields[fKey] = splitTeXString(fValue)
+                    oFields[fKey] = splitTeXString(fValue).map(keyField=>{return that._reformKey(keyField, fKey)})
                     break
                 case 'l_tag':
                     oFields[fKey] = fValue.split(',').map((string)=>{return string.trim()})
@@ -520,6 +517,18 @@ export class BibLatexParser {
             }
         }
 
+    }
+
+    _reformKey(keyString, fKey) {
+        let keyValue = keyString.trim().toLowerCase()
+        if (BiblatexAliasKeys[keyValue]) {
+            keyValue = BiblatexAliasKeys[keyValue]
+        }
+        if (BibFieldTypes[fKey]['options'] && BibFieldTypes[fKey]['options'].includes(keyValue)) {
+            return keyValue
+        } else {
+            return this._reformLiteral(keyString)
+        }
     }
 
     _reformLang(langString) {

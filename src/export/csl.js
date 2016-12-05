@@ -57,11 +57,7 @@ export class CSLExporter {
                         fValues[key] = this._reformInteger(fValue)
                         break
                     case 'f_key':
-                        if (typeof fValue==='string') {
-                            fValues[key] = this._escapeHtml(fValue)
-                        } else {
-                            fValues[key] = this._reformText(fValue)
-                        }
+                        fValues[key] = this._reformKey(fValue)
                         break
                     case 'f_lang':
                         fValues[key] = BibLanguages[fValue]['csl']
@@ -80,7 +76,7 @@ export class CSLExporter {
                         fValues[key] = this._escapeHtml(fValue)
                         break
                     case 'l_key':
-                        fValues[key] = this._escapeHtml(fValue.join(' and '))
+                        fValues[key] = this._escapeHtml(fValue.map(key=>{return that._reformKey(key)}).join(' and '))
                         break
                     case 'l_literal':
                         let reformedTexts = []
@@ -110,6 +106,14 @@ export class CSLExporter {
          .replace(/>/g, "&gt;")
          .replace(/'/g, "&apos;")
          .replace(/"/g, "&quot;")
+    }
+
+    _reformKey(theValue) {
+        if (typeof theValue==='string') {
+            return this._escapeHtml(theValue)
+        } else {
+            return this._reformText(theValue)
+        }
     }
 
     _reformRange(theValue) {

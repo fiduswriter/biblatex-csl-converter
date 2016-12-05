@@ -35,6 +35,31 @@ export const BiblatexAliasLanguages = {
     'portugues': 'portuguese'
 }
 
+export const BiblatexAliasKeys = {
+    "langamerican": "american",
+    "langbrazilian": "brazilian",
+    "langcatalan": "catalan",
+    "langcroation": "croation",
+    "langczech": "czech",
+    "langdanish": "danish",
+    "langdutch": "dutch",
+    "langenglish": "english",
+    "langfinnish": "finnish",
+    "langfrench": "french",
+    "langgerman": "german",
+    "langgreek": "greek",
+    "langitalian": "italian",
+    "langlatin": "latin",
+    "langnorwegian": "norwegian",
+    "langpolish": "polish",
+    "langportuguese": "portuguese",
+    "langrussian": "russian",
+    "langslovene": "slovene",
+    "langspanish": "spanish",
+    "langswedish": "swedish"
+}
+
+
 /** A list of special chars in Tex and their unicode equivalent. */
 
 /* The copyright holder of the below composition is Emiliano Heyns, and it is made available under the MIT license.
