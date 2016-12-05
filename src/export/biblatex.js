@@ -43,7 +43,7 @@ export class BibLatexExporter {
             let bib = this.bibDB[pk]
             let bibEntry = {
                 'type': BibTypes[bib['bib_type']]['biblatex'],
-                'key': bib['entry_key']
+                'key': bib['entry_key'].length ? bib['entry_key'] : 'Undefined'
             }
             let fValues = {}
             for (let fKey in bib.fields) {

@@ -219,7 +219,7 @@ export class BibLatexParser {
         return values.join("")
     }
 
-    key() {
+    key(optional) {
         let start = this.pos
         while (true) {
             if (this.pos == this.input.length) {
@@ -227,6 +227,10 @@ export class BibLatexParser {
                 return
             }
             if ([',','{','}',' ','='].includes(this.input[this.pos])) {
+                if (optional && this.input[this.pos] != ',') {
+                    this.pos = start
+                    return null
+                }
                 return this.input.substring(start, this.pos)
             } else {
                 this.pos++
@@ -633,7 +637,7 @@ export class BibLatexParser {
     createNewEntry() {
         this.currentEntry = {
             'bib_type': this.bibType(),
-            'entry_key': this.key(),
+            'entry_key': this.key(true),
             'fields': {}
         }
         this.currentRawFields = {}
@@ -641,8 +645,13 @@ export class BibLatexParser {
             this.currentEntry['raw_fields'] = this.currentRawFields
         }
         this.entries.push(this.currentEntry)
-        this.match(",")
+        if (this.currentEntry['entry_key'] !== null) {
+            this.match(",")
+        }
         this.keyValueList()
+        if (this.currentEntry['entry_key'] === null) {
+            this.currentEntry['entry_key'] = ''
+        }
         this.processFields()
     }
 
