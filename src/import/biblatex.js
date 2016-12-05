@@ -442,17 +442,35 @@ export class BibLatexParser {
                     oFields[fKey] = this._reformInteger(fValue)
                     break
                 case 'f_key':
+                    if (BibFieldTypes[fKey]['options'] && BibFieldTypes[fKey]['options'].includes(fValue)) {
+                        oFields[fKey] = fValue
+                    } else {
+                        oFields[fKey] = this._reformInteger(fValue)
+                    }
                     break
                 case 'f_literal':
                     oFields[fKey] = this._reformLiteral(fValue)
                     break
                 case 'f_range':
+                    oFields[fKey] = this._reformRange(fValue)
                     break
                 case 'f_title':
                     oFields[fKey] = this._reformLiteral(fValue, langEnglish)
                     break
                 case 'f_uri':
+                    if (this._checkURI(fValue)) {
+                        oFields[fKey] = fValue
+                    } else {
+                        this.errors.push({
+                            type: 'unknown_uri',
+                            entry: this.currentEntry['entry_key'],
+                            field_name: fKey,
+                            value: fValue
+                        })
+                    }
+                    break
                 case 'f_verbatim':
+                    oFields[fKey] = fValue
                     break
                 case 'l_key':
                     oFields[fKey] = splitTeXString(fValue)
@@ -478,11 +496,30 @@ export class BibLatexParser {
 
     }
 
+    _checkURI(uriString) {
+        /* Copyright (c) 2010-2013 Diego Perini, MIT licensed
+           https://gist.github.com/dperini/729294
+         */
+        return /^(?:(?:(?:https?|ftp):)?\/\/)(?:\S+(?::\S*)?@)?(?:(?!(?:10|127)(?:\.\d{1,3}){3})(?!(?:169\.254|192\.168)(?:\.\d{1,3}){2})(?!172\.(?:1[6-9]|2\d|3[0-1])(?:\.\d{1,3}){2})(?:[1-9]\d?|1\d\d|2[01]\d|22[0-3])(?:\.(?:1?\d{1,2}|2[0-4]\d|25[0-5])){2}(?:\.(?:[1-9]\d?|1\d\d|2[0-4]\d|25[0-4]))|(?:(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)(?:\.(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)*(?:\.(?:[a-z\u00a1-\uffff]{2,})).?)(?::\d{2,5})?(?:[/?#]\S*)?$/i.test(uriString)
+    }
+
     _reformNameList(nameString) {
         let people = splitTeXString(nameString)
         return people.map((person)=>{
             let nameParser = new BibLatexNameParser(person)
             return nameParser.output
+        })
+    }
+
+    _reformRange(rangeString) {
+        return rangeString.split(',').map(string => {
+            let parts = string.split('-')
+            if (parts.length > 1) {
+                return [parts.shift().trim(), parts.pop().trim()]
+            } else {
+                // Is this valid bibtex?
+                return [string.trim()]
+            }
         })
     }
 
