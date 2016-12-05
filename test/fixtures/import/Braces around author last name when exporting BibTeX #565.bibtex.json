@@ -344,12 +344,7 @@
           }
         ],
         "language": [
-          [
-            {
-              "type": "text",
-              "text": "French"
-            }
-          ]
+          "french"
         ],
         "publisher": [
           [

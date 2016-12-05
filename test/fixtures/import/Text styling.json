@@ -81,12 +81,7 @@
           }
         ],
         "language": [
-          [
-            {
-              "type": "text",
-              "text": "english"
-            }
-          ]
+          "english"
         ],
         "url": "http://links.org.au/node/1916",
         "urldate": "2010-10-31"
@@ -150,12 +145,7 @@
           }
         ],
         "language": [
-          [
-            {
-              "type": "text",
-              "text": "spanish"
-            }
-          ]
+          "spanish"
         ],
         "type": [
           {

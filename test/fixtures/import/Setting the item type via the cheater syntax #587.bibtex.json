@@ -236,6 +236,12 @@
             "text": "Example from CMoS, 16e, 14.215 ``ed. and trans. John Charles Chasteen''"
           }
         ],
+        "annotation": [
+          {
+            "type": "text",
+            "text": "biblatex-chicago example, adapted from http://mirrors.ctan.org/macros/latex/contrib/biblatex-contrib/biblatex-chicago/doc/examples/dates-test.bib Original annotation: *16th edition only.* A Review entry presenting a review from a scholarly journaltitle, hence no entrysubtype needed.  Note the bibstrings in the title of the review, and the formatting of the title of the book reviewed there.  Also note the use of $parteditandtrans.  The author-date system doesn't absolutely require the use of these mechanisms, which were invented to cope with the differences between notes and bibliography in the other Chicago style.  Still, although simply writing \"edited and translated by\" yourself will suffice, using these mechanisms will make your .bib file work across multiple languages, and will also allow it to work, with fewer modifications, in the notes $& bibliography style, should that be needed.  See next entry.   Example from CMoS, 16e, 14.125"
+          }
+        ],
         "author": [
           {
             "family": [
@@ -320,14 +326,6 @@
         "title": "The Mystery of Samba: {{Popular}} Music and National Identity in {{Brazil}}",
         "volume": "9",
         "year": "1999"
-      },
-      "unexpected_fields": {
-        "annotation": [
-          {
-            "type": "text",
-            "text": "biblatex-chicago example, adapted from http://mirrors.ctan.org/macros/latex/contrib/biblatex-contrib/biblatex-chicago/doc/examples/dates-test.bib Original annotation: *16th edition only.* A Review entry presenting a review from a scholarly journaltitle, hence no entrysubtype needed.  Note the bibstrings in the title of the review, and the formatting of the title of the book reviewed there.  Also note the use of $parteditandtrans.  The author-date system doesn't absolutely require the use of these mechanisms, which were invented to cope with the differences between notes and bibliography in the other Chicago style.  Still, although simply writing \"edited and translated by\" yourself will suffice, using these mechanisms will make your .bib file work across multiple languages, and will also allow it to work, with fewer modifications, in the notes $& bibliography style, should that be needed.  See next entry.   Example from CMoS, 16e, 14.125"
-          }
-        ]
       },
       "unknown_fields": {
         "collaborator": [
@@ -503,11 +501,6 @@
         "1999",
         "April"
       ]
-    },
-    {
-      "type": "unexpected_field",
-      "entry": "ratliff_mystery_1999",
-      "field_name": "annote"
     },
     {
       "type": "unknown_field",

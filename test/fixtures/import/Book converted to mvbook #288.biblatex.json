@@ -5,6 +5,12 @@
       "entry_key": "russ_savoir_1990",
       "fields": {
         "date": "1990",
+        "annotation": [
+          {
+            "type": "text",
+            "text": "Comprend : t. 1, La puissance du désordre ; t. 2, La fin des dogmes"
+          }
+        ],
         "author": [
           {
             "family": [
@@ -90,14 +96,6 @@
         "title": "Savoir et pouvoir",
         "volumes": "2"
       },
-      "unexpected_fields": {
-        "annotation": [
-          {
-            "type": "text",
-            "text": "Comprend : t. 1, La puissance du désordre ; t. 2, La fin des dogmes"
-          }
-        ]
-      },
       "unknown_fields": {
         "timestamp": [
           {
@@ -109,11 +107,6 @@
     }
   },
   "warnings": [
-    {
-      "type": "unexpected_field",
-      "entry": "russ_savoir_1990",
-      "field_name": "annotation"
-    },
     {
       "type": "unknown_field",
       "entry": "russ_savoir_1990",

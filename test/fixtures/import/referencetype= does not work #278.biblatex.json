@@ -5,6 +5,12 @@
       "entry_key": "ea",
       "fields": {
         "date": "2009",
+        "annotation": [
+          {
+            "type": "text",
+            "text": "https://katalog.ub.uni-leipzig.de/Record/0002828121"
+          }
+        ],
         "editor": [
           {
             "family": [
@@ -56,12 +62,6 @@
         "volume": "1-5"
       },
       "unexpected_fields": {
-        "annotation": [
-          {
-            "type": "text",
-            "text": "https://katalog.ub.uni-leipzig.de/Record/0002828121"
-          }
-        ],
         "volume": [
           {
             "type": "text",
@@ -72,11 +72,6 @@
     }
   },
   "warnings": [
-    {
-      "type": "unexpected_field",
-      "entry": "ea",
-      "field_name": "annotation"
-    },
     {
       "type": "unexpected_field",
       "entry": "ea",

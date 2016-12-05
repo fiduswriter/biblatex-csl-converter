@@ -69,12 +69,7 @@
           }
         ],
         "language": [
-          [
-            {
-              "type": "text",
-              "text": "English"
-            }
-          ]
+          "english"
         ],
         "number": [
           {

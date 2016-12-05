@@ -5,6 +5,12 @@
       "entry_key": "Torre2008",
       "fields": {
         "date": "2008",
+        "annotation": [
+          {
+            "type": "text",
+            "text": "note 2"
+          }
+        ],
         "author": [
           {
             "family": [
@@ -56,12 +62,6 @@
         "title": "{{XYZZY}}"
       },
       "unexpected_fields": {
-        "annotation": [
-          {
-            "type": "text",
-            "text": "note 2"
-          }
-        ],
         "publisher": [
           [
             {
@@ -82,11 +82,6 @@
     }
   },
   "warnings": [
-    {
-      "type": "unexpected_field",
-      "entry": "Torre2008",
-      "field_name": "annotation"
-    },
     {
       "type": "unexpected_field",
       "entry": "Torre2008",

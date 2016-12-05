@@ -264,12 +264,7 @@
           }
         ],
         "language": [
-          [
-            {
-              "type": "text",
-              "text": "English"
-            }
-          ]
+          "english"
         ],
         "publisher": [
           [
@@ -344,12 +339,7 @@
           }
         ],
         "language": [
-          [
-            {
-              "type": "text",
-              "text": "English"
-            }
-          ]
+          "english"
         ],
         "publisher": [
           [
