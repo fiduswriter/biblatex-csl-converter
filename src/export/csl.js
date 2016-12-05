@@ -57,7 +57,11 @@ export class CSLExporter {
                         fValues[key] = this._reformInteger(fValue)
                         break
                     case 'f_key':
-                        fValues[key] = this._escapeHtml(fValue)
+                        if (typeof fValue==='string') {
+                            fValues[key] = this._escapeHtml(fValue)
+                        } else {
+                            fValues[key] = this._reformText(fValue)
+                        }
                         break
                     case 'f_literal':
                         fValues[key] = this._reformText(fValue)

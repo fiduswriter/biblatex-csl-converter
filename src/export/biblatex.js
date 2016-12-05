@@ -61,7 +61,11 @@ export class BibLatexExporter {
                         fValues[key] = this._reformInteger(fValue)
                         break
                     case 'f_key':
-                        fValues[key] = this._escapeTeX(fValue)
+                        if (typeof fValue==='string') {
+                            fValues[key] = this._escapeTeX(fValue)
+                        } else {
+                            fValues[key] = this._reformText(fValue)
+                        }
                         break
                     case 'f_literal':
                         fValues[key] = this._reformText(fValue)
