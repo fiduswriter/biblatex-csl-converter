@@ -1,5 +1,5 @@
 import {BibTypes, BibFieldTypes, BibLanguages} from "../const"
-import {parse as edtfParse} from "../../lib/edtf/src/parser"
+import {edtfParse} from "../edtf"
 
 /** Converts a BibDB to a DB of the CSL type.
  * @param bibDB The bibliography database to convert.
@@ -181,25 +181,27 @@ export class CSLExporter {
     }
 
     _reformDate(dateStr) {
-        let dateObj = edtfParse(
-            dateStr.replace(/^y/, 'Y') // Convert to edtf draft spec format supported by edtf.js
-                .replace(/unknown/g, '*')
-                .replace(/open/g, '')
-                .replace(/u/g, 'X')
-                .replace(/\?~/g, '%')
-        )
+        let dateObj = edtfParse(dateStr)
         if (dateObj.type === 'Interval') {
             return {
                 'date-parts': [
-                    dateObj.values[0].values.slice(0,3),
-                    dateObj.values[1].values.slice(0,3)
+                    this._edtfToCSL(dateObj.values[0].values.slice(0,3)),
+                    this._edtfToCSL(dateObj.values[1].values.slice(0,3))
                 ]
             }
         } else {
             return {
-                'date-parts': dateObj.values.slice(0,3)
+                'date-parts': this._edtfToCSL(dateObj.values.slice(0,3))
             }
         }
+    }
+
+    _edtfToCSL(dateArray) {
+        // Add 1 to month (0-11 in edtf.js, 1-12 in CSL json)
+        if (dateArray.length > 1) {
+            dateArray[1] = dateArray[1] + 1
+        }
+        return dateArray
     }
 
     _reformName(theNames) {

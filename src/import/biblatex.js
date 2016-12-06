@@ -3,7 +3,7 @@ import {TeXSpecialChars, BiblatexAliasTypes, BiblatexFieldAliasTypes, BiblatexAl
 import {BibLatexNameParser} from "./name-parser"
 import {BibLatexLiteralParser} from "./literal-parser"
 import {splitTeXString} from "./tools"
-import {parse as edtfParse} from "../../lib/edtf/src/parser"
+import {edtfParse} from "../edtf"
 
 /** Parses files in BibTeX/BibLaTeX format
  */
@@ -576,13 +576,7 @@ export class BibLatexParser {
     _checkDate(dateStr) {
         // check if date is valid edtf string (level 0 or 1).
         try {
-            let dateObj = edtfParse(
-                dateStr.replace(/^y/, 'Y') // Convert to edtf draft spec format supported by edtf.js
-                    .replace(/unknown/g, '*')
-                    .replace(/open/g, '')
-                    .replace(/u/g, 'X')
-                    .replace(/\?~/g, '%')
-            )
+            let dateObj = edtfParse(dateStr)
             if (
                 dateObj.level < 2 && (
                     (dateObj.type==='Date' && dateObj.values) ||
@@ -784,7 +778,7 @@ export class BibLatexParser {
             break
           case '1':
             // intersect with parent. Hardly ever used.
-            levels[level].references = levels[level].references.filter(key => levels[level - 1].indexOf(key) >= 0)
+            levels[level].references = levels[level].references.filter(key => levels[level - 1].references.includes(key))
             break
           case '2':
             // union with parent
