@@ -3,7 +3,7 @@ import {TeXSpecialChars, BiblatexAliasTypes, BiblatexFieldAliasTypes, BiblatexAl
 import {BibLatexNameParser} from "./name-parser"
 import {BibLatexLiteralParser} from "./literal-parser"
 import {splitTeXString} from "./tools"
-import {edtfParse} from "../edtf"
+import {edtfCheck} from "../edtf"
 
 /** Parses files in BibTeX/BibLaTeX format
  */
@@ -574,25 +574,8 @@ export class BibLatexParser {
     }
 
     _checkDate(dateStr) {
-        // check if date is valid edtf string (level 0 or 1).
-        try {
-            let dateObj = edtfParse(dateStr)
-            if (
-                dateObj.level < 2 && (
-                    (dateObj.type==='Date' && dateObj.values) ||
-                    (dateObj.type==='Season' && dateObj.values) ||
-                    (dateObj.type==='Interval' && dateObj.values[0].values && dateObj.values[1].values)
-                )
-            ) {
-                return true
-            } else {
-                return false
-            }
-        } catch(err) {
-            return false
-        }
+        return edtfCheck(dateStr)
     }
-
 
     _reformLiteral(theValue, cpMode) {
         let parser = new BibLatexLiteralParser(theValue, cpMode)

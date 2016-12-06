@@ -10,3 +10,23 @@ export function edtfParse(dateString) {
             .replace(/\?~/g, '%')
     )
 }
+
+export function edtfCheck(dateString) {
+    // check if date is valid edtf string (level 0 or 1).
+    try {
+        let dateObj = edtfParse(dateString)
+        if (
+            dateObj.level < 2 && (
+                (dateObj.type==='Date' && dateObj.values) ||
+                (dateObj.type==='Season' && dateObj.values) ||
+                (dateObj.type==='Interval' && dateObj.values[0].values && dateObj.values[1].values)
+            )
+        ) {
+            return true
+        } else {
+            return false
+        }
+    } catch(err) {
+        return false
+    }
+}
