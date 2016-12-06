@@ -456,7 +456,7 @@ export class BibLatexParser {
                     }
                     break
                 case 'f_integer':
-                    oFields[fKey] = this._reformInteger(fValue)
+                    oFields[fKey] = this._reformLiteral(fValue)
                     break
                 case 'f_key':
                     oFields[fKey] = this._reformKey(fValue, fKey)
@@ -580,14 +580,6 @@ export class BibLatexParser {
     _reformLiteral(theValue, cpMode) {
         let parser = new BibLatexLiteralParser(theValue, cpMode)
         return parser.output
-    }
-
-    _reformInteger(theValue) {
-        let theInt = parseInt(theValue)
-        if (isNaN(theInt)) {
-            theInt = theValue
-        }
-        return theInt
     }
 
     bibType() {

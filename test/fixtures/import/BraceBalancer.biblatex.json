@@ -55,7 +55,12 @@
             ]
           }
         ],
-        "edition": "Summer 2013",
+        "edition": [
+          {
+            "type": "text",
+            "text": "Summer 2013"
+          }
+        ],
         "editor": [
           {
             "family": [

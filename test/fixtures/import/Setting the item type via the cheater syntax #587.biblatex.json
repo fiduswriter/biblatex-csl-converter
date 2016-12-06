@@ -181,7 +181,12 @@
         "title": "Sonatas and Fantasies for the Piano"
       },
       "unexpected_fields": {
-        "edition": "Rev. ed.",
+        "edition": [
+          {
+            "type": "text",
+            "text": "Rev. ed."
+          }
+        ],
         "editor": [
           {
             "family": [

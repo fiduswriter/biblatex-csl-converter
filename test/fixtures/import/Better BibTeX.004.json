@@ -56,7 +56,12 @@
             }
           ]
         ],
-        "edition": 1,
+        "edition": [
+          {
+            "type": "text",
+            "text": "1st,"
+          }
+        ],
         "isbn": [
           {
             "type": "text",

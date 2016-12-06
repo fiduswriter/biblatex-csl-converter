@@ -58,7 +58,7 @@ export class BibLatexExporter {
                         fValues[key] = fValue // EDTF 1.0 level 0/1 compliant string.
                         break
                     case 'f_integer':
-                        fValues[key] = this._reformInteger(fValue)
+                        fValues[key] = this._reformText(fValue)
                         break
                     case 'f_key':
                         fValues[key] = this._reformKey(fValue)
@@ -117,10 +117,6 @@ export class BibLatexExporter {
         return theValue.map(range=>{
             return that._escapeTeX(range.join('--'))
         }).join(',')
-    }
-
-    _reformInteger(theValue) {
-        return String(theValue)
     }
 
     _reformName(theValue) {

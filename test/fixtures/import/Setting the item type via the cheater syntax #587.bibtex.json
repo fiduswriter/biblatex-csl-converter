@@ -185,7 +185,12 @@
         "year": "1960"
       },
       "unexpected_fields": {
-        "edition": "Rev. ed.",
+        "edition": [
+          {
+            "type": "text",
+            "text": "Rev. ed."
+          }
+        ],
         "editor": [
           {
             "family": [

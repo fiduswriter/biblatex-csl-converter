@@ -125,7 +125,12 @@ export class CSLExporter {
     }
 
     _reformInteger(theValue) {
-        return String(theValue)
+        let theString = this._reformText(theValue)
+        let theInt = parseInt(theString)
+        if (theString !== String(theInt)) {
+            return theString
+        }
+        return theInt
     }
 
     _reformText(theValue) {
@@ -197,7 +202,7 @@ export class CSLExporter {
     }
 
     _edtfToCSL(dateArray) {
-        // Add 1 to month (0-11 in edtf.js, 1-12 in CSL json)
+        // Add 1 to month (0-11 in edtf.js === 1-12 in CSL json)
         if (dateArray.length > 1) {
             dateArray[1] = dateArray[1] + 1
         }

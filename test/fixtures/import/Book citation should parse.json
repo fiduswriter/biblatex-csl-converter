@@ -54,7 +54,12 @@
             }
           ]
         ],
-        "edition": 3,
+        "edition": [
+          {
+            "type": "text",
+            "text": "3"
+          }
+        ],
         "note": [
           {
             "type": "text",

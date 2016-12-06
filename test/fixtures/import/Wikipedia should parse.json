@@ -57,7 +57,12 @@
             }
           ]
         ],
-        "edition": "ninth Dover printing, tenth GPO printing"
+        "edition": [
+          {
+            "type": "text",
+            "text": "ninth Dover printing, tenth GPO printing"
+          }
+        ]
       },
       "raw_fields": {
         "author": "Milton {Abramowitz} and Irene A. {Stegun}",

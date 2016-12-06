@@ -21,7 +21,12 @@
             ]
           }
         ],
-        "edition": 2,
+        "edition": [
+          {
+            "type": "text",
+            "text": "2"
+          }
+        ],
         "isbn": [
           {
             "type": "text",
