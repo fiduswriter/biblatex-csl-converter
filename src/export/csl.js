@@ -1,4 +1,4 @@
-import {BibTypes, BibFieldTypes, BibLanguages} from "../const"
+import {BibTypes, BibFieldTypes} from "../const"
 import {edtfParse} from "../edtf"
 
 /** Converts a BibDB to a DB of the CSL type.
@@ -57,10 +57,7 @@ export class CSLExporter {
                         fValues[key] = this._reformInteger(fValue)
                         break
                     case 'f_key':
-                        fValues[key] = this._reformKey(fValue)
-                        break
-                    case 'f_lang':
-                        fValues[key] = BibLanguages[fValue]['csl']
+                        fValues[key] = this._reformKey(fValue, fKey)
                         break
                     case 'f_literal':
                     case 'f_long_literal':
@@ -77,7 +74,7 @@ export class CSLExporter {
                         fValues[key] = this._escapeHtml(fValue)
                         break
                     case 'l_key':
-                        fValues[key] = this._escapeHtml(fValue.map(key=>{return that._reformKey(key)}).join(' and '))
+                        fValues[key] = this._escapeHtml(fValue.map(key=>{return that._reformKey(key, fKey)}).join(' and '))
                         break
                     case 'l_literal':
                         let reformedTexts = []
@@ -109,9 +106,14 @@ export class CSLExporter {
          .replace(/"/g, "&quot;")
     }
 
-    _reformKey(theValue) {
+    _reformKey(theValue, fKey) {
         if (typeof theValue==='string') {
-            return this._escapeHtml(theValue)
+            let fieldType = BibFieldTypes[fKey]
+            if (Array.isArray(fieldType['options'])) {
+                return this._escapeHtml(theValue)
+            } else {
+                return this._escapeHtml(fieldType['options'][theValue]['csl'])
+            }
         } else {
             return this._reformText(theValue)
         }

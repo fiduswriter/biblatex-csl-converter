@@ -19,8 +19,8 @@ export const BiblatexAliasTypes = {
     'www': 'online'
 }
 
-/** A list of aliases for languages known by biblatex/babel/polyglosia and what they refer to. */
-export const BiblatexAliasLanguages = {
+/** A list of aliases for options known by biblatex/babel/polyglosia and what they refer to. */
+export const BiblatexAliasOptions = {
     'english': 'usenglish',
     'american': 'usenglish',
     'british': 'ukenglish',
@@ -29,13 +29,10 @@ export const BiblatexAliasLanguages = {
     'francais': 'french',
     'austrian': 'naustrian',
     'german': 'ngerman',
-    'germanb': 'german',
+    'germanb': 'ngerman',
     'polutonikogreek': 'greek',
     'brazil': 'brazilian',
-    'portugues': 'portuguese'
-}
-
-export const BiblatexAliasKeys = {
+    'portugues': 'portuguese',
     "langamerican": "american",
     "langbrazilian": "brazilian",
     "langcatalan": "catalan",

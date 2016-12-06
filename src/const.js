@@ -1,3 +1,231 @@
+/** A list of supported languages (without aliases)  in the langid field */
+const langidOptions = {
+    "usenglish": {
+        "csl": "en-US",
+        "biblatex": "usenglish"
+    },
+    "ukenglish": {
+        "csl": "en-GB",
+        "biblatex": "ukenglish"
+    },
+    "caenglish": {
+        "csl": "en-US",
+        "biblatex": "canadian"
+    },
+    "auenglish": {
+        "csl": "en-GB",
+        "biblatex": "australian"
+    },
+    "nzenglish": {
+        "csl": "en-GB",
+        "biblatex": "newzealand"
+    },
+    "afrikaans": {
+        "csl": "af-ZA",
+        "biblatex": "afrikaans"
+    },
+    "arabic": {
+        "csl": "ar",
+        "biblatex": "arabic"
+    },
+    "basque": {
+        "csl": "eu",
+        "biblatex": "basque"
+    },
+    "bulgarian": {
+        "csl": "bg-BG",
+        "biblatex": "bulgarian"
+    },
+    "catalan": {
+        "csl": "ca-AD",
+        "biblatex": "catalan"
+    },
+    "croatian": {
+        "csl": "hr-HR",
+        "biblatex": "croatian"
+    },
+    "czech": {
+        "csl": "cs-CZ",
+        "biblatex": "czech"
+    },
+    "danish": {
+        "csl": "da-DK",
+        "biblatex": "danish"
+    },
+    "dutch": {
+        "csl": "nl-NL",
+        "biblatex": "dutch"
+    },
+    "estonian": {
+        "csl": "et-EE",
+        "biblatex": "estonian"
+    },
+    "finnish": {
+        "csl": "fi-FI",
+        "biblatex": "finnish"
+    },
+    "cafrench": {
+        "csl": "fr-CA",
+        "biblatex": "canadien"
+    },
+    "acadian": {
+        "csl": "fr-CA",
+        "biblatex": "acadian"
+    },
+    "french": {
+        "csl": "fr-FR",
+        "biblatex": "french"
+    },
+    "atgerman": {
+        "csl": "de-AT",
+        "biblatex": "naustrian"
+    },
+    "german": {
+        "csl": "de-DE",
+        "biblatex": "ngerman"
+    },
+    "greek": {
+        "csl": "el-GR",
+        "biblatex": "greek"
+    },
+    "hebrew": {
+        "csl": "he-IL",
+        "biblatex": "hebrew"
+    },
+    "hungarian": {
+        "csl": "hu-HU",
+        "biblatex": "hungarian"
+    },
+    "icelandic": {
+        "csl": "is-IS",
+        "biblatex": "icelandic"
+    },
+    "italian": {
+        "csl": "it-IT",
+        "biblatex": "italian"
+    },
+    "japanese": {
+        "csl": "ja-JP",
+        "biblatex": "japanese"
+    },
+    "latvian": {
+        "csl": "lv-LV",
+        "biblatex": "latvian"
+    },
+    "lithuanian": {
+        "csl": "lt-LT",
+        "biblatex": "lithuanian"
+    },
+    "magyar": {
+        "csl": "hu-HU",
+        "biblatex": "magyar"
+    },
+    "mongolian": {
+        "csl": "mn-MN",
+        "biblatex": "mongolian"
+    },
+    "newnorwegian": {
+        "csl": "nn-NO",
+        "biblatex": "nynorsk"
+    },
+    "norwegian": {
+        "csl": "nb-NO",
+        "biblatex": "norsk"
+    },
+    "farsi": {
+        "csl": "fa-IR",
+        "biblatex": "farsi"
+    },
+    "polish": {
+        "csl": "pl-PL",
+        "biblatex": "polish"
+    },
+    "brportuguese": {
+        "csl": "pt-BR",
+        "biblatex": "brazilian"
+    },
+    "portuguese": {
+        "csl": "pt-PT",
+        "biblatex": "portuguese"
+    },
+    "romanian": {
+        "csl": "ro-RO",
+        "biblatex": "romanian"
+    },
+    "russian": {
+        "csl": "ru-RU",
+        "biblatex": "russian"
+    },
+    "serbian": {
+        "csl": "sr-RS",
+        "biblatex": "serbian"
+    },
+    "cyrillicserbian": {
+        "csl": "sr-RS",
+        "biblatex": "serbianc"
+    },
+    "slovak": {
+        "csl": "sk-SK",
+        "biblatex": "slovak"
+    },
+    "slovene": {
+        "csl": "sl-SL",
+        "biblatex": "slovene"
+    },
+    "spanish": {
+        "csl": "es-ES",
+        "biblatex": "spanish"
+    },
+    "swedish": {
+        "csl": "sv-SE",
+        "biblatex": "swedish"
+    },
+    "thai": {
+        "csl": "th-TH",
+        "biblatex": "thai"
+    },
+    "turkish": {
+        "csl": "tr-TR",
+        "biblatex": "turkish"
+    },
+    "ukrainian": {
+        "csl": "uk-UA",
+        "biblatex": "ukrainian"
+    },
+    "vietnamese": {
+        "csl": "vi-VN",
+        "biblatex": "vietnamese"
+    },
+    "latin": {
+        "csl": "la",
+        "biblatex": "latin"
+    }
+}
+
+const pubstateOptions = {
+    "inpreparation": {
+        "csl": "in preparation",
+        "biblatex": "inpreparation"
+    },
+    "submitted": {
+        "csl": "submitted",
+        "biblatex": "submitted"
+    },
+    "forthcoming": {
+        "csl": "forthcoming",
+        "biblatex": "forthcoming"
+    },
+    "inpress": {
+        "csl": "in press",
+        "biblatex": "inpress"
+    },
+    "prepublished": {
+        "csl": "prepublished",
+        "biblatex": "prepublished"
+    }
+}
+
+
 /** A list of field types of Bibligraphy DB with lookup by field name. */
 export const BibFieldTypes = {
     'abstract': {
@@ -231,9 +459,11 @@ export const BibFieldTypes = {
         options: ['american','brazilian','catalan','croation','czech','danish','dutch','english','finnish','french','german','greek', 'italian', 'latin','norwegian','polish','portuguese','russian','slovene','spanish','swedish']
     },
     'langid': {
-        type: 'f_lang',
+        type: 'f_key',
+        strict: true, // Does not allow costum strings
         biblatex: 'langid',
-        csl: 'language'
+        csl: 'language',
+        options: langidOptions
     },
     'library': {
         type: 'f_literal',
@@ -327,7 +557,7 @@ export const BibFieldTypes = {
         type: 'f_key',
         biblatex: 'pubstate',
         csl: 'status',
-        options: ['inpreparation', 'submitted', 'forthcoming', 'inpress', 'prepublished']
+        options: pubstateOptions
     },
     'reprinttitle': {
         type: 'f_literal',
@@ -420,210 +650,6 @@ export const BibFieldTypes = {
         type: 'f_literal',
         biblatex: 'volumes',
         csl: 'number-of-volumes'
-    }
-}
-
-/** A list of supported languages (without aliases) */
-export const BibLanguages = {
-    "usenglish": {
-        "csl": "en-US",
-        "biblatex": "usenglish"
-    },
-    "ukenglish": {
-        "csl": "en-GB",
-        "biblatex": "ukenglish"
-    },
-    "caenglish": {
-        "csl": "en-US",
-        "biblatex": "canadian"
-    },
-    "auenglish": {
-        "csl": "en-GB",
-        "biblatex": "australian"
-    },
-    "nzenglish": {
-        "csl": "en-GB",
-        "biblatex": "newzealand"
-    },
-    "afrikaans": {
-        "csl": "af-ZA",
-        "biblatex": "afrikaans"
-    },
-    "arabic": {
-        "csl": "ar",
-        "biblatex": "arabic"
-    },
-    "basque": {
-        "csl": "eu",
-        "biblatex": "basque"
-    },
-    "bulgarian": {
-        "csl": "bg-BG",
-        "biblatex": "bulgarian"
-    },
-    "catalan": {
-        "csl": "ca-AD",
-        "biblatex": "catalan"
-    },
-    "croatian": {
-        "csl": "hr-HR",
-        "biblatex": "croatian"
-    },
-    "czech": {
-        "csl": "cs-CZ",
-        "biblatex": "czech"
-    },
-    "danish": {
-        "csl": "da-DK",
-        "biblatex": "danish"
-    },
-    "dutch": {
-        "csl": "nl-NL",
-        "biblatex": "dutch"
-    },
-    "estonian": {
-        "csl": "et-EE",
-        "biblatex": "estonian"
-    },
-    "finnish": {
-        "csl": "fi-FI",
-        "biblatex": "finnish"
-    },
-    "cafrench": {
-        "csl": "fr-CA",
-        "biblatex": "canadien"
-    },
-    "acadian": {
-        "csl": "fr-CA",
-        "biblatex": "acadian"
-    },
-    "french": {
-        "csl": "fr-FR",
-        "biblatex": "french"
-    },
-    "atgerman": {
-        "csl": "de-AT",
-        "biblatex": "naustrian"
-    },
-    "german": {
-        "csl": "de-DE",
-        "biblatex": "ngerman"
-    },
-    "greek": {
-        "csl": "el-GR",
-        "biblatex": "greek"
-    },
-    "hebrew": {
-        "csl": "he-IL",
-        "biblatex": "hebrew"
-    },
-    "hungarian": {
-        "csl": "hu-HU",
-        "biblatex": "hungarian"
-    },
-    "icelandic": {
-        "csl": "is-IS",
-        "biblatex": "icelandic"
-    },
-    "italian": {
-        "csl": "it-IT",
-        "biblatex": "italian"
-    },
-    "japanese": {
-        "csl": "ja-JP",
-        "biblatex": "japanese"
-    },
-    "latvian": {
-        "csl": "lv-LV",
-        "biblatex": "latvian"
-    },
-    "lithuanian": {
-        "csl": "lt-LT",
-        "biblatex": "lithuanian"
-    },
-    "magyar": {
-        "csl": "hu-HU",
-        "biblatex": "magyar"
-    },
-    "mongolian": {
-        "csl": "mn-MN",
-        "biblatex": "mongolian"
-    },
-    "newnorwegian": {
-        "csl": "nn-NO",
-        "biblatex": "nynorsk"
-    },
-    "norwegian": {
-        "csl": "nb-NO",
-        "biblatex": "norsk"
-    },
-    "farsi": {
-        "csl": "fa-IR",
-        "biblatex": "farsi"
-    },
-    "polish": {
-        "csl": "pl-PL",
-        "biblatex": "polish"
-    },
-    "brportuguese": {
-        "csl": "pt-BR",
-        "biblatex": "brazilian"
-    },
-    "portuguese": {
-        "csl": "pt-PT",
-        "biblatex": "portuguese"
-    },
-    "romanian": {
-        "csl": "ro-RO",
-        "biblatex": "romanian"
-    },
-    "russian": {
-        "csl": "ru-RU",
-        "biblatex": "russian"
-    },
-    "serbian": {
-        "csl": "sr-RS",
-        "biblatex": "serbian"
-    },
-    "cyrillicserbian": {
-        "csl": "sr-RS",
-        "biblatex": "serbianc"
-    },
-    "slovak": {
-        "csl": "sk-SK",
-        "biblatex": "slovak"
-    },
-    "slovene": {
-        "csl": "sl-SL",
-        "biblatex": "slovene"
-    },
-    "spanish": {
-        "csl": "es-ES",
-        "biblatex": "spanish"
-    },
-    "swedish": {
-        "csl": "sv-SE",
-        "biblatex": "swedish"
-    },
-    "thai": {
-        "csl": "th-TH",
-        "biblatex": "thai"
-    },
-    "turkish": {
-        "csl": "tr-TR",
-        "biblatex": "turkish"
-    },
-    "ukrainian": {
-        "csl": "uk-UA",
-        "biblatex": "ukrainian"
-    },
-    "vietnamese": {
-        "csl": "vi-VN",
-        "biblatex": "vietnamese"
-    },
-    "latin": {
-        "csl": "la",
-        "biblatex": "latin"
     }
 }
 

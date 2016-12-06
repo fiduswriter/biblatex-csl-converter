@@ -1,5 +1,5 @@
 import {TexSpecialChars} from "./const"
-import {BibTypes, BibFieldTypes, BibLanguages} from "../const"
+import {BibTypes, BibFieldTypes} from "../const"
 
 /** Export a list of bibliography items to bibLateX and serve the file to the user as a ZIP-file.
  * @class BibLatexExporter
@@ -61,10 +61,7 @@ export class BibLatexExporter {
                         fValues[key] = this._reformText(fValue)
                         break
                     case 'f_key':
-                        fValues[key] = this._reformKey(fValue)
-                        break
-                    case 'f_lang':
-                        fValues[key] = BibLanguages[fValue]['biblatex']
+                        fValues[key] = this._reformKey(fValue, fKey)
                         break
                     case 'f_literal':
                     case 'f_long_literal':
@@ -81,7 +78,7 @@ export class BibLatexExporter {
                         fValues[key] = fValue.replace(/{|}/g, '') // TODO: balanced braces should probably be ok here.
                         break
                     case 'l_key':
-                        fValues[key] = this._escapeTeX(fValue.map(key=>{return that._reformKey(key)}).join(' and '))
+                        fValues[key] = this._escapeTeX(fValue.map(key=>{return that._reformKey(key, fKey)}).join(' and '))
                         break
                     case 'l_literal':
                         fValues[key] = fValue.map((text)=>{return that._reformText(text)}).join(' and ')
@@ -104,9 +101,14 @@ export class BibLatexExporter {
         return this.bibtexStr
     }
 
-    _reformKey(theValue) {
+    _reformKey(theValue, fKey) {
         if (typeof theValue==='string') {
-            return this._escapeTeX(theValue)
+            let fieldType = BibFieldTypes[fKey]
+            if (Array.isArray(fieldType['options'])) {
+                return this._escapeTeX(theValue)
+            } else {
+                return this._escapeTeX(fieldType['options'][theValue]['biblatex'])
+            }
         } else {
             return this._reformText(theValue)
         }

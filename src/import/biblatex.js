@@ -1,5 +1,5 @@
-import {BibFieldTypes, BibTypes, BibLanguages} from "../const"
-import {TeXSpecialChars, BiblatexAliasTypes, BiblatexFieldAliasTypes, BiblatexAliasLanguages, BiblatexAliasKeys} from "./const"
+import {BibFieldTypes, BibTypes} from "../const"
+import {TeXSpecialChars, BiblatexAliasTypes, BiblatexFieldAliasTypes, BiblatexAliasOptions} from "./const"
 import {BibLatexNameParser} from "./name-parser"
 import {BibLatexLiteralParser} from "./literal-parser"
 import {splitTeXString} from "./tools"
@@ -350,8 +350,7 @@ export class BibLatexParser {
             // but in bibtex, language is often used for what is essentially langid.
             // If there is no langid, but a language, and the language happens to be
             // a known langid, set the langid to be equal to the language.
-            let langString = rawFields.language.toLowerCase().trim()
-            let langid = this._reformLang(langString)
+            let langid = this._reformKey(rawFields.language)
             if (langid) {
                 fields['langid'] = langid
                 if (!['usenglish', 'ukenglish', 'caenglish', 'auenglish', 'nzenglish'].includes(langid)) {
@@ -459,7 +458,10 @@ export class BibLatexParser {
                     oFields[fKey] = this._reformLiteral(fValue)
                     break
                 case 'f_key':
-                    oFields[fKey] = this._reformKey(fValue, fKey)
+                    let reformedKey = this._reformKey(fValue, fKey)
+                    if (reformedKey !== false) {
+                        oFields[fKey] = reformedKey
+                    }
                     break
                 case 'f_literal':
                 case 'f_long_literal':
@@ -502,20 +504,6 @@ export class BibLatexParser {
                 case 'l_name':
                     oFields[fKey] = this._reformNameList(fValue)
                     break
-                case 'f_lang':
-                    let langId = this._reformLang(fValue)
-                    if (langId) {
-                        oFields[fKey] = langId
-                    } else {
-                        this.errors.push({
-                            type: 'unknown_language_key',
-                            entry: this.currentEntry['entry_key'],
-                            field_name: fKey,
-                            value: fValue
-                        })
-                    }
-
-                    break
                 default:
                     // Something must be wrong in the code.
                     console.warn(`Unrecognized type: ${fType}!`)
@@ -526,24 +514,35 @@ export class BibLatexParser {
 
     _reformKey(keyString, fKey) {
         let keyValue = keyString.trim().toLowerCase()
-        if (BiblatexAliasKeys[keyValue]) {
-            keyValue = BiblatexAliasKeys[keyValue]
+        let fieldType = BibFieldTypes[fKey]
+        if (BiblatexAliasOptions[keyValue]) {
+            keyValue = BiblatexAliasOptions[keyValue]
         }
-        if (BibFieldTypes[fKey]['options'] && BibFieldTypes[fKey]['options'].includes(keyValue)) {
-            return keyValue
-        } else {
-            return this._reformLiteral(keyString)
+        if (fieldType['options']) {
+            if (Array.isArray(fieldType['options'])) {
+                if (fieldType['options'].includes(keyValue)) {
+                    return keyValue
+                }
+            } else {
+                let optionValue = Object.keys(fieldType['options']).find(key => {
+                    return fieldType['options'][key]['biblatex'] = keyValue
+                })
+                if (optionValue) {
+                    return optionValue
+                }
+            }
         }
-    }
+        if (fieldType.strict) {
+            this.warnings.push({
+                type: 'unknown_key',
+                entry: this.currentEntry['entry_key'],
+                field_name: fKey,
+                value: keyString
+            })
+            return false
+        }
+        return this._reformLiteral(keyString)
 
-    _reformLang(langString) {
-        langString = langString.trim()
-        if (BiblatexAliasLanguages[langString]) {
-            langString = BiblatexAliasLanguages[langString]
-        }
-        return Object.keys(BibLanguages).find((bLang) => {
-            return BibLanguages[bLang]['biblatex'] === langString
-        })
     }
 
     _checkURI(uriString) {
