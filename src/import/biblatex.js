@@ -585,7 +585,7 @@ export class BibLatexParser {
     _reformInteger(theValue) {
         let theInt = parseInt(theValue)
         if (isNaN(theInt)) {
-            theInt = 0
+            theInt = theValue
         }
         return theInt
     }

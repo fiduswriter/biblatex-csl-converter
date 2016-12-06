@@ -58,7 +58,10 @@ export class BibLatexExporter {
                         fValues[key] = fValue // EDTF 1.0 level 0/1 compliant string.
                         break
                     case 'f_integer':
-                        fValues[key] = this._reformInteger(fValue)
+                        let intString = this._reformInteger(fValue)
+                        if (intString) {
+                            fValues[key] = intString
+                        }
                         break
                     case 'f_key':
                         fValues[key] = this._reformKey(fValue)
@@ -120,7 +123,12 @@ export class BibLatexExporter {
     }
 
     _reformInteger(theValue) {
-        return String(theValue)
+        if (typeof theValue === 'number') {
+            return String(theValue)
+        } else {
+            return false
+        }
+
     }
 
     _reformName(theValue) {
