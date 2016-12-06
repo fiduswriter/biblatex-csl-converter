@@ -508,6 +508,12 @@
       ]
     },
     {
+      "type": "unknown_key",
+      "entry": "ratliff_mystery_1999",
+      "field_name": "langid",
+      "value": "en-US"
+    },
+    {
       "type": "unknown_field",
       "entry": "ratliff_mystery_1999",
       "field_name": "collaborator"
@@ -535,6 +541,12 @@
         "2006",
         "April"
       ]
+    },
+    {
+      "type": "unknown_key",
+      "entry": "kamp_deconstructing_2006",
+      "field_name": "langid",
+      "value": "en-US"
     },
     {
       "type": "unexpected_field",

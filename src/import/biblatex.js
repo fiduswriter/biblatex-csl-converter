@@ -350,7 +350,7 @@ export class BibLatexParser {
             // but in bibtex, language is often used for what is essentially langid.
             // If there is no langid, but a language, and the language happens to be
             // a known langid, set the langid to be equal to the language.
-            let langid = this._reformKey(rawFields.language)
+            let langid = this._reformKey(rawFields.language, 'langid')
             if (langid) {
                 fields['langid'] = langid
                 if (!['usenglish', 'ukenglish', 'caenglish', 'auenglish', 'nzenglish'].includes(langid)) {
@@ -515,8 +515,8 @@ export class BibLatexParser {
     _reformKey(keyString, fKey) {
         let keyValue = keyString.trim().toLowerCase()
         let fieldType = BibFieldTypes[fKey]
-        if (BiblatexAliasOptions[keyValue]) {
-            keyValue = BiblatexAliasOptions[keyValue]
+        if (BiblatexAliasOptions[fKey] && BiblatexAliasOptions[fKey][keyValue]) {
+            keyValue = BiblatexAliasOptions[fKey][keyValue]
         }
         if (fieldType['options']) {
             if (Array.isArray(fieldType['options'])) {
@@ -525,7 +525,7 @@ export class BibLatexParser {
                 }
             } else {
                 let optionValue = Object.keys(fieldType['options']).find(key => {
-                    return fieldType['options'][key]['biblatex'] = keyValue
+                    return fieldType['options'][key]['biblatex'] === keyValue
                 })
                 if (optionValue) {
                     return optionValue

@@ -14,6 +14,7 @@
             ]
           }
         ],
+        "langid": "chinese",
         "title": [
           {
             "type": "text",
@@ -100,6 +101,7 @@
             }
           ]
         ],
+        "langid": "chinese",
         "pagetotal": [
           {
             "type": "text",
@@ -148,20 +150,6 @@
       }
     }
   },
-  "errors": [
-    {
-      "type": "unknown_language_key",
-      "entry": "leishuku",
-      "field_name": "langid",
-      "value": "pinyin"
-    },
-    {
-      "type": "unknown_language_key",
-      "entry": "yan_cairong__2003",
-      "field_name": "langid",
-      "value": "Chinese"
-    }
-  ],
   "warnings": [
     {
       "type": "unknown_date",

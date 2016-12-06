@@ -19,13 +19,15 @@ export const BiblatexAliasTypes = {
     'www': 'online'
 }
 
-/** A list of aliases for options known by biblatex/babel/polyglosia and what they refer to. */
-export const BiblatexAliasOptions = {
+const langidAliases = {
     'english': 'usenglish',
     'american': 'usenglish',
-    'british': 'ukenglish',
     'en': 'usenglish',
+    'eng': 'usenglish',
+    'en-US': 'usenglish',
     'anglais': 'usenglish',
+    'british': 'ukenglish',
+    'en-GB': 'ukenglish',
     'francais': 'french',
     'austrian': 'naustrian',
     'german': 'ngerman',
@@ -33,6 +35,10 @@ export const BiblatexAliasOptions = {
     'polutonikogreek': 'greek',
     'brazil': 'brazilian',
     'portugues': 'portuguese',
+    'chinese': 'pinyin'
+}
+
+const languageAliases = {
     "langamerican": "american",
     "langbrazilian": "brazilian",
     "langcatalan": "catalan",
@@ -54,6 +60,13 @@ export const BiblatexAliasOptions = {
     "langslovene": "slovene",
     "langspanish": "spanish",
     "langswedish": "swedish"
+}
+
+/** A list of aliases for options known by biblatex/babel/polyglosia and what they refer to. */
+export const BiblatexAliasOptions = {
+    'language': languageAliases,
+    'origlanguage': languageAliases,
+    'langid': langidAliases
 }
 
 

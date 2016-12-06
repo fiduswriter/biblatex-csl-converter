@@ -40,6 +40,10 @@ const langidOptions = {
         "csl": "ca-AD",
         "biblatex": "catalan"
     },
+    "chinese": {
+        "csl": "zh-CN",
+        "biblatex": "pinyin"
+    },
     "croatian": {
         "csl": "hr-HR",
         "biblatex": "croatian"
@@ -224,6 +228,11 @@ const pubstateOptions = {
         "biblatex": "prepublished"
     }
 }
+
+const languageOptions = ['american', 'brazilian', 'catalan', 'croation',
+'czech', 'danish', 'dutch', 'english', 'finnish', 'french', 'german', 'greek',
+'italian', 'latin', 'norwegian', 'polish', 'portuguese', 'russian', 'slovene',
+'spanish', 'swedish']
 
 
 /** A list of field types of Bibligraphy DB with lookup by field name. */
@@ -456,7 +465,7 @@ export const BibFieldTypes = {
     'language': {
         type: 'l_key',
         biblatex: 'language',
-        options: ['american','brazilian','catalan','croation','czech','danish','dutch','english','finnish','french','german','greek', 'italian', 'latin','norwegian','polish','portuguese','russian','slovene','spanish','swedish']
+        options: languageOptions
     },
     'langid': {
         type: 'f_key',
@@ -512,7 +521,7 @@ export const BibFieldTypes = {
     'origlanguage': {
         type: 'f_key',
         biblatex: 'origlanguage',
-        options: ['american','brazilian','catalan','croation','czech','danish','dutch','english','finnish','french','german','greek', 'italian', 'latin','norwegian','polish','portuguese','russian','slovene','spanish','swedish']
+        options: languageOptions
     },
     'origlocation': {
         type: 'l_literal',
