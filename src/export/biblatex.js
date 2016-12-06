@@ -70,7 +70,7 @@ export class BibLatexExporter {
                     case 'f_long_literal':
                         fValues[key] = this._reformText(fValue)
                         break
-                    case 'f_range':
+                    case 'l_range':
                         fValues[key] = this._reformRange(fValue)
                         break
                     case 'f_title':

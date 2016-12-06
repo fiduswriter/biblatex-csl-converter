@@ -300,7 +300,7 @@ export const BibFieldTypes = {
         csl: 'original-title'
     },
     'pages': {
-        type: 'f_range',
+        type: 'l_range',
         biblatex: 'pages',
         csl: 'page'
     },
