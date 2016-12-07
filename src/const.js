@@ -1,24 +1,8 @@
 /** A list of supported languages (without aliases)  in the langid field */
 const langidOptions = {
-    "usenglish": {
-        "csl": "en-US",
-        "biblatex": "usenglish"
-    },
-    "ukenglish": {
-        "csl": "en-GB",
-        "biblatex": "ukenglish"
-    },
-    "caenglish": {
-        "csl": "en-US",
-        "biblatex": "canadian"
-    },
-    "auenglish": {
-        "csl": "en-GB",
-        "biblatex": "australian"
-    },
-    "nzenglish": {
-        "csl": "en-GB",
-        "biblatex": "newzealand"
+    "acadian": {
+        "csl": "fr-CA",
+        "biblatex": "acadian"
     },
     "afrikaans": {
         "csl": "af-ZA",
@@ -60,6 +44,26 @@ const langidOptions = {
         "csl": "nl-NL",
         "biblatex": "dutch"
     },
+    "auenglish": {
+        "csl": "en-GB",
+        "biblatex": "australian"
+    },
+    "caenglish": {
+        "csl": "en-US",
+        "biblatex": "canadian"
+    },
+    "nzenglish": {
+        "csl": "en-GB",
+        "biblatex": "newzealand"
+    },
+    "ukenglish": {
+        "csl": "en-GB",
+        "biblatex": "ukenglish"
+    },
+    "usenglish": {
+        "csl": "en-US",
+        "biblatex": "usenglish"
+    },
     "estonian": {
         "csl": "et-EE",
         "biblatex": "estonian"
@@ -68,25 +72,21 @@ const langidOptions = {
         "csl": "fi-FI",
         "biblatex": "finnish"
     },
-    "cafrench": {
-        "csl": "fr-CA",
-        "biblatex": "canadien"
-    },
-    "acadian": {
-        "csl": "fr-CA",
-        "biblatex": "acadian"
-    },
     "french": {
         "csl": "fr-FR",
         "biblatex": "french"
     },
-    "atgerman": {
-        "csl": "de-AT",
-        "biblatex": "naustrian"
+    "cafrench": {
+        "csl": "fr-CA",
+        "biblatex": "canadien"
     },
     "german": {
         "csl": "de-DE",
         "biblatex": "ngerman"
+    },
+    "atgerman": {
+        "csl": "de-AT",
+        "biblatex": "naustrian"
     },
     "greek": {
         "csl": "el-GR",
@@ -112,6 +112,10 @@ const langidOptions = {
         "csl": "ja-JP",
         "biblatex": "japanese"
     },
+    "latin": {
+        "csl": "la",
+        "biblatex": "latin"
+    },
     "latvian": {
         "csl": "lv-LV",
         "biblatex": "latvian"
@@ -128,13 +132,13 @@ const langidOptions = {
         "csl": "mn-MN",
         "biblatex": "mongolian"
     },
-    "newnorwegian": {
-        "csl": "nn-NO",
-        "biblatex": "nynorsk"
-    },
     "norwegian": {
         "csl": "nb-NO",
         "biblatex": "norsk"
+    },
+    "newnorwegian": {
+        "csl": "nn-NO",
+        "biblatex": "nynorsk"
     },
     "farsi": {
         "csl": "fa-IR",
@@ -144,13 +148,13 @@ const langidOptions = {
         "csl": "pl-PL",
         "biblatex": "polish"
     },
-    "brportuguese": {
-        "csl": "pt-BR",
-        "biblatex": "brazilian"
-    },
     "portuguese": {
         "csl": "pt-PT",
         "biblatex": "portuguese"
+    },
+    "brportuguese": {
+        "csl": "pt-BR",
+        "biblatex": "brazilian"
     },
     "romanian": {
         "csl": "ro-RO",
@@ -199,10 +203,6 @@ const langidOptions = {
     "vietnamese": {
         "csl": "vi-VN",
         "biblatex": "vietnamese"
-    },
-    "latin": {
-        "csl": "la",
-        "biblatex": "latin"
     }
 }
 
@@ -229,10 +229,10 @@ const pubstateOptions = {
     }
 }
 
-const languageOptions = ['american', 'brazilian', 'catalan', 'croation',
-'czech', 'danish', 'dutch', 'english', 'finnish', 'french', 'german', 'greek',
-'italian', 'latin', 'norwegian', 'polish', 'portuguese', 'russian', 'slovene',
-'spanish', 'swedish']
+const languageOptions = ['catalan', 'croatian', 'czech', 'danish',
+'dutch', 'english', 'american', 'finnish', 'french', 'german', 'greek',
+'italian', 'latin', 'norwegian', 'polish', 'portuguese', 'brazilian', 'russian',
+'slovene', 'spanish', 'swedish']
 
 
 /** A list of field types of Bibligraphy DB with lookup by field name. */
