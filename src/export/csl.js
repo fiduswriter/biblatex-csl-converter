@@ -198,7 +198,7 @@ export class CSLExporter {
             }
         } else {
             return {
-                'date-parts': this._edtfToCSL(dateObj.values.slice(0,3))
+                'date-parts': [ this._edtfToCSL(dateObj.values.slice(0,3)) ]
             }
         }
     }

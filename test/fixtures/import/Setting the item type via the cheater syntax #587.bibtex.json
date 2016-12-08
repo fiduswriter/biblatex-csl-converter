@@ -166,6 +166,22 @@
             ]
           }
         ],
+        "editor": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "Broder"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Nathan"
+              }
+            ]
+          }
+        ],
         "title": [
           {
             "type": "text",
@@ -189,22 +205,6 @@
           {
             "type": "text",
             "text": "Rev. ed."
-          }
-        ],
-        "editor": [
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Broder"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Nathan"
-              }
-            ]
           }
         ],
         "publisher": [
@@ -477,11 +477,6 @@
       "type": "unexpected_field",
       "entry": "mozart_sonatas_1960",
       "field_name": "edition"
-    },
-    {
-      "type": "unexpected_field",
-      "entry": "mozart_sonatas_1960",
-      "field_name": "editor"
     },
     {
       "type": "unexpected_field",
