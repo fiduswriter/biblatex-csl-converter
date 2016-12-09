@@ -72,8 +72,18 @@
         "langid": "french",
         "pages": [
           [
-            "71",
-            "80"
+            [
+              {
+                "type": "text",
+                "text": "71"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "80"
+              }
+            ]
           ]
         ],
         "title": [

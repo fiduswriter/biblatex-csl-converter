@@ -44,8 +44,18 @@
         ],
         "pages": [
           [
-            "68",
-            "82"
+            [
+              {
+                "type": "text",
+                "text": "68"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "82"
+              }
+            ]
           ]
         ],
         "publisher": [
@@ -231,8 +241,18 @@
         ],
         "pages": [
           [
-            "33",
-            "50"
+            [
+              {
+                "type": "text",
+                "text": "33"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "50"
+              }
+            ]
           ]
         ],
         "publisher": [

@@ -77,7 +77,12 @@
         ],
         "pages": [
           [
-            "337"
+            [
+              {
+                "type": "text",
+                "text": "337"
+              }
+            ]
           ]
         ],
         "shorttitle": [

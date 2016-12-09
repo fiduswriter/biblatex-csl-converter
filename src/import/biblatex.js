@@ -556,10 +556,12 @@ export class BibLatexParser {
         return rangeString.split(',').map(string => {
             let parts = string.split('-')
             if (parts.length > 1) {
-                return [parts.shift().trim(), parts.pop().trim()]
+                return [
+                    this._reformLiteral(parts.shift().trim()),
+                    this._reformLiteral(parts.pop().trim())
+                ]
             } else {
-                // Is this valid bibtex?
-                return [string.trim()]
+                return [this._reformLiteral(string.trim())]
             }
         })
     }

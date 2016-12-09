@@ -51,8 +51,18 @@
         "langid": "usenglish",
         "pages": [
           [
-            "129",
-            "147"
+            [
+              {
+                "type": "text",
+                "text": "129"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "147"
+              }
+            ]
           ]
         ],
         "title": [
@@ -213,8 +223,18 @@
         ],
         "pages": [
           [
-            "245",
-            "59"
+            [
+              {
+                "type": "text",
+                "text": "245"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "59"
+              }
+            ]
           ]
         ],
         "title": [
@@ -355,7 +375,12 @@
         ],
         "pages": [
           [
-            "337"
+            [
+              {
+                "type": "text",
+                "text": "337"
+              }
+            ]
           ]
         ],
         "shorttitle": [

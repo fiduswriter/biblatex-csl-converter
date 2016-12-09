@@ -98,8 +98,18 @@
         ],
         "pages": [
           [
-            "70",
-            "90"
+            [
+              {
+                "type": "text",
+                "text": "70"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "90"
+              }
+            ]
           ]
         ],
         "publisher": [

@@ -324,8 +324,18 @@
         ],
         "pages": [
           [
-            "B13",
-            "B14"
+            [
+              {
+                "type": "text",
+                "text": "B13"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "B14"
+              }
+            ]
           ]
         ],
         "volume": [

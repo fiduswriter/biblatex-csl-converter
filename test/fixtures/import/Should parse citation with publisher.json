@@ -35,8 +35,18 @@
         ],
         "pages": [
           [
-            "33",
-            "36"
+            [
+              {
+                "type": "text",
+                "text": "33"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "36"
+              }
+            ]
           ]
         ],
         "publisher": [

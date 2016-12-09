@@ -100,8 +100,18 @@
         "langid": "usenglish",
         "pages": [
           [
-            "197",
-            "204"
+            [
+              {
+                "type": "text",
+                "text": "197"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "204"
+              }
+            ]
           ]
         ],
         "publisher": [

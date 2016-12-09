@@ -44,8 +44,18 @@
         ],
         "pages": [
           [
-            "9",
-            "332"
+            [
+              {
+                "type": "text",
+                "text": "9"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "332"
+              }
+            ]
           ]
         ],
         "publisher": [

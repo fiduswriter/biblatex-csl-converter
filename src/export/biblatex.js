@@ -117,7 +117,7 @@ export class BibLatexExporter {
     _reformRange(theValue) {
         let that = this
         return theValue.map(range=>{
-            return that._escapeTeX(range.join('--'))
+            return range.map(text=>{return this._reformText(text)}).join('--')
         }).join(',')
     }
 

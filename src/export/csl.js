@@ -122,7 +122,7 @@ export class CSLExporter {
     _reformRange(theValue) {
         let that = this
         return theValue.map(range=>{
-            return that._escapeHtml(range.join('--'))
+            return range.map(text=>{return this._reformText(text)}).join('--')
         }).join(',')
     }
 

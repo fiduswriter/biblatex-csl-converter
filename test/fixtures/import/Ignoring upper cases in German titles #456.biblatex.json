@@ -47,8 +47,18 @@
         "langid": "german",
         "pages": [
           [
-            "145",
-            "160"
+            [
+              {
+                "type": "text",
+                "text": "145"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "160"
+              }
+            ]
           ]
         ],
         "publisher": [
@@ -140,8 +150,18 @@
         "langid": "german",
         "pages": [
           [
-            "241",
-            "260"
+            [
+              {
+                "type": "text",
+                "text": "241"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "260"
+              }
+            ]
           ]
         ],
         "publisher": [
