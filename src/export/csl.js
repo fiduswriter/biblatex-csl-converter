@@ -10,11 +10,11 @@ const TAGS = {
     'em': {open:'<i>', close: '</i>'},
     'sub': {open:'<sub>', close: '</sub>'},
     'sup': {open:'<sup>', close: '</sup>'},
-    'smallcaps': {open:'<span style="font-variant: small-caps;">', close: '</span>'},
+    'smallcaps': {open:'<span style="font-variant:small-caps;">', close: '</span>'},
     'nocase': {open:'<span class="nocase">', close: '</span>'},
-    'enquote': {open:'&ldquo;', close: '&rdquo;'},
+    'enquote': {open:'“', close: '”'},
     'url': {open:'', close: ''},
-    'undefined': {open:'<span class="undef-variable">', close: '</span>'}
+    'undefined': {open:'[', close: ']'}
  }
 
 export class CSLExporter {
@@ -71,10 +71,10 @@ export class CSLExporter {
                         break
                     case 'f_uri':
                     case 'f_verbatim':
-                        fValues[key] = this._escapeHtml(fValue)
+                        fValues[key] = fValue
                         break
                     case 'l_key':
-                        fValues[key] = this._escapeHtml(fValue.map(key=>{return that._reformKey(key, fKey)}).join(' and '))
+                        fValues[key] = fValue.map(key=>{return that._reformKey(key, fKey)}).join(' and ')
                         break
                     case 'l_literal':
                         let reformedTexts = []
@@ -87,7 +87,7 @@ export class CSLExporter {
                         fValues[key] = this._reformName(fValue)
                         break
                     case 'l_tag':
-                        fValues[key] = this._escapeHtml(fValue.join(', '))
+                        fValues[key] = fValue.join(', ')
                         break
                     default:
                         console.warn(`Unrecognized type: ${fType}!`)
@@ -98,21 +98,13 @@ export class CSLExporter {
         return fValues
     }
 
-    _escapeHtml(string) {
-        return string.replace(/&/g, "&amp;")
-         .replace(/</g, "&lt;")
-         .replace(/>/g, "&gt;")
-         .replace(/'/g, "&apos;")
-         .replace(/"/g, "&quot;")
-    }
-
     _reformKey(theValue, fKey) {
         if (typeof theValue==='string') {
             let fieldType = BibFieldTypes[fKey]
             if (Array.isArray(fieldType['options'])) {
-                return this._escapeHtml(theValue)
+                return theValue
             } else {
-                return this._escapeHtml(fieldType['options'][theValue]['csl'])
+                return fieldType['options'][theValue]['csl']
             }
         } else {
             return this._reformText(theValue)
@@ -177,7 +169,7 @@ export class CSLExporter {
                     html += TAGS[mark].open
                 }
             })
-            html += that._escapeHtml(node.text)
+            html += node.text
             lastMarks = newMarks
         })
         // Close all still open tags
