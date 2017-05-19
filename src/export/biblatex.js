@@ -220,13 +220,9 @@ export class BibLatexExporter {
             }
             // close all tags that are not present in current text node.
             // Go through last marksd in revrse order to close innermost tags first.
-            let closing = false
             lastMarks.slice().reverse().forEach((mark, rIndex)=>{
-                let index = lastMarks.length - rIndex
+                let index = lastMarks.length - rIndex - 1
                 if (mark != newMarks[index]) {
-                    closing = true
-                }
-                if (closing) {
                     latex += TAGS[mark].close
                     // If not inside of a nocase, add a protective brace around tag.
                     if (lastMarks[0] !== 'nocase' && TAGS[mark].open[0] === '\\') {

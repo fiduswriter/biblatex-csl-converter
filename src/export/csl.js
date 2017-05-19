@@ -148,14 +148,11 @@ export class CSLExporter {
                 })
             }
             // close all tags that are not present in current text node.
-            // Go through last marksd in reverse order to close innermost tags first.
+            // Go through last marks in reverse order to close innermost tags first.
             let closing = false
             lastMarks.slice().reverse().forEach((mark, rIndex)=>{
-                let index = lastMarks.length - rIndex
+                let index = lastMarks.length - rIndex - 1
                 if (mark != newMarks[index]) {
-                    closing = true
-                }
-                if (closing) {
                     html += TAGS[mark].close
                 }
             })
