@@ -149,9 +149,7 @@ export class CSLExporter {
             }
             // close all tags that are not present in current text node.
             let closing = false, closeTags = []
-            console.log('CHECKING CLOSE')
             lastMarks.forEach((mark, index)=>{
-                console.log([mark, newMarks[index]])
                 if (mark != newMarks[index]) {
                     closing = true
                 }
