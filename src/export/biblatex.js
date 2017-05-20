@@ -219,18 +219,26 @@ export class BibLatexExporter {
                 })
             }
             // close all tags that are not present in current text node.
-            // Go through last marksd in revrse order to close innermost tags first.
-            lastMarks.slice().reverse().forEach((mark, rIndex)=>{
-                let index = lastMarks.length - rIndex - 1
+            let closing = false, closeTags = []
+            lastMarks.forEach((mark, index)=>{
                 if (mark != newMarks[index]) {
-                    latex += TAGS[mark].close
+                    closing = true
+                }
+                if (closing) {
+                    let closeTag = TAGS[mark].close
                     // If not inside of a nocase, add a protective brace around tag.
                     if (lastMarks[0] !== 'nocase' && TAGS[mark].open[0] === '\\') {
-                        latex += '}'
+                        closeTag += '}'
                     }
+                    closeTags.push(closeTag)
                 }
 
             })
+            // Add close tags to latex in reverse order to close innermost tags
+            // first.
+            closeTags.reverse()
+            latex += closeTags.join('')
+
             // open all new tags that were not present in the last text node.
             let opening = false, verbatim = false
             newMarks.forEach((mark, index)=>{

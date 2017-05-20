@@ -148,14 +148,22 @@ export class CSLExporter {
                 })
             }
             // close all tags that are not present in current text node.
-            // Go through last marks in reverse order to close innermost tags first.
-            let closing = false
-            lastMarks.slice().reverse().forEach((mark, rIndex)=>{
-                let index = lastMarks.length - rIndex - 1
+            let closing = false, closeTags = []
+            console.log('CHECKING CLOSE')
+            lastMarks.forEach((mark, index)=>{
+                console.log([mark, newMarks[index]])
                 if (mark != newMarks[index]) {
-                    html += TAGS[mark].close
+                    closing = true
+                }
+                if (closing) {
+                    closeTags.push(TAGS[mark].close)
                 }
             })
+            // Add close tags in reverse order to close innermost tags
+            // first.
+            closeTags.reverse()
+            html += closeTags.join('')
+
             // open all new tags that were not present in the last text node.
             let opening = false
             newMarks.forEach((mark, index)=>{
