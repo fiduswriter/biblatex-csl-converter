@@ -4,3 +4,5 @@ docs/
 test/
 .nyc_output/
 .travis.yml
+venv/
+coverage/
