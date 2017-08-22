@@ -484,7 +484,7 @@ export class BibLatexParser {
                     oFields[fKey] = splitTeXString(fValue).map(keyField=>{return that._reformKey(keyField, fKey)})
                     break
                 case 'l_tag':
-                    oFields[fKey] = fValue.split(',').map((string)=>{return string.trim()})
+                    oFields[fKey] = fValue.split(/[,;]/).map((string)=>{return string.trim()})
                     break
                 case 'l_literal':
                     let items = splitTeXString(fValue)
