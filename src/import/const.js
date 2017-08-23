@@ -2718,6 +2718,7 @@ export const TeXSpecialChars = [
   ["\\\\strns", '\u23E4'],
   ["\\\\eqgtr", '\u22DD'],
   ["\\\\forkv", '\u2AD9'],
+  ["\\\\relax", ''],
   ["\\\\amalg", '\u2A3F'],
   ["\\\\infty", '\u221E'],
   ["\\\\VDash", '\u22AB'],

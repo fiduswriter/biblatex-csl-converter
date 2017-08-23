@@ -1122,7 +1122,7 @@
             "given": [
               {
                 "type": "text",
-                "text": " Philippe"
+                "text": "Philippe"
               }
             ]
           }
@@ -1135,7 +1135,7 @@
         ]
       },
       "raw_fields": {
-        "author": "du Puy de Clinchamps, {\\relax Ph}ilippe",
+        "author": "du Puy de Clinchamps, {Ph}ilippe",
         "note": "[du Puy de Clinchamps][PhU+0097ilippe]",
         "options": "useprefix=true"
       },
