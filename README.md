@@ -1,4 +1,4 @@
-# biblatex-csl-converter
+# biblatex-csl-converter [![Build Status](https://travis-ci.org/fiduswriter/biblatex-csl-converter.svg?branch=master)](https://travis-ci.org/fiduswriter/biblatex-csl-converter)
 A set of JavaScript converters: biblatex => json, json => csl, and json => biblatex
 
 Try demo [here](https://fiduswriter.github.io/biblatex-csl-converter/).
