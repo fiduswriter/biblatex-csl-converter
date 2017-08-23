@@ -434,7 +434,7 @@
             "prefix": [
               {
                 "type": "text",
-                "text": "-ıgnorespaces"
+                "text": "-"
               }
             ],
             "useprefix": true,
@@ -460,7 +460,7 @@
         ]
       },
       "raw_fields": {
-        "author": "{\\noopsort{sadat}}el-{\\aftergroupıgnorespaces} Sadat, Anwar",
+        "author": "{\\noopsort{sadat}}el-{\\aftergroup\\ignorespaces} Sadat, Anwar",
         "note": "[Sadat][Anwar el-]"
       }
     },
@@ -1047,7 +1047,7 @@
             "given": [
               {
                 "type": "text",
-                "text": "˚elax Philippe"
+                "text": " Philippe"
               }
             ]
           }
@@ -1060,7 +1060,7 @@
         ]
       },
       "raw_fields": {
-        "author": "{\\noopsort{puy de clinchamps}}{du Puy de Clinchamps}, {˚elax Ph}ilippe",
+        "author": "{\\noopsort{puy de clinchamps}}{du Puy de Clinchamps}, {\\relax Ph}ilippe",
         "note": "[du Puy de Clinchamps][PhU+0097ilippe]"
       }
     },
@@ -1281,7 +1281,7 @@
             "prefix": [
               {
                 "type": "text",
-                "text": "'ıgnorespaces"
+                "text": "'"
               }
             ],
             "useprefix": true,
@@ -1307,7 +1307,7 @@
         ]
       },
       "raw_fields": {
-        "author": "{\\noopsort{este}}d'{\\aftergroupıgnorespaces} Este, Beatrice",
+        "author": "{\\noopsort{este}}d'{\\aftergroup\\ignorespaces} Este, Beatrice",
         "note": "[Este][Beatrice d']"
       }
     },
