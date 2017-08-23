@@ -1,2 +1,5 @@
 --ignore-directory=is:lib
+--ignore-directory=is:venv
+--ignore-directory=is:coverage
 --ignore-file=is:demo-transpiled.js
+

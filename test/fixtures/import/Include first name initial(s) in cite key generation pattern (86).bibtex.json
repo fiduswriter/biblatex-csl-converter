@@ -68,7 +68,9 @@
           }
         ],
         "keywords": [
-          "32Q45 Hyperbolic and Kobayashi hyperbolic manifolds; 14E30 Minimal model program (Mori theory; extremal rays)",
+          "32Q45 Hyperbolic and Kobayashi hyperbolic manifolds",
+          "14E30 Minimal model program (Mori theory",
+          "extremal rays)",
           "Mathematics - Algebraic Geometry",
           "Mathematics - Complex Variables",
           "Mathematics - Differential Geometry"

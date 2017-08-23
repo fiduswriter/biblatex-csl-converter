@@ -281,16 +281,7 @@
           },
           {
             "type": "text",
-            "text": " with Space "
-          },
-          {
-            "type": "text",
-            "text": "Quad, Space Semi-Colon, Space Colon, Space Comma, Space Nbsp",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
+            "text": " with Space Quad, Space Semi-Colon, Space Colon, Space Comma, Space Nbsp"
           }
         ]
       },

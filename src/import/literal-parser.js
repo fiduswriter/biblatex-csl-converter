@@ -196,6 +196,11 @@ export class BibLatexLiteralParser {
                     }
                     break
                 case '{':
+                    if (this.string[this.si+1] === '}') {
+                        // bracket is closing immediately. Ignore it.
+                        this.si += 2
+                        continue
+                    }
                     this.braceLevel++
                     if (this.inCasePreserve || !this.cpMode) {
                         // If already inside case preservation, do not add a second
