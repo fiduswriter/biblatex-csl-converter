@@ -58,7 +58,11 @@
           {
             "type": "text",
             "text": "notion fonctionnelle",
-            "marks": [ { "type": "enquote" } ]
+            "marks": [
+              {
+                "type": "enquote"
+              }
+            ]
           }
         ]
       },
