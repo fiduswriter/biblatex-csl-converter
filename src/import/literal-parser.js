@@ -7,6 +7,7 @@ const LATEX_COMMANDS = [ // commands that can can contain richtext.
     ['\\emph{', 'em'],
     ['\\textsc{', 'smallcaps'],
     ['\\enquote{', 'enquote'],
+    ['\\mkbibquote{', 'enquote'],
     ['\\textsubscript{', 'sub'],
     ['\\textsuperscript{', 'sup']
 ]
