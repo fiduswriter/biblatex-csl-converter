@@ -91,7 +91,16 @@
           },
           {
             "type": "text",
-            "text": " and mkbibquote."
+            "text": " and "
+          },
+          {
+            "type": "text",
+            "text": "mkbibquote",
+            "marks": [ { "type": "enquote" } ]
+          },
+          {
+            "type": "text",
+            "text": "."
           }
         ]
       },
@@ -191,7 +200,16 @@
           },
           {
             "type": "text",
-            "text": " and mkbibquote."
+            "text": " and "
+          },
+          {
+            "type": "text",
+            "text": "mkbibquote",
+            "marks": [ { "type": "enquote" } ]
+          },
+          {
+            "type": "text",
+            "text": "."
           }
         ]
       },

@@ -53,7 +53,12 @@
         "title": [
           {
             "type": "text",
-            "text": "Critique d'une métanotion fonctionnelle. La notion (trop) fonctionnelle de notion fonctionnelle"
+            "text": "Critique d'une métanotion fonctionnelle. La notion (trop) fonctionnelle de "
+          },
+          {
+            "type": "text",
+            "text": "notion fonctionnelle",
+            "marks": [ { "type": "enquote" } ]
           }
         ]
       },
