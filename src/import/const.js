@@ -15,7 +15,7 @@ export const BiblatexAliasTypes = {
     'electronic': 'online',
     'mastersthesis': 'thesis',
     'phdthesis': 'thesis',
-    'techreport': 'thesis',
+    'techreport': 'report',
     'www': 'online'
 }
 
