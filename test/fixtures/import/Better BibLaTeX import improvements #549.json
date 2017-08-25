@@ -91,7 +91,23 @@
           },
           {
             "type": "text",
-            "text": " and mkbibquote."
+            "text": " and "
+          },
+          {
+            "type": "text",
+            "text": "mkbibquote",
+            "marks": [
+              {
+                "type": "nocase"
+              },
+              {
+                "type": "enquote"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "."
           }
         ]
       },
@@ -191,7 +207,23 @@
           },
           {
             "type": "text",
-            "text": " and mkbibquote."
+            "text": " and "
+          },
+          {
+            "type": "text",
+            "text": "mkbibquote",
+            "marks": [
+              {
+                "type": "nocase"
+              },
+              {
+                "type": "enquote"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "."
           }
         ]
       },
