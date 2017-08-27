@@ -13,16 +13,10 @@
         ],
         "author": [
           {
-            "given": [
+            "literal": [
               {
                 "type": "text",
-                "text": "Firstname"
-              }
-            ],
-            "family": [
-              {
-                "type": "text",
-                "text": "Retorquere"
+                "text": "Firstname Retorquere"
               }
             ]
           }

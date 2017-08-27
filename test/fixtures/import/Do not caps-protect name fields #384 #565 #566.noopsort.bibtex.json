@@ -223,23 +223,10 @@
       "fields": {
         "author": [
           {
-            "given": [
+            "literal": [
               {
                 "type": "text",
-                "text": "National Aeronautics"
-              }
-            ],
-            "prefix": [
-              {
-                "type": "text",
-                "text": "and"
-              }
-            ],
-            "useprefix": true,
-            "family": [
-              {
-                "type": "text",
-                "text": "Space Administration"
+                "text": "National Aeronautics and Space Administration"
               }
             ]
           }
@@ -611,16 +598,10 @@
       "fields": {
         "author": [
           {
-            "given": [
+            "literal": [
               {
                 "type": "text",
-                "text": "Marcus"
-              }
-            ],
-            "family": [
-              {
-                "type": "text",
-                "text": "Aurelius"
+                "text": "Marcus Aurelius"
               }
             ]
           }

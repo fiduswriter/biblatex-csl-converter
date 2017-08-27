@@ -48,8 +48,6 @@
             ]
           },
           {
-            "prefix": [],
-            "useprefix": true,
             "family": [
               {
                 "type": "text",
@@ -92,8 +90,6 @@
             ]
           },
           {
-            "prefix": [],
-            "useprefix": true,
             "family": [
               {
                 "type": "text",
@@ -287,8 +283,6 @@
             ]
           },
           {
-            "prefix": [],
-            "useprefix": true,
             "family": [
               {
                 "type": "text",
@@ -331,8 +325,6 @@
             ]
           },
           {
-            "prefix": [],
-            "useprefix": true,
             "family": [
               {
                 "type": "text",

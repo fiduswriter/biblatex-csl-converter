@@ -301,16 +301,10 @@
       "unexpected_fields": {
         "editora": [
           {
-            "given": [
+            "literal": [
               {
                 "type": "text",
-                "text": "Hermano"
-              }
-            ],
-            "family": [
-              {
-                "type": "text",
-                "text": "Vianna"
+                "text": "Hermano Vianna"
               }
             ]
           }

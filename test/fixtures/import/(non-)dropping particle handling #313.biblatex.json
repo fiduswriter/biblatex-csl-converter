@@ -800,23 +800,10 @@
       "fields": {
         "author": [
           {
-            "given": [
+            "literal": [
               {
                 "type": "text",
-                "text": "U.S. Bureau"
-              }
-            ],
-            "prefix": [
-              {
-                "type": "text",
-                "text": "of the"
-              }
-            ],
-            "useprefix": true,
-            "family": [
-              {
-                "type": "text",
-                "text": "Census"
+                "text": "U.S. Bureau of the Census"
               }
             ]
           }
@@ -1119,16 +1106,10 @@
       "fields": {
         "author": [
           {
-            "given": [
+            "literal": [
               {
                 "type": "text",
-                "text": "Africa"
-              }
-            ],
-            "family": [
-              {
-                "type": "text",
-                "text": "News"
+                "text": "Africa News"
               }
             ]
           }
@@ -1418,16 +1399,10 @@
       "fields": {
         "author": [
           {
-            "given": [
+            "literal": [
               {
                 "type": "text",
-                "text": "Caritas"
-              }
-            ],
-            "family": [
-              {
-                "type": "text",
-                "text": "Europa"
+                "text": "Caritas Europa"
               }
             ]
           },
@@ -2270,16 +2245,10 @@
       "fields": {
         "author": [
           {
-            "given": [
+            "literal": [
               {
                 "type": "text",
-                "text": "Multi-National"
-              }
-            ],
-            "family": [
-              {
-                "type": "text",
-                "text": "United"
+                "text": "Multi-National United"
               }
             ]
           }
@@ -2324,16 +2293,10 @@
       "fields": {
         "author": [
           {
-            "given": [
+            "literal": [
               {
                 "type": "text",
-                "text": "São Paulo"
-              }
-            ],
-            "family": [
-              {
-                "type": "text",
-                "text": "(Estado)"
+                "text": "São Paulo (Estado)"
               }
             ]
           }
@@ -2466,44 +2429,26 @@
       "fields": {
         "author": [
           {
-            "given": [
+            "literal": [
               {
                 "type": "text",
-                "text": "Alfred Benzon"
-              }
-            ],
-            "family": [
-              {
-                "type": "text",
-                "text": "Foundation"
+                "text": "Alfred Benzon Foundation"
               }
             ]
           },
           {
-            "given": [
+            "literal": [
               {
                 "type": "text",
-                "text": "James Benson"
-              }
-            ],
-            "family": [
-              {
-                "type": "text",
-                "text": "Foundation"
+                "text": "James Benson Foundation"
               }
             ]
           },
           {
-            "given": [
+            "literal": [
               {
                 "type": "text",
-                "text": "John Candy"
-              }
-            ],
-            "family": [
-              {
-                "type": "text",
-                "text": "Foundation"
+                "text": "John Candy Foundation"
               }
             ]
           }
@@ -3926,16 +3871,10 @@
             ]
           },
           {
-            "given": [
+            "literal": [
               {
                 "type": "text",
-                "text": "Beijing"
-              }
-            ],
-            "family": [
-              {
-                "type": "text",
-                "text": "Zoo"
+                "text": "Beijing Zoo"
               }
             ]
           }

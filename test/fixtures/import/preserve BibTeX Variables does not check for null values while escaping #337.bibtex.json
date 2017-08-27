@@ -7,51 +7,26 @@
         "date": "1980",
         "author": [
           {
-            "given": [
+            "literal": [
               {
                 "type": "text",
-                "text": "Geophysics Study"
-              }
-            ],
-            "family": [
-              {
-                "type": "text",
-                "text": "Committee"
+                "text": "Geophysics Study Committee"
               }
             ]
           },
           {
-            "given": [
+            "literal": [
               {
                 "type": "text",
-                "text": "Geophysics Research"
-              }
-            ],
-            "family": [
-              {
-                "type": "text",
-                "text": "Board"
+                "text": "Geophysics Research Board"
               }
             ]
           },
           {
-            "prefix": [
+            "literal": [
               {
                 "type": "text",
-                "text": "Assembly of Mathematical and"
-              }
-            ],
-            "useprefix": true,
-            "family": [
-              {
-                "type": "text",
-                "text": "Physical Sciences"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "National Research Council"
+                "text": "Assembly of Mathematical and Physical Sciences, National Research Council"
               }
             ]
           }

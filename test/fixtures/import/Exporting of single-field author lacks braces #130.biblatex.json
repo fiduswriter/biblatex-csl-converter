@@ -35,20 +35,12 @@
             ]
           },
           {
-            "given": [
+            "literal": [
               {
                 "type": "text",
-                "text": "Wiley InterScience (Online"
+                "text": "Wiley InterScience (Online service)"
               }
-            ],
-            "prefix": [
-              {
-                "type": "text",
-                "text": "service)"
-              }
-            ],
-            "useprefix": true,
-            "family": []
+            ]
           }
         ],
         "isbn": [

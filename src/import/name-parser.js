@@ -3,7 +3,7 @@ import {BibLatexLiteralParser} from "./literal-parser"
 export class BibLatexNameParser {
 
     constructor(nameString) {
-        this.nameString = nameString
+        this.nameString = nameString.trim()
         this.nameDict = {}
         this._particle = []
         this._suffix = []
@@ -16,17 +16,36 @@ export class BibLatexNameParser {
             this.parseExtendedName(parts)
         } else if (parts.length ===  3) { // von Last, Jr, First
             this.processVonLast(
-                this.splitTexString(parts[0]),
+                this.splitTexString(parts[0].replace(/[{}]/g,'')),
                 this.splitTexString(parts[1])
             )
             this.processFirstMiddle(this.splitTexString(parts[2]))
         } else if (parts.length === 2) {  // von Last, First
-            this.processVonLast(this.splitTexString(parts[0]))
+            this.processVonLast(this.splitTexString(parts[0].replace(/[{}]/g,'')))
             this.processFirstMiddle(this.splitTexString(parts[1]))
         } else if (parts.length === 1) {  // First von Last
             let spacedParts = this.splitTexString(this.nameString)
             if (spacedParts.length === 1) {
-                this.nameDict['literal'] = this._reformLiteral(spacedParts[0].trim())
+                if (
+                    this.nameString[0] === '{' &&
+                    this.nameString[this.nameString.length-1] === '}' &&
+                    this.nameString.includes('=') &&
+                    this.nameString.includes(',') &&
+                    this.nameString.includes(' ') &&
+                    (
+                        this.nameString.includes('given') ||
+                        this.nameString.includes('family')
+                    )
+                ) {
+                    parts = this.splitTexString(
+                        this.nameString.slice(1, this.nameString.length - 1),
+                        ','
+                    )
+                    // extended name detected.
+                    this.parseExtendedName(parts)
+                } else {
+                    this.nameDict['literal'] = this._reformLiteral(spacedParts[0])
+                }
             } else {
                 let split = this.splitAt(spacedParts)
                 let firstMiddle = split[0]
@@ -45,12 +64,11 @@ export class BibLatexNameParser {
     }
 
     parseExtendedName(parts) {
-        let that = this
-        parts.forEach((part)=>{
+        parts.forEach( part => {
             let attrParts = part.trim().replace(/^\"|\"$/g,'').split('=')
             let attrName = attrParts.shift().trim().toLowerCase()
             if (['family', 'given', 'prefix', 'suffix'].includes(attrName)) {
-                this.nameDict[attrName] = that._reformLiteral(attrParts.join('=').trim())
+                this.nameDict[attrName] = this._reformLiteral(attrParts.join('=').trim())
             } else if (attrName==='useprefix') {
                 if (attrParts.join('').trim().toLowerCase() === 'true') {
                     this.nameDict['useprefix'] = true

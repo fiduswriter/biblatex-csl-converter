@@ -256,106 +256,42 @@
             ]
           },
           {
-            "given": [
+            "literal": [
               {
                 "type": "text",
-                "text": "American Heart Association Council"
-              }
-            ],
-            "prefix": [
-              {
-                "type": "text",
-                "text": "on Quality of Care and"
-              }
-            ],
-            "useprefix": true,
-            "family": [
-              {
-                "type": "text",
-                "text": "Outcomes Research"
+                "text": "American Heart Association Council on Quality of Care and Outcomes Research"
               }
             ]
           },
           {
-            "given": [
+            "literal": [
               {
                 "type": "text",
-                "text": "Emergency Cardiovascular Care"
-              }
-            ],
-            "family": [
-              {
-                "type": "text",
-                "text": "Committee"
+                "text": "Emergency Cardiovascular Care Committee"
               }
             ]
           },
           {
-            "prefix": [
+            "literal": [
               {
                 "type": "text",
-                "text": "Council on"
-              }
-            ],
-            "useprefix": true,
-            "suffix": [
-              {
-                "type": "text",
-                "text": "Critical Care"
-              }
-            ],
-            "family": [
-              {
-                "type": "text",
-                "text": "Cardiopulmonary"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Perioperative and Resuscitation"
+                "text": "Council on Cardiopulmonary, Critical Care, Perioperative and Resuscitation"
               }
             ]
           },
           {
-            "given": [
+            "literal": [
               {
                 "type": "text",
-                "text": "Council"
-              }
-            ],
-            "prefix": [
-              {
-                "type": "text",
-                "text": "on"
-              }
-            ],
-            "useprefix": true,
-            "family": [
-              {
-                "type": "text",
-                "text": "Clinical Cardiology"
+                "text": "Council on Clinical Cardiology"
               }
             ]
           },
           {
-            "given": [
+            "literal": [
               {
                 "type": "text",
-                "text": "Council"
-              }
-            ],
-            "prefix": [
-              {
-                "type": "text",
-                "text": "on Cardiovascular Surgery and"
-              }
-            ],
-            "useprefix": true,
-            "family": [
-              {
-                "type": "text",
-                "text": "Anesthesia"
+                "text": "Council on Cardiovascular Surgery and Anesthesia"
               }
             ]
           }

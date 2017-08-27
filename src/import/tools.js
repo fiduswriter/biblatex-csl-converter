@@ -13,9 +13,11 @@ export function splitTeXString(texString, splitToken='and') {
         switch (token) {
             case '{':
                 j += 1
+                output[k] += token
                 break
             case '}':
                 j -= 1
+                output[k] += token
                 break
             case splitToken:
                 if (0===j) {

@@ -546,7 +546,7 @@ export class BibLatexParser {
 
     _reformNameList(nameString) {
         let people = splitTeXString(nameString)
-        return people.map((person)=>{
+        return people.map(person => {
             let nameParser = new BibLatexNameParser(person)
             return nameParser.output
         })
