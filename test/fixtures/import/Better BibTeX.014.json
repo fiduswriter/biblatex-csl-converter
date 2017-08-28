@@ -7,7 +7,7 @@
         "title": [
           {
             "type": "text",
-            "text": "Escaped backslash followed by \\{\\}: \\\\{}"
+            "text": "Escaped backslash followed by {}: \n"
           }
         ]
       },

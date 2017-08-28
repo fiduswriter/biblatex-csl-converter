@@ -28,7 +28,8 @@ const LATEX_SPECIAL_CHARS = {
     '~': '~',
     '^': '^',
     '\'': '\'',
-    ';': '\u2004'
+    ';': '\u2004',
+    '\\': '\n'
 }
 
 export class BibLatexLiteralParser {
@@ -250,11 +251,11 @@ export class BibLatexLiteralParser {
                     this.textNode.text += '\u00A0'
                     this.si++
                     break
-                case '%':
+                case '\u0870':
                     // An undefined variable.
                     this.removeIfEmptyTextNode()
                     let sj = this.si + 1
-                    while (sj < this.slen && this.string[sj] !== '%') {
+                    while (sj < this.slen && this.string[sj] !== '\u0870') {
                         sj++
                     }
                     let variable = this.string.substring(this.si+1, sj)

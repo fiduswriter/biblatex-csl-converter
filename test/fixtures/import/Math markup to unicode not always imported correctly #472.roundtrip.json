@@ -166,7 +166,7 @@
       "raw_fields": {
         "abstract": "Abstract here",
         "author": "Doe, J. and Smith, R.",
-        "booktitle": "%IEEE_J_PROC%",
+        "booktitle": "ࡰIEEE_J_PROCࡰ",
         "doi": "10.1109/JPROC.2016.2526118",
         "keywords": "Keyword 1,Keyword 2",
         "month": "February",
@@ -288,7 +288,7 @@
       "raw_fields": {
         "abstract": "Abstract here",
         "author": "Doe, J. and Smith, R.",
-        "booktitle": "%IEEE_J_PROC%",
+        "booktitle": "ࡰIEEE_J_PROCࡰ",
         "doi": "10.1109/JPROC.2016.2526118",
         "keywords": "Keyword 1,Keyword 2",
         "month": "February",

@@ -148,17 +148,8 @@ export class BibLatexParser {
         let string = ""
         while (this.pos < this.input.length) {
             switch(this.input[this.pos]) {
-                case '\n':
-                    if (this.input[this.pos-1] === '\n') {
-                        string += '\n'
-                    } else if (/\S/.test(this.input[this.pos+1])) {
-                        string += ' '
-                    }
-                    break
                 case '\\':
-                    string += '\\'
-                    string += this.input[this.pos+1]
-                    //this.input.substring(this.pos, this.pos+2)
+                    string += this.input.substring(this.pos, this.pos+2)
                     this.pos++
                     break
                 case '}':
@@ -172,11 +163,6 @@ export class BibLatexParser {
                 case '{':
                     string += '{'
                     bracecount++
-                    break
-                case '%':
-                    // Unescaped percentage - the intention must have been to
-                    // escape it because unescaped ones only mean trouble.
-                    string += '\\%'
                     break
                 default:
                     string += this.input[this.pos]
@@ -193,13 +179,6 @@ export class BibLatexParser {
         let string = ""
         while (this.pos < this.input.length) {
             switch(this.input[this.pos]) {
-                case '\n':
-                    if (this.input[this.pos-1] === '\n') {
-                        string += '\n'
-                    } else if (/\S/.test(this.input[this.pos+1])) {
-                        string += ' '
-                    }
-                    break
                 case '\\':
                     string += this.input.substring(this.pos, this.pos+2)
                     this.pos++
@@ -207,11 +186,6 @@ export class BibLatexParser {
                 case '"':
                     this.match('"')
                     return string.trim()
-                case '%':
-                    // Unescaped percentage - the intention must have been to
-                    // escape it because unescaped ones only mean trouble.
-                    string += '\\%'
-                    break
                 default:
                     string += this.input[this.pos]
                     break
@@ -241,7 +215,9 @@ export class BibLatexParser {
                     key: this.currentKey,
                     variable: k
                 })
-                return `%${k}%` // Using % as a delimiter for variables as they cannot be used in regular latex code.
+                // Using \u0870 as a delimiter for variables as they cannot be
+                // used in regular latex code.
+                return `\u0870${k}\u0870`
             }
         }
     }

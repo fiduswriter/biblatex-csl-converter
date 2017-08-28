@@ -38,10 +38,10 @@
           },
           {
             "type": "text",
-            "text": "changes",
+            "text": "\ntextbfchanges",
             "marks": [
               {
-                "type": "strong"
+                "type": "nocase"
               }
             ]
           },
@@ -53,16 +53,7 @@
         "journaltitle": [
           {
             "type": "text",
-            "text": "Links",
-            "marks": [
-              {
-                "type": "em"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": " International Journal of Socialist Renewal"
+            "text": "\ntextitLinks International Journal of Socialist Renewal"
           }
         ],
         "subtitle": [

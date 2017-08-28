@@ -227,7 +227,7 @@
       "raw_fields": {
         "title": "{T}est {T}itle {W}ith 100~$μ${J}, 200 {\\mbox{$μ$}}{J} {E}nergy, and $±$0.1\\% {A}ccuracy, 0.2 mm$^2$ {S}ize, and $-$50 d{B} {A}ttenuation",
         "author": "Doe, J. and Smith, R.",
-        "booktitle": "%IEEE_J_PROC%",
+        "booktitle": "ࡰIEEE_J_PROCࡰ",
         "year": "2016",
         "month": "Feb",
         "pages": "300--301",
@@ -362,7 +362,7 @@
       "raw_fields": {
         "title": "{T}est {T}itle with space quad, space\\;semi-colon, space colon, space comma, space~nbsp",
         "author": "Doe, J. and Smith, R.",
-        "booktitle": "%IEEE_J_PROC%",
+        "booktitle": "ࡰIEEE_J_PROCࡰ",
         "year": "2016",
         "month": "Feb",
         "pages": "300--301",
