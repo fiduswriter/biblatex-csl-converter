@@ -23,7 +23,7 @@
         "note": [
           {
             "type": "text",
-            "text": "Hello hej "
+            "text": "Hello hej"
           }
         ],
         "title": [
@@ -35,7 +35,7 @@
       },
       "raw_fields": {
         "author": "Brøns, Morten",
-        "note": "Hello hej ",
+        "note": "Hello hej",
         "title": "$pretest$"
       }
     }

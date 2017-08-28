@@ -465,10 +465,11 @@
             "text": "PMID: 349387"
           }
         ],
-        "eprint": "http://dx.doi.org/10.1056/NEJM197806222982503\n"
+        "url": "http://dx.doi.org/10.1056/NEJM197806222982503",
+        "eprint": "http://dx.doi.org/10.1056/NEJM197806222982503"
       },
       "raw_fields": {
-        "author": "Goldenberg , David M. and DeLand , Frank and Kim , Euishin and Bennett , Sidney and Primus , F. James and {family=Nagell, prefix=van, \"given={John R.}\", suffix=Jr.} and Estes , Norman and DeSimone , Philip and Rayburn , Pam ",
+        "author": "Goldenberg , David M. and DeLand , Frank and Kim , Euishin and Bennett , Sidney and Primus , F. James and {family=Nagell, prefix=van, \"given={John R.}\", suffix=Jr.} and Estes , Norman and DeSimone , Philip and Rayburn , Pam",
         "title": "Use of Radio-Labeled Antibodies to Carcinoembryonic Antigen for the Detection and Localization of Diverse Cancers by External Photoscanning",
         "journal": "New England Journal of Medicine",
         "volume": "298",
@@ -477,8 +478,8 @@
         "year": "1978",
         "doi": "10.1056/NEJM197806222982503",
         "note": "PMID: 349387",
-        "url": "http://dx.doi.org/10.1056/NEJM197806222982503\n",
-        "eprint": "http://dx.doi.org/10.1056/NEJM197806222982503\n"
+        "url": "http://dx.doi.org/10.1056/NEJM197806222982503",
+        "eprint": "http://dx.doi.org/10.1056/NEJM197806222982503"
       },
       "unknown_fields": {
         "year": [
@@ -490,14 +491,6 @@
       }
     }
   },
-  "errors": [
-    {
-      "type": "unknown_uri",
-      "entry": "doi:10.1056/NEJM197806222982503",
-      "field_name": "url",
-      "value": "http://dx.doi.org/10.1056/NEJM197806222982503\n"
-    }
-  ],
   "warnings": [
     {
       "type": "unknown_field",

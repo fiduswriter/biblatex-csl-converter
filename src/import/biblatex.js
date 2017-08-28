@@ -165,7 +165,7 @@ export class BibLatexParser {
                 case '}':
                     if (bracecount === 0) {
                         this.match("}")
-                        return string
+                        return string.trim()
                     }
                     string += '}'
                     bracecount--
@@ -207,7 +207,7 @@ export class BibLatexParser {
                     break
                 case '"':
                     this.match('"')
-                    return string
+                    return string.trim()
                 case '%':
                     // Unescaped percentage - the intention must have been to
                     // escape it because unescaped ones only mean trouble.
