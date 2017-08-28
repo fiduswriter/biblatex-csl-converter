@@ -116,7 +116,6 @@ export class BibLatexParser {
         } else {
             return false
         }
-        this.skipWhitespace()
     }
 
     skipWhitespace() {
