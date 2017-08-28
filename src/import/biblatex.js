@@ -146,43 +146,81 @@ export class BibLatexParser {
     valueBraces() {
         let bracecount = 0
         this.match("{")
-        let start = this.pos
-        while (true) {
-            if (this.input[this.pos] == '}' && this.input[this.pos - 1] !=
-                '\\') {
-                if (bracecount > 0) {
+        let string = ""
+        while (this.pos < this.input.length) {
+            switch(this.input[this.pos]) {
+                case '\n':
+                    if (this.input[this.pos-1] === '\n') {
+                        string += '\n'
+                    } else if (/\S/.test(this.input[this.pos+1])) {
+                        string += ' '
+                    }
+                    break
+                case '\\':
+                    string += '\\'
+                    string += this.input[this.pos+1]
+                    //this.input.substring(this.pos, this.pos+2)
+                    this.pos++
+                    break
+                case '}':
+                    if (bracecount === 0) {
+                        this.match("}")
+                        return string
+                    }
+                    string += '}'
                     bracecount--
-                } else {
-                    let end = this.pos
-                    this.match("}")
-                    return this.input.substring(start, end)
-                }
-            } else if (this.input[this.pos] == '{' && this.input[this.pos - 1] !=
-                '\\') {
-                bracecount++
-            } else if (this.pos == this.input.length - 1) {
-                this.errors.push({type: 'unexpected_eof'})
+                    break
+                case '{':
+                    string += '{'
+                    bracecount++
+                    break
+                case '%':
+                    // Unescaped percentage - the intention must have been to
+                    // escape it because unescaped ones only mean trouble.
+                    string += '\\%'
+                    break
+                default:
+                    string += this.input[this.pos]
+                    break
             }
             this.pos++
         }
+        this.errors.push({type: 'unexpected_eof'})
+        return string
     }
 
     valueQuotes() {
         this.match('"')
-        let start = this.pos
+        let string = ""
         while (this.pos < this.input.length) {
-            if (this.input[this.pos] === '"' && this.input[this.pos - 1] != '\\') {
-                let end = this.pos
-                this.match('"')
-                return this.input.substring(start, end)
-            } else if (this.pos == this.input.length - 1) {
-                this.errors.push({
-                    type: 'unterminated_value',
-                    value: this.input.substring(start)
-                })
+            switch(this.input[this.pos]) {
+                case '\n':
+                    if (this.input[this.pos-1] === '\n') {
+                        string += '\n'
+                    } else if (/\S/.test(this.input[this.pos+1])) {
+                        string += ' '
+                    }
+                    break
+                case '\\':
+                    string += this.input.substring(this.pos, this.pos+2)
+                    this.pos++
+                    break
+                case '"':
+                    this.match('"')
+                    return string
+                case '%':
+                    // Unescaped percentage - the intention must have been to
+                    // escape it because unescaped ones only mean trouble.
+                    string += '\\%'
+                    break
+                default:
+                    string += this.input[this.pos]
+                    break
             }
             this.pos++
         }
+        this.errors.push({type: 'unexpected_eof'})
+        return string
     }
 
     singleValue() {
@@ -708,7 +746,7 @@ export class BibLatexParser {
       this.pos--
 
       // simplify parsing by taking the whole comment, throw away newlines, replace the escaped separators with tabs, and
-      // then split on the remaining non-secaped separators
+      // then split on the remaining non-escaped separators
       // I use \u2004 to protect \; and \u2005 to protect \\\; (the escaped version of ';') when splitting lines at ;
       let lines = this.input.substring(start, this.pos).replace(/[\r\n]/g, '').replace(/\\\\\\;/g, '\u2005').replace(/\\;/g, '\u2004').split(';')
       lines = lines.map(line => {

@@ -52,7 +52,7 @@
         "title": [
           {
             "type": "text",
-            "text": "Warped Graviton \"Z + Missing Energy\" Signal at Hadron  Colliders"
+            "text": "Warped Graviton \"Z + Missing Energy\" Signal at Hadron Colliders"
           }
         ],
         "journaltitle": [
@@ -94,7 +94,7 @@
       },
       "raw_fields": {
         "author": "Chen, Chien-Yi and Davoudiasl, Hooman and Kim, Doojin",
-        "title": "Warped Graviton \"Z + Missing Energy\" Signal at Hadron\n Colliders",
+        "title": "Warped Graviton \"Z + Missing Energy\" Signal at Hadron Colliders",
         "journal": "Phys.Rev.",
         "volume": "D89",
         "pages": "096007",
@@ -103,7 +103,7 @@
         "eprint": "1403.3399",
         "archiveprefix": "arXiv",
         "primaryclass": "hep-ph",
-        "slaccitation": ""
+        "slaccitation": "} "
       },
       "unknown_fields": {
         "year": [
@@ -112,14 +112,18 @@
             "text": "2014"
           }
         ],
-        "slaccitation": []
+        "slaccitation": [
+          {
+            "type": "text",
+            "text": "} "
+          }
+        ]
       }
     }
   },
   "errors": [
     {
-      "type": "unterminated_value",
-      "value": "}\n"
+      "type": "unexpected_eof"
     },
     {
       "type": "token_mismatch",

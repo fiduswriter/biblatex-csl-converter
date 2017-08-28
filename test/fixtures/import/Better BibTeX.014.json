@@ -7,12 +7,12 @@
         "title": [
           {
             "type": "text",
-            "text": "Escaped backslash followed by {}: {"
+            "text": "Escaped backslash followed by \\{\\}: \\\\{}"
           }
         ]
       },
       "raw_fields": {
-        "title": "Escaped backslash followed by \\{\\}: \\\\{"
+        "title": "Escaped backslash followed by \\{\\}: \\\\{}"
       }
     }
   }

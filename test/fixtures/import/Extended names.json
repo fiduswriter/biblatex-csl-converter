@@ -465,7 +465,7 @@
             "text": "PMID: 349387"
           }
         ],
-        "eprint": "http://dx.doi.org/10.1056/NEJM197806222982503\n\n"
+        "eprint": "http://dx.doi.org/10.1056/NEJM197806222982503\n"
       },
       "raw_fields": {
         "author": "Goldenberg , David M. and DeLand , Frank and Kim , Euishin and Bennett , Sidney and Primus , F. James and {family=Nagell, prefix=van, \"given={John R.}\", suffix=Jr.} and Estes , Norman and DeSimone , Philip and Rayburn , Pam ",
@@ -477,8 +477,8 @@
         "year": "1978",
         "doi": "10.1056/NEJM197806222982503",
         "note": "PMID: 349387",
-        "url": "http://dx.doi.org/10.1056/NEJM197806222982503\n\n",
-        "eprint": "http://dx.doi.org/10.1056/NEJM197806222982503\n\n"
+        "url": "http://dx.doi.org/10.1056/NEJM197806222982503\n",
+        "eprint": "http://dx.doi.org/10.1056/NEJM197806222982503\n"
       },
       "unknown_fields": {
         "year": [
@@ -495,7 +495,7 @@
       "type": "unknown_uri",
       "entry": "doi:10.1056/NEJM197806222982503",
       "field_name": "url",
-      "value": "http://dx.doi.org/10.1056/NEJM197806222982503\n\n"
+      "value": "http://dx.doi.org/10.1056/NEJM197806222982503\n"
     }
   ],
   "warnings": [

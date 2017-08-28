@@ -192,7 +192,7 @@
         "doi": "10.1088/0004-637X/744/2/93"
       },
       "raw_fields": {
-        "author": "{Battisti}, A.~J. and {Meiring}, J.~D. and {Tripp}, T.~M. and \n {Prochaska}, J.~X. and {Werk}, J.~K. and {Jenkins}, E.~B. and \n {Lehner}, N. and {Tumlinson}, J. and {Thom}, C.",
+        "author": "{Battisti}, A.~J. and {Meiring}, J.~D. and {Tripp}, T.~M. and  {Prochaska}, J.~X. and {Werk}, J.~K. and {Jenkins}, E.~B. and  {Lehner}, N. and {Tumlinson}, J. and {Thom}, C.",
         "title": "{The First Observations of Low-redshift Damped Ly{$alpha$} Systems with the Cosmic Origins Spectrograph: Chemical Abundances and Affiliated Galaxies}",
         "journal": "apj",
         "archiveprefix": "arXiv",
@@ -427,7 +427,7 @@
         "doi": "10.1088/0004-637X/744/2/93"
       },
       "raw_fields": {
-        "author": "{Battisti}, A.~J. and {Meiring}, J.~D. and {Tripp}, T.~M. and\n {Prochaska}, J.~X. and {Werk}, J.~K. and {Jenkins}, E.~B. and\n {Lehner}, N. and {Tumlinson}, J. and {Thom}, C.",
+        "author": "{Battisti}, A.~J. and {Meiring}, J.~D. and {Tripp}, T.~M. and {Prochaska}, J.~X. and {Werk}, J.~K. and {Jenkins}, E.~B. and {Lehner}, N. and {Tumlinson}, J. and {Thom}, C.",
         "title": "{The First Observations of Low-redshift Damped Ly{$alpha$} Systems with the Cosmic Origins Spectrograph: Chemical Abundances and Affiliated Galaxies}",
         "journal": "apj",
         "archiveprefix": "arXiv",
