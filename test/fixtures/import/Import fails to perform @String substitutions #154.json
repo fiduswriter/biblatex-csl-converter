@@ -42,12 +42,6 @@
             }
           ]
         ]
-      },
-      "raw_fields": {
-        "author": "R. A. Bert",
-        "title": "SQL is great",
-        "publisher": "Freds Publishing",
-        "address": "London, UK"
       }
     }
   }

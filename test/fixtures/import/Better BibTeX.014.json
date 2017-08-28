@@ -10,9 +10,6 @@
             "text": "Escaped backslash followed by {}: \n"
           }
         ]
-      },
-      "raw_fields": {
-        "title": "Escaped backslash followed by \\{\\}: \\\\{}"
       }
     }
   }

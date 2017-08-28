@@ -64,14 +64,6 @@
           }
         ]
       },
-      "raw_fields": {
-        "author": "{Abramowitz}, Milton and {Stegun}, Irene A.",
-        "title": "Handbook of Mathematical Functions with Formulas, Graphs, and Mathematical Tables",
-        "publisher": "Dover",
-        "year": "1964",
-        "address": "New York",
-        "edition": "ninth Dover printing, tenth GPO printing"
-      },
       "unknown_fields": {
         "year": [
           {
@@ -136,13 +128,6 @@
             "text": "0385527403"
           }
         ]
-      },
-      "raw_fields": {
-        "author": "Torre, Joe and Verducci, Tom",
-        "publisher": "Doubleday",
-        "title": "The Yankee Years",
-        "year": "2008",
-        "isbn": "0385527403"
       },
       "unknown_fields": {
         "year": [

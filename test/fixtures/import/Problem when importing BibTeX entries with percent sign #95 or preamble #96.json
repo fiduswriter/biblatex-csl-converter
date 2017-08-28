@@ -111,22 +111,6 @@
           "Electrochromic\nproperties"
         ]
       },
-      "raw_fields": {
-        "title": "Synthesis and electrochromic study of sol-gel cuprous oxide nanoparticles accumulated on silica thin film",
-        "author": "Akhavan, O. and Tohidi, H. and Moshfegh, A. Z.",
-        "journal": "Thin Solid Films",
-        "year": "2009",
-        "number": "24",
-        "pages": "6700--6706",
-        "volume": "517",
-        "abstract": "In this study, electrochromic properties of cuprous oxide nanoparticles, self-accumulated on the surface of\na sol-gel silica thin film, have been investigated by using UV-visible spectrophotometry in a lithium-based electrolyte\ncell. The cuprous oxide nanoparticles showed a reversible electrochromic process with a thin film transmission reduction\nof about 50% in a narrow wavelength range of 400-500Ânm, as compared to the bleached state of the film. Using optical\ntransmission measurement, we have found that the band gap energy of the films reduced from 2.7ÂeV for Cu2O to 1.3ÂeV for\nCuO by increasing the annealing temperature from 220 to 300Â°C in an N2 environment for 1Âh. Study of the band gaps of\nthe as-deposited, colored and bleached states of the nanoparticles showed that the electrochromic process corresponded\nto a reversible red-ox conversion of Cu2O to CuO on the film surface, in addition to the reversible red-ox reaction of\nthe Cu2O film. X-ray photoelectron spectroscopy indicated that the copper oxide nanoparticles accumulated on the film\nsurface, after annealing the samples at 200Â°C. Surface morphology of the films and particle size of the surface copper\noxides have also been studied by atomic force microscopy analysis. The copper oxide nanoparticles with average size of\nabout 100Ânm increased the surface area ratio and surface roughness of the silica films from 2.2% and 0.8Ânm to 51% and\n21Ânm, respectively.",
-        "doi": "10.1016/j.tsf.2009.05.016",
-        "file": "Akhavan_2009.pdf:CopperOxides\\Akhavan_2009.pdf:PDF",
-        "issn": "0040-6090",
-        "keywords": "Copper oxides, Nanoparticles, Sol-gel deposition, Optical properties, Band-gap energy, Electrochromic\nproperties",
-        "owner": "Francesco",
-        "timestamp": "2010.03.08"
-      },
       "unknown_fields": {
         "year": [
           {
@@ -261,22 +245,6 @@
           "Band-gap energy",
           "Electrochromic\nproperties"
         ]
-      },
-      "raw_fields": {
-        "title": "Synthesis and electrochromic study of sol-gel cuprous oxide nanoparticles accumulated on silica thin film",
-        "author": "Akhavan, O. and Tohidi, H. and Moshfegh, A. Z.",
-        "journal": "Thin Solid Films",
-        "year": "2009",
-        "number": "24",
-        "pages": "6700--6706",
-        "volume": "517",
-        "abstract": "In this study, electrochromic properties of cuprous oxide nanoparticles, self-accumulated on the surface of\na sol-gel silica thin film, have been investigated by using UV-visible spectrophotometry in a lithium-based electrolyte\ncell. The cuprous oxide nanoparticles showed a reversible electrochromic process with a thin film transmission reduction\nof about 50% in a narrow wavelength range of 400-500Ânm, as compared to the bleached state of the film. Using optical\ntransmission measurement, we have found that the band gap energy of the films reduced from 2.7ÂeV for Cu2O to 1.3ÂeV for\nCuO by increasing the annealing temperature from 220 to 300Â°C in an N2 environment for 1Âh. Study of the band gaps of\nthe as-deposited, colored and bleached states of the nanoparticles showed that the electrochromic process corresponded\nto a reversible red-ox conversion of Cu2O to CuO on the film surface, in addition to the reversible red-ox reaction of\nthe Cu2O film. X-ray photoelectron spectroscopy indicated that the copper oxide nanoparticles accumulated on the film\nsurface, after annealing the samples at 200Â°C. Surface morphology of the films and particle size of the surface copper\noxides have also been studied by atomic force microscopy analysis. The copper oxide nanoparticles with average size of\nabout 100Ânm increased the surface area ratio and surface roughness of the silica films from 2.2% and 0.8Ânm to 51% and\n21Ânm, respectively.",
-        "doi": "10.1016/j.tsf.2009.05.016",
-        "file": "Akhavan_2009.pdf:CopperOxides\\Akhavan_2009.pdf:PDF",
-        "issn": "0040-6090",
-        "keywords": "Copper oxides, Nanoparticles, Sol-gel deposition, Optical properties, Band-gap energy, Electrochromic\nproperties",
-        "owner": "Francesco",
-        "timestamp": "2010.03.08"
       },
       "unknown_fields": {
         "year": [

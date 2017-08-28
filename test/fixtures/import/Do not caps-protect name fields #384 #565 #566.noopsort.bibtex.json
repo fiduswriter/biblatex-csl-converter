@@ -28,10 +28,6 @@
             "text": "[van Gogh][Vincent]"
           }
         ]
-      },
-      "raw_fields": {
-        "author": "{\\noopsort{gogh}}{van Gogh}, Vincent",
-        "note": "[van Gogh][Vincent]"
       }
     },
     "1": {
@@ -62,10 +58,6 @@
             "text": "[Humboldt][Alexander von]"
           }
         ]
-      },
-      "raw_fields": {
-        "author": "{\\noopsort{humboldt}}von Humboldt, Alexander",
-        "note": "[Humboldt][Alexander von]"
       }
     },
     "2": {
@@ -96,10 +88,6 @@
             "text": "[Beauvoir][Simone de]"
           }
         ]
-      },
-      "raw_fields": {
-        "author": "{\\noopsort{beauvoir}}de Beauvoir, Simone",
-        "note": "[Beauvoir][Simone de]"
       }
     },
     "3": {
@@ -135,10 +123,6 @@
             "text": "[\"de Gaulle\"][Charles]"
           }
         ]
-      },
-      "raw_fields": {
-        "author": "{de Gaulle}, Charles",
-        "note": "[\"de Gaulle\"][Charles]"
       }
     },
     "4": {
@@ -173,10 +157,6 @@
             "text": "[King][Martin Luther, Jr.]"
           }
         ]
-      },
-      "raw_fields": {
-        "author": "King, Jr., Martin Luther",
-        "note": "[King][Martin Luther, Jr.]"
       }
     },
     "5": {
@@ -211,10 +191,6 @@
             "text": "[Stevenson][Adlai E.,! III]"
           }
         ]
-      },
-      "raw_fields": {
-        "author": "Stevenson, III, Adlai E.",
-        "note": "[Stevenson][Adlai E.,! III]"
       }
     },
     "6": {
@@ -237,10 +213,6 @@
             "text": "[[National Aeronautics and Space Administration]]"
           }
         ]
-      },
-      "raw_fields": {
-        "author": "{National Aeronautics and Space Administration}",
-        "note": "[[National Aeronautics and Space Administration]]"
       }
     },
     "7": {
@@ -271,10 +243,6 @@
             "text": "[boven d'Eert][Christianus]"
           }
         ]
-      },
-      "raw_fields": {
-        "author": "{\\noopsort{eert}}{boven d'Eert}, Christianus",
-        "note": "[boven d'Eert][Christianus]"
       }
     },
     "8": {
@@ -303,10 +271,6 @@
             "text": "['s-Gravesande][Goverdus]"
           }
         ]
-      },
-      "raw_fields": {
-        "author": "{\\noopsort{gravesande}}{'s-Gravesande}, Goverdus",
-        "note": "['s-Gravesande][Goverdus]"
       }
     },
     "9": {
@@ -335,10 +299,6 @@
             "text": "[De Quincey][Thomas]"
           }
         ]
-      },
-      "raw_fields": {
-        "author": "De Quincey, Thomas",
-        "note": "[De Quincey][Thomas]"
       }
     },
     "10": {
@@ -374,10 +334,6 @@
             "text": "[Ortega y Gasset][José]"
           }
         ]
-      },
-      "raw_fields": {
-        "author": "{Ortega y Gasset}, José",
-        "note": "[Ortega y Gasset][José]"
       }
     },
     "11": {
@@ -406,10 +362,6 @@
             "text": "[D'Amato][Alfonse]"
           }
         ]
-      },
-      "raw_fields": {
-        "author": "D'Amato, Alfonse",
-        "note": "[D'Amato][Alfonse]"
       }
     },
     "12": {
@@ -445,10 +397,6 @@
             "text": "[Sadat][Anwar el-]"
           }
         ]
-      },
-      "raw_fields": {
-        "author": "{\\noopsort{sadat}}el-{\\aftergroup\\ignorespaces} Sadat, Anwar",
-        "note": "[Sadat][Anwar el-]"
       }
     },
     "13": {
@@ -483,10 +431,6 @@
             "text": "[La Follette][Robert M., Sr.]"
           }
         ]
-      },
-      "raw_fields": {
-        "author": "La Follette, Sr., Robert M.",
-        "note": "[La Follette][Robert M., Sr.]"
       }
     },
     "14": {
@@ -522,10 +466,6 @@
             "text": "[\"de la Mare\"][Walter]"
           }
         ]
-      },
-      "raw_fields": {
-        "author": "{de la Mare}, Walter",
-        "note": "[\"de la Mare\"][Walter]"
       }
     },
     "15": {
@@ -554,10 +494,6 @@
             "text": "[DeGette][Diana]"
           }
         ]
-      },
-      "raw_fields": {
-        "author": "DeGette, Diana",
-        "note": "[DeGette][Diana]"
       }
     },
     "16": {
@@ -586,10 +522,6 @@
             "text": "[Saunders][John Bertrand de Cusance Morant]"
           }
         ]
-      },
-      "raw_fields": {
-        "author": "Saunders, John Bertrand de Cusance Morant",
-        "note": "[Saunders][John Bertrand de Cusance Morant]"
       }
     },
     "17": {
@@ -612,10 +544,6 @@
             "text": "[[Marcus Aurelius]]"
           }
         ]
-      },
-      "raw_fields": {
-        "author": "{Marcus Aurelius}",
-        "note": "[[Marcus Aurelius]]"
       }
     },
     "18": {
@@ -650,10 +578,6 @@
             "text": "[Dumas][Alexandre, père]"
           }
         ]
-      },
-      "raw_fields": {
-        "author": "Dumas, père, Alexandre",
-        "note": "[Dumas][Alexandre, père]"
       }
     },
     "19": {
@@ -682,10 +606,6 @@
             "text": "[Van Rensselaer][Stephen]"
           }
         ]
-      },
-      "raw_fields": {
-        "author": "Van Rensselaer, Stephen",
-        "note": "[Van Rensselaer][Stephen]"
       }
     },
     "20": {
@@ -714,10 +634,6 @@
             "text": "[L'Enfant][Pierre-Charles]"
           }
         ]
-      },
-      "raw_fields": {
-        "author": "L'Enfant, Pierre-Charles",
-        "note": "[L'Enfant][Pierre-Charles]"
       }
     },
     "21": {
@@ -753,10 +669,6 @@
             "text": "[\"van Gulik\"][Robert]"
           }
         ]
-      },
-      "raw_fields": {
-        "author": "{van Gulik}, Robert",
-        "note": "[\"van Gulik\"][Robert]"
       }
     },
     "22": {
@@ -785,10 +697,6 @@
             "text": "[Sackville-West][Victoria]"
           }
         ]
-      },
-      "raw_fields": {
-        "author": "Sackville-West, Victoria",
-        "note": "[Sackville-West][Victoria]"
       }
     },
     "23": {
@@ -817,10 +725,6 @@
             "text": "[Vaughan Williams][Ralph]"
           }
         ]
-      },
-      "raw_fields": {
-        "author": "Vaughan Williams, Ralph",
-        "note": "[Vaughan Williams][Ralph]"
       }
     },
     "24": {
@@ -856,10 +760,6 @@
             "text": "[Mies van der Rohe][Ludwig]"
           }
         ]
-      },
-      "raw_fields": {
-        "author": "{Mies van der Rohe}, Ludwig",
-        "note": "[Mies van der Rohe][Ludwig]"
       }
     },
     "25": {
@@ -888,10 +788,6 @@
             "text": "[d'Alembert][Jean le Rond]"
           }
         ]
-      },
-      "raw_fields": {
-        "author": "{\\noopsort{alembert}}{d'Alembert}, Jean le Rond",
-        "note": "[d'Alembert][Jean le Rond]"
       }
     },
     "26": {
@@ -922,10 +818,6 @@
             "text": "[Tocqueville][Alexis de]"
           }
         ]
-      },
-      "raw_fields": {
-        "author": "{\\noopsort{tocqueville}}de Tocqueville, Alexis",
-        "note": "[Tocqueville][Alexis de]"
       }
     },
     "27": {
@@ -961,10 +853,6 @@
             "text": "[La Fontaine][Jean de]"
           }
         ]
-      },
-      "raw_fields": {
-        "author": "{\\noopsort{la fontaine}}de La Fontaine, Jean",
-        "note": "[La Fontaine][Jean de]"
       }
     },
     "28": {
@@ -1000,10 +888,6 @@
             "text": "[La Salle][René-Robert Cavelier de]"
           }
         ]
-      },
-      "raw_fields": {
-        "author": "{\\noopsort{la salle}}de La Salle, René-Robert Cavelier",
-        "note": "[La Salle][René-Robert Cavelier de]"
       }
     },
     "29": {
@@ -1039,10 +923,6 @@
             "text": "[du Puy de Clinchamps][PhU+0097ilippe]"
           }
         ]
-      },
-      "raw_fields": {
-        "author": "{\\noopsort{puy de clinchamps}}{du Puy de Clinchamps}, {Ph}ilippe",
-        "note": "[du Puy de Clinchamps][PhU+0097ilippe]"
       }
     },
     "30": {
@@ -1078,10 +958,6 @@
             "text": "[Stein][Heinrich Friedrich Karl vom und zum]"
           }
         ]
-      },
-      "raw_fields": {
-        "author": "{\\noopsort{stein}}vom und zum Stein, Heinrich Friedrich Karl",
-        "note": "[Stein][Heinrich Friedrich Karl vom und zum]"
       }
     },
     "31": {
@@ -1112,10 +988,6 @@
             "text": "[Silva][Agostinho da]"
           }
         ]
-      },
-      "raw_fields": {
-        "author": "{\\noopsort{silva}}da Silva, Agostinho",
-        "note": "[Silva][Agostinho da]"
       }
     },
     "32": {
@@ -1151,10 +1023,6 @@
             "text": "[\"da Gama\"][Vasco]"
           }
         ]
-      },
-      "raw_fields": {
-        "author": "{da Gama}, Vasco",
-        "note": "[\"da Gama\"][Vasco]"
       }
     },
     "33": {
@@ -1183,10 +1051,6 @@
             "text": "[D'Annunzio][Gabriele]"
           }
         ]
-      },
-      "raw_fields": {
-        "author": "D'Annunzio, Gabriele",
-        "note": "[D'Annunzio][Gabriele]"
       }
     },
     "34": {
@@ -1215,10 +1079,6 @@
             "text": "[Da Ponte][Lorenzo]"
           }
         ]
-      },
-      "raw_fields": {
-        "author": "Da Ponte, Lorenzo",
-        "note": "[Da Ponte][Lorenzo]"
       }
     },
     "35": {
@@ -1247,10 +1107,6 @@
             "text": "[Della Robbia][Luca]"
           }
         ]
-      },
-      "raw_fields": {
-        "author": "Della Robbia, Luca",
-        "note": "[Della Robbia][Luca]"
       }
     },
     "36": {
@@ -1286,10 +1142,6 @@
             "text": "[Este][Beatrice d']"
           }
         ]
-      },
-      "raw_fields": {
-        "author": "{\\noopsort{este}}d'{\\aftergroup\\ignorespaces} Este, Beatrice",
-        "note": "[Este][Beatrice d']"
       }
     },
     "37": {
@@ -1325,10 +1177,6 @@
             "text": "[Medici][Lorenzo de'U+200B]"
           }
         ]
-      },
-      "raw_fields": {
-        "author": "{\\noopsort{medici}}de'\\mbox{} Medici, Lorenzo",
-        "note": "[Medici][Lorenzo de'U+200B]"
       }
     },
     "38": {
@@ -1357,10 +1205,6 @@
             "text": "[al-Hakim][Tawfiq]"
           }
         ]
-      },
-      "raw_fields": {
-        "author": "{\\noopsort{hakim}}{al-Hakim}, Tawfiq",
-        "note": "[al-Hakim][Tawfiq]"
       }
     },
     "39": {
@@ -1389,10 +1233,6 @@
             "text": "[Le Vayer][François de La Mothe]"
           }
         ]
-      },
-      "raw_fields": {
-        "author": "Le Vayer, François de La Mothe",
-        "note": "[Le Vayer][François de La Mothe]"
       }
     }
   }

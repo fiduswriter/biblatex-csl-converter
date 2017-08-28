@@ -191,23 +191,6 @@
         ],
         "doi": "10.1088/0004-637X/744/2/93"
       },
-      "raw_fields": {
-        "author": "{Battisti}, A.~J. and {Meiring}, J.~D. and {Tripp}, T.~M. and \n {Prochaska}, J.~X. and {Werk}, J.~K. and {Jenkins}, E.~B. and \n {Lehner}, N. and {Tumlinson}, J. and {Thom}, C.",
-        "title": "{The First Observations of Low-redshift Damped Ly{$alpha$} Systems with the Cosmic Origins Spectrograph: Chemical Abundances and Affiliated Galaxies}",
-        "journal": "apj",
-        "archiveprefix": "arXiv",
-        "eprint": "1110.4557",
-        "primaryclass": "astro-ph.CO",
-        "keywords": "galaxies: abundances, galaxies: ISM, quasars: absorption lines",
-        "year": "2012",
-        "month": "January",
-        "volume": "744",
-        "eid": "93",
-        "pages": "93",
-        "doi": "10.1088/0004-637X/744/2/93",
-        "adsurl": "http://adsabs.harvard.edu/abs/2012ApJ...744...93B",
-        "adsnote": "Provided by the SAO/NASA Astrophysics Data System"
-      },
       "unknown_fields": {
         "year": [
           {
@@ -425,23 +408,6 @@
           ]
         ],
         "doi": "10.1088/0004-637X/744/2/93"
-      },
-      "raw_fields": {
-        "author": "{Battisti}, A.~J. and {Meiring}, J.~D. and {Tripp}, T.~M. and\n {Prochaska}, J.~X. and {Werk}, J.~K. and {Jenkins}, E.~B. and\n {Lehner}, N. and {Tumlinson}, J. and {Thom}, C.",
-        "title": "{The First Observations of Low-redshift Damped Ly{$alpha$} Systems with the Cosmic Origins Spectrograph: Chemical Abundances and Affiliated Galaxies}",
-        "journal": "apj",
-        "archiveprefix": "arXiv",
-        "eprint": "1110.4557",
-        "primaryclass": "astro-ph.CO",
-        "keywords": "galaxies: abundances, galaxies: ISM, quasars: absorption lines",
-        "year": "2012",
-        "month": "January",
-        "volume": "744",
-        "eid": "93",
-        "pages": "93",
-        "doi": "10.1088/0004-637X/744/2/93",
-        "adsurl": "http://adsabs.harvard.edu/abs/2012ApJ...744...93B",
-        "adsnote": "Provided by the SAO/NASA Astrophysics Data System"
       },
       "unknown_fields": {
         "year": [

@@ -58,18 +58,6 @@
           ]
         ]
       },
-      "raw_fields": {
-        "title": "Bibtex from CrossRef",
-        "issn": "0263-9475",
-        "url": "http://dx.doi.org/10.2307/25564177",
-        "doi": "10.2307/25564177",
-        "number": "109",
-        "journal": "Circa",
-        "publisher": "JSTOR",
-        "author": "Peters, Robert",
-        "year": "2004",
-        "pages": "24"
-      },
       "unexpected_fields": {
         "publisher": [
           [

@@ -67,12 +67,6 @@
           }
         ]
       },
-      "raw_fields": {
-        "author": "Nöme, Name",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "Why {{Is Apple Launching}} a {{New Version}} of the {{iPod}}?",
-        "year": "2014"
-      },
       "unknown_fields": {
         "timestamp": [
           {
@@ -161,12 +155,6 @@
             "text": "?"
           }
         ]
-      },
-      "raw_fields": {
-        "author": "{van Gögh}, Vincent",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "Why {{Is Apple Launching}} a {{New Version}} of the {{iPod}}?",
-        "year": "2014"
       },
       "unknown_fields": {
         "timestamp": [

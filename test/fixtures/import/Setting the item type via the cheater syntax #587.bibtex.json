@@ -42,15 +42,6 @@
           }
         ]
       },
-      "raw_fields": {
-        "abstract": "Example from CMoS, 16e, 14.249",
-        "address": "Mesopotamia, OH",
-        "author": "Clark, Hazel V.",
-        "publisher": "{Trumbull County Historical Society}",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "Mesopotamia: Between Two Rivers",
-        "year": "1957"
-      },
       "unexpected_fields": {
         "publisher": [
           [
@@ -105,13 +96,6 @@
             "text": "+4059"
           }
         ],
-        "urldate": "2009-10-06"
-      },
-      "raw_fields": {
-        "abstract": "Example from CMoS, 16e, 14.272",
-        "journal": "NASA/IPAC Extragalactic Database",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "Object Name {{IRAS F00400}}+4059",
         "urldate": "2009-10-06"
       },
       "unexpected_fields": {
@@ -188,17 +172,6 @@
             "text": "Sonatas and Fantasies for the Piano"
           }
         ]
-      },
-      "raw_fields": {
-        "abstract": "Example from CMoS, 16e, 14.269\n``Prepared from the autographs and earliest printed sources by Nathan\nBroder''",
-        "address": "Bryn Mawr, PA",
-        "author": "Mozart, Wolfgang Amadeus",
-        "edition": "Rev. ed.",
-        "editor": "Broder, Nathan",
-        "publisher": "{Theodore Presser}",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "Sonatas and Fantasies for the Piano",
-        "year": "1960"
       },
       "unexpected_fields": {
         "edition": [
@@ -328,20 +301,6 @@
           }
         ]
       },
-      "raw_fields": {
-        "abstract": "Example from CMoS, 16e, 14.215\n``ed. and trans. John Charles Chasteen''",
-        "annote": "biblatex-chicago example, adapted from http://mirrors.ctan.org/macros/latex/contrib/biblatex-contrib/biblatex-chicago/doc/examples/dates-test.bib\nOriginal annotation:\n*16th edition only.* A Review entry presenting a review from a scholarly journaltitle, hence no entrysubtype needed.~~Note the bibstrings in the title of the review, and the formatting of the title of the book reviewed there.~~Also note the use of $\\$parteditandtrans.~~The author-date system doesn't absolutely require the use of these mechanisms, which were invented to cope with the differences between notes and bibliography in the other Chicago style.~~Still, although simply writing \"edited and translated by\" yourself will suffice, using these mechanisms will make your .bib file work across multiple languages, and will also allow it to work, with fewer modifications, in the notes $\\$\\& bibliography style, should that be needed.~~See next entry.\n~\nExample from CMoS, 16e, 14.125",
-        "author": "Ratliff, Ben",
-        "collaborator": "{Hermano Vianna}",
-        "journal": "Lingua Franca",
-        "language": "en-US",
-        "month": "April",
-        "pages": "B13--B14",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "The Mystery of Samba: {{Popular}} Music and National Identity in {{Brazil}}",
-        "volume": "9",
-        "year": "1999"
-      },
       "unknown_fields": {
         "collaborator": [
           {
@@ -409,17 +368,6 @@
             "text": "Deconstructing Dinner"
           }
         ]
-      },
-      "raw_fields": {
-        "abstract": "Example from CMoS, 16e, 14.125",
-        "author": "Kamp, David",
-        "chapter": "Sunday Book Review",
-        "collaborator": "Pollan, Michael",
-        "language": "en-US",
-        "month": "April",
-        "timestamp": "2015-02-24 12:14:36 +0100",
-        "title": "Deconstructing Dinner",
-        "year": "2006"
       },
       "unexpected_fields": {
         "chapter": [

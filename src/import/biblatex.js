@@ -15,11 +15,6 @@ import {edtfCheck} from "../edtf"
 
   /* Config options (default value for every option is false)
 
-    - rawFields (false/true):
-
-    Adds a `raw_fields` object to each entry which contains all fields with only
-    TeX character replacement and no other processing.
-
     - processUnexpected (false/true):
 
     Processes fields with names that are known, but are not expected for the given bibtype,
@@ -616,9 +611,6 @@ export class BibLatexParser {
             'fields': {}
         }
         this.currentRawFields = {}
-        if (this.config.rawFields) {
-            this.currentEntry['raw_fields'] = this.currentRawFields
-        }
         this.entries.push(this.currentEntry)
         if (this.currentEntry['entry_key'] !== null) {
             this.match(",")

@@ -52,10 +52,6 @@
             "text": "."
           }
         ]
-      },
-      "raw_fields": {
-        "author": "01e",
-        "title": "Blah \\emph{emph} and \\enquote{enquote}."
       }
     },
     "1": {
@@ -110,10 +106,6 @@
             "text": "."
           }
         ]
-      },
-      "raw_fields": {
-        "author": "01b",
-        "title": "Blah \\mkbibemph{mkbibemph} and \\mkbibquote{mkbibquote}."
       }
     },
     "2": {
@@ -168,10 +160,6 @@
             "text": "."
           }
         ]
-      },
-      "raw_fields": {
-        "author": "02e",
-        "title": "Blah \\emph{emph} and \\enquote{enquote}."
       }
     },
     "3": {
@@ -226,10 +214,6 @@
             "text": "."
           }
         ]
-      },
-      "raw_fields": {
-        "author": "02b",
-        "title": "Blah \\mkbibemph{mkbibemph} and \\mkbibquote{mkbibquote}."
       }
     },
     "4": {
@@ -273,13 +257,6 @@
             "text": "Ph.D."
           }
         ]
-      },
-      "raw_fields": {
-        "title": "Xenonika: medical texts associated with xenones in the late Byzantine period",
-        "author": "Bennett, David Christopher",
-        "date": "2003",
-        "institution": "University of London",
-        "type": "Ph.D."
       }
     },
     "5": {
@@ -341,13 +318,6 @@
             ]
           ]
         ]
-      },
-      "raw_fields": {
-        "title": "Byzantium between East and West: Competing Hellenisms in the \\mkbibemph{Alexiad} of Anna Komnene and her Contemporaries",
-        "author": "Glen Cooper",
-        "crossref": "Classen2013",
-        "date": "2013",
-        "pages": "263-87"
       },
       "unknown_fields": {
         "crossref": [
@@ -426,14 +396,6 @@
             ]
           }
         ]
-      },
-      "raw_fields": {
-        "title": "Die dem Boethius fälschlich zugeschriebene Abhandlung des Dominicus Gundisalvi {'De} unitate'",
-        "date": "1891",
-        "journaltitle": "Beiträge zur Geschichte der Philosophie des Mittelalters",
-        "pages": "1-11",
-        "volume": "1",
-        "editor": "Correns, Paul"
       }
     },
     "7": {
@@ -485,14 +447,6 @@
             "text": "4"
           }
         ]
-      },
-      "raw_fields": {
-        "title": "Encyclopedia Iranica",
-        "lista": "Besmallah: in exegesis, jurisprudence, and cultural life",
-        "author": "Algar, Hamid",
-        "date": "1985",
-        "pages": "172-4",
-        "volume": "4"
       },
       "unknown_fields": {
         "lista": [
@@ -567,13 +521,6 @@
             }
           ]
         ]
-      },
-      "raw_fields": {
-        "title": "Herbs and Healers from the Ancient Mediterranean through the Medieval West: Essays in Honor of John M. Riddle",
-        "date": "2012",
-        "editor": "Anne van Arsdall and Timothy Graham",
-        "location": "Burlington, VT",
-        "publisher": "Ashgate"
       }
     }
   },

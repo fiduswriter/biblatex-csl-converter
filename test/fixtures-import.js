@@ -13,7 +13,7 @@ const clean = state => {
 
 const verify = bibfile => {
   let input = fs.readFileSync(bibfile, 'utf8')
-  let parser = new BibLatexParser(input, {rawFields: true, processUnexpected: true, processUnknown: true})
+  let parser = new BibLatexParser(input, {processUnexpected: true, processUnknown: true})
   let name = path.basename(bibfile, path.extname(bibfile))
 
   // this must be called before requesting warnings or errors
