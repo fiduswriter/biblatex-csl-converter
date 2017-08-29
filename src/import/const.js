@@ -2931,7 +2931,7 @@ export const TeXSpecialChars = [
   ["\\\\male", '\u2642'],
   ["\\\\nisd", '\u22FA'],
   ["\\\\quad", '\u2001'],
-  ["\\\\text", '\u03B6'],
+  ["\\\\text", ''],
   ["\\\\v\\ c", '\u010D'],
   ["\\\\v\\ n", '\u0148'],
   ["\\\\glj", '\u2AA4'],
