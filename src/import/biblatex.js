@@ -562,14 +562,22 @@ export class BibLatexParser {
 
     _reformRange(rangeString) {
         return rangeString.split(',').map(string => {
-            let parts = string.split('-')
+            let parts = string.split('--')
             if (parts.length > 1) {
                 return [
                     this._reformLiteral(parts.shift().trim()),
-                    this._reformLiteral(parts.pop().trim())
+                    this._reformLiteral(parts.join('--').trim())
                 ]
             } else {
-                return [this._reformLiteral(string.trim())]
+                parts = string.split('-')
+                if (parts.length > 1) {
+                    return [
+                        this._reformLiteral(parts.shift().trim()),
+                        this._reformLiteral(parts.join('-').trim())
+                    ]
+                } else {
+                    return [this._reformLiteral(string.trim())]
+                }
             }
         })
     }
