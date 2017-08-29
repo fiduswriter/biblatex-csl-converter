@@ -1573,11 +1573,28 @@
           },
           {
             "type": "text",
-            "text": "O(1 1 1)-CuCUS"
+            "text": "O(1 1 1)-Cu"
           },
           {
             "type": "text",
-            "text": ": A first-principles density functional study"
+            "text": "CUS",
+            "marks": [
+              {
+                "type": "nocase"
+              },
+              {
+                "type": "sub"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ": A first-principles density functional study",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
           }
         ],
         "author": [
@@ -11395,7 +11412,16 @@
         "title": [
           {
             "type": "text",
-            "text": "On a biphononic origin of the 1125 cm"
+            "text": "On a biphononic origin of the 1125 "
+          },
+          {
+            "type": "text",
+            "text": "cm",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
           },
           {
             "type": "text",
@@ -46152,7 +46178,7 @@
           },
           {
             "type": "text",
-            "text": "Tc",
+            "text": "T",
             "marks": [
               {
                 "type": "nocase"
@@ -46161,7 +46187,24 @@
           },
           {
             "type": "text",
-            "text": " Superconductor Based Optoelectronic Devices"
+            "text": "c",
+            "marks": [
+              {
+                "type": "nocase"
+              },
+              {
+                "type": "sub"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " Superconductor Based Optoelectronic Devices",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
           }
         ],
         "author": [
@@ -54346,7 +54389,20 @@
         "title": [
           {
             "type": "text",
-            "text": "Luminescence of Polycrystalline Cuprous Oxide Films on Copper Metal at 4 K and the Effects of Stress"
+            "text": "Luminescence of Polycrystalline Cuprous Oxide Films on Copper Metal at 4 "
+          },
+          {
+            "type": "text",
+            "text": "K",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " and the Effects of Stress"
           }
         ],
         "author": [
@@ -55509,7 +55565,7 @@
         "abstract": [
           {
             "type": "text",
-            "text": "CuO and Cu 2 O powders were reacted by hydrogen to study the reduction mechanism and the ionic states of Cu (Cu 2+ , Cu 1+ and Cu 0 ). The reduction behaviour and the existence of an intermediate state were investigated by using synchrotron-based high-resolution in situ x-ray diffraction (S-XRD) techniques. The results revealed that CuO directly reduces to metallic Cu ( ##IMG## [http://ej.iop.org/images/0953-8984/16/33/008/cm175281ieqn1.gif]  Cu"
+            "text": "CuO and Cu 2 O powders were reacted by hydrogen to study the reduction mechanism and the ionic states of Cu (Cu 2+ , Cu 1+ and Cu 0 ). The reduction behaviour and the existence of an intermediate state were investigated by using synchrotron-based high-resolution in situ x-ray diffraction (S-XRD) techniques. The results revealed that CuO directly reduces to metallic Cu ( ##IMG## [http://ej.iop.org/images/0953-8984/16/33/008/cm175281ieqn1.gif] Cu"
           },
           {
             "type": "text",
@@ -55522,7 +55578,7 @@
           },
           {
             "type": "text",
-            "text": "   Cu"
+            "text": "  Cu"
           },
           {
             "type": "text",
@@ -68733,7 +68789,7 @@
           },
           {
             "type": "text",
-            "text": "Tc",
+            "text": "T",
             "marks": [
               {
                 "type": "nocase"
@@ -68742,7 +68798,24 @@
           },
           {
             "type": "text",
-            "text": " Superconductivity"
+            "text": "c",
+            "marks": [
+              {
+                "type": "nocase"
+              },
+              {
+                "type": "sub"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " Superconductivity",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
           }
         ],
         "author": [
@@ -78134,7 +78207,12 @@
           },
           {
             "type": "text",
-            "text": "K"
+            "text": "K",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
           }
         ],
         "author": [
@@ -79837,7 +79915,16 @@
           },
           {
             "type": "text",
-            "text": "K et 320 "
+            "text": "K",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " et 320 "
           },
           {
             "type": "text",
@@ -79850,7 +79937,12 @@
           },
           {
             "type": "text",
-            "text": "K"
+            "text": "K",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
           }
         ],
         "author": [
@@ -88600,7 +88692,16 @@
         "title": [
           {
             "type": "text",
-            "text": "Étude de la semi-conductivité de l'oxyde cuivreux d'après son comportement magnétique entre 80 et 1000 K"
+            "text": "Étude de la semi-conductivité de l'oxyde cuivreux d'après son comportement magnétique entre 80 et 1000 "
+          },
+          {
+            "type": "text",
+            "text": "K",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
           }
         ],
         "author": [
@@ -100012,7 +100113,16 @@
           },
           {
             "type": "text",
-            "text": " in an Image Map with Fine Structures at Higher Fields up to 25 T"
+            "text": " in an Image Map with Fine Structures at Higher Fields up to 25 "
+          },
+          {
+            "type": "text",
+            "text": "T",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
           }
         ],
         "author": [
@@ -127476,7 +127586,16 @@
         "title": [
           {
             "type": "text",
-            "text": "Oxidation Mechanism of Copper at 623-1073 K"
+            "text": "Oxidation Mechanism of Copper at 623-1073 "
+          },
+          {
+            "type": "text",
+            "text": "K",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
           }
         ],
         "author": [
@@ -127610,7 +127729,16 @@
           },
           {
             "type": "text",
-            "text": " C"
+            "text": " "
+          },
+          {
+            "type": "text",
+            "text": "C",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
           }
         ],
         "author": [
@@ -127921,7 +128049,16 @@
           },
           {
             "type": "text",
-            "text": " at 600-1050 °C"
+            "text": " at 600-1050 °"
+          },
+          {
+            "type": "text",
+            "text": "C",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
           }
         ],
         "author": [
@@ -128044,7 +128181,20 @@
         "title": [
           {
             "type": "text",
-            "text": "A study of the initial oxidation of copper in 0.1 MPa oxygen and the effect of purity by metallographic methods"
+            "text": "A study of the initial oxidation of copper in 0.1 "
+          },
+          {
+            "type": "text",
+            "text": "MPa",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " oxygen and the effect of purity by metallographic methods"
           }
         ],
         "author": [
@@ -128190,7 +128340,16 @@
           },
           {
             "type": "text",
-            "text": "all dans la cuprite à 79 °K"
+            "text": "all dans la cuprite à 79 °"
+          },
+          {
+            "type": "text",
+            "text": "K",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
           }
         ],
         "author": [
@@ -128345,7 +128504,16 @@
           },
           {
             "type": "text",
-            "text": " at 77 °K"
+            "text": " at 77 °"
+          },
+          {
+            "type": "text",
+            "text": "K",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
           }
         ],
         "author": [
