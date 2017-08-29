@@ -498,7 +498,7 @@ export class BibLatexParser {
                     let items = splitTeXString(fValue)
                     oFields[fKey] = []
                     items.forEach((item) => {
-                        oFields[fKey].push(this._reformLiteral(item))
+                        oFields[fKey].push(this._reformLiteral(item.trim()))
                     })
                     break
                 case 'l_name':
