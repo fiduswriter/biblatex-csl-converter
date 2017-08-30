@@ -170,6 +170,9 @@ export class BibLatexLiteralParser {
                             this.textNode.marks.push({type:'sub'})
                             this.textNode.text = this.string[this.si+1]
                             this.addNewTextNode()
+                            if (this.currentMarks.length) {
+                                this.textNode.marks = this.currentMarks.slice()
+                            }
                             this.si += 2
                     }
                     break
@@ -232,6 +235,9 @@ export class BibLatexLiteralParser {
                             this.textNode.marks.push({type:'sup'})
                             this.textNode.text = this.string[this.si+1]
                             this.addNewTextNode()
+                            if (this.currentMarks.length) {
+                                this.textNode.marks = this.currentMarks.slice()
+                            }
                             this.si += 2
                     }
                     break
