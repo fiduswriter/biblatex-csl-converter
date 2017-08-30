@@ -313,7 +313,10 @@ export class BibLatexLiteralParser {
                         )
                     ) {
                         this.textNode.text += '\n'
-                    } else {
+                    } else if (
+                        /\S/.test(this.string[this.si-1]) &&
+                        /\S/.test(this.string[this.si+1])
+                    ) {
                         this.textNode.text += ' '
                     }
                     this.si++
