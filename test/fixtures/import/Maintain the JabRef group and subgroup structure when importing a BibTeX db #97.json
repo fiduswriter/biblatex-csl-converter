@@ -1589,12 +1589,7 @@
           },
           {
             "type": "text",
-            "text": ": A first-principles density functional study",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
+            "text": ": A first-principles density functional study"
           }
         ],
         "author": [
@@ -5901,12 +5896,7 @@
           },
           {
             "type": "text",
-            "text": " ",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
+            "text": " "
           },
           {
             "type": "text",
@@ -10183,7 +10173,16 @@
         "note": [
           {
             "type": "text",
-            "text": "in ``W. L. Severinghaus, Proceedings of the American Physical Society, Minutes of the Washington Meeting, Physical Review, 45 (1934), 739 ''"
+            "text": "in "
+          },
+          {
+            "type": "text",
+            "text": "W. L. Severinghaus, Proceedings of the American Physical Society, Minutes of the Washington Meeting, Physical Review, 45 (1934), 739 ",
+            "marks": [
+              {
+                "type": "enquote"
+              }
+            ]
           }
         ],
         "pages": [
@@ -11882,12 +11881,20 @@
         "title": [
           {
             "type": "text",
-            "text": "``Interdiffusion Coefficients from Conductivity Measurements - "
+            "text": "Interdiffusion Coefficients from Conductivity Measurements - ",
+            "marks": [
+              {
+                "type": "enquote"
+              }
+            ]
           },
           {
             "type": "text",
             "text": "A",
             "marks": [
+              {
+                "type": "enquote"
+              },
               {
                 "type": "nocase"
               }
@@ -11895,12 +11902,20 @@
           },
           {
             "type": "text",
-            "text": "pplication to "
+            "text": "pplication to ",
+            "marks": [
+              {
+                "type": "enquote"
+              }
+            ]
           },
           {
             "type": "text",
             "text": "Cu",
             "marks": [
+              {
+                "type": "enquote"
+              },
               {
                 "type": "nocase"
               }
@@ -11910,6 +11925,9 @@
             "type": "text",
             "text": "2",
             "marks": [
+              {
+                "type": "enquote"
+              },
               {
                 "type": "nocase"
               },
@@ -11924,7 +11942,7 @@
           },
           {
             "type": "text",
-            "text": "'' in "
+            "text": " in "
           },
           {
             "type": "text",
@@ -12038,7 +12056,16 @@
         "title": [
           {
             "type": "text",
-            "text": "``Kinetics of Vaporization of Cuprous Oxide'' in "
+            "text": "Kinetics of Vaporization of Cuprous Oxide",
+            "marks": [
+              {
+                "type": "enquote"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " in "
           },
           {
             "type": "text",
@@ -12665,12 +12692,7 @@
           },
           {
             "type": "text",
-            "text": ": A short review",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
+            "text": ": A short review"
           }
         ],
         "author": [
@@ -21461,7 +21483,16 @@
         "booktitle": [
           {
             "type": "text",
-            "text": "``Crystal Growth of Novel Electronic Materials'', Ceramic Transactions"
+            "text": "Crystal Growth of Novel Electronic Materials",
+            "marks": [
+              {
+                "type": "enquote"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ", Ceramic Transactions"
           }
         ],
         "editor": [
@@ -21587,7 +21618,16 @@
         "booktitle": [
           {
             "type": "text",
-            "text": "``Mass and Charge Transport in Ceramics'', Ceramic Transactions"
+            "text": "Mass and Charge Transport in Ceramics",
+            "marks": [
+              {
+                "type": "enquote"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ", Ceramic Transactions"
           }
         ],
         "editor": [
@@ -22532,25 +22572,20 @@
         "title": [
           {
             "type": "text",
-            "text": "``Crystal Structures Involving "
+            "text": "Crystal Structures Involving ",
+            "marks": [
+              {
+                "type": "enquote"
+              }
+            ]
           },
           {
             "type": "text",
             "text": "P",
             "marks": [
               {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": " and "
-          },
-          {
-            "type": "text",
-            "text": "T",
-            "marks": [
+                "type": "enquote"
+              },
               {
                 "type": "nocase"
               }
@@ -22558,7 +22593,37 @@
           },
           {
             "type": "text",
-            "text": " Layers'' in "
+            "text": " and ",
+            "marks": [
+              {
+                "type": "enquote"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "T",
+            "marks": [
+              {
+                "type": "enquote"
+              },
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " Layers",
+            "marks": [
+              {
+                "type": "enquote"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " in "
           },
           {
             "type": "text",
@@ -46199,12 +46264,7 @@
           },
           {
             "type": "text",
-            "text": " Superconductor Based Optoelectronic Devices",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
+            "text": " Superconductor Based Optoelectronic Devices"
           }
         ],
         "author": [
@@ -56389,25 +56449,15 @@
         "title": [
           {
             "type": "text",
-            "text": "Response to ``"
+            "text": "Response to "
           },
           {
             "type": "text",
             "text": "C",
             "marks": [
               {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": "omment on `"
-          },
-          {
-            "type": "text",
-            "text": "S",
-            "marks": [
+                "type": "enquote"
+              },
               {
                 "type": "nocase"
               }
@@ -56415,12 +56465,20 @@
           },
           {
             "type": "text",
-            "text": "ome considerations concerning the detection of excitons by field ionization in a "
+            "text": "omment on `",
+            "marks": [
+              {
+                "type": "enquote"
+              }
+            ]
           },
           {
             "type": "text",
             "text": "S",
             "marks": [
+              {
+                "type": "enquote"
+              },
               {
                 "type": "nocase"
               }
@@ -56428,7 +56486,33 @@
           },
           {
             "type": "text",
-            "text": "chottky barrier' ''"
+            "text": "ome considerations concerning the detection of excitons by field ionization in a ",
+            "marks": [
+              {
+                "type": "enquote"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "S",
+            "marks": [
+              {
+                "type": "enquote"
+              },
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "chottky barrier' ",
+            "marks": [
+              {
+                "type": "enquote"
+              }
+            ]
           }
         ],
         "author": [
@@ -68810,12 +68894,7 @@
           },
           {
             "type": "text",
-            "text": " Superconductivity",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
+            "text": " Superconductivity"
           }
         ],
         "author": [
@@ -72887,12 +72966,15 @@
         "title": [
           {
             "type": "text",
-            "text": "Erratum: ``"
+            "text": "Erratum: "
           },
           {
             "type": "text",
             "text": "T",
             "marks": [
+              {
+                "type": "enquote"
+              },
               {
                 "type": "nocase"
               }
@@ -72900,7 +72982,12 @@
           },
           {
             "type": "text",
-            "text": "he Diffusion of Copper in Cuprous Oxide''"
+            "text": "he Diffusion of Copper in Cuprous Oxide",
+            "marks": [
+              {
+                "type": "enquote"
+              }
+            ]
           }
         ],
         "author": [
@@ -74980,12 +75067,15 @@
         "title": [
           {
             "type": "text",
-            "text": "Comment on ``"
+            "text": "Comment on "
           },
           {
             "type": "text",
             "text": "S",
             "marks": [
+              {
+                "type": "enquote"
+              },
               {
                 "type": "nocase"
               }
@@ -74993,12 +75083,20 @@
           },
           {
             "type": "text",
-            "text": "ome considerations concerning the detection of excitons by field ionization in a "
+            "text": "ome considerations concerning the detection of excitons by field ionization in a ",
+            "marks": [
+              {
+                "type": "enquote"
+              }
+            ]
           },
           {
             "type": "text",
             "text": "S",
             "marks": [
+              {
+                "type": "enquote"
+              },
               {
                 "type": "nocase"
               }
@@ -75006,7 +75104,12 @@
           },
           {
             "type": "text",
-            "text": "chottky barrier''"
+            "text": "chottky barrier",
+            "marks": [
+              {
+                "type": "enquote"
+              }
+            ]
           }
         ],
         "author": [
@@ -76562,7 +76665,20 @@
         "abstract": [
           {
             "type": "text",
-            "text": "Experiments on deposition of Cu2O films from basic cupper sulfate solution show that copper also deposits. At low, but basic values of pH only copper deposits and at high pH only cuprous oxide deposits. In the intermediate range where both compete the system shows oscillations at ``constant current.'' Linear stability analysis has been conducted for such an electrochemical cell to show that oscillations can take place in the parameter space identified in the experiments. The results are keeping with most of the experimental observations, which are many, but not with all. The physical mechanisms behind the oscillations are explained in terms of competing reactions."
+            "text": "Experiments on deposition of Cu2O films from basic cupper sulfate solution show that copper also deposits. At low, but basic values of pH only copper deposits and at high pH only cuprous oxide deposits. In the intermediate range where both compete the system shows oscillations at "
+          },
+          {
+            "type": "text",
+            "text": "constant current.",
+            "marks": [
+              {
+                "type": "enquote"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " Linear stability analysis has been conducted for such an electrochemical cell to show that oscillations can take place in the parameter space identified in the experiments. The results are keeping with most of the experimental observations, which are many, but not with all. The physical mechanisms behind the oscillations are explained in terms of competing reactions."
           }
         ],
         "doi": "10.1063/1.1803541",
@@ -78826,7 +78942,16 @@
         "title": [
           {
             "type": "text",
-            "text": "``Excitons'' in Optical Properties of Solids"
+            "text": "Excitons",
+            "marks": [
+              {
+                "type": "enquote"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " in Optical Properties of Solids"
           }
         ],
         "author": [
@@ -78926,7 +79051,16 @@
         "title": [
           {
             "type": "text",
-            "text": "``Introduction to exciton spectroscopy'' in "
+            "text": "Introduction to exciton spectroscopy",
+            "marks": [
+              {
+                "type": "enquote"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " in "
           },
           {
             "type": "text",
@@ -86693,12 +86827,7 @@
           },
           {
             "type": "text",
-            "text": " related to the superconducting transition",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
+            "text": " related to the superconducting transition"
           }
         ],
         "author": [
@@ -88948,12 +89077,20 @@
         "title": [
           {
             "type": "text",
-            "text": "``Mechanism of Oxygen Self-Diffusion in "
+            "text": "Mechanism of Oxygen Self-Diffusion in ",
+            "marks": [
+              {
+                "type": "enquote"
+              }
+            ]
           },
           {
             "type": "text",
             "text": "Cu",
             "marks": [
+              {
+                "type": "enquote"
+              },
               {
                 "type": "nocase"
               }
@@ -88963,6 +89100,9 @@
             "type": "text",
             "text": "2",
             "marks": [
+              {
+                "type": "enquote"
+              },
               {
                 "type": "nocase"
               },
@@ -88977,7 +89117,7 @@
           },
           {
             "type": "text",
-            "text": "'' in Synthetic Materials for Electronics (Materials Science Monographs)"
+            "text": " in Synthetic Materials for Electronics (Materials Science Monographs)"
           }
         ],
         "author": [
@@ -89070,12 +89210,20 @@
         "title": [
           {
             "type": "text",
-            "text": "``Oxygen diffusion in volume and in grain-boundaries of "
+            "text": "Oxygen diffusion in volume and in grain-boundaries of ",
+            "marks": [
+              {
+                "type": "enquote"
+              }
+            ]
           },
           {
             "type": "text",
             "text": "Cu",
             "marks": [
+              {
+                "type": "enquote"
+              },
               {
                 "type": "nocase"
               }
@@ -89085,6 +89233,9 @@
             "type": "text",
             "text": "2-x",
             "marks": [
+              {
+                "type": "enquote"
+              },
               {
                 "type": "nocase"
               },
@@ -89098,13 +89249,16 @@
             "text": "O",
             "marks": [
               {
+                "type": "enquote"
+              },
+              {
                 "type": "nocase"
               }
             ]
           },
           {
             "type": "text",
-            "text": "'' in "
+            "text": " in "
           },
           {
             "type": "text",
@@ -116410,12 +116564,7 @@
           },
           {
             "type": "text",
-            "text": " (001) thin films during in situ oxidation",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
+            "text": " (001) thin films during in situ oxidation"
           }
         ],
         "author": [

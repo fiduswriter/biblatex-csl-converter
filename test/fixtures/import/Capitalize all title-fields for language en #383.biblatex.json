@@ -224,12 +224,7 @@
           },
           {
             "type": "text",
-            "text": " from ",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
+            "text": " from "
           },
           {
             "type": "text",

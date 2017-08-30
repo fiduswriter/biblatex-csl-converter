@@ -256,12 +256,15 @@
         "title": [
           {
             "type": "text",
-            "text": "Using Networks to Combine ``"
+            "text": "Using Networks to Combine "
           },
           {
             "type": "text",
             "text": "Big Data",
             "marks": [
+              {
+                "type": "enquote"
+              },
               {
                 "type": "nocase"
               }
@@ -269,7 +272,7 @@
           },
           {
             "type": "text",
-            "text": "'' and Traditional Surveillance to Improve Influenza Predictions"
+            "text": " and Traditional Surveillance to Improve Influenza Predictions"
           }
         ],
         "urldate": "2016-10-07",

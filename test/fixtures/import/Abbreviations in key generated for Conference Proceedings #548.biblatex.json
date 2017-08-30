@@ -157,12 +157,7 @@
           },
           {
             "type": "text",
-            "text": " Function",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
+            "text": " Function"
           }
         ]
       },

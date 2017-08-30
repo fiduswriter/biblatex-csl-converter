@@ -173,6 +173,44 @@ export class BibLatexLiteralParser {
                             this.si += 2
                     }
                     break
+                case '`':
+                    if (this.string[this.si+1] === '`') {
+                        this.checkAndAddNewTextNode()
+                        this.braceLevel++
+                        this.si += 2
+                        this.currentMarks.push({type:'enquote'})
+                        this.textNode.marks = this.currentMarks.slice()
+                        this.braceClosings.push(true)
+                    } else {
+                        this.textNode.text += this.string[this.si]
+                        this.si++
+                    }
+                    break
+                case '\'':
+                    if (this.string[this.si+1] === '\'') {
+                        this.braceLevel--
+                        if (this.braceLevel > -1) {
+                            let closeBrace = this.braceClosings.pop()
+                            if (closeBrace) {
+                                this.checkAndAddNewTextNode()
+                                this.currentMarks.pop()
+                                if (this.currentMarks.length) {
+                                    this.textNode.marks = this.currentMarks.slice()
+                                } else {
+                                    delete this.textNode.marks
+                                }
+                            }
+                            this.si += 2
+                            continue parseString
+                        } else {
+                            // A brace was closed before it was opened. Abort and return the original string.
+                            return [{type: 'text', text: this.string}]
+                        }
+                    } else {
+                        this.textNode.text += this.string[this.si]
+                        this.si++
+                    }
+                    break
                 case '^':
                     switch(this.string[this.si+1]) {
                         case '{':
@@ -233,6 +271,8 @@ export class BibLatexLiteralParser {
                             }
                             if (this.currentMarks.length) {
                                 this.textNode.marks = this.currentMarks.slice()
+                            } else {
+                                delete this.textNode.marks
                             }
                         }
                         this.si++

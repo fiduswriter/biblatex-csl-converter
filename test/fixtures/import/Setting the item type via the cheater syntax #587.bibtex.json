@@ -123,7 +123,16 @@
         "abstract": [
           {
             "type": "text",
-            "text": "Example from CMoS, 16e, 14.269 ``Prepared from the autographs and earliest printed sources by Nathan Broder''"
+            "text": "Example from CMoS, 16e, 14.269 "
+          },
+          {
+            "type": "text",
+            "text": "Prepared from the autographs and earliest printed sources by Nathan Broder",
+            "marks": [
+              {
+                "type": "enquote"
+              }
+            ]
           }
         ],
         "location": [
@@ -211,7 +220,16 @@
         "abstract": [
           {
             "type": "text",
-            "text": "Example from CMoS, 16e, 14.215 ``ed. and trans. John Charles Chasteen''"
+            "text": "Example from CMoS, 16e, 14.215 "
+          },
+          {
+            "type": "text",
+            "text": "ed. and trans. John Charles Chasteen",
+            "marks": [
+              {
+                "type": "enquote"
+              }
+            ]
           }
         ],
         "annotation": [

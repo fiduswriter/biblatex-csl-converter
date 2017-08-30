@@ -61,12 +61,7 @@
           },
           {
             "type": "text",
-            "text": ": ",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
+            "text": ": "
           },
           {
             "type": "text",
