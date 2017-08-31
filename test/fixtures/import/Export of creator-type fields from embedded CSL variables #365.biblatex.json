@@ -1,6 +1,6 @@
 {
   "references": {
-    "0": {
+    "1": {
       "bib_type": "misc",
       "entry_key": "Doe2015",
       "fields": {
@@ -45,7 +45,7 @@
         ]
       }
     },
-    "1": {
+    "2": {
       "bib_type": "report",
       "entry_key": "Author2015",
       "fields": {
@@ -148,7 +148,7 @@
         ]
       }
     },
-    "2": {
+    "3": {
       "bib_type": "misc",
       "entry_key": "Kubrick1964",
       "fields": {
@@ -209,7 +209,7 @@
         ]
       }
     },
-    "3": {
+    "4": {
       "bib_type": "misc",
       "entry_key": "friends:leia:tv",
       "fields": {
@@ -298,7 +298,7 @@
         ]
       }
     },
-    "4": {
+    "5": {
       "bib_type": "misc",
       "entry_key": "friends:leia:dvd",
       "fields": {
@@ -390,7 +390,7 @@
         ]
       }
     },
-    "5": {
+    "6": {
       "bib_type": "inreference",
       "entry_key": "emptybook",
       "fields": {

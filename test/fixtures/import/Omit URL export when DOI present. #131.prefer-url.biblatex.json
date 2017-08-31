@@ -1,6 +1,6 @@
 {
   "references": {
-    "0": {
+    "1": {
       "bib_type": "inproceedings",
       "entry_key": "CapEA11",
       "fields": {
@@ -164,7 +164,7 @@
         ]
       }
     },
-    "1": {
+    "2": {
       "bib_type": "inproceedings",
       "entry_key": "CumEA14",
       "fields": {
@@ -407,7 +407,7 @@
         ]
       }
     },
-    "2": {
+    "3": {
       "bib_type": "article",
       "entry_key": "TayEA11",
       "fields": {

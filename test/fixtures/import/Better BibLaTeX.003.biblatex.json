@@ -1,6 +1,6 @@
 {
   "references": {
-    "0": {
+    "1": {
       "bib_type": "inproceedings",
       "entry_key": "author:06",
       "fields": {
@@ -72,7 +72,7 @@
         ]
       }
     },
-    "1": {
+    "2": {
       "bib_type": "collection",
       "entry_key": "conference:06",
       "fields": {

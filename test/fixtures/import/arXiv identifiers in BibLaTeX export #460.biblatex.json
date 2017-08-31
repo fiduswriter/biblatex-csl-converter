@@ -1,6 +1,6 @@
 {
   "references": {
-    "0": {
+    "1": {
       "bib_type": "article",
       "entry_key": "Sen.2016.BV",
       "fields": {
@@ -123,7 +123,7 @@
         ]
       }
     },
-    "1": {
+    "2": {
       "bib_type": "article",
       "entry_key": "Smolin.2013.Classical",
       "fields": {
@@ -204,7 +204,7 @@
         ]
       }
     },
-    "2": {
+    "3": {
       "bib_type": "article",
       "entry_key": "Ronnow.2014.Defining",
       "fields": {

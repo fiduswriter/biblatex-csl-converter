@@ -1,6 +1,6 @@
 {
   "references": {
-    "0": {
+    "1": {
       "bib_type": "thesis",
       "entry_key": "Woller2011DetMultiple",
       "fields": {
@@ -52,7 +52,7 @@
         ]
       }
     },
-    "1": {
+    "2": {
       "bib_type": "thesis",
       "entry_key": "Woller2011CTRDet",
       "fields": {

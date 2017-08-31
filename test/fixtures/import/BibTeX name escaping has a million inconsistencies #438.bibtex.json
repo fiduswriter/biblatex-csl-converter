@@ -1,6 +1,6 @@
 {
   "references": {
-    "0": {
+    "1": {
       "bib_type": "article",
       "entry_key": "Nome2014",
       "fields": {
@@ -82,7 +82,7 @@
         ]
       }
     },
-    "1": {
+    "2": {
       "bib_type": "article",
       "entry_key": "vanGogh2014",
       "fields": {

@@ -1,6 +1,6 @@
 {
   "references": {
-    "0": {
+    "1": {
       "bib_type": "article",
       "entry_key": "1e",
       "fields": {
@@ -54,7 +54,7 @@
         ]
       }
     },
-    "1": {
+    "2": {
       "bib_type": "article",
       "entry_key": "1b",
       "fields": {
@@ -108,7 +108,7 @@
         ]
       }
     },
-    "2": {
+    "3": {
       "bib_type": "book",
       "entry_key": "2e",
       "fields": {
@@ -162,7 +162,7 @@
         ]
       }
     },
-    "3": {
+    "4": {
       "bib_type": "book",
       "entry_key": "2b",
       "fields": {
@@ -216,7 +216,7 @@
         ]
       }
     },
-    "4": {
+    "5": {
       "bib_type": "thesis",
       "entry_key": "Bennett2003",
       "fields": {
@@ -259,7 +259,7 @@
         ]
       }
     },
-    "5": {
+    "6": {
       "bib_type": "incollection",
       "entry_key": "Cooper2013",
       "fields": {
@@ -328,7 +328,7 @@
         ]
       }
     },
-    "6": {
+    "7": {
       "bib_type": "article",
       "entry_key": "Correns1891",
       "fields": {
@@ -398,7 +398,7 @@
         ]
       }
     },
-    "7": {
+    "8": {
       "bib_type": "inreference",
       "entry_key": "Algar1985",
       "fields": {
@@ -457,7 +457,7 @@
         ]
       }
     },
-    "8": {
+    "9": {
       "bib_type": "collection",
       "entry_key": "Arsdall2012",
       "fields": {

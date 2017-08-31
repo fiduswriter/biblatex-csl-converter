@@ -1,6 +1,6 @@
 {
   "references": {
-    "0": {
+    "1": {
       "bib_type": "article",
       "entry_key": "nazarenko2009new",
       "fields": {
@@ -95,7 +95,7 @@
         ]
       }
     },
-    "1": {
+    "2": {
       "bib_type": "article",
       "entry_key": "nazarenko2011new",
       "fields": {
@@ -204,7 +204,7 @@
         ]
       }
     },
-    "2": {
+    "3": {
       "bib_type": "article",
       "entry_key": "назаренко2007долгоносикообразные",
       "fields": {
@@ -263,7 +263,7 @@
         ]
       }
     },
-    "3": {
+    "4": {
       "bib_type": "inproceedings",
       "entry_key": "назаренко2012долгоносикообразные",
       "fields": {
@@ -330,7 +330,7 @@
         ]
       }
     },
-    "4": {
+    "5": {
       "bib_type": "inproceedings",
       "entry_key": "назаренко2012долгоносикообразные",
       "fields": {
@@ -389,7 +389,7 @@
         ]
       }
     },
-    "5": {
+    "6": {
       "bib_type": "inproceedings",
       "entry_key": "назаренко2010водные",
       "fields": {
@@ -456,7 +456,7 @@
         ]
       }
     },
-    "6": {
+    "7": {
       "bib_type": "article",
       "entry_key": "пучков2013предварительный",
       "fields": {

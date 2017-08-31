@@ -1,6 +1,6 @@
 {
   "references": {
-    "0": {
+    "1": {
       "bib_type": "book",
       "entry_key": "vangogh",
       "fields": {
@@ -43,7 +43,7 @@
         ]
       }
     },
-    "1": {
+    "2": {
       "bib_type": "book",
       "entry_key": "humboldt",
       "fields": {
@@ -78,7 +78,7 @@
         ]
       }
     },
-    "2": {
+    "3": {
       "bib_type": "book",
       "entry_key": "beauvoir",
       "fields": {
@@ -113,7 +113,7 @@
         ]
       }
     },
-    "3": {
+    "4": {
       "bib_type": "book",
       "entry_key": "degaulle",
       "fields": {
@@ -148,7 +148,7 @@
         ]
       }
     },
-    "4": {
+    "5": {
       "bib_type": "book",
       "entry_key": "king",
       "fields": {
@@ -182,7 +182,7 @@
         ]
       }
     },
-    "5": {
+    "6": {
       "bib_type": "book",
       "entry_key": "stevenson",
       "fields": {
@@ -216,7 +216,7 @@
         ]
       }
     },
-    "6": {
+    "7": {
       "bib_type": "book",
       "entry_key": "nationalaeronauticsandspaceadministration",
       "fields": {
@@ -238,7 +238,7 @@
         ]
       }
     },
-    "7": {
+    "8": {
       "bib_type": "book",
       "entry_key": "bovendeert",
       "fields": {
@@ -281,7 +281,7 @@
         ]
       }
     },
-    "8": {
+    "9": {
       "bib_type": "book",
       "entry_key": "s-gravesande",
       "fields": {
@@ -324,7 +324,7 @@
         ]
       }
     },
-    "9": {
+    "10": {
       "bib_type": "book",
       "entry_key": "dequincey",
       "fields": {
@@ -352,7 +352,7 @@
         ]
       }
     },
-    "10": {
+    "11": {
       "bib_type": "book",
       "entry_key": "ortegaygasset",
       "fields": {
@@ -387,7 +387,7 @@
         ]
       }
     },
-    "11": {
+    "12": {
       "bib_type": "book",
       "entry_key": "damato",
       "fields": {
@@ -415,7 +415,7 @@
         ]
       }
     },
-    "12": {
+    "13": {
       "bib_type": "book",
       "entry_key": "sadat",
       "fields": {
@@ -450,7 +450,7 @@
         ]
       }
     },
-    "13": {
+    "14": {
       "bib_type": "book",
       "entry_key": "lafollette",
       "fields": {
@@ -484,7 +484,7 @@
         ]
       }
     },
-    "14": {
+    "15": {
       "bib_type": "book",
       "entry_key": "delamare",
       "fields": {
@@ -519,7 +519,7 @@
         ]
       }
     },
-    "15": {
+    "16": {
       "bib_type": "book",
       "entry_key": "degette",
       "fields": {
@@ -547,7 +547,7 @@
         ]
       }
     },
-    "16": {
+    "17": {
       "bib_type": "book",
       "entry_key": "saunders",
       "fields": {
@@ -575,7 +575,7 @@
         ]
       }
     },
-    "17": {
+    "18": {
       "bib_type": "book",
       "entry_key": "marcusaurelius",
       "fields": {
@@ -597,7 +597,7 @@
         ]
       }
     },
-    "18": {
+    "19": {
       "bib_type": "book",
       "entry_key": "dumas",
       "fields": {
@@ -631,7 +631,7 @@
         ]
       }
     },
-    "19": {
+    "20": {
       "bib_type": "book",
       "entry_key": "vanrensselaer",
       "fields": {
@@ -659,7 +659,7 @@
         ]
       }
     },
-    "20": {
+    "21": {
       "bib_type": "book",
       "entry_key": "lenfant",
       "fields": {
@@ -687,7 +687,7 @@
         ]
       }
     },
-    "21": {
+    "22": {
       "bib_type": "book",
       "entry_key": "vangulik",
       "fields": {
@@ -722,7 +722,7 @@
         ]
       }
     },
-    "22": {
+    "23": {
       "bib_type": "book",
       "entry_key": "sackville-west",
       "fields": {
@@ -750,7 +750,7 @@
         ]
       }
     },
-    "23": {
+    "24": {
       "bib_type": "book",
       "entry_key": "vaughanwilliams",
       "fields": {
@@ -778,7 +778,7 @@
         ]
       }
     },
-    "24": {
+    "25": {
       "bib_type": "book",
       "entry_key": "miesvanderrohe",
       "fields": {
@@ -813,7 +813,7 @@
         ]
       }
     },
-    "25": {
+    "26": {
       "bib_type": "book",
       "entry_key": "dalembert",
       "fields": {
@@ -856,7 +856,7 @@
         ]
       }
     },
-    "26": {
+    "27": {
       "bib_type": "book",
       "entry_key": "tocqueville",
       "fields": {
@@ -891,7 +891,7 @@
         ]
       }
     },
-    "27": {
+    "28": {
       "bib_type": "book",
       "entry_key": "lafontaine",
       "fields": {
@@ -926,7 +926,7 @@
         ]
       }
     },
-    "28": {
+    "29": {
       "bib_type": "book",
       "entry_key": "lasalle",
       "fields": {
@@ -961,7 +961,7 @@
         ]
       }
     },
-    "29": {
+    "30": {
       "bib_type": "book",
       "entry_key": "dupuydeclinchamps",
       "fields": {
@@ -1004,7 +1004,7 @@
         ]
       }
     },
-    "30": {
+    "31": {
       "bib_type": "book",
       "entry_key": "stein",
       "fields": {
@@ -1039,7 +1039,7 @@
         ]
       }
     },
-    "31": {
+    "32": {
       "bib_type": "book",
       "entry_key": "silva",
       "fields": {
@@ -1074,7 +1074,7 @@
         ]
       }
     },
-    "32": {
+    "33": {
       "bib_type": "book",
       "entry_key": "dagama",
       "fields": {
@@ -1109,7 +1109,7 @@
         ]
       }
     },
-    "33": {
+    "34": {
       "bib_type": "book",
       "entry_key": "dannunzio",
       "fields": {
@@ -1137,7 +1137,7 @@
         ]
       }
     },
-    "34": {
+    "35": {
       "bib_type": "book",
       "entry_key": "daponte",
       "fields": {
@@ -1165,7 +1165,7 @@
         ]
       }
     },
-    "35": {
+    "36": {
       "bib_type": "book",
       "entry_key": "dellarobbia",
       "fields": {
@@ -1193,7 +1193,7 @@
         ]
       }
     },
-    "36": {
+    "37": {
       "bib_type": "book",
       "entry_key": "este",
       "fields": {
@@ -1228,7 +1228,7 @@
         ]
       }
     },
-    "37": {
+    "38": {
       "bib_type": "book",
       "entry_key": "medici",
       "fields": {
@@ -1263,7 +1263,7 @@
         ]
       }
     },
-    "38": {
+    "39": {
       "bib_type": "book",
       "entry_key": "al-hakim",
       "fields": {
@@ -1306,7 +1306,7 @@
         ]
       }
     },
-    "39": {
+    "40": {
       "bib_type": "book",
       "entry_key": "levayer",
       "fields": {

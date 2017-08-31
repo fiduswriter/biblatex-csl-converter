@@ -1,6 +1,6 @@
 {
   "references": {
-    "0": {
+    "1": {
       "bib_type": "mvbook",
       "entry_key": "descartes_oeuvres_1897",
       "fields": {
@@ -90,7 +90,7 @@
         ]
       }
     },
-    "1": {
+    "2": {
       "bib_type": "mvbook",
       "entry_key": "descartes_oeuvres_1897-1",
       "fields": {
@@ -180,7 +180,7 @@
         ]
       }
     },
-    "2": {
+    "3": {
       "bib_type": "mvbook",
       "entry_key": "descartes_oeuvres_1897-2",
       "fields": {

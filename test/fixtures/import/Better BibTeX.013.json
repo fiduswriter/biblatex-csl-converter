@@ -1,6 +1,6 @@
 {
   "references": {
-    "0": {
+    "1": {
       "bib_type": "book",
       "entry_key": "id",
       "fields": {
@@ -15,7 +15,7 @@
         "file": ",.\\;'[]\\{\\}`-=~!@#$%^&()_+.pdf:Better BibTeX.013/files/32/,.\\;'[]\\{\\}`-=~!@#$%^&()_+.pdf:application/pdf"
       }
     },
-    "1": {
+    "2": {
       "bib_type": "book",
       "entry_key": "id2",
       "fields": {

@@ -1,6 +1,6 @@
 {
   "references": {
-    "0": {
+    "1": {
       "bib_type": "book",
       "entry_key": "Abramowitz1964",
       "fields": {
@@ -73,7 +73,7 @@
         ]
       }
     },
-    "1": {
+    "2": {
       "bib_type": "book",
       "entry_key": "Torre2008",
       "fields": {

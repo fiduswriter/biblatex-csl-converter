@@ -1,6 +1,6 @@
 {
   "references": {
-    "0": {
+    "1": {
       "bib_type": "book",
       "entry_key": "west_introduction_2000",
       "fields": {
@@ -72,7 +72,7 @@
         ]
       }
     },
-    "1": {
+    "2": {
       "bib_type": "book",
       "entry_key": "skubala_modellierung_2012",
       "fields": {
@@ -147,7 +147,7 @@
         ]
       }
     },
-    "2": {
+    "3": {
       "bib_type": "article",
       "entry_key": "michigami_development_1995",
       "fields": {
@@ -232,7 +232,7 @@
         ]
       }
     },
-    "3": {
+    "4": {
       "bib_type": "report",
       "entry_key": "brato_stability_2014",
       "fields": {

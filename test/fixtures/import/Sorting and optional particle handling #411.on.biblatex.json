@@ -1,6 +1,6 @@
 {
   "references": {
-    "0": {
+    "1": {
       "bib_type": "book",
       "entry_key": "macedo_catalogo_1799",
       "fields": {
@@ -79,7 +79,7 @@
         ]
       }
     },
-    "1": {
+    "2": {
       "bib_type": "thesis",
       "entry_key": "oliveira_memoriam_2007",
       "fields": {

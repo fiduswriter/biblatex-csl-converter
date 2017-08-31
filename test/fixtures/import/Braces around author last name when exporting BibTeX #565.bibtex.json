@@ -1,6 +1,6 @@
 {
   "references": {
-    "0": {
+    "1": {
       "bib_type": "article",
       "entry_key": "kenne07",
       "fields": {
@@ -106,7 +106,7 @@
         ]
       }
     },
-    "1": {
+    "2": {
       "bib_type": "thesis",
       "entry_key": "vonf94",
       "fields": {
@@ -174,7 +174,7 @@
         ]
       }
     },
-    "2": {
+    "3": {
       "bib_type": "thesis",
       "entry_key": "devr10",
       "fields": {
@@ -279,7 +279,7 @@
         ]
       }
     },
-    "3": {
+    "4": {
       "bib_type": "book",
       "entry_key": "vand95",
       "fields": {
@@ -355,7 +355,7 @@
         ]
       }
     },
-    "4": {
+    "5": {
       "bib_type": "article",
       "entry_key": "desw98",
       "fields": {

@@ -1,6 +1,6 @@
 {
   "references": {
-    "0": {
+    "1": {
       "bib_type": "article",
       "entry_key": "puurtinen_betweengroup_2009",
       "fields": {
@@ -125,7 +125,7 @@
         ]
       }
     },
-    "1": {
+    "2": {
       "bib_type": "incollection",
       "entry_key": "bowles_coevolution_2003",
       "fields": {
@@ -289,7 +289,7 @@
         ]
       }
     },
-    "2": {
+    "3": {
       "bib_type": "book",
       "entry_key": "sumner_folkways_1906",
       "fields": {
@@ -360,7 +360,7 @@
         ]
       }
     },
-    "3": {
+    "4": {
       "bib_type": "article",
       "entry_key": "bauer_war_2014",
       "fields": {

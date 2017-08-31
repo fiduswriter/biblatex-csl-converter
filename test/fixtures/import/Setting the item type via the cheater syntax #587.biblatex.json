@@ -1,6 +1,6 @@
 {
   "references": {
-    "0": {
+    "1": {
       "bib_type": "booklet",
       "entry_key": "clark_mesopotamia:_1957",
       "fields": {
@@ -61,7 +61,7 @@
         ]
       }
     },
-    "1": {
+    "2": {
       "bib_type": "misc",
       "entry_key": "_object_????",
       "fields": {
@@ -110,7 +110,7 @@
         ]
       }
     },
-    "2": {
+    "3": {
       "bib_type": "misc",
       "entry_key": "mozart_sonatas_1960",
       "fields": {
@@ -193,7 +193,7 @@
         ]
       }
     },
-    "3": {
+    "4": {
       "bib_type": "misc",
       "entry_key": "ratliff_mystery_1999",
       "fields": {
@@ -306,7 +306,7 @@
         ]
       }
     },
-    "4": {
+    "5": {
       "bib_type": "misc",
       "entry_key": "kamp_deconstructing_2006",
       "fields": {

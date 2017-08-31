@@ -1,6 +1,6 @@
 {
   "references": {
-    "0": {
+    "1": {
       "bib_type": "article",
       "entry_key": "barker1_2016_turkey",
       "fields": {
@@ -85,7 +85,7 @@
         ]
       }
     },
-    "1": {
+    "2": {
       "bib_type": "article",
       "entry_key": "barker2_2016_turkey",
       "fields": {
@@ -170,7 +170,7 @@
         ]
       }
     },
-    "2": {
+    "3": {
       "bib_type": "article",
       "entry_key": "barker3_2016_turkey",
       "fields": {
@@ -255,7 +255,7 @@
         ]
       }
     },
-    "3": {
+    "4": {
       "bib_type": "article",
       "entry_key": "barker4_-876_turkey",
       "fields": {
@@ -340,7 +340,7 @@
         ]
       }
     },
-    "4": {
+    "5": {
       "bib_type": "article",
       "entry_key": "barker5_1723_turkey",
       "fields": {
@@ -425,7 +425,7 @@
         ]
       }
     },
-    "5": {
+    "6": {
       "bib_type": "article",
       "entry_key": "barker6_1723_turkey",
       "fields": {
@@ -510,7 +510,7 @@
         ]
       }
     },
-    "6": {
+    "7": {
       "bib_type": "article",
       "entry_key": "barker7_1723_turkey",
       "fields": {
@@ -595,7 +595,7 @@
         ]
       }
     },
-    "7": {
+    "8": {
       "bib_type": "article",
       "entry_key": "barker8_1988_turkey",
       "fields": {
@@ -680,7 +680,7 @@
         ]
       }
     },
-    "8": {
+    "9": {
       "bib_type": "article",
       "entry_key": "barker9_2004_turkey",
       "fields": {
@@ -765,7 +765,7 @@
         ]
       }
     },
-    "9": {
+    "10": {
       "bib_type": "article",
       "entry_key": "barker10_199u_turkey",
       "fields": {
@@ -850,7 +850,7 @@
         ]
       }
     },
-    "10": {
+    "11": {
       "bib_type": "article",
       "entry_key": "barker11_19uu_turkey",
       "fields": {
@@ -935,7 +935,7 @@
         ]
       }
     },
-    "11": {
+    "12": {
       "bib_type": "article",
       "entry_key": "barker12_1999_turkey",
       "fields": {
@@ -1020,7 +1020,7 @@
         ]
       }
     },
-    "12": {
+    "13": {
       "bib_type": "article",
       "entry_key": "barker13_1999_turkey",
       "fields": {
@@ -1105,7 +1105,7 @@
         ]
       }
     },
-    "13": {
+    "14": {
       "bib_type": "article",
       "entry_key": "barker14_1999_turkey",
       "fields": {

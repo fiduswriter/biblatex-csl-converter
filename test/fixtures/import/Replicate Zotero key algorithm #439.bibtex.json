@@ -1,6 +1,6 @@
 {
   "references": {
-    "0": {
+    "1": {
       "bib_type": "misc",
       "entry_key": "firstname_retorquere_replicate_2015",
       "fields": {
@@ -91,7 +91,7 @@
         ]
       }
     },
-    "1": {
+    "2": {
       "bib_type": "misc",
       "entry_key": "retorquere_replicate_2016",
       "fields": {
@@ -202,7 +202,7 @@
         ]
       }
     },
-    "2": {
+    "3": {
       "bib_type": "misc",
       "entry_key": "retorquere-double_replicate_????",
       "fields": {

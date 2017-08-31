@@ -1,6 +1,6 @@
 {
   "references": {
-    "0": {
+    "1": {
       "bib_type": "misc",
       "entry_key": "ntp.org_clock_2015",
       "fields": {
@@ -64,7 +64,7 @@
         ]
       }
     },
-    "1": {
+    "2": {
       "bib_type": "misc",
       "entry_key": "ntp.org_clock_2015-1",
       "fields": {
@@ -121,7 +121,7 @@
         ]
       }
     },
-    "2": {
+    "3": {
       "bib_type": "misc",
       "entry_key": "ntp.org_clock_2015-2",
       "fields": {

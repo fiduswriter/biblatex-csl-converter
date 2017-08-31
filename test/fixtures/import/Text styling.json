@@ -1,6 +1,6 @@
 {
   "references": {
-    "0": {
+    "1": {
       "bib_type": "article",
       "entry_key": "wilm10",
       "fields": {
@@ -96,7 +96,7 @@
         ]
       }
     },
-    "1": {
+    "2": {
       "bib_type": "misc",
       "entry_key": "wilm09",
       "fields": {
@@ -155,7 +155,7 @@
         ]
       }
     },
-    "2": {
+    "3": {
       "bib_type": "book",
       "entry_key": "wilm_nicaragua_2011",
       "fields": {

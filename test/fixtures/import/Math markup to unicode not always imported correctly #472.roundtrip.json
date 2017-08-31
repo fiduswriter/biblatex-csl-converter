@@ -1,6 +1,6 @@
 {
   "references": {
-    "0": {
+    "1": {
       "bib_type": "inproceedings",
       "entry_key": "test_citation1",
       "fields": {
@@ -184,7 +184,7 @@
         ]
       }
     },
-    "1": {
+    "2": {
       "bib_type": "inproceedings",
       "entry_key": "test_citation2",
       "fields": {

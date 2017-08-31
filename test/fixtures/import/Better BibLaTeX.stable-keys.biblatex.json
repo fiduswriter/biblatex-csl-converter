@@ -1,6 +1,6 @@
 {
   "references": {
-    "0": {
+    "1": {
       "bib_type": "article",
       "entry_key": "Fritz2012",
       "fields": {
@@ -107,7 +107,7 @@
         ]
       }
     },
-    "1": {
+    "2": {
       "bib_type": "article",
       "entry_key": "Fritz2012a",
       "fields": {
@@ -214,7 +214,7 @@
         ]
       }
     },
-    "2": {
+    "3": {
       "bib_type": "article",
       "entry_key": "Fritz2012b",
       "fields": {
@@ -321,7 +321,7 @@
         ]
       }
     },
-    "3": {
+    "4": {
       "bib_type": "article",
       "entry_key": "Fritz2012c",
       "fields": {
@@ -428,7 +428,7 @@
         ]
       }
     },
-    "4": {
+    "5": {
       "bib_type": "article",
       "entry_key": "Fritz2012d",
       "fields": {
@@ -535,7 +535,7 @@
         ]
       }
     },
-    "5": {
+    "6": {
       "bib_type": "article",
       "entry_key": "Fritz2012e",
       "fields": {

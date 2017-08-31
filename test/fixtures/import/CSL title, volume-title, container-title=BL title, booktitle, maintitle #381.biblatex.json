@@ -1,6 +1,6 @@
 {
   "references": {
-    "0": {
+    "1": {
       "bib_type": "book",
       "entry_key": "Plato1902",
       "fields": {
@@ -117,7 +117,7 @@
         ]
       }
     },
-    "1": {
+    "2": {
       "bib_type": "incollection",
       "entry_key": "Plato1902a",
       "fields": {

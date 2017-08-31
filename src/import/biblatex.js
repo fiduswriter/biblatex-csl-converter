@@ -780,7 +780,8 @@ export class BibLatexParser {
     createBibDB() {
         let that = this
         this.entries.forEach((entry, index)=> {
-            that.bibDB[index] = entry
+            // Start index from 1 to create less issues with testing
+            that.bibDB[index + 1] = entry
         })
     }
 

@@ -1,6 +1,6 @@
 {
   "references": {
-    "0": {
+    "1": {
       "bib_type": "article",
       "entry_key": "paglione2001mapping",
       "fields": {
@@ -181,7 +181,7 @@
         ]
       }
     },
-    "1": {
+    "2": {
       "bib_type": "article",
       "entry_key": "jackson418nguyen",
       "fields": {
@@ -259,7 +259,7 @@
         ]
       }
     },
-    "2": {
+    "3": {
       "bib_type": "article",
       "entry_key": "jackson1996hcn",
       "fields": {
@@ -370,7 +370,7 @@
         ]
       }
     },
-    "3": {
+    "4": {
       "bib_type": "article",
       "entry_key": "paglione1996diffuse",
       "fields": {
@@ -471,7 +471,7 @@
         ]
       }
     },
-    "4": {
+    "5": {
       "bib_type": "article",
       "entry_key": "paglione1995distribution",
       "fields": {
@@ -568,7 +568,7 @@
         ]
       }
     },
-    "5": {
+    "6": {
       "bib_type": "article",
       "entry_key": "blom1999diffuse",
       "fields": {
@@ -667,7 +667,7 @@
         ]
       }
     },
-    "6": {
+    "7": {
       "bib_type": "article",
       "entry_key": "smolvcic2009cosmic",
       "fields": {
@@ -885,7 +885,7 @@
         ]
       }
     },
-    "7": {
+    "8": {
       "bib_type": "article",
       "entry_key": "paglione1997average",
       "fields": {
@@ -982,7 +982,7 @@
         ]
       }
     },
-    "8": {
+    "9": {
       "bib_type": "article",
       "entry_key": "jackson1995submillimeter",
       "fields": {
@@ -1089,7 +1089,7 @@
         ]
       }
     },
-    "9": {
+    "10": {
       "bib_type": "article",
       "entry_key": "paglione1998interpreting",
       "fields": {
@@ -1200,7 +1200,7 @@
         ]
       }
     },
-    "10": {
+    "11": {
       "bib_type": "article",
       "entry_key": "smolvcic2009dust",
       "fields": {
@@ -1405,7 +1405,7 @@
         ]
       }
     },
-    "11": {
+    "12": {
       "bib_type": "article",
       "entry_key": "jackson1993dense",
       "fields": {
@@ -1500,7 +1500,7 @@
         ]
       }
     },
-    "12": {
+    "13": {
       "bib_type": "article",
       "entry_key": "paglione2004structure",
       "fields": {
@@ -1611,7 +1611,7 @@
         ]
       }
     },
-    "13": {
+    "14": {
       "bib_type": "article",
       "entry_key": "kraemer19972000",
       "fields": {
@@ -1722,7 +1722,7 @@
         ]
       }
     },
-    "14": {
+    "15": {
       "bib_type": "article",
       "entry_key": "liu2008faint",
       "fields": {
@@ -1889,7 +1889,7 @@
         ]
       }
     },
-    "15": {
+    "16": {
       "bib_type": "article",
       "entry_key": "paglione1995first",
       "fields": {
@@ -1996,7 +1996,7 @@
         ]
       }
     },
-    "16": {
+    "17": {
       "bib_type": "article",
       "entry_key": "jackson1996apj",
       "fields": {
@@ -2081,7 +2081,7 @@
         ]
       }
     },
-    "17": {
+    "18": {
       "bib_type": "article",
       "entry_key": "paglione1995apj",
       "fields": {
@@ -2152,7 +2152,7 @@
         ]
       }
     },
-    "18": {
+    "19": {
       "bib_type": "article",
       "entry_key": "paglione1716nguyen",
       "fields": {
@@ -2239,7 +2239,7 @@
         ]
       }
     },
-    "19": {
+    "20": {
       "bib_type": "article",
       "entry_key": "kraemer2000properties",
       "fields": {
@@ -2350,7 +2350,7 @@
         ]
       }
     },
-    "20": {
+    "21": {
       "bib_type": "article",
       "entry_key": "smith2000measurements",
       "fields": {
@@ -2465,7 +2465,7 @@
         ]
       }
     },
-    "21": {
+    "22": {
       "bib_type": "inproceedings",
       "entry_key": "paglione2002cn",
       "fields": {
@@ -2552,7 +2552,7 @@
         ]
       }
     },
-    "22": {
+    "23": {
       "bib_type": "article",
       "entry_key": "smolcic2010erratum",
       "fields": {
@@ -2758,7 +2758,7 @@
         ]
       }
     },
-    "23": {
+    "24": {
       "bib_type": "article",
       "entry_key": "smolvcic2010erratum",
       "fields": {
@@ -2976,7 +2976,7 @@
         ]
       }
     },
-    "24": {
+    "25": {
       "bib_type": "article",
       "entry_key": "blom1999gamma",
       "fields": {
@@ -3065,7 +3065,7 @@
         ]
       }
     },
-    "25": {
+    "26": {
       "bib_type": "article",
       "entry_key": "paglione2001mapping",
       "fields": {
@@ -3214,7 +3214,7 @@
         ]
       }
     },
-    "26": {
+    "27": {
       "bib_type": "article",
       "entry_key": "paglionesource",
       "fields": {
@@ -3270,7 +3270,7 @@
         ]
       }
     },
-    "27": {
+    "28": {
       "bib_type": "article",
       "entry_key": "smoli2009cosmic",
       "fields": {
@@ -3482,7 +3482,7 @@
         ]
       }
     },
-    "28": {
+    "29": {
       "bib_type": "inproceedings",
       "entry_key": "spergel2002utilizing",
       "fields": {
@@ -3569,7 +3569,7 @@
         ]
       }
     },
-    "29": {
+    "30": {
       "bib_type": "article",
       "entry_key": "paglione1997properties",
       "fields": {
@@ -3606,7 +3606,7 @@
         ]
       }
     },
-    "30": {
+    "31": {
       "bib_type": "inproceedings",
       "entry_key": "paglione1993observations",
       "fields": {
@@ -3693,7 +3693,7 @@
         ]
       }
     },
-    "31": {
+    "32": {
       "bib_type": "article",
       "entry_key": "paglioneumigs",
       "fields": {
@@ -3749,7 +3749,7 @@
         ]
       }
     },
-    "32": {
+    "33": {
       "bib_type": "inproceedings",
       "entry_key": "paglione2004molecular",
       "fields": {
@@ -3808,7 +3808,7 @@
         ]
       }
     },
-    "33": {
+    "34": {
       "bib_type": "inproceedings",
       "entry_key": "paglione2002york",
       "fields": {
@@ -3881,7 +3881,7 @@
         ]
       }
     },
-    "34": {
+    "35": {
       "bib_type": "inproceedings",
       "entry_key": "paglione2010diffuse",
       "fields": {
@@ -3968,7 +3968,7 @@
         ]
       }
     },
-    "35": {
+    "36": {
       "bib_type": "article",
       "entry_key": "bertsch1995diffuse",
       "fields": {
@@ -4059,7 +4059,7 @@
         ]
       }
     },
-    "36": {
+    "37": {
       "bib_type": "inproceedings",
       "entry_key": "bolatto1996dense",
       "fields": {
@@ -4160,7 +4160,7 @@
         ]
       }
     },
-    "37": {
+    "38": {
       "bib_type": "inproceedings",
       "entry_key": "yam1998properties",
       "fields": {
@@ -4261,7 +4261,7 @@
         ]
       }
     },
-    "38": {
+    "39": {
       "bib_type": "inproceedings",
       "entry_key": "liu2005local",
       "fields": {
@@ -4376,7 +4376,7 @@
         ]
       }
     },
-    "39": {
+    "40": {
       "bib_type": "inproceedings",
       "entry_key": "paglione1999umass",
       "fields": {
@@ -4569,7 +4569,7 @@
         ]
       }
     },
-    "40": {
+    "41": {
       "bib_type": "article",
       "entry_key": "paglione2001mapping",
       "fields": {
@@ -4756,7 +4756,7 @@
         ]
       }
     },
-    "41": {
+    "42": {
       "bib_type": "article",
       "entry_key": "jackson1993submillimeter",
       "fields": {
@@ -4855,7 +4855,7 @@
         ]
       }
     },
-    "42": {
+    "43": {
       "bib_type": "article",
       "entry_key": "paglione2012properties",
       "fields": {
@@ -4912,7 +4912,7 @@
         ]
       }
     },
-    "43": {
+    "44": {
       "bib_type": "inproceedings",
       "entry_key": "paglione1996dense",
       "fields": {
@@ -5013,7 +5013,7 @@
         ]
       }
     },
-    "44": {
+    "45": {
       "bib_type": "inproceedings",
       "entry_key": "paglione2002urban",
       "fields": {
@@ -5114,7 +5114,7 @@
         ]
       }
     },
-    "45": {
+    "46": {
       "bib_type": "inproceedings",
       "entry_key": "paglione1997tracing",
       "fields": {
@@ -5215,7 +5215,7 @@
         ]
       }
     },
-    "46": {
+    "47": {
       "bib_type": "inproceedings",
       "entry_key": "tribiano2005evolution",
       "fields": {
@@ -5358,7 +5358,7 @@
         ]
       }
     },
-    "47": {
+    "48": {
       "bib_type": "article",
       "entry_key": "smoli2009dust",
       "fields": {
@@ -5557,7 +5557,7 @@
         ]
       }
     },
-    "48": {
+    "49": {
       "bib_type": "article",
       "entry_key": "paglionesession",
       "fields": {
@@ -5719,7 +5719,7 @@
         ]
       }
     },
-    "49": {
+    "50": {
       "bib_type": "inproceedings",
       "entry_key": "paglione1997distribution",
       "fields": {
@@ -5820,7 +5820,7 @@
         ]
       }
     },
-    "50": {
+    "51": {
       "bib_type": "inproceedings",
       "entry_key": "liu2006faint",
       "fields": {
@@ -5991,7 +5991,7 @@
         ]
       }
     },
-    "51": {
+    "52": {
       "bib_type": "inproceedings",
       "entry_key": "kraemer1995molecular",
       "fields": {
@@ -6098,7 +6098,7 @@
         ]
       }
     },
-    "52": {
+    "53": {
       "bib_type": "inproceedings",
       "entry_key": "jackson1993hcn",
       "fields": {
@@ -6185,7 +6185,7 @@
         ]
       }
     },
-    "53": {
+    "54": {
       "bib_type": "inproceedings",
       "entry_key": "paglione2006luminosity",
       "fields": {
@@ -6328,7 +6328,7 @@
         ]
       }
     },
-    "54": {
+    "55": {
       "bib_type": "article",
       "entry_key": "smoli2010erratum",
       "fields": {

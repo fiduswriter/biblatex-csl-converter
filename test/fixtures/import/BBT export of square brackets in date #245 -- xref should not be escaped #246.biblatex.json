@@ -1,6 +1,6 @@
 {
   "references": {
-    "0": {
+    "1": {
       "bib_type": "article",
       "entry_key": "bentley_academic_2011",
       "fields": {
@@ -160,7 +160,7 @@
         ]
       }
     },
-    "1": {
+    "2": {
       "bib_type": "article",
       "entry_key": "pollard_bicycle_2007",
       "fields": {
@@ -266,7 +266,7 @@
         ]
       }
     },
-    "2": {
+    "3": {
       "bib_type": "misc",
       "entry_key": "kartinyeri",
       "fields": {
