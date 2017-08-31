@@ -313,12 +313,11 @@ export class BibLatexLiteralParser {
                     this.si++
                     break
                 case '\n':
-                    if (['\r','\n'].includes(this.string[this.si+1]) || (
-                            this.textNode.text.length &&
-                            this.textNode.text[this.textNode.text.length-1] === '\n'
-                        )
+                    if (
+                        ['\r','\n'].includes(this.string[this.si+1]) &&
+                        this.string[this.si-1] !== '\n'
                     ) {
-                        this.textNode.text += '\n'
+                        this.textNode.text += '\n\n'
                     } else if (
                         /\S/.test(this.string[this.si-1]) &&
                         /\S/.test(this.string[this.si+1])
