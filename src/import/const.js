@@ -1090,7 +1090,7 @@ export const TeXSpecialChars = [
   ["\\\\mathsfsl\\{h\\}", '\uD835\uDE29'],
   ["\\\\mathsfsl\\{g\\}", '\uD835\uDE28'],
   ["\\\\ntriangleleft", '\u22EA'],
-  ["\\\\backslash|\\\\textbackslash", '\\'],
+  ["\\\\backslash|\\\\textbackslash", '\u0871'], // An unused character that will later be converted to backslash
   ["\\\\varlrtriangle", '\u22BF'],
   ["\\\\rightpentagon", '\u2B54'],
   ["\\\\mathsfsl\\{f\\}", '\uD835\uDE27'],
