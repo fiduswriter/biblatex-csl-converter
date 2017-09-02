@@ -309,6 +309,11 @@ export class BibLatexLiteralParser {
                     this.addNewTextNode()
                     this.si = sj + 1
                     break
+                case '\u0871':
+                    // A backslash
+                    this.textNode.text += '\\'
+                    this.si++
+                    break
                 case '\r':
                     this.si++
                     break
