@@ -4,17 +4,16 @@ node_js:
 after_success:
 - "./node_modules/.bin/nyc report --reporter=text-lcov | ./node_modules/.bin/coveralls"
 - npm run gh-pages-travis
-before_deploy:
-- npm install --only=dev
 deploy:
   provider: npm
   email: mail@johanneswilm.org
   api_key:
     secure: GehGcAZYKMdsW+0LfyKjmvG5G/Rv28tsgfGdbj7iwvkGwosoocsEh67TgmuXPtHGnTvJyyHzMQdPurJBFZDzfyXiUUd7npSZWcDx2le7GTbk98URJo8fIJSlsp7sm62nfgnhpJPrc4E7ype/pWxv43ZEjAqS4P/+5z8JIMygBuh70A3yhu/xxHXkjo8Ly/iD2NcGGanIDU95NPplxEbvY/gHuOJrlE4ROVnnDcnbyFm4I0bdt6bOPzfIuT7k6/n+w87V9JASNMqfMf48TqYWZZI2ZhhN5gPI0hTXt/TxMkG1M9yhf47+2ivQCVLYma3v5EqyKkol9IZ4zR84eAWL/7GG5aG3I4eH4TCDe/xFfGAZOuhQ9iZq0ADaPDNT4lRTBKXcP/+FpG466MVYZnjGbyt3p1QLvON2Cxugn7eHbjFo8xH7VqdYbMd8t00QDP9NOvtvugELyNLVNSiI8yxbFyFaz79mLsuCinHThcVjgxzO8wARqGygEeLXQ19eocvaIKm7WDBphe7tB+nuPQmBnMtIciwUDPV53qE4UkH0tsbvrGc0ogZYCEtvbtqesBzA5HvOVw/IoLYsP3kyLqtyjzcmW8bXMx/Oo25SDKbXK65z+kpOjU+Mmq4Wa25No90O4hA9hhC8v2TP0RPxa8ZIkurP73fK8xhjmZLd1Cu+VRI=
   on:
-    tags: true
+#    tags: true
     repo: fiduswriter/biblatex-csl-converter
     branch: master
+  skip_cleanup: true
 branches:
   except:
   - gh-pages
