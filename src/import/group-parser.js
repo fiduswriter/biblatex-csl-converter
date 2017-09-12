@@ -1,9 +1,10 @@
 export class GroupParser {
-    constructor(input) {
+    constructor(input, references) {
       this.input = input
       this.pos = 0
       this.groups = false
       this.warnings = []
+      this.references = references
     }
 
     init() {
@@ -80,5 +81,37 @@ export class GroupParser {
             }
         }
         this.groups = levels['0'].groups
+
+        // this assumes the JabRef groups always come after the references
+        for (let id in this.references) {
+            let ref = this.references[id]
+
+            if (!ref.unknown_fields.groups) continue;
+
+            // this assumes ref.unknown_fields.groups is a single text chunk
+            let groups = ref.unknown_fields.groups[0].trim()
+            delete ref.unknown_fields.groups
+
+            if (!groups || !ref.entry_key) continue
+
+            groups = groups.split(/\s*,\s*/)
+
+            for (let i = 0; i < groups.length; i++) {
+                let group = this.find(groups[i])
+                if (group) group.references.push(ref.entry_key)
+            }
+        }
+    }
+
+    find (name, groups) {
+      groups = groups || this.groups
+      if (!groups) return false;
+
+      for (let i = 0; i < groups.length; i++) {
+        if (groups[i].name === name) return groups[i]
+        let group = this.find(name, groups[i].groups)
+        if (group) return group;
+      }
+      return false;
     }
 }

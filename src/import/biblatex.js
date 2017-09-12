@@ -707,7 +707,7 @@ export class BibLatexParser {
         // leave the ending brace for the main parser to pick up
         this.pos--
         let comment = this.input.substring(start, this.pos)
-        let groupParser = new GroupParser(comment)
+        let groupParser = new GroupParser(comment, this.bibDB)
         groupParser.init()
         if (groupParser.groups) {
             this.groups = groupParser.groups
