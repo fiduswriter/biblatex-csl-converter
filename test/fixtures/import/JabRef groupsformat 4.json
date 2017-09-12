@@ -35,12 +35,6 @@
             "text": "2017"
           }
         ],
-        "groups": [
-          {
-            "type": "text",
-            "text": "my-subgroup-3"
-          }
-        ],
         "owner": [
           {
             "type": "text",
@@ -83,12 +77,6 @@
         ]
       },
       "unknown_fields": {
-        "groups": [
-          {
-            "type": "text",
-            "text": "my-other-subgroup-3"
-          }
-        ],
         "owner": [
           {
             "type": "text",
@@ -131,12 +119,6 @@
         ]
       },
       "unknown_fields": {
-        "groups": [
-          {
-            "type": "text",
-            "text": "my-subgroup-3, my-other-subgroup-3"
-          }
-        ],
         "owner": [
           {
             "type": "text",
@@ -179,12 +161,6 @@
         ]
       },
       "unknown_fields": {
-        "groups": [
-          {
-            "type": "text",
-            "text": "my-main-group-3"
-          }
-        ],
         "owner": [
           {
             "type": "text",
@@ -210,18 +186,26 @@
             {
               "name": "sub-sub-group-3",
               "groups": [],
-              "references": ["some key to make the test fail for now"]
+              "references": []
             }
           ],
-          "references": []
+          "references": [
+            "Doe-2017",
+            "Unkonw-"
+          ]
         },
         {
           "name": "my-other-subgroup-3",
           "groups": [],
-          "references": []
+          "references": [
+            "Other-",
+            "Unkonw-"
+          ]
         }
       ],
-      "references": []
+      "references": [
+        "Unkonw"
+      ]
     }
   ],
   "warnings": [

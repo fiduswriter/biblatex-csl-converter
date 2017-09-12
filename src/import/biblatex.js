@@ -84,6 +84,7 @@ export class BibLatexParser {
             NOV: "November",
             DEC: "December"
         }
+        this.groupParser = new GroupParser(this.entries)
     }
 
     isWhitespace(s) {
@@ -707,10 +708,9 @@ export class BibLatexParser {
         // leave the ending brace for the main parser to pick up
         this.pos--
         let comment = this.input.substring(start, this.pos)
-        let groupParser = new GroupParser(comment, this.bibDB)
-        groupParser.init()
-        if (groupParser.groups) {
-            this.groups = groupParser.groups
+        this.groupParser.checkString(comment)
+        if (this.groupParser.groups) {
+            this.groups = this.groupParser.groups
         }
     }
 
