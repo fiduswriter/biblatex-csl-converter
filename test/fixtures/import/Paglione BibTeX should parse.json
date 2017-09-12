@@ -6541,18 +6541,6 @@
       }
     }
   },
-  "errors": [
-    {
-      "type": "token_mismatch",
-      "expected": "}",
-      "found": "\""
-    },
-    {
-      "type": "token_mismatch",
-      "expected": "}",
-      "found": "p"
-    }
-  ],
   "warnings": [
     {
       "type": "unknown_field",

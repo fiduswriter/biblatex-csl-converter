@@ -1,15 +1,3 @@
 {
-  "references": {},
-  "errors": [
-    {
-      "type": "token_mismatch",
-      "expected": "}",
-      "found": "\""
-    },
-    {
-      "type": "token_mismatch",
-      "expected": "}",
-      "found": "p"
-    }
-  ]
+  "references": {}
 }
