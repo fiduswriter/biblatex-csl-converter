@@ -792,7 +792,7 @@ export class BibLatexParser {
     cleanDB() {
         this.bibDB = JSON.parse(
             JSON.stringify(this.bibDB)
-                .replace(/\u0871/,'\\') // Backslashes placed outside of literal fields
+                .replace(/\u0871/,'\\\\') // Backslashes placed outside of literal fields
                 .replace(/\u0870/,'') // variable start/end outside of literal fields
         )
     }
