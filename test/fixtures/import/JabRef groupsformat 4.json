@@ -1,0 +1,278 @@
+{
+  "references": {
+    "1": {
+      "bib_type": "article",
+      "entry_key": "Doe-2017",
+      "fields": {
+        "date": "2017",
+        "author": [
+          {
+            "given": [
+              {
+                "type": "text",
+                "text": "John"
+              }
+            ],
+            "family": [
+              {
+                "type": "text",
+                "text": "Doe"
+              }
+            ]
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "The paper in subgroup"
+          }
+        ]
+      },
+      "unknown_fields": {
+        "year": [
+          {
+            "type": "text",
+            "text": "2017"
+          }
+        ],
+        "owner": [
+          {
+            "type": "text",
+            "text": "klein"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2017.09.11"
+          }
+        ]
+      }
+    },
+    "2": {
+      "bib_type": "article",
+      "entry_key": "Other-",
+      "fields": {
+        "author": [
+          {
+            "given": [
+              {
+                "type": "text",
+                "text": "I."
+              }
+            ],
+            "family": [
+              {
+                "type": "text",
+                "text": "Other"
+              }
+            ]
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "The article in my other subgroup"
+          }
+        ]
+      },
+      "unknown_fields": {
+        "owner": [
+          {
+            "type": "text",
+            "text": "klein"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2017.09.11"
+          }
+        ]
+      }
+    },
+    "3": {
+      "bib_type": "article",
+      "entry_key": "Unkonw-",
+      "fields": {
+        "author": [
+          {
+            "given": [
+              {
+                "type": "text",
+                "text": "I"
+              }
+            ],
+            "family": [
+              {
+                "type": "text",
+                "text": "Unkonw"
+              }
+            ]
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "the paper in two groups"
+          }
+        ]
+      },
+      "unknown_fields": {
+        "owner": [
+          {
+            "type": "text",
+            "text": "klein"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2017.09.11"
+          }
+        ]
+      }
+    },
+    "4": {
+      "bib_type": "article",
+      "entry_key": "Unkonw",
+      "fields": {
+        "author": [
+          {
+            "given": [
+              {
+                "type": "text",
+                "text": "I"
+              }
+            ],
+            "family": [
+              {
+                "type": "text",
+                "text": "Unkonw"
+              }
+            ]
+          }
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "the paper not in a group"
+          }
+        ]
+      },
+      "unknown_fields": {
+        "owner": [
+          {
+            "type": "text",
+            "text": "klein"
+          }
+        ],
+        "timestamp": [
+          {
+            "type": "text",
+            "text": "2017.09.11"
+          }
+        ]
+      }
+    }
+  },
+  "groups": [
+    {
+      "name": "my-main-group-3",
+      "groups": [
+        {
+          "name": "my-subgroup-3",
+          "groups": [
+            {
+              "name": "sub-sub-group-3",
+              "groups": [],
+              "references": []
+            }
+          ],
+          "references": [
+            "Doe-2017",
+            "Unkonw-"
+          ]
+        },
+        {
+          "name": "my-other-subgroup-3",
+          "groups": [],
+          "references": [
+            "Other-",
+            "Unkonw-"
+          ]
+        }
+      ],
+      "references": [
+        "Unkonw"
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "entry": "Doe-2017",
+      "field_name": "year"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "Doe-2017",
+      "field_name": "groups"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "Doe-2017",
+      "field_name": "owner"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "Doe-2017",
+      "field_name": "timestamp"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "Other-",
+      "field_name": "groups"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "Other-",
+      "field_name": "owner"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "Other-",
+      "field_name": "timestamp"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "Unkonw-",
+      "field_name": "groups"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "Unkonw-",
+      "field_name": "owner"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "Unkonw-",
+      "field_name": "timestamp"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "Unkonw",
+      "field_name": "groups"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "Unkonw",
+      "field_name": "owner"
+    },
+    {
+      "type": "unknown_field",
+      "entry": "Unkonw",
+      "field_name": "timestamp"
+    }
+  ]
+}

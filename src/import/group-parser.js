@@ -1,18 +1,45 @@
 export class GroupParser {
-    constructor(input) {
-      this.input = input
-      this.pos = 0
+    constructor(entries) {
       this.groups = false
+      this.groupType = 'jabref4'
       this.warnings = []
+      this.entries = entries
+      this.stringStarts = [
+          ["jabref-meta: databaseType:bibtex;", () => this.groupType = 'jabref4'],
+          ["jabref-meta: groupsversion:3;", () => this.groupType = 'jabref3'],
+          ["jabref-meta: groupstree:", () => this.readGroupInfo()]
+      ]
     }
 
-    init() {
-        const prefix = 'jabref-meta: groupstree:'
-        let pos = this.input.indexOf(prefix, this.pos)
-        if (pos < 0) {
-            return
+    checkString(input) {
+        this.input = input
+        this.pos = 0
+        this.stringStarts.find(stringStart => {
+            let pos = this.input.indexOf(stringStart[0], this.pos)
+            if (pos < 0) {
+                return false
+            } else {
+                this.pos = pos + stringStart[0].length
+                stringStart[1]()
+                return true
+            }
+        })
+    }
+
+    readGroupInfo() {
+        switch(this.groupType) {
+            case 'jabref3':
+                this.readJabref3()
+                break
+            case 'jabref4':
+                this.readJabref4()
+                break
+            default:
+                break
         }
-        this.pos = pos + prefix.length
+    }
+
+    readJabref3() {
 
       /*  The JabRef Groups format is... interesting. To parse it, you must:
           1. Unwrap the lines (just remove the newlines)
@@ -79,6 +106,53 @@ export class GroupParser {
                 break
             }
         }
+
         this.groups = levels['0'].groups
+    }
+
+
+    readJabref4() {
+
+        this.readJabref3()
+
+        // this assumes the JabRef groups always come after the references
+        this.entries.forEach(bib => {
+
+            if (!bib.unknown_fields.groups || !bib.entry_key) {
+                return
+            }
+            // this assumes ref.unknown_fields.groups is a single text chunk
+            let groups = bib.unknown_fields.groups.reduce(
+                (string, node) =>
+                    node.type === 'text' ? string + node.text : string,
+                ''
+            ).trim()
+            delete bib.unknown_fields.groups
+
+            if (!groups.length) {
+                return
+            }
+
+            groups.split(/\s*,\s*/).forEach(groupName => {
+                let group = this.find(groupName)
+                if (group) {
+                    group.references.push(bib.entry_key)
+                }
+            })
+        })
+    }
+
+    find (name, groups) {
+        groups = groups || this.groups
+        if (!groups) {
+            return false
+        }
+
+        for (let i = 0; i < groups.length; i++) {
+            if (groups[i].name === name) return groups[i]
+            let group = this.find(name, groups[i].groups)
+            if (group) return group
+        }
+        return false
     }
 }
