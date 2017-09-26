@@ -4,6 +4,7 @@
       "bib_type": "article",
       "entry_key": "araz_using_2014",
       "fields": {
+        "date": "2014-09",
         "langid": "usenglish",
         "abstract": [
           {
@@ -159,7 +160,7 @@
         "month": [
           {
             "type": "text",
-            "text": "September"
+            "text": "09"
           }
         ],
         "pmid": [
@@ -186,6 +187,7 @@
       "bib_type": "article",
       "entry_key": "davidson_using_2015",
       "fields": {
+        "date": "2015-01",
         "author": [
           {
             "family": [
@@ -287,7 +289,7 @@
         "month": [
           {
             "type": "text",
-            "text": "January"
+            "text": "01"
           }
         ],
         "timestamp": [
@@ -307,15 +309,6 @@
   },
   "warnings": [
     {
-      "type": "unknown_date",
-      "entry": "araz_using_2014",
-      "field_name": "year,month",
-      "value": [
-        "2014",
-        "September"
-      ]
-    },
-    {
       "type": "unknown_field",
       "entry": "araz_using_2014",
       "field_name": "month"
@@ -334,15 +327,6 @@
       "type": "unknown_field",
       "entry": "araz_using_2014",
       "field_name": "year"
-    },
-    {
-      "type": "unknown_date",
-      "entry": "davidson_using_2015",
-      "field_name": "year,month",
-      "value": [
-        "2015",
-        "January"
-      ]
     },
     {
       "type": "unknown_field",

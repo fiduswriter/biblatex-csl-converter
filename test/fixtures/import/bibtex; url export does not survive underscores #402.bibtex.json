@@ -4,6 +4,7 @@
       "bib_type": "inproceedings",
       "entry_key": "EmmerJaens14a",
       "fields": {
+        "date": "2014-09",
         "location": [
           [
             {
@@ -180,7 +181,7 @@
         "month": [
           {
             "type": "text",
-            "text": "September"
+            "text": "09"
           }
         ],
         "timestamp": [
@@ -199,15 +200,6 @@
     }
   },
   "warnings": [
-    {
-      "type": "unknown_date",
-      "entry": "EmmerJaens14a",
-      "field_name": "year,month",
-      "value": [
-        "2014",
-        "September"
-      ]
-    },
     {
       "type": "unknown_field",
       "entry": "EmmerJaens14a",

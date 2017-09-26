@@ -71,18 +71,18 @@ export class BibLatexParser {
         this.warnings = []
         // These variables are expected to be defined by some bibtex sources.
         this.variables = {
-            JAN: "January",
-            FEB: "February",
-            MAR: "March",
-            APR: "April",
-            MAY: "May",
-            JUN: "June",
-            JUL: "July",
-            AUG: "August",
-            SEP: "September",
-            OCT: "October",
-            NOV: "November",
-            DEC: "December"
+            JAN: "01",
+            FEB: "02",
+            MAR: "03",
+            APR: "04",
+            MAY: "05",
+            JUN: "06",
+            JUL: "07",
+            AUG: "08",
+            SEP: "09",
+            OCT: "10",
+            NOV: "11",
+            DEC: "12"
         }
         this.groupParser = new GroupParser(this.entries)
     }

@@ -4,6 +4,7 @@
       "bib_type": "article",
       "entry_key": "puurtinen_betweengroup_2009",
       "fields": {
+        "date": "2009-01",
         "langid": "usenglish",
         "abstract": [
           {
@@ -102,7 +103,7 @@
         "month": [
           {
             "type": "text",
-            "text": "January"
+            "text": "01"
           }
         ],
         "pmid": [
@@ -584,15 +585,6 @@
     }
   },
   "warnings": [
-    {
-      "type": "unknown_date",
-      "entry": "puurtinen_betweengroup_2009",
-      "field_name": "year,month",
-      "value": [
-        "2009",
-        "January"
-      ]
-    },
     {
       "type": "unknown_field",
       "entry": "puurtinen_betweengroup_2009",

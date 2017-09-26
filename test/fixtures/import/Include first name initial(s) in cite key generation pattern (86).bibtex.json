@@ -4,6 +4,7 @@
       "bib_type": "article",
       "entry_key": "HuF2014",
       "fields": {
+        "date": "2014-07",
         "abstract": [
           {
             "type": "text",
@@ -104,7 +105,7 @@
         "month": [
           {
             "type": "text",
-            "text": "July"
+            "text": "07"
           }
         ],
         "timestamp": [
@@ -123,15 +124,6 @@
     }
   },
   "warnings": [
-    {
-      "type": "unknown_date",
-      "entry": "HuF2014",
-      "field_name": "year,month",
-      "value": [
-        "2014",
-        "July"
-      ]
-    },
     {
       "type": "alias_creates_duplicate_field",
       "entry": "HuF2014",

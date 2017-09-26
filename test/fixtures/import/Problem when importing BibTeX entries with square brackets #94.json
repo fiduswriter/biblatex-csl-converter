@@ -4,6 +4,7 @@
       "bib_type": "article",
       "entry_key": "Adachi_1989",
       "fields": {
+        "date": "1989-01",
         "title": [
           {
             "type": "text",
@@ -101,7 +102,7 @@
         "month": [
           {
             "type": "text",
-            "text": "January"
+            "text": "01"
           }
         ],
         "owner": [
@@ -123,15 +124,6 @@
     }
   },
   "warnings": [
-    {
-      "type": "unknown_date",
-      "entry": "Adachi_1989",
-      "field_name": "year,month",
-      "value": [
-        "1989",
-        "January"
-      ]
-    },
     {
       "type": "unknown_field",
       "entry": "Adachi_1989",

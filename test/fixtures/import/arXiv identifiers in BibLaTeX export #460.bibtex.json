@@ -4,6 +4,7 @@
       "bib_type": "article",
       "entry_key": "Sen.2016.BV",
       "fields": {
+        "date": "2016-02",
         "abstract": [
           {
             "type": "text",
@@ -127,7 +128,7 @@
         "month": [
           {
             "type": "text",
-            "text": "February"
+            "text": "02"
           }
         ],
         "timestamp": [
@@ -148,6 +149,7 @@
       "bib_type": "article",
       "entry_key": "Smolin.2013.Classical",
       "fields": {
+        "date": "2013-05",
         "abstract": [
           {
             "type": "text",
@@ -235,7 +237,7 @@
         "month": [
           {
             "type": "text",
-            "text": "May"
+            "text": "05"
           }
         ],
         "timestamp": [
@@ -256,6 +258,7 @@
       "bib_type": "article",
       "entry_key": "Ronnow.2014.Defining",
       "fields": {
+        "date": "2014-07",
         "abstract": [
           {
             "type": "text",
@@ -470,7 +473,7 @@
         "month": [
           {
             "type": "text",
-            "text": "July"
+            "text": "07"
           }
         ],
         "timestamp": [
@@ -490,15 +493,6 @@
   },
   "warnings": [
     {
-      "type": "unknown_date",
-      "entry": "Sen.2016.BV",
-      "field_name": "year,month",
-      "value": [
-        "2016",
-        "February"
-      ]
-    },
-    {
       "type": "alias_creates_duplicate_field",
       "entry": "Sen.2016.BV",
       "field": "archiveprefix",
@@ -522,15 +516,6 @@
       "field_name": "year"
     },
     {
-      "type": "unknown_date",
-      "entry": "Smolin.2013.Classical",
-      "field_name": "year,month",
-      "value": [
-        "2013",
-        "May"
-      ]
-    },
-    {
       "type": "alias_creates_duplicate_field",
       "entry": "Smolin.2013.Classical",
       "field": "archiveprefix",
@@ -552,15 +537,6 @@
       "type": "unknown_field",
       "entry": "Smolin.2013.Classical",
       "field_name": "year"
-    },
-    {
-      "type": "unknown_date",
-      "entry": "Ronnow.2014.Defining",
-      "field_name": "year,month",
-      "value": [
-        "2014",
-        "July"
-      ]
     },
     {
       "type": "alias_creates_duplicate_field",

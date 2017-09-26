@@ -217,6 +217,7 @@
       "bib_type": "article",
       "entry_key": "ratliff_mystery_1999",
       "fields": {
+        "date": "1999-04",
         "abstract": [
           {
             "type": "text",
@@ -329,7 +330,7 @@
         "month": [
           {
             "type": "text",
-            "text": "April"
+            "text": "04"
           }
         ],
         "timestamp": [
@@ -350,6 +351,7 @@
       "bib_type": "article",
       "entry_key": "kamp_deconstructing_2006",
       "fields": {
+        "date": "2006-04",
         "abstract": [
           {
             "type": "text",
@@ -405,7 +407,7 @@
         "month": [
           {
             "type": "text",
-            "text": "April"
+            "text": "04"
           }
         ],
         "timestamp": [
@@ -470,15 +472,6 @@
       "field_name": "year"
     },
     {
-      "type": "unknown_date",
-      "entry": "ratliff_mystery_1999",
-      "field_name": "year,month",
-      "value": [
-        "1999",
-        "April"
-      ]
-    },
-    {
       "type": "unknown_key",
       "entry": "ratliff_mystery_1999",
       "field_name": "langid",
@@ -503,15 +496,6 @@
       "type": "unknown_field",
       "entry": "ratliff_mystery_1999",
       "field_name": "year"
-    },
-    {
-      "type": "unknown_date",
-      "entry": "kamp_deconstructing_2006",
-      "field_name": "year,month",
-      "value": [
-        "2006",
-        "April"
-      ]
     },
     {
       "type": "unknown_key",

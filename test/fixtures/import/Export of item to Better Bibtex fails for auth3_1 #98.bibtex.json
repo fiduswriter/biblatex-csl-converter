@@ -4,6 +4,7 @@
       "bib_type": "article",
       "entry_key": "MauSey14",
       "fields": {
+        "date": "2014-06",
         "langid": "usenglish",
         "abstract": [
           {
@@ -97,7 +98,7 @@
         "month": [
           {
             "type": "text",
-            "text": "June"
+            "text": "06"
           }
         ],
         "pmid": [
@@ -130,15 +131,6 @@
     }
   },
   "warnings": [
-    {
-      "type": "unknown_date",
-      "entry": "MauSey14",
-      "field_name": "year,month",
-      "value": [
-        "2014",
-        "June"
-      ]
-    },
     {
       "type": "unknown_field",
       "entry": "MauSey14",

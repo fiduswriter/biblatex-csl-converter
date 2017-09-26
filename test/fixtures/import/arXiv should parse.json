@@ -4,6 +4,7 @@
       "bib_type": "article",
       "entry_key": "2009PhLA..373.2301C",
       "fields": {
+        "date": "2009-06",
         "author": [
           {
             "family": [
@@ -98,7 +99,7 @@
         "month": [
           {
             "type": "text",
-            "text": "June"
+            "text": "06"
           }
         ],
         "adsurl": [
@@ -117,15 +118,6 @@
     }
   },
   "warnings": [
-    {
-      "type": "unknown_date",
-      "entry": "2009PhLA..373.2301C",
-      "field_name": "year,month",
-      "value": [
-        "2009",
-        "June"
-      ]
-    },
     {
       "type": "unknown_field",
       "entry": "2009PhLA..373.2301C",

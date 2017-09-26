@@ -4,6 +4,7 @@
       "bib_type": "article",
       "entry_key": "2012ApJ...744...93B",
       "fields": {
+        "date": "2012-01",
         "author": [
           {
             "family": [
@@ -201,7 +202,7 @@
         "month": [
           {
             "type": "text",
-            "text": "January"
+            "text": "01"
           }
         ],
         "adsurl": [
@@ -222,6 +223,7 @@
       "bib_type": "article",
       "entry_key": "2012ApJ...744...93C",
       "fields": {
+        "date": "2012-01",
         "author": [
           {
             "family": [
@@ -419,7 +421,7 @@
         "month": [
           {
             "type": "text",
-            "text": "January"
+            "text": "01"
           }
         ],
         "adsurl": [
@@ -439,15 +441,6 @@
   },
   "warnings": [
     {
-      "type": "unknown_date",
-      "entry": "2012ApJ...744...93B",
-      "field_name": "year,month",
-      "value": [
-        "2012",
-        "January"
-      ]
-    },
-    {
       "type": "unknown_field",
       "entry": "2012ApJ...744...93B",
       "field_name": "year"
@@ -466,15 +459,6 @@
       "type": "unknown_field",
       "entry": "2012ApJ...744...93B",
       "field_name": "adsnote"
-    },
-    {
-      "type": "unknown_date",
-      "entry": "2012ApJ...744...93C",
-      "field_name": "year,month",
-      "value": [
-        "2012",
-        "January"
-      ]
     },
     {
       "type": "unknown_field",

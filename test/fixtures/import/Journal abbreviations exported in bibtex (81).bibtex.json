@@ -4,6 +4,7 @@
       "bib_type": "article",
       "entry_key": "HammondBortz2011ApplMathComput",
       "fields": {
+        "date": "2011-11",
         "langid": "usenglish",
         "author": [
           {
@@ -120,7 +121,7 @@
         "month": [
           {
             "type": "text",
-            "text": "November"
+            "text": "11"
           }
         ],
         "timestamp": [
@@ -139,15 +140,6 @@
     }
   },
   "warnings": [
-    {
-      "type": "unknown_date",
-      "entry": "HammondBortz2011ApplMathComput",
-      "field_name": "year,month",
-      "value": [
-        "2011",
-        "November"
-      ]
-    },
     {
       "type": "unknown_field",
       "entry": "HammondBortz2011ApplMathComput",

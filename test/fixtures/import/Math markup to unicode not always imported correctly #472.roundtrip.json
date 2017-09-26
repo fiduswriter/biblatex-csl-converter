@@ -4,6 +4,7 @@
       "bib_type": "inproceedings",
       "entry_key": "test_citation1",
       "fields": {
+        "date": "2016-02",
         "abstract": [
           {
             "type": "text",
@@ -167,7 +168,7 @@
         "month": [
           {
             "type": "text",
-            "text": "February"
+            "text": "02"
           }
         ],
         "timestamp": [
@@ -188,6 +189,7 @@
       "bib_type": "inproceedings",
       "entry_key": "test_citation2",
       "fields": {
+        "date": "2016-02",
         "abstract": [
           {
             "type": "text",
@@ -277,7 +279,7 @@
         "month": [
           {
             "type": "text",
-            "text": "February"
+            "text": "02"
           }
         ],
         "timestamp": [
@@ -303,15 +305,6 @@
       "variable": "IEEE_J_PROC"
     },
     {
-      "type": "unknown_date",
-      "entry": "test_citation1",
-      "field_name": "year,month",
-      "value": [
-        "2016",
-        "February"
-      ]
-    },
-    {
       "type": "unknown_field",
       "entry": "test_citation1",
       "field_name": "month"
@@ -331,15 +324,6 @@
       "entry": "test_citation2",
       "key": "booktitle",
       "variable": "IEEE_J_PROC"
-    },
-    {
-      "type": "unknown_date",
-      "entry": "test_citation2",
-      "field_name": "year,month",
-      "value": [
-        "2016",
-        "February"
-      ]
     },
     {
       "type": "unknown_field",
