@@ -85,12 +85,6 @@
         ]
       },
       "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2010"
-          }
-        ],
         "bibsource": [
           {
             "type": "text",
@@ -128,11 +122,6 @@
     }
   },
   "warnings": [
-    {
-      "type": "unknown_field",
-      "entry": "Klassen2010",
-      "field_name": "year"
-    },
     {
       "type": "unknown_field",
       "entry": "Klassen2010",

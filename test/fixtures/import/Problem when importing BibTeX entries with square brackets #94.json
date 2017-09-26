@@ -92,19 +92,10 @@
           "CuO"
         ]
       },
+      "unexpected_fields": {
+        "file": "Adachi_1989.pdf:CopperOxides\\Adachi_1989.pdf:PDF"
+      },
       "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "1989"
-          }
-        ],
-        "month": [
-          {
-            "type": "text",
-            "text": "01"
-          }
-        ],
         "owner": [
           {
             "type": "text",
@@ -117,23 +108,10 @@
             "text": "2010.07.01"
           }
         ]
-      },
-      "unexpected_fields": {
-        "file": "Adachi_1989.pdf:CopperOxides\\Adachi_1989.pdf:PDF"
       }
     }
   },
   "warnings": [
-    {
-      "type": "unknown_field",
-      "entry": "Adachi_1989",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "Adachi_1989",
-      "field_name": "month"
-    },
     {
       "type": "unexpected_field",
       "entry": "Adachi_1989",

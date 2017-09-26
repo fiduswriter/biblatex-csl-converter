@@ -55,22 +55,7 @@
             ]
           ]
         ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2009"
-          }
-        ]
       }
     }
-  },
-  "warnings": [
-    {
-      "type": "unknown_field",
-      "entry": "Oliveira_2009",
-      "field_name": "year"
-    }
-  ]
+  }
 }

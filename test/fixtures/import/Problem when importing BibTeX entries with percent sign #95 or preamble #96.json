@@ -111,13 +111,10 @@
           "Electrochromic\nproperties"
         ]
       },
+      "unexpected_fields": {
+        "file": "Akhavan_2009.pdf:CopperOxides\\Akhavan_2009.pdf:PDF"
+      },
       "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2009"
-          }
-        ],
         "owner": [
           {
             "type": "text",
@@ -130,9 +127,6 @@
             "text": "2010.03.08"
           }
         ]
-      },
-      "unexpected_fields": {
-        "file": "Akhavan_2009.pdf:CopperOxides\\Akhavan_2009.pdf:PDF"
       }
     },
     "2": {
@@ -246,13 +240,10 @@
           "Electrochromic\nproperties"
         ]
       },
+      "unexpected_fields": {
+        "file": "Akhavan_2009.pdf:CopperOxides\\Akhavan_2009.pdf:PDF"
+      },
       "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2009"
-          }
-        ],
         "owner": [
           {
             "type": "text",
@@ -265,18 +256,10 @@
             "text": "2010.03.08"
           }
         ]
-      },
-      "unexpected_fields": {
-        "file": "Akhavan_2009.pdf:CopperOxides\\Akhavan_2009.pdf:PDF"
       }
     }
   },
   "warnings": [
-    {
-      "type": "unknown_field",
-      "entry": "Akhavan_2009",
-      "field_name": "year"
-    },
     {
       "type": "unexpected_field",
       "entry": "Akhavan_2009",
@@ -291,11 +274,6 @@
       "type": "unknown_field",
       "entry": "Akhavan_2009",
       "field_name": "timestamp"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "Akhavan_2010_quotes",
-      "field_name": "year"
     },
     {
       "type": "unexpected_field",

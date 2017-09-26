@@ -29,12 +29,6 @@
         ]
       },
       "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2017"
-          }
-        ],
         "owner": [
           {
             "type": "text",
@@ -209,11 +203,6 @@
     }
   ],
   "warnings": [
-    {
-      "type": "unknown_field",
-      "entry": "Doe-2017",
-      "field_name": "year"
-    },
     {
       "type": "unknown_field",
       "entry": "Doe-2017",

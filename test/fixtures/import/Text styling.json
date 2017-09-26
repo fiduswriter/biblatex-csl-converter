@@ -77,14 +77,6 @@
         "url": "http://links.org.au/node/1916",
         "urldate": "2010-10-31"
       },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2010"
-          }
-        ]
-      },
       "unexpected_fields": {
         "location": [
           [
@@ -145,14 +137,6 @@
         ],
         "url": "http://www.johanneswilm.org/honduras/",
         "urldate": "2010-11-02"
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2009"
-          }
-        ]
       }
     },
     "3": {
@@ -244,19 +228,9 @@
   },
   "warnings": [
     {
-      "type": "unknown_field",
-      "entry": "wilm10",
-      "field_name": "year"
-    },
-    {
       "type": "unexpected_field",
       "entry": "wilm10",
       "field_name": "location"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "wilm09",
-      "field_name": "year"
     }
   ]
 }

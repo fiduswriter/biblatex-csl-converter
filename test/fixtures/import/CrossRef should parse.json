@@ -67,14 +67,6 @@
             }
           ]
         ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2004"
-          }
-        ]
       }
     }
   },
@@ -83,11 +75,6 @@
       "type": "unexpected_field",
       "entry": "Peters_2004",
       "field_name": "publisher"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "Peters_2004",
-      "field_name": "year"
     }
   ]
 }

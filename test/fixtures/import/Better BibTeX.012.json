@@ -51,22 +51,7 @@
             ]
           }
         ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2012"
-          }
-        ]
       }
     }
-  },
-  "warnings": [
-    {
-      "type": "unknown_field",
-      "entry": "moller2012conceptsrisksafety",
-      "field_name": "year"
-    }
-  ]
+  }
 }

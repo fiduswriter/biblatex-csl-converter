@@ -68,22 +68,7 @@
             "text": "0-69-697269-4"
           }
         ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2001"
-          }
-        ]
       }
     }
-  },
-  "warnings": [
-    {
-      "type": "unknown_field",
-      "entry": "hicks2001",
-      "field_name": "year"
-    }
-  ]
+  }
 }

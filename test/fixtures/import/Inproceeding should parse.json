@@ -109,12 +109,6 @@
         ]
       },
       "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2010"
-          }
-        ],
         "numpages": [
           {
             "type": "text",
@@ -131,11 +125,6 @@
     }
   },
   "warnings": [
-    {
-      "type": "unknown_field",
-      "entry": "Lysenko:2010:GMC:1839778.1839781",
-      "field_name": "year"
-    },
     {
       "type": "unknown_field",
       "entry": "Lysenko:2010:GMC:1839778.1839781",

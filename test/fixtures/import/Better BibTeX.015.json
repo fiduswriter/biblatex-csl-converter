@@ -83,12 +83,6 @@
             "type": "text",
             "text": "Ritzer, George"
           }
-        ],
-        "year": [
-          {
-            "type": "text",
-            "text": "2007"
-          }
         ]
       },
       "unexpected_fields": {
@@ -101,11 +95,6 @@
       "type": "unknown_field",
       "entry": "robinson2007theoriesglobalization",
       "field_name": "collaborator"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "robinson2007theoriesglobalization",
-      "field_name": "year"
     },
     {
       "type": "unexpected_field",

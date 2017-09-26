@@ -162,14 +162,6 @@
           ]
         ]
       },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2001"
-          }
-        ]
-      },
       "unexpected_fields": {
         "publisher": [
           [
@@ -351,14 +343,6 @@
           ]
         ]
       },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "1996"
-          }
-        ]
-      },
       "unexpected_fields": {
         "publisher": [
           [
@@ -461,14 +445,6 @@
             ]
           ]
         ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "1996"
-          }
-        ]
       }
     },
     "5": {
@@ -547,14 +523,6 @@
               }
             ]
           ]
-        ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "1995"
-          }
         ]
       },
       "unexpected_fields": {
@@ -646,14 +614,6 @@
               }
             ]
           ]
-        ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "1999"
-          }
         ]
       },
       "unexpected_fields": {
@@ -866,14 +826,6 @@
           ]
         ]
       },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2009"
-          }
-        ]
-      },
       "unexpected_fields": {
         "publisher": [
           [
@@ -961,14 +913,6 @@
               }
             ]
           ]
-        ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "1997"
-          }
         ]
       },
       "unexpected_fields": {
@@ -1079,14 +1023,6 @@
             ]
           ]
         ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "1995"
-          }
-        ]
       }
     },
     "10": {
@@ -1179,14 +1115,6 @@
               }
             ]
           ]
-        ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "1998"
-          }
         ]
       },
       "unexpected_fields": {
@@ -1386,14 +1314,6 @@
           ]
         ]
       },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2009"
-          }
-        ]
-      },
       "unexpected_fields": {
         "publisher": [
           [
@@ -1490,14 +1410,6 @@
             ]
           ]
         ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "1993"
-          }
-        ]
       }
     },
     "13": {
@@ -1590,14 +1502,6 @@
               }
             ]
           ]
-        ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2004"
-          }
         ]
       },
       "unexpected_fields": {
@@ -1701,14 +1605,6 @@
               }
             ]
           ]
-        ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "1997"
-          }
         ]
       },
       "unexpected_fields": {
@@ -1870,14 +1766,6 @@
           ]
         ]
       },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2008"
-          }
-        ]
-      },
       "unexpected_fields": {
         "publisher": [
           [
@@ -1986,14 +1874,6 @@
             ]
           ]
         ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "1995"
-          }
-        ]
       }
     },
     "17": {
@@ -2071,14 +1951,6 @@
             "text": "L91 First citation in article| CrossRef link| IOP Article| Abstract at Astrophysics Data System"
           }
         ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "1996"
-          }
-        ]
       }
     },
     "18": {
@@ -2140,14 +2012,6 @@
           {
             "type": "text",
             "text": "L117 First citation in article| IOP Article| CrossRef link| Abstract at Astrophysics Data System"
-          }
-        ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "1995"
           }
         ]
       }
@@ -2228,14 +2092,6 @@
               }
             ]
           ]
-        ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "1716"
-          }
         ]
       }
     },
@@ -2329,14 +2185,6 @@
               }
             ]
           ]
-        ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2000"
-          }
         ]
       },
       "unexpected_fields": {
@@ -2455,14 +2303,6 @@
             ]
           ]
         ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2000"
-          }
-        ]
       }
     },
     "22": {
@@ -2541,14 +2381,6 @@
               }
             ]
           ]
-        ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2002"
-          }
         ]
       }
     },
@@ -2747,14 +2579,6 @@
               }
             ]
           ]
-        ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2010"
-          }
         ]
       }
     },
@@ -2957,14 +2781,6 @@
           ]
         ]
       },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2010"
-          }
-        ]
-      },
       "unexpected_fields": {
         "publisher": [
           [
@@ -3054,14 +2870,6 @@
               }
             ]
           ]
-        ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "1999"
-          }
         ]
       }
     },
@@ -3202,14 +3010,6 @@
                 "text": "G."
               }
             ]
-          }
-        ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2001"
           }
         ]
       }
@@ -3472,14 +3272,6 @@
             ]
           ]
         ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2009"
-          }
-        ]
       }
     },
     "29": {
@@ -3559,14 +3351,6 @@
             ]
           ]
         ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2002"
-          }
-        ]
       }
     },
     "30": {
@@ -3594,14 +3378,6 @@
                 "text": "T.A.D."
               }
             ]
-          }
-        ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "1997"
           }
         ]
       }
@@ -3682,14 +3458,6 @@
               }
             ]
           ]
-        ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "1993"
-          }
         ]
       }
     },
@@ -3798,14 +3566,6 @@
             ]
           ]
         ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2004"
-          }
-        ]
       }
     },
     "34": {
@@ -3870,14 +3630,6 @@
               }
             ]
           ]
-        ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2002"
-          }
         ]
       }
     },
@@ -3957,14 +3709,6 @@
               }
             ]
           ]
-        ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2010"
-          }
         ]
       }
     },
@@ -4047,14 +3791,6 @@
           {
             "type": "text",
             "text": "19980019305"
-          }
-        ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "1995"
           }
         ]
       }
@@ -4150,14 +3886,6 @@
             ]
           ]
         ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "1996"
-          }
-        ]
       }
     },
     "38": {
@@ -4250,14 +3978,6 @@
               }
             ]
           ]
-        ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "1998"
-          }
         ]
       }
     },
@@ -4365,14 +4085,6 @@
               }
             ]
           ]
-        ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2005"
-          }
         ]
       }
     },
@@ -4559,14 +4271,6 @@
             ]
           ]
         ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "1999"
-          }
-        ]
       }
     },
     "41": {
@@ -4737,14 +4441,6 @@
           ]
         ]
       },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2001"
-          }
-        ]
-      },
       "unexpected_fields": {
         "publisher": [
           [
@@ -4836,14 +4532,6 @@
           ]
         ]
       },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "1993"
-          }
-        ]
-      },
       "unexpected_fields": {
         "publisher": [
           [
@@ -4900,14 +4588,6 @@
           {
             "type": "text",
             "text": "Arxiv preprint arXiv:1206.3530"
-          }
-        ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2012"
           }
         ]
       }
@@ -5003,14 +4683,6 @@
             ]
           ]
         ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "1996"
-          }
-        ]
       }
     },
     "45": {
@@ -5104,14 +4776,6 @@
             ]
           ]
         ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2002"
-          }
-        ]
       }
     },
     "46": {
@@ -5204,14 +4868,6 @@
               }
             ]
           ]
-        ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "1997"
-          }
         ]
       }
     },
@@ -5347,14 +5003,6 @@
               }
             ]
           ]
-        ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2005"
-          }
         ]
       }
     },
@@ -5546,14 +5194,6 @@
               }
             ]
           ]
-        ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2009"
-          }
         ]
       }
     },
@@ -5810,14 +5450,6 @@
             ]
           ]
         ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "1997"
-          }
-        ]
       }
     },
     "51": {
@@ -5981,14 +5613,6 @@
             ]
           ]
         ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2006"
-          }
-        ]
       }
     },
     "52": {
@@ -6088,14 +5712,6 @@
             ]
           ]
         ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "1995"
-          }
-        ]
       }
     },
     "53": {
@@ -6174,14 +5790,6 @@
               }
             ]
           ]
-        ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "1993"
-          }
         ]
       }
     },
@@ -6317,14 +5925,6 @@
               }
             ]
           ]
-        ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2006"
-          }
         ]
       }
     },
@@ -6530,32 +6130,14 @@
             ]
           ]
         ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2010"
-          }
-        ]
       }
     }
   },
   "warnings": [
     {
-      "type": "unknown_field",
-      "entry": "paglione2001mapping",
-      "field_name": "year"
-    },
-    {
       "type": "unexpected_field",
       "entry": "paglione2001mapping",
       "field_name": "publisher"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "jackson1996hcn",
-      "field_name": "year"
     },
     {
       "type": "unexpected_field",
@@ -6563,24 +6145,9 @@
       "field_name": "publisher"
     },
     {
-      "type": "unknown_field",
-      "entry": "paglione1996diffuse",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "paglione1995distribution",
-      "field_name": "year"
-    },
-    {
       "type": "unexpected_field",
       "entry": "paglione1995distribution",
       "field_name": "publisher"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "blom1999diffuse",
-      "field_name": "year"
     },
     {
       "type": "unexpected_field",
@@ -6588,19 +6155,9 @@
       "field_name": "publisher"
     },
     {
-      "type": "unknown_field",
-      "entry": "smolvcic2009cosmic",
-      "field_name": "year"
-    },
-    {
       "type": "unexpected_field",
       "entry": "smolvcic2009cosmic",
       "field_name": "publisher"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "paglione1997average",
-      "field_name": "year"
     },
     {
       "type": "unexpected_field",
@@ -6608,24 +6165,9 @@
       "field_name": "publisher"
     },
     {
-      "type": "unknown_field",
-      "entry": "jackson1995submillimeter",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "paglione1998interpreting",
-      "field_name": "year"
-    },
-    {
       "type": "unexpected_field",
       "entry": "paglione1998interpreting",
       "field_name": "publisher"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "smolvcic2009dust",
-      "field_name": "year"
     },
     {
       "type": "unexpected_field",
@@ -6633,24 +6175,9 @@
       "field_name": "publisher"
     },
     {
-      "type": "unknown_field",
-      "entry": "jackson1993dense",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "paglione2004structure",
-      "field_name": "year"
-    },
-    {
       "type": "unexpected_field",
       "entry": "paglione2004structure",
       "field_name": "publisher"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "kraemer19972000",
-      "field_name": "year"
     },
     {
       "type": "unexpected_field",
@@ -6658,39 +6185,9 @@
       "field_name": "publisher"
     },
     {
-      "type": "unknown_field",
-      "entry": "liu2008faint",
-      "field_name": "year"
-    },
-    {
       "type": "unexpected_field",
       "entry": "liu2008faint",
       "field_name": "publisher"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "paglione1995first",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "jackson1996apj",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "paglione1995apj",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "paglione1716nguyen",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "kraemer2000properties",
-      "field_name": "year"
     },
     {
       "type": "unexpected_field",
@@ -6698,179 +6195,19 @@
       "field_name": "publisher"
     },
     {
-      "type": "unknown_field",
-      "entry": "smith2000measurements",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "paglione2002cn",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "smolcic2010erratum",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "smolvcic2010erratum",
-      "field_name": "year"
-    },
-    {
       "type": "unexpected_field",
       "entry": "smolvcic2010erratum",
       "field_name": "publisher"
     },
     {
-      "type": "unknown_field",
-      "entry": "blom1999gamma",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "paglione2001mapping",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "smoli2009cosmic",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "spergel2002utilizing",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "paglione1997properties",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "paglione1993observations",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "paglione2004molecular",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "paglione2002york",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "paglione2010diffuse",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "bertsch1995diffuse",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "bolatto1996dense",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "yam1998properties",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "liu2005local",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "paglione1999umass",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "paglione2001mapping",
-      "field_name": "year"
-    },
-    {
       "type": "unexpected_field",
       "entry": "paglione2001mapping",
       "field_name": "publisher"
     },
     {
-      "type": "unknown_field",
-      "entry": "jackson1993submillimeter",
-      "field_name": "year"
-    },
-    {
       "type": "unexpected_field",
       "entry": "jackson1993submillimeter",
       "field_name": "publisher"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "paglione2012properties",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "paglione1996dense",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "paglione2002urban",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "paglione1997tracing",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "tribiano2005evolution",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "smoli2009dust",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "paglione1997distribution",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "liu2006faint",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "kraemer1995molecular",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "jackson1993hcn",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "paglione2006luminosity",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "smoli2010erratum",
-      "field_name": "year"
     }
   ]
 }

@@ -58,12 +58,6 @@
             "type": "text",
             "text": "2015-02-24 12:14:36 +0100"
           }
-        ],
-        "year": [
-          {
-            "type": "text",
-            "text": "1957"
-          }
         ]
       }
     },
@@ -204,12 +198,6 @@
             "type": "text",
             "text": "2015-02-24 12:14:36 +0100"
           }
-        ],
-        "year": [
-          {
-            "type": "text",
-            "text": "1960"
-          }
         ]
       }
     },
@@ -327,22 +315,10 @@
             "text": "Hermano Vianna"
           }
         ],
-        "month": [
-          {
-            "type": "text",
-            "text": "04"
-          }
-        ],
         "timestamp": [
           {
             "type": "text",
             "text": "2015-02-24 12:14:36 +0100"
-          }
-        ],
-        "year": [
-          {
-            "type": "text",
-            "text": "1999"
           }
         ]
       }
@@ -404,22 +380,10 @@
             "text": "Pollan, Michael"
           }
         ],
-        "month": [
-          {
-            "type": "text",
-            "text": "04"
-          }
-        ],
         "timestamp": [
           {
             "type": "text",
             "text": "2015-02-24 12:14:36 +0100"
-          }
-        ],
-        "year": [
-          {
-            "type": "text",
-            "text": "2006"
           }
         ]
       }
@@ -435,11 +399,6 @@
       "type": "unknown_field",
       "entry": "clark_mesopotamia:_1957",
       "field_name": "timestamp"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "clark_mesopotamia:_1957",
-      "field_name": "year"
     },
     {
       "type": "unexpected_field",
@@ -467,11 +426,6 @@
       "field_name": "timestamp"
     },
     {
-      "type": "unknown_field",
-      "entry": "mozart_sonatas_1960",
-      "field_name": "year"
-    },
-    {
       "type": "unknown_key",
       "entry": "ratliff_mystery_1999",
       "field_name": "langid",
@@ -485,17 +439,7 @@
     {
       "type": "unknown_field",
       "entry": "ratliff_mystery_1999",
-      "field_name": "month"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "ratliff_mystery_1999",
       "field_name": "timestamp"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "ratliff_mystery_1999",
-      "field_name": "year"
     },
     {
       "type": "unknown_key",
@@ -516,17 +460,7 @@
     {
       "type": "unknown_field",
       "entry": "kamp_deconstructing_2006",
-      "field_name": "month"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "kamp_deconstructing_2006",
       "field_name": "timestamp"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "kamp_deconstructing_2006",
-      "field_name": "year"
     }
   ]
 }

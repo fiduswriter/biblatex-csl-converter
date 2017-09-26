@@ -44,14 +44,6 @@
           ]
         ]
       },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "1999"
-          }
-        ]
-      },
       "unexpected_fields": {
         "publisher": [
           [
@@ -65,11 +57,6 @@
     }
   },
   "warnings": [
-    {
-      "type": "unknown_field",
-      "entry": "羊憶蓉1999人的素質提昇之重要性",
-      "field_name": "year"
-    },
     {
       "type": "unexpected_field",
       "entry": "羊憶蓉1999人的素質提昇之重要性",

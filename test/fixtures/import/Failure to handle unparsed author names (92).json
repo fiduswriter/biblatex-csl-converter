@@ -163,13 +163,10 @@
         ],
         "doi": "10.1007/10681727_56"
       },
+      "unexpected_fields": {
+        "file": "Madelung_1998_LB_10681727_56.pdf:CopperOxides\\Madelung_1998_LB_10681727_56.pdf:PDF"
+      },
       "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "1998"
-          }
-        ],
         "owner": [
           {
             "type": "text",
@@ -182,18 +179,10 @@
             "text": "2010.02.22"
           }
         ]
-      },
-      "unexpected_fields": {
-        "file": "Madelung_1998_LB_10681727_56.pdf:CopperOxides\\Madelung_1998_LB_10681727_56.pdf:PDF"
       }
     }
   },
   "warnings": [
-    {
-      "type": "unknown_field",
-      "entry": "Madelung_1998_LB_10681727_56",
-      "field_name": "year"
-    },
     {
       "type": "unexpected_field",
       "entry": "Madelung_1998_LB_10681727_56",

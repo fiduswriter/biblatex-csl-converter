@@ -97,12 +97,6 @@
             "type": "text",
             "text": "2015-02-24 12:14:36 +0100"
           }
-        ],
-        "year": [
-          {
-            "type": "text",
-            "text": "2007"
-          }
         ]
       }
     },
@@ -164,12 +158,6 @@
           {
             "type": "text",
             "text": "2015-02-24 12:14:36 +0100"
-          }
-        ],
-        "year": [
-          {
-            "type": "text",
-            "text": "1994"
           }
         ]
       }
@@ -270,12 +258,6 @@
             "type": "text",
             "text": "2015-02-24 12:14:36 +0100"
           }
-        ],
-        "year": [
-          {
-            "type": "text",
-            "text": "2010"
-          }
         ]
       }
     },
@@ -345,12 +327,6 @@
           {
             "type": "text",
             "text": "2015-02-24 12:14:36 +0100"
-          }
-        ],
-        "year": [
-          {
-            "type": "text",
-            "text": "1995"
           }
         ]
       }
@@ -469,12 +445,6 @@
             "type": "text",
             "text": "2015-02-24 12:14:36 +0100"
           }
-        ],
-        "year": [
-          {
-            "type": "text",
-            "text": "1998"
-          }
         ]
       }
     }
@@ -492,18 +462,8 @@
     },
     {
       "type": "unknown_field",
-      "entry": "kenne07",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
       "entry": "vonf94",
       "field_name": "timestamp"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "vonf94",
-      "field_name": "year"
     },
     {
       "type": "unknown_field",
@@ -512,28 +472,13 @@
     },
     {
       "type": "unknown_field",
-      "entry": "devr10",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
       "entry": "vand95",
       "field_name": "timestamp"
     },
     {
       "type": "unknown_field",
-      "entry": "vand95",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
       "entry": "desw98",
       "field_name": "timestamp"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "desw98",
-      "field_name": "year"
     }
   ]
 }

@@ -118,22 +118,10 @@
         ]
       },
       "unknown_fields": {
-        "month": [
-          {
-            "type": "text",
-            "text": "11"
-          }
-        ],
         "timestamp": [
           {
             "type": "text",
             "text": "2015-02-24 12:14:36 +0100"
-          }
-        ],
-        "year": [
-          {
-            "type": "text",
-            "text": "2011"
           }
         ]
       }
@@ -143,17 +131,7 @@
     {
       "type": "unknown_field",
       "entry": "HammondBortz2011ApplMathComput",
-      "field_name": "month"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "HammondBortz2011ApplMathComput",
       "field_name": "timestamp"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "HammondBortz2011ApplMathComput",
-      "field_name": "year"
     }
   ]
 }

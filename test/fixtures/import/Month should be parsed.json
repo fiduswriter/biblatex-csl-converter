@@ -193,18 +193,6 @@
         "doi": "10.1088/0004-637X/744/2/93"
       },
       "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2012"
-          }
-        ],
-        "month": [
-          {
-            "type": "text",
-            "text": "01"
-          }
-        ],
         "adsurl": [
           {
             "type": "text",
@@ -412,18 +400,6 @@
         "doi": "10.1088/0004-637X/744/2/93"
       },
       "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2012"
-          }
-        ],
-        "month": [
-          {
-            "type": "text",
-            "text": "01"
-          }
-        ],
         "adsurl": [
           {
             "type": "text",
@@ -443,32 +419,12 @@
     {
       "type": "unknown_field",
       "entry": "2012ApJ...744...93B",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "2012ApJ...744...93B",
-      "field_name": "month"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "2012ApJ...744...93B",
       "field_name": "adsurl"
     },
     {
       "type": "unknown_field",
       "entry": "2012ApJ...744...93B",
       "field_name": "adsnote"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "2012ApJ...744...93C",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "2012ApJ...744...93C",
-      "field_name": "month"
     },
     {
       "type": "unknown_field",

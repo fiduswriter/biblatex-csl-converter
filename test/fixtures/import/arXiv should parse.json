@@ -90,18 +90,6 @@
         "doi": "10.1016/j.physleta.2009.04.068"
       },
       "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2009"
-          }
-        ],
-        "month": [
-          {
-            "type": "text",
-            "text": "06"
-          }
-        ],
         "adsurl": [
           {
             "type": "text",
@@ -118,16 +106,6 @@
     }
   },
   "warnings": [
-    {
-      "type": "unknown_field",
-      "entry": "2009PhLA..373.2301C",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "2009PhLA..373.2301C",
-      "field_name": "month"
-    },
     {
       "type": "unknown_field",
       "entry": "2009PhLA..373.2301C",

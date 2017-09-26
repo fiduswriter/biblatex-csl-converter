@@ -79,12 +79,6 @@
             "type": "text",
             "text": "2015-02-24 12:14:36 +0100"
           }
-        ],
-        "year": [
-          {
-            "type": "text",
-            "text": "2000"
-          }
         ]
       }
     }
@@ -99,11 +93,6 @@
       "type": "unknown_field",
       "entry": "BaltesStaudinger2000Am.Psychol.",
       "field_name": "timestamp"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "BaltesStaudinger2000Am.Psychol.",
-      "field_name": "year"
     }
   ]
 }

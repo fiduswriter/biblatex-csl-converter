@@ -78,12 +78,6 @@
             "type": "text",
             "text": "2015-02-24 12:14:36 +0100"
           }
-        ],
-        "year": [
-          {
-            "type": "text",
-            "text": "1980"
-          }
         ]
       }
     }
@@ -93,11 +87,6 @@
       "type": "unknown_field",
       "entry": "geophysicsstudycommittee_continental_1980",
       "field_name": "timestamp"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "geophysicsstudycommittee_continental_1980",
-      "field_name": "year"
     }
   ]
 }

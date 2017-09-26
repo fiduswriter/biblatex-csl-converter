@@ -125,22 +125,10 @@
         ]
       },
       "unknown_fields": {
-        "month": [
-          {
-            "type": "text",
-            "text": "02"
-          }
-        ],
         "timestamp": [
           {
             "type": "text",
             "text": "2015-02-24 12:14:36 +0100"
-          }
-        ],
-        "year": [
-          {
-            "type": "text",
-            "text": "2016"
           }
         ]
       }
@@ -234,22 +222,10 @@
         "urldate": "2016-04-18"
       },
       "unknown_fields": {
-        "month": [
-          {
-            "type": "text",
-            "text": "05"
-          }
-        ],
         "timestamp": [
           {
             "type": "text",
             "text": "2015-02-24 12:14:36 +0100"
-          }
-        ],
-        "year": [
-          {
-            "type": "text",
-            "text": "2013"
           }
         ]
       }
@@ -470,22 +446,10 @@
         ]
       },
       "unknown_fields": {
-        "month": [
-          {
-            "type": "text",
-            "text": "07"
-          }
-        ],
         "timestamp": [
           {
             "type": "text",
             "text": "2015-02-24 12:14:36 +0100"
-          }
-        ],
-        "year": [
-          {
-            "type": "text",
-            "text": "2014"
           }
         ]
       }
@@ -503,17 +467,7 @@
     {
       "type": "unknown_field",
       "entry": "Sen.2016.BV",
-      "field_name": "month"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "Sen.2016.BV",
       "field_name": "timestamp"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "Sen.2016.BV",
-      "field_name": "year"
     },
     {
       "type": "alias_creates_duplicate_field",
@@ -526,17 +480,7 @@
     {
       "type": "unknown_field",
       "entry": "Smolin.2013.Classical",
-      "field_name": "month"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "Smolin.2013.Classical",
       "field_name": "timestamp"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "Smolin.2013.Classical",
-      "field_name": "year"
     },
     {
       "type": "alias_creates_duplicate_field",
@@ -549,17 +493,7 @@
     {
       "type": "unknown_field",
       "entry": "Ronnow.2014.Defining",
-      "field_name": "month"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "Ronnow.2014.Defining",
       "field_name": "timestamp"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "Ronnow.2014.Defining",
-      "field_name": "year"
     }
   ]
 }

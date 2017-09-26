@@ -95,12 +95,6 @@
         ]
       },
       "unknown_fields": {
-        "month": [
-          {
-            "type": "text",
-            "text": "06"
-          }
-        ],
         "pmid": [
           {
             "type": "text",
@@ -111,12 +105,6 @@
           {
             "type": "text",
             "text": "2015-02-24 12:14:36 +0100"
-          }
-        ],
-        "year": [
-          {
-            "type": "text",
-            "text": "2014"
           }
         ]
       },
@@ -134,11 +122,6 @@
     {
       "type": "unknown_field",
       "entry": "MauSey14",
-      "field_name": "month"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "MauSey14",
       "field_name": "pmid"
     },
     {
@@ -150,11 +133,6 @@
       "type": "unknown_field",
       "entry": "MauSey14",
       "field_name": "timestamp"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "MauSey14",
-      "field_name": "year"
     }
   ]
 }

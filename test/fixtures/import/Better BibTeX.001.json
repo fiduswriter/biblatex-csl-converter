@@ -150,25 +150,12 @@
           "plinian"
         ]
       },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2001"
-          }
-        ]
-      },
       "unexpected_fields": {
         "file": ":Better BibTeX.001/Users/heatherwright/Documents/Scientific Papers/AVX3W9~F.PDF:PDF"
       }
     }
   },
   "warnings": [
-    {
-      "type": "unknown_field",
-      "entry": "Adams2001",
-      "field_name": "year"
-    },
     {
       "type": "unexpected_field",
       "entry": "Adams2001",

@@ -132,12 +132,6 @@
             "type": "text",
             "text": "2015-02-24 12:14:36 +0100"
           }
-        ],
-        "year": [
-          {
-            "type": "text",
-            "text": "2002"
-          }
         ]
       },
       "unexpected_fields": {
@@ -170,11 +164,6 @@
       "type": "unknown_field",
       "entry": "Kokpinar2002",
       "field_name": "timestamp"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "Kokpinar2002",
-      "field_name": "year"
     }
   ]
 }

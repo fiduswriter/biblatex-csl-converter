@@ -132,22 +132,7 @@
           }
         ],
         "doi": "10.1002/pssa.2210930226"
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "1986"
-          }
-        ]
       }
     }
-  },
-  "warnings": [
-    {
-      "type": "unknown_field",
-      "entry": "Abu-Zeid_1986",
-      "field_name": "year"
-    }
-  ]
+  }
 }

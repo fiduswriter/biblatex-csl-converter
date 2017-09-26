@@ -63,22 +63,7 @@
             "text": "ninth Dover printing, tenth GPO printing"
           }
         ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "1964"
-          }
-        ]
       }
     }
-  },
-  "warnings": [
-    {
-      "type": "unknown_field",
-      "entry": "abramowitz+stegun",
-      "field_name": "year"
-    }
-  ]
+  }
 }

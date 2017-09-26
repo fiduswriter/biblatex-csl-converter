@@ -327,6 +327,8 @@ export class BibLatexParser {
         if (date) {
             if (this._checkDate(date)) {
                 fields['date'] = date
+                delete rawFields.year
+                delete rawFields.month
             } else {
                 let fieldName, value, errorList
                 if (rawFields.date) {

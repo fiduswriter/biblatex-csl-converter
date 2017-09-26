@@ -81,22 +81,7 @@
             ]
           ]
         ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2015"
-          }
-        ]
       }
     }
-  },
-  "warnings": [
-    {
-      "type": "unknown_field",
-      "entry": "داودی2015بررسی",
-      "field_name": "year"
-    }
-  ]
+  }
 }

@@ -100,12 +100,6 @@
         ]
       },
       "unknown_fields": {
-        "month": [
-          {
-            "type": "text",
-            "text": "01"
-          }
-        ],
         "pmid": [
           {
             "type": "text",
@@ -116,12 +110,6 @@
           {
             "type": "text",
             "text": "2015-02-24 12:14:36 +0100"
-          }
-        ],
-        "year": [
-          {
-            "type": "text",
-            "text": "2009"
           }
         ]
       }
@@ -281,12 +269,6 @@
             "type": "text",
             "text": "2015-02-24 12:14:36 +0100"
           }
-        ],
-        "year": [
-          {
-            "type": "text",
-            "text": "2003"
-          }
         ]
       }
     },
@@ -351,12 +333,6 @@
           {
             "type": "text",
             "text": "2015-02-24 12:14:36 +0100"
-          }
-        ],
-        "year": [
-          {
-            "type": "text",
-            "text": "1906"
           }
         ]
       }
@@ -574,22 +550,11 @@
             "type": "text",
             "text": "2015-02-24 12:14:36 +0100"
           }
-        ],
-        "year": [
-          {
-            "type": "text",
-            "text": "2014"
-          }
         ]
       }
     }
   },
   "warnings": [
-    {
-      "type": "unknown_field",
-      "entry": "puurtinen_betweengroup_2009",
-      "field_name": "month"
-    },
     {
       "type": "unknown_field",
       "entry": "puurtinen_betweengroup_2009",
@@ -602,18 +567,8 @@
     },
     {
       "type": "unknown_field",
-      "entry": "puurtinen_betweengroup_2009",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
       "entry": "bowles_coevolution_2003",
       "field_name": "timestamp"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "bowles_coevolution_2003",
-      "field_name": "year"
     },
     {
       "type": "unexpected_field",
@@ -627,11 +582,6 @@
     },
     {
       "type": "unknown_field",
-      "entry": "sumner_folkways_1906",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
       "entry": "bauer_war_2014",
       "field_name": "pmid"
     },
@@ -639,11 +589,6 @@
       "type": "unknown_field",
       "entry": "bauer_war_2014",
       "field_name": "timestamp"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "bauer_war_2014",
-      "field_name": "year"
     }
   ]
 }

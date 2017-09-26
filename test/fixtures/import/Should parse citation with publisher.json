@@ -57,22 +57,7 @@
             }
           ]
         ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2009"
-          }
-        ]
       }
     }
-  },
-  "warnings": [
-    {
-      "type": "unknown_field",
-      "entry": "hennemann2009vernetzung",
-      "field_name": "year"
-    }
-  ]
+  }
 }

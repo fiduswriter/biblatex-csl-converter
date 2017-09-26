@@ -73,12 +73,6 @@
             "type": "text",
             "text": "2015-02-24 12:14:36 +0100"
           }
-        ],
-        "year": [
-          {
-            "type": "text",
-            "text": "2014"
-          }
         ]
       }
     },
@@ -162,12 +156,6 @@
             "type": "text",
             "text": "2015-02-24 12:14:36 +0100"
           }
-        ],
-        "year": [
-          {
-            "type": "text",
-            "text": "2014"
-          }
         ]
       }
     }
@@ -180,18 +168,8 @@
     },
     {
       "type": "unknown_field",
-      "entry": "Nome2014",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
       "entry": "vanGogh2014",
       "field_name": "timestamp"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "vanGogh2014",
-      "field_name": "year"
     }
   ]
 }

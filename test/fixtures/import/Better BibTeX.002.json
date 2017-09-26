@@ -63,14 +63,6 @@
             "text": "ninth Dover printing, tenth GPO printing"
           }
         ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "1964"
-          }
-        ]
       }
     },
     "2": {
@@ -128,27 +120,7 @@
             "text": "0385527403"
           }
         ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2008"
-          }
-        ]
       }
     }
-  },
-  "warnings": [
-    {
-      "type": "unknown_field",
-      "entry": "abramowitz+stegun",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "Torre2008",
-      "field_name": "year"
-    }
-  ]
+  }
 }

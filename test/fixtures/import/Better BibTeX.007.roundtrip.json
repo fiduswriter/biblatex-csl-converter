@@ -165,12 +165,6 @@
             "type": "text",
             "text": "2015-02-24 12:14:36 +0100"
           }
-        ],
-        "year": [
-          {
-            "type": "text",
-            "text": "2012"
-          }
         ]
       }
     }
@@ -180,11 +174,6 @@
       "type": "unknown_field",
       "entry": "Frit2",
       "field_name": "timestamp"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "Frit2",
-      "field_name": "year"
     }
   ]
 }

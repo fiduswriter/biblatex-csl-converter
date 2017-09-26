@@ -111,14 +111,6 @@
           ]
         ]
       },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2008"
-          }
-        ]
-      },
       "unexpected_fields": {
         "publisher": [
           [
@@ -232,14 +224,6 @@
               }
             ]
           ]
-        ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "1995"
-          }
         ]
       },
       "unexpected_fields": {
@@ -447,42 +431,19 @@
         ],
         "url": "http://dx.doi.org/10.1056/NEJM197806222982503",
         "eprint": "http://dx.doi.org/10.1056/NEJM197806222982503"
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "1978"
-          }
-        ]
       }
     }
   },
   "warnings": [
     {
-      "type": "unknown_field",
-      "entry": "hess2008gromacs",
-      "field_name": "year"
-    },
-    {
       "type": "unexpected_field",
       "entry": "hess2008gromacs",
       "field_name": "publisher"
     },
     {
-      "type": "unknown_field",
-      "entry": "berendsen1995gromacs",
-      "field_name": "year"
-    },
-    {
       "type": "unexpected_field",
       "entry": "berendsen1995gromacs",
       "field_name": "publisher"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "doi:10.1056/NEJM197806222982503",
-      "field_name": "year"
     }
   ]
 }

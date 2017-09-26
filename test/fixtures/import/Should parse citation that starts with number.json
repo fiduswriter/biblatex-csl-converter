@@ -57,12 +57,6 @@
             "type": "text",
             "text": "http://www.sr.ithaka.org/sites/default/files/reports/ithaka-sr-online-learning-postsecondary-education-may2012.pdf"
           }
-        ],
-        "year": [
-          {
-            "type": "text",
-            "text": "2013"
-          }
         ]
       }
     }
@@ -82,11 +76,6 @@
       "type": "unknown_field",
       "entry": "2013current",
       "field_name": "oa-url"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "2013current",
-      "field_name": "year"
     }
   ]
 }

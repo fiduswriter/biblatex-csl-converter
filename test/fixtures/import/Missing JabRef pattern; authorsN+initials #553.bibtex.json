@@ -102,22 +102,10 @@
         "urldate": "2014-08-11"
       },
       "unknown_fields": {
-        "month": [
-          {
-            "type": "text",
-            "text": "07"
-          }
-        ],
         "timestamp": [
           {
             "type": "text",
             "text": "2015-02-24 12:14:36 +0100"
-          }
-        ],
-        "year": [
-          {
-            "type": "text",
-            "text": "2014"
           }
         ]
       }
@@ -135,17 +123,7 @@
     {
       "type": "unknown_field",
       "entry": "HuFMengSZhangDQ",
-      "field_name": "month"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "HuFMengSZhangDQ",
       "field_name": "timestamp"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "HuFMengSZhangDQ",
-      "field_name": "year"
     }
   ]
 }

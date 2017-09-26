@@ -76,14 +76,6 @@
           ]
         ]
       },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2009"
-          }
-        ]
-      },
       "unexpected_fields": {
         "publisher": [
           [
@@ -185,14 +177,6 @@
           ]
         ]
       },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2011"
-          }
-        ]
-      },
       "unexpected_fields": {
         "publisher": [
           [
@@ -253,14 +237,6 @@
             ]
           ]
         ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2007"
-          }
-        ]
       }
     },
     "4": {
@@ -320,14 +296,6 @@
             }
           ]
         ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2012"
-          }
-        ]
       }
     },
     "5": {
@@ -378,14 +346,6 @@
               }
             ]
           ]
-        ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2012"
-          }
         ]
       }
     },
@@ -445,14 +405,6 @@
               "text": "Принтхаус"
             }
           ]
-        ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2010"
-          }
         ]
       }
     },
@@ -582,14 +534,6 @@
           ]
         ]
       },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2013"
-          }
-        ]
-      },
       "unexpected_fields": {
         "publisher": [
           [
@@ -604,49 +548,14 @@
   },
   "warnings": [
     {
-      "type": "unknown_field",
-      "entry": "nazarenko2009new",
-      "field_name": "year"
-    },
-    {
       "type": "unexpected_field",
       "entry": "nazarenko2009new",
       "field_name": "publisher"
     },
     {
-      "type": "unknown_field",
-      "entry": "nazarenko2011new",
-      "field_name": "year"
-    },
-    {
       "type": "unexpected_field",
       "entry": "nazarenko2011new",
       "field_name": "publisher"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "назаренко2007долгоносикообразные",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "назаренко2012долгоносикообразные",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "назаренко2012долгоносикообразные",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "назаренко2010водные",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "пучков2013предварительный",
-      "field_name": "year"
     },
     {
       "type": "unexpected_field",

@@ -152,14 +152,6 @@
       },
       "unexpected_fields": {
         "file": ":Better BibTeX.009/Users/heatherwright/Documents/Scientific Papers/Adams\\_Huaynaputina.pdf:pdf"
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2001"
-          }
-        ]
       }
     },
     "2": {
@@ -314,14 +306,6 @@
       },
       "unexpected_fields": {
         "file": ":Better BibTeX.009/Users/heatherwright/Documents/Scientific Papers/Adams\\_Huaynaputina.pdf:pdf"
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2001"
-          }
-        ]
       }
     }
   },
@@ -338,19 +322,9 @@
       "field_name": "file"
     },
     {
-      "type": "unknown_field",
-      "entry": "Adams2001",
-      "field_name": "year"
-    },
-    {
       "type": "unexpected_field",
       "entry": "Adams2002",
       "field_name": "file"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "Adams2002",
-      "field_name": "year"
     }
   ]
 }

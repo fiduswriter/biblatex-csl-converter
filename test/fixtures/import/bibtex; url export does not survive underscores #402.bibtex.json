@@ -178,22 +178,10 @@
         ]
       },
       "unknown_fields": {
-        "month": [
-          {
-            "type": "text",
-            "text": "09"
-          }
-        ],
         "timestamp": [
           {
             "type": "text",
             "text": "2015-02-24 12:14:36 +0100"
-          }
-        ],
-        "year": [
-          {
-            "type": "text",
-            "text": "2014"
           }
         ]
       }
@@ -203,17 +191,7 @@
     {
       "type": "unknown_field",
       "entry": "EmmerJaens14a",
-      "field_name": "month"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "EmmerJaens14a",
       "field_name": "timestamp"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "EmmerJaens14a",
-      "field_name": "year"
     }
   ]
 }

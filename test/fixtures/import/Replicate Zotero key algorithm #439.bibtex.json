@@ -82,12 +82,6 @@
             "type": "text",
             "text": "2015-02-24 12:14:36 +0100"
           }
-        ],
-        "year": [
-          {
-            "type": "text",
-            "text": "2015"
-          }
         ]
       }
     },
@@ -192,12 +186,6 @@
           {
             "type": "text",
             "text": "2015-02-24 12:14:36 +0100"
-          }
-        ],
-        "year": [
-          {
-            "type": "text",
-            "text": "2016"
           }
         ]
       }
@@ -311,11 +299,6 @@
       "field_name": "timestamp"
     },
     {
-      "type": "unknown_field",
-      "entry": "firstname_retorquere_replicate_2015",
-      "field_name": "year"
-    },
-    {
       "type": "undefined_variable",
       "entry": "retorquere_replicate_2016",
       "key": "journal",
@@ -330,11 +313,6 @@
       "type": "unknown_field",
       "entry": "retorquere_replicate_2016",
       "field_name": "timestamp"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "retorquere_replicate_2016",
-      "field_name": "year"
     },
     {
       "type": "undefined_variable",

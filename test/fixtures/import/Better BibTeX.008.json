@@ -42,22 +42,7 @@
             "text": "http://www.americanrightsatwork.org/blogcategory-275/"
           }
         ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2012"
-          }
-        ]
       }
     }
-  },
-  "warnings": [
-    {
-      "type": "unknown_field",
-      "entry": "american_rights_at_work_public_2012",
-      "field_name": "year"
-    }
-  ]
+  }
 }
