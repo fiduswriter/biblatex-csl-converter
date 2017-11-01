@@ -4,6 +4,7 @@
       "bib_type": "article",
       "entry_key": "sasson_increasing_2013",
       "fields": {
+        "date": "2013-03",
         "langid": "usenglish",
         "title": [
           {
@@ -338,47 +339,14 @@
             "text": "Increasing cardiopulmonary resuscitation provision in communities with low bystander cardiopulmonary resuscitation rates"
           }
         ]
-      },
-      "unknown_fields": {
-        "month": [
-          {
-            "type": "text",
-            "text": "mar"
-          }
-        ],
-        "year": [
-          {
-            "type": "text",
-            "text": "2013"
-          }
-        ]
       }
     }
   },
   "warnings": [
     {
-      "type": "unknown_date",
-      "entry": "sasson_increasing_2013",
-      "field_name": "year,month",
-      "value": [
-        "2013",
-        "mar"
-      ]
-    },
-    {
       "type": "unexpected_field",
       "entry": "sasson_increasing_2013",
       "field_name": "shorttitle"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "sasson_increasing_2013",
-      "field_name": "month"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "sasson_increasing_2013",
-      "field_name": "year"
     }
   ]
 }

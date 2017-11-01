@@ -12608,6 +12608,7 @@
       "bib_type": "article",
       "entry_key": "Caswell_1982",
       "fields": {
+        "date": "1982-04",
         "title": [
           {
             "type": "text",
@@ -12710,19 +12711,10 @@
         ],
         "doi": "10.1103/PhysRevB.25.5519"
       },
+      "unexpected_fields": {
+        "file": "Caswell_1982.pdf:CopperOxides\\\\Caswell_1982.pdf:PDF"
+      },
       "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "1982"
-          }
-        ],
-        "month": [
-          {
-            "type": "text",
-            "text": "Apr"
-          }
-        ],
         "numpages": [
           {
             "type": "text",
@@ -12741,9 +12733,6 @@
             "text": "2010.02.02"
           }
         ]
-      },
-      "unexpected_fields": {
-        "file": "Caswell_1982.pdf:CopperOxides\\\\Caswell_1982.pdf:PDF"
       }
     },
     "98": {
@@ -15491,6 +15480,7 @@
       "bib_type": "article",
       "entry_key": "Ching_1989",
       "fields": {
+        "date": "1989-10",
         "title": [
           {
             "type": "text",
@@ -15624,19 +15614,10 @@
         ],
         "doi": "10.1103/PhysRevB.40.7684"
       },
+      "unexpected_fields": {
+        "file": "Ching_1989.pdf:CopperOxides\\\\Ching_1989.pdf:PDF"
+      },
       "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "1989"
-          }
-        ],
-        "month": [
-          {
-            "type": "text",
-            "text": "Oct"
-          }
-        ],
         "numpages": [
           {
             "type": "text",
@@ -15655,9 +15636,6 @@
             "text": "2010.02.02"
           }
         ]
-      },
-      "unexpected_fields": {
-        "file": "Ching_1989.pdf:CopperOxides\\\\Ching_1989.pdf:PDF"
       }
     },
     "116": {
@@ -16528,6 +16506,7 @@
       "bib_type": "article",
       "entry_key": "Compaan_1973",
       "fields": {
+        "date": "1973-07",
         "title": [
           {
             "type": "text",
@@ -16630,19 +16609,10 @@
         ],
         "doi": "10.1103/PhysRevLett.31.41"
       },
+      "unexpected_fields": {
+        "file": "Compaan_1973.pdf:CopperOxides\\\\Compaan_1973.pdf:PDF"
+      },
       "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "1973"
-          }
-        ],
-        "month": [
-          {
-            "type": "text",
-            "text": "Jul"
-          }
-        ],
         "numpages": [
           {
             "type": "text",
@@ -16661,9 +16631,6 @@
             "text": "2010.02.03"
           }
         ]
-      },
-      "unexpected_fields": {
-        "file": "Compaan_1973.pdf:CopperOxides\\\\Compaan_1973.pdf:PDF"
       }
     },
     "123": {
@@ -18884,6 +18851,7 @@
       "bib_type": "article",
       "entry_key": "Daunois_1974",
       "fields": {
+        "date": "1974-04",
         "title": [
           {
             "type": "text",
@@ -18950,19 +18918,10 @@
         ],
         "doi": "10.1051/jphyscol:1974310"
       },
+      "unexpected_fields": {
+        "file": "Daunois_1974.pdf:CopperOxides\\\\Daunois_1974.pdf:PDF"
+      },
       "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "1974"
-          }
-        ],
-        "month": [
-          {
-            "type": "text",
-            "text": "apr"
-          }
-        ],
         "owner": [
           {
             "type": "text",
@@ -18975,9 +18934,6 @@
             "text": "2010.02.09"
           }
         ]
-      },
-      "unexpected_fields": {
-        "file": "Daunois_1974.pdf:CopperOxides\\\\Daunois_1974.pdf:PDF"
       }
     },
     "140": {
@@ -20573,6 +20529,7 @@
       "bib_type": "article",
       "entry_key": "Dieckmann_1991",
       "fields": {
+        "date": "1991-12",
         "title": [
           {
             "type": "text",
@@ -20626,18 +20583,6 @@
         "url": "http://www.mrs.org/s_mrs/sec.asp?CID=9800&DID=199340"
       },
       "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "1991"
-          }
-        ],
-        "month": [
-          {
-            "type": "text",
-            "text": "dec"
-          }
-        ],
         "owner": [
           {
             "type": "text",
@@ -32557,6 +32502,7 @@
       "bib_type": "article",
       "entry_key": "Grondahl_1932",
       "fields": {
+        "date": "1932-05",
         "title": [
           {
             "type": "text",
@@ -32615,19 +32561,10 @@
         ],
         "doi": "10.1103/PhysRev.40.635"
       },
+      "unexpected_fields": {
+        "file": "Grondahl_1932.pdf:CopperOxides\\\\Grondahl_1932.pdf:PDF"
+      },
       "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "1932"
-          }
-        ],
-        "month": [
-          {
-            "type": "text",
-            "text": "May"
-          }
-        ],
         "numpages": [
           {
             "type": "text",
@@ -32646,9 +32583,6 @@
             "text": "2010.02.12"
           }
         ]
-      },
-      "unexpected_fields": {
-        "file": "Grondahl_1932.pdf:CopperOxides\\\\Grondahl_1932.pdf:PDF"
       }
     },
     "243": {
@@ -47636,6 +47570,7 @@
       "bib_type": "article",
       "entry_key": "Jang_2006",
       "fields": {
+        "date": "2006-02",
         "title": [
           {
             "type": "text",
@@ -47732,26 +47667,6 @@
         ],
         "doi": "10.1103/PhysRevB.73.075207"
       },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2006"
-          }
-        ],
-        "month": [
-          {
-            "type": "text",
-            "text": "Feb"
-          }
-        ],
-        "numpages": [
-          {
-            "type": "text",
-            "text": "8"
-          }
-        ]
-      },
       "unexpected_fields": {
         "file": "Jang_2006.pdf:CopperOxides\\\\Jang_2006.pdf:PDF",
         "publisher": [
@@ -47761,6 +47676,14 @@
               "text": "American Physical Society"
             }
           ]
+        ]
+      },
+      "unknown_fields": {
+        "numpages": [
+          {
+            "type": "text",
+            "text": "8"
+          }
         ]
       }
     },
@@ -55897,6 +55820,7 @@
       "bib_type": "article",
       "entry_key": "Kugel_1981",
       "fields": {
+        "date": "1981-12",
         "title": [
           {
             "type": "text",
@@ -56011,19 +55935,10 @@
         ],
         "doi": "10.1051/jphyscol:19816262"
       },
+      "unexpected_fields": {
+        "file": "Kugel_1981.pdf:CopperOxides\\\\Kugel_1981.pdf:PDF"
+      },
       "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "1981"
-          }
-        ],
-        "month": [
-          {
-            "type": "text",
-            "text": "dec"
-          }
-        ],
         "owner": [
           {
             "type": "text",
@@ -56036,9 +55951,6 @@
             "text": "2010.02.02"
           }
         ]
-      },
-      "unexpected_fields": {
-        "file": "Kugel_1981.pdf:CopperOxides\\\\Kugel_1981.pdf:PDF"
       }
     },
     "408": {
@@ -59505,6 +59417,7 @@
       "bib_type": "article",
       "entry_key": "Lin_1993",
       "fields": {
+        "date": "1993-08",
         "title": [
           {
             "type": "text",
@@ -59629,26 +59542,6 @@
         ],
         "doi": "10.1103/PhysRevLett.71.1222"
       },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "1993"
-          }
-        ],
-        "month": [
-          {
-            "type": "text",
-            "text": "Aug"
-          }
-        ],
-        "numpages": [
-          {
-            "type": "text",
-            "text": "3"
-          }
-        ]
-      },
       "unexpected_fields": {
         "file": "Lin_1993.pdf:CopperOxides\\\\Lin_1993.pdf:PDF",
         "publisher": [
@@ -59658,6 +59551,14 @@
               "text": "American Physical Society"
             }
           ]
+        ]
+      },
+      "unknown_fields": {
+        "numpages": [
+          {
+            "type": "text",
+            "text": "3"
+          }
         ]
       }
     },
@@ -71754,6 +71655,7 @@
       "bib_type": "article",
       "entry_key": "Mysyrowicz_1980",
       "fields": {
+        "date": "1980-07",
         "title": [
           {
             "type": "text",
@@ -71813,18 +71715,6 @@
         "doi": "10.1051/jphyscol:1980743"
       },
       "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "1980"
-          }
-        ],
-        "month": [
-          {
-            "type": "text",
-            "text": "jul"
-          }
-        ],
         "owner": [
           {
             "type": "text",
@@ -75825,6 +75715,7 @@
       "bib_type": "article",
       "entry_key": "Nikitine_1966",
       "fields": {
+        "date": "1966-11",
         "title": [
           {
             "type": "text",
@@ -75962,20 +75853,6 @@
           }
         ],
         "doi": "10.1051/jphyscol:1966221"
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "1966"
-          }
-        ],
-        "month": [
-          {
-            "type": "text",
-            "text": "nov"
-          }
-        ]
       },
       "unexpected_fields": {
         "file": "Nikitine_1966.pdf:CopperOxides\\\\Nikitine_1966.pdf:PDF"
@@ -78347,6 +78224,7 @@
       "bib_type": "article",
       "entry_key": "O'Hara_1999_B",
       "fields": {
+        "date": "1999-10",
         "title": [
           {
             "type": "text",
@@ -78494,18 +78372,6 @@
         "doi": "10.1103/PhysRevB.60.10565"
       },
       "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "1999"
-          }
-        ],
-        "month": [
-          {
-            "type": "text",
-            "text": "Oct"
-          }
-        ],
         "comment": [
           {
             "type": "text",
@@ -87558,6 +87424,7 @@
       "bib_type": "article",
       "entry_key": "Pradere_1971",
       "fields": {
+        "date": "1971-11",
         "title": [
           {
             "type": "text",
@@ -87698,26 +87565,6 @@
         ],
         "doi": "10.1103/PhysRevB.4.3570"
       },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "1971"
-          }
-        ],
-        "month": [
-          {
-            "type": "text",
-            "text": "Nov"
-          }
-        ],
-        "numpages": [
-          {
-            "type": "text",
-            "text": "2"
-          }
-        ]
-      },
       "unexpected_fields": {
         "file": "Pradere_1971.pdf:CopperOxides\\\\Pradere_1971.pdf:PDF",
         "publisher": [
@@ -87727,6 +87574,14 @@
               "text": "American Physical Society"
             }
           ]
+        ]
+      },
+      "unknown_fields": {
+        "numpages": [
+          {
+            "type": "text",
+            "text": "2"
+          }
         ]
       }
     },
@@ -93734,6 +93589,7 @@
       "bib_type": "article",
       "entry_key": "Sanson_2006",
       "fields": {
+        "date": "2006-06",
         "title": [
           {
             "type": "text",
@@ -93934,26 +93790,6 @@
         ],
         "doi": "10.1103/PhysRevB.73.214305"
       },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2006"
-          }
-        ],
-        "month": [
-          {
-            "type": "text",
-            "text": "Jun"
-          }
-        ],
-        "numpages": [
-          {
-            "type": "text",
-            "text": "13"
-          }
-        ]
-      },
       "unexpected_fields": {
         "file": "Sanson_2006.pdf:CopperOxides\\\\Sanson_2006.pdf:PDF",
         "publisher": [
@@ -93963,6 +93799,14 @@
               "text": "American Physical Society"
             }
           ]
+        ]
+      },
+      "unknown_fields": {
+        "numpages": [
+          {
+            "type": "text",
+            "text": "13"
+          }
         ]
       }
     },
@@ -94397,6 +94241,7 @@
       "bib_type": "article",
       "entry_key": "Scanlon_2009_B",
       "fields": {
+        "date": "2009-08",
         "title": [
           {
             "type": "text",
@@ -94525,26 +94370,6 @@
         ],
         "doi": "10.1103/PhysRevLett.103.096405"
       },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2009"
-          }
-        ],
-        "month": [
-          {
-            "type": "text",
-            "text": "Aug"
-          }
-        ],
-        "numpages": [
-          {
-            "type": "text",
-            "text": "4"
-          }
-        ]
-      },
       "unexpected_fields": {
         "file": "Scanlon_2009_B.pdf:CopperOxides\\\\Scanlon_2009_B.pdf:PDF",
         "publisher": [
@@ -94554,6 +94379,14 @@
               "text": "American Physical Society"
             }
           ]
+        ]
+      },
+      "unknown_fields": {
+        "numpages": [
+          {
+            "type": "text",
+            "text": "4"
+          }
         ]
       }
     },
@@ -95052,6 +94885,7 @@
       "bib_type": "article",
       "entry_key": "Schulz_1991",
       "fields": {
+        "date": "1991-01",
         "title": [
           {
             "type": "text",
@@ -95164,26 +94998,6 @@
         ],
         "doi": "10.1103/PhysRevB.43.1610"
       },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "1991"
-          }
-        ],
-        "month": [
-          {
-            "type": "text",
-            "text": "Jan"
-          }
-        ],
-        "numpages": [
-          {
-            "type": "text",
-            "text": "11"
-          }
-        ]
-      },
       "unexpected_fields": {
         "file": "Schulz_1991.pdf:CopperOxides\\\\Schulz_1991.pdf:PDF",
         "publisher": [
@@ -95193,6 +95007,14 @@
               "text": "American Physical Society"
             }
           ]
+        ]
+      },
+      "unknown_fields": {
+        "numpages": [
+          {
+            "type": "text",
+            "text": "11"
+          }
         ]
       }
     },
@@ -128615,25 +128437,6 @@
       "field_name": "timestamp"
     },
     {
-      "type": "unknown_date",
-      "entry": "Caswell_1982",
-      "field_name": "year,month",
-      "value": [
-        "1982",
-        "Apr"
-      ]
-    },
-    {
-      "type": "unknown_field",
-      "entry": "Caswell_1982",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "Caswell_1982",
-      "field_name": "month"
-    },
-    {
       "type": "unexpected_field",
       "entry": "Caswell_1982",
       "field_name": "file"
@@ -128944,25 +128747,6 @@
       "field_name": "timestamp"
     },
     {
-      "type": "unknown_date",
-      "entry": "Ching_1989",
-      "field_name": "year,month",
-      "value": [
-        "1989",
-        "Oct"
-      ]
-    },
-    {
-      "type": "unknown_field",
-      "entry": "Ching_1989",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "Ching_1989",
-      "field_name": "month"
-    },
-    {
       "type": "unexpected_field",
       "entry": "Ching_1989",
       "field_name": "file"
@@ -129101,25 +128885,6 @@
       "type": "unknown_field",
       "entry": "Compaan_1972",
       "field_name": "timestamp"
-    },
-    {
-      "type": "unknown_date",
-      "entry": "Compaan_1973",
-      "field_name": "year,month",
-      "value": [
-        "1973",
-        "Jul"
-      ]
-    },
-    {
-      "type": "unknown_field",
-      "entry": "Compaan_1973",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "Compaan_1973",
-      "field_name": "month"
     },
     {
       "type": "unexpected_field",
@@ -129427,25 +129192,6 @@
       "field_name": "timestamp"
     },
     {
-      "type": "unknown_date",
-      "entry": "Daunois_1974",
-      "field_name": "year,month",
-      "value": [
-        "1974",
-        "apr"
-      ]
-    },
-    {
-      "type": "unknown_field",
-      "entry": "Daunois_1974",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "Daunois_1974",
-      "field_name": "month"
-    },
-    {
       "type": "unexpected_field",
       "entry": "Daunois_1974",
       "field_name": "file"
@@ -129644,25 +129390,6 @@
       "type": "unknown_field",
       "entry": "Denev_2002",
       "field_name": "timestamp"
-    },
-    {
-      "type": "unknown_date",
-      "entry": "Dieckmann_1991",
-      "field_name": "year,month",
-      "value": [
-        "1991",
-        "dec"
-      ]
-    },
-    {
-      "type": "unknown_field",
-      "entry": "Dieckmann_1991",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "Dieckmann_1991",
-      "field_name": "month"
     },
     {
       "type": "unknown_field",
@@ -131243,25 +130970,6 @@
       "type": "unknown_field",
       "entry": "Grondahl_1927_patent",
       "field_name": "timestamp"
-    },
-    {
-      "type": "unknown_date",
-      "entry": "Grondahl_1932",
-      "field_name": "year,month",
-      "value": [
-        "1932",
-        "May"
-      ]
-    },
-    {
-      "type": "unknown_field",
-      "entry": "Grondahl_1932",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "Grondahl_1932",
-      "field_name": "month"
     },
     {
       "type": "unexpected_field",
@@ -133034,25 +132742,6 @@
       "field_name": "timestamp"
     },
     {
-      "type": "unknown_date",
-      "entry": "Jang_2006",
-      "field_name": "year,month",
-      "value": [
-        "2006",
-        "Feb"
-      ]
-    },
-    {
-      "type": "unknown_field",
-      "entry": "Jang_2006",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "Jang_2006",
-      "field_name": "month"
-    },
-    {
       "type": "unexpected_field",
       "entry": "Jang_2006",
       "field_name": "file"
@@ -134087,25 +133776,6 @@
       "field_name": "timestamp"
     },
     {
-      "type": "unknown_date",
-      "entry": "Kugel_1981",
-      "field_name": "year,month",
-      "value": [
-        "1981",
-        "dec"
-      ]
-    },
-    {
-      "type": "unknown_field",
-      "entry": "Kugel_1981",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "Kugel_1981",
-      "field_name": "month"
-    },
-    {
       "type": "unexpected_field",
       "entry": "Kugel_1981",
       "field_name": "file"
@@ -134564,25 +134234,6 @@
       "type": "unknown_field",
       "entry": "Likhobabin_1971",
       "field_name": "timestamp"
-    },
-    {
-      "type": "unknown_date",
-      "entry": "Lin_1993",
-      "field_name": "year,month",
-      "value": [
-        "1993",
-        "Aug"
-      ]
-    },
-    {
-      "type": "unknown_field",
-      "entry": "Lin_1993",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "Lin_1993",
-      "field_name": "month"
     },
     {
       "type": "unexpected_field",
@@ -135890,25 +135541,6 @@
       "field_name": "timestamp"
     },
     {
-      "type": "unknown_date",
-      "entry": "Mysyrowicz_1980",
-      "field_name": "year,month",
-      "value": [
-        "1980",
-        "jul"
-      ]
-    },
-    {
-      "type": "unknown_field",
-      "entry": "Mysyrowicz_1980",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "Mysyrowicz_1980",
-      "field_name": "month"
-    },
-    {
       "type": "unknown_field",
       "entry": "Mysyrowicz_1980",
       "field_name": "owner"
@@ -136419,25 +136051,6 @@
       "field_name": "timestamp"
     },
     {
-      "type": "unknown_date",
-      "entry": "Nikitine_1966",
-      "field_name": "year,month",
-      "value": [
-        "1966",
-        "nov"
-      ]
-    },
-    {
-      "type": "unknown_field",
-      "entry": "Nikitine_1966",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "Nikitine_1966",
-      "field_name": "month"
-    },
-    {
       "type": "unexpected_field",
       "entry": "Nikitine_1966",
       "field_name": "file"
@@ -136711,25 +136324,6 @@
       "type": "unknown_field",
       "entry": "O'Hara_1999",
       "field_name": "timestamp"
-    },
-    {
-      "type": "unknown_date",
-      "entry": "O'Hara_1999_B",
-      "field_name": "year,month",
-      "value": [
-        "1999",
-        "Oct"
-      ]
-    },
-    {
-      "type": "unknown_field",
-      "entry": "O'Hara_1999_B",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "O'Hara_1999_B",
-      "field_name": "month"
     },
     {
       "type": "unknown_field",
@@ -137752,25 +137346,6 @@
       "field_name": "timestamp"
     },
     {
-      "type": "unknown_date",
-      "entry": "Pradere_1971",
-      "field_name": "year,month",
-      "value": [
-        "1971",
-        "Nov"
-      ]
-    },
-    {
-      "type": "unknown_field",
-      "entry": "Pradere_1971",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "Pradere_1971",
-      "field_name": "month"
-    },
-    {
       "type": "unexpected_field",
       "entry": "Pradere_1971",
       "field_name": "file"
@@ -138622,25 +138197,6 @@
       "field_name": "timestamp"
     },
     {
-      "type": "unknown_date",
-      "entry": "Sanson_2006",
-      "field_name": "year,month",
-      "value": [
-        "2006",
-        "Jun"
-      ]
-    },
-    {
-      "type": "unknown_field",
-      "entry": "Sanson_2006",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "Sanson_2006",
-      "field_name": "month"
-    },
-    {
       "type": "unexpected_field",
       "entry": "Sanson_2006",
       "field_name": "file"
@@ -138704,25 +138260,6 @@
       "type": "unknown_field",
       "entry": "Scanlon_2009",
       "field_name": "timestamp"
-    },
-    {
-      "type": "unknown_date",
-      "entry": "Scanlon_2009_B",
-      "field_name": "year,month",
-      "value": [
-        "2009",
-        "Aug"
-      ]
-    },
-    {
-      "type": "unknown_field",
-      "entry": "Scanlon_2009_B",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "Scanlon_2009_B",
-      "field_name": "month"
     },
     {
       "type": "unexpected_field",
@@ -138798,25 +138335,6 @@
       "type": "unknown_field",
       "entry": "Schramm_2005",
       "field_name": "timestamp"
-    },
-    {
-      "type": "unknown_date",
-      "entry": "Schulz_1991",
-      "field_name": "year,month",
-      "value": [
-        "1991",
-        "Jan"
-      ]
-    },
-    {
-      "type": "unknown_field",
-      "entry": "Schulz_1991",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "Schulz_1991",
-      "field_name": "month"
     },
     {
       "type": "unexpected_field",

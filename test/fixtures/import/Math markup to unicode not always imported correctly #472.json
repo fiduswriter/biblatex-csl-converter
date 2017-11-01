@@ -4,6 +4,7 @@
       "bib_type": "inproceedings",
       "entry_key": "test_citation1",
       "fields": {
+        "date": "2016-02",
         "title": [
           {
             "type": "text",
@@ -224,20 +225,6 @@
           "Keyword 2"
         ]
       },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2016"
-          }
-        ],
-        "month": [
-          {
-            "type": "text",
-            "text": "Feb"
-          }
-        ]
-      },
       "unexpected_fields": {
         "file": "File.pdf:File.pdf:PDF",
         "issn": [
@@ -252,6 +239,7 @@
       "bib_type": "inproceedings",
       "entry_key": "test_citation2",
       "fields": {
+        "date": "2016-02",
         "title": [
           {
             "type": "text",
@@ -346,20 +334,6 @@
           "Keyword 2"
         ]
       },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2016"
-          }
-        ],
-        "month": [
-          {
-            "type": "text",
-            "text": "Feb"
-          }
-        ]
-      },
       "unexpected_fields": {
         "file": "File.pdf:File.pdf:PDF",
         "issn": [
@@ -379,25 +353,6 @@
       "variable": "IEEE_J_PROC"
     },
     {
-      "type": "unknown_date",
-      "entry": "test_citation1",
-      "field_name": "year,month",
-      "value": [
-        "2016",
-        "Feb"
-      ]
-    },
-    {
-      "type": "unknown_field",
-      "entry": "test_citation1",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "test_citation1",
-      "field_name": "month"
-    },
-    {
       "type": "unexpected_field",
       "entry": "test_citation1",
       "field_name": "file"
@@ -412,25 +367,6 @@
       "entry": "test_citation2",
       "key": "booktitle",
       "variable": "IEEE_J_PROC"
-    },
-    {
-      "type": "unknown_date",
-      "entry": "test_citation2",
-      "field_name": "year,month",
-      "value": [
-        "2016",
-        "Feb"
-      ]
-    },
-    {
-      "type": "unknown_field",
-      "entry": "test_citation2",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "test_citation2",
-      "field_name": "month"
     },
     {
       "type": "unexpected_field",

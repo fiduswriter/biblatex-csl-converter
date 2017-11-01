@@ -64,6 +64,7 @@
       "bib_type": "proceedings",
       "entry_key": "conference:06",
       "fields": {
+        "date": "2006-10",
         "editor": [
           {
             "family": [
@@ -108,20 +109,6 @@
             "text": "Proceedings of the Xth Conference on XYZ (Book)"
           }
         ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "2006"
-          }
-        ],
-        "month": [
-          {
-            "type": "text",
-            "text": "oct"
-          }
-        ]
       }
     }
   },
@@ -132,28 +119,9 @@
       "field_name": "crossref"
     },
     {
-      "type": "unknown_date",
-      "entry": "conference:06",
-      "field_name": "year,month",
-      "value": [
-        "2006",
-        "oct"
-      ]
-    },
-    {
       "type": "unexpected_field",
       "entry": "conference:06",
       "field_name": "booktitle"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "conference:06",
-      "field_name": "year"
-    },
-    {
-      "type": "unknown_field",
-      "entry": "conference:06",
-      "field_name": "month"
     }
   ]
 }

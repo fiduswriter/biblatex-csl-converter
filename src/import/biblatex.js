@@ -306,7 +306,6 @@ export class BibLatexParser {
     }
 
     processFields() {
-        let that = this
         let rawFields = this.currentRawFields
         let fields = this.currentEntry['fields']
 
@@ -315,12 +314,16 @@ export class BibLatexParser {
         // date field after evaluating all the fields.
         // All other date fields only come in the form of a date string.
 
-        let date
+        let date, month
         if (rawFields.date) {
             // date string has precedence.
             date = rawFields.date
         } else if (rawFields.year && rawFields.month) {
-            date = `${rawFields.year}-${rawFields.month}`
+            month = rawFields.month
+            if (isNaN(parseInt(month)) && this.variables[month.toUpperCase()]) {
+                month = this.variables[month.toUpperCase()]
+            }
+            date = `${rawFields.year}-${month}`
         } else if (rawFields.year) {
             date = `${rawFields.year}`
         }
@@ -497,10 +500,10 @@ export class BibLatexParser {
                     oFields[fKey] = fValue
                     break
                 case 'l_key':
-                    oFields[fKey] = splitTeXString(fValue).map(keyField=>{return that._reformKey(keyField, fKey)})
+                    oFields[fKey] = splitTeXString(fValue).map(keyField=> this._reformKey(keyField, fKey))
                     break
                 case 'l_tag':
-                    oFields[fKey] = fValue.split(/[,;]/).map((string)=>{return string.trim()})
+                    oFields[fKey] = fValue.split(/[,;]/).map(string => string.trim())
                     break
                 case 'l_literal':
                     let items = splitTeXString(fValue)
@@ -717,10 +720,9 @@ export class BibLatexParser {
     }
 
     createBibDB() {
-        let that = this
         this.entries.forEach((entry, index)=> {
             // Start index from 1 to create less issues with testing
-            that.bibDB[index + 1] = entry
+            this.bibDB[index + 1] = entry
         })
     }
 
