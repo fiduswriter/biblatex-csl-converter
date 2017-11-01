@@ -681,7 +681,7 @@ export class BibLatexParser {
                 this.string()
             } else if (d == "@preamble") {
                 this.preamble()
-            } else if (d == "@comment" || d == "@Comment") {
+            } else if (d == "@comment") {
                 this.parseComment()
             } else {
                 this.createNewEntry()
