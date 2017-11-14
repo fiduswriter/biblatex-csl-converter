@@ -30,3 +30,7 @@ parsing of fields that are known, but shouldn't be in the bibliography entry due
 **Q:** I use variables in my biblatex files. Will your converter read them?
 
 **A:** Yes, but in order for the converter to be able to create a string, the variables need to be defined. Undefined variables can also be handled by the biblatex importer/exporter, but when exporting to CSL, they just print out the variable name in an an HTML tag that is not supported by citeproc (and an error is thrown).
+
+**Q:** I want to run the demo locally?
+
+**A:** [http-server](https://www.npmjs.com/package/http-server) is handy. Do a gloabel install of  http-server with `npm install http-server -g` and run `http-server docs`.
