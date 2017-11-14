@@ -33,4 +33,4 @@ parsing of fields that are known, but shouldn't be in the bibliography entry due
 
 **Q:** I want to run the demo locally?
 
-**A:** [http-server](https://www.npmjs.com/package/http-server) is handy. Do a gloabel install of  http-server with `npm install http-server -g` and run `http-server docs`.
+**A:** [http-server](https://www.npmjs.com/package/http-server) is handy. Do a global install of  http-server with `npm install http-server -g` and run `http-server docs`.
