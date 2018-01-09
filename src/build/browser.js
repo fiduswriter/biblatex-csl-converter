@@ -1,4 +1,4 @@
-import {BibLatexParser, BibLatexExporter, CSLExporter, edtfParse, edtfCheck} from "../src"
+import {BibLatexParser, BibLatexExporter, CSLExporter, edtfParse, edtfCheck} from ".."
 
 window.BibLatexParser = BibLatexParser
 window.BibLatexExporter = BibLatexExporter

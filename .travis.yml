@@ -3,7 +3,8 @@ node_js:
 - '6'
 after_success:
 - "./node_modules/.bin/nyc report --reporter=text-lcov | ./node_modules/.bin/coveralls"
-- SOURCE_DIR="docs" TARGET_BRANCH="gh-pages" npm run gh-pages-travis
+- echo "TRAVIS_BRANCH=$TRAVIS_BRANCH"
+- SOURCE_DIR="gh-pages" TARGET_BRANCH="gh-pages" npm run gh-pages-travis
 - SOURCE_DIR="browser" TARGET_BRANCH="browser" npm run gh-pages-travis
 deploy:
   provider: npm
