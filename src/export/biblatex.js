@@ -156,7 +156,7 @@ export class BibLatexExporter {
                         nameParts.push(this._protectNamePart(`prefix={${prefix}}`))
                         nameParts.push(`useprefix=${name.useprefix}`)
                     }
-                    names.push(`{${nameParts.join(', ')}}`)
+                    names.push(nameParts.join(', '))
                 }
             }
         })
