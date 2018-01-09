@@ -43,7 +43,7 @@ export class CSLExporter {
      * @param id The id identifying the bibliography entry.
      */
     getCSLEntry(id) {
-        let that = this, bib = this.bibDB[id], fValues = {}
+        let bib = this.bibDB[id], fValues = {}
         for (let fKey in bib.fields) {
             if (bib.fields[fKey] !== '' && fKey in BibFieldTypes && 'csl' in BibFieldTypes[fKey]) {
                 let fValue = bib.fields[fKey]
@@ -74,14 +74,10 @@ export class CSLExporter {
                         fValues[key] = fValue
                         break
                     case 'l_key':
-                        fValues[key] = fValue.map(key=>{return that._reformKey(key, fKey)}).join(' and ')
+                        fValues[key] = fValue.map(key=>{return this._reformKey(key, fKey)}).join(' and ')
                         break
                     case 'l_literal':
-                        let reformedTexts = []
-                        fValue.forEach((text)=>{
-                            reformedTexts.push(that._reformText(text))
-                        })
-                        fValues[key] = reformedTexts.join(', ')
+                        fValues[key] = fValue.map(text => this._reformText(text)).join(', ')
                         break
                     case 'l_name':
                         fValues[key] = this._reformName(fValue)
@@ -112,10 +108,11 @@ export class CSLExporter {
     }
 
     _reformRange(theValue) {
-        let that = this
-        return theValue.map(range=>{
-            return range.map(text=>{return this._reformText(text)}).join('--')
-        }).join(',')
+        return theValue.map(
+            range => range.map(
+                text=> this._reformText(text)
+            ).join('--')
+        ).join(',')
     }
 
     _reformInteger(theValue) {
@@ -128,7 +125,7 @@ export class CSLExporter {
     }
 
     _reformText(theValue) {
-        let that = this, html = '', lastMarks = []
+        let html = '', lastMarks = []
         theValue.forEach((node)=>{
             if (node.type === 'variable') {
                 // This is an undefined variable
@@ -141,12 +138,7 @@ export class CSLExporter {
                 })
                 return
             }
-            let newMarks = []
-            if (node.marks) {
-                node.marks.forEach((mark)=>{
-                    newMarks.push(mark.type)
-                })
-            }
+            let newMarks = node.marks ? node.marks.map(mark => mark.type) : []
             // close all tags that are not present in current text node.
             let closing = false, closeTags = []
             lastMarks.forEach((mark, index)=>{
@@ -207,29 +199,27 @@ export class CSLExporter {
     }
 
     _reformName(theNames) {
-        let reformedNames = [], that = this
-        theNames.forEach((name) => {
+        return theNames.map(name => {
             let reformedName = {}
             if (name.literal) {
-                reformedName['literal'] = that._reformText(name.literal)
+                reformedName['literal'] = this._reformText(name.literal)
             } else {
-                reformedName['given'] = that._reformText(name.given)
-                reformedName['family'] = that._reformText(name.family)
+                reformedName['given'] = this._reformText(name.given)
+                reformedName['family'] = this._reformText(name.family)
                 if (name.suffix) {
-                    reformedName['suffix'] = that._reformText(name.suffix)
+                    reformedName['suffix'] = this._reformText(name.suffix)
                 }
                 if (name.prefix) {
                     if(name.useprefix === true) {
-                        reformedName['non-dropping-particle'] = that._reformText(name.prefix)
+                        reformedName['non-dropping-particle'] = this._reformText(name.prefix)
                     } else {
-                        reformedName['dropping-particle'] = that._reformText(name.prefix)
+                        reformedName['dropping-particle'] = this._reformText(name.prefix)
                     }
                 }
-                reformedName['family'] = that._reformText(name['family'])
+                reformedName['family'] = this._reformText(name['family'])
             }
-            reformedNames.push(reformedName)
+            return reformedName
         })
-        return reformedNames
     }
 
 }

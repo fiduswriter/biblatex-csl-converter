@@ -32,14 +32,10 @@ export class BibLatexExporter {
     }
 
     get output() {
-        let that = this
         this.bibtexArray = []
         this.bibtexStr = ''
 
-        let len = this.pks.length
-
-        for (let i = 0; i < len; i++) {
-            let pk = this.pks[i]
+        this.pks.forEach(pk => {
             let bib = this.bibDB[pk]
             let bibEntry = {
                 'type': BibTypes[bib['bib_type']]['biblatex'],
@@ -78,10 +74,10 @@ export class BibLatexExporter {
                         fValues[key] = fValue.replace(/{|}/g, '') // TODO: balanced braces should probably be ok here.
                         break
                     case 'l_key':
-                        fValues[key] = this._escapeTeX(fValue.map(key=>{return that._reformKey(key, fKey)}).join(' and '))
+                        fValues[key] = this._escapeTeX(fValue.map(key=>{return this._reformKey(key, fKey)}).join(' and '))
                         break
                     case 'l_literal':
-                        fValues[key] = fValue.map((text)=>{return that._reformText(text)}).join(' and ')
+                        fValues[key] = fValue.map((text)=>{return this._reformText(text)}).join(' and ')
                         break
                     case 'l_name':
                         fValues[key] = this._reformName(fValue)
@@ -96,7 +92,8 @@ export class BibLatexExporter {
             }
             bibEntry.values = fValues
             this.bibtexArray[this.bibtexArray.length] = bibEntry
-        }
+        })
+
         this.bibtexStr = this._getBibtexString(this.bibtexArray)
         return this.bibtexStr
     }
@@ -115,25 +112,26 @@ export class BibLatexExporter {
     }
 
     _reformRange(theValue) {
-        let that = this
-        return theValue.map(range=>{
-            return range.map(text=>{return this._reformText(text)}).join('--')
-        }).join(',')
+        return theValue.map(
+            range => range.map(
+                text => this._reformText(text)
+            ).join('--')
+        ).join(',')
     }
 
     _reformName(theValue) {
-        let names = [], that = this
+        let names = []
         theValue.forEach((name)=>{
             if (name.literal) {
-                let literal = that._reformText(name.literal)
+                let literal = this._reformText(name.literal)
                 names.push(`{${literal}}`)
             } else {
-                let family = name.family ? that._reformText(name.family) : ''
-                let given = name.given ? that._reformText(name.given): ''
-                let suffix = name.suffix ? that._reformText(name.suffix) : false
-                let prefix = name.prefix ? that._reformText(name.prefix) : false
+                let family = name.family ? this._reformText(name.family) : ''
+                let given = name.given ? this._reformText(name.given): ''
+                let suffix = name.suffix ? this._reformText(name.suffix) : false
+                let prefix = name.prefix ? this._reformText(name.prefix) : false
                 let useprefix = name.useprefix ? name.useprefix: false
-                if (that.config.traditionalNames) {
+                if (this.config.traditionalNames) {
                     if (suffix && prefix) {
                         names.push(`{${prefix} ${family}}, {${suffix}}, {${given}}`)
                     } else if (suffix) {
@@ -146,16 +144,16 @@ export class BibLatexExporter {
                 } else {
                     let nameParts = []
                     if (given.length) {
-                        nameParts.push(that._protectNamePart(`given={${given}}`))
+                        nameParts.push(this._protectNamePart(`given={${given}}`))
                     }
                     if (family.length) {
-                        nameParts.push(that._protectNamePart(`family={${family}}`))
+                        nameParts.push(this._protectNamePart(`family={${family}}`))
                     }
                     if (suffix) {
-                        nameParts.push(that._protectNamePart(`suffix={${suffix}}`))
+                        nameParts.push(this._protectNamePart(`suffix={${suffix}}`))
                     }
                     if (prefix) {
-                        nameParts.push(that._protectNamePart(`prefix={${prefix}}`))
+                        nameParts.push(this._protectNamePart(`prefix={${prefix}}`))
                         nameParts.push(`useprefix=${name.useprefix}`)
                     }
                     names.push(`{${nameParts.join(', ')}}`)
@@ -188,7 +186,7 @@ export class BibLatexExporter {
     }
 
     _reformText(theValue) {
-        let that = this, latex = '', lastMarks = []
+        let latex = '', lastMarks = []
         theValue.forEach((node)=>{
             if (node.type === 'variable') {
                 // This is an undefined variable
@@ -259,7 +257,7 @@ export class BibLatexExporter {
             if (verbatim) {
                 latex += node.text
             } else {
-                latex += that._escapeTeX(node.text)
+                latex += this._escapeTeX(node.text)
             }
             lastMarks = newMarks
         })
