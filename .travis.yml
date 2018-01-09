@@ -3,7 +3,8 @@ node_js:
 - '6'
 after_success:
 - "./node_modules/.bin/nyc report --reporter=text-lcov | ./node_modules/.bin/coveralls"
-- npm run gh-pages-travis
+- SOURCE_DIR="docs" TARGET_BRANCH="gh-pages" npm run gh-pages-travis
+- SOURCE_DIR="browser" TARGET_BRANCH="browser" npm run gh-pages-travis
 deploy:
   provider: npm
   email: mail@johanneswilm.org
@@ -17,12 +18,12 @@ deploy:
 branches:
   except:
   - gh-pages
+  - browser
 env:
   global:
   - SSH_KEY=".travis/id_rsa"
   - GIT_NAME="Johannes Wilm"
   - GIT_EMAIL="mail@johanneswilm.org"
-  - SOURCE_DIR="docs"
   - DEPLOY_BRANCH="master"
 before_install:
 - openssl aes-256-cbc -K $encrypted_715d402dd6c0_key -iv $encrypted_715d402dd6c0_iv

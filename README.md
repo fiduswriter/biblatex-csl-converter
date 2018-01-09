@@ -34,3 +34,7 @@ parsing of fields that are known, but shouldn't be in the bibliography entry due
 **Q:** I want to run the demo locally?
 
 **A:** [http-server](https://www.npmjs.com/package/http-server) is handy. Do a global install of  http-server with `npm install http-server -g` and run `http-server docs`.
+
+**Q:** I want to include this on my website and I don't use npm packages, etc. . Is there a file I can just add to the header of my webpage?
+
+**A:** Yes, you can download such a file [here](https://github.com/fiduswriter/biblatex-csl-converter/blob/browwser/biblatex-csl-converter.js).
