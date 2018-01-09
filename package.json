@@ -28,7 +28,7 @@
   "homepage": "https://github.com/fiduswriter/biblatex-csl-converter#readme",
   "scripts": {
     "gh-pages-travis": "gh-pages-travis",
-    "check_js": "jshint src/ docs/demo.js browser/browser.js",
+    "check_js": "jshint src/",
     "pretest": "npm run check_js",
     "precompile": "rimraf lib/* && BABEL_ENV=production babel --out-dir lib/edtf node_modules/edtf && BABEL_ENV=production babel --out-dir lib src",
     "compile": "browserify src/build/gh-pages.js -o gh-pages/demo.js -t babelify && browserify src/build/browser.js -o browser/biblatex-csl-converter.js -t babelify",
