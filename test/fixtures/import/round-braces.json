@@ -16,7 +16,21 @@
             "given": [
               {
                 "type": "text",
-                "text": "Drew V.and Gerald J. Sussman"
+                "text": "Drew V."
+              }
+            ]
+          },
+          {
+            "given": [
+              {
+                "type": "text",
+                "text": "Gerald J."
+              }
+            ],
+            "family": [
+              {
+                "type": "text",
+                "text": "Sussman"
               }
             ]
           }

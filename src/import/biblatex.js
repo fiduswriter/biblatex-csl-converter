@@ -91,8 +91,9 @@ export class BibLatexParser {
         return (s == ' ' || s == '\r' || s == '\t' || s == '\n')
     }
 
-    match(s) {
-        this.skipWhitespace()
+    match(s, options) {
+        if (!options) options = { skipWhitespace: true }
+        if (options.skipWhitespace === true || options.skipWhitespace === 'leading') this.skipWhitespace()
         if (this.input.substring(this.pos, this.pos + s.length) == s) {
             this.pos += s.length
         } else {
@@ -103,7 +104,7 @@ export class BibLatexParser {
                 found: this.input.substring(this.pos, this.pos + s.length)
             })
         }
-        this.skipWhitespace()
+        if (options.skipWhitespace === true || options.skipWhitespace === 'trailing') this.skipWhitespace()
     }
 
     tryMatch(s) {
@@ -141,7 +142,7 @@ export class BibLatexParser {
 
     valueBraces() {
         let bracecount = 0
-        this.match("{")
+        this.match("{", { skipWhitespace: 'leading' })
         let string = ""
         while (this.pos < this.input.length) {
             switch(this.input[this.pos]) {
@@ -152,7 +153,7 @@ export class BibLatexParser {
                 case '}':
                     if (bracecount === 0) {
                         this.match("}")
-                        return string.trim()
+                        return string
                     }
                     string += '}'
                     bracecount--
@@ -172,7 +173,7 @@ export class BibLatexParser {
     }
 
     valueQuotes() {
-        this.match('"')
+        this.match('"', { skipWhitespace: 'leading' })
         let string = ""
         while (this.pos < this.input.length) {
             switch(this.input[this.pos]) {
@@ -182,7 +183,7 @@ export class BibLatexParser {
                     break
                 case '"':
                     this.match('"')
-                    return string.trim()
+                    return string
                 default:
                     string += this.input[this.pos]
                     break
@@ -226,7 +227,7 @@ export class BibLatexParser {
             this.match("#")
             values.push(this.singleValue())
         }
-        return values.join("")
+        return values.join("").trim()
     }
 
     key(optional) {

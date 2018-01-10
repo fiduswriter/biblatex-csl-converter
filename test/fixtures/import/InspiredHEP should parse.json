@@ -96,22 +96,12 @@
         "slaccitation": [
           {
             "type": "text",
-            "text": "}\n"
+            "text": "%%CITATION = ARXIV:1403.3399;%%"
           }
         ]
       }
     }
   },
-  "errors": [
-    {
-      "type": "unexpected_eof"
-    },
-    {
-      "type": "token_mismatch",
-      "expected": "}",
-      "found": ""
-    }
-  ],
   "warnings": [
     {
       "type": "unknown_field",
