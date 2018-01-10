@@ -34,7 +34,8 @@
     "compile": "browserify src/build/gh-pages.js -o gh-pages/demo.js -t babelify && browserify src/build/browser.js -o browser/biblatex-csl-converter.js -t babelify",
     "prepublish": "npm run check_js && npm run compile",
     "test": "nyc ava",
-    "coveralls": "jscoverage lib && YOURPACKAGE_COVERAGE=1 nodeunit --reporter=lcov test | coveralls"
+    "coveralls": "jscoverage lib && YOURPACKAGE_COVERAGE=1 nodeunit --reporter=lcov test | coveralls",
+    "postversion": "echo remember to run 'git push --follow-tags'"
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
