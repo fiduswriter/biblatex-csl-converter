@@ -7,7 +7,8 @@ export class GroupParser {
       this.stringStarts = [
           ["jabref-meta: databaseType:bibtex;", () => this.groupType = 'jabref4'],
           ["jabref-meta: groupsversion:3;", () => this.groupType = 'jabref3'],
-          ["jabref-meta: groupstree:", () => this.readGroupInfo()]
+          ["jabref-meta: grouping:", () => this.readGroupInfo() && (this.groupType = 'jabref4.1')],
+          ["jabref-meta: groupstree:", () => this.readGroupInfo()],
       ]
     }
 
