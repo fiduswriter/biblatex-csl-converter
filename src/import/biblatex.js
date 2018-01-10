@@ -236,7 +236,7 @@ export class BibLatexParser {
                 this.errors.push({type: 'runaway_key'})
                 return
             }
-            if ([',','{','}',' ','='].includes(this.input[this.pos])) {
+            if (['(',',','{','}',' ','='].includes(this.input[this.pos])) {
                 let key = this.input.substring(start, this.pos)
                 if (optional && this.input[this.pos] != ',') {
                     this.skipWhitespace()
@@ -674,9 +674,22 @@ export class BibLatexParser {
     }
 
     stepThroughBibtex() {
+        let closer
         while (this.skipToNext()) {
             let d = this.directive()
-            this.match("{")
+
+            // apparently, references can also be surrended with round braces
+            if (this.tryMatch("{")) {
+              this.match("{")
+              closer = '}'
+            } else if (this.tryMatch("(")) {
+              this.match("(")
+              closer = ')'
+            } else {
+              this.match("{")
+              closer = '}'
+            }
+
             if (d == "@string") {
                 this.string()
             } else if (d == "@preamble") {
@@ -686,7 +699,8 @@ export class BibLatexParser {
             } else {
                 this.createNewEntry()
             }
-            this.match("}")
+
+            this.match(closer)
         }
     }
 

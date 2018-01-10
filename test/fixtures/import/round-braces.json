@@ -1,0 +1,54 @@
+{
+  "references": {
+    "1": {
+      "bib_type": "report",
+      "entry_key": "McDermott:72",
+      "fields": {
+        "date": "1972-05",
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "McDermott"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "Drew V.and Gerald J. Sussman"
+              }
+            ]
+          }
+        ],
+        "institution": [
+          [
+            {
+              "type": "text",
+              "text": "MIT Artificial Intelligence\tLaboratory"
+            }
+          ]
+        ],
+        "title": [
+          {
+            "type": "text",
+            "text": "The "
+          },
+          {
+            "type": "text",
+            "text": " CONNIVER",
+            "marks": [
+              {
+                "type": "nocase"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " Reference Manual"
+          }
+        ]
+      }
+    }
+  }
+}
