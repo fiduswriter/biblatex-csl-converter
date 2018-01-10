@@ -1155,16 +1155,12 @@
     {
       "name": "InPress",
       "groups": [],
-      "references": [
-        "1"
-      ]
+      "references": []
     },
     {
       "name": "MoLab Publikationen",
       "groups": [],
-      "references": [
-        "1"
-      ]
+      "references": []
     },
     {
       "name": "modelle_mittelohr",
@@ -1173,27 +1169,21 @@
           "name": "fem_mo",
           "groups": [],
           "references": [
-            "1"
+            "Ravicz2017"
           ]
         },
         {
           "name": "mittelohr_anatomie_histo_mensch",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         },
         {
           "name": "fem_tm",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         }
       ],
-      "references": [
-        "1"
-      ]
+      "references": []
     },
     {
       "name": "implant_hg",
@@ -1201,98 +1191,70 @@
         {
           "name": "C-DACS Cochlear",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         },
         {
           "name": "Carina-otologics",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         },
         {
           "name": "DACS-PI sonova-phonak",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         },
         {
           "name": "DDHS-MAXUM",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         },
         {
           "name": "earlens",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         },
         {
           "name": "esteem",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         },
         {
           "name": "fmt_vsb",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         },
         {
           "name": "impl_mics",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         },
         {
           "name": "Rion",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         },
         {
           "name": "SIMEHD",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         },
         {
           "name": "sonstige",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         },
         {
           "name": "TICA",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         },
         {
           "name": "tübingen",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         }
       ],
-      "references": [
-        "0"
-      ]
+      "references": []
     },
     {
       "name": "mittelohrrekonstruktion",
@@ -1300,35 +1262,25 @@
         {
           "name": "stapesplastik",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         },
         {
           "name": "Tympanoplastik",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         },
         {
           "name": "Cholesteatom",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         },
         {
           "name": "MRT",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         }
       ],
-      "references": [
-        "1"
-      ]
+      "references": []
     },
     {
       "name": "projekte",
@@ -1336,72 +1288,55 @@
         {
           "name": "bohrlaerm",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         },
         {
           "name": "ex-ohr",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         },
         {
           "name": "gehoer_evolution",
           "groups": [],
           "references": [
-            "1"
+            "Kojima1990",
+            "Heffner1983a"
           ]
         },
         {
           "name": "implant. Mikrofon",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         },
         {
           "name": "knickprothese",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         },
         {
           "name": "kraftmessung",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         },
         {
           "name": "laseraudiometrie",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         },
         {
           "name": "METF_Messtechnik",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         },
         {
           "name": "NiTi",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         },
         {
           "name": "OAE",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         },
         {
           "name": "OCT",
@@ -1409,16 +1344,12 @@
             {
               "name": "Klinische Studie",
               "groups": [],
-              "references": [
-                "1"
-              ]
+              "references": []
             },
             {
               "name": "Tremor",
               "groups": [],
-              "references": [
-                "1"
-              ]
+              "references": []
             },
             {
               "name": "VIP+",
@@ -1426,48 +1357,33 @@
                 {
                   "name": "Antrag",
                   "groups": [],
-                  "references": [
-                    "1"
-                  ]
+                  "references": []
                 }
               ],
-              "references": [
-                "1"
-              ]
+              "references": []
             },
             {
               "name": "Viskosität",
               "groups": [],
-              "references": [
-                "1"
-              ]
+              "references": []
             }
           ],
-          "references": [
-            "0",
-            "1"
-          ]
+          "references": []
         },
         {
           "name": "opkontrolle",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         },
         {
           "name": "ringbandsteifg",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         },
         {
           "name": "strauss",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         },
         {
           "name": "Trommelfell",
@@ -1476,75 +1392,56 @@
               "name": "Antrag_Cherif_DECHEMA",
               "groups": [],
               "references": [
-                "1"
+                "Ravicz2017"
               ]
             },
             {
               "name": "FEM/Exp",
               "groups": [],
-              "references": [
-                "1"
-              ]
+              "references": []
             },
             {
               "name": "Melt electrospinning writing",
               "groups": [],
-              "references": [
-                "1"
-              ]
+              "references": []
             },
             {
               "name": "pressure",
               "groups": [],
-              "references": [
-                "1"
-              ]
+              "references": []
             },
             {
               "name": "Silk",
               "groups": [],
-              "references": [
-                "1"
-              ]
+              "references": []
             },
             {
               "name": "Tissue engineering",
               "groups": [],
-              "references": [
-                "1"
-              ]
+              "references": []
             },
             {
               "name": "TG70_MEW",
               "groups": [],
-              "references": [
-                "1"
-              ]
+              "references": []
             }
           ],
           "references": [
-            "0",
             "Ravicz2017"
           ]
         },
         {
           "name": "wandler",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         },
         {
           "name": "CI-Elektrode",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         }
       ],
-      "references": [
-        "1"
-      ]
+      "references": []
     },
     {
       "name": "innenohr",
@@ -1552,34 +1449,25 @@
         {
           "name": "modelle_innenohr",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         },
         {
           "name": "messungen_innenohr",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         },
         {
           "name": "anton_cochlea_segmentation",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         },
         {
           "name": "innenohr_pathologie",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         }
       ],
       "references": [
-        "0",
         "Pfaff2015"
       ]
     },
@@ -1589,102 +1477,70 @@
         {
           "name": "bone_clearing",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         },
         {
           "name": "coupler",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         },
         {
           "name": "dehnprothese",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         },
         {
           "name": "embryonal_development",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         },
         {
           "name": "friedemann_aktoren",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         },
         {
           "name": "Hammerkopffixation",
           "groups": [],
-          "references": [
-            "groups",
-            "Hammerkopffixation",
-            "1",
-            "0",
-            "1"
-          ]
+          "references": []
         },
         {
           "name": "multifrequenztympanometrie",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         },
         {
           "name": "op_kontrolle_horia",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         },
         {
           "name": "otitis_media",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         },
         {
           "name": "porp-parameter",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         }
       ],
-      "references": [
-        "1"
-      ]
+      "references": []
     },
     {
       "name": "round_window",
       "groups": [],
-      "references": [
-        "1"
-      ]
+      "references": []
     },
     {
       "name": "HNO-artikel",
       "groups": [],
-      "references": [
-        "1"
-      ]
+      "references": []
     },
     {
       "name": "Beli-habil",
       "groups": [],
-      "references": [
-        "1"
-      ]
+      "references": []
     },
     {
       "name": "Marie_Promotion",
@@ -1692,21 +1548,15 @@
         {
           "name": "Marie_Pro",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         }
       ],
-      "references": [
-        "0"
-      ]
+      "references": []
     },
     {
       "name": "HNO-Update_Mittelohr15/16",
       "groups": [],
-      "references": [
-        "1"
-      ]
+      "references": []
     },
     {
       "name": "Zielparameter",
@@ -1714,14 +1564,10 @@
         {
           "name": "VS",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         }
       ],
-      "references": [
-        "0"
-      ]
+      "references": []
     },
     {
       "name": "Steffen_Promotion",
@@ -1729,105 +1575,86 @@
         {
           "name": "SSM",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         },
         {
           "name": "Segmentieren",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         },
         {
           "name": "Morphology_MO",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         },
         {
           "name": "preserve&stain",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         },
         {
           "name": "sensitivity",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         },
         {
           "name": "Pathology",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         },
         {
           "name": "tympanicCavity",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         },
         {
           "name": "preserve&stain",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         },
         {
           "name": "middle_ear_interspecies",
           "groups": [],
           "references": [
-            "1"
+            "Elder1935",
+            "Kojima1990",
+            "Osmanski2011",
+            "Heffner1983a",
+            "Coleman2009",
+            "Elder1934",
+            "Pfaff2015",
+            "Ravicz2017",
+            "Peus2017",
+            "Koyabu2017"
           ]
         },
         {
           "name": "relevanz_gehoerlosigkeit",
           "groups": [],
-          "references": [
-            "1"
-          ]
+          "references": []
         }
       ],
-      "references": [
-        "1"
-      ]
+      "references": []
     },
     {
       "name": "Machine_learning",
       "groups": [],
-      "references": [
-        "1"
-      ]
+      "references": []
     },
     {
       "name": "Adhesion",
       "groups": [],
-      "references": [
-        "1"
-      ]
+      "references": []
     },
     {
       "name": "Marucs_paper_eigenpub",
       "groups": [],
-      "references": [
-        "1"
-      ]
+      "references": []
     },
     {
       "name": "FSL_Paper",
       "groups": [],
-      "references": [
-        "1"
-      ]
+      "references": []
     }
   ],
   "warnings": [

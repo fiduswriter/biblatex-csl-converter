@@ -6,9 +6,11 @@ export class GroupParser {
       this.entries = entries
       this.stringStarts = [
           ["jabref-meta: databaseType:bibtex;", () => this.groupType = 'jabref4'],
+          ["jabref-meta: databaseType:biblatex;", () => this.groupType = 'jabref4'],
           ["jabref-meta: groupsversion:3;", () => this.groupType = 'jabref3'],
-          ["jabref-meta: grouping:", () => this.readGroupInfo() && (this.groupType = 'jabref4.1')],
+          ["jabref-meta: grouping:", () => this.readGroupInfo('jabref4.1')],
           ["jabref-meta: groupstree:", () => this.readGroupInfo()],
+          ["jabref-meta: fileDirectory:", () => this.readFileDirectory()],
       ]
     }
 
@@ -27,17 +29,28 @@ export class GroupParser {
         })
     }
 
-    readGroupInfo() {
+    readGroupInfo(groupType) {
+        if (groupType) this.groupType = groupType
+
         switch(this.groupType) {
             case 'jabref3':
                 this.readJabref3()
                 break
             case 'jabref4':
+            case 'jabref4.1':
                 this.readJabref4()
                 break
             default:
                 break
         }
+    }
+
+    readFileDirectory() {
+      this.fileDirectory = ''
+      while ((this.input.length > this.pos) && (this.input[this.pos]) !== ';') {
+        this.fileDirectory += this.input[this.pos];
+        this.pos++;
+      }
     }
 
     readJabref3() {
@@ -111,10 +124,20 @@ export class GroupParser {
         this.groups = levels['0'].groups
     }
 
+    clearGroups(groups) {
+        for (const group of groups) {
+            group.references = []
+            this.clearGroups(group.groups || [])
+        }
+    }
 
     readJabref4() {
 
         this.readJabref3()
+
+        if (this.groupType === 'jabref4.1') {
+          this.clearGroups(this.groups)
+        }
 
         // this assumes the JabRef groups always come after the references
         this.entries.forEach(bib => {
@@ -124,8 +147,14 @@ export class GroupParser {
             }
             // this assumes ref.unknown_fields.groups is a single text chunk
             let groups = bib.unknown_fields.groups.reduce(
-                (string, node) =>
-                    node.type === 'text' ? string + node.text : string,
+                (string, node) => {
+                    if (node.type === 'text') {
+                        // undo undescores to marks -- groups content is in verbatim-ish mode
+                        var sub = (node.marks || []).find(mark => mark.type === 'sub') ? '_' : ''
+                        string += sub + node.text
+                    }
+                    return string
+                },
                 ''
             ).trim()
             delete bib.unknown_fields.groups
