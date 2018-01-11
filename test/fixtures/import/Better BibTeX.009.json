@@ -312,7 +312,8 @@
   "errors": [
     {
       "type": "cut_off_citation",
-      "entry": "emptyreference"
+      "entry": "emptyreference",
+      "line": 14
     }
   ],
   "warnings": [

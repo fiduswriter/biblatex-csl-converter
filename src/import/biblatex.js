@@ -91,6 +91,13 @@ export class BibLatexParser {
         return (s == ' ' || s == '\r' || s == '\t' || s == '\n')
     }
 
+    error(data) {
+        const parsed = this.input.substring(0, this.pos)
+        const line = parsed.replace(/[^\n]/g, '').length + 1
+
+        this.errors.push(Object.assign({}, data, {line: line}))
+    }
+
     match(s, options) {
         if (!options) options = { skipWhitespace: true }
         if (options.skipWhitespace === true || options.skipWhitespace === 'leading') this.skipWhitespace()
@@ -98,10 +105,10 @@ export class BibLatexParser {
             this.pos += s.length
         } else {
 
-            this.errors.push({
+            this.error({
                 type: 'token_mismatch',
                 expected: s,
-                found: this.input.substring(this.pos, this.pos + s.length)
+                found: this.input.substring(this.pos, this.pos + s.length),
             })
         }
         if (options.skipWhitespace === true || options.skipWhitespace === 'trailing') this.skipWhitespace()
@@ -234,7 +241,7 @@ export class BibLatexParser {
         let start = this.pos
         while (true) {
             if (this.pos == this.input.length) {
-                this.errors.push({type: 'runaway_key'})
+                this.error({type: 'runaway_key' })
                 return
             }
             if (['(',',','{','}',' ','='].includes(this.input[this.pos])) {
@@ -256,9 +263,9 @@ export class BibLatexParser {
     keyEqualsValue() {
         let key = this.key()
         if (!key) {
-            this.errors.push({
+            this.error({
                 type: 'cut_off_citation',
-                entry: this.currentEntry['entry_key']
+                entry: this.currentEntry['entry_key'],
             })
             // The citation is not full, we remove the existing parts.
             this.currentEntry['incomplete'] = true
@@ -270,10 +277,10 @@ export class BibLatexParser {
             let val = this.value()
             return [this.currentKey, val]
         } else {
-            this.errors.push({
+            this.error({
                 type: 'missing_equal_sign',
                 key: this.currentKey,
-                entry: this.currentEntry['entry_key']
+                entry: this.currentEntry['entry_key'],
             })
         }
     }
@@ -296,9 +303,9 @@ export class BibLatexParser {
             }
             kv = this.keyEqualsValue()
             if (typeof (kv) === 'undefined') {
-                this.errors.push({
+                this.error({
                     type: 'key_value_error',
-                    entry: this.currentEntry['entry_key']
+                    entry: this.currentEntry['entry_key'],
                 })
                 break
             }
@@ -458,11 +465,11 @@ export class BibLatexParser {
                     if (this._checkDate(fValue)) {
                         oFields[fKey] = fValue
                     } else {
-                        this.errors.push({
+                        this.error({
                             type: 'unknown_date',
                             entry: this.currentEntry['entry_key'],
                             field_name: fKey,
-                            value: fValue
+                            value: fValue,
                         })
                     }
                     break
@@ -489,11 +496,11 @@ export class BibLatexParser {
                     if (this._checkURI(fValue)) {
                         oFields[fKey] = this._reformURI(fValue)
                     } else {
-                        this.errors.push({
+                        this.error({
                             type: 'unknown_uri',
                             entry: this.currentEntry['entry_key'],
                             field_name: fKey,
-                            value: fValue
+                            value: fValue,
                         })
                     }
                     break
