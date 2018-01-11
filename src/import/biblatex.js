@@ -92,10 +92,7 @@ export class BibLatexParser {
     }
 
     error(data) {
-        const parsed = this.input.substring(0, this.pos)
-        const line = parsed.replace(/[^\n]/g, '').length + 1
-
-        this.errors.push(Object.assign({}, data, {line: line}))
+        this.errors.push(Object.assign({}, data, {line: this.input.slice(0, this.pos).split('\n').length }))
     }
 
     match(s, options) {
