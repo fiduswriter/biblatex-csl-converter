@@ -241,7 +241,7 @@ export class BibLatexParser {
                 this.error({type: 'runaway_key' })
                 return
             }
-            if (['(',',','{','}',' ','='].includes(this.input[this.pos])) {
+            if (['(',')',',','{','}',' ','=', '\t', '\n'].includes(this.input[this.pos])) {
                 let key = this.input.substring(start, this.pos)
                 if (optional && this.input[this.pos] != ',') {
                     this.skipWhitespace()
