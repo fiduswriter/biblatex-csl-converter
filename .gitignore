@@ -4,3 +4,5 @@ venv/
 .nyc_output/
 coverage/
 docs/demo-transpiled.js
+gh-pages/*.js
+browser/*.js

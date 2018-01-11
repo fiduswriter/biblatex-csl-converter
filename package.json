@@ -31,7 +31,12 @@
     "check_js": "jshint src/",
     "pretest": "npm run check_js",
     "precompile": "rimraf lib/* && BABEL_ENV=production babel --out-dir lib/edtf node_modules/edtf && BABEL_ENV=production babel --out-dir lib src",
-    "compile": "browserify src/build/gh-pages.js -o gh-pages/demo.js -t babelify && browserify src/build/browser.js -o browser/biblatex-csl-converter.js -t babelify",
+    "compile": "npm run compile_gh-pages && npm run compile_browser",
+    "compile_gh-pages": "browserify src/build/gh-pages.js -o gh-pages/demo.js -t babelify",
+    "compile_browser": "npm run compile_browser-export-biblatex && npm run compile_browser-export-csl && npm run compile_browser-import-biblatex",
+    "compile_browser-export-biblatex": "browserify src/build/browser-export-biblatex.js -t babelify -t uglifyify | uglifyjs -c > browser/export-biblatex.js",
+    "compile_browser-export-csl": "browserify src/build/browser-export-csl.js -t babelify -t uglifyify | uglifyjs -c > browser/export-csl.js",
+    "compile_browser-import-biblatex": "browserify src/build/browser-import-bibtex.js -t babelify -t uglifyify | uglifyjs -c > browser/import-bibtex.js",
     "prepublish": "npm run check_js && npm run compile",
     "test": "nyc ava",
     "coveralls": "jscoverage lib && YOURPACKAGE_COVERAGE=1 nodeunit --reporter=lcov test | coveralls",
@@ -57,7 +62,9 @@
     "gh-pages-travis": "^1.0.4",
     "jshint": "2.9.5",
     "nyc": "^11.4.1",
-    "rimraf": "^2.6.2"
+    "rimraf": "^2.6.2",
+    "uglify-js": "3.3.5",
+    "uglifyify": "4.0.5"
   },
   "babel": {
     "presets": [

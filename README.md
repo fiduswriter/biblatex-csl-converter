@@ -37,4 +37,4 @@ parsing of fields that are known, but shouldn't be in the bibliography entry due
 
 **Q:** I want to include this on my website and I don't use npm packages, etc. . Is there a file I can just add to the header of my webpage?
 
-**A:** Yes, you can download such a file [here](https://github.com/fiduswriter/biblatex-csl-converter/blob/browser/biblatex-csl-converter.js).
+**A:** Yes, you can download such a file [here](https://github.com/fiduswriter/biblatex-csl-converter/tree/browser).
