@@ -490,7 +490,7 @@ export class BibLatexParser {
                     oFields[fKey] = this._reformLiteral(fValue, langEnglish)
                     break
                 case 'f_uri':
-                    if (this._checkURI(fValue)) {
+                    if (this.config.processInvalidURIs || this._checkURI(fValue)) {
                         oFields[fKey] = this._reformURI(fValue)
                     } else {
                         this.error({
