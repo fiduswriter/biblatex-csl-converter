@@ -295,7 +295,7 @@ export class BibLatexParser {
         while (this.tryMatch(",")) {
             this.match(",")
             //fixes problems with commas at the end of a list
-            if (this.tryMatch("}")) {
+            if (this.tryMatch("}") || this.tryMatch(")")) {
                 break
             }
             kv = this.keyEqualsValue()
@@ -683,13 +683,14 @@ export class BibLatexParser {
         while (this.skipToNext()) {
             let d = this.directive()
 
-            // apparently, references can also be surrended with round braces
             if (this.tryMatch("{")) {
               this.match("{")
               closer = '}'
-            } else if (this.tryMatch("(")) {
+            } else if (this.tryMatch("(")) { // apparently, references can also be surrended with round braces
               this.match("(")
               closer = ')'
+            } else if (d === "@comment") { // braceless comments are a thing it appears
+              closer = null
             } else {
               this.match("{")
               closer = '}'
@@ -700,31 +701,38 @@ export class BibLatexParser {
             } else if (d == "@preamble") {
                 this.preamble()
             } else if (d == "@comment") {
-                this.parseComment()
+                this.parseComment(!closer)
             } else {
                 this.createNewEntry()
             }
 
-            this.match(closer)
+            if (closer) this.match(closer)
         }
     }
 
-    parseComment() {
+    parseComment(braceless) {
         let start = this.pos
         let braces = 1
-        while (this.input.length > this.pos && braces > 0) {
-          switch (this.input[this.pos]) {
-            case '{':
-              braces += 1
-              break
-            case '}':
-              braces -= 1
+
+        if (braceless) {
+          while (this.input.length > this.pos && this.input[this.pos] != '\n') {
+            this.pos++
           }
-          this.pos++
+        } else {
+          while (this.input.length > this.pos && braces > 0) {
+            switch (this.input[this.pos]) {
+              case '{':
+                braces += 1
+                break
+              case '}':
+                braces -= 1
+            }
+            this.pos++
+          }
         }
 
         // no ending brace found
-        if (braces !== 0) { return }
+        if (braceless || braces !== 0) { return }
 
         // leave the ending brace for the main parser to pick up
         this.pos--
