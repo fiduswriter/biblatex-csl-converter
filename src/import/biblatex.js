@@ -231,7 +231,7 @@ export class BibLatexParser {
             this.match("#")
             values.push(this.singleValue())
         }
-        return values.join("").trim()
+        return values.join("").replace(/[\t ]+/g, ' ').trim()
     }
 
     key(optional) {
