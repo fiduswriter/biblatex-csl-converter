@@ -31,7 +31,6 @@
     "gh-pages-travis": "gh-pages-travis",
     "check_js": "jshint src/",
     "pretest": "npm run check_js",
-    "precompile": "rimraf lib/*",
     "compile": "npm run compile_bundle && npm run compile_gh-pages && npm run compile_browser",
     "compile_bundle": "rollup src/index.js --config --output.format cjs --output.file lib/index.js",
     "compile_gh-pages": "rollup src/build/gh-pages.js --config --output.format iife --output.file gh-pages/demo.js",
@@ -41,8 +40,8 @@
     "compile_browser-export-csl": "rollup src/build/browser-export-csl.js --config --output.format iife --output.file browser/export-csl.js",
     "compile_browser-import-biblatex": "rollup src/build/browser-import-bibtex.js --config --output.format iife --output.file browser/import-bibtex.js",
     "prepublish": "npm run check_js && npm run compile",
-    "test": "nyc ava",
-    "coveralls": "jscoverage lib && YOURPACKAGE_COVERAGE=1 nodeunit --reporter=lcov test | coveralls",
+    "test": "rollup -c rollup.config.test.js && mocha --reporter test/istanbul.reporter.js test",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
     "postversion": "echo remember to run 'git push --follow-tags'"
   },
   "dependencies": {
@@ -52,41 +51,26 @@
     "randexp": "^0.4.6"
   },
   "devDependencies": {
-    "ava": "^0.24.0",
     "babel-plugin-istanbul": "^4.1.5",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.1",
     "benchmark": "^2.1.4",
+    "chai": "^4.1.2",
     "coveralls": "^3.0.0",
     "edtf": "^2.3.0",
     "gh-pages-travis": "^1.0.4",
     "jshint": "2.9.5",
-    "nyc": "^11.4.1",
-    "rimraf": "^2.6.2",
+    "mocha": "^4.1.0",
     "rollup": "0.54.0",
     "rollup-plugin-babel": "3.0.3",
     "rollup-plugin-commonjs": "8.2.6",
-    "rollup-plugin-node-resolve": "3.0.2",
+    "rollup-plugin-istanbul": "^2.0.0",
     "rollup-plugin-json": "2.3.0",
     "rollup-plugin-node-builtins": "2.1.2",
     "rollup-plugin-node-globals": "1.1.0",
-    "rollup-plugin-uglify-es": "0.0.1",
-    "rollup-plugin-strip": "1.1.1"
-  },
-  "nyc": {
-    "include": [
-      "src/"
-    ],
-    "require": [
-      "babel-register"
-    ],
-    "sourceMap": false,
-    "instrument": false
-  },
-  "ava": {
-    "require": [
-      "babel-core/register"
-    ]
+    "rollup-plugin-node-resolve": "3.0.2",
+    "rollup-plugin-strip": "1.1.1",
+    "rollup-plugin-uglify-es": "0.0.1"
   },
   "jshintConfig": {
     "esversion": 6,
@@ -96,7 +80,7 @@
     "sub": true,
     "undef": true,
     "predef": [
-      "window",
+      "global",
       "document",
       "console",
       "FileReader",

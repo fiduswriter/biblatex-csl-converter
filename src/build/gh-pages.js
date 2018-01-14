@@ -1,10 +1,10 @@
 import {BibLatexParser, BibLatexExporter, CSLExporter, edtfParse, edtfCheck} from ".."
 
-window.BibLatexParser = BibLatexParser
-window.BibLatexExporter = BibLatexExporter
-window.CSLExporter = CSLExporter
-window.edtfParse = edtfParse
-window.edtfCheck = edtfCheck
+global.BibLatexParser = BibLatexParser
+global.BibLatexExporter = BibLatexExporter
+global.CSLExporter = CSLExporter
+global.edtfParse = edtfParse
+global.edtfCheck = edtfCheck
 
 let printObject = function(object) {
     let html = ''

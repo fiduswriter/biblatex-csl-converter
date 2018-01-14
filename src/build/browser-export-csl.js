@@ -1,3 +1,3 @@
 import {CSLExporter} from "../export/csl"
 
-window.CSLExporter = CSLExporter
+global.CSLExporter = CSLExporter
