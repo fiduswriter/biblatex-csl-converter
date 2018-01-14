@@ -1,7 +1,7 @@
-import {parse} from "../lib/edtf/src/parser"
+import edtf from 'edtf'
 
 export function edtfParse(dateString) {
-    return parse(
+    return edtf.parse(
         // Convert to edtf draft spec format supported by edtf.js
         dateString.replace(/^y/, 'Y')
             .replace(/unknown/g, '*')
