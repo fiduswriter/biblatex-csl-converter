@@ -82,7 +82,7 @@ let importBiblatex = function(bibString) {
         console.log(parser.errors)
     }
     document.getElementById('bib-db').innerHTML = printObject(bibDB)
-    window.bibDB = bibDB
+    global.bibDB = bibDB
     exportCSL(bibDB)
     exportBibLatex(bibDB)
     let t1 = performance.now()
