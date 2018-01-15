@@ -649,7 +649,9 @@ export class BibLatexParser {
 
     directive() {
         this.match("@")
-        this.currentType = this.key().toLowerCase()
+        this.currentType = this.key()
+        if (!this.currentType) return null
+        this.currentType = this.currentType.toLowerCase()
         return "@" + this.currentType
     }
 
@@ -682,6 +684,7 @@ export class BibLatexParser {
         let closer
         while (this.skipToNext()) {
             let d = this.directive()
+            if (!d) break
 
             if (this.tryMatch("{")) {
               this.match("{")
