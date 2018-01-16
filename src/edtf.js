@@ -1,4 +1,4 @@
-import edtf from 'edtf'
+import edtf from 'edtf/src/parser'
 
 export function edtfParse(dateString) {
     return edtf.parse(
