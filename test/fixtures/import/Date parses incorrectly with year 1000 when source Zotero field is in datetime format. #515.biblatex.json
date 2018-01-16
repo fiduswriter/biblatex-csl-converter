@@ -71,17 +71,20 @@
     {
       "type": "unexpected_field",
       "entry": "barker_2016_swiss",
-      "field_name": "entrysubtype"
+      "field_name": "entrysubtype",
+      "line": 14
     },
     {
       "type": "unknown_field",
       "entry": "barker_2016_swiss",
-      "field_name": "rights"
+      "field_name": "rights",
+      "line": 14
     },
     {
       "type": "unknown_field",
       "entry": "barker_2016_swiss",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 14
     }
   ]
 }

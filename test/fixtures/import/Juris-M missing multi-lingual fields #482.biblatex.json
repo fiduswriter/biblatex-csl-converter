@@ -117,27 +117,32 @@
     {
       "type": "unexpected_field",
       "entry": "leishuku",
-      "field_name": "shorttitle"
+      "field_name": "shorttitle",
+      "line": 12
     },
     {
       "type": "unknown_field",
       "entry": "leishuku",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 12
     },
     {
       "type": "unexpected_field",
       "entry": "leishuku",
-      "field_name": "type"
+      "field_name": "type",
+      "line": 12
     },
     {
       "type": "unknown_field",
       "entry": "leishuku",
-      "field_name": "year"
+      "field_name": "year",
+      "line": 12
     },
     {
       "type": "unknown_field",
       "entry": "yan_cairong__2003",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 24
     }
   ]
 }

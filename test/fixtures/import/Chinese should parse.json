@@ -60,7 +60,8 @@
     {
       "type": "unexpected_field",
       "entry": "羊憶蓉1999人的素質提昇之重要性",
-      "field_name": "publisher"
+      "field_name": "publisher",
+      "line": 9
     }
   ]
 }

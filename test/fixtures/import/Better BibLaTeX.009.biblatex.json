@@ -363,22 +363,26 @@
     {
       "type": "unexpected_field",
       "entry": "Adams2001",
-      "field_name": "file"
+      "field_name": "file",
+      "line": 12
     },
     {
       "type": "unknown_field",
       "entry": "Adams2001",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 12
     },
     {
       "type": "unexpected_field",
       "entry": "Adams2002",
-      "field_name": "file"
+      "field_name": "file",
+      "line": 24
     },
     {
       "type": "unknown_field",
       "entry": "Adams2002",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 24
     }
   ]
 }

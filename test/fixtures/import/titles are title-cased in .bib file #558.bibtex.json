@@ -287,17 +287,20 @@
     {
       "type": "unknown_field",
       "entry": "araz_using_2014",
-      "field_name": "pmid"
+      "field_name": "pmid",
+      "line": 25
     },
     {
       "type": "unknown_field",
       "entry": "araz_using_2014",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 25
     },
     {
       "type": "unknown_field",
       "entry": "davidson_using_2015",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 39
     }
   ]
 }

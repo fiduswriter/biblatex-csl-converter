@@ -265,67 +265,80 @@
     {
       "type": "unknown_field",
       "entry": "ISI:000270196200011",
-      "field_name": "affiliation"
+      "field_name": "affiliation",
+      "line": 18
     },
     {
       "type": "unknown_field",
       "entry": "ISI:000270196200011",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 18
     },
     {
       "type": "unknown_field",
       "entry": "ISI:000270196200011",
-      "field_name": "affiliation"
+      "field_name": "affiliation",
+      "line": 44
     },
     {
       "type": "unknown_field",
       "entry": "ISI:000270196200011",
-      "field_name": "author-email"
+      "field_name": "author-email",
+      "line": 44
     },
     {
       "type": "unknown_field",
       "entry": "ISI:000270196200011",
-      "field_name": "doc-delivery-number"
+      "field_name": "doc-delivery-number",
+      "line": 44
     },
     {
       "type": "unknown_field",
       "entry": "ISI:000270196200011",
-      "field_name": "funding-acknowledgement"
+      "field_name": "funding-acknowledgement",
+      "line": 44
     },
     {
       "type": "unknown_field",
       "entry": "ISI:000270196200011",
-      "field_name": "funding-text"
+      "field_name": "funding-text",
+      "line": 44
     },
     {
       "type": "unknown_field",
       "entry": "ISI:000270196200011",
-      "field_name": "journal-iso"
+      "field_name": "journal-iso",
+      "line": 44
     },
     {
       "type": "unknown_field",
       "entry": "ISI:000270196200011",
-      "field_name": "keywords-plus"
+      "field_name": "keywords-plus",
+      "line": 44
     },
     {
       "type": "unknown_field",
       "entry": "ISI:000270196200011",
-      "field_name": "number-of-cited-references"
+      "field_name": "number-of-cited-references",
+      "line": 44
     },
     {
       "type": "unknown_field",
       "entry": "ISI:000270196200011",
-      "field_name": "subject-category"
+      "field_name": "subject-category",
+      "line": 44
     },
     {
       "type": "unknown_field",
       "entry": "ISI:000270196200011",
-      "field_name": "times-cited"
+      "field_name": "times-cited",
+      "line": 44
     },
     {
       "type": "unknown_field",
       "entry": "ISI:000270196200011",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 44
     }
   ]
 }

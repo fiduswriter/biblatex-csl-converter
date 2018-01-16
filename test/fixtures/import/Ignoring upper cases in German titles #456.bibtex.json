@@ -197,7 +197,8 @@
     {
       "type": "unknown_field",
       "entry": "Kaufmann1990",
-      "field_name": "year"
+      "field_name": "year",
+      "line": 11
     },
     {
       "type": "unknown_date",
@@ -208,7 +209,8 @@
     {
       "type": "unknown_field",
       "entry": "Kaufmann1997",
-      "field_name": "year"
+      "field_name": "year",
+      "line": 22
     }
   ]
 }

@@ -113,12 +113,14 @@
     {
       "type": "unexpected_field",
       "entry": "coates:1999english",
-      "field_name": "shorttitle"
+      "field_name": "shorttitle",
+      "line": 16
     },
     {
       "type": "unknown_field",
       "entry": "coates:1999english",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 16
     }
   ]
 }

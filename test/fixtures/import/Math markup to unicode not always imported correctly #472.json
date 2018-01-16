@@ -350,33 +350,39 @@
       "type": "undefined_variable",
       "entry": "test_citation1",
       "key": "booktitle",
-      "variable": "IEEE_J_PROC"
+      "variable": "IEEE_J_PROC",
+      "line": 5
     },
     {
       "type": "unexpected_field",
       "entry": "test_citation1",
-      "field_name": "file"
+      "field_name": "file",
+      "line": 14
     },
     {
       "type": "unexpected_field",
       "entry": "test_citation1",
-      "field_name": "issn"
+      "field_name": "issn",
+      "line": 14
     },
     {
       "type": "undefined_variable",
       "entry": "test_citation2",
       "key": "booktitle",
-      "variable": "IEEE_J_PROC"
+      "variable": "IEEE_J_PROC",
+      "line": 19
     },
     {
       "type": "unexpected_field",
       "entry": "test_citation2",
-      "field_name": "file"
+      "field_name": "file",
+      "line": 28
     },
     {
       "type": "unexpected_field",
       "entry": "test_citation2",
-      "field_name": "issn"
+      "field_name": "issn",
+      "line": 28
     }
   ]
 }

@@ -60,12 +60,14 @@
     {
       "type": "unknown_field",
       "entry": "2014",
-      "field_name": "ptolemaeus:14:systemdesigneditor"
+      "field_name": "ptolemaeus:14:systemdesigneditor",
+      "line": 10
     },
     {
       "type": "unknown_field",
       "entry": "2014",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 10
     }
   ]
 }

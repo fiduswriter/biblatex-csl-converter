@@ -286,49 +286,58 @@
       "type": "undefined_variable",
       "entry": "firstname_retorquere_replicate_2015",
       "key": "journal",
-      "variable": "GitHub"
+      "variable": "GitHub",
+      "line": 6
     },
     {
       "type": "unexpected_field",
       "entry": "firstname_retorquere_replicate_2015",
-      "field_name": "journal"
+      "field_name": "journal",
+      "line": 11
     },
     {
       "type": "unknown_field",
       "entry": "firstname_retorquere_replicate_2015",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 11
     },
     {
       "type": "undefined_variable",
       "entry": "retorquere_replicate_2016",
       "key": "journal",
-      "variable": "GitHub"
+      "variable": "GitHub",
+      "line": 17
     },
     {
       "type": "unexpected_field",
       "entry": "retorquere_replicate_2016",
-      "field_name": "journal"
+      "field_name": "journal",
+      "line": 22
     },
     {
       "type": "unknown_field",
       "entry": "retorquere_replicate_2016",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 22
     },
     {
       "type": "undefined_variable",
       "entry": "retorquere-double_replicate_????",
       "key": "journal",
-      "variable": "GitHub"
+      "variable": "GitHub",
+      "line": 28
     },
     {
       "type": "unexpected_field",
       "entry": "retorquere-double_replicate_????",
-      "field_name": "journal"
+      "field_name": "journal",
+      "line": 32
     },
     {
       "type": "unknown_field",
       "entry": "retorquere-double_replicate_????",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 32
     }
   ]
 }

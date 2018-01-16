@@ -112,12 +112,14 @@
     {
       "type": "unexpected_field",
       "entry": "vlcek_historylatinterminology_2014",
-      "field_name": "shortjournal"
+      "field_name": "shortjournal",
+      "line": 15
     },
     {
       "type": "unknown_field",
       "entry": "vlcek_historylatinterminology_2014",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 15
     }
   ]
 }

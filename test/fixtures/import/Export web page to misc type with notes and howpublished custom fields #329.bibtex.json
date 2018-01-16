@@ -165,17 +165,20 @@
     {
       "type": "unknown_field",
       "entry": "ntp.org_clock_2015",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 10
     },
     {
       "type": "unknown_field",
       "entry": "ntp.org_clock_2015-1",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 18
     },
     {
       "type": "unknown_field",
       "entry": "ntp.org_clock_2015-2",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 26
     }
   ]
 }

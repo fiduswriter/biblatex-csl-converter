@@ -64,37 +64,44 @@
   "warnings": [
     {
       "type": "unknown_type",
-      "type_name": "jurisdiction"
+      "type_name": "jurisdiction",
+      "line": 2
     },
     {
       "type": "unexpected_field",
       "entry": "_dalain_2010",
-      "field_name": "institution"
+      "field_name": "institution",
+      "line": 12
     },
     {
       "type": "unexpected_field",
       "entry": "_dalain_2010",
-      "field_name": "journaltitle"
+      "field_name": "journaltitle",
+      "line": 12
     },
     {
       "type": "unexpected_field",
       "entry": "_dalain_2010",
-      "field_name": "number"
+      "field_name": "number",
+      "line": 12
     },
     {
       "type": "unexpected_field",
       "entry": "_dalain_2010",
-      "field_name": "pages"
+      "field_name": "pages",
+      "line": 12
     },
     {
       "type": "unknown_field",
       "entry": "_dalain_2010",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 12
     },
     {
       "type": "unexpected_field",
       "entry": "_dalain_2010",
-      "field_name": "volume"
+      "field_name": "volume",
+      "line": 12
     }
   ]
 }

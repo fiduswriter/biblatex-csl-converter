@@ -194,12 +194,14 @@
     {
       "type": "unexpected_field",
       "entry": "Hald_2000",
-      "field_name": "shorttitle"
+      "field_name": "shorttitle",
+      "line": 10
     },
     {
       "type": "unknown_field",
       "entry": "Hald_2000",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 10
     }
   ]
 }

@@ -381,32 +381,38 @@
     {
       "type": "unknown_field",
       "entry": "bentley_academic_2011",
-      "field_name": "rights"
+      "field_name": "rights",
+      "line": 22
     },
     {
       "type": "unexpected_field",
       "entry": "bentley_academic_2011",
-      "field_name": "shortjournal"
+      "field_name": "shortjournal",
+      "line": 22
     },
     {
       "type": "unexpected_field",
       "entry": "bentley_academic_2011",
-      "field_name": "shorttitle"
+      "field_name": "shorttitle",
+      "line": 22
     },
     {
       "type": "unknown_field",
       "entry": "bentley_academic_2011",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 22
     },
     {
       "type": "unknown_field",
       "entry": "bentley_academic_2011",
-      "field_name": "xref"
+      "field_name": "xref",
+      "line": 22
     },
     {
       "type": "unknown_field",
       "entry": "bentley_academic_2011",
-      "field_name": "year"
+      "field_name": "year",
+      "line": 22
     },
     {
       "type": "unknown_date",
@@ -417,56 +423,67 @@
     {
       "type": "unexpected_field",
       "entry": "pollard_bicycle_2007",
-      "field_name": "shortjournal"
+      "field_name": "shortjournal",
+      "line": 34
     },
     {
       "type": "unknown_field",
       "entry": "pollard_bicycle_2007",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 34
     },
     {
       "type": "unknown_field",
       "entry": "pollard_bicycle_2007",
-      "field_name": "year"
+      "field_name": "year",
+      "line": 34
     },
     {
       "type": "unknown_type",
-      "type_name": "jurisdiction"
+      "type_name": "jurisdiction",
+      "line": 36
     },
     {
       "type": "unexpected_field",
       "entry": "kartinyeri",
-      "field_name": "institution"
+      "field_name": "institution",
+      "line": 48
     },
     {
       "type": "unexpected_field",
       "entry": "kartinyeri",
-      "field_name": "journaltitle"
+      "field_name": "journaltitle",
+      "line": 48
     },
     {
       "type": "unexpected_field",
       "entry": "kartinyeri",
-      "field_name": "pages"
+      "field_name": "pages",
+      "line": 48
     },
     {
       "type": "unexpected_field",
       "entry": "kartinyeri",
-      "field_name": "shorttitle"
+      "field_name": "shorttitle",
+      "line": 48
     },
     {
       "type": "unknown_field",
       "entry": "kartinyeri",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 48
     },
     {
       "type": "unexpected_field",
       "entry": "kartinyeri",
-      "field_name": "translator"
+      "field_name": "translator",
+      "line": 48
     },
     {
       "type": "unexpected_field",
       "entry": "kartinyeri",
-      "field_name": "volume"
+      "field_name": "volume",
+      "line": 48
     }
   ]
 }

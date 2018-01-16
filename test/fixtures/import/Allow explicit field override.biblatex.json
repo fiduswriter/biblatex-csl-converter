@@ -107,17 +107,20 @@
     {
       "type": "unexpected_field",
       "entry": "anand2014technicalreportformally",
-      "field_name": "origdate"
+      "field_name": "origdate",
+      "line": 11
     },
     {
       "type": "unexpected_field",
       "entry": "anand2014technicalreportformally",
-      "field_name": "origtitle"
+      "field_name": "origtitle",
+      "line": 11
     },
     {
       "type": "unknown_field",
       "entry": "anand2014technicalreportformally",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 11
     }
   ]
 }

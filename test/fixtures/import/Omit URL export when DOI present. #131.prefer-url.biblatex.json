@@ -561,22 +561,26 @@
     {
       "type": "unknown_field",
       "entry": "CapEA11",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 13
     },
     {
       "type": "unknown_field",
       "entry": "CumEA14",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 30
     },
     {
       "type": "unexpected_field",
       "entry": "TayEA11",
-      "field_name": "shortjournal"
+      "field_name": "shortjournal",
+      "line": 45
     },
     {
       "type": "unknown_field",
       "entry": "TayEA11",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 45
     }
   ]
 }

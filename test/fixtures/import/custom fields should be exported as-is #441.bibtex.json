@@ -148,22 +148,26 @@
     {
       "type": "unknown_field",
       "entry": "Kokpinar2002",
-      "field_name": "related"
+      "field_name": "related",
+      "line": 17
     },
     {
       "type": "unknown_field",
       "entry": "Kokpinar2002",
-      "field_name": "relatedtype"
+      "field_name": "relatedtype",
+      "line": 17
     },
     {
       "type": "unexpected_field",
       "entry": "Kokpinar2002",
-      "field_name": "shorttitle"
+      "field_name": "shorttitle",
+      "line": 17
     },
     {
       "type": "unknown_field",
       "entry": "Kokpinar2002",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 17
     }
   ]
 }

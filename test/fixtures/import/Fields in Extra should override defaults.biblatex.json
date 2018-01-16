@@ -83,17 +83,20 @@
     {
       "type": "unexpected_field",
       "entry": "simonite2013declinewikipediaeven",
-      "field_name": "journaltitle"
+      "field_name": "journaltitle",
+      "line": 13
     },
     {
       "type": "unexpected_field",
       "entry": "simonite2013declinewikipediaeven",
-      "field_name": "shorttitle"
+      "field_name": "shorttitle",
+      "line": 13
     },
     {
       "type": "unknown_field",
       "entry": "simonite2013declinewikipediaeven",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 13
     }
   ]
 }

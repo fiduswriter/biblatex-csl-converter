@@ -320,12 +320,14 @@
     {
       "type": "unexpected_field",
       "entry": "Adams2001",
-      "field_name": "file"
+      "field_name": "file",
+      "line": 11
     },
     {
       "type": "unexpected_field",
       "entry": "Adams2002",
-      "field_name": "file"
+      "field_name": "file",
+      "line": 24
     }
   ]
 }

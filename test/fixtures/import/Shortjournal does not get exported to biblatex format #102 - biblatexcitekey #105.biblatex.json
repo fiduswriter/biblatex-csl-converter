@@ -141,12 +141,14 @@
     {
       "type": "unexpected_field",
       "entry": "Acin2006-105",
-      "field_name": "shortjournal"
+      "field_name": "shortjournal",
+      "line": 16
     },
     {
       "type": "unknown_field",
       "entry": "Acin2006-105",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 16
     }
   ]
 }

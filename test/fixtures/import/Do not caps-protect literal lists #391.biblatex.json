@@ -91,12 +91,14 @@
     {
       "type": "unexpected_field",
       "entry": "publisher",
-      "field_name": "origlocation"
+      "field_name": "origlocation",
+      "line": 8
     },
     {
       "type": "unexpected_field",
       "entry": "publisher",
-      "field_name": "origpublisher"
+      "field_name": "origpublisher",
+      "line": 8
     }
   ]
 }

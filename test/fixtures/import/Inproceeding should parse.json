@@ -128,12 +128,14 @@
     {
       "type": "unknown_field",
       "entry": "Lysenko:2010:GMC:1839778.1839781",
-      "field_name": "numpages"
+      "field_name": "numpages",
+      "line": 17
     },
     {
       "type": "unknown_field",
       "entry": "Lysenko:2010:GMC:1839778.1839781",
-      "field_name": "acmid"
+      "field_name": "acmid",
+      "line": 17
     },
     {
       "type": "alias_creates_duplicate_field",
@@ -141,7 +143,8 @@
       "field": "address",
       "alias_of": "location",
       "value": "New York, NY, USA",
-      "alias_of_value": "Haifa, Israel"
+      "alias_of_value": "Haifa, Israel",
+      "line": 17
     }
   ]
 }

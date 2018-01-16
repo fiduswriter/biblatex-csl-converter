@@ -185,12 +185,14 @@
     {
       "type": "unexpected_field",
       "entry": "10.1000/182+physical_volcanology_1600_eruption",
-      "field_name": "file"
+      "field_name": "file",
+      "line": 13
     },
     {
       "type": "unknown_field",
       "entry": "10.1000/182+physical_volcanology_1600_eruption",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 13
     }
   ]
 }

@@ -558,37 +558,44 @@
     {
       "type": "unknown_field",
       "entry": "puurtinen_betweengroup_2009",
-      "field_name": "pmid"
+      "field_name": "pmid",
+      "line": 18
     },
     {
       "type": "unknown_field",
       "entry": "puurtinen_betweengroup_2009",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 18
     },
     {
       "type": "unknown_field",
       "entry": "bowles_coevolution_2003",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 31
     },
     {
       "type": "unexpected_field",
       "entry": "sumner_folkways_1906",
-      "field_name": "shorttitle"
+      "field_name": "shorttitle",
+      "line": 42
     },
     {
       "type": "unknown_field",
       "entry": "sumner_folkways_1906",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 42
     },
     {
       "type": "unknown_field",
       "entry": "bauer_war_2014",
-      "field_name": "pmid"
+      "field_name": "pmid",
+      "line": 59
     },
     {
       "type": "unknown_field",
       "entry": "bauer_war_2014",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 59
     }
   ]
 }

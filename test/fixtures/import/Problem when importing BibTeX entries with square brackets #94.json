@@ -115,17 +115,20 @@
     {
       "type": "unexpected_field",
       "entry": "Adachi_1989",
-      "field_name": "file"
+      "field_name": "file",
+      "line": 27
     },
     {
       "type": "unknown_field",
       "entry": "Adachi_1989",
-      "field_name": "owner"
+      "field_name": "owner",
+      "line": 27
     },
     {
       "type": "unknown_field",
       "entry": "Adachi_1989",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 27
     }
   ]
 }

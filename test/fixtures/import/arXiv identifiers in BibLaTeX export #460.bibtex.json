@@ -462,12 +462,14 @@
       "field": "archiveprefix",
       "alias_of": "eprinttype",
       "value": "arXiv",
-      "alias_of_value": "arxiv"
+      "alias_of_value": "arxiv",
+      "line": 22
     },
     {
       "type": "unknown_field",
       "entry": "Sen.2016.BV",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 22
     },
     {
       "type": "alias_creates_duplicate_field",
@@ -475,12 +477,14 @@
       "field": "archiveprefix",
       "alias_of": "eprinttype",
       "value": "arXiv",
-      "alias_of_value": "arxiv"
+      "alias_of_value": "arxiv",
+      "line": 40
     },
     {
       "type": "unknown_field",
       "entry": "Smolin.2013.Classical",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 40
     },
     {
       "type": "alias_creates_duplicate_field",
@@ -488,12 +492,14 @@
       "field": "archiveprefix",
       "alias_of": "eprinttype",
       "value": "arXiv",
-      "alias_of_value": "arxiv"
+      "alias_of_value": "arxiv",
+      "line": 62
     },
     {
       "type": "unknown_field",
       "entry": "Ronnow.2014.Defining",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 62
     }
   ]
 }

@@ -319,52 +319,62 @@
     {
       "type": "unknown_field",
       "entry": "Hulse2009",
-      "field_name": "biburl"
+      "field_name": "biburl",
+      "line": 23
     },
     {
       "type": "unknown_field",
       "entry": "Hulse2009",
-      "field_name": "crossref"
+      "field_name": "crossref",
+      "line": 23
     },
     {
       "type": "unknown_field",
       "entry": "Hulse2009",
-      "field_name": "description"
+      "field_name": "description",
+      "line": 23
     },
     {
       "type": "unknown_field",
       "entry": "Hulse2009",
-      "field_name": "ee"
+      "field_name": "ee",
+      "line": 23
     },
     {
       "type": "unexpected_field",
       "entry": "Hulse2009",
-      "field_name": "file"
+      "field_name": "file",
+      "line": 23
     },
     {
       "type": "unknown_field",
       "entry": "Hulse2009",
-      "field_name": "groups"
+      "field_name": "groups",
+      "line": 23
     },
     {
       "type": "unknown_field",
       "entry": "Hulse2009",
-      "field_name": "interhash"
+      "field_name": "interhash",
+      "line": 23
     },
     {
       "type": "unknown_field",
       "entry": "Hulse2009",
-      "field_name": "intrahash"
+      "field_name": "intrahash",
+      "line": 23
     },
     {
       "type": "unknown_field",
       "entry": "Hulse2009",
-      "field_name": "owner"
+      "field_name": "owner",
+      "line": 23
     },
     {
       "type": "unknown_field",
       "entry": "Hulse2009",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 23
     }
   ]
 }

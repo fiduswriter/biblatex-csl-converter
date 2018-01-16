@@ -74,12 +74,14 @@
     {
       "type": "unexpected_field",
       "entry": "Boas2014StikordTil",
-      "field_name": "entrysubtype"
+      "field_name": "entrysubtype",
+      "line": 13
     },
     {
       "type": "unknown_field",
       "entry": "Boas2014StikordTil",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 13
     }
   ]
 }

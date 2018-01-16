@@ -220,32 +220,38 @@
     {
       "type": "unexpected_field",
       "entry": "latour_ny_2008",
-      "field_name": "origdate"
+      "field_name": "origdate",
+      "line": 15
     },
     {
       "type": "unexpected_field",
       "entry": "latour_ny_2008",
-      "field_name": "origlocation"
+      "field_name": "origlocation",
+      "line": 15
     },
     {
       "type": "unexpected_field",
       "entry": "latour_ny_2008",
-      "field_name": "origpublisher"
+      "field_name": "origpublisher",
+      "line": 15
     },
     {
       "type": "unexpected_field",
       "entry": "latour_ny_2008",
-      "field_name": "origtitle"
+      "field_name": "origtitle",
+      "line": 15
     },
     {
       "type": "unexpected_field",
       "entry": "latour_ny_2008",
-      "field_name": "shorttitle"
+      "field_name": "shorttitle",
+      "line": 15
     },
     {
       "type": "unknown_field",
       "entry": "latour_ny_2008",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 15
     },
     {
       "type": "unknown_date",
@@ -256,32 +262,38 @@
     {
       "type": "unexpected_field",
       "entry": "kelsen_democratie_2004",
-      "field_name": "origdate"
+      "field_name": "origdate",
+      "line": 37
     },
     {
       "type": "unexpected_field",
       "entry": "kelsen_democratie_2004",
-      "field_name": "origlocation"
+      "field_name": "origlocation",
+      "line": 37
     },
     {
       "type": "unexpected_field",
       "entry": "kelsen_democratie_2004",
-      "field_name": "origpublisher"
+      "field_name": "origpublisher",
+      "line": 37
     },
     {
       "type": "unexpected_field",
       "entry": "kelsen_democratie_2004",
-      "field_name": "origtitle"
+      "field_name": "origtitle",
+      "line": 37
     },
     {
       "type": "unknown_field",
       "entry": "kelsen_democratie_2004",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 37
     },
     {
       "type": "unknown_field",
       "entry": "kelsen_democratie_2004",
-      "field_name": "year"
+      "field_name": "year",
+      "line": 37
     }
   ]
 }

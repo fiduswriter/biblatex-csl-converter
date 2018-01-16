@@ -230,7 +230,8 @@
     {
       "type": "unexpected_field",
       "entry": "wilm10",
-      "field_name": "location"
+      "field_name": "location",
+      "line": 12
     }
   ]
 }

@@ -528,12 +528,14 @@
     {
       "type": "unknown_field",
       "entry": "Cooper2013",
-      "field_name": "crossref"
+      "field_name": "crossref",
+      "line": 25
     },
     {
       "type": "unknown_field",
       "entry": "Algar1985",
-      "field_name": "lista"
+      "field_name": "lista",
+      "line": 47
     }
   ]
 }

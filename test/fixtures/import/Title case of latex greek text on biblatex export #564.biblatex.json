@@ -386,22 +386,26 @@
     {
       "type": "unexpected_field",
       "entry": "dalrimple_use_2006",
-      "field_name": "shortjournal"
+      "field_name": "shortjournal",
+      "line": 20
     },
     {
       "type": "unknown_field",
       "entry": "dalrimple_use_2006",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 20
     },
     {
       "type": "unexpected_field",
       "entry": "dalrymple_use_2006",
-      "field_name": "shortjournal"
+      "field_name": "shortjournal",
+      "line": 40
     },
     {
       "type": "unknown_field",
       "entry": "dalrymple_use_2006",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 40
     }
   ]
 }
