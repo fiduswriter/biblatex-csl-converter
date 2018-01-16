@@ -116,12 +116,14 @@
     {
       "type": "unknown_field",
       "entry": "author:06",
-      "field_name": "crossref"
+      "field_name": "crossref",
+      "line": 7
     },
     {
       "type": "unexpected_field",
       "entry": "conference:06",
-      "field_name": "booktitle"
+      "field_name": "booktitle",
+      "line": 14
     }
   ]
 }

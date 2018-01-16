@@ -438,12 +438,14 @@
     {
       "type": "unexpected_field",
       "entry": "hess2008gromacs",
-      "field_name": "publisher"
+      "field_name": "publisher",
+      "line": 11
     },
     {
       "type": "unexpected_field",
       "entry": "berendsen1995gromacs",
-      "field_name": "publisher"
+      "field_name": "publisher",
+      "line": 22
     }
   ]
 }

@@ -6137,77 +6137,92 @@
     {
       "type": "unexpected_field",
       "entry": "paglione2001mapping",
-      "field_name": "publisher"
+      "field_name": "publisher",
+      "line": 28
     },
     {
       "type": "unexpected_field",
       "entry": "jackson1996hcn",
-      "field_name": "publisher"
+      "field_name": "publisher",
+      "line": 46
     },
     {
       "type": "unexpected_field",
       "entry": "paglione1995distribution",
-      "field_name": "publisher"
+      "field_name": "publisher",
+      "line": 65
     },
     {
       "type": "unexpected_field",
       "entry": "blom1999diffuse",
-      "field_name": "publisher"
+      "field_name": "publisher",
+      "line": 75
     },
     {
       "type": "unexpected_field",
       "entry": "smolvcic2009cosmic",
-      "field_name": "publisher"
+      "field_name": "publisher",
+      "line": 85
     },
     {
       "type": "unexpected_field",
       "entry": "paglione1997average",
-      "field_name": "publisher"
+      "field_name": "publisher",
+      "line": 95
     },
     {
       "type": "unexpected_field",
       "entry": "paglione1998interpreting",
-      "field_name": "publisher"
+      "field_name": "publisher",
+      "line": 114
     },
     {
       "type": "unexpected_field",
       "entry": "smolvcic2009dust",
-      "field_name": "publisher"
+      "field_name": "publisher",
+      "line": 124
     },
     {
       "type": "unexpected_field",
       "entry": "paglione2004structure",
-      "field_name": "publisher"
+      "field_name": "publisher",
+      "line": 143
     },
     {
       "type": "unexpected_field",
       "entry": "kraemer19972000",
-      "field_name": "publisher"
+      "field_name": "publisher",
+      "line": 153
     },
     {
       "type": "unexpected_field",
       "entry": "liu2008faint",
-      "field_name": "publisher"
+      "field_name": "publisher",
+      "line": 163
     },
     {
       "type": "unexpected_field",
       "entry": "kraemer2000properties",
-      "field_name": "publisher"
+      "field_name": "publisher",
+      "line": 205
     },
     {
       "type": "unexpected_field",
       "entry": "smolvcic2010erratum",
-      "field_name": "publisher"
+      "field_name": "publisher",
+      "line": 242
     },
     {
       "type": "unexpected_field",
       "entry": "paglione2001mapping",
-      "field_name": "publisher"
+      "field_name": "publisher",
+      "line": 382
     },
     {
       "type": "unexpected_field",
       "entry": "jackson1993submillimeter",
-      "field_name": "publisher"
+      "field_name": "publisher",
+      "line": 391
     }
   ]
 }

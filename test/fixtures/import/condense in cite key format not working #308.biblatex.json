@@ -158,12 +158,14 @@
     {
       "type": "unknown_field",
       "entry": "de_kort2007digital",
-      "field_name": "options"
+      "field_name": "options",
+      "line": 14
     },
     {
       "type": "unknown_field",
       "entry": "de_kort2007digital",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 14
     }
   ]
 }

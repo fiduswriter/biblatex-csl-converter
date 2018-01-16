@@ -95,6 +95,10 @@ export class BibLatexParser {
         this.errors.push(Object.assign({}, data, {line: this.input.slice(0, this.pos).split('\n').length }))
     }
 
+    warning(data) {
+        this.warnings.push(Object.assign({}, data, {line: this.input.slice(0, this.pos).split('\n').length }))
+    }
+
     match(s, options) {
         if (!options) options = { skipWhitespace: true }
         if (options.skipWhitespace === true || options.skipWhitespace === 'leading') this.skipWhitespace()
@@ -211,7 +215,7 @@ export class BibLatexParser {
             } else if (k.match("^[0-9]+$")) {
                 return k
             } else {
-                this.warnings.push({
+                this.warning({
                     type: 'undefined_variable',
                     entry: this.currentEntry['entry_key'],
                     key: this.currentKey,
@@ -394,7 +398,7 @@ export class BibLatexParser {
             let aliasKey = BiblatexFieldAliasTypes[bKey], fKey
             if (aliasKey) {
                 if (rawFields[aliasKey]) {
-                    this.warnings.push({
+                    this.warning({
                         type: 'alias_creates_duplicate_field',
                         entry: this.currentEntry['entry_key'],
                         field: bKey,
@@ -418,7 +422,7 @@ export class BibLatexParser {
             let bType = BibTypes[this.currentEntry['bib_type']]
 
             if('undefined' == typeof(fKey)) {
-                this.warnings.push({
+                this.warning({
                     type: 'unknown_field',
                     entry: this.currentEntry['entry_key'],
                     field_name: bKey
@@ -440,7 +444,7 @@ export class BibLatexParser {
                 oFields = fields
                 fType = BibFieldTypes[fKey]['type']
             } else {
-                this.warnings.push({
+                this.warning({
                     type: 'unexpected_field',
                     entry: this.currentEntry['entry_key'],
                     field_name: bKey
@@ -546,7 +550,7 @@ export class BibLatexParser {
             }
         }
         if (fieldType.strict) {
-            this.warnings.push({
+            this.warning({
                 type: 'unknown_key',
                 entry: this.currentEntry['entry_key'],
                 field_name: fKey,
@@ -619,7 +623,7 @@ export class BibLatexParser {
         })
 
         if(typeof bibType === 'undefined') {
-            this.warnings.push({
+            this.warning({
                 type: 'unknown_type',
                 type_name: biblatexType
             })

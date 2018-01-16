@@ -235,12 +235,14 @@
     {
       "type": "unknown_field",
       "entry": "bonomi_improved_2006",
-      "field_name": "rights"
+      "field_name": "rights",
+      "line": 21
     },
     {
       "type": "unknown_field",
       "entry": "bonomi_improved_2006",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 21
     }
   ]
 }

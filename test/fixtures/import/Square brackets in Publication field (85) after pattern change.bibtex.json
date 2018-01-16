@@ -118,12 +118,14 @@
       "field": "archiveprefix",
       "alias_of": "eprinttype",
       "value": "arXiv",
-      "alias_of_value": "arxiv"
+      "alias_of_value": "arxiv",
+      "line": 17
     },
     {
       "type": "unknown_field",
       "entry": "2014-updated",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 17
     }
   ]
 }

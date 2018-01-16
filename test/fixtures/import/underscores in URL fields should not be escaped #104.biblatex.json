@@ -60,7 +60,8 @@
     {
       "type": "unknown_field",
       "entry": "american_rights_at_work_public_2012",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 9
     }
   ]
 }

@@ -149,12 +149,14 @@
     {
       "type": "unknown_field",
       "entry": "BartoliniForthcoming",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 12
     },
     {
       "type": "unknown_field",
       "entry": "BartoliniForthcoming",
-      "field_name": "year"
+      "field_name": "year",
+      "line": 12
     }
   ]
 }

@@ -124,22 +124,26 @@
     {
       "type": "unexpected_field",
       "entry": "Sammut1976",
-      "field_name": "shortjournal"
+      "field_name": "shortjournal",
+      "line": 17
     },
     {
       "type": "unexpected_field",
       "entry": "Sammut1976",
-      "field_name": "shorttitle"
+      "field_name": "shorttitle",
+      "line": 17
     },
     {
       "type": "unknown_field",
       "entry": "Sammut1976",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 17
     },
     {
       "type": "unknown_field",
       "entry": "Sammut1976",
-      "field_name": "year"
+      "field_name": "year",
+      "line": 17
     }
   ]
 }

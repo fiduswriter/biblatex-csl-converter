@@ -647,32 +647,38 @@
     {
       "type": "unknown_field",
       "entry": "Fritz2012",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 11
     },
     {
       "type": "unknown_field",
       "entry": "Fritz2012a",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 22
     },
     {
       "type": "unknown_field",
       "entry": "Fritz2012b",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 33
     },
     {
       "type": "unknown_field",
       "entry": "Fritz2012c",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 44
     },
     {
       "type": "unknown_field",
       "entry": "Fritz2012d",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 55
     },
     {
       "type": "unknown_field",
       "entry": "Fritz2012e",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 66
     }
   ]
 }

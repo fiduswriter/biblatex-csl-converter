@@ -138,17 +138,20 @@
     {
       "type": "unexpected_field",
       "entry": "macedo_catalogo_1799",
-      "field_name": "shorttitle"
+      "field_name": "shorttitle",
+      "line": 13
     },
     {
       "type": "unknown_field",
       "entry": "macedo_catalogo_1799",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 13
     },
     {
       "type": "unknown_field",
       "entry": "oliveira_memoriam_2007",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 25
     }
   ]
 }

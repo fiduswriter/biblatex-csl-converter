@@ -162,12 +162,14 @@
     {
       "type": "unexpected_field",
       "entry": "brill_effects_2006",
-      "field_name": "shortjournal"
+      "field_name": "shortjournal",
+      "line": 17
     },
     {
       "type": "unknown_field",
       "entry": "brill_effects_2006",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 17
     }
   ]
 }

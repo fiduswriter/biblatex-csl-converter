@@ -65,17 +65,20 @@
     {
       "type": "unknown_field",
       "entry": "2013current",
-      "field_name": "date-added"
+      "field_name": "date-added",
+      "line": 10
     },
     {
       "type": "unknown_field",
       "entry": "2013current",
-      "field_name": "date-modified"
+      "field_name": "date-modified",
+      "line": 10
     },
     {
       "type": "unknown_field",
       "entry": "2013current",
-      "field_name": "oa-url"
+      "field_name": "oa-url",
+      "line": 10
     }
   ]
 }

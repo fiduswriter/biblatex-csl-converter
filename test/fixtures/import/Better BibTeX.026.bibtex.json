@@ -70,12 +70,14 @@
     {
       "type": "unexpected_field",
       "entry": "traumNDcomputationalmodelsnoncooperative",
-      "field_name": "file"
+      "field_name": "file",
+      "line": 7
     },
     {
       "type": "unknown_field",
       "entry": "traumNDcomputationalmodelsnoncooperative",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 7
     }
   ]
 }

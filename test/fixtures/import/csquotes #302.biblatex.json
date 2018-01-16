@@ -199,22 +199,26 @@
     {
       "type": "unexpected_field",
       "entry": "tusseau_critique_2009",
-      "field_name": "shortjournal"
+      "field_name": "shortjournal",
+      "line": 13
     },
     {
       "type": "unexpected_field",
       "entry": "tusseau_critique_2009",
-      "field_name": "shorttitle"
+      "field_name": "shorttitle",
+      "line": 13
     },
     {
       "type": "unknown_field",
       "entry": "tusseau_critique_2009",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 13
     },
     {
       "type": "unknown_field",
       "entry": "searle_how_1964",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 27
     }
   ]
 }

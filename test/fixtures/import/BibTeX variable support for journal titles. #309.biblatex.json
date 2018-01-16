@@ -79,12 +79,14 @@
       "type": "undefined_variable",
       "entry": "blahut_capacity",
       "key": "journaltitle",
-      "variable": "IEEE_J_IT"
+      "variable": "IEEE_J_IT",
+      "line": 5
     },
     {
       "type": "unknown_field",
       "entry": "blahut_capacity",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 11
     }
   ]
 }

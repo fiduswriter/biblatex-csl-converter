@@ -74,7 +74,8 @@
     {
       "type": "unexpected_field",
       "entry": "Peters_2004",
-      "field_name": "publisher"
+      "field_name": "publisher",
+      "line": 13
     }
   ]
 }

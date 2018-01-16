@@ -178,32 +178,38 @@
     {
       "type": "unknown_field",
       "entry": "Klassen2010",
-      "field_name": "bibsource"
+      "field_name": "bibsource",
+      "line": 15
     },
     {
       "type": "unknown_field",
       "entry": "Klassen2010",
-      "field_name": "crossref"
+      "field_name": "crossref",
+      "line": 15
     },
     {
       "type": "unexpected_field",
       "entry": "Klassen2010",
-      "field_name": "file"
+      "field_name": "file",
+      "line": 15
     },
     {
       "type": "unknown_field",
       "entry": "Klassen2010",
-      "field_name": "groups"
+      "field_name": "groups",
+      "line": 15
     },
     {
       "type": "unknown_field",
       "entry": "Klassen2010",
-      "field_name": "owner"
+      "field_name": "owner",
+      "line": 15
     },
     {
       "type": "unknown_field",
       "entry": "Klassen2010",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 15
     }
   ]
 }

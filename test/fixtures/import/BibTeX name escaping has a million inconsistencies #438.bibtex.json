@@ -164,12 +164,14 @@
     {
       "type": "unknown_field",
       "entry": "Nome2014",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 7
     },
     {
       "type": "unknown_field",
       "entry": "vanGogh2014",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 14
     }
   ]
 }

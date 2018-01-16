@@ -87,12 +87,14 @@
     {
       "type": "unexpected_field",
       "entry": "BaltesStaudinger2000",
-      "field_name": "file"
+      "field_name": "file",
+      "line": 12
     },
     {
       "type": "unknown_field",
       "entry": "BaltesStaudinger2000",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 12
     }
   ]
 }

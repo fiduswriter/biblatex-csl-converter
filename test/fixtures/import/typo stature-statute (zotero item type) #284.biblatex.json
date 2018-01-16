@@ -57,27 +57,32 @@
   "warnings": [
     {
       "type": "unknown_type",
-      "type_name": "legislation"
+      "type_name": "legislation",
+      "line": 2
     },
     {
       "type": "unexpected_field",
       "entry": "_loi_2009",
-      "field_name": "journaltitle"
+      "field_name": "journaltitle",
+      "line": 13
     },
     {
       "type": "unexpected_field",
       "entry": "_loi_2009",
-      "field_name": "number"
+      "field_name": "number",
+      "line": 13
     },
     {
       "type": "unexpected_field",
       "entry": "_loi_2009",
-      "field_name": "pages"
+      "field_name": "pages",
+      "line": 13
     },
     {
       "type": "unknown_field",
       "entry": "_loi_2009",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 13
     }
   ]
 }

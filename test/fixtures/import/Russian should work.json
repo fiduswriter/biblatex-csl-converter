@@ -550,17 +550,20 @@
     {
       "type": "unexpected_field",
       "entry": "nazarenko2009new",
-      "field_name": "publisher"
+      "field_name": "publisher",
+      "line": 11
     },
     {
       "type": "unexpected_field",
       "entry": "nazarenko2011new",
-      "field_name": "publisher"
+      "field_name": "publisher",
+      "line": 22
     },
     {
       "type": "unexpected_field",
       "entry": "пучков2013предварительный",
-      "field_name": "publisher"
+      "field_name": "publisher",
+      "line": 66
     }
   ]
 }

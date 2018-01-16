@@ -186,17 +186,20 @@
     {
       "type": "unexpected_field",
       "entry": "Madelung_1998_LB_10681727_56",
-      "field_name": "file"
+      "field_name": "file",
+      "line": 15
     },
     {
       "type": "unknown_field",
       "entry": "Madelung_1998_LB_10681727_56",
-      "field_name": "owner"
+      "field_name": "owner",
+      "line": 15
     },
     {
       "type": "unknown_field",
       "entry": "Madelung_1998_LB_10681727_56",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 15
     }
   ]
 }

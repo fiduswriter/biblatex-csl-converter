@@ -1339,32 +1339,38 @@
     {
       "type": "unknown_field",
       "entry": "vangogh",
-      "field_name": "options"
+      "field_name": "options",
+      "line": 6
     },
     {
       "type": "unknown_field",
       "entry": "bovendeert",
-      "field_name": "options"
+      "field_name": "options",
+      "line": 42
     },
     {
       "type": "unknown_field",
       "entry": "s-gravesande",
-      "field_name": "options"
+      "field_name": "options",
+      "line": 48
     },
     {
       "type": "unknown_field",
       "entry": "dalembert",
-      "field_name": "options"
+      "field_name": "options",
+      "line": 134
     },
     {
       "type": "unknown_field",
       "entry": "dupuydeclinchamps",
-      "field_name": "options"
+      "field_name": "options",
+      "line": 155
     },
     {
       "type": "unknown_field",
       "entry": "al-hakim",
-      "field_name": "options"
+      "field_name": "options",
+      "line": 201
     }
   ]
 }

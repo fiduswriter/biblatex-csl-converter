@@ -25,7 +25,8 @@
     {
       "type": "unknown_field",
       "entry": "sample1",
-      "field_name": "name"
+      "field_name": "name",
+      "line": 5
     }
   ]
 }

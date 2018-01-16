@@ -42,17 +42,20 @@
     {
       "type": "unknown_field",
       "entry": "stackexchange_integers_14",
-      "field_name": "presort"
+      "field_name": "presort",
+      "line": 10
     },
     {
       "type": "unexpected_field",
       "entry": "stackexchange_integers_14",
-      "field_name": "shorttitle"
+      "field_name": "shorttitle",
+      "line": 10
     },
     {
       "type": "unknown_field",
       "entry": "stackexchange_integers_14",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 10
     }
   ]
 }

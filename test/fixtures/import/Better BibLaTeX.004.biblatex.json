@@ -115,12 +115,14 @@
     {
       "type": "unknown_field",
       "entry": "hicks2001",
-      "field_name": "options"
+      "field_name": "options",
+      "line": 12
     },
     {
       "type": "unknown_field",
       "entry": "hicks2001",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 12
     }
   ]
 }

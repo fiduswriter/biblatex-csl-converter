@@ -96,7 +96,8 @@
     {
       "type": "unknown_field",
       "entry": "koopman_efficient_99",
-      "field_name": "timestamp"
+      "field_name": "timestamp",
+      "line": 11
     }
   ]
 }

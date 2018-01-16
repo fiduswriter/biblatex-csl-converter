@@ -65,7 +65,8 @@
     {
       "type": "unexpected_field",
       "entry": "ea",
-      "field_name": "volume"
+      "field_name": "volume",
+      "line": 11
     }
   ]
 }
