@@ -187,84 +187,84 @@ export class BibLatexExporter {
 
     _reformText(theValue) {
         let latex = '', lastMarks = []
-        theValue.forEach((node)=>{
-            if (node.type === 'variable') {
-                // This is an undefined variable
-                // This should usually not happen, as CSL doesn't know what to
-                // do with these. We'll put them into an unsupported tag.
-                latex += `} # ${node.attrs.variable} # {`
-                this.warnings.push({
-                    type: 'undefined_variable',
-                    variable: node.attrs.variable
-                })
-                return
-            }
-            let newMarks = []
-            if (node.marks) {
-                let mathMode = false
-                node.marks.forEach((mark)=>{
-                    // We need to activate mathmode for the lowest level sub/sup node.
-                    if ((mark.type === 'sup' || mark.type === 'sub') && !mathMode) {
-                        newMarks.push('math')
-                        newMarks.push(mark.type)
-                        mathMode = true
-                    } else if (mark.type === 'nocase') {
-                        // No case has to be applied at the top level to be effective.
-                        newMarks.unshift(mark.type)
-                    } else {
-                        newMarks.push(mark.type)
-                    }
-                })
-            }
-            // close all tags that are not present in current text node.
-            let closing = false, closeTags = []
-            lastMarks.forEach((mark, index)=>{
-                if (mark != newMarks[index]) {
-                    closing = true
-                }
-                if (closing) {
-                    let closeTag = TAGS[mark].close
-                    // If not inside of a nocase, add a protective brace around tag.
-                    if (lastMarks[0] !== 'nocase' && TAGS[mark].open[0] === '\\') {
-                        closeTag += '}'
-                    }
-                    closeTags.push(closeTag)
-                }
 
-            })
-            // Add close tags to latex in reverse order to close innermost tags
-            // first.
-            closeTags.reverse()
-            latex += closeTags.join('')
+        // Add one extra empty node to theValue to close all still open tags for last node.
+        theValue.concat({type:'text', text:''}).forEach(
+            node => {
+                if (node.type === 'variable') {
+                    // This is an undefined variable
+                    // This should usually not happen, as CSL doesn't know what to
+                    // do with these. We'll put them into an unsupported tag.
+                    latex += `} # ${node.attrs.variable} # {`
+                    this.warnings.push({
+                        type: 'undefined_variable',
+                        variable: node.attrs.variable
+                    })
+                    return
+                }
+                let newMarks = []
+                if (node.marks) {
+                    let mathMode = false
+                    node.marks.forEach((mark)=>{
+                        // We need to activate mathmode for the lowest level sub/sup node.
+                        if ((mark.type === 'sup' || mark.type === 'sub') && !mathMode) {
+                            newMarks.push('math')
+                            newMarks.push(mark.type)
+                            mathMode = true
+                        } else if (mark.type === 'nocase') {
+                            // No case has to be applied at the top level to be effective.
+                            newMarks.unshift(mark.type)
+                        } else {
+                            newMarks.push(mark.type)
+                        }
+                    })
+                }
+                // close all tags that are not present in current text node.
+                let closing = false, closeTags = []
+                lastMarks.forEach((mark, index)=>{
+                    if (mark != newMarks[index]) {
+                        closing = true
+                    }
+                    if (closing) {
+                        let closeTag = TAGS[mark].close
+                        // If not inside of a nocase, add a protective brace around tag.
+                        if (lastMarks[0] !== 'nocase' && TAGS[mark].open[0] === '\\') {
+                            closeTag += '}'
+                        }
+                        closeTags.push(closeTag)
+                    }
 
-            // open all new tags that were not present in the last text node.
-            let opening = false, verbatim = false
-            newMarks.forEach((mark, index)=>{
-                if (mark != lastMarks[index]) {
-                    opening = true
-                }
-                if (opening) {
-                    // If not inside of a nocase, add a protective brace around tag.
-                    if (newMarks[0] !== 'nocase' && TAGS[mark].open[0] === '\\') {
-                        latex += '{'
+                })
+                // Add close tags to latex in reverse order to close innermost tags
+                // first.
+                closeTags.reverse()
+                latex += closeTags.join('')
+
+                // open all new tags that were not present in the last text node.
+                let opening = false, verbatim = false
+                newMarks.forEach((mark, index)=>{
+                    if (mark != lastMarks[index]) {
+                        opening = true
                     }
-                    latex += TAGS[mark].open
-                    if (TAGS[mark].verbatim) {
-                        verbatim = true
+                    if (opening) {
+                        // If not inside of a nocase, add a protective brace around tag.
+                        if (newMarks[0] !== 'nocase' && TAGS[mark].open[0] === '\\') {
+                            latex += '{'
+                        }
+                        latex += TAGS[mark].open
+                        if (TAGS[mark].verbatim) {
+                            verbatim = true
+                        }
                     }
+                })
+                if (verbatim) {
+                    latex += node.text
+                } else {
+                    latex += this._escapeTeX(node.text)
                 }
-            })
-            if (verbatim) {
-                latex += node.text
-            } else {
-                latex += this._escapeTeX(node.text)
+                lastMarks = newMarks
             }
-            lastMarks = newMarks
-        })
-        // Close all still open tags
-        lastMarks.slice().reverse().forEach((mark)=>{
-            latex += TAGS[mark].close
-        })
+        )
         return latex
     }
 
