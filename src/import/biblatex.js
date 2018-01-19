@@ -578,7 +578,7 @@ export class BibLatexParser {
         return people.map(person => {
             let nameParser = new BibLatexNameParser(person)
             return nameParser.output
-        })
+        }).filter(person => person)
     }
 
     _reformRange(rangeString) {

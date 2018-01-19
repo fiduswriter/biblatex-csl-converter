@@ -44,7 +44,10 @@ export class BibLatexNameParser {
                     // extended name detected.
                     this.parseExtendedName(parts)
                 } else {
-                    this.nameDict['literal'] = this._reformLiteral(spacedParts[0])
+                    let literal = this._reformLiteral(spacedParts[0])
+                    if (literal.length) {
+                        this.nameDict['literal'] = literal
+                    }
                 }
             } else {
                 let split = this.splitAt(spacedParts)
@@ -81,7 +84,11 @@ export class BibLatexNameParser {
 
     get output() {
         this.parseName()
-        return this.nameDict
+        if (Object.keys(this.nameDict).length) {
+            return this.nameDict
+        } else {
+            return false
+        }
     }
 
     splitTexString(string, sep='[\\s~]+') {

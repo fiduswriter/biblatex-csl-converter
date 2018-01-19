@@ -202,7 +202,12 @@ export class CSLExporter {
         return theNames.map(name => {
             let reformedName = {}
             if (name.literal) {
-                reformedName['literal'] = this._reformText(name.literal)
+                 let literal = this._reformText(name.literal)
+                 if (literal.length) {
+                     reformedName['literal'] = literal
+                 } else {
+                     return false
+                 }
             } else {
                 reformedName['given'] = this._reformText(name.given)
                 reformedName['family'] = this._reformText(name.family)
@@ -219,7 +224,7 @@ export class CSLExporter {
                 reformedName['family'] = this._reformText(name['family'])
             }
             return reformedName
-        })
+        }).filter(name => name)
     }
 
 }

@@ -124,7 +124,9 @@ export class BibLatexExporter {
         theValue.forEach((name)=>{
             if (name.literal) {
                 let literal = this._reformText(name.literal)
-                names.push(`{${literal}}`)
+                if (literal.length) {
+                    names.push(`{${literal}}`)
+                }
             } else {
                 let family = name.family ? this._reformText(name.family) : ''
                 let given = name.given ? this._reformText(name.given): ''
