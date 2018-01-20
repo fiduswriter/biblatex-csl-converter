@@ -32,7 +32,7 @@
     "check_js": "jshint src/",
     "pretest": "npm run check_js",
     "compile": "npm run compile_bundle && npm run compile_gh-pages && npm run compile_browser",
-    "compile_bundle": "rollup src/index.js --config --output.format cjs --output.file lib/index.js",
+    "compile_bundle": "rollup src/index.js --config --output.format cjs --output.file lib/index.js --output.sourcemap true",
     "compile_gh-pages": "rollup src/build/gh-pages.js --config --output.format iife --output.file gh-pages/demo.js",
     "compile_browser": "npm run compile_browser-export-biblatex && npm run compile_browser-export-csl && npm run compile_browser-import-biblatex && npm run compile_browser-biblatex-csl-converter",
     "compile_browser-biblatex-csl-converter": "rollup src/build/browser-biblatex-csl-converter.js --config --output.format iife --output.file browser/biblatex-csl-converter.js",
