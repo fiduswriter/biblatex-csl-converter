@@ -59,7 +59,6 @@
     "benchmark": "^2.1.4",
     "chai": "^4.1.2",
     "coveralls": "^3.0.0",
-    "edtf": "^2.3.2",
     "gh-pages-travis": "^1.0.4",
     "istanbul": "^0.4.5",
     "jshint": "2.9.5",
