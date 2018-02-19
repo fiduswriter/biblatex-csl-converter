@@ -47,8 +47,9 @@
   "dependencies": {
     "babel-polyfill": "^6.26.0",
     "babel-runtime": "^6.26.0",
-    "nearley": "^2.11.0",
-    "randexp": "^0.4.6"
+    "nearley": "^2.11.1",
+    "npm-check-updates": "^2.14.0",
+    "randexp": "^0.4.8"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -58,21 +59,21 @@
     "benchmark": "^2.1.4",
     "chai": "^4.1.2",
     "coveralls": "^3.0.0",
-    "edtf": "^2.3.0",
+    "edtf": "^2.3.2",
     "gh-pages-travis": "^1.0.4",
     "istanbul": "^0.4.5",
     "jshint": "2.9.5",
-    "mocha": "^4.1.0",
-    "rollup": "^0.54.0",
-    "rollup-plugin-babel": "3.0.3",
-    "rollup-plugin-commonjs": "8.2.6",
-    "rollup-plugin-istanbul": "^2.0.0",
-    "rollup-plugin-json": "2.3.0",
-    "rollup-plugin-node-builtins": "2.1.2",
-    "rollup-plugin-node-globals": "1.1.0",
-    "rollup-plugin-node-resolve": "3.0.2",
-    "rollup-plugin-strip": "1.1.1",
-    "rollup-plugin-uglify-es": "0.0.1"
+    "mocha": "^5.0.1",
+    "rollup": "^0.56.2",
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-commonjs": "^8.3.0",
+    "rollup-plugin-istanbul": "^2.0.1",
+    "rollup-plugin-json": "^2.3.0",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-globals": "^1.1.0",
+    "rollup-plugin-node-resolve": "^3.0.3",
+    "rollup-plugin-strip": "^1.1.1",
+    "rollup-plugin-uglify-es": "^0.0.1"
   },
   "jshintConfig": {
     "esversion": 6,
