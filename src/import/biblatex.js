@@ -4,7 +4,7 @@ import {BibLatexNameParser} from "./name-parser"
 import {BibLatexLiteralParser} from "./literal-parser"
 import {GroupParser} from "./group-parser"
 import {splitTeXString} from "./tools"
-import {edtfCheck} from "../edtf"
+import {edtfCheck} from "../edtf-parser"
 
 /** Parses files in BibTeX/BibLaTeX format
  */

@@ -1,5 +1,5 @@
 import {BibTypes, BibFieldTypes} from "../const"
-import {edtfParse} from "../edtf"
+import {edtfParse} from "../edtf-parser"
 
 /** Converts a BibDB to a DB of the CSL type.
  * @param bibDB The bibliography database to convert.
