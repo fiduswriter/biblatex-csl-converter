@@ -259,7 +259,7 @@
       "bib_type": "article",
       "entry_key": "barker4_-876_turkey",
       "fields": {
-        "date": "-0876",
+        "date": "-876",
         "abstract": [
           {
             "type": "text",
@@ -769,7 +769,7 @@
       "bib_type": "article",
       "entry_key": "barker10_199u_turkey",
       "fields": {
-        "date": "199u",
+        "date": "1990-1999",
         "abstract": [
           {
             "type": "text",
@@ -854,7 +854,7 @@
       "bib_type": "article",
       "entry_key": "barker11_19uu_turkey",
       "fields": {
-        "date": "19uu",
+        "date": "1900-1999",
         "abstract": [
           {
             "type": "text",
@@ -939,7 +939,7 @@
       "bib_type": "article",
       "entry_key": "barker12_1999_turkey",
       "fields": {
-        "date": "1999-uu",
+        "date": "1999",
         "abstract": [
           {
             "type": "text",
@@ -1024,7 +1024,7 @@
       "bib_type": "article",
       "entry_key": "barker13_1999_turkey",
       "fields": {
-        "date": "1999-01-uu",
+        "date": "1999-01",
         "abstract": [
           {
             "type": "text",
@@ -1109,7 +1109,7 @@
       "bib_type": "article",
       "entry_key": "barker14_1999_turkey",
       "fields": {
-        "date": "1999-uu-uu",
+        "date": "1999",
         "abstract": [
           {
             "type": "text",

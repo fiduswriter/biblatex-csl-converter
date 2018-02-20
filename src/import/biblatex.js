@@ -4,7 +4,7 @@ import {BibLatexNameParser} from "./name-parser"
 import {BibLatexLiteralParser} from "./literal-parser"
 import {GroupParser} from "./group-parser"
 import {splitTeXString} from "./tools"
-import {edtfCheck} from "../edtf-parser"
+import {edtfParse} from "../edtf-parser"
 
 /** Parses files in BibTeX/BibLaTeX format
  */
@@ -337,8 +337,9 @@ export class BibLatexParser {
             date = `${rawFields.year}`
         }
         if (date) {
-            if (this._checkDate(date)) {
-                fields['date'] = date
+            let dateObj = edtfParse(date)
+            if (dateObj.valid) {
+                fields['date'] = dateObj.cleanedString
                 delete rawFields.year
                 delete rawFields.month
             } else {
@@ -463,8 +464,9 @@ export class BibLatexParser {
             let fValue = rawFields[bKey]
             switch(fType) {
                 case 'f_date':
-                    if (this._checkDate(fValue)) {
-                        oFields[fKey] = fValue
+                    let dateObj = edtfParse(fValue)
+                    if (dateObj.valid) {
+                        oFields[fKey] = dateObj.cleanedString
                     } else {
                         this.error({
                             type: 'unknown_date',
@@ -601,10 +603,6 @@ export class BibLatexParser {
                 }
             }
         })
-    }
-
-    _checkDate(dateStr) {
-        return edtfCheck(dateStr)
     }
 
     _reformLiteral(theValue, cpMode) {

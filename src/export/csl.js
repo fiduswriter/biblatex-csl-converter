@@ -175,27 +175,35 @@ export class CSLExporter {
     }
 
     _reformDate(dateStr) {
-        let dateObj = edtfParse(dateStr)
+        let dateObj = edtfParse(dateStr), reformedDate = {}
         if (dateObj.type === 'Interval') {
-            return {
-                'date-parts': [
-                    this._edtfToCSL(dateObj.values[0].values.slice(0,3)),
-                    this._edtfToCSL(dateObj.values[1].values.slice(0,3))
-                ]
+            let values = []
+            dateObj.values.forEach(value => {
+                if(value.length) {
+                    values.push(value.slice(0,3))
+                }
+            })
+            if (values.length===2) {
+                reformedDate = {
+                    'date-parts': values
+                }
+            } else {
+                // Open interval that we cannot represent, so we make it circa instead.
+                reformedDate = {
+                    'date-parts': values[0],
+                    'circa': true
+                }
             }
-        } else {
-            return {
-                'date-parts': [ this._edtfToCSL(dateObj.values.slice(0,3)) ]
-            }
-        }
-    }
 
-    _edtfToCSL(dateArray) {
-        // Add 1 to month (0-11 in edtf.js === 1-12 in CSL json)
-        if (dateArray.length > 1) {
-            dateArray[1] = dateArray[1] + 1
+        } else {
+            reformedDate = {
+                'date-parts': [ dateObj.values.slice(0,3) ]
+            }
         }
-        return dateArray
+        if (dateObj.uncertain || dateObj.approximate) {
+            reformedDate['circa'] = true
+        }
+        return reformedDate
     }
 
     _reformName(theNames) {
