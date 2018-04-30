@@ -33,8 +33,8 @@ const verify = bibfile => {
 
 const fixtures = path.join(__dirname, 'fixtures/import')
 const bibfiles = fs.readdirSync(fixtures)
-for (let i in bibfiles) {
-  let fixture = path.join(fixtures, bibfiles[i])
+for (let fixture of bibfiles) {
   if (path.extname(fixture) != '.bib') { continue }
-  verify(fixture)
+
+  verify(path.join(fixtures, fixture))
 }
