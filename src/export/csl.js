@@ -51,7 +51,10 @@ export class CSLExporter {
                 let key = BibFieldTypes[fKey]['csl']
                 switch(fType) {
                     case 'f_date':
-                        fValues[key] = this._reformDate(fValue)
+                        let date = this._reformDate(fValue)
+                        if (date) {
+                            fValues[key] = date
+                        }
                         break
                     case 'f_integer':
                         fValues[key] = this._reformInteger(fValue)
@@ -176,7 +179,9 @@ export class CSLExporter {
 
     _reformDate(dateStr) {
         let dateObj = edtfParse(dateStr), reformedDate = {}
-        if (dateObj.type === 'Interval') {
+        if (!dateObj.valid) {
+            return false
+        } else if (dateObj.type === 'Interval') {
             let values = []
             dateObj.values.forEach(value => {
                 if(value.length) {
