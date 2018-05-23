@@ -44,6 +44,9 @@ export class CSLExporter {
      */
     getCSLEntry(id) {
         let bib = this.bibDB[id], fValues = {}
+        if (!bib.fields || !bib.bib_type || !BibTypes[bib.bib_type]) {
+            return fValues
+        }
         for (let fKey in bib.fields) {
             if (bib.fields[fKey] !== '' && fKey in BibFieldTypes && 'csl' in BibFieldTypes[fKey]) {
                 let fValue = bib.fields[fKey]
@@ -89,7 +92,7 @@ export class CSLExporter {
                         fValues[key] = fValue.join(', ')
                         break
                     default:
-                        console.warn(`Unrecognized type: ${fType}!`)
+                        console.warn(`Unrecognized field type: ${fType}!`)
                 }
             }
         }
