@@ -226,8 +226,8 @@
   "warnings": [
     {
       "type": "unknown_field",
-      "entry": "herzog1955",
       "field_name": "timestamp",
+      "entry": "herzog1955",
       "line": 15
     }
   ]

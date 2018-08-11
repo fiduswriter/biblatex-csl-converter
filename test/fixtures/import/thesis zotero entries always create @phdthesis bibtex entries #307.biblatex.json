@@ -80,14 +80,14 @@
   "warnings": [
     {
       "type": "unknown_field",
-      "entry": "Woller2011DetMultiple",
       "field_name": "timestamp",
+      "entry": "Woller2011DetMultiple",
       "line": 8
     },
     {
       "type": "unknown_field",
-      "entry": "Woller2011CTRDet",
       "field_name": "timestamp",
+      "entry": "Woller2011CTRDet",
       "line": 16
     }
   ]

@@ -155,14 +155,14 @@
   "warnings": [
     {
       "type": "unknown_field",
-      "entry": "Abramowitz1964",
       "field_name": "timestamp",
+      "entry": "Abramowitz1964",
       "line": 10
     },
     {
       "type": "unknown_field",
-      "entry": "Torre2008",
       "field_name": "timestamp",
+      "entry": "Torre2008",
       "line": 19
     }
   ]

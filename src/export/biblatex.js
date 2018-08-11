@@ -1,3 +1,5 @@
+// @flow
+
 import {TexSpecialChars} from "./const"
 import {BibTypes, BibFieldTypes} from "../const"
 
@@ -7,20 +9,50 @@ import {BibTypes, BibFieldTypes} from "../const"
  */
 
  const TAGS = {
-     'strong': {open:'\\mkbibbold{', close: '}'},
-     'em': {open:'\\mkbibitalic{', close: '}'},
-     'smallcaps': {open:'\\textsc{', close: '}'},
-     'enquote': {open:'\\enquote{', close: '}'},
-     'nocase': {open:'{{', close: '}}'},
-     'sub': {open:'_{', close: '}'},
-     'sup': {open:'^{', close: '}'},
-     'math': {open:'$', close: '$'},
+     'strong': {open:'\\mkbibbold{', close: '}', verbatim: false},
+     'em': {open:'\\mkbibitalic{', close: '}', verbatim: false},
+     'smallcaps': {open:'\\textsc{', close: '}', verbatim: false},
+     'enquote': {open:'\\enquote{', close: '}', verbatim: false},
+     'nocase': {open:'{{', close: '}}', verbatim: false},
+     'sub': {open:'_{', close: '}', verbatim: false},
+     'sup': {open:'^{', close: '}', verbatim: false},
+     'math': {open:'$', close: '$', verbatim: false},
      'url': {open:'\\url{', close: '}', verbatim: true}
   }
 
+/*::
+import type {NodeArray, RangeArray, NameDictObject} from "../const"
+
+type ConfigObject = {
+    traditionalNames?: boolean;
+};
+
+type BibObject = {
+    type: string;
+    key: string;
+    values?: Object;
+}
+
+type WarningObject = {
+    type: string;
+    variable: string;
+}
+
+*/
+
+
 export class BibLatexExporter {
 
-    constructor(bibDB, pks = false, config = {}) {
+    /*::
+    bibDB: Object;
+    pks: Array<string>;
+    config: ConfigObject;
+    warnings: Array<WarningObject>;
+    bibtexStr: string;
+    bibtexArray: Array<BibObject>
+    */
+
+    constructor(bibDB /*: Object */, pks /*: Array<string> | false */ = false, config /*: ConfigObject */= {}) {
         this.bibDB = bibDB // The bibliography database to export from.
         if (pks) {
             this.pks = pks // A list of pk values of the bibliography items to be exported.
@@ -29,15 +61,15 @@ export class BibLatexExporter {
         }
         this.config = config
         this.warnings = []
+        this.bibtexArray = []
+        this.bibtexStr = ''
     }
 
     get output() {
-        this.bibtexArray = []
-        this.bibtexStr = ''
 
         this.pks.forEach(pk => {
             let bib = this.bibDB[pk]
-            let bibEntry = {
+            let bibEntry /*: BibObject */ = {
                 'type': BibTypes[bib['bib_type']]['biblatex'],
                 'key': bib['entry_key'].length ? bib['entry_key'] : 'Undefined'
             }
@@ -98,7 +130,7 @@ export class BibLatexExporter {
         return this.bibtexStr
     }
 
-    _reformKey(theValue, fKey) {
+    _reformKey(theValue /*: string | NodeArray */, fKey /*: string */) {
         if (typeof theValue==='string') {
             let fieldType = BibFieldTypes[fKey]
             if (Array.isArray(fieldType['options'])) {
@@ -111,7 +143,7 @@ export class BibLatexExporter {
         }
     }
 
-    _reformRange(theValue) {
+    _reformRange(theValue /*: Array<RangeArray> */) /*: string */ {
         return theValue.map(
             range => range.map(
                 text => this._reformText(text)
@@ -119,7 +151,7 @@ export class BibLatexExporter {
         ).join(',')
     }
 
-    _reformName(theValue) {
+    _reformName(theValue /*: Array<NameDictObject> */) /*: string */ {
         let names = []
         theValue.forEach((name)=>{
             if (name.literal) {
@@ -165,7 +197,7 @@ export class BibLatexExporter {
         return names.join(' and ')
     }
 
-    _protectNamePart(namePart) {
+    _protectNamePart(namePart /*: string */) /*: string */{
         if (namePart.includes(',')) {
             return `"${namePart}"`
         } else {
@@ -173,10 +205,7 @@ export class BibLatexExporter {
         }
     }
 
-    _escapeTeX(theValue) {
-        if ('string' != typeof (theValue)) {
-            return false
-        }
+    _escapeTeX(theValue /*: string */) /*: string */ {
         let len = TexSpecialChars.length
         for (let i = 0; i < len; i++) {
             theValue = theValue.replace(
@@ -187,7 +216,7 @@ export class BibLatexExporter {
         return theValue
     }
 
-    _reformText(theValue) {
+    _reformText(theValue /*: NodeArray */) /*: string */ {
         let latex = '', lastMarks = []
 
         // Add one extra empty node to theValue to close all still open tags for last node.
@@ -270,7 +299,7 @@ export class BibLatexExporter {
         return latex
     }
 
-    _getBibtexString(biblist) {
+    _getBibtexString(biblist /*: Array<BibObject> */) /*: string */ {
         let len = biblist.length,
             str = ''
         for (let i = 0; i < len; i++) {

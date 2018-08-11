@@ -69,38 +69,38 @@
     },
     {
       "type": "unexpected_field",
-      "entry": "_dalain_2010",
       "field_name": "institution",
+      "entry": "_dalain_2010",
       "line": 12
     },
     {
       "type": "unexpected_field",
-      "entry": "_dalain_2010",
       "field_name": "journaltitle",
+      "entry": "_dalain_2010",
       "line": 12
     },
     {
       "type": "unexpected_field",
-      "entry": "_dalain_2010",
       "field_name": "number",
+      "entry": "_dalain_2010",
       "line": 12
     },
     {
       "type": "unexpected_field",
-      "entry": "_dalain_2010",
       "field_name": "pages",
+      "entry": "_dalain_2010",
       "line": 12
     },
     {
       "type": "unknown_field",
-      "entry": "_dalain_2010",
       "field_name": "timestamp",
+      "entry": "_dalain_2010",
       "line": 12
     },
     {
       "type": "unexpected_field",
-      "entry": "_dalain_2010",
       "field_name": "volume",
+      "entry": "_dalain_2010",
       "line": 12
     }
   ]

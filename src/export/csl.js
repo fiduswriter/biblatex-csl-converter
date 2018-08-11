@@ -1,3 +1,5 @@
+// @flow
+
 import {BibTypes, BibFieldTypes} from "../const"
 import {edtfParse} from "../edtf-parser"
 
@@ -17,8 +19,38 @@ const TAGS = {
     'undefined': {open:'[', close: ']'}
  }
 
+ /*::
+import type {NodeArray, RangeArray, NameDictObject} from "../const"
+
+type ErrorObject = {
+    type: string;
+    variable: string;
+}
+
+type CSLDateObject = {
+    'date-parts'?: Array<number> | [Array<number>, Array<number>];
+    circa?: boolean;
+}
+
+type CSLNameObject = {
+    literal?: string;
+    given?: string;
+    family?: string;
+    suffix?: string;
+    'non-dropping-particle'?: string;
+    'dropping-particle'?: string;
+}
+
+ */
+
 export class CSLExporter {
-    constructor(bibDB, pks) {
+    /*::
+    bibDB: Object;
+    pks: Array<string>
+    cslDB: Object;
+    errors: Array<ErrorObject>;
+    */
+    constructor(bibDB /*: Object */, pks /*: Array<string> | false */ = false) {
         this.bibDB = bibDB
         if (pks) {
             this.pks = pks // A list of pk values of the bibliography items to be exported.
@@ -42,7 +74,7 @@ export class CSLExporter {
      * @function getCSLEntry
      * @param id The id identifying the bibliography entry.
      */
-    getCSLEntry(id) {
+    getCSLEntry(id /*: string */) {
         let bib = this.bibDB[id], fValues = {}
         if (!bib.fields || !bib.bib_type || !BibTypes[bib.bib_type]) {
             return fValues
@@ -100,7 +132,7 @@ export class CSLExporter {
         return fValues
     }
 
-    _reformKey(theValue, fKey) {
+    _reformKey(theValue /*: string | NodeArray */, fKey /*: string */) {
         if (typeof theValue==='string') {
             let fieldType = BibFieldTypes[fKey]
             if (Array.isArray(fieldType['options'])) {
@@ -113,7 +145,7 @@ export class CSLExporter {
         }
     }
 
-    _reformRange(theValue) {
+    _reformRange(theValue /*: Array<RangeArray> */) /*: string */ {
         return theValue.map(
             range => range.map(
                 text=> this._reformText(text)
@@ -121,7 +153,7 @@ export class CSLExporter {
         ).join(',')
     }
 
-    _reformInteger(theValue) {
+    _reformInteger(theValue /*: NodeArray */) {
         let theString = this._reformText(theValue)
         let theInt = parseInt(theString)
         if (theString !== String(theInt)) {
@@ -130,7 +162,7 @@ export class CSLExporter {
         return theInt
     }
 
-    _reformText(theValue) {
+    _reformText(theValue /*: NodeArray */) {
         let html = '', lastMarks = []
         theValue.forEach((node)=>{
             if (node.type === 'variable') {
@@ -180,43 +212,42 @@ export class CSLExporter {
         return html
     }
 
-    _reformDate(dateStr) {
-        let dateObj = edtfParse(dateStr), reformedDate = {}
+    _reformDate(dateStr /*: string */) {
+        let dateObj = edtfParse(dateStr)
+        const reformedDate /*: CSLDateObject */ = {}
         if (!dateObj.valid) {
             return false
-        } else if (dateObj.type === 'Interval') {
-            let values = []
-            dateObj.values.forEach(value => {
-                if(value.length) {
-                    values.push(value.slice(0,3))
-                }
-            })
-            if (values.length===2) {
-                reformedDate = {
-                    'date-parts': values
-                }
-            } else {
-                // Open interval that we cannot represent, so we make it circa instead.
-                reformedDate = {
-                    'date-parts': values[0],
-                    'circa': true
-                }
-            }
-
+        } else if (
+            dateObj.values.length > 1 &&
+            Array.isArray(dateObj.values[0]) &&
+            Array.isArray(dateObj.values[1])
+        ) {
+            const intervalFrom /*: Array<number | string> */ = dateObj.values[0],
+                intervalTo /*: Array<number | string> */ = dateObj.values[1]
+            const intervalDateParts /*: [Array<number>, Array<number>] */ = [
+                intervalFrom.slice(0,3).map(value => parseInt(value)),
+                intervalTo.slice(0,3).map(value => parseInt(value))
+            ]
+            reformedDate['date-parts'] = intervalDateParts
         } else {
-            reformedDate = {
-                'date-parts': [ dateObj.values.slice(0,3) ]
+            const values /*: Array<number> */ =
+                dateObj.values.slice(0,3).map(value => parseInt(value))
+            reformedDate['date-parts'] = values
+            if (dateObj.type === 'Interval') {
+                // Open interval that we cannot represent, so we make it circa instead.
+                reformedDate['circa'] = true
             }
         }
+
         if (dateObj.uncertain || dateObj.approximate) {
             reformedDate['circa'] = true
         }
         return reformedDate
     }
 
-    _reformName(theNames) {
-        return theNames.map(name => {
-            let reformedName = {}
+    _reformName(theNames /*: Array<NameDictObject> */) /*: Array<CSLNameObject> */ {
+        const names = theNames.map(name => {
+            const reformedName /*: CSLNameObject */ = {}
             if (name.literal) {
                  let literal = this._reformText(name.literal)
                  if (literal.length) {
@@ -240,7 +271,8 @@ export class CSLExporter {
                 reformedName['family'] = this._reformText(name['family'])
             }
             return reformedName
-        }).filter(name => name)
+        })
+        return ((names.filter(name => name)/*: Array<any>*/)/*: Array<CSLNameObject>*/)
     }
 
 }

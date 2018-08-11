@@ -163,14 +163,14 @@
   "warnings": [
     {
       "type": "unknown_field",
-      "entry": "Nome2014",
       "field_name": "timestamp",
+      "entry": "Nome2014",
       "line": 7
     },
     {
       "type": "unknown_field",
-      "entry": "vanGogh2014",
       "field_name": "timestamp",
+      "entry": "vanGogh2014",
       "line": 14
     }
   ]

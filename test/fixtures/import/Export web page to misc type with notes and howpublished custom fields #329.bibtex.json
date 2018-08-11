@@ -164,20 +164,20 @@
   "warnings": [
     {
       "type": "unknown_field",
-      "entry": "ntp.org_clock_2015",
       "field_name": "timestamp",
+      "entry": "ntp.org_clock_2015",
       "line": 10
     },
     {
       "type": "unknown_field",
-      "entry": "ntp.org_clock_2015-1",
       "field_name": "timestamp",
+      "entry": "ntp.org_clock_2015-1",
       "line": 18
     },
     {
       "type": "unknown_field",
-      "entry": "ntp.org_clock_2015-2",
       "field_name": "timestamp",
+      "entry": "ntp.org_clock_2015-2",
       "line": 26
     }
   ]

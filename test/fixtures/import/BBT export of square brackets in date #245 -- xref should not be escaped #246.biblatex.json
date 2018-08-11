@@ -374,68 +374,68 @@
   "warnings": [
     {
       "type": "unknown_date",
-      "entry": "bentley_academic_2011",
       "field_name": "year",
-      "value": "[2014]"
+      "value": "[2014]",
+      "entry": "bentley_academic_2011"
     },
     {
       "type": "unknown_field",
-      "entry": "bentley_academic_2011",
       "field_name": "rights",
+      "entry": "bentley_academic_2011",
       "line": 22
     },
     {
       "type": "unexpected_field",
-      "entry": "bentley_academic_2011",
       "field_name": "shortjournal",
+      "entry": "bentley_academic_2011",
       "line": 22
     },
     {
       "type": "unexpected_field",
-      "entry": "bentley_academic_2011",
       "field_name": "shorttitle",
+      "entry": "bentley_academic_2011",
       "line": 22
     },
     {
       "type": "unknown_field",
-      "entry": "bentley_academic_2011",
       "field_name": "timestamp",
+      "entry": "bentley_academic_2011",
       "line": 22
     },
     {
       "type": "unknown_field",
-      "entry": "bentley_academic_2011",
       "field_name": "xref",
+      "entry": "bentley_academic_2011",
       "line": 22
     },
     {
       "type": "unknown_field",
-      "entry": "bentley_academic_2011",
       "field_name": "year",
+      "entry": "bentley_academic_2011",
       "line": 22
     },
     {
       "type": "unknown_date",
-      "entry": "pollard_bicycle_2007",
       "field_name": "year",
-      "value": "[2007]"
+      "value": "[2007]",
+      "entry": "pollard_bicycle_2007"
     },
     {
       "type": "unexpected_field",
-      "entry": "pollard_bicycle_2007",
       "field_name": "shortjournal",
+      "entry": "pollard_bicycle_2007",
       "line": 34
     },
     {
       "type": "unknown_field",
-      "entry": "pollard_bicycle_2007",
       "field_name": "timestamp",
+      "entry": "pollard_bicycle_2007",
       "line": 34
     },
     {
       "type": "unknown_field",
-      "entry": "pollard_bicycle_2007",
       "field_name": "year",
+      "entry": "pollard_bicycle_2007",
       "line": 34
     },
     {
@@ -445,44 +445,44 @@
     },
     {
       "type": "unexpected_field",
-      "entry": "kartinyeri",
       "field_name": "institution",
+      "entry": "kartinyeri",
       "line": 48
     },
     {
       "type": "unexpected_field",
-      "entry": "kartinyeri",
       "field_name": "journaltitle",
+      "entry": "kartinyeri",
       "line": 48
     },
     {
       "type": "unexpected_field",
-      "entry": "kartinyeri",
       "field_name": "pages",
+      "entry": "kartinyeri",
       "line": 48
     },
     {
       "type": "unexpected_field",
-      "entry": "kartinyeri",
       "field_name": "shorttitle",
+      "entry": "kartinyeri",
       "line": 48
     },
     {
       "type": "unknown_field",
-      "entry": "kartinyeri",
       "field_name": "timestamp",
+      "entry": "kartinyeri",
       "line": 48
     },
     {
       "type": "unexpected_field",
-      "entry": "kartinyeri",
       "field_name": "translator",
+      "entry": "kartinyeri",
       "line": 48
     },
     {
       "type": "unexpected_field",
-      "entry": "kartinyeri",
       "field_name": "volume",
+      "entry": "kartinyeri",
       "line": 48
     }
   ]

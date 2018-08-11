@@ -260,14 +260,14 @@
   "warnings": [
     {
       "type": "unknown_field",
-      "entry": "Plato1902",
       "field_name": "timestamp",
+      "entry": "Plato1902",
       "line": 14
     },
     {
       "type": "unknown_field",
-      "entry": "Plato1902a",
       "field_name": "timestamp",
+      "entry": "Plato1902a",
       "line": 30
     }
   ]

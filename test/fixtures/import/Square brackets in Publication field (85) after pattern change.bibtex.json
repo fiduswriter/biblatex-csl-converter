@@ -114,17 +114,17 @@
   "warnings": [
     {
       "type": "alias_creates_duplicate_field",
-      "entry": "2014-updated",
       "field": "archiveprefix",
       "alias_of": "eprinttype",
       "value": "arXiv",
       "alias_of_value": "arxiv",
+      "entry": "2014-updated",
       "line": 17
     },
     {
       "type": "unknown_field",
-      "entry": "2014-updated",
       "field_name": "timestamp",
+      "entry": "2014-updated",
       "line": 17
     }
   ]

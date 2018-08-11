@@ -114,14 +114,14 @@
   "warnings": [
     {
       "type": "unknown_field",
-      "entry": "hicks2001",
       "field_name": "options",
+      "entry": "hicks2001",
       "line": 12
     },
     {
       "type": "unknown_field",
-      "entry": "hicks2001",
       "field_name": "timestamp",
+      "entry": "hicks2001",
       "line": 12
     }
   ]

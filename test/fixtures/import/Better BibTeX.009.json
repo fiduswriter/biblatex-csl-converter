@@ -319,14 +319,14 @@
   "warnings": [
     {
       "type": "unexpected_field",
-      "entry": "Adams2001",
       "field_name": "file",
+      "entry": "Adams2001",
       "line": 11
     },
     {
       "type": "unexpected_field",
-      "entry": "Adams2002",
       "field_name": "file",
+      "entry": "Adams2002",
       "line": 24
     }
   ]

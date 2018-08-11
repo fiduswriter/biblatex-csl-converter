@@ -161,14 +161,14 @@
   "warnings": [
     {
       "type": "unexpected_field",
-      "entry": "brill_effects_2006",
       "field_name": "shortjournal",
+      "entry": "brill_effects_2006",
       "line": 17
     },
     {
       "type": "unknown_field",
-      "entry": "brill_effects_2006",
       "field_name": "timestamp",
+      "entry": "brill_effects_2006",
       "line": 17
     }
   ]

@@ -84,14 +84,14 @@
   "warnings": [
     {
       "type": "unexpected_field",
-      "entry": "pattaro_dimensions_1988",
       "field_name": "shortjournal",
+      "entry": "pattaro_dimensions_1988",
       "line": 13
     },
     {
       "type": "unknown_field",
-      "entry": "pattaro_dimensions_1988",
       "field_name": "timestamp",
+      "entry": "pattaro_dimensions_1988",
       "line": 13
     }
   ]

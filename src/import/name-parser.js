@@ -1,8 +1,22 @@
+// @flow
 import {BibLatexLiteralParser} from "./literal-parser"
+
+/*::
+
+import type {NodeArray, NameDictObject} from "../const"
+
+*/
 
 export class BibLatexNameParser {
 
-    constructor(nameString) {
+    /*::
+    nameString: string;
+    nameDict: NameDictObject;
+    _particle: Array<string>;
+    _suffix: Array<string>;
+    */
+
+    constructor(nameString /*: string */) {
         this.nameString = nameString.trim()
         this.nameDict = {}
         this._particle = []
@@ -66,7 +80,7 @@ export class BibLatexNameParser {
         }
     }
 
-    parseExtendedName(parts) {
+    parseExtendedName(parts /*: Array<string> */) {
         parts.forEach( part => {
             let attrParts = part.trim().replace(/^\"|\"$/g,'').split('=')
             let attrName = attrParts.shift().trim().toLowerCase()
@@ -91,7 +105,7 @@ export class BibLatexNameParser {
         }
     }
 
-    splitTexString(string, sep='[\\s~]+') {
+    splitTexString(string /*: string */, sep /*: string */='[\\s~]+') {
         let braceLevel = 0
         let inQuotes = false
         let nameStart = 0
@@ -135,11 +149,11 @@ export class BibLatexNameParser {
         return result
     }
 
-    processFirstMiddle(parts) {
+    processFirstMiddle(parts /*: Array<string> */) {
         this.nameDict['given'] = this._reformLiteral(parts.join(' ').trim())
     }
 
-    processVonLast(parts, lineage=[]) {
+    processVonLast(parts /*: Array<string> */, lineage /*: Array<string> */ =[]) {
         let rSplit = this.rsplitAt(parts)
         let von = rSplit[0]
         let last = rSplit[1]
@@ -156,7 +170,7 @@ export class BibLatexNameParser {
         this.nameDict['family'] = this._reformLiteral(last.join(' ').trim())
     }
 
-    findFirstLowerCaseWord(lst) {
+    findFirstLowerCaseWord(lst /*: Array<string> */) {
         // return index of first lowercase word in lst. Else return length of lst.
         for(let i = 0;i<lst.length;i++) {
             let word = lst[i]
@@ -167,20 +181,20 @@ export class BibLatexNameParser {
         return lst.length
     }
 
-    splitAt(lst) {
+    splitAt(lst /*: Array<string> */) /*: [Array<string>, Array<string>] */ {
         // Split the given list into two parts.
         // The second part starts with the first lowercase word.
-        let pos = this.findFirstLowerCaseWord(lst)
+        const pos = this.findFirstLowerCaseWord(lst)
         return [lst.slice(0, pos), lst.slice(pos)]
     }
 
-    rsplitAt(lst) {
-        let rpos = this.findFirstLowerCaseWord(lst.slice().reverse())
-        let pos = lst.length - rpos
+    rsplitAt(lst /*: Array<string> */) /*: [Array<string>, Array<string>] */{
+        const rpos = this.findFirstLowerCaseWord(lst.slice().reverse())
+        const pos = lst.length - rpos
         return [lst.slice(0, pos), lst.slice(pos)]
     }
 
-    _reformLiteral(litString) {
+    _reformLiteral(litString /*: string */) {
         let parser = new BibLatexLiteralParser(litString)
         return parser.output
     }

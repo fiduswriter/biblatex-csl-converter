@@ -114,17 +114,17 @@
   "warnings": [
     {
       "type": "alias_creates_duplicate_field",
-      "entry": "HuEtAl",
       "field": "archiveprefix",
       "alias_of": "eprinttype",
       "value": "arXiv",
       "alias_of_value": "arxiv",
+      "entry": "HuEtAl",
       "line": 17
     },
     {
       "type": "unknown_field",
-      "entry": "HuEtAl",
       "field_name": "timestamp",
+      "entry": "HuEtAl",
       "line": 17
     }
   ]

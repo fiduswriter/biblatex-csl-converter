@@ -128,20 +128,20 @@
   "warnings": [
     {
       "type": "unexpected_field",
-      "entry": "deOliveira2010",
       "field_name": "file",
+      "entry": "deOliveira2010",
       "line": 18
     },
     {
       "type": "unknown_field",
-      "entry": "deOliveira2010",
       "field_name": "options",
+      "entry": "deOliveira2010",
       "line": 18
     },
     {
       "type": "unknown_field",
-      "entry": "deOliveira2010",
       "field_name": "timestamp",
+      "entry": "deOliveira2010",
       "line": 18
     }
   ]

@@ -73,8 +73,8 @@
   "warnings": [
     {
       "type": "unexpected_field",
-      "entry": "Peters_2004",
       "field_name": "publisher",
+      "entry": "Peters_2004",
       "line": 13
     }
   ]

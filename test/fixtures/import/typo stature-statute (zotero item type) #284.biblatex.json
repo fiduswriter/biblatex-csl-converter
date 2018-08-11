@@ -62,26 +62,26 @@
     },
     {
       "type": "unexpected_field",
-      "entry": "_loi_2009",
       "field_name": "journaltitle",
+      "entry": "_loi_2009",
       "line": 13
     },
     {
       "type": "unexpected_field",
-      "entry": "_loi_2009",
       "field_name": "number",
+      "entry": "_loi_2009",
       "line": 13
     },
     {
       "type": "unexpected_field",
-      "entry": "_loi_2009",
       "field_name": "pages",
+      "entry": "_loi_2009",
       "line": 13
     },
     {
       "type": "unknown_field",
-      "entry": "_loi_2009",
       "field_name": "timestamp",
+      "entry": "_loi_2009",
       "line": 13
     }
   ]

@@ -184,14 +184,14 @@
   "warnings": [
     {
       "type": "unexpected_field",
-      "entry": "10.1000/182+physical_volcanology_1600_eruption",
       "field_name": "file",
+      "entry": "10.1000/182+physical_volcanology_1600_eruption",
       "line": 13
     },
     {
       "type": "unknown_field",
-      "entry": "10.1000/182+physical_volcanology_1600_eruption",
       "field_name": "timestamp",
+      "entry": "10.1000/182+physical_volcanology_1600_eruption",
       "line": 13
     }
   ]

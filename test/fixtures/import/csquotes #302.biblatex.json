@@ -198,26 +198,26 @@
   "warnings": [
     {
       "type": "unexpected_field",
-      "entry": "tusseau_critique_2009",
       "field_name": "shortjournal",
+      "entry": "tusseau_critique_2009",
       "line": 13
     },
     {
       "type": "unexpected_field",
-      "entry": "tusseau_critique_2009",
       "field_name": "shorttitle",
-      "line": 13
-    },
-    {
-      "type": "unknown_field",
       "entry": "tusseau_critique_2009",
-      "field_name": "timestamp",
       "line": 13
     },
     {
       "type": "unknown_field",
-      "entry": "searle_how_1964",
       "field_name": "timestamp",
+      "entry": "tusseau_critique_2009",
+      "line": 13
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "searle_how_1964",
       "line": 27
     }
   ]

@@ -1,3 +1,5 @@
+// @flow
+
 // Class to do a simple check for level 0 and 1 while waiting for a compatible
 // edtf.js version and figuring out if the license is OK.
 // It has an interface that is similar to the part of edtf.js we use so that we
@@ -5,36 +7,81 @@
 
 // Notice: this allows open ended date ranges and it uses 1-12 rather than 0-11 for months.
 
+/*::
+
+type DatePart = Array<number | string>;
+
+type DateIntervalPart = [DatePart, DatePart];
+
+type EDTFOutputObject = {
+    type: string;
+    valid: boolean;
+    values: DatePart | DateIntervalPart;
+    cleanedString: string;
+    uncertain: boolean;
+    approximate: boolean;
+}
+
+*/
+
 class SimpleEDTFParser {
-    constructor(string) {
+    /*::
+    string: string;
+    type: string;
+    valid: boolean;
+    values: DatePart;
+    uncertain: boolean;
+    approximate: boolean;
+    parts: Array<SimpleEDTFParser>;
+    */
+
+    constructor(string /*: string */) {
         this.string = string
         this.type = 'None' // default
         this.valid = true // default
-        this.values = false
+        this.values = []
         this.uncertain = false
         this.approximate = false
         this.parts = []
     }
 
-    init() {
+    init() /*: EDTFOutputObject */ {
         this.checkCertainty()
         this.splitInterval()
         return {
             type: this.type,
             valid: this.valid,
-            values: this.values,
-            cleanedString: this.cleanString()
+            values: this.type === 'Interval' ? this.getPartValues() : this.values,
+            cleanedString: this.cleanString(),
+            uncertain: this.uncertain,
+            approximate: this.approximate
         }
     }
 
-    cleanString() {
+    getPartValues() /* DatePart | DateIntervalPart */ {
+        if (this.parts.length===0) {
+            const emptyPart /*: DatePart */ = []
+            return emptyPart
+        } else if (this.parts.length===1) {
+            const datePart /*: DatePart */ = this.parts[0].values
+            return datePart
+        } else {
+            const datePartInterval /*: DateIntervalPart */ = [
+                this.parts[0].values,
+                this.parts[1].values
+            ]
+            return datePartInterval
+        }
+    }
+
+    cleanString() /*: string */ {
         let cleanedString = ''
         if (this.parts.length) {
             cleanedString = this.parts.map(datePart => datePart.cleanString()).join('/')
         } else if (this.values) {
             cleanedString = this.values.reduce((dateString, value, index) => {
                 if (index === 0) {
-                    if (value > 0) {
+                    if (typeof value === 'number' && value > 0) {
                         return String(value).padStart(4, '0')
                     } else {
                         return String(value)
@@ -76,13 +123,11 @@ class SimpleEDTFParser {
             this.valid = false
         } else if (parts.length === 2) {
             this.type = 'Interval'
-            this.values = []
             let valid = false
             parts.forEach(part => {
                 let parser = new SimpleEDTFParser(part)
                 parser.init()
                 if (parser.valid || parser.type==='Open') {
-                    this.values.push(parser.values)
                     this.parts.push(parser)
                     if (parser.valid) {
                         valid = true
@@ -131,7 +176,7 @@ class SimpleEDTFParser {
             from.init()
             let to = new SimpleEDTFParser(year.replace(/u/g,'9'))
             to.init()
-            this.values = [from.values, to.values]
+            this.parts = [from, to]
             if (!from.valid || !to.valid) {
                 this.valid = false
             }
@@ -285,7 +330,7 @@ class SimpleEDTFParser {
 }
 
 
-export function edtfParse(dateString) {
+export function edtfParse(dateString /*: string */) {
 
     let parser = new SimpleEDTFParser(dateString)
     return parser.init()

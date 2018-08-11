@@ -342,14 +342,14 @@
   "warnings": [
     {
       "type": "unknown_field",
-      "entry": "adams_physical_2001",
       "field_name": "timestamp",
+      "entry": "adams_physical_2001",
       "line": 11
     },
     {
       "type": "unknown_field",
-      "entry": "desilva_physical_2001",
       "field_name": "timestamp",
+      "entry": "desilva_physical_2001",
       "line": 22
     }
   ]

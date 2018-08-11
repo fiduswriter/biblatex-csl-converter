@@ -24,8 +24,8 @@
   "warnings": [
     {
       "type": "unknown_field",
-      "entry": "sample1",
       "field_name": "name",
+      "entry": "sample1",
       "line": 5
     }
   ]

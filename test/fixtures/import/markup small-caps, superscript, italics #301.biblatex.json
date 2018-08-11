@@ -326,14 +326,14 @@
   "warnings": [
     {
       "type": "unknown_field",
-      "entry": "burgorgue-larsen_interventions_2011",
       "field_name": "timestamp",
+      "entry": "burgorgue-larsen_interventions_2011",
       "line": 14
     },
     {
       "type": "unknown_field",
-      "entry": "leveleux-teixeira_opinion_2010",
       "field_name": "timestamp",
+      "entry": "leveleux-teixeira_opinion_2010",
       "line": 30
     }
   ]

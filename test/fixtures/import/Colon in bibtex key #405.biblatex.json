@@ -157,14 +157,14 @@
   "warnings": [
     {
       "type": "unknown_field",
-      "entry": "deKort:2007:DigitalGamesSocial",
       "field_name": "options",
+      "entry": "deKort:2007:DigitalGamesSocial",
       "line": 14
     },
     {
       "type": "unknown_field",
-      "entry": "deKort:2007:DigitalGamesSocial",
       "field_name": "timestamp",
+      "entry": "deKort:2007:DigitalGamesSocial",
       "line": 14
     }
   ]

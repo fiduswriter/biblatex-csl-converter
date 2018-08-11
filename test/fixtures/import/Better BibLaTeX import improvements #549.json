@@ -527,14 +527,14 @@
   "warnings": [
     {
       "type": "unknown_field",
-      "entry": "Cooper2013",
       "field_name": "crossref",
+      "entry": "Cooper2013",
       "line": 25
     },
     {
       "type": "unknown_field",
-      "entry": "Algar1985",
       "field_name": "lista",
+      "entry": "Algar1985",
       "line": 47
     }
   ]

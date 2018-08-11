@@ -262,38 +262,38 @@
   "warnings": [
     {
       "type": "unexpected_field",
-      "entry": "Akhavan_2009",
       "field_name": "file",
+      "entry": "Akhavan_2009",
       "line": 37
     },
     {
       "type": "unknown_field",
-      "entry": "Akhavan_2009",
       "field_name": "owner",
+      "entry": "Akhavan_2009",
       "line": 37
     },
     {
       "type": "unknown_field",
-      "entry": "Akhavan_2009",
       "field_name": "timestamp",
+      "entry": "Akhavan_2009",
       "line": 37
     },
     {
       "type": "unexpected_field",
-      "entry": "Akhavan_2010_quotes",
       "field_name": "file",
+      "entry": "Akhavan_2010_quotes",
       "line": 67
     },
     {
       "type": "unknown_field",
-      "entry": "Akhavan_2010_quotes",
       "field_name": "owner",
+      "entry": "Akhavan_2010_quotes",
       "line": 67
     },
     {
       "type": "unknown_field",
-      "entry": "Akhavan_2010_quotes",
       "field_name": "timestamp",
+      "entry": "Akhavan_2010_quotes",
       "line": 67
     }
   ]

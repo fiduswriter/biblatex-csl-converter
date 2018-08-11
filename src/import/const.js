@@ -1,3 +1,4 @@
+// @flow
 /** A list of all field aliases and what they refer to. */
 export const BiblatexFieldAliasTypes = {
     'address': 'location',

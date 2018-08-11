@@ -140,14 +140,14 @@
   "warnings": [
     {
       "type": "unexpected_field",
-      "entry": "Acin2006-105",
       "field_name": "shortjournal",
+      "entry": "Acin2006-105",
       "line": 16
     },
     {
       "type": "unknown_field",
-      "entry": "Acin2006-105",
       "field_name": "timestamp",
+      "entry": "Acin2006-105",
       "line": 16
     }
   ]

@@ -392,88 +392,74 @@
   "warnings": [
     {
       "type": "unexpected_field",
-      "entry": "clark_mesopotamia:_1957",
       "field_name": "publisher",
+      "entry": "clark_mesopotamia:_1957",
       "line": 10
     },
     {
       "type": "unknown_field",
-      "entry": "clark_mesopotamia:_1957",
       "field_name": "timestamp",
+      "entry": "clark_mesopotamia:_1957",
       "line": 10
     },
     {
       "type": "unexpected_field",
-      "entry": "_object_????",
       "field_name": "journal",
-      "line": 18
-    },
-    {
-      "type": "unknown_field",
       "entry": "_object_????",
+      "line": 18
+    },
+    {
+      "type": "unknown_field",
       "field_name": "timestamp",
+      "entry": "_object_????",
       "line": 18
     },
     {
       "type": "unexpected_field",
-      "entry": "mozart_sonatas_1960",
       "field_name": "edition",
+      "entry": "mozart_sonatas_1960",
       "line": 32
     },
     {
       "type": "unexpected_field",
-      "entry": "mozart_sonatas_1960",
       "field_name": "publisher",
-      "line": 32
-    },
-    {
-      "type": "unknown_field",
       "entry": "mozart_sonatas_1960",
-      "field_name": "timestamp",
       "line": 32
     },
     {
-      "type": "unknown_key",
-      "entry": "ratliff_mystery_1999",
-      "field_name": "langid",
-      "value": "en-US",
-      "line": 52
-    },
-    {
       "type": "unknown_field",
-      "entry": "ratliff_mystery_1999",
-      "field_name": "collaborator",
-      "line": 52
-    },
-    {
-      "type": "unknown_field",
-      "entry": "ratliff_mystery_1999",
       "field_name": "timestamp",
+      "entry": "mozart_sonatas_1960",
+      "line": 32
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "collaborator",
+      "entry": "ratliff_mystery_1999",
       "line": 52
     },
     {
-      "type": "unknown_key",
-      "entry": "kamp_deconstructing_2006",
-      "field_name": "langid",
-      "value": "en-US",
-      "line": 64
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "ratliff_mystery_1999",
+      "line": 52
     },
     {
       "type": "unexpected_field",
-      "entry": "kamp_deconstructing_2006",
       "field_name": "chapter",
+      "entry": "kamp_deconstructing_2006",
       "line": 64
     },
     {
       "type": "unknown_field",
-      "entry": "kamp_deconstructing_2006",
       "field_name": "collaborator",
+      "entry": "kamp_deconstructing_2006",
       "line": 64
     },
     {
       "type": "unknown_field",
-      "entry": "kamp_deconstructing_2006",
       "field_name": "timestamp",
+      "entry": "kamp_deconstructing_2006",
       "line": 64
     }
   ]

@@ -182,26 +182,26 @@
   "warnings": [
     {
       "type": "unexpected_field",
-      "entry": "Kaufmann1990",
       "field_name": "origdate",
+      "entry": "Kaufmann1990",
       "line": 15
     },
     {
       "type": "unknown_field",
-      "entry": "Kaufmann1990",
       "field_name": "rights",
+      "entry": "Kaufmann1990",
       "line": 15
     },
     {
       "type": "unexpected_field",
-      "entry": "Kaufmann1997",
       "field_name": "origdate",
+      "entry": "Kaufmann1997",
       "line": 30
     },
     {
       "type": "unknown_field",
-      "entry": "Kaufmann1997",
       "field_name": "rights",
+      "entry": "Kaufmann1997",
       "line": 30
     }
   ]

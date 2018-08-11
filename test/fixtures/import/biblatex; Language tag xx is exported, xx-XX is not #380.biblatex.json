@@ -83,8 +83,8 @@
   "warnings": [
     {
       "type": "unknown_field",
-      "entry": "Spitzer1941",
       "field_name": "timestamp",
+      "entry": "Spitzer1941",
       "line": 14
     }
   ]

@@ -130,8 +130,8 @@
   "warnings": [
     {
       "type": "unknown_field",
-      "entry": "HammondBortz2011ApplMathComput",
       "field_name": "timestamp",
+      "entry": "HammondBortz2011ApplMathComput",
       "line": 17
     }
   ]

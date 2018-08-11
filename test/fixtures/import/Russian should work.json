@@ -549,20 +549,20 @@
   "warnings": [
     {
       "type": "unexpected_field",
-      "entry": "nazarenko2009new",
       "field_name": "publisher",
+      "entry": "nazarenko2009new",
       "line": 11
     },
     {
       "type": "unexpected_field",
-      "entry": "nazarenko2011new",
       "field_name": "publisher",
+      "entry": "nazarenko2011new",
       "line": 22
     },
     {
       "type": "unexpected_field",
-      "entry": "пучков2013предварительный",
       "field_name": "publisher",
+      "entry": "пучков2013предварительный",
       "line": 66
     }
   ]

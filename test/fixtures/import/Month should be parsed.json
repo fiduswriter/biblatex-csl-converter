@@ -418,26 +418,26 @@
   "warnings": [
     {
       "type": "unknown_field",
-      "entry": "2012ApJ...744...93B",
       "field_name": "adsurl",
+      "entry": "2012ApJ...744...93B",
       "line": 20
     },
     {
       "type": "unknown_field",
-      "entry": "2012ApJ...744...93B",
       "field_name": "adsnote",
+      "entry": "2012ApJ...744...93B",
       "line": 20
     },
     {
       "type": "unknown_field",
-      "entry": "2012ApJ...744...93C",
       "field_name": "adsurl",
+      "entry": "2012ApJ...744...93C",
       "line": 40
     },
     {
       "type": "unknown_field",
-      "entry": "2012ApJ...744...93C",
       "field_name": "adsnote",
+      "entry": "2012ApJ...744...93C",
       "line": 40
     }
   ]

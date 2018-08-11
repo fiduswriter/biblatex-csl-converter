@@ -193,14 +193,14 @@
   "warnings": [
     {
       "type": "unexpected_field",
-      "entry": "Hald_2000",
       "field_name": "shorttitle",
+      "entry": "Hald_2000",
       "line": 10
     },
     {
       "type": "unknown_field",
-      "entry": "Hald_2000",
       "field_name": "timestamp",
+      "entry": "Hald_2000",
       "line": 10
     }
   ]

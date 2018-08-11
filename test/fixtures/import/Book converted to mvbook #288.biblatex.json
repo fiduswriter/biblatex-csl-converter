@@ -94,8 +94,8 @@
   "warnings": [
     {
       "type": "unknown_field",
-      "entry": "russ_savoir_1990",
       "field_name": "timestamp",
+      "entry": "russ_savoir_1990",
       "line": 16
     }
   ]

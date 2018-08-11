@@ -41,8 +41,8 @@
   "warnings": [
     {
       "type": "unknown_field",
-      "entry": "doe_test",
       "field_name": "timestamp",
+      "entry": "doe_test",
       "line": 7
     }
   ]

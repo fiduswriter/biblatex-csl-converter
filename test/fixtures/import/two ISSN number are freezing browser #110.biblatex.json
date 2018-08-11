@@ -151,14 +151,14 @@
   "warnings": [
     {
       "type": "unexpected_field",
-      "entry": "Lander1989",
       "field_name": "shortjournal",
+      "entry": "Lander1989",
       "line": 20
     },
     {
       "type": "unknown_field",
-      "entry": "Lander1989",
       "field_name": "timestamp",
+      "entry": "Lander1989",
       "line": 20
     }
   ]

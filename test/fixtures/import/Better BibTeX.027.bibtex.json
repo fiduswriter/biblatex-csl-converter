@@ -86,14 +86,14 @@
   "warnings": [
     {
       "type": "unexpected_field",
-      "entry": "BaltesStaudinger2000",
       "field_name": "file",
+      "entry": "BaltesStaudinger2000",
       "line": 12
     },
     {
       "type": "unknown_field",
-      "entry": "BaltesStaudinger2000",
       "field_name": "timestamp",
+      "entry": "BaltesStaudinger2000",
       "line": 12
     }
   ]

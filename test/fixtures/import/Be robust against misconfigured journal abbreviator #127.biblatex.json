@@ -131,20 +131,20 @@
   "warnings": [
     {
       "type": "unexpected_field",
-      "entry": "Yeh1985",
       "field_name": "shortjournal",
+      "entry": "Yeh1985",
       "line": 15
     },
     {
       "type": "unexpected_field",
-      "entry": "Yeh1985",
       "field_name": "shorttitle",
+      "entry": "Yeh1985",
       "line": 15
     },
     {
       "type": "unknown_field",
-      "entry": "Yeh1985",
       "field_name": "timestamp",
+      "entry": "Yeh1985",
       "line": 15
     }
   ]

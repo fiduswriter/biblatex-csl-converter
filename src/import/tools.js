@@ -1,12 +1,16 @@
+// @flow
 // split at each occurence of splitToken, but only if no braces are currently open.
-export function splitTeXString(texString, splitToken='and') {
+export function splitTeXString(texString /*: string */, splitToken /*: string */ ='and') /*: Array<string> */ {
     let output = []
     let tokenRe = /([^\s{}]+|\s|{|})/g
     let j = 0
     let k = 0
     let item
     while ((item = tokenRe.exec(texString)) !== null) {
-        let token = item[0]
+        const token = item && item.length ? item[0] : false
+        if (token===false) {
+            break
+        }
         if (k === output.length) {
             output.push('')
         }

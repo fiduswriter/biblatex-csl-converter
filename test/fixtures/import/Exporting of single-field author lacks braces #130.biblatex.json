@@ -137,14 +137,14 @@
   "warnings": [
     {
       "type": "unexpected_field",
-      "entry": "Kolawa2007",
       "field_name": "shorttitle",
+      "entry": "Kolawa2007",
       "line": 14
     },
     {
       "type": "unknown_field",
-      "entry": "Kolawa2007",
       "field_name": "timestamp",
+      "entry": "Kolawa2007",
       "line": 14
     }
   ]

@@ -73,14 +73,14 @@
   "warnings": [
     {
       "type": "unexpected_field",
-      "entry": "Boas2014StikordTil",
       "field_name": "entrysubtype",
+      "entry": "Boas2014StikordTil",
       "line": 13
     },
     {
       "type": "unknown_field",
-      "entry": "Boas2014StikordTil",
       "field_name": "timestamp",
+      "entry": "Boas2014StikordTil",
       "line": 13
     }
   ]

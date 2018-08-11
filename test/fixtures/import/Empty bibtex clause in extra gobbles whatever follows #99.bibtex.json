@@ -59,14 +59,14 @@
   "warnings": [
     {
       "type": "unknown_field",
-      "entry": "2014",
       "field_name": "ptolemaeus:14:systemdesigneditor",
+      "entry": "2014",
       "line": 10
     },
     {
       "type": "unknown_field",
-      "entry": "2014",
       "field_name": "timestamp",
+      "entry": "2014",
       "line": 10
     }
   ]

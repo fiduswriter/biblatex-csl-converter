@@ -39,10 +39,11 @@
     "compile_browser-export-biblatex": "rollup src/build/browser-export-biblatex.js --config --output.format iife --output.file browser/export-biblatex.js",
     "compile_browser-export-csl": "rollup src/build/browser-export-csl.js --config --output.format iife --output.file browser/export-csl.js",
     "compile_browser-import-biblatex": "rollup src/build/browser-import-bibtex.js --config --output.format iife --output.file browser/import-bibtex.js",
-    "prepublish": "npm run check_js && npm run compile",
+    "prepublish": "npm run check_js && npm run flow && npm run compile",
     "test": "rollup -c rollup.config.test.js && nyc mocha --timeout=3000",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
-    "postversion": "echo remember to run 'git push --follow-tags'"
+    "postversion": "echo remember to run 'git push --follow-tags'",
+    "flow": "flow"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -54,6 +55,7 @@
     "benchmark": "^2.1.4",
     "chai": "^4.1.2",
     "coveralls": "^3.0.0",
+    "flow-bin": "^0.78.0",
     "gh-pages-travis": "^1.0.4",
     "istanbul": "^0.4.5",
     "jshint": "2.9.5",

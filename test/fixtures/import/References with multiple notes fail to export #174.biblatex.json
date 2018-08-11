@@ -76,14 +76,14 @@
   "warnings": [
     {
       "type": "unexpected_field",
-      "entry": "Torre2008",
       "field_name": "publisher",
+      "entry": "Torre2008",
       "line": 10
     },
     {
       "type": "unknown_field",
-      "entry": "Torre2008",
       "field_name": "timestamp",
+      "entry": "Torre2008",
       "line": 10
     }
   ]

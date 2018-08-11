@@ -64,20 +64,20 @@
   "warnings": [
     {
       "type": "unknown_field",
-      "entry": "2013current",
       "field_name": "date-added",
+      "entry": "2013current",
       "line": 10
     },
     {
       "type": "unknown_field",
-      "entry": "2013current",
       "field_name": "date-modified",
+      "entry": "2013current",
       "line": 10
     },
     {
       "type": "unknown_field",
-      "entry": "2013current",
       "field_name": "oa-url",
+      "entry": "2013current",
       "line": 10
     }
   ]

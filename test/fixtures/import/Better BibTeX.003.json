@@ -115,14 +115,14 @@
   "warnings": [
     {
       "type": "unknown_field",
-      "entry": "author:06",
       "field_name": "crossref",
+      "entry": "author:06",
       "line": 7
     },
     {
       "type": "unexpected_field",
-      "entry": "conference:06",
       "field_name": "booktitle",
+      "entry": "conference:06",
       "line": 14
     }
   ]

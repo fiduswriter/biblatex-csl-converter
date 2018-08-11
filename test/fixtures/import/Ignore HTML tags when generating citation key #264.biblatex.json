@@ -135,14 +135,14 @@
   "warnings": [
     {
       "type": "unexpected_field",
-      "entry": "hannam_nodo_1998",
       "field_name": "shortjournal",
+      "entry": "hannam_nodo_1998",
       "line": 13
     },
     {
       "type": "unknown_field",
-      "entry": "hannam_nodo_1998",
       "field_name": "timestamp",
+      "entry": "hannam_nodo_1998",
       "line": 13
     }
   ]

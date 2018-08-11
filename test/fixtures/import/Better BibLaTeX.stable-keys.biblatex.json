@@ -646,38 +646,38 @@
   "warnings": [
     {
       "type": "unknown_field",
-      "entry": "Fritz2012",
       "field_name": "timestamp",
+      "entry": "Fritz2012",
       "line": 11
     },
     {
       "type": "unknown_field",
-      "entry": "Fritz2012a",
       "field_name": "timestamp",
+      "entry": "Fritz2012a",
       "line": 22
     },
     {
       "type": "unknown_field",
-      "entry": "Fritz2012b",
       "field_name": "timestamp",
+      "entry": "Fritz2012b",
       "line": 33
     },
     {
       "type": "unknown_field",
-      "entry": "Fritz2012c",
       "field_name": "timestamp",
+      "entry": "Fritz2012c",
       "line": 44
     },
     {
       "type": "unknown_field",
-      "entry": "Fritz2012d",
       "field_name": "timestamp",
+      "entry": "Fritz2012d",
       "line": 55
     },
     {
       "type": "unknown_field",
-      "entry": "Fritz2012e",
       "field_name": "timestamp",
+      "entry": "Fritz2012e",
       "line": 66
     }
   ]
