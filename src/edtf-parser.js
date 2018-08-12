@@ -9,14 +9,14 @@
 
 /*::
 
-type DatePart = Array<number | string>;
+type SimpleDateArray = Array<string | number>;
 
-type DateIntervalPart = [DatePart, DatePart];
+type DateArray = $ReadOnlyArray<string | number | SimpleDateArray>;
 
 type EDTFOutputObject = {
     type: string;
     valid: boolean;
-    values: DatePart | DateIntervalPart;
+    values: DateArray;
     cleanedString: string;
     uncertain: boolean;
     approximate: boolean;
@@ -29,7 +29,7 @@ class SimpleEDTFParser {
     string: string;
     type: string;
     valid: boolean;
-    values: DatePart;
+    values: SimpleDateArray;
     uncertain: boolean;
     approximate: boolean;
     parts: Array<SimpleEDTFParser>;
@@ -58,15 +58,15 @@ class SimpleEDTFParser {
         }
     }
 
-    getPartValues() /* DatePart | DateIntervalPart */ {
+    getPartValues() /*: DateArray */ {
         if (this.parts.length===0) {
-            const emptyPart /*: DatePart */ = []
+            const emptyPart = []
             return emptyPart
         } else if (this.parts.length===1) {
-            const datePart /*: DatePart */ = this.parts[0].values
+            const datePart = this.parts[0].values
             return datePart
         } else {
-            const datePartInterval /*: DateIntervalPart */ = [
+            const datePartInterval = [
                 this.parts[0].values,
                 this.parts[1].values
             ]
