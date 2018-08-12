@@ -267,7 +267,6 @@ export class BibLatexParser {
     }
 
     singleValue() {
-        let start = this.pos
         if (this.tryMatch("{")) {
             return this.valueBraces()
         } else if (this.tryMatch('"')) {
@@ -312,7 +311,7 @@ export class BibLatexParser {
         while (true) {
             if (this.pos == this.input.length) {
                 this.error({type: 'runaway_key' })
-                return ''
+                break
             }
             if (['(',')',',','{','}',' ','=', '\t', '\n'].includes(this.input[this.pos])) {
                 let key = this.input.substring(start, this.pos)
@@ -569,31 +568,29 @@ export class BibLatexParser {
             }
 
 
-            let fValue = rawFields[bKey]
+            let fValue = rawFields[bKey],
+                reformedValue
             switch(fType) {
                 case 'f_date':
-                    const dateObj = edtfParse(fValue)
-                    if (dateObj.valid) {
-                        oFields[fKey] = dateObj.cleanedString
-                    } else {
-                        const error /*: ErrorObject */ = {
+                    reformedValue = edtfParse(fValue)
+                    if (reformedValue.valid) {
+                        oFields[fKey] = reformedValue.cleanedString
+                    } else if (this.currentEntry) {
+                        this.error({
                             type: 'unknown_date',
+                            entry: this.currentEntry['entry_key'],
                             field_name: fKey,
                             value: fValue,
-                        }
-                        if (this.currentEntry) {
-                            error.entry = this.currentEntry['entry_key']
-                        }
-                        this.error(error)
+                        })
                     }
                     break
                 case 'f_integer':
                     oFields[fKey] = this._reformLiteral(fValue)
                     break
                 case 'f_key':
-                    let reformedKey = this._reformKey(fValue, fKey)
-                    if (reformedKey.length) {
-                        oFields[fKey] = reformedKey
+                    reformedValue = this._reformKey(fValue, fKey)
+                    if (reformedValue.length) {
+                        oFields[fKey] = reformedValue
                     }
                     break
                 case 'f_literal':
@@ -625,17 +622,15 @@ export class BibLatexParser {
                     oFields[fKey] = fValue
                     break
                 case 'l_key':
-                    const keys /*: Array<string | NodeArray> */ = splitTeXString(fValue).map(
+                    oFields[fKey] = splitTeXString(fValue).map(
                         keyField => this._reformKey(keyField, fKey)
                     )
-                    oFields[fKey] = keys
                     break
                 case 'l_tag':
                     oFields[fKey] = fValue.split(/[,;]/).map(string => string.trim())
                     break
                 case 'l_literal':
-                    const items /*: Array<NodeArray> */ = splitTeXString(fValue).map(item => this._reformLiteral(item.trim()))
-                    oFields[fKey] = items
+                    oFields[fKey] = splitTeXString(fValue).map(item => this._reformLiteral(item.trim()))
                     break
                 case 'l_name':
                     oFields[fKey] = this._reformNameList(fValue)

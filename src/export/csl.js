@@ -84,11 +84,12 @@ export class CSLExporter {
                 let fValue = bib.fields[fKey]
                 let fType = BibFieldTypes[fKey]['type']
                 let key = BibFieldTypes[fKey]['csl']
+                let reformedValue
                 switch(fType) {
                     case 'f_date':
-                        let date = this._reformDate(fValue)
-                        if (date) {
-                            fValues[key] = date
+                        reformedValue = this._reformDate(fValue)
+                        if (reformedValue) {
+                            fValues[key] = reformedValue
                         }
                         break
                     case 'f_integer':

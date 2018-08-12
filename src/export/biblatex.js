@@ -164,7 +164,7 @@ export class BibLatexExporter {
                 let given = name.given ? this._reformText(name.given): ''
                 let suffix = name.suffix ? this._reformText(name.suffix) : false
                 let prefix = name.prefix ? this._reformText(name.prefix) : false
-                let useprefix = name.useprefix ? name.useprefix: false
+                let useprefix = name.useprefix ? name.useprefix : false
                 if (this.config.traditionalNames) {
                     if (suffix && prefix) {
                         names.push(`{${prefix} ${family}}, {${suffix}}, {${given}}`)
@@ -188,7 +188,7 @@ export class BibLatexExporter {
                     }
                     if (prefix) {
                         nameParts.push(this._protectNamePart(`prefix={${prefix}}`))
-                        nameParts.push(`useprefix=${name.useprefix}`)
+                        nameParts.push(`useprefix=${String(useprefix)}`)
                     }
                     names.push(nameParts.join(', '))
                 }
@@ -300,16 +300,16 @@ export class BibLatexExporter {
     }
 
     _getBibtexString(biblist /*: Array<BibObject> */) /*: string */ {
-        let len = biblist.length,
-            str = ''
+        const len = biblist.length
+        let str = ''
         for (let i = 0; i < len; i++) {
             if (0 < i) {
                 str += '\n\n'
             }
-            let data = biblist[i]
+            const data = biblist[i]
             str += `@${data.type}{${data.key}`
             for (let vKey in data.values) {
-                let value = `{${data.values[vKey]}}`.replace(/\{\} \# /g,'').replace(/\# \{\}/g,'')
+                let value = `{${data.values[vKey]}}`.replace(/\{\} # /g,'').replace(/# \{\}/g,'')
                 str += `,\n${vKey} = ${value}`
             }
             str += "\n}"

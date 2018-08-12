@@ -88,6 +88,7 @@ export class BibLatexLiteralParser {
     }
 
     stringParser() {
+        let variable, sj
         parseString: while (this.si < this.slen) {
             switch(this.string[this.si]) {
                 case '\\':
@@ -223,7 +224,7 @@ export class BibLatexLiteralParser {
                                 }
                             }
                             this.si += 2
-                            continue parseString
+                            //continue parseString
                         } else {
                             // A brace was closed before it was opened. Abort and return the original string.
                             return [{type: 'text', text: this.string}]
@@ -301,7 +302,7 @@ export class BibLatexLiteralParser {
                             }
                         }
                         this.si++
-                        continue parseString
+                        //continue parseString
                     } else {
                         // A brace was closed before it was opened. Abort and return the original string.
                         return [{type: 'text', text: this.string}]
@@ -319,11 +320,11 @@ export class BibLatexLiteralParser {
                 case '\u0870':
                     // An undefined variable.
                     this.removeIfEmptyTextNode()
-                    let sj = this.si + 1
+                    sj = this.si + 1
                     while (sj < this.slen && this.string[sj] !== '\u0870') {
                         sj++
                     }
-                    let variable = this.string.substring(this.si+1, sj)
+                    variable = this.string.substring(this.si+1, sj)
                     this.json.push({type:'variable', attrs:{variable}})
                     this.addNewTextNode()
                     this.si = sj + 1

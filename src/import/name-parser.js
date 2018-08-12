@@ -82,7 +82,7 @@ export class BibLatexNameParser {
 
     parseExtendedName(parts /*: Array<string> */) {
         parts.forEach( part => {
-            let attrParts = part.trim().replace(/^\"|\"$/g,'').split('=')
+            let attrParts = part.trim().replace(/^"|"$/g,'').split('=')
             let attrName = attrParts.shift().trim().toLowerCase()
             if (['family', 'given', 'prefix', 'suffix'].includes(attrName)) {
                 this.nameDict[attrName] = this._reformLiteral(attrParts.join('=').trim())
