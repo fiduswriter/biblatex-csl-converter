@@ -234,14 +234,14 @@
   "warnings": [
     {
       "type": "unknown_field",
-      "entry": "bonomi_improved_2006",
       "field_name": "rights",
+      "entry": "bonomi_improved_2006",
       "line": 21
     },
     {
       "type": "unknown_field",
-      "entry": "bonomi_improved_2006",
       "field_name": "timestamp",
+      "entry": "bonomi_improved_2006",
       "line": 21
     }
   ]

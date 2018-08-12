@@ -219,80 +219,80 @@
   "warnings": [
     {
       "type": "unexpected_field",
-      "entry": "latour_ny_2008",
       "field_name": "origdate",
+      "entry": "latour_ny_2008",
       "line": 15
     },
     {
       "type": "unexpected_field",
-      "entry": "latour_ny_2008",
       "field_name": "origlocation",
+      "entry": "latour_ny_2008",
       "line": 15
     },
     {
       "type": "unexpected_field",
-      "entry": "latour_ny_2008",
       "field_name": "origpublisher",
+      "entry": "latour_ny_2008",
       "line": 15
     },
     {
       "type": "unexpected_field",
-      "entry": "latour_ny_2008",
       "field_name": "origtitle",
+      "entry": "latour_ny_2008",
       "line": 15
     },
     {
       "type": "unexpected_field",
-      "entry": "latour_ny_2008",
       "field_name": "shorttitle",
+      "entry": "latour_ny_2008",
       "line": 15
     },
     {
       "type": "unknown_field",
-      "entry": "latour_ny_2008",
       "field_name": "timestamp",
+      "entry": "latour_ny_2008",
       "line": 15
     },
     {
       "type": "unknown_date",
-      "entry": "kelsen_democratie_2004",
       "field_name": "year",
-      "value": "2004 [1929]"
+      "value": "2004 [1929]",
+      "entry": "kelsen_democratie_2004"
     },
     {
       "type": "unexpected_field",
-      "entry": "kelsen_democratie_2004",
       "field_name": "origdate",
+      "entry": "kelsen_democratie_2004",
       "line": 37
     },
     {
       "type": "unexpected_field",
-      "entry": "kelsen_democratie_2004",
       "field_name": "origlocation",
+      "entry": "kelsen_democratie_2004",
       "line": 37
     },
     {
       "type": "unexpected_field",
-      "entry": "kelsen_democratie_2004",
       "field_name": "origpublisher",
+      "entry": "kelsen_democratie_2004",
       "line": 37
     },
     {
       "type": "unexpected_field",
-      "entry": "kelsen_democratie_2004",
       "field_name": "origtitle",
+      "entry": "kelsen_democratie_2004",
       "line": 37
     },
     {
       "type": "unknown_field",
-      "entry": "kelsen_democratie_2004",
       "field_name": "timestamp",
+      "entry": "kelsen_democratie_2004",
       "line": 37
     },
     {
       "type": "unknown_field",
-      "entry": "kelsen_democratie_2004",
       "field_name": "year",
+      "entry": "kelsen_democratie_2004",
       "line": 37
     }
   ]

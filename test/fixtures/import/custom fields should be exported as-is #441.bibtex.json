@@ -147,26 +147,26 @@
   "warnings": [
     {
       "type": "unknown_field",
-      "entry": "Kokpinar2002",
       "field_name": "related",
+      "entry": "Kokpinar2002",
       "line": 17
     },
     {
       "type": "unknown_field",
-      "entry": "Kokpinar2002",
       "field_name": "relatedtype",
+      "entry": "Kokpinar2002",
       "line": 17
     },
     {
       "type": "unexpected_field",
-      "entry": "Kokpinar2002",
       "field_name": "shorttitle",
+      "entry": "Kokpinar2002",
       "line": 17
     },
     {
       "type": "unknown_field",
-      "entry": "Kokpinar2002",
       "field_name": "timestamp",
+      "entry": "Kokpinar2002",
       "line": 17
     }
   ]

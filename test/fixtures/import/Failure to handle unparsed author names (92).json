@@ -185,20 +185,20 @@
   "warnings": [
     {
       "type": "unexpected_field",
-      "entry": "Madelung_1998_LB_10681727_56",
       "field_name": "file",
+      "entry": "Madelung_1998_LB_10681727_56",
       "line": 15
     },
     {
       "type": "unknown_field",
-      "entry": "Madelung_1998_LB_10681727_56",
       "field_name": "owner",
+      "entry": "Madelung_1998_LB_10681727_56",
       "line": 15
     },
     {
       "type": "unknown_field",
-      "entry": "Madelung_1998_LB_10681727_56",
       "field_name": "timestamp",
+      "entry": "Madelung_1998_LB_10681727_56",
       "line": 15
     }
   ]

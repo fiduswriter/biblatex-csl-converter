@@ -46,8 +46,8 @@
   "warnings": [
     {
       "type": "unknown_field",
-      "entry": "test-ticket1661",
       "field_name": "timestamp",
+      "entry": "test-ticket1661",
       "line": 5
     }
   ]

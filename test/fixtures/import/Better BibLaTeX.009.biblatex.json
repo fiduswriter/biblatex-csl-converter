@@ -362,26 +362,26 @@
   "warnings": [
     {
       "type": "unexpected_field",
-      "entry": "Adams2001",
       "field_name": "file",
+      "entry": "Adams2001",
       "line": 12
     },
     {
       "type": "unknown_field",
-      "entry": "Adams2001",
       "field_name": "timestamp",
+      "entry": "Adams2001",
       "line": 12
     },
     {
       "type": "unexpected_field",
-      "entry": "Adams2002",
       "field_name": "file",
+      "entry": "Adams2002",
       "line": 24
     },
     {
       "type": "unknown_field",
-      "entry": "Adams2002",
       "field_name": "timestamp",
+      "entry": "Adams2002",
       "line": 24
     }
   ]

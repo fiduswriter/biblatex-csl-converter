@@ -385,26 +385,26 @@
   "warnings": [
     {
       "type": "unexpected_field",
-      "entry": "dalrimple_use_2006",
       "field_name": "shortjournal",
+      "entry": "dalrimple_use_2006",
       "line": 20
     },
     {
       "type": "unknown_field",
-      "entry": "dalrimple_use_2006",
       "field_name": "timestamp",
+      "entry": "dalrimple_use_2006",
       "line": 20
     },
     {
       "type": "unexpected_field",
-      "entry": "dalrymple_use_2006",
       "field_name": "shortjournal",
+      "entry": "dalrymple_use_2006",
       "line": 40
     },
     {
       "type": "unknown_field",
-      "entry": "dalrymple_use_2006",
       "field_name": "timestamp",
+      "entry": "dalrymple_use_2006",
       "line": 40
     }
   ]

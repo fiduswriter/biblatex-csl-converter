@@ -1,6 +1,6 @@
 {
   "name": "biblatex-csl-converter",
-  "version": "1.3.34",
+  "version": "1.4.0",
   "description": "a set of converters: biblatex => json, json => biblatex, json => CSL",
   "main": "lib/index.js",
   "module": "src/index.js",
@@ -29,8 +29,8 @@
   "homepage": "https://github.com/fiduswriter/biblatex-csl-converter#readme",
   "scripts": {
     "gh-pages-travis": "gh-pages-travis",
-    "check_js": "jshint src/",
-    "pretest": "npm run check_js",
+    "check_js": "eslint src/",
+    "pretest": "npm run check_js && npm run flow check",
     "compile": "npm run compile_bundle && npm run compile_gh-pages && npm run compile_browser",
     "compile_bundle": "rollup src/index.js --config --output.format cjs --output.file lib/index.js --output.sourcemap true",
     "compile_gh-pages": "rollup src/build/gh-pages.js --config --output.format iife --output.file gh-pages/demo.js",
@@ -39,10 +39,11 @@
     "compile_browser-export-biblatex": "rollup src/build/browser-export-biblatex.js --config --output.format iife --output.file browser/export-biblatex.js",
     "compile_browser-export-csl": "rollup src/build/browser-export-csl.js --config --output.format iife --output.file browser/export-csl.js",
     "compile_browser-import-biblatex": "rollup src/build/browser-import-bibtex.js --config --output.format iife --output.file browser/import-bibtex.js",
-    "prepublish": "npm run check_js && npm run compile",
+    "prepublish": "npm run check_js && npm run flow check && npm run compile",
     "test": "rollup -c rollup.config.test.js && nyc mocha --timeout=3000",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
-    "postversion": "echo remember to run 'git push --follow-tags'"
+    "postversion": "echo remember to run 'git push --follow-tags'",
+    "flow": "flow"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -54,12 +55,13 @@
     "benchmark": "^2.1.4",
     "chai": "^4.1.2",
     "coveralls": "^3.0.0",
+    "eslint": "^5.3.0",
+    "flow-bin": "^0.78.0",
     "gh-pages-travis": "^1.0.4",
     "istanbul": "^0.4.5",
-    "jshint": "2.9.5",
     "mocha": "^5.1.1",
     "npm-check-updates": "^2.14.2",
-    "nyc": "^11.7.1",
+    "nyc": "^13.0.1",
     "rollup": "^0.58.2",
     "rollup-plugin-babel": "^3.0.4",
     "rollup-plugin-commonjs": "^9.1.2",
@@ -86,5 +88,6 @@
       "setTimeout",
       "performance"
     ]
-  }
+  },
+  "dependencies": {}
 }

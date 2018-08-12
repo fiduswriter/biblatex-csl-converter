@@ -157,14 +157,14 @@
   "warnings": [
     {
       "type": "unknown_field",
-      "entry": "de_kort2007digital",
       "field_name": "options",
+      "entry": "de_kort2007digital",
       "line": 14
     },
     {
       "type": "unknown_field",
-      "entry": "de_kort2007digital",
       "field_name": "timestamp",
+      "entry": "de_kort2007digital",
       "line": 14
     }
   ]

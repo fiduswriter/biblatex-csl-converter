@@ -158,8 +158,8 @@
   "warnings": [
     {
       "type": "unexpected_field",
-      "entry": "Adams2001",
       "field_name": "file",
+      "entry": "Adams2001",
       "line": 11
     }
   ]

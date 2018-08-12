@@ -1,3 +1,4 @@
+// @flow
 const LATEX_COMMANDS = [ // commands that can can contain richtext.
     ['\\textbf{', 'strong'],
     ['\\mkbibbold{', 'strong'],
@@ -32,8 +33,27 @@ const LATEX_SPECIAL_CHARS = {
     '\\': '\n'
 }
 
+/*::
+
+import type {NodeObject, TextNodeObject, MarkObject} from "../const"
+*/
+
 export class BibLatexLiteralParser {
-    constructor(string, cpMode = false) {
+    /*::
+    string: string;
+    cpMode: boolean;
+    braceLevel: number;
+    slen: number;
+    si: number;
+    json: Array<NodeObject>;
+    braceClosings: Array<boolean>;
+    currentMarks: Array<MarkObject>;
+    inCasePreserve: number | null;
+    textNode: TextNodeObject;
+    */
+
+
+    constructor(string /*: string */, cpMode /*: boolean */ = false) {
         this.string = string
         this.cpMode = cpMode // Whether to consider case preservation.
         this.braceLevel = 0
@@ -42,8 +62,8 @@ export class BibLatexLiteralParser {
         this.json = []
         this.braceClosings = []
         this.currentMarks = []
-        this.inCasePreserve = false
-        this.textNode = false
+        this.inCasePreserve = null
+        this.addNewTextNode()
     }
 
     // If the last text node has no content, remove it.
@@ -62,13 +82,13 @@ export class BibLatexLiteralParser {
     }
 
     addNewTextNode() {
-        this.textNode = {type: 'text', text: ''}
-        this.json.push(this.textNode)
+        const textNode /*: TextNodeObject */ = {type: 'text', text: ''}
+        this.json.push(textNode)
+        this.textNode = textNode
     }
 
     stringParser() {
-        this.addNewTextNode()
-
+        let variable, sj
         parseString: while (this.si < this.slen) {
             switch(this.string[this.si]) {
                 case '\\':
@@ -86,7 +106,7 @@ export class BibLatexLiteralParser {
                                     this.currentMarks[this.currentMarks.length-1].type === 'nocase'
                                 ) {
                                     this.currentMarks.pop()
-                                    this.inCasePreserve = false
+                                    this.inCasePreserve = null
                                 } else {
                                     // Of not immediately inside a brace, any styling also
                                     // adds case protection.
@@ -204,7 +224,7 @@ export class BibLatexLiteralParser {
                                 }
                             }
                             this.si += 2
-                            continue parseString
+                            //continue parseString
                         } else {
                             // A brace was closed before it was opened. Abort and return the original string.
                             return [{type: 'text', text: this.string}]
@@ -268,7 +288,7 @@ export class BibLatexLiteralParser {
                             this.checkAndAddNewTextNode()
                             let lastMark = this.currentMarks.pop()
                             if (this.inCasePreserve===(this.braceLevel+1)) {
-                                this.inCasePreserve = false
+                                this.inCasePreserve = null
                                 // The last tag may have added more tags. The
                                 // lowest level will be the case preserving one.
                                 while(lastMark.type !== 'nocase' && this.currentMarks.length) {
@@ -282,7 +302,7 @@ export class BibLatexLiteralParser {
                             }
                         }
                         this.si++
-                        continue parseString
+                        //continue parseString
                     } else {
                         // A brace was closed before it was opened. Abort and return the original string.
                         return [{type: 'text', text: this.string}]
@@ -300,11 +320,11 @@ export class BibLatexLiteralParser {
                 case '\u0870':
                     // An undefined variable.
                     this.removeIfEmptyTextNode()
-                    let sj = this.si + 1
+                    sj = this.si + 1
                     while (sj < this.slen && this.string[sj] !== '\u0870') {
                         sj++
                     }
-                    let variable = this.string.substring(this.si+1, sj)
+                    variable = this.string.substring(this.si+1, sj)
                     this.json.push({type:'variable', attrs:{variable}})
                     this.addNewTextNode()
                     this.si = sj + 1

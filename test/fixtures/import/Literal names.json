@@ -345,8 +345,8 @@
   "warnings": [
     {
       "type": "unexpected_field",
-      "entry": "sasson_increasing_2013",
       "field_name": "shorttitle",
+      "entry": "sasson_increasing_2013",
       "line": 17
     }
   ]

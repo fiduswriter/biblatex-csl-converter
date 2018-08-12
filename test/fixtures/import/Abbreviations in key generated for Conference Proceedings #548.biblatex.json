@@ -174,8 +174,8 @@
   "warnings": [
     {
       "type": "unknown_field",
-      "entry": "CorlessJeffreyKnuth1997Proc1997IntSympSymbAlgebrComput",
       "field_name": "timestamp",
+      "entry": "CorlessJeffreyKnuth1997Proc1997IntSympSymbAlgebrComput",
       "line": 12
     }
   ]

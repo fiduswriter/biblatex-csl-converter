@@ -1,24 +1,56 @@
+// @flow
+
+/*::
+import type {EntryObject, NodeObject, GroupObject} from "../const"
+
+type StringStartTuplet = [string, () => void];
+
+type WarningObject = {
+    type: string;
+    group_type: string;
+}
+
+*/
+
+
+
 export class GroupParser {
-    constructor(entries) {
-      this.groups = false
+
+    /*::
+    groups: Array<GroupObject>;
+    groupType: string;
+    warnings: Array<WarningObject>;
+    entries: Array<EntryObject>;
+    stringStarts: Array<StringStartTuplet>;
+    pos: number;
+    fileDirectory: string;
+    input: string;
+    */
+
+    constructor(entries /*: Array<EntryObject> */) {
+      this.groups = []
       this.groupType = 'jabref4'
       this.warnings = []
       this.entries = entries
+      this.pos = 0
+      this.fileDirectory = ''
+      this.input = ''
       this.stringStarts = [
-          ["jabref-meta: databaseType:bibtex;", () => this.groupType = 'jabref4'],
-          ["jabref-meta: databaseType:biblatex;", () => this.groupType = 'jabref4'],
-          ["jabref-meta: groupsversion:3;", () => this.groupType = 'jabref3'],
+          ["jabref-meta: databaseType:bibtex;", () => { this.groupType = 'jabref4' }],
+          ["jabref-meta: databaseType:biblatex;", () => { this.groupType = 'jabref4' }],
+          ["jabref-meta: groupsversion:3;", () => { this.groupType = 'jabref3' }],
           ["jabref-meta: grouping:", () => this.readGroupInfo('jabref4.1')],
-          ["jabref-meta: groupstree:", () => this.readGroupInfo()],
-          ["jabref-meta: fileDirectory:", () => this.readFileDirectory()],
+          ["jabref-meta: groupstree:", () => this.readGroupInfo('')], //@retorquere: There seems to be a string missing
+          ["jabref-meta: fileDirectory:", () => this.readFileDirectory()]
       ]
     }
 
-    checkString(input) {
+    checkString(input /*: string */) {
         this.input = input
+        //let searchPos = 0
         this.pos = 0
         this.stringStarts.find(stringStart => {
-            let pos = this.input.indexOf(stringStart[0], this.pos)
+            let pos = input.indexOf(stringStart[0], this.pos)
             if (pos < 0) {
                 return false
             } else {
@@ -29,7 +61,7 @@ export class GroupParser {
         })
     }
 
-    readGroupInfo(groupType) {
+    readGroupInfo(groupType /*: string */) {
         if (groupType) this.groupType = groupType
 
         switch(this.groupType) {
@@ -46,11 +78,15 @@ export class GroupParser {
     }
 
     readFileDirectory() {
-      this.fileDirectory = ''
-      while ((this.input.length > this.pos) && (this.input[this.pos]) !== ';') {
-        this.fileDirectory += this.input[this.pos];
-        this.pos++;
-      }
+        let fileDirectory = '',
+            input = this.input ? this.input : '',
+            pos = this.pos
+        while ((input.length > pos) && (input[pos]) !== ';') {
+            fileDirectory += input[pos]
+            pos++
+        }
+        this.fileDirectory = fileDirectory
+        this.pos = pos
     }
 
     readJabref3() {
@@ -124,7 +160,7 @@ export class GroupParser {
         this.groups = levels['0'].groups
     }
 
-    clearGroups(groups) {
+    clearGroups(groups /*: Array<GroupObject> */) {
         for (const group of groups) {
             group.references = []
             this.clearGroups(group.groups || [])
@@ -136,28 +172,31 @@ export class GroupParser {
         this.readJabref3()
 
         if (this.groupType === 'jabref4.1') {
-          this.clearGroups(this.groups)
+            this.clearGroups(this.groups)
         }
 
         // this assumes the JabRef groups always come after the references
         this.entries.forEach(bib => {
 
-            if (!bib.unknown_fields.groups || !bib.entry_key) {
+            if (!bib.unknown_fields || !bib.unknown_fields.groups || !bib.entry_key) {
                 return
             }
             // this assumes ref.unknown_fields.groups is a single text chunk
             let groups = bib.unknown_fields.groups.reduce(
-                (string, node) => {
-                    if (node.type === 'text') {
+                (string /*: string */, node /*: NodeObject */) => {
+                    if (typeof node.text === 'string') {
+                        const text /*: string */ = node.text,
                         // undo undescores to marks -- groups content is in verbatim-ish mode
-                        var sub = (node.marks || []).find(mark => mark.type === 'sub') ? '_' : ''
-                        string += sub + node.text
+                            sub = (node.marks || []).find(mark => mark.type === 'sub') ? '_' : ''
+                        string += sub + text
                     }
                     return string
                 },
                 ''
             ).trim()
-            delete bib.unknown_fields.groups
+            if (bib.unknown_fields) {
+                delete bib.unknown_fields.groups
+            }
 
             if (!groups.length) {
                 return
@@ -172,7 +211,7 @@ export class GroupParser {
         })
     }
 
-    find (name, groups) {
+    find (name /*: string */, groups /*: Array<GroupObject> | void */) /*: GroupObject | false */ {
         groups = groups || this.groups
         if (!groups) {
             return false

@@ -103,8 +103,8 @@
   "warnings": [
     {
       "type": "unknown_field",
-      "entry": "arbesmanvonsecondname2001",
       "field_name": "timestamp",
+      "entry": "arbesmanvonsecondname2001",
       "line": 11
     }
   ]

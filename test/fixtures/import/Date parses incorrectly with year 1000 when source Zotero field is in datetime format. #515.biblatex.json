@@ -70,20 +70,20 @@
   "warnings": [
     {
       "type": "unexpected_field",
-      "entry": "barker_2016_swiss",
       "field_name": "entrysubtype",
+      "entry": "barker_2016_swiss",
       "line": 14
     },
     {
       "type": "unknown_field",
-      "entry": "barker_2016_swiss",
       "field_name": "rights",
+      "entry": "barker_2016_swiss",
       "line": 14
     },
     {
       "type": "unknown_field",
-      "entry": "barker_2016_swiss",
       "field_name": "timestamp",
+      "entry": "barker_2016_swiss",
       "line": 14
     }
   ]

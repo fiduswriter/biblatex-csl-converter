@@ -183,14 +183,14 @@
   "warnings": [
     {
       "type": "unknown_field",
-      "entry": "Rawls2009",
       "field_name": "timestamp",
+      "entry": "Rawls2009",
       "line": 14
     },
     {
       "type": "unknown_field",
-      "entry": "Stowe2009",
       "field_name": "timestamp",
+      "entry": "Stowe2009",
       "line": 27
     }
   ]

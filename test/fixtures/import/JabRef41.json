@@ -1660,302 +1660,302 @@
   "warnings": [
     {
       "type": "unexpected_field",
-      "entry": "Elder1935",
       "field_name": "file",
+      "entry": "Elder1935",
       "line": 20
     },
     {
       "type": "unknown_field",
-      "entry": "Elder1935",
       "field_name": "groups",
+      "entry": "Elder1935",
       "line": 20
     },
     {
       "type": "unknown_field",
-      "entry": "Elder1935",
       "field_name": "owner",
+      "entry": "Elder1935",
       "line": 20
     },
     {
       "type": "unexpected_field",
-      "entry": "Elder1935",
       "field_name": "publisher",
+      "entry": "Elder1935",
       "line": 20
     },
     {
       "type": "unknown_field",
-      "entry": "Elder1935",
       "field_name": "timestamp",
+      "entry": "Elder1935",
       "line": 20
     },
     {
       "type": "unexpected_field",
-      "entry": "Kojima1990",
       "field_name": "file",
+      "entry": "Kojima1990",
       "line": 37
     },
     {
       "type": "unknown_field",
-      "entry": "Kojima1990",
       "field_name": "groups",
+      "entry": "Kojima1990",
       "line": 37
     },
     {
       "type": "unknown_field",
-      "entry": "Kojima1990",
       "field_name": "owner",
-      "line": 37
-    },
-    {
-      "type": "unknown_field",
       "entry": "Kojima1990",
-      "field_name": "timestamp",
       "line": 37
     },
     {
       "type": "unknown_field",
-      "entry": "Osmanski2011",
+      "field_name": "timestamp",
+      "entry": "Kojima1990",
+      "line": 37
+    },
+    {
+      "type": "unknown_field",
       "field_name": "comment",
+      "entry": "Osmanski2011",
       "line": 57
     },
     {
       "type": "unknown_field",
-      "entry": "Osmanski2011",
       "field_name": "database",
+      "entry": "Osmanski2011",
       "line": 57
     },
     {
       "type": "unexpected_field",
-      "entry": "Osmanski2011",
       "field_name": "file",
+      "entry": "Osmanski2011",
       "line": 57
     },
     {
       "type": "unknown_field",
-      "entry": "Osmanski2011",
       "field_name": "groups",
+      "entry": "Osmanski2011",
       "line": 57
     },
     {
       "type": "unknown_field",
-      "entry": "Osmanski2011",
       "field_name": "owner",
+      "entry": "Osmanski2011",
       "line": 57
     },
     {
       "type": "unknown_field",
-      "entry": "Osmanski2011",
       "field_name": "timestamp",
+      "entry": "Osmanski2011",
       "line": 57
     },
     {
       "type": "unexpected_field",
-      "entry": "Heffner1983a",
       "field_name": "file",
+      "entry": "Heffner1983a",
       "line": 73
     },
     {
       "type": "unknown_field",
-      "entry": "Heffner1983a",
       "field_name": "groups",
+      "entry": "Heffner1983a",
       "line": 73
     },
     {
       "type": "unknown_field",
-      "entry": "Heffner1983a",
       "field_name": "owner",
+      "entry": "Heffner1983a",
       "line": 73
     },
     {
       "type": "unexpected_field",
-      "entry": "Heffner1983a",
       "field_name": "publisher",
-      "line": 73
-    },
-    {
-      "type": "unknown_field",
       "entry": "Heffner1983a",
+      "line": 73
+    },
+    {
+      "type": "unknown_field",
       "field_name": "timestamp",
+      "entry": "Heffner1983a",
       "line": 73
     },
     {
       "type": "unexpected_field",
-      "entry": "Coleman2009",
       "field_name": "file",
+      "entry": "Coleman2009",
       "line": 91
     },
     {
       "type": "unknown_field",
-      "entry": "Coleman2009",
       "field_name": "groups",
+      "entry": "Coleman2009",
       "line": 91
     },
     {
       "type": "unknown_field",
-      "entry": "Coleman2009",
       "field_name": "owner",
+      "entry": "Coleman2009",
       "line": 91
     },
     {
       "type": "unknown_field",
-      "entry": "Coleman2009",
       "field_name": "timestamp",
+      "entry": "Coleman2009",
       "line": 91
     },
     {
       "type": "unexpected_field",
-      "entry": "Elder1934",
       "field_name": "file",
+      "entry": "Elder1934",
       "line": 107
     },
     {
       "type": "unknown_field",
-      "entry": "Elder1934",
       "field_name": "groups",
+      "entry": "Elder1934",
       "line": 107
     },
     {
       "type": "unknown_field",
-      "entry": "Elder1934",
       "field_name": "owner",
+      "entry": "Elder1934",
       "line": 107
     },
     {
       "type": "unexpected_field",
-      "entry": "Elder1934",
       "field_name": "publisher",
-      "line": 107
-    },
-    {
-      "type": "unknown_field",
       "entry": "Elder1934",
-      "field_name": "timestamp",
       "line": 107
     },
     {
       "type": "unknown_field",
-      "entry": "Pfaff2015",
+      "field_name": "timestamp",
+      "entry": "Elder1934",
+      "line": 107
+    },
+    {
+      "type": "unknown_field",
       "field_name": "comment",
+      "entry": "Pfaff2015",
       "line": 128
     },
     {
       "type": "unknown_field",
-      "entry": "Pfaff2015",
       "field_name": "database",
+      "entry": "Pfaff2015",
       "line": 128
     },
     {
       "type": "unexpected_field",
-      "entry": "Pfaff2015",
       "field_name": "file",
+      "entry": "Pfaff2015",
       "line": 128
     },
     {
       "type": "unknown_field",
-      "entry": "Pfaff2015",
       "field_name": "groups",
+      "entry": "Pfaff2015",
       "line": 128
     },
     {
       "type": "unknown_field",
-      "entry": "Pfaff2015",
       "field_name": "owner",
+      "entry": "Pfaff2015",
       "line": 128
     },
     {
       "type": "unexpected_field",
-      "entry": "Pfaff2015",
       "field_name": "publisher",
-      "line": 128
-    },
-    {
-      "type": "unknown_field",
       "entry": "Pfaff2015",
+      "line": 128
+    },
+    {
+      "type": "unknown_field",
       "field_name": "timestamp",
+      "entry": "Pfaff2015",
       "line": 128
     },
     {
       "type": "unexpected_field",
-      "entry": "Ravicz2017",
       "field_name": "file",
+      "entry": "Ravicz2017",
       "line": 145
     },
     {
       "type": "unknown_field",
-      "entry": "Ravicz2017",
       "field_name": "groups",
+      "entry": "Ravicz2017",
       "line": 145
     },
     {
       "type": "unknown_field",
-      "entry": "Ravicz2017",
       "field_name": "owner",
+      "entry": "Ravicz2017",
       "line": 145
     },
     {
       "type": "unexpected_field",
-      "entry": "Ravicz2017",
       "field_name": "publisher",
-      "line": 145
-    },
-    {
-      "type": "unknown_field",
       "entry": "Ravicz2017",
+      "line": 145
+    },
+    {
+      "type": "unknown_field",
       "field_name": "timestamp",
+      "entry": "Ravicz2017",
       "line": 145
     },
     {
       "type": "unexpected_field",
-      "entry": "Peus2017",
       "field_name": "file",
+      "entry": "Peus2017",
       "line": 162
     },
     {
       "type": "unknown_field",
-      "entry": "Peus2017",
       "field_name": "groups",
+      "entry": "Peus2017",
       "line": 162
     },
     {
       "type": "unknown_field",
-      "entry": "Peus2017",
       "field_name": "owner",
+      "entry": "Peus2017",
       "line": 162
     },
     {
       "type": "unknown_field",
-      "entry": "Peus2017",
       "field_name": "timestamp",
+      "entry": "Peus2017",
       "line": 162
     },
     {
       "type": "unexpected_field",
-      "entry": "Koyabu2017",
       "field_name": "file",
+      "entry": "Koyabu2017",
       "line": 180
     },
     {
       "type": "unknown_field",
-      "entry": "Koyabu2017",
       "field_name": "groups",
+      "entry": "Koyabu2017",
       "line": 180
     },
     {
       "type": "unknown_field",
-      "entry": "Koyabu2017",
       "field_name": "owner",
+      "entry": "Koyabu2017",
       "line": 180
     },
     {
       "type": "unexpected_field",
-      "entry": "Koyabu2017",
       "field_name": "publisher",
+      "entry": "Koyabu2017",
       "line": 180
     },
     {
       "type": "unknown_field",
-      "entry": "Koyabu2017",
       "field_name": "timestamp",
+      "entry": "Koyabu2017",
       "line": 180
     }
   ]

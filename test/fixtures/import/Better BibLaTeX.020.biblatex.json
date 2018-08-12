@@ -107,8 +107,8 @@
   "warnings": [
     {
       "type": "unknown_field",
-      "entry": "Canguilhem1994",
       "field_name": "timestamp",
+      "entry": "Canguilhem1994",
       "line": 15
     }
   ]

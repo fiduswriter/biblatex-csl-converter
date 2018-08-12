@@ -142,20 +142,20 @@
   "warnings": [
     {
       "type": "unknown_date",
-      "entry": "BartoliniForthcoming",
       "field_name": "year",
-      "value": "Forthcoming"
+      "value": "Forthcoming",
+      "entry": "BartoliniForthcoming"
     },
     {
       "type": "unknown_field",
-      "entry": "BartoliniForthcoming",
       "field_name": "timestamp",
+      "entry": "BartoliniForthcoming",
       "line": 12
     },
     {
       "type": "unknown_field",
-      "entry": "BartoliniForthcoming",
       "field_name": "year",
+      "entry": "BartoliniForthcoming",
       "line": 12
     }
   ]

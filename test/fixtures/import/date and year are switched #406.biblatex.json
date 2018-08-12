@@ -401,26 +401,26 @@
   "warnings": [
     {
       "type": "unknown_field",
-      "entry": "west_introduction_2000",
       "field_name": "timestamp",
+      "entry": "west_introduction_2000",
       "line": 11
     },
     {
       "type": "unknown_field",
-      "entry": "skubala_modellierung_2012",
       "field_name": "timestamp",
+      "entry": "skubala_modellierung_2012",
       "line": 20
     },
     {
       "type": "unknown_field",
-      "entry": "michigami_development_1995",
       "field_name": "timestamp",
+      "entry": "michigami_development_1995",
       "line": 32
     },
     {
       "type": "unknown_field",
-      "entry": "brato_stability_2014",
       "field_name": "timestamp",
+      "entry": "brato_stability_2014",
       "line": 43
     }
   ]

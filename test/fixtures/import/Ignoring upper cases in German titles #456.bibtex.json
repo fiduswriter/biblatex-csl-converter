@@ -190,26 +190,26 @@
   "warnings": [
     {
       "type": "unknown_date",
-      "entry": "Kaufmann1990",
       "field_name": "year",
-      "value": "[1990] 2002"
+      "value": "[1990] 2002",
+      "entry": "Kaufmann1990"
     },
     {
       "type": "unknown_field",
-      "entry": "Kaufmann1990",
       "field_name": "year",
+      "entry": "Kaufmann1990",
       "line": 11
     },
     {
       "type": "unknown_date",
-      "entry": "Kaufmann1997",
       "field_name": "year",
-      "value": "[1997] 2002"
+      "value": "[1997] 2002",
+      "entry": "Kaufmann1997"
     },
     {
       "type": "unknown_field",
-      "entry": "Kaufmann1997",
       "field_name": "year",
+      "entry": "Kaufmann1997",
       "line": 22
     }
   ]

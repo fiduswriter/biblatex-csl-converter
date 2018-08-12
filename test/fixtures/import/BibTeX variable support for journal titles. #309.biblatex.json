@@ -77,15 +77,15 @@
   "warnings": [
     {
       "type": "undefined_variable",
+      "variable": "IEEE_J_IT",
       "entry": "blahut_capacity",
       "key": "journaltitle",
-      "variable": "IEEE_J_IT",
       "line": 5
     },
     {
       "type": "unknown_field",
-      "entry": "blahut_capacity",
       "field_name": "timestamp",
+      "entry": "blahut_capacity",
       "line": 11
     }
   ]

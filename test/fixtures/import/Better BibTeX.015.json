@@ -93,14 +93,14 @@
   "warnings": [
     {
       "type": "unknown_field",
-      "entry": "robinson2007theoriesglobalization",
       "field_name": "collaborator",
+      "entry": "robinson2007theoriesglobalization",
       "line": 13
     },
     {
       "type": "unexpected_field",
-      "entry": "robinson2007theoriesglobalization",
       "field_name": "file",
+      "entry": "robinson2007theoriesglobalization",
       "line": 13
     }
   ]

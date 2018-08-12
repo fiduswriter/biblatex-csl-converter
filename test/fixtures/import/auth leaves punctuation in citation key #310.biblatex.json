@@ -41,8 +41,8 @@
   "warnings": [
     {
       "type": "unknown_field",
-      "entry": "Ohara2015",
       "field_name": "timestamp",
+      "entry": "Ohara2015",
       "line": 7
     }
   ]

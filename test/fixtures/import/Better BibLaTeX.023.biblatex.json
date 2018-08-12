@@ -106,8 +106,8 @@
   "warnings": [
     {
       "type": "unknown_field",
-      "entry": "Manning2008",
       "field_name": "timestamp",
+      "entry": "Manning2008",
       "line": 11
     }
   ]

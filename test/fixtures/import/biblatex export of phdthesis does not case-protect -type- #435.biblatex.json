@@ -90,8 +90,8 @@
   "warnings": [
     {
       "type": "unknown_field",
-      "entry": "TayW12",
       "field_name": "timestamp",
+      "entry": "TayW12",
       "line": 9
     }
   ]

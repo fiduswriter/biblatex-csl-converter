@@ -106,20 +106,20 @@
   "warnings": [
     {
       "type": "unexpected_field",
-      "entry": "anand2014technicalreportformally",
       "field_name": "origdate",
+      "entry": "anand2014technicalreportformally",
       "line": 11
     },
     {
       "type": "unexpected_field",
-      "entry": "anand2014technicalreportformally",
       "field_name": "origtitle",
+      "entry": "anand2014technicalreportformally",
       "line": 11
     },
     {
       "type": "unknown_field",
-      "entry": "anand2014technicalreportformally",
       "field_name": "timestamp",
+      "entry": "anand2014technicalreportformally",
       "line": 11
     }
   ]

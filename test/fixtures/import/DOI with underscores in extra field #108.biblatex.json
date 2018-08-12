@@ -95,8 +95,8 @@
   "warnings": [
     {
       "type": "unknown_field",
-      "entry": "koopman_efficient_99",
       "field_name": "timestamp",
+      "entry": "koopman_efficient_99",
       "line": 11
     }
   ]

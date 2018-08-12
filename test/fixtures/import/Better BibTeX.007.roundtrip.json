@@ -172,8 +172,8 @@
   "warnings": [
     {
       "type": "unknown_field",
-      "entry": "Frit2",
       "field_name": "timestamp",
+      "entry": "Frit2",
       "line": 11
     }
   ]

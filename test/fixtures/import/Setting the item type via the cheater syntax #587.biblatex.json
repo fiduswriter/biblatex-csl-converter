@@ -374,14 +374,14 @@
   "warnings": [
     {
       "type": "unexpected_field",
-      "entry": "clark_mesopotamia:_1957",
       "field_name": "publisher",
+      "entry": "clark_mesopotamia:_1957",
       "line": 10
     },
     {
       "type": "unknown_field",
-      "entry": "clark_mesopotamia:_1957",
       "field_name": "timestamp",
+      "entry": "clark_mesopotamia:_1957",
       "line": 10
     },
     {
@@ -391,14 +391,14 @@
     },
     {
       "type": "unexpected_field",
-      "entry": "_object_????",
       "field_name": "journaltitle",
+      "entry": "_object_????",
       "line": 19
     },
     {
       "type": "unknown_field",
-      "entry": "_object_????",
       "field_name": "timestamp",
+      "entry": "_object_????",
       "line": 19
     },
     {
@@ -408,20 +408,20 @@
     },
     {
       "type": "unexpected_field",
-      "entry": "mozart_sonatas_1960",
       "field_name": "edition",
+      "entry": "mozart_sonatas_1960",
       "line": 33
     },
     {
       "type": "unexpected_field",
-      "entry": "mozart_sonatas_1960",
       "field_name": "publisher",
+      "entry": "mozart_sonatas_1960",
       "line": 33
     },
     {
       "type": "unknown_field",
-      "entry": "mozart_sonatas_1960",
       "field_name": "timestamp",
+      "entry": "mozart_sonatas_1960",
       "line": 33
     },
     {
@@ -431,38 +431,38 @@
     },
     {
       "type": "unexpected_field",
-      "entry": "ratliff_mystery_1999",
       "field_name": "editora",
+      "entry": "ratliff_mystery_1999",
       "line": 53
     },
     {
       "type": "unexpected_field",
-      "entry": "ratliff_mystery_1999",
       "field_name": "editoratype",
+      "entry": "ratliff_mystery_1999",
       "line": 53
     },
     {
       "type": "unexpected_field",
-      "entry": "ratliff_mystery_1999",
       "field_name": "journaltitle",
+      "entry": "ratliff_mystery_1999",
       "line": 53
     },
     {
       "type": "unexpected_field",
-      "entry": "ratliff_mystery_1999",
       "field_name": "pages",
+      "entry": "ratliff_mystery_1999",
       "line": 53
     },
     {
       "type": "unknown_field",
-      "entry": "ratliff_mystery_1999",
       "field_name": "timestamp",
+      "entry": "ratliff_mystery_1999",
       "line": 53
     },
     {
       "type": "unexpected_field",
-      "entry": "ratliff_mystery_1999",
       "field_name": "volume",
+      "entry": "ratliff_mystery_1999",
       "line": 53
     },
     {
@@ -472,20 +472,20 @@
     },
     {
       "type": "unexpected_field",
-      "entry": "kamp_deconstructing_2006",
       "field_name": "editora",
+      "entry": "kamp_deconstructing_2006",
       "line": 65
     },
     {
       "type": "unexpected_field",
-      "entry": "kamp_deconstructing_2006",
       "field_name": "editoratype",
+      "entry": "kamp_deconstructing_2006",
       "line": 65
     },
     {
       "type": "unknown_field",
-      "entry": "kamp_deconstructing_2006",
       "field_name": "timestamp",
+      "entry": "kamp_deconstructing_2006",
       "line": 65
     }
   ]

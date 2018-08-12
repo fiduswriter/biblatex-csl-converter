@@ -560,26 +560,26 @@
   "warnings": [
     {
       "type": "unknown_field",
-      "entry": "CapEA11",
       "field_name": "timestamp",
+      "entry": "CapEA11",
       "line": 13
     },
     {
       "type": "unknown_field",
-      "entry": "CumEA14",
       "field_name": "timestamp",
+      "entry": "CumEA14",
       "line": 30
     },
     {
       "type": "unexpected_field",
-      "entry": "TayEA11",
       "field_name": "shortjournal",
+      "entry": "TayEA11",
       "line": 45
     },
     {
       "type": "unknown_field",
-      "entry": "TayEA11",
       "field_name": "timestamp",
+      "entry": "TayEA11",
       "line": 45
     }
   ]

@@ -112,14 +112,14 @@
   "warnings": [
     {
       "type": "unexpected_field",
-      "entry": "coates:1999english",
       "field_name": "shorttitle",
+      "entry": "coates:1999english",
       "line": 16
     },
     {
       "type": "unknown_field",
-      "entry": "coates:1999english",
       "field_name": "timestamp",
+      "entry": "coates:1999english",
       "line": 16
     }
   ]

@@ -121,20 +121,20 @@
   "warnings": [
     {
       "type": "unknown_field",
-      "entry": "MauSey14",
       "field_name": "pmid",
+      "entry": "MauSey14",
       "line": 19
     },
     {
       "type": "unexpected_field",
-      "entry": "MauSey14",
       "field_name": "shorttitle",
+      "entry": "MauSey14",
       "line": 19
     },
     {
       "type": "unknown_field",
-      "entry": "MauSey14",
       "field_name": "timestamp",
+      "entry": "MauSey14",
       "line": 19
     }
   ]

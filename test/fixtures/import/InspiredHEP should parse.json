@@ -105,8 +105,8 @@
   "warnings": [
     {
       "type": "unknown_field",
-      "entry": "Chen:2014oha",
       "field_name": "slaccitation",
+      "entry": "Chen:2014oha",
       "line": 15
     }
   ]

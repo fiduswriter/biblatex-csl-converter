@@ -90,14 +90,14 @@
   "warnings": [
     {
       "type": "unexpected_field",
-      "entry": "publisher",
       "field_name": "origlocation",
+      "entry": "publisher",
       "line": 8
     },
     {
       "type": "unexpected_field",
-      "entry": "publisher",
       "field_name": "origpublisher",
+      "entry": "publisher",
       "line": 8
     }
   ]

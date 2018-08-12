@@ -113,44 +113,44 @@
     },
     {
       "type": "unexpected_field",
-      "entry": "kartinyeri",
       "field_name": "institution",
+      "entry": "kartinyeri",
       "line": 14
     },
     {
       "type": "unexpected_field",
-      "entry": "kartinyeri",
       "field_name": "journaltitle",
+      "entry": "kartinyeri",
       "line": 14
     },
     {
       "type": "unexpected_field",
-      "entry": "kartinyeri",
       "field_name": "pages",
+      "entry": "kartinyeri",
       "line": 14
     },
     {
       "type": "unexpected_field",
-      "entry": "kartinyeri",
       "field_name": "shorttitle",
+      "entry": "kartinyeri",
       "line": 14
     },
     {
       "type": "unknown_field",
-      "entry": "kartinyeri",
       "field_name": "timestamp",
+      "entry": "kartinyeri",
       "line": 14
     },
     {
       "type": "unexpected_field",
-      "entry": "kartinyeri",
       "field_name": "translator",
+      "entry": "kartinyeri",
       "line": 14
     },
     {
       "type": "unexpected_field",
-      "entry": "kartinyeri",
       "field_name": "volume",
+      "entry": "kartinyeri",
       "line": 14
     }
   ]

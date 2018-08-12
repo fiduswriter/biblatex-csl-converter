@@ -85,8 +85,8 @@
   "warnings": [
     {
       "type": "unknown_field",
-      "entry": "geophysicsstudycommittee_continental_1980",
       "field_name": "timestamp",
+      "entry": "geophysicsstudycommittee_continental_1980",
       "line": 10
     }
   ]

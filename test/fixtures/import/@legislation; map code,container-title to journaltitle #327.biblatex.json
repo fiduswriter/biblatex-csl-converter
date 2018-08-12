@@ -69,26 +69,26 @@
     },
     {
       "type": "unexpected_field",
-      "entry": "_loi_2011",
       "field_name": "journaltitle",
+      "entry": "_loi_2011",
       "line": 11
     },
     {
       "type": "unexpected_field",
-      "entry": "_loi_2011",
       "field_name": "number",
+      "entry": "_loi_2011",
       "line": 11
     },
     {
       "type": "unexpected_field",
-      "entry": "_loi_2011",
       "field_name": "pages",
+      "entry": "_loi_2011",
       "line": 11
     },
     {
       "type": "unknown_field",
-      "entry": "_loi_2011",
       "field_name": "timestamp",
+      "entry": "_loi_2011",
       "line": 11
     }
   ]

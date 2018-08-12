@@ -130,14 +130,14 @@
   "warnings": [
     {
       "type": "unknown_field",
-      "entry": "eisenmann_actes_1983",
       "field_name": "crossref",
+      "entry": "eisenmann_actes_1983",
       "line": 16
     },
     {
       "type": "unknown_field",
-      "entry": "eisenmann_actes_1983",
       "field_name": "timestamp",
+      "entry": "eisenmann_actes_1983",
       "line": 16
     }
   ]

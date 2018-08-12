@@ -149,20 +149,20 @@
   "warnings": [
     {
       "type": "unknown_field",
-      "entry": "author:06",
       "field_name": "crossref",
-      "line": 8
-    },
-    {
-      "type": "unknown_field",
       "entry": "author:06",
-      "field_name": "timestamp",
       "line": 8
     },
     {
       "type": "unknown_field",
-      "entry": "conference:06",
       "field_name": "timestamp",
+      "entry": "author:06",
+      "line": 8
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "conference:06",
       "line": 15
     }
   ]

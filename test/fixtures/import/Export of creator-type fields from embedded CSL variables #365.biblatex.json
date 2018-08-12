@@ -429,32 +429,32 @@
     },
     {
       "type": "unknown_field",
-      "entry": "Doe2015",
       "field_name": "director",
+      "entry": "Doe2015",
       "line": 9
     },
     {
       "type": "unexpected_field",
-      "entry": "Doe2015",
       "field_name": "publisher",
+      "entry": "Doe2015",
       "line": 9
     },
     {
       "type": "unknown_field",
-      "entry": "Doe2015",
       "field_name": "timestamp",
+      "entry": "Doe2015",
       "line": 9
     },
     {
       "type": "unexpected_field",
-      "entry": "Author2015",
       "field_name": "editor",
+      "entry": "Author2015",
       "line": 22
     },
     {
       "type": "unknown_field",
-      "entry": "Author2015",
       "field_name": "timestamp",
+      "entry": "Author2015",
       "line": 22
     },
     {
@@ -464,20 +464,20 @@
     },
     {
       "type": "unknown_field",
-      "entry": "Kubrick1964",
       "field_name": "director",
+      "entry": "Kubrick1964",
       "line": 30
     },
     {
       "type": "unexpected_field",
-      "entry": "Kubrick1964",
       "field_name": "shorttitle",
+      "entry": "Kubrick1964",
       "line": 30
     },
     {
       "type": "unknown_field",
-      "entry": "Kubrick1964",
       "field_name": "timestamp",
+      "entry": "Kubrick1964",
       "line": 30
     },
     {
@@ -487,50 +487,50 @@
     },
     {
       "type": "unexpected_field",
-      "entry": "friends:leia:tv",
       "field_name": "booktitle",
+      "entry": "friends:leia:tv",
       "line": 45
     },
     {
       "type": "unknown_field",
-      "entry": "friends:leia:tv",
       "field_name": "director",
+      "entry": "friends:leia:tv",
       "line": 45
     },
     {
       "type": "unexpected_field",
-      "entry": "friends:leia:tv",
       "field_name": "journaltitle",
+      "entry": "friends:leia:tv",
       "line": 45
     },
     {
       "type": "unexpected_field",
-      "entry": "friends:leia:tv",
       "field_name": "number",
+      "entry": "friends:leia:tv",
       "line": 45
     },
     {
       "type": "unexpected_field",
-      "entry": "friends:leia:tv",
       "field_name": "publisher",
+      "entry": "friends:leia:tv",
       "line": 45
     },
     {
       "type": "unknown_field",
-      "entry": "friends:leia:tv",
       "field_name": "scriptwriter",
+      "entry": "friends:leia:tv",
       "line": 45
     },
     {
       "type": "unknown_field",
-      "entry": "friends:leia:tv",
       "field_name": "timestamp",
+      "entry": "friends:leia:tv",
       "line": 45
     },
     {
       "type": "unexpected_field",
-      "entry": "friends:leia:tv",
       "field_name": "volume",
+      "entry": "friends:leia:tv",
       "line": 45
     },
     {
@@ -540,62 +540,62 @@
     },
     {
       "type": "unexpected_field",
-      "entry": "friends:leia:dvd",
       "field_name": "booktitle",
+      "entry": "friends:leia:dvd",
       "line": 61
     },
     {
       "type": "unknown_field",
-      "entry": "friends:leia:dvd",
       "field_name": "director",
+      "entry": "friends:leia:dvd",
       "line": 61
     },
     {
       "type": "unexpected_field",
-      "entry": "friends:leia:dvd",
       "field_name": "number",
+      "entry": "friends:leia:dvd",
       "line": 61
     },
     {
       "type": "unexpected_field",
-      "entry": "friends:leia:dvd",
       "field_name": "origdate",
+      "entry": "friends:leia:dvd",
       "line": 61
     },
     {
       "type": "unexpected_field",
-      "entry": "friends:leia:dvd",
       "field_name": "origpublisher",
+      "entry": "friends:leia:dvd",
       "line": 61
     },
     {
       "type": "unexpected_field",
-      "entry": "friends:leia:dvd",
       "field_name": "publisher",
+      "entry": "friends:leia:dvd",
       "line": 61
     },
     {
       "type": "unknown_field",
-      "entry": "friends:leia:dvd",
       "field_name": "scriptwriter",
+      "entry": "friends:leia:dvd",
       "line": 61
     },
     {
       "type": "unknown_field",
-      "entry": "friends:leia:dvd",
       "field_name": "timestamp",
+      "entry": "friends:leia:dvd",
       "line": 61
     },
     {
       "type": "unexpected_field",
-      "entry": "friends:leia:dvd",
       "field_name": "volume",
+      "entry": "friends:leia:dvd",
       "line": 61
     },
     {
       "type": "unknown_field",
-      "entry": "emptybook",
       "field_name": "timestamp",
+      "entry": "emptybook",
       "line": 67
     }
   ]

@@ -64,8 +64,8 @@
   "warnings": [
     {
       "type": "unexpected_field",
-      "entry": "ea",
       "field_name": "volume",
+      "entry": "ea",
       "line": 11
     }
   ]

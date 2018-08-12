@@ -111,14 +111,14 @@
   "warnings": [
     {
       "type": "unexpected_field",
-      "entry": "VlčekVácha2014HistoryLatin",
       "field_name": "shortjournal",
+      "entry": "VlčekVácha2014HistoryLatin",
       "line": 15
     },
     {
       "type": "unknown_field",
-      "entry": "VlčekVácha2014HistoryLatin",
       "field_name": "timestamp",
+      "entry": "VlčekVácha2014HistoryLatin",
       "line": 15
     }
   ]
