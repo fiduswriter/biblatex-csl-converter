@@ -30,7 +30,7 @@
   "scripts": {
     "gh-pages-travis": "gh-pages-travis",
     "check_js": "eslint src/",
-    "pretest": "npm run check_js",
+    "pretest": "npm run check_js && npm run flow check",
     "compile": "npm run compile_bundle && npm run compile_gh-pages && npm run compile_browser",
     "compile_bundle": "rollup src/index.js --config --output.format cjs --output.file lib/index.js --output.sourcemap true",
     "compile_gh-pages": "rollup src/build/gh-pages.js --config --output.format iife --output.file gh-pages/demo.js",
@@ -39,7 +39,7 @@
     "compile_browser-export-biblatex": "rollup src/build/browser-export-biblatex.js --config --output.format iife --output.file browser/export-biblatex.js",
     "compile_browser-export-csl": "rollup src/build/browser-export-csl.js --config --output.format iife --output.file browser/export-csl.js",
     "compile_browser-import-biblatex": "rollup src/build/browser-import-bibtex.js --config --output.format iife --output.file browser/import-bibtex.js",
-    "prepublish": "npm run check_js && npm run flow && npm run compile",
+    "prepublish": "npm run check_js && npm run flow check && npm run compile",
     "test": "rollup -c rollup.config.test.js && nyc mocha --timeout=3000",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "postversion": "echo remember to run 'git push --follow-tags'",
