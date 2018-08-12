@@ -72,22 +72,5 @@
     "rollup-plugin-node-resolve": "^3.3.0",
     "rollup-plugin-strip": "^1.1.1",
     "rollup-plugin-uglify-es": "^0.0.1"
-  },
-  "jshintConfig": {
-    "esversion": 6,
-    "loopfunc": true,
-    "asi": true,
-    "multistr": true,
-    "sub": true,
-    "undef": true,
-    "predef": [
-      "global",
-      "document",
-      "console",
-      "FileReader",
-      "setTimeout",
-      "performance"
-    ]
-  },
-  "dependencies": {}
+  }
 }
