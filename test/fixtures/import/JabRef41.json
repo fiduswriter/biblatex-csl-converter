@@ -1958,5 +1958,9 @@
       "entry": "Koyabu2017",
       "line": 180
     }
-  ]
+  ],
+  "jabrefMeta": {
+    "databaseType": "bibtex",
+    "fileDirectory": "."
+  }
 }

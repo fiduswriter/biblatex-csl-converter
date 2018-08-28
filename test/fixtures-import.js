@@ -10,6 +10,10 @@ const clean = state => {
   for (let prop of ['errors', 'warnings', 'groups']) {
     if (!state[prop] || state[prop].length == 0) { delete state[prop] }
   }
+
+  for (let prop of ['jabrefMeta']) {
+    if (!state[prop] || Object.keys(state[prop]).length === 0) delete state[prop]
+  }
 }
 
 const verify = bibfile => {
@@ -19,7 +23,7 @@ const verify = bibfile => {
 
   // this must be called before requesting warnings or errors
   let references = parser.output
-  let found = { references, groups: parser.groups, errors: parser.errors, warnings: parser.warnings }
+  let found = { references, groups: parser.groups, errors: parser.errors, warnings: parser.warnings, jabrefMeta: parser.jabrefMeta }
   clean(found)
 
   let expected = path.join(path.dirname(bibfile), name + '.json')

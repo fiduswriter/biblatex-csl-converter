@@ -117,6 +117,7 @@ export class BibLatexParser {
         };
         groupParser: GroupParser;
         groups: Array<GroupObject> | false;
+        jabrefMeta: Object
     */
 
 
@@ -148,6 +149,7 @@ export class BibLatexParser {
         }
         this.groupParser = new GroupParser(this.entries)
         this.groups = false
+        this.jabrefMeta = {}
     }
 
     isWhitespace(s /*: string */) {
@@ -869,6 +871,9 @@ export class BibLatexParser {
         this.groupParser.checkString(comment)
         if (this.groupParser.groups.length) {
             this.groups = this.groupParser.groups
+        } else {
+          const m = comment.trim().match(/^jabref-meta: ([a-zA-Z]+):(.*);$/)
+          if (m && m[1] !== 'groupsversion') this.jabrefMeta[m[1]] = m[2].replace(/\\(.)/g, '$1')
         }
     }
 
