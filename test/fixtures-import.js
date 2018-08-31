@@ -35,10 +35,31 @@ const verify = bibfile => {
   it(name, () => {expect(found).to.be.deep.equal(expected)})
 }
 
+const verifyAsync = bibfile => {
+  let input = fs.readFileSync(bibfile, 'utf8')
+  let parser = new converter.BibLatexParser(input, {processUnexpected: true, processUnknown: true})
+  let name = path.basename(bibfile, path.extname(bibfile))
+
+  return parser.parseAsync().then((parsed) => {
+    let found = { references: parsed.bibDB, groups: parsed.groups, errors: parsed.errors, warnings: parsed.warnings, jabrefMeta: parsed.jabrefMeta }
+    clean(found)
+
+    let expected = path.join(path.dirname(bibfile), name + '.json')
+    expected = JSON.parse(fs.readFileSync(expected, 'utf8'))
+    clean(expected)
+
+    it(`async: ${name}`, () => {expect(found).to.be.deep.equal(expected)})
+  })
+}
+
 const fixtures = path.join(__dirname, 'fixtures/import')
 const bibfiles = fs.readdirSync(fixtures)
+const promised = []
 for (let fixture of bibfiles) {
   if (path.extname(fixture) != '.bib') { continue }
 
   verify(path.join(fixtures, fixture))
+  promised.push(verifyAsync(path.join(fixtures, fixture)))
 }
+
+Promise.all(promised)

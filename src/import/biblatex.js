@@ -809,36 +809,44 @@ export class BibLatexParser {
     }
 
     stepThroughBibtex() {
-        let closer
         while (this.skipToNext()) {
-            let d = this.directive()
-            if (!d) break
-
-            if (this.tryMatch("{")) {
-              this.match("{")
-              closer = '}'
-            } else if (this.tryMatch("(")) { // apparently, references can also be surrended with round braces
-              this.match("(")
-              closer = ')'
-            } else if (d === "@comment") { // braceless comments are a thing it appears
-              closer = null
-            } else {
-              this.match("{")
-              closer = '}'
-            }
-
-            if (d == "@string") {
-                this.string()
-            } else if (d == "@preamble") {
-                this.preamble()
-            } else if (d == "@comment") {
-                this.parseComment(!closer)
-            } else {
-                this.createNewEntry()
-            }
-
-            if (closer) this.match(closer)
+          this.parseNext()
         }
+    }
+
+    stepThroughBibtexAsync() {
+      return this.skipToNext() ? (new Promise(resolve => resolve(this.parseNext()))).then(this.stepThroughBibtexAsync.bind(this)) : Promise.resolve(null)
+    }
+
+    parseNext() {
+        let closer
+        let d = this.directive()
+        if (!d) return
+
+        if (this.tryMatch("{")) {
+          this.match("{")
+          closer = '}'
+        } else if (this.tryMatch("(")) { // apparently, references can also be surrended with round braces
+          this.match("(")
+          closer = ')'
+        } else if (d === "@comment") { // braceless comments are a thing it appears
+          closer = null
+        } else {
+          this.match("{")
+          closer = '}'
+        }
+
+        if (d == "@string") {
+            this.string()
+        } else if (d == "@preamble") {
+            this.preamble()
+        } else if (d == "@comment") {
+            this.parseComment(!closer)
+        } else {
+            this.createNewEntry()
+        }
+
+        if (closer) this.match(closer)
     }
 
     parseComment(braceless /*: boolean */) {
@@ -900,4 +908,12 @@ export class BibLatexParser {
         return this.bibDB
     }
 
+    parseAsync() {
+        this.replaceTeXChars()
+        return this.stepThroughBibtexAsync().then(() => {
+            this.createBibDB()
+            this.cleanDB()
+            return this
+        })
+    }
 }
