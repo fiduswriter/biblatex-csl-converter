@@ -18,10 +18,9 @@ const clean = state => {
 
 const verify = bibfile => {
   let input = fs.readFileSync(bibfile, 'utf8')
-  let parser = new converter.BibLatexParser(input, {processUnexpected: true, processUnknown: true})
   let name = path.basename(bibfile, path.extname(bibfile))
 
-  let found = parser.parse()
+  let found = converter.parse(input, {processUnexpected: true, processUnknown: true})
   clean(found)
 
   let expected = path.join(path.dirname(bibfile), name + '.json')
@@ -35,10 +34,9 @@ const verify = bibfile => {
 
 const verifyAsync = bibfile => {
   let input = fs.readFileSync(bibfile, 'utf8')
-  let parser = new converter.BibLatexParser(input, {processUnexpected: true, processUnknown: true, async: true})
   let name = path.basename(bibfile, path.extname(bibfile))
 
-  return parser.parse().then((found) => {
+  return converter.parse(input, {processUnexpected: true, processUnknown: true, async: true}).then((found) => {
     clean(found)
 
     let expected = path.join(path.dirname(bibfile), name + '.json')

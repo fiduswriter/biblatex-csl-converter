@@ -119,6 +119,10 @@ export class BibLatexParser {
         groupParser: GroupParser;
         groups: Array<GroupObject> | false;
         jabrefMeta: Object
+        jabref: {
+          groups: Array<GroupObject> | false;
+          meta: Object
+        }
     */
 
 
@@ -902,6 +906,7 @@ export class BibLatexParser {
     }
 
     get output() {
+        console.warn('BibLatexParser.output will be deprecated in biblatex-csl-converter 2.x')
         this.replaceTeXChars()
         this.stepThroughBibtex()
         this.createBibDB()
