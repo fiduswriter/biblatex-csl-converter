@@ -64,6 +64,7 @@ type ConfigObject = {
     processUnknown?: Object;
     processUnexpected?: boolean;
     processInvalidURIs?: boolean;
+    async?: boolean;
 };
 
 type ErrorObject = {
@@ -908,12 +909,30 @@ export class BibLatexParser {
         return this.bibDB
     }
 
-    parseAsync() {
-        this.replaceTeXChars()
-        return this.stepThroughBibtexAsync().then(() => {
-            this.createBibDB()
-            this.cleanDB()
-            return this
-        })
+    parsed() {
+        this.createBibDB()
+        this.cleanDB()
+        return {
+            entries: this.bibDB,
+            groups: this.groups,
+            errors: this.errors,
+            warnings: this.warnings,
+            jabrefMeta: this.jabrefMeta,
+        }
     }
+
+    parse() {
+        this.replaceTeXChars()
+
+        if (this.config.async) {
+            return this.stepThroughBibtexAsync().then(() => this.parsed())
+        } else {
+            this.stepThroughBibtex()
+            return this.parsed()
+        }
+    }
+}
+
+export function parse(input /*: string */, config /*: ConfigObject */ = {}) {
+    return (new BibLatexParser(input, config)).parse()
 }

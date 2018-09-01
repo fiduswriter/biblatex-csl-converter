@@ -14,6 +14,11 @@ const clean = state => {
   for (let prop of ['jabrefMeta']) {
     if (!state[prop] || Object.keys(state[prop]).length === 0) delete state[prop]
   }
+
+  if (state.entries) {
+    state.references = state.entries
+    delete state.entries
+  }
 }
 
 const verify = bibfile => {
@@ -21,14 +26,12 @@ const verify = bibfile => {
   let parser = new converter.BibLatexParser(input, {processUnexpected: true, processUnknown: true})
   let name = path.basename(bibfile, path.extname(bibfile))
 
-  // this must be called before requesting warnings or errors
-  let references = parser.output
-  let found = { references, groups: parser.groups, errors: parser.errors, warnings: parser.warnings, jabrefMeta: parser.jabrefMeta }
+  let found = parser.parse()
   clean(found)
 
   let expected = path.join(path.dirname(bibfile), name + '.json')
 // Uncomment the following line to save the results as expected test results.
-//  fs.writeFileSync(expected, JSON.stringify(found, null, 2))
+//  fs.writeFileSync(clean(expected), JSON.stringify(found, null, 2))
   expected = JSON.parse(fs.readFileSync(expected, 'utf8'))
   clean(expected)
 
@@ -37,11 +40,10 @@ const verify = bibfile => {
 
 const verifyAsync = bibfile => {
   let input = fs.readFileSync(bibfile, 'utf8')
-  let parser = new converter.BibLatexParser(input, {processUnexpected: true, processUnknown: true})
+  let parser = new converter.BibLatexParser(input, {processUnexpected: true, processUnknown: true, async: true})
   let name = path.basename(bibfile, path.extname(bibfile))
 
-  return parser.parseAsync().then((parsed) => {
-    let found = { references: parsed.bibDB, groups: parsed.groups, errors: parsed.errors, warnings: parsed.warnings, jabrefMeta: parsed.jabrefMeta }
+  return parser.parse().then((found) => {
     clean(found)
 
     let expected = path.join(path.dirname(bibfile), name + '.json')
