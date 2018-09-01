@@ -1,5 +1,19 @@
 {
-  "references": {
+  "warnings": [
+    {
+      "type": "unexpected_field",
+      "field_name": "shortjournal",
+      "entry": "Acin2006-105",
+      "line": 16
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "Acin2006-105",
+      "line": 16
+    }
+  ],
+  "entries": {
     "1": {
       "bib_type": "article",
       "entry_key": "Acin2006-105",
@@ -137,18 +151,8 @@
       }
     }
   },
-  "warnings": [
-    {
-      "type": "unexpected_field",
-      "field_name": "shortjournal",
-      "entry": "Acin2006-105",
-      "line": 16
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Acin2006-105",
-      "line": 16
+  "jabref": {
+    "meta": {
     }
-  ]
+  }
 }

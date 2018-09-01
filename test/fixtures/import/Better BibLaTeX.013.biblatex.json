@@ -1,5 +1,13 @@
 {
-  "references": {
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "physicalviolentvolcanology",
+      "line": 11
+    }
+  ],
+  "entries": {
     "1": {
       "bib_type": "article",
       "entry_key": "physicalviolentvolcanology",
@@ -177,12 +185,8 @@
       }
     }
   },
-  "warnings": [
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "physicalviolentvolcanology",
-      "line": 11
+  "jabref": {
+    "meta": {
     }
-  ]
+  }
 }

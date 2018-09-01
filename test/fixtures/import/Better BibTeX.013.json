@@ -1,5 +1,19 @@
 {
-  "references": {
+  "warnings": [
+    {
+      "type": "unexpected_field",
+      "field_name": "file",
+      "entry": "id",
+      "line": 5
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "file",
+      "entry": "id2",
+      "line": 9
+    }
+  ],
+  "entries": {
     "1": {
       "bib_type": "book",
       "entry_key": "id",
@@ -31,18 +45,8 @@
       }
     }
   },
-  "warnings": [
-    {
-      "type": "unexpected_field",
-      "field_name": "file",
-      "entry": "id",
-      "line": 5
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "file",
-      "entry": "id2",
-      "line": 9
+  "jabref": {
+    "meta": {
     }
-  ]
+  }
 }

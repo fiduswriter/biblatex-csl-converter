@@ -1,5 +1,25 @@
 {
-  "references": {
+  "warnings": [
+    {
+      "type": "unexpected_field",
+      "field_name": "file",
+      "entry": "deOliveira2010",
+      "line": 18
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "options",
+      "entry": "deOliveira2010",
+      "line": 18
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "deOliveira2010",
+      "line": 18
+    }
+  ],
+  "entries": {
     "1": {
       "bib_type": "article",
       "entry_key": "deOliveira2010",
@@ -125,24 +145,8 @@
       }
     }
   },
-  "warnings": [
-    {
-      "type": "unexpected_field",
-      "field_name": "file",
-      "entry": "deOliveira2010",
-      "line": 18
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "options",
-      "entry": "deOliveira2010",
-      "line": 18
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "deOliveira2010",
-      "line": 18
+  "jabref": {
+    "meta": {
     }
-  ]
+  }
 }

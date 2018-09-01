@@ -1,5 +1,13 @@
 {
-  "references": {
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "Medvedev2002",
+      "line": 11
+    }
+  ],
+  "entries": {
     "1": {
       "bib_type": "book",
       "entry_key": "Medvedev2002",
@@ -62,12 +70,8 @@
       }
     }
   },
-  "warnings": [
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Medvedev2002",
-      "line": 11
+  "jabref": {
+    "meta": {
     }
-  ]
+  }
 }

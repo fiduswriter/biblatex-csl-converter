@@ -1,5 +1,22 @@
 {
-  "references": {
+  "warnings": [
+    {
+      "type": "alias_creates_duplicate_field",
+      "field": "archiveprefix",
+      "alias_of": "eprinttype",
+      "value": "arXiv",
+      "alias_of_value": "arxiv",
+      "entry": "HuEtAl",
+      "line": 17
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "HuEtAl",
+      "line": 17
+    }
+  ],
+  "entries": {
     "1": {
       "bib_type": "article",
       "entry_key": "HuEtAl",
@@ -111,21 +128,8 @@
       }
     }
   },
-  "warnings": [
-    {
-      "type": "alias_creates_duplicate_field",
-      "field": "archiveprefix",
-      "alias_of": "eprinttype",
-      "value": "arXiv",
-      "alias_of_value": "arxiv",
-      "entry": "HuEtAl",
-      "line": 17
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "HuEtAl",
-      "line": 17
+  "jabref": {
+    "meta": {
     }
-  ]
+  }
 }

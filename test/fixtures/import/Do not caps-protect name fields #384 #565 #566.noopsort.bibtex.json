@@ -1,12 +1,14 @@
 {
-  "references": {
+  "entries": {
     "1": {
       "bib_type": "book",
       "entry_key": "vangogh",
       "fields": {
         "author": [
           {
-            "prefix": [],
+            "prefix": [
+
+            ],
             "useprefix": true,
             "family": [
               {
@@ -36,7 +38,9 @@
       "fields": {
         "author": [
           {
-            "prefix": [],
+            "prefix": [
+
+            ],
             "useprefix": true,
             "family": [
               {
@@ -66,7 +70,9 @@
       "fields": {
         "author": [
           {
-            "prefix": [],
+            "prefix": [
+
+            ],
             "useprefix": true,
             "family": [
               {
@@ -221,7 +227,9 @@
       "fields": {
         "author": [
           {
-            "prefix": [],
+            "prefix": [
+
+            ],
             "useprefix": true,
             "family": [
               {
@@ -796,7 +804,9 @@
       "fields": {
         "author": [
           {
-            "prefix": [],
+            "prefix": [
+
+            ],
             "useprefix": true,
             "family": [
               {
@@ -966,7 +976,9 @@
       "fields": {
         "author": [
           {
-            "prefix": [],
+            "prefix": [
+
+            ],
             "useprefix": true,
             "family": [
               {
@@ -1234,6 +1246,10 @@
           }
         ]
       }
+    }
+  },
+  "jabref": {
+    "meta": {
     }
   }
 }

@@ -1,5 +1,55 @@
 {
-  "references": {
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "field_name": "groups",
+      "entry": "Doe-2017",
+      "line": 10
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "owner",
+      "entry": "Doe-2017",
+      "line": 10
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "Doe-2017",
+      "line": 10
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "groups",
+      "entry": "Other-",
+      "line": 18
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "owner",
+      "entry": "Other-",
+      "line": 18
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "Other-",
+      "line": 18
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "owner",
+      "entry": "Unkonw-",
+      "line": 26
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "Unkonw-",
+      "line": 26
+    }
+  ],
+  "entries": {
     "1": {
       "bib_type": "article",
       "entry_key": "Doe-2017",
@@ -128,80 +178,38 @@
       }
     }
   },
-  "groups": [
-    {
-      "name": "my-main-group-2",
-      "groups": [
-        {
-          "name": "my-subgroup-2",
-          "groups": [],
-          "references": [
-            "Doe-2017"
-          ]
-        },
-        {
-          "name": "my-other-subgroup-2",
-          "groups": [],
-          "references": [
-            "Other-"
-          ]
-        }
-      ],
-      "references": []
+  "jabref": {
+    "groups": [
+      {
+        "name": "my-main-group-2",
+        "groups": [
+          {
+            "name": "my-subgroup-2",
+            "groups": [
+
+            ],
+            "references": [
+              "Doe-2017"
+            ]
+          },
+          {
+            "name": "my-other-subgroup-2",
+            "groups": [
+
+            ],
+            "references": [
+              "Other-"
+            ]
+          }
+        ],
+        "references": [
+
+        ]
+      }
+    ],
+    "meta": {
+      "databaseType": "bibtex",
+      "fileDirectory": "/home/emile/github/better-bibtex/t;t"
     }
-  ],
-  "warnings": [
-    {
-      "type": "unknown_field",
-      "field_name": "groups",
-      "entry": "Doe-2017",
-      "line": 10
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "owner",
-      "entry": "Doe-2017",
-      "line": 10
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Doe-2017",
-      "line": 10
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "groups",
-      "entry": "Other-",
-      "line": 18
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "owner",
-      "entry": "Other-",
-      "line": 18
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Other-",
-      "line": 18
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "owner",
-      "entry": "Unkonw-",
-      "line": 26
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Unkonw-",
-      "line": 26
-    }
-  ],
-  "jabrefMeta": {
-    "databaseType": "bibtex",
-    "fileDirectory": "/home/emile/github/better-bibtex/t;t"
   }
 }

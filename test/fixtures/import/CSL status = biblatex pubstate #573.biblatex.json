@@ -1,5 +1,13 @@
 {
-  "references": {
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "doe_title_????",
+      "line": 7
+    }
+  ],
+  "entries": {
     "1": {
       "bib_type": "book",
       "entry_key": "doe_title_????",
@@ -38,12 +46,8 @@
       }
     }
   },
-  "warnings": [
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "doe_title_????",
-      "line": 7
+  "jabref": {
+    "meta": {
     }
-  ]
+  }
 }

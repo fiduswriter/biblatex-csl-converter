@@ -1,5 +1,5 @@
 {
-  "references": {
+  "entries": {
     "1": {
       "bib_type": "article",
       "entry_key": "داودی2015بررسی",
@@ -20,7 +20,9 @@
               }
             ],
             "useprefix": true,
-            "family": [],
+            "family": [
+
+            ],
             "given": [
               {
                 "type": "text",
@@ -82,6 +84,10 @@
           ]
         ]
       }
+    }
+  },
+  "jabref": {
+    "meta": {
     }
   }
 }

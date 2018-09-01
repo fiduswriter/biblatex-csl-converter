@@ -1,5 +1,19 @@
 {
-  "references": {
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "field_name": "crossref",
+      "entry": "author:06",
+      "line": 7
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "booktitle",
+      "entry": "conference:06",
+      "line": 14
+    }
+  ],
+  "entries": {
     "1": {
       "bib_type": "inproceedings",
       "entry_key": "author:06",
@@ -112,18 +126,8 @@
       }
     }
   },
-  "warnings": [
-    {
-      "type": "unknown_field",
-      "field_name": "crossref",
-      "entry": "author:06",
-      "line": 7
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "booktitle",
-      "entry": "conference:06",
-      "line": 14
+  "jabref": {
+    "meta": {
     }
-  ]
+  }
 }

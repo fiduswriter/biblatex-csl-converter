@@ -1,5 +1,31 @@
 {
-  "references": {
+  "warnings": [
+    {
+      "type": "unexpected_field",
+      "field_name": "shortjournal",
+      "entry": "tusseau_critique_2009",
+      "line": 13
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "shorttitle",
+      "entry": "tusseau_critique_2009",
+      "line": 13
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "tusseau_critique_2009",
+      "line": 13
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "searle_how_1964",
+      "line": 27
+    }
+  ],
+  "entries": {
     "1": {
       "bib_type": "article",
       "entry_key": "tusseau_critique_2009",
@@ -195,30 +221,8 @@
       }
     }
   },
-  "warnings": [
-    {
-      "type": "unexpected_field",
-      "field_name": "shortjournal",
-      "entry": "tusseau_critique_2009",
-      "line": 13
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "shorttitle",
-      "entry": "tusseau_critique_2009",
-      "line": 13
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "tusseau_critique_2009",
-      "line": 13
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "searle_how_1964",
-      "line": 27
+  "jabref": {
+    "meta": {
     }
-  ]
+  }
 }

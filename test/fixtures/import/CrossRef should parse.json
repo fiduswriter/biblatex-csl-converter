@@ -1,5 +1,13 @@
 {
-  "references": {
+  "warnings": [
+    {
+      "type": "unexpected_field",
+      "field_name": "publisher",
+      "entry": "Peters_2004",
+      "line": 13
+    }
+  ],
+  "entries": {
     "1": {
       "bib_type": "article",
       "entry_key": "Peters_2004",
@@ -70,12 +78,8 @@
       }
     }
   },
-  "warnings": [
-    {
-      "type": "unexpected_field",
-      "field_name": "publisher",
-      "entry": "Peters_2004",
-      "line": 13
+  "jabref": {
+    "meta": {
     }
-  ]
+  }
 }

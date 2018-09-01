@@ -1,5 +1,5 @@
 {
-  "references": {
+  "entries": {
     "1": {
       "bib_type": "book",
       "entry_key": "hicks2001",
@@ -69,6 +69,10 @@
           }
         ]
       }
+    }
+  },
+  "jabref": {
+    "meta": {
     }
   }
 }

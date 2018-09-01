@@ -7,18 +7,13 @@ const fs = require('fs')
 const path = require('path')
 
 const clean = state => {
-  for (let prop of ['errors', 'warnings', 'groups']) {
+  for (let prop of ['errors', 'warnings']) {
     if (!state[prop] || state[prop].length == 0) { delete state[prop] }
   }
 
-  for (let prop of ['jabrefMeta']) {
-    if (!state[prop] || Object.keys(state[prop]).length === 0) delete state[prop]
-  }
-
-  if (state.entries) {
-    state.references = state.entries
-    delete state.entries
-  }
+  if (!state.jabref.groups || state.jabref.groups.length == 0) delete state.jabref.groups
+  if (Object.keys(state.jabref.meta).length == 0) delete state.jabref.meta
+  if (Object.keys(state.jabref).length == 0) delete state.jabref
 }
 
 const verify = bibfile => {

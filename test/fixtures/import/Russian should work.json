@@ -1,5 +1,25 @@
 {
-  "references": {
+  "warnings": [
+    {
+      "type": "unexpected_field",
+      "field_name": "publisher",
+      "entry": "nazarenko2009new",
+      "line": 11
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "publisher",
+      "entry": "nazarenko2011new",
+      "line": 22
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "publisher",
+      "entry": "пучков2013предварительный",
+      "line": 66
+    }
+  ],
+  "entries": {
     "1": {
       "bib_type": "article",
       "entry_key": "nazarenko2009new",
@@ -546,24 +566,8 @@
       }
     }
   },
-  "warnings": [
-    {
-      "type": "unexpected_field",
-      "field_name": "publisher",
-      "entry": "nazarenko2009new",
-      "line": 11
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "publisher",
-      "entry": "nazarenko2011new",
-      "line": 22
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "publisher",
-      "entry": "пучков2013предварительный",
-      "line": 66
+  "jabref": {
+    "meta": {
     }
-  ]
+  }
 }

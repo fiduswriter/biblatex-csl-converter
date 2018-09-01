@@ -1,5 +1,5 @@
 {
-  "references": {
+  "entries": {
     "1": {
       "bib_type": "incollection",
       "entry_key": "hennemann2009vernetzung",
@@ -58,6 +58,10 @@
           ]
         ]
       }
+    }
+  },
+  "jabref": {
+    "meta": {
     }
   }
 }

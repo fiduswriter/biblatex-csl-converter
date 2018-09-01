@@ -1,5 +1,5 @@
 {
-  "references": {
+  "entries": {
     "1": {
       "bib_type": "incollection",
       "entry_key": "lt2010",
@@ -203,6 +203,10 @@
           }
         ]
       }
+    }
+  },
+  "jabref": {
+    "meta": {
     }
   }
 }

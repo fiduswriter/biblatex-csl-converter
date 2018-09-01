@@ -1,5 +1,19 @@
 {
-  "references": {
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "field_name": "options",
+      "entry": "de_kort2007digital",
+      "line": 14
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "de_kort2007digital",
+      "line": 14
+    }
+  ],
+  "entries": {
     "1": {
       "bib_type": "inproceedings",
       "entry_key": "de_kort2007digital",
@@ -154,18 +168,8 @@
       }
     }
   },
-  "warnings": [
-    {
-      "type": "unknown_field",
-      "field_name": "options",
-      "entry": "de_kort2007digital",
-      "line": 14
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "de_kort2007digital",
-      "line": 14
+  "jabref": {
+    "meta": {
     }
-  ]
+  }
 }

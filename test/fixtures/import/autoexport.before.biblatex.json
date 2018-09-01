@@ -1,5 +1,31 @@
 {
-  "references": {
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "CapEA11",
+      "line": 14
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "CumEA14",
+      "line": 32
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "shortjournal",
+      "entry": "TayEA11",
+      "line": 48
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "TayEA11",
+      "line": 48
+    }
+  ],
+  "entries": {
     "1": {
       "bib_type": "inproceedings",
       "entry_key": "CapEA11",
@@ -536,30 +562,8 @@
       }
     }
   },
-  "warnings": [
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "CapEA11",
-      "line": 14
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "CumEA14",
-      "line": 32
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "shortjournal",
-      "entry": "TayEA11",
-      "line": 48
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "TayEA11",
-      "line": 48
+  "jabref": {
+    "meta": {
     }
-  ]
+  }
 }

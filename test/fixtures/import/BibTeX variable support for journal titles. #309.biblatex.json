@@ -1,5 +1,20 @@
 {
-  "references": {
+  "warnings": [
+    {
+      "type": "undefined_variable",
+      "variable": "IEEE_J_IT",
+      "entry": "blahut_capacity",
+      "key": "journaltitle",
+      "line": 5
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "blahut_capacity",
+      "line": 11
+    }
+  ],
+  "entries": {
     "1": {
       "bib_type": "article",
       "entry_key": "blahut_capacity",
@@ -74,19 +89,8 @@
       }
     }
   },
-  "warnings": [
-    {
-      "type": "undefined_variable",
-      "variable": "IEEE_J_IT",
-      "entry": "blahut_capacity",
-      "key": "journaltitle",
-      "line": 5
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "blahut_capacity",
-      "line": 11
+  "jabref": {
+    "meta": {
     }
-  ]
+  }
 }

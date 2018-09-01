@@ -1,5 +1,19 @@
 {
-  "references": {
+  "warnings": [
+    {
+      "type": "unexpected_field",
+      "field_name": "origlocation",
+      "entry": "publisher",
+      "line": 8
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "origpublisher",
+      "entry": "publisher",
+      "line": 8
+    }
+  ],
+  "entries": {
     "1": {
       "bib_type": "book",
       "entry_key": "publisher",
@@ -87,18 +101,8 @@
       }
     }
   },
-  "warnings": [
-    {
-      "type": "unexpected_field",
-      "field_name": "origlocation",
-      "entry": "publisher",
-      "line": 8
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "origpublisher",
-      "entry": "publisher",
-      "line": 8
+  "jabref": {
+    "meta": {
     }
-  ]
+  }
 }

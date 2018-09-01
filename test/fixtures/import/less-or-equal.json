@@ -1,5 +1,13 @@
 {
-  "references": {
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "field_name": "scholar",
+      "entry": "Zach2004a",
+      "line": 14
+    }
+  ],
+  "entries": {
     "1": {
       "bib_type": "article",
       "entry_key": "Zach2004a",
@@ -77,12 +85,8 @@
       }
     }
   },
-  "warnings": [
-    {
-      "type": "unknown_field",
-      "field_name": "scholar",
-      "entry": "Zach2004a",
-      "line": 14
+  "jabref": {
+    "meta": {
     }
-  ]
+  }
 }

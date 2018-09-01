@@ -1,5 +1,5 @@
 {
-  "references": {
+  "entries": {
     "1": {
       "bib_type": "report",
       "entry_key": "McDermott:72",
@@ -63,6 +63,10 @@
           }
         ]
       }
+    }
+  },
+  "jabref": {
+    "meta": {
     }
   }
 }

@@ -1,5 +1,25 @@
 {
-  "references": {
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "field_name": "pmid",
+      "entry": "MauSey14",
+      "line": 19
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "shorttitle",
+      "entry": "MauSey14",
+      "line": 19
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "MauSey14",
+      "line": 19
+    }
+  ],
+  "entries": {
     "1": {
       "bib_type": "article",
       "entry_key": "MauSey14",
@@ -118,24 +138,8 @@
       }
     }
   },
-  "warnings": [
-    {
-      "type": "unknown_field",
-      "field_name": "pmid",
-      "entry": "MauSey14",
-      "line": 19
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "shorttitle",
-      "entry": "MauSey14",
-      "line": 19
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "MauSey14",
-      "line": 19
+  "jabref": {
+    "meta": {
     }
-  ]
+  }
 }

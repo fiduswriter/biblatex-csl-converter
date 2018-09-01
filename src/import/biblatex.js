@@ -914,10 +914,12 @@ export class BibLatexParser {
         this.cleanDB()
         return {
             entries: this.bibDB,
-            groups: this.groups,
             errors: this.errors,
             warnings: this.warnings,
-            jabrefMeta: this.jabrefMeta,
+            jabref: {
+              groups: this.groups,
+              meta: this.jabrefMeta,
+            },
         }
     }
 

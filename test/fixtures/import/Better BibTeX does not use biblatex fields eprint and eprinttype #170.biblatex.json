@@ -1,5 +1,22 @@
 {
-  "references": {
+  "warnings": [
+    {
+      "type": "alias_creates_duplicate_field",
+      "field": "archiveprefix",
+      "alias_of": "eprinttype",
+      "value": "arXiv",
+      "alias_of_value": "arxiv",
+      "entry": "BachmannDybalskiNaaijkens14",
+      "line": 14
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "BachmannDybalskiNaaijkens14",
+      "line": 14
+    }
+  ],
+  "entries": {
     "1": {
       "bib_type": "article",
       "entry_key": "BachmannDybalskiNaaijkens14",
@@ -138,21 +155,8 @@
       }
     }
   },
-  "warnings": [
-    {
-      "type": "alias_creates_duplicate_field",
-      "field": "archiveprefix",
-      "alias_of": "eprinttype",
-      "value": "arXiv",
-      "alias_of_value": "arxiv",
-      "entry": "BachmannDybalskiNaaijkens14",
-      "line": 14
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "BachmannDybalskiNaaijkens14",
-      "line": 14
+  "jabref": {
+    "meta": {
     }
-  ]
+  }
 }

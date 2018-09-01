@@ -1,5 +1,19 @@
 {
-  "references": {
+  "warnings": [
+    {
+      "type": "unexpected_field",
+      "field_name": "publisher",
+      "entry": "Torre2008",
+      "line": 10
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "Torre2008",
+      "line": 10
+    }
+  ],
+  "entries": {
     "1": {
       "bib_type": "misc",
       "entry_key": "Torre2008",
@@ -73,18 +87,8 @@
       }
     }
   },
-  "warnings": [
-    {
-      "type": "unexpected_field",
-      "field_name": "publisher",
-      "entry": "Torre2008",
-      "line": 10
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Torre2008",
-      "line": 10
+  "jabref": {
+    "meta": {
     }
-  ]
+  }
 }

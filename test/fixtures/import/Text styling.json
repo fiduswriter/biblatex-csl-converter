@@ -1,5 +1,13 @@
 {
-  "references": {
+  "warnings": [
+    {
+      "type": "unexpected_field",
+      "field_name": "location",
+      "entry": "wilm10",
+      "line": 12
+    }
+  ],
+  "entries": {
     "1": {
       "bib_type": "article",
       "entry_key": "wilm10",
@@ -226,12 +234,8 @@
       }
     }
   },
-  "warnings": [
-    {
-      "type": "unexpected_field",
-      "field_name": "location",
-      "entry": "wilm10",
-      "line": 12
+  "jabref": {
+    "meta": {
     }
-  ]
+  }
 }

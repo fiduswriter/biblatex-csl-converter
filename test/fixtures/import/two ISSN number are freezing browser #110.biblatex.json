@@ -1,5 +1,19 @@
 {
-  "references": {
+  "warnings": [
+    {
+      "type": "unexpected_field",
+      "field_name": "shortjournal",
+      "entry": "Lander1989",
+      "line": 20
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "Lander1989",
+      "line": 20
+    }
+  ],
+  "entries": {
     "1": {
       "bib_type": "article",
       "entry_key": "Lander1989",
@@ -148,18 +162,8 @@
       }
     }
   },
-  "warnings": [
-    {
-      "type": "unexpected_field",
-      "field_name": "shortjournal",
-      "entry": "Lander1989",
-      "line": 20
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Lander1989",
-      "line": 20
+  "jabref": {
+    "meta": {
     }
-  ]
+  }
 }

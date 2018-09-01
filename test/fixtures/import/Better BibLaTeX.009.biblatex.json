@@ -1,5 +1,31 @@
 {
-  "references": {
+  "warnings": [
+    {
+      "type": "unexpected_field",
+      "field_name": "file",
+      "entry": "Adams2001",
+      "line": 12
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "Adams2001",
+      "line": 12
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "file",
+      "entry": "Adams2002",
+      "line": 24
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "Adams2002",
+      "line": 24
+    }
+  ],
+  "entries": {
     "1": {
       "bib_type": "article",
       "entry_key": "Adams2001",
@@ -359,30 +385,8 @@
       }
     }
   },
-  "warnings": [
-    {
-      "type": "unexpected_field",
-      "field_name": "file",
-      "entry": "Adams2001",
-      "line": 12
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Adams2001",
-      "line": 12
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "file",
-      "entry": "Adams2002",
-      "line": 24
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Adams2002",
-      "line": 24
+  "jabref": {
+    "meta": {
     }
-  ]
+  }
 }

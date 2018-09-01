@@ -1,5 +1,27 @@
 {
-  "references": {
+  "errors": [
+    {
+      "type": "runaway_key",
+      "line": 7
+    },
+    {
+      "type": "cut_off_citation",
+      "entry": "smolvcic2009dust",
+      "line": 7
+    },
+    {
+      "type": "key_value_error",
+      "entry": "smolvcic2009dust",
+      "line": 7
+    },
+    {
+      "type": "token_mismatch",
+      "expected": "}",
+      "found": "",
+      "line": 7
+    }
+  ],
+  "entries": {
     "1": {
       "bib_type": "article",
       "entry_key": "smolvcic2009dust",
@@ -19,7 +41,9 @@
               }
             ],
             "useprefix": true,
-            "family": [],
+            "family": [
+
+            ],
             "given": [
               {
                 "type": "text",
@@ -178,26 +202,8 @@
       "incomplete": true
     }
   },
-  "errors": [
-    {
-      "type": "runaway_key",
-      "line": 7
-    },
-    {
-      "type": "cut_off_citation",
-      "entry": "smolvcic2009dust",
-      "line": 7
-    },
-    {
-      "type": "key_value_error",
-      "entry": "smolvcic2009dust",
-      "line": 7
-    },
-    {
-      "type": "token_mismatch",
-      "expected": "}",
-      "found": "",
-      "line": 7
+  "jabref": {
+    "meta": {
     }
-  ]
+  }
 }

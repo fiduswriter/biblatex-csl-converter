@@ -1,5 +1,5 @@
 {
-  "references": {
+  "entries": {
     "1": {
       "bib_type": "book",
       "entry_key": "Blandford2006",
@@ -59,6 +59,10 @@
           }
         ]
       }
+    }
+  },
+  "jabref": {
+    "meta": {
     }
   }
 }

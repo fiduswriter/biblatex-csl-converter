@@ -1,5 +1,79 @@
 {
-  "references": {
+  "warnings": [
+    {
+      "type": "unexpected_field",
+      "field_name": "publisher",
+      "entry": "clark_mesopotamia:_1957",
+      "line": 10
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "clark_mesopotamia:_1957",
+      "line": 10
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "journal",
+      "entry": "_object_????",
+      "line": 18
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "_object_????",
+      "line": 18
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "edition",
+      "entry": "mozart_sonatas_1960",
+      "line": 32
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "publisher",
+      "entry": "mozart_sonatas_1960",
+      "line": 32
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "mozart_sonatas_1960",
+      "line": 32
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "collaborator",
+      "entry": "ratliff_mystery_1999",
+      "line": 52
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "ratliff_mystery_1999",
+      "line": 52
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "chapter",
+      "entry": "kamp_deconstructing_2006",
+      "line": 64
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "collaborator",
+      "entry": "kamp_deconstructing_2006",
+      "line": 64
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "kamp_deconstructing_2006",
+      "line": 64
+    }
+  ],
+  "entries": {
     "1": {
       "bib_type": "booklet",
       "entry_key": "clark_mesopotamia:_1957",
@@ -389,78 +463,8 @@
       }
     }
   },
-  "warnings": [
-    {
-      "type": "unexpected_field",
-      "field_name": "publisher",
-      "entry": "clark_mesopotamia:_1957",
-      "line": 10
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "clark_mesopotamia:_1957",
-      "line": 10
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "journal",
-      "entry": "_object_????",
-      "line": 18
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "_object_????",
-      "line": 18
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "edition",
-      "entry": "mozart_sonatas_1960",
-      "line": 32
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "publisher",
-      "entry": "mozart_sonatas_1960",
-      "line": 32
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "mozart_sonatas_1960",
-      "line": 32
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "collaborator",
-      "entry": "ratliff_mystery_1999",
-      "line": 52
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "ratliff_mystery_1999",
-      "line": 52
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "chapter",
-      "entry": "kamp_deconstructing_2006",
-      "line": 64
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "collaborator",
-      "entry": "kamp_deconstructing_2006",
-      "line": 64
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "kamp_deconstructing_2006",
-      "line": 64
+  "jabref": {
+    "meta": {
     }
-  ]
+  }
 }

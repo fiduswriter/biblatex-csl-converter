@@ -1,5 +1,79 @@
 {
-  "references": {
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "field_name": "groups",
+      "entry": "Doe-2017",
+      "line": 10
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "owner",
+      "entry": "Doe-2017",
+      "line": 10
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "Doe-2017",
+      "line": 10
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "groups",
+      "entry": "Other-",
+      "line": 18
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "owner",
+      "entry": "Other-",
+      "line": 18
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "Other-",
+      "line": 18
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "groups",
+      "entry": "Unkonw-",
+      "line": 26
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "owner",
+      "entry": "Unkonw-",
+      "line": 26
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "Unkonw-",
+      "line": 26
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "groups",
+      "entry": "Unkonw",
+      "line": 34
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "owner",
+      "entry": "Unkonw",
+      "line": 34
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "Unkonw",
+      "line": 34
+    }
+  ],
+  "entries": {
     "1": {
       "bib_type": "article",
       "entry_key": "Doe-2017",
@@ -170,113 +244,47 @@
       }
     }
   },
-  "groups": [
-    {
-      "name": "my-main-group-3",
-      "groups": [
-        {
-          "name": "my-subgroup-3",
-          "groups": [
-            {
-              "name": "sub-sub-group-3",
-              "groups": [],
-              "references": []
-            }
-          ],
-          "references": [
-            "Doe-2017",
-            "Unkonw-"
-          ]
-        },
-        {
-          "name": "my-other-subgroup-3",
-          "groups": [],
-          "references": [
-            "Other-",
-            "Unkonw-"
-          ]
-        }
-      ],
-      "references": [
-        "Unkonw"
-      ]
+  "jabref": {
+    "groups": [
+      {
+        "name": "my-main-group-3",
+        "groups": [
+          {
+            "name": "my-subgroup-3",
+            "groups": [
+              {
+                "name": "sub-sub-group-3",
+                "groups": [
+
+                ],
+                "references": [
+
+                ]
+              }
+            ],
+            "references": [
+              "Doe-2017",
+              "Unkonw-"
+            ]
+          },
+          {
+            "name": "my-other-subgroup-3",
+            "groups": [
+
+            ],
+            "references": [
+              "Other-",
+              "Unkonw-"
+            ]
+          }
+        ],
+        "references": [
+          "Unkonw"
+        ]
+      }
+    ],
+    "meta": {
+      "databaseType": "bibtex"
     }
-  ],
-  "warnings": [
-    {
-      "type": "unknown_field",
-      "field_name": "groups",
-      "entry": "Doe-2017",
-      "line": 10
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "owner",
-      "entry": "Doe-2017",
-      "line": 10
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Doe-2017",
-      "line": 10
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "groups",
-      "entry": "Other-",
-      "line": 18
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "owner",
-      "entry": "Other-",
-      "line": 18
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Other-",
-      "line": 18
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "groups",
-      "entry": "Unkonw-",
-      "line": 26
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "owner",
-      "entry": "Unkonw-",
-      "line": 26
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Unkonw-",
-      "line": 26
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "groups",
-      "entry": "Unkonw",
-      "line": 34
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "owner",
-      "entry": "Unkonw",
-      "line": 34
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Unkonw",
-      "line": 34
-    }
-  ],
-  "jabrefMeta": {
-    "databaseType": "bibtex"
   }
 }

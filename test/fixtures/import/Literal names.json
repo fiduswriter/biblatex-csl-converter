@@ -1,5 +1,13 @@
 {
-  "references": {
+  "warnings": [
+    {
+      "type": "unexpected_field",
+      "field_name": "shorttitle",
+      "entry": "sasson_increasing_2013",
+      "line": 17
+    }
+  ],
+  "entries": {
     "1": {
       "bib_type": "article",
       "entry_key": "sasson_increasing_2013",
@@ -342,12 +350,8 @@
       }
     }
   },
-  "warnings": [
-    {
-      "type": "unexpected_field",
-      "field_name": "shorttitle",
-      "entry": "sasson_increasing_2013",
-      "line": 17
+  "jabref": {
+    "meta": {
     }
-  ]
+  }
 }

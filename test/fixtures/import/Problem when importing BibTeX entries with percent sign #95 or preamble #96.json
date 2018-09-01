@@ -1,5 +1,43 @@
 {
-  "references": {
+  "warnings": [
+    {
+      "type": "unexpected_field",
+      "field_name": "file",
+      "entry": "Akhavan_2009",
+      "line": 37
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "owner",
+      "entry": "Akhavan_2009",
+      "line": 37
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "Akhavan_2009",
+      "line": 37
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "file",
+      "entry": "Akhavan_2010_quotes",
+      "line": 67
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "owner",
+      "entry": "Akhavan_2010_quotes",
+      "line": 67
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "Akhavan_2010_quotes",
+      "line": 67
+    }
+  ],
+  "entries": {
     "1": {
       "bib_type": "article",
       "entry_key": "Akhavan_2009",
@@ -259,42 +297,8 @@
       }
     }
   },
-  "warnings": [
-    {
-      "type": "unexpected_field",
-      "field_name": "file",
-      "entry": "Akhavan_2009",
-      "line": 37
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "owner",
-      "entry": "Akhavan_2009",
-      "line": 37
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Akhavan_2009",
-      "line": 37
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "file",
-      "entry": "Akhavan_2010_quotes",
-      "line": 67
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "owner",
-      "entry": "Akhavan_2010_quotes",
-      "line": 67
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Akhavan_2010_quotes",
-      "line": 67
+  "jabref": {
+    "meta": {
     }
-  ]
+  }
 }

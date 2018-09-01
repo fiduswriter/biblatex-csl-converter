@@ -1,5 +1,13 @@
 {
-  "references": {
+  "warnings": [
+    {
+      "type": "unexpected_field",
+      "field_name": "file",
+      "entry": "Adams2001",
+      "line": 11
+    }
+  ],
+  "entries": {
     "1": {
       "bib_type": "article",
       "entry_key": "Adams2001",
@@ -155,12 +163,8 @@
       }
     }
   },
-  "warnings": [
-    {
-      "type": "unexpected_field",
-      "field_name": "file",
-      "entry": "Adams2001",
-      "line": 11
+  "jabref": {
+    "meta": {
     }
-  ]
+  }
 }
