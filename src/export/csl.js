@@ -28,7 +28,7 @@ type ErrorObject = {
 }
 
 type CSLDateObject = {
-    'date-parts'?: Array<number> | [Array<number>, Array<number>];
+    'date-parts'?: [Array<number>] | [Array<number>, Array<number>];
     circa?: boolean;
 }
 
