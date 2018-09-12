@@ -906,7 +906,7 @@ export class BibLatexParser {
     }
 
     get output() {
-        console.warn('BibLatexParser.output will be deprecated in biblatex-csl-converter 2.x')
+        console.warn('BibLatexParser.output will be deprecated in biblatex-csl-converter 2.x. Use BibLatexParser.parse() instead.')
         this.replaceTeXChars()
         this.stepThroughBibtex()
         this.createBibDB()
