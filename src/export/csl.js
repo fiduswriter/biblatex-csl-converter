@@ -268,7 +268,7 @@ export class CSLExporter {
                     reformedName['suffix'] = this._reformText(name.suffix)
                 }
                 if (name.prefix) {
-                    if(name.useprefix === true) {
+                    if(name.useprefix) {
                         reformedName['non-dropping-particle'] = this._reformText(name.prefix)
                     } else {
                         reformedName['dropping-particle'] = this._reformText(name.prefix)
