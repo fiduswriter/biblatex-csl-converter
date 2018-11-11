@@ -4,7 +4,8 @@ A set of JavaScript converters: biblatex => json, json => csl, and json => bibla
 Usage:
 
 ```
-const biblatex = require('biblatex-csl-converter/src/import/biblatex')
+import {BibLatexParser} from "biblatex-csl-converter"
+
 // synchronous:
 let parser = new BibLatexParser(input, {processUnexpected: true, processUnknown: true})
 let bib = parser.parse()

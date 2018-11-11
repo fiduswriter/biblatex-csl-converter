@@ -28,7 +28,7 @@ type ErrorObject = {
 }
 
 type CSLDateObject = {
-    'date-parts'?: Array<number> | [Array<number>, Array<number>];
+    'date-parts'?: [Array<number>] | [Array<number>, Array<number>];
     circa?: boolean;
 }
 
@@ -62,6 +62,11 @@ export class CSLExporter {
     }
 
     get output() {
+        console.warn('CSLExporter.output will be deprecated in biblatex-csl-converter 2.x. Use CSLExporter.parse() instead.')
+        return this.parse()
+    }
+
+    parse() {
         for (let bibId in this.bibDB) {
             if (this.pks.indexOf(bibId) !== -1) {
                 this.cslDB[bibId] = this.getCSLEntry(bibId)
@@ -233,7 +238,7 @@ export class CSLExporter {
         } else {
             const values /*: Array<number> */ =
                 dateObj.values.slice(0,3).map(value => parseInt(value))
-            reformedDate['date-parts'] = values
+            reformedDate['date-parts'] = [values]
             if (dateObj.type === 'Interval') {
                 // Open interval that we cannot represent, so we make it circa instead.
                 reformedDate['circa'] = true
@@ -263,7 +268,7 @@ export class CSLExporter {
                     reformedName['suffix'] = this._reformText(name.suffix)
                 }
                 if (name.prefix) {
-                    if(name.useprefix === true) {
+                    if(name.useprefix) {
                         reformedName['non-dropping-particle'] = this._reformText(name.prefix)
                     } else {
                         reformedName['dropping-particle'] = this._reformText(name.prefix)

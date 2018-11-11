@@ -66,7 +66,11 @@ export class BibLatexExporter {
     }
 
     get output() {
+        console.warn('BibLatexExporter.output will be deprecated in biblatex-csl-converter 2.x. Use BibLatexExporter.parse() instead.')
+        return this.parse()
+    }
 
+    parse() {
         this.pks.forEach(pk => {
             let bib = this.bibDB[pk]
             let bibEntry /*: BibObject */ = {
