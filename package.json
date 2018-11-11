@@ -47,12 +47,12 @@
     "flow": "flow"
   },
   "devDependencies": {
-    "babel-core": "^6.26.3",
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.0.0",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/runtime": "^7.0.0",
     "babel-plugin-istanbul": "^4.1.6",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-runtime": "^6.26.0",
     "benchmark": "^2.1.4",
     "chai": "^4.1.2",
     "coveralls": "^3.0.2",
@@ -65,7 +65,7 @@
     "npm-check-updates": "^2.14.2",
     "nyc": "^13.0.1",
     "rollup": "^0.64.1",
-    "rollup-plugin-babel": "^3.0.7",
+    "rollup-plugin-babel": "^4.0.1",
     "rollup-plugin-commonjs": "^9.1.5",
     "rollup-plugin-istanbul": "^2.0.1",
     "rollup-plugin-json": "^3.0.0",
@@ -73,6 +73,7 @@
     "rollup-plugin-node-globals": "^1.2.1",
     "rollup-plugin-node-resolve": "^3.3.0",
     "rollup-plugin-strip": "^1.1.1",
-    "rollup-plugin-uglify-es": "^0.0.1"
+    "rollup-plugin-uglify-es": "^0.0.1",
+    "@babel/preset-flow": "^7.0.0"
   }
 }
