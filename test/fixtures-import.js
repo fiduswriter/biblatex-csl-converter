@@ -11,9 +11,13 @@ const clean = state => {
     if (!state[prop] || state[prop].length == 0) { delete state[prop] }
   }
 
-  if (!state.jabref.groups || state.jabref.groups.length == 0) delete state.jabref.groups
-  if (Object.keys(state.jabref.meta).length == 0) delete state.jabref.meta
-  if (Object.keys(state.jabref).length == 0) delete state.jabref
+  if (state.jabref) {
+    if (!state.jabref.groups || state.jabref.groups.length == 0) delete state.jabref.groups
+    if (!state.jabref.meta || Object.keys(state.jabref.meta).length == 0) delete state.jabref.meta
+    if (Object.keys(state.jabref).length == 0) delete state.jabref
+  } else {
+    delete state.jabref
+  }
 }
 
 const verify = bibfile => {
@@ -25,7 +29,7 @@ const verify = bibfile => {
 
   let expected = path.join(path.dirname(bibfile), name + '.json')
 // Uncomment the following line to save the results as expected test results.
-//  fs.writeFileSync(clean(expected), JSON.stringify(found, null, 2))
+  // fs.writeFileSync(expected, JSON.stringify(found, null, 2))
   expected = JSON.parse(fs.readFileSync(expected, 'utf8'))
   clean(expected)
 

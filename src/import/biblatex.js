@@ -208,8 +208,7 @@ export class BibLatexParser {
     }
 
     skipToNext() {
-        while ((this.input.length > this.pos) && (this.input[this.pos] !=
-            "@")) {
+        while ((this.input.length > this.pos) && (this.input[this.pos] != "@")) {
             this.pos++
         }
         if (this.input.length == this.pos) {
@@ -303,14 +302,16 @@ export class BibLatexParser {
         }
     }
 
-    value() {
+    value(asis /*: boolean */ = false) {
         let values = []
         values.push(this.singleValue())
         while (this.tryMatch("#")) {
             this.match("#")
             values.push(this.singleValue())
         }
-        return values.join("").replace(/[\t ]+/g, ' ').trim()
+        values = values.join("")
+        if (!asis) values = values.replace(/[\t ]+/g, ' ').trim()
+        return values
     }
 
     key(optional /*: boolean */ = false) /*: string */ {
@@ -338,7 +339,7 @@ export class BibLatexParser {
         return ''
     }
 
-    keyEqualsValue() /*: [string, string] | false */{
+    keyEqualsValue(asis /*: boolean */ = false) /*: [string, string] | false */{
         let key = this.key()
         if (!key.length) {
             const error /*: ErrorObject */ = {
@@ -355,7 +356,7 @@ export class BibLatexParser {
         this.currentKey = key.toLowerCase()
         if (this.tryMatch("=")) {
             this.match("=")
-            const val = this.value()
+            const val = this.value(asis)
             if (this.currentKey) {
                 return [this.currentKey, val]
             } else {
@@ -787,7 +788,7 @@ export class BibLatexParser {
     }
 
     string() {
-        const kv = this.keyEqualsValue()
+        const kv = this.keyEqualsValue(true)
         if (kv) {
             this.variables[kv[0].toUpperCase()] = kv[1]
         }
