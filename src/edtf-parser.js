@@ -164,7 +164,7 @@ class SimpleEDTFParser {
         let certain = true
         let year = parts[0]
 
-        let yearChecker = new RegExp('^-?[0-9]*u{0,2}$') // 1994, 19uu, -234, 187u, 0, 1984?~, etc.
+        let yearChecker = /^-?[0-9]*u{0,2}$/ // 1994, 19uu, -234, 187u, 0, 1984?~, etc.
         if (!yearChecker.test(year)) {
             this.valid = false
             return
@@ -197,7 +197,7 @@ class SimpleEDTFParser {
             this.valid = false
             return
         }
-        let monthChecker = new RegExp('^[0-2][0-9]|uu$') // uu or 01, 02, 03, ..., 11, 12
+        let monthChecker = /^[0-2][0-9]|uu$/ // uu or 01, 02, 03, ..., 11, 12
         let monthInt = parseInt(month.replace('uu','01'))
         if(
             !monthChecker.test(month) ||
@@ -236,7 +236,7 @@ class SimpleEDTFParser {
             this.valid = false
             return
         }
-        let dayChecker = new RegExp('^[0-3][0-9]$|uu') // uu or 01, 02, 03, ..., 11, 12
+        let dayChecker = /^[0-3][0-9]$|uu/ // uu or 01, 02, 03, ..., 11, 12
         let dayInt = parseInt(day.replace('uu','01'))
         if(
             !dayChecker.test(month) ||
