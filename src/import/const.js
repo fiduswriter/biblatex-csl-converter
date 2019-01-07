@@ -81,7 +81,7 @@ http://milde.users.sourceforge.net/LUCR/Math/data/unimathsymbols.txt
 http://www.w3.org/2003/entities/2007xml/unicode.xml
 http://www.w3.org/Math/characters/unicode.xml
 */
-export const TeXSpecialChars = [
+export const TeXSpecialChars /*: Array<[RegExp, string]> */ = [
   ["\\{\\\\fontencoding\\{LECO\\}\\\\selectfont\\\\char220\\}|\\\\fontencoding\\{LECO\\}\\\\selectfont\\\\char220", '\u033C'],
   ["\\{\\\\fontencoding\\{LECO\\}\\\\selectfont\\\\char225\\}|\\\\fontencoding\\{LECO\\}\\\\selectfont\\\\char225", '\u0361'],
   ["\\{\\\\fontencoding\\{LELA\\}\\\\selectfont\\\\char201\\}|\\\\fontencoding\\{LELA\\}\\\\selectfont\\\\char201", '\u013F'],
@@ -3034,4 +3034,11 @@ export const TeXSpecialChars = [
   ["\\\\l", '\u0142'],
   ["'''", '\u2034'],
   ["\\\\textasciitilde", '\\~']
-]
+].map(texChar => {
+  return [
+    (/^[a-zA-Z\\]+$/.test(texChar[0]) ?
+      new RegExp(`{(${texChar[0]})}|${texChar[0]}\\s|${texChar[0]}(?=\\W|\\_)`,'g') :
+      new RegExp(`{(${texChar[0]})}|${texChar[0]}{}|${texChar[0]}`,'g')),
+    texChar[1]
+  ]
+})
