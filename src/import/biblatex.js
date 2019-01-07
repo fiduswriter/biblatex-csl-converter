@@ -804,7 +804,7 @@ export class BibLatexParser {
         let len = TeXSpecialChars.length
         for (let i = 0; i < len; i++) {
             let texChar = TeXSpecialChars[i]
-            value = value.replace(texChar[0], texChar[1])
+            value = value.replace(texChar.tex, texChar.unicode)
         }
         // Delete multiple spaces
         this.input = value.replace(/ +(?= )/g, '')
