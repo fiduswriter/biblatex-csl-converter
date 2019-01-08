@@ -89,6 +89,8 @@ type UnknownFieldsObject = {
 
 */
 
+const hasbackslash = /\\/
+
 export class BibLatexParser {
     /*::
         input: string;
@@ -798,11 +800,11 @@ export class BibLatexParser {
         this.value()
     }
 
-
     replaceTeXChars() {
         let value = this.input
         let len = TeXSpecialChars.length
         for (let i = 0; i < len; i++) {
+            if (!hasbackslash.test(value)) break
             let texChar = TeXSpecialChars[i]
             value = value.replace(texChar.tex, texChar.unicode)
         }
