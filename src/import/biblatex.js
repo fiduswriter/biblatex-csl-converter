@@ -430,6 +430,11 @@ export class BibLatexParser {
             month = rawFields.month
             if (isNaN(parseInt(month)) && this.variables[month.toUpperCase()]) {
                 month = this.variables[month.toUpperCase()]
+            } else if (
+                typeof month.split('~').find(monthPart => isNaN(parseInt(monthPart))) === 'undefined'
+            ) {
+                // handle cases like '09~26' but not '~09' (approximate month in edtf)
+                month = month.replace(/~/g, '-')
             }
             date = `${rawFields.year}-${month}`
         } else if (rawFields.year) {
