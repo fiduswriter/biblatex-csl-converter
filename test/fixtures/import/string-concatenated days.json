@@ -1,5 +1,5 @@
 {
-  "references": {
+  "entries": {
     "1": {
       "bib_type": "article",
       "entry_key": "ingrand99:_propice_plan",
@@ -90,42 +90,42 @@
   "errors": [
     {
       "type": "unknown_uri",
-      "entry": "ingrand99:_propice_plan",
       "field_name": "url",
       "value": "http://citeseer.ist.psu.edu/507370.html;\n http://www.informatik.uni-ulm.de/ki/biundo/ECP-Papers/61-despouys.ps.gz",
+      "entry": "ingrand99:_propice_plan",
       "line": 26
     }
   ],
   "warnings": [
     {
       "type": "undefined_variable",
+      "variable": "INGRAND",
       "entry": "ingrand99:_propice_plan",
       "key": "author",
-      "variable": "INGRAND",
       "line": 4
     },
     {
       "type": "unknown_field",
-      "entry": "ingrand99:_propice_plan",
       "field_name": "citeseer-isreferncedby",
+      "entry": "ingrand99:_propice_plan",
       "line": 26
     },
     {
       "type": "unknown_field",
-      "entry": "ingrand99:_propice_plan",
       "field_name": "oai",
+      "entry": "ingrand99:_propice_plan",
       "line": 26
     },
     {
       "type": "unknown_field",
-      "entry": "ingrand99:_propice_plan",
       "field_name": "rights",
+      "entry": "ingrand99:_propice_plan",
       "line": 26
     },
     {
       "type": "unknown_field",
-      "entry": "ingrand99:_propice_plan",
       "field_name": "subject",
+      "entry": "ingrand99:_propice_plan",
       "line": 26
     }
   ]
