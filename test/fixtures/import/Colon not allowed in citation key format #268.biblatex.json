@@ -1,18 +1,4 @@
 {
-  "warnings": [
-    {
-      "type": "unexpected_field",
-      "field_name": "shorttitle",
-      "entry": "coates:1999english",
-      "line": 16
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "coates:1999english",
-      "line": 16
-    }
-  ],
   "entries": {
     "1": {
       "bib_type": "book",
@@ -123,8 +109,18 @@
       }
     }
   },
-  "jabref": {
-    "meta": {
+  "warnings": [
+    {
+      "type": "unexpected_field",
+      "field_name": "shorttitle",
+      "entry": "coates:1999english",
+      "line": 16
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "coates:1999english",
+      "line": 16
     }
-  }
+  ]
 }

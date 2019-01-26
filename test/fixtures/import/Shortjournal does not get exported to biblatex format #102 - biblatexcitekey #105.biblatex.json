@@ -1,18 +1,4 @@
 {
-  "warnings": [
-    {
-      "type": "unexpected_field",
-      "field_name": "shortjournal",
-      "entry": "Acin2006-105",
-      "line": 16
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Acin2006-105",
-      "line": 16
-    }
-  ],
   "entries": {
     "1": {
       "bib_type": "article",
@@ -151,8 +137,18 @@
       }
     }
   },
-  "jabref": {
-    "meta": {
+  "warnings": [
+    {
+      "type": "unexpected_field",
+      "field_name": "shortjournal",
+      "entry": "Acin2006-105",
+      "line": 16
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "Acin2006-105",
+      "line": 16
     }
-  }
+  ]
 }

@@ -1,468 +1,4 @@
 {
-  "warnings": [
-    {
-      "type": "unknown_field",
-      "field_name": "options",
-      "entry": "abbot3",
-      "line": 7
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "abbot3",
-      "line": 7
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "abbot1",
-      "line": 14
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "options",
-      "entry": "fixedkey",
-      "line": 29
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "shorttitle",
-      "entry": "fixedkey",
-      "line": 29
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "fixedkey",
-      "line": 29
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "almeida_reading_2013",
-      "line": 41
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "bennett_citations_2013",
-      "line": 52
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "king_have_1968",
-      "line": 62
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "options",
-      "entry": "bugreports_ApostropheOnParticle",
-      "line": 70
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "bugreports_ApostropheOnParticle",
-      "line": 70
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "bugreports_AsmJournals",
-      "line": 77
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "bugreports_DemoPageFullCiteCruftOnSubsequent",
-      "line": 84
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "bugreports_DuplicateSpaces",
-      "line": 91
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "bugreports_DuplicateSpaces3",
-      "line": 98
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "bugreports_GreekStyleProblems",
-      "line": 105
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "bugreports_ProcessorHang1",
-      "line": 112
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "bugreports_YearSuffixInHarvard1",
-      "line": 119
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "options",
-      "entry": "bugreports_parseName",
-      "line": 127
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "bugreports_parseName",
-      "line": 127
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "options",
-      "entry": "decorations_AndTermUnaffectedByNameDecorations",
-      "line": 135
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "decorations_AndTermUnaffectedByNameDecorations",
-      "line": 135
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "options",
-      "entry": "disambiguate_CitationLabelInData",
-      "line": 143
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "disambiguate_CitationLabelInData",
-      "line": 143
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "disambiguate_FailWithYearSuffix",
-      "line": 150
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "disambiguate_YearCollapseWithInstitution",
-      "line": 157
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "display_SecondFieldAlignMigratePunctuation",
-      "line": 164
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "group_ComplexNesting",
-      "line": 171
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "options",
-      "entry": "integration_DuplicateItem",
-      "line": 179
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "integration_DuplicateItem",
-      "line": 179
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "options",
-      "entry": "magic_CapitalizeFirstOccurringNameParticle",
-      "line": 187
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "magic_CapitalizeFirstOccurringNameParticle",
-      "line": 187
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "options",
-      "entry": "magic_NameParticle",
-      "line": 195
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "magic_NameParticle",
-      "line": 195
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "magic_SuppressDuplicateVariableRendering",
-      "line": 202
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "name_ArticularNameAsSortOrder",
-      "line": 209
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "name_ArticularShortFormCommaSuffix",
-      "line": 216
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "name_ArticularWithComma",
-      "line": 223
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "name_Delimiter",
-      "line": 230
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "options",
-      "entry": "name_FormattingOfParticles",
-      "line": 238
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "name_FormattingOfParticles",
-      "line": 238
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "options",
-      "entry": "name_HyphenatedNonDroppingParticle1",
-      "line": 246
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "name_HyphenatedNonDroppingParticle1",
-      "line": 246
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "name_Institution",
-      "line": 253
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "name_InstitutionDecoration",
-      "line": 260
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "options",
-      "entry": "name_MixedFormatsInitialSortOrderAllWithDecorationsEtAl",
-      "line": 268
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "name_MixedFormatsInitialSortOrderAllWithDecorationsEtAl",
-      "line": 268
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "name_MultipleLiteral",
-      "line": 275
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "options",
-      "entry": "name_ParseNames",
-      "line": 283
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "name_ParseNames",
-      "line": 283
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "name_ParsedDroppingParticleWithAffixes",
-      "line": 290
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "options",
-      "entry": "name_ParsedNonDroppingParticleWithAffixes",
-      "line": 298
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "name_ParsedNonDroppingParticleWithAffixes",
-      "line": 298
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "options",
-      "entry": "name_ParsedNonDroppingParticleWithApostrophe",
-      "line": 306
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "name_ParsedNonDroppingParticleWithApostrophe",
-      "line": 306
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "options",
-      "entry": "name_ParticleCaps1",
-      "line": 314
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "name_ParticleCaps1",
-      "line": 314
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "name_ParticleCaps3",
-      "line": 321
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "options",
-      "entry": "name_ParticleFormatting",
-      "line": 329
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "name_ParticleFormatting",
-      "line": 329
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "options",
-      "entry": "name_ParticlesDemoteNonDroppingNever",
-      "line": 337
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "name_ParticlesDemoteNonDroppingNever",
-      "line": 337
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "options",
-      "entry": "name_WesternArticularLowercase",
-      "line": 345
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "name_WesternArticularLowercase",
-      "line": 345
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "options",
-      "entry": "name_namepartAffixes",
-      "line": 353
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "name_namepartAffixes",
-      "line": 353
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "options",
-      "entry": "nameorder_Long",
-      "line": 361
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "nameorder_Long",
-      "line": 361
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "position_IbidWithSuffix",
-      "line": 368
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "sort_ChangeInNameSort",
-      "line": 375
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "sort_ChicagoYearSuffix1",
-      "line": 382
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "sort_FamilyOnly",
-      "line": 389
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "options",
-      "entry": "sort_LeadingApostropheOnNameParticle",
-      "line": 397
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "sort_LeadingApostropheOnNameParticle",
-      "line": 397
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "options",
-      "entry": "sort_NameParticleInNameSortFalse",
-      "line": 405
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "sort_NameParticleInNameSortFalse",
-      "line": 405
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "sort_NameVariable",
-      "line": 412
-    }
-  ],
   "entries": {
     "1": {
       "bib_type": "article",
@@ -4284,8 +3820,468 @@
       }
     }
   },
-  "jabref": {
-    "meta": {
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "field_name": "options",
+      "entry": "abbot3",
+      "line": 7
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "abbot3",
+      "line": 7
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "abbot1",
+      "line": 14
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "options",
+      "entry": "fixedkey",
+      "line": 29
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "shorttitle",
+      "entry": "fixedkey",
+      "line": 29
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "fixedkey",
+      "line": 29
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "almeida_reading_2013",
+      "line": 41
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "bennett_citations_2013",
+      "line": 52
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "king_have_1968",
+      "line": 62
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "options",
+      "entry": "bugreports_ApostropheOnParticle",
+      "line": 70
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "bugreports_ApostropheOnParticle",
+      "line": 70
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "bugreports_AsmJournals",
+      "line": 77
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "bugreports_DemoPageFullCiteCruftOnSubsequent",
+      "line": 84
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "bugreports_DuplicateSpaces",
+      "line": 91
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "bugreports_DuplicateSpaces3",
+      "line": 98
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "bugreports_GreekStyleProblems",
+      "line": 105
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "bugreports_ProcessorHang1",
+      "line": 112
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "bugreports_YearSuffixInHarvard1",
+      "line": 119
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "options",
+      "entry": "bugreports_parseName",
+      "line": 127
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "bugreports_parseName",
+      "line": 127
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "options",
+      "entry": "decorations_AndTermUnaffectedByNameDecorations",
+      "line": 135
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "decorations_AndTermUnaffectedByNameDecorations",
+      "line": 135
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "options",
+      "entry": "disambiguate_CitationLabelInData",
+      "line": 143
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "disambiguate_CitationLabelInData",
+      "line": 143
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "disambiguate_FailWithYearSuffix",
+      "line": 150
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "disambiguate_YearCollapseWithInstitution",
+      "line": 157
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "display_SecondFieldAlignMigratePunctuation",
+      "line": 164
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "group_ComplexNesting",
+      "line": 171
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "options",
+      "entry": "integration_DuplicateItem",
+      "line": 179
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "integration_DuplicateItem",
+      "line": 179
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "options",
+      "entry": "magic_CapitalizeFirstOccurringNameParticle",
+      "line": 187
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "magic_CapitalizeFirstOccurringNameParticle",
+      "line": 187
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "options",
+      "entry": "magic_NameParticle",
+      "line": 195
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "magic_NameParticle",
+      "line": 195
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "magic_SuppressDuplicateVariableRendering",
+      "line": 202
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "name_ArticularNameAsSortOrder",
+      "line": 209
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "name_ArticularShortFormCommaSuffix",
+      "line": 216
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "name_ArticularWithComma",
+      "line": 223
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "name_Delimiter",
+      "line": 230
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "options",
+      "entry": "name_FormattingOfParticles",
+      "line": 238
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "name_FormattingOfParticles",
+      "line": 238
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "options",
+      "entry": "name_HyphenatedNonDroppingParticle1",
+      "line": 246
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "name_HyphenatedNonDroppingParticle1",
+      "line": 246
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "name_Institution",
+      "line": 253
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "name_InstitutionDecoration",
+      "line": 260
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "options",
+      "entry": "name_MixedFormatsInitialSortOrderAllWithDecorationsEtAl",
+      "line": 268
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "name_MixedFormatsInitialSortOrderAllWithDecorationsEtAl",
+      "line": 268
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "name_MultipleLiteral",
+      "line": 275
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "options",
+      "entry": "name_ParseNames",
+      "line": 283
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "name_ParseNames",
+      "line": 283
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "name_ParsedDroppingParticleWithAffixes",
+      "line": 290
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "options",
+      "entry": "name_ParsedNonDroppingParticleWithAffixes",
+      "line": 298
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "name_ParsedNonDroppingParticleWithAffixes",
+      "line": 298
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "options",
+      "entry": "name_ParsedNonDroppingParticleWithApostrophe",
+      "line": 306
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "name_ParsedNonDroppingParticleWithApostrophe",
+      "line": 306
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "options",
+      "entry": "name_ParticleCaps1",
+      "line": 314
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "name_ParticleCaps1",
+      "line": 314
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "name_ParticleCaps3",
+      "line": 321
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "options",
+      "entry": "name_ParticleFormatting",
+      "line": 329
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "name_ParticleFormatting",
+      "line": 329
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "options",
+      "entry": "name_ParticlesDemoteNonDroppingNever",
+      "line": 337
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "name_ParticlesDemoteNonDroppingNever",
+      "line": 337
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "options",
+      "entry": "name_WesternArticularLowercase",
+      "line": 345
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "name_WesternArticularLowercase",
+      "line": 345
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "options",
+      "entry": "name_namepartAffixes",
+      "line": 353
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "name_namepartAffixes",
+      "line": 353
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "options",
+      "entry": "nameorder_Long",
+      "line": 361
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "nameorder_Long",
+      "line": 361
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "position_IbidWithSuffix",
+      "line": 368
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "sort_ChangeInNameSort",
+      "line": 375
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "sort_ChicagoYearSuffix1",
+      "line": 382
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "sort_FamilyOnly",
+      "line": 389
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "options",
+      "entry": "sort_LeadingApostropheOnNameParticle",
+      "line": 397
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "sort_LeadingApostropheOnNameParticle",
+      "line": 397
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "options",
+      "entry": "sort_NameParticleInNameSortFalse",
+      "line": 405
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "sort_NameParticleInNameSortFalse",
+      "line": 405
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "sort_NameVariable",
+      "line": 412
     }
-  }
+  ]
 }

@@ -1,19 +1,4 @@
 {
-  "warnings": [
-    {
-      "type": "undefined_variable",
-      "variable": "IEEE_J_IT",
-      "entry": "blahut_capacity",
-      "key": "journaltitle",
-      "line": 5
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "blahut_capacity",
-      "line": 11
-    }
-  ],
   "entries": {
     "1": {
       "bib_type": "article",
@@ -89,8 +74,19 @@
       }
     }
   },
-  "jabref": {
-    "meta": {
+  "warnings": [
+    {
+      "type": "undefined_variable",
+      "variable": "IEEE_J_IT",
+      "entry": "blahut_capacity",
+      "key": "journaltitle",
+      "line": 5
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "blahut_capacity",
+      "line": 11
     }
-  }
+  ]
 }

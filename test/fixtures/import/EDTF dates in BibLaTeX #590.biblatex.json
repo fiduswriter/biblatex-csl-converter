@@ -1,258 +1,4 @@
 {
-  "warnings": [
-    {
-      "type": "unexpected_field",
-      "field_name": "entrysubtype",
-      "entry": "barker1_2016_turkey",
-      "line": 15
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "rights",
-      "entry": "barker1_2016_turkey",
-      "line": 15
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "barker1_2016_turkey",
-      "line": 15
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "entrysubtype",
-      "entry": "barker2_2016_turkey",
-      "line": 30
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "rights",
-      "entry": "barker2_2016_turkey",
-      "line": 30
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "barker2_2016_turkey",
-      "line": 30
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "entrysubtype",
-      "entry": "barker3_2016_turkey",
-      "line": 45
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "rights",
-      "entry": "barker3_2016_turkey",
-      "line": 45
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "barker3_2016_turkey",
-      "line": 45
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "entrysubtype",
-      "entry": "barker4_-876_turkey",
-      "line": 60
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "rights",
-      "entry": "barker4_-876_turkey",
-      "line": 60
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "barker4_-876_turkey",
-      "line": 60
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "entrysubtype",
-      "entry": "barker5_1723_turkey",
-      "line": 75
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "rights",
-      "entry": "barker5_1723_turkey",
-      "line": 75
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "barker5_1723_turkey",
-      "line": 75
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "entrysubtype",
-      "entry": "barker6_1723_turkey",
-      "line": 90
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "rights",
-      "entry": "barker6_1723_turkey",
-      "line": 90
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "barker6_1723_turkey",
-      "line": 90
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "entrysubtype",
-      "entry": "barker7_1723_turkey",
-      "line": 105
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "rights",
-      "entry": "barker7_1723_turkey",
-      "line": 105
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "barker7_1723_turkey",
-      "line": 105
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "entrysubtype",
-      "entry": "barker8_1988_turkey",
-      "line": 120
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "rights",
-      "entry": "barker8_1988_turkey",
-      "line": 120
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "barker8_1988_turkey",
-      "line": 120
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "entrysubtype",
-      "entry": "barker9_2004_turkey",
-      "line": 135
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "rights",
-      "entry": "barker9_2004_turkey",
-      "line": 135
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "barker9_2004_turkey",
-      "line": 135
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "entrysubtype",
-      "entry": "barker10_199u_turkey",
-      "line": 150
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "rights",
-      "entry": "barker10_199u_turkey",
-      "line": 150
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "barker10_199u_turkey",
-      "line": 150
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "entrysubtype",
-      "entry": "barker11_19uu_turkey",
-      "line": 165
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "rights",
-      "entry": "barker11_19uu_turkey",
-      "line": 165
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "barker11_19uu_turkey",
-      "line": 165
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "entrysubtype",
-      "entry": "barker12_1999_turkey",
-      "line": 180
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "rights",
-      "entry": "barker12_1999_turkey",
-      "line": 180
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "barker12_1999_turkey",
-      "line": 180
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "entrysubtype",
-      "entry": "barker13_1999_turkey",
-      "line": 195
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "rights",
-      "entry": "barker13_1999_turkey",
-      "line": 195
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "barker13_1999_turkey",
-      "line": 195
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "entrysubtype",
-      "entry": "barker14_1999_turkey",
-      "line": 210
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "rights",
-      "entry": "barker14_1999_turkey",
-      "line": 210
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "barker14_1999_turkey",
-      "line": 210
-    }
-  ],
   "entries": {
     "1": {
       "bib_type": "article",
@@ -1445,8 +1191,258 @@
       }
     }
   },
-  "jabref": {
-    "meta": {
+  "warnings": [
+    {
+      "type": "unexpected_field",
+      "field_name": "entrysubtype",
+      "entry": "barker1_2016_turkey",
+      "line": 15
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "rights",
+      "entry": "barker1_2016_turkey",
+      "line": 15
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "barker1_2016_turkey",
+      "line": 15
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "entrysubtype",
+      "entry": "barker2_2016_turkey",
+      "line": 30
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "rights",
+      "entry": "barker2_2016_turkey",
+      "line": 30
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "barker2_2016_turkey",
+      "line": 30
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "entrysubtype",
+      "entry": "barker3_2016_turkey",
+      "line": 45
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "rights",
+      "entry": "barker3_2016_turkey",
+      "line": 45
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "barker3_2016_turkey",
+      "line": 45
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "entrysubtype",
+      "entry": "barker4_-876_turkey",
+      "line": 60
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "rights",
+      "entry": "barker4_-876_turkey",
+      "line": 60
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "barker4_-876_turkey",
+      "line": 60
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "entrysubtype",
+      "entry": "barker5_1723_turkey",
+      "line": 75
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "rights",
+      "entry": "barker5_1723_turkey",
+      "line": 75
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "barker5_1723_turkey",
+      "line": 75
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "entrysubtype",
+      "entry": "barker6_1723_turkey",
+      "line": 90
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "rights",
+      "entry": "barker6_1723_turkey",
+      "line": 90
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "barker6_1723_turkey",
+      "line": 90
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "entrysubtype",
+      "entry": "barker7_1723_turkey",
+      "line": 105
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "rights",
+      "entry": "barker7_1723_turkey",
+      "line": 105
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "barker7_1723_turkey",
+      "line": 105
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "entrysubtype",
+      "entry": "barker8_1988_turkey",
+      "line": 120
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "rights",
+      "entry": "barker8_1988_turkey",
+      "line": 120
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "barker8_1988_turkey",
+      "line": 120
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "entrysubtype",
+      "entry": "barker9_2004_turkey",
+      "line": 135
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "rights",
+      "entry": "barker9_2004_turkey",
+      "line": 135
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "barker9_2004_turkey",
+      "line": 135
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "entrysubtype",
+      "entry": "barker10_199u_turkey",
+      "line": 150
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "rights",
+      "entry": "barker10_199u_turkey",
+      "line": 150
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "barker10_199u_turkey",
+      "line": 150
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "entrysubtype",
+      "entry": "barker11_19uu_turkey",
+      "line": 165
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "rights",
+      "entry": "barker11_19uu_turkey",
+      "line": 165
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "barker11_19uu_turkey",
+      "line": 165
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "entrysubtype",
+      "entry": "barker12_1999_turkey",
+      "line": 180
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "rights",
+      "entry": "barker12_1999_turkey",
+      "line": 180
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "barker12_1999_turkey",
+      "line": 180
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "entrysubtype",
+      "entry": "barker13_1999_turkey",
+      "line": 195
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "rights",
+      "entry": "barker13_1999_turkey",
+      "line": 195
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "barker13_1999_turkey",
+      "line": 195
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "entrysubtype",
+      "entry": "barker14_1999_turkey",
+      "line": 210
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "rights",
+      "entry": "barker14_1999_turkey",
+      "line": 210
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "barker14_1999_turkey",
+      "line": 210
     }
-  }
+  ]
 }

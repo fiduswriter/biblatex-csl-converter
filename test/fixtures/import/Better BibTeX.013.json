@@ -1,18 +1,4 @@
 {
-  "warnings": [
-    {
-      "type": "unexpected_field",
-      "field_name": "file",
-      "entry": "id",
-      "line": 5
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "file",
-      "entry": "id2",
-      "line": 9
-    }
-  ],
   "entries": {
     "1": {
       "bib_type": "book",
@@ -45,8 +31,18 @@
       }
     }
   },
-  "jabref": {
-    "meta": {
+  "warnings": [
+    {
+      "type": "unexpected_field",
+      "field_name": "file",
+      "entry": "id",
+      "line": 5
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "file",
+      "entry": "id2",
+      "line": 9
     }
-  }
+  ]
 }

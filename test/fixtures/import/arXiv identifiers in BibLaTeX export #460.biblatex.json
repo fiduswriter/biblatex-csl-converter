@@ -1,51 +1,4 @@
 {
-  "warnings": [
-    {
-      "type": "alias_creates_duplicate_field",
-      "field": "archiveprefix",
-      "alias_of": "eprinttype",
-      "value": "arXiv",
-      "alias_of_value": "arxiv",
-      "entry": "Sen.2016.BV",
-      "line": 21
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Sen.2016.BV",
-      "line": 21
-    },
-    {
-      "type": "alias_creates_duplicate_field",
-      "field": "archiveprefix",
-      "alias_of": "eprinttype",
-      "value": "arXiv",
-      "alias_of_value": "arxiv",
-      "entry": "Smolin.2013.Classical",
-      "line": 37
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Smolin.2013.Classical",
-      "line": 37
-    },
-    {
-      "type": "alias_creates_duplicate_field",
-      "field": "archiveprefix",
-      "alias_of": "eprinttype",
-      "value": "arXiv",
-      "alias_of_value": "arxiv",
-      "entry": "Ronnow.2014.Defining",
-      "line": 58
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Ronnow.2014.Defining",
-      "line": 58
-    }
-  ],
   "entries": {
     "1": {
       "bib_type": "article",
@@ -466,8 +419,51 @@
       }
     }
   },
-  "jabref": {
-    "meta": {
+  "warnings": [
+    {
+      "type": "alias_creates_duplicate_field",
+      "field": "archiveprefix",
+      "alias_of": "eprinttype",
+      "value": "arXiv",
+      "alias_of_value": "arxiv",
+      "entry": "Sen.2016.BV",
+      "line": 21
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "Sen.2016.BV",
+      "line": 21
+    },
+    {
+      "type": "alias_creates_duplicate_field",
+      "field": "archiveprefix",
+      "alias_of": "eprinttype",
+      "value": "arXiv",
+      "alias_of_value": "arxiv",
+      "entry": "Smolin.2013.Classical",
+      "line": 37
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "Smolin.2013.Classical",
+      "line": 37
+    },
+    {
+      "type": "alias_creates_duplicate_field",
+      "field": "archiveprefix",
+      "alias_of": "eprinttype",
+      "value": "arXiv",
+      "alias_of_value": "arxiv",
+      "entry": "Ronnow.2014.Defining",
+      "line": 58
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "Ronnow.2014.Defining",
+      "line": 58
     }
-  }
+  ]
 }

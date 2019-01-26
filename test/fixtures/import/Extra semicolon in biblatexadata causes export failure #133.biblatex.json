@@ -1,84 +1,4 @@
 {
-  "warnings": [
-    {
-      "type": "unknown_field",
-      "field_name": "affiliation",
-      "entry": "ISI:000270196200011",
-      "line": 18
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "ISI:000270196200011",
-      "line": 18
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "affiliation",
-      "entry": "ISI:000270196200011",
-      "line": 44
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "author-email",
-      "entry": "ISI:000270196200011",
-      "line": 44
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "doc-delivery-number",
-      "entry": "ISI:000270196200011",
-      "line": 44
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "funding-acknowledgement",
-      "entry": "ISI:000270196200011",
-      "line": 44
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "funding-text",
-      "entry": "ISI:000270196200011",
-      "line": 44
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "journal-iso",
-      "entry": "ISI:000270196200011",
-      "line": 44
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "keywords-plus",
-      "entry": "ISI:000270196200011",
-      "line": 44
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "number-of-cited-references",
-      "entry": "ISI:000270196200011",
-      "line": 44
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "subject-category",
-      "entry": "ISI:000270196200011",
-      "line": 44
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "times-cited",
-      "entry": "ISI:000270196200011",
-      "line": 44
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "ISI:000270196200011",
-      "line": 44
-    }
-  ],
   "entries": {
     "1": {
       "bib_type": "article",
@@ -341,8 +261,84 @@
       }
     }
   },
-  "jabref": {
-    "meta": {
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "field_name": "affiliation",
+      "entry": "ISI:000270196200011",
+      "line": 18
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "ISI:000270196200011",
+      "line": 18
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "affiliation",
+      "entry": "ISI:000270196200011",
+      "line": 44
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "author-email",
+      "entry": "ISI:000270196200011",
+      "line": 44
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "doc-delivery-number",
+      "entry": "ISI:000270196200011",
+      "line": 44
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "funding-acknowledgement",
+      "entry": "ISI:000270196200011",
+      "line": 44
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "funding-text",
+      "entry": "ISI:000270196200011",
+      "line": 44
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "journal-iso",
+      "entry": "ISI:000270196200011",
+      "line": 44
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "keywords-plus",
+      "entry": "ISI:000270196200011",
+      "line": 44
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "number-of-cited-references",
+      "entry": "ISI:000270196200011",
+      "line": 44
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "subject-category",
+      "entry": "ISI:000270196200011",
+      "line": 44
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "times-cited",
+      "entry": "ISI:000270196200011",
+      "line": 44
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "ISI:000270196200011",
+      "line": 44
     }
-  }
+  ]
 }

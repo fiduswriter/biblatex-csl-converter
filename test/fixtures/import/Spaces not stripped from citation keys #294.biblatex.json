@@ -1,18 +1,4 @@
 {
-  "warnings": [
-    {
-      "type": "unexpected_field",
-      "field_name": "shortjournal",
-      "entry": "vlcek_historylatinterminology_2014",
-      "line": 15
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "vlcek_historylatinterminology_2014",
-      "line": 15
-    }
-  ],
   "entries": {
     "1": {
       "bib_type": "article",
@@ -122,8 +108,18 @@
       }
     }
   },
-  "jabref": {
-    "meta": {
+  "warnings": [
+    {
+      "type": "unexpected_field",
+      "field_name": "shortjournal",
+      "entry": "vlcek_historylatinterminology_2014",
+      "line": 15
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "vlcek_historylatinterminology_2014",
+      "line": 15
     }
-  }
+  ]
 }

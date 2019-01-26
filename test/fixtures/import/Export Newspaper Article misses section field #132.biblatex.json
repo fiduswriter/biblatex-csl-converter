@@ -1,18 +1,4 @@
 {
-  "warnings": [
-    {
-      "type": "unexpected_field",
-      "field_name": "entrysubtype",
-      "entry": "Boas2014StikordTil",
-      "line": 13
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Boas2014StikordTil",
-      "line": 13
-    }
-  ],
   "entries": {
     "1": {
       "bib_type": "article",
@@ -84,8 +70,18 @@
       }
     }
   },
-  "jabref": {
-    "meta": {
+  "warnings": [
+    {
+      "type": "unexpected_field",
+      "field_name": "entrysubtype",
+      "entry": "Boas2014StikordTil",
+      "line": 13
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "Boas2014StikordTil",
+      "line": 13
     }
-  }
+  ]
 }

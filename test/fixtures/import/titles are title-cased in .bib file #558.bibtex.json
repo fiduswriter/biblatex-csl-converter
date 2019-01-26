@@ -1,24 +1,4 @@
 {
-  "warnings": [
-    {
-      "type": "unknown_field",
-      "field_name": "pmid",
-      "entry": "araz_using_2014",
-      "line": 25
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "araz_using_2014",
-      "line": 25
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "davidson_using_2015",
-      "line": 39
-    }
-  ],
   "entries": {
     "1": {
       "bib_type": "article",
@@ -303,8 +283,24 @@
       }
     }
   },
-  "jabref": {
-    "meta": {
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "field_name": "pmid",
+      "entry": "araz_using_2014",
+      "line": 25
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "araz_using_2014",
+      "line": 25
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "davidson_using_2015",
+      "line": 39
     }
-  }
+  ]
 }

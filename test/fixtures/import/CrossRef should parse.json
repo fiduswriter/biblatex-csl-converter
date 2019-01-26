@@ -1,12 +1,4 @@
 {
-  "warnings": [
-    {
-      "type": "unexpected_field",
-      "field_name": "publisher",
-      "entry": "Peters_2004",
-      "line": 13
-    }
-  ],
   "entries": {
     "1": {
       "bib_type": "article",
@@ -78,8 +70,12 @@
       }
     }
   },
-  "jabref": {
-    "meta": {
+  "warnings": [
+    {
+      "type": "unexpected_field",
+      "field_name": "publisher",
+      "entry": "Peters_2004",
+      "line": 13
     }
-  }
+  ]
 }

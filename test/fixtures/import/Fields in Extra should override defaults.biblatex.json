@@ -1,24 +1,4 @@
 {
-  "warnings": [
-    {
-      "type": "unexpected_field",
-      "field_name": "journaltitle",
-      "entry": "simonite2013declinewikipediaeven",
-      "line": 13
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "shorttitle",
-      "entry": "simonite2013declinewikipediaeven",
-      "line": 13
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "simonite2013declinewikipediaeven",
-      "line": 13
-    }
-  ],
   "entries": {
     "1": {
       "bib_type": "post-weblog",
@@ -99,8 +79,24 @@
       }
     }
   },
-  "jabref": {
-    "meta": {
+  "warnings": [
+    {
+      "type": "unexpected_field",
+      "field_name": "journaltitle",
+      "entry": "simonite2013declinewikipediaeven",
+      "line": 13
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "shorttitle",
+      "entry": "simonite2013declinewikipediaeven",
+      "line": 13
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "simonite2013declinewikipediaeven",
+      "line": 13
     }
-  }
+  ]
 }

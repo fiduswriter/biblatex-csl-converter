@@ -1,25 +1,4 @@
 {
-  "errors": [
-    {
-      "type": "cut_off_citation",
-      "entry": "emptyreference",
-      "line": 14
-    }
-  ],
-  "warnings": [
-    {
-      "type": "unexpected_field",
-      "field_name": "file",
-      "entry": "Adams2001",
-      "line": 11
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "file",
-      "entry": "Adams2002",
-      "line": 24
-    }
-  ],
   "entries": {
     "1": {
       "bib_type": "article",
@@ -330,8 +309,25 @@
       }
     }
   },
-  "jabref": {
-    "meta": {
+  "errors": [
+    {
+      "type": "cut_off_citation",
+      "entry": "emptyreference",
+      "line": 14
     }
-  }
+  ],
+  "warnings": [
+    {
+      "type": "unexpected_field",
+      "field_name": "file",
+      "entry": "Adams2001",
+      "line": 11
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "file",
+      "entry": "Adams2002",
+      "line": 24
+    }
+  ]
 }

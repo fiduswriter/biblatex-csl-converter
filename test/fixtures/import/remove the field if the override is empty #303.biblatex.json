@@ -1,18 +1,4 @@
 {
-  "warnings": [
-    {
-      "type": "unexpected_field",
-      "field_name": "shortjournal",
-      "entry": "pattaro_dimensions_1988",
-      "line": 13
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "pattaro_dimensions_1988",
-      "line": 13
-    }
-  ],
   "entries": {
     "1": {
       "bib_type": "article",
@@ -95,8 +81,18 @@
       }
     }
   },
-  "jabref": {
-    "meta": {
+  "warnings": [
+    {
+      "type": "unexpected_field",
+      "field_name": "shortjournal",
+      "entry": "pattaro_dimensions_1988",
+      "line": 13
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "pattaro_dimensions_1988",
+      "line": 13
     }
-  }
+  ]
 }

@@ -1,18 +1,4 @@
 {
-  "warnings": [
-    {
-      "type": "unexpected_field",
-      "field_name": "file",
-      "entry": "traumNDcomputationalmodelsnoncooperative",
-      "line": 7
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "traumNDcomputationalmodelsnoncooperative",
-      "line": 7
-    }
-  ],
   "entries": {
     "1": {
       "bib_type": "unpublished",
@@ -80,8 +66,18 @@
       }
     }
   },
-  "jabref": {
-    "meta": {
+  "warnings": [
+    {
+      "type": "unexpected_field",
+      "field_name": "file",
+      "entry": "traumNDcomputationalmodelsnoncooperative",
+      "line": 7
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "traumNDcomputationalmodelsnoncooperative",
+      "line": 7
     }
-  }
+  ]
 }

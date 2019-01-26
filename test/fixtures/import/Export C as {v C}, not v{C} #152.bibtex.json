@@ -1,21 +1,4 @@
 {
-  "warnings": [
-    {
-      "type": "alias_creates_duplicate_field",
-      "field": "archiveprefix",
-      "alias_of": "eprinttype",
-      "value": "arXiv",
-      "alias_of_value": "arxiv",
-      "entry": "Procopio2014",
-      "line": 16
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Procopio2014",
-      "line": 16
-    }
-  ],
   "entries": {
     "1": {
       "bib_type": "article",
@@ -250,8 +233,21 @@
       }
     }
   },
-  "jabref": {
-    "meta": {
+  "warnings": [
+    {
+      "type": "alias_creates_duplicate_field",
+      "field": "archiveprefix",
+      "alias_of": "eprinttype",
+      "value": "arXiv",
+      "alias_of_value": "arxiv",
+      "entry": "Procopio2014",
+      "line": 16
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "Procopio2014",
+      "line": 16
     }
-  }
+  ]
 }

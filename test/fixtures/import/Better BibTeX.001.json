@@ -1,12 +1,4 @@
 {
-  "warnings": [
-    {
-      "type": "unexpected_field",
-      "field_name": "file",
-      "entry": "Adams2001",
-      "line": 11
-    }
-  ],
   "entries": {
     "1": {
       "bib_type": "article",
@@ -163,8 +155,12 @@
       }
     }
   },
-  "jabref": {
-    "meta": {
+  "warnings": [
+    {
+      "type": "unexpected_field",
+      "field_name": "file",
+      "entry": "Adams2001",
+      "line": 11
     }
-  }
+  ]
 }

@@ -1,306 +1,4 @@
 {
-  "warnings": [
-    {
-      "type": "unexpected_field",
-      "field_name": "file",
-      "entry": "Elder1935",
-      "line": 20
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "groups",
-      "entry": "Elder1935",
-      "line": 20
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "owner",
-      "entry": "Elder1935",
-      "line": 20
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "publisher",
-      "entry": "Elder1935",
-      "line": 20
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Elder1935",
-      "line": 20
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "file",
-      "entry": "Kojima1990",
-      "line": 37
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "groups",
-      "entry": "Kojima1990",
-      "line": 37
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "owner",
-      "entry": "Kojima1990",
-      "line": 37
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Kojima1990",
-      "line": 37
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "comment",
-      "entry": "Osmanski2011",
-      "line": 57
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "database",
-      "entry": "Osmanski2011",
-      "line": 57
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "file",
-      "entry": "Osmanski2011",
-      "line": 57
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "groups",
-      "entry": "Osmanski2011",
-      "line": 57
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "owner",
-      "entry": "Osmanski2011",
-      "line": 57
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Osmanski2011",
-      "line": 57
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "file",
-      "entry": "Heffner1983a",
-      "line": 73
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "groups",
-      "entry": "Heffner1983a",
-      "line": 73
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "owner",
-      "entry": "Heffner1983a",
-      "line": 73
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "publisher",
-      "entry": "Heffner1983a",
-      "line": 73
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Heffner1983a",
-      "line": 73
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "file",
-      "entry": "Coleman2009",
-      "line": 91
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "groups",
-      "entry": "Coleman2009",
-      "line": 91
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "owner",
-      "entry": "Coleman2009",
-      "line": 91
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Coleman2009",
-      "line": 91
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "file",
-      "entry": "Elder1934",
-      "line": 107
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "groups",
-      "entry": "Elder1934",
-      "line": 107
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "owner",
-      "entry": "Elder1934",
-      "line": 107
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "publisher",
-      "entry": "Elder1934",
-      "line": 107
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Elder1934",
-      "line": 107
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "comment",
-      "entry": "Pfaff2015",
-      "line": 128
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "database",
-      "entry": "Pfaff2015",
-      "line": 128
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "file",
-      "entry": "Pfaff2015",
-      "line": 128
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "groups",
-      "entry": "Pfaff2015",
-      "line": 128
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "owner",
-      "entry": "Pfaff2015",
-      "line": 128
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "publisher",
-      "entry": "Pfaff2015",
-      "line": 128
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Pfaff2015",
-      "line": 128
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "file",
-      "entry": "Ravicz2017",
-      "line": 145
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "groups",
-      "entry": "Ravicz2017",
-      "line": 145
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "owner",
-      "entry": "Ravicz2017",
-      "line": 145
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "publisher",
-      "entry": "Ravicz2017",
-      "line": 145
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Ravicz2017",
-      "line": 145
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "file",
-      "entry": "Peus2017",
-      "line": 162
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "groups",
-      "entry": "Peus2017",
-      "line": 162
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "owner",
-      "entry": "Peus2017",
-      "line": 162
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Peus2017",
-      "line": 162
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "file",
-      "entry": "Koyabu2017",
-      "line": 180
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "groups",
-      "entry": "Koyabu2017",
-      "line": 180
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "owner",
-      "entry": "Koyabu2017",
-      "line": 180
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "publisher",
-      "entry": "Koyabu2017",
-      "line": 180
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Koyabu2017",
-      "line": 180
-    }
-  ],
   "entries": {
     "1": {
       "bib_type": "article",
@@ -1453,256 +1151,456 @@
       }
     }
   },
+  "warnings": [
+    {
+      "type": "unexpected_field",
+      "field_name": "file",
+      "entry": "Elder1935",
+      "line": 20
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "groups",
+      "entry": "Elder1935",
+      "line": 20
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "owner",
+      "entry": "Elder1935",
+      "line": 20
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "publisher",
+      "entry": "Elder1935",
+      "line": 20
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "Elder1935",
+      "line": 20
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "file",
+      "entry": "Kojima1990",
+      "line": 37
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "groups",
+      "entry": "Kojima1990",
+      "line": 37
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "owner",
+      "entry": "Kojima1990",
+      "line": 37
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "Kojima1990",
+      "line": 37
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "comment",
+      "entry": "Osmanski2011",
+      "line": 57
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "database",
+      "entry": "Osmanski2011",
+      "line": 57
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "file",
+      "entry": "Osmanski2011",
+      "line": 57
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "groups",
+      "entry": "Osmanski2011",
+      "line": 57
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "owner",
+      "entry": "Osmanski2011",
+      "line": 57
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "Osmanski2011",
+      "line": 57
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "file",
+      "entry": "Heffner1983a",
+      "line": 73
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "groups",
+      "entry": "Heffner1983a",
+      "line": 73
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "owner",
+      "entry": "Heffner1983a",
+      "line": 73
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "publisher",
+      "entry": "Heffner1983a",
+      "line": 73
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "Heffner1983a",
+      "line": 73
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "file",
+      "entry": "Coleman2009",
+      "line": 91
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "groups",
+      "entry": "Coleman2009",
+      "line": 91
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "owner",
+      "entry": "Coleman2009",
+      "line": 91
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "Coleman2009",
+      "line": 91
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "file",
+      "entry": "Elder1934",
+      "line": 107
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "groups",
+      "entry": "Elder1934",
+      "line": 107
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "owner",
+      "entry": "Elder1934",
+      "line": 107
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "publisher",
+      "entry": "Elder1934",
+      "line": 107
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "Elder1934",
+      "line": 107
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "comment",
+      "entry": "Pfaff2015",
+      "line": 128
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "database",
+      "entry": "Pfaff2015",
+      "line": 128
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "file",
+      "entry": "Pfaff2015",
+      "line": 128
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "groups",
+      "entry": "Pfaff2015",
+      "line": 128
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "owner",
+      "entry": "Pfaff2015",
+      "line": 128
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "publisher",
+      "entry": "Pfaff2015",
+      "line": 128
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "Pfaff2015",
+      "line": 128
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "file",
+      "entry": "Ravicz2017",
+      "line": 145
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "groups",
+      "entry": "Ravicz2017",
+      "line": 145
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "owner",
+      "entry": "Ravicz2017",
+      "line": 145
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "publisher",
+      "entry": "Ravicz2017",
+      "line": 145
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "Ravicz2017",
+      "line": 145
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "file",
+      "entry": "Peus2017",
+      "line": 162
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "groups",
+      "entry": "Peus2017",
+      "line": 162
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "owner",
+      "entry": "Peus2017",
+      "line": 162
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "Peus2017",
+      "line": 162
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "file",
+      "entry": "Koyabu2017",
+      "line": 180
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "groups",
+      "entry": "Koyabu2017",
+      "line": 180
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "owner",
+      "entry": "Koyabu2017",
+      "line": 180
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "publisher",
+      "entry": "Koyabu2017",
+      "line": 180
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "Koyabu2017",
+      "line": 180
+    }
+  ],
   "jabref": {
     "groups": [
       {
         "name": "InPress",
-        "groups": [
-
-        ],
-        "references": [
-
-        ]
+        "groups": [],
+        "references": []
       },
       {
         "name": "MoLab Publikationen",
-        "groups": [
-
-        ],
-        "references": [
-
-        ]
+        "groups": [],
+        "references": []
       },
       {
         "name": "modelle_mittelohr",
         "groups": [
           {
             "name": "fem_mo",
-            "groups": [
-
-            ],
+            "groups": [],
             "references": [
               "Ravicz2017"
             ]
           },
           {
             "name": "mittelohr_anatomie_histo_mensch",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           },
           {
             "name": "fem_tm",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           }
         ],
-        "references": [
-
-        ]
+        "references": []
       },
       {
         "name": "implant_hg",
         "groups": [
           {
             "name": "C-DACS Cochlear",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           },
           {
             "name": "Carina-otologics",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           },
           {
             "name": "DACS-PI sonova-phonak",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           },
           {
             "name": "DDHS-MAXUM",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           },
           {
             "name": "earlens",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           },
           {
             "name": "esteem",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           },
           {
             "name": "fmt_vsb",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           },
           {
             "name": "impl_mics",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           },
           {
             "name": "Rion",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           },
           {
             "name": "SIMEHD",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           },
           {
             "name": "sonstige",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           },
           {
             "name": "TICA",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           },
           {
             "name": "tübingen",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           }
         ],
-        "references": [
-
-        ]
+        "references": []
       },
       {
         "name": "mittelohrrekonstruktion",
         "groups": [
           {
             "name": "stapesplastik",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           },
           {
             "name": "Tympanoplastik",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           },
           {
             "name": "Cholesteatom",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           },
           {
             "name": "MRT",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           }
         ],
-        "references": [
-
-        ]
+        "references": []
       },
       {
         "name": "projekte",
         "groups": [
           {
             "name": "bohrlaerm",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           },
           {
             "name": "ex-ohr",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           },
           {
             "name": "gehoer_evolution",
-            "groups": [
-
-            ],
+            "groups": [],
             "references": [
               "Kojima1990",
               "Heffner1983a"
@@ -1710,211 +1608,125 @@
           },
           {
             "name": "implant. Mikrofon",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           },
           {
             "name": "knickprothese",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           },
           {
             "name": "kraftmessung",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           },
           {
             "name": "laseraudiometrie",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           },
           {
             "name": "METF_Messtechnik",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           },
           {
             "name": "NiTi",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           },
           {
             "name": "OAE",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           },
           {
             "name": "OCT",
             "groups": [
               {
                 "name": "Klinische Studie",
-                "groups": [
-
-                ],
-                "references": [
-
-                ]
+                "groups": [],
+                "references": []
               },
               {
                 "name": "Tremor",
-                "groups": [
-
-                ],
-                "references": [
-
-                ]
+                "groups": [],
+                "references": []
               },
               {
                 "name": "VIP+",
                 "groups": [
                   {
                     "name": "Antrag",
-                    "groups": [
-
-                    ],
-                    "references": [
-
-                    ]
+                    "groups": [],
+                    "references": []
                   }
                 ],
-                "references": [
-
-                ]
+                "references": []
               },
               {
                 "name": "Viskosität",
-                "groups": [
-
-                ],
-                "references": [
-
-                ]
+                "groups": [],
+                "references": []
               }
             ],
-            "references": [
-
-            ]
+            "references": []
           },
           {
             "name": "opkontrolle",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           },
           {
             "name": "ringbandsteifg",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           },
           {
             "name": "strauss",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           },
           {
             "name": "Trommelfell",
             "groups": [
               {
                 "name": "Antrag_Cherif_DECHEMA",
-                "groups": [
-
-                ],
+                "groups": [],
                 "references": [
                   "Ravicz2017"
                 ]
               },
               {
                 "name": "FEM/Exp",
-                "groups": [
-
-                ],
-                "references": [
-
-                ]
+                "groups": [],
+                "references": []
               },
               {
                 "name": "Melt electrospinning writing",
-                "groups": [
-
-                ],
-                "references": [
-
-                ]
+                "groups": [],
+                "references": []
               },
               {
                 "name": "pressure",
-                "groups": [
-
-                ],
-                "references": [
-
-                ]
+                "groups": [],
+                "references": []
               },
               {
                 "name": "Silk",
-                "groups": [
-
-                ],
-                "references": [
-
-                ]
+                "groups": [],
+                "references": []
               },
               {
                 "name": "Tissue engineering",
-                "groups": [
-
-                ],
-                "references": [
-
-                ]
+                "groups": [],
+                "references": []
               },
               {
                 "name": "TG70_MEW",
-                "groups": [
-
-                ],
-                "references": [
-
-                ]
+                "groups": [],
+                "references": []
               }
             ],
             "references": [
@@ -1923,65 +1735,39 @@
           },
           {
             "name": "wandler",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           },
           {
             "name": "CI-Elektrode",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           }
         ],
-        "references": [
-
-        ]
+        "references": []
       },
       {
         "name": "innenohr",
         "groups": [
           {
             "name": "modelle_innenohr",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           },
           {
             "name": "messungen_innenohr",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           },
           {
             "name": "anton_cochlea_segmentation",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           },
           {
             "name": "innenohr_pathologie",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           }
         ],
         "references": [
@@ -1993,249 +1779,145 @@
         "groups": [
           {
             "name": "bone_clearing",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           },
           {
             "name": "coupler",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           },
           {
             "name": "dehnprothese",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           },
           {
             "name": "embryonal_development",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           },
           {
             "name": "friedemann_aktoren",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           },
           {
             "name": "Hammerkopffixation",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           },
           {
             "name": "multifrequenztympanometrie",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           },
           {
             "name": "op_kontrolle_horia",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           },
           {
             "name": "otitis_media",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           },
           {
             "name": "porp-parameter",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           }
         ],
-        "references": [
-
-        ]
+        "references": []
       },
       {
         "name": "round_window",
-        "groups": [
-
-        ],
-        "references": [
-
-        ]
+        "groups": [],
+        "references": []
       },
       {
         "name": "HNO-artikel",
-        "groups": [
-
-        ],
-        "references": [
-
-        ]
+        "groups": [],
+        "references": []
       },
       {
         "name": "Beli-habil",
-        "groups": [
-
-        ],
-        "references": [
-
-        ]
+        "groups": [],
+        "references": []
       },
       {
         "name": "Marie_Promotion",
         "groups": [
           {
             "name": "Marie_Pro",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           }
         ],
-        "references": [
-
-        ]
+        "references": []
       },
       {
         "name": "HNO-Update_Mittelohr15/16",
-        "groups": [
-
-        ],
-        "references": [
-
-        ]
+        "groups": [],
+        "references": []
       },
       {
         "name": "Zielparameter",
         "groups": [
           {
             "name": "VS",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           }
         ],
-        "references": [
-
-        ]
+        "references": []
       },
       {
         "name": "Steffen_Promotion",
         "groups": [
           {
             "name": "SSM",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           },
           {
             "name": "Segmentieren",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           },
           {
             "name": "Morphology_MO",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           },
           {
             "name": "preserve&stain",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           },
           {
             "name": "sensitivity",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           },
           {
             "name": "Pathology",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           },
           {
             "name": "tympanicCavity",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           },
           {
             "name": "preserve&stain",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           },
           {
             "name": "middle_ear_interspecies",
-            "groups": [
-
-            ],
+            "groups": [],
             "references": [
               "Elder1935",
               "Kojima1990",
@@ -2251,53 +1933,31 @@
           },
           {
             "name": "relevanz_gehoerlosigkeit",
-            "groups": [
-
-            ],
-            "references": [
-
-            ]
+            "groups": [],
+            "references": []
           }
         ],
-        "references": [
-
-        ]
+        "references": []
       },
       {
         "name": "Machine_learning",
-        "groups": [
-
-        ],
-        "references": [
-
-        ]
+        "groups": [],
+        "references": []
       },
       {
         "name": "Adhesion",
-        "groups": [
-
-        ],
-        "references": [
-
-        ]
+        "groups": [],
+        "references": []
       },
       {
         "name": "Marucs_paper_eigenpub",
-        "groups": [
-
-        ],
-        "references": [
-
-        ]
+        "groups": [],
+        "references": []
       },
       {
         "name": "FSL_Paper",
-        "groups": [
-
-        ],
-        "references": [
-
-        ]
+        "groups": [],
+        "references": []
       }
     ],
     "meta": {

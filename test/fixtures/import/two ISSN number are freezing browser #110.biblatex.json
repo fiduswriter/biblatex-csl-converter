@@ -1,18 +1,4 @@
 {
-  "warnings": [
-    {
-      "type": "unexpected_field",
-      "field_name": "shortjournal",
-      "entry": "Lander1989",
-      "line": 20
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Lander1989",
-      "line": 20
-    }
-  ],
   "entries": {
     "1": {
       "bib_type": "article",
@@ -162,8 +148,18 @@
       }
     }
   },
-  "jabref": {
-    "meta": {
+  "warnings": [
+    {
+      "type": "unexpected_field",
+      "field_name": "shortjournal",
+      "entry": "Lander1989",
+      "line": 20
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "Lander1989",
+      "line": 20
     }
-  }
+  ]
 }

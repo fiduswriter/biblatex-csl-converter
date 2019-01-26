@@ -1,32 +1,4 @@
 {
-  "warnings": [
-    {
-      "type": "undefined_variable",
-      "variable": "IEEE_J_PROC",
-      "entry": "test_citation1",
-      "key": "booktitle",
-      "line": 5
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "test_citation1",
-      "line": 13
-    },
-    {
-      "type": "undefined_variable",
-      "variable": "IEEE_J_PROC",
-      "entry": "test_citation2",
-      "key": "booktitle",
-      "line": 18
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "test_citation2",
-      "line": 26
-    }
-  ],
   "entries": {
     "1": {
       "bib_type": "inproceedings",
@@ -301,8 +273,32 @@
       }
     }
   },
-  "jabref": {
-    "meta": {
+  "warnings": [
+    {
+      "type": "undefined_variable",
+      "variable": "IEEE_J_PROC",
+      "entry": "test_citation1",
+      "key": "booktitle",
+      "line": 5
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "test_citation1",
+      "line": 13
+    },
+    {
+      "type": "undefined_variable",
+      "variable": "IEEE_J_PROC",
+      "entry": "test_citation2",
+      "key": "booktitle",
+      "line": 18
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "test_citation2",
+      "line": 26
     }
-  }
+  ]
 }

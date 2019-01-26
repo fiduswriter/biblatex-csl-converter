@@ -1,18 +1,4 @@
 {
-  "warnings": [
-    {
-      "type": "unexpected_field",
-      "field_name": "publisher",
-      "entry": "hess2008gromacs",
-      "line": 11
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "publisher",
-      "entry": "berendsen1995gromacs",
-      "line": 22
-    }
-  ],
   "entries": {
     "1": {
       "bib_type": "article",
@@ -448,8 +434,18 @@
       }
     }
   },
-  "jabref": {
-    "meta": {
+  "warnings": [
+    {
+      "type": "unexpected_field",
+      "field_name": "publisher",
+      "entry": "hess2008gromacs",
+      "line": 11
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "publisher",
+      "entry": "berendsen1995gromacs",
+      "line": 22
     }
-  }
+  ]
 }

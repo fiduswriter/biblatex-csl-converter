@@ -1,27 +1,4 @@
 {
-  "warnings": [
-    {
-      "type": "unknown_field",
-      "field_name": "numpages",
-      "entry": "Lysenko:2010:GMC:1839778.1839781",
-      "line": 17
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "acmid",
-      "entry": "Lysenko:2010:GMC:1839778.1839781",
-      "line": 17
-    },
-    {
-      "type": "alias_creates_duplicate_field",
-      "field": "address",
-      "alias_of": "location",
-      "value": "New York, NY, USA",
-      "alias_of_value": "Haifa, Israel",
-      "entry": "Lysenko:2010:GMC:1839778.1839781",
-      "line": 17
-    }
-  ],
   "entries": {
     "1": {
       "bib_type": "inproceedings",
@@ -147,8 +124,27 @@
       }
     }
   },
-  "jabref": {
-    "meta": {
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "field_name": "numpages",
+      "entry": "Lysenko:2010:GMC:1839778.1839781",
+      "line": 17
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "acmid",
+      "entry": "Lysenko:2010:GMC:1839778.1839781",
+      "line": 17
+    },
+    {
+      "type": "alias_creates_duplicate_field",
+      "field": "address",
+      "alias_of": "location",
+      "value": "New York, NY, USA",
+      "alias_of_value": "Haifa, Israel",
+      "entry": "Lysenko:2010:GMC:1839778.1839781",
+      "line": 17
     }
-  }
+  ]
 }

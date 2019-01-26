@@ -1,18 +1,4 @@
 {
-  "warnings": [
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Woller2011DetMultiple",
-      "line": 8
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Woller2011CTRDet",
-      "line": 16
-    }
-  ],
   "entries": {
     "1": {
       "bib_type": "thesis",
@@ -91,8 +77,18 @@
       }
     }
   },
-  "jabref": {
-    "meta": {
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "Woller2011DetMultiple",
+      "line": 8
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "Woller2011CTRDet",
+      "line": 16
     }
-  }
+  ]
 }

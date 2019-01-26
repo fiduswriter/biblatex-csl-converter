@@ -1,12 +1,4 @@
 {
-  "warnings": [
-    {
-      "type": "unexpected_field",
-      "field_name": "publisher",
-      "entry": "羊憶蓉1999人的素質提昇之重要性",
-      "line": 9
-    }
-  ],
   "entries": {
     "1": {
       "bib_type": "article",
@@ -64,8 +56,12 @@
       }
     }
   },
-  "jabref": {
-    "meta": {
+  "warnings": [
+    {
+      "type": "unexpected_field",
+      "field_name": "publisher",
+      "entry": "羊憶蓉1999人的素質提昇之重要性",
+      "line": 9
     }
-  }
+  ]
 }

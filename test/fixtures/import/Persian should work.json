@@ -20,9 +20,7 @@
               }
             ],
             "useprefix": true,
-            "family": [
-
-            ],
+            "family": [],
             "given": [
               {
                 "type": "text",
@@ -84,10 +82,6 @@
           ]
         ]
       }
-    }
-  },
-  "jabref": {
-    "meta": {
     }
   }
 }

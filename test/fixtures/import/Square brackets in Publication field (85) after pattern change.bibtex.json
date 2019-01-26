@@ -1,21 +1,4 @@
 {
-  "warnings": [
-    {
-      "type": "alias_creates_duplicate_field",
-      "field": "archiveprefix",
-      "alias_of": "eprinttype",
-      "value": "arXiv",
-      "alias_of_value": "arxiv",
-      "entry": "2014-updated",
-      "line": 17
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "2014-updated",
-      "line": 17
-    }
-  ],
   "entries": {
     "1": {
       "bib_type": "article",
@@ -128,8 +111,21 @@
       }
     }
   },
-  "jabref": {
-    "meta": {
+  "warnings": [
+    {
+      "type": "alias_creates_duplicate_field",
+      "field": "archiveprefix",
+      "alias_of": "eprinttype",
+      "value": "arXiv",
+      "alias_of_value": "arxiv",
+      "entry": "2014-updated",
+      "line": 17
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "2014-updated",
+      "line": 17
     }
-  }
+  ]
 }

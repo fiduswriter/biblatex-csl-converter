@@ -1,12 +1,4 @@
 {
-  "warnings": [
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "oecd_making_2014",
-      "line": 16
-    }
-  ],
   "entries": {
     "1": {
       "bib_type": "book",
@@ -92,8 +84,12 @@
       }
     }
   },
-  "jabref": {
-    "meta": {
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "oecd_making_2014",
+      "line": 16
     }
-  }
+  ]
 }

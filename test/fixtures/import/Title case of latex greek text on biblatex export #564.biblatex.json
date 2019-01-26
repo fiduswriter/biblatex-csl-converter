@@ -1,30 +1,4 @@
 {
-  "warnings": [
-    {
-      "type": "unexpected_field",
-      "field_name": "shortjournal",
-      "entry": "dalrimple_use_2006",
-      "line": 20
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "dalrimple_use_2006",
-      "line": 20
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "shortjournal",
-      "entry": "dalrymple_use_2006",
-      "line": 40
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "dalrymple_use_2006",
-      "line": 40
-    }
-  ],
   "entries": {
     "1": {
       "bib_type": "article",
@@ -408,8 +382,30 @@
       }
     }
   },
-  "jabref": {
-    "meta": {
+  "warnings": [
+    {
+      "type": "unexpected_field",
+      "field_name": "shortjournal",
+      "entry": "dalrimple_use_2006",
+      "line": 20
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "dalrimple_use_2006",
+      "line": 20
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "shortjournal",
+      "entry": "dalrymple_use_2006",
+      "line": 40
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "dalrymple_use_2006",
+      "line": 40
     }
-  }
+  ]
 }

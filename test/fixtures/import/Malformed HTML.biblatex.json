@@ -1,12 +1,4 @@
 {
-  "warnings": [
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "HackerManuscript-HACTRO",
-      "line": 7
-    }
-  ],
   "entries": {
     "1": {
       "bib_type": "unpublished",
@@ -112,8 +104,12 @@
       }
     }
   },
-  "jabref": {
-    "meta": {
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "HackerManuscript-HACTRO",
+      "line": 7
     }
-  }
+  ]
 }

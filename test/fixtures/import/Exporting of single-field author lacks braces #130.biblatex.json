@@ -1,18 +1,4 @@
 {
-  "warnings": [
-    {
-      "type": "unexpected_field",
-      "field_name": "shorttitle",
-      "entry": "Kolawa2007",
-      "line": 14
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Kolawa2007",
-      "line": 14
-    }
-  ],
   "entries": {
     "1": {
       "bib_type": "book",
@@ -148,8 +134,18 @@
       }
     }
   },
-  "jabref": {
-    "meta": {
+  "warnings": [
+    {
+      "type": "unexpected_field",
+      "field_name": "shorttitle",
+      "entry": "Kolawa2007",
+      "line": 14
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "Kolawa2007",
+      "line": 14
     }
-  }
+  ]
 }

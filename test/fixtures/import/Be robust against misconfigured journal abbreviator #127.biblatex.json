@@ -1,24 +1,4 @@
 {
-  "warnings": [
-    {
-      "type": "unexpected_field",
-      "field_name": "shortjournal",
-      "entry": "Yeh1985",
-      "line": 15
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "shorttitle",
-      "entry": "Yeh1985",
-      "line": 15
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Yeh1985",
-      "line": 15
-    }
-  ],
   "entries": {
     "1": {
       "bib_type": "article",
@@ -148,8 +128,24 @@
       }
     }
   },
-  "jabref": {
-    "meta": {
+  "warnings": [
+    {
+      "type": "unexpected_field",
+      "field_name": "shortjournal",
+      "entry": "Yeh1985",
+      "line": 15
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "shorttitle",
+      "entry": "Yeh1985",
+      "line": 15
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "Yeh1985",
+      "line": 15
     }
-  }
+  ]
 }

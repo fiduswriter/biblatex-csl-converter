@@ -1,12 +1,4 @@
 {
-  "warnings": [
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "HammondBortz2011ApplMathComput",
-      "line": 17
-    }
-  ],
   "entries": {
     "1": {
       "bib_type": "article",
@@ -135,8 +127,12 @@
       }
     }
   },
-  "jabref": {
-    "meta": {
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "HammondBortz2011ApplMathComput",
+      "line": 17
     }
-  }
+  ]
 }

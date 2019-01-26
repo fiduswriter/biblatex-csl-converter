@@ -1,30 +1,4 @@
 {
-  "warnings": [
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "CapEA11",
-      "line": 14
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "CumEA14",
-      "line": 32
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "shortjournal",
-      "entry": "TayEA11",
-      "line": 48
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "TayEA11",
-      "line": 48
-    }
-  ],
   "entries": {
     "1": {
       "bib_type": "inproceedings",
@@ -575,21 +549,43 @@
       }
     }
   },
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "CapEA11",
+      "line": 14
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "CumEA14",
+      "line": 32
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "shortjournal",
+      "entry": "TayEA11",
+      "line": 48
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "TayEA11",
+      "line": 48
+    }
+  ],
   "jabref": {
     "groups": [
       {
         "name": "Omit URL export when DOI present. #131",
-        "groups": [
-
-        ],
+        "groups": [],
         "references": [
           "CapEA11",
           "CumEA14",
           "TayEA11"
         ]
       }
-    ],
-    "meta": {
-    }
+    ]
   }
 }

@@ -1,54 +1,4 @@
 {
-  "warnings": [
-    {
-      "type": "unknown_field",
-      "field_name": "groups",
-      "entry": "Doe-2017",
-      "line": 10
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "owner",
-      "entry": "Doe-2017",
-      "line": 10
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Doe-2017",
-      "line": 10
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "groups",
-      "entry": "Other-",
-      "line": 18
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "owner",
-      "entry": "Other-",
-      "line": 18
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Other-",
-      "line": 18
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "owner",
-      "entry": "Unkonw-",
-      "line": 26
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Unkonw-",
-      "line": 26
-    }
-  ],
   "entries": {
     "1": {
       "bib_type": "article",
@@ -178,6 +128,56 @@
       }
     }
   },
+  "warnings": [
+    {
+      "type": "unknown_field",
+      "field_name": "groups",
+      "entry": "Doe-2017",
+      "line": 10
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "owner",
+      "entry": "Doe-2017",
+      "line": 10
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "Doe-2017",
+      "line": 10
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "groups",
+      "entry": "Other-",
+      "line": 18
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "owner",
+      "entry": "Other-",
+      "line": 18
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "Other-",
+      "line": 18
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "owner",
+      "entry": "Unkonw-",
+      "line": 26
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "Unkonw-",
+      "line": 26
+    }
+  ],
   "jabref": {
     "groups": [
       {
@@ -185,26 +185,20 @@
         "groups": [
           {
             "name": "my-subgroup-2",
-            "groups": [
-
-            ],
+            "groups": [],
             "references": [
               "Doe-2017"
             ]
           },
           {
             "name": "my-other-subgroup-2",
-            "groups": [
-
-            ],
+            "groups": [],
             "references": [
               "Other-"
             ]
           }
         ],
-        "references": [
-
-        ]
+        "references": []
       }
     ],
     "meta": {

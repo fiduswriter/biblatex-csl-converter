@@ -1,12 +1,4 @@
 {
-  "warnings": [
-    {
-      "type": "unexpected_field",
-      "field_name": "volume",
-      "entry": "ea",
-      "line": 11
-    }
-  ],
   "entries": {
     "1": {
       "bib_type": "mvreference",
@@ -69,8 +61,12 @@
       }
     }
   },
-  "jabref": {
-    "meta": {
+  "warnings": [
+    {
+      "type": "unexpected_field",
+      "field_name": "volume",
+      "entry": "ea",
+      "line": 11
     }
-  }
+  ]
 }

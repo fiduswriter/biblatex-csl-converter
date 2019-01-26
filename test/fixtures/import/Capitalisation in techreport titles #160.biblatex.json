@@ -1,18 +1,4 @@
 {
-  "warnings": [
-    {
-      "type": "unexpected_field",
-      "field_name": "shorttitle",
-      "entry": "Hald_2000",
-      "line": 10
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Hald_2000",
-      "line": 10
-    }
-  ],
   "entries": {
     "1": {
       "bib_type": "report",
@@ -204,8 +190,18 @@
       }
     }
   },
-  "jabref": {
-    "meta": {
+  "warnings": [
+    {
+      "type": "unexpected_field",
+      "field_name": "shorttitle",
+      "entry": "Hald_2000",
+      "line": 10
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "Hald_2000",
+      "line": 10
     }
-  }
+  ]
 }

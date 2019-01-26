@@ -1,84 +1,4 @@
 {
-  "warnings": [
-    {
-      "type": "unexpected_field",
-      "field_name": "origdate",
-      "entry": "latour_ny_2008",
-      "line": 15
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "origlocation",
-      "entry": "latour_ny_2008",
-      "line": 15
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "origpublisher",
-      "entry": "latour_ny_2008",
-      "line": 15
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "origtitle",
-      "entry": "latour_ny_2008",
-      "line": 15
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "shorttitle",
-      "entry": "latour_ny_2008",
-      "line": 15
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "latour_ny_2008",
-      "line": 15
-    },
-    {
-      "type": "unknown_date",
-      "field_name": "year",
-      "value": "2004 [1929]",
-      "entry": "kelsen_democratie_2004"
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "origdate",
-      "entry": "kelsen_democratie_2004",
-      "line": 37
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "origlocation",
-      "entry": "kelsen_democratie_2004",
-      "line": 37
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "origpublisher",
-      "entry": "kelsen_democratie_2004",
-      "line": 37
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "origtitle",
-      "entry": "kelsen_democratie_2004",
-      "line": 37
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "kelsen_democratie_2004",
-      "line": 37
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "year",
-      "entry": "kelsen_democratie_2004",
-      "line": 37
-    }
-  ],
   "entries": {
     "1": {
       "bib_type": "book",
@@ -296,8 +216,84 @@
       }
     }
   },
-  "jabref": {
-    "meta": {
+  "warnings": [
+    {
+      "type": "unexpected_field",
+      "field_name": "origdate",
+      "entry": "latour_ny_2008",
+      "line": 15
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "origlocation",
+      "entry": "latour_ny_2008",
+      "line": 15
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "origpublisher",
+      "entry": "latour_ny_2008",
+      "line": 15
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "origtitle",
+      "entry": "latour_ny_2008",
+      "line": 15
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "shorttitle",
+      "entry": "latour_ny_2008",
+      "line": 15
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "latour_ny_2008",
+      "line": 15
+    },
+    {
+      "type": "unknown_date",
+      "field_name": "year",
+      "value": "2004 [1929]",
+      "entry": "kelsen_democratie_2004"
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "origdate",
+      "entry": "kelsen_democratie_2004",
+      "line": 37
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "origlocation",
+      "entry": "kelsen_democratie_2004",
+      "line": 37
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "origpublisher",
+      "entry": "kelsen_democratie_2004",
+      "line": 37
+    },
+    {
+      "type": "unexpected_field",
+      "field_name": "origtitle",
+      "entry": "kelsen_democratie_2004",
+      "line": 37
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "timestamp",
+      "entry": "kelsen_democratie_2004",
+      "line": 37
+    },
+    {
+      "type": "unknown_field",
+      "field_name": "year",
+      "entry": "kelsen_democratie_2004",
+      "line": 37
     }
-  }
+  ]
 }

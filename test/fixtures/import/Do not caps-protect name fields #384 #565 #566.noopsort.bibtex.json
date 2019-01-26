@@ -6,9 +6,7 @@
       "fields": {
         "author": [
           {
-            "prefix": [
-
-            ],
+            "prefix": [],
             "useprefix": true,
             "family": [
               {
@@ -38,9 +36,7 @@
       "fields": {
         "author": [
           {
-            "prefix": [
-
-            ],
+            "prefix": [],
             "useprefix": true,
             "family": [
               {
@@ -70,9 +66,7 @@
       "fields": {
         "author": [
           {
-            "prefix": [
-
-            ],
+            "prefix": [],
             "useprefix": true,
             "family": [
               {
@@ -227,9 +221,7 @@
       "fields": {
         "author": [
           {
-            "prefix": [
-
-            ],
+            "prefix": [],
             "useprefix": true,
             "family": [
               {
@@ -804,9 +796,7 @@
       "fields": {
         "author": [
           {
-            "prefix": [
-
-            ],
+            "prefix": [],
             "useprefix": true,
             "family": [
               {
@@ -976,9 +966,7 @@
       "fields": {
         "author": [
           {
-            "prefix": [
-
-            ],
+            "prefix": [],
             "useprefix": true,
             "family": [
               {
@@ -1246,10 +1234,6 @@
           }
         ]
       }
-    }
-  },
-  "jabref": {
-    "meta": {
     }
   }
 }
