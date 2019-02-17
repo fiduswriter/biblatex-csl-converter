@@ -64,6 +64,7 @@ type ConfigObject = {
     processUnknown?: Object;
     processUnexpected?: boolean;
     processInvalidURIs?: boolean;
+    processComments?: boolean;
     async?: boolean;
 };
 
@@ -118,6 +119,7 @@ export class BibLatexParser {
             NOV: string,
             DEC: string
         };
+        comments: Array<string>;
         groupParser: GroupParser;
         groups: Array<GroupObject> | false;
         jabrefMeta: Object
@@ -139,6 +141,7 @@ export class BibLatexParser {
         this.currentType = ""
         this.errors = []
         this.warnings = []
+        this.comments = []
         // These variables are expected to be defined by some bibtex sources.
         this.variables = {
             JAN: "01",
@@ -890,8 +893,13 @@ export class BibLatexParser {
         if (this.groupParser.groups.length) {
             this.groups = this.groupParser.groups
         } else {
-          const m = comment.trim().match(/^jabref-meta: ([a-zA-Z]+):(.*);$/)
-          if (m && m[1] !== 'groupsversion') this.jabrefMeta[m[1]] = m[2].replace(/\\(.)/g, '$1')
+          comment = comment.trim()
+          const m = comment.match(/^jabref-meta: ([a-zA-Z]+):(.*);$/)
+          if (m && m[1] !== 'groupsversion') {
+            this.jabrefMeta[m[1]] = m[2].replace(/\\(.)/g, '$1')
+          } else if (comment && this.config.processComments) {
+            this.comments.push(comment)
+          }
         }
     }
 
@@ -926,6 +934,7 @@ export class BibLatexParser {
             entries: this.bibDB,
             errors: this.errors,
             warnings: this.warnings,
+            comments: this.comments,
             jabref: {
               groups: this.groups,
               meta: this.jabrefMeta,

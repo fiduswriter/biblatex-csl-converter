@@ -7,7 +7,7 @@ const fs = require('fs')
 const path = require('path')
 
 const clean = state => {
-  for (let prop of ['errors', 'warnings']) {
+  for (let prop of ['comments', 'errors', 'warnings']) {
     if (!state[prop] || state[prop].length == 0) { delete state[prop] }
   }
 
@@ -20,11 +20,11 @@ const clean = state => {
   }
 }
 
-const verify = bibfile => {
+const verify = (bibfile, processComments) => {
   let input = fs.readFileSync(bibfile, 'utf8')
   let name = path.basename(bibfile, path.extname(bibfile))
 
-  let found = converter.parse(input, {processUnexpected: true, processUnknown: true})
+  let found = converter.parse(input, {processComments, processUnexpected: true, processUnknown: true})
   clean(found)
 
   let expected = path.join(path.dirname(bibfile), name + '.json')
@@ -36,11 +36,11 @@ const verify = bibfile => {
   it(name, () => {expect(found).to.be.deep.equal(expected)})
 }
 
-const verifyAsync = bibfile => {
+const verifyAsync = (bibfile, processComments) => {
   let input = fs.readFileSync(bibfile, 'utf8')
   let name = path.basename(bibfile, path.extname(bibfile))
 
-  return converter.parse(input, {processUnexpected: true, processUnknown: true, async: true}).then((found) => {
+  return converter.parse(input, {processComments, processUnexpected: true, processUnknown: true, async: true}).then((found) => {
     clean(found)
 
     let expected = path.join(path.dirname(bibfile), name + '.json')
@@ -57,8 +57,11 @@ const promised = []
 for (let fixture of bibfiles) {
   if (path.extname(fixture) != '.bib') { continue }
 
-  verify(path.join(fixtures, fixture))
-  promised.push(verifyAsync(path.join(fixtures, fixture)))
+  fixture = path.join(fixtures, fixture)
+  const processComments = fixture.indexOf('comment') >= 0
+
+  verify(fixture, processComments)
+  promised.push(verifyAsync(fixture, processComments))
 }
 
 Promise.all(promised)
