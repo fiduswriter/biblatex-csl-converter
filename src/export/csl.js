@@ -70,7 +70,7 @@ export class CSLExporter {
         for (let bibId in this.bibDB) {
             if (this.pks.indexOf(bibId) !== -1) {
                 this.cslDB[bibId] = this.getCSLEntry(bibId)
-                this.cslDB[bibId].id = bibId
+                this.cslDB[bibId].id = this.bibDB[bibId].entry_key
             }
         }
         return this.cslDB
