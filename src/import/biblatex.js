@@ -105,7 +105,7 @@ export class BibLatexParser {
         bibDB: Object;
         errors: Array<ErrorObject>;
         warnings: Array<ErrorObject>;
-        variables: {
+        months: {
             JAN: string,
             FEB: string,
             MAR: string,
@@ -119,6 +119,7 @@ export class BibLatexParser {
             NOV: string,
             DEC: string
         };
+        strings: Object;
         comments: Array<string>;
         groupParser: GroupParser;
         groups: Array<GroupObject> | false;
@@ -142,8 +143,9 @@ export class BibLatexParser {
         this.errors = []
         this.warnings = []
         this.comments = []
+        this.strings = {}
         // These variables are expected to be defined by some bibtex sources.
-        this.variables = {
+        this.months = {
             JAN: "01",
             FEB: "02",
             MAR: "03",
@@ -284,8 +286,10 @@ export class BibLatexParser {
             return this.valueQuotes()
         } else {
             let k = this.key()
-            if (this.variables[k.toUpperCase()]) {
-                return this.variables[k.toUpperCase()]
+            if (this.strings[k.toUpperCase()]) {
+                return this.strings[k.toUpperCase()]
+            } else if (this.months[k.toUpperCase()]) {
+                return this.months[k.toUpperCase()]
             } else if (k.match("^[0-9]+$")) {
                 return k
             } else {
@@ -431,8 +435,8 @@ export class BibLatexParser {
             date = rawFields.date
         } else if (rawFields.year && rawFields.month) {
             month = rawFields.month
-            if (isNaN(parseInt(month)) && this.variables[month.toUpperCase()]) {
-                month = this.variables[month.toUpperCase()]
+            if (isNaN(parseInt(month)) && this.months[month.toUpperCase()]) {
+                month = this.months[month.toUpperCase()]
             } else if (
                 typeof month.split('~').find(monthPart => isNaN(parseInt(monthPart))) === 'undefined'
             ) {
@@ -800,7 +804,7 @@ export class BibLatexParser {
     string() {
         const kv = this.keyEqualsValue(true)
         if (kv) {
-            this.variables[kv[0].toUpperCase()] = kv[1]
+            this.strings[kv[0].toUpperCase()] = kv[1]
         }
     }
 
@@ -935,6 +939,7 @@ export class BibLatexParser {
             errors: this.errors,
             warnings: this.warnings,
             comments: this.comments,
+            strings: this.strings,
             jabref: {
               groups: this.groups,
               meta: this.jabrefMeta,

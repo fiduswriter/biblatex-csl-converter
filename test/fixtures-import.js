@@ -10,6 +10,7 @@ const clean = state => {
   for (let prop of ['comments', 'errors', 'warnings']) {
     if (!state[prop] || state[prop].length == 0) { delete state[prop] }
   }
+  if (state.strings && !Object.keys(state.strings).length) delete state.strings
 
   if (state.jabref) {
     if (!state.jabref.groups || state.jabref.groups.length == 0) delete state.jabref.groups

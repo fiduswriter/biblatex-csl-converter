@@ -29,5 +29,8 @@
         ]
       }
     }
+  },
+  "strings": {
+    "J": "a space between this "
   }
 }
