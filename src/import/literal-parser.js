@@ -13,6 +13,15 @@ const LATEX_COMMANDS = [ // commands that can can contain richtext.
     ['\\textsuperscript{', 'sup']
 ]
 
+const LATEX_NOBRACE_COMMANDS = [ // Commands that do not have a brace themselves
+    ['\\scshape', 'smallcaps'],
+    ['\\sc', 'smallcaps'],
+    ['\\bfseries', 'strong'],
+    ['\\bf', 'strong'],
+    ['\\itshape', 'em'],
+    ['\\it', 'em'],
+]
+
 const LATEX_VERBATIM_COMMANDS = [ // commands that can only contain plaintext.
     ['\\url{', 'url']
 ]
@@ -117,6 +126,20 @@ export class BibLatexLiteralParser {
                             this.currentMarks.push({type:command[1]})
                             this.textNode.marks = this.currentMarks.slice()
                             this.braceClosings.push(true)
+                            continue parseString
+                        }
+                    }
+                    for (let command of LATEX_NOBRACE_COMMANDS) {
+                        if (
+                            this.string.substring(this.si, this.si + command[0].length) === command[0] &&
+                            [' ', '\\'].includes(this.string.substring(this.si + command[0].length, this.si + command[0].length + 1))
+                        ) {
+                            this.si += command[0].length
+                            if (this.string.substring(this.si, this.si + 1) === ' ') {
+                                this.si++
+                            }
+                            this.currentMarks.push({type:command[1]})
+                            this.textNode.marks = this.currentMarks.slice()
                             continue parseString
                         }
                     }
