@@ -14,8 +14,11 @@ const LATEX_COMMANDS = [ // commands that can can contain richtext.
 ]
 
 const LATEX_NOBRACE_COMMANDS = [ // Commands that do not have a brace themselves
+    ['\\scshape', 'smallcaps'],
     ['\\sc', 'smallcaps'],
+    ['\\bfseries', 'strong'],
     ['\\bf', 'strong'],
+    ['\\itshape', 'em'],
     ['\\it', 'em'],
 ]
 
@@ -134,10 +137,8 @@ export class BibLatexLiteralParser {
                             this.si += command[0].length
                             if (this.string.substring(this.si, this.si + 1) === ' ') {
                                 this.si++
-                                console.log('removed space')
                             }
                             this.currentMarks.push({type:command[1]})
-                            console.log(this.currentMarks)
                             this.textNode.marks = this.currentMarks.slice()
                             continue parseString
                         }
