@@ -50,10 +50,13 @@
           },
           {
             "type": "text",
-            "text": " CONNIVER",
+            "text": "CONNIVER",
             "marks": [
               {
                 "type": "nocase"
+              },
+              {
+                "type": "smallcaps"
               }
             ]
           },

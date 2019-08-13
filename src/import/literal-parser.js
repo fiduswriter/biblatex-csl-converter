@@ -55,9 +55,15 @@ export class BibLatexLiteralParser {
 
     constructor(string /*: string */, cpMode /*: boolean */ = false) {
         this.string = string
+            // $FlowFixMe
+            .replace(/\{\\it(shape)? /g, LATEX_COMMANDS.find(lc => lc[1] === 'em')[0])
+            // $FlowFixMe
+            .replace(/\{\\bf(series)? /g, LATEX_COMMANDS.find(lc => lc[1] === 'strong')[0])
+            // $FlowFixMe
+            .replace(/\{\\sc(shape)? /g, LATEX_COMMANDS.find(lc => lc[1] === 'smallcaps')[0])
         this.cpMode = cpMode // Whether to consider case preservation.
         this.braceLevel = 0
-        this.slen = string.length
+        this.slen = this.string.length
         this.si = 0 // string index
         this.json = []
         this.braceClosings = []
