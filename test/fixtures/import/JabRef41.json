@@ -1,7 +1,7 @@
 {
   "entries": {
     "1": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Elder1935",
       "fields": {
         "date": "1935",
@@ -101,7 +101,7 @@
       }
     },
     "2": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Kojima1990",
       "fields": {
         "date": "1990",
@@ -194,7 +194,7 @@
       }
     },
     "3": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Osmanski2011",
       "fields": {
         "date": "2011-02",
@@ -313,7 +313,7 @@
       }
     },
     "4": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Heffner1983a",
       "fields": {
         "date": "1983",
@@ -410,7 +410,7 @@
       }
     },
     "5": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Coleman2009",
       "fields": {
         "date": "2009",
@@ -504,7 +504,7 @@
       }
     },
     "6": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Elder1934",
       "fields": {
         "date": "1934",
@@ -587,7 +587,7 @@
       }
     },
     "7": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Pfaff2015",
       "fields": {
         "date": "2015-04",
@@ -722,7 +722,7 @@
       }
     },
     "8": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Ravicz2017",
       "fields": {
         "date": "2017-05",
@@ -825,7 +825,7 @@
       }
     },
     "9": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Peus2017",
       "fields": {
         "date": "2017",
@@ -1067,7 +1067,7 @@
       }
     },
     "10": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Koyabu2017",
       "fields": {
         "date": "2017-05",

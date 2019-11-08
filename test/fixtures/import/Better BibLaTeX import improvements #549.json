@@ -1,7 +1,7 @@
 {
   "entries": {
     "1": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "1e",
       "fields": {
         "author": [
@@ -55,7 +55,7 @@
       }
     },
     "2": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "1b",
       "fields": {
         "author": [
@@ -329,7 +329,7 @@
       }
     },
     "7": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Correns1891",
       "fields": {
         "date": "1891",

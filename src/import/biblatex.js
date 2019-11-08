@@ -568,6 +568,10 @@ export class BibLatexParser {
             ) {
                 oFields = fields
                 fType = BibFieldTypes[fKey]['type']
+            } else if (fKey === 'entrysubtype' && bType['biblatex-subtype']) {
+                fType = BibFieldTypes[fKey]['type']
+                oFields = {}
+                continue iterateFields
             } else {
                 const warning /*: ErrorObject */ = {
                     type: 'unexpected_field',
@@ -759,12 +763,21 @@ export class BibLatexParser {
 
     bibType() /*: string */ {
         let biblatexType = this.currentType
+        let biblatexSubtype = this.currentRawFields.entrysubtype || false
         if (BiblatexAliasTypes[biblatexType]) {
-            biblatexType = BiblatexAliasTypes[biblatexType]
+            const aliasType = BiblatexAliasTypes[biblatexType]
+            biblatexType = aliasType[0]
+            if (aliasType.length > 1) {
+                biblatexSubtype = aliasType[1]
+            }
         }
 
         let bibType = Object.keys(BibTypes).find((bType) => {
-            return BibTypes[bType]['biblatex'] === biblatexType
+            return BibTypes[bType]['biblatex'] === biblatexType &&
+                (
+                    !biblatexSubtype ||
+                    BibTypes[bType]['biblatex-subtype'] === biblatexSubtype
+                )
         })
 
         if(typeof bibType === 'undefined') {
@@ -779,17 +792,19 @@ export class BibLatexParser {
     }
 
     createNewEntry() {
-        this.currentEntry = {
-            'bib_type': this.bibType(),
+        const currentEntry = {
+            'bib_type': '',
             'entry_key': this.key(true),
             'fields': {}
         }
         this.currentRawFields = {}
-        this.entries.push(this.currentEntry)
-        if (this.currentEntry && this.currentEntry['entry_key'].length) {
+        this.entries.push(currentEntry)
+        if (currentEntry && currentEntry['entry_key'].length) {
             this.match(",")
         }
         this.keyValueList()
+        currentEntry['bib_type'] = this.bibType()
+        this.currentEntry = currentEntry
         this.processFields()
     }
 

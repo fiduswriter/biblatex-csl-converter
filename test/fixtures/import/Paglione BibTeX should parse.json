@@ -1,7 +1,7 @@
 {
   "entries": {
     "1": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "paglione2001mapping",
       "fields": {
         "date": "2001",
@@ -174,7 +174,7 @@
       }
     },
     "2": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "jackson418nguyen",
       "fields": {
         "title": [
@@ -252,7 +252,7 @@
       }
     },
     "3": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "jackson1996hcn",
       "fields": {
         "date": "1996",
@@ -355,7 +355,7 @@
       }
     },
     "4": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "paglione1996diffuse",
       "fields": {
         "date": "1996",
@@ -448,7 +448,7 @@
       }
     },
     "5": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "paglione1995distribution",
       "fields": {
         "date": "1995",
@@ -537,7 +537,7 @@
       }
     },
     "6": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "blom1999diffuse",
       "fields": {
         "date": "1999",
@@ -628,7 +628,7 @@
       }
     },
     "7": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "smolvcic2009cosmic",
       "fields": {
         "date": "2009",
@@ -838,7 +838,7 @@
       }
     },
     "8": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "paglione1997average",
       "fields": {
         "date": "1997",
@@ -927,7 +927,7 @@
       }
     },
     "9": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "jackson1995submillimeter",
       "fields": {
         "date": "1995",
@@ -1026,7 +1026,7 @@
       }
     },
     "10": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "paglione1998interpreting",
       "fields": {
         "date": "1998",
@@ -1129,7 +1129,7 @@
       }
     },
     "11": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "smolvcic2009dust",
       "fields": {
         "date": "2009",
@@ -1326,7 +1326,7 @@
       }
     },
     "12": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "jackson1993dense",
       "fields": {
         "date": "1993",
@@ -1413,7 +1413,7 @@
       }
     },
     "13": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "paglione2004structure",
       "fields": {
         "date": "2004",
@@ -1516,7 +1516,7 @@
       }
     },
     "14": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "kraemer19972000",
       "fields": {
         "date": "1997",
@@ -1619,7 +1619,7 @@
       }
     },
     "15": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "liu2008faint",
       "fields": {
         "date": "2008",
@@ -1778,7 +1778,7 @@
       }
     },
     "16": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "paglione1995first",
       "fields": {
         "date": "1995",
@@ -1877,7 +1877,7 @@
       }
     },
     "17": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "jackson1996apj",
       "fields": {
         "date": "1996",
@@ -1954,7 +1954,7 @@
       }
     },
     "18": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "paglione1995apj",
       "fields": {
         "date": "1995",
@@ -2017,7 +2017,7 @@
       }
     },
     "19": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "paglione1716nguyen",
       "fields": {
         "date": "1716",
@@ -2096,7 +2096,7 @@
       }
     },
     "20": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "kraemer2000properties",
       "fields": {
         "date": "2000",
@@ -2199,7 +2199,7 @@
       }
     },
     "21": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "smith2000measurements",
       "fields": {
         "date": "2000",
@@ -2385,7 +2385,7 @@
       }
     },
     "23": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "smolcic2010erratum",
       "fields": {
         "date": "2010",
@@ -2583,7 +2583,7 @@
       }
     },
     "24": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "smolvcic2010erratum",
       "fields": {
         "date": "2010",
@@ -2793,7 +2793,7 @@
       }
     },
     "25": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "blom1999gamma",
       "fields": {
         "date": "1999",
@@ -2874,7 +2874,7 @@
       }
     },
     "26": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "paglione2001mapping",
       "fields": {
         "date": "2001",
@@ -3015,7 +3015,7 @@
       }
     },
     "27": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "paglionesource",
       "fields": {
         "title": [
@@ -3071,7 +3071,7 @@
       }
     },
     "28": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "smoli2009cosmic",
       "fields": {
         "date": "2009",
@@ -3354,7 +3354,7 @@
       }
     },
     "30": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "paglione1997properties",
       "fields": {
         "date": "1997",
@@ -3462,7 +3462,7 @@
       }
     },
     "32": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "paglioneumigs",
       "fields": {
         "title": [
@@ -3713,7 +3713,7 @@
       }
     },
     "36": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "bertsch1995diffuse",
       "fields": {
         "date": "1995",
@@ -4274,7 +4274,7 @@
       }
     },
     "41": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "paglione2001mapping",
       "fields": {
         "date": "2001",
@@ -4453,7 +4453,7 @@
       }
     },
     "42": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "jackson1993submillimeter",
       "fields": {
         "date": "1993",
@@ -4544,7 +4544,7 @@
       }
     },
     "43": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "paglione2012properties",
       "fields": {
         "date": "2012",
@@ -5007,7 +5007,7 @@
       }
     },
     "48": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "smoli2009dust",
       "fields": {
         "date": "2009",
@@ -5198,7 +5198,7 @@
       }
     },
     "49": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "paglionesession",
       "fields": {
         "title": [
@@ -5929,7 +5929,7 @@
       }
     },
     "55": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "smoli2010erratum",
       "fields": {
         "date": "2010",

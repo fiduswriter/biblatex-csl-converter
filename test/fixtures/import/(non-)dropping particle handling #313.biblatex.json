@@ -1,7 +1,7 @@
 {
   "entries": {
     "1": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "abbot3",
       "fields": {
         "author": [
@@ -55,7 +55,7 @@
       }
     },
     "2": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "abbot1",
       "fields": {
         "author": [
@@ -617,7 +617,7 @@
       }
     },
     "7": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "bugreports_ApostropheOnParticle",
       "fields": {
         "author": [
@@ -678,7 +678,7 @@
       }
     },
     "8": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "bugreports_AsmJournals",
       "fields": {
         "author": [
@@ -726,7 +726,7 @@
       }
     },
     "9": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "bugreports_DemoPageFullCiteCruftOnSubsequent",
       "fields": {
         "author": [
@@ -768,7 +768,7 @@
       }
     },
     "10": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "bugreports_DuplicateSpaces",
       "fields": {
         "author": [
@@ -816,7 +816,7 @@
       }
     },
     "11": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "bugreports_DuplicateSpaces3",
       "fields": {
         "author": [
@@ -864,7 +864,7 @@
       }
     },
     "12": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "bugreports_GreekStyleProblems",
       "fields": {
         "author": [
@@ -912,7 +912,7 @@
       }
     },
     "13": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "bugreports_ProcessorHang1",
       "fields": {
         "author": [
@@ -1002,7 +1002,7 @@
       }
     },
     "14": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "bugreports_YearSuffixInHarvard1",
       "fields": {
         "author": [
@@ -1044,7 +1044,7 @@
       }
     },
     "15": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "bugreports_parseName",
       "fields": {
         "author": [
@@ -1126,7 +1126,7 @@
       }
     },
     "16": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "decorations_AndTermUnaffectedByNameDecorations",
       "fields": {
         "author": [
@@ -1207,7 +1207,7 @@
       }
     },
     "17": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "disambiguate_CitationLabelInData",
       "fields": {
         "author": [
@@ -1268,7 +1268,7 @@
       }
     },
     "18": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "disambiguate_FailWithYearSuffix",
       "fields": {
         "author": [
@@ -1318,7 +1318,7 @@
       }
     },
     "19": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "disambiguate_YearCollapseWithInstitution",
       "fields": {
         "author": [
@@ -1366,7 +1366,7 @@
       }
     },
     "20": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "display_SecondFieldAlignMigratePunctuation",
       "fields": {
         "author": [
@@ -1420,7 +1420,7 @@
       }
     },
     "21": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "group_ComplexNesting",
       "fields": {
         "author": [
@@ -1468,7 +1468,7 @@
       }
     },
     "22": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "integration_DuplicateItem",
       "fields": {
         "author": [
@@ -1529,7 +1529,7 @@
       }
     },
     "23": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "magic_CapitalizeFirstOccurringNameParticle",
       "fields": {
         "author": [
@@ -1590,7 +1590,7 @@
       }
     },
     "24": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "magic_NameParticle",
       "fields": {
         "author": [
@@ -1651,7 +1651,7 @@
       }
     },
     "25": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "magic_SuppressDuplicateVariableRendering",
       "fields": {
         "author": [
@@ -1693,7 +1693,7 @@
       }
     },
     "26": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "name_ArticularNameAsSortOrder",
       "fields": {
         "author": [
@@ -1747,7 +1747,7 @@
       }
     },
     "27": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "name_ArticularShortFormCommaSuffix",
       "fields": {
         "author": [
@@ -1801,7 +1801,7 @@
       }
     },
     "28": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "name_ArticularWithComma",
       "fields": {
         "author": [
@@ -1855,7 +1855,7 @@
       }
     },
     "29": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "name_Delimiter",
       "fields": {
         "author": [
@@ -1903,7 +1903,7 @@
       }
     },
     "30": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "name_FormattingOfParticles",
       "fields": {
         "author": [
@@ -1964,7 +1964,7 @@
       }
     },
     "31": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "name_HyphenatedNonDroppingParticle1",
       "fields": {
         "author": [
@@ -2025,7 +2025,7 @@
       }
     },
     "32": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "name_Institution",
       "fields": {
         "author": [
@@ -2067,7 +2067,7 @@
       }
     },
     "33": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "name_InstitutionDecoration",
       "fields": {
         "author": [
@@ -2109,7 +2109,7 @@
       }
     },
     "34": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "name_MixedFormatsInitialSortOrderAllWithDecorationsEtAl",
       "fields": {
         "author": [
@@ -2190,7 +2190,7 @@
       }
     },
     "35": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "name_MultipleLiteral",
       "fields": {
         "author": [
@@ -2248,7 +2248,7 @@
       }
     },
     "36": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "name_ParseNames",
       "fields": {
         "author": [
@@ -2330,7 +2330,7 @@
       }
     },
     "37": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "name_ParsedDroppingParticleWithAffixes",
       "fields": {
         "author": [
@@ -2385,7 +2385,7 @@
       }
     },
     "38": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "name_ParsedNonDroppingParticleWithAffixes",
       "fields": {
         "author": [
@@ -2446,7 +2446,7 @@
       }
     },
     "39": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "name_ParsedNonDroppingParticleWithApostrophe",
       "fields": {
         "author": [
@@ -2513,7 +2513,7 @@
       }
     },
     "40": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "name_ParticleCaps1",
       "fields": {
         "author": [
@@ -2630,7 +2630,7 @@
       }
     },
     "41": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "name_ParticleCaps3",
       "fields": {
         "author": [
@@ -2678,7 +2678,7 @@
       }
     },
     "42": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "name_ParticleFormatting",
       "fields": {
         "author": [
@@ -2739,7 +2739,7 @@
       }
     },
     "43": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "name_ParticlesDemoteNonDroppingNever",
       "fields": {
         "author": [
@@ -3234,7 +3234,7 @@
       }
     },
     "44": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "name_WesternArticularLowercase",
       "fields": {
         "author": [
@@ -3295,7 +3295,7 @@
       }
     },
     "45": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "name_namepartAffixes",
       "fields": {
         "author": [
@@ -3362,7 +3362,7 @@
       }
     },
     "46": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "nameorder_Long",
       "fields": {
         "author": [
@@ -3429,7 +3429,7 @@
       }
     },
     "47": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "position_IbidWithSuffix",
       "fields": {
         "author": [
@@ -3477,7 +3477,7 @@
       }
     },
     "48": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "sort_ChangeInNameSort",
       "fields": {
         "author": [
@@ -3525,7 +3525,7 @@
       }
     },
     "49": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "sort_ChicagoYearSuffix1",
       "fields": {
         "author": [
@@ -3581,7 +3581,7 @@
       }
     },
     "50": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "sort_FamilyOnly",
       "fields": {
         "author": [
@@ -3629,7 +3629,7 @@
       }
     },
     "51": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "sort_LeadingApostropheOnNameParticle",
       "fields": {
         "author": [
@@ -3711,7 +3711,7 @@
       }
     },
     "52": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "sort_NameParticleInNameSortFalse",
       "fields": {
         "author": [
@@ -3772,7 +3772,7 @@
       }
     },
     "53": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "sort_NameVariable",
       "fields": {
         "author": [

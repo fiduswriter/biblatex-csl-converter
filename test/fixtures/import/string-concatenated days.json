@@ -1,7 +1,7 @@
 {
   "entries": {
     "1": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "ingrand99:_propice_plan",
       "fields": {
         "date": "1999-08-13",
@@ -100,7 +100,6 @@
     {
       "type": "undefined_variable",
       "variable": "INGRAND",
-      "entry": "ingrand99:_propice_plan",
       "key": "author",
       "line": 4
     },

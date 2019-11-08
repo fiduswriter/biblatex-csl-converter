@@ -1,7 +1,7 @@
 {
   "entries": {
     "1": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "tusseau_critique_2009",
       "fields": {
         "date": "2009",
@@ -90,7 +90,7 @@
       }
     },
     "2": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "searle_how_1964",
       "fields": {
         "date": "1964",

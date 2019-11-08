@@ -1,7 +1,7 @@
 {
   "entries": {
     "1": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "kenne07",
       "fields": {
         "date": "2007",
@@ -332,7 +332,7 @@
       }
     },
     "5": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "desw98",
       "fields": {
         "date": "1998",

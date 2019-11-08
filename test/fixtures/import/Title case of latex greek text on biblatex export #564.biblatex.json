@@ -1,7 +1,7 @@
 {
   "entries": {
     "1": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "dalrimple_use_2006",
       "fields": {
         "date": "2006",
@@ -185,7 +185,7 @@
       }
     },
     "2": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "dalrymple_use_2006",
       "fields": {
         "date": "2006",

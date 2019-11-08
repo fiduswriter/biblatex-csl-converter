@@ -1,7 +1,7 @@
 {
   "entries": {
     "1": {
-      "bib_type": "article",
+      "bib_type": "article-newspaper",
       "entry_key": "barker1_2016_turkey",
       "fields": {
         "date": "2016-07-18T20:26:06",
@@ -62,14 +62,6 @@
         "url": "http://www.abc.net.au/news/2016-07-18/turkey-coup-attempt-shows-division-over-wish-for-islamist-rule/7639292",
         "urldate": "2016-07-24"
       },
-      "unexpected_fields": {
-        "entrysubtype": [
-          {
-            "type": "text",
-            "text": "newspaper"
-          }
-        ]
-      },
       "unknown_fields": {
         "rights": [
           {
@@ -86,7 +78,7 @@
       }
     },
     "2": {
-      "bib_type": "article",
+      "bib_type": "article-newspaper",
       "entry_key": "barker2_2016_turkey",
       "fields": {
         "date": "2016-07-18T20:26:06+10:00",
@@ -147,14 +139,6 @@
         "url": "http://www.abc.net.au/news/2016-07-18/turkey-coup-attempt-shows-division-over-wish-for-islamist-rule/7639292",
         "urldate": "2016-07-24"
       },
-      "unexpected_fields": {
-        "entrysubtype": [
-          {
-            "type": "text",
-            "text": "newspaper"
-          }
-        ]
-      },
       "unknown_fields": {
         "rights": [
           {
@@ -171,7 +155,7 @@
       }
     },
     "3": {
-      "bib_type": "article",
+      "bib_type": "article-newspaper",
       "entry_key": "barker3_2016_turkey",
       "fields": {
         "date": "2016-07-18T20:26:06Z",
@@ -232,14 +216,6 @@
         "url": "http://www.abc.net.au/news/2016-07-18/turkey-coup-attempt-shows-division-over-wish-for-islamist-rule/7639292",
         "urldate": "2016-07-24"
       },
-      "unexpected_fields": {
-        "entrysubtype": [
-          {
-            "type": "text",
-            "text": "newspaper"
-          }
-        ]
-      },
       "unknown_fields": {
         "rights": [
           {
@@ -256,7 +232,7 @@
       }
     },
     "4": {
-      "bib_type": "article",
+      "bib_type": "article-newspaper",
       "entry_key": "barker4_-876_turkey",
       "fields": {
         "date": "-876",
@@ -317,14 +293,6 @@
         "url": "http://www.abc.net.au/news/2016-07-18/turkey-coup-attempt-shows-division-over-wish-for-islamist-rule/7639292",
         "urldate": "2016-07-24"
       },
-      "unexpected_fields": {
-        "entrysubtype": [
-          {
-            "type": "text",
-            "text": "newspaper"
-          }
-        ]
-      },
       "unknown_fields": {
         "rights": [
           {
@@ -341,7 +309,7 @@
       }
     },
     "5": {
-      "bib_type": "article",
+      "bib_type": "article-newspaper",
       "entry_key": "barker5_1723_turkey",
       "fields": {
         "date": "1723~",
@@ -402,14 +370,6 @@
         "url": "http://www.abc.net.au/news/2016-07-18/turkey-coup-attempt-shows-division-over-wish-for-islamist-rule/7639292",
         "urldate": "2016-07-24"
       },
-      "unexpected_fields": {
-        "entrysubtype": [
-          {
-            "type": "text",
-            "text": "newspaper"
-          }
-        ]
-      },
       "unknown_fields": {
         "rights": [
           {
@@ -426,7 +386,7 @@
       }
     },
     "6": {
-      "bib_type": "article",
+      "bib_type": "article-newspaper",
       "entry_key": "barker6_1723_turkey",
       "fields": {
         "date": "1723?",
@@ -487,14 +447,6 @@
         "url": "http://www.abc.net.au/news/2016-07-18/turkey-coup-attempt-shows-division-over-wish-for-islamist-rule/7639292",
         "urldate": "2016-07-24"
       },
-      "unexpected_fields": {
-        "entrysubtype": [
-          {
-            "type": "text",
-            "text": "newspaper"
-          }
-        ]
-      },
       "unknown_fields": {
         "rights": [
           {
@@ -511,7 +463,7 @@
       }
     },
     "7": {
-      "bib_type": "article",
+      "bib_type": "article-newspaper",
       "entry_key": "barker7_1723_turkey",
       "fields": {
         "date": "1723?~",
@@ -572,14 +524,6 @@
         "url": "http://www.abc.net.au/news/2016-07-18/turkey-coup-attempt-shows-division-over-wish-for-islamist-rule/7639292",
         "urldate": "2016-07-24"
       },
-      "unexpected_fields": {
-        "entrysubtype": [
-          {
-            "type": "text",
-            "text": "newspaper"
-          }
-        ]
-      },
       "unknown_fields": {
         "rights": [
           {
@@ -596,7 +540,7 @@
       }
     },
     "8": {
-      "bib_type": "article",
+      "bib_type": "article-newspaper",
       "entry_key": "barker8_1988_turkey",
       "fields": {
         "date": "1988/1992",
@@ -657,14 +601,6 @@
         "url": "http://www.abc.net.au/news/2016-07-18/turkey-coup-attempt-shows-division-over-wish-for-islamist-rule/7639292",
         "urldate": "2016-07-24"
       },
-      "unexpected_fields": {
-        "entrysubtype": [
-          {
-            "type": "text",
-            "text": "newspaper"
-          }
-        ]
-      },
       "unknown_fields": {
         "rights": [
           {
@@ -681,7 +617,7 @@
       }
     },
     "9": {
-      "bib_type": "article",
+      "bib_type": "article-newspaper",
       "entry_key": "barker9_2004_turkey",
       "fields": {
         "date": "2004-22",
@@ -742,14 +678,6 @@
         "url": "http://www.abc.net.au/news/2016-07-18/turkey-coup-attempt-shows-division-over-wish-for-islamist-rule/7639292",
         "urldate": "2016-07-24"
       },
-      "unexpected_fields": {
-        "entrysubtype": [
-          {
-            "type": "text",
-            "text": "newspaper"
-          }
-        ]
-      },
       "unknown_fields": {
         "rights": [
           {
@@ -766,7 +694,7 @@
       }
     },
     "10": {
-      "bib_type": "article",
+      "bib_type": "article-newspaper",
       "entry_key": "barker10_199u_turkey",
       "fields": {
         "date": "1990/1999",
@@ -827,14 +755,6 @@
         "url": "http://www.abc.net.au/news/2016-07-18/turkey-coup-attempt-shows-division-over-wish-for-islamist-rule/7639292",
         "urldate": "2016-07-24"
       },
-      "unexpected_fields": {
-        "entrysubtype": [
-          {
-            "type": "text",
-            "text": "newspaper"
-          }
-        ]
-      },
       "unknown_fields": {
         "rights": [
           {
@@ -851,7 +771,7 @@
       }
     },
     "11": {
-      "bib_type": "article",
+      "bib_type": "article-newspaper",
       "entry_key": "barker11_19uu_turkey",
       "fields": {
         "date": "1900/1999",
@@ -912,14 +832,6 @@
         "url": "http://www.abc.net.au/news/2016-07-18/turkey-coup-attempt-shows-division-over-wish-for-islamist-rule/7639292",
         "urldate": "2016-07-24"
       },
-      "unexpected_fields": {
-        "entrysubtype": [
-          {
-            "type": "text",
-            "text": "newspaper"
-          }
-        ]
-      },
       "unknown_fields": {
         "rights": [
           {
@@ -936,7 +848,7 @@
       }
     },
     "12": {
-      "bib_type": "article",
+      "bib_type": "article-newspaper",
       "entry_key": "barker12_1999_turkey",
       "fields": {
         "date": "1999",
@@ -997,14 +909,6 @@
         "url": "http://www.abc.net.au/news/2016-07-18/turkey-coup-attempt-shows-division-over-wish-for-islamist-rule/7639292",
         "urldate": "2016-07-24"
       },
-      "unexpected_fields": {
-        "entrysubtype": [
-          {
-            "type": "text",
-            "text": "newspaper"
-          }
-        ]
-      },
       "unknown_fields": {
         "rights": [
           {
@@ -1021,7 +925,7 @@
       }
     },
     "13": {
-      "bib_type": "article",
+      "bib_type": "article-newspaper",
       "entry_key": "barker13_1999_turkey",
       "fields": {
         "date": "1999-01",
@@ -1082,14 +986,6 @@
         "url": "http://www.abc.net.au/news/2016-07-18/turkey-coup-attempt-shows-division-over-wish-for-islamist-rule/7639292",
         "urldate": "2016-07-24"
       },
-      "unexpected_fields": {
-        "entrysubtype": [
-          {
-            "type": "text",
-            "text": "newspaper"
-          }
-        ]
-      },
       "unknown_fields": {
         "rights": [
           {
@@ -1106,7 +1002,7 @@
       }
     },
     "14": {
-      "bib_type": "article",
+      "bib_type": "article-newspaper",
       "entry_key": "barker14_1999_turkey",
       "fields": {
         "date": "1999",
@@ -1167,14 +1063,6 @@
         "url": "http://www.abc.net.au/news/2016-07-18/turkey-coup-attempt-shows-division-over-wish-for-islamist-rule/7639292",
         "urldate": "2016-07-24"
       },
-      "unexpected_fields": {
-        "entrysubtype": [
-          {
-            "type": "text",
-            "text": "newspaper"
-          }
-        ]
-      },
       "unknown_fields": {
         "rights": [
           {
@@ -1193,12 +1081,6 @@
   },
   "warnings": [
     {
-      "type": "unexpected_field",
-      "field_name": "entrysubtype",
-      "entry": "barker1_2016_turkey",
-      "line": 15
-    },
-    {
       "type": "unknown_field",
       "field_name": "rights",
       "entry": "barker1_2016_turkey",
@@ -1209,12 +1091,6 @@
       "field_name": "timestamp",
       "entry": "barker1_2016_turkey",
       "line": 15
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "entrysubtype",
-      "entry": "barker2_2016_turkey",
-      "line": 30
     },
     {
       "type": "unknown_field",
@@ -1229,12 +1105,6 @@
       "line": 30
     },
     {
-      "type": "unexpected_field",
-      "field_name": "entrysubtype",
-      "entry": "barker3_2016_turkey",
-      "line": 45
-    },
-    {
       "type": "unknown_field",
       "field_name": "rights",
       "entry": "barker3_2016_turkey",
@@ -1245,12 +1115,6 @@
       "field_name": "timestamp",
       "entry": "barker3_2016_turkey",
       "line": 45
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "entrysubtype",
-      "entry": "barker4_-876_turkey",
-      "line": 60
     },
     {
       "type": "unknown_field",
@@ -1265,12 +1129,6 @@
       "line": 60
     },
     {
-      "type": "unexpected_field",
-      "field_name": "entrysubtype",
-      "entry": "barker5_1723_turkey",
-      "line": 75
-    },
-    {
       "type": "unknown_field",
       "field_name": "rights",
       "entry": "barker5_1723_turkey",
@@ -1281,12 +1139,6 @@
       "field_name": "timestamp",
       "entry": "barker5_1723_turkey",
       "line": 75
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "entrysubtype",
-      "entry": "barker6_1723_turkey",
-      "line": 90
     },
     {
       "type": "unknown_field",
@@ -1301,12 +1153,6 @@
       "line": 90
     },
     {
-      "type": "unexpected_field",
-      "field_name": "entrysubtype",
-      "entry": "barker7_1723_turkey",
-      "line": 105
-    },
-    {
       "type": "unknown_field",
       "field_name": "rights",
       "entry": "barker7_1723_turkey",
@@ -1317,12 +1163,6 @@
       "field_name": "timestamp",
       "entry": "barker7_1723_turkey",
       "line": 105
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "entrysubtype",
-      "entry": "barker8_1988_turkey",
-      "line": 120
     },
     {
       "type": "unknown_field",
@@ -1337,12 +1177,6 @@
       "line": 120
     },
     {
-      "type": "unexpected_field",
-      "field_name": "entrysubtype",
-      "entry": "barker9_2004_turkey",
-      "line": 135
-    },
-    {
       "type": "unknown_field",
       "field_name": "rights",
       "entry": "barker9_2004_turkey",
@@ -1353,12 +1187,6 @@
       "field_name": "timestamp",
       "entry": "barker9_2004_turkey",
       "line": 135
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "entrysubtype",
-      "entry": "barker10_199u_turkey",
-      "line": 150
     },
     {
       "type": "unknown_field",
@@ -1373,12 +1201,6 @@
       "line": 150
     },
     {
-      "type": "unexpected_field",
-      "field_name": "entrysubtype",
-      "entry": "barker11_19uu_turkey",
-      "line": 165
-    },
-    {
       "type": "unknown_field",
       "field_name": "rights",
       "entry": "barker11_19uu_turkey",
@@ -1389,12 +1211,6 @@
       "field_name": "timestamp",
       "entry": "barker11_19uu_turkey",
       "line": 165
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "entrysubtype",
-      "entry": "barker12_1999_turkey",
-      "line": 180
     },
     {
       "type": "unknown_field",
@@ -1409,12 +1225,6 @@
       "line": 180
     },
     {
-      "type": "unexpected_field",
-      "field_name": "entrysubtype",
-      "entry": "barker13_1999_turkey",
-      "line": 195
-    },
-    {
       "type": "unknown_field",
       "field_name": "rights",
       "entry": "barker13_1999_turkey",
@@ -1425,12 +1235,6 @@
       "field_name": "timestamp",
       "entry": "barker13_1999_turkey",
       "line": 195
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "entrysubtype",
-      "entry": "barker14_1999_turkey",
-      "line": 210
     },
     {
       "type": "unknown_field",

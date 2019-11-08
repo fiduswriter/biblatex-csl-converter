@@ -1,7 +1,7 @@
 {
   "entries": {
     "1": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "smolvcic2009dust",
       "fields": {
         "title": [
@@ -174,8 +174,7 @@
             "text": "690"
           }
         ]
-      },
-      "incomplete": true
+      }
     }
   },
   "errors": [
@@ -185,12 +184,10 @@
     },
     {
       "type": "cut_off_citation",
-      "entry": "smolvcic2009dust",
       "line": 7
     },
     {
       "type": "key_value_error",
-      "entry": "smolvcic2009dust",
       "line": 7
     },
     {

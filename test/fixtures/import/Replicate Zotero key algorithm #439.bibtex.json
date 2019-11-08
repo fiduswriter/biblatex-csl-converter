@@ -285,7 +285,6 @@
     {
       "type": "undefined_variable",
       "variable": "GitHub",
-      "entry": "firstname_retorquere_replicate_2015",
       "key": "journal",
       "line": 6
     },
@@ -304,7 +303,7 @@
     {
       "type": "undefined_variable",
       "variable": "GitHub",
-      "entry": "retorquere_replicate_2016",
+      "entry": "firstname_retorquere_replicate_2015",
       "key": "journal",
       "line": 17
     },
@@ -323,7 +322,7 @@
     {
       "type": "undefined_variable",
       "variable": "GitHub",
-      "entry": "retorquere-double_replicate_????",
+      "entry": "retorquere_replicate_2016",
       "key": "journal",
       "line": 28
     },

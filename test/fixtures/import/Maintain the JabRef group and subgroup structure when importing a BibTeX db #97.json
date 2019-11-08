@@ -1,7 +1,7 @@
 {
   "entries": {
     "1": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Abu-Zeid_1986",
       "fields": {
         "date": "1986",
@@ -152,7 +152,7 @@
       }
     },
     "2": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Adachi_1989",
       "fields": {
         "date": "1989-01",
@@ -262,7 +262,7 @@
       }
     },
     "3": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Agekyan_1974",
       "fields": {
         "date": "1974",
@@ -400,7 +400,7 @@
       }
     },
     "4": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Agekyan_1975",
       "fields": {
         "date": "1975",
@@ -542,7 +542,7 @@
       }
     },
     "5": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Agekyan_1975_B",
       "fields": {
         "date": "1975",
@@ -637,7 +637,7 @@
       }
     },
     "6": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Agekyan_1977",
       "fields": {
         "date": "1977",
@@ -709,7 +709,7 @@
       }
     },
     "7": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Agekyan_1981",
       "fields": {
         "date": "1981",
@@ -818,7 +818,7 @@
       }
     },
     "8": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Aggarwal_1997",
       "fields": {
         "date": "1997",
@@ -1029,7 +1029,7 @@
       }
     },
     "10": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Akhavan_2009",
       "fields": {
         "date": "2009",
@@ -1158,7 +1158,7 @@
       }
     },
     "11": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Akimoto_2006",
       "fields": {
         "date": "2006",
@@ -1343,7 +1343,7 @@
       }
     },
     "12": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Al-Kuhaili_2008",
       "fields": {
         "date": "2008",
@@ -1480,7 +1480,7 @@
       }
     },
     "13": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Altarawneh_2010",
       "fields": {
         "date": "2010-05",
@@ -1731,7 +1731,7 @@
       }
     },
     "14": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Amekura_1995",
       "fields": {
         "date": "1995",
@@ -1854,7 +1854,7 @@
       }
     },
     "15": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Amekura_2006",
       "fields": {
         "date": "2006",
@@ -2024,7 +2024,7 @@
       }
     },
     "16": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Anderson_1952",
       "fields": {
         "date": "1952",
@@ -2110,7 +2110,7 @@
       }
     },
     "17": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Andrievskii_1953",
       "fields": {
         "date": "1953",
@@ -2197,7 +2197,7 @@
       }
     },
     "18": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Andrievskii_1967",
       "fields": {
         "date": "1967",
@@ -2336,7 +2336,7 @@
       }
     },
     "19": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Angello_1942",
       "fields": {
         "date": "1942",
@@ -2416,7 +2416,7 @@
       }
     },
     "20": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Antony_2007",
       "fields": {
         "date": "2007",
@@ -2602,7 +2602,7 @@
       }
     },
     "21": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Apfel_1960",
       "fields": {
         "date": "1960",
@@ -2721,7 +2721,7 @@
       }
     },
     "22": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Arbuzova_1998",
       "fields": {
         "date": "1998-10",
@@ -2868,7 +2868,7 @@
       }
     },
     "23": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Arbuzova_2005",
       "fields": {
         "date": "2005-07",
@@ -3001,7 +3001,7 @@
       }
     },
     "24": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Arbuzova_2009",
       "fields": {
         "date": "2009-06",
@@ -3134,7 +3134,7 @@
       }
     },
     "25": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Arbuzova_2009_B",
       "fields": {
         "date": "2009-05",
@@ -3272,7 +3272,7 @@
       }
     },
     "26": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Artioli_2006",
       "fields": {
         "date": "2006",
@@ -3590,7 +3590,7 @@
       }
     },
     "28": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Assimos_1973",
       "fields": {
         "date": "1973",
@@ -3809,7 +3809,7 @@
       }
     },
     "30": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Assimos_1974",
       "fields": {
         "date": "1974",
@@ -3907,7 +3907,7 @@
       }
     },
     "31": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Aygun_2005",
       "fields": {
         "date": "2005-04",
@@ -4035,7 +4035,7 @@
       }
     },
     "32": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Balamurugan_2001",
       "fields": {
         "date": "2001",
@@ -4124,7 +4124,7 @@
       }
     },
     "33": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Balamurugan_2002",
       "fields": {
         "date": "2002",
@@ -4311,7 +4311,7 @@
       }
     },
     "34": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Balamurugan_2004",
       "fields": {
         "date": "2004",
@@ -4470,7 +4470,7 @@
       }
     },
     "35": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Baldassarri_2006",
       "fields": {
         "date": "2006",
@@ -4646,7 +4646,7 @@
       }
     },
     "36": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Balili_2007",
       "fields": {
         "date": "2007",
@@ -4799,7 +4799,7 @@
       }
     },
     "37": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Balkanski_1967",
       "fields": {
         "date": "1967",
@@ -4902,7 +4902,7 @@
       }
     },
     "38": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Balkanski_1969",
       "fields": {
         "date": "1969-06",
@@ -5053,7 +5053,7 @@
       }
     },
     "39": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Bandyopadhyay_1994",
       "fields": {
         "date": "1994",
@@ -5247,7 +5247,7 @@
       }
     },
     "40": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Barbour_2001",
       "fields": {
         "date": "2001",
@@ -5350,7 +5350,7 @@
       }
     },
     "41": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Bardeen_1946",
       "fields": {
         "date": "1946",
@@ -5466,7 +5466,7 @@
       }
     },
     "42": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Barker_1979",
       "fields": {
         "date": "1979-03",
@@ -5620,7 +5620,7 @@
       }
     },
     "43": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Barman_1992",
       "fields": {
         "date": "1992",
@@ -5845,7 +5845,7 @@
       }
     },
     "44": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Barreca_2009",
       "fields": {
         "date": "2009",
@@ -6088,7 +6088,7 @@
       }
     },
     "45": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Barton_1924",
       "fields": {
         "date": "1924",
@@ -6166,7 +6166,7 @@
       }
     },
     "46": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Bartos_1988",
       "fields": {
         "date": "1988",
@@ -6351,7 +6351,7 @@
       }
     },
     "47": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Bassani_2004",
       "fields": {
         "date": "2004",
@@ -6454,7 +6454,7 @@
       }
     },
     "48": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Baumeister_1961",
       "fields": {
         "date": "1961",
@@ -6529,7 +6529,7 @@
       }
     },
     "49": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Beg_1976",
       "fields": {
         "date": "1976",
@@ -6618,7 +6618,7 @@
       }
     },
     "50": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Bellakhal_1997",
       "fields": {
         "date": "1997",
@@ -6721,7 +6721,7 @@
       }
     },
     "51": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Berezin_1981",
       "fields": {
         "date": "1981",
@@ -6810,7 +6810,7 @@
       }
     },
     "52": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Berger_1978",
       "fields": {
         "date": "1978",
@@ -6915,7 +6915,7 @@
       }
     },
     "53": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Bertocci_1978",
       "fields": {
         "date": "1978",
@@ -7011,7 +7011,7 @@
       }
     },
     "54": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Bharadwaj_2001",
       "fields": {
         "date": "2001-06",
@@ -7141,7 +7141,7 @@
       }
     },
     "55": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Bianchi_2008",
       "fields": {
         "date": "2008-04",
@@ -7423,7 +7423,7 @@
       }
     },
     "57": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Biccari_2010",
       "fields": {
         "date": "2010",
@@ -7533,7 +7533,7 @@
       }
     },
     "58": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Bijani_2007",
       "fields": {
         "date": "2007",
@@ -7726,7 +7726,7 @@
       }
     },
     "59": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Bisht_2010",
       "fields": {
         "date": "2010-05",
@@ -7867,7 +7867,7 @@
       }
     },
     "60": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Blank_1969",
       "fields": {
         "date": "1969",
@@ -7968,7 +7968,7 @@
       }
     },
     "61": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Bloch_1978",
       "fields": {
         "date": "1978",
@@ -8093,7 +8093,7 @@
       }
     },
     "62": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Bloem_1956",
       "fields": {
         "date": "1956",
@@ -8239,7 +8239,7 @@
       }
     },
     "63": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Bloem_1958",
       "fields": {
         "date": "1958",
@@ -8343,7 +8343,7 @@
       }
     },
     "64": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Bohannan_1999",
       "fields": {
         "date": "1999",
@@ -8508,7 +8508,7 @@
       }
     },
     "65": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Borgohain_2000",
       "fields": {
         "date": "2000-04",
@@ -8672,7 +8672,7 @@
       }
     },
     "66": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Borgohain_2002",
       "fields": {
         "date": "2002",
@@ -8846,7 +8846,7 @@
       }
     },
     "67": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Bose_1996",
       "fields": {
         "date": "1996",
@@ -8946,7 +8946,7 @@
       }
     },
     "68": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Bottger_1952",
       "fields": {
         "date": "1952",
@@ -9044,7 +9044,7 @@
       }
     },
     "69": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Brahms_1965",
       "fields": {
         "date": "1965",
@@ -9170,7 +9170,7 @@
       }
     },
     "70": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Brahms_1966",
       "fields": {
         "date": "1966",
@@ -9303,7 +9303,7 @@
       }
     },
     "71": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Brahms_1967",
       "fields": {
         "date": "1967",
@@ -9448,7 +9448,7 @@
       }
     },
     "72": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Brahms_1968",
       "fields": {
         "date": "1968",
@@ -9537,7 +9537,7 @@
       }
     },
     "73": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Brahms_1972",
       "fields": {
         "date": "1972",
@@ -9636,7 +9636,7 @@
       }
     },
     "74": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Bratescu_2008",
       "fields": {
         "date": "2008",
@@ -9794,7 +9794,7 @@
       }
     },
     "75": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Brattain_1934",
       "fields": {
         "date": "1934",
@@ -9878,7 +9878,7 @@
       }
     },
     "76": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Brattain_1951",
       "fields": {
         "date": "1951",
@@ -9939,7 +9939,7 @@
       }
     },
     "77": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Bretheau_1977",
       "fields": {
         "date": "1977",
@@ -10062,7 +10062,7 @@
       }
     },
     "78": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Bretheau_1978",
       "fields": {
         "date": "1978",
@@ -10200,7 +10200,7 @@
       }
     },
     "79": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Bretheau_1981",
       "fields": {
         "date": "1981",
@@ -10369,7 +10369,7 @@
       }
     },
     "80": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Briskman_1992",
       "fields": {
         "date": "1992-09",
@@ -10462,7 +10462,7 @@
       }
     },
     "81": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Brower_1971",
       "fields": {
         "date": "1971",
@@ -10619,7 +10619,7 @@
       }
     },
     "83": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Bruneval_2006",
       "fields": {
         "date": "2006-12",
@@ -10818,7 +10818,7 @@
       }
     },
     "84": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Bubert_1995",
       "fields": {
         "date": "1995-01",
@@ -10993,7 +10993,7 @@
       }
     },
     "85": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Burlakov_1999",
       "fields": {
         "date": "1999",
@@ -11160,7 +11160,7 @@
       }
     },
     "86": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Butov_2007",
       "fields": {
         "date": "2007-07",
@@ -11247,7 +11247,7 @@
       }
     },
     "87": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Cabrera_1949",
       "fields": {
         "date": "1949-01",
@@ -11354,7 +11354,7 @@
       }
     },
     "88": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Campbell_1932",
       "fields": {
         "date": "1932",
@@ -11709,7 +11709,7 @@
       }
     },
     "91": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Cao_2010",
       "fields": {
         "date": "2010-01",
@@ -11879,7 +11879,7 @@
       }
     },
     "92": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Carabatos_1970",
       "fields": {
         "date": "1970",
@@ -12006,7 +12006,7 @@
       }
     },
     "93": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Carabatos_1971",
       "fields": {
         "date": "1971-04",
@@ -12147,7 +12147,7 @@
       }
     },
     "94": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Carel_1999",
       "fields": {
         "date": "1999-02",
@@ -12347,7 +12347,7 @@
       }
     },
     "95": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Castellan_1949",
       "fields": {
         "date": "1949-01",
@@ -12454,7 +12454,7 @@
       }
     },
     "96": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Caswell_1981",
       "fields": {
         "date": "1981-12",
@@ -12605,7 +12605,7 @@
       }
     },
     "97": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Caswell_1982",
       "fields": {
         "date": "1982-04",
@@ -12736,7 +12736,7 @@
       }
     },
     "98": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Certier_1964",
       "fields": {
         "date": "1964",
@@ -12894,7 +12894,7 @@
       }
     },
     "99": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Chan_1999",
       "fields": {
         "date": "1999-01",
@@ -13017,7 +13017,7 @@
       }
     },
     "100": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Chang_2009",
       "fields": {
         "date": "2009",
@@ -13186,7 +13186,7 @@
       }
     },
     "101": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Chaudhary_2004",
       "fields": {
         "date": "2004-02",
@@ -13342,7 +13342,7 @@
       }
     },
     "102": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Chee_1977",
       "fields": {
         "date": "1977",
@@ -13496,7 +13496,7 @@
       }
     },
     "103": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Chee_1979",
       "fields": {
         "date": "1979",
@@ -13642,7 +13642,7 @@
       }
     },
     "104": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Chen_1995",
       "fields": {
         "date": "1995-11",
@@ -13765,7 +13765,7 @@
       }
     },
     "105": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Chen_2003",
       "fields": {
         "date": "2003-07",
@@ -14283,7 +14283,7 @@
       }
     },
     "108": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Chen_2007",
       "fields": {
         "date": "2007",
@@ -14456,7 +14456,7 @@
       }
     },
     "109": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Chen_2007_B",
       "fields": {
         "date": "2007",
@@ -14584,7 +14584,7 @@
       }
     },
     "110": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Chen_2008",
       "fields": {
         "date": "2008",
@@ -14726,7 +14726,7 @@
       }
     },
     "111": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Chen_2009",
       "fields": {
         "date": "2009-04",
@@ -14944,7 +14944,7 @@
       }
     },
     "112": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Chen_2010",
       "fields": {
         "date": "2010",
@@ -15103,7 +15103,7 @@
       }
     },
     "113": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Chen_2010_B",
       "fields": {
         "date": "2010-02",
@@ -15349,7 +15349,7 @@
       }
     },
     "114": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Cherevko_2010",
       "fields": {
         "date": "2010-01",
@@ -15477,7 +15477,7 @@
       }
     },
     "115": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Ching_1989",
       "fields": {
         "date": "1989-10",
@@ -15639,7 +15639,7 @@
       }
     },
     "116": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Chou_2008",
       "fields": {
         "date": "2008-09",
@@ -15801,7 +15801,7 @@
       }
     },
     "117": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Chrzanowski_1989",
       "fields": {
         "date": "1989-04",
@@ -15908,7 +15908,7 @@
       }
     },
     "118": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Clarke_1975",
       "fields": {
         "date": "1975-04",
@@ -16015,7 +16015,7 @@
       }
     },
     "119": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Clavaguera-Mora_2004",
       "fields": {
         "date": "2004",
@@ -16145,7 +16145,7 @@
       }
     },
     "120": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Colacino_2010",
       "fields": {
         "date": "2010-05",
@@ -16372,7 +16372,7 @@
       }
     },
     "121": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Compaan_1972",
       "fields": {
         "date": "1972-12",
@@ -16503,7 +16503,7 @@
       }
     },
     "122": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Compaan_1973",
       "fields": {
         "date": "1973-07",
@@ -16634,7 +16634,7 @@
       }
     },
     "123": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Condorelli_1994",
       "fields": {
         "date": "1994-10",
@@ -16743,7 +16743,7 @@
       }
     },
     "124": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Condorelli_1999",
       "fields": {
         "date": "1999",
@@ -16891,7 +16891,7 @@
       }
     },
     "125": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Condorelli_1999_B",
       "fields": {
         "date": "1999",
@@ -17026,7 +17026,7 @@
       }
     },
     "126": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Coret_1963",
       "fields": {
         "date": "1963",
@@ -17127,7 +17127,7 @@
       }
     },
     "127": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Czanderna_1966",
       "fields": {
         "date": "1966",
@@ -17225,7 +17225,7 @@
       }
     },
     "128": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Dahl_1966",
       "fields": {
         "date": "1966-07",
@@ -17332,7 +17332,7 @@
       }
     },
     "129": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Dahl_1967",
       "fields": {
         "date": "1967",
@@ -17404,7 +17404,7 @@
       }
     },
     "130": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Daltin_2005",
       "fields": {
         "date": "2005-09",
@@ -17529,7 +17529,7 @@
       }
     },
     "131": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Daltin_2009",
       "fields": {
         "date": "2009-10",
@@ -17691,7 +17691,7 @@
       }
     },
     "132": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Dasbach_2003",
       "fields": {
         "date": "2003-09",
@@ -17860,7 +17860,7 @@
       }
     },
     "133": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Dasbach_2003_B",
       "fields": {
         "date": "2003",
@@ -18105,7 +18105,7 @@
       }
     },
     "135": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Dasbach_2004",
       "fields": {
         "date": "2004-07",
@@ -18304,7 +18304,7 @@
       }
     },
     "136": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Dasbach_2005",
       "fields": {
         "date": "2005",
@@ -18479,7 +18479,7 @@
       }
     },
     "137": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Dash_2007",
       "fields": {
         "date": "2007-01",
@@ -18715,7 +18715,7 @@
       }
     },
     "138": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Daunois_1966",
       "fields": {
         "date": "1966",
@@ -18848,7 +18848,7 @@
       }
     },
     "139": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Daunois_1974",
       "fields": {
         "date": "1974-04",
@@ -18937,7 +18937,7 @@
       }
     },
     "140": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Dawson_1973",
       "fields": {
         "date": "1973",
@@ -19040,7 +19040,7 @@
       }
     },
     "141": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Deiss_1963",
       "fields": {
         "date": "1963",
@@ -19168,7 +19168,7 @@
       }
     },
     "142": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Deiss_1969",
       "fields": {
         "date": "1969-10",
@@ -19313,7 +19313,7 @@
       }
     },
     "143": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Deiss_1970",
       "fields": {
         "date": "1970-04",
@@ -19464,7 +19464,7 @@
       }
     },
     "144": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Deiss_1971",
       "fields": {
         "date": "1971",
@@ -19606,7 +19606,7 @@
       }
     },
     "145": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Deiss_1971_B",
       "fields": {
         "date": "1971-02",
@@ -19770,7 +19770,7 @@
       }
     },
     "146": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Deiss_1973",
       "fields": {
         "date": "1973-06",
@@ -19865,7 +19865,7 @@
       }
     },
     "147": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "deJongh_1999",
       "fields": {
         "date": "1999",
@@ -19999,7 +19999,7 @@
       }
     },
     "148": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Delatorre_2006",
       "fields": {
         "date": "2006-06",
@@ -20190,7 +20190,7 @@
       }
     },
     "149": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Dellacherie_1970",
       "fields": {
         "date": "1970",
@@ -20298,7 +20298,7 @@
       }
     },
     "150": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Dellacherie_1976",
       "fields": {
         "date": "1976",
@@ -20387,7 +20387,7 @@
       }
     },
     "151": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Denev_2002",
       "fields": {
         "date": "2002-02",
@@ -20526,7 +20526,7 @@
       }
     },
     "152": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Dieckmann_1991",
       "fields": {
         "date": "1991-12",
@@ -20857,7 +20857,7 @@
       }
     },
     "155": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Dieckmann_1998",
       "fields": {
         "date": "1998",
@@ -20932,7 +20932,7 @@
       }
     },
     "156": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Dimitriadis_1983",
       "fields": {
         "date": "1983",
@@ -21071,7 +21071,7 @@
       }
     },
     "157": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "DiQuarto_1985",
       "fields": {
         "date": "1985-03",
@@ -21192,7 +21192,7 @@
       }
     },
     "158": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Dixit_1945",
       "fields": {
         "date": "1945",
@@ -21267,7 +21267,7 @@
       }
     },
     "159": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Dobrovol'skii_1963",
       "fields": {
         "date": "1963",
@@ -21380,7 +21380,7 @@
       }
     },
     "160": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Dodoo-Arhin_2010",
       "fields": {
         "date": "2010",
@@ -21552,7 +21552,7 @@
       }
     },
     "161": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Dominguez-Rodriguez_1983",
       "fields": {
         "date": "1983",
@@ -21900,7 +21900,7 @@
       }
     },
     "164": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Drobny_1979",
       "fields": {
         "date": "1979",
@@ -21992,7 +21992,7 @@
       }
     },
     "165": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Du_2010",
       "fields": {
         "date": "2010-03",
@@ -22178,7 +22178,7 @@
       }
     },
     "166": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Du_2010_B",
       "fields": {
         "date": "2010-04",
@@ -22320,7 +22320,7 @@
       }
     },
     "167": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Dubois_1982",
       "fields": {
         "date": "1982-07",
@@ -22413,7 +22413,7 @@
       }
     },
     "168": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Dunwald_1933",
       "fields": {
         "date": "1933",
@@ -22498,7 +22498,7 @@
       }
     },
     "169": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Duvvury_1975",
       "fields": {
         "date": "1975",
@@ -22644,7 +22644,7 @@
       }
     },
     "170": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Ebisuzaki_1961",
       "fields": {
         "date": "1961",
@@ -22719,7 +22719,7 @@
       }
     },
     "171": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Elliott_1957",
       "fields": {
         "date": "1957",
@@ -22794,7 +22794,7 @@
       }
     },
     "172": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Elliott_1961",
       "fields": {
         "date": "1961",
@@ -23011,7 +23011,7 @@
       }
     },
     "174": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Eskhult_2006",
       "fields": {
         "date": "2006",
@@ -23161,7 +23161,7 @@
       }
     },
     "175": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Espinos_2002",
       "fields": {
         "date": "2002-07",
@@ -23499,7 +23499,7 @@
       }
     },
     "176": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Ettema_2003",
       "fields": {
         "date": "2003-12",
@@ -23649,7 +23649,7 @@
       }
     },
     "177": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Evans_1937",
       "fields": {
         "date": "1937-02",
@@ -23747,7 +23747,7 @@
       }
     },
     "178": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Fan_1948",
       "fields": {
         "date": "1948-11",
@@ -23842,7 +23842,7 @@
       }
     },
     "179": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Fan_2006",
       "fields": {
         "date": "2006-02",
@@ -23990,7 +23990,7 @@
       }
     },
     "180": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Feldman_1943",
       "fields": {
         "date": "1943",
@@ -24083,7 +24083,7 @@
       }
     },
     "181": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Feng_2003",
       "fields": {
         "date": "2003-12",
@@ -24198,7 +24198,7 @@
       }
     },
     "182": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Feng_2008",
       "fields": {
         "date": "2008-08",
@@ -24338,7 +24338,7 @@
       }
     },
     "183": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Fernando_2000",
       "fields": {
         "date": "2000-07",
@@ -24479,7 +24479,7 @@
       }
     },
     "184": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Fernando_2001",
       "fields": {
         "date": "2001",
@@ -24638,7 +24638,7 @@
       }
     },
     "185": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Fernando_2001_B",
       "fields": {
         "date": "2001",
@@ -24827,7 +24827,7 @@
       }
     },
     "186": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Fernando_2002",
       "fields": {
         "date": "2002-08",
@@ -25029,7 +25029,7 @@
       }
     },
     "187": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Fetisov_2009",
       "fields": {
         "date": "2009-07",
@@ -25139,7 +25139,7 @@
       }
     },
     "188": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Fickelscher_1961",
       "fields": {
         "date": "1961-01",
@@ -25268,7 +25268,7 @@
       }
     },
     "189": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Figueiredo_2008",
       "fields": {
         "date": "2008-04",
@@ -25474,7 +25474,7 @@
       }
     },
     "190": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Figueiredo_2009",
       "fields": {
         "date": "2009",
@@ -25659,7 +25659,7 @@
       }
     },
     "191": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Fishman_2006",
       "fields": {
         "date": "2006-08",
@@ -25847,7 +25847,7 @@
       }
     },
     "193": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Fishman_2009",
       "fields": {
         "date": "2009-07",
@@ -25999,7 +25999,7 @@
       }
     },
     "194": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Forman_1971",
       "fields": {
         "date": "1971-09",
@@ -26144,7 +26144,7 @@
       }
     },
     "195": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Fortin_1962",
       "fields": {
         "date": "1962",
@@ -26253,7 +26253,7 @@
       }
     },
     "196": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Fortin_1966",
       "fields": {
         "date": "1966",
@@ -26379,7 +26379,7 @@
       }
     },
     "197": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Fortin_1967",
       "fields": {
         "date": "1967",
@@ -26512,7 +26512,7 @@
       }
     },
     "198": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Fortin_1975",
       "fields": {
         "date": "1975",
@@ -26645,7 +26645,7 @@
       }
     },
     "199": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Fortin_1982",
       "fields": {
         "date": "1982-04",
@@ -26780,7 +26780,7 @@
       }
     },
     "200": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Fortin_1982_B",
       "fields": {
         "date": "1982",
@@ -26925,7 +26925,7 @@
       }
     },
     "201": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Fortin_1988",
       "fields": {
         "date": "1988",
@@ -27048,7 +27048,7 @@
       }
     },
     "202": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Fortin_1993",
       "fields": {
         "date": "1993-06",
@@ -27205,7 +27205,7 @@
       }
     },
     "203": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Fortin_2000",
       "fields": {
         "date": "2000-05",
@@ -27357,7 +27357,7 @@
       }
     },
     "204": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Fortunato_2009",
       "fields": {
         "date": "2009",
@@ -27677,7 +27677,7 @@
       }
     },
     "206": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Frerichs_1959",
       "fields": {
         "date": "1959-03",
@@ -27786,7 +27786,7 @@
       }
     },
     "207": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Frerichs_1961",
       "fields": {
         "date": "1961-02",
@@ -27895,7 +27895,7 @@
       }
     },
     "208": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Frohlich_1979",
       "fields": {
         "date": "1979",
@@ -28042,7 +28042,7 @@
       }
     },
     "209": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Frohlich_1991",
       "fields": {
         "date": "1991-10",
@@ -28258,7 +28258,7 @@
       }
     },
     "210": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Frohlich_2005",
       "fields": {
         "date": "2005-04",
@@ -28472,7 +28472,7 @@
       }
     },
     "211": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Fromhold_1963",
       "fields": {
         "date": "1963-11",
@@ -28572,7 +28572,7 @@
       }
     },
     "212": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Fromhold_1967",
       "fields": {
         "date": "1967-06",
@@ -28681,7 +28681,7 @@
       }
     },
     "213": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Fromhold_1967_B",
       "fields": {
         "date": "1967-11",
@@ -28790,7 +28790,7 @@
       }
     },
     "214": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Fromhold_1980",
       "fields": {
         "date": "1980",
@@ -28885,7 +28885,7 @@
       }
     },
     "215": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Fromhold_2004",
       "fields": {
         "date": "2004-10",
@@ -29008,7 +29008,7 @@
       }
     },
     "216": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Fujinaka_1983",
       "fields": {
         "date": "1983-06",
@@ -29132,7 +29132,7 @@
       }
     },
     "217": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Fujiwara_2004",
       "fields": {
         "date": "2004-11",
@@ -29300,7 +29300,7 @@
       }
     },
     "218": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Gan_2004",
       "fields": {
         "date": "2004-01",
@@ -29466,7 +29466,7 @@
       }
     },
     "219": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Gaplevskaya_1975",
       "fields": {
         "date": "1975",
@@ -29562,7 +29562,7 @@
       }
     },
     "220": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Garlick_1954",
       "fields": {
         "date": "1954",
@@ -29663,7 +29663,7 @@
       }
     },
     "221": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Garrison_1923",
       "fields": {
         "date": "1923-01",
@@ -29758,7 +29758,7 @@
       }
     },
     "222": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Garrison_1924",
       "fields": {
         "date": "1924-01",
@@ -29853,7 +29853,7 @@
       }
     },
     "223": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Garuthara_2006",
       "fields": {
         "date": "2006",
@@ -29976,7 +29976,7 @@
       }
     },
     "224": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Gastev_1982",
       "fields": {
         "date": "1982",
@@ -30109,7 +30109,7 @@
       }
     },
     "225": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Georgieva_2002",
       "fields": {
         "date": "2002-05",
@@ -30222,7 +30222,7 @@
       }
     },
     "226": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Ghijsen_1988",
       "fields": {
         "date": "1988-12",
@@ -30451,7 +30451,7 @@
       }
     },
     "227": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Ghijsen_1990",
       "fields": {
         "date": "1990-08",
@@ -30645,7 +30645,7 @@
       }
     },
     "228": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Ghosh_2000",
       "fields": {
         "date": "2000",
@@ -30834,7 +30834,7 @@
       }
     },
     "229": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Gil_2007",
       "fields": {
         "date": "2007-01",
@@ -30989,7 +30989,7 @@
       }
     },
     "230": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Gizhevskii_2005",
       "fields": {
         "date": "2005",
@@ -31140,7 +31140,7 @@
       }
     },
     "231": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Golden_1996",
       "fields": {
         "date": "1996-01",
@@ -31324,7 +31324,7 @@
       }
     },
     "232": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Goltzene_1976",
       "fields": {
         "date": "1976",
@@ -31457,7 +31457,7 @@
       }
     },
     "233": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Goltzene_1978",
       "fields": {
         "date": "1978",
@@ -31591,7 +31591,7 @@
       }
     },
     "234": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Goltzene_1979",
       "fields": {
         "date": "1979",
@@ -31716,7 +31716,7 @@
       }
     },
     "235": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Goncalves_2009",
       "fields": {
         "date": "2009-08",
@@ -31874,7 +31874,7 @@
       }
     },
     "236": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Gorban_2000",
       "fields": {
         "date": "2000-05",
@@ -32009,7 +32009,7 @@
       }
     },
     "237": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Goto_1997",
       "fields": {
         "date": "1997-03",
@@ -32168,7 +32168,7 @@
       }
     },
     "238": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Greenwood_1949",
       "fields": {
         "date": "1949-08",
@@ -32272,7 +32272,7 @@
       }
     },
     "239": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Grondahl_1926",
       "fields": {
         "date": "1926-09",
@@ -32356,7 +32356,7 @@
       }
     },
     "240": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Grondahl_1927",
       "fields": {
         "date": "1927",
@@ -32499,7 +32499,7 @@
       }
     },
     "242": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Grondahl_1932",
       "fields": {
         "date": "1932-05",
@@ -32586,7 +32586,7 @@
       }
     },
     "243": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Grondahl_1933",
       "fields": {
         "date": "1933",
@@ -32655,7 +32655,7 @@
       }
     },
     "244": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Gross_1952",
       "fields": {
         "date": "1952",
@@ -32728,7 +32728,7 @@
       }
     },
     "245": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Gross_1952_B",
       "fields": {
         "date": "1952",
@@ -32801,7 +32801,7 @@
       }
     },
     "246": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Gross_1956",
       "fields": {
         "date": "1956-04",
@@ -32879,7 +32879,7 @@
       }
     },
     "247": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Gross_1959",
       "fields": {
         "date": "1959-01",
@@ -32966,7 +32966,7 @@
       }
     },
     "248": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Gross_1961",
       "fields": {
         "date": "1961-12",
@@ -33067,7 +33067,7 @@
       }
     },
     "249": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Gross_1962",
       "fields": {
         "date": "1962",
@@ -33154,7 +33154,7 @@
       }
     },
     "250": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Gross_1968",
       "fields": {
         "date": "1968",
@@ -33283,7 +33283,7 @@
       }
     },
     "251": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Gross_1968_B",
       "fields": {
         "date": "1968",
@@ -33378,7 +33378,7 @@
       }
     },
     "252": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Gross_1969",
       "fields": {
         "date": "1969",
@@ -33507,7 +33507,7 @@
       }
     },
     "253": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Gross_1970",
       "fields": {
         "date": "1970",
@@ -33636,7 +33636,7 @@
       }
     },
     "254": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Gross_1970_B",
       "fields": {
         "date": "1970-12",
@@ -33771,7 +33771,7 @@
       }
     },
     "255": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Gross_1972",
       "fields": {
         "date": "1972",
@@ -33914,7 +33914,7 @@
       }
     },
     "256": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Grun_1961",
       "fields": {
         "date": "1961",
@@ -34051,7 +34051,7 @@
       }
     },
     "257": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Grun_1961_B",
       "fields": {
         "date": "1961",
@@ -34154,7 +34154,7 @@
       }
     },
     "258": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Grun_1961_C",
       "fields": {
         "date": "1961",
@@ -34303,7 +34303,7 @@
       }
     },
     "259": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Grun_1963",
       "fields": {
         "date": "1963",
@@ -34404,7 +34404,7 @@
       }
     },
     "260": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Grzesik_2008",
       "fields": {
         "date": "2008",
@@ -34507,7 +34507,7 @@
       }
     },
     "261": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Gu_2010",
       "fields": {
         "date": "2010",
@@ -34666,7 +34666,7 @@
       }
     },
     "262": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Haimour_2005",
       "fields": {
         "date": "2005-09",
@@ -34816,7 +34816,7 @@
       }
     },
     "263": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Hallstedt_1994",
       "fields": {
         "date": "1994-10",
@@ -34928,7 +34928,7 @@
       }
     },
     "264": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Hammura_1998",
       "fields": {
         "date": "1998",
@@ -35077,7 +35077,7 @@
       }
     },
     "265": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Hammura_2005",
       "fields": {
         "date": "2005",
@@ -35192,7 +35192,7 @@
       }
     },
     "266": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Han_2008",
       "fields": {
         "date": "2008",
@@ -35338,7 +35338,7 @@
       }
     },
     "267": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Han_2009",
       "fields": {
         "date": "2009-01",
@@ -35458,7 +35458,7 @@
       }
     },
     "268": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Han_2010",
       "fields": {
         "date": "2010",
@@ -35617,7 +35617,7 @@
       }
     },
     "269": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Hanke_1999",
       "fields": {
         "date": "1999-11",
@@ -35807,7 +35807,7 @@
       }
     },
     "270": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Hanke_2000",
       "fields": {
         "date": "2000",
@@ -35981,7 +35981,7 @@
       }
     },
     "271": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Hao_2008",
       "fields": {
         "date": "2008",
@@ -36117,7 +36117,7 @@
       }
     },
     "272": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Hapase_1968",
       "fields": {
         "date": "1968",
@@ -36238,7 +36238,7 @@
       }
     },
     "273": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Hara_1998",
       "fields": {
         "date": "1998",
@@ -36435,7 +36435,7 @@
       }
     },
     "274": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Harris_1957",
       "fields": {
         "date": "1957-10",
@@ -36556,7 +36556,7 @@
       }
     },
     "275": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Harukawa_2000",
       "fields": {
         "date": "2000",
@@ -36745,7 +36745,7 @@
       }
     },
     "276": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Haugsrud_1997",
       "fields": {
         "date": "1997",
@@ -36840,7 +36840,7 @@
       }
     },
     "277": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Haugsrud_1998",
       "fields": {
         "date": "1998-10",
@@ -36980,7 +36980,7 @@
       }
     },
     "278": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Haugsrud_1999",
       "fields": {
         "date": "1999",
@@ -37116,7 +37116,7 @@
       }
     },
     "279": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Haugsrud_2002",
       "fields": {
         "date": "2002-01",
@@ -37215,7 +37215,7 @@
       }
     },
     "280": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Hayashi_1950",
       "fields": {
         "date": "1950",
@@ -37304,7 +37304,7 @@
       }
     },
     "281": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Hayashi_1952",
       "fields": {
         "date": "1952",
@@ -37393,7 +37393,7 @@
       }
     },
     "282": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Hayashi_1959",
       "fields": {
         "date": "1959",
@@ -37482,7 +37482,7 @@
       }
     },
     "283": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Hayashi_1969",
       "fields": {
         "date": "1969",
@@ -37597,7 +37597,7 @@
       }
     },
     "284": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Haydar_1980",
       "fields": {
         "date": "1980-07",
@@ -37732,7 +37732,7 @@
       }
     },
     "285": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Haydar_1982",
       "fields": {
         "date": "1982",
@@ -37887,7 +37887,7 @@
       }
     },
     "286": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "He_2006",
       "fields": {
         "date": "2006-11",
@@ -38008,7 +38008,7 @@
       }
     },
     "287": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Heinemann_1975",
       "fields": {
         "date": "1975-08",
@@ -38120,7 +38120,7 @@
       }
     },
     "288": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Heltemes_1966",
       "fields": {
         "date": "1966",
@@ -38195,7 +38195,7 @@
       }
     },
     "289": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Herion_1979",
       "fields": {
         "date": "1979-05",
@@ -38298,7 +38298,7 @@
       }
     },
     "290": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Herion_1980",
       "fields": {
         "date": "1980",
@@ -38500,7 +38500,7 @@
       }
     },
     "292": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Herion_1982",
       "fields": {
         "title": [
@@ -38648,7 +38648,7 @@
       }
     },
     "293": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Hesse_1979",
       "fields": {
         "date": "1979-01",
@@ -38790,7 +38790,7 @@
       }
     },
     "294": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Hoa_2010",
       "fields": {
         "date": "2010-04",
@@ -38945,7 +38945,7 @@
       }
     },
     "295": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Hoa_2010_B",
       "fields": {
         "date": "2010-04",
@@ -39128,7 +39128,7 @@
       }
     },
     "296": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Hodby_1976",
       "fields": {
         "date": "1976",
@@ -39289,7 +39289,7 @@
       }
     },
     "297": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Holmes_1989",
       "fields": {
         "date": "1989-04",
@@ -39466,7 +39466,7 @@
       }
     },
     "298": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Holzschuh_1990",
       "fields": {
         "date": "1990-12",
@@ -39623,7 +39623,7 @@
       }
     },
     "299": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Homma_1975",
       "fields": {
         "date": "1975-04",
@@ -39760,7 +39760,7 @@
       }
     },
     "300": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Hong_2009",
       "fields": {
         "date": "2009-07",
@@ -39909,7 +39909,7 @@
       }
     },
     "301": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Hsieh_2008",
       "fields": {
         "date": "2008",
@@ -40091,7 +40091,7 @@
       }
     },
     "302": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Hsueh_2007",
       "fields": {
         "date": "2007",
@@ -40308,7 +40308,7 @@
       }
     },
     "303": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Hu_2000",
       "fields": {
         "date": "2000-09",
@@ -40437,7 +40437,7 @@
       }
     },
     "304": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Hu_2008",
       "fields": {
         "date": "2008",
@@ -40647,7 +40647,7 @@
       }
     },
     "305": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Hu_2009",
       "fields": {
         "date": "2009",
@@ -40775,7 +40775,7 @@
       }
     },
     "306": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Huang_1963",
       "fields": {
         "date": "1963-02",
@@ -40893,7 +40893,7 @@
       }
     },
     "307": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Huang_2004",
       "fields": {
         "date": "2004-01",
@@ -41070,7 +41070,7 @@
       }
     },
     "308": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Huang_2008",
       "fields": {
         "date": "2008-01",
@@ -41212,7 +41212,7 @@
       }
     },
     "309": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Huang_2009",
       "fields": {
         "date": "2009",
@@ -41354,7 +41354,7 @@
       }
     },
     "310": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Huang_2010",
       "fields": {
         "date": "2010",
@@ -41522,7 +41522,7 @@
       }
     },
     "311": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Huang_2010_B",
       "fields": {
         "date": "2010",
@@ -41762,7 +41762,7 @@
       }
     },
     "312": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Hulin_1980",
       "fields": {
         "date": "1980",
@@ -41898,7 +41898,7 @@
       }
     },
     "313": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Hung_2010",
       "fields": {
         "date": "2010",
@@ -42052,7 +42052,7 @@
       }
     },
     "314": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Iguchi_1973",
       "fields": {
         "date": "1973",
@@ -42198,7 +42198,7 @@
       }
     },
     "315": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Iijima_2006",
       "fields": {
         "date": "2006-12",
@@ -42374,7 +42374,7 @@
       }
     },
     "316": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Ikeda_1998",
       "fields": {
         "date": "1998",
@@ -42569,7 +42569,7 @@
       }
     },
     "317": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Inaba_1997",
       "fields": {
         "date": "1997-01",
@@ -42693,7 +42693,7 @@
       }
     },
     "318": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Inguanta_2007",
       "fields": {
         "date": "2007-12",
@@ -42856,7 +42856,7 @@
       }
     },
     "319": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Ishihara_1998",
       "fields": {
         "date": "1998",
@@ -43076,7 +43076,7 @@
       }
     },
     "320": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Ishizuka_2000",
       "fields": {
         "date": "2000",
@@ -43216,7 +43216,7 @@
       }
     },
     "321": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Ishizuka_2001",
       "fields": {
         "date": "2001",
@@ -43371,7 +43371,7 @@
       }
     },
     "322": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Ishizuka_2002",
       "fields": {
         "date": "2002",
@@ -43535,7 +43535,7 @@
       }
     },
     "323": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Ishizuka_2002_B",
       "fields": {
         "date": "2002",
@@ -43689,7 +43689,7 @@
       }
     },
     "324": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Ishizuka_2003",
       "fields": {
         "date": "2003",
@@ -43886,7 +43886,7 @@
       }
     },
     "325": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Ishizuka_2004",
       "fields": {
         "date": "2004",
@@ -44026,7 +44026,7 @@
       }
     },
     "326": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Ishizuka_2004_B",
       "fields": {
         "date": "2004",
@@ -44277,7 +44277,7 @@
       }
     },
     "327": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Isobe_1996",
       "fields": {
         "date": "1996",
@@ -44445,7 +44445,7 @@
       }
     },
     "328": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Ito_1997",
       "fields": {
         "date": "1997",
@@ -44564,7 +44564,7 @@
       }
     },
     "329": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Ito_1998",
       "fields": {
         "date": "1998-07",
@@ -44736,7 +44736,7 @@
       }
     },
     "330": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Ito_1998_B",
       "fields": {
         "date": "1998",
@@ -44901,7 +44901,7 @@
       }
     },
     "331": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Ito_1998_C",
       "fields": {
         "date": "1998",
@@ -45057,7 +45057,7 @@
       }
     },
     "332": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Itoh_1975",
       "fields": {
         "date": "1975",
@@ -45180,7 +45180,7 @@
       }
     },
     "333": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Itoh_1975_B",
       "fields": {
         "date": "1975",
@@ -45299,7 +45299,7 @@
       }
     },
     "334": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Itoh_2007",
       "fields": {
         "date": "2007",
@@ -45451,7 +45451,7 @@
       }
     },
     "335": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Itoh_2007_B",
       "fields": {
         "date": "2007",
@@ -45603,7 +45603,7 @@
       }
     },
     "336": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Ivanda_1997",
       "fields": {
         "date": "1997",
@@ -45777,7 +45777,7 @@
       }
     },
     "337": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Ivill_2003",
       "fields": {
         "date": "2003",
@@ -45983,7 +45983,7 @@
       }
     },
     "338": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Iwanowski_1983",
       "fields": {
         "date": "1983",
@@ -46139,7 +46139,7 @@
       }
     },
     "339": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Iwanowski_1984",
       "fields": {
         "title": [
@@ -46359,7 +46359,7 @@
       }
     },
     "340": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Iwanowski_1986",
       "fields": {
         "date": "1986",
@@ -46532,7 +46532,7 @@
       }
     },
     "341": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Izaki_2006",
       "fields": {
         "date": "2006-09",
@@ -46719,7 +46719,7 @@
       }
     },
     "342": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Izaki_2006_B",
       "fields": {
         "date": "2006-09",
@@ -46887,7 +46887,7 @@
       }
     },
     "343": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Izaki_2007",
       "fields": {
         "date": "2007",
@@ -47103,7 +47103,7 @@
       }
     },
     "344": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Jackson_2002",
       "fields": {
         "date": "2002",
@@ -47210,7 +47210,7 @@
       }
     },
     "345": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Jana_1997",
       "fields": {
         "date": "1997-09",
@@ -47361,7 +47361,7 @@
       }
     },
     "346": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Jang_2004",
       "fields": {
         "date": "2004-11",
@@ -47567,7 +47567,7 @@
       }
     },
     "348": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Jang_2006",
       "fields": {
         "date": "2006-02",
@@ -47688,7 +47688,7 @@
       }
     },
     "349": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Jang_2006_B",
       "fields": {
         "date": "2006-01",
@@ -47849,7 +47849,7 @@
       }
     },
     "350": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Jang_2006_C",
       "fields": {
         "date": "2006-07",
@@ -47986,7 +47986,7 @@
       }
     },
     "351": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Jang_2006_D",
       "fields": {
         "date": "2006-12",
@@ -48151,7 +48151,7 @@
       }
     },
     "352": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Jang_2007",
       "fields": {
         "date": "2007-10",
@@ -48284,7 +48284,7 @@
       }
     },
     "353": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Jang_2008",
       "fields": {
         "date": "2008",
@@ -48411,7 +48411,7 @@
       }
     },
     "354": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Jang_2008_B",
       "fields": {
         "date": "2008-04",
@@ -48656,7 +48656,7 @@
       }
     },
     "356": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Jayatissa_2009",
       "fields": {
         "date": "2009-09",
@@ -48785,7 +48785,7 @@
       }
     },
     "357": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Jayewardena_1998",
       "fields": {
         "date": "1998-09",
@@ -49120,7 +49120,7 @@
       }
     },
     "359": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Jeong_2008",
       "fields": {
         "date": "2008-01",
@@ -49323,7 +49323,7 @@
       }
     },
     "360": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Ji_2010",
       "fields": {
         "date": "2010",
@@ -49514,7 +49514,7 @@
       }
     },
     "361": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Jimenez-Cadena_2010",
       "fields": {
         "date": "2010-02",
@@ -49714,7 +49714,7 @@
       }
     },
     "362": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Jimenez-Melendo_1995",
       "fields": {
         "date": "1995-10",
@@ -49835,7 +49835,7 @@
       }
     },
     "363": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Jin_2006",
       "fields": {
         "date": "2006-03",
@@ -50003,7 +50003,7 @@
       }
     },
     "364": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Johnsen_2001",
       "fields": {
         "date": "2001-01",
@@ -50112,7 +50112,7 @@
       }
     },
     "365": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Jolk_1998",
       "fields": {
         "date": "1998",
@@ -50247,7 +50247,7 @@
       }
     },
     "366": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Jolk_2002",
       "fields": {
         "date": "2002-06",
@@ -50407,7 +50407,7 @@
       }
     },
     "367": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Jorger_2001",
       "fields": {
         "date": "2001-08",
@@ -50582,7 +50582,7 @@
       }
     },
     "368": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Jorger_2005",
       "fields": {
         "date": "2005",
@@ -50700,7 +50700,7 @@
       }
     },
     "369": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Joseph_2007",
       "fields": {
         "date": "2007-07",
@@ -50845,7 +50845,7 @@
       }
     },
     "370": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Kalabin_1966",
       "fields": {
         "date": "1966-09",
@@ -50958,7 +50958,7 @@
       }
     },
     "371": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Kale_2003",
       "fields": {
         "date": "2003",
@@ -51193,7 +51193,7 @@
       }
     },
     "372": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Kalingamudali_2001",
       "fields": {
         "date": "2001",
@@ -51369,7 +51369,7 @@
       }
     },
     "373": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Karpinska_2005",
       "fields": {
         "date": "2005",
@@ -51527,7 +51527,7 @@
       }
     },
     "374": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Karpinska_2005_B",
       "fields": {
         "date": "2005",
@@ -51696,7 +51696,7 @@
       }
     },
     "375": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Katayama_2004",
       "fields": {
         "date": "2004-07",
@@ -51872,7 +51872,7 @@
       }
     },
     "376": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Kaufman_1984",
       "fields": {
         "date": "1984",
@@ -51995,7 +51995,7 @@
       }
     },
     "377": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Kaufman_1984_B",
       "fields": {
         "date": "1984",
@@ -52114,7 +52114,7 @@
       }
     },
     "378": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Kaufman_1986",
       "fields": {
         "date": "1986",
@@ -52300,7 +52300,7 @@
       }
     },
     "380": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Kaufman_1988",
       "fields": {
         "date": "1988",
@@ -52402,7 +52402,7 @@
       }
     },
     "381": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Kavoulakis_1997",
       "fields": {
         "date": "1997",
@@ -52535,7 +52535,7 @@
       }
     },
     "382": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Kawazoe_1997",
       "fields": {
         "date": "1997-10",
@@ -52713,7 +52713,7 @@
       }
     },
     "383": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Keldysh_1967",
       "fields": {
         "date": "1967",
@@ -52808,7 +52808,7 @@
       }
     },
     "384": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Kennard_1917",
       "fields": {
         "date": "1917",
@@ -52897,7 +52897,7 @@
       }
     },
     "385": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Kenway_1978",
       "fields": {
         "date": "1978",
@@ -53030,7 +53030,7 @@
       }
     },
     "386": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Kikuchi_2005",
       "fields": {
         "date": "2005",
@@ -53169,7 +53169,7 @@
       }
     },
     "387": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Kikuchi_2006",
       "fields": {
         "date": "2006",
@@ -53318,7 +53318,7 @@
       }
     },
     "388": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Kim_2004",
       "fields": {
         "date": "2004",
@@ -53506,7 +53506,7 @@
       }
     },
     "389": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Kinoshita_1966",
       "fields": {
         "date": "1966",
@@ -53609,7 +53609,7 @@
       }
     },
     "390": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Kinoshita_1967",
       "fields": {
         "date": "1967",
@@ -53748,7 +53748,7 @@
       }
     },
     "391": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Kirsch_2001",
       "fields": {
         "date": "2001-10",
@@ -53895,7 +53895,7 @@
       }
     },
     "392": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Kleinman_1980",
       "fields": {
         "date": "1980",
@@ -54014,7 +54014,7 @@
       }
     },
     "393": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Klier_1955",
       "fields": {
         "date": "1955",
@@ -54114,7 +54114,7 @@
       }
     },
     "394": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Klingshirn_2002",
       "fields": {
         "date": "2002",
@@ -54230,7 +54230,7 @@
       }
     },
     "395": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Klingshirn_2003",
       "fields": {
         "date": "2003",
@@ -54402,7 +54402,7 @@
       }
     },
     "396": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Klingshirn_2005",
       "fields": {
         "date": "2005-04",
@@ -54667,7 +54667,7 @@
       }
     },
     "398": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Kobayashi_2004",
       "fields": {
         "date": "2004",
@@ -54844,7 +54844,7 @@
       }
     },
     "399": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Kobayashi_2007",
       "fields": {
         "date": "2007-12",
@@ -55018,7 +55018,7 @@
       }
     },
     "400": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Komp_1966",
       "fields": {
         "date": "1966-07",
@@ -55129,7 +55129,7 @@
       }
     },
     "401": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Kosenko_2001",
       "fields": {
         "date": "2001-01",
@@ -55256,7 +55256,7 @@
       }
     },
     "402": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Kosugi_1998",
       "fields": {
         "date": "1998",
@@ -55357,7 +55357,7 @@
       }
     },
     "403": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Kotsyumakha_1967",
       "fields": {
         "date": "1967-04",
@@ -55491,7 +55491,7 @@
       }
     },
     "404": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Kotsyumakha_1968",
       "fields": {
         "date": "1968-08",
@@ -55583,7 +55583,7 @@
       }
     },
     "405": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Kotsyumakha_1968_B",
       "fields": {
         "date": "1968-08",
@@ -55705,7 +55705,7 @@
       }
     },
     "406": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Krishnamoorthy_1969",
       "fields": {
         "date": "1969-06",
@@ -55817,7 +55817,7 @@
       }
     },
     "407": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Kugel_1981",
       "fields": {
         "date": "1981-12",
@@ -55954,7 +55954,7 @@
       }
     },
     "408": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Kunert_1980",
       "fields": {
         "date": "1980",
@@ -56055,7 +56055,7 @@
       }
     },
     "409": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Kuo_2010",
       "fields": {
         "date": "2010",
@@ -56190,7 +56190,7 @@
       }
     },
     "410": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Kushida_1956",
       "fields": {
         "date": "1956-12",
@@ -56313,7 +56313,7 @@
       }
     },
     "411": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Kuzel_1958",
       "fields": {
         "date": "1958-01",
@@ -56397,7 +56397,7 @@
       }
     },
     "412": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Kuzel_1958_B",
       "fields": {
         "date": "1958",
@@ -56472,7 +56472,7 @@
       }
     },
     "413": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Kuzel_1961",
       "fields": {
         "date": "1961-02",
@@ -56547,7 +56547,7 @@
       }
     },
     "414": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Kuzel_1961_B",
       "fields": {
         "date": "1961",
@@ -56606,7 +56606,7 @@
       }
     },
     "415": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Kuzel_1965",
       "fields": {
         "date": "1965",
@@ -56684,7 +56684,7 @@
       }
     },
     "416": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Kuzel_1967",
       "fields": {
         "date": "1967",
@@ -56797,7 +56797,7 @@
       }
     },
     "418": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Kuzel_1970",
       "fields": {
         "date": "1970",
@@ -56920,7 +56920,7 @@
       }
     },
     "419": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Kuzel_1970_B",
       "fields": {
         "date": "1970",
@@ -57075,7 +57075,7 @@
       }
     },
     "420": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Kuzel_1970_C",
       "fields": {
         "date": "1970",
@@ -57323,7 +57323,7 @@
       }
     },
     "422": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Laskowski_2003",
       "fields": {
         "date": "2003-02",
@@ -57482,7 +57482,7 @@
       }
     },
     "423": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Leblanc_2005",
       "fields": {
         "date": "2005-04",
@@ -57589,7 +57589,7 @@
       }
     },
     "424": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Lee_2003",
       "fields": {
         "date": "2003-02",
@@ -57744,7 +57744,7 @@
       }
     },
     "425": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Lefez_1991",
       "fields": {
         "date": "1991-04",
@@ -57924,7 +57924,7 @@
       }
     },
     "426": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Lefez_1994",
       "fields": {
         "date": "1994",
@@ -58157,7 +58157,7 @@
       }
     },
     "427": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Lenglet_1991",
       "fields": {
         "date": "1991-08",
@@ -58308,7 +58308,7 @@
       }
     },
     "428": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Lenglet_1995",
       "fields": {
         "date": "1995-04",
@@ -58508,7 +58508,7 @@
       }
     },
     "429": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Li_1989",
       "fields": {
         "date": "1989-06",
@@ -58643,7 +58643,7 @@
       }
     },
     "430": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Li_1991",
       "fields": {
         "date": "1991-01",
@@ -58798,7 +58798,7 @@
       }
     },
     "431": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Li_2004",
       "fields": {
         "date": "2004-01",
@@ -58911,7 +58911,7 @@
       }
     },
     "432": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Li_2007",
       "fields": {
         "date": "2007",
@@ -59063,7 +59063,7 @@
       }
     },
     "433": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Li_2009",
       "fields": {
         "date": "2009",
@@ -59204,7 +59204,7 @@
       }
     },
     "434": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Likhobabin_1970",
       "fields": {
         "date": "1970",
@@ -59324,7 +59324,7 @@
       }
     },
     "435": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Likhobabin_1971",
       "fields": {
         "date": "1971-02",
@@ -59414,7 +59414,7 @@
       }
     },
     "436": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Lin_1993",
       "fields": {
         "date": "1993-08",
@@ -59563,7 +59563,7 @@
       }
     },
     "437": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Liu_2003",
       "fields": {
         "date": "2003-09",
@@ -59852,7 +59852,7 @@
       }
     },
     "439": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Liu_2005",
       "fields": {
         "date": "2005",
@@ -60073,7 +60073,7 @@
       }
     },
     "440": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Liu_2005_B",
       "fields": {
         "date": "2005-01",
@@ -60312,7 +60312,7 @@
       }
     },
     "441": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Liu_2005_C",
       "fields": {
         "date": "2005",
@@ -60431,7 +60431,7 @@
       }
     },
     "442": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Liu_2006",
       "fields": {
         "date": "2006-10",
@@ -60538,7 +60538,7 @@
       }
     },
     "443": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Loison_1980",
       "fields": {
         "date": "1980",
@@ -60671,7 +60671,7 @@
       }
     },
     "444": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Lu_2001",
       "fields": {
         "date": "2001-08",
@@ -60799,7 +60799,7 @@
       }
     },
     "445": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Lu_2005",
       "fields": {
         "date": "2005",
@@ -60918,7 +60918,7 @@
       }
     },
     "446": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Lu_2005_B",
       "fields": {
         "date": "2005",
@@ -61063,7 +61063,7 @@
       }
     },
     "447": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Lu_2009",
       "fields": {
         "date": "2009",
@@ -61183,7 +61183,7 @@
       }
     },
     "448": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Lupu_1970",
       "fields": {
         "date": "1970-12",
@@ -61502,7 +61502,7 @@
       }
     },
     "450": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Ma_2008",
       "fields": {
         "date": "2008",
@@ -61614,7 +61614,7 @@
       }
     },
     "451": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Macfarlane_2007",
       "fields": {
         "date": "2007-07",
@@ -64280,7 +64280,7 @@
       }
     },
     "466": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Mahalingam_2000",
       "fields": {
         "date": "2000",
@@ -64438,7 +64438,7 @@
       }
     },
     "467": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Mahalingam_2002",
       "fields": {
         "date": "2002-06",
@@ -64607,7 +64607,7 @@
       }
     },
     "468": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Mahalingam_2005",
       "fields": {
         "date": "2005-07",
@@ -64801,7 +64801,7 @@
       }
     },
     "469": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Mahalingam_2006",
       "fields": {
         "date": "2006-07",
@@ -64958,7 +64958,7 @@
       }
     },
     "470": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Maier_1960",
       "fields": {
         "date": "1960-10",
@@ -65042,7 +65042,7 @@
       }
     },
     "471": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Maluenda_1981",
       "fields": {
         "date": "1981",
@@ -65145,7 +65145,7 @@
       }
     },
     "472": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Maluenda_1981_B",
       "fields": {
         "date": "1981",
@@ -65248,7 +65248,7 @@
       }
     },
     "473": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Manghnani_1974",
       "fields": {
         "date": "1974",
@@ -65394,7 +65394,7 @@
       }
     },
     "474": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Marksteiner_1986",
       "fields": {
         "date": "1986-06",
@@ -65536,7 +65536,7 @@
       }
     },
     "475": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Markworth_2001",
       "fields": {
         "date": "2001-04",
@@ -65698,7 +65698,7 @@
       }
     },
     "476": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Martinez-Clemente_1975",
       "fields": {
         "date": "1975-03",
@@ -65836,7 +65836,7 @@
       }
     },
     "477": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Martinez-Clemente_1976",
       "fields": {
         "date": "1976",
@@ -65975,7 +65975,7 @@
       }
     },
     "478": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Martinez-Ruiz_2003",
       "fields": {
         "date": "2003",
@@ -66147,7 +66147,7 @@
       }
     },
     "479": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Masumi_1991",
       "fields": {
         "date": "1991",
@@ -66301,7 +66301,7 @@
       }
     },
     "480": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Masumi_1991_B",
       "fields": {
         "date": "1991",
@@ -66428,7 +66428,7 @@
       }
     },
     "481": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Masumi_1991_C",
       "fields": {
         "date": "1991",
@@ -66555,7 +66555,7 @@
       }
     },
     "482": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Mateen_2008",
       "fields": {
         "date": "2008",
@@ -66636,7 +66636,7 @@
       }
     },
     "483": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Mathew_2001",
       "fields": {
         "date": "2001-12",
@@ -66798,7 +66798,7 @@
       }
     },
     "484": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Mathew_2002",
       "fields": {
         "date": "2002-12",
@@ -66952,7 +66952,7 @@
       }
     },
     "485": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Matsumoto_1996",
       "fields": {
         "date": "1996",
@@ -67129,7 +67129,7 @@
       }
     },
     "486": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Matsumura_1996",
       "fields": {
         "date": "1996",
@@ -67279,7 +67279,7 @@
       }
     },
     "487": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Matsunami_2009",
       "fields": {
         "date": "2009",
@@ -67433,7 +67433,7 @@
       }
     },
     "488": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "McKinzie_1967",
       "fields": {
         "date": "1967-01",
@@ -67553,7 +67553,7 @@
       }
     },
     "489": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Mencer_2004",
       "fields": {
         "date": "2004",
@@ -67796,7 +67796,7 @@
       }
     },
     "490": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Merle_1967",
       "fields": {
         "date": "1967",
@@ -67917,7 +67917,7 @@
       }
     },
     "491": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Merle_1974",
       "fields": {
         "date": "1974",
@@ -68072,7 +68072,7 @@
       }
     },
     "492": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Miley_1937",
       "fields": {
         "date": "1937-12",
@@ -68167,7 +68167,7 @@
       }
     },
     "493": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Milne_1984",
       "fields": {
         "date": "1984",
@@ -68281,7 +68281,7 @@
       }
     },
     "494": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Mimura_2006",
       "fields": {
         "date": "2006-04",
@@ -68443,7 +68443,7 @@
       }
     },
     "495": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Minami_2004",
       "fields": {
         "date": "2004",
@@ -68614,7 +68614,7 @@
       }
     },
     "496": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Minami_2006",
       "fields": {
         "date": "2006",
@@ -68849,7 +68849,7 @@
       }
     },
     "498": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Mittal_2007",
       "fields": {
         "date": "2007-05",
@@ -69056,7 +69056,7 @@
       }
     },
     "499": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Mittiga_2006",
       "fields": {
         "date": "2006",
@@ -69342,7 +69342,7 @@
       }
     },
     "501": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Mittiga_2009",
       "fields": {
         "date": "2009",
@@ -69475,7 +69475,7 @@
       }
     },
     "502": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Miyata_2006",
       "fields": {
         "date": "2006",
@@ -69824,7 +69824,7 @@
       }
     },
     "504": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Mizuno_2005",
       "fields": {
         "date": "2005",
@@ -70049,7 +70049,7 @@
       }
     },
     "505": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Moore_1951",
       "fields": {
         "date": "1951",
@@ -70144,7 +70144,7 @@
       }
     },
     "506": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Moore_1951_err",
       "fields": {
         "date": "1952",
@@ -70254,7 +70254,7 @@
       }
     },
     "507": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Moore_1958",
       "fields": {
         "date": "1958",
@@ -70357,7 +70357,7 @@
       }
     },
     "508": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Mori_2001",
       "fields": {
         "date": "2001",
@@ -70497,7 +70497,7 @@
       }
     },
     "509": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Mori_2001_err",
       "fields": {
         "date": "2001",
@@ -70656,7 +70656,7 @@
       }
     },
     "510": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Mrowec_1967",
       "fields": {
         "date": "1967",
@@ -70749,7 +70749,7 @@
       }
     },
     "511": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Mrowec_1971",
       "fields": {
         "date": "1971",
@@ -70854,7 +70854,7 @@
       }
     },
     "512": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Mrowec_1974",
       "fields": {
         "date": "1974",
@@ -71032,7 +71032,7 @@
       }
     },
     "514": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Mrowec_1988",
       "fields": {
         "date": "1988-08",
@@ -71125,7 +71125,7 @@
       }
     },
     "515": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Mukhopadhyay_1992",
       "fields": {
         "date": "1992-03",
@@ -71260,7 +71260,7 @@
       }
     },
     "516": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Musa_1998",
       "fields": {
         "date": "1998",
@@ -71367,7 +71367,7 @@
       }
     },
     "517": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Mysyrowicz_1979",
       "fields": {
         "date": "1979",
@@ -71506,7 +71506,7 @@
       }
     },
     "518": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Mysyrowicz_1979_err",
       "fields": {
         "date": "1979",
@@ -71652,7 +71652,7 @@
       }
     },
     "519": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Mysyrowicz_1980",
       "fields": {
         "date": "1980-07",
@@ -71730,7 +71730,7 @@
       }
     },
     "520": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Mysyrowicz_1983",
       "fields": {
         "date": "1983-02",
@@ -71897,7 +71897,7 @@
       }
     },
     "521": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Mysyrowicz_1993",
       "fields": {
         "date": "1993",
@@ -72025,7 +72025,7 @@
       }
     },
     "522": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Mysyrowicz_1996",
       "fields": {
         "date": "1996-07",
@@ -72148,7 +72148,7 @@
       }
     },
     "523": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Mysyrowicz_2003",
       "fields": {
         "date": "2003",
@@ -72299,7 +72299,7 @@
       }
     },
     "524": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Nadesalingam_2007",
       "fields": {
         "date": "2007-02",
@@ -72504,7 +72504,7 @@
       }
     },
     "525": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Nair_1999",
       "fields": {
         "date": "1999-08",
@@ -72644,7 +72644,7 @@
       }
     },
     "526": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Naka_1998",
       "fields": {
         "date": "1998",
@@ -72783,7 +72783,7 @@
       }
     },
     "527": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Naka_2005",
       "fields": {
         "date": "2005-07",
@@ -72904,7 +72904,7 @@
       }
     },
     "528": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Nakamura_2001",
       "fields": {
         "date": "2001-08",
@@ -73064,7 +73064,7 @@
       }
     },
     "529": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Nakano_1964",
       "fields": {
         "date": "1964",
@@ -73229,7 +73229,7 @@
       }
     },
     "530": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Nakano_2009",
       "fields": {
         "date": "2009",
@@ -73363,7 +73363,7 @@
       }
     },
     "531": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Nakaoka_2004",
       "fields": {
         "date": "2004-10",
@@ -73545,7 +73545,7 @@
       }
     },
     "532": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Nemoto_1967",
       "fields": {
         "date": "1967",
@@ -73637,7 +73637,7 @@
       }
     },
     "533": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Neogi_2004",
       "fields": {
         "date": "2004-11",
@@ -73752,7 +73752,7 @@
       }
     },
     "534": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Neskovska_2007",
       "fields": {
         "date": "2007",
@@ -73894,7 +73894,7 @@
       }
     },
     "535": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Nevskaya_2001",
       "fields": {
         "date": "2001-09",
@@ -74070,7 +74070,7 @@
       }
     },
     "536": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Nie_2002",
       "fields": {
         "date": "2002",
@@ -74213,7 +74213,7 @@
       }
     },
     "537": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Nikitine_1954",
       "fields": {
         "date": "1954",
@@ -74350,7 +74350,7 @@
       }
     },
     "538": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Nikitine_1954_B",
       "fields": {
         "date": "1954",
@@ -74526,7 +74526,7 @@
       }
     },
     "539": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Nikitine_1954_C",
       "fields": {
         "date": "1954",
@@ -74629,7 +74629,7 @@
       }
     },
     "540": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Nikitine_1956",
       "fields": {
         "date": "1956",
@@ -74716,7 +74716,7 @@
       }
     },
     "541": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Nikitine_1959",
       "fields": {
         "date": "1959-01",
@@ -74809,7 +74809,7 @@
       }
     },
     "542": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Nikitine_1959_B",
       "fields": {
         "date": "1959",
@@ -74887,7 +74887,7 @@
       }
     },
     "543": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Nikitine_1961",
       "fields": {
         "date": "1961",
@@ -75133,7 +75133,7 @@
       }
     },
     "545": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Nikitine_1963",
       "fields": {
         "date": "1963",
@@ -75264,7 +75264,7 @@
       }
     },
     "546": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Nikitine_1965",
       "fields": {
         "date": "1965-08",
@@ -75411,7 +75411,7 @@
       }
     },
     "547": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Nikitine_1965_B",
       "fields": {
         "date": "1965-03",
@@ -75569,7 +75569,7 @@
       }
     },
     "548": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Nikitine_1965_C",
       "fields": {
         "date": "1965",
@@ -75712,7 +75712,7 @@
       }
     },
     "549": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Nikitine_1966",
       "fields": {
         "date": "1966-11",
@@ -76051,7 +76051,7 @@
       }
     },
     "552": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Nikitine_1978",
       "fields": {
         "date": "1978",
@@ -76193,7 +76193,7 @@
       }
     },
     "553": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Nix_1932",
       "fields": {
         "date": "1932-10",
@@ -76288,7 +76288,7 @@
       }
     },
     "554": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Njeh_2002",
       "fields": {
         "date": "2002",
@@ -76403,7 +76403,7 @@
       }
     },
     "555": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Noguet_1965",
       "fields": {
         "date": "1965",
@@ -76555,7 +76555,7 @@
       }
     },
     "556": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Noguet_1965_B",
       "fields": {
         "date": "1965",
@@ -76659,7 +76659,7 @@
       }
     },
     "557": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Noguet_1965_C",
       "fields": {
         "date": "1965",
@@ -76902,7 +76902,7 @@
       }
     },
     "559": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Noguet_1970",
       "fields": {
         "date": "1970",
@@ -77023,7 +77023,7 @@
       }
     },
     "560": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Noguet_1974",
       "fields": {
         "date": "1974",
@@ -77347,7 +77347,7 @@
       }
     },
     "562": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Noguet_1980",
       "fields": {
         "date": "1980",
@@ -77513,7 +77513,7 @@
       }
     },
     "563": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Nolan_2006",
       "fields": {
         "date": "2006",
@@ -77636,7 +77636,7 @@
       }
     },
     "564": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Nolan_2008",
       "fields": {
         "date": "2008",
@@ -77759,7 +77759,7 @@
       }
     },
     "565": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Nolan_2008_B",
       "fields": {
         "date": "2008-09",
@@ -77957,7 +77957,7 @@
       }
     },
     "566": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Nolan_2008_C",
       "fields": {
         "date": "2008",
@@ -78076,7 +78076,7 @@
       }
     },
     "567": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "O'Hara_1999",
       "fields": {
         "date": "1999",
@@ -78221,7 +78221,7 @@
       }
     },
     "568": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "O'Hara_1999_B",
       "fields": {
         "date": "1999-10",
@@ -78466,7 +78466,7 @@
       }
     },
     "570": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "O'Keeffe_1961",
       "fields": {
         "date": "1961",
@@ -78560,7 +78560,7 @@
       }
     },
     "571": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "O'Keeffe_1962",
       "fields": {
         "date": "1962",
@@ -78649,7 +78649,7 @@
       }
     },
     "572": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "O'Keeffe_1962_B",
       "fields": {
         "date": "1962",
@@ -78848,7 +78848,7 @@
       }
     },
     "573": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "O'Keeffe_1962_C",
       "fields": {
         "date": "1962",
@@ -78943,7 +78943,7 @@
       }
     },
     "574": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "O'Keeffe_1963",
       "fields": {
         "date": "1963",
@@ -79051,7 +79051,7 @@
       }
     },
     "575": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "O'Keeffe_1963_B",
       "fields": {
         "date": "1963",
@@ -79193,7 +79193,7 @@
       }
     },
     "577": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "O'Reilly_1995",
       "fields": {
         "date": "1995-10",
@@ -79376,7 +79376,7 @@
       }
     },
     "578": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Oba_2005",
       "fields": {
         "date": "2005",
@@ -79533,7 +79533,7 @@
       }
     },
     "579": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Ochin_1984",
       "fields": {
         "date": "1984",
@@ -79689,7 +79689,7 @@
       }
     },
     "580": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Ochin_1985",
       "fields": {
         "date": "1985",
@@ -79798,7 +79798,7 @@
       }
     },
     "581": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Ogale_1992",
       "fields": {
         "date": "1992",
@@ -79949,7 +79949,7 @@
       }
     },
     "582": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Ogawa_2000",
       "fields": {
         "date": "2000",
@@ -80115,7 +80115,7 @@
       }
     },
     "583": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Ohyama_1997",
       "fields": {
         "date": "1997",
@@ -80258,7 +80258,7 @@
       }
     },
     "584": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Okada_1949",
       "fields": {
         "date": "1949",
@@ -80349,7 +80349,7 @@
       }
     },
     "585": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Okada_2007",
       "fields": {
         "date": "2007-08",
@@ -80686,7 +80686,7 @@
       }
     },
     "587": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Okamoto_2003",
       "fields": {
         "date": "2003",
@@ -80889,7 +80889,7 @@
       }
     },
     "588": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Okazaki_1953",
       "fields": {
         "date": "1953",
@@ -81012,7 +81012,7 @@
       }
     },
     "589": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Okubo_1999",
       "fields": {
         "date": "1999",
@@ -81164,7 +81164,7 @@
       }
     },
     "590": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Olbrychski_1975",
       "fields": {
         "date": "1975",
@@ -81594,7 +81594,7 @@
       }
     },
     "593": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Olsen_1979",
       "fields": {
         "date": "1979",
@@ -81890,7 +81890,7 @@
       }
     },
     "595": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Olsen_1982",
       "fields": {
         "date": "1982",
@@ -82038,7 +82038,7 @@
       }
     },
     "596": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Onimisi_2008",
       "fields": {
         "date": "2008",
@@ -82132,7 +82132,7 @@
       }
     },
     "597": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Ono_1951",
       "fields": {
         "date": "1951",
@@ -82234,7 +82234,7 @@
       }
     },
     "598": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Onsten_2007",
       "fields": {
         "date": "2007",
@@ -82585,7 +82585,7 @@
       }
     },
     "601": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Ottosson_1996",
       "fields": {
         "date": "1996-01",
@@ -82811,7 +82811,7 @@
       }
     },
     "602": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Papadimitriou_1981",
       "fields": {
         "date": "1981",
@@ -82923,7 +82923,7 @@
       }
     },
     "603": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Papadimitriou_1983",
       "fields": {
         "date": "1983-08",
@@ -83087,7 +83087,7 @@
       }
     },
     "604": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Papadimitriou_1983_B",
       "fields": {
         "date": "1983-12",
@@ -83330,7 +83330,7 @@
       }
     },
     "606": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Papadimitriou_1988",
       "fields": {
         "date": "1988",
@@ -83439,7 +83439,7 @@
       }
     },
     "607": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Papadimitriou_1988_B",
       "fields": {
         "date": "1988-05",
@@ -83657,7 +83657,7 @@
       }
     },
     "608": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Papadimitriou_1989",
       "fields": {
         "date": "1989",
@@ -83780,7 +83780,7 @@
       }
     },
     "609": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Papadimitriou_1989_B",
       "fields": {
         "date": "1989",
@@ -83898,7 +83898,7 @@
       }
     },
     "610": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Papadimitriou_1993",
       "fields": {
         "date": "1993",
@@ -84022,7 +84022,7 @@
       }
     },
     "611": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Park_1993",
       "fields": {
         "date": "1993",
@@ -84114,7 +84114,7 @@
       }
     },
     "612": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Parretta_1996",
       "fields": {
         "date": "1996",
@@ -84281,7 +84281,7 @@
       }
     },
     "613": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Pastrnak_1956",
       "fields": {
         "date": "1956-06",
@@ -84379,7 +84379,7 @@
       }
     },
     "614": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Pastrnak_1956_B",
       "fields": {
         "date": "1956",
@@ -84495,7 +84495,7 @@
       }
     },
     "615": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Pastrnak_1959",
       "fields": {
         "date": "1959",
@@ -84572,7 +84572,7 @@
       }
     },
     "616": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Pastrnak_1961",
       "fields": {
         "date": "1961-05",
@@ -84684,7 +84684,7 @@
       }
     },
     "617": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Pastrnak_1961_B",
       "fields": {
         "date": "1961-06",
@@ -84796,7 +84796,7 @@
       }
     },
     "618": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Paul_2006",
       "fields": {
         "date": "2006",
@@ -84964,7 +84964,7 @@
       }
     },
     "619": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Paul_2008",
       "fields": {
         "date": "2008",
@@ -85262,7 +85262,7 @@
       }
     },
     "621": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Pedocchi_1992",
       "fields": {
         "date": "1992",
@@ -85424,7 +85424,7 @@
       }
     },
     "622": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Perakis_1955",
       "fields": {
         "date": "1955",
@@ -85528,7 +85528,7 @@
       }
     },
     "623": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Perinet_1980",
       "fields": {
         "date": "1980",
@@ -86000,7 +86000,7 @@
       }
     },
     "626": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Peterson_1984",
       "fields": {
         "date": "1984",
@@ -86125,7 +86125,7 @@
       }
     },
     "627": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Petroff_1975",
       "fields": {
         "date": "1975",
@@ -86258,7 +86258,7 @@
       }
     },
     "628": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Pfund_1916",
       "fields": {
         "date": "1916",
@@ -86333,7 +86333,7 @@
       }
     },
     "629": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Pierson_2003",
       "fields": {
         "date": "2003",
@@ -86445,7 +86445,7 @@
       }
     },
     "630": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Pinkas_1995",
       "fields": {
         "date": "1995-08",
@@ -86737,7 +86737,7 @@
       }
     },
     "631": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Poizot_2003",
       "fields": {
         "date": "2003",
@@ -86898,7 +86898,7 @@
       }
     },
     "632": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Pollack_1975",
       "fields": {
         "date": "1975",
@@ -86993,7 +86993,7 @@
       }
     },
     "633": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Porat_1994",
       "fields": {
         "date": "1994",
@@ -87134,7 +87134,7 @@
       }
     },
     "634": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Porat_1995",
       "fields": {
         "date": "1995",
@@ -87275,7 +87275,7 @@
       }
     },
     "635": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Pouillon_2000",
       "fields": {
         "date": "2000-06",
@@ -87421,7 +87421,7 @@
       }
     },
     "636": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Pradere_1971",
       "fields": {
         "date": "1971-11",
@@ -87586,7 +87586,7 @@
       }
     },
     "637": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Prakash_2007",
       "fields": {
         "date": "2007",
@@ -87742,7 +87742,7 @@
       }
     },
     "638": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Prevot_1972",
       "fields": {
         "date": "1972",
@@ -87970,7 +87970,7 @@
       }
     },
     "639": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Prisedsky_2004",
       "fields": {
         "date": "2004-11",
@@ -88077,7 +88077,7 @@
       }
     },
     "640": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Raebiger_2007",
       "fields": {
         "date": "2007",
@@ -88217,7 +88217,7 @@
       }
     },
     "641": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Raebiger_2007_B",
       "fields": {
         "date": "2007-10",
@@ -88387,7 +88387,7 @@
       }
     },
     "642": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Rafea_2009",
       "fields": {
         "date": "2009",
@@ -88501,7 +88501,7 @@
       }
     },
     "643": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Rai_1988",
       "fields": {
         "date": "1988",
@@ -88616,7 +88616,7 @@
       }
     },
     "644": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Rakhshani_1986",
       "fields": {
         "date": "1986",
@@ -88700,7 +88700,7 @@
       }
     },
     "645": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Rakhshani_1991",
       "fields": {
         "date": "1991-02",
@@ -88827,7 +88827,7 @@
       }
     },
     "646": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Rakhshani_1991_B",
       "fields": {
         "date": "1991-02",
@@ -88954,7 +88954,7 @@
       }
     },
     "647": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Rakhshani_1996",
       "fields": {
         "date": "1996-11",
@@ -89075,7 +89075,7 @@
       }
     },
     "648": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Ralph_1969",
       "fields": {
         "date": "1969-08",
@@ -89168,7 +89168,7 @@
       }
     },
     "649": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Ramsier_1989",
       "fields": {
         "date": "1989-11",
@@ -89289,7 +89289,7 @@
       }
     },
     "650": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Ray_2001",
       "fields": {
         "date": "2001-06",
@@ -89388,7 +89388,7 @@
       }
     },
     "651": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Raynaud_1984",
       "fields": {
         "date": "1984-02",
@@ -89486,7 +89486,7 @@
       }
     },
     "652": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Reddy_2005",
       "fields": {
         "date": "2005",
@@ -89640,7 +89640,7 @@
       }
     },
     "653": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Reddy_2007",
       "fields": {
         "date": "2007",
@@ -89786,7 +89786,7 @@
       }
     },
     "654": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Reichel_2008",
       "fields": {
         "date": "2008-02",
@@ -89914,7 +89914,7 @@
       }
     },
     "655": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Reimann_1988",
       "fields": {
         "date": "1988-02",
@@ -90031,7 +90031,7 @@
       }
     },
     "656": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Reydellet_1972",
       "fields": {
         "date": "1972-07",
@@ -90158,7 +90158,7 @@
       }
     },
     "657": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Rhodin_1950",
       "fields": {
         "date": "1950-11",
@@ -90279,7 +90279,7 @@
       }
     },
     "658": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Rhodin_1951",
       "fields": {
         "date": "1951-07",
@@ -90400,7 +90400,7 @@
       }
     },
     "659": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Richardson_2001",
       "fields": {
         "date": "2001-04",
@@ -90528,7 +90528,7 @@
       }
     },
     "660": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Richthofen_1997",
       "fields": {
         "date": "1997-05",
@@ -90833,7 +90833,7 @@
       }
     },
     "661": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Riess_1991",
       "fields": {
         "date": "1991-01",
@@ -90926,7 +90926,7 @@
       }
     },
     "662": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Riess_1992",
       "fields": {
         "date": "1992-02",
@@ -91019,7 +91019,7 @@
       }
     },
     "663": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Riess_2003",
       "fields": {
         "date": "2003",
@@ -91103,7 +91103,7 @@
       }
     },
     "664": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Riess_2006",
       "fields": {
         "date": "2006-12",
@@ -91199,7 +91199,7 @@
       }
     },
     "665": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Righi_1890",
       "fields": {
         "date": "1890-12",
@@ -91290,7 +91290,7 @@
       }
     },
     "666": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Ristova_2007",
       "fields": {
         "date": "2007-09",
@@ -91418,7 +91418,7 @@
       }
     },
     "667": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Roberts_1921",
       "fields": {
         "date": "1921-05",
@@ -91527,7 +91527,7 @@
       }
     },
     "668": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Roberts_1978",
       "fields": {
         "date": "1978",
@@ -91616,7 +91616,7 @@
       }
     },
     "669": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Robertson_1983",
       "fields": {
         "date": "1983",
@@ -91795,7 +91795,7 @@
       }
     },
     "671": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Ronnow_1998",
       "fields": {
         "date": "1998-07",
@@ -91936,7 +91936,7 @@
       }
     },
     "672": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Ronnquist_1961",
       "fields": {
         "title": [
@@ -92039,7 +92039,7 @@
       }
     },
     "673": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Rosenstock_2000",
       "fields": {
         "date": "2000",
@@ -92134,7 +92134,7 @@
       }
     },
     "674": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Rosenstock_2004",
       "fields": {
         "date": "2004",
@@ -92290,7 +92290,7 @@
       }
     },
     "675": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Rosenstock_2005",
       "fields": {
         "date": "2005",
@@ -92426,7 +92426,7 @@
       }
     },
     "676": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Roslyak_2007",
       "fields": {
         "date": "2007-06",
@@ -92575,7 +92575,7 @@
       }
     },
     "677": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Roslyak_2007_B",
       "fields": {
         "date": "2007-09",
@@ -92689,7 +92689,7 @@
       }
     },
     "678": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Roy_1991",
       "fields": {
         "date": "1991-02",
@@ -92801,7 +92801,7 @@
       }
     },
     "679": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Roy_1995",
       "fields": {
         "date": "1995-04",
@@ -92913,7 +92913,7 @@
       }
     },
     "680": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Roy_1998",
       "fields": {
         "date": "1998-04",
@@ -93028,7 +93028,7 @@
       }
     },
     "681": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Ruiz_1997",
       "fields": {
         "date": "1997-09",
@@ -93201,7 +93201,7 @@
       }
     },
     "682": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Rustagi_1973",
       "fields": {
         "date": "1973-09",
@@ -93354,7 +93354,7 @@
       }
     },
     "683": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Samarasekara_2005",
       "fields": {
         "date": "2005-08",
@@ -93511,7 +93511,7 @@
       }
     },
     "684": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Samuelson_1999",
       "fields": {
         "date": "1999",
@@ -93586,7 +93586,7 @@
       }
     },
     "685": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Sanson_2006",
       "fields": {
         "date": "2006-06",
@@ -93811,7 +93811,7 @@
       }
     },
     "686": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Santra_1992",
       "fields": {
         "date": "1992-06",
@@ -93946,7 +93946,7 @@
       }
     },
     "687": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Santucci_1984",
       "fields": {
         "date": "1984-03",
@@ -94053,7 +94053,7 @@
       }
     },
     "688": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Scanlon_2009",
       "fields": {
         "date": "2009",
@@ -94238,7 +94238,7 @@
       }
     },
     "689": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Scanlon_2009_B",
       "fields": {
         "date": "2009-08",
@@ -94391,7 +94391,7 @@
       }
     },
     "690": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Schick_1971",
       "fields": {
         "date": "1971",
@@ -94486,7 +94486,7 @@
       }
     },
     "691": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Schick_1972",
       "fields": {
         "date": "1972",
@@ -94586,7 +94586,7 @@
       }
     },
     "692": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Schmidt-Whitley_1974",
       "fields": {
         "date": "1974",
@@ -94725,7 +94725,7 @@
       }
     },
     "693": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Schramm_2005",
       "fields": {
         "date": "2005",
@@ -94882,7 +94882,7 @@
       }
     },
     "694": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Schulz_1991",
       "fields": {
         "date": "1991-01",
@@ -95019,7 +95019,7 @@
       }
     },
     "695": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Schwab_1964",
       "fields": {
         "date": "1964",
@@ -95182,7 +95182,7 @@
       }
     },
     "696": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Schwab_1967",
       "fields": {
         "date": "1967",
@@ -95345,7 +95345,7 @@
       }
     },
     "697": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Schwab_1968",
       "fields": {
         "date": "1968",
@@ -95516,7 +95516,7 @@
       }
     },
     "698": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Schwab_1973",
       "fields": {
         "date": "1973-12",
@@ -95651,7 +95651,7 @@
       }
     },
     "699": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Sears_1983",
       "fields": {
         "date": "1983",
@@ -95806,7 +95806,7 @@
       }
     },
     "700": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Sears_1984",
       "fields": {
         "date": "1984-04",
@@ -95960,7 +95960,7 @@
       }
     },
     "701": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Serin_2000",
       "fields": {
         "date": "2000",
@@ -96148,7 +96148,7 @@
       }
     },
     "702": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Serin_2002",
       "fields": {
         "date": "2002",
@@ -96309,7 +96309,7 @@
       }
     },
     "703": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Seyama_2003",
       "fields": {
         "date": "2003-02",
@@ -96515,7 +96515,7 @@
       }
     },
     "704": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Shen_1990",
       "fields": {
         "date": "1990-11",
@@ -96775,7 +96775,7 @@
       }
     },
     "705": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Shen_1997",
       "fields": {
         "date": "1997-11",
@@ -96944,7 +96944,7 @@
       }
     },
     "706": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Sherwood_1991",
       "fields": {
         "date": "1991-05",
@@ -97039,7 +97039,7 @@
       }
     },
     "707": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Shestatskii_1968",
       "fields": {
         "date": "1968",
@@ -97137,7 +97137,7 @@
       }
     },
     "708": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Shestatskii_1969",
       "fields": {
         "date": "1969",
@@ -97238,7 +97238,7 @@
       }
     },
     "709": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Shestatskii_1970",
       "fields": {
         "date": "1970",
@@ -97388,7 +97388,7 @@
       }
     },
     "710": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Shestatskii_1970_B",
       "fields": {
         "date": "1970",
@@ -97500,7 +97500,7 @@
       }
     },
     "711": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Shimada_1989",
       "fields": {
         "date": "1989",
@@ -97631,7 +97631,7 @@
       }
     },
     "712": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Shindo_1974",
       "fields": {
         "date": "1974",
@@ -97803,7 +97803,7 @@
       }
     },
     "713": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Shishiyanu_2006",
       "fields": {
         "date": "2006-01",
@@ -97954,7 +97954,7 @@
       }
     },
     "714": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Sieberer_2007",
       "fields": {
         "date": "2007-01",
@@ -98165,7 +98165,7 @@
       }
     },
     "715": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Siegfried_2004",
       "fields": {
         "date": "2004",
@@ -98266,7 +98266,7 @@
       }
     },
     "716": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Siegfried_2005",
       "fields": {
         "date": "2005",
@@ -98367,7 +98367,7 @@
       }
     },
     "717": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Singh_2008",
       "fields": {
         "date": "2008",
@@ -98612,7 +98612,7 @@
       }
     },
     "719": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Siripala_1986",
       "fields": {
         "date": "1986",
@@ -98707,7 +98707,7 @@
       }
     },
     "720": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Siripala_1996",
       "fields": {
         "date": "1996",
@@ -98847,7 +98847,7 @@
       }
     },
     "721": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Siripala_2003",
       "fields": {
         "date": "2003",
@@ -99061,7 +99061,7 @@
       }
     },
     "722": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Smith_1995",
       "fields": {
         "date": "1995",
@@ -99205,7 +99205,7 @@
       }
     },
     "723": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Smyth_1920",
       "fields": {
         "date": "1920-12",
@@ -99313,7 +99313,7 @@
       }
     },
     "724": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Snoke_1987",
       "fields": {
         "date": "1987-08",
@@ -99472,7 +99472,7 @@
       }
     },
     "725": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Snoke_1990",
       "fields": {
         "date": "1990-06",
@@ -99631,7 +99631,7 @@
       }
     },
     "726": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Snoke_1990_B",
       "fields": {
         "date": "1990-11",
@@ -99776,7 +99776,7 @@
       }
     },
     "727": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Snoke_1991",
       "fields": {
         "date": "1991-08",
@@ -99939,7 +99939,7 @@
       }
     },
     "728": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Snoke_1992",
       "fields": {
         "date": "1992",
@@ -100072,7 +100072,7 @@
       }
     },
     "729": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Snoke_1992_B",
       "fields": {
         "date": "1992-07",
@@ -100223,7 +100223,7 @@
       }
     },
     "730": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Snoke_1996",
       "fields": {
         "date": "1996-09",
@@ -100313,7 +100313,7 @@
       }
     },
     "731": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Snoke_2000",
       "fields": {
         "date": "2000-01",
@@ -100471,7 +100471,7 @@
       }
     },
     "732": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Snoke_2002",
       "fields": {
         "date": "2002-11",
@@ -100564,7 +100564,7 @@
       }
     },
     "733": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Snoke_2007",
       "fields": {
         "date": "2007-12",
@@ -100684,7 +100684,7 @@
       }
     },
     "734": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Solache-Carranco_2009",
       "fields": {
         "date": "2009",
@@ -100903,7 +100903,7 @@
       }
     },
     "735": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Soon_2007",
       "fields": {
         "date": "2007-03",
@@ -101040,7 +101040,7 @@
       }
     },
     "736": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Soon_2009",
       "fields": {
         "date": "2009",
@@ -101201,7 +101201,7 @@
       }
     },
     "737": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Spyridelis_1967",
       "fields": {
         "date": "1967",
@@ -101322,7 +101322,7 @@
       }
     },
     "738": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Starr_1936",
       "fields": {
         "date": "1936",
@@ -101415,7 +101415,7 @@
       }
     },
     "739": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Stecker_1959",
       "fields": {
         "date": "1959",
@@ -101525,7 +101525,7 @@
       }
     },
     "740": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Suehiro_2001",
       "fields": {
         "date": "2001-02",
@@ -101652,7 +101652,7 @@
       }
     },
     "741": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Sun_2002",
       "fields": {
         "date": "2002-12",
@@ -101864,7 +101864,7 @@
       }
     },
     "742": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Sun_2004",
       "fields": {
         "date": "2004-11",
@@ -102023,7 +102023,7 @@
       }
     },
     "743": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Sun_2005",
       "fields": {
         "date": "2005",
@@ -102143,7 +102143,7 @@
       }
     },
     "744": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Sun_2007",
       "fields": {
         "date": "2007",
@@ -102345,7 +102345,7 @@
       }
     },
     "745": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Sun_2007_B",
       "fields": {
         "date": "2007-05",
@@ -102475,7 +102475,7 @@
       }
     },
     "746": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Sun_2007_C",
       "fields": {
         "date": "2007-07",
@@ -102685,7 +102685,7 @@
       }
     },
     "747": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Sun_2008",
       "fields": {
         "date": "2008",
@@ -102914,7 +102914,7 @@
       }
     },
     "748": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Surnev_1969",
       "fields": {
         "date": "1969",
@@ -103028,7 +103028,7 @@
       }
     },
     "749": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Sutter_1993",
       "fields": {
         "date": "1993",
@@ -103156,7 +103156,7 @@
       }
     },
     "750": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Switzer_1998",
       "fields": {
         "date": "1998-04",
@@ -103335,7 +103335,7 @@
       }
     },
     "751": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Switzer_1998_B",
       "fields": {
         "date": "1998-04",
@@ -103526,7 +103526,7 @@
       }
     },
     "752": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Switzer_1999",
       "fields": {
         "date": "1999-01",
@@ -103669,7 +103669,7 @@
       }
     },
     "753": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Tabuchi_2002",
       "fields": {
         "date": "2002",
@@ -103801,7 +103801,7 @@
       }
     },
     "754": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Tanaka_2004",
       "fields": {
         "date": "2004-12",
@@ -103997,7 +103997,7 @@
       }
     },
     "755": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Tang_2005",
       "fields": {
         "date": "2005",
@@ -104177,7 +104177,7 @@
       }
     },
     "756": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Tapiero_1972",
       "fields": {
         "date": "1972",
@@ -104326,7 +104326,7 @@
       }
     },
     "757": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Tapiero_1972_B",
       "fields": {
         "date": "1972",
@@ -104482,7 +104482,7 @@
       }
     },
     "758": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Tapiero_1976",
       "fields": {
         "date": "1976",
@@ -104644,7 +104644,7 @@
       }
     },
     "759": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Tapiero_1979",
       "fields": {
         "date": "1979",
@@ -104815,7 +104815,7 @@
       }
     },
     "760": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Tayagaki_2005",
       "fields": {
         "date": "2005",
@@ -104991,7 +104991,7 @@
       }
     },
     "761": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Taylor_1969",
       "fields": {
         "date": "1969-09",
@@ -105106,7 +105106,7 @@
       }
     },
     "762": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Taylor_1971",
       "fields": {
         "date": "1971",
@@ -105213,7 +105213,7 @@
       }
     },
     "763": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Taylor_1971_B",
       "fields": {
         "date": "1971",
@@ -105353,7 +105353,7 @@
       }
     },
     "764": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Taylor_1991",
       "fields": {
         "date": "1991-05",
@@ -105462,7 +105462,7 @@
       }
     },
     "765": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Tazenkov_1974",
       "fields": {
         "date": "1974",
@@ -105547,7 +105547,7 @@
       }
     },
     "766": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Teh_1983",
       "fields": {
         "date": "1983",
@@ -105642,7 +105642,7 @@
       }
     },
     "767": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Teh_1986",
       "fields": {
         "date": "1986",
@@ -105751,7 +105751,7 @@
       }
     },
     "768": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Tennakone_1986",
       "fields": {
         "date": "1986",
@@ -105886,7 +105886,7 @@
       }
     },
     "769": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Tertian_1978",
       "fields": {
         "date": "1978",
@@ -105995,7 +105995,7 @@
       }
     },
     "770": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Thobor_2003",
       "fields": {
         "date": "2003",
@@ -106090,7 +106090,7 @@
       }
     },
     "771": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Tiano_2003",
       "fields": {
         "date": "2003",
@@ -106331,7 +106331,7 @@
       }
     },
     "773": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Timm_2005",
       "fields": {
         "date": "2005",
@@ -106426,7 +106426,7 @@
       }
     },
     "774": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Togashi_2010",
       "fields": {
         "date": "2010-05",
@@ -106704,7 +106704,7 @@
       }
     },
     "775": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Tolstoi_1971",
       "fields": {
         "date": "1971",
@@ -106804,7 +106804,7 @@
       }
     },
     "776": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Tomlinson_1977",
       "fields": {
         "date": "1977",
@@ -106919,7 +106919,7 @@
       }
     },
     "777": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Toth_1960",
       "fields": {
         "date": "1960",
@@ -107031,7 +107031,7 @@
       }
     },
     "778": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Toth_1961",
       "fields": {
         "date": "1961",
@@ -107140,7 +107140,7 @@
       }
     },
     "779": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Toyozawa_1964",
       "fields": {
         "date": "1964-01",
@@ -107233,7 +107233,7 @@
       }
     },
     "780": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Trauernicht_1986",
       "fields": {
         "date": "1986",
@@ -107362,7 +107362,7 @@
       }
     },
     "781": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Trauernicht_1986_B",
       "fields": {
         "date": "1986-08",
@@ -107521,7 +107521,7 @@
       }
     },
     "782": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Tretyakov_1972",
       "fields": {
         "date": "1972",
@@ -107644,7 +107644,7 @@
       }
     },
     "783": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Trivich_1953",
       "fields": {
         "date": "1953",
@@ -107719,7 +107719,7 @@
       }
     },
     "784": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Trivich_1970",
       "fields": {
         "date": "1970",
@@ -109116,7 +109116,7 @@
       }
     },
     "798": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Tselepis_1987",
       "fields": {
         "date": "1987",
@@ -109268,7 +109268,7 @@
       }
     },
     "799": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Tselepis_1988",
       "fields": {
         "date": "1988-07",
@@ -109395,7 +109395,7 @@
       }
     },
     "800": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Tsui_2004",
       "fields": {
         "date": "2004",
@@ -109602,7 +109602,7 @@
       }
     },
     "801": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Tsur_1995",
       "fields": {
         "date": "1995",
@@ -109710,7 +109710,7 @@
       }
     },
     "802": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Tsur_1998",
       "fields": {
         "date": "1998",
@@ -109823,7 +109823,7 @@
       }
     },
     "803": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Tsur_1999",
       "fields": {
         "date": "1999",
@@ -109921,7 +109921,7 @@
       }
     },
     "804": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Tsur_1999_B",
       "fields": {
         "date": "1999",
@@ -110005,7 +110005,7 @@
       }
     },
     "805": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Tylecote_1956",
       "fields": {
         "date": "1956",
@@ -110076,7 +110076,7 @@
       }
     },
     "806": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Ueno_1969",
       "fields": {
         "date": "1969",
@@ -110207,7 +110207,7 @@
       }
     },
     "807": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Uihlein_1981",
       "fields": {
         "date": "1981",
@@ -110346,7 +110346,7 @@
       }
     },
     "808": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Uno_1950",
       "fields": {
         "date": "1950",
@@ -110455,7 +110455,7 @@
       }
     },
     "809": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Vajda_1966",
       "fields": {
         "date": "1966",
@@ -110539,7 +110539,7 @@
       }
     },
     "810": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Vattuone_2007",
       "fields": {
         "date": "2007-02",
@@ -110723,7 +110723,7 @@
       }
     },
     "811": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Vertegel_2000",
       "fields": {
         "date": "2000-03",
@@ -110912,7 +110912,7 @@
       }
     },
     "812": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Wadia_2009",
       "fields": {
         "date": "2009",
@@ -111021,7 +111021,7 @@
       }
     },
     "813": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Wagner_1938",
       "fields": {
         "date": "1938",
@@ -111094,7 +111094,7 @@
       }
     },
     "814": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Wagner_1975",
       "fields": {
         "date": "1975",
@@ -111181,7 +111181,7 @@
       }
     },
     "815": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Walker_2000",
       "fields": {
         "date": "2000-09",
@@ -111436,7 +111436,7 @@
       }
     },
     "817": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Wang_2003",
       "fields": {
         "date": "2003-12",
@@ -111657,7 +111657,7 @@
       }
     },
     "818": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Wang_2004",
       "fields": {
         "date": "2004-02",
@@ -111864,7 +111864,7 @@
       }
     },
     "819": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Wang_2005",
       "fields": {
         "date": "2005",
@@ -112045,7 +112045,7 @@
       }
     },
     "820": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Wang_2005_B",
       "fields": {
         "date": "2005",
@@ -112208,7 +112208,7 @@
       }
     },
     "821": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Wang_2007",
       "fields": {
         "date": "2007",
@@ -112382,7 +112382,7 @@
       }
     },
     "822": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Wang_2007_B",
       "fields": {
         "date": "2007-09",
@@ -112491,7 +112491,7 @@
       }
     },
     "823": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Wang_2007_C",
       "fields": {
         "date": "2007-02",
@@ -112623,7 +112623,7 @@
       }
     },
     "824": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Wang_2009",
       "fields": {
         "date": "2009",
@@ -112786,7 +112786,7 @@
       }
     },
     "825": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Wang_2010",
       "fields": {
         "date": "2010-04",
@@ -112961,7 +112961,7 @@
       }
     },
     "826": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Warren_1999",
       "fields": {
         "date": "1999-08",
@@ -113189,7 +113189,7 @@
       }
     },
     "827": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Warren_2000",
       "fields": {
         "date": "2000",
@@ -113369,7 +113369,7 @@
       }
     },
     "829": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Wei_2005",
       "fields": {
         "date": "2005",
@@ -113574,7 +113574,7 @@
       }
     },
     "830": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Wei_2010",
       "fields": {
         "date": "2010-05",
@@ -113721,7 +113721,7 @@
       }
     },
     "831": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Weichman_1960",
       "fields": {
         "date": "1960",
@@ -113814,7 +113814,7 @@
       }
     },
     "832": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Weichman_1965",
       "fields": {
         "date": "1965",
@@ -113942,7 +113942,7 @@
       }
     },
     "833": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Weichman_1970",
       "fields": {
         "date": "1970",
@@ -114071,7 +114071,7 @@
       }
     },
     "834": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Weichman_1977",
       "fields": {
         "date": "1977",
@@ -114225,7 +114225,7 @@
       }
     },
     "835": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Werner_1982",
       "fields": {
         "date": "1982",
@@ -114397,7 +114397,7 @@
       }
     },
     "836": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Whelan_2004",
       "fields": {
         "date": "2004-09",
@@ -114539,7 +114539,7 @@
       }
     },
     "837": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Widmer_2006",
       "fields": {
         "date": "2006-11",
@@ -114737,7 +114737,7 @@
       }
     },
     "838": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Wieder_1962",
       "fields": {
         "date": "1962-05",
@@ -114867,7 +114867,7 @@
       }
     },
     "839": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Wieder_1966",
       "fields": {
         "date": "1966",
@@ -114970,7 +114970,7 @@
       }
     },
     "840": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Wijesundara_2000",
       "fields": {
         "date": "2000",
@@ -115153,7 +115153,7 @@
       }
     },
     "841": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Wijesundera_2006",
       "fields": {
         "date": "2006",
@@ -115355,7 +115355,7 @@
       }
     },
     "842": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Wijesundera_2006_B",
       "fields": {
         "date": "2006",
@@ -115865,7 +115865,7 @@
       }
     },
     "846": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Wilhelm_1982",
       "fields": {
         "date": "1982",
@@ -115997,7 +115997,7 @@
       }
     },
     "847": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Williams_1973",
       "fields": {
         "date": "1973-08",
@@ -116155,7 +116155,7 @@
       }
     },
     "848": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Wolfe_1992",
       "fields": {
         "date": "1992-07",
@@ -116248,7 +116248,7 @@
       }
     },
     "849": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Wolfe_2005",
       "fields": {
         "date": "2005-04",
@@ -116398,7 +116398,7 @@
       }
     },
     "850": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Wouters_2007",
       "fields": {
         "date": "2007-10",
@@ -116507,7 +116507,7 @@
       }
     },
     "851": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Wright_2002",
       "fields": {
         "date": "2002",
@@ -116602,7 +116602,7 @@
       }
     },
     "852": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Xiang_2010",
       "fields": {
         "date": "2010",
@@ -116803,7 +116803,7 @@
       }
     },
     "853": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Xiao_2007",
       "fields": {
         "date": "2007-10",
@@ -117059,7 +117059,7 @@
       }
     },
     "854": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Xu_2006",
       "fields": {
         "date": "2006-10",
@@ -117220,7 +117220,7 @@
       }
     },
     "855": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Xue_1990",
       "fields": {
         "date": "1990",
@@ -117349,7 +117349,7 @@
       }
     },
     "856": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Xue_1992",
       "fields": {
         "date": "1992",
@@ -117487,7 +117487,7 @@
       }
     },
     "857": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Yanase_1989",
       "fields": {
         "date": "1989-09",
@@ -117622,7 +117622,7 @@
       }
     },
     "858": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Yang_1997",
       "fields": {
         "date": "1997-06",
@@ -117819,7 +117819,7 @@
       }
     },
     "859": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Yang_1997_B",
       "fields": {
         "date": "1997",
@@ -117948,7 +117948,7 @@
       }
     },
     "860": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Yang_1998",
       "fields": {
         "date": "1998-11",
@@ -118096,7 +118096,7 @@
       }
     },
     "861": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Yang_1998_B",
       "fields": {
         "date": "1998",
@@ -118247,7 +118247,7 @@
       }
     },
     "862": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Yang_2001",
       "fields": {
         "date": "2001",
@@ -118385,7 +118385,7 @@
       }
     },
     "863": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Yang_2002",
       "fields": {
         "date": "2002-07",
@@ -118564,7 +118564,7 @@
       }
     },
     "864": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Yang_2006",
       "fields": {
         "date": "2006",
@@ -118745,7 +118745,7 @@
       }
     },
     "865": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Yang_2007",
       "fields": {
         "date": "2007-12",
@@ -118889,7 +118889,7 @@
       }
     },
     "866": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Yang_2008",
       "fields": {
         "date": "2008-11",
@@ -119053,7 +119053,7 @@
       }
     },
     "867": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Yao_2010",
       "fields": {
         "date": "2010-04",
@@ -119224,7 +119224,7 @@
       }
     },
     "868": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Yin_2005",
       "fields": {
         "date": "2005-07",
@@ -119409,7 +119409,7 @@
       }
     },
     "869": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Yoon_2000",
       "fields": {
         "date": "2000-09",
@@ -119549,7 +119549,7 @@
       }
     },
     "870": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Yoshimura_1976",
       "fields": {
         "date": "1976-02",
@@ -119685,7 +119685,7 @@
       }
     },
     "871": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Young_1956",
       "fields": {
         "date": "1956-03",
@@ -119806,7 +119806,7 @@
       }
     },
     "872": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Yu_1973",
       "fields": {
         "date": "1973-02",
@@ -119979,7 +119979,7 @@
       }
     },
     "873": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Yu_1974",
       "fields": {
         "date": "1974-02",
@@ -120124,7 +120124,7 @@
       }
     },
     "874": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Yu_1974_B",
       "fields": {
         "date": "1974-04",
@@ -120273,7 +120273,7 @@
       }
     },
     "875": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Yu_2005",
       "fields": {
         "date": "2005",
@@ -120490,7 +120490,7 @@
       }
     },
     "876": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Yund_1964",
       "fields": {
         "date": "1964",
@@ -120579,7 +120579,7 @@
       }
     },
     "877": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Zerbino_2003",
       "fields": {
         "date": "2003-03",
@@ -120693,7 +120693,7 @@
       }
     },
     "878": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Zhang_2004",
       "fields": {
         "date": "2004-08",
@@ -120894,7 +120894,7 @@
       }
     },
     "879": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Zhang_2006",
       "fields": {
         "date": "2006-02",
@@ -121092,7 +121092,7 @@
       }
     },
     "880": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Zhang_2007",
       "fields": {
         "date": "2007",
@@ -121235,7 +121235,7 @@
       }
     },
     "881": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Zhao_2010",
       "fields": {
         "date": "2010-01",
@@ -121496,7 +121496,7 @@
       }
     },
     "882": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Zhilich_1969",
       "fields": {
         "date": "1969-12",
@@ -121672,7 +121672,7 @@
       }
     },
     "883": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Zhou_1998",
       "fields": {
         "date": "1998-05",
@@ -121786,7 +121786,7 @@
       }
     },
     "884": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Zhou_1998_B",
       "fields": {
         "date": "1998-05",
@@ -121900,7 +121900,7 @@
       }
     },
     "885": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Zhou_2002",
       "fields": {
         "date": "2002-08",
@@ -122059,7 +122059,7 @@
       }
     },
     "886": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Zhou_2003",
       "fields": {
         "date": "2003-04",
@@ -122221,7 +122221,7 @@
       }
     },
     "887": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Zhou_2004",
       "fields": {
         "date": "2004-06",
@@ -122367,7 +122367,7 @@
       }
     },
     "888": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Zhou_2004_B",
       "fields": {
         "date": "2004-01",
@@ -122487,7 +122487,7 @@
       }
     },
     "889": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Zhu_1994",
       "fields": {
         "date": "1994-04",
@@ -122664,7 +122664,7 @@
       }
     },
     "890": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Zhu_2002",
       "fields": {
         "date": "2002",
@@ -122788,7 +122788,7 @@
       }
     },
     "891": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Zhu_2004",
       "fields": {
         "date": "2004",
@@ -122919,7 +122919,7 @@
       }
     },
     "892": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Zhu_2004_B",
       "fields": {
         "date": "2004-04",
@@ -123068,7 +123068,7 @@
       }
     },
     "893": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Zhu_2004_C",
       "fields": {
         "date": "2004-10",
@@ -123236,7 +123236,7 @@
       }
     },
     "894": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Zhu_2004_D",
       "fields": {
         "date": "2004-10",
@@ -123370,7 +123370,7 @@
       }
     },
     "895": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Zielinger_1966",
       "fields": {
         "date": "1966",
@@ -123513,7 +123513,7 @@
       }
     },
     "896": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Zielinger_1967",
       "fields": {
         "date": "1967-03",
@@ -123691,7 +123691,7 @@
       }
     },
     "897": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Zielinger_1968",
       "fields": {
         "date": "1968",
@@ -123873,7 +123873,7 @@
       }
     },
     "898": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Zielinger_1970",
       "fields": {
         "date": "1970",
@@ -124026,7 +124026,7 @@
       }
     },
     "899": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Zielinger_1972",
       "fields": {
         "date": "1972",
@@ -124189,7 +124189,7 @@
       }
     },
     "900": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Zielinger_1973",
       "fields": {
         "date": "1973",
@@ -124317,7 +124317,7 @@
       }
     },
     "901": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Zielinger_1977",
       "fields": {
         "date": "1977",
@@ -124473,7 +124473,7 @@
       }
     },
     "902": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Ziomek_1982",
       "fields": {
         "date": "1982",
@@ -124566,7 +124566,7 @@
       }
     },
     "903": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Zirin_1963",
       "fields": {
         "date": "1963-08",
@@ -124675,7 +124675,7 @@
       }
     },
     "904": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Zou_1993",
       "fields": {
         "date": "1993-11",
@@ -124858,7 +124858,7 @@
       }
     },
     "905": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Zouaghi_1967",
       "fields": {
         "date": "1967-07",
@@ -125026,7 +125026,7 @@
       }
     },
     "906": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Zouaghi_1969",
       "fields": {
         "date": "1969",
@@ -125135,7 +125135,7 @@
       }
     },
     "907": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Zouaghi_1970",
       "fields": {
         "date": "1970",
@@ -125301,7 +125301,7 @@
       }
     },
     "908": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Zouaghi_1972",
       "fields": {
         "date": "1972",
@@ -125476,7 +125476,7 @@
       }
     },
     "909": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Zouaghi_1972_B",
       "fields": {
         "date": "1972",
@@ -125659,7 +125659,7 @@
       }
     },
     "910": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Zucker_1965",
       "fields": {
         "date": "1965",
@@ -125744,7 +125744,7 @@
       }
     },
     "911": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Zuo_1999",
       "fields": {
         "date": "1999-09",

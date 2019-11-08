@@ -155,7 +155,7 @@ export class CSLExporter {
         return theValue.map(
             range => range.map(
                 text=> this._reformText(text)
-            ).join('--')
+            ).join('-')
         ).join(',')
     }
 

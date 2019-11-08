@@ -1,7 +1,7 @@
 {
   "entries": {
     "1": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Adams2001",
       "fields": {
         "date": "2001",
@@ -152,10 +152,11 @@
       },
       "unexpected_fields": {
         "file": ":Better BibTeX.009/Users/heatherwright/Documents/Scientific Papers/Adams\\_Huaynaputina.pdf:pdf"
-      }
+      },
+      "incomplete": true
     },
     "2": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Adams2002",
       "fields": {
         "date": "2001",
@@ -312,7 +313,7 @@
   "errors": [
     {
       "type": "cut_off_citation",
-      "entry": "emptyreference",
+      "entry": "Adams2001",
       "line": 14
     }
   ],

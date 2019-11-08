@@ -1,7 +1,7 @@
 {
   "entries": {
     "1": {
-      "bib_type": "article",
+      "bib_type": "article-newspaper",
       "entry_key": "Boas2014StikordTil",
       "fields": {
         "date": "2014-07-04",
@@ -52,14 +52,6 @@
         "url": "http://apps.infomedia.dk.ep.fjernadgang.kb.dk/Ms3E/ShowArticle.aspx?outputFormat=Full&Duid=e4798c41",
         "urldate": "2014-09-15"
       },
-      "unexpected_fields": {
-        "entrysubtype": [
-          {
-            "type": "text",
-            "text": "newspaper"
-          }
-        ]
-      },
       "unknown_fields": {
         "timestamp": [
           {
@@ -71,12 +63,6 @@
     }
   },
   "warnings": [
-    {
-      "type": "unexpected_field",
-      "field_name": "entrysubtype",
-      "entry": "Boas2014StikordTil",
-      "line": 13
-    },
     {
       "type": "unknown_field",
       "field_name": "timestamp",

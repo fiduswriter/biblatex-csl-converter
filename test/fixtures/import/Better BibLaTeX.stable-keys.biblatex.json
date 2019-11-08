@@ -1,7 +1,7 @@
 {
   "entries": {
     "1": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Fritz2012",
       "fields": {
         "date": "2012",
@@ -108,7 +108,7 @@
       }
     },
     "2": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Fritz2012a",
       "fields": {
         "date": "2012",
@@ -215,7 +215,7 @@
       }
     },
     "3": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Fritz2012b",
       "fields": {
         "date": "2012",
@@ -322,7 +322,7 @@
       }
     },
     "4": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Fritz2012c",
       "fields": {
         "date": "2012",
@@ -429,7 +429,7 @@
       }
     },
     "5": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Fritz2012d",
       "fields": {
         "date": "2012",
@@ -536,7 +536,7 @@
       }
     },
     "6": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Fritz2012e",
       "fields": {
         "date": "2012",

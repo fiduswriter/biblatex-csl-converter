@@ -1,7 +1,7 @@
 {
   "entries": {
     "1": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "bentley_academic_2011",
       "fields": {
         "abstract": [
@@ -161,7 +161,7 @@
       }
     },
     "2": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "pollard_bicycle_2007",
       "fields": {
         "author": [
@@ -441,7 +441,7 @@
     {
       "type": "unknown_type",
       "type_name": "jurisdiction",
-      "line": 36
+      "line": 48
     },
     {
       "type": "unexpected_field",

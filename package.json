@@ -29,7 +29,7 @@
   "homepage": "https://github.com/fiduswriter/biblatex-csl-converter#readme",
   "scripts": {
     "gh-pages-travis": "gh-pages-travis",
-    "check_js": "eslint src/",
+    "lint": "eslint src/",
     "pretest": "npm run check_js && npm run flow check",
     "compile": "npm run compile_bundle && npm run compile_gh-pages && npm run compile_browser",
     "compile_bundle": "rollup src/index.js --config --output.format cjs --output.file lib/index.js --output.sourcemap true",

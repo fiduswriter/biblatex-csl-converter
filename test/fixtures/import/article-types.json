@@ -1,0 +1,188 @@
+{
+  "entries": {
+    "1": {
+      "bib_type": "article-magazine",
+      "entry_key": "der_spiegel_alle_1980",
+      "fields": {
+        "date": "1980",
+        "title": [
+          {
+            "type": "text",
+            "text": "Alle sollen sich erheben"
+          }
+        ],
+        "url": "http://www.spiegel.de/spiegel/print/d-14332124.html",
+        "pages": [
+          [
+            [
+              {
+                "type": "text",
+                "text": "183"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "191"
+              }
+            ]
+          ]
+        ],
+        "number": [
+          {
+            "type": "text",
+            "text": "19"
+          }
+        ],
+        "author": [
+          {
+            "literal": [
+              {
+                "type": "text",
+                "text": "Der Spiegel"
+              }
+            ]
+          }
+        ],
+        "urldate": "2010-02-27"
+      }
+    },
+    "2": {
+      "bib_type": "article-newspaper",
+      "entry_key": "afp_nicaragua_2009",
+      "fields": {
+        "date": "2009-04-16",
+        "title": [
+          {
+            "type": "text",
+            "text": "Nicaragua sufre mayor impacto por la crisis financiera"
+          }
+        ],
+        "url": "http://www.elnuevodiario.com.ni/nacionales/45361",
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "El Nuevo Diario"
+          }
+        ],
+        "author": [
+          {
+            "literal": [
+              {
+                "type": "text",
+                "text": "AFP"
+              }
+            ]
+          }
+        ],
+        "urldate": "2011-06-04"
+      }
+    },
+    "3": {
+      "bib_type": "article-newspaper",
+      "entry_key": "la_prensa_pacto_2005",
+      "fields": {
+        "date": "2005-03-10",
+        "title": [
+          {
+            "type": "text",
+            "text": "El pacto sigue"
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "La Prensa"
+          }
+        ],
+        "author": [
+          {
+            "literal": [
+              {
+                "type": "text",
+                "text": "La Prensa"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "4": {
+      "bib_type": "article-newspaper",
+      "entry_key": "la_prensa_corte_2008",
+      "fields": {
+        "date": "2008-01-11",
+        "title": [
+          {
+            "type": "text",
+            "text": "Corte avala Consejos del Poder Ciudadano"
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "La Prensa"
+          }
+        ],
+        "author": [
+          {
+            "literal": [
+              {
+                "type": "text",
+                "text": "La Prensa"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "5": {
+      "bib_type": "article-journal",
+      "entry_key": "leogrande_cuban_1979",
+      "fields": {
+        "date": "1979-07",
+        "title": [
+          {
+            "type": "text",
+            "text": "Cuban Dependency: A Comparison of Pre-Revolutionary and Post-Revolutionary International Economic Relations"
+          }
+        ],
+        "volume": [
+          {
+            "type": "text",
+            "text": "9"
+          }
+        ],
+        "url": "http://www1.american.edu/faculty/leogrande/Cuban_Studies_1979_Dependency.pdf",
+        "number": [
+          {
+            "type": "text",
+            "text": "2"
+          }
+        ],
+        "journaltitle": [
+          {
+            "type": "text",
+            "text": "Cuban Studies/Estudios Cubanos"
+          }
+        ],
+        "author": [
+          {
+            "family": [
+              {
+                "type": "text",
+                "text": "LeoGrande"
+              }
+            ],
+            "given": [
+              {
+                "type": "text",
+                "text": "William M."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

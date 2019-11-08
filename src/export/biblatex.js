@@ -78,6 +78,9 @@ export class BibLatexExporter {
                 'key': bib['entry_key'].length ? bib['entry_key'] : 'Undefined'
             }
             let fValues = {}
+            if (BibTypes[bib['bib_type']]['biblatex-subtype']) {
+                fValues['entrysubtype'] = BibTypes[bib['bib_type']]['biblatex-subtype']
+            }
             for (let fKey in bib.fields) {
                 if (!BibFieldTypes[fKey]) {
                     continue

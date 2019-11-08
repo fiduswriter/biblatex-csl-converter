@@ -387,7 +387,7 @@
     {
       "type": "unknown_type",
       "type_name": "data",
-      "line": 12
+      "line": 19
     },
     {
       "type": "unexpected_field",
@@ -404,7 +404,7 @@
     {
       "type": "unknown_type",
       "type_name": "audio",
-      "line": 21
+      "line": 33
     },
     {
       "type": "unexpected_field",
@@ -427,7 +427,7 @@
     {
       "type": "unknown_type",
       "type_name": "review",
-      "line": 35
+      "line": 53
     },
     {
       "type": "unexpected_field",
@@ -468,7 +468,7 @@
     {
       "type": "unknown_type",
       "type_name": "review",
-      "line": 55
+      "line": 65
     },
     {
       "type": "unexpected_field",

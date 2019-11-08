@@ -1,7 +1,7 @@
 {
   "entries": {
     "1": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "ISI:000270196200011",
       "fields": {
         "date": "2009",
@@ -107,7 +107,7 @@
       }
     },
     "2": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "ISI:000270196200011",
       "fields": {
         "date": "2009",

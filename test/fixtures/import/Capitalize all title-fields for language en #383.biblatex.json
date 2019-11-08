@@ -1,7 +1,7 @@
 {
   "entries": {
     "1": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "_carbocyclic",
       "fields": {
         "langid": "ukenglish",
@@ -88,7 +88,7 @@
       }
     },
     "4": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "_effect",
       "fields": {
         "langid": "usenglish",
@@ -198,7 +198,7 @@
       }
     },
     "7": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "_pleistocene",
       "fields": {
         "langid": "ukenglish",

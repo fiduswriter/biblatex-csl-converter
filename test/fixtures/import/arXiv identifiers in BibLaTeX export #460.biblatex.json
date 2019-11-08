@@ -1,7 +1,7 @@
 {
   "entries": {
     "1": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Sen.2016.BV",
       "fields": {
         "date": "2016-02",
@@ -124,7 +124,7 @@
       }
     },
     "2": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Smolin.2013.Classical",
       "fields": {
         "date": "2013-05-21",
@@ -205,7 +205,7 @@
       }
     },
     "3": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Ronnow.2014.Defining",
       "fields": {
         "date": "2014-07-25",

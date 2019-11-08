@@ -1,7 +1,7 @@
 {
   "entries": {
     "1": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "blahut_capacity",
       "fields": {
         "date": "1972",
@@ -78,7 +78,6 @@
     {
       "type": "undefined_variable",
       "variable": "IEEE_J_IT",
-      "entry": "blahut_capacity",
       "key": "journaltitle",
       "line": 5
     },

@@ -425,7 +425,7 @@
     {
       "type": "unknown_type",
       "type_name": "movie",
-      "line": 2
+      "line": 9
     },
     {
       "type": "unknown_field",
@@ -460,7 +460,7 @@
     {
       "type": "unknown_type",
       "type_name": "video",
-      "line": 24
+      "line": 30
     },
     {
       "type": "unknown_field",
@@ -483,7 +483,7 @@
     {
       "type": "unknown_type",
       "type_name": "video",
-      "line": 32
+      "line": 45
     },
     {
       "type": "unexpected_field",
@@ -536,7 +536,7 @@
     {
       "type": "unknown_type",
       "type_name": "video",
-      "line": 47
+      "line": 61
     },
     {
       "type": "unexpected_field",

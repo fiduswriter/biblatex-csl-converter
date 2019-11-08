@@ -1,7 +1,7 @@
 {
   "entries": {
     "1": {
-      "bib_type": "article",
+      "bib_type": "article-newspaper",
       "entry_key": "barker_2016_swiss",
       "fields": {
         "date": "2016-06-06",
@@ -43,14 +43,6 @@
         "url": "http://www.abc.net.au/news/2016-06-06/swiss-voters-reject-basic-income-proposal/7481672",
         "urldate": "2017-12-06"
       },
-      "unexpected_fields": {
-        "entrysubtype": [
-          {
-            "type": "text",
-            "text": "newspaper"
-          }
-        ]
-      },
       "unknown_fields": {
         "rights": [
           {
@@ -68,12 +60,6 @@
     }
   },
   "warnings": [
-    {
-      "type": "unexpected_field",
-      "field_name": "entrysubtype",
-      "entry": "barker_2016_swiss",
-      "line": 14
-    },
     {
       "type": "unknown_field",
       "field_name": "rights",

@@ -714,10 +714,10 @@ export const BibFieldTypes = {
 
 /** A list of all bib types and their fields. */
 export const BibTypes = {
-    "article": {
+    "article-journal": {
         "order": 1,
         "biblatex": "article",
-        "csl": "article",
+        "csl": "article-journal",
         "required": ["journaltitle", "title", "author", "date"],
         "eitheror": [],
         "optional": ["abstract", "addendum", "annotator", "commentator", "doi", "editor", "editora", "editorb", "editorc", "eid", "eprint", "eprintclass", "eprinttype", "issn", "issue", "issuesubtitle", "issuetitle", "journalsubtitle", "language", "langid", "note", "number", "origlanguage", "pages", "pagination", "pubstate", "series", "subtitle", "titleaddon", "translator", "url", "urldate", "version", "volume", "annotation", "keywords"]
@@ -725,6 +725,7 @@ export const BibTypes = {
     "article-magazine": {
         "order": 2,
         "biblatex": "article",
+        "biblatex-subtype": "magazine",
         "csl": "article-magazine",
         "required": ["journaltitle", "title", "author", "date"],
         "eitheror": [],
@@ -733,15 +734,16 @@ export const BibTypes = {
     "article-newspaper": {
         "order": 3,
         "biblatex": "article",
+        "biblatex-subtype": "newspaper",
         "csl": "article-newspaper",
         "required": ["journaltitle", "title", "author", "date"],
         "eitheror": [],
         "optional": ["abstract", "addendum", "annotator", "commentator", "doi", "editor", "editora", "editorb", "editorc", "eid", "eprint", "eprintclass", "eprinttype", "issn", "issue", "issuesubtitle", "issuetitle", "journalsubtitle", "language", "langid", "note", "number", "origlanguage", "pages", "pagination", "pubstate", "series", "subtitle", "titleaddon", "translator", "url", "urldate", "version", "volume", "annotation", "keywords"]
     },
-    "article-journal": {
+    "article": {
         "order": 4,
         "biblatex": "article",
-        "csl": "article-journal",
+        "csl": "article",
         "required": ["journaltitle", "title", "author", "date"],
         "eitheror": [],
         "optional": ["abstract", "addendum", "annotator", "commentator", "doi", "editor", "editora", "editorb", "editorc", "eid", "eprint", "eprintclass", "eprinttype", "issn", "issue", "issuesubtitle", "issuetitle", "journalsubtitle", "language", "langid", "note", "number", "origlanguage", "pages", "pagination", "pubstate", "series", "subtitle", "titleaddon", "translator", "url", "urldate", "version", "volume", "annotation", "keywords"]

@@ -12,12 +12,15 @@ export const BiblatexFieldAliasTypes = {
 
 /** A list of all bibentry aliases and what they refer to. */
 export const BiblatexAliasTypes = {
-    'conference': 'inproceedings',
-    'electronic': 'online',
-    'mastersthesis': 'thesis',
-    'phdthesis': 'thesis',
-    'techreport': 'report',
-    'www': 'online'
+    'conference': ['inproceedings'],
+    'electronic': ['online'],
+    'mastersthesis': ['thesis'],
+    'phdthesis': ['thesis'],
+    'techreport': ['report'],
+    'www': ['online'],
+    'periodical': ['article'],
+    'suppperiodical': ['article'],
+    'newsarticle': ['article', 'newspaper']
 }
 
 const langidAliases = {

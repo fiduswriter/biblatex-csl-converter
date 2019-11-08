@@ -1,7 +1,7 @@
 {
   "entries": {
     "1": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Adams2001",
       "fields": {
         "date": "2001",
@@ -180,7 +180,7 @@
       }
     },
     "2": {
-      "bib_type": "article",
+      "bib_type": "article-journal",
       "entry_key": "Adams2002",
       "fields": {
         "date": "2001",

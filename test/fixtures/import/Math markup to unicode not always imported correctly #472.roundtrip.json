@@ -277,7 +277,6 @@
     {
       "type": "undefined_variable",
       "variable": "IEEE_J_PROC",
-      "entry": "test_citation1",
       "key": "booktitle",
       "line": 5
     },
@@ -290,7 +289,7 @@
     {
       "type": "undefined_variable",
       "variable": "IEEE_J_PROC",
-      "entry": "test_citation2",
+      "entry": "test_citation1",
       "key": "booktitle",
       "line": 18
     },
