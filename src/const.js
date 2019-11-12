@@ -458,7 +458,8 @@ export const BibFieldTypes = {
     },
     'isan': {
         type: 'f_literal',
-        biblatex: 'isan'
+        biblatex: 'isan',
+        csl: 'number'
     },
     'isbn': {
         type: 'f_literal',
@@ -467,11 +468,13 @@ export const BibFieldTypes = {
     },
     'ismn': {
         type: 'f_literal',
-        biblatex: 'ismn'
+        biblatex: 'ismn',
+        csl: 'number'
     },
     'isrn': {
         type: 'f_literal',
-        biblatex: 'isrn'
+        biblatex: 'isrn',
+        csl: 'number'
     },
     'issn': {
         type: 'f_literal',
@@ -493,7 +496,8 @@ export const BibFieldTypes = {
     },
     'iswc': {
         type: 'f_literal',
-        biblatex: 'iswc'
+        biblatex: 'iswc',
+        csl: 'number'
     },
     'journalsubtitle': {
         type: 'f_literal',
@@ -557,7 +561,11 @@ export const BibFieldTypes = {
     'number': {
         type: 'f_literal',
         biblatex: 'number',
-        csl: 'number'
+        csl: {
+            'article-journal': 'issue',
+            'patent': 'number',
+            '*': 'collection-number'
+        } // See https://discourse.citationstyles.org/t/issue-number-and-bibtex/1072
     },
     'organization': {
         type: 'l_literal',

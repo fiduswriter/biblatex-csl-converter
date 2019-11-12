@@ -88,7 +88,14 @@ export class CSLExporter {
             if (bib.fields[fKey] !== '' && fKey in BibFieldTypes && 'csl' in BibFieldTypes[fKey]) {
                 let fValue = bib.fields[fKey]
                 let fType = BibFieldTypes[fKey]['type']
-                let key = BibFieldTypes[fKey]['csl']
+                let key
+                if (typeof BibFieldTypes[fKey]['csl'] === 'string') {
+                    key = BibFieldTypes[fKey]['csl']
+                } else if (BibFieldTypes[fKey]['csl'][bib.bib_type]) {
+                    key = BibFieldTypes[fKey]['csl'][bib.bib_type]
+                } else {
+                    key = BibFieldTypes[fKey]['csl']['*']
+                }
                 let reformedValue
                 switch(fType) {
                     case 'f_date':
