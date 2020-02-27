@@ -51,6 +51,7 @@ export class CSLExporter {
     /*::
     bibDB: Object;
     pks: Array<string>
+    config: ConfigObject;
     cslDB: Object;
     errors: Array<ErrorObject>;
     */
@@ -185,8 +186,8 @@ export class CSLExporter {
             .replace(/&/g, '&amp;')
             .replace(/</g, '&lt;')
             .replace(/>/g, '&gt;')
-            .replace(/\'/g, '&apos;')
-            .replace(/\"/g, '&quot;')
+            .replace(/'/g, '&apos;')
+            .replace(/"/g, '&quot;')
     }
 
     _reformText(theValue /*: NodeArray */) {
