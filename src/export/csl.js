@@ -22,6 +22,10 @@ const TAGS = {
  /*::
 import type {NodeArray, RangeArray, NameDictObject} from "../const"
 
+type ConfigObject = {
+    escapeText?: boolean;
+};
+
 type ErrorObject = {
     type: string;
     variable: string;
@@ -50,13 +54,14 @@ export class CSLExporter {
     cslDB: Object;
     errors: Array<ErrorObject>;
     */
-    constructor(bibDB /*: Object */, pks /*: Array<string> | false */ = false) {
+    constructor(bibDB /*: Object */, pks /*: Array<string> | false */ = false, config /*: ConfigObject */= {}) {
         this.bibDB = bibDB
         if (pks) {
             this.pks = pks // A list of pk values of the bibliography items to be exported.
         } else {
             this.pks = Object.keys(bibDB) // If none are selected, all keys are exporter
         }
+        this.config = config
         this.cslDB = {}
         this.errors = []
     }
@@ -175,6 +180,15 @@ export class CSLExporter {
         return theInt
     }
 
+    _escapeText(theValue /*: string */) /*: string */ {
+        return theValue
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/\'/g, '&apos;')
+            .replace(/\"/g, '&quot;')
+    }
+
     _reformText(theValue /*: NodeArray */) {
         let html = '', lastMarks = []
         theValue.forEach((node)=>{
@@ -215,7 +229,7 @@ export class CSLExporter {
                     html += TAGS[mark].open
                 }
             })
-            html += node.text
+            html += this.config.escapeText ? this._escapeText(node.text) : node.text
             lastMarks = newMarks
         })
         // Close all still open tags
