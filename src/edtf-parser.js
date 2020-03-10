@@ -164,7 +164,7 @@ class SimpleEDTFParser {
         let certain = true
         let year = parts[0]
 
-        let yearChecker = /^-?[0-9]*u{0,2}$/ // 1994, 19uu, -234, 187u, 0, 1984?~, etc.
+        let yearChecker = /^-?[0-9]*u{0,4}$/ // 1994, 19uu, -234, 187u, 0, 1984?~, 1uuu, uuuu, etc.
         if (!yearChecker.test(year)) {
             this.valid = false
             return
