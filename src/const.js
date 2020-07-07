@@ -866,7 +866,7 @@ export const BibTypes = {
         "csl": "entry",
         "required": ["title", "date"],
         "eitheror": ["editor", "author"],
-        "optional": ["abstract", "addendum", "howpublished", "type", "pubstate", "organization", "doi", "subtitle", "language", "langid", "location", "url", "urldate", "titleaddon", "version", "note", "eprint", "eprintclass", "eprinttype", "annotation", "keywords"]
+        "optional": ["abstract", "addendum", "howpublished", "type", "pubstate", "journal", "organization", "doi", "subtitle", "language", "langid", "location", "url", "urldate", "titleaddon", "version", "note", "eprint", "eprintclass", "eprinttype", "annotation", "keywords"]
     },
     "online": {
         "order": 42,
