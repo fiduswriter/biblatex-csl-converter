@@ -831,7 +831,7 @@ export const BibTypes = {
     "incollection": {
         "order": 22,
         "biblatex": "incollection",
-        "csl": "entry",
+        "csl": "chapter",
         "required": ["title", "editor", "booktitle", "author", "date"],
         "eitheror": [],
         "optional": ["abstract", "addendum", "afterword", "annotator", "booksubtitle", "booktitleaddon", "chapter", "commentator", "doi", "edition", "editora", "editorb", "editorc", "eprint", "eprintclass", "eprinttype", "foreword", "introduction", "isbn", "language", "langid", "location", "mainsubtitle", "maintitle", "maintitleaddon", "note", "number", "origlanguage", "pages", "pagination", "part", "publisher", "pubstate", "series", "subtitle", "titleaddon", "translator", "url", "urldate", "volume", "volumes", "annotation", "keywords"]
@@ -839,7 +839,7 @@ export const BibTypes = {
     "suppcollection": {
         "order": 23,
         "biblatex": "suppcollection",
-        "csl": "entry",
+        "csl": "chapter",
         "required": ["title", "editor", "booktitle", "author", "date"],
         "eitheror": [],
         "optional": ["abstract", "addendum", "afterword", "annotator", "booksubtitle", "booktitleaddon", "chapter", "commentator", "doi", "edition", "editora", "editorb", "editorc", "eprint", "eprintclass", "eprinttype", "foreword", "introduction", "isbn", "language", "langid", "location", "mainsubtitle", "maintitle", "maintitleaddon", "note", "number", "origlanguage", "pages", "pagination", "part", "publisher", "pubstate", "series", "subtitle", "titleaddon", "translator", "url", "urldate", "volume", "volumes", "annotation", "keywords"]
@@ -863,7 +863,7 @@ export const BibTypes = {
     "misc": {
         "order": 41,
         "biblatex": "misc",
-        "csl": "entry",
+        "csl": "article",
         "required": ["title", "date"],
         "eitheror": ["editor", "author"],
         "optional": ["abstract", "addendum", "howpublished", "type", "pubstate", "organization", "doi", "subtitle", "language", "langid", "location", "url", "urldate", "titleaddon", "version", "note", "eprint", "eprintclass", "eprinttype", "annotation", "keywords"]
@@ -895,7 +895,7 @@ export const BibTypes = {
     "suppperiodical": {
         "order": 51,
         "biblatex": "suppperiodical",
-        "csl": "entry",
+        "csl": "article",
         "required": ["journaltitle", "title", "author", "date"],
         "eitheror": [],
         "optional": ["abstract", "addendum", "annotator", "commentator", "doi", "editor", "editora", "editorb", "editorc", "eid", "eprint", "eprintclass", "eprinttype", "issn", "issue", "issuesubtitle", "issuetitle", "journalsubtitle", "language", "langid", "note", "number", "origlanguage", "pages", "pagination", "pubstate", "series", "subtitle", "titleaddon", "translator", "url", "urldate", "version", "volume", "annotation", "keywords"]
@@ -903,7 +903,7 @@ export const BibTypes = {
     "proceedings": {
         "order": 60,
         "biblatex": "proceedings",
-        "csl": "entry",
+        "csl": "book",
         "required": ["editor", "title", "date"],
         "eitheror": [],
         "optional": ["abstract", "addendum", "chapter", "doi", "eprint", "eprintclass", "eprinttype", "eventdate", "eventtitle", "isbn", "language", "langid", "location", "mainsubtitle", "maintitle", "maintitleaddon", "note", "number", "organization", "pages", "pagination", "pagetotal", "bookpagination", "part", "publisher", "pubstate", "series", "subtitle", "titleaddon", "url", "urldate", "venue", "volume", "volumes", "annotation", "keywords"]
@@ -911,7 +911,7 @@ export const BibTypes = {
     "mvproceedings": {
         "order": 61,
         "biblatex": "mvproceedings",
-        "csl": "entry",
+        "csl": "book",
         "required": ["editor", "title", "date"],
         "eitheror": [],
         "optional": ["abstract", "addendum", "doi", "eprint", "eprintclass", "eprinttype", "eventdate", "eventtitle", "isbn", "language", "langid", "location", "note", "number", "organization", "pagetotal", "bookpagination", "publisher", "pubstate", "series", "subtitle", "titleaddon", "url", "urldate", "venue", "volumes", "annotation", "keywords"]
@@ -943,7 +943,7 @@ export const BibTypes = {
     "inreference": {
         "order": 72,
         "biblatex": "inreference",
-        "csl": "entry",
+        "csl": "entry-encyclopedia",
         "required": ["title", "editor", "booktitle", "author", "date"],
         "eitheror": [],
         "optional": ["abstract", "addendum", "afterword", "annotator", "booksubtitle", "booktitleaddon", "chapter", "commentator", "doi", "edition", "editora", "editorb", "editorc", "eprint", "eprintclass", "eprinttype", "foreword", "introduction", "isbn", "language", "langid", "location", "mainsubtitle", "maintitle", "maintitleaddon", "note", "number", "origlanguage", "pages", "pagination", "part", "publisher", "pubstate", "series", "subtitle", "titleaddon", "translator", "url", "urldate", "volume", "volumes", "annotation", "keywords"]
