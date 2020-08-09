@@ -25,6 +25,7 @@ import type {NodeArray, RangeArray, NameDictObject} from "../const"
 
 type ConfigObject = {
     traditionalNames?: boolean;
+    exportUnexpectedFields?: boolean;
 };
 
 type BibObject = {
@@ -81,11 +82,12 @@ export class BibLatexExporter {
             if (BibTypes[bib['bib_type']]['biblatex-subtype']) {
                 fValues['entrysubtype'] = BibTypes[bib['bib_type']]['biblatex-subtype']
             }
-            for (let fKey in bib.fields) {
+            const fields = this.config.exportUnexpectedFields ? {...bib.fields, ...bib.unexpected_fields} : bib.fields
+            for (let fKey in fields) {
                 if (!BibFieldTypes[fKey]) {
                     continue
                 }
-                let fValue = bib.fields[fKey]
+                let fValue = fields[fKey]
                 let fType = BibFieldTypes[fKey]['type']
                 let key = BibFieldTypes[fKey]['biblatex']
                 switch (fType) {
@@ -127,7 +129,6 @@ export class BibLatexExporter {
                     default:
                         console.warn(`Unrecognized type: ${fType}!`)
                 }
-
             }
             bibEntry.values = fValues
             this.bibtexArray[this.bibtexArray.length] = bibEntry
