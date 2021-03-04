@@ -11,7 +11,7 @@ export default {
     input: "src/index.ts",
     plugins: [
         commonjs(),
-        typescript({ sourceMap: true, declaration: true }),
+        typescript({ sourceMap: true }),
         globals(),
         builtins(),
         resolve(),

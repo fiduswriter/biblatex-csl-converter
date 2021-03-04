@@ -84,6 +84,7 @@ interface ErrorObject {
     line?: number;
     key?: string;
     entry?: string;
+    field?: string;
     field_name?: string;
     alias_of?: string;
     alias_of_value?: any;
@@ -611,7 +612,7 @@ export class BibLatexParser {
                 if (rawFields[aliasKey]) {
                     const warning: ErrorObject = {
                         type: "alias_creates_duplicate_field",
-                        field_name: bKey,
+                        field: bKey,
                         alias_of: aliasKey,
                         value: rawFields[bKey],
                         alias_of_value: rawFields[aliasKey],
