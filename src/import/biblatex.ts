@@ -75,7 +75,6 @@ interface ConfigObject {
     processUnexpected?: boolean;
     processInvalidURIs?: boolean;
     processComments?: boolean;
-    async?: boolean;
 }
 
 interface ErrorObject {
@@ -1130,4 +1129,8 @@ export class BibLatexParser {
 
 export function parse(input: string, config: ConfigObject = {}) {
     return new BibLatexParser(input, config).parse();
+}
+
+export function parseAsync(input: string, config: ConfigObject = {}) {
+    return new BibLatexParser(input, config).parseAsync();
 }
