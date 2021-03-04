@@ -1,13 +1,13 @@
 {
     "name": "biblatex-csl-converter-ts",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "a set of converters: biblatex => json, json => biblatex, json => CSL",
     "main": "lib/index.js",
     "module": "lib/index.mjs",
     "types": "lib/index.d.ts",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/fiduswriter/biblatex-csl-converter.git"
+        "url": "git+https://github.com/DerDrodt/biblatex-csl-converter.git"
     },
     "keywords": [
         "bibtex",
