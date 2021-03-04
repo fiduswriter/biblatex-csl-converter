@@ -1,5 +1,5 @@
 {
-    "name": "@drodtel/biblatex-csl-converter",
+    "name": "biblatex-csl-converter-ts",
     "version": "1.0.0",
     "description": "a set of converters: biblatex => json, json => biblatex, json => CSL",
     "main": "lib/index.js",
