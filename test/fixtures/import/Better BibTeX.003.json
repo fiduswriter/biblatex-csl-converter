@@ -1,129 +1,152 @@
 {
-  "entries": {
-    "1": {
-      "bib_type": "inproceedings",
-      "entry_key": "author:06",
-      "fields": {
-        "title": [
-          {
-            "type": "text",
-            "text": "Some publication title"
-          }
-        ],
-        "author": [
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Author"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "First"
-              }
-            ]
-          },
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Author"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Second"
-              }
-            ]
-          }
-        ],
-        "pages": [
-          [
-            [
-              {
-                "type": "text",
-                "text": "330—331"
-              }
-            ]
-          ]
-        ]
-      },
-      "unknown_fields": {
-        "crossref": [
-          {
-            "type": "text",
-            "text": "conference:06"
-          }
-        ]
-      }
+    "entries": {
+        "1": {
+            "bib_type": "inproceedings",
+            "entry_key": "author:06",
+            "fields": {
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Some publication title"
+                    }
+                ],
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Author"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "First"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Author"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Second"
+                            }
+                        ]
+                    }
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "330—331"
+                            }
+                        ]
+                    ]
+                ],
+                "booktitle": [
+                    {
+                        "text": "Proceedings of the Xth Conference on XYZ",
+                        "type": "text"
+                    }
+                ],
+                "date": "2006-10",
+                "editor": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Editor"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "First"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Editor"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Second"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "2": {
+            "bib_type": "proceedings",
+            "entry_key": "conference:06",
+            "fields": {
+                "date": "2006-10",
+                "editor": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Editor"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "First"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Editor"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Second"
+                            }
+                        ]
+                    }
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Proceedings of the Xth Conference on XYZ"
+                    }
+                ]
+            },
+            "unexpected_fields": {
+                "booktitle": [
+                    {
+                        "type": "text",
+                        "text": "Proceedings of the Xth Conference on XYZ (Book)"
+                    }
+                ]
+            }
+        }
     },
-    "2": {
-      "bib_type": "proceedings",
-      "entry_key": "conference:06",
-      "fields": {
-        "date": "2006-10",
-        "editor": [
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Editor"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "First"
-              }
-            ]
-          },
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Editor"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Second"
-              }
-            ]
-          }
-        ],
-        "title": [
-          {
-            "type": "text",
-            "text": "Proceedings of the Xth Conference on XYZ"
-          }
-        ]
-      },
-      "unexpected_fields": {
-        "booktitle": [
-          {
-            "type": "text",
-            "text": "Proceedings of the Xth Conference on XYZ (Book)"
-          }
-        ]
-      }
-    }
-  },
-  "warnings": [
-    {
-      "type": "unknown_field",
-      "field_name": "crossref",
-      "entry": "author:06",
-      "line": 7
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "booktitle",
-      "entry": "conference:06",
-      "line": 14
-    }
-  ]
+    "warnings": [
+        {
+            "type": "unexpected_field",
+            "field_name": "booktitle",
+            "entry": "conference:06",
+            "line": 14
+        }
+    ]
 }

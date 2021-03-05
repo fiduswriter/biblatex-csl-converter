@@ -1,215 +1,211 @@
 {
-  "entries": {
-    "1": {
-      "bib_type": "inproceedings",
-      "entry_key": "Klassen2010",
-      "fields": {
-        "date": "2010",
-        "author": [
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Klassen"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Myungsook"
-              }
-            ]
-          },
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Kim"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Nyunsu"
-              }
-            ]
-          },
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Liu"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Wei Ming"
-              }
-            ]
-          }
-        ],
-        "booktitle": [
-          {
-            "type": "text",
-            "text": "CATA",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          }
-        ],
-        "note": [
-          {
-            "type": "text",
-            "text": "svm liniowe najlepsze"
-          }
-        ],
-        "pages": [
-          [
-            [
-              {
-                "type": "text",
-                "text": "25"
-              }
-            ],
-            [
-              {
-                "type": "text",
-                "text": "30"
-              }
-            ]
-          ]
-        ],
-        "title": [
-          {
-            "type": "text",
-            "text": "Empirical "
-          },
-          {
-            "type": "text",
-            "text": "Study",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": " of "
-          },
-          {
-            "type": "text",
-            "text": "Support Vector Machine Kernels",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": " with "
-          },
-          {
-            "type": "text",
-            "text": "Applications",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": " to "
-          },
-          {
-            "type": "text",
-            "text": "Microarray Data",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          }
-        ]
-      },
-      "unknown_fields": {
-        "bibsource": [
-          {
-            "type": "text",
-            "text": "DBLP, http://dblp.uni-trier.de"
-          }
-        ],
-        "crossref": [
-          {
-            "type": "text",
-            "text": "DBLP:conf/cata/2010"
-          }
-        ],
-        "groups": [
-          {
-            "type": "text",
-            "text": "klasyfikacja"
-          }
-        ],
-        "owner": [
-          {
-            "type": "text",
-            "text": "sstudent"
-          }
-        ],
-        "timestamp": [
-          {
-            "type": "text",
-            "text": "2015-02-24 12:14:36 +0100"
-          }
-        ]
-      },
-      "unexpected_fields": {
-        "file": "Klassen2010.pdf:files/1/Klassen2010.pdf:application/pdf"
-      }
-    }
-  },
-  "warnings": [
-    {
-      "type": "unknown_field",
-      "field_name": "bibsource",
-      "entry": "Klassen2010",
-      "line": 15
+    "entries": {
+        "1": {
+            "bib_type": "inproceedings",
+            "entry_key": "Klassen2010",
+            "fields": {
+                "date": "2010",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Klassen"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Myungsook"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Kim"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Nyunsu"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Liu"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Wei Ming"
+                            }
+                        ]
+                    }
+                ],
+                "booktitle": [
+                    {
+                        "type": "text",
+                        "text": "CATA",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ],
+                "note": [
+                    {
+                        "type": "text",
+                        "text": "svm liniowe najlepsze"
+                    }
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "25"
+                            }
+                        ],
+                        [
+                            {
+                                "type": "text",
+                                "text": "30"
+                            }
+                        ]
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Empirical "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Study",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " of "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Support Vector Machine Kernels",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " with "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Applications",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " to "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Microarray Data",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "bibsource": [
+                    {
+                        "type": "text",
+                        "text": "DBLP, http://dblp.uni-trier.de"
+                    }
+                ],
+                "groups": [
+                    {
+                        "type": "text",
+                        "text": "klasyfikacja"
+                    }
+                ],
+                "owner": [
+                    {
+                        "type": "text",
+                        "text": "sstudent"
+                    }
+                ],
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            },
+            "unexpected_fields": {
+                "file": "Klassen2010.pdf:files/1/Klassen2010.pdf:application/pdf"
+            }
+        }
     },
-    {
-      "type": "unknown_field",
-      "field_name": "crossref",
-      "entry": "Klassen2010",
-      "line": 15
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "file",
-      "entry": "Klassen2010",
-      "line": 15
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "groups",
-      "entry": "Klassen2010",
-      "line": 15
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "owner",
-      "entry": "Klassen2010",
-      "line": 15
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Klassen2010",
-      "line": 15
-    }
-  ]
+    "errors": [
+        {
+            "type": "unknown_crossref",
+            "value": "DBLP:conf/cata/2010",
+            "entry": "Klassen2010"
+        }
+    ],
+    "warnings": [
+        {
+            "type": "unknown_field",
+            "field_name": "bibsource",
+            "entry": "Klassen2010",
+            "line": 15
+        },
+
+        {
+            "type": "unexpected_field",
+            "field_name": "file",
+            "entry": "Klassen2010",
+            "line": 15
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "groups",
+            "entry": "Klassen2010",
+            "line": 15
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "owner",
+            "entry": "Klassen2010",
+            "line": 15
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "Klassen2010",
+            "line": 15
+        }
+    ]
 }

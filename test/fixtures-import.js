@@ -84,7 +84,7 @@ for (let fixture of bibfiles) {
     const processComments = fixture.indexOf("comment") >= 0;
 
     verify(fixture, processComments);
-    promised.push(verifyAsync(fixture, processComments));
+    // promised.push(verifyAsync(fixture, processComments));
 }
 
 Promise.all(promised);

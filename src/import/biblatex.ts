@@ -4,6 +4,7 @@ import {
     BiblatexAliasTypes,
     BiblatexFieldAliasTypes,
     BiblatexAliasOptions,
+    CrossRefInheritance,
 } from "./const";
 import { BibLatexNameParser } from "./name-parser";
 import { BibLatexLiteralParser } from "./literal-parser";
@@ -174,6 +175,9 @@ export class BibLatexParser {
         groups: Array<GroupObject> | false;
         meta: number;
     };
+    crossrefs: {
+        [key: string]: string;
+    };
 
     constructor(input: string, config: ConfigObject = {}) {
         this.input = input;
@@ -206,6 +210,7 @@ export class BibLatexParser {
         this.groupParser = new GroupParser(this.entries);
         this.groups = false;
         this.jabrefMeta = {};
+        this.crossrefs = {};
     }
 
     isWhitespace(s: string) {
@@ -486,6 +491,13 @@ export class BibLatexParser {
         }
         let rawFields = this.currentRawFields!;
         let fields = this.currentEntry["fields"];
+
+        if ("crossref" in rawFields) {
+            this.crossrefs[
+                this.currentEntry.entry_key
+            ] = rawFields.crossref as string;
+            delete rawFields.crossref;
+        }
 
         // date may come either as year, year + month or as date field.
         // We therefore need to catch these hear and transform it to the
@@ -1099,9 +1111,77 @@ export class BibLatexParser {
         return this.bibDB;
     }
 
+    _resolveCrossRef(key: string, parentKey: string) {
+        const entry = this.entries.find((e) => e.entry_key === key)!;
+        const parent = this.entries.find((e) => e.entry_key === parentKey)!;
+        const { fields: entryFields, bib_type } = entry;
+        const { fields: parentFields, bib_type: parentType } = parent;
+
+        const inhertitedFields: { [key: string]: any } = {};
+
+        for (const ti of CrossRefInheritance) {
+            if (
+                ti.source.includes(parentType) &&
+                ti.target.includes(bib_type)
+            ) {
+                for (const fi of ti.fields) {
+                    const field = fi.target;
+                    const bt = BibTypes[bib_type];
+                    if (
+                        bt.required.includes(field) ||
+                        bt.optional.includes(field) ||
+                        bt.eitheror.includes(field)
+                    )
+                        inhertitedFields[field] = parentFields[fi.source];
+                }
+            }
+        }
+
+        const fields = {
+            ...parentFields,
+            ...inhertitedFields,
+            ...entryFields,
+        };
+
+        entry.fields = fields;
+    }
+
+    _resoveAllCrossRefs() {
+        const toResolve = new Set<string>(Object.keys(this.crossrefs));
+        while (toResolve.size > 0) {
+            const queue = new Set<string>(
+                [...toResolve.values()].filter(
+                    (k) => !toResolve.has(this.crossrefs[k])
+                )
+            );
+            if (queue.size === 0) {
+                const entry = toResolve.values().next().value;
+                // TODO: More precise error
+                this.errors.push({ type: "circular_crossref", entry });
+                return;
+            }
+            const key = queue.values().next().value as string;
+            const parent = this.crossrefs[key];
+            if (!this.entries.some((e) => e.entry_key === parent)) {
+                this.errors.push({
+                    type: "unknown_crossref",
+                    entry: key,
+                    value: parent,
+                });
+                return;
+            }
+
+            this._resolveCrossRef(key, parent);
+            queue.delete(key);
+            toResolve.delete(key);
+        }
+    }
+
     parsed(): BiblatexParseResult {
         this.createBibDB();
+        this._resoveAllCrossRefs();
         this.cleanDB();
+
         return {
             entries: this.bibDB,
             errors: this.errors,
