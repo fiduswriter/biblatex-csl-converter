@@ -274,10 +274,10 @@ export class BibLatexExporter {
                 // This is an undefined variable
                 // This should usually not happen, as CSL doesn't know what to
                 // do with these. We'll put them into an unsupported tag.
-                latex += `} # ${node.attrs.variable} # {`;
+                latex += `} # ${node.attrs!.variable} # {`;
                 this.warnings.push({
                     type: "undefined_variable",
-                    variable: node.attrs.variable,
+                    variable: node.attrs!.variable,
                 });
                 return;
             }

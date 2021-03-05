@@ -53,7 +53,7 @@ type CSLNameObject = {
     "dropping-particle"?: string;
 };
 
-interface CSLEntry {
+export interface CSLEntry {
     id?: string;
     [key: string]: any;
 }
@@ -116,7 +116,7 @@ export class CSLExporter {
                 let fValue = bib.fields[fKey];
                 let fType = BibFieldTypes[fKey]["type"];
                 let key: string;
-                const csl = BibFieldTypes[fKey].csl;
+                const csl = BibFieldTypes[fKey].csl!;
                 if (typeof csl === "string") {
                     key = csl;
                 } else if (csl[bib.bib_type]) {
@@ -181,11 +181,11 @@ export class CSLExporter {
 
     _reformKey(theValue: string | NodeArray, fKey: string) {
         if (typeof theValue === "string") {
-            let fieldType = BibFieldTypes[fKey];
+            let fieldType = BibFieldTypes[fKey]!;
             if (Array.isArray(fieldType["options"])) {
                 return theValue;
             } else {
-                return fieldType["options"][theValue]["csl"];
+                return fieldType["options"]![theValue]["csl"];
             }
         } else {
             return this._reformText(theValue);
@@ -226,10 +226,12 @@ export class CSLExporter {
                 // This is an undefined variable
                 // This should usually not happen, as CSL doesn't know what to
                 // do with these. We'll put them into an unsupported tag.
-                html += `${TAGS.undefined.open}${node.attrs.variable}${TAGS.undefined.close}`;
+                html += `${TAGS.undefined.open}${node.attrs!.variable}${
+                    TAGS.undefined.close
+                }`;
                 this.errors.push({
                     type: "undefined_variable",
-                    variable: node.attrs.variable,
+                    variable: node.attrs!.variable,
                 });
                 return;
             }
@@ -327,8 +329,8 @@ export class CSLExporter {
                     return false;
                 }
             } else {
-                reformedName["given"] = this._reformText(name.given);
-                reformedName["family"] = this._reformText(name.family);
+                reformedName["given"] = this._reformText(name.given!);
+                reformedName["family"] = this._reformText(name.family!);
                 if (name.suffix) {
                     reformedName["suffix"] = this._reformText(name.suffix);
                 }
@@ -343,7 +345,7 @@ export class CSLExporter {
                         );
                     }
                 }
-                reformedName["family"] = this._reformText(name["family"]);
+                reformedName["family"] = this._reformText(name["family"]!);
             }
             return reformedName;
         });

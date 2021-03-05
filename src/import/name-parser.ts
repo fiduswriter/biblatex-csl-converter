@@ -62,7 +62,7 @@ export class BibLatexNameParser {
                 let firstMiddle = split[0];
                 let vonLast = split[1];
                 if (vonLast.length === 0 && firstMiddle.length > 1) {
-                    let last = firstMiddle.pop();
+                    let last = firstMiddle.pop()!;
                     vonLast.push(last);
                 }
                 this.processFirstMiddle(firstMiddle);
@@ -78,7 +78,7 @@ export class BibLatexNameParser {
     parseExtendedName(parts: Array<string>) {
         parts.forEach((part) => {
             let attrParts = part.trim().replace(/^"|"$/g, "").split("=");
-            let attrName = attrParts.shift().trim().toLowerCase();
+            let attrName = attrParts.shift()!.trim().toLowerCase();
             if (["family", "given", "prefix", "suffix"].includes(attrName)) {
                 (this.nameDict as any)[attrName] = this._reformLiteral(
                     attrParts.join("=").trim()
@@ -155,7 +155,7 @@ export class BibLatexNameParser {
         let von = rSplit[0];
         let last = rSplit[1];
         if (von && !last) {
-            last.push(von.pop());
+            (last as string[]).push((von as string[]).pop()!);
         }
         if (von.length) {
             this.nameDict["prefix"] = this._reformLiteral(von.join(" ").trim());

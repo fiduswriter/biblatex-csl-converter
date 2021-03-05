@@ -141,7 +141,7 @@ export class BibLatexParser {
     currentKey: string | false;
     currentEntry?: EntryObject;
     currentType: string;
-    currentRawFields: {
+    currentRawFields?: {
         [key: string]: any;
     };
     bibDB: BibDB;
@@ -170,7 +170,7 @@ export class BibLatexParser {
     jabrefMeta: {
         [key: string]: string;
     };
-    jabref: {
+    jabref?: {
         groups: Array<GroupObject> | false;
         meta: number;
     };
@@ -182,7 +182,7 @@ export class BibLatexParser {
         this.entries = [];
         this.bibDB = {};
         this.currentKey = false;
-        this.currentEntry = null;
+        this.currentEntry = undefined;
         this.currentType = "";
         this.errors = [];
         this.warnings = [];
@@ -484,7 +484,7 @@ export class BibLatexParser {
         if (!this.currentEntry) {
             return;
         }
-        let rawFields = this.currentRawFields;
+        let rawFields = this.currentRawFields!;
         let fields = this.currentEntry["fields"];
 
         // date may come either as year, year + month or as date field.
@@ -809,7 +809,7 @@ export class BibLatexParser {
                     return keyValue;
                 }
             } else {
-                let optionValue = Object.keys(fieldType["options"]).find(
+                let optionValue = Object.keys(fieldType["options"]!).find(
                     (key) => {
                         return (
                             (fieldType as any)["options"][key]["biblatex"] ===
@@ -876,14 +876,14 @@ export class BibLatexParser {
             let parts = string.split("--");
             if (parts.length > 1) {
                 return [
-                    this._reformLiteral(parts.shift().trim()),
+                    this._reformLiteral(parts.shift()!.trim()),
                     this._reformLiteral(parts.join("--").trim()),
                 ];
             } else {
                 parts = string.split("-");
                 if (parts.length > 1) {
                     return [
-                        this._reformLiteral(parts.shift().trim()),
+                        this._reformLiteral(parts.shift()!.trim()),
                         this._reformLiteral(parts.join("-").trim()),
                     ];
                 } else {
@@ -900,7 +900,7 @@ export class BibLatexParser {
 
     bibType(): string {
         let biblatexType = this.currentType;
-        let biblatexSubtype = this.currentRawFields.entrysubtype || false;
+        let biblatexSubtype = this.currentRawFields?.entrysubtype || false;
         if (biblatexType in BiblatexAliasTypes) {
             const aliasType: string[] = (BiblatexAliasTypes as any)[
                 biblatexType
@@ -986,7 +986,7 @@ export class BibLatexParser {
         }
     }
 
-    stepThroughBibtexAsync(): Promise<void> {
+    stepThroughBibtexAsync(): Promise<null> {
         return this.skipToNext()
             ? new Promise((resolve) => resolve(this.parseNext())).then(() =>
                   this.stepThroughBibtexAsync()

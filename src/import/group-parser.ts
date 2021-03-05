@@ -142,7 +142,7 @@ export class GroupParser {
             const references = referenceMatch
                 ? referenceMatch.split("\u2004").filter((key) => key)
                 : [];
-            let name = references.shift();
+            let name = references.shift()!;
             let intersection = references.shift(); // 0 = independent, 1 = intersection, 2 = union
 
             // ignore root level, has no refs anyway in the comment

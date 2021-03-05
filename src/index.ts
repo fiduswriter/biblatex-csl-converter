@@ -4,3 +4,5 @@ export { CSLExporter } from "./export/csl";
 export { BibFieldTypes, BibTypes } from "./const";
 export { edtfParse } from "./edtf-parser";
 export { unescapeCSL } from "./unescape-csl";
+export type { BibDB, BiblatexParseResult } from "./import/biblatex";
+export type { CSLEntry } from "./export/csl";

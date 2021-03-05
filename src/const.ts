@@ -6,7 +6,8 @@ export interface UnknownFieldsObject {
         | Array<NodeArray>
         | Array<NodeArray | string>
         | Array<NameDictObject>
-        | string;
+        | string
+        | undefined;
 }
 
 export interface MarkObject {

@@ -56,7 +56,7 @@ export class BibLatexLiteralParser {
     braceClosings: Array<boolean>;
     currentMarks: Array<MarkObject>;
     inCasePreserve: number | null;
-    textNode: TextNodeObject;
+    textNode?: TextNodeObject;
 
     constructor(string: string, cpMode: boolean = false) {
         this.string = string;
@@ -73,13 +73,13 @@ export class BibLatexLiteralParser {
 
     // If the last text node has no content, remove it.
     removeIfEmptyTextNode() {
-        if (this.textNode.text.length === 0) {
+        if (this.textNode && this.textNode.text.length === 0) {
             this.json.pop();
         }
     }
 
     checkAndAddNewTextNode() {
-        if (this.textNode.text.length > 0) {
+        if (this.textNode && this.textNode.text.length > 0) {
             // We have text in the last node already,
             // so we need to start a new text node.
             this.addNewTextNode();
@@ -128,7 +128,7 @@ export class BibLatexLiteralParser {
                                 }
                             }
                             this.currentMarks.push({ type: command[1] });
-                            this.textNode.marks = this.currentMarks.slice();
+                            this.textNode!.marks = this.currentMarks.slice();
                             this.braceClosings.push(true);
                             continue parseString;
                         }
@@ -154,7 +154,7 @@ export class BibLatexLiteralParser {
                                 this.si++;
                             }
                             this.currentMarks.push({ type: command[1] });
-                            this.textNode.marks = this.currentMarks.slice();
+                            this.textNode!.marks = this.currentMarks.slice();
                             continue parseString;
                         }
                     }
@@ -166,8 +166,8 @@ export class BibLatexLiteralParser {
                             ) === command[0]
                         ) {
                             this.checkAndAddNewTextNode();
-                            this.textNode.marks = this.currentMarks.slice();
-                            this.textNode.marks.push({ type: command[1] });
+                            this.textNode!.marks = this.currentMarks.slice();
+                            this.textNode!.marks.push({ type: command[1] });
                             this.si += command[0].length;
                             let sj = this.si;
                             let internalBraceLevel = 0;
@@ -186,7 +186,7 @@ export class BibLatexLiteralParser {
                                 }
                                 sj++;
                             }
-                            this.textNode.text = this.string.substring(
+                            this.textNode!.text = this.string.substring(
                                 this.si,
                                 sj
                             );
@@ -196,7 +196,7 @@ export class BibLatexLiteralParser {
                         }
                     }
                     if (LATEX_SPECIAL_CHARS[this.string[this.si + 1]]) {
-                        this.textNode.text +=
+                        this.textNode!.text +=
                             LATEX_SPECIAL_CHARS[this.string[this.si + 1]];
                         this.si += 2;
                     } else {
@@ -224,7 +224,7 @@ export class BibLatexLiteralParser {
                             this.braceLevel++;
                             this.si += 2;
                             this.currentMarks.push({ type: "sub" });
-                            this.textNode.marks = this.currentMarks.slice();
+                            this.textNode!.marks = this.currentMarks.slice();
                             this.braceClosings.push(true);
                             break;
                         case "\\":
@@ -234,12 +234,12 @@ export class BibLatexLiteralParser {
                         default:
                             // We only add the next character to a sub node.
                             this.checkAndAddNewTextNode();
-                            this.textNode.marks = this.currentMarks.slice();
-                            this.textNode.marks.push({ type: "sub" });
-                            this.textNode.text = this.string[this.si + 1];
+                            this.textNode!.marks = this.currentMarks.slice();
+                            this.textNode!.marks.push({ type: "sub" });
+                            this.textNode!.text = this.string[this.si + 1];
                             this.addNewTextNode();
                             if (this.currentMarks.length) {
-                                this.textNode.marks = this.currentMarks.slice();
+                                this.textNode!.marks = this.currentMarks.slice();
                             }
                             this.si += 2;
                     }
@@ -250,10 +250,10 @@ export class BibLatexLiteralParser {
                         this.braceLevel++;
                         this.si += 2;
                         this.currentMarks.push({ type: "enquote" });
-                        this.textNode.marks = this.currentMarks.slice();
+                        this.textNode!.marks = this.currentMarks.slice();
                         this.braceClosings.push(true);
                     } else {
-                        this.textNode.text += this.string[this.si];
+                        this.textNode!.text += this.string[this.si];
                         this.si++;
                     }
                     break;
@@ -266,9 +266,9 @@ export class BibLatexLiteralParser {
                                 this.checkAndAddNewTextNode();
                                 this.currentMarks.pop();
                                 if (this.currentMarks.length) {
-                                    this.textNode.marks = this.currentMarks.slice();
+                                    this.textNode!.marks = this.currentMarks.slice();
                                 } else {
-                                    delete this.textNode.marks;
+                                    delete this.textNode!.marks;
                                 }
                             }
                             this.si += 2;
@@ -278,7 +278,7 @@ export class BibLatexLiteralParser {
                             return [{ type: "text", text: this.string }];
                         }
                     } else {
-                        this.textNode.text += this.string[this.si];
+                        this.textNode!.text += this.string[this.si];
                         this.si++;
                     }
                     break;
@@ -289,7 +289,7 @@ export class BibLatexLiteralParser {
                             this.braceLevel++;
                             this.si += 2;
                             this.currentMarks.push({ type: "sup" });
-                            this.textNode.marks = this.currentMarks.slice();
+                            this.textNode!.marks = this.currentMarks.slice();
                             this.braceClosings.push(true);
                             break;
                         case "\\":
@@ -299,12 +299,12 @@ export class BibLatexLiteralParser {
                         default:
                             // We only add the next character to a sup node.
                             this.checkAndAddNewTextNode();
-                            this.textNode.marks = this.currentMarks.slice();
-                            this.textNode.marks.push({ type: "sup" });
-                            this.textNode.text = this.string[this.si + 1];
+                            this.textNode!.marks = this.currentMarks.slice();
+                            this.textNode!.marks.push({ type: "sup" });
+                            this.textNode!.text = this.string[this.si + 1];
                             this.addNewTextNode();
                             if (this.currentMarks.length) {
-                                this.textNode.marks = this.currentMarks.slice();
+                                this.textNode!.marks = this.currentMarks.slice();
                             }
                             this.si += 2;
                     }
@@ -323,7 +323,7 @@ export class BibLatexLiteralParser {
                         this.inCasePreserve = this.braceLevel;
                         this.checkAndAddNewTextNode();
                         this.currentMarks.push({ type: "nocase" });
-                        this.textNode.marks = this.currentMarks.slice();
+                        this.textNode!.marks = this.currentMarks.slice();
                         this.braceClosings.push(true);
                     }
                     this.si++;
@@ -334,7 +334,7 @@ export class BibLatexLiteralParser {
                         let closeBrace = this.braceClosings.pop();
                         if (closeBrace) {
                             this.checkAndAddNewTextNode();
-                            let lastMark = this.currentMarks.pop();
+                            let lastMark = this.currentMarks.pop()!;
                             if (this.inCasePreserve === this.braceLevel + 1) {
                                 this.inCasePreserve = null;
                                 // The last tag may have added more tags. The
@@ -343,13 +343,13 @@ export class BibLatexLiteralParser {
                                     lastMark.type !== "nocase" &&
                                     this.currentMarks.length
                                 ) {
-                                    lastMark = this.currentMarks.pop();
+                                    lastMark = this.currentMarks.pop()!;
                                 }
                             }
                             if (this.currentMarks.length) {
-                                this.textNode.marks = this.currentMarks.slice();
+                                this.textNode!.marks = this.currentMarks.slice();
                             } else {
-                                delete this.textNode.marks;
+                                delete this.textNode!.marks;
                             }
                         }
                         this.si++;
@@ -365,7 +365,7 @@ export class BibLatexLiteralParser {
                     break;
                 case "~":
                     // a non-breakable space
-                    this.textNode.text += "\u00A0";
+                    this.textNode!.text += "\u00A0";
                     this.si++;
                     break;
                 case "\u0870":
@@ -382,7 +382,7 @@ export class BibLatexLiteralParser {
                     break;
                 case "\u0871":
                     // A backslash
-                    this.textNode.text += "\\";
+                    this.textNode!.text += "\\";
                     this.si++;
                     break;
                 case "\r":
@@ -393,17 +393,17 @@ export class BibLatexLiteralParser {
                         ["\r", "\n"].includes(this.string[this.si + 1]) &&
                         this.string[this.si - 1] !== "\n"
                     ) {
-                        this.textNode.text += "\n\n";
+                        this.textNode!.text += "\n\n";
                     } else if (
                         /\S/.test(this.string[this.si - 1]) &&
                         /\S/.test(this.string[this.si + 1])
                     ) {
-                        this.textNode.text += " ";
+                        this.textNode!.text += " ";
                     }
                     this.si++;
                     break;
                 default:
-                    this.textNode.text += this.string[this.si];
+                    this.textNode!.text += this.string[this.si];
                     this.si++;
             }
         }
