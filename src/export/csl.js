@@ -165,11 +165,21 @@ export class CSLExporter {
     }
 
     _reformRange(theValue /*: Array<RangeArray> */) /*: string */ {
+        if (!Array.isArray(theValue)) {
+            return ''
+        }
         return theValue.map(
-            range => range.map(
-                text=> this._reformText(text)
-            ).join('-')
-        ).join(',')
+            interval => this._reformInterval(interval)
+        ).filter(interval => interval.length).join(',')
+    }
+
+    _reformInterval(theValue /*: Array<NodeArray> */) /*: string */ {
+        if (!Array.isArray(theValue)) {
+            return ''
+        }
+        return theValue.map(
+            text => this._reformText(text)
+        ).join('-')
     }
 
     _reformInteger(theValue /*: NodeArray */) {
@@ -182,6 +192,9 @@ export class CSLExporter {
     }
 
     _escapeText(theValue /*: string */) /*: string */ {
+        if (!(typeof theValue === 'string')) {
+            return ''
+        }
         return theValue
             .replace(/&/g, '&amp;')
             .replace(/</g, '&lt;')
@@ -192,6 +205,9 @@ export class CSLExporter {
 
     _reformText(theValue /*: NodeArray */) {
         let html = '', lastMarks = []
+        if (!Array.isArray(theValue)) {
+            return html
+        }
         theValue.forEach((node)=>{
             if (node.type === 'variable') {
                 // This is an undefined variable
@@ -230,7 +246,7 @@ export class CSLExporter {
                     html += TAGS[mark].open
                 }
             })
-            html += this.config.escapeText ? this._escapeText(node.text) : node.text
+            html += this.config.escapeText ? this._escapeText(node.text) : node.text || ''
             lastMarks = newMarks
         })
         // Close all still open tags

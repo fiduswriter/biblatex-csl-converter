@@ -152,14 +152,27 @@ export class BibLatexExporter {
     }
 
     _reformRange(theValue /*: Array<RangeArray> */) /*: string */ {
+        if (!Array.isArray(theValue)) {
+            return ''
+        }
         return theValue.map(
-            range => range.map(
-                text => this._reformText(text)
-            ).join('--')
-        ).join(',')
+            range => this._reformInterval(range)
+        ).filter(interval => interval.length).join(',')
+    }
+
+    _reformInterval(theValue /*: Array<NodeArray> */) /*: string */ {
+        if (!Array.isArray(theValue)) {
+            return ''
+        }
+        return theValue.map(
+            text => this._reformText(text)
+        ).join('--')
     }
 
     _reformName(theValue /*: Array<NameDictObject> */) /*: string */ {
+        if (!Array.isArray(theValue)) {
+            return ''
+        }
         let names = []
         theValue.forEach((name)=>{
             if (name.literal) {
@@ -214,6 +227,9 @@ export class BibLatexExporter {
     }
 
     _escapeTeX(theValue /*: string */) /*: string */ {
+        if (!typeof theValue === 'string') {
+            return ''
+        }
         let len = TexSpecialChars.length
         for (let i = 0; i < len; i++) {
             theValue = theValue.replace(
@@ -226,7 +242,9 @@ export class BibLatexExporter {
 
     _reformText(theValue /*: NodeArray */) /*: string */ {
         let latex = '', lastMarks = []
-
+        if (!Array.isArray(theValue)) {
+            return latex
+        }
         // Add one extra empty node to theValue to close all still open tags for last node.
         theValue.concat({type:'text', text:''}).forEach(
             node => {
