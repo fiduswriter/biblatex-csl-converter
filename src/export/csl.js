@@ -166,6 +166,7 @@ export class CSLExporter {
 
     _reformRange(theValue /*: Array<RangeArray> */) /*: string */ {
         if (!Array.isArray(theValue)) {
+            console.warn(`Wrong format for range`, theValue)
             return ''
         }
         return theValue.map(
@@ -175,6 +176,7 @@ export class CSLExporter {
 
     _reformInterval(theValue /*: Array<NodeArray> */) /*: string */ {
         if (!Array.isArray(theValue)) {
+            console.warn(`Wrong format for interval`, theValue)
             return ''
         }
         return theValue.map(
@@ -193,6 +195,7 @@ export class CSLExporter {
 
     _escapeText(theValue /*: string */) /*: string */ {
         if (!(typeof theValue === 'string')) {
+            console.warn(`Wrong format for escapeText`, theValue)
             return ''
         }
         return theValue
@@ -206,6 +209,7 @@ export class CSLExporter {
     _reformText(theValue /*: NodeArray */) {
         let html = '', lastMarks = []
         if (!Array.isArray(theValue)) {
+            console.warn(`Wrong format for reformText`, theValue)
             return html
         }
         theValue.forEach((node)=>{
