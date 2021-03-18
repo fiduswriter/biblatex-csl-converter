@@ -227,7 +227,7 @@ export class BibLatexExporter {
     }
 
     _escapeTeX(theValue /*: string */) /*: string */ {
-        if (!typeof theValue === 'string') {
+        if (!(typeof theValue === 'string')) {
             return ''
         }
         let len = TexSpecialChars.length
