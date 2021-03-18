@@ -153,6 +153,7 @@ export class BibLatexExporter {
 
     _reformRange(theValue /*: Array<RangeArray> */) /*: string */ {
         if (!Array.isArray(theValue)) {
+            console.warn(`Wrong format for reformRange`, theValue)
             return ''
         }
         return theValue.map(
@@ -162,6 +163,7 @@ export class BibLatexExporter {
 
     _reformInterval(theValue /*: Array<NodeArray> */) /*: string */ {
         if (!Array.isArray(theValue)) {
+            console.warn(`Wrong format for reformInterval`, theValue)
             return ''
         }
         return theValue.map(
@@ -171,6 +173,7 @@ export class BibLatexExporter {
 
     _reformName(theValue /*: Array<NameDictObject> */) /*: string */ {
         if (!Array.isArray(theValue)) {
+            console.warn(`Wrong format for reformName`, theValue)
             return ''
         }
         let names = []
@@ -228,6 +231,7 @@ export class BibLatexExporter {
 
     _escapeTeX(theValue /*: string */) /*: string */ {
         if (!(typeof theValue === 'string')) {
+            console.warn(`Wrong format for escapeTeX`, theValue)
             return ''
         }
         let len = TexSpecialChars.length
@@ -243,6 +247,7 @@ export class BibLatexExporter {
     _reformText(theValue /*: NodeArray */) /*: string */ {
         let latex = '', lastMarks = []
         if (!Array.isArray(theValue)) {
+            console.warn(`Wrong format for reformText`, theValue)
             return latex
         }
         // Add one extra empty node to theValue to close all still open tags for last node.

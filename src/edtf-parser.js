@@ -36,7 +36,11 @@ class SimpleEDTFParser {
     */
 
     constructor(string /*: string */) {
-        this.string = string || ''
+        if (!(typeof string === 'string')) {
+            console.warn(`Wrong format for EDTFParser`, string)
+            string = ''
+        }
+        this.string = string
         this.type = 'None' // default
         this.valid = true // default
         this.values = []
