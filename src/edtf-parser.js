@@ -36,7 +36,7 @@ class SimpleEDTFParser {
     */
 
     constructor(string /*: string */) {
-        this.string = string
+        this.string = string || ''
         this.type = 'None' // default
         this.valid = true // default
         this.values = []
