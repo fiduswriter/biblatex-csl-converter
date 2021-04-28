@@ -20,79 +20,6 @@ import { edtfParse } from "../edtf-parser";
  * https://code.google.com/archive/p/bibtex-js/
  */
 
-/* Config options (default value for every option is false)
-
-    - processUnexpected (false/true):
-
-    Processes fields with names that are known, but are not expected for the given bibtype,
-    adding them to an `unexpected_fields` object to each entry.
-
-    - processUnknown (false/true/object [specifying content type for specific unknown]):
-
-    Processes fields with names that are unknown, adding them to an `unknown_fields`
-    object to each entry.
-
-    example:
-        > a = new BibLatexParser(..., {processUnknown: true})
-        > a.output
-        {
-            "0:": {
-                ...
-                unknown_fields: {
-                    ...
-                }
-            }
-        }
-
-        > a = new BibLatexParser(..., {processUnknown: {commentator: 'l_name'}})
-        > a.output
-        {
-            "0:": {
-                ...
-                unknown_fields: {
-                    commentator: [
-                        {
-                            given: ...,
-                            family: ...
-                        }
-                    ]
-                    ...
-                }
-            }
-        }
-    
-    - includeLocation (false/true):
-
-    Include source location to an `location` object on each entry
-
-    example:
-        > a = new BibLatexParser(..., {includeLocation: true})
-        > a.output
-        {
-            "0:": {
-                ...
-                location: {
-                    start: 1,
-                    end: 42
-                }
-            }
-        }
-
-    - includeRawText (false/true):
-
-    Include source text to an `raw_text` property on each entry
-
-    example:
-        > a = new BibLatexParser(..., {includeRawText: true})
-        > a.output
-        {
-            "0:": {
-                ...
-                raw_text: '@article{...}'
-            }
-        }
-  */
-
 import type {
     GroupObject,
     NodeArray,
@@ -102,11 +29,79 @@ import type {
 } from "../const";
 
 interface ConfigObject {
-    processUnknown?: any;
+    /**
+     * - processUnknown (object [specifying content type for specific unknown]):
+     *
+     * Processes fields with names that are unknown, adding them to an `unknown_fields`
+     * object to each entry.
+     *
+     * example:
+     *   > a = new BibLatexParser(..., {processUnknown: true})
+     *   > a.output
+     *   {
+     *       "0:": {
+     *           ...
+     *           unknown_fields: {
+     *               ...
+     *           }
+     *       }
+     *   }
+     *
+     *   > a = new BibLatexParser(..., {processUnknown: {commentator: 'l_name'}})
+     *   > a.output
+     *   {
+     *       "0:": {
+     *           ...
+     *           unknown_fields: {
+     *               commentator: [
+     *                   {
+     *                       given: ...,
+     *                       family: ...
+     *                   }
+     *               ]
+     *               ...
+     *           }
+     *       }
+     *   }
+     */
+    processUnknown?: boolean | { [key: string]: string };
+    /**
+     * Processes fields with names that are known, but are not expected for the given bibtype,
+     * adding them to an `unexpected_fields` object to each entry.
+     */
     processUnexpected?: boolean;
     processInvalidURIs?: boolean;
     processComments?: boolean;
+    /**
+     * Include source location to an `location` object on each entry
+     *
+     * example:
+     *   > a = new BibLatexParser(..., {includeLocation: true})
+     *   > a.output
+     *   {
+     *       "0:": {
+     *           ...
+     *           location: {
+     *               start: 1,
+     *               end: 42
+     *           }
+     *       }
+     *   }
+     */
     includeLocation?: boolean;
+    /**
+     * Include source text to an `raw_text` property on each entry
+     *
+     * example:
+     *   > a = new BibLatexParser(..., {includeRawText: true})
+     *   > a.output
+     *   {
+     *       "0:": {
+     *           ...
+     *           raw_text: '@article{...}'
+     *       }
+     *   }
+     */
     includeRawText?: boolean;
 }
 
@@ -714,6 +709,7 @@ export class BibLatexParser {
                         : {};
                 fType =
                     this.config.processUnknown &&
+                    typeof this.config.processUnknown === "object" &&
                     this.config.processUnknown[bKey]
                         ? this.config.processUnknown[bKey]
                         : "f_literal";
