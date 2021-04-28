@@ -500,7 +500,7 @@ export class BibLatexParser {
         }
 
         // date may come either as year, year + month or as date field.
-        // We therefore need to catch these hear and transform it to the
+        // We therefore need to catch these here and transform it to the
         // date field after evaluating all the fields.
         // All other date fields only come in the form of a date string.
 
