@@ -193,11 +193,22 @@ export class CSLExporter {
     }
 
     _reformRange(theValue: Array<RangeArray>): string {
+        if (!Array.isArray(theValue)) {
+            console.warn(`Wrong format for range`, theValue);
+            return "";
+        }
         return theValue
-            .map((range) =>
-                range.map((text) => this._reformText(text)).join("-")
-            )
+            .map((interval) => this._reformInterval(interval))
+            .filter((interval) => interval.length)
             .join(",");
+    }
+
+    _reformInterval(theValue: any): string {
+        if (!Array.isArray(theValue)) {
+            console.warn(`Wrong format for interval`, theValue);
+            return "";
+        }
+        return theValue.map((text) => this._reformText(text)).join("-");
     }
 
     _reformInteger(theValue: NodeArray) {
@@ -209,7 +220,11 @@ export class CSLExporter {
         return theInt;
     }
 
-    _escapeText(theValue: string): string {
+    _escapeText(theValue: any): string {
+        if (!(typeof theValue === "string")) {
+            console.warn(`Wrong format for escapeText`, theValue);
+            return "";
+        }
         return theValue
             .replace(/&/g, "&amp;")
             .replace(/</g, "&lt;")
@@ -221,6 +236,10 @@ export class CSLExporter {
     _reformText(theValue: NodeArray) {
         let html = "",
             lastMarks: string[] = [];
+        if (!Array.isArray(theValue)) {
+            console.warn(`Wrong format for reformText`, theValue);
+            return html;
+        }
         theValue.forEach((node) => {
             if (node.type === "variable") {
                 // This is an undefined variable

@@ -27,7 +27,11 @@ class SimpleEDTFParser {
     approximate: boolean;
     parts: Array<SimpleEDTFParser>;
 
-    constructor(string: string) {
+    constructor(string: any) {
+        if (!(typeof string === "string")) {
+            console.warn(`Wrong format for EDTFParser`, string);
+            string = "";
+        }
         this.string = string;
         this.type = "None"; // default
         this.valid = true; // default

@@ -177,15 +177,30 @@ export class BibLatexExporter {
         }
     }
 
-    _reformRange(theValue: Array<RangeArray>): string {
+    _reformRange(theValue: any): string {
+        if (!Array.isArray(theValue)) {
+            console.warn(`Wrong format for reformRange`, theValue);
+            return "";
+        }
         return theValue
-            .map((range) =>
-                range.map((text) => this._reformText(text)).join("--")
-            )
+            .map((range) => this._reformInterval(range))
+            .filter((interval) => interval.length)
             .join(",");
     }
 
+    _reformInterval(theValue: any): string {
+        if (!Array.isArray(theValue)) {
+            console.warn(`Wrong format for reformInterval`, theValue);
+            return "";
+        }
+        return theValue.map((text) => this._reformText(text)).join("--");
+    }
+
     _reformName(theValue: Array<NameDictObject>): string {
+        if (!Array.isArray(theValue)) {
+            console.warn(`Wrong format for reformName`, theValue);
+            return "";
+        }
         let names: string[] = [];
         theValue.forEach((name) => {
             if (name.literal) {
@@ -254,6 +269,10 @@ export class BibLatexExporter {
     }
 
     _escapeTeX(theValue: string): string {
+        if (!(typeof theValue === "string")) {
+            console.warn(`Wrong format for escapeTeX`, theValue);
+            return "";
+        }
         let len = TexSpecialChars.length;
         for (let i = 0; i < len; i++) {
             theValue = theValue.replace(
@@ -267,7 +286,10 @@ export class BibLatexExporter {
     _reformText(theValue: NodeArray): string {
         let latex = "",
             lastMarks: string[] = [];
-
+        if (!Array.isArray(theValue)) {
+            console.warn(`Wrong format for reformText`, theValue);
+            return latex;
+        }
         // Add one extra empty node to theValue to close all still open tags for last node.
         theValue.concat({ type: "text", text: "" }).forEach((node) => {
             if (node.type === "variable") {
