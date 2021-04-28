@@ -60,11 +60,41 @@ import { edtfParse } from "../edtf-parser";
                 }
             }
         }
+    
+    - includeLocation (false/true):
+
+    Include source location to an `location` object on each entry
+
+    example:
+        > a = new BibLatexParser(..., {includeLocation: true})
+        > a.output
+        {
+            "0:": {
+                ...
+                location: {
+                    start: 1,
+                    end: 42
+                }
+            }
+        }
+
+    - includeRawText (false/true):
+
+    Include source text to an `raw_text` property on each entry
+
+    example:
+        > a = new BibLatexParser(..., {includeRawText: true})
+        > a.output
+        {
+            "0:": {
+                ...
+                raw_text: '@article{...}'
+            }
+        }
   */
 
 import type {
     GroupObject,
-    NodeObject,
     NodeArray,
     EntryObject,
     NameDictObject,
@@ -76,6 +106,8 @@ interface ConfigObject {
     processUnexpected?: boolean;
     processInvalidURIs?: boolean;
     processComments?: boolean;
+    includeLocation?: boolean;
+    includeRawText?: boolean;
 }
 
 interface ErrorObject {
@@ -138,6 +170,8 @@ export class BibLatexParser {
     input: string;
     config: ConfigObject;
     pos: number;
+    startPosition: number = -1;
+    endPosition: number = -1;
     entries: Array<EntryObject>;
     currentKey: string | false;
     currentEntry?: EntryObject;
@@ -944,7 +978,7 @@ export class BibLatexParser {
     }
 
     createNewEntry() {
-        const currentEntry = {
+        const currentEntry: EntryObject = {
             bib_type: "",
             entry_key: this.key(true),
             fields: {},
@@ -955,7 +989,20 @@ export class BibLatexParser {
             this.match(",");
         }
         this.keyValueList();
+        this.endPosition = this.pos;
         currentEntry["bib_type"] = this.bibType();
+        if (this.config.includeLocation) {
+            currentEntry["location"] = {
+                start: this.startPosition,
+                end: this.endPosition,
+            };
+        }
+        if (this.config.includeRawText) {
+            currentEntry["raw_text"] = this.input.substring(
+                this.startPosition,
+                this.endPosition + 1
+            );
+        }
         this.currentEntry = currentEntry;
         this.processFields();
     }
@@ -1008,6 +1055,7 @@ export class BibLatexParser {
 
     parseNext() {
         let closer;
+        this.startPosition = this.pos;
         let d = this.directive();
         if (!d) return;
 

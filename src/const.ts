@@ -31,10 +31,17 @@ export type NodeObject = OtherNodeObject | TextNodeObject;
 
 export type NodeArray = Array<NodeObject>;
 
+export interface EntryLocation {
+    start: number;
+    end: number;
+}
+
 export interface EntryObject {
     entry_key: string;
     incomplete?: boolean;
     bib_type: string;
+    location?: EntryLocation;
+    raw_text?: string;
     fields: { [key: string]: any };
     unexpected_fields?: Object;
     unknown_fields?: UnknownFieldsObject;
