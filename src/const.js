@@ -20,10 +20,17 @@ export type NodeObject = OtherNodeObject | TextNodeObject;
 
 export type NodeArray = Array<NodeObject>;
 
+export type EntryLocation = {
+    start: number;
+    end: number;
+}
+
 export type EntryObject = {
     entry_key: string;
     incomplete?: boolean;
     bib_type: string;
+    location?: EntryLocation;
+    raw_text?: string;
     fields: Object;
     unexpected_fields?: Object;
     unknown_fields?: UnknownFieldsObject;
