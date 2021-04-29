@@ -1,115 +1,115 @@
 {
-  "entries": {
-    "1": {
-      "bib_type": "book",
-      "entry_key": "book",
-      "fields": {
-        "author": [
-          {
-            "given": [
-              {
-                "type": "text",
-                "text": "Peter"
-              }
+    "entries": {
+        "1": {
+            "bib_type": "book",
+            "entry_key": "book",
+            "fields": {
+                "author": [
+                    {
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Peter"
+                            }
+                        ],
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Babington"
+                            }
+                        ]
+                    }
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "The title of the work"
+                    }
+                ],
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "The name of the publisher"
+                        }
+                    ]
+                ],
+                "volume": [
+                    {
+                        "type": "text",
+                        "text": "4"
+                    }
+                ],
+                "series": [
+                    {
+                        "type": "text",
+                        "text": "10"
+                    }
+                ],
+                "location": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "The address"
+                        }
+                    ]
+                ],
+                "edition": [
+                    {
+                        "type": "text",
+                        "text": "3"
+                    }
+                ],
+                "note": [
+                    {
+                        "type": "text",
+                        "text": "An optional note"
+                    }
+                ],
+                "isbn": [
+                    {
+                        "type": "text",
+                        "text": "3257227892"
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "year": [
+                    {
+                        "type": "text",
+                        "text": "1993"
+                    }
+                ],
+                "month": [
+                    {
+                        "type": "text",
+                        "text": "7"
+                    }
+                ]
+            }
+        }
+    },
+    "warnings": [
+        {
+            "type": "unknown_date",
+            "field_name": "year,month",
+            "value": [
+                "1993",
+                "7"
             ],
-            "family": [
-              {
-                "type": "text",
-                "text": "Babington"
-              }
-            ]
-          }
-        ],
-        "title": [
-          {
-            "type": "text",
-            "text": "The title of the work"
-          }
-        ],
-        "publisher": [
-          [
-            {
-              "type": "text",
-              "text": "The name of the publisher"
-            }
-          ]
-        ],
-        "volume": [
-          {
-            "type": "text",
-            "text": "4"
-          }
-        ],
-        "series": [
-          {
-            "type": "text",
-            "text": "10"
-          }
-        ],
-        "location": [
-          [
-            {
-              "type": "text",
-              "text": "The address"
-            }
-          ]
-        ],
-        "edition": [
-          {
-            "type": "text",
-            "text": "3"
-          }
-        ],
-        "note": [
-          {
-            "type": "text",
-            "text": "An optional note"
-          }
-        ],
-        "isbn": [
-          {
-            "type": "text",
-            "text": "3257227892"
-          }
-        ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "1993"
-          }
-        ],
-        "month": [
-          {
-            "type": "text",
-            "text": "7"
-          }
-        ]
-      }
-    }
-  },
-  "warnings": [
-    {
-      "type": "unknown_date",
-      "field_name": "year,month",
-      "value": [
-        "1993",
-        "7"
-      ],
-      "entry": "book"
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "year",
-      "entry": "book",
-      "line": 14
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "month",
-      "entry": "book",
-      "line": 14
-    }
-  ]
+            "entry": "book"
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "year",
+            "entry": "book",
+            "line": 14
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "month",
+            "entry": "book",
+            "line": 14
+        }
+    ]
 }

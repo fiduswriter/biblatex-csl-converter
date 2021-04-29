@@ -1,73 +1,73 @@
 {
-  "entries": {
-    "1": {
-      "bib_type": "book",
-      "entry_key": "2014",
-      "fields": {
-        "date": "2014",
-        "note": [
-          {
-            "type": "text",
-            "text": "http://ptolemy.org/books/Systems",
-            "marks": [
-              {
-                "type": "url"
-              }
-            ]
-          }
-        ],
-        "publisher": [
-          [
-            {
-              "type": "text",
-              "text": "Ptolemy.org"
+    "entries": {
+        "1": {
+            "bib_type": "book",
+            "entry_key": "2014",
+            "fields": {
+                "date": "2014",
+                "note": [
+                    {
+                        "type": "text",
+                        "text": "http://ptolemy.org/books/Systems",
+                        "marks": [
+                            {
+                                "type": "url"
+                            }
+                        ]
+                    }
+                ],
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Ptolemy.org"
+                        }
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "System Design, Modeling, and Simulation Using "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Ptolemy II",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "ptolemaeus:14:systemdesigneditor": [
+                    {
+                        "type": "text",
+                        "text": "Claudius Ptolemaeus"
+                    }
+                ],
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
             }
-          ]
-        ],
-        "title": [
-          {
-            "type": "text",
-            "text": "System Design, Modeling, and Simulation Using "
-          },
-          {
-            "type": "text",
-            "text": "Ptolemy II",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          }
-        ]
-      },
-      "unknown_fields": {
-        "ptolemaeus:14:systemdesigneditor": [
-          {
-            "type": "text",
-            "text": "Claudius Ptolemaeus"
-          }
-        ],
-        "timestamp": [
-          {
-            "type": "text",
-            "text": "2015-02-24 12:14:36 +0100"
-          }
-        ]
-      }
-    }
-  },
-  "warnings": [
-    {
-      "type": "unknown_field",
-      "field_name": "ptolemaeus:14:systemdesigneditor",
-      "entry": "2014",
-      "line": 10
+        }
     },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "2014",
-      "line": 10
-    }
-  ]
+    "warnings": [
+        {
+            "type": "unknown_field",
+            "field_name": "ptolemaeus:14:systemdesigneditor",
+            "entry": "2014",
+            "line": 10
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "2014",
+            "line": 10
+        }
+    ]
 }

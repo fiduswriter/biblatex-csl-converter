@@ -1,49 +1,49 @@
 {
-  "entries": {
-    "1": {
-      "bib_type": "incollection",
-      "entry_key": "2014",
-      "fields": {
-        "date": "2014-10",
-        "doi": "10.1002/9781119019138.ch10",
-        "url": "https://doi.org/10.1002%2F9781119019138.ch10",
-        "publisher": [
-          [
-            {
-              "type": "text",
-              "text": "John Wiley & Sons, Ltd"
+    "entries": {
+        "1": {
+            "bib_type": "incollection",
+            "entry_key": "2014",
+            "fields": {
+                "date": "2014-10",
+                "doi": "10.1002/9781119019138.ch10",
+                "url": "https://doi.org/10.1002%2F9781119019138.ch10",
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "John Wiley & Sons, Ltd"
+                        }
+                    ]
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "159"
+                            }
+                        ],
+                        [
+                            {
+                                "type": "text",
+                                "text": "169"
+                            }
+                        ]
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "The Origins of Bitcoin"
+                    }
+                ],
+                "booktitle": [
+                    {
+                        "type": "text",
+                        "text": "Understanding Bitcoin"
+                    }
+                ]
             }
-          ]
-        ],
-        "pages": [
-          [
-            [
-              {
-                "type": "text",
-                "text": "159"
-              }
-            ],
-            [
-              {
-                "type": "text",
-                "text": "169"
-              }
-            ]
-          ]
-        ],
-        "title": [
-          {
-            "type": "text",
-            "text": "The Origins of Bitcoin"
-          }
-        ],
-        "booktitle": [
-          {
-            "type": "text",
-            "text": "Understanding Bitcoin"
-          }
-        ]
-      }
+        }
     }
-  }
 }

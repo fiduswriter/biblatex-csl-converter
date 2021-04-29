@@ -1,107 +1,107 @@
 {
-  "entries": {
-    "1": {
-      "bib_type": "misc",
-      "entry_key": "_dalain_2010",
-      "fields": {
-        "date": "2010-12-23",
-        "langid": "french",
-        "title": [
-          {
-            "type": "text",
-            "text": "Dalain"
-          }
-        ]
-      },
-      "unexpected_fields": {
-        "institution": [
-          [
-            {
-              "type": "text",
-              "text": "CE, Ass."
+    "entries": {
+        "1": {
+            "bib_type": "misc",
+            "entry_key": "_dalain_2010",
+            "fields": {
+                "date": "2010-12-23",
+                "langid": "french",
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Dalain"
+                    }
+                ]
+            },
+            "unexpected_fields": {
+                "institution": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "CE, Ass."
+                        }
+                    ]
+                ],
+                "journaltitle": [
+                    {
+                        "type": "text",
+                        "text": "Rec."
+                    }
+                ],
+                "number": [
+                    {
+                        "type": "text",
+                        "text": "337033"
+                    }
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "649"
+                            }
+                        ]
+                    ]
+                ],
+                "volume": [
+                    {
+                        "type": "text",
+                        "text": "I"
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
             }
-          ]
-        ],
-        "journaltitle": [
-          {
-            "type": "text",
-            "text": "Rec."
-          }
-        ],
-        "number": [
-          {
-            "type": "text",
-            "text": "337033"
-          }
-        ],
-        "pages": [
-          [
-            [
-              {
-                "type": "text",
-                "text": "649"
-              }
-            ]
-          ]
-        ],
-        "volume": [
-          {
-            "type": "text",
-            "text": "I"
-          }
-        ]
-      },
-      "unknown_fields": {
-        "timestamp": [
-          {
-            "type": "text",
-            "text": "2015-02-24 12:14:36 +0100"
-          }
-        ]
-      }
-    }
-  },
-  "warnings": [
-    {
-      "type": "unknown_type",
-      "type_name": "jurisdiction",
-      "line": 12
+        }
     },
-    {
-      "type": "unexpected_field",
-      "field_name": "institution",
-      "entry": "_dalain_2010",
-      "line": 12
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "journaltitle",
-      "entry": "_dalain_2010",
-      "line": 12
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "number",
-      "entry": "_dalain_2010",
-      "line": 12
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "pages",
-      "entry": "_dalain_2010",
-      "line": 12
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "_dalain_2010",
-      "line": 12
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "volume",
-      "entry": "_dalain_2010",
-      "line": 12
-    }
-  ]
+    "warnings": [
+        {
+            "type": "unknown_type",
+            "type_name": "jurisdiction",
+            "line": 12
+        },
+        {
+            "type": "unexpected_field",
+            "field_name": "institution",
+            "entry": "_dalain_2010",
+            "line": 12
+        },
+        {
+            "type": "unexpected_field",
+            "field_name": "journaltitle",
+            "entry": "_dalain_2010",
+            "line": 12
+        },
+        {
+            "type": "unexpected_field",
+            "field_name": "number",
+            "entry": "_dalain_2010",
+            "line": 12
+        },
+        {
+            "type": "unexpected_field",
+            "field_name": "pages",
+            "entry": "_dalain_2010",
+            "line": 12
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "_dalain_2010",
+            "line": 12
+        },
+        {
+            "type": "unexpected_field",
+            "field_name": "volume",
+            "entry": "_dalain_2010",
+            "line": 12
+        }
+    ]
 }

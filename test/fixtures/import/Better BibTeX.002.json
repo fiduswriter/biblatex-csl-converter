@@ -1,126 +1,126 @@
 {
-  "entries": {
-    "1": {
-      "bib_type": "book",
-      "entry_key": "abramowitz+stegun",
-      "fields": {
-        "date": "1964",
-        "author": [
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Abramowitz"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Milton"
-              }
-            ]
-          },
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Stegun"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Irene A."
-              }
-            ]
-          }
-        ],
-        "title": [
-          {
-            "type": "text",
-            "text": "Handbook of Mathematical Functions with Formulas, Graphs, and Mathematical Tables"
-          }
-        ],
-        "publisher": [
-          [
-            {
-              "type": "text",
-              "text": "Dover"
+    "entries": {
+        "1": {
+            "bib_type": "book",
+            "entry_key": "abramowitz+stegun",
+            "fields": {
+                "date": "1964",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Abramowitz"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Milton"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Stegun"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Irene A."
+                            }
+                        ]
+                    }
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Handbook of Mathematical Functions with Formulas, Graphs, and Mathematical Tables"
+                    }
+                ],
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Dover"
+                        }
+                    ]
+                ],
+                "location": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "New York"
+                        }
+                    ]
+                ],
+                "edition": [
+                    {
+                        "type": "text",
+                        "text": "ninth Dover printing, tenth GPO printing"
+                    }
+                ]
             }
-          ]
-        ],
-        "location": [
-          [
-            {
-              "type": "text",
-              "text": "New York"
+        },
+        "2": {
+            "bib_type": "book",
+            "entry_key": "Torre2008",
+            "fields": {
+                "date": "2008",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Torre"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Joe"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Verducci"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Tom"
+                            }
+                        ]
+                    }
+                ],
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Doubleday"
+                        }
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "The Yankee Years"
+                    }
+                ],
+                "isbn": [
+                    {
+                        "type": "text",
+                        "text": "0385527403"
+                    }
+                ]
             }
-          ]
-        ],
-        "edition": [
-          {
-            "type": "text",
-            "text": "ninth Dover printing, tenth GPO printing"
-          }
-        ]
-      }
-    },
-    "2": {
-      "bib_type": "book",
-      "entry_key": "Torre2008",
-      "fields": {
-        "date": "2008",
-        "author": [
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Torre"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Joe"
-              }
-            ]
-          },
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Verducci"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Tom"
-              }
-            ]
-          }
-        ],
-        "publisher": [
-          [
-            {
-              "type": "text",
-              "text": "Doubleday"
-            }
-          ]
-        ],
-        "title": [
-          {
-            "type": "text",
-            "text": "The Yankee Years"
-          }
-        ],
-        "isbn": [
-          {
-            "type": "text",
-            "text": "0385527403"
-          }
-        ]
-      }
+        }
     }
-  }
 }

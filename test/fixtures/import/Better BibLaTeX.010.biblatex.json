@@ -1,380 +1,380 @@
 {
-  "entries": {
-    "1": {
-      "bib_type": "inproceedings",
-      "entry_key": "Hulse2009",
-      "fields": {
-        "date": "2010-01-27",
-        "author": [
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Hulse"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Jason Van"
-              }
-            ]
-          },
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Khoshgoftaar"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Taghi M."
-              }
-            ]
-          },
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Napolitano"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Amri"
-              }
-            ]
-          },
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Wald"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Randall"
-              }
-            ]
-          }
-        ],
-        "booktitle": [
-          {
-            "type": "text",
-            "text": "ICDM Workshops",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          }
-        ],
-        "editor": [
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Saygin"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Yücel"
-              }
-            ]
-          },
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Yu"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Jeffrey Xu"
-              }
-            ]
-          },
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Kargupta"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Hillol"
-              }
-            ]
-          },
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Wang"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Wei"
-              }
-            ]
-          },
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Ranka"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Sanjay"
-              }
-            ]
-          },
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Yu"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Philip S."
-              }
-            ]
-          },
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Wu"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Xindong"
-              }
-            ]
-          }
-        ],
-        "isbn": [
-          {
-            "type": "text",
-            "text": "978-0-7695-3902-7"
-          }
-        ],
-        "keywords": [
-          "dblp"
-        ],
-        "pages": [
-          [
-            [
-              {
-                "type": "text",
-                "text": "507"
-              }
-            ],
-            [
-              {
-                "type": "text",
-                "text": "514"
-              }
-            ]
-          ]
-        ],
-        "publisher": [
-          [
-            {
-              "type": "text",
-              "text": "IEEE Computer Society"
+    "entries": {
+        "1": {
+            "bib_type": "inproceedings",
+            "entry_key": "Hulse2009",
+            "fields": {
+                "date": "2010-01-27",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Hulse"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Jason Van"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Khoshgoftaar"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Taghi M."
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Napolitano"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Amri"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Wald"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Randall"
+                            }
+                        ]
+                    }
+                ],
+                "booktitle": [
+                    {
+                        "type": "text",
+                        "text": "ICDM Workshops",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ],
+                "editor": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Saygin"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Yücel"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Yu"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Jeffrey Xu"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Kargupta"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Hillol"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Wang"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Wei"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Ranka"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Sanjay"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Yu"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Philip S."
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Wu"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Xindong"
+                            }
+                        ]
+                    }
+                ],
+                "isbn": [
+                    {
+                        "type": "text",
+                        "text": "978-0-7695-3902-7"
+                    }
+                ],
+                "keywords": [
+                    "dblp"
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "507"
+                            }
+                        ],
+                        [
+                            {
+                                "type": "text",
+                                "text": "514"
+                            }
+                        ]
+                    ]
+                ],
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "IEEE Computer Society"
+                        }
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Feature "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Selection",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " with "
+                    },
+                    {
+                        "type": "text",
+                        "text": "High",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": "-"
+                    },
+                    {
+                        "type": "text",
+                        "text": "Dimensional Imbalanced Data",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": "."
+                    }
+                ],
+                "url": "http://dblp.uni-trier.de/db/conf/icdm/icdmw2009.htmlHulseKNW09"
+            },
+            "unknown_fields": {
+                "biburl": [
+                    {
+                        "type": "text",
+                        "text": "http://www.bibsonomy.org/bibtex/2c97a29e90fbd958a0990360f70252458/dblp"
+                    }
+                ],
+                "crossref": [
+                    {
+                        "type": "text",
+                        "text": "conf/icdm/2009w"
+                    }
+                ],
+                "description": [
+                    {
+                        "type": "text",
+                        "text": "dblp"
+                    }
+                ],
+                "ee": [
+                    {
+                        "type": "text",
+                        "text": "http://doi.ieeecomputersociety.org/10.1109/ICDMW.2009.35"
+                    }
+                ],
+                "groups": [
+                    {
+                        "type": "text",
+                        "text": "selekcja"
+                    }
+                ],
+                "interhash": [
+                    {
+                        "type": "text",
+                        "text": "aad604c231737dbf8f6155082e3535ae"
+                    }
+                ],
+                "intrahash": [
+                    {
+                        "type": "text",
+                        "text": "c97a29e90fbd958a0990360f70252458"
+                    }
+                ],
+                "owner": [
+                    {
+                        "type": "text",
+                        "text": "sstudent"
+                    }
+                ],
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            },
+            "unexpected_fields": {
+                "file": "Attachment:files/1/Hulse2009.pdf:application/pdf"
             }
-          ]
-        ],
-        "title": [
-          {
-            "type": "text",
-            "text": "Feature "
-          },
-          {
-            "type": "text",
-            "text": "Selection",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": " with "
-          },
-          {
-            "type": "text",
-            "text": "High",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": "-"
-          },
-          {
-            "type": "text",
-            "text": "Dimensional Imbalanced Data",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": "."
-          }
-        ],
-        "url": "http://dblp.uni-trier.de/db/conf/icdm/icdmw2009.htmlHulseKNW09"
-      },
-      "unknown_fields": {
-        "biburl": [
-          {
-            "type": "text",
-            "text": "http://www.bibsonomy.org/bibtex/2c97a29e90fbd958a0990360f70252458/dblp"
-          }
-        ],
-        "crossref": [
-          {
-            "type": "text",
-            "text": "conf/icdm/2009w"
-          }
-        ],
-        "description": [
-          {
-            "type": "text",
-            "text": "dblp"
-          }
-        ],
-        "ee": [
-          {
-            "type": "text",
-            "text": "http://doi.ieeecomputersociety.org/10.1109/ICDMW.2009.35"
-          }
-        ],
-        "groups": [
-          {
-            "type": "text",
-            "text": "selekcja"
-          }
-        ],
-        "interhash": [
-          {
-            "type": "text",
-            "text": "aad604c231737dbf8f6155082e3535ae"
-          }
-        ],
-        "intrahash": [
-          {
-            "type": "text",
-            "text": "c97a29e90fbd958a0990360f70252458"
-          }
-        ],
-        "owner": [
-          {
-            "type": "text",
-            "text": "sstudent"
-          }
-        ],
-        "timestamp": [
-          {
-            "type": "text",
-            "text": "2015-02-24 12:14:36 +0100"
-          }
-        ]
-      },
-      "unexpected_fields": {
-        "file": "Attachment:files/1/Hulse2009.pdf:application/pdf"
-      }
-    }
-  },
-  "warnings": [
-    {
-      "type": "unknown_field",
-      "field_name": "biburl",
-      "entry": "Hulse2009",
-      "line": 23
+        }
     },
-    {
-      "type": "unknown_field",
-      "field_name": "crossref",
-      "entry": "Hulse2009",
-      "line": 23
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "description",
-      "entry": "Hulse2009",
-      "line": 23
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "ee",
-      "entry": "Hulse2009",
-      "line": 23
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "file",
-      "entry": "Hulse2009",
-      "line": 23
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "groups",
-      "entry": "Hulse2009",
-      "line": 23
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "interhash",
-      "entry": "Hulse2009",
-      "line": 23
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "intrahash",
-      "entry": "Hulse2009",
-      "line": 23
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "owner",
-      "entry": "Hulse2009",
-      "line": 23
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Hulse2009",
-      "line": 23
-    }
-  ]
+    "warnings": [
+        {
+            "type": "unknown_field",
+            "field_name": "biburl",
+            "entry": "Hulse2009",
+            "line": 23
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "crossref",
+            "entry": "Hulse2009",
+            "line": 23
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "description",
+            "entry": "Hulse2009",
+            "line": 23
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "ee",
+            "entry": "Hulse2009",
+            "line": 23
+        },
+        {
+            "type": "unexpected_field",
+            "field_name": "file",
+            "entry": "Hulse2009",
+            "line": 23
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "groups",
+            "entry": "Hulse2009",
+            "line": 23
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "interhash",
+            "entry": "Hulse2009",
+            "line": 23
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "intrahash",
+            "entry": "Hulse2009",
+            "line": 23
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "owner",
+            "entry": "Hulse2009",
+            "line": 23
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "Hulse2009",
+            "line": 23
+        }
+    ]
 }

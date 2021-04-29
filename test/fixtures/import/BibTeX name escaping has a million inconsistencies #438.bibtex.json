@@ -1,177 +1,177 @@
 {
-  "entries": {
-    "1": {
-      "bib_type": "article-journal",
-      "entry_key": "Nome2014",
-      "fields": {
-        "date": "2014",
-        "author": [
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Nöme"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Name"
-              }
-            ]
-          }
-        ],
-        "title": [
-          {
-            "type": "text",
-            "text": "Why "
-          },
-          {
-            "type": "text",
-            "text": "Is Apple Launching",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": " a "
-          },
-          {
-            "type": "text",
-            "text": "New Version",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": " of the "
-          },
-          {
-            "type": "text",
-            "text": "iPod",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": "?"
-          }
-        ]
-      },
-      "unknown_fields": {
-        "timestamp": [
-          {
-            "type": "text",
-            "text": "2015-02-24 12:14:36 +0100"
-          }
-        ]
-      }
+    "entries": {
+        "1": {
+            "bib_type": "article-journal",
+            "entry_key": "Nome2014",
+            "fields": {
+                "date": "2014",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Nöme"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Name"
+                            }
+                        ]
+                    }
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Why "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Is Apple Launching",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " a "
+                    },
+                    {
+                        "type": "text",
+                        "text": "New Version",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " of the "
+                    },
+                    {
+                        "type": "text",
+                        "text": "iPod",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": "?"
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "2": {
+            "bib_type": "article-journal",
+            "entry_key": "vanGogh2014",
+            "fields": {
+                "date": "2014",
+                "author": [
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "van"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Gögh"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Vincent"
+                            }
+                        ]
+                    }
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Why "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Is Apple Launching",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " a "
+                    },
+                    {
+                        "type": "text",
+                        "text": "New Version",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " of the "
+                    },
+                    {
+                        "type": "text",
+                        "text": "iPod",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": "?"
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        }
     },
-    "2": {
-      "bib_type": "article-journal",
-      "entry_key": "vanGogh2014",
-      "fields": {
-        "date": "2014",
-        "author": [
-          {
-            "prefix": [
-              {
-                "type": "text",
-                "text": "van"
-              }
-            ],
-            "useprefix": true,
-            "family": [
-              {
-                "type": "text",
-                "text": "Gögh"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Vincent"
-              }
-            ]
-          }
-        ],
-        "title": [
-          {
-            "type": "text",
-            "text": "Why "
-          },
-          {
-            "type": "text",
-            "text": "Is Apple Launching",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": " a "
-          },
-          {
-            "type": "text",
-            "text": "New Version",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": " of the "
-          },
-          {
-            "type": "text",
-            "text": "iPod",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": "?"
-          }
-        ]
-      },
-      "unknown_fields": {
-        "timestamp": [
-          {
-            "type": "text",
-            "text": "2015-02-24 12:14:36 +0100"
-          }
-        ]
-      }
-    }
-  },
-  "warnings": [
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Nome2014",
-      "line": 7
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "vanGogh2014",
-      "line": 14
-    }
-  ]
+    "warnings": [
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "Nome2014",
+            "line": 7
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "vanGogh2014",
+            "line": 14
+        }
+    ]
 }

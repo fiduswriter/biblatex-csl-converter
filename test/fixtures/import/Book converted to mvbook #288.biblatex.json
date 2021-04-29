@@ -1,102 +1,102 @@
 {
-  "entries": {
-    "1": {
-      "bib_type": "mvbook",
-      "entry_key": "russ_savoir_1990",
-      "fields": {
-        "date": "1990",
-        "annotation": [
-          {
-            "type": "text",
-            "text": "Comprend : t. 1, La puissance du désordre ; t. 2, La fin des dogmes"
-          }
-        ],
-        "author": [
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Russ"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Jacqueline"
-              }
-            ]
-          }
-        ],
-        "isbn": [
-          {
-            "type": "text",
-            "text": "2-218-05069-2"
-          }
-        ],
-        "langid": "french",
-        "location": [
-          [
-            {
-              "type": "text",
-              "text": "Paris"
+    "entries": {
+        "1": {
+            "bib_type": "mvbook",
+            "entry_key": "russ_savoir_1990",
+            "fields": {
+                "date": "1990",
+                "annotation": [
+                    {
+                        "type": "text",
+                        "text": "Comprend : t. 1, La puissance du désordre ; t. 2, La fin des dogmes"
+                    }
+                ],
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Russ"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Jacqueline"
+                            }
+                        ]
+                    }
+                ],
+                "isbn": [
+                    {
+                        "type": "text",
+                        "text": "2-218-05069-2"
+                    }
+                ],
+                "langid": "french",
+                "location": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Paris"
+                        }
+                    ]
+                ],
+                "number": [
+                    {
+                        "type": "text",
+                        "text": "746"
+                    }
+                ],
+                "pagetotal": [
+                    {
+                        "type": "text",
+                        "text": "79"
+                    }
+                ],
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Hatier"
+                        }
+                    ]
+                ],
+                "series": [
+                    {
+                        "type": "text",
+                        "text": "Profil"
+                    }
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Savoir et pouvoir"
+                    }
+                ],
+                "volumes": [
+                    {
+                        "type": "text",
+                        "text": "2"
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
             }
-          ]
-        ],
-        "number": [
-          {
-            "type": "text",
-            "text": "746"
-          }
-        ],
-        "pagetotal": [
-          {
-            "type": "text",
-            "text": "79"
-          }
-        ],
-        "publisher": [
-          [
-            {
-              "type": "text",
-              "text": "Hatier"
-            }
-          ]
-        ],
-        "series": [
-          {
-            "type": "text",
-            "text": "Profil"
-          }
-        ],
-        "title": [
-          {
-            "type": "text",
-            "text": "Savoir et pouvoir"
-          }
-        ],
-        "volumes": [
-          {
-            "type": "text",
-            "text": "2"
-          }
-        ]
-      },
-      "unknown_fields": {
-        "timestamp": [
-          {
-            "type": "text",
-            "text": "2015-02-24 12:14:36 +0100"
-          }
-        ]
-      }
-    }
-  },
-  "warnings": [
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "russ_savoir_1990",
-      "line": 16
-    }
-  ]
+        }
+    },
+    "warnings": [
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "russ_savoir_1990",
+            "line": 16
+        }
+    ]
 }

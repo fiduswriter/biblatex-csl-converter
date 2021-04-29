@@ -1,115 +1,115 @@
 {
-  "entries": {
-    "1": {
-      "bib_type": "unpublished",
-      "entry_key": "HackerManuscript-HACTRO",
-      "fields": {
-        "abstract": [
-          {
-            "type": "text",
-            "text": "P. M. S. \\ensuremathHacker\\ensuremath 1. The ?confusion of psychology? On the concluding page of what is now called ?Part II? of the Investigations, Wittgenstein wrote.."
-          }
-        ],
-        "author": [
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Hacker"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "P. M. S."
-              }
-            ]
-          }
-        ],
-        "title": [
-          {
-            "type": "text",
-            "text": "The "
-          },
-          {
-            "type": "text",
-            "text": "Relevance",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": " of "
-          },
-          {
-            "type": "text",
-            "text": "Wittgenstein",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": "'s "
-          },
-          {
-            "type": "text",
-            "text": "Philosophy",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": " of "
-          },
-          {
-            "type": "text",
-            "text": "Psychology",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": " to the "
-          },
-          {
-            "type": "text",
-            "text": "Psychological Sciences",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          }
-        ]
-      },
-      "unknown_fields": {
-        "timestamp": [
-          {
-            "type": "text",
-            "text": "2015-02-24 12:14:36 +0100"
-          }
-        ]
-      }
-    }
-  },
-  "warnings": [
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "HackerManuscript-HACTRO",
-      "line": 7
-    }
-  ]
+    "entries": {
+        "1": {
+            "bib_type": "unpublished",
+            "entry_key": "HackerManuscript-HACTRO",
+            "fields": {
+                "abstract": [
+                    {
+                        "type": "text",
+                        "text": "P. M. S. \\ensuremathHacker\\ensuremath 1. The ?confusion of psychology? On the concluding page of what is now called ?Part II? of the Investigations, Wittgenstein wrote.."
+                    }
+                ],
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Hacker"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "P. M. S."
+                            }
+                        ]
+                    }
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "The "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Relevance",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " of "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Wittgenstein",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": "'s "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Philosophy",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " of "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Psychology",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " to the "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Psychological Sciences",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        }
+    },
+    "warnings": [
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "HackerManuscript-HACTRO",
+            "line": 7
+        }
+    ]
 }

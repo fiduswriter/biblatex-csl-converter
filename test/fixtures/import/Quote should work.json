@@ -1,32 +1,32 @@
 {
-  "entries": {
-    "1": {
-      "bib_type": "article-journal",
-      "entry_key": "sample1",
-      "fields": {
-        "title": [
-          {
-            "type": "text",
-            "text": "sample \"Quote\" title"
-          }
-        ]
-      },
-      "unknown_fields": {
-        "name": [
-          {
-            "type": "text",
-            "text": "sample \"Quote\" title\""
-          }
-        ]
-      }
-    }
-  },
-  "warnings": [
-    {
-      "type": "unknown_field",
-      "field_name": "name",
-      "entry": "sample1",
-      "line": 5
-    }
-  ]
+    "entries": {
+        "1": {
+            "bib_type": "article-journal",
+            "entry_key": "sample1",
+            "fields": {
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "sample \"Quote\" title"
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "name": [
+                    {
+                        "type": "text",
+                        "text": "sample \"Quote\" title\""
+                    }
+                ]
+            }
+        }
+    },
+    "warnings": [
+        {
+            "type": "unknown_field",
+            "field_name": "name",
+            "entry": "sample1",
+            "line": 5
+        }
+    ]
 }

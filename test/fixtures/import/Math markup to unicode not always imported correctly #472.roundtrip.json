@@ -1,303 +1,303 @@
 {
-  "entries": {
-    "1": {
-      "bib_type": "inproceedings",
-      "entry_key": "test_citation1",
-      "fields": {
-        "date": "2016-02",
-        "abstract": [
-          {
-            "type": "text",
-            "text": "Abstract here"
-          }
-        ],
-        "author": [
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Doe"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "J."
-              }
-            ]
-          },
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Smith"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "R."
-              }
-            ]
-          }
-        ],
-        "booktitle": [
-          {
-            "type": "variable",
-            "attrs": {
-              "variable": "IEEE_J_PROC"
+    "entries": {
+        "1": {
+            "bib_type": "inproceedings",
+            "entry_key": "test_citation1",
+            "fields": {
+                "date": "2016-02",
+                "abstract": [
+                    {
+                        "type": "text",
+                        "text": "Abstract here"
+                    }
+                ],
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Doe"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "J."
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Smith"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "R."
+                            }
+                        ]
+                    }
+                ],
+                "booktitle": [
+                    {
+                        "type": "variable",
+                        "attrs": {
+                            "variable": "IEEE_J_PROC"
+                        }
+                    }
+                ],
+                "doi": "10.1109/JPROC.2016.2526118",
+                "keywords": [
+                    "Keyword 1",
+                    "Keyword 2"
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "300"
+                            }
+                        ],
+                        [
+                            {
+                                "type": "text",
+                                "text": "301"
+                            }
+                        ]
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Test "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Title With",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " 100 "
+                    },
+                    {
+                        "type": "text",
+                        "text": "μJ",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": ", 200 "
+                    },
+                    {
+                        "type": "text",
+                        "text": "μJ Energy",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": ", and ±0.1% "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Accuracy",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": ", 0.2 Mm"
+                    },
+                    {
+                        "type": "text",
+                        "text": "2",
+                        "marks": [
+                            {
+                                "type": "sup"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Size",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": ", and -50 "
+                    },
+                    {
+                        "type": "text",
+                        "text": "dB Attenuation",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
             }
-          }
-        ],
-        "doi": "10.1109/JPROC.2016.2526118",
-        "keywords": [
-          "Keyword 1",
-          "Keyword 2"
-        ],
-        "pages": [
-          [
-            [
-              {
-                "type": "text",
-                "text": "300"
-              }
-            ],
-            [
-              {
-                "type": "text",
-                "text": "301"
-              }
-            ]
-          ]
-        ],
-        "title": [
-          {
-            "type": "text",
-            "text": "Test "
-          },
-          {
-            "type": "text",
-            "text": "Title With",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": " 100 "
-          },
-          {
-            "type": "text",
-            "text": "μJ",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": ", 200 "
-          },
-          {
-            "type": "text",
-            "text": "μJ Energy",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": ", and ±0.1% "
-          },
-          {
-            "type": "text",
-            "text": "Accuracy",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": ", 0.2 Mm"
-          },
-          {
-            "type": "text",
-            "text": "2",
-            "marks": [
-              {
-                "type": "sup"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": " "
-          },
-          {
-            "type": "text",
-            "text": "Size",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": ", and -50 "
-          },
-          {
-            "type": "text",
-            "text": "dB Attenuation",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          }
-        ]
-      },
-      "unknown_fields": {
-        "timestamp": [
-          {
-            "type": "text",
-            "text": "2015-02-24 12:14:36 +0100"
-          }
-        ]
-      }
-    },
-    "2": {
-      "bib_type": "inproceedings",
-      "entry_key": "test_citation2",
-      "fields": {
-        "date": "2016-02",
-        "abstract": [
-          {
-            "type": "text",
-            "text": "Abstract here"
-          }
-        ],
-        "author": [
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Doe"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "J."
-              }
-            ]
-          },
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Smith"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "R."
-              }
-            ]
-          }
-        ],
-        "booktitle": [
-          {
-            "type": "variable",
-            "attrs": {
-              "variable": "IEEE_J_PROC"
+        },
+        "2": {
+            "bib_type": "inproceedings",
+            "entry_key": "test_citation2",
+            "fields": {
+                "date": "2016-02",
+                "abstract": [
+                    {
+                        "type": "text",
+                        "text": "Abstract here"
+                    }
+                ],
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Doe"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "J."
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Smith"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "R."
+                            }
+                        ]
+                    }
+                ],
+                "booktitle": [
+                    {
+                        "type": "variable",
+                        "attrs": {
+                            "variable": "IEEE_J_PROC"
+                        }
+                    }
+                ],
+                "doi": "10.1109/JPROC.2016.2526118",
+                "keywords": [
+                    "Keyword 1",
+                    "Keyword 2"
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "300"
+                            }
+                        ],
+                        [
+                            {
+                                "type": "text",
+                                "text": "301"
+                            }
+                        ]
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Test "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Title",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " with Space Quad, Space Semi-Colon, Space Colon, Space Comma, Space Nbsp"
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
             }
-          }
-        ],
-        "doi": "10.1109/JPROC.2016.2526118",
-        "keywords": [
-          "Keyword 1",
-          "Keyword 2"
-        ],
-        "pages": [
-          [
-            [
-              {
-                "type": "text",
-                "text": "300"
-              }
-            ],
-            [
-              {
-                "type": "text",
-                "text": "301"
-              }
-            ]
-          ]
-        ],
-        "title": [
-          {
-            "type": "text",
-            "text": "Test "
-          },
-          {
-            "type": "text",
-            "text": "Title",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": " with Space Quad, Space Semi-Colon, Space Colon, Space Comma, Space Nbsp"
-          }
-        ]
-      },
-      "unknown_fields": {
-        "timestamp": [
-          {
-            "type": "text",
-            "text": "2015-02-24 12:14:36 +0100"
-          }
-        ]
-      }
-    }
-  },
-  "warnings": [
-    {
-      "type": "undefined_variable",
-      "variable": "IEEE_J_PROC",
-      "key": "booktitle",
-      "line": 5
+        }
     },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "test_citation1",
-      "line": 13
-    },
-    {
-      "type": "undefined_variable",
-      "variable": "IEEE_J_PROC",
-      "entry": "test_citation1",
-      "key": "booktitle",
-      "line": 18
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "test_citation2",
-      "line": 26
-    }
-  ]
+    "warnings": [
+        {
+            "type": "undefined_variable",
+            "variable": "IEEE_J_PROC",
+            "key": "booktitle",
+            "line": 5
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "test_citation1",
+            "line": 13
+        },
+        {
+            "type": "undefined_variable",
+            "variable": "IEEE_J_PROC",
+            "entry": "test_citation1",
+            "key": "booktitle",
+            "line": 18
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "test_citation2",
+            "line": 26
+        }
+    ]
 }

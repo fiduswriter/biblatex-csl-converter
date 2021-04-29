@@ -1,48 +1,48 @@
 {
-  "entries": {
-    "1": {
-      "bib_type": "misc",
-      "entry_key": "american_rights_at_work_public_2012",
-      "fields": {
-        "date": "2012",
-        "title": [
-          {
-            "type": "text",
-            "text": "Public Service Research Foundation"
-          }
-        ],
-        "url": "http://www.americanrightsatwork.org/blogcategory-275/",
-        "urldate": "2012-07-27",
-        "author": [
-          {
-            "prefix": [
-              {
-                "type": "text",
-                "text": "at"
-              }
-            ],
-            "useprefix": true,
-            "family": [
-              {
-                "type": "text",
-                "text": "Work"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "American Rights"
-              }
-            ]
-          }
-        ],
-        "howpublished": [
-          {
-            "type": "text",
-            "text": "http://www.americanrightsatwork.org/blogcategory-275/"
-          }
-        ]
-      }
+    "entries": {
+        "1": {
+            "bib_type": "misc",
+            "entry_key": "american_rights_at_work_public_2012",
+            "fields": {
+                "date": "2012",
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Public Service Research Foundation"
+                    }
+                ],
+                "url": "http://www.americanrightsatwork.org/blogcategory-275/",
+                "urldate": "2012-07-27",
+                "author": [
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "at"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Work"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "American Rights"
+                            }
+                        ]
+                    }
+                ],
+                "howpublished": [
+                    {
+                        "type": "text",
+                        "text": "http://www.americanrightsatwork.org/blogcategory-275/"
+                    }
+                ]
+            }
+        }
     }
-  }
 }

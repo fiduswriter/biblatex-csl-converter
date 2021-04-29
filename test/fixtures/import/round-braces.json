@@ -1,74 +1,74 @@
 {
-  "entries": {
-    "1": {
-      "bib_type": "report",
-      "entry_key": "McDermott:72",
-      "fields": {
-        "date": "1972-05",
-        "author": [
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "McDermott"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Drew V."
-              }
-            ]
-          },
-          {
-            "given": [
-              {
-                "type": "text",
-                "text": "Gerald J."
-              }
-            ],
-            "family": [
-              {
-                "type": "text",
-                "text": "Sussman"
-              }
-            ]
-          }
-        ],
-        "institution": [
-          [
-            {
-              "type": "text",
-              "text": "MIT Artificial Intelligence Laboratory"
+    "entries": {
+        "1": {
+            "bib_type": "report",
+            "entry_key": "McDermott:72",
+            "fields": {
+                "date": "1972-05",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "McDermott"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Drew V."
+                            }
+                        ]
+                    },
+                    {
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Gerald J."
+                            }
+                        ],
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Sussman"
+                            }
+                        ]
+                    }
+                ],
+                "institution": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "MIT Artificial Intelligence Laboratory"
+                        }
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "The "
+                    },
+                    {
+                        "type": "text",
+                        "text": "CONNIVER",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            },
+                            {
+                                "type": "smallcaps"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " Reference Manual"
+                    }
+                ]
             }
-          ]
-        ],
-        "title": [
-          {
-            "type": "text",
-            "text": "The "
-          },
-          {
-            "type": "text",
-            "text": "CONNIVER",
-            "marks": [
-              {
-                "type": "nocase"
-              },
-              {
-                "type": "smallcaps"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": " Reference Manual"
-          }
-        ]
-      }
+        }
+    },
+    "strings": {
+        "MCDERMOTT": "McDermott, Drew V."
     }
-  },
-  "strings": {
-    "MCDERMOTT": "McDermott, Drew V."
-  }
 }

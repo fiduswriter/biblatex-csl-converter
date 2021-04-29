@@ -1,131 +1,131 @@
 {
-  "entries": {
-    "1": {
-      "bib_type": "article-journal",
-      "entry_key": "ingrand99:_propice_plan",
-      "fields": {
-        "date": "1999-08-13",
-        "langid": "usenglish",
-        "title": [
-          {
-            "type": "text",
-            "text": "Propice-Plan: Toward a Unified Framework for Planning and Execution"
-          }
-        ],
-        "author": [
-          {
-            "literal": [
-              {
-                "type": "variable",
-                "attrs": {
-                  "variable": "INGRAND"
-                }
-              }
-            ]
-          },
-          {
-            "given": [
-              {
-                "type": "text",
-                "text": "Olivier"
-              }
-            ],
-            "family": [
-              {
-                "type": "text",
-                "text": "Despouys"
-              }
-            ]
-          }
-        ],
-        "abstract": [
-          {
-            "type": "text",
-            "text": "In this paper, we investigate the links between planning and plans execution. We propose a new approach (Propice-Plan) which integrates both activities. It implements supervision and execution capabilities, combined with different planning techniques: -- plan synthesis to complement existing operational plans; and -- anticipation planning to advise the execution for the best option to take when facing choices (by anticipating plans execution), and to forecast problems that may arise due to unforeseen situations."
-          }
-        ],
-        "annotation": [
-          {
-            "type": "text",
-            "text": "The Pennsylvania State University CiteSeer Archives"
-          }
-        ],
-        "language": [
-          [
-            {
-              "type": "text",
-              "text": "en"
+    "entries": {
+        "1": {
+            "bib_type": "article-journal",
+            "entry_key": "ingrand99:_propice_plan",
+            "fields": {
+                "date": "1999-08-13",
+                "langid": "usenglish",
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Propice-Plan: Toward a Unified Framework for Planning and Execution"
+                    }
+                ],
+                "author": [
+                    {
+                        "literal": [
+                            {
+                                "type": "variable",
+                                "attrs": {
+                                    "variable": "INGRAND"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Olivier"
+                            }
+                        ],
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Despouys"
+                            }
+                        ]
+                    }
+                ],
+                "abstract": [
+                    {
+                        "type": "text",
+                        "text": "In this paper, we investigate the links between planning and plans execution. We propose a new approach (Propice-Plan) which integrates both activities. It implements supervision and execution capabilities, combined with different planning techniques: -- plan synthesis to complement existing operational plans; and -- anticipation planning to advise the execution for the best option to take when facing choices (by anticipating plans execution), and to forecast problems that may arise due to unforeseen situations."
+                    }
+                ],
+                "annotation": [
+                    {
+                        "type": "text",
+                        "text": "The Pennsylvania State University CiteSeer Archives"
+                    }
+                ],
+                "language": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "en"
+                        }
+                    ]
+                ]
+            },
+            "unknown_fields": {
+                "citeseer-isreferncedby": [
+                    {
+                        "type": "text",
+                        "text": "oai:CiteSeerPSU:80136"
+                    }
+                ],
+                "oai": [
+                    {
+                        "type": "text",
+                        "text": "oai:CiteSeerPSU:507370"
+                    }
+                ],
+                "rights": [
+                    {
+                        "type": "text",
+                        "text": "unrestricted"
+                    }
+                ],
+                "subject": [
+                    {
+                        "type": "text",
+                        "text": "Francois F'elix Ingr,Olivier Despouys Propice-Plan: Toward a Unified Framework for Planning and Execution"
+                    }
+                ]
             }
-          ]
-        ]
-      },
-      "unknown_fields": {
-        "citeseer-isreferncedby": [
-          {
-            "type": "text",
-            "text": "oai:CiteSeerPSU:80136"
-          }
-        ],
-        "oai": [
-          {
-            "type": "text",
-            "text": "oai:CiteSeerPSU:507370"
-          }
-        ],
-        "rights": [
-          {
-            "type": "text",
-            "text": "unrestricted"
-          }
-        ],
-        "subject": [
-          {
-            "type": "text",
-            "text": "Francois F'elix Ingr,Olivier Despouys Propice-Plan: Toward a Unified Framework for Planning and Execution"
-          }
-        ]
-      }
-    }
-  },
-  "errors": [
-    {
-      "type": "unknown_uri",
-      "field_name": "url",
-      "value": "http://citeseer.ist.psu.edu/507370.html;\n http://www.informatik.uni-ulm.de/ki/biundo/ECP-Papers/61-despouys.ps.gz",
-      "entry": "ingrand99:_propice_plan",
-      "line": 26
-    }
-  ],
-  "warnings": [
-    {
-      "type": "undefined_variable",
-      "variable": "INGRAND",
-      "key": "author",
-      "line": 4
+        }
     },
-    {
-      "type": "unknown_field",
-      "field_name": "citeseer-isreferncedby",
-      "entry": "ingrand99:_propice_plan",
-      "line": 26
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "oai",
-      "entry": "ingrand99:_propice_plan",
-      "line": 26
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "rights",
-      "entry": "ingrand99:_propice_plan",
-      "line": 26
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "subject",
-      "entry": "ingrand99:_propice_plan",
-      "line": 26
-    }
-  ]
+    "errors": [
+        {
+            "type": "unknown_uri",
+            "field_name": "url",
+            "value": "http://citeseer.ist.psu.edu/507370.html;\n http://www.informatik.uni-ulm.de/ki/biundo/ECP-Papers/61-despouys.ps.gz",
+            "entry": "ingrand99:_propice_plan",
+            "line": 26
+        }
+    ],
+    "warnings": [
+        {
+            "type": "undefined_variable",
+            "variable": "INGRAND",
+            "key": "author",
+            "line": 4
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "citeseer-isreferncedby",
+            "entry": "ingrand99:_propice_plan",
+            "line": 26
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "oai",
+            "entry": "ingrand99:_propice_plan",
+            "line": 26
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "rights",
+            "entry": "ingrand99:_propice_plan",
+            "line": 26
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "subject",
+            "entry": "ingrand99:_propice_plan",
+            "line": 26
+        }
+    ]
 }

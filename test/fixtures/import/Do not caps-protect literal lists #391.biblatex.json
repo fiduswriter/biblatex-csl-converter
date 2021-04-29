@@ -1,104 +1,104 @@
 {
-  "entries": {
-    "1": {
-      "bib_type": "book",
-      "entry_key": "publisher",
-      "fields": {
-        "location": [
-          [
-            {
-              "type": "text",
-              "text": "Trinidad and Tobago"
+    "entries": {
+        "1": {
+            "bib_type": "book",
+            "entry_key": "publisher",
+            "fields": {
+                "location": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Trinidad and Tobago"
+                        }
+                    ]
+                ],
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Miller, Smith and Jones"
+                        }
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Publisher"
+                    }
+                ]
+            },
+            "unexpected_fields": {
+                "origlocation": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Saint Kitts and Nevis"
+                        }
+                    ]
+                ],
+                "origpublisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Doe and Company"
+                        }
+                    ]
+                ]
             }
-          ]
-        ],
-        "publisher": [
-          [
-            {
-              "type": "text",
-              "text": "Miller, Smith and Jones"
+        },
+        "2": {
+            "bib_type": "report",
+            "entry_key": "institution",
+            "fields": {
+                "institution": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Office of Information Management and Communications"
+                        }
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Institution"
+                    }
+                ]
             }
-          ]
-        ],
-        "title": [
-          {
-            "type": "text",
-            "text": "Publisher"
-          }
-        ]
-      },
-      "unexpected_fields": {
-        "origlocation": [
-          [
-            {
-              "type": "text",
-              "text": "Saint Kitts and Nevis"
+        },
+        "3": {
+            "bib_type": "thesis",
+            "entry_key": "university",
+            "fields": {
+                "institution": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "University of Saint Kitts and Nevis"
+                        }
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "University"
+                    }
+                ]
             }
-          ]
-        ],
-        "origpublisher": [
-          [
-            {
-              "type": "text",
-              "text": "Doe and Company"
-            }
-          ]
-        ]
-      }
+        }
     },
-    "2": {
-      "bib_type": "report",
-      "entry_key": "institution",
-      "fields": {
-        "institution": [
-          [
-            {
-              "type": "text",
-              "text": "Office of Information Management and Communications"
-            }
-          ]
-        ],
-        "title": [
-          {
-            "type": "text",
-            "text": "Institution"
-          }
-        ]
-      }
-    },
-    "3": {
-      "bib_type": "thesis",
-      "entry_key": "university",
-      "fields": {
-        "institution": [
-          [
-            {
-              "type": "text",
-              "text": "University of Saint Kitts and Nevis"
-            }
-          ]
-        ],
-        "title": [
-          {
-            "type": "text",
-            "text": "University"
-          }
-        ]
-      }
-    }
-  },
-  "warnings": [
-    {
-      "type": "unexpected_field",
-      "field_name": "origlocation",
-      "entry": "publisher",
-      "line": 8
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "origpublisher",
-      "entry": "publisher",
-      "line": 8
-    }
-  ]
+    "warnings": [
+        {
+            "type": "unexpected_field",
+            "field_name": "origlocation",
+            "entry": "publisher",
+            "line": 8
+        },
+        {
+            "type": "unexpected_field",
+            "field_name": "origpublisher",
+            "entry": "publisher",
+            "line": 8
+        }
+    ]
 }

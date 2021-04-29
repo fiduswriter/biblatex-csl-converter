@@ -1,77 +1,77 @@
 {
-  "entries": {
-    "1": {
-      "bib_type": "misc",
-      "entry_key": "MacFarlaneJohna",
-      "fields": {
-        "author": [
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "MacFarlane"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "John"
-              }
-            ]
-          }
-        ],
-        "title": [
-          {
-            "type": "text",
-            "text": "Pandoc "
-          },
-          {
-            "type": "text",
-            "text": "User",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": "’s "
-          },
-          {
-            "type": "text",
-            "text": "Guide",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          }
-        ],
-        "url": "http://johnmacfarlane.net/pandoc/README.html#citations",
-        "urldate": "2015-01-31"
-      },
-      "unknown_fields": {
-        "timestamp": [
-          {
-            "type": "text",
-            "text": "2015-02-24 12:14:36 +0100"
-          }
-        ]
-      }
-    }
-  },
-  "warnings": [
-    {
-      "type": "unknown_type",
-      "type_name": "archived",
-      "line": 8
+    "entries": {
+        "1": {
+            "bib_type": "misc",
+            "entry_key": "MacFarlaneJohna",
+            "fields": {
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "MacFarlane"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "John"
+                            }
+                        ]
+                    }
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Pandoc "
+                    },
+                    {
+                        "type": "text",
+                        "text": "User",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": "’s "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Guide",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ],
+                "url": "http://johnmacfarlane.net/pandoc/README.html#citations",
+                "urldate": "2015-01-31"
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        }
     },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "MacFarlaneJohna",
-      "line": 8
-    }
-  ]
+    "warnings": [
+        {
+            "type": "unknown_type",
+            "type_name": "archived",
+            "line": 8
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "MacFarlaneJohna",
+            "line": 8
+        }
+    ]
 }

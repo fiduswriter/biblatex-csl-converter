@@ -1,25 +1,25 @@
 {
-  "entries": {
-    "1": {
-      "bib_type": "article-journal",
-      "entry_key": "sample1",
-      "fields": {
-        "title": [
-          {
-            "type": "text",
-            "text": "'Isample title extregistered  n "
-          },
-          {
-            "type": "text",
-            "text": " n",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          }
-        ]
-      }
+    "entries": {
+        "1": {
+            "bib_type": "article-journal",
+            "entry_key": "sample1",
+            "fields": {
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "'Isample title extregistered  n "
+                    },
+                    {
+                        "type": "text",
+                        "text": " n",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
     }
-  }
 }

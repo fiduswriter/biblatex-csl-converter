@@ -1,73 +1,73 @@
 {
-  "entries": {
-    "1": {
-      "bib_type": "book",
-      "entry_key": "Medvedev2002",
-      "fields": {
-        "date": "2002",
-        "author": [
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Медведев"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Григорий"
-              }
-            ]
-          }
-        ],
-        "keywords": [
-          "Chernobyl Nuclear Accident",
-          "Chornobylʹ",
-          "Ukraine",
-          "1986",
-          "Nuclear industry",
-          "Nuclear reactor accidents",
-          "Radioactive wastes"
-        ],
-        "langid": "russian",
-        "pagetotal": [
-          {
-            "type": "text",
-            "text": "520"
-          }
-        ],
-        "publisher": [
-          [
-            {
-              "type": "text",
-              "text": "МК-Периодика"
+    "entries": {
+        "1": {
+            "bib_type": "book",
+            "entry_key": "Medvedev2002",
+            "fields": {
+                "date": "2002",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Медведев"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Григорий"
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "Chernobyl Nuclear Accident",
+                    "Chornobylʹ",
+                    "Ukraine",
+                    "1986",
+                    "Nuclear industry",
+                    "Nuclear reactor accidents",
+                    "Radioactive wastes"
+                ],
+                "langid": "russian",
+                "pagetotal": [
+                    {
+                        "type": "text",
+                        "text": "520"
+                    }
+                ],
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "МК-Периодика"
+                        }
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Ядерный загар"
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
             }
-          ]
-        ],
-        "title": [
-          {
-            "type": "text",
-            "text": "Ядерный загар"
-          }
-        ]
-      },
-      "unknown_fields": {
-        "timestamp": [
-          {
-            "type": "text",
-            "text": "2015-02-24 12:14:36 +0100"
-          }
-        ]
-      }
-    }
-  },
-  "warnings": [
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Medvedev2002",
-      "line": 11
-    }
-  ]
+        }
+    },
+    "warnings": [
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "Medvedev2002",
+            "line": 11
+        }
+    ]
 }
