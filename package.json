@@ -1,38 +1,37 @@
 {
-   
-  "name": "biblatex-csl-converter",
-  "version": "1.11.0",
-  "description": "a set of converters: biblatex => json, json => biblatex, json => CSL",
-  "main": "lib/index.js",
-  "module": "src/index.js",
+    "name": "biblatex-csl-converter",
+    "version": "1.11.0",
+    "description": "a set of converters: biblatex => json, json => biblatex, json => CSL",
+    "main": "lib/index.js",
+    "module": "src/index.js",
     "types": "lib/index.d.ts",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/fiduswriter/biblatex-csl-converter.git"
-  },
-  "keywords": [
-    "bibtex",
-    "biblatex",
-    "citations",
-    "csl",
-    "citeproc"
-  ],
-  "author": "Johannes Wilm",
-  "contributors": [
-    "Henrik Muehe",
-    "Takuto Kojima <mail@takutokojima.com>",
-    "Emiliano Heyns <emiliano.heyns@iris-advies.com>",
-    "Johannes Wilm <mail@johanneswilm.org>",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/fiduswriter/biblatex-csl-converter.git"
+    },
+    "keywords": [
+        "bibtex",
+        "biblatex",
+        "citations",
+        "csl",
+        "citeproc"
+    ],
+    "author": "Johannes Wilm",
+    "contributors": [
+        "Henrik Muehe",
+        "Takuto Kojima <mail@takutokojima.com>",
+        "Emiliano Heyns <emiliano.heyns@iris-advies.com>",
+        "Johannes Wilm <mail@johanneswilm.org>",
         "Daniel Drodt <daniel@drodt.info>"
-  ],
-  "license": "LGPL-3.0",
-  "bugs": {
-    "url": "https://github.com/fiduswriter/biblatex-csl-converter/issues"
-  },
-  "homepage": "https://github.com/fiduswriter/biblatex-csl-converter#readme",
-  "scripts": {
-    "gh-pages-travis": "gh-pages-travis",
-    "lint": "eslint src/",
+    ],
+    "license": "LGPL-3.0",
+    "bugs": {
+        "url": "https://github.com/fiduswriter/biblatex-csl-converter/issues"
+    },
+    "homepage": "https://github.com/fiduswriter/biblatex-csl-converter#readme",
+    "scripts": {
+        "gh-pages-travis": "gh-pages-travis",
+        "lint": "eslint src/",
         "pretest": "npm run lint",
         "compile": "npm run compile_lib && npm run compile_bundle && npm run compile_gh-pages && npm run compile_browser && npm run compile_types",
         "compile_lib": "rollup -c rollup.config.es.js --output.file lib/index.mjs",
@@ -48,32 +47,35 @@
         "test": "rollup -c rollup.config.test.js && nyc mocha --timeout=3000",
         "coveralls": "cat ./coverage/lcov.info | coveralls",
         "postversion": "echo remember to run 'git push --follow-tags'"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.13.10",
-    "@babel/plugin-transform-runtime": "^7.13.10",
-    "@babel/polyfill": "^7.12.1",
-    "@babel/preset-env": "^7.13.10",
-    "@babel/runtime": "^7.13.10",
+    },
+    "devDependencies": {
+        "@babel/core": "^7.13.10",
+        "@babel/plugin-transform-runtime": "^7.13.10",
+        "@babel/polyfill": "^7.12.1",
+        "@babel/preset-env": "^7.13.10",
+        "@babel/runtime": "^7.13.10",
         "@rollup/plugin-typescript": "^8.2.1",
-    "babel-plugin-istanbul": "^6.0.0",
-    "benchmark": "^2.1.4",
-    "chai": "^4.3.4",
-    "coveralls": "^3.1.0",
-    "eslint": "^7.22.0",
-    "gh-pages-travis": "^1.0.4",
-    "istanbul": "^0.4.5",
-    "mocha": "^8.3.2",
-    "nyc": "^15.1.0",
-    "rollup": "^2.41.4",
-    "rollup-plugin-babel": "^4.4.0",
-    "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-istanbul": "^3.0.0",
-    "rollup-plugin-json": "^4.0.0",
-    "rollup-plugin-node-builtins": "^2.0.0",
-    "rollup-plugin-node-globals": "^1.4.0",
-    "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-terser": "^7.0.2",
-    "updates": "^11.4.3"
-  }
+        "babel-plugin-istanbul": "^6.0.0",
+        "benchmark": "^2.1.4",
+        "chai": "^4.3.4",
+        "coveralls": "^3.1.0",
+        "eslint": "^7.22.0",
+        "gh-pages-travis": "^1.0.4",
+        "istanbul": "^0.4.5",
+        "mocha": "^8.3.2",
+        "nyc": "^15.1.0",
+        "rollup": "^2.41.4",
+        "rollup-plugin-babel": "^4.4.0",
+        "rollup-plugin-commonjs": "^10.1.0",
+        "rollup-plugin-dts": "^3.0.1",
+        "rollup-plugin-istanbul": "^3.0.0",
+        "rollup-plugin-json": "^4.0.0",
+        "rollup-plugin-node-builtins": "^2.0.0",
+        "rollup-plugin-node-globals": "^1.4.0",
+        "rollup-plugin-node-resolve": "^5.2.0",
+        "rollup-plugin-terser": "^7.0.2",
+        "tslib": "^2.2.0",
+        "typescript": "^4.2.4",
+        "updates": "^11.4.3"
+    }
 }
