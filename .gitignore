@@ -7,3 +7,4 @@ gh-pages/*.js
 browser/*.js
 tmp/
 .nyc_output
+.vscode

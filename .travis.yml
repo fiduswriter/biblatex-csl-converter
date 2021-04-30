@@ -1,30 +1,30 @@
 language: node_js
 node_js:
-- "10"
+    - "10"
 after_success:
-- npm run coveralls
-- SOURCE_DIR="gh-pages" TARGET_BRANCH="gh-pages" npm run gh-pages-travis
-- SOURCE_DIR="browser" TARGET_BRANCH="browser" npm run gh-pages-travis
+    - npm run coveralls
+    - SOURCE_DIR="gh-pages" TARGET_BRANCH="gh-pages" npm run gh-pages-travis
+    - SOURCE_DIR="browser" TARGET_BRANCH="browser" npm run gh-pages-travis
 deploy:
-  provider: npm
-  email: mail@johanneswilm.org
-  on:
-    tags: true
-    repo: fiduswriter/biblatex-csl-converter
-    branch: master
-  skip_cleanup: true
-  api_key:
-    secure: qOW9tkOCxmdWcihFBa9szfcnTbgJf5G9Sc43dJUBAaVgvgsHglNZdIdyeR2bT2Bh0985lEefRpooFFlFNEWP7cs1nvGoq1zTky1E8yeeybu/BT8KtMfgZx8Zq0zE73hEniU5p3CK8a1k5sDv7RpIekovvoX3k2fw8/RYa6DGcrQHjpZnWXZGpWb/KasdvE7q4q/q8BjOtdEohFjQeSC6WnOeW5s8zaSVynEnXxRsoiYr4YTDsDYmwUMh7a/44Y23/eThjxcHHM4agS/RU6zBNxOd2RdNm4uhDZjyLLf6GukFuMf3hVWbw11aGwcGj1D0iXruf1YlhQX5gtkxcwTz6zJAmJosQuR+RIQULTHA24u/5f7B6NlaMK4s3T+gx3+Y9oeEGRdo+89UV+FwCYa0DU7oQB0n23Z6bBxZBOvXA0am3MKChy1BiV9D1f57pYfgc5yUStNuD7w63s/q6GkOoOMh+fpumb1H1G/t/KYg3CE/1B1esd5dynpFjAAqV1HWSW9znqMA6NQStIO/ede7mdwA951QzN7PNgDBVxzAC5Rnxkc3lCIt/5DbEDRtqdtdDJhsSXbuWn9AIBEshVjSQqqjKnFGrBuwLnzwuLefy7uCVCjMSQLFo7tnwAAB9G/FwM2EKd6oj1LNIhvNnHwN3Vn/JtTkoYh0bPJ2y7VxIwg=
+    provider: npm
+    email: mail@johanneswilm.org
+    on:
+        tags: true
+        repo: fiduswriter/biblatex-csl-converter
+        branch: master
+    skip_cleanup: true
+    api_key:
+        secure: qOW9tkOCxmdWcihFBa9szfcnTbgJf5G9Sc43dJUBAaVgvgsHglNZdIdyeR2bT2Bh0985lEefRpooFFlFNEWP7cs1nvGoq1zTky1E8yeeybu/BT8KtMfgZx8Zq0zE73hEniU5p3CK8a1k5sDv7RpIekovvoX3k2fw8/RYa6DGcrQHjpZnWXZGpWb/KasdvE7q4q/q8BjOtdEohFjQeSC6WnOeW5s8zaSVynEnXxRsoiYr4YTDsDYmwUMh7a/44Y23/eThjxcHHM4agS/RU6zBNxOd2RdNm4uhDZjyLLf6GukFuMf3hVWbw11aGwcGj1D0iXruf1YlhQX5gtkxcwTz6zJAmJosQuR+RIQULTHA24u/5f7B6NlaMK4s3T+gx3+Y9oeEGRdo+89UV+FwCYa0DU7oQB0n23Z6bBxZBOvXA0am3MKChy1BiV9D1f57pYfgc5yUStNuD7w63s/q6GkOoOMh+fpumb1H1G/t/KYg3CE/1B1esd5dynpFjAAqV1HWSW9znqMA6NQStIO/ede7mdwA951QzN7PNgDBVxzAC5Rnxkc3lCIt/5DbEDRtqdtdDJhsSXbuWn9AIBEshVjSQqqjKnFGrBuwLnzwuLefy7uCVCjMSQLFo7tnwAAB9G/FwM2EKd6oj1LNIhvNnHwN3Vn/JtTkoYh0bPJ2y7VxIwg=
 branches:
-  except:
-  - gh-pages
-  - browser
+    except:
+        - gh-pages
+        - browser
 env:
-  global:
-  - SSH_KEY=".travis/id_rsa"
-  - GIT_NAME="Johannes Wilm"
-  - GIT_EMAIL="mail@johanneswilm.org"
-  - DEPLOY_BRANCH="master"
+    global:
+        - SSH_KEY=".travis/id_rsa"
+        - GIT_NAME="Johannes Wilm"
+        - GIT_EMAIL="mail@johanneswilm.org"
+        - DEPLOY_BRANCH="master"
 before_install:
-- openssl aes-256-cbc -K $encrypted_715d402dd6c0_key -iv $encrypted_715d402dd6c0_iv
-  -in .travis/id_rsa.enc -out .travis/id_rsa -d || true
+    - openssl aes-256-cbc -K $encrypted_715d402dd6c0_key -iv $encrypted_715d402dd6c0_iv
+        -in .travis/id_rsa.enc -out .travis/id_rsa -d || true
