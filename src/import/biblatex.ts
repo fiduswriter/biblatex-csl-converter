@@ -1242,9 +1242,10 @@ export class BibLatexParser {
         return this.parsed();
     }
 
-    parseAsync() {
+    async parseAsync() {
         this.replaceTeXChars();
-        return this.stepThroughBibtexAsync().then(() => this.parsed());
+        await this.stepThroughBibtexAsync();
+        return this.parsed();
     }
 }
 

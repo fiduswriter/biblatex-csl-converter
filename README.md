@@ -12,8 +12,8 @@ let parser = new BibLatexParser(input, {processUnexpected: true, processUnknown:
 let bib = parser.parse()
 
 // asynchronous:
-let parser = new BibLatexParser(input, {processUnexpected: true, processUnknown: true, async: true})
-parser.parse().then((bib) => { ... })
+let parser = new BibLatexParser(input, {processUnexpected: true, processUnknown: true})
+parser.parseAsync().then((bib) => { ... })
 ```
 
 Try demo [here](https://fiduswriter.github.io/biblatex-csl-converter/).
