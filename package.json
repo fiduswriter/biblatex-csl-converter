@@ -29,6 +29,9 @@
         "url": "https://github.com/fiduswriter/biblatex-csl-converter/issues"
     },
     "homepage": "https://github.com/fiduswriter/biblatex-csl-converter#readme",
+    "engines": {
+        "node": ">=12"
+    },
     "scripts": {
         "gh-pages-travis": "gh-pages-travis",
         "lint": "eslint src/",
