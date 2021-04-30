@@ -1,5 +1,3 @@
-This is a fork of [biblatex-csl-converter](https://www.npmjs.com/package/biblatex-csl-converter) which adds TypeScript and crossref support. The below README is taken from the original package.
-
 # biblatex-csl-converter [![Build Status](https://travis-ci.org/fiduswriter/biblatex-csl-converter.svg?branch=master)](https://travis-ci.org/fiduswriter/biblatex-csl-converter)
 
 A set of JavaScript converters: biblatex => json, json => csl, and json => biblatex
