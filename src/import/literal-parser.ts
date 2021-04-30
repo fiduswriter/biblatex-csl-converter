@@ -1,4 +1,4 @@
-import type { NodeObject, TextNodeObject, MarkObject } from "../const";
+import type { NodeObject, TextNodeObject, MarkObject } from "../const"
 
 const LATEX_COMMANDS = [
     // commands that can can contain richtext.
@@ -13,7 +13,7 @@ const LATEX_COMMANDS = [
     ["\\mkbibquote{", "enquote"],
     ["\\textsubscript{", "sub"],
     ["\\textsuperscript{", "sup"],
-];
+]
 
 const LATEX_NOBRACE_COMMANDS = [
     // Commands that do not have a brace themselves
@@ -23,12 +23,12 @@ const LATEX_NOBRACE_COMMANDS = [
     ["\\bf", "strong"],
     ["\\itshape", "em"],
     ["\\it", "em"],
-];
+]
 
 const LATEX_VERBATIM_COMMANDS = [
     // commands that can only contain plaintext.
     ["\\url{", "url"],
-];
+]
 
 const LATEX_SPECIAL_CHARS: { [key: string]: string } = {
     "&": "&",
@@ -44,37 +44,37 @@ const LATEX_SPECIAL_CHARS: { [key: string]: string } = {
     "'": "'",
     ";": "\u2004",
     "\\": "\n",
-};
+}
 
 export class BibLatexLiteralParser {
-    string: string;
-    cpMode: boolean;
-    braceLevel: number;
-    slen: number;
-    si: number;
-    json: Array<NodeObject>;
-    braceClosings: Array<boolean>;
-    currentMarks: Array<MarkObject>;
-    inCasePreserve: number | null;
-    textNode?: TextNodeObject;
+    string: string
+    cpMode: boolean
+    braceLevel: number
+    slen: number
+    si: number
+    json: Array<NodeObject>
+    braceClosings: Array<boolean>
+    currentMarks: Array<MarkObject>
+    inCasePreserve: number | null
+    textNode?: TextNodeObject
 
     constructor(string: string, cpMode: boolean = false) {
-        this.string = string;
-        this.cpMode = cpMode; // Whether to consider case preservation.
-        this.braceLevel = 0;
-        this.slen = string.length;
-        this.si = 0; // string index
-        this.json = [];
-        this.braceClosings = [];
-        this.currentMarks = [];
-        this.inCasePreserve = null;
-        this.addNewTextNode();
+        this.string = string
+        this.cpMode = cpMode // Whether to consider case preservation.
+        this.braceLevel = 0
+        this.slen = string.length
+        this.si = 0 // string index
+        this.json = []
+        this.braceClosings = []
+        this.currentMarks = []
+        this.inCasePreserve = null
+        this.addNewTextNode()
     }
 
     // If the last text node has no content, remove it.
     removeIfEmptyTextNode() {
         if (this.textNode && this.textNode.text.length === 0) {
-            this.json.pop();
+            this.json.pop()
         }
     }
 
@@ -82,18 +82,18 @@ export class BibLatexLiteralParser {
         if (this.textNode && this.textNode.text.length > 0) {
             // We have text in the last node already,
             // so we need to start a new text node.
-            this.addNewTextNode();
+            this.addNewTextNode()
         }
     }
 
     addNewTextNode() {
-        const textNode: TextNodeObject = { type: "text", text: "" };
-        this.json.push(textNode);
-        this.textNode = textNode;
+        const textNode: TextNodeObject = { type: "text", text: "" }
+        this.json.push(textNode)
+        this.textNode = textNode
     }
 
     stringParser() {
-        let variable, sj;
+        let variable, sj
         parseString: while (this.si < this.slen) {
             switch (this.string[this.si]) {
                 case "\\":
@@ -104,9 +104,9 @@ export class BibLatexLiteralParser {
                                 this.si + command[0].length
                             ) === command[0]
                         ) {
-                            this.braceLevel++;
-                            this.si += command[0].length;
-                            this.checkAndAddNewTextNode();
+                            this.braceLevel++
+                            this.si += command[0].length
+                            this.checkAndAddNewTextNode()
                             if (this.cpMode) {
                                 // If immediately inside a brace that added case protection, remove case protection. See
                                 // http://tex.stackexchange.com/questions/276943/biblatex-how-to-emphasize-but-not-caps-protect
@@ -118,19 +118,19 @@ export class BibLatexLiteralParser {
                                         this.currentMarks.length - 1
                                     ].type === "nocase"
                                 ) {
-                                    this.currentMarks.pop();
-                                    this.inCasePreserve = null;
+                                    this.currentMarks.pop()
+                                    this.inCasePreserve = null
                                 } else {
                                     // Of not immediately inside a brace, any styling also
                                     // adds case protection.
-                                    this.currentMarks.push({ type: "nocase" });
-                                    this.inCasePreserve = this.braceLevel;
+                                    this.currentMarks.push({ type: "nocase" })
+                                    this.inCasePreserve = this.braceLevel
                                 }
                             }
-                            this.currentMarks.push({ type: command[1] });
-                            this.textNode!.marks = this.currentMarks.slice();
-                            this.braceClosings.push(true);
-                            continue parseString;
+                            this.currentMarks.push({ type: command[1] })
+                            this.textNode!.marks = this.currentMarks.slice()
+                            this.braceClosings.push(true)
+                            continue parseString
                         }
                     }
                     for (let command of LATEX_NOBRACE_COMMANDS) {
@@ -146,16 +146,16 @@ export class BibLatexLiteralParser {
                                 )
                             )
                         ) {
-                            this.si += command[0].length;
+                            this.si += command[0].length
                             if (
                                 this.string.substring(this.si, this.si + 1) ===
                                 " "
                             ) {
-                                this.si++;
+                                this.si++
                             }
-                            this.currentMarks.push({ type: command[1] });
-                            this.textNode!.marks = this.currentMarks.slice();
-                            continue parseString;
+                            this.currentMarks.push({ type: command[1] })
+                            this.textNode!.marks = this.currentMarks.slice()
+                            continue parseString
                         }
                     }
                     for (let command of LATEX_VERBATIM_COMMANDS) {
@@ -165,12 +165,12 @@ export class BibLatexLiteralParser {
                                 this.si + command[0].length
                             ) === command[0]
                         ) {
-                            this.checkAndAddNewTextNode();
-                            this.textNode!.marks = this.currentMarks.slice();
-                            this.textNode!.marks.push({ type: command[1] });
-                            this.si += command[0].length;
-                            let sj = this.si;
-                            let internalBraceLevel = 0;
+                            this.checkAndAddNewTextNode()
+                            this.textNode!.marks = this.currentMarks.slice()
+                            this.textNode!.marks.push({ type: command[1] })
+                            this.si += command[0].length
+                            let sj = this.si
+                            let internalBraceLevel = 0
                             while (
                                 sj < this.slen &&
                                 (this.string[sj] !== "}" ||
@@ -178,248 +178,248 @@ export class BibLatexLiteralParser {
                             ) {
                                 switch (this.string[sj]) {
                                     case "{":
-                                        internalBraceLevel++;
-                                        break;
+                                        internalBraceLevel++
+                                        break
                                     case "}":
-                                        internalBraceLevel--;
-                                        break;
+                                        internalBraceLevel--
+                                        break
                                 }
-                                sj++;
+                                sj++
                             }
                             this.textNode!.text = this.string.substring(
                                 this.si,
                                 sj
-                            );
-                            this.addNewTextNode();
-                            this.si = sj + 1;
-                            continue parseString;
+                            )
+                            this.addNewTextNode()
+                            this.si = sj + 1
+                            continue parseString
                         }
                     }
                     if (LATEX_SPECIAL_CHARS[this.string[this.si + 1]]) {
                         this.textNode!.text +=
-                            LATEX_SPECIAL_CHARS[this.string[this.si + 1]];
-                        this.si += 2;
+                            LATEX_SPECIAL_CHARS[this.string[this.si + 1]]
+                        this.si += 2
                     } else {
                         // We don't know the command and skip it.
-                        this.si++;
+                        this.si++
                         while (
                             this.si < this.slen &&
                             this.string[this.si].match("[a-zA-Z0-9]")
                         ) {
-                            this.si++;
+                            this.si++
                         }
                         // If there is a brace at the end of the command,
                         // increase brace level but ignore brace.
                         if (this.string[this.si] === "{") {
-                            this.braceLevel++;
-                            this.braceClosings.push(false);
-                            this.si++;
+                            this.braceLevel++
+                            this.braceClosings.push(false)
+                            this.si++
                         }
                     }
-                    break;
+                    break
                 case "_":
                     switch (this.string[this.si + 1]) {
                         case "{":
-                            this.checkAndAddNewTextNode();
-                            this.braceLevel++;
-                            this.si += 2;
-                            this.currentMarks.push({ type: "sub" });
-                            this.textNode!.marks = this.currentMarks.slice();
-                            this.braceClosings.push(true);
-                            break;
+                            this.checkAndAddNewTextNode()
+                            this.braceLevel++
+                            this.si += 2
+                            this.currentMarks.push({ type: "sub" })
+                            this.textNode!.marks = this.currentMarks.slice()
+                            this.braceClosings.push(true)
+                            break
                         case "\\":
                             // There is a command following directly. Ignore the sub symbol.
-                            this.si++;
-                            break;
+                            this.si++
+                            break
                         default:
                             // We only add the next character to a sub node.
-                            this.checkAndAddNewTextNode();
-                            this.textNode!.marks = this.currentMarks.slice();
-                            this.textNode!.marks.push({ type: "sub" });
-                            this.textNode!.text = this.string[this.si + 1];
-                            this.addNewTextNode();
+                            this.checkAndAddNewTextNode()
+                            this.textNode!.marks = this.currentMarks.slice()
+                            this.textNode!.marks.push({ type: "sub" })
+                            this.textNode!.text = this.string[this.si + 1]
+                            this.addNewTextNode()
                             if (this.currentMarks.length) {
-                                this.textNode!.marks = this.currentMarks.slice();
+                                this.textNode!.marks = this.currentMarks.slice()
                             }
-                            this.si += 2;
+                            this.si += 2
                     }
-                    break;
+                    break
                 case "`":
                     if (this.string[this.si + 1] === "`") {
-                        this.checkAndAddNewTextNode();
-                        this.braceLevel++;
-                        this.si += 2;
-                        this.currentMarks.push({ type: "enquote" });
-                        this.textNode!.marks = this.currentMarks.slice();
-                        this.braceClosings.push(true);
+                        this.checkAndAddNewTextNode()
+                        this.braceLevel++
+                        this.si += 2
+                        this.currentMarks.push({ type: "enquote" })
+                        this.textNode!.marks = this.currentMarks.slice()
+                        this.braceClosings.push(true)
                     } else {
-                        this.textNode!.text += this.string[this.si];
-                        this.si++;
+                        this.textNode!.text += this.string[this.si]
+                        this.si++
                     }
-                    break;
+                    break
                 case "'":
                     if (this.string[this.si + 1] === "'") {
-                        this.braceLevel--;
+                        this.braceLevel--
                         if (this.braceLevel > -1) {
-                            let closeBrace = this.braceClosings.pop();
+                            let closeBrace = this.braceClosings.pop()
                             if (closeBrace) {
-                                this.checkAndAddNewTextNode();
-                                this.currentMarks.pop();
+                                this.checkAndAddNewTextNode()
+                                this.currentMarks.pop()
                                 if (this.currentMarks.length) {
-                                    this.textNode!.marks = this.currentMarks.slice();
+                                    this.textNode!.marks = this.currentMarks.slice()
                                 } else {
-                                    delete this.textNode!.marks;
+                                    delete this.textNode!.marks
                                 }
                             }
-                            this.si += 2;
+                            this.si += 2
                             //continue parseString
                         } else {
                             // A brace was closed before it was opened. Abort and return the original string.
-                            return [{ type: "text", text: this.string }];
+                            return [{ type: "text", text: this.string }]
                         }
                     } else {
-                        this.textNode!.text += this.string[this.si];
-                        this.si++;
+                        this.textNode!.text += this.string[this.si]
+                        this.si++
                     }
-                    break;
+                    break
                 case "^":
                     switch (this.string[this.si + 1]) {
                         case "{":
-                            this.checkAndAddNewTextNode();
-                            this.braceLevel++;
-                            this.si += 2;
-                            this.currentMarks.push({ type: "sup" });
-                            this.textNode!.marks = this.currentMarks.slice();
-                            this.braceClosings.push(true);
-                            break;
+                            this.checkAndAddNewTextNode()
+                            this.braceLevel++
+                            this.si += 2
+                            this.currentMarks.push({ type: "sup" })
+                            this.textNode!.marks = this.currentMarks.slice()
+                            this.braceClosings.push(true)
+                            break
                         case "\\":
                             // There is a command following directly. Ignore the sup symbol.
-                            this.si++;
-                            break;
+                            this.si++
+                            break
                         default:
                             // We only add the next character to a sup node.
-                            this.checkAndAddNewTextNode();
-                            this.textNode!.marks = this.currentMarks.slice();
-                            this.textNode!.marks.push({ type: "sup" });
-                            this.textNode!.text = this.string[this.si + 1];
-                            this.addNewTextNode();
+                            this.checkAndAddNewTextNode()
+                            this.textNode!.marks = this.currentMarks.slice()
+                            this.textNode!.marks.push({ type: "sup" })
+                            this.textNode!.text = this.string[this.si + 1]
+                            this.addNewTextNode()
                             if (this.currentMarks.length) {
-                                this.textNode!.marks = this.currentMarks.slice();
+                                this.textNode!.marks = this.currentMarks.slice()
                             }
-                            this.si += 2;
+                            this.si += 2
                     }
-                    break;
+                    break
                 case "{":
                     if (this.string[this.si + 1] === "}") {
                         // bracket is closing immediately. Ignore it.
-                        this.si += 2;
-                        continue;
+                        this.si += 2
+                        continue
                     }
-                    this.braceLevel++;
+                    this.braceLevel++
                     if (this.inCasePreserve || !this.cpMode) {
                         // If already inside case preservation, do not add a second
-                        this.braceClosings.push(false);
+                        this.braceClosings.push(false)
                     } else {
-                        this.inCasePreserve = this.braceLevel;
-                        this.checkAndAddNewTextNode();
-                        this.currentMarks.push({ type: "nocase" });
-                        this.textNode!.marks = this.currentMarks.slice();
-                        this.braceClosings.push(true);
+                        this.inCasePreserve = this.braceLevel
+                        this.checkAndAddNewTextNode()
+                        this.currentMarks.push({ type: "nocase" })
+                        this.textNode!.marks = this.currentMarks.slice()
+                        this.braceClosings.push(true)
                     }
-                    this.si++;
-                    break;
+                    this.si++
+                    break
                 case "}":
-                    this.braceLevel--;
+                    this.braceLevel--
                     if (this.braceLevel > -1) {
-                        let closeBrace = this.braceClosings.pop();
+                        let closeBrace = this.braceClosings.pop()
                         if (closeBrace) {
-                            this.checkAndAddNewTextNode();
-                            let lastMark = this.currentMarks.pop()!;
+                            this.checkAndAddNewTextNode()
+                            let lastMark = this.currentMarks.pop()!
                             if (this.inCasePreserve === this.braceLevel + 1) {
-                                this.inCasePreserve = null;
+                                this.inCasePreserve = null
                                 // The last tag may have added more tags. The
                                 // lowest level will be the case preserving one.
                                 while (
                                     lastMark.type !== "nocase" &&
                                     this.currentMarks.length
                                 ) {
-                                    lastMark = this.currentMarks.pop()!;
+                                    lastMark = this.currentMarks.pop()!
                                 }
                             }
                             if (this.currentMarks.length) {
-                                this.textNode!.marks = this.currentMarks.slice();
+                                this.textNode!.marks = this.currentMarks.slice()
                             } else {
-                                delete this.textNode!.marks;
+                                delete this.textNode!.marks
                             }
                         }
-                        this.si++;
+                        this.si++
                         //continue parseString
                     } else {
                         // A brace was closed before it was opened. Abort and return the original string.
-                        return [{ type: "text", text: this.string }];
+                        return [{ type: "text", text: this.string }]
                     }
-                    break;
+                    break
                 case "$":
                     // math env, just remove
-                    this.si++;
-                    break;
+                    this.si++
+                    break
                 case "~":
                     // a non-breakable space
-                    this.textNode!.text += "\u00A0";
-                    this.si++;
-                    break;
+                    this.textNode!.text += "\u00A0"
+                    this.si++
+                    break
                 case "\u0870":
                     // An undefined variable.
-                    this.removeIfEmptyTextNode();
-                    sj = this.si + 1;
+                    this.removeIfEmptyTextNode()
+                    sj = this.si + 1
                     while (sj < this.slen && this.string[sj] !== "\u0870") {
-                        sj++;
+                        sj++
                     }
-                    variable = this.string.substring(this.si + 1, sj);
-                    this.json.push({ type: "variable", attrs: { variable } });
-                    this.addNewTextNode();
-                    this.si = sj + 1;
-                    break;
+                    variable = this.string.substring(this.si + 1, sj)
+                    this.json.push({ type: "variable", attrs: { variable } })
+                    this.addNewTextNode()
+                    this.si = sj + 1
+                    break
                 case "\u0871":
                     // A backslash
-                    this.textNode!.text += "\\";
-                    this.si++;
-                    break;
+                    this.textNode!.text += "\\"
+                    this.si++
+                    break
                 case "\r":
-                    this.si++;
-                    break;
+                    this.si++
+                    break
                 case "\n":
                     if (
                         ["\r", "\n"].includes(this.string[this.si + 1]) &&
                         this.string[this.si - 1] !== "\n"
                     ) {
-                        this.textNode!.text += "\n\n";
+                        this.textNode!.text += "\n\n"
                     } else if (
                         /\S/.test(this.string[this.si - 1]) &&
                         /\S/.test(this.string[this.si + 1])
                     ) {
-                        this.textNode!.text += " ";
+                        this.textNode!.text += " "
                     }
-                    this.si++;
-                    break;
+                    this.si++
+                    break
                 default:
-                    this.textNode!.text += this.string[this.si];
-                    this.si++;
+                    this.textNode!.text += this.string[this.si]
+                    this.si++
             }
         }
 
         if (this.braceLevel > 0) {
             // Too many opening braces, we return the original string.
-            return [{ type: "text", text: this.string }];
+            return [{ type: "text", text: this.string }]
         }
 
-        this.removeIfEmptyTextNode();
+        this.removeIfEmptyTextNode()
 
         // Braces were accurate.
-        return this.json;
+        return this.json
     }
 
     get output() {
-        return this.stringParser();
+        return this.stringParser()
     }
 }

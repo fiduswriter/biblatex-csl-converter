@@ -1,97 +1,97 @@
-import type { EntryObject, NodeObject, GroupObject } from "../const";
+import type { EntryObject, NodeObject, GroupObject } from "../const"
 
-type StringStartTuplet = [string, () => void];
+type StringStartTuplet = [string, () => void]
 
 type WarningObject = {
-    type: string;
-    group_type: string;
-};
+    type: string
+    group_type: string
+}
 
 export class GroupParser {
-    groups: Array<GroupObject>;
-    groupType: string;
-    warnings: Array<WarningObject>;
-    entries: Array<EntryObject>;
-    stringStarts: Array<StringStartTuplet>;
-    pos: number;
-    fileDirectory: string;
-    input: string;
+    groups: Array<GroupObject>
+    groupType: string
+    warnings: Array<WarningObject>
+    entries: Array<EntryObject>
+    stringStarts: Array<StringStartTuplet>
+    pos: number
+    fileDirectory: string
+    input: string
 
     constructor(entries: Array<EntryObject>) {
-        this.groups = [];
-        this.groupType = "jabref4";
-        this.warnings = [];
-        this.entries = entries;
-        this.pos = 0;
-        this.fileDirectory = "";
-        this.input = "";
+        this.groups = []
+        this.groupType = "jabref4"
+        this.warnings = []
+        this.entries = entries
+        this.pos = 0
+        this.fileDirectory = ""
+        this.input = ""
         this.stringStarts = [
             [
                 "jabref-meta: databaseType:bibtex;",
                 () => {
-                    this.groupType = "jabref4";
+                    this.groupType = "jabref4"
                 },
             ],
             [
                 "jabref-meta: databaseType:biblatex;",
                 () => {
-                    this.groupType = "jabref4";
+                    this.groupType = "jabref4"
                 },
             ],
             [
                 "jabref-meta: groupsversion:3;",
                 () => {
-                    this.groupType = "jabref3";
+                    this.groupType = "jabref3"
                 },
             ],
             ["jabref-meta: grouping:", () => this.readGroupInfo("jabref4.1")],
             ["jabref-meta: groupstree:", () => this.readGroupInfo("")], //@retorquere: There seems to be a string missing
             ["jabref-meta: fileDirectory:", () => this.readFileDirectory()],
-        ];
+        ]
     }
 
     checkString(input: string) {
-        this.input = input;
+        this.input = input
         //let searchPos = 0
-        this.pos = 0;
+        this.pos = 0
         this.stringStarts.find((stringStart) => {
-            let pos = input.indexOf(stringStart[0], this.pos);
+            let pos = input.indexOf(stringStart[0], this.pos)
             if (pos < 0) {
-                return false;
+                return false
             } else {
-                this.pos = pos + stringStart[0].length;
-                stringStart[1]();
-                return true;
+                this.pos = pos + stringStart[0].length
+                stringStart[1]()
+                return true
             }
-        });
+        })
     }
 
     readGroupInfo(groupType: string) {
-        if (groupType) this.groupType = groupType;
+        if (groupType) this.groupType = groupType
 
         switch (this.groupType) {
             case "jabref3":
-                this.readJabref3();
-                break;
+                this.readJabref3()
+                break
             case "jabref4":
             case "jabref4.1":
-                this.readJabref4();
-                break;
+                this.readJabref4()
+                break
             default:
-                break;
+                break
         }
     }
 
     readFileDirectory() {
         let fileDirectory = "",
             input = this.input ? this.input : "",
-            pos = this.pos;
+            pos = this.pos
         while (input.length > pos && input[pos] !== ";") {
-            fileDirectory += input[pos];
-            pos++;
+            fileDirectory += input[pos]
+            pos++
         }
-        this.fileDirectory = fileDirectory;
-        this.pos = pos;
+        this.fileDirectory = fileDirectory
+        this.pos = pos
     }
 
     readJabref3() {
@@ -113,7 +113,7 @@ export class GroupParser {
             this.input.length > this.pos &&
             "\r\n ".indexOf(this.input[this.pos]) >= 0
         ) {
-            this.pos++;
+            this.pos++
         }
         // simplify parsing by taking the whole comment, throw away newlines, replace the escaped separators with tabs, and
         // then split on the remaining non-escaped separators
@@ -123,58 +123,58 @@ export class GroupParser {
             .replace(/[\r\n]/g, "")
             .replace(/\\\\\\;/g, "\u2005")
             .replace(/\\;/g, "\u2004")
-            .split(";");
-        lines = lines.map((line) => line.replace(/\u2005/g, ";"));
+            .split(";")
+        lines = lines.map((line) => line.replace(/\u2005/g, ";"))
         let levels: {
-            [key: number]: GroupObject;
-        } = { "0": { name: "", references: [], groups: [] } };
+            [key: number]: GroupObject
+        } = { "0": { name: "", references: [], groups: [] } }
         for (let line of lines) {
             if (line === "") {
-                continue;
+                continue
             }
-            let match = line.match(/^([0-9])\s+([^:]+):(.*)/);
+            let match = line.match(/^([0-9])\s+([^:]+):(.*)/)
             if (!match) {
-                return;
+                return
             }
-            let level = parseInt(match[1]);
-            let type = match[2];
-            let referenceMatch = match[3];
+            let level = parseInt(match[1])
+            let type = match[2]
+            let referenceMatch = match[3]
             const references = referenceMatch
                 ? referenceMatch.split("\u2004").filter((key) => key)
-                : [];
-            let name = references.shift()!;
-            let intersection = references.shift(); // 0 = independent, 1 = intersection, 2 = union
+                : []
+            let name = references.shift()!
+            let intersection = references.shift() // 0 = independent, 1 = intersection, 2 = union
 
             // ignore root level, has no refs anyway in the comment
             if (level === 0) {
-                continue;
+                continue
             }
 
             // remember this group as the current `level` level, so that any following `level + 1` levels can find it
-            levels[level] = { name, groups: [], references };
+            levels[level] = { name, groups: [], references }
             // and add it to its parent
-            levels[level - 1].groups.push(levels[level]);
+            levels[level - 1].groups.push(levels[level])
 
             // treat all groups as explicit
             if (type != "ExplicitGroup") {
                 this.warnings.push({
                     type: "unsupported_jabref_group",
                     group_type: type,
-                });
+                })
             }
 
             switch (intersection) {
                 case "0":
                     // do nothing more
-                    break;
+                    break
                 case "1":
                     // intersect with parent. Hardly ever used.
                     levels[level].references = levels[
                         level
                     ].references.filter((key) =>
                         levels[level - 1].references.includes(key)
-                    );
-                    break;
+                    )
+                    break
                 case "2":
                     // union with parent
                     levels[level].references = [
@@ -182,26 +182,26 @@ export class GroupParser {
                             ...levels[level].references,
                             ...levels[level - 1].references,
                         ]),
-                    ];
-                    break;
+                    ]
+                    break
             }
         }
 
-        this.groups = levels[("0" as unknown) as number].groups;
+        this.groups = levels[("0" as unknown) as number].groups
     }
 
     clearGroups(groups: Array<GroupObject>) {
         for (const group of groups) {
-            group.references = [];
-            this.clearGroups(group.groups || []);
+            group.references = []
+            this.clearGroups(group.groups || [])
         }
     }
 
     readJabref4() {
-        this.readJabref3();
+        this.readJabref3()
 
         if (this.groupType === "jabref4.1") {
-            this.clearGroups(this.groups);
+            this.clearGroups(this.groups)
         }
 
         // this assumes the JabRef groups always come after the references
@@ -211,7 +211,7 @@ export class GroupParser {
                 !bib.unknown_fields.groups ||
                 !bib.entry_key
             ) {
-                return;
+                return
             }
             // this assumes ref.unknown_fields.groups is a single text chunk
             let groups = bib.unknown_fields.groups
@@ -223,40 +223,40 @@ export class GroupParser {
                                 (mark) => mark.type === "sub"
                             )
                                 ? "_"
-                                : "";
-                        string += sub + text;
+                                : ""
+                        string += sub + text
                     }
-                    return string;
+                    return string
                 }, "")
-                .trim();
+                .trim()
             if (bib.unknown_fields) {
-                delete bib.unknown_fields.groups;
+                delete bib.unknown_fields.groups
             }
 
             if (!groups.length) {
-                return;
+                return
             }
 
             groups.split(/\s*,\s*/).forEach((groupName) => {
-                let group = this.find(groupName);
+                let group = this.find(groupName)
                 if (group) {
-                    group.references.push(bib.entry_key);
+                    group.references.push(bib.entry_key)
                 }
-            });
-        });
+            })
+        })
     }
 
     find(name: string, groups: Array<GroupObject> | void): GroupObject | false {
-        groups = groups || this.groups;
+        groups = groups || this.groups
         if (!groups) {
-            return false;
+            return false
         }
 
         for (let i = 0; i < groups.length; i++) {
-            if (groups[i].name === name) return groups[i];
-            let group = this.find(name, groups[i].groups);
-            if (group) return group;
+            if (groups[i].name === name) return groups[i]
+            let group = this.find(name, groups[i].groups)
+            if (group) return group
         }
-        return false;
+        return false
     }
 }

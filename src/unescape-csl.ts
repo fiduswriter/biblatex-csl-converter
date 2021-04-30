@@ -8,5 +8,5 @@ export function unescapeCSL(theValue: string): string {
         .replace(/&#38;lt;/g, "&lt;")
         .replace(/&#38;gt;/g, "&gt;")
         .replace(/&#38;apos;/g, "&apos;")
-        .replace(/&#38;quot;/g, "&quot;");
+        .replace(/&#38;quot;/g, "&quot;")
 }

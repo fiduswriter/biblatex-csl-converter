@@ -3,38 +3,38 @@ export function splitTeXString(
     texString: string,
     splitToken: string = "and"
 ): Array<string> {
-    let output = [];
-    let tokenRe = /([^\s{}]+|\s|{|})/g;
-    let j = 0;
-    let k = 0;
-    let item;
+    let output = []
+    let tokenRe = /([^\s{}]+|\s|{|})/g
+    let j = 0
+    let k = 0
+    let item
     while ((item = tokenRe.exec(texString)) !== null) {
-        const token = item && item.length ? item[0] : false;
+        const token = item && item.length ? item[0] : false
         if (token === false) {
-            break;
+            break
         }
         if (k === output.length) {
-            output.push("");
+            output.push("")
         }
         switch (token) {
             case "{":
-                j += 1;
-                output[k] += token;
-                break;
+                j += 1
+                output[k] += token
+                break
             case "}":
-                j -= 1;
-                output[k] += token;
-                break;
+                j -= 1
+                output[k] += token
+                break
             case splitToken:
                 if (0 === j) {
-                    k++;
+                    k++
                 } else {
-                    output[k] += token;
+                    output[k] += token
                 }
-                break;
+                break
             default:
-                output[k] += token;
+                output[k] += token
         }
     }
-    return output;
+    return output
 }

@@ -7,7 +7,7 @@ export const BiblatexFieldAliasTypes = {
     pdf: "file",
     primaryclass: "eprintclass",
     school: "institution",
-};
+}
 
 /** A list of all bibentry aliases and what they refer to. */
 export const BiblatexAliasTypes = {
@@ -20,7 +20,7 @@ export const BiblatexAliasTypes = {
     periodical: ["article"],
     suppperiodical: ["article"],
     newsarticle: ["article", "newspaper"],
-};
+}
 
 const langidAliases = {
     english: "usenglish",
@@ -39,7 +39,7 @@ const langidAliases = {
     brazil: "brazilian",
     portugues: "portuguese",
     chinese: "pinyin",
-};
+}
 
 const languageAliases = {
     langamerican: "american",
@@ -63,14 +63,14 @@ const languageAliases = {
     langslovene: "slovene",
     langspanish: "spanish",
     langswedish: "swedish",
-};
+}
 
 /** A list of aliases for options known by biblatex/babel/polyglosia and what they refer to. */
 export const BiblatexAliasOptions = {
     language: languageAliases,
     origlanguage: languageAliases,
     langid: langidAliases,
-};
+}
 
 /** A list of special chars in Tex and their unicode equivalent. */
 
@@ -3137,24 +3137,24 @@ export const TeXSpecialChars /*: Array<{ tex: RegExp, unicode: string}> */ = [
 
     { tex: /\\backslash|\\textbackslash/, unicode: "\u0871" }, // handled separately in parser
 ].map((texChar) => {
-    const re = texChar.tex.source;
+    const re = texChar.tex.source
     return {
         tex: /^[a-zA-Z\\]+$/.test(re)
             ? new RegExp(`{(${re})}|${re}\\s|${re}(?=\\W|\\_)`, "g")
             : new RegExp(`{(${re})}|${re}{}|${re}`, "g"),
         unicode: texChar.unicode,
-    };
-});
+    }
+})
 
 export interface TypeInheritance {
-    source: string[];
-    target: string[];
-    fields: FieldInheritance[];
+    source: string[]
+    target: string[]
+    fields: FieldInheritance[]
 }
 
 export interface FieldInheritance {
-    source: string;
-    target: string;
+    source: string
+    target: string
 }
 
 export const CrossRefInheritance: TypeInheritance[] = [
@@ -3234,4 +3234,4 @@ export const CrossRefInheritance: TypeInheritance[] = [
             { source: "subtitle", target: "journalsubtitle" },
         ],
     },
-];
+]

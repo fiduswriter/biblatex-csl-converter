@@ -1,5 +1,5 @@
 export interface UnknownFieldsObject {
-    groups?: Array<NodeObject>;
+    groups?: Array<NodeObject>
     [key: string]:
         | Array<NodeObject>
         | Array<RangeArray>
@@ -7,68 +7,68 @@ export interface UnknownFieldsObject {
         | Array<NodeArray | string>
         | Array<NameDictObject>
         | string
-        | undefined;
+        | undefined
 }
 
 export interface MarkObject {
-    type: string;
+    type: string
 }
 
 interface OtherNodeObject {
-    type: string;
-    marks?: Array<MarkObject>;
-    attrs?: { [key: string]: any };
+    type: string
+    marks?: Array<MarkObject>
+    attrs?: { [key: string]: any }
 }
 
 export interface TextNodeObject {
-    type: "text";
-    text: string;
-    marks?: Array<MarkObject>;
-    attrs?: { [key: string]: any };
+    type: "text"
+    text: string
+    marks?: Array<MarkObject>
+    attrs?: { [key: string]: any }
 }
 
-export type NodeObject = OtherNodeObject | TextNodeObject;
+export type NodeObject = OtherNodeObject | TextNodeObject
 
-export type NodeArray = Array<NodeObject>;
+export type NodeArray = Array<NodeObject>
 
 export interface EntryLocation {
-    start: number;
-    end: number;
+    start: number
+    end: number
 }
 
 export interface EntryObject {
-    entry_key: string;
-    incomplete?: boolean;
-    bib_type: string;
-    location?: EntryLocation;
-    raw_text?: string;
-    fields: { [key: string]: any };
-    unexpected_fields?: Object;
-    unknown_fields?: UnknownFieldsObject;
+    entry_key: string
+    incomplete?: boolean
+    bib_type: string
+    location?: EntryLocation
+    raw_text?: string
+    fields: { [key: string]: any }
+    unexpected_fields?: Object
+    unknown_fields?: UnknownFieldsObject
 }
 
 export type NameDictObject = {
-    literal?: NodeArray;
-    family?: NodeArray;
-    given?: NodeArray;
-    prefix?: NodeArray;
-    suffix?: NodeArray;
-    useprefix?: boolean;
-};
+    literal?: NodeArray
+    family?: NodeArray
+    given?: NodeArray
+    prefix?: NodeArray
+    suffix?: NodeArray
+    useprefix?: boolean
+}
 
 export type GroupObject = {
-    name: string;
-    references: Array<string>;
-    groups: Array<GroupObject>;
-};
+    name: string
+    references: Array<string>
+    groups: Array<GroupObject>
+}
 
-export type RangeArray = [NodeArray, NodeArray] | [NodeArray];
+export type RangeArray = [NodeArray, NodeArray] | [NodeArray]
 
 export interface LangidOptions {
     [key: string]: {
-        csl: string;
-        biblatex: string;
-    };
+        csl: string
+        biblatex: string
+    }
 }
 
 /** A list of supported languages (without aliases)  in the langid field */
@@ -277,7 +277,7 @@ const langidOptions: LangidOptions = {
         csl: "vi-VN",
         biblatex: "vietnamese",
     },
-};
+}
 
 const pubstateOptions: { [key: string]: { csl: string; biblatex: string } } = {
     inpreparation: {
@@ -300,7 +300,7 @@ const pubstateOptions: { [key: string]: { csl: string; biblatex: string } } = {
         csl: "prepublished",
         biblatex: "prepublished",
     },
-};
+}
 
 const languageOptions = [
     "catalan",
@@ -324,14 +324,14 @@ const languageOptions = [
     "slovene",
     "spanish",
     "swedish",
-];
+]
 
 interface BibFieldType {
-    type: string;
-    biblatex: string;
-    csl?: string | { [key: string]: string };
-    options?: string[] | LangidOptions;
-    strict?: boolean;
+    type: string
+    biblatex: string
+    csl?: string | { [key: string]: string }
+    options?: string[] | LangidOptions
+    strict?: boolean
 }
 
 /** A list of field types of Bibligraphy DB with lookup by field name. */
@@ -812,16 +812,16 @@ export const BibFieldTypes: { [key: string]: BibFieldType } = {
         biblatex: "volumes",
         csl: "number-of-volumes",
     },
-};
+}
 
 export interface BibType {
-    order: number;
-    biblatex: string;
-    csl: string;
-    required: string[];
-    eitheror: string[];
-    optional: string[];
-    "biblatex-subtype"?: string;
+    order: number
+    biblatex: string
+    csl: string
+    required: string[]
+    eitheror: string[]
+    optional: string[]
+    "biblatex-subtype"?: string
 }
 
 /** A list of all bib types and their fields. */
@@ -2231,4 +2231,4 @@ export const BibTypes: { [key: string]: BibType } = {
             "keywords",
         ],
     },
-};
+}
