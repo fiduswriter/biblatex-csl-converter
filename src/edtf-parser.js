@@ -36,12 +36,12 @@ class SimpleEDTFParser {
     */
 
     constructor(string /*: string */) {
-        if (!(typeof string === 'string')) {
+        if (!(typeof string === "string")) {
             console.warn(`Wrong format for EDTFParser`, string)
-            string = ''
+            string = ""
         }
         this.string = string
-        this.type = 'None' // default
+        this.type = "None" // default
         this.valid = true // default
         this.values = []
         this.uncertain = false
@@ -55,83 +55,86 @@ class SimpleEDTFParser {
         return {
             type: this.type,
             valid: this.valid,
-            values: this.type === 'Interval' ? this.getPartValues() : this.values,
+            values:
+                this.type === "Interval" ? this.getPartValues() : this.values,
             cleanedString: this.cleanString(),
             uncertain: this.uncertain,
-            approximate: this.approximate
+            approximate: this.approximate,
         }
     }
 
     getPartValues() /*: DateArray */ {
-        if (this.parts.length===0) {
+        if (this.parts.length === 0) {
             const emptyPart = []
             return emptyPart
-        } else if (this.parts.length===1) {
+        } else if (this.parts.length === 1) {
             const datePart = this.parts[0].values
             return datePart
         } else {
             const datePartInterval = [
                 this.parts[0].values,
-                this.parts[1].values
+                this.parts[1].values,
             ]
             return datePartInterval
         }
     }
 
     cleanString() /*: string */ {
-        let cleanedString = ''
+        let cleanedString = ""
         if (this.parts.length) {
-            cleanedString = this.parts.map(datePart => datePart.cleanString()).join('/')
+            cleanedString = this.parts
+                .map((datePart) => datePart.cleanString())
+                .join("/")
         } else if (this.values) {
             cleanedString = this.values.reduce((dateString, value, index) => {
                 if (index === 0) {
-                    if (typeof value === 'number' && value > 0) {
-                        return String(value).padStart(4, '0')
+                    if (typeof value === "number" && value > 0) {
+                        return String(value).padStart(4, "0")
                     } else {
                         return String(value)
                     }
                 } else if (index < 3) {
-                    return `${dateString}-${String(value).padStart(2, '0')}`
-                } else if (index===3) {
-                    return `${dateString}T${String(value).padStart(2, '0')}`
-                } else if (index < 6){
-                    return `${dateString}:${String(value).padStart(2, '0')}`
+                    return `${dateString}-${String(value).padStart(2, "0")}`
+                } else if (index === 3) {
+                    return `${dateString}T${String(value).padStart(2, "0")}`
+                } else if (index < 6) {
+                    return `${dateString}:${String(value).padStart(2, "0")}`
                 } else {
                     return `${dateString}${value}`
                 }
-            }, '')
+            }, "")
         }
         if (this.uncertain) {
-            cleanedString += '?'
+            cleanedString += "?"
         }
         if (this.approximate) {
-            cleanedString += '~'
+            cleanedString += "~"
         }
         return cleanedString
     }
 
     checkCertainty() {
-        if (this.string.slice(-1)==='~') {
+        if (this.string.slice(-1) === "~") {
             this.approximate = true
             this.string = this.string.slice(0, -1)
         }
-        if (this.string.slice(-1)==='?') {
+        if (this.string.slice(-1) === "?") {
             this.uncertain = true
             this.string = this.string.slice(0, -1)
         }
     }
 
     splitInterval() {
-        let parts = this.string.split('/')
+        let parts = this.string.split("/")
         if (parts.length > 2) {
             this.valid = false
         } else if (parts.length === 2) {
-            this.type = 'Interval'
+            this.type = "Interval"
             let valid = false
-            parts.forEach(part => {
+            parts.forEach((part) => {
                 let parser = new SimpleEDTFParser(part)
                 parser.init()
-                if (parser.valid || parser.type==='Open') {
+                if (parser.valid || parser.type === "Open") {
                     this.parts.push(parser)
                     if (parser.valid) {
                         valid = true
@@ -147,19 +150,18 @@ class SimpleEDTFParser {
         } else {
             this.splitDateParts()
         }
-
     }
 
     splitDateParts() {
-        if (['','..'].includes(this.string)) {
+        if (["", ".."].includes(this.string)) {
             // Empty string. Invalid by itself but could be valied as part of a range
             this.valid = false
             this.values = []
-            this.type = 'Open'
+            this.type = "Open"
             return
         }
 
-        let parts = this.string.replace(/^y/, '').split(/(?!^)-/)
+        let parts = this.string.replace(/^y/, "").split(/(?!^)-/)
 
         if (parts.length > 3) {
             this.valid = false
@@ -173,12 +175,12 @@ class SimpleEDTFParser {
             this.valid = false
             return
         }
-        if (year.slice(-1) === 'u') {
+        if (year.slice(-1) === "u") {
             certain = false
-            this.type = 'Interval'
-            let from = new SimpleEDTFParser(year.replace(/u/g,'0'))
+            this.type = "Interval"
+            let from = new SimpleEDTFParser(year.replace(/u/g, "0"))
             from.init()
-            let to = new SimpleEDTFParser(year.replace(/u/g,'9'))
+            let to = new SimpleEDTFParser(year.replace(/u/g, "9"))
             to.init()
             this.parts = [from, to]
             if (!from.valid || !to.valid) {
@@ -186,7 +188,7 @@ class SimpleEDTFParser {
             }
         } else {
             this.values = [parseInt(year)]
-            this.type = 'Date'
+            this.type = "Date"
         }
 
         if (parts.length < 2) {
@@ -196,14 +198,14 @@ class SimpleEDTFParser {
         // Month / Season
 
         let month = parts[1]
-        if (!certain && month !== 'uu') {
+        if (!certain && month !== "uu") {
             // End of year uncertain but month specified. Invalid
             this.valid = false
             return
         }
         let monthChecker = /^[0-2][0-9]|uu$/ // uu or 01, 02, 03, ..., 11, 12
-        let monthInt = parseInt(month.replace('uu','01'))
-        if(
+        let monthInt = parseInt(month.replace("uu", "01"))
+        if (
             !monthChecker.test(month) ||
             monthInt < 1 ||
             (monthInt > 12 && monthInt < 21) ||
@@ -212,7 +214,7 @@ class SimpleEDTFParser {
             this.valid = false
             return
         }
-        if (month === 'uu') {
+        if (month === "uu") {
             certain = false
         }
 
@@ -222,7 +224,7 @@ class SimpleEDTFParser {
 
         if (parts.length < 3) {
             if (monthInt > 12) {
-                this.type = 'Season'
+                this.type = "Season"
             }
             return
         }
@@ -234,28 +236,24 @@ class SimpleEDTFParser {
 
         // Day
 
-        let dayTime = parts[2].split('T'), day = dayTime[0]
-        if (!certain && day !== 'uu') {
+        let dayTime = parts[2].split("T"),
+            day = dayTime[0]
+        if (!certain && day !== "uu") {
             // Month uncertain but day specified. Invalid
             this.valid = false
             return
         }
         let dayChecker = /^[0-3][0-9]$|uu/ // uu or 01, 02, 03, ..., 11, 12
-        let dayInt = parseInt(day.replace('uu','01'))
-        if(
-            !dayChecker.test(month) ||
-            dayInt < 1 ||
-            dayInt > 31
-        ) {
+        let dayInt = parseInt(day.replace("uu", "01"))
+        if (!dayChecker.test(month) || dayInt < 1 || dayInt > 31) {
             this.valid = false
             return
         }
-        if (day === 'uu') {
+        if (day === "uu") {
             certain = false
         }
 
         if (certain) {
-
             let testDate = new Date(`${year}/${month}/${day}`)
 
             if (
@@ -282,7 +280,10 @@ class SimpleEDTFParser {
             return
         }
 
-        let timeParts = dayTime[1].slice(0, 8).split(':').map(part => parseInt(part))
+        let timeParts = dayTime[1]
+            .slice(0, 8)
+            .split(":")
+            .map((part) => parseInt(part))
 
         if (
             timeParts.length !== 3 ||
@@ -306,14 +307,14 @@ class SimpleEDTFParser {
         }
         let timeZone = dayTime[1].slice(8)
 
-        if (timeZone === 'Z') {
+        if (timeZone === "Z") {
             // Zulu
-            this.values.push('Z')
+            this.values.push("Z")
             return
         }
 
-        let tzChecker = RegExp('^[+-][0-1][0-9]:[0-1][0-9]$'),
-        tzParts = timeZone.split(':').map(part => parseInt(part))
+        let tzChecker = RegExp("^[+-][0-1][0-9]:[0-1][0-9]$"),
+            tzParts = timeZone.split(":").map((part) => parseInt(part))
 
         if (
             !tzChecker.test(timeZone) ||
@@ -328,14 +329,10 @@ class SimpleEDTFParser {
             this.values.push(timeZone)
         }
         return
-
     }
-
 }
 
-
 export function edtfParse(dateString /*: string */) {
-
     let parser = new SimpleEDTFParser(dateString)
     return parser.init()
 }

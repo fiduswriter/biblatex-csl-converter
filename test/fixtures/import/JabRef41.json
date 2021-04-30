@@ -68,10 +68,7 @@
                     }
                 ],
                 "eprint": "http://ajplegacy.physiology.org/content/112/1/109.full.pdf",
-                "keywords": [
-                    "audiogram",
-                    "chimpanzee"
-                ],
+                "keywords": ["audiogram", "chimpanzee"],
                 "url": "http://ajplegacy.physiology.org/content/112/1/109"
             },
             "unexpected_fields": {
@@ -1471,9 +1468,7 @@
                     {
                         "name": "fem_mo",
                         "groups": [],
-                        "references": [
-                            "Ravicz2017"
-                        ]
+                        "references": ["Ravicz2017"]
                     },
                     {
                         "name": "mittelohr_anatomie_histo_mensch",
@@ -1601,10 +1596,7 @@
                     {
                         "name": "gehoer_evolution",
                         "groups": [],
-                        "references": [
-                            "Kojima1990",
-                            "Heffner1983a"
-                        ]
+                        "references": ["Kojima1990", "Heffner1983a"]
                     },
                     {
                         "name": "implant. Mikrofon",
@@ -1694,9 +1686,7 @@
                             {
                                 "name": "Antrag_Cherif_DECHEMA",
                                 "groups": [],
-                                "references": [
-                                    "Ravicz2017"
-                                ]
+                                "references": ["Ravicz2017"]
                             },
                             {
                                 "name": "FEM/Exp",
@@ -1729,9 +1719,7 @@
                                 "references": []
                             }
                         ],
-                        "references": [
-                            "Ravicz2017"
-                        ]
+                        "references": ["Ravicz2017"]
                     },
                     {
                         "name": "wandler",
@@ -1770,9 +1758,7 @@
                         "references": []
                     }
                 ],
-                "references": [
-                    "Pfaff2015"
-                ]
+                "references": ["Pfaff2015"]
             },
             {
                 "name": "sammlung4artikel",

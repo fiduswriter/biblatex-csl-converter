@@ -1,3 +1,3 @@
-import {CSLExporter} from "../export/csl"
+import { CSLExporter } from "../export/csl"
 
 global.CSLExporter = CSLExporter

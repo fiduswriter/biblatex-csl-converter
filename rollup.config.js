@@ -15,8 +15,8 @@ export default {
         json(),
         babel({
             runtimeHelpers: true,
-            exclude: "node_modules/**"
+            exclude: "node_modules/**",
         }),
-        terser()
-    ]
+        terser(),
+    ],
 }
