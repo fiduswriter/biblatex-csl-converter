@@ -87,9 +87,9 @@ export class BibLatexExporter {
                 fValues["entrysubtype"] =
                     BibTypes[bib["bib_type"]]["biblatex-subtype"]
             }
-            const fields = this.config.exportUnexpectedFields
-                ? { ...bib.fields, ...bib.unexpected_fields }
-                : bib.fields
+            const fields = this.config.exportUnexpectedFields ?
+                { ...bib.fields, ...bib.unexpected_fields } :
+                bib.fields
             for (let fKey in fields) {
                 if (!BibFieldTypes[fKey]) {
                     continue

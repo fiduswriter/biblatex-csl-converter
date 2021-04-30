@@ -3140,9 +3140,9 @@ export const TeXSpecialChars /*: Array<{ tex: RegExp, unicode: string}> */ = [
 ].map((texChar) => {
     const re = texChar.tex.source
     return {
-        tex: /^[a-zA-Z\\]+$/.test(re)
-            ? new RegExp(`{(${re})}|${re}\\s|${re}(?=\\W|\\_)`, "g")
-            : new RegExp(`{(${re})}|${re}{}|${re}`, "g"),
+        tex: /^[a-zA-Z\\]+$/.test(re) ?
+            new RegExp(`{(${re})}|${re}\\s|${re}(?=\\W|\\_)`, "g") :
+            new RegExp(`{(${re})}|${re}{}|${re}`, "g"),
         unicode: texChar.unicode,
     }
 })

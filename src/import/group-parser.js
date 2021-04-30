@@ -144,9 +144,9 @@ export class GroupParser {
             let level = parseInt(match[1])
             let type = match[2]
             let references = match[3]
-            references = references
-                ? references.split("\u2004").filter((key) => key)
-                : []
+            references = references ?
+                references.split("\u2004").filter((key) => key) :
+                []
             let name = references.shift()
             let intersection = references.shift() // 0 = independent, 1 = intersection, 2 = union
 
@@ -176,8 +176,7 @@ export class GroupParser {
                     // intersect with parent. Hardly ever used.
                     levels[level].references = levels[
                         level
-                    ].references.filter((key) =>
-                        levels[level - 1].references.includes(key)
+                    ].references.filter((key) => levels[level - 1].references.includes(key)
                     )
                     break
                 case "2":
@@ -226,9 +225,9 @@ export class GroupParser {
                             // undo undescores to marks -- groups content is in verbatim-ish mode
                             sub = (node.marks || []).find(
                                 (mark) => mark.type === "sub"
-                            )
-                                ? "_"
-                                : ""
+                            ) ?
+                                "_" :
+                                ""
                         string += sub + text
                     }
                     return string
