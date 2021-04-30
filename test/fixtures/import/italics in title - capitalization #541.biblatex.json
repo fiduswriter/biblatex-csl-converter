@@ -1,175 +1,175 @@
 {
-  "entries": {
-    "1": {
-      "bib_type": "article-journal",
-      "entry_key": "brill_effects_2006",
-      "fields": {
-        "date": "2006-09-23",
-        "author": [
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Brill"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "R. W."
-              }
-            ]
-          },
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Bushnell"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "P. G."
-              }
-            ]
-          }
-        ],
-        "doi": "10.1007/s10695-006-9104-7",
-        "issn": [
-          {
-            "type": "text",
-            "text": "0920-1742, 1573-5168"
-          }
-        ],
-        "journaltitle": [
-          {
-            "type": "text",
-            "text": "Fish Physiology and Biochemistry"
-          }
-        ],
-        "langid": "usenglish",
-        "number": [
-          {
-            "type": "text",
-            "text": "4"
-          }
-        ],
-        "pages": [
-          [
-            [
-              {
-                "type": "text",
-                "text": "283"
-              }
-            ],
-            [
-              {
-                "type": "text",
-                "text": "294"
-              }
-            ]
-          ]
-        ],
-        "title": [
-          {
-            "type": "text",
-            "text": "Effects of Open- and Closed-System Temperature Changes on Blood "
-          },
-          {
-            "type": "text",
-            "text": "O",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": "2",
-            "marks": [
-              {
-                "type": "sub"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": "-Binding Characteristics of "
-          },
-          {
-            "type": "text",
-            "text": "Atlantic",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": " Bluefin Tuna ("
-          },
-          {
-            "type": "text",
-            "text": "Thunnus thynnus",
-            "marks": [
-              {
-                "type": "nocase"
-              },
-              {
-                "type": "nocase"
-              },
-              {
-                "type": "em"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": ")"
-          }
-        ],
-        "url": "http://link.springer.com/article/10.1007/s10695-006-9104-7",
-        "urldate": "2016-08-18",
-        "volume": [
-          {
-            "type": "text",
-            "text": "32"
-          }
-        ]
-      },
-      "unexpected_fields": {
-        "shortjournal": [
-          {
-            "type": "text",
-            "text": "Fish Physiol Biochem"
-          }
-        ]
-      },
-      "unknown_fields": {
-        "timestamp": [
-          {
-            "type": "text",
-            "text": "2015-02-24 12:14:36 +0100"
-          }
-        ]
-      }
-    }
-  },
-  "warnings": [
-    {
-      "type": "unexpected_field",
-      "field_name": "shortjournal",
-      "entry": "brill_effects_2006",
-      "line": 17
+    "entries": {
+        "1": {
+            "bib_type": "article-journal",
+            "entry_key": "brill_effects_2006",
+            "fields": {
+                "date": "2006-09-23",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Brill"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "R. W."
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Bushnell"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "P. G."
+                            }
+                        ]
+                    }
+                ],
+                "doi": "10.1007/s10695-006-9104-7",
+                "issn": [
+                    {
+                        "type": "text",
+                        "text": "0920-1742, 1573-5168"
+                    }
+                ],
+                "journaltitle": [
+                    {
+                        "type": "text",
+                        "text": "Fish Physiology and Biochemistry"
+                    }
+                ],
+                "langid": "usenglish",
+                "number": [
+                    {
+                        "type": "text",
+                        "text": "4"
+                    }
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "283"
+                            }
+                        ],
+                        [
+                            {
+                                "type": "text",
+                                "text": "294"
+                            }
+                        ]
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Effects of Open- and Closed-System Temperature Changes on Blood "
+                    },
+                    {
+                        "type": "text",
+                        "text": "O",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": "2",
+                        "marks": [
+                            {
+                                "type": "sub"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": "-Binding Characteristics of "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Atlantic",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " Bluefin Tuna ("
+                    },
+                    {
+                        "type": "text",
+                        "text": "Thunnus thynnus",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            },
+                            {
+                                "type": "nocase"
+                            },
+                            {
+                                "type": "em"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": ")"
+                    }
+                ],
+                "url": "http://link.springer.com/article/10.1007/s10695-006-9104-7",
+                "urldate": "2016-08-18",
+                "volume": [
+                    {
+                        "type": "text",
+                        "text": "32"
+                    }
+                ]
+            },
+            "unexpected_fields": {
+                "shortjournal": [
+                    {
+                        "type": "text",
+                        "text": "Fish Physiol Biochem"
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        }
     },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "brill_effects_2006",
-      "line": 17
-    }
-  ]
+    "warnings": [
+        {
+            "type": "unexpected_field",
+            "field_name": "shortjournal",
+            "entry": "brill_effects_2006",
+            "line": 17
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "brill_effects_2006",
+            "line": 17
+        }
+    ]
 }

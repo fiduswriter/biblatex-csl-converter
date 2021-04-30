@@ -1,63 +1,63 @@
 {
-  "entries": {
-    "1": {
-      "bib_type": "incollection",
-      "entry_key": "hennemann2009vernetzung",
-      "fields": {
-        "date": "2009",
-        "title": [
-          {
-            "type": "text",
-            "text": "Vernetzung in der Grundlagenforschung"
-          }
-        ],
-        "author": [
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Hennemann"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "S."
-              }
-            ]
-          }
-        ],
-        "booktitle": [
-          {
-            "type": "text",
-            "text": "Planungsverband Ballungsraum Frankfurt-Rhein-Main (Hrsg.): Wissensatlas FrankfurtRheinMain: die Wissensregion stellt sich vor"
-          }
-        ],
-        "pages": [
-          [
-            [
-              {
-                "type": "text",
-                "text": "33"
-              }
-            ],
-            [
-              {
-                "type": "text",
-                "text": "36"
-              }
-            ]
-          ]
-        ],
-        "publisher": [
-          [
-            {
-              "type": "text",
-              "text": "Planungsverband, Frankfurt-Rhein-Main"
+    "entries": {
+        "1": {
+            "bib_type": "incollection",
+            "entry_key": "hennemann2009vernetzung",
+            "fields": {
+                "date": "2009",
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Vernetzung in der Grundlagenforschung"
+                    }
+                ],
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Hennemann"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "S."
+                            }
+                        ]
+                    }
+                ],
+                "booktitle": [
+                    {
+                        "type": "text",
+                        "text": "Planungsverband Ballungsraum Frankfurt-Rhein-Main (Hrsg.): Wissensatlas FrankfurtRheinMain: die Wissensregion stellt sich vor"
+                    }
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "33"
+                            }
+                        ],
+                        [
+                            {
+                                "type": "text",
+                                "text": "36"
+                            }
+                        ]
+                    ]
+                ],
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Planungsverband, Frankfurt-Rhein-Main"
+                        }
+                    ]
+                ]
             }
-          ]
-        ]
-      }
+        }
     }
-  }
 }

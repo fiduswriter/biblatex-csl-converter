@@ -1,69 +1,69 @@
 {
-  "entries": {
-    "1": {
-      "bib_type": "book",
-      "entry_key": "abramowitz+stegun",
-      "fields": {
-        "date": "1964",
-        "author": [
-          {
-            "given": [
-              {
-                "type": "text",
-                "text": "Milton"
-              }
-            ],
-            "family": [
-              {
-                "type": "text",
-                "text": "Abramowitz"
-              }
-            ]
-          },
-          {
-            "given": [
-              {
-                "type": "text",
-                "text": "Irene A."
-              }
-            ],
-            "family": [
-              {
-                "type": "text",
-                "text": "Stegun"
-              }
-            ]
-          }
-        ],
-        "title": [
-          {
-            "type": "text",
-            "text": "Handbook of Mathematical Functions with Formulas, Graphs, and Mathematical Tables"
-          }
-        ],
-        "publisher": [
-          [
-            {
-              "type": "text",
-              "text": "Dover"
+    "entries": {
+        "1": {
+            "bib_type": "book",
+            "entry_key": "abramowitz+stegun",
+            "fields": {
+                "date": "1964",
+                "author": [
+                    {
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Milton"
+                            }
+                        ],
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Abramowitz"
+                            }
+                        ]
+                    },
+                    {
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Irene A."
+                            }
+                        ],
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Stegun"
+                            }
+                        ]
+                    }
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Handbook of Mathematical Functions with Formulas, Graphs, and Mathematical Tables"
+                    }
+                ],
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Dover"
+                        }
+                    ]
+                ],
+                "location": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "New York"
+                        }
+                    ]
+                ],
+                "edition": [
+                    {
+                        "type": "text",
+                        "text": "ninth Dover printing, tenth GPO printing"
+                    }
+                ]
             }
-          ]
-        ],
-        "location": [
-          [
-            {
-              "type": "text",
-              "text": "New York"
-            }
-          ]
-        ],
-        "edition": [
-          {
-            "type": "text",
-            "text": "ninth Dover printing, tenth GPO printing"
-          }
-        ]
-      }
+        }
     }
-  }
 }

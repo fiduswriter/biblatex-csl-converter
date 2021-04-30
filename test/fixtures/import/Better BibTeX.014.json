@@ -1,16 +1,16 @@
 {
-  "entries": {
-    "1": {
-      "bib_type": "article-journal",
-      "entry_key": "BibTeXEscapeTest1",
-      "fields": {
-        "title": [
-          {
-            "type": "text",
-            "text": "Escaped backslash followed by {}: \n"
-          }
-        ]
-      }
+    "entries": {
+        "1": {
+            "bib_type": "article-journal",
+            "entry_key": "BibTeXEscapeTest1",
+            "fields": {
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Escaped backslash followed by {}: \n"
+                    }
+                ]
+            }
+        }
     }
-  }
 }

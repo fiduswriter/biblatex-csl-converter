@@ -1,602 +1,602 @@
 {
-  "entries": {
-    "1": {
-      "bib_type": "misc",
-      "entry_key": "Doe2015",
-      "fields": {
-        "date": "2015",
-        "location": [
-          [
-            {
-              "type": "text",
-              "text": "US/GB"
+    "entries": {
+        "1": {
+            "bib_type": "misc",
+            "entry_key": "Doe2015",
+            "fields": {
+                "date": "2015",
+                "location": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "US/GB"
+                        }
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "A Film"
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "director": [
+                    {
+                        "type": "text",
+                        "text": "Doe, John and Roe, Rob"
+                    }
+                ],
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            },
+            "unexpected_fields": {
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "The Distributor"
+                        }
+                    ]
+                ]
             }
-          ]
-        ],
-        "title": [
-          {
-            "type": "text",
-            "text": "A Film"
-          }
-        ]
-      },
-      "unknown_fields": {
-        "director": [
-          {
-            "type": "text",
-            "text": "Doe, John and Roe, Rob"
-          }
-        ],
-        "timestamp": [
-          {
-            "type": "text",
-            "text": "2015-02-24 12:14:36 +0100"
-          }
-        ]
-      },
-      "unexpected_fields": {
-        "publisher": [
-          [
-            {
-              "type": "text",
-              "text": "The Distributor"
+        },
+        "2": {
+            "bib_type": "report",
+            "entry_key": "Author2015",
+            "fields": {
+                "date": "2015",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Author"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Ann"
+                            }
+                        ]
+                    }
+                ],
+                "institution": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Institution"
+                        }
+                    ]
+                ],
+                "location": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Place"
+                        }
+                    ]
+                ],
+                "note": [
+                    {
+                        "type": "text",
+                        "text": "{:X-genre: xxx}"
+                    }
+                ],
+                "number": [
+                    {
+                        "type": "text",
+                        "text": "77"
+                    }
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "A Report"
+                    }
+                ],
+                "type": [
+                    {
+                        "type": "text",
+                        "text": "Working Paper"
+                    }
+                ]
+            },
+            "unexpected_fields": {
+                "editor": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Editrix"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Emma"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Editor"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Ed"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
             }
-          ]
-        ]
-      }
-    },
-    "2": {
-      "bib_type": "report",
-      "entry_key": "Author2015",
-      "fields": {
-        "date": "2015",
-        "author": [
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Author"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Ann"
-              }
-            ]
-          }
-        ],
-        "institution": [
-          [
-            {
-              "type": "text",
-              "text": "Institution"
+        },
+        "3": {
+            "bib_type": "misc",
+            "entry_key": "Kubrick1964",
+            "fields": {
+                "date": "1964",
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Dr. "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Strangelove",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " or: How "
+                    },
+                    {
+                        "type": "text",
+                        "text": "I",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " Learned to Stop Worrying and Love the Bomb"
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "director": [
+                    {
+                        "type": "text",
+                        "text": "Kubrick, Stanley"
+                    }
+                ],
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            },
+            "unexpected_fields": {
+                "shorttitle": [
+                    {
+                        "type": "text",
+                        "text": "Dr. Strangelove"
+                    }
+                ]
             }
-          ]
-        ],
-        "location": [
-          [
-            {
-              "type": "text",
-              "text": "Place"
+        },
+        "4": {
+            "bib_type": "misc",
+            "entry_key": "friends:leia:tv",
+            "fields": {
+                "date": "1996-09-16",
+                "langid": "usenglish",
+                "location": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "US"
+                        }
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "The One with the "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Princess Leia",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " Fantasy"
+                    }
+                ]
+            },
+            "unexpected_fields": {
+                "booktitle": [
+                    {
+                        "type": "text",
+                        "text": "Friends"
+                    }
+                ],
+                "journaltitle": [
+                    {
+                        "type": "text",
+                        "text": "Friends"
+                    }
+                ],
+                "number": [
+                    {
+                        "type": "text",
+                        "text": "1"
+                    }
+                ],
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "NBC"
+                        }
+                    ]
+                ],
+                "volume": [
+                    {
+                        "type": "text",
+                        "text": "3"
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "director": [
+                    {
+                        "type": "text",
+                        "text": "Mancuso, Gail"
+                    }
+                ],
+                "scriptwriter": [
+                    {
+                        "type": "text",
+                        "text": "Curtis, Michael and Malins, Gregory S."
+                    }
+                ],
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
             }
-          ]
-        ],
-        "note": [
-          {
-            "type": "text",
-            "text": "{:X-genre: xxx}"
-          }
-        ],
-        "number": [
-          {
-            "type": "text",
-            "text": "77"
-          }
-        ],
-        "title": [
-          {
-            "type": "text",
-            "text": "A Report"
-          }
-        ],
-        "type": [
-          {
-            "type": "text",
-            "text": "Working Paper"
-          }
-        ]
-      },
-      "unexpected_fields": {
-        "editor": [
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Editrix"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Emma"
-              }
-            ]
-          },
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Editor"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Ed"
-              }
-            ]
-          }
-        ]
-      },
-      "unknown_fields": {
-        "timestamp": [
-          {
-            "type": "text",
-            "text": "2015-02-24 12:14:36 +0100"
-          }
-        ]
-      }
-    },
-    "3": {
-      "bib_type": "misc",
-      "entry_key": "Kubrick1964",
-      "fields": {
-        "date": "1964",
-        "title": [
-          {
-            "type": "text",
-            "text": "Dr. "
-          },
-          {
-            "type": "text",
-            "text": "Strangelove",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": " or: How "
-          },
-          {
-            "type": "text",
-            "text": "I",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": " Learned to Stop Worrying and Love the Bomb"
-          }
-        ]
-      },
-      "unknown_fields": {
-        "director": [
-          {
-            "type": "text",
-            "text": "Kubrick, Stanley"
-          }
-        ],
-        "timestamp": [
-          {
-            "type": "text",
-            "text": "2015-02-24 12:14:36 +0100"
-          }
-        ]
-      },
-      "unexpected_fields": {
-        "shorttitle": [
-          {
-            "type": "text",
-            "text": "Dr. Strangelove"
-          }
-        ]
-      }
-    },
-    "4": {
-      "bib_type": "misc",
-      "entry_key": "friends:leia:tv",
-      "fields": {
-        "date": "1996-09-16",
-        "langid": "usenglish",
-        "location": [
-          [
-            {
-              "type": "text",
-              "text": "US"
+        },
+        "5": {
+            "bib_type": "misc",
+            "entry_key": "friends:leia:dvd",
+            "fields": {
+                "date": "2003",
+                "langid": "usenglish",
+                "location": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "US"
+                        }
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "The One with the "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Princess Leia",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " Fantasy"
+                    }
+                ]
+            },
+            "unexpected_fields": {
+                "booktitle": [
+                    {
+                        "type": "text",
+                        "text": "Friends"
+                    }
+                ],
+                "number": [
+                    {
+                        "type": "text",
+                        "text": "1"
+                    }
+                ],
+                "origdate": "1996-09-16",
+                "origpublisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "NBC"
+                        }
+                    ]
+                ],
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Warner Home Video"
+                        }
+                    ]
+                ],
+                "volume": [
+                    {
+                        "type": "text",
+                        "text": "3"
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "director": [
+                    {
+                        "type": "text",
+                        "text": "Mancuso, Gail"
+                    }
+                ],
+                "scriptwriter": [
+                    {
+                        "type": "text",
+                        "text": "Curtis, Michael and Malins, Gregory S."
+                    }
+                ],
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
             }
-          ]
-        ],
-        "title": [
-          {
-            "type": "text",
-            "text": "The One with the "
-          },
-          {
-            "type": "text",
-            "text": "Princess Leia",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": " Fantasy"
-          }
-        ]
-      },
-      "unexpected_fields": {
-        "booktitle": [
-          {
-            "type": "text",
-            "text": "Friends"
-          }
-        ],
-        "journaltitle": [
-          {
-            "type": "text",
-            "text": "Friends"
-          }
-        ],
-        "number": [
-          {
-            "type": "text",
-            "text": "1"
-          }
-        ],
-        "publisher": [
-          [
-            {
-              "type": "text",
-              "text": "NBC"
+        },
+        "6": {
+            "bib_type": "inreference",
+            "entry_key": "emptybook",
+            "fields": {
+                "editor": [
+                    {
+                        "literal": [
+                            {
+                                "type": "text",
+                                "text": "Xxx"
+                            }
+                        ]
+                    }
+                ],
+                "note": [
+                    {
+                        "type": "text",
+                        "text": "{:X-genre: xxx}"
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
             }
-          ]
-        ],
-        "volume": [
-          {
-            "type": "text",
-            "text": "3"
-          }
-        ]
-      },
-      "unknown_fields": {
-        "director": [
-          {
-            "type": "text",
-            "text": "Mancuso, Gail"
-          }
-        ],
-        "scriptwriter": [
-          {
-            "type": "text",
-            "text": "Curtis, Michael and Malins, Gregory S."
-          }
-        ],
-        "timestamp": [
-          {
-            "type": "text",
-            "text": "2015-02-24 12:14:36 +0100"
-          }
-        ]
-      }
+        }
     },
-    "5": {
-      "bib_type": "misc",
-      "entry_key": "friends:leia:dvd",
-      "fields": {
-        "date": "2003",
-        "langid": "usenglish",
-        "location": [
-          [
-            {
-              "type": "text",
-              "text": "US"
-            }
-          ]
-        ],
-        "title": [
-          {
-            "type": "text",
-            "text": "The One with the "
-          },
-          {
-            "type": "text",
-            "text": "Princess Leia",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": " Fantasy"
-          }
-        ]
-      },
-      "unexpected_fields": {
-        "booktitle": [
-          {
-            "type": "text",
-            "text": "Friends"
-          }
-        ],
-        "number": [
-          {
-            "type": "text",
-            "text": "1"
-          }
-        ],
-        "origdate": "1996-09-16",
-        "origpublisher": [
-          [
-            {
-              "type": "text",
-              "text": "NBC"
-            }
-          ]
-        ],
-        "publisher": [
-          [
-            {
-              "type": "text",
-              "text": "Warner Home Video"
-            }
-          ]
-        ],
-        "volume": [
-          {
-            "type": "text",
-            "text": "3"
-          }
-        ]
-      },
-      "unknown_fields": {
-        "director": [
-          {
-            "type": "text",
-            "text": "Mancuso, Gail"
-          }
-        ],
-        "scriptwriter": [
-          {
-            "type": "text",
-            "text": "Curtis, Michael and Malins, Gregory S."
-          }
-        ],
-        "timestamp": [
-          {
-            "type": "text",
-            "text": "2015-02-24 12:14:36 +0100"
-          }
-        ]
-      }
-    },
-    "6": {
-      "bib_type": "inreference",
-      "entry_key": "emptybook",
-      "fields": {
-        "editor": [
-          {
-            "literal": [
-              {
-                "type": "text",
-                "text": "Xxx"
-              }
-            ]
-          }
-        ],
-        "note": [
-          {
-            "type": "text",
-            "text": "{:X-genre: xxx}"
-          }
-        ]
-      },
-      "unknown_fields": {
-        "timestamp": [
-          {
-            "type": "text",
-            "text": "2015-02-24 12:14:36 +0100"
-          }
-        ]
-      }
-    }
-  },
-  "warnings": [
-    {
-      "type": "unknown_type",
-      "type_name": "movie",
-      "line": 9
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "director",
-      "entry": "Doe2015",
-      "line": 9
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "publisher",
-      "entry": "Doe2015",
-      "line": 9
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Doe2015",
-      "line": 9
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "editor",
-      "entry": "Author2015",
-      "line": 22
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Author2015",
-      "line": 22
-    },
-    {
-      "type": "unknown_type",
-      "type_name": "video",
-      "line": 30
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "director",
-      "entry": "Kubrick1964",
-      "line": 30
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "shorttitle",
-      "entry": "Kubrick1964",
-      "line": 30
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Kubrick1964",
-      "line": 30
-    },
-    {
-      "type": "unknown_type",
-      "type_name": "video",
-      "line": 45
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "booktitle",
-      "entry": "friends:leia:tv",
-      "line": 45
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "director",
-      "entry": "friends:leia:tv",
-      "line": 45
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "journaltitle",
-      "entry": "friends:leia:tv",
-      "line": 45
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "number",
-      "entry": "friends:leia:tv",
-      "line": 45
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "publisher",
-      "entry": "friends:leia:tv",
-      "line": 45
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "scriptwriter",
-      "entry": "friends:leia:tv",
-      "line": 45
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "friends:leia:tv",
-      "line": 45
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "volume",
-      "entry": "friends:leia:tv",
-      "line": 45
-    },
-    {
-      "type": "unknown_type",
-      "type_name": "video",
-      "line": 61
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "booktitle",
-      "entry": "friends:leia:dvd",
-      "line": 61
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "director",
-      "entry": "friends:leia:dvd",
-      "line": 61
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "number",
-      "entry": "friends:leia:dvd",
-      "line": 61
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "origdate",
-      "entry": "friends:leia:dvd",
-      "line": 61
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "origpublisher",
-      "entry": "friends:leia:dvd",
-      "line": 61
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "publisher",
-      "entry": "friends:leia:dvd",
-      "line": 61
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "scriptwriter",
-      "entry": "friends:leia:dvd",
-      "line": 61
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "friends:leia:dvd",
-      "line": 61
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "volume",
-      "entry": "friends:leia:dvd",
-      "line": 61
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "emptybook",
-      "line": 67
-    }
-  ]
+    "warnings": [
+        {
+            "type": "unknown_type",
+            "type_name": "movie",
+            "line": 9
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "director",
+            "entry": "Doe2015",
+            "line": 9
+        },
+        {
+            "type": "unexpected_field",
+            "field_name": "publisher",
+            "entry": "Doe2015",
+            "line": 9
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "Doe2015",
+            "line": 9
+        },
+        {
+            "type": "unexpected_field",
+            "field_name": "editor",
+            "entry": "Author2015",
+            "line": 22
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "Author2015",
+            "line": 22
+        },
+        {
+            "type": "unknown_type",
+            "type_name": "video",
+            "line": 30
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "director",
+            "entry": "Kubrick1964",
+            "line": 30
+        },
+        {
+            "type": "unexpected_field",
+            "field_name": "shorttitle",
+            "entry": "Kubrick1964",
+            "line": 30
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "Kubrick1964",
+            "line": 30
+        },
+        {
+            "type": "unknown_type",
+            "type_name": "video",
+            "line": 45
+        },
+        {
+            "type": "unexpected_field",
+            "field_name": "booktitle",
+            "entry": "friends:leia:tv",
+            "line": 45
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "director",
+            "entry": "friends:leia:tv",
+            "line": 45
+        },
+        {
+            "type": "unexpected_field",
+            "field_name": "journaltitle",
+            "entry": "friends:leia:tv",
+            "line": 45
+        },
+        {
+            "type": "unexpected_field",
+            "field_name": "number",
+            "entry": "friends:leia:tv",
+            "line": 45
+        },
+        {
+            "type": "unexpected_field",
+            "field_name": "publisher",
+            "entry": "friends:leia:tv",
+            "line": 45
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "scriptwriter",
+            "entry": "friends:leia:tv",
+            "line": 45
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "friends:leia:tv",
+            "line": 45
+        },
+        {
+            "type": "unexpected_field",
+            "field_name": "volume",
+            "entry": "friends:leia:tv",
+            "line": 45
+        },
+        {
+            "type": "unknown_type",
+            "type_name": "video",
+            "line": 61
+        },
+        {
+            "type": "unexpected_field",
+            "field_name": "booktitle",
+            "entry": "friends:leia:dvd",
+            "line": 61
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "director",
+            "entry": "friends:leia:dvd",
+            "line": 61
+        },
+        {
+            "type": "unexpected_field",
+            "field_name": "number",
+            "entry": "friends:leia:dvd",
+            "line": 61
+        },
+        {
+            "type": "unexpected_field",
+            "field_name": "origdate",
+            "entry": "friends:leia:dvd",
+            "line": 61
+        },
+        {
+            "type": "unexpected_field",
+            "field_name": "origpublisher",
+            "entry": "friends:leia:dvd",
+            "line": 61
+        },
+        {
+            "type": "unexpected_field",
+            "field_name": "publisher",
+            "entry": "friends:leia:dvd",
+            "line": 61
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "scriptwriter",
+            "entry": "friends:leia:dvd",
+            "line": 61
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "friends:leia:dvd",
+            "line": 61
+        },
+        {
+            "type": "unexpected_field",
+            "field_name": "volume",
+            "entry": "friends:leia:dvd",
+            "line": 61
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "emptybook",
+            "line": 67
+        }
+    ]
 }

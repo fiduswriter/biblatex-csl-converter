@@ -1,103 +1,103 @@
 {
-  "entries": {
-    "1": {
-      "bib_type": "incollection",
-      "entry_key": "koopman_efficient_99",
-      "fields": {
-        "date": "1999",
-        "author": [
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Koopman"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Pieter"
-              }
-            ]
-          },
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Plasmeijer"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Rinus"
-              }
-            ]
-          }
-        ],
-        "booktitle": [
-          {
-            "type": "text",
-            "text": "Implementation of "
-          },
-          {
-            "type": "text",
-            "text": "Functional Languages",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          }
-        ],
-        "doi": "10.1007/3-540-48515-5_8",
-        "pages": [
-          [
-            [
-              {
-                "type": "text",
-                "text": "120"
-              }
-            ],
-            [
-              {
-                "type": "text",
-                "text": "136"
-              }
-            ]
-          ]
-        ],
-        "publisher": [
-          [
-            {
-              "type": "text",
-              "text": "Springer"
+    "entries": {
+        "1": {
+            "bib_type": "incollection",
+            "entry_key": "koopman_efficient_99",
+            "fields": {
+                "date": "1999",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Koopman"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Pieter"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Plasmeijer"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Rinus"
+                            }
+                        ]
+                    }
+                ],
+                "booktitle": [
+                    {
+                        "type": "text",
+                        "text": "Implementation of "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Functional Languages",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ],
+                "doi": "10.1007/3-540-48515-5_8",
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "120"
+                            }
+                        ],
+                        [
+                            {
+                                "type": "text",
+                                "text": "136"
+                            }
+                        ]
+                    ]
+                ],
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Springer"
+                        }
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Efficient Combinator Parsers"
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
             }
-          ]
-        ],
-        "title": [
-          {
-            "type": "text",
-            "text": "Efficient Combinator Parsers"
-          }
-        ]
-      },
-      "unknown_fields": {
-        "timestamp": [
-          {
-            "type": "text",
-            "text": "2015-02-24 12:14:36 +0100"
-          }
-        ]
-      }
-    }
-  },
-  "warnings": [
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "koopman_efficient_99",
-      "line": 11
-    }
-  ]
+        }
+    },
+    "warnings": [
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "koopman_efficient_99",
+            "line": 11
+        }
+    ]
 }

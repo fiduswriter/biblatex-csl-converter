@@ -1,216 +1,216 @@
 {
-  "entries": {
-    "1": {
-      "bib_type": "incollection",
-      "entry_key": "Kaufmann1990",
-      "fields": {
-        "author": [
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Kaufmann"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Franz-Xaver"
-              }
-            ]
-          }
-        ],
-        "booktitle": [
-          {
-            "type": "text",
-            "text": "Sozialpolitik und Sozialstaat: Soziologische Analysen",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          }
-        ],
-        "doi": "10.1007/978-3-322-99962-7_7",
-        "editor": [
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Kauffmann"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Franz-Xaver"
-              }
-            ]
-          }
-        ],
-        "pages": [
-          [
-            [
-              {
-                "type": "text",
-                "text": "145"
-              }
-            ],
-            [
-              {
-                "type": "text",
-                "text": "160"
-              }
-            ]
-          ]
-        ],
-        "publisher": [
-          [
-            {
-              "type": "text",
-              "text": "VS Verlag für Sozialwissenschaften"
+    "entries": {
+        "1": {
+            "bib_type": "incollection",
+            "entry_key": "Kaufmann1990",
+            "fields": {
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Kaufmann"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Franz-Xaver"
+                            }
+                        ]
+                    }
+                ],
+                "booktitle": [
+                    {
+                        "type": "text",
+                        "text": "Sozialpolitik und Sozialstaat: Soziologische Analysen",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ],
+                "doi": "10.1007/978-3-322-99962-7_7",
+                "editor": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Kauffmann"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Franz-Xaver"
+                            }
+                        ]
+                    }
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "145"
+                            }
+                        ],
+                        [
+                            {
+                                "type": "text",
+                                "text": "160"
+                            }
+                        ]
+                    ]
+                ],
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "VS Verlag für Sozialwissenschaften"
+                        }
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Sozialpolitik und Bevölkerungsprozeß",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "year": [
+                    {
+                        "type": "text",
+                        "text": "[1990] 2002"
+                    }
+                ]
             }
-          ]
-        ],
-        "title": [
-          {
-            "type": "text",
-            "text": "Sozialpolitik und Bevölkerungsprozeß",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          }
-        ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "[1990] 2002"
-          }
-        ]
-      }
-    },
-    "2": {
-      "bib_type": "incollection",
-      "entry_key": "Kaufmann1997",
-      "fields": {
-        "author": [
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Kaufmann"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Franz-Xaver"
-              }
-            ]
-          }
-        ],
-        "booktitle": [
-          {
-            "type": "text",
-            "text": "Sozialpolitik und Sozialstaat: Soziologische Analysen",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          }
-        ],
-        "doi": "10.1007/978-3-322-99962-7_11",
-        "editor": [
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Kauffmann"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Franz-Xaver"
-              }
-            ]
-          }
-        ],
-        "pages": [
-          [
-            [
-              {
-                "type": "text",
-                "text": "241"
-              }
-            ],
-            [
-              {
-                "type": "text",
-                "text": "260"
-              }
-            ]
-          ]
-        ],
-        "publisher": [
-          [
-            {
-              "type": "text",
-              "text": "VS Verlag für Sozialwissenschaften"
+        },
+        "2": {
+            "bib_type": "incollection",
+            "entry_key": "Kaufmann1997",
+            "fields": {
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Kaufmann"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Franz-Xaver"
+                            }
+                        ]
+                    }
+                ],
+                "booktitle": [
+                    {
+                        "type": "text",
+                        "text": "Sozialpolitik und Sozialstaat: Soziologische Analysen",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ],
+                "doi": "10.1007/978-3-322-99962-7_11",
+                "editor": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Kauffmann"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Franz-Xaver"
+                            }
+                        ]
+                    }
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "241"
+                            }
+                        ],
+                        [
+                            {
+                                "type": "text",
+                                "text": "260"
+                            }
+                        ]
+                    ]
+                ],
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "VS Verlag für Sozialwissenschaften"
+                        }
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Schwindet die integrative Funktion des Sozialstaates?",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "year": [
+                    {
+                        "type": "text",
+                        "text": "[1997] 2002"
+                    }
+                ]
             }
-          ]
-        ],
-        "title": [
-          {
-            "type": "text",
-            "text": "Schwindet die integrative Funktion des Sozialstaates?",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          }
-        ]
-      },
-      "unknown_fields": {
-        "year": [
-          {
-            "type": "text",
-            "text": "[1997] 2002"
-          }
-        ]
-      }
-    }
-  },
-  "warnings": [
-    {
-      "type": "unknown_date",
-      "field_name": "year",
-      "value": "[1990] 2002",
-      "entry": "Kaufmann1990"
+        }
     },
-    {
-      "type": "unknown_field",
-      "field_name": "year",
-      "entry": "Kaufmann1990",
-      "line": 11
-    },
-    {
-      "type": "unknown_date",
-      "field_name": "year",
-      "value": "[1997] 2002",
-      "entry": "Kaufmann1997"
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "year",
-      "entry": "Kaufmann1997",
-      "line": 22
-    }
-  ]
+    "warnings": [
+        {
+            "type": "unknown_date",
+            "field_name": "year",
+            "value": "[1990] 2002",
+            "entry": "Kaufmann1990"
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "year",
+            "entry": "Kaufmann1990",
+            "line": 11
+        },
+        {
+            "type": "unknown_date",
+            "field_name": "year",
+            "value": "[1997] 2002",
+            "entry": "Kaufmann1997"
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "year",
+            "entry": "Kaufmann1997",
+            "line": 22
+        }
+    ]
 }

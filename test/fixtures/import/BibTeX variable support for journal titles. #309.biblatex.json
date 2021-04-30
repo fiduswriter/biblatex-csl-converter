@@ -1,91 +1,91 @@
 {
-  "entries": {
-    "1": {
-      "bib_type": "article-journal",
-      "entry_key": "blahut_capacity",
-      "fields": {
-        "date": "1972",
-        "author": [
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Blahut"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Richard E"
-              }
-            ]
-          }
-        ],
-        "journaltitle": [
-          {
-            "type": "variable",
-            "attrs": {
-              "variable": "IEEE_J_IT"
+    "entries": {
+        "1": {
+            "bib_type": "article-journal",
+            "entry_key": "blahut_capacity",
+            "fields": {
+                "date": "1972",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Blahut"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Richard E"
+                            }
+                        ]
+                    }
+                ],
+                "journaltitle": [
+                    {
+                        "type": "variable",
+                        "attrs": {
+                            "variable": "IEEE_J_IT"
+                        }
+                    }
+                ],
+                "number": [
+                    {
+                        "type": "text",
+                        "text": "4"
+                    }
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "460"
+                            }
+                        ],
+                        [
+                            {
+                                "type": "text",
+                                "text": "473"
+                            }
+                        ]
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Computation of Channel Capacity and Rate-Distortion Functions"
+                    }
+                ],
+                "volume": [
+                    {
+                        "type": "text",
+                        "text": "18"
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
             }
-          }
-        ],
-        "number": [
-          {
-            "type": "text",
-            "text": "4"
-          }
-        ],
-        "pages": [
-          [
-            [
-              {
-                "type": "text",
-                "text": "460"
-              }
-            ],
-            [
-              {
-                "type": "text",
-                "text": "473"
-              }
-            ]
-          ]
-        ],
-        "title": [
-          {
-            "type": "text",
-            "text": "Computation of Channel Capacity and Rate-Distortion Functions"
-          }
-        ],
-        "volume": [
-          {
-            "type": "text",
-            "text": "18"
-          }
-        ]
-      },
-      "unknown_fields": {
-        "timestamp": [
-          {
-            "type": "text",
-            "text": "2015-02-24 12:14:36 +0100"
-          }
-        ]
-      }
-    }
-  },
-  "warnings": [
-    {
-      "type": "undefined_variable",
-      "variable": "IEEE_J_IT",
-      "key": "journaltitle",
-      "line": 5
+        }
     },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "blahut_capacity",
-      "line": 11
-    }
-  ]
+    "warnings": [
+        {
+            "type": "undefined_variable",
+            "variable": "IEEE_J_IT",
+            "key": "journaltitle",
+            "line": 5
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "blahut_capacity",
+            "line": 11
+        }
+    ]
 }

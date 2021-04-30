@@ -1,207 +1,207 @@
 {
-  "entries": {
-    "1": {
-      "bib_type": "report",
-      "entry_key": "Hald_2000",
-      "fields": {
-        "date": "2000",
-        "author": [
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Hald"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "T."
-              }
-            ]
-          },
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Wong"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "D.M.A.L.F."
-              }
-            ]
-          }
-        ],
-        "institution": [
-          [
-            {
-              "type": "text",
-              "text": "Royal Veterinary and Agricultural University, Department of Animal Health and Animal Science, Division of Ethology and Health"
+    "entries": {
+        "1": {
+            "bib_type": "report",
+            "entry_key": "Hald_2000",
+            "fields": {
+                "date": "2000",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Hald"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "T."
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Wong"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "D.M.A.L.F."
+                            }
+                        ]
+                    }
+                ],
+                "institution": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Royal Veterinary and Agricultural University, Department of Animal Health and Animal Science, Division of Ethology and Health"
+                        }
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Salmonella",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            },
+                            {
+                                "type": "em"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " in "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Pork",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " ("
+                    },
+                    {
+                        "type": "text",
+                        "text": "SALINPORK",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": "): "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Pre",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": "-Harvest and "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Harvest Control Options Based",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " on "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Epidemiologic",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": ", "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Diagnostic",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " and "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Economic Research",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": ": "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Final Report",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ],
+                "url": "http://www.dfvf.dk/Files/Filer/Zoonosecentret/Publikationer/Salinpork/SALINPORK_final_report.pdf"
+            },
+            "unexpected_fields": {
+                "shorttitle": [
+                    {
+                        "type": "text",
+                        "text": "Salmonella",
+                        "marks": [
+                            {
+                                "type": "em"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " in Pork (SALINPORK): Pre-Harvest and Harvest Control Options Based on Epidemiologic, Diagnostic and Economic Research: Final Report"
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
             }
-          ]
-        ],
-        "title": [
-          {
-            "type": "text",
-            "text": "Salmonella",
-            "marks": [
-              {
-                "type": "nocase"
-              },
-              {
-                "type": "em"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": " in "
-          },
-          {
-            "type": "text",
-            "text": "Pork",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": " ("
-          },
-          {
-            "type": "text",
-            "text": "SALINPORK",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": "): "
-          },
-          {
-            "type": "text",
-            "text": "Pre",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": "-Harvest and "
-          },
-          {
-            "type": "text",
-            "text": "Harvest Control Options Based",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": " on "
-          },
-          {
-            "type": "text",
-            "text": "Epidemiologic",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": ", "
-          },
-          {
-            "type": "text",
-            "text": "Diagnostic",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": " and "
-          },
-          {
-            "type": "text",
-            "text": "Economic Research",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": ": "
-          },
-          {
-            "type": "text",
-            "text": "Final Report",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          }
-        ],
-        "url": "http://www.dfvf.dk/Files/Filer/Zoonosecentret/Publikationer/Salinpork/SALINPORK_final_report.pdf"
-      },
-      "unexpected_fields": {
-        "shorttitle": [
-          {
-            "type": "text",
-            "text": "Salmonella",
-            "marks": [
-              {
-                "type": "em"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": " in Pork (SALINPORK): Pre-Harvest and Harvest Control Options Based on Epidemiologic, Diagnostic and Economic Research: Final Report"
-          }
-        ]
-      },
-      "unknown_fields": {
-        "timestamp": [
-          {
-            "type": "text",
-            "text": "2015-02-24 12:14:36 +0100"
-          }
-        ]
-      }
-    }
-  },
-  "warnings": [
-    {
-      "type": "unexpected_field",
-      "field_name": "shorttitle",
-      "entry": "Hald_2000",
-      "line": 10
+        }
     },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Hald_2000",
-      "line": 10
-    }
-  ]
+    "warnings": [
+        {
+            "type": "unexpected_field",
+            "field_name": "shorttitle",
+            "entry": "Hald_2000",
+            "line": 10
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "Hald_2000",
+            "line": 10
+        }
+    ]
 }

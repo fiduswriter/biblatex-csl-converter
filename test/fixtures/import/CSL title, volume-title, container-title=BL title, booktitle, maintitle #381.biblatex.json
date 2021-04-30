@@ -1,274 +1,274 @@
 {
-  "entries": {
-    "1": {
-      "bib_type": "book",
-      "entry_key": "Plato1902",
-      "fields": {
-        "date": "1902",
-        "author": [
-          {
-            "literal": [
-              {
-                "type": "text",
-                "text": "Plato"
-              }
-            ]
-          }
-        ],
-        "editor": [
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Burnet"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "John"
-              }
-            ]
-          }
-        ],
-        "langid": "ukenglish",
-        "location": [
-          [
-            {
-              "type": "text",
-              "text": "Oxford"
+    "entries": {
+        "1": {
+            "bib_type": "book",
+            "entry_key": "Plato1902",
+            "fields": {
+                "date": "1902",
+                "author": [
+                    {
+                        "literal": [
+                            {
+                                "type": "text",
+                                "text": "Plato"
+                            }
+                        ]
+                    }
+                ],
+                "editor": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Burnet"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "John"
+                            }
+                        ]
+                    }
+                ],
+                "langid": "ukenglish",
+                "location": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Oxford"
+                        }
+                    ]
+                ],
+                "maintitle": [
+                    {
+                        "type": "text",
+                        "text": "Opera"
+                    }
+                ],
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Clarendon Press"
+                        }
+                    ]
+                ],
+                "series": [
+                    {
+                        "type": "text",
+                        "text": "Oxford classical texts CSL-VAR"
+                    }
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Clitophon, "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Republic",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": ", "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Timaeus",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": ", "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Critias",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ],
+                "volume": [
+                    {
+                        "type": "text",
+                        "text": "4"
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
             }
-          ]
-        ],
-        "maintitle": [
-          {
-            "type": "text",
-            "text": "Opera"
-          }
-        ],
-        "publisher": [
-          [
-            {
-              "type": "text",
-              "text": "Clarendon Press"
+        },
+        "2": {
+            "bib_type": "incollection",
+            "entry_key": "Plato1902a",
+            "fields": {
+                "date": "1902",
+                "author": [
+                    {
+                        "literal": [
+                            {
+                                "type": "text",
+                                "text": "Plato"
+                            }
+                        ]
+                    }
+                ],
+                "booktitle": [
+                    {
+                        "type": "text",
+                        "text": "Clitophon, "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Republic",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": ", "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Timaeus",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": ", "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Critias",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ],
+                "editor": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Burnet"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "John"
+                            }
+                        ]
+                    }
+                ],
+                "langid": "ukenglish",
+                "location": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Oxford"
+                        }
+                    ]
+                ],
+                "maintitle": [
+                    {
+                        "type": "text",
+                        "text": "Opera"
+                    }
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "327"
+                            }
+                        ],
+                        [
+                            {
+                                "type": "text",
+                                "text": "621"
+                            }
+                        ]
+                    ]
+                ],
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Clarendon Press"
+                        }
+                    ]
+                ],
+                "series": [
+                    {
+                        "type": "text",
+                        "text": "Oxford classical texts"
+                    }
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Republic"
+                    }
+                ],
+                "volume": [
+                    {
+                        "type": "text",
+                        "text": "4"
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
             }
-          ]
-        ],
-        "series": [
-          {
-            "type": "text",
-            "text": "Oxford classical texts CSL-VAR"
-          }
-        ],
-        "title": [
-          {
-            "type": "text",
-            "text": "Clitophon, "
-          },
-          {
-            "type": "text",
-            "text": "Republic",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": ", "
-          },
-          {
-            "type": "text",
-            "text": "Timaeus",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": ", "
-          },
-          {
-            "type": "text",
-            "text": "Critias",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          }
-        ],
-        "volume": [
-          {
-            "type": "text",
-            "text": "4"
-          }
-        ]
-      },
-      "unknown_fields": {
-        "timestamp": [
-          {
-            "type": "text",
-            "text": "2015-02-24 12:14:36 +0100"
-          }
-        ]
-      }
+        }
     },
-    "2": {
-      "bib_type": "incollection",
-      "entry_key": "Plato1902a",
-      "fields": {
-        "date": "1902",
-        "author": [
-          {
-            "literal": [
-              {
-                "type": "text",
-                "text": "Plato"
-              }
-            ]
-          }
-        ],
-        "booktitle": [
-          {
-            "type": "text",
-            "text": "Clitophon, "
-          },
-          {
-            "type": "text",
-            "text": "Republic",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": ", "
-          },
-          {
-            "type": "text",
-            "text": "Timaeus",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": ", "
-          },
-          {
-            "type": "text",
-            "text": "Critias",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          }
-        ],
-        "editor": [
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Burnet"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "John"
-              }
-            ]
-          }
-        ],
-        "langid": "ukenglish",
-        "location": [
-          [
-            {
-              "type": "text",
-              "text": "Oxford"
-            }
-          ]
-        ],
-        "maintitle": [
-          {
-            "type": "text",
-            "text": "Opera"
-          }
-        ],
-        "pages": [
-          [
-            [
-              {
-                "type": "text",
-                "text": "327"
-              }
-            ],
-            [
-              {
-                "type": "text",
-                "text": "621"
-              }
-            ]
-          ]
-        ],
-        "publisher": [
-          [
-            {
-              "type": "text",
-              "text": "Clarendon Press"
-            }
-          ]
-        ],
-        "series": [
-          {
-            "type": "text",
-            "text": "Oxford classical texts"
-          }
-        ],
-        "title": [
-          {
-            "type": "text",
-            "text": "Republic"
-          }
-        ],
-        "volume": [
-          {
-            "type": "text",
-            "text": "4"
-          }
-        ]
-      },
-      "unknown_fields": {
-        "timestamp": [
-          {
-            "type": "text",
-            "text": "2015-02-24 12:14:36 +0100"
-          }
-        ]
-      }
-    }
-  },
-  "warnings": [
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Plato1902",
-      "line": 14
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Plato1902a",
-      "line": 30
-    }
-  ]
+    "warnings": [
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "Plato1902",
+            "line": 14
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "Plato1902a",
+            "line": 30
+        }
+    ]
 }

@@ -1,158 +1,158 @@
 {
-  "entries": {
-    "1": {
-      "bib_type": "article-journal",
-      "entry_key": "BachmannDybalskiNaaijkens14",
-      "fields": {
-        "date": "2014-12-09",
-        "author": [
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Bachmann"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Sven"
-              }
-            ]
-          },
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Dybalski"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Wojciech"
-              }
-            ]
-          },
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Naaijkens"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Pieter"
-              }
-            ]
-          }
-        ],
-        "eprint": "1412.2970",
-        "eprinttype": [
-          {
-            "type": "text",
-            "text": "arxiv"
-          }
-        ],
-        "keywords": [
-          "Lieb-Robinson bounds",
-          "Mathematical Physics",
-          "Quantum Physics"
-        ],
-        "eprintclass": [
-          {
-            "type": "text",
-            "text": "math-ph, physics:quant-ph"
-          }
-        ],
-        "title": [
-          {
-            "type": "text",
-            "text": "Lieb-"
-          },
-          {
-            "type": "text",
-            "text": "Robinson",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": " Bounds, "
-          },
-          {
-            "type": "text",
-            "text": "Arveson",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": " Spectrum and "
-          },
-          {
-            "type": "text",
-            "text": "Haag",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": "-"
-          },
-          {
-            "type": "text",
-            "text": "Ruelle",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": " Scattering Theory for Gapped Quantum Spin Systems"
-          }
-        ],
-        "url": "http://arxiv.org/abs/1412.2970",
-        "urldate": "2015-02-07"
-      },
-      "unknown_fields": {
-        "timestamp": [
-          {
-            "type": "text",
-            "text": "2015-02-24 12:14:36 +0100"
-          }
-        ]
-      }
-    }
-  },
-  "warnings": [
-    {
-      "type": "alias_creates_duplicate_field",
-      "field": "archiveprefix",
-      "alias_of": "eprinttype",
-      "value": "arXiv",
-      "alias_of_value": "arxiv",
-      "entry": "BachmannDybalskiNaaijkens14",
-      "line": 14
+    "entries": {
+        "1": {
+            "bib_type": "article-journal",
+            "entry_key": "BachmannDybalskiNaaijkens14",
+            "fields": {
+                "date": "2014-12-09",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Bachmann"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Sven"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Dybalski"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Wojciech"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Naaijkens"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Pieter"
+                            }
+                        ]
+                    }
+                ],
+                "eprint": "1412.2970",
+                "eprinttype": [
+                    {
+                        "type": "text",
+                        "text": "arxiv"
+                    }
+                ],
+                "keywords": [
+                    "Lieb-Robinson bounds",
+                    "Mathematical Physics",
+                    "Quantum Physics"
+                ],
+                "eprintclass": [
+                    {
+                        "type": "text",
+                        "text": "math-ph, physics:quant-ph"
+                    }
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Lieb-"
+                    },
+                    {
+                        "type": "text",
+                        "text": "Robinson",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " Bounds, "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Arveson",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " Spectrum and "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Haag",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": "-"
+                    },
+                    {
+                        "type": "text",
+                        "text": "Ruelle",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " Scattering Theory for Gapped Quantum Spin Systems"
+                    }
+                ],
+                "url": "http://arxiv.org/abs/1412.2970",
+                "urldate": "2015-02-07"
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        }
     },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "BachmannDybalskiNaaijkens14",
-      "line": 14
-    }
-  ]
+    "warnings": [
+        {
+            "type": "alias_creates_duplicate_field",
+            "field": "archiveprefix",
+            "alias_of": "eprinttype",
+            "value": "arXiv",
+            "alias_of_value": "arxiv",
+            "entry": "BachmannDybalskiNaaijkens14",
+            "line": 14
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "BachmannDybalskiNaaijkens14",
+            "line": 14
+        }
+    ]
 }

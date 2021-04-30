@@ -1,490 +1,490 @@
 {
-  "entries": {
-    "1": {
-      "bib_type": "article-journal",
-      "entry_key": "kenne07",
-      "fields": {
-        "date": "2007",
-        "author": [
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Kennedy"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Christopher"
-              }
-            ]
-          }
-        ],
-        "doi": "10.1007/s10988-006-9008-0",
-        "issn": [
-          {
-            "type": "text",
-            "text": "0165-0157, 1573-0549"
-          }
-        ],
-        "journaltitle": [
-          {
-            "type": "text",
-            "text": "Linguistics and Philosophy"
-          }
-        ],
-        "number": [
-          {
-            "type": "text",
-            "text": "1"
-          }
-        ],
-        "pages": [
-          [
-            [
-              {
-                "type": "text",
-                "text": "1"
-              }
-            ],
-            [
-              {
-                "type": "text",
-                "text": "45"
-              }
-            ]
-          ]
-        ],
-        "title": [
-          {
-            "type": "text",
-            "text": "Vagueness and Grammar: "
-          },
-          {
-            "type": "text",
-            "text": "The",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": " Semantics of Relative and Absolute Gradable Adjectives"
-          }
-        ],
-        "urldate": "2012-10-31",
-        "volume": [
-          {
-            "type": "text",
-            "text": "30"
-          }
-        ]
-      },
-      "unexpected_fields": {
-        "shorttitle": [
-          {
-            "type": "text",
-            "text": "Vagueness and Grammar"
-          }
-        ]
-      },
-      "unknown_fields": {
-        "timestamp": [
-          {
-            "type": "text",
-            "text": "2015-02-24 12:14:36 +0100"
-          }
-        ]
-      }
-    },
-    "2": {
-      "bib_type": "thesis",
-      "entry_key": "vonf94",
-      "fields": {
-        "date": "1994",
-        "author": [
-          {
-            "prefix": [
-              {
-                "type": "text",
-                "text": "von"
-              }
-            ],
-            "useprefix": true,
-            "family": [
-              {
-                "type": "text",
-                "text": "Fintel"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Kai"
-              }
-            ]
-          }
-        ],
-        "institution": [
-          [
-            {
-              "type": "text",
-              "text": "University of Massachusetts"
+    "entries": {
+        "1": {
+            "bib_type": "article-journal",
+            "entry_key": "kenne07",
+            "fields": {
+                "date": "2007",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Kennedy"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Christopher"
+                            }
+                        ]
+                    }
+                ],
+                "doi": "10.1007/s10988-006-9008-0",
+                "issn": [
+                    {
+                        "type": "text",
+                        "text": "0165-0157, 1573-0549"
+                    }
+                ],
+                "journaltitle": [
+                    {
+                        "type": "text",
+                        "text": "Linguistics and Philosophy"
+                    }
+                ],
+                "number": [
+                    {
+                        "type": "text",
+                        "text": "1"
+                    }
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "1"
+                            }
+                        ],
+                        [
+                            {
+                                "type": "text",
+                                "text": "45"
+                            }
+                        ]
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Vagueness and Grammar: "
+                    },
+                    {
+                        "type": "text",
+                        "text": "The",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " Semantics of Relative and Absolute Gradable Adjectives"
+                    }
+                ],
+                "urldate": "2012-10-31",
+                "volume": [
+                    {
+                        "type": "text",
+                        "text": "30"
+                    }
+                ]
+            },
+            "unexpected_fields": {
+                "shorttitle": [
+                    {
+                        "type": "text",
+                        "text": "Vagueness and Grammar"
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
             }
-          ]
-        ],
-        "title": [
-          {
-            "type": "text",
-            "text": "Restrictions on "
-          },
-          {
-            "type": "text",
-            "text": "Quantifier Domains",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          }
-        ],
-        "urldate": "2014-04-20"
-      },
-      "unknown_fields": {
-        "timestamp": [
-          {
-            "type": "text",
-            "text": "2015-02-24 12:14:36 +0100"
-          }
-        ]
-      }
-    },
-    "3": {
-      "bib_type": "thesis",
-      "entry_key": "devr10",
-      "fields": {
-        "date": "2010",
-        "abstract": [
-          {
-            "type": "text",
-            "text": "It is a well-known but little-studied fact that evaluativeadverbs - adverbs indicating the attitude of the speaker towards theinformation she is conveying - can modify degree ('incredibly tall','ridiculously expensive'...). This thesis offers a syntactosemanticaccount of evaluative degree modi fication of both gradable adjectivesand gradable nouns.Following Morzycki (2004), I propose that evaluative degreemodi fication involves a covert operator (which I will call EVAL);however, my proposal differs from that of Morzycki in several crucialrespects. Most importantly, I argue that evaluative degreeconstructions should not be analysed as embedded exclamatives.Furthermore, I show how their syntactic behaviour illuminates theirsemantic composition, using evidence from different phenomena in bothEnglish and Dutch.Subsequently, I examine the linguistic evidence for the gradability ofcertain nouns, like 'idiot', 'nerd', 'genius', 'Barbie dollenthusiast', and 'weirdo', and conclude that they, like gradableadjectives, have a degree argument. I show how this class of gradablenouns may be defined in prototype-theoretic terms. Morzycki (2009)has shown that gradable nouns can be modified by size adjectives like'big' and 'enormous'; I extend his account by including degreemodification by evaluative adjectives.Finally, several suggestions for further research are offered."
-          }
-        ],
-        "author": [
-          {
-            "prefix": [
-              {
-                "type": "text",
-                "text": "de"
-              }
-            ],
-            "useprefix": true,
-            "family": [
-              {
-                "type": "text",
-                "text": "Vries"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Hanna"
-              }
-            ]
-          }
-        ],
-        "institution": [
-          [
-            {
-              "type": "text",
-              "text": "Universiteit Utrecht"
+        },
+        "2": {
+            "bib_type": "thesis",
+            "entry_key": "vonf94",
+            "fields": {
+                "date": "1994",
+                "author": [
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "von"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Fintel"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Kai"
+                            }
+                        ]
+                    }
+                ],
+                "institution": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "University of Massachusetts"
+                        }
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Restrictions on "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Quantifier Domains",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ],
+                "urldate": "2014-04-20"
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
             }
-          ]
-        ],
-        "title": [
-          {
-            "type": "text",
-            "text": "Evaluative "
-          },
-          {
-            "type": "text",
-            "text": "Degree Modification",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": " of "
-          },
-          {
-            "type": "text",
-            "text": "Adjectives",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": " and "
-          },
-          {
-            "type": "text",
-            "text": "Nouns",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          }
-        ],
-        "type": [
-          {
-            "type": "text",
-            "text": "Master's Thesis"
-          }
-        ]
-      },
-      "unknown_fields": {
-        "timestamp": [
-          {
-            "type": "text",
-            "text": "2015-02-24 12:14:36 +0100"
-          }
-        ]
-      }
-    },
-    "4": {
-      "bib_type": "book",
-      "entry_key": "vand95",
-      "fields": {
-        "date": "1995",
-        "langid": "french",
-        "location": [
-          [
-            {
-              "type": "text",
-              "text": "Paris"
+        },
+        "3": {
+            "bib_type": "thesis",
+            "entry_key": "devr10",
+            "fields": {
+                "date": "2010",
+                "abstract": [
+                    {
+                        "type": "text",
+                        "text": "It is a well-known but little-studied fact that evaluativeadverbs - adverbs indicating the attitude of the speaker towards theinformation she is conveying - can modify degree ('incredibly tall','ridiculously expensive'...). This thesis offers a syntactosemanticaccount of evaluative degree modi fication of both gradable adjectivesand gradable nouns.Following Morzycki (2004), I propose that evaluative degreemodi fication involves a covert operator (which I will call EVAL);however, my proposal differs from that of Morzycki in several crucialrespects. Most importantly, I argue that evaluative degreeconstructions should not be analysed as embedded exclamatives.Furthermore, I show how their syntactic behaviour illuminates theirsemantic composition, using evidence from different phenomena in bothEnglish and Dutch.Subsequently, I examine the linguistic evidence for the gradability ofcertain nouns, like 'idiot', 'nerd', 'genius', 'Barbie dollenthusiast', and 'weirdo', and conclude that they, like gradableadjectives, have a degree argument. I show how this class of gradablenouns may be defined in prototype-theoretic terms. Morzycki (2009)has shown that gradable nouns can be modified by size adjectives like'big' and 'enormous'; I extend his account by including degreemodification by evaluative adjectives.Finally, several suggestions for further research are offered."
+                    }
+                ],
+                "author": [
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "de"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Vries"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Hanna"
+                            }
+                        ]
+                    }
+                ],
+                "institution": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Universiteit Utrecht"
+                        }
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Evaluative "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Degree Modification",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " of "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Adjectives",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " and "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Nouns",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ],
+                "type": [
+                    {
+                        "type": "text",
+                        "text": "Master's Thesis"
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
             }
-          ]
-        ],
-        "author": [
-          {
-            "prefix": [
-              {
-                "type": "text",
-                "text": "van de"
-              }
-            ],
-            "useprefix": true,
-            "family": [
-              {
-                "type": "text",
-                "text": "Velde"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Danièle"
-              }
-            ]
-          }
-        ],
-        "isbn": [
-          {
-            "type": "text",
-            "text": "978-90-6831-748-0"
-          }
-        ],
-        "language": [
-          "french"
-        ],
-        "publisher": [
-          [
-            {
-              "type": "text",
-              "text": "Peeters"
+        },
+        "4": {
+            "bib_type": "book",
+            "entry_key": "vand95",
+            "fields": {
+                "date": "1995",
+                "langid": "french",
+                "location": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Paris"
+                        }
+                    ]
+                ],
+                "author": [
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "van de"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Velde"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Danièle"
+                            }
+                        ]
+                    }
+                ],
+                "isbn": [
+                    {
+                        "type": "text",
+                        "text": "978-90-6831-748-0"
+                    }
+                ],
+                "language": [
+                    "french"
+                ],
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Peeters"
+                        }
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Le spectre nominal. Des noms de matières aux noms d'abstractions"
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
             }
-          ]
-        ],
-        "title": [
-          {
-            "type": "text",
-            "text": "Le spectre nominal. Des noms de matières aux noms d'abstractions"
-          }
-        ]
-      },
-      "unknown_fields": {
-        "timestamp": [
-          {
-            "type": "text",
-            "text": "2015-02-24 12:14:36 +0100"
-          }
-        ]
-      }
-    },
-    "5": {
-      "bib_type": "article-journal",
-      "entry_key": "desw98",
-      "fields": {
-        "date": "1998",
-        "langid": "usenglish",
-        "author": [
-          {
-            "prefix": [
-              {
-                "type": "text",
-                "text": "de"
-              }
-            ],
-            "useprefix": true,
-            "family": [
-              {
-                "type": "text",
-                "text": "Swart"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Henriëtte"
-              }
-            ]
-          }
-        ],
-        "doi": "10.1023/A:1005916004600",
-        "issn": [
-          {
-            "type": "text",
-            "text": "0167-806X, 1573-0859"
-          }
-        ],
-        "journaltitle": [
-          {
-            "type": "text",
-            "text": "Natural Language & Linguistic Theory"
-          }
-        ],
-        "language": [
-          [
-            {
-              "type": "text",
-              "text": "en"
+        },
+        "5": {
+            "bib_type": "article-journal",
+            "entry_key": "desw98",
+            "fields": {
+                "date": "1998",
+                "langid": "usenglish",
+                "author": [
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "de"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Swart"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Henriëtte"
+                            }
+                        ]
+                    }
+                ],
+                "doi": "10.1023/A:1005916004600",
+                "issn": [
+                    {
+                        "type": "text",
+                        "text": "0167-806X, 1573-0859"
+                    }
+                ],
+                "journaltitle": [
+                    {
+                        "type": "text",
+                        "text": "Natural Language & Linguistic Theory"
+                    }
+                ],
+                "language": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "en"
+                        }
+                    ]
+                ],
+                "number": [
+                    {
+                        "type": "text",
+                        "text": "2"
+                    }
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "347"
+                            }
+                        ],
+                        [
+                            {
+                                "type": "text",
+                                "text": "385"
+                            }
+                        ]
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Aspect "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Shift",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " and "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Coercion",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ],
+                "urldate": "2015-10-09",
+                "volume": [
+                    {
+                        "type": "text",
+                        "text": "16"
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
             }
-          ]
-        ],
-        "number": [
-          {
-            "type": "text",
-            "text": "2"
-          }
-        ],
-        "pages": [
-          [
-            [
-              {
-                "type": "text",
-                "text": "347"
-              }
-            ],
-            [
-              {
-                "type": "text",
-                "text": "385"
-              }
-            ]
-          ]
-        ],
-        "title": [
-          {
-            "type": "text",
-            "text": "Aspect "
-          },
-          {
-            "type": "text",
-            "text": "Shift",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": " and "
-          },
-          {
-            "type": "text",
-            "text": "Coercion",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          }
-        ],
-        "urldate": "2015-10-09",
-        "volume": [
-          {
-            "type": "text",
-            "text": "16"
-          }
-        ]
-      },
-      "unknown_fields": {
-        "timestamp": [
-          {
-            "type": "text",
-            "text": "2015-02-24 12:14:36 +0100"
-          }
-        ]
-      }
-    }
-  },
-  "warnings": [
-    {
-      "type": "unexpected_field",
-      "field_name": "shorttitle",
-      "entry": "kenne07",
-      "line": 15
+        }
     },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "kenne07",
-      "line": 15
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "vonf94",
-      "line": 24
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "devr10",
-      "line": 34
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "vand95",
-      "line": 45
-    },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "desw98",
-      "line": 60
-    }
-  ]
+    "warnings": [
+        {
+            "type": "unexpected_field",
+            "field_name": "shorttitle",
+            "entry": "kenne07",
+            "line": 15
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "kenne07",
+            "line": 15
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "vonf94",
+            "line": 24
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "devr10",
+            "line": 34
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "vand95",
+            "line": 45
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "desw98",
+            "line": 60
+        }
+    ]
 }

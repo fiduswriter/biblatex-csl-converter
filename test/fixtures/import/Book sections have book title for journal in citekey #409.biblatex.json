@@ -1,180 +1,180 @@
 {
-  "entries": {
-    "1": {
-      "bib_type": "incollection",
-      "entry_key": "Orlin1979SiLlaRh",
-      "fields": {
-        "date": "1979",
-        "author": [
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Orlin"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Eric M."
-              }
-            ]
-          }
-        ],
-        "booktitle": [
-          {
-            "type": "text",
-            "text": "Studies in "
-          },
-          {
-            "type": "text",
-            "text": "Latin",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": " Literature and "
-          },
-          {
-            "type": "text",
-            "text": "Roman",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": " History"
-          }
-        ],
-        "editor": [
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Deroux"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Carl"
-              }
-            ]
-          }
-        ],
-        "isbn": [
-          {
-            "type": "text",
-            "text": "978-2-87031-104-2 978-2-87031-228-5 978-2-87031-179-0 978-2-87031-184-4 978-2-87031-195-0 978-2-87031-213-1 978-2-87031-256-8 978-2-87031-264-3 978-2-87031-284-1"
-          }
-        ],
-        "keywords": [
-          "History",
-          "History and criticism",
-          "Latin literature",
-          "Rome"
-        ],
-        "langid": "usenglish",
-        "location": [
-          [
-            {
-              "type": "text",
-              "text": "Bruxelles"
+    "entries": {
+        "1": {
+            "bib_type": "incollection",
+            "entry_key": "Orlin1979SiLlaRh",
+            "fields": {
+                "date": "1979",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Orlin"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Eric M."
+                            }
+                        ]
+                    }
+                ],
+                "booktitle": [
+                    {
+                        "type": "text",
+                        "text": "Studies in "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Latin",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " Literature and "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Roman",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " History"
+                    }
+                ],
+                "editor": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Deroux"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Carl"
+                            }
+                        ]
+                    }
+                ],
+                "isbn": [
+                    {
+                        "type": "text",
+                        "text": "978-2-87031-104-2 978-2-87031-228-5 978-2-87031-179-0 978-2-87031-184-4 978-2-87031-195-0 978-2-87031-213-1 978-2-87031-256-8 978-2-87031-264-3 978-2-87031-284-1"
+                    }
+                ],
+                "keywords": [
+                    "History",
+                    "History and criticism",
+                    "Latin literature",
+                    "Rome"
+                ],
+                "langid": "usenglish",
+                "location": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Bruxelles"
+                        }
+                    ]
+                ],
+                "number": [
+                    {
+                        "type": "text",
+                        "text": "v. 164, 168, 180, 196, 206, 217, 227, 239, 244, 254, 272, 287, 301, 315, 323, 338"
+                    }
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "70"
+                            }
+                        ],
+                        [
+                            {
+                                "type": "text",
+                                "text": "90"
+                            }
+                        ]
+                    ]
+                ],
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Latomus"
+                        }
+                    ]
+                ],
+                "series": [
+                    {
+                        "type": "text",
+                        "text": "Collection Latomus"
+                    }
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Why a "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Second Temple",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " for "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Venus Erycina",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": "?"
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
             }
-          ]
-        ],
-        "number": [
-          {
-            "type": "text",
-            "text": "v. 164, 168, 180, 196, 206, 217, 227, 239, 244, 254, 272, 287, 301, 315, 323, 338"
-          }
-        ],
-        "pages": [
-          [
-            [
-              {
-                "type": "text",
-                "text": "70"
-              }
-            ],
-            [
-              {
-                "type": "text",
-                "text": "90"
-              }
-            ]
-          ]
-        ],
-        "publisher": [
-          [
-            {
-              "type": "text",
-              "text": "Latomus"
-            }
-          ]
-        ],
-        "series": [
-          {
-            "type": "text",
-            "text": "Collection Latomus"
-          }
-        ],
-        "title": [
-          {
-            "type": "text",
-            "text": "Why a "
-          },
-          {
-            "type": "text",
-            "text": "Second Temple",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": " for "
-          },
-          {
-            "type": "text",
-            "text": "Venus Erycina",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": "?"
-          }
-        ]
-      },
-      "unknown_fields": {
-        "timestamp": [
-          {
-            "type": "text",
-            "text": "2015-02-24 12:14:36 +0100"
-          }
-        ]
-      }
-    }
-  },
-  "warnings": [
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "Orlin1979SiLlaRh",
-      "line": 17
-    }
-  ]
+        }
+    },
+    "warnings": [
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "Orlin1979SiLlaRh",
+            "line": 17
+        }
+    ]
 }

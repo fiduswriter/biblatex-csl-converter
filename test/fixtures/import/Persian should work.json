@@ -1,87 +1,87 @@
 {
-  "entries": {
-    "1": {
-      "bib_type": "article-journal",
-      "entry_key": "داودی2015بررسی",
-      "fields": {
-        "date": "2015",
-        "title": [
-          {
-            "type": "text",
-            "text": "بررسی مکانیزمهای سایش و عمر ابزار در تراشکاری سوپرآلیاژ پایه آهن-نیکل N-155"
-          }
-        ],
-        "author": [
-          {
-            "prefix": [
-              {
-                "type": "text",
-                "text": "داودی"
-              }
-            ],
-            "useprefix": true,
-            "family": [],
-            "given": [
-              {
-                "type": "text",
-                "text": "بهنام"
-              }
-            ]
-          },
-          {
-            "literal": [
-              {
-                "type": "text",
-                "text": "بهنام"
-              }
-            ]
-          },
-          {
-            "literal": [
-              {
-                "type": "text",
-                "text": "اسکندری"
-              }
-            ]
-          },
-          {
-            "literal": [
-              {
-                "type": "text",
-                "text": "بهزاد"
-              }
-            ]
-          }
-        ],
-        "journaltitle": [
-          {
-            "type": "text",
-            "text": "مهندسی مکانیک مدرس"
-          }
-        ],
-        "volume": [
-          {
-            "type": "text",
-            "text": "14"
-          }
-        ],
-        "pages": [
-          [
-            [
-              {
-                "type": "text",
-                "text": "51"
-              }
-            ],
-            [
-              {
-                "type": "text",
-                "text": "58"
-              }
-            ]
-          ]
-        ]
-      }
+    "entries": {
+        "1": {
+            "bib_type": "article-journal",
+            "entry_key": "داودی2015بررسی",
+            "fields": {
+                "date": "2015",
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "بررسی مکانیزمهای سایش و عمر ابزار در تراشکاری سوپرآلیاژ پایه آهن-نیکل N-155"
+                    }
+                ],
+                "author": [
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "داودی"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "بهنام"
+                            }
+                        ]
+                    },
+                    {
+                        "literal": [
+                            {
+                                "type": "text",
+                                "text": "بهنام"
+                            }
+                        ]
+                    },
+                    {
+                        "literal": [
+                            {
+                                "type": "text",
+                                "text": "اسکندری"
+                            }
+                        ]
+                    },
+                    {
+                        "literal": [
+                            {
+                                "type": "text",
+                                "text": "بهزاد"
+                            }
+                        ]
+                    }
+                ],
+                "journaltitle": [
+                    {
+                        "type": "text",
+                        "text": "مهندسی مکانیک مدرس"
+                    }
+                ],
+                "volume": [
+                    {
+                        "type": "text",
+                        "text": "14"
+                    }
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "51"
+                            }
+                        ],
+                        [
+                            {
+                                "type": "text",
+                                "text": "58"
+                            }
+                        ]
+                    ]
+                ]
+            }
+        }
     }
-  }
 }

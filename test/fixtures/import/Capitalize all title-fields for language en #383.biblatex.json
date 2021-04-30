@@ -1,299 +1,299 @@
 {
-  "entries": {
-    "1": {
-      "bib_type": "article-journal",
-      "entry_key": "_carbocyclic",
-      "fields": {
-        "langid": "ukenglish",
-        "title": [
-          {
-            "type": "text",
-            "text": "A Carbocyclic Carbene as an Efficient Catalyst Ligand for "
-          },
-          {
-            "type": "text",
-            "text": "C",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": "–"
-          },
-          {
-            "type": "text",
-            "text": "C",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": " Coupling Reactions"
-          }
-        ]
-      }
-    },
-    "2": {
-      "bib_type": "book",
-      "entry_key": "_alkanethiolate",
-      "fields": {
-        "langid": "usenglish",
-        "title": [
-          {
-            "type": "text",
-            "text": "Alkanethiolate Gold Cluster Molecules with Core Diameters from 1.5 to 5.2 "
-          },
-          {
-            "type": "text",
-            "text": "nm",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    "3": {
-      "bib_type": "book",
-      "entry_key": "_stochastic",
-      "fields": {
-        "langid": "usenglish",
-        "title": [
-          {
-            "type": "text",
-            "text": "A Stochastic Model of "
-          },
-          {
-            "type": "text",
-            "text": "TCP Reno",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": " Congestion Avoidance and Control"
-          }
-        ]
-      }
-    },
-    "4": {
-      "bib_type": "article-journal",
-      "entry_key": "_effect",
-      "fields": {
-        "langid": "usenglish",
-        "title": [
-          {
-            "type": "text",
-            "text": "Effect of Immobilization on Catalytic Characteristics of Saturated "
-          },
-          {
-            "type": "text",
-            "text": "Pd",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": "-"
-          },
-          {
-            "type": "text",
-            "text": "N",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": "-Heterocyclic Carbenes in "
-          },
-          {
-            "type": "text",
-            "text": "Mizoroki",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": "-"
-          },
-          {
-            "type": "text",
-            "text": "Heck",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": " Reactions"
-          }
-        ]
-      }
-    },
-    "5": {
-      "bib_type": "book",
-      "entry_key": "_estimateur",
-      "fields": {
-        "abstract": [
-          {
-            "type": "text",
-            "text": "in French, so no case conversion, nor protection."
-          }
-        ],
-        "langid": "french",
-        "title": [
-          {
-            "type": "text",
-            "text": "Estimateur d'un défaut de fonctionnement d'un modulateur en quadrature et étage de modulation l'utilisant"
-          }
-        ]
-      }
-    },
-    "6": {
-      "bib_type": "book",
-      "entry_key": "_highspeed",
-      "fields": {
-        "langid": "usenglish",
-        "title": [
-          {
-            "type": "text",
-            "text": "High-Speed Digital-to-"
-          },
-          {
-            "type": "text",
-            "text": "RF",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": " Converter"
-          }
-        ]
-      }
-    },
-    "7": {
-      "bib_type": "article-journal",
-      "entry_key": "_pleistocene",
-      "fields": {
-        "langid": "ukenglish",
-        "title": [
-          {
-            "type": "text",
-            "text": "Pleistocene "
-          },
-          {
-            "type": "text",
-            "text": "Homo sapiens",
-            "marks": [
-              {
-                "type": "nocase"
-              },
-              {
-                "type": "nocase"
-              },
-              {
-                "type": "em"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": " from "
-          },
-          {
-            "type": "text",
-            "text": "Middle Awash",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": ", "
-          },
-          {
-            "type": "text",
-            "text": "Ethiopia",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    "8": {
-      "bib_type": "book",
-      "entry_key": "_remarks",
-      "fields": {
-        "abstract": [
-          {
-            "type": "text",
-            "text": "Zotero’s “Language” field empty, so “en-US” is assumed."
-          }
-        ],
-        "title": [
-          {
-            "type": "text",
-            "text": "Some Remarks on "
-          },
-          {
-            "type": "text",
-            "text": "’t Hooft’s",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": " "
-          },
-          {
-            "type": "text",
-            "text": "S",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": "-Matrix for Black Holes"
-          }
-        ]
-      }
+    "entries": {
+        "1": {
+            "bib_type": "article-journal",
+            "entry_key": "_carbocyclic",
+            "fields": {
+                "langid": "ukenglish",
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "A Carbocyclic Carbene as an Efficient Catalyst Ligand for "
+                    },
+                    {
+                        "type": "text",
+                        "text": "C",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": "–"
+                    },
+                    {
+                        "type": "text",
+                        "text": "C",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " Coupling Reactions"
+                    }
+                ]
+            }
+        },
+        "2": {
+            "bib_type": "book",
+            "entry_key": "_alkanethiolate",
+            "fields": {
+                "langid": "usenglish",
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Alkanethiolate Gold Cluster Molecules with Core Diameters from 1.5 to 5.2 "
+                    },
+                    {
+                        "type": "text",
+                        "text": "nm",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "3": {
+            "bib_type": "book",
+            "entry_key": "_stochastic",
+            "fields": {
+                "langid": "usenglish",
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "A Stochastic Model of "
+                    },
+                    {
+                        "type": "text",
+                        "text": "TCP Reno",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " Congestion Avoidance and Control"
+                    }
+                ]
+            }
+        },
+        "4": {
+            "bib_type": "article-journal",
+            "entry_key": "_effect",
+            "fields": {
+                "langid": "usenglish",
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Effect of Immobilization on Catalytic Characteristics of Saturated "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Pd",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": "-"
+                    },
+                    {
+                        "type": "text",
+                        "text": "N",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": "-Heterocyclic Carbenes in "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Mizoroki",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": "-"
+                    },
+                    {
+                        "type": "text",
+                        "text": "Heck",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " Reactions"
+                    }
+                ]
+            }
+        },
+        "5": {
+            "bib_type": "book",
+            "entry_key": "_estimateur",
+            "fields": {
+                "abstract": [
+                    {
+                        "type": "text",
+                        "text": "in French, so no case conversion, nor protection."
+                    }
+                ],
+                "langid": "french",
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Estimateur d'un défaut de fonctionnement d'un modulateur en quadrature et étage de modulation l'utilisant"
+                    }
+                ]
+            }
+        },
+        "6": {
+            "bib_type": "book",
+            "entry_key": "_highspeed",
+            "fields": {
+                "langid": "usenglish",
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "High-Speed Digital-to-"
+                    },
+                    {
+                        "type": "text",
+                        "text": "RF",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " Converter"
+                    }
+                ]
+            }
+        },
+        "7": {
+            "bib_type": "article-journal",
+            "entry_key": "_pleistocene",
+            "fields": {
+                "langid": "ukenglish",
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Pleistocene "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Homo sapiens",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            },
+                            {
+                                "type": "nocase"
+                            },
+                            {
+                                "type": "em"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " from "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Middle Awash",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": ", "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Ethiopia",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "8": {
+            "bib_type": "book",
+            "entry_key": "_remarks",
+            "fields": {
+                "abstract": [
+                    {
+                        "type": "text",
+                        "text": "Zotero’s “Language” field empty, so “en-US” is assumed."
+                    }
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Some Remarks on "
+                    },
+                    {
+                        "type": "text",
+                        "text": "’t Hooft’s",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " "
+                    },
+                    {
+                        "type": "text",
+                        "text": "S",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": "-Matrix for Black Holes"
+                    }
+                ]
+            }
+        }
     }
-  }
 }

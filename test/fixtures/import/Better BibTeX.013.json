@@ -1,48 +1,48 @@
 {
-  "entries": {
-    "1": {
-      "bib_type": "book",
-      "entry_key": "id",
-      "fields": {
-        "title": [
-          {
-            "type": "text",
-            "text": "Filename character test. Relative path"
-          }
-        ]
-      },
-      "unexpected_fields": {
-        "file": ",.\\;'[]\\{\\}`-=~!@#$%^&()_+.pdf:Better BibTeX.013/files/32/,.\\;'[]\\{\\}`-=~!@#$%^&()_+.pdf:application/pdf"
-      }
+    "entries": {
+        "1": {
+            "bib_type": "book",
+            "entry_key": "id",
+            "fields": {
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Filename character test. Relative path"
+                    }
+                ]
+            },
+            "unexpected_fields": {
+                "file": ",.\\;'[]\\{\\}`-=~!@#$%^&()_+.pdf:Better BibTeX.013/files/32/,.\\;'[]\\{\\}`-=~!@#$%^&()_+.pdf:application/pdf"
+            }
+        },
+        "2": {
+            "bib_type": "book",
+            "entry_key": "id2",
+            "fields": {
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Filename character test. Absolute path"
+                    }
+                ]
+            },
+            "unexpected_fields": {
+                "file": ",.\\;'[]\\{\\}`-=~!@#$%^&()_+.pdf:Better BibTeX.013/some/path/,.\\;'[]\\{\\}`-=~!@#$%^&()_+.pdf:application/pdf"
+            }
+        }
     },
-    "2": {
-      "bib_type": "book",
-      "entry_key": "id2",
-      "fields": {
-        "title": [
-          {
-            "type": "text",
-            "text": "Filename character test. Absolute path"
-          }
-        ]
-      },
-      "unexpected_fields": {
-        "file": ",.\\;'[]\\{\\}`-=~!@#$%^&()_+.pdf:Better BibTeX.013/some/path/,.\\;'[]\\{\\}`-=~!@#$%^&()_+.pdf:application/pdf"
-      }
-    }
-  },
-  "warnings": [
-    {
-      "type": "unexpected_field",
-      "field_name": "file",
-      "entry": "id",
-      "line": 5
-    },
-    {
-      "type": "unexpected_field",
-      "field_name": "file",
-      "entry": "id2",
-      "line": 9
-    }
-  ]
+    "warnings": [
+        {
+            "type": "unexpected_field",
+            "field_name": "file",
+            "entry": "id",
+            "line": 5
+        },
+        {
+            "type": "unexpected_field",
+            "field_name": "file",
+            "entry": "id2",
+            "line": 9
+        }
+    ]
 }

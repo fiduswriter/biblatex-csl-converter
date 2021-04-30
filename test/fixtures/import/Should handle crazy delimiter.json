@@ -1,121 +1,121 @@
 {
-  "entries": {
-    "1": {
-      "bib_type": "article-journal",
-      "entry_key": "RID:1118130922631-13",
-      "fields": {
-        "date": "2003",
-        "title": [
-          {
-            "type": "text",
-            "text": "Synthesis and structural characterization of unprecedented bis-asymmetric heteroscorpionate U(III) complexes: [U"
-          },
-          {
-            "type": "text",
-            "text": "kappa(3)-H2B(pz(tBu),(Me))(pz(Me,tBu))",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": "(2)I] and [U"
-          },
-          {
-            "type": "text",
-            "text": "kappa(3) -H2B(pz(tBu,Me))( pz(Me2))",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": "(2)I]"
-          }
-        ],
-        "journaltitle": [
-          {
-            "type": "text",
-            "text": "Inorganic Chemistry"
-          }
-        ],
-        "author": [
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Maria"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "L"
-              }
-            ]
-          },
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Domingos"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "A"
-              }
-            ]
-          },
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Santos"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "I"
-              }
-            ]
-          }
-        ],
-        "volume": [
-          {
-            "type": "text",
-            "text": "42"
-          }
-        ],
-        "number": [
-          {
-            "type": "text",
-            "text": "10"
-          }
-        ],
-        "pages": [
-          [
-            [
-              {
-                "type": "text",
-                "text": "3323"
-              }
-            ],
-            [
-              {
-                "type": "text",
-                "text": "3330"
-              }
-            ]
-          ]
-        ]
-      }
+    "entries": {
+        "1": {
+            "bib_type": "article-journal",
+            "entry_key": "RID:1118130922631-13",
+            "fields": {
+                "date": "2003",
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Synthesis and structural characterization of unprecedented bis-asymmetric heteroscorpionate U(III) complexes: [U"
+                    },
+                    {
+                        "type": "text",
+                        "text": "kappa(3)-H2B(pz(tBu),(Me))(pz(Me,tBu))",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": "(2)I] and [U"
+                    },
+                    {
+                        "type": "text",
+                        "text": "kappa(3) -H2B(pz(tBu,Me))( pz(Me2))",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": "(2)I]"
+                    }
+                ],
+                "journaltitle": [
+                    {
+                        "type": "text",
+                        "text": "Inorganic Chemistry"
+                    }
+                ],
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Maria"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "L"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Domingos"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "A"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Santos"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "I"
+                            }
+                        ]
+                    }
+                ],
+                "volume": [
+                    {
+                        "type": "text",
+                        "text": "42"
+                    }
+                ],
+                "number": [
+                    {
+                        "type": "text",
+                        "text": "10"
+                    }
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "3323"
+                            }
+                        ],
+                        [
+                            {
+                                "type": "text",
+                                "text": "3330"
+                            }
+                        ]
+                    ]
+                ]
+            }
+        }
     }
-  }
 }

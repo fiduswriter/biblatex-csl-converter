@@ -1,100 +1,100 @@
 {
-  "entries": {
-    "1": {
-      "bib_type": "article-journal",
-      "entry_key": "BaltesStaudinger2000",
-      "fields": {
-        "date": "2000",
-        "author": [
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Baltes"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Paul B"
-              }
-            ]
-          },
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Staudinger"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Ursula M"
-              }
-            ]
-          }
-        ],
-        "journaltitle": [
-          {
-            "type": "text",
-            "text": "American psychologist"
-          }
-        ],
-        "number": [
-          {
-            "type": "text",
-            "text": "1"
-          }
-        ],
-        "pages": [
-          [
-            [
-              {
-                "type": "text",
-                "text": "122"
-              }
-            ]
-          ]
-        ],
-        "title": [
-          {
-            "type": "text",
-            "text": "Wisdom: A Metaheuristic (Pragmatic) to Orchestrate Mind and Virtue toward Excellence."
-          }
-        ],
-        "volume": [
-          {
-            "type": "text",
-            "text": "55"
-          }
-        ]
-      },
-      "unexpected_fields": {
-        "file": "Baltes_Staudinger_2000_Wisdom.pdf:files/1/Baltes_Staudinger_2000_Wisdom.pdf:application/pdf"
-      },
-      "unknown_fields": {
-        "timestamp": [
-          {
-            "type": "text",
-            "text": "2015-02-24 12:14:36 +0100"
-          }
-        ]
-      }
-    }
-  },
-  "warnings": [
-    {
-      "type": "unexpected_field",
-      "field_name": "file",
-      "entry": "BaltesStaudinger2000",
-      "line": 12
+    "entries": {
+        "1": {
+            "bib_type": "article-journal",
+            "entry_key": "BaltesStaudinger2000",
+            "fields": {
+                "date": "2000",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Baltes"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Paul B"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Staudinger"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Ursula M"
+                            }
+                        ]
+                    }
+                ],
+                "journaltitle": [
+                    {
+                        "type": "text",
+                        "text": "American psychologist"
+                    }
+                ],
+                "number": [
+                    {
+                        "type": "text",
+                        "text": "1"
+                    }
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "122"
+                            }
+                        ]
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Wisdom: A Metaheuristic (Pragmatic) to Orchestrate Mind and Virtue toward Excellence."
+                    }
+                ],
+                "volume": [
+                    {
+                        "type": "text",
+                        "text": "55"
+                    }
+                ]
+            },
+            "unexpected_fields": {
+                "file": "Baltes_Staudinger_2000_Wisdom.pdf:files/1/Baltes_Staudinger_2000_Wisdom.pdf:application/pdf"
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        }
     },
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "BaltesStaudinger2000",
-      "line": 12
-    }
-  ]
+    "warnings": [
+        {
+            "type": "unexpected_field",
+            "field_name": "file",
+            "entry": "BaltesStaudinger2000",
+            "line": 12
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "BaltesStaudinger2000",
+            "line": 12
+        }
+    ]
 }

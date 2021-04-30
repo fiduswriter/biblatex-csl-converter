@@ -1,234 +1,234 @@
 {
-  "entries": {
-    "1": {
-      "bib_type": "article-journal",
-      "entry_key": "herzog1955",
-      "fields": {
-        "date": "1955",
-        "author": [
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Herzog"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Hershel L."
-              }
-            ]
-          },
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Payne"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Constance C."
-              }
-            ]
-          },
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Jevnik"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Margaret A."
-              }
-            ]
-          },
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Gould"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "David"
-              }
-            ]
-          },
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Shapiro"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Elliot L."
-              }
-            ]
-          },
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Oliveto"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Eugene P."
-              }
-            ]
-          },
-          {
-            "family": [
-              {
-                "type": "text",
-                "text": "Hershberg"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "E. B."
-              }
-            ]
-          }
-        ],
-        "doi": "10.1021/ja01623a027",
-        "issn": [
-          {
-            "type": "text",
-            "text": "0002-7863"
-          }
-        ],
-        "journaltitle": [
-          {
-            "type": "text",
-            "text": "Journal of the American Chemical Society"
-          }
-        ],
-        "note": [
-          {
-            "type": "text",
-            "text": "http://dx.doi.org/10.1021/ja01623a027",
-            "marks": [
-              {
-                "type": "url"
-              }
-            ]
-          }
-        ],
-        "number": [
-          {
-            "type": "text",
-            "text": "18"
-          }
-        ],
-        "pages": [
-          [
-            [
-              {
-                "type": "text",
-                "text": "4781"
-              }
-            ],
-            [
-              {
-                "type": "text",
-                "text": "4784"
-              }
-            ]
-          ]
-        ],
-        "title": [
-          {
-            "type": "text",
-            "text": "11-"
-          },
-          {
-            "type": "text",
-            "text": "Oxygenated Steroids",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": ". "
-          },
-          {
-            "type": "text",
-            "text": "XIII",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": ". "
-          },
-          {
-            "type": "text",
-            "text": "Synthesis",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": " and Proof of Structure of "
-          },
-          {
-            "type": "text",
-            "text": "Δ1,4-Pregnadiene-17α,21-diol-3,11,20-trione and Δ1,4-Pregnadiene-11β,17α,21-triol-3,20-dione",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          }
-        ],
-        "urldate": "2015-02-02",
-        "volume": [
-          {
-            "type": "text",
-            "text": "77"
-          }
-        ]
-      },
-      "unknown_fields": {
-        "timestamp": [
-          {
-            "type": "text",
-            "text": "2015-02-24 12:14:36 +0100"
-          }
-        ]
-      }
-    }
-  },
-  "warnings": [
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "herzog1955",
-      "line": 15
-    }
-  ]
+    "entries": {
+        "1": {
+            "bib_type": "article-journal",
+            "entry_key": "herzog1955",
+            "fields": {
+                "date": "1955",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Herzog"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Hershel L."
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Payne"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Constance C."
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Jevnik"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Margaret A."
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Gould"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "David"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Shapiro"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Elliot L."
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Oliveto"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Eugene P."
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Hershberg"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "E. B."
+                            }
+                        ]
+                    }
+                ],
+                "doi": "10.1021/ja01623a027",
+                "issn": [
+                    {
+                        "type": "text",
+                        "text": "0002-7863"
+                    }
+                ],
+                "journaltitle": [
+                    {
+                        "type": "text",
+                        "text": "Journal of the American Chemical Society"
+                    }
+                ],
+                "note": [
+                    {
+                        "type": "text",
+                        "text": "http://dx.doi.org/10.1021/ja01623a027",
+                        "marks": [
+                            {
+                                "type": "url"
+                            }
+                        ]
+                    }
+                ],
+                "number": [
+                    {
+                        "type": "text",
+                        "text": "18"
+                    }
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "4781"
+                            }
+                        ],
+                        [
+                            {
+                                "type": "text",
+                                "text": "4784"
+                            }
+                        ]
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "11-"
+                    },
+                    {
+                        "type": "text",
+                        "text": "Oxygenated Steroids",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": ". "
+                    },
+                    {
+                        "type": "text",
+                        "text": "XIII",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": ". "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Synthesis",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " and Proof of Structure of "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Δ1,4-Pregnadiene-17α,21-diol-3,11,20-trione and Δ1,4-Pregnadiene-11β,17α,21-triol-3,20-dione",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ],
+                "urldate": "2015-02-02",
+                "volume": [
+                    {
+                        "type": "text",
+                        "text": "77"
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        }
+    },
+    "warnings": [
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "herzog1955",
+            "line": 15
+        }
+    ]
 }

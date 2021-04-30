@@ -1,113 +1,113 @@
 {
-  "entries": {
-    "1": {
-      "bib_type": "article-journal",
-      "entry_key": "ArbesmanvonSecondname2001",
-      "fields": {
-        "date": "2001",
-        "author": [
-          {
-            "prefix": [
-              {
-                "type": "text",
-                "text": "Arbesman von"
-              }
-            ],
-            "useprefix": true,
-            "family": [
-              {
-                "type": "text",
-                "text": "Secondname"
-              }
-            ],
-            "given": [
-              {
-                "type": "text",
-                "text": "Kendra"
-              }
-            ]
-          }
-        ],
-        "doi": "10.1175/1520-0493(1987)115<1606:GARSPP>2.0.CO;2",
-        "journaltitle": [
-          {
-            "type": "text",
-            "text": "Title, with comma"
-          }
-        ],
-        "keywords": [
-          "Vulcanian eruptions",
-          "breadcrust",
-          "plinian"
-        ],
-        "title": [
-          {
-            "type": "text",
-            "text": "The Physical Volcanology of the 1600 Eruption of "
-          },
-          {
-            "type": "text",
-            "text": "Huaynaputina",
-            "marks": [
-              {
-                "type": "nocase"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": ", with L"
-          },
-          {
-            "type": "text",
-            "text": "A",
-            "marks": [
-              {
-                "type": "sup"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": "T"
-          },
-          {
-            "type": "text",
-            "text": "E",
-            "marks": [
-              {
-                "type": "sub"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": "X!"
-          }
-        ],
-        "volume": [
-          {
-            "type": "text",
-            "text": "62"
-          }
-        ]
-      },
-      "unknown_fields": {
-        "timestamp": [
-          {
-            "type": "text",
-            "text": "2015-02-24 12:14:36 +0100"
-          }
-        ]
-      }
-    }
-  },
-  "warnings": [
-    {
-      "type": "unknown_field",
-      "field_name": "timestamp",
-      "entry": "ArbesmanvonSecondname2001",
-      "line": 11
-    }
-  ]
+    "entries": {
+        "1": {
+            "bib_type": "article-journal",
+            "entry_key": "ArbesmanvonSecondname2001",
+            "fields": {
+                "date": "2001",
+                "author": [
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "Arbesman von"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Secondname"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Kendra"
+                            }
+                        ]
+                    }
+                ],
+                "doi": "10.1175/1520-0493(1987)115<1606:GARSPP>2.0.CO;2",
+                "journaltitle": [
+                    {
+                        "type": "text",
+                        "text": "Title, with comma"
+                    }
+                ],
+                "keywords": [
+                    "Vulcanian eruptions",
+                    "breadcrust",
+                    "plinian"
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "The Physical Volcanology of the 1600 Eruption of "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Huaynaputina",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": ", with L"
+                    },
+                    {
+                        "type": "text",
+                        "text": "A",
+                        "marks": [
+                            {
+                                "type": "sup"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": "T"
+                    },
+                    {
+                        "type": "text",
+                        "text": "E",
+                        "marks": [
+                            {
+                                "type": "sub"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": "X!"
+                    }
+                ],
+                "volume": [
+                    {
+                        "type": "text",
+                        "text": "62"
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        }
+    },
+    "warnings": [
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "ArbesmanvonSecondname2001",
+            "line": 11
+        }
+    ]
 }
