@@ -111,7 +111,7 @@ export class CSLExporter {
             if (
                 bib.fields[fKey] !== "" &&
                 fKey in BibFieldTypes &&
-                "csl" in (BibFieldTypes as any)[fKey]
+                "csl" in BibFieldTypes[fKey]
             ) {
                 let fValue = bib.fields[fKey];
                 let fType = BibFieldTypes[fKey]["type"];

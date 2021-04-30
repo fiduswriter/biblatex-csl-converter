@@ -83,16 +83,15 @@ export class BibLatexExporter {
 
     parse() {
         this.pks.forEach((pk) => {
-            let bib = this.bibDB[pk as any];
+            let bib = this.bibDB[(pk as unknown) as number];
             let bibEntry: BibObject = {
-                type: (BibTypes as any)[bib["bib_type"]]["biblatex"],
+                type: BibTypes[bib["bib_type"]]["biblatex"],
                 key: bib["entry_key"].length ? bib["entry_key"] : "Undefined",
             };
             let fValues: { [key: string]: any } = {};
-            if ((BibTypes as any)[bib["bib_type"]]["biblatex-subtype"]) {
-                fValues["entrysubtype"] = (BibTypes as any)[bib["bib_type"]][
-                    "biblatex-subtype"
-                ];
+            if (BibTypes[bib["bib_type"]]["biblatex-subtype"]) {
+                fValues["entrysubtype"] =
+                    BibTypes[bib["bib_type"]]["biblatex-subtype"];
             }
             const fields = this.config.exportUnexpectedFields
                 ? { ...bib.fields, ...bib.unexpected_fields }
@@ -102,8 +101,8 @@ export class BibLatexExporter {
                     continue;
                 }
                 let fValue = fields[fKey];
-                let fType: string = (BibFieldTypes as any)[fKey]["type"];
-                let key: string = (BibFieldTypes as any)[fKey]["biblatex"];
+                let fType: string = BibFieldTypes[fKey]["type"];
+                let key: string = BibFieldTypes[fKey]["biblatex"];
                 switch (fType) {
                     case "f_date":
                         fValues[key] = fValue; // EDTF 1.0 level 0/1 compliant string.
@@ -164,12 +163,12 @@ export class BibLatexExporter {
 
     _reformKey(theValue: string | NodeArray, fKey: string) {
         if (typeof theValue === "string") {
-            let fieldType = (BibFieldTypes as any)[fKey];
+            let fieldType = BibFieldTypes[fKey];
             if (Array.isArray(fieldType["options"])) {
                 return this._escapeTeX(theValue);
             } else {
                 return this._escapeTeX(
-                    fieldType["options"][theValue]["biblatex"]
+                    fieldType.options?.[theValue]["biblatex"] ?? ""
                 );
             }
         } else {

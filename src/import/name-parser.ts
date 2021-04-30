@@ -1,5 +1,5 @@
 import { BibLatexLiteralParser } from "./literal-parser";
-import type { NodeArray, NameDictObject } from "../const";
+import type { NameDictObject } from "../const";
 
 export class BibLatexNameParser {
     nameString: string;

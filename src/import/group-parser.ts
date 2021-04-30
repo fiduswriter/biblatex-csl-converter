@@ -187,7 +187,7 @@ export class GroupParser {
             }
         }
 
-        this.groups = levels["0" as any].groups;
+        this.groups = levels[("0" as unknown) as number].groups;
     }
 
     clearGroups(groups: Array<GroupObject>) {

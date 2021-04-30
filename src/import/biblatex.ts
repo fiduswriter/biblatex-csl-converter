@@ -722,10 +722,7 @@ export class BibLatexParser {
                 oFields = fields;
                 fType =
                     BibFieldTypes[fKey as keyof typeof BibFieldTypes]["type"];
-            } else if (
-                fKey === "entrysubtype" &&
-                (bType as any)["biblatex-subtype"]
-            ) {
+            } else if (fKey === "entrysubtype" && bType["biblatex-subtype"]) {
                 fType = BibFieldTypes[fKey]["type"];
                 oFields = {};
                 continue iterateFields;
@@ -955,10 +952,9 @@ export class BibLatexParser {
 
         let bibType = Object.keys(BibTypes).find((bType) => {
             return (
-                (BibTypes as any)[bType]["biblatex"] === biblatexType &&
+                BibTypes[bType]["biblatex"] === biblatexType &&
                 (!biblatexSubtype ||
-                    (BibTypes as any)[bType]["biblatex-subtype"] ===
-                        biblatexSubtype)
+                    BibTypes[bType]["biblatex-subtype"] === biblatexSubtype)
             );
         });
 
