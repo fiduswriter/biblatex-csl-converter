@@ -35,6 +35,7 @@
     "scripts": {
         "gh-pages-travis": "gh-pages-travis",
         "lint": "eslint src/",
+        "format": "prettier --write . && npm run lint --fix",
         "pretest": "npm run lint",
         "compile": "npm run compile_lib && npm run compile_bundle && npm run compile_gh-pages && npm run compile_browser && npm run compile_types",
         "compile_lib": "rollup -c rollup.config.es.js --output.file lib/index.mjs",
@@ -67,6 +68,8 @@
         "istanbul": "^0.4.5",
         "mocha": "^8.3.2",
         "nyc": "^15.1.0",
+        "prettier": "^2.2.1",
+        "prettier-cli": "^0.1.0",
         "rollup": "^2.41.4",
         "rollup-plugin-babel": "^4.4.0",
         "rollup-plugin-commonjs": "^10.1.0",
@@ -80,8 +83,5 @@
         "tslib": "^2.2.0",
         "typescript": "^4.2.4",
         "updates": "^11.4.3"
-    },
-    "dependencies": {
-        "prettier": "^2.2.1"
     }
 }
