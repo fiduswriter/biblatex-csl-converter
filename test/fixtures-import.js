@@ -136,5 +136,3 @@ verifyIncludeRawText(
 )
 
 Promise.all(promised)
-
-Promise.all(promised)
