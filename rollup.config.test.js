@@ -19,4 +19,4 @@ export default {
         require("rollup-plugin-node-builtins")(),
         require("rollup-plugin-node-resolve")(),
     ],
-};
+}

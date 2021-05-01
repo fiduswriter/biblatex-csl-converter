@@ -1,20 +1,16 @@
 {
-  "presets": [
-    [
-      "@babel/preset-env",
-      {
-        "modules": false,
-        "targets": {
-          "browsers": [
-            "last 2 versions",
-            "ie >= 10"
-          ],
-          "node": "current"
-        }
-      }
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "modules": false,
+                "targets": {
+                    "browsers": ["last 2 versions", "ie >= 10"],
+                    "node": "current"
+                }
+            }
+        ],
+        "@babel/preset-flow"
     ],
-  ],
-  "plugins": [
-    "@babel/plugin-transform-runtime"
-  ]
+    "plugins": ["@babel/plugin-transform-runtime"]
 }

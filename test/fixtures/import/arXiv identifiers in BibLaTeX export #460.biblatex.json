@@ -177,9 +177,7 @@
                         "text": "arxiv"
                     }
                 ],
-                "keywords": [
-                    "Quantum Physics"
-                ],
+                "keywords": ["Quantum Physics"],
                 "eprintclass": [
                     {
                         "type": "text",
@@ -363,9 +361,7 @@
                         "text": "Science"
                     }
                 ],
-                "keywords": [
-                    "Quantum Physics"
-                ],
+                "keywords": ["Quantum Physics"],
                 "number": [
                     {
                         "type": "text",

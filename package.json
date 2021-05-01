@@ -80,5 +80,8 @@
         "tslib": "^2.2.0",
         "typescript": "^4.2.4",
         "updates": "^11.4.3"
+    },
+    "dependencies": {
+        "prettier": "^2.2.1"
     }
 }
