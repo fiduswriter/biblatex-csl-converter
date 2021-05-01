@@ -35,7 +35,7 @@
     "scripts": {
         "gh-pages-travis": "gh-pages-travis",
         "lint": "eslint src/",
-        "format": "prettier --write . && npm run lint --fix",
+        "format": "prettier --write . && eslint src/ --fix",
         "pretest": "npm run lint",
         "compile": "npm run compile_lib && npm run compile_bundle && npm run compile_gh-pages && npm run compile_browser && npm run compile_types",
         "compile_lib": "rollup -c rollup.config.es.js --output.file lib/index.mjs",
