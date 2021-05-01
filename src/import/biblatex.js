@@ -1,21 +1,26 @@
 // @flow
-import {BibFieldTypes, BibTypes} from "../const"
-import {BiblatexAliasOptions, BiblatexAliasTypes, BiblatexFieldAliasTypes, TeXSpecialChars} from "./const"
-import {BibLatexNameParser} from "./name-parser"
-import {BibLatexLiteralParser} from "./literal-parser"
-import {GroupParser} from "./group-parser"
-import {splitTeXString} from "./tools"
-import {edtfParse} from "../edtf-parser"
+import { BibFieldTypes, BibTypes } from "../const"
+import {
+    BiblatexAliasOptions,
+    BiblatexAliasTypes,
+    BiblatexFieldAliasTypes,
+    TeXSpecialChars,
+} from "./const"
+import { BibLatexNameParser } from "./name-parser"
+import { BibLatexLiteralParser } from "./literal-parser"
+import { GroupParser } from "./group-parser"
+import { splitTeXString } from "./tools"
+import { edtfParse } from "../edtf-parser"
 
 /** Parses files in BibTeX/BibLaTeX format
  */
 
- /* Based on original work by Henrik Muehe (c) 2010,
-  * licensed under the MIT license,
-  * https://code.google.com/archive/p/bibtex-js/
-  */
+/* Based on original work by Henrik Muehe (c) 2010,
+ * licensed under the MIT license,
+ * https://code.google.com/archive/p/bibtex-js/
+ */
 
-  /* Config options (default value for every option is false)
+/* Config options (default value for every option is false)
 
     - processUnexpected (false/true):
 
@@ -165,7 +170,6 @@ export class BibLatexParser {
         }
     */
 
-
     constructor(input /*: string */, config /*: ConfigObject */ = {}) {
         this.input = input
         this.config = config
@@ -192,7 +196,7 @@ export class BibLatexParser {
             SEP: "09",
             OCT: "10",
             NOV: "11",
-            DEC: "12"
+            DEC: "12",
         }
         this.groupParser = new GroupParser(this.entries)
         this.groups = false
@@ -200,32 +204,48 @@ export class BibLatexParser {
     }
 
     isWhitespace(s /*: string */) {
-        return (s == ' ' || s == '\r' || s == '\t' || s == '\n')
+        return s == " " || s == "\r" || s == "\t" || s == "\n"
     }
 
     error(data /*: ErrorObject */) {
-        this.errors.push(Object.assign({}, data, {line: this.input.slice(0, this.pos).split('\n').length }))
+        this.errors.push(
+            Object.assign({}, data, {
+                line: this.input.slice(0, this.pos).split("\n").length,
+            })
+        )
     }
 
     warning(data /*: ErrorObject */) {
-        this.warnings.push(Object.assign({}, data, {line: this.input.slice(0, this.pos).split('\n').length }))
+        this.warnings.push(
+            Object.assign({}, data, {
+                line: this.input.slice(0, this.pos).split("\n").length,
+            })
+        )
     }
 
-
-    match(s /*: string */, options /*: MatchOptionsObject */ = { skipWhitespace: true }) {
-        if (options.skipWhitespace === true || options.skipWhitespace === 'leading') {
+    match(
+        s /*: string */,
+        options /*: MatchOptionsObject */ = { skipWhitespace: true }
+    ) {
+        if (
+            options.skipWhitespace === true ||
+            options.skipWhitespace === "leading"
+        ) {
             this.skipWhitespace()
         }
         if (this.input.substring(this.pos, this.pos + s.length) == s) {
             this.pos += s.length
         } else {
             this.error({
-                type: 'token_mismatch',
+                type: "token_mismatch",
                 expected: s,
                 found: this.input.substring(this.pos, this.pos + s.length),
             })
         }
-        if (options.skipWhitespace === true || options.skipWhitespace === 'trailing') this.skipWhitespace()
+        if (
+            options.skipWhitespace === true ||
+            options.skipWhitespace === "trailing"
+        ) this.skipWhitespace()
     }
 
     tryMatch(s /*: string */) {
@@ -250,7 +270,7 @@ export class BibLatexParser {
     }
 
     skipToNext() {
-        while ((this.input.length > this.pos) && (this.input[this.pos] != "@")) {
+        while (this.input.length > this.pos && this.input[this.pos] != "@") {
             this.pos++
         }
         if (this.input.length == this.pos) {
@@ -262,24 +282,24 @@ export class BibLatexParser {
 
     valueBraces() {
         let bracecount = 0
-        this.match("{", { skipWhitespace: 'leading' })
+        this.match("{", { skipWhitespace: "leading" })
         let string = ""
         while (this.pos < this.input.length) {
-            switch(this.input[this.pos]) {
-                case '\\':
-                    string += this.input.substring(this.pos, this.pos+2)
+            switch (this.input[this.pos]) {
+                case "\\":
+                    string += this.input.substring(this.pos, this.pos + 2)
                     this.pos++
                     break
-                case '}':
+                case "}":
                     if (bracecount === 0) {
                         this.match("}")
                         return string
                     }
-                    string += '}'
+                    string += "}"
                     bracecount--
                     break
-                case '{':
-                    string += '{'
+                case "{":
+                    string += "{"
                     bracecount++
                     break
                 default:
@@ -288,17 +308,17 @@ export class BibLatexParser {
             }
             this.pos++
         }
-        this.errors.push({type: 'unexpected_eof'})
+        this.errors.push({ type: "unexpected_eof" })
         return string
     }
 
     valueQuotes() {
-        this.match('"', { skipWhitespace: 'leading' })
+        this.match('"', { skipWhitespace: "leading" })
         let string = ""
         while (this.pos < this.input.length) {
-            switch(this.input[this.pos]) {
-                case '\\':
-                    string += this.input.substring(this.pos, this.pos+2)
+            switch (this.input[this.pos]) {
+                case "\\":
+                    string += this.input.substring(this.pos, this.pos + 2)
                     this.pos++
                     break
                 case '"':
@@ -310,7 +330,7 @@ export class BibLatexParser {
             }
             this.pos++
         }
-        this.errors.push({type: 'unexpected_eof'})
+        this.errors.push({ type: "unexpected_eof" })
         return string
     }
 
@@ -329,11 +349,11 @@ export class BibLatexParser {
                 return k
             } else {
                 const warning /*: Object */ = {
-                    type: 'undefined_variable',
-                    variable: k
+                    type: "undefined_variable",
+                    variable: k,
                 }
                 if (this.currentEntry) {
-                    warning.entry = this.currentEntry['entry_key']
+                    warning.entry = this.currentEntry["entry_key"]
                 }
                 if (this.currentKey) {
                     warning.key = this.currentKey
@@ -354,7 +374,7 @@ export class BibLatexParser {
             values.push(this.singleValue())
         }
         values = values.join("")
-        if (!asis) values = values.replace(/[\t ]+/g, ' ').trim()
+        if (!asis) values = values.replace(/[\t ]+/g, " ").trim()
         return values
     }
 
@@ -362,16 +382,20 @@ export class BibLatexParser {
         let start = this.pos
         while (true) {
             if (this.pos == this.input.length) {
-                this.error({type: 'runaway_key' })
+                this.error({ type: "runaway_key" })
                 break
             }
-            if (['(',')',',','{','}',' ','=', '\t', '\n'].includes(this.input[this.pos])) {
+            if (
+                ["(", ")", ",", "{", "}", " ", "=", "\t", "\n"].includes(
+                    this.input[this.pos]
+                )
+            ) {
                 let key = this.input.substring(start, this.pos)
-                if (optional && this.input[this.pos] != ',') {
+                if (optional && this.input[this.pos] != ",") {
                     this.skipWhitespace()
-                    if (this.input[this.pos] != ',') {
+                    if (this.input[this.pos] != ",") {
                         this.pos = start
-                        return ''
+                        return ""
                     }
                 }
                 return key
@@ -380,19 +404,21 @@ export class BibLatexParser {
             }
         }
 
-        return ''
+        return ""
     }
 
-    keyEqualsValue(asis /*: boolean */ = false) /*: [string, string] | false */{
+    keyEqualsValue(
+        asis /*: boolean */ = false
+    ) /*: [string, string] | false */ {
         let key = this.key()
         if (!key.length) {
             const error /*: ErrorObject */ = {
-                type: 'cut_off_citation',
+                type: "cut_off_citation",
             }
             if (this.currentEntry) {
-                error.entry = this.currentEntry['entry_key']
+                error.entry = this.currentEntry["entry_key"]
                 // The citation is not full, we remove the existing parts.
-                this.currentEntry['incomplete'] = true
+                this.currentEntry["incomplete"] = true
             }
             this.error(error)
             return false
@@ -408,10 +434,10 @@ export class BibLatexParser {
             }
         } else {
             const error /*: ErrorObject */ = {
-                type: 'missing_equal_sign'
+                type: "missing_equal_sign",
             }
             if (this.currentEntry) {
-                error.entry = this.currentEntry['entry_key']
+                error.entry = this.currentEntry["entry_key"]
             }
             if (this.currentKey) {
                 error.key = this.currentKey
@@ -440,10 +466,10 @@ export class BibLatexParser {
             kv = this.keyEqualsValue()
             if (!kv) {
                 const error /*: ErrorObject */ = {
-                    type: 'key_value_error'
+                    type: "key_value_error",
                 }
                 if (this.currentEntry) {
-                    error.entry = this.currentEntry['entry_key']
+                    error.entry = this.currentEntry["entry_key"]
                 }
                 this.error(error)
                 break
@@ -457,7 +483,7 @@ export class BibLatexParser {
             return
         }
         let rawFields = this.currentRawFields
-        let fields = this.currentEntry['fields']
+        let fields = this.currentEntry["fields"]
 
         // date may come either as year, year + month or as date field.
         // We therefore need to catch these hear and transform it to the
@@ -473,10 +499,13 @@ export class BibLatexParser {
             if (isNaN(parseInt(month)) && this.months[month.toUpperCase()]) {
                 month = this.months[month.toUpperCase()]
             } else if (
-                typeof month.split('~').find(monthPart => isNaN(parseInt(monthPart))) === 'undefined'
+                typeof month
+                    .split("~")
+                    .find((monthPart) => isNaN(parseInt(monthPart))) ===
+                "undefined"
             ) {
                 // handle cases like '09~26' but not '~09' (approximate month in edtf)
-                month = month.replace(/~/g, '-')
+                month = month.replace(/~/g, "-")
             }
             date = `${rawFields.year}-${month}`
         } else if (rawFields.year) {
@@ -485,31 +514,31 @@ export class BibLatexParser {
         if (date) {
             let dateObj = edtfParse(date)
             if (dateObj.valid) {
-                fields['date'] = dateObj.cleanedString
+                fields["date"] = dateObj.cleanedString
                 delete rawFields.year
                 delete rawFields.month
             } else {
                 let fieldName, value, errorList
                 if (rawFields.date) {
-                    fieldName = 'date'
+                    fieldName = "date"
                     value = rawFields.date
                     errorList = this.errors
                 } else if (rawFields.year && rawFields.month) {
-                    fieldName = 'year,month'
+                    fieldName = "year,month"
                     value = [rawFields.year, rawFields.month]
                     errorList = this.warnings
                 } else {
-                    fieldName = 'year'
+                    fieldName = "year"
                     value = rawFields.year
                     errorList = this.warnings
                 }
                 const error /*: ErrorObject */ = {
-                    type: 'unknown_date',
+                    type: "unknown_date",
                     field_name: fieldName,
-                    value
+                    value,
                 }
                 if (this.currentEntry) {
-                    error.entry = this.currentEntry['entry_key']
+                    error.entry = this.currentEntry["entry_key"]
                 }
                 errorList.push(error)
             }
@@ -519,8 +548,21 @@ export class BibLatexParser {
         let langEnglish = true // By default we assume everything to be written in English.
         if (rawFields.langid && rawFields.langid.length) {
             let langString = rawFields.langid.toLowerCase().trim()
-            let englishOptions = ['english', 'american', 'british', 'usenglish', 'ukenglish', 'canadian', 'australian', 'newzealand']
-            if (!englishOptions.some((option)=>{return langString === option})) {
+            let englishOptions = [
+                "english",
+                "american",
+                "british",
+                "usenglish",
+                "ukenglish",
+                "canadian",
+                "australian",
+                "newzealand",
+            ]
+            if (
+                !englishOptions.some((option) => {
+                    return langString === option
+                })
+            ) {
                 langEnglish = false
             }
         } else if (rawFields.language) {
@@ -528,172 +570,197 @@ export class BibLatexParser {
             // but in bibtex, language is often used for what is essentially langid.
             // If there is no langid, but a language, and the language happens to be
             // a known langid, set the langid to be equal to the language.
-            let langid = this._reformKey(rawFields.language, 'langid')
+            let langid = this._reformKey(rawFields.language, "langid")
             if (langid.length) {
-                fields['langid'] = langid
-                if (!['usenglish', 'ukenglish', 'caenglish', 'auenglish', 'nzenglish'].includes(langid)) {
+                fields["langid"] = langid
+                if (
+                    ![
+                        "usenglish",
+                        "ukenglish",
+                        "caenglish",
+                        "auenglish",
+                        "nzenglish",
+                    ].includes(langid)
+                ) {
                     langEnglish = false
                 }
             }
         }
 
-        iterateFields: for(let bKey /*: string */ in rawFields) {
-
-            if (bKey==='date' || (['year','month'].includes(bKey) && !this.config.processUnknown)) {
+        iterateFields: for (let bKey /*: string */ in rawFields) {
+            if (
+                bKey === "date" ||
+                (["year", "month"].includes(bKey) &&
+                    !this.config.processUnknown)
+            ) {
                 // Handled above
                 continue iterateFields
             }
 
             // Replace alias fields with their main term.
-            let aliasKey = BiblatexFieldAliasTypes[bKey], fKey = ''
+            let aliasKey = BiblatexFieldAliasTypes[bKey],
+                fKey = ""
             if (aliasKey) {
                 if (rawFields[aliasKey]) {
                     const warning /*: ErrorObject */ = {
-                        type: 'alias_creates_duplicate_field',
+                        type: "alias_creates_duplicate_field",
                         field: bKey,
                         alias_of: aliasKey,
                         value: rawFields[bKey],
-                        alias_of_value: rawFields[aliasKey]
+                        alias_of_value: rawFields[aliasKey],
                     }
                     if (this.currentEntry) {
-                        warning.entry = this.currentEntry['entry_key']
+                        warning.entry = this.currentEntry["entry_key"]
                     }
                     this.warning(warning)
                     continue iterateFields
                 }
 
-                fKey = Object.keys(BibFieldTypes).find((ft)=>{
-                    return BibFieldTypes[ft].biblatex === aliasKey
-                }) || ''
+                fKey =
+                    Object.keys(BibFieldTypes).find((ft) => {
+                        return BibFieldTypes[ft].biblatex === aliasKey
+                    }) || ""
             } else {
-                fKey = Object.keys(BibFieldTypes).find((ft)=>{
-                    return BibFieldTypes[ft].biblatex === bKey
-                }) || ''
+                fKey =
+                    Object.keys(BibFieldTypes).find((ft) => {
+                        return BibFieldTypes[ft].biblatex === bKey
+                    }) || ""
             }
 
             let oFields, fType
-            let bType = BibTypes[this.currentEntry['bib_type']]
+            let bType = BibTypes[this.currentEntry["bib_type"]]
 
-            if(!fKey.length) {
+            if (!fKey.length) {
                 const warning /*: ErrorObject */ = {
-                    type: 'unknown_field',
-                    field_name: bKey
+                    type: "unknown_field",
+                    field_name: bKey,
                 }
                 if (this.currentEntry) {
-                    warning.entry = this.currentEntry['entry_key']
+                    warning.entry = this.currentEntry["entry_key"]
                 }
                 this.warning(warning)
                 if (!this.config.processUnknown) {
                     continue iterateFields
                 }
-                if (this.currentEntry && !this.currentEntry['unknown_fields']) {
-                    this.currentEntry['unknown_fields'] = {}
+                if (this.currentEntry && !this.currentEntry["unknown_fields"]) {
+                    this.currentEntry["unknown_fields"] = {}
                 }
-                oFields = this.currentEntry && this.currentEntry['unknown_fields'] ?
-                        this.currentEntry['unknown_fields'] :
+                oFields =
+                    this.currentEntry && this.currentEntry["unknown_fields"] ?
+                        this.currentEntry["unknown_fields"] :
                         {}
-                fType = this.config.processUnknown && this.config.processUnknown[bKey] ?
+                fType =
+                    this.config.processUnknown &&
+                    this.config.processUnknown[bKey] ?
                         this.config.processUnknown[bKey] :
-                        'f_literal'
+                        "f_literal"
                 fKey = bKey
             } else if (
-                bType['required'].includes(fKey) ||
-                bType['optional'].includes(fKey) ||
-                bType['eitheror'].includes(fKey)
+                bType["required"].includes(fKey) ||
+                bType["optional"].includes(fKey) ||
+                bType["eitheror"].includes(fKey)
             ) {
                 oFields = fields
-                fType = BibFieldTypes[fKey]['type']
-            } else if (fKey === 'entrysubtype' && bType['biblatex-subtype']) {
-                fType = BibFieldTypes[fKey]['type']
+                fType = BibFieldTypes[fKey]["type"]
+            } else if (fKey === "entrysubtype" && bType["biblatex-subtype"]) {
+                fType = BibFieldTypes[fKey]["type"]
                 oFields = {}
                 continue iterateFields
             } else {
                 const warning /*: ErrorObject */ = {
-                    type: 'unexpected_field',
-                    field_name: bKey
+                    type: "unexpected_field",
+                    field_name: bKey,
                 }
                 if (this.currentEntry) {
-                    warning.entry = this.currentEntry['entry_key']
+                    warning.entry = this.currentEntry["entry_key"]
                 }
                 this.warning(warning)
                 if (!this.config.processUnexpected) {
                     continue iterateFields
                 }
-                if (this.currentEntry && !this.currentEntry['unexpected_fields']) {
-                    this.currentEntry['unexpected_fields'] = {}
+                if (
+                    this.currentEntry &&
+                    !this.currentEntry["unexpected_fields"]
+                ) {
+                    this.currentEntry["unexpected_fields"] = {}
                 }
-                oFields = this.currentEntry && this.currentEntry['unexpected_fields'] ?
-                        this.currentEntry['unexpected_fields'] :
+                oFields =
+                    this.currentEntry && this.currentEntry["unexpected_fields"] ?
+                        this.currentEntry["unexpected_fields"] :
                         {}
-                fType = BibFieldTypes[fKey]['type']
+                fType = BibFieldTypes[fKey]["type"]
             }
-
 
             let fValue = rawFields[bKey],
                 reformedValue
-            switch(fType) {
-                case 'f_date':
+            switch (fType) {
+                case "f_date":
                     reformedValue = edtfParse(fValue)
                     if (reformedValue.valid) {
                         oFields[fKey] = reformedValue.cleanedString
                     } else if (this.currentEntry) {
                         this.error({
-                            type: 'unknown_date',
-                            entry: this.currentEntry['entry_key'],
+                            type: "unknown_date",
+                            entry: this.currentEntry["entry_key"],
                             field_name: fKey,
                             value: fValue,
                         })
                     }
                     break
-                case 'f_integer':
+                case "f_integer":
                     oFields[fKey] = this._reformLiteral(fValue)
                     break
-                case 'f_key':
+                case "f_key":
                     reformedValue = this._reformKey(fValue, fKey)
                     if (reformedValue.length) {
                         oFields[fKey] = reformedValue
                     }
                     break
-                case 'f_literal':
-                case 'f_long_literal':
+                case "f_literal":
+                case "f_long_literal":
                     oFields[fKey] = this._reformLiteral(fValue)
                     break
-                case 'l_range':
+                case "l_range":
                     oFields[fKey] = this._reformRange(fValue)
                     break
-                case 'f_title':
+                case "f_title":
                     oFields[fKey] = this._reformLiteral(fValue, langEnglish)
                     break
-                case 'f_uri':
-                    if (this.config.processInvalidURIs || this._checkURI(fValue)) {
+                case "f_uri":
+                    if (
+                        this.config.processInvalidURIs ||
+                        this._checkURI(fValue)
+                    ) {
                         oFields[fKey] = this._reformURI(fValue)
                     } else {
                         const error /*: ErrorObject */ = {
-                            type: 'unknown_uri',
+                            type: "unknown_uri",
                             field_name: fKey,
                             value: fValue,
                         }
                         if (this.currentEntry) {
-                            error.entry = this.currentEntry['entry_key']
+                            error.entry = this.currentEntry["entry_key"]
                         }
                         this.error(error)
                     }
                     break
-                case 'f_verbatim':
+                case "f_verbatim":
                     oFields[fKey] = fValue
                     break
-                case 'l_key':
-                    oFields[fKey] = splitTeXString(fValue).map(
-                        keyField => this._reformKey(keyField, fKey)
+                case "l_key":
+                    oFields[fKey] = splitTeXString(fValue).map((keyField) => this._reformKey(keyField, fKey)
                     )
                     break
-                case 'l_tag':
-                    oFields[fKey] = fValue.split(/[,;]/).map(string => string.trim())
+                case "l_tag":
+                    oFields[fKey] = fValue
+                        .split(/[,;]/)
+                        .map((string) => string.trim())
                     break
-                case 'l_literal':
-                    oFields[fKey] = splitTeXString(fValue).map(item => this._reformLiteral(item.trim()))
+                case "l_literal":
+                    oFields[fKey] = splitTeXString(fValue).map((item) => this._reformLiteral(item.trim())
+                    )
                     break
-                case 'l_name':
+                case "l_name":
                     oFields[fKey] = this._reformNameList(fValue)
                     break
                 default:
@@ -701,42 +768,51 @@ export class BibLatexParser {
                     console.warn(`Unrecognized type: ${fType}!`)
             }
         }
-
     }
 
-    _reformKey(keyString /*: string */, fKey /*: string */) /*: string | NodeArray */ {
+    _reformKey(
+        keyString /*: string */,
+        fKey /*: string */
+    ) /*: string | NodeArray */ {
         let keyValue = keyString.trim().toLowerCase()
         let fieldType = BibFieldTypes[fKey]
-        if (BiblatexAliasOptions[fKey] && BiblatexAliasOptions[fKey][keyValue]) {
+        if (
+            BiblatexAliasOptions[fKey] &&
+            BiblatexAliasOptions[fKey][keyValue]
+        ) {
             keyValue = BiblatexAliasOptions[fKey][keyValue]
         }
-        if (fieldType['options']) {
-            if (Array.isArray(fieldType['options'])) {
-                if (fieldType['options'].includes(keyValue)) {
+        if (fieldType["options"]) {
+            if (Array.isArray(fieldType["options"])) {
+                if (fieldType["options"].includes(keyValue)) {
                     return keyValue
                 }
             } else {
-                let optionValue = Object.keys(fieldType['options']).find(key => {
-                    return fieldType['options'][key]['biblatex'] === keyValue
-                })
+                let optionValue = Object.keys(fieldType["options"]).find(
+                    (key) => {
+                        return (
+                            fieldType["options"][key]["biblatex"] === keyValue
+                        )
+                    }
+                )
                 if (optionValue) {
                     return optionValue
                 } else {
-                    return ''
+                    return ""
                 }
             }
         }
         if (fieldType.strict) {
             const warning /*: ErrorObject */ = {
-                type: 'unknown_key',
+                type: "unknown_key",
                 field_name: fKey,
-                value: keyString
+                value: keyString,
             }
             if (this.currentEntry) {
-                warning.entry = this.currentEntry['entry_key']
+                warning.entry = this.currentEntry["entry_key"]
             }
             this.warning(warning)
-            return ''
+            return ""
         }
         return this._reformLiteral(keyString)
     }
@@ -745,16 +821,18 @@ export class BibLatexParser {
         /* Copyright (c) 2010-2013 Diego Perini, MIT licensed
            https://gist.github.com/dperini/729294
          */
-        return /^(?:(?:(?:https?|ftp):)?\/\/)(?:\S+(?::\S*)?@)?(?:(?!(?:10|127)(?:\.\d{1,3}){3})(?!(?:169\.254|192\.168)(?:\.\d{1,3}){2})(?!172\.(?:1[6-9]|2\d|3[0-1])(?:\.\d{1,3}){2})(?:[1-9]\d?|1\d\d|2[01]\d|22[0-3])(?:\.(?:1?\d{1,2}|2[0-4]\d|25[0-5])){2}(?:\.(?:[1-9]\d?|1\d\d|2[0-4]\d|25[0-4]))|(?:(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)(?:\.(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)*(?:\.(?:[a-z\u00a1-\uffff]{2,})).?)(?::\d{2,5})?(?:[/?#]\S*)?$/i.test(uriString)
+        return /^(?:(?:(?:https?|ftp):)?\/\/)(?:\S+(?::\S*)?@)?(?:(?!(?:10|127)(?:\.\d{1,3}){3})(?!(?:169\.254|192\.168)(?:\.\d{1,3}){2})(?!172\.(?:1[6-9]|2\d|3[0-1])(?:\.\d{1,3}){2})(?:[1-9]\d?|1\d\d|2[01]\d|22[0-3])(?:\.(?:1?\d{1,2}|2[0-4]\d|25[0-5])){2}(?:\.(?:[1-9]\d?|1\d\d|2[0-4]\d|25[0-4]))|(?:(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)(?:\.(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)*(?:\.(?:[a-z\u00a1-\uffff]{2,})).?)(?::\d{2,5})?(?:[/?#]\S*)?$/i.test(
+            uriString
+        )
     }
 
     _reformURI(uriString /*: string */) {
-        return uriString.replace(/\\/g,'')
+        return uriString.replace(/\\/g, "")
     }
 
     _reformNameList(nameString /*: string */) /*: Array<NameDictObject> */ {
         const people = splitTeXString(nameString),
-            names = people.map(person => {
+            names = people.map((person) => {
                 const nameParser = new BibLatexNameParser(person),
                     name = nameParser.output
                 if (name) {
@@ -764,25 +842,25 @@ export class BibLatexParser {
                 }
             }),
             result = ((names.filter((name /*: NameDictObject | false */) => {
-                return typeof name == 'object'
+                return typeof name == "object"
             }) /*: Array<any> */) /*: Array<NameDictObject> */)
         return result
     }
 
-    _reformRange(rangeString /*: string */) /*: Array<RangeArray> */{
-        return rangeString.split(',').map(string => {
-            let parts = string.split('--')
+    _reformRange(rangeString /*: string */) /*: Array<RangeArray> */ {
+        return rangeString.split(",").map((string) => {
+            let parts = string.split("--")
             if (parts.length > 1) {
                 return [
                     this._reformLiteral(parts.shift().trim()),
-                    this._reformLiteral(parts.join('--').trim())
+                    this._reformLiteral(parts.join("--").trim()),
                 ]
             } else {
-                parts = string.split('-')
+                parts = string.split("-")
                 if (parts.length > 1) {
                     return [
                         this._reformLiteral(parts.shift().trim()),
-                        this._reformLiteral(parts.join('-').trim())
+                        this._reformLiteral(parts.join("-").trim()),
                     ]
                 } else {
                     return [this._reformLiteral(string.trim())]
@@ -791,7 +869,10 @@ export class BibLatexParser {
         })
     }
 
-    _reformLiteral(theValue /*: string */, cpMode /*: boolean */ = false) /*: NodeArray */ {
+    _reformLiteral(
+        theValue /*: string */,
+        cpMode /*: boolean */ = false
+    ) /*: NodeArray */ {
         const parser = new BibLatexLiteralParser(theValue, cpMode)
         return parser.output
     }
@@ -808,19 +889,19 @@ export class BibLatexParser {
         }
 
         let bibType = Object.keys(BibTypes).find((bType) => {
-            return BibTypes[bType]['biblatex'] === biblatexType &&
-                (
-                    !biblatexSubtype ||
-                    BibTypes[bType]['biblatex-subtype'] === biblatexSubtype
-                )
+            return (
+                BibTypes[bType]["biblatex"] === biblatexType &&
+                (!biblatexSubtype ||
+                    BibTypes[bType]["biblatex-subtype"] === biblatexSubtype)
+            )
         })
 
-        if(typeof bibType === 'undefined') {
+        if (typeof bibType === "undefined") {
             this.warning({
-                type: 'unknown_type',
-                type_name: biblatexType
+                type: "unknown_type",
+                type_name: biblatexType,
             })
-            bibType = 'misc'
+            bibType = "misc"
         }
 
         return bibType
@@ -828,26 +909,29 @@ export class BibLatexParser {
 
     createNewEntry() {
         const currentEntry /*: EntryObject */ = {
-            'bib_type': '',
-            'entry_key': this.key(true),
-            'fields': {}
+            bib_type: "",
+            entry_key: this.key(true),
+            fields: {},
         }
         this.currentRawFields = {}
         this.entries.push(currentEntry)
-        if (currentEntry && currentEntry['entry_key'].length) {
+        if (currentEntry && currentEntry["entry_key"].length) {
             this.match(",")
         }
         this.keyValueList()
         this.endPosition = this.pos
-        currentEntry['bib_type'] = this.bibType()
+        currentEntry["bib_type"] = this.bibType()
         if (this.config.includeLocation) {
-            currentEntry['location'] = {
+            currentEntry["location"] = {
                 start: this.startPosition,
-                end: this.endPosition
+                end: this.endPosition,
             }
         }
         if (this.config.includeRawText) {
-            currentEntry['raw_text'] = this.input.substring(this.startPosition, this.endPosition + 1)
+            currentEntry["raw_text"] = this.input.substring(
+                this.startPosition,
+                this.endPosition + 1
+            )
         }
         this.currentEntry = currentEntry
         this.processFields()
@@ -881,18 +965,21 @@ export class BibLatexParser {
             value = value.replace(texChar.tex, texChar.unicode)
         }
         // Delete multiple spaces
-        this.input = value.replace(/ +(?= )/g, '')
+        this.input = value.replace(/ +(?= )/g, "")
         return
     }
 
     stepThroughBibtex() {
         while (this.skipToNext()) {
-          this.parseNext()
+            this.parseNext()
         }
     }
 
     stepThroughBibtexAsync() {
-      return this.skipToNext() ? (new Promise(resolve => resolve(this.parseNext()))).then(() => this.stepThroughBibtexAsync()) : Promise.resolve(null)
+        return this.skipToNext() ?
+            new Promise((resolve) => resolve(this.parseNext())).then(() => this.stepThroughBibtexAsync()
+              ) :
+            Promise.resolve(null)
     }
 
     parseNext() {
@@ -902,16 +989,18 @@ export class BibLatexParser {
         if (!d) return
 
         if (this.tryMatch("{")) {
-          this.match("{")
-          closer = '}'
-        } else if (this.tryMatch("(")) { // apparently, references can also be surrended with round braces
-          this.match("(")
-          closer = ')'
-        } else if (d === "@comment") { // braceless comments are a thing it appears
-          closer = null
+            this.match("{")
+            closer = "}"
+        } else if (this.tryMatch("(")) {
+            // apparently, references can also be surrended with round braces
+            this.match("(")
+            closer = ")"
+        } else if (d === "@comment") {
+            // braceless comments are a thing it appears
+            closer = null
         } else {
-          this.match("{")
-          closer = '}'
+            this.match("{")
+            closer = "}"
         }
 
         if (d == "@string") {
@@ -932,24 +1021,29 @@ export class BibLatexParser {
         let braces = 1
 
         if (braceless) {
-          while (this.input.length > this.pos && this.input[this.pos] != '\n') {
-            this.pos++
-          }
-        } else {
-          while (this.input.length > this.pos && braces > 0) {
-            switch (this.input[this.pos]) {
-              case '{':
-                braces += 1
-                break
-              case '}':
-                braces -= 1
+            while (
+                this.input.length > this.pos &&
+                this.input[this.pos] != "\n"
+            ) {
+                this.pos++
             }
-            this.pos++
-          }
+        } else {
+            while (this.input.length > this.pos && braces > 0) {
+                switch (this.input[this.pos]) {
+                    case "{":
+                        braces += 1
+                        break
+                    case "}":
+                        braces -= 1
+                }
+                this.pos++
+            }
         }
 
         // no ending brace found
-        if (braceless || braces !== 0) { return }
+        if (braceless || braces !== 0) {
+            return
+        }
 
         // leave the ending brace for the main parser to pick up
         this.pos--
@@ -958,18 +1052,18 @@ export class BibLatexParser {
         if (this.groupParser.groups.length) {
             this.groups = this.groupParser.groups
         } else {
-          comment = comment.trim()
-          const m = comment.match(/^jabref-meta: ([a-zA-Z]+):(.*);$/)
-          if (m && m[1] !== 'groupsversion') {
-            this.jabrefMeta[m[1]] = m[2].replace(/\\(.)/g, '$1')
-          } else if (comment && this.config.processComments) {
-            this.comments.push(comment)
-          }
+            comment = comment.trim()
+            const m = comment.match(/^jabref-meta: ([a-zA-Z]+):(.*);$/)
+            if (m && m[1] !== "groupsversion") {
+                this.jabrefMeta[m[1]] = m[2].replace(/\\(.)/g, "$1")
+            } else if (comment && this.config.processComments) {
+                this.comments.push(comment)
+            }
         }
     }
 
     createBibDB() {
-        this.entries.forEach((entry, index)=> {
+        this.entries.forEach((entry, index) => {
             // Start index from 1 to create less issues with testing
             this.bibDB[index + 1] = entry
         })
@@ -978,13 +1072,15 @@ export class BibLatexParser {
     cleanDB() {
         this.bibDB = JSON.parse(
             JSON.stringify(this.bibDB)
-                .replace(/\u0871/,'\\\\') // Backslashes placed outside of literal fields
-                .replace(/\u0870/,'') // variable start/end outside of literal fields
+                .replace(/\u0871/, "\\\\") // Backslashes placed outside of literal fields
+                .replace(/\u0870/, "") // variable start/end outside of literal fields
         )
     }
 
     get output() {
-        console.warn('BibLatexParser.output will be deprecated in biblatex-csl-converter 2.x. Use BibLatexParser.parse() instead.')
+        console.warn(
+            "BibLatexParser.output will be deprecated in biblatex-csl-converter 2.x. Use BibLatexParser.parse() instead."
+        )
         this.replaceTeXChars()
         this.stepThroughBibtex()
         this.createBibDB()
@@ -1002,8 +1098,8 @@ export class BibLatexParser {
             comments: this.comments,
             strings: this.strings,
             jabref: {
-              groups: this.groups,
-              meta: this.jabrefMeta,
+                groups: this.groups,
+                meta: this.jabrefMeta,
             },
         }
     }
@@ -1021,5 +1117,5 @@ export class BibLatexParser {
 }
 
 export function parse(input /*: string */, config /*: ConfigObject */ = {}) {
-    return (new BibLatexParser(input, config)).parse()
+    return new BibLatexParser(input, config).parse()
 }
