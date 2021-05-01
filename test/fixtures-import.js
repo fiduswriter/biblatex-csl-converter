@@ -39,7 +39,7 @@ const verify = (bibfile, processComments) => {
 
     let expected = path.join(path.dirname(bibfile), name + ".json")
     // Uncomment the following line to save the results as expected test results.
-    // fs.writeFileSync(expected, JSON.stringify(found, null, 2))
+    //fs.writeFileSync(expected, JSON.stringify(found, null, 4) + "\n")
     expected = JSON.parse(fs.readFileSync(expected, "utf8"))
     clean(expected)
 
