@@ -154,7 +154,7 @@ export class BibLatexNameParser {
         let rSplit = this.rsplitAt(parts)
         let von = rSplit[0]
         let last = rSplit[1]
-        if (von && !last) {
+        if (von.length > 0 && last.length === 0) {
             last.push(von.pop()!)
         }
         if (von.length) {
