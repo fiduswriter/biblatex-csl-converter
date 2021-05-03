@@ -1,11 +1,11 @@
 import { BibLatexLiteralParser } from "./literal-parser"
-import type { NameDictObject } from "../const"
+import type { NameDictObject, NodeObject } from "../const"
 
 export class BibLatexNameParser {
     nameString: string
     nameDict: NameDictObject
-    _particle: Array<string>
-    _suffix: Array<string>
+    _particle: string[]
+    _suffix: string[]
 
     constructor(nameString: string) {
         this.nameString = nameString.trim()
@@ -14,7 +14,7 @@ export class BibLatexNameParser {
         this._suffix = []
     }
 
-    parseName() {
+    parseName(): void {
         let parts = this.splitTexString(this.nameString, ",")
         if (parts.length > 1 && this.nameString.includes("=")) {
             // extended name detected.
@@ -75,14 +75,14 @@ export class BibLatexNameParser {
         }
     }
 
-    parseExtendedName(parts: Array<string>) {
+    parseExtendedName(parts: string[]): void {
         parts.forEach((part) => {
             let attrParts = part.trim().replace(/^"|"$/g, "").split("=")
             let attrName = attrParts.shift()!.trim().toLowerCase()
             if (["family", "given", "prefix", "suffix"].includes(attrName)) {
-                ;(this.nameDict as any)[attrName] = this._reformLiteral(
-                    attrParts.join("=").trim()
-                )
+                this.nameDict[
+                    attrName as "family" | "given" | "prefix" | "suffix"
+                ] = this._reformLiteral(attrParts.join("=").trim())
             } else if (attrName === "useprefix") {
                 if (attrParts.join("").trim().toLowerCase() === "true") {
                     this.nameDict["useprefix"] = true
@@ -93,7 +93,7 @@ export class BibLatexNameParser {
         })
     }
 
-    get output() {
+    get output(): false | NameDictObject {
         this.parseName()
         if (Object.keys(this.nameDict).length) {
             return this.nameDict
@@ -102,7 +102,7 @@ export class BibLatexNameParser {
         }
     }
 
-    splitTexString(string: string, sep: string = "[\\s~]+") {
+    splitTexString(string: string, sep = "[\\s~]+"): string[] {
         let braceLevel = 0
         let inQuotes = false
         let nameStart = 0
@@ -146,16 +146,16 @@ export class BibLatexNameParser {
         return result
     }
 
-    processFirstMiddle(parts: Array<string>) {
+    processFirstMiddle(parts: string[]): void {
         this.nameDict["given"] = this._reformLiteral(parts.join(" ").trim())
     }
 
-    processVonLast(parts: Array<string>, lineage: Array<string> = []) {
+    processVonLast(parts: string[], lineage: string[] = []): void {
         let rSplit = this.rsplitAt(parts)
         let von = rSplit[0]
         let last = rSplit[1]
         if (von && !last) {
-            ;(last as string[]).push((von as string[]).pop()!)
+            last.push(von.pop()!)
         }
         if (von.length) {
             this.nameDict["prefix"] = this._reformLiteral(von.join(" ").trim())
@@ -169,7 +169,7 @@ export class BibLatexNameParser {
         this.nameDict["family"] = this._reformLiteral(last.join(" ").trim())
     }
 
-    findFirstLowerCaseWord(lst: Array<string>) {
+    findFirstLowerCaseWord(lst: string[]): number {
         // return index of first lowercase word in lst. Else return length of lst.
         for (let i = 0; i < lst.length; i++) {
             let word = lst[i]
@@ -180,20 +180,20 @@ export class BibLatexNameParser {
         return lst.length
     }
 
-    splitAt(lst: Array<string>): [Array<string>, Array<string>] {
+    splitAt(lst: string[]): [string[], string[]] {
         // Split the given list into two parts.
         // The second part starts with the first lowercase word.
         const pos = this.findFirstLowerCaseWord(lst)
         return [lst.slice(0, pos), lst.slice(pos)]
     }
 
-    rsplitAt(lst: Array<string>): [Array<string>, Array<string>] {
+    rsplitAt(lst: string[]): [string[], string[]] {
         const rpos = this.findFirstLowerCaseWord(lst.slice().reverse())
         const pos = lst.length - rpos
         return [lst.slice(0, pos), lst.slice(pos)]
     }
 
-    _reformLiteral(litString: string) {
+    _reformLiteral(litString: string): NodeObject[] {
         let parser = new BibLatexLiteralParser(litString)
         return parser.output
     }

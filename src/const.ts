@@ -1,11 +1,11 @@
 export interface UnknownFieldsObject {
-    groups?: Array<NodeObject>
+    groups?: NodeObject[]
     [key: string]:
-        | Array<NodeObject>
-        | Array<RangeArray>
-        | Array<NodeArray>
+        | NodeObject[]
+        | RangeArray[]
+        | NodeArray[]
         | Array<NodeArray | string>
-        | Array<NameDictObject>
+        | NameDictObject[]
         | string
         | undefined
 }
@@ -16,20 +16,20 @@ export interface MarkObject {
 
 interface OtherNodeObject {
     type: string
-    marks?: Array<MarkObject>
-    attrs?: { [key: string]: any }
+    marks?: MarkObject[]
+    attrs?: Record<string, unknown>
 }
 
 export interface TextNodeObject {
     type: "text"
     text: string
-    marks?: Array<MarkObject>
-    attrs?: { [key: string]: any }
+    marks?: MarkObject[]
+    attrs?: Record<string, unknown>
 }
 
 export type NodeObject = OtherNodeObject | TextNodeObject
 
-export type NodeArray = Array<NodeObject>
+export type NodeArray = NodeObject[]
 
 export interface EntryLocation {
     start: number
@@ -42,8 +42,8 @@ export interface EntryObject {
     bib_type: string
     location?: EntryLocation
     raw_text?: string
-    fields: { [key: string]: any }
-    unexpected_fields?: Object
+    fields: Record<string, unknown>
+    unexpected_fields?: Record<string, unknown>
     unknown_fields?: UnknownFieldsObject
 }
 
@@ -58,8 +58,8 @@ export type NameDictObject = {
 
 export type GroupObject = {
     name: string
-    references: Array<string>
-    groups: Array<GroupObject>
+    references: string[]
+    groups: GroupObject[]
 }
 
 export type RangeArray = [NodeArray, NodeArray] | [NodeArray]
@@ -329,13 +329,13 @@ const languageOptions = [
 interface BibFieldType {
     type: string
     biblatex: string
-    csl?: string | { [key: string]: string }
+    csl?: string | Record<string, string>
     options?: string[] | LangidOptions
     strict?: boolean
 }
 
 /** A list of field types of Bibligraphy DB with lookup by field name. */
-export const BibFieldTypes: { [key: string]: BibFieldType } = {
+export const BibFieldTypes: Record<string, BibFieldType> = {
     abstract: {
         type: "f_long_literal",
         biblatex: "abstract",
@@ -825,7 +825,7 @@ export interface BibType {
 }
 
 /** A list of all bib types and their fields. */
-export const BibTypes: { [key: string]: BibType } = {
+export const BibTypes: Record<string, BibType> = {
     "article-journal": {
         order: 1,
         biblatex: "article",

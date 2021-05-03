@@ -58,7 +58,7 @@ export class BibLatexLiteralParser {
     inCasePreserve: number | null
     textNode?: TextNodeObject
 
-    constructor(string: string, cpMode: boolean = false) {
+    constructor(string: string, cpMode = false) {
         this.string = string
         this.cpMode = cpMode // Whether to consider case preservation.
         this.braceLevel = 0
@@ -72,13 +72,13 @@ export class BibLatexLiteralParser {
     }
 
     // If the last text node has no content, remove it.
-    removeIfEmptyTextNode() {
+    removeIfEmptyTextNode(): void {
         if (this.textNode && this.textNode.text.length === 0) {
             this.json.pop()
         }
     }
 
-    checkAndAddNewTextNode() {
+    checkAndAddNewTextNode(): void {
         if (this.textNode && this.textNode.text.length > 0) {
             // We have text in the last node already,
             // so we need to start a new text node.
@@ -86,13 +86,13 @@ export class BibLatexLiteralParser {
         }
     }
 
-    addNewTextNode() {
+    addNewTextNode(): void {
         const textNode: TextNodeObject = { type: "text", text: "" }
         this.json.push(textNode)
         this.textNode = textNode
     }
 
-    stringParser() {
+    stringParser(): NodeObject[] {
         let variable, sj
         parseString: while (this.si < this.slen) {
             switch (this.string[this.si]) {
@@ -419,7 +419,7 @@ export class BibLatexLiteralParser {
         return this.json
     }
 
-    get output() {
+    get output(): NodeObject[] {
         return this.stringParser()
     }
 }

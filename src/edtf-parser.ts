@@ -27,12 +27,12 @@ class SimpleEDTFParser {
     approximate: boolean
     parts: Array<SimpleEDTFParser>
 
-    constructor(string: any) {
+    constructor(string: unknown) {
         if (!(typeof string === "string")) {
             console.warn(`Wrong format for EDTFParser`, string)
             string = ""
         }
-        this.string = string
+        this.string = string as string
         this.type = "None" // default
         this.valid = true // default
         this.values = []
@@ -324,7 +324,7 @@ class SimpleEDTFParser {
     }
 }
 
-export function edtfParse(dateString: string) {
+export function edtfParse(dateString: string): EDTFOutputObject {
     let parser = new SimpleEDTFParser(dateString)
     return parser.init()
 }

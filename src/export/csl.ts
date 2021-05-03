@@ -1,6 +1,11 @@
-import { BibTypes, BibFieldTypes, MarkObject } from "../const"
+import {
+    BibTypes,
+    BibFieldTypes,
+    NodeArray,
+    NameDictObject,
+    NodeObject,
+} from "../const"
 import { edtfParse } from "../edtf-parser"
-import type { NodeArray, RangeArray, NameDictObject } from "../const"
 import { BibDB } from "../import/biblatex"
 
 /** Converts a BibDB to a DB of the CSL type.
@@ -11,9 +16,7 @@ export interface TagEntry {
     close: string
 }
 
-export interface Tags {
-    [key: string]: TagEntry
-}
+export type Tags = Record<string, TagEntry>
 
 const TAGS: Tags = {
     strong: { open: "<b>", close: "</b>" },
@@ -55,8 +58,10 @@ type CSLNameObject = {
 
 export interface CSLEntry {
     id?: string
-    [key: string]: any
+    [key: string]: unknown
 }
+
+export type CSLOutput = Record<string, CSLEntry>
 
 export class CSLExporter {
     bibDB: BibDB
@@ -81,14 +86,14 @@ export class CSLExporter {
         this.errors = []
     }
 
-    get output() {
+    get output(): CSLOutput {
         console.warn(
             "CSLExporter.output will be deprecated in biblatex-csl-converter 2.x. Use CSLExporter.parse() instead."
         )
         return this.parse()
     }
 
-    parse() {
+    parse(): CSLOutput {
         for (let bibId in this.bibDB) {
             if (this.pks.indexOf(bibId) !== -1) {
                 this.cslDB[bibId] = this.getCSLEntry(bibId)
@@ -127,7 +132,7 @@ export class CSLExporter {
                 let reformedValue
                 switch (fType) {
                     case "f_date":
-                        reformedValue = this._reformDate(fValue)
+                        reformedValue = this._reformDate(fValue as string)
                         if (reformedValue) {
                             fValues[key] = reformedValue
                         }
@@ -153,22 +158,26 @@ export class CSLExporter {
                         fValues[key] = fValue
                         break
                     case "l_key":
-                        fValues[key] = fValue
+                        fValues[key] = (fValue as (string | NodeArray)[])
                             .map((key: string | NodeArray) => {
                                 return this._reformKey(key, fKey)
                             })
                             .join(" and ")
                         break
                     case "l_literal":
-                        fValues[key] = fValue
+                        fValues[
+                            key
+                        ] = (fValue as NodeArray[])
                             .map((text: NodeArray) => this._reformText(text))
                             .join(", ")
                         break
                     case "l_name":
-                        fValues[key] = this._reformName(fValue)
+                        fValues[key] = this._reformName(
+                            fValue as NameDictObject[]
+                        )
                         break
                     case "l_tag":
-                        fValues[key] = fValue.join(", ")
+                        fValues[key] = (fValue as string[]).join(", ")
                         break
                     default:
                         console.warn(`Unrecognized field type: ${fType}!`)
@@ -179,7 +188,7 @@ export class CSLExporter {
         return fValues
     }
 
-    _reformKey(theValue: string | NodeArray, fKey: string) {
+    _reformKey(theValue: string | unknown, fKey: string): string {
         if (typeof theValue === "string") {
             let fieldType = BibFieldTypes[fKey]!
             if (Array.isArray(fieldType["options"])) {
@@ -192,7 +201,7 @@ export class CSLExporter {
         }
     }
 
-    _reformRange(theValue: Array<RangeArray>): string {
+    _reformRange(theValue: unknown): string {
         if (!Array.isArray(theValue)) {
             console.warn(`Wrong format for range`, theValue)
             return ""
@@ -203,7 +212,7 @@ export class CSLExporter {
             .join(",")
     }
 
-    _reformInterval(theValue: any): string {
+    _reformInterval(theValue: unknown): string {
         if (!Array.isArray(theValue)) {
             console.warn(`Wrong format for interval`, theValue)
             return ""
@@ -211,7 +220,7 @@ export class CSLExporter {
         return theValue.map((text) => this._reformText(text)).join("-")
     }
 
-    _reformInteger(theValue: NodeArray) {
+    _reformInteger(theValue: unknown): string | number {
         let theString = this._reformText(theValue)
         let theInt = parseInt(theString)
         if (theString !== String(theInt)) {
@@ -220,7 +229,7 @@ export class CSLExporter {
         return theInt
     }
 
-    _escapeText(theValue: any): string {
+    _escapeText(theValue: unknown): string {
         if (!(typeof theValue === "string")) {
             console.warn(`Wrong format for escapeText`, theValue)
             return ""
@@ -233,14 +242,14 @@ export class CSLExporter {
             .replace(/"/g, "&quot;")
     }
 
-    _reformText(theValue: NodeArray) {
+    _reformText(theValue: unknown): string {
         let html = "",
             lastMarks: string[] = []
         if (!Array.isArray(theValue)) {
             console.warn(`Wrong format for reformText`, theValue)
             return html
         }
-        theValue.forEach((node) => {
+        theValue.forEach((node: NodeObject) => {
             if (node.type === "variable") {
                 // This is an undefined variable
                 // This should usually not happen, as CSL doesn't know what to
@@ -250,7 +259,7 @@ export class CSLExporter {
                 }`
                 this.errors.push({
                     type: "undefined_variable",
-                    variable: node.attrs!.variable,
+                    variable: node.attrs!.variable as string,
                 })
                 return
             }
@@ -281,10 +290,11 @@ export class CSLExporter {
                     html += TAGS[mark].open
                 }
             })
-            if ("text" in node)
+            if ("text" in node) {
                 html += this.config.escapeText
                     ? this._escapeText(node.text)
                     : node.text
+            }
             lastMarks = newMarks
         })
         // Close all still open tags
@@ -297,7 +307,7 @@ export class CSLExporter {
         return html
     }
 
-    _reformDate(dateStr: string) {
+    _reformDate(dateStr: string): false | CSLDateObject {
         let dateObj = edtfParse(dateStr)
         const reformedDate: CSLDateObject = {}
         if (!dateObj.valid) {
@@ -335,7 +345,7 @@ export class CSLExporter {
         return reformedDate
     }
 
-    _reformName(theNames: Array<NameDictObject>): Array<CSLNameObject> {
+    _reformName(theNames: NameDictObject[]): CSLNameObject[] {
         const names = theNames.map((name) => {
             const reformedName: CSLNameObject = {}
             if (name.literal) {

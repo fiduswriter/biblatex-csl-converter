@@ -50,7 +50,7 @@ export class GroupParser {
         ]
     }
 
-    checkString(input: string) {
+    checkString(input: string): void {
         this.input = input
         //let searchPos = 0
         this.pos = 0
@@ -66,7 +66,7 @@ export class GroupParser {
         })
     }
 
-    readGroupInfo(groupType: string) {
+    readGroupInfo(groupType: string): void {
         if (groupType) this.groupType = groupType
 
         switch (this.groupType) {
@@ -82,7 +82,7 @@ export class GroupParser {
         }
     }
 
-    readFileDirectory() {
+    readFileDirectory(): void {
         let fileDirectory = "",
             input = this.input ? this.input : "",
             pos = this.pos
@@ -94,7 +94,7 @@ export class GroupParser {
         this.pos = pos
     }
 
-    readJabref3() {
+    readJabref3(): void {
         /*  The JabRef Groups format is... interesting. To parse it, you must:
           1. Unwrap the lines (just remove the newlines)
           2. Split the lines on ';' (but not on '\;')
@@ -171,8 +171,7 @@ export class GroupParser {
                     // intersect with parent. Hardly ever used.
                     levels[level].references = levels[
                         level
-                    ].references.filter((key) =>
-                        levels[level - 1].references.includes(key)
+                    ].references.filter((key) => levels[level - 1].references.includes(key)
                     )
                     break
                 case "2":
@@ -190,14 +189,14 @@ export class GroupParser {
         this.groups = levels[("0" as unknown) as number].groups
     }
 
-    clearGroups(groups: Array<GroupObject>) {
+    clearGroups(groups: GroupObject[]): void {
         for (const group of groups) {
             group.references = []
             this.clearGroups(group.groups || [])
         }
     }
 
-    readJabref4() {
+    readJabref4(): void {
         this.readJabref3()
 
         if (this.groupType === "jabref4.1") {
