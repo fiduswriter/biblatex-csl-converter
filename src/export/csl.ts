@@ -43,7 +43,7 @@ type ErrorObject = {
 }
 
 type CSLDateObject = {
-    "date-parts"?: [Array<number>] | [Array<number>, Array<number>]
+    "date-parts"?: [number[]] | [number[], number[]]
     circa?: boolean
 }
 
@@ -65,14 +65,14 @@ export type CSLOutput = Record<string, CSLEntry>
 
 export class CSLExporter {
     bibDB: BibDB
-    pks: Array<string>
+    pks: string[]
     config: ConfigObject
     cslDB: { [key: string]: CSLEntry }
-    errors: Array<ErrorObject>
+    errors: ErrorObject[]
 
     constructor(
         bibDB: BibDB,
-        pks: Array<string> | false = false,
+        pks: string[] | false = false,
         config: ConfigObject = {}
     ) {
         this.bibDB = bibDB
@@ -319,7 +319,7 @@ export class CSLExporter {
         ) {
             const intervalFrom: Array<number | string> = dateObj.values[0],
                 intervalTo: Array<number | string> = dateObj.values[1]
-            const intervalDateParts: [Array<number>, Array<number>] = [
+            const intervalDateParts: [number[], number[]] = [
                 intervalFrom
                     .slice(0, 3)
                     .map((value) => parseInt(value as string)),
@@ -329,7 +329,7 @@ export class CSLExporter {
             ]
             reformedDate["date-parts"] = intervalDateParts
         } else {
-            const values: Array<number> = dateObj.values
+            const values: number[] = dateObj.values
                 .slice(0, 3)
                 .map((value) => parseInt(value as string))
             reformedDate["date-parts"] = [values]
@@ -376,6 +376,6 @@ export class CSLExporter {
             }
             return reformedName
         })
-        return names.filter((name) => name) as Array<CSLNameObject>
+        return names.filter((name) => name) as CSLNameObject[]
     }
 }

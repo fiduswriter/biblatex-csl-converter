@@ -52,9 +52,9 @@ export class BibLatexLiteralParser {
     braceLevel: number
     slen: number
     si: number
-    json: Array<NodeObject>
-    braceClosings: Array<boolean>
-    currentMarks: Array<MarkObject>
+    json: NodeObject[]
+    braceClosings: boolean[]
+    currentMarks: MarkObject[]
     inCasePreserve: number | null
     textNode?: TextNodeObject
 

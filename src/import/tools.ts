@@ -2,7 +2,7 @@
 export function splitTeXString(
     texString: string,
     splitToken = "and"
-): Array<string> {
+): string[] {
     let output = []
     let tokenRe = /([^\s{}]+|\s|{|})/g
     let j = 0

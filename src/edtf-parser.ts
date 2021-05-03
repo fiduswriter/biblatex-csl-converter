@@ -25,7 +25,7 @@ class SimpleEDTFParser {
     values: SimpleDateArray
     uncertain: boolean
     approximate: boolean
-    parts: Array<SimpleEDTFParser>
+    parts: SimpleEDTFParser[]
 
     constructor(string: unknown) {
         if (!(typeof string === "string")) {

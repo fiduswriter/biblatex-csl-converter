@@ -135,7 +135,7 @@ export interface BiblatexParseResult {
         [key: string]: string
     }
     jabref: {
-        groups: Array<GroupObject> | false
+        groups: GroupObject[] | false
         meta: {
             [key: string]: string
         }
@@ -168,14 +168,14 @@ export class BibLatexParser {
     pos: number
     startPosition = -1
     endPosition = -1
-    entries: Array<EntryObject>
+    entries: EntryObject[]
     currentKey: string | false
     currentEntry?: EntryObject
     currentType: string
     currentRawFields?: Record<string, unknown>
     bibDB: BibDB
-    errors: Array<ErrorObject>
-    warnings: Array<ErrorObject>
+    errors: ErrorObject[]
+    warnings: ErrorObject[]
     months: {
         JAN: string
         FEB: string
@@ -193,14 +193,14 @@ export class BibLatexParser {
     strings: {
         [key: string]: string
     }
-    comments: Array<string>
+    comments: string[]
     groupParser: GroupParser
-    groups: Array<GroupObject> | false
+    groups: GroupObject[] | false
     jabrefMeta: {
         [key: string]: string
     }
     jabref?: {
-        groups: Array<GroupObject> | false
+        groups: GroupObject[] | false
         meta: number
     }
     crossrefs: {
@@ -645,10 +645,12 @@ export class BibLatexParser {
 
             // Replace alias fields with their main term.
             let aliasKey: string | undefined
-            if (bKey in BiblatexFieldAliasTypes) aliasKey =
+            if (bKey in BiblatexFieldAliasTypes) {
+                aliasKey =
                     BiblatexFieldAliasTypes[
                         bKey as keyof typeof BiblatexFieldAliasTypes
                     ]
+            }
 
             let fKey = ""
             if (aliasKey) {
@@ -1180,7 +1182,9 @@ export class BibLatexParser {
                         bt.required.includes(field) ||
                         bt.optional.includes(field) ||
                         bt.eitheror.includes(field)
-                    ) inhertitedFields[field] = parentFields[fi.source]
+                    ) {
+                        inhertitedFields[field] = parentFields[fi.source]
+                    }
                 }
             }
         }

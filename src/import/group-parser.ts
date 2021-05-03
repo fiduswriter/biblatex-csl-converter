@@ -8,16 +8,16 @@ type WarningObject = {
 }
 
 export class GroupParser {
-    groups: Array<GroupObject>
+    groups: GroupObject[]
     groupType: string
-    warnings: Array<WarningObject>
-    entries: Array<EntryObject>
-    stringStarts: Array<StringStartTuplet>
+    warnings: WarningObject[]
+    entries: EntryObject[]
+    stringStarts: StringStartTuplet[]
     pos: number
     fileDirectory: string
     input: string
 
-    constructor(entries: Array<EntryObject>) {
+    constructor(entries: EntryObject[]) {
         this.groups = []
         this.groupType = "jabref4"
         this.warnings = []
@@ -245,7 +245,7 @@ export class GroupParser {
         })
     }
 
-    find(name: string, groups: Array<GroupObject> | void): GroupObject | false {
+    find(name: string, groups: GroupObject[] | void): GroupObject | false {
         groups = groups || this.groups
         if (!groups) {
             return false

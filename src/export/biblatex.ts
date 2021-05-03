@@ -48,15 +48,15 @@ type WarningObject = {
 
 export class BibLatexExporter {
     bibDB: BibDB
-    pks: Array<string>
+    pks: string[]
     config: ConfigObject
-    warnings: Array<WarningObject>
+    warnings: WarningObject[]
     bibtexStr: string
-    bibtexArray: Array<BibObject>
+    bibtexArray: BibObject[]
 
     constructor(
         bibDB: BibDB,
-        pks: Array<string> | false = false,
+        pks: string[] | false = false,
         config: ConfigObject = {}
     ) {
         this.bibDB = bibDB // The bibliography database to export from.
@@ -376,7 +376,7 @@ export class BibLatexExporter {
         return latex
     }
 
-    _getBibtexString(biblist: Array<BibObject>): string {
+    _getBibtexString(biblist: BibObject[]): string {
         const len = biblist.length
         let str = ""
         for (let i = 0; i < len; i++) {
