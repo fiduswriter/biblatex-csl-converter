@@ -30,7 +30,7 @@ const LATEX_VERBATIM_COMMANDS = [
     ["\\url{", "url"],
 ]
 
-const LATEX_SPECIAL_CHARS: { [key: string]: string } = {
+const LATEX_SPECIAL_CHARS: Record<string, string> = {
     "&": "&",
     "%": "%",
     $: "$",

@@ -65,7 +65,7 @@ interface ConfigObject {
      *       }
      *   }
      */
-    processUnknown?: boolean | { [key: string]: string }
+    processUnknown?: boolean | Record<string, string>
     /**
      * Processes fields with names that are known, but are not expected for the given bibtype,
      * adding them to an `unexpected_fields` object to each entry.
@@ -131,14 +131,10 @@ export interface BiblatexParseResult {
     errors: ErrorObject[]
     warnings: ErrorObject[]
     comments: string[]
-    strings: {
-        [key: string]: string
-    }
+    strings: Record<string, string>
     jabref: {
         groups: GroupObject[] | false
-        meta: {
-            [key: string]: string
-        }
+        meta: Record<string, string>
     }
 }
 
@@ -190,22 +186,16 @@ export class BibLatexParser {
         NOV: string
         DEC: string
     }
-    strings: {
-        [key: string]: string
-    }
+    strings: Record<string, string>
     comments: string[]
     groupParser: GroupParser
     groups: GroupObject[] | false
-    jabrefMeta: {
-        [key: string]: string
-    }
+    jabrefMeta: Record<string, string>
     jabref?: {
         groups: GroupObject[] | false
         meta: number
     }
-    crossrefs: {
-        [key: string]: string
-    }
+    crossrefs: Record<string, string>
 
     constructor(input: string, config: ConfigObject = {}) {
         this.input = input

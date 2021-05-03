@@ -12,9 +12,7 @@ export interface TagEntry {
     verbatim: boolean
 }
 
-export interface Tags {
-    [key: string]: TagEntry
-}
+export type Tags = Record<string, TagEntry>
 
 const TAGS: Tags = {
     strong: { open: "\\mkbibbold{", close: "}", verbatim: false },

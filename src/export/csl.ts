@@ -67,7 +67,7 @@ export class CSLExporter {
     bibDB: BibDB
     pks: string[]
     config: ConfigObject
-    cslDB: { [key: string]: CSLEntry }
+    cslDB: Record<string, CSLEntry>
     errors: ErrorObject[]
 
     constructor(
