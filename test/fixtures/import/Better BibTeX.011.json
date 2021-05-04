@@ -118,8 +118,8 @@
     "errors": [
         {
             "type": "unknown_crossref",
-            "value": "DBLP:conf/cata/2010",
-            "entry": "Klassen2010"
+            "entry": "Klassen2010",
+            "value": "DBLP:conf/cata/2010"
         }
     ],
     "warnings": [
@@ -129,7 +129,6 @@
             "entry": "Klassen2010",
             "line": 15
         },
-
         {
             "type": "unexpected_field",
             "field_name": "file",

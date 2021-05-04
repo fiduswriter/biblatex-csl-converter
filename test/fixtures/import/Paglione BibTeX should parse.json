@@ -580,11 +580,16 @@
                         "prefix": [
                             {
                                 "type": "text",
-                                "text": "Carrami nana"
+                                "text": "Carrami"
                             }
                         ],
                         "useprefix": true,
-                        "family": [],
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "nana"
+                            }
+                        ],
                         "given": [
                             {
                                 "type": "text",
@@ -643,11 +648,16 @@
                         "prefix": [
                             {
                                 "type": "text",
-                                "text": "Smol ci'c"
+                                "text": "Smol"
                             }
                         ],
                         "useprefix": true,
-                        "family": [],
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "ci'c"
+                            }
+                        ],
                         "given": [
                             {
                                 "type": "text",
@@ -1144,11 +1154,16 @@
                         "prefix": [
                             {
                                 "type": "text",
-                                "text": "Smol ci'c"
+                                "text": "Smol"
                             }
                         ],
                         "useprefix": true,
-                        "family": [],
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "ci'c"
+                            }
+                        ],
                         "given": [
                             {
                                 "type": "text",
@@ -2598,11 +2613,16 @@
                         "prefix": [
                             {
                                 "type": "text",
-                                "text": "Smol ci'c"
+                                "text": "Smol"
                             }
                         ],
                         "useprefix": true,
-                        "family": [],
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "ci'c"
+                            }
+                        ],
                         "given": [
                             {
                                 "type": "text",
@@ -2836,11 +2856,16 @@
                         "prefix": [
                             {
                                 "type": "text",
-                                "text": "Carrami nana"
+                                "text": "Carrami"
                             }
                         ],
                         "useprefix": true,
-                        "family": [],
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "nana"
+                            }
+                        ],
                         "given": [
                             {
                                 "type": "text",

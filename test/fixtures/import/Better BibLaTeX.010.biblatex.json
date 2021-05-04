@@ -310,8 +310,8 @@
     "errors": [
         {
             "type": "unknown_crossref",
-            "value": "conf/icdm/2009w",
-            "entry": "Hulse2009"
+            "entry": "Hulse2009",
+            "value": "conf/icdm/2009w"
         }
     ],
     "warnings": [
@@ -321,7 +321,6 @@
             "entry": "Hulse2009",
             "line": 23
         },
-
         {
             "type": "unknown_field",
             "field_name": "description",
