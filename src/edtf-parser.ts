@@ -1,5 +1,3 @@
-// @flow
-
 // Class to do a simple check for level 0 and 1 while waiting for a compatible
 // edtf.js version and figuring out if the license is OK.
 // It has an interface that is similar to the part of edtf.js we use so that we
@@ -7,40 +5,34 @@
 
 // Notice: this allows open ended date ranges and it uses 1-12 rather than 0-11 for months.
 
-/*::
+type SimpleDateArray = Array<string | number>
 
-type SimpleDateArray = Array<string | number>;
+type DateArray = readonly (string | number | SimpleDateArray)[]
 
-type DateArray = $ReadOnlyArray<string | number | SimpleDateArray>;
-
-type EDTFOutputObject = {
-    type: string;
-    valid: boolean;
-    values: DateArray;
-    cleanedString: string;
-    uncertain: boolean;
-    approximate: boolean;
+interface EDTFOutputObject {
+    type: string
+    valid: boolean
+    values: DateArray
+    cleanedString: string
+    uncertain: boolean
+    approximate: boolean
 }
 
-*/
-
 class SimpleEDTFParser {
-    /*::
-    string: string;
-    type: string;
-    valid: boolean;
-    values: SimpleDateArray;
-    uncertain: boolean;
-    approximate: boolean;
-    parts: Array<SimpleEDTFParser>;
-    */
+    string: string
+    type: string
+    valid: boolean
+    values: SimpleDateArray
+    uncertain: boolean
+    approximate: boolean
+    parts: SimpleEDTFParser[]
 
-    constructor(string /*: string */) {
+    constructor(string: unknown) {
         if (!(typeof string === "string")) {
             console.warn(`Wrong format for EDTFParser`, string)
             string = ""
         }
-        this.string = string
+        this.string = string as string
         this.type = "None" // default
         this.valid = true // default
         this.values = []
@@ -49,7 +41,7 @@ class SimpleEDTFParser {
         this.parts = []
     }
 
-    init() /*: EDTFOutputObject */ {
+    init(): EDTFOutputObject {
         this.checkCertainty()
         this.splitInterval()
         return {
@@ -63,9 +55,9 @@ class SimpleEDTFParser {
         }
     }
 
-    getPartValues() /*: DateArray */ {
+    getPartValues(): DateArray {
         if (this.parts.length === 0) {
-            const emptyPart = []
+            const emptyPart: DateArray = []
             return emptyPart
         } else if (this.parts.length === 1) {
             const datePart = this.parts[0].values
@@ -79,7 +71,7 @@ class SimpleEDTFParser {
         }
     }
 
-    cleanString() /*: string */ {
+    cleanString() {
         let cleanedString = ""
         if (this.parts.length) {
             cleanedString = this.parts
@@ -102,7 +94,7 @@ class SimpleEDTFParser {
                 } else {
                     return `${dateString}${value}`
                 }
-            }, "")
+            }, "") as string
         }
         if (this.uncertain) {
             cleanedString += "?"
@@ -332,7 +324,7 @@ class SimpleEDTFParser {
     }
 }
 
-export function edtfParse(dateString /*: string */) {
+export function edtfParse(dateString: string): EDTFOutputObject {
     let parser = new SimpleEDTFParser(dateString)
     return parser.init()
 }

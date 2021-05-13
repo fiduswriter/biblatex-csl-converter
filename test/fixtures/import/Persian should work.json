@@ -13,14 +13,12 @@
                 ],
                 "author": [
                     {
-                        "prefix": [
+                        "family": [
                             {
                                 "type": "text",
                                 "text": "داودی"
                             }
                         ],
-                        "useprefix": true,
-                        "family": [],
                         "given": [
                             {
                                 "type": "text",

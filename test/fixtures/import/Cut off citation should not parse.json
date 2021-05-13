@@ -15,11 +15,16 @@
                         "prefix": [
                             {
                                 "type": "text",
-                                "text": "Smol ci'c"
+                                "text": "Smol"
                             }
                         ],
                         "useprefix": true,
-                        "family": [],
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "ci'c"
+                            }
+                        ],
                         "given": [
                             {
                                 "type": "text",

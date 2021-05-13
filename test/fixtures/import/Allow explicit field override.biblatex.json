@@ -41,6 +41,7 @@
                         "text": "http://www.nuprl.org/html/verification/"
                     }
                 ],
+                "origdate": "1856",
                 "title": [
                     {
                         "type": "text",
@@ -85,7 +86,6 @@
                 "url": "http://www.nuprl.org/html/verification/"
             },
             "unexpected_fields": {
-                "origdate": "1856",
                 "origtitle": [
                     {
                         "type": "text",
@@ -104,12 +104,6 @@
         }
     },
     "warnings": [
-        {
-            "type": "unexpected_field",
-            "field_name": "origdate",
-            "entry": "anand2014technicalreportformally",
-            "line": 11
-        },
         {
             "type": "unexpected_field",
             "field_name": "origtitle",

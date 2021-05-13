@@ -1,15 +1,19 @@
 module.exports = {
+    root: true,
+    parser: "@typescript-eslint/parser",
+    plugins: ["@typescript-eslint"],
     env: {
         browser: true,
         es6: true,
         node: true,
     },
-    extends: "eslint:recommended",
+    extends: ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
     parserOptions: {
         ecmaVersion: 2018,
         sourceType: "module",
     },
     rules: {
+        "@typescript-eslint/no-non-null-assertion": "off",
         "accessor-pairs": "error",
         "array-bracket-newline": "off",
         "array-bracket-spacing": ["error", "never"],
@@ -190,7 +194,11 @@ module.exports = {
         "one-var": "off",
         "one-var-declaration-per-line": "off",
         "operator-assignment": ["error", "always"],
-        "operator-linebreak": ["error", "after"],
+        "operator-linebreak": [
+            "error",
+            "after",
+            { overrides: { "?": "before", ":": "before" } },
+        ],
         "padded-blocks": "off",
         "padding-line-between-statements": "error",
         "prefer-arrow-callback": "off",

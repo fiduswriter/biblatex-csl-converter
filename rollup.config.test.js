@@ -1,5 +1,5 @@
 export default {
-    input: "src/index.js",
+    input: "src/index.ts",
     output: {
         file: "tmp/bundle.test.js",
         format: "cjs",
@@ -14,6 +14,7 @@ export default {
             exclude: ["test/*.js", "node_modules/**/*"],
         }),
         require("rollup-plugin-commonjs")(),
+        require("@rollup/plugin-typescript")({ sourceMap: true }),
         require("rollup-plugin-node-globals")(),
         require("rollup-plugin-node-builtins")(),
         require("rollup-plugin-node-resolve")(),

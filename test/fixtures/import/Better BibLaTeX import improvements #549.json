@@ -318,14 +318,6 @@
                         ]
                     ]
                 ]
-            },
-            "unknown_fields": {
-                "crossref": [
-                    {
-                        "type": "text",
-                        "text": "Classen2013"
-                    }
-                ]
             }
         },
         "7": {
@@ -524,13 +516,14 @@
             }
         }
     },
-    "warnings": [
+    "errors": [
         {
-            "type": "unknown_field",
-            "field_name": "crossref",
+            "type": "unknown_crossref",
             "entry": "Cooper2013",
-            "line": 25
-        },
+            "value": "Classen2013"
+        }
+    ],
+    "warnings": [
         {
             "type": "unknown_field",
             "field_name": "lista",

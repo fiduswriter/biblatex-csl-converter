@@ -4,6 +4,7 @@
     "description": "a set of converters: biblatex => json, json => biblatex, json => CSL",
     "main": "lib/index.js",
     "module": "src/index.js",
+    "types": "lib/index.d.ts",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/fiduswriter/biblatex-csl-converter.git"
@@ -20,47 +21,51 @@
         "Henrik Muehe",
         "Takuto Kojima <mail@takutokojima.com>",
         "Emiliano Heyns <emiliano.heyns@iris-advies.com>",
-        "Johannes Wilm <mail@johanneswilm.org>"
+        "Johannes Wilm <mail@johanneswilm.org>",
+        "Daniel Drodt <daniel@drodt.info>"
     ],
     "license": "LGPL-3.0",
     "bugs": {
         "url": "https://github.com/fiduswriter/biblatex-csl-converter/issues"
     },
     "homepage": "https://github.com/fiduswriter/biblatex-csl-converter#readme",
+    "engines": {
+        "node": ">=12"
+    },
     "scripts": {
         "gh-pages-travis": "gh-pages-travis",
         "lint": "eslint src/",
         "format": "prettier --write . && eslint src/ --fix",
-        "pretest": "npm run lint && npm run flow check",
-        "compile": "npm run compile_bundle && npm run compile_gh-pages && npm run compile_browser",
-        "compile_bundle": "rollup src/index.js --config --output.format cjs --output.file lib/index.js --output.sourcemap true",
+        "pretest": "npm run lint",
+        "compile": "npm run compile_lib && npm run compile_bundle && npm run compile_gh-pages && npm run compile_browser && npm run compile_types",
+        "compile_lib": "rollup -c rollup.config.es.js --output.file lib/index.mjs",
+        "compile_bundle": "rollup src/index.ts --config --output.format cjs --output.file lib/index.js --output.sourcemap true",
+        "compile_types": "rollup src/index.ts -c rollup.config.dts.js",
         "compile_gh-pages": "rollup src/build/gh-pages.js --config --output.format iife --output.file gh-pages/demo.js",
         "compile_browser": "npm run compile_browser-export-biblatex && npm run compile_browser-export-csl && npm run compile_browser-import-biblatex && npm run compile_browser-biblatex-csl-converter",
         "compile_browser-biblatex-csl-converter": "rollup src/build/browser-biblatex-csl-converter.js --config --output.format iife --output.file browser/biblatex-csl-converter.js",
         "compile_browser-export-biblatex": "rollup src/build/browser-export-biblatex.js --config --output.format iife --output.file browser/export-biblatex.js",
         "compile_browser-export-csl": "rollup src/build/browser-export-csl.js --config --output.format iife --output.file browser/export-csl.js",
         "compile_browser-import-biblatex": "rollup src/build/browser-import-bibtex.js --config --output.format iife --output.file browser/import-bibtex.js",
-        "prepare": "npm run lint && npm run flow check && npm run compile && npm run prepare_flow",
-        "prepare_flow": "flow-copy-source src lib",
+        "prepare": "npm run lint && npm run compile",
         "test": "rollup -c rollup.config.test.js && nyc mocha --timeout=3000",
         "coveralls": "cat ./coverage/lcov.info | coveralls",
-        "postversion": "echo remember to run 'git push --follow-tags'",
-        "flow": "flow"
+        "postversion": "echo remember to run 'git push --follow-tags'"
     },
     "devDependencies": {
         "@babel/core": "^7.13.10",
         "@babel/plugin-transform-runtime": "^7.13.10",
         "@babel/polyfill": "^7.12.1",
         "@babel/preset-env": "^7.13.10",
-        "@babel/preset-flow": "^7.12.13",
         "@babel/runtime": "^7.13.10",
+        "@rollup/plugin-typescript": "^8.2.1",
+        "@typescript-eslint/eslint-plugin": "^4.22.0",
+        "@typescript-eslint/parser": "^4.22.0",
         "babel-plugin-istanbul": "^6.0.0",
         "benchmark": "^2.1.4",
         "chai": "^4.3.4",
         "coveralls": "^3.1.0",
-        "eslint": "^7.22.0",
-        "flow-bin": "^0.131.0",
-        "flow-copy-source": "^2.0.9",
+        "eslint": "^7.25.0",
         "gh-pages-travis": "^1.0.4",
         "istanbul": "^0.4.5",
         "mocha": "^8.3.2",
@@ -70,12 +75,15 @@
         "rollup": "^2.41.4",
         "rollup-plugin-babel": "^4.4.0",
         "rollup-plugin-commonjs": "^10.1.0",
+        "rollup-plugin-dts": "^3.0.1",
         "rollup-plugin-istanbul": "^3.0.0",
         "rollup-plugin-json": "^4.0.0",
         "rollup-plugin-node-builtins": "^2.0.0",
         "rollup-plugin-node-globals": "^1.4.0",
         "rollup-plugin-node-resolve": "^5.2.0",
         "rollup-plugin-terser": "^7.0.2",
+        "tslib": "^2.2.0",
+        "typescript": "^4.2.4",
         "updates": "^11.4.3"
     }
 }

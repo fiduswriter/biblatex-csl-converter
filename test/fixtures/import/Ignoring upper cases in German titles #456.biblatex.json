@@ -45,6 +45,7 @@
                     }
                 ],
                 "langid": "german",
+                "origdate": "1990",
                 "pages": [
                     [
                         [
@@ -76,9 +77,6 @@
                     }
                 ],
                 "url": "http://link.springer.com/chapter/10.1007/978-3-322-99962-7_7"
-            },
-            "unexpected_fields": {
-                "origdate": "1990"
             },
             "unknown_fields": {
                 "rights": [
@@ -134,6 +132,7 @@
                     }
                 ],
                 "langid": "german",
+                "origdate": "1997",
                 "pages": [
                     [
                         [
@@ -166,9 +165,6 @@
                 ],
                 "url": "http://link.springer.com/chapter/10.1007/978-3-322-99962-7_11"
             },
-            "unexpected_fields": {
-                "origdate": "1997"
-            },
             "unknown_fields": {
                 "rights": [
                     {
@@ -181,22 +177,10 @@
     },
     "warnings": [
         {
-            "type": "unexpected_field",
-            "field_name": "origdate",
-            "entry": "Kaufmann1990",
-            "line": 15
-        },
-        {
             "type": "unknown_field",
             "field_name": "rights",
             "entry": "Kaufmann1990",
             "line": 15
-        },
-        {
-            "type": "unexpected_field",
-            "field_name": "origdate",
-            "entry": "Kaufmann1997",
-            "line": 30
         },
         {
             "type": "unknown_field",

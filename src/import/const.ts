@@ -1,4 +1,3 @@
-// @flow
 /** A list of all field aliases and what they refer to. */
 export const BiblatexFieldAliasTypes = {
     address: "location",
@@ -3140,9 +3139,99 @@ export const TeXSpecialChars /*: Array<{ tex: RegExp, unicode: string}> */ = [
 ].map((texChar) => {
     const re = texChar.tex.source
     return {
-        tex: /^[a-zA-Z\\]+$/.test(re) ?
-            new RegExp(`{(${re})}|${re}\\s|${re}(?=\\W|\\_)`, "g") :
-            new RegExp(`{(${re})}|${re}{}|${re}`, "g"),
+        tex: /^[a-zA-Z\\]+$/.test(re)
+            ? new RegExp(`{(${re})}|${re}\\s|${re}(?=\\W|\\_)`, "g")
+            : new RegExp(`{(${re})}|${re}{}|${re}`, "g"),
         unicode: texChar.unicode,
     }
 })
+
+export interface TypeInheritance {
+    source: string[]
+    target: string[]
+    fields: FieldInheritance[]
+}
+
+export interface FieldInheritance {
+    source: string
+    target: string
+}
+
+export const DefaultCrossRefInheritance: TypeInheritance[] = [
+    {
+        source: ["mvbook", "book"],
+        target: ["inbook", "bookinbook", "suppbook"],
+        fields: [
+            { source: "author", target: "author" },
+            { source: "author", target: "bookauthor" },
+        ],
+    },
+    {
+        source: ["mvbook"],
+        target: ["book", "inbook", "bookinbook", "suppbook"],
+        fields: [
+            { source: "title", target: "maintitle" },
+            { source: "subtitle", target: "mainsubtitle" },
+            { source: "titleaddon", target: "maintitleaddon" },
+        ],
+    },
+    {
+        source: ["mvcollection", "mvreference"],
+        target: [
+            "collection",
+            "reference",
+            "incollection",
+            "inreference",
+            "suppcollection",
+        ],
+        fields: [
+            { source: "title", target: "maintitle" },
+            { source: "subtitle", target: "mainsubtitle" },
+            { source: "titleaddon", target: "maintitleaddon" },
+        ],
+    },
+    {
+        source: ["mvproceedings"],
+        target: ["proceedings", "inproceedings"],
+        fields: [
+            { source: "title", target: "maintitle" },
+            { source: "subtitle", target: "mainsubtitle" },
+            { source: "titleaddon", target: "maintitleaddon" },
+        ],
+    },
+    {
+        source: ["book"],
+        target: ["inbook", "bookinbook", "suppbook"],
+        fields: [
+            { source: "title", target: "booktitle" },
+            { source: "subtitle", target: "booksubtitle" },
+            { source: "titleaddon", target: "booktitleaddon" },
+        ],
+    },
+    {
+        source: ["collection", "reference"],
+        target: ["incollection", "inreference", "suppcollection"],
+        fields: [
+            { source: "title", target: "booktitle" },
+            { source: "subtitle", target: "booksubtitle" },
+            { source: "titleaddon", target: "booktitleaddon" },
+        ],
+    },
+    {
+        source: ["proceedings"],
+        target: ["inproceedings"],
+        fields: [
+            { source: "title", target: "booktitle" },
+            { source: "subtitle", target: "booksubtitle" },
+            { source: "titleaddon", target: "booktitleaddon" },
+        ],
+    },
+    {
+        source: ["periodical"],
+        target: ["article", "suppperiodical"],
+        fields: [
+            { source: "title", target: "journaltitle" },
+            { source: "subtitle", target: "journalsubtitle" },
+        ],
+    },
+]

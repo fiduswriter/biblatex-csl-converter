@@ -1,30 +1,23 @@
-// @flow
+import type { EntryObject, NodeObject, GroupObject } from "../const"
 
-/*::
-import type {EntryObject, NodeObject, GroupObject} from "../const"
-
-type StringStartTuplet = [string, () => void];
+type StringStartTuplet = [string, () => void]
 
 type WarningObject = {
-    type: string;
-    group_type: string;
+    type: string
+    group_type: string
 }
 
-*/
-
 export class GroupParser {
-    /*::
-    groups: Array<GroupObject>;
-    groupType: string;
-    warnings: Array<WarningObject>;
-    entries: Array<EntryObject>;
-    stringStarts: Array<StringStartTuplet>;
-    pos: number;
-    fileDirectory: string;
-    input: string;
-    */
+    groups: GroupObject[]
+    groupType: string
+    warnings: WarningObject[]
+    entries: EntryObject[]
+    stringStarts: StringStartTuplet[]
+    pos: number
+    fileDirectory: string
+    input: string
 
-    constructor(entries /*: Array<EntryObject> */) {
+    constructor(entries: EntryObject[]) {
         this.groups = []
         this.groupType = "jabref4"
         this.warnings = []
@@ -57,7 +50,7 @@ export class GroupParser {
         ]
     }
 
-    checkString(input /*: string */) {
+    checkString(input: string): void {
         this.input = input
         //let searchPos = 0
         this.pos = 0
@@ -73,7 +66,7 @@ export class GroupParser {
         })
     }
 
-    readGroupInfo(groupType /*: string */) {
+    readGroupInfo(groupType: string): void {
         if (groupType) this.groupType = groupType
 
         switch (this.groupType) {
@@ -89,7 +82,7 @@ export class GroupParser {
         }
     }
 
-    readFileDirectory() {
+    readFileDirectory(): void {
         let fileDirectory = "",
             input = this.input ? this.input : "",
             pos = this.pos
@@ -101,7 +94,7 @@ export class GroupParser {
         this.pos = pos
     }
 
-    readJabref3() {
+    readJabref3(): void {
         /*  The JabRef Groups format is... interesting. To parse it, you must:
           1. Unwrap the lines (just remove the newlines)
           2. Split the lines on ';' (but not on '\;')
@@ -132,7 +125,9 @@ export class GroupParser {
             .replace(/\\;/g, "\u2004")
             .split(";")
         lines = lines.map((line) => line.replace(/\u2005/g, ";"))
-        let levels = { "0": { references: [], groups: [] } }
+        let levels: {
+            [key: number]: GroupObject
+        } = { "0": { name: "", references: [], groups: [] } }
         for (let line of lines) {
             if (line === "") {
                 continue
@@ -143,11 +138,11 @@ export class GroupParser {
             }
             let level = parseInt(match[1])
             let type = match[2]
-            let references = match[3]
-            references = references ?
-                references.split("\u2004").filter((key) => key) :
-                []
-            let name = references.shift()
+            let referenceMatch = match[3]
+            const references = referenceMatch
+                ? referenceMatch.split("\u2004").filter((key) => key)
+                : []
+            let name = references.shift()!
             let intersection = references.shift() // 0 = independent, 1 = intersection, 2 = union
 
             // ignore root level, has no refs anyway in the comment
@@ -191,17 +186,17 @@ export class GroupParser {
             }
         }
 
-        this.groups = levels["0"].groups
+        this.groups = levels[("0" as unknown) as number].groups
     }
 
-    clearGroups(groups /*: Array<GroupObject> */) {
+    clearGroups(groups: GroupObject[]): void {
         for (const group of groups) {
             group.references = []
             this.clearGroups(group.groups || [])
         }
     }
 
-    readJabref4() {
+    readJabref4(): void {
         this.readJabref3()
 
         if (this.groupType === "jabref4.1") {
@@ -219,15 +214,15 @@ export class GroupParser {
             }
             // this assumes ref.unknown_fields.groups is a single text chunk
             let groups = bib.unknown_fields.groups
-                .reduce((string /*: string */, node /*: NodeObject */) => {
-                    if (typeof node.text === "string") {
-                        const text /*: string */ = node.text,
+                .reduce((string: string, node: NodeObject) => {
+                    if ("text" in node) {
+                        const text: string = node.text,
                             // undo undescores to marks -- groups content is in verbatim-ish mode
                             sub = (node.marks || []).find(
                                 (mark) => mark.type === "sub"
-                            ) ?
-                                "_" :
-                                ""
+                            )
+                                ? "_"
+                                : ""
                         string += sub + text
                     }
                     return string
@@ -250,10 +245,7 @@ export class GroupParser {
         })
     }
 
-    find(
-        name /*: string */,
-        groups /*: Array<GroupObject> | void */
-    ) /*: GroupObject | false */ {
+    find(name: string, groups: GroupObject[] | void): GroupObject | false {
         groups = groups || this.groups
         if (!groups) {
             return false

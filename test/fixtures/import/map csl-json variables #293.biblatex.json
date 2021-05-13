@@ -30,6 +30,7 @@
                         }
                     ]
                 ],
+                "origdate": "2005",
                 "publisher": [
                     [
                         {
@@ -46,7 +47,6 @@
                 ]
             },
             "unexpected_fields": {
-                "origdate": "2005",
                 "origlocation": [
                     [
                         {
@@ -132,6 +132,7 @@
                         }
                     ]
                 ],
+                "origdate": "1929",
                 "pagetotal": [
                     {
                         "type": "text",
@@ -176,7 +177,6 @@
                 ]
             },
             "unexpected_fields": {
-                "origdate": "1929",
                 "origlocation": [
                     [
                         {
@@ -219,12 +219,6 @@
     "warnings": [
         {
             "type": "unexpected_field",
-            "field_name": "origdate",
-            "entry": "latour_ny_2008",
-            "line": 15
-        },
-        {
-            "type": "unexpected_field",
             "field_name": "origlocation",
             "entry": "latour_ny_2008",
             "line": 15
@@ -258,12 +252,6 @@
             "field_name": "year",
             "value": "2004 [1929]",
             "entry": "kelsen_democratie_2004"
-        },
-        {
-            "type": "unexpected_field",
-            "field_name": "origdate",
-            "entry": "kelsen_democratie_2004",
-            "line": 37
         },
         {
             "type": "unexpected_field",

@@ -1,62 +1,78 @@
-/*::
-export type MarkObject = {
-    type: string;
+export interface UnknownFieldsObject {
+    groups?: NodeObject[]
+    [key: string]:
+        | NodeObject[]
+        | RangeArray[]
+        | NodeArray[]
+        | Array<NodeArray | string>
+        | NameDictObject[]
+        | string
+        | undefined
 }
 
-type OtherNodeObject = {
-    type: string;
-    marks?: Array<MarkObject>;
-    attrs?: Object;
+export interface MarkObject {
+    type: string
 }
 
-export type TextNodeObject = {
-    type: 'text';
-    text: string;
-    marks?: Array<MarkObject>;
-    attrs?: Object;
+interface OtherNodeObject {
+    type: string
+    marks?: MarkObject[]
+    attrs?: Record<string, unknown>
 }
 
-export type NodeObject = OtherNodeObject | TextNodeObject;
-
-export type NodeArray = Array<NodeObject>;
-
-export type EntryLocation = {
-    start: number;
-    end: number;
+export interface TextNodeObject {
+    type: "text"
+    text: string
+    marks?: MarkObject[]
+    attrs?: Record<string, unknown>
 }
 
-export type EntryObject = {
-    entry_key: string;
-    incomplete?: boolean;
-    bib_type: string;
-    location?: EntryLocation;
-    raw_text?: string;
-    fields: Object;
-    unexpected_fields?: Object;
-    unknown_fields?: UnknownFieldsObject;
+export type NodeObject = OtherNodeObject | TextNodeObject
+
+export type NodeArray = NodeObject[]
+
+export interface EntryLocation {
+    start: number
+    end: number
+}
+
+export interface EntryObject {
+    entry_key: string
+    incomplete?: boolean
+    bib_type: string
+    location?: EntryLocation
+    raw_text?: string
+    fields: Record<string, unknown>
+    unexpected_fields?: Record<string, unknown>
+    unknown_fields?: UnknownFieldsObject
 }
 
 export type NameDictObject = {
-    literal?: NodeArray;
-    family?: NodeArray;
-    given?: NodeArray;
-    prefix?: NodeArray;
-    suffix?: NodeArray;
-    useprefix?: boolean;
+    literal?: NodeArray
+    family?: NodeArray
+    given?: NodeArray
+    prefix?: NodeArray
+    suffix?: NodeArray
+    useprefix?: boolean
 }
 
 export type GroupObject = {
-    name: string;
-    references: Array<string>;
-    groups: Array<GroupObject>;
+    name: string
+    references: string[]
+    groups: GroupObject[]
 }
 
-export type RangeArray = [NodeArray, NodeArray] | [NodeArray];
+export type RangeArray = [NodeArray, NodeArray] | [NodeArray]
 
-*/
+export interface LangidOptions {
+    [key: string]: {
+        csl: string
+        biblatex: string
+    }
+}
 
 /** A list of supported languages (without aliases)  in the langid field */
-const langidOptions = {
+const langidOptions: LangidOptions = {
     acadian: {
         csl: "fr-CA",
         biblatex: "acadian",
@@ -263,7 +279,7 @@ const langidOptions = {
     },
 }
 
-const pubstateOptions = {
+const pubstateOptions: { [key: string]: { csl: string; biblatex: string } } = {
     inpreparation: {
         csl: "in preparation",
         biblatex: "inpreparation",
@@ -310,8 +326,16 @@ const languageOptions = [
     "swedish",
 ]
 
+interface BibFieldType {
+    type: string
+    biblatex: string
+    csl?: string | Record<string, string>
+    options?: string[] | LangidOptions
+    strict?: boolean
+}
+
 /** A list of field types of Bibligraphy DB with lookup by field name. */
-export const BibFieldTypes = {
+export const BibFieldTypes: Record<string, BibFieldType> = {
     abstract: {
         type: "f_long_literal",
         biblatex: "abstract",
@@ -790,8 +814,18 @@ export const BibFieldTypes = {
     },
 }
 
+export interface BibType {
+    order: number
+    biblatex: string
+    csl: string
+    required: string[]
+    eitheror: string[]
+    optional: string[]
+    "biblatex-subtype"?: string
+}
+
 /** A list of all bib types and their fields. */
-export const BibTypes = {
+export const BibTypes: Record<string, BibType> = {
     "article-journal": {
         order: 1,
         biblatex: "article",
@@ -821,6 +855,7 @@ export const BibTypes = {
             "langid",
             "note",
             "number",
+            "origdate",
             "origlanguage",
             "pages",
             "pagination",
@@ -867,6 +902,7 @@ export const BibTypes = {
             "langid",
             "note",
             "number",
+            "origdate",
             "origlanguage",
             "pages",
             "pagination",
@@ -913,6 +949,7 @@ export const BibTypes = {
             "langid",
             "note",
             "number",
+            "origdate",
             "origlanguage",
             "pages",
             "pagination",
@@ -958,6 +995,7 @@ export const BibTypes = {
             "langid",
             "note",
             "number",
+            "origdate",
             "origlanguage",
             "pages",
             "pagination",
@@ -1029,6 +1067,7 @@ export const BibTypes = {
             "maintitleaddon",
             "note",
             "number",
+            "origdate",
             "origlanguage",
             "pages",
             "pagination",
@@ -1078,6 +1117,7 @@ export const BibTypes = {
             "location",
             "note",
             "number",
+            "origdate",
             "origlanguage",
             "pagetotal",
             "bookpagination",
@@ -1130,6 +1170,7 @@ export const BibTypes = {
             "maintitleaddon",
             "note",
             "number",
+            "origdate",
             "origlanguage",
             "pages",
             "pagination",
@@ -1184,6 +1225,7 @@ export const BibTypes = {
             "maintitleaddon",
             "note",
             "number",
+            "origdate",
             "origlanguage",
             "pages",
             "pagination",
@@ -1238,6 +1280,7 @@ export const BibTypes = {
             "maintitleaddon",
             "note",
             "number",
+            "origdate",
             "origlanguage",
             "pages",
             "pagination",
@@ -1321,6 +1364,7 @@ export const BibTypes = {
             "maintitleaddon",
             "note",
             "number",
+            "origdate",
             "origlanguage",
             "pages",
             "pagination",
@@ -1369,6 +1413,7 @@ export const BibTypes = {
             "location",
             "note",
             "number",
+            "origdate",
             "origlanguage",
             "pagetotal",
             "bookpagination",
@@ -1419,6 +1464,7 @@ export const BibTypes = {
             "maintitleaddon",
             "note",
             "number",
+            "origdate",
             "origlanguage",
             "pages",
             "pagination",
@@ -1471,6 +1517,7 @@ export const BibTypes = {
             "maintitleaddon",
             "note",
             "number",
+            "origdate",
             "origlanguage",
             "pages",
             "pagination",
@@ -1692,6 +1739,7 @@ export const BibTypes = {
             "langid",
             "note",
             "number",
+            "origdate",
             "origlanguage",
             "pages",
             "pagination",
@@ -1867,6 +1915,7 @@ export const BibTypes = {
             "maintitleaddon",
             "note",
             "number",
+            "origdate",
             "origlanguage",
             "pages",
             "pagination",
@@ -1915,6 +1964,7 @@ export const BibTypes = {
             "location",
             "note",
             "number",
+            "origdate",
             "origlanguage",
             "pagetotal",
             "bookpagination",
@@ -1965,6 +2015,7 @@ export const BibTypes = {
             "maintitleaddon",
             "note",
             "number",
+            "origdate",
             "origlanguage",
             "pages",
             "pagination",
@@ -2017,6 +2068,7 @@ export const BibTypes = {
             "maintitleaddon",
             "note",
             "number",
+            "origdate",
             "origlanguage",
             "pages",
             "pagination",
@@ -2069,6 +2121,7 @@ export const BibTypes = {
             "maintitleaddon",
             "note",
             "number",
+            "origdate",
             "origlanguage",
             "pages",
             "pagination",
