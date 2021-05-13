@@ -13,7 +13,8 @@ import {
     BiblatexAliasTypes,
     BiblatexFieldAliasTypes,
     BiblatexAliasOptions,
-    CrossRefInheritance,
+    DefaultCrossRefInheritance,
+    TypeInheritance,
 } from "./const"
 import { BibLatexNameParser } from "./name-parser"
 import { BibLatexLiteralParser } from "./literal-parser"
@@ -104,6 +105,7 @@ interface ConfigObject {
      *   }
      */
     includeRawText?: boolean
+    crossRefInheritance?: TypeInheritance[]
 }
 
 interface ErrorObject {
@@ -1160,7 +1162,10 @@ export class BibLatexParser {
 
         const inhertitedFields: Record<string, unknown> = {}
 
-        for (const ti of CrossRefInheritance) {
+        const inhertance =
+            this.config.crossRefInheritance ?? DefaultCrossRefInheritance
+
+        for (const ti of inhertance) {
             if (
                 ti.source.includes(parentType) &&
                 ti.target.includes(bib_type)

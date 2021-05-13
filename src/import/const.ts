@@ -3157,7 +3157,7 @@ export interface FieldInheritance {
     target: string
 }
 
-export const CrossRefInheritance: TypeInheritance[] = [
+export const DefaultCrossRefInheritance: TypeInheritance[] = [
     {
         source: ["mvbook", "book"],
         target: ["inbook", "bookinbook", "suppbook"],
