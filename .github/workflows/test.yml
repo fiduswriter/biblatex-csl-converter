@@ -16,6 +16,6 @@ jobs:
                   node-version: "14.x"
             - run: npm install
             - run: npm test
-            - run: npm run coveralls
+            - run: coveralls --service=github
             - run: SOURCE_DIR="gh-pages" TARGET_BRANCH="gh-pages" npm run gh-pages-travis
             - run: SOURCE_DIR="browser" TARGET_BRANCH="browser" npm run gh-pages-travis

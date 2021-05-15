@@ -49,7 +49,6 @@
         "compile_browser-import-biblatex": "rollup src/build/browser-import-bibtex.js --config --output.format iife --output.file browser/import-bibtex.js",
         "prepare": "npm run lint && npm run compile",
         "test": "rollup -c rollup.config.test.js && nyc mocha --timeout=3000",
-        "coveralls": "cat ./coverage/lcov.info | coveralls",
         "postversion": "echo remember to run 'git push --follow-tags'"
     },
     "devDependencies": {
