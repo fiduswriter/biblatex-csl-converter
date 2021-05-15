@@ -15,7 +15,7 @@ jobs:
             - name: Test
               uses: actions/setup-node@v2
               with:
-                  node-version: "14.x"
+                  node-version: "14.17.0"
             - run: |
                   npm install
                   npm test
