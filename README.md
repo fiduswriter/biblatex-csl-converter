@@ -52,3 +52,22 @@ parsing of fields that are known, but shouldn't be in the bibliography entry due
 **Q:** I want to include this on my website and I don't use npm packages, etc. . Is there a file I can just add to the header of my webpage?
 
 **A:** Yes, you can download such a file [here](https://github.com/fiduswriter/biblatex-csl-converter/tree/browser).
+
+## Upgrading
+
+* From 1.x to 2.x: Note that the APi for the asynchronousparser has changed.
+
+You need to change instances of this:
+
+```
+let parser = new BibLatexParser(input, {processUnexpected: true, processUnknown: true, async: true})
+parser.parse().then((bib) => { ... })
+```
+
+
+to
+
+```
+let parser = new BibLatexParser(input, {processUnexpected: true, processUnknown: true})
+parser.parseAsync().then((bib) => { ... })
+```
