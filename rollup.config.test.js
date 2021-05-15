@@ -14,7 +14,7 @@ export default {
             exclude: ["test/*.js", "node_modules/**/*"],
         }),
         require("rollup-plugin-commonjs")(),
-        require("@rollup/plugin-typescript")({ sourceMap: true }),
+        require("@rollup/plugin-typescript")(),
         require("rollup-plugin-node-globals")(),
         require("rollup-plugin-node-builtins")(),
         require("rollup-plugin-node-resolve")(),

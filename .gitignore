@@ -2,9 +2,10 @@ node_modules/
 lib/
 venv/
 coverage/
-docs/demo-transpiled.js
 gh-pages/*.js
+gh-pages/*.js.map
 browser/*.js
+browser/*.js.map
 tmp/
 .nyc_output
 .vscode
