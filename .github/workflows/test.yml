@@ -17,8 +17,16 @@ jobs:
                   node-version: 14.x
               run: npm install
             - name: Test
+            - uses: actions/checkout@v2
+            - uses: actions/setup-node@v1
+              with:
+                  node-version: 14.x
             - run: npm test
             - run: npm run coveralls
             - name: Push to gh-pages and browser
+            - uses: actions/checkout@v2
+            - uses: actions/setup-node@v1
+              with:
+                  node-version: 14.x
             - run: SOURCE_DIR="gh-pages" TARGET_BRANCH="gh-pages" npm run gh-pages-travis
             - run: SOURCE_DIR="browser" TARGET_BRANCH="browser" npm run gh-pages-travis
