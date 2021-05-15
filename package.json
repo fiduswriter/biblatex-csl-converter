@@ -47,7 +47,7 @@
         "compile_browser-export-csl": "rollup src/build/browser-export-csl.js --config --output.format iife --output.file browser/export-csl.js",
         "compile_browser-import-biblatex": "rollup src/build/browser-import-bibtex.js --config --output.format iife --output.file browser/import-bibtex.js",
         "prepare": "npm run lint && npm run compile",
-        "test": "rollup -c rollup.config.test.js && nyc mocha --timeout=3000",
+        "test": "rollup -c rollup.config.test.js && nyc --reporter=lcov --reporter=text mocha --timeout=3000",
         "postversion": "echo remember to run 'git push --follow-tags'"
     },
     "devDependencies": {
@@ -64,7 +64,6 @@
         "chai": "^4.3.4",
         "coveralls": "^3.1.0",
         "eslint": "^7.25.0",
-        "istanbul": "^0.4.5",
         "mocha": "^8.3.2",
         "nyc": "^15.1.0",
         "prettier": "^2.2.1",

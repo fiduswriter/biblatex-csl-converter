@@ -24,7 +24,7 @@ jobs:
               with:
                   github-token: ${{ secrets.GITHUB_TOKEN }}
             - name: Deploy gh-pages branch
-              if: github.ref == 'ref/head/main'
+              if: ${{ github.ref == 'ref/head/main' }}
               uses: crazy-max/ghaction-github-pages@v2
               with:
                   target_branch: gh-pages
@@ -32,7 +32,7 @@ jobs:
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             - name: Deploy browser branch
-              if: github.ref == 'ref/head/main'
+              if: ${{ github.ref == 'ref/head/main' }}
               uses: crazy-max/ghaction-github-pages@v2
               with:
                   target_branch: browser
