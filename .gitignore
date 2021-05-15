@@ -8,3 +8,5 @@ browser/*.js
 tmp/
 .nyc_output
 .vscode
+package-lock.json
+yarn.lock
