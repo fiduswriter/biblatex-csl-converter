@@ -15,7 +15,7 @@ jobs:
             - name: Test
               uses: actions/setup-node@v2
               with:
-                  node-version: "14.17.0"
+                  node-version: "14.x"
             - run: |
                   npm install
                   npm test
@@ -23,8 +23,10 @@ jobs:
               uses: coverallsapp/github-action@master
               with:
                   github-token: ${{ secrets.GITHUB_TOKEN }}
+            - name: Extract Branch Name
+              run: echo "BRANCH=$(echo ${GITHUB_REF##*/})" >> $GITHUB_ENV
             - name: Deploy gh-pages branch
-              if: ${{ github.ref == 'ref/head/main' }}
+              if: env.BRANCH == 'main'
               uses: crazy-max/ghaction-github-pages@v2
               with:
                   target_branch: gh-pages
@@ -32,7 +34,7 @@ jobs:
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             - name: Deploy browser branch
-              if: ${{ github.ref == 'ref/head/main' }}
+              if: env.BRANCH == 'main'
               uses: crazy-max/ghaction-github-pages@v2
               with:
                   target_branch: browser
