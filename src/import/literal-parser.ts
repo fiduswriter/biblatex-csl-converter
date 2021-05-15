@@ -266,7 +266,8 @@ export class BibLatexLiteralParser {
                                 this.checkAndAddNewTextNode()
                                 this.currentMarks.pop()
                                 if (this.currentMarks.length) {
-                                    this.textNode!.marks = this.currentMarks.slice()
+                                    this.textNode!.marks =
+                                        this.currentMarks.slice()
                                 } else {
                                     delete this.textNode!.marks
                                 }

@@ -169,10 +169,8 @@ export class GroupParser {
                     break
                 case "1":
                     // intersect with parent. Hardly ever used.
-                    levels[level].references = levels[
-                        level
-                    ].references.filter((key) =>
-                        levels[level - 1].references.includes(key)
+                    levels[level].references = levels[level].references.filter(
+                        (key) => levels[level - 1].references.includes(key)
                     )
                     break
                 case "2":
@@ -187,7 +185,7 @@ export class GroupParser {
             }
         }
 
-        this.groups = levels[("0" as unknown) as number].groups
+        this.groups = levels["0" as unknown as number].groups
     }
 
     clearGroups(groups: GroupObject[]): void {

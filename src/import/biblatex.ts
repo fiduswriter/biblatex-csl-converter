@@ -516,9 +516,8 @@ export class BibLatexParser {
         let fields = this.currentEntry["fields"]
 
         if ("crossref" in rawFields) {
-            this.crossrefs[
-                this.currentEntry.entry_key
-            ] = rawFields.crossref as string
+            this.crossrefs[this.currentEntry.entry_key] =
+                rawFields.crossref as string
             delete rawFields.crossref
         }
 
@@ -806,9 +805,9 @@ export class BibLatexParser {
                     oFields[fKey] = fValue
                     break
                 case "l_key":
-                    oFields[fKey] = splitTeXString(
-                        fValue as string
-                    ).map((keyField) => this._reformKey(keyField, fKey))
+                    oFields[fKey] = splitTeXString(fValue as string).map(
+                        (keyField) => this._reformKey(keyField, fKey)
+                    )
                     break
                 case "l_tag":
                     oFields[fKey] = (fValue as string)
@@ -816,9 +815,9 @@ export class BibLatexParser {
                         .map((string) => string.trim())
                     break
                 case "l_literal":
-                    oFields[fKey] = splitTeXString(
-                        fValue as string
-                    ).map((item) => this._reformLiteral(item.trim()))
+                    oFields[fKey] = splitTeXString(fValue as string).map(
+                        (item) => this._reformLiteral(item.trim())
+                    )
                     break
                 case "l_name":
                     oFields[fKey] = this._reformNameList(fValue as string)
@@ -839,10 +838,9 @@ export class BibLatexParser {
                 fKey
             ][keyValue]
         ) {
-            keyValue = (BiblatexAliasOptions as Record<
-                string,
-                Record<string, string>
-            >)[fKey][keyValue]
+            keyValue = (
+                BiblatexAliasOptions as Record<string, Record<string, string>>
+            )[fKey][keyValue]
         }
         if ("options" in fieldType) {
             if (Array.isArray(fieldType["options"])) {
@@ -944,10 +942,9 @@ export class BibLatexParser {
         let biblatexType = this.currentType
         let biblatexSubtype = this.currentRawFields?.entrysubtype || false
         if (biblatexType in BiblatexAliasTypes) {
-            const aliasType: string[] = (BiblatexAliasTypes as Record<
-                string,
-                string[]
-            >)[biblatexType]
+            const aliasType: string[] = (
+                BiblatexAliasTypes as Record<string, string[]>
+            )[biblatexType]
             biblatexType = aliasType[0]
             if (aliasType.length > 1) {
                 biblatexSubtype = aliasType[1]

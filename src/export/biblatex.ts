@@ -78,7 +78,7 @@ export class BibLatexExporter {
 
     parse(): string {
         this.pks.forEach((pk) => {
-            let bib = this.bibDB[(pk as unknown) as number]
+            let bib = this.bibDB[pk as unknown as number]
             let bibEntry: BibObject = {
                 type: BibTypes[bib["bib_type"]]["biblatex"],
                 key: bib["entry_key"].length ? bib["entry_key"] : "Undefined",

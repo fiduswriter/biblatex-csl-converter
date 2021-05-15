@@ -107,7 +107,7 @@ export class CSLExporter {
      * @param id The id identifying the bibliography entry.
      */
     getCSLEntry(id: string): CSLEntry {
-        let bib = this.bibDB[(id as unknown) as number],
+        let bib = this.bibDB[id as unknown as number],
             fValues: CSLEntry = {}
         if (!bib.fields || !bib.bib_type || !BibTypes[bib.bib_type]) {
             return fValues
@@ -165,9 +165,7 @@ export class CSLExporter {
                             .join(" and ")
                         break
                     case "l_literal":
-                        fValues[
-                            key
-                        ] = (fValue as NodeArray[])
+                        fValues[key] = (fValue as NodeArray[])
                             .map((text: NodeArray) => this._reformText(text))
                             .join(", ")
                         break
@@ -363,9 +361,8 @@ export class CSLExporter {
                 }
                 if (name.prefix) {
                     if (name.useprefix) {
-                        reformedName[
-                            "non-dropping-particle"
-                        ] = this._reformText(name.prefix)
+                        reformedName["non-dropping-particle"] =
+                            this._reformText(name.prefix)
                     } else {
                         reformedName["dropping-particle"] = this._reformText(
                             name.prefix
