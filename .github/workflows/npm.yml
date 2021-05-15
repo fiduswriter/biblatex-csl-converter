@@ -1,4 +1,4 @@
-name: Deploy to NPM
+name: NPM CI
 on:
     release:
         types: [created]
