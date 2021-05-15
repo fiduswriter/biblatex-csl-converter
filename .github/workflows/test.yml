@@ -10,12 +10,32 @@ jobs:
     test:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v2
-            - uses: actions/setup-node@v2
-              with:
-                  node-version: "14.x"
-            - run: npm install
-            - run: npm test
-            - run: coveralls --service=github
-            - run: SOURCE_DIR="gh-pages" TARGET_BRANCH="gh-pages" npm run gh-pages-travis
-            - run: SOURCE_DIR="browser" TARGET_BRANCH="browser" npm run gh-pages-travis
+            -
+                name: Checkout
+                uses: actions/checkout@v2
+            -
+                name: Test
+                uses: actions/setup-node@v2
+                with:
+                    node-version: "14.x"
+                - run: npm install
+                - run: npm test
+                - run: coveralls --service=github
+            -
+                name: Deploy gh-pages branch
+                if: {{ github.ref == 'ref/head/main' }}
+                uses: crazy-max/ghaction-github-pages@v2
+                with:
+                    target_branch: gh-pages
+                    build_dir: gh-pages
+                env:
+                    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            -
+                name: Deploy browser branch
+                if: {{ github.ref == 'ref/head/main' }}
+                uses: crazy-max/ghaction-github-pages@v2
+                with:
+                    target_branch: browser
+                    build_dir: browser
+                env:
+                    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

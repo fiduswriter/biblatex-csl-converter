@@ -33,7 +33,6 @@
         "node": ">=12"
     },
     "scripts": {
-        "gh-pages-travis": "gh-pages-travis",
         "lint": "eslint src/",
         "format": "prettier --write . && eslint src/ --fix",
         "pretest": "npm run lint",
@@ -65,7 +64,6 @@
         "chai": "^4.3.4",
         "coveralls": "^3.1.0",
         "eslint": "^7.25.0",
-        "gh-pages-travis": "^1.0.4",
         "istanbul": "^0.4.5",
         "mocha": "^8.3.2",
         "nyc": "^15.1.0",
