@@ -171,7 +171,8 @@ export class GroupParser {
                     // intersect with parent. Hardly ever used.
                     levels[level].references = levels[
                         level
-                    ].references.filter((key) => levels[level - 1].references.includes(key)
+                    ].references.filter((key) =>
+                        levels[level - 1].references.includes(key)
                     )
                     break
                 case "2":

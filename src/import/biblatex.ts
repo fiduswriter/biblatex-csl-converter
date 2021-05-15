@@ -1043,7 +1043,8 @@ export class BibLatexParser {
 
     stepThroughBibtexAsync(): Promise<null> {
         return this.skipToNext()
-            ? new Promise((resolve) => resolve(this.parseNext())).then(() => this.stepThroughBibtexAsync()
+            ? new Promise((resolve) => resolve(this.parseNext())).then(() =>
+                  this.stepThroughBibtexAsync()
               )
             : Promise.resolve(null)
     }

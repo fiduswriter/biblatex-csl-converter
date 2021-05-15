@@ -33,8 +33,8 @@
         "node": ">=12"
     },
     "scripts": {
-        "lint": "eslint src/",
-        "format": "prettier --write . && eslint src/ --fix",
+        "lint": "eslint src/ && prettier --check .",
+        "format": "prettier --write .",
         "pretest": "npm run lint",
         "compile": "npm run compile_lib && npm run compile_bundle && npm run compile_gh-pages && npm run compile_browser && npm run compile_types",
         "compile_lib": "rollup -c rollup.config.es.js --output.file lib/index.mjs",
