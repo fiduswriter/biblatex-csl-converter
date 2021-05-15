@@ -1,9 +1,9 @@
-import commonjs from "rollup-plugin-commonjs"
+import commonjs from "@rollup/plugin-commonjs"
 import globals from "rollup-plugin-node-globals"
 import builtins from "rollup-plugin-node-builtins"
-import resolve from "rollup-plugin-node-resolve"
-import json from "rollup-plugin-json"
-import babel from "rollup-plugin-babel"
+import resolve from "@rollup/plugin-node-resolve"
+import json from "@rollup/plugin-json"
+import babel from "@rollup/plugin-babel"
 import typescript from "@rollup/plugin-typescript"
 import { terser } from "rollup-plugin-terser"
 
@@ -20,7 +20,7 @@ export default {
         resolve(),
         json(),
         babel({
-            runtimeHelpers: true,
+            babelHelpers: "runtime",
             exclude: "node_modules/**",
         }),
         terser(),
