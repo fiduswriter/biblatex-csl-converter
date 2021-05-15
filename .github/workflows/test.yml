@@ -16,10 +16,12 @@ jobs:
               uses: actions/setup-node@v2
               with:
                   node-version: "14.x"
-              run: |
+            - run: |
                   npm install
                   npm test
                   coveralls --service=github
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             - name: Deploy gh-pages branch
               if: { { github.ref == 'ref/head/main' } }
               uses: crazy-max/ghaction-github-pages@v2
