@@ -11,4 +11,5 @@ export const TexSpecialChars: [RegExp, string][] = [
     [/~/g, "{\\textasciitilde}"],
     [/\^/g, "{\\textasciicircum}"],
     [/ and /g, " {and} "],
+    [/\uFFFD/g, ""],
 ]
