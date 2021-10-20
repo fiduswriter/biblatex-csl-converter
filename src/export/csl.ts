@@ -317,7 +317,7 @@ export class CSLExporter {
         ) {
             if (
                 dateObj.values[0][0] === 0 &&
-                !String(dateObj.values[1]).replace(/9/g,'').length
+                !String(dateObj.values[1]).replace(/9/g, "").length
             ) {
                 // both from and to year are completely unknown.
                 return false
