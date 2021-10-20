@@ -315,6 +315,13 @@ export class CSLExporter {
             Array.isArray(dateObj.values[0]) &&
             Array.isArray(dateObj.values[1])
         ) {
+            if (
+                dateObj.values[0][0] === 0 &&
+                !String(dateObj.values[1]).replace(/9/g,'').length
+            ) {
+                // both from and to year are completely unknown.
+                return false
+            }
             const intervalFrom: Array<number | string> = dateObj.values[0],
                 intervalTo: Array<number | string> = dateObj.values[1]
             const intervalDateParts: [number[], number[]] = [
