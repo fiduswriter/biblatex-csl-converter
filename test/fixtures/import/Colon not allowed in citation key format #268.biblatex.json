@@ -71,6 +71,21 @@
                         }
                     ]
                 ],
+                "shorttitle": [
+                    {
+                        "type": "text",
+                        "text": "English "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Medieval Books",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ],
                 "title": [
                     {
                         "type": "text",
@@ -91,14 +106,6 @@
                     }
                 ]
             },
-            "unexpected_fields": {
-                "shorttitle": [
-                    {
-                        "type": "text",
-                        "text": "English Medieval Books"
-                    }
-                ]
-            },
             "unknown_fields": {
                 "timestamp": [
                     {
@@ -110,12 +117,6 @@
         }
     },
     "warnings": [
-        {
-            "type": "unexpected_field",
-            "field_name": "shorttitle",
-            "entry": "coates:1999english",
-            "line": 16
-        },
         {
             "type": "unknown_field",
             "field_name": "timestamp",

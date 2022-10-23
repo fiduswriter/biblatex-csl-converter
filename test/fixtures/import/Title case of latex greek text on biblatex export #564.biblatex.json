@@ -271,12 +271,7 @@
                     },
                     {
                         "type": "text",
-                        "text": "καί",
-                        "marks": [
-                            {
-                                "type": "nocase"
-                            }
-                        ]
+                        "text": "καί"
                     },
                     {
                         "type": "text",

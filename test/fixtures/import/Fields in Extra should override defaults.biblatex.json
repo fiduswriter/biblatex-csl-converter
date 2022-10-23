@@ -27,6 +27,21 @@
                         ]
                     }
                 ],
+                "shorttitle": [
+                    {
+                        "type": "text",
+                        "text": "The Decline of "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Wikipedia",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ],
                 "title": [
                     {
                         "type": "text",
@@ -61,12 +76,6 @@
                         "type": "text",
                         "text": "MIT Technology Review"
                     }
-                ],
-                "shorttitle": [
-                    {
-                        "type": "text",
-                        "text": "The Decline of Wikipedia"
-                    }
                 ]
             },
             "unknown_fields": {
@@ -83,12 +92,6 @@
         {
             "type": "unexpected_field",
             "field_name": "journaltitle",
-            "entry": "simonite2013declinewikipediaeven",
-            "line": 13
-        },
-        {
-            "type": "unexpected_field",
-            "field_name": "shorttitle",
             "entry": "simonite2013declinewikipediaeven",
             "line": 13
         },

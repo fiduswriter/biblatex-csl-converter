@@ -31,22 +31,6 @@
                     ]
                 ],
                 "origdate": "2005",
-                "publisher": [
-                    [
-                        {
-                            "type": "text",
-                            "text": "Akademisk Forlag"
-                        }
-                    ]
-                ],
-                "title": [
-                    {
-                        "type": "text",
-                        "text": "En ny sociologi for et nyt samfund. Introduktion til Aktør-Netværk-Teori"
-                    }
-                ]
-            },
-            "unexpected_fields": {
                 "origlocation": [
                     [
                         {
@@ -69,10 +53,24 @@
                         "text": "origtitle"
                     }
                 ],
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Akademisk Forlag"
+                        }
+                    ]
+                ],
                 "shorttitle": [
                     {
                         "type": "text",
                         "text": "En ny sociologi"
+                    }
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "En ny sociologi for et nyt samfund. Introduktion til Aktør-Netværk-Teori"
                     }
                 ]
             },
@@ -133,6 +131,28 @@
                     ]
                 ],
                 "origdate": "1929",
+                "origlocation": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Tübingen"
+                        }
+                    ]
+                ],
+                "origpublisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "J.C.B. Mohr"
+                        }
+                    ]
+                ],
+                "origtitle": [
+                    {
+                        "type": "text",
+                        "text": "Vom Wesen und Wert der Demokratie"
+                    }
+                ],
                 "pagetotal": [
                     {
                         "type": "text",
@@ -176,30 +196,6 @@
                     }
                 ]
             },
-            "unexpected_fields": {
-                "origlocation": [
-                    [
-                        {
-                            "type": "text",
-                            "text": "Tübingen"
-                        }
-                    ]
-                ],
-                "origpublisher": [
-                    [
-                        {
-                            "type": "text",
-                            "text": "J.C.B. Mohr"
-                        }
-                    ]
-                ],
-                "origtitle": [
-                    {
-                        "type": "text",
-                        "text": "Vom Wesen und Wert der Demokratie"
-                    }
-                ]
-            },
             "unknown_fields": {
                 "timestamp": [
                     {
@@ -218,30 +214,6 @@
     },
     "warnings": [
         {
-            "type": "unexpected_field",
-            "field_name": "origlocation",
-            "entry": "latour_ny_2008",
-            "line": 15
-        },
-        {
-            "type": "unexpected_field",
-            "field_name": "origpublisher",
-            "entry": "latour_ny_2008",
-            "line": 15
-        },
-        {
-            "type": "unexpected_field",
-            "field_name": "origtitle",
-            "entry": "latour_ny_2008",
-            "line": 15
-        },
-        {
-            "type": "unexpected_field",
-            "field_name": "shorttitle",
-            "entry": "latour_ny_2008",
-            "line": 15
-        },
-        {
             "type": "unknown_field",
             "field_name": "timestamp",
             "entry": "latour_ny_2008",
@@ -252,24 +224,6 @@
             "field_name": "year",
             "value": "2004 [1929]",
             "entry": "kelsen_democratie_2004"
-        },
-        {
-            "type": "unexpected_field",
-            "field_name": "origlocation",
-            "entry": "kelsen_democratie_2004",
-            "line": 37
-        },
-        {
-            "type": "unexpected_field",
-            "field_name": "origpublisher",
-            "entry": "kelsen_democratie_2004",
-            "line": 37
-        },
-        {
-            "type": "unexpected_field",
-            "field_name": "origtitle",
-            "entry": "kelsen_democratie_2004",
-            "line": 37
         },
         {
             "type": "unknown_field",

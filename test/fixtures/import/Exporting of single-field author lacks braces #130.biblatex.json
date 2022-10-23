@@ -72,6 +72,21 @@
                         }
                     ]
                 ],
+                "shorttitle": [
+                    {
+                        "type": "text",
+                        "text": "Automated "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Defect Prevention",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ],
                 "title": [
                     {
                         "type": "text",
@@ -116,14 +131,6 @@
                 "url": "http://site.ebrary.com/lib/alltitles/docDetail.action?docID=10296302",
                 "urldate": "2015-01-09"
             },
-            "unexpected_fields": {
-                "shorttitle": [
-                    {
-                        "type": "text",
-                        "text": "Automated Defect Prevention"
-                    }
-                ]
-            },
             "unknown_fields": {
                 "timestamp": [
                     {
@@ -135,12 +142,6 @@
         }
     },
     "warnings": [
-        {
-            "type": "unexpected_field",
-            "field_name": "shorttitle",
-            "entry": "Kolawa2007",
-            "line": 14
-        },
         {
             "type": "unknown_field",
             "field_name": "timestamp",

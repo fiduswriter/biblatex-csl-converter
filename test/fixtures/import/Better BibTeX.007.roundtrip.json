@@ -124,9 +124,6 @@
                         "text": "do not",
                         "marks": [
                             {
-                                "type": "nocase"
-                            },
-                            {
                                 "type": "strong"
                             }
                         ]
@@ -139,9 +136,6 @@
                         "type": "text",
                         "text": "species status",
                         "marks": [
-                            {
-                                "type": "nocase"
-                            },
                             {
                                 "type": "smallcaps"
                             }

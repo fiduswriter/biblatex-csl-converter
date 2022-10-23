@@ -50,6 +50,12 @@
                         ]
                     ]
                 ],
+                "shorttitle": [
+                    {
+                        "type": "text",
+                        "text": "Critique d'une métanotion fonctionnelle"
+                    }
+                ],
                 "title": [
                     {
                         "type": "text",
@@ -71,12 +77,6 @@
                     {
                         "type": "text",
                         "text": "RFDA"
-                    }
-                ],
-                "shorttitle": [
-                    {
-                        "type": "text",
-                        "text": "Critique d'une métanotion fonctionnelle"
                     }
                 ]
             },
@@ -199,12 +199,6 @@
         {
             "type": "unexpected_field",
             "field_name": "shortjournal",
-            "entry": "tusseau_critique_2009",
-            "line": 13
-        },
-        {
-            "type": "unexpected_field",
-            "field_name": "shorttitle",
             "entry": "tusseau_critique_2009",
             "line": 13
         },

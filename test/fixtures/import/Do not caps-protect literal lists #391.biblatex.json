@@ -12,22 +12,6 @@
                         }
                     ]
                 ],
-                "publisher": [
-                    [
-                        {
-                            "type": "text",
-                            "text": "Miller, Smith and Jones"
-                        }
-                    ]
-                ],
-                "title": [
-                    {
-                        "type": "text",
-                        "text": "Publisher"
-                    }
-                ]
-            },
-            "unexpected_fields": {
                 "origlocation": [
                     [
                         {
@@ -43,6 +27,20 @@
                             "text": "Doe and Company"
                         }
                     ]
+                ],
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Miller, Smith and Jones"
+                        }
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Publisher"
+                    }
                 ]
             }
         },
@@ -86,19 +84,5 @@
                 ]
             }
         }
-    },
-    "warnings": [
-        {
-            "type": "unexpected_field",
-            "field_name": "origlocation",
-            "entry": "publisher",
-            "line": 8
-        },
-        {
-            "type": "unexpected_field",
-            "field_name": "origpublisher",
-            "entry": "publisher",
-            "line": 8
-        }
-    ]
+    }
 }

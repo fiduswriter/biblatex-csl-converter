@@ -63,6 +63,25 @@
                         ]
                     ]
                 ],
+                "shorttitle": [
+                    {
+                        "type": "text",
+                        "text": "6 "
+                    },
+                    {
+                        "type": "text",
+                        "text": "The",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " Time It Takes"
+                    }
+                ],
                 "title": [
                     {
                         "type": "text",
@@ -148,12 +167,6 @@
                     {
                         "type": "text",
                         "text": "J R Anthropol Inst"
-                    }
-                ],
-                "shorttitle": [
-                    {
-                        "type": "text",
-                        "text": "6 The Time It Takes"
                     }
                 ]
             }
@@ -293,6 +306,12 @@
                     }
                 ],
                 "keywords": ["au"],
+                "shorttitle": [
+                    {
+                        "type": "text",
+                        "text": "Kartinyeri"
+                    }
+                ],
                 "title": [
                     {
                         "type": "text",
@@ -333,12 +352,6 @@
                             }
                         ]
                     ]
-                ],
-                "shorttitle": [
-                    {
-                        "type": "text",
-                        "text": "Kartinyeri"
-                    }
                 ],
                 "translator": [
                     {
@@ -383,12 +396,6 @@
         {
             "type": "unexpected_field",
             "field_name": "shortjournal",
-            "entry": "bentley_academic_2011",
-            "line": 22
-        },
-        {
-            "type": "unexpected_field",
-            "field_name": "shorttitle",
             "entry": "bentley_academic_2011",
             "line": 22
         },
@@ -454,12 +461,6 @@
         {
             "type": "unexpected_field",
             "field_name": "pages",
-            "entry": "kartinyeri",
-            "line": 48
-        },
-        {
-            "type": "unexpected_field",
-            "field_name": "shorttitle",
             "entry": "kartinyeri",
             "line": 48
         },

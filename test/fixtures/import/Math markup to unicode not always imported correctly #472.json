@@ -60,12 +60,7 @@
                     },
                     {
                         "type": "text",
-                        "text": "μ",
-                        "marks": [
-                            {
-                                "type": "nocase"
-                            }
-                        ]
+                        "text": "μ"
                     },
                     {
                         "type": "text",

@@ -24,6 +24,12 @@
                         "text": "1524-4539"
                     }
                 ],
+                "shorttitle": [
+                    {
+                        "type": "text",
+                        "text": "Increasing cardiopulmonary resuscitation provision in communities with low bystander cardiopulmonary resuscitation rates"
+                    }
+                ],
                 "doi": "10.1161/CIR.0b013e318288b4dd",
                 "language": [
                     [
@@ -331,23 +337,7 @@
                         ]
                     ]
                 ]
-            },
-            "unexpected_fields": {
-                "shorttitle": [
-                    {
-                        "type": "text",
-                        "text": "Increasing cardiopulmonary resuscitation provision in communities with low bystander cardiopulmonary resuscitation rates"
-                    }
-                ]
             }
         }
-    },
-    "warnings": [
-        {
-            "type": "unexpected_field",
-            "field_name": "shorttitle",
-            "entry": "sasson_increasing_2013",
-            "line": 17
-        }
-    ]
+    }
 }

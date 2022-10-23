@@ -73,8 +73,12 @@ export class BibLatexLiteralParser {
 
     // If the last text node has no content, remove it.
     removeIfEmptyTextNode(): void {
-        if (this.textNode && this.textNode.text.length === 0) {
-            this.json.pop()
+        if (this.textNode) {
+            if (this.textNode.text.length === 0) {
+                this.json.pop()
+            } else {
+                this.removeUnusedNocase()
+            }
         }
     }
 
@@ -82,7 +86,24 @@ export class BibLatexLiteralParser {
         if (this.textNode && this.textNode.text.length > 0) {
             // We have text in the last node already,
             // so we need to start a new text node.
+            this.removeUnusedNocase()
             this.addNewTextNode()
+        }
+    }
+
+    removeUnusedNocase(): void {
+        if (
+            this.textNode?.marks &&
+            this.textNode.text === this.textNode.text.toLowerCase()
+        ) {
+            const marks = this.textNode.marks.filter(
+                (mark) => mark.type !== "nocase"
+            )
+            if (marks.length) {
+                this.textNode.marks = marks
+            } else {
+                delete this.textNode.marks
+            }
         }
     }
 
@@ -121,7 +142,7 @@ export class BibLatexLiteralParser {
                                     this.currentMarks.pop()
                                     this.inCasePreserve = null
                                 } else {
-                                    // Of not immediately inside a brace, any styling also
+                                    // If not immediately inside a brace, any styling also
                                     // adds case protection.
                                     this.currentMarks.push({ type: "nocase" })
                                     this.inCasePreserve = this.braceLevel

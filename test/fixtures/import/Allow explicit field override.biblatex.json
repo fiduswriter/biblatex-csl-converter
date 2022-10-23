@@ -42,6 +42,12 @@
                     }
                 ],
                 "origdate": "1856",
+                "origtitle": [
+                    {
+                        "type": "text",
+                        "text": "An Old Title"
+                    }
+                ],
                 "title": [
                     {
                         "type": "text",
@@ -85,14 +91,6 @@
                 ],
                 "url": "http://www.nuprl.org/html/verification/"
             },
-            "unexpected_fields": {
-                "origtitle": [
-                    {
-                        "type": "text",
-                        "text": "An Old Title"
-                    }
-                ]
-            },
             "unknown_fields": {
                 "timestamp": [
                     {
@@ -104,12 +102,6 @@
         }
     },
     "warnings": [
-        {
-            "type": "unexpected_field",
-            "field_name": "origtitle",
-            "entry": "anand2014technicalreportformally",
-            "line": 11
-        },
         {
             "type": "unknown_field",
             "field_name": "timestamp",

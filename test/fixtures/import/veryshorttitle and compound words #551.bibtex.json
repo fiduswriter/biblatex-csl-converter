@@ -309,18 +309,16 @@
                         }
                     ]
                 ],
-                "title": [
-                    {
-                        "type": "text",
-                        "text": "Folkways: A Study of the Social Importance of Usages, Manners, Customs, Mores, and Morals"
-                    }
-                ]
-            },
-            "unexpected_fields": {
                 "shorttitle": [
                     {
                         "type": "text",
                         "text": "Folkways"
+                    }
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Folkways: A Study of the Social Importance of Usages, Manners, Customs, Mores, and Morals"
                     }
                 ]
             },
@@ -568,12 +566,6 @@
             "field_name": "timestamp",
             "entry": "bowles_coevolution_2003",
             "line": 31
-        },
-        {
-            "type": "unexpected_field",
-            "field_name": "shorttitle",
-            "entry": "sumner_folkways_1906",
-            "line": 42
         },
         {
             "type": "unknown_field",

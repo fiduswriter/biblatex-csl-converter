@@ -5,6 +5,12 @@
             "entry_key": "stackexchange_integers_14",
             "fields": {
                 "date": "2014-10",
+                "shorttitle": [
+                    {
+                        "type": "text",
+                        "text": "Do integers modulo n minus  n 2 (i.e. signed integers) still form a commutative ring?"
+                    }
+                ],
                 "title": [
                     {
                         "type": "text",
@@ -27,14 +33,6 @@
                         "text": "2015-02-24 12:14:36 +0100"
                     }
                 ]
-            },
-            "unexpected_fields": {
-                "shorttitle": [
-                    {
-                        "type": "text",
-                        "text": "Do integers modulo n minus  n 2 (i.e. signed integers) still form a commutative ring?"
-                    }
-                ]
             }
         }
     },
@@ -42,12 +40,6 @@
         {
             "type": "unknown_field",
             "field_name": "presort",
-            "entry": "stackexchange_integers_14",
-            "line": 10
-        },
-        {
-            "type": "unexpected_field",
-            "field_name": "shorttitle",
             "entry": "stackexchange_integers_14",
             "line": 10
         },

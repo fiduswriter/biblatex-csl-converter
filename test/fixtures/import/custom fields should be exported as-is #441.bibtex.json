@@ -92,6 +92,12 @@
                         ]
                     ]
                 ],
+                "shorttitle": [
+                    {
+                        "type": "text",
+                        "text": "High-Speed Jet Flows over Spillway Aerators"
+                    }
+                ],
                 "title": [
                     {
                         "type": "text",
@@ -133,14 +139,6 @@
                         "text": "2015-02-24 12:14:36 +0100"
                     }
                 ]
-            },
-            "unexpected_fields": {
-                "shorttitle": [
-                    {
-                        "type": "text",
-                        "text": "High-Speed Jet Flows over Spillway Aerators"
-                    }
-                ]
             }
         }
     },
@@ -154,12 +152,6 @@
         {
             "type": "unknown_field",
             "field_name": "relatedtype",
-            "entry": "Kokpinar2002",
-            "line": 17
-        },
-        {
-            "type": "unexpected_field",
-            "field_name": "shorttitle",
             "entry": "Kokpinar2002",
             "line": 17
         },

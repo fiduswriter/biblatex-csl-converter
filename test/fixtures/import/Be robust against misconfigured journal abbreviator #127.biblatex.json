@@ -63,6 +63,12 @@
                         ]
                     ]
                 ],
+                "shorttitle": [
+                    {
+                        "type": "text",
+                        "text": "Atomic Subshell Photoionization Cross Sections and Asymmetry Parameters"
+                    }
+                ],
                 "title": [
                     {
                         "type": "text",
@@ -70,12 +76,7 @@
                     },
                     {
                         "type": "text",
-                        "text": "i",
-                        "marks": [
-                            {
-                                "type": "nocase"
-                            }
-                        ]
+                        "text": "i"
                     },
                     {
                         "type": "text",
@@ -110,12 +111,6 @@
                         "type": "text",
                         "text": "At. Data Nucl. Data Tables"
                     }
-                ],
-                "shorttitle": [
-                    {
-                        "type": "text",
-                        "text": "Atomic Subshell Photoionization Cross Sections and Asymmetry Parameters"
-                    }
                 ]
             },
             "unknown_fields": {
@@ -132,12 +127,6 @@
         {
             "type": "unexpected_field",
             "field_name": "shortjournal",
-            "entry": "Yeh1985",
-            "line": 15
-        },
-        {
-            "type": "unexpected_field",
-            "field_name": "shorttitle",
             "entry": "Yeh1985",
             "line": 15
         },

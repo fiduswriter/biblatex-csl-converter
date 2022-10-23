@@ -15,6 +15,12 @@
                     }
                 ],
                 "langid": "chinese",
+                "shorttitle": [
+                    {
+                        "type": "text",
+                        "text": "leishuku"
+                    }
+                ],
                 "title": [
                     {
                         "type": "text",
@@ -23,20 +29,6 @@
                 ],
                 "url": "http://server.wenzibase.com",
                 "urldate": "2016-04-20"
-            },
-            "unexpected_fields": {
-                "shorttitle": [
-                    {
-                        "type": "text",
-                        "text": "leishuku"
-                    }
-                ],
-                "type": [
-                    {
-                        "type": "text",
-                        "text": "Full-text databse"
-                    }
-                ]
             },
             "unknown_fields": {
                 "timestamp": [
@@ -49,6 +41,14 @@
                     {
                         "type": "text",
                         "text": "n.d."
+                    }
+                ]
+            },
+            "unexpected_fields": {
+                "type": [
+                    {
+                        "type": "text",
+                        "text": "Full-text databse"
                     }
                 ]
             }
@@ -113,12 +113,6 @@
             "field_name": "year",
             "value": "n.d.",
             "entry": "leishuku"
-        },
-        {
-            "type": "unexpected_field",
-            "field_name": "shorttitle",
-            "entry": "leishuku",
-            "line": 12
         },
         {
             "type": "unknown_field",

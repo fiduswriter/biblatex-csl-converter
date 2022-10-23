@@ -11,12 +11,7 @@
                     },
                     {
                         "type": "text",
-                        "text": " n",
-                        "marks": [
-                            {
-                                "type": "nocase"
-                            }
-                        ]
+                        "text": " n"
                     }
                 ]
             }

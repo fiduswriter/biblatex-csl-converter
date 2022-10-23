@@ -253,6 +253,12 @@
                         "text": "International Library of Philosophy and Scientific Method"
                     }
                 ],
+                "shorttitle": [
+                    {
+                        "type": "text",
+                        "text": "Norm and Action"
+                    }
+                ],
                 "title": [
                     {
                         "type": "text",
@@ -271,14 +277,6 @@
                     {
                         "type": "text",
                         "text": "2015-02-24 12:14:36 +0100"
-                    }
-                ]
-            },
-            "unexpected_fields": {
-                "shorttitle": [
-                    {
-                        "type": "text",
-                        "text": "Norm and Action"
                     }
                 ]
             }
@@ -3748,12 +3746,6 @@
         {
             "type": "unknown_field",
             "field_name": "options",
-            "entry": "fixedkey",
-            "line": 29
-        },
-        {
-            "type": "unexpected_field",
-            "field_name": "shorttitle",
             "entry": "fixedkey",
             "line": 29
         },

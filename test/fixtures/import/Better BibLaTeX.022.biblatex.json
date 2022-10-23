@@ -98,12 +98,7 @@
                     },
                     {
                         "type": "text",
-                        "text": "{water+phenol+(1-butanol, or 2-butanol, or tert-butanol)}",
-                        "marks": [
-                            {
-                                "type": "nocase"
-                            }
-                        ]
+                        "text": "{water+phenol+(1-butanol, or 2-butanol, or tert-butanol)}"
                     },
                     {
                         "type": "text",

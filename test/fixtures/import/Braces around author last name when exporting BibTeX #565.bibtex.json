@@ -56,6 +56,12 @@
                         ]
                     ]
                 ],
+                "shorttitle": [
+                    {
+                        "type": "text",
+                        "text": "Vagueness and Grammar"
+                    }
+                ],
                 "title": [
                     {
                         "type": "text",
@@ -80,14 +86,6 @@
                     {
                         "type": "text",
                         "text": "30"
-                    }
-                ]
-            },
-            "unexpected_fields": {
-                "shorttitle": [
-                    {
-                        "type": "text",
-                        "text": "Vagueness and Grammar"
                     }
                 ]
             },
@@ -448,12 +446,6 @@
         }
     },
     "warnings": [
-        {
-            "type": "unexpected_field",
-            "field_name": "shorttitle",
-            "entry": "kenne07",
-            "line": 15
-        },
         {
             "type": "unknown_field",
             "field_name": "timestamp",

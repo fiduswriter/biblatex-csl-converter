@@ -24,12 +24,7 @@
                     },
                     {
                         "type": "text",
-                        "text": "http://example.com/~user",
-                        "marks": [
-                            {
-                                "type": "nocase"
-                            }
-                        ]
+                        "text": "http://example.com/~user"
                     }
                 ]
             },

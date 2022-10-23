@@ -24,9 +24,6 @@
                         "text": "emph",
                         "marks": [
                             {
-                                "type": "nocase"
-                            },
-                            {
                                 "type": "em"
                             }
                         ]
@@ -39,9 +36,6 @@
                         "type": "text",
                         "text": "enquote",
                         "marks": [
-                            {
-                                "type": "nocase"
-                            },
                             {
                                 "type": "enquote"
                             }
@@ -78,9 +72,6 @@
                         "text": "mkbibemph",
                         "marks": [
                             {
-                                "type": "nocase"
-                            },
-                            {
                                 "type": "em"
                             }
                         ]
@@ -93,9 +84,6 @@
                         "type": "text",
                         "text": "mkbibquote",
                         "marks": [
-                            {
-                                "type": "nocase"
-                            },
                             {
                                 "type": "enquote"
                             }
@@ -132,9 +120,6 @@
                         "text": "emph",
                         "marks": [
                             {
-                                "type": "nocase"
-                            },
-                            {
                                 "type": "em"
                             }
                         ]
@@ -147,9 +132,6 @@
                         "type": "text",
                         "text": "enquote",
                         "marks": [
-                            {
-                                "type": "nocase"
-                            },
                             {
                                 "type": "enquote"
                             }
@@ -186,9 +168,6 @@
                         "text": "mkbibemph",
                         "marks": [
                             {
-                                "type": "nocase"
-                            },
-                            {
                                 "type": "em"
                             }
                         ]
@@ -201,9 +180,6 @@
                         "type": "text",
                         "text": "mkbibquote",
                         "marks": [
-                            {
-                                "type": "nocase"
-                            },
                             {
                                 "type": "enquote"
                             }

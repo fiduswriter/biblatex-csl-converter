@@ -51,12 +51,7 @@
                     },
                     {
                         "type": "text",
-                        "text": "nm",
-                        "marks": [
-                            {
-                                "type": "nocase"
-                            }
-                        ]
+                        "text": "nm"
                     }
                 ]
             }

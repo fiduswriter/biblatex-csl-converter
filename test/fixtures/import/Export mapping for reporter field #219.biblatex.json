@@ -29,6 +29,12 @@
                     }
                 ],
                 "keywords": ["au"],
+                "shorttitle": [
+                    {
+                        "type": "text",
+                        "text": "Kartinyeri"
+                    }
+                ],
                 "title": [
                     {
                         "type": "text",
@@ -69,12 +75,6 @@
                             }
                         ]
                     ]
-                ],
-                "shorttitle": [
-                    {
-                        "type": "text",
-                        "text": "Kartinyeri"
-                    }
                 ],
                 "translator": [
                     {
@@ -124,12 +124,6 @@
         {
             "type": "unexpected_field",
             "field_name": "pages",
-            "entry": "kartinyeri",
-            "line": 14
-        },
-        {
-            "type": "unexpected_field",
-            "field_name": "shorttitle",
             "entry": "kartinyeri",
             "line": 14
         },

@@ -43,6 +43,124 @@
                         }
                     ]
                 ],
+                "shorttitle": [
+                    {
+                        "type": "text",
+                        "text": "Salmonella",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            },
+                            {
+                                "type": "em"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " in "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Pork",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " ("
+                    },
+                    {
+                        "type": "text",
+                        "text": "SALINPORK",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": "): "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Pre",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": "-Harvest and "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Harvest Control Options Based",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " on "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Epidemiologic",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": ", "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Diagnostic",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " and "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Economic Research",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": ": "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Final Report",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ],
                 "title": [
                     {
                         "type": "text",
@@ -163,23 +281,6 @@
                 ],
                 "url": "http://www.dfvf.dk/Files/Filer/Zoonosecentret/Publikationer/Salinpork/SALINPORK_final_report.pdf"
             },
-            "unexpected_fields": {
-                "shorttitle": [
-                    {
-                        "type": "text",
-                        "text": "Salmonella",
-                        "marks": [
-                            {
-                                "type": "em"
-                            }
-                        ]
-                    },
-                    {
-                        "type": "text",
-                        "text": " in Pork (SALINPORK): Pre-Harvest and Harvest Control Options Based on Epidemiologic, Diagnostic and Economic Research: Final Report"
-                    }
-                ]
-            },
             "unknown_fields": {
                 "timestamp": [
                     {
@@ -191,12 +292,6 @@
         }
     },
     "warnings": [
-        {
-            "type": "unexpected_field",
-            "field_name": "shorttitle",
-            "entry": "Hald_2000",
-            "line": 10
-        },
         {
             "type": "unknown_field",
             "field_name": "timestamp",

@@ -1093,7 +1093,12 @@
                 "journaltitle": [
                     {
                         "type": "text",
-                        "text": "MorphoMuseuM"
+                        "text": "MorphoMuseuM",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
                     }
                 ],
                 "volume": [

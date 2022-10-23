@@ -69,6 +69,12 @@
                         ]
                     ]
                 ],
+                "shorttitle": [
+                    {
+                        "type": "text",
+                        "text": "Leaky Modes on a Dielectric Waveguide"
+                    }
+                ],
                 "title": [
                     {
                         "type": "text",
@@ -89,12 +95,6 @@
                     {
                         "type": "text",
                         "text": "Appl. Opt."
-                    }
-                ],
-                "shorttitle": [
-                    {
-                        "type": "text",
-                        "text": "Leaky Modes on a Dielectric Waveguide"
                     }
                 ]
             },
@@ -124,12 +124,6 @@
         {
             "type": "unexpected_field",
             "field_name": "shortjournal",
-            "entry": "Sammut1976",
-            "line": 17
-        },
-        {
-            "type": "unexpected_field",
-            "field_name": "shorttitle",
             "entry": "Sammut1976",
             "line": 17
         },

@@ -80,6 +80,12 @@
                         ]
                     ]
                 ],
+                "shorttitle": [
+                    {
+                        "type": "text",
+                        "text": "Walking in Circles"
+                    }
+                ],
                 "title": [
                     {
                         "type": "text",
@@ -107,14 +113,6 @@
                         "text": "2015-02-24 12:14:36 +0100"
                     }
                 ]
-            },
-            "unexpected_fields": {
-                "shorttitle": [
-                    {
-                        "type": "text",
-                        "text": "Walking in Circles"
-                    }
-                ]
             }
         }
     },
@@ -122,12 +120,6 @@
         {
             "type": "unknown_field",
             "field_name": "pmid",
-            "entry": "MauSey14",
-            "line": 19
-        },
-        {
-            "type": "unexpected_field",
-            "field_name": "shorttitle",
             "entry": "MauSey14",
             "line": 19
         },
