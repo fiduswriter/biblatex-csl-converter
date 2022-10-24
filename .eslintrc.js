@@ -187,7 +187,6 @@ module.exports = {
         "no-warning-comments": "off",
         "no-whitespace-before-property": "error",
         "no-with": "error",
-        "nonblock-statement-body-position": "error",
         "object-curly-newline": "error",
         "object-curly-spacing": "off",
         "object-shorthand": "error",
