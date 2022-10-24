@@ -4,9 +4,10 @@ import {
     NodeArray,
     NameDictObject,
     NodeObject,
-} from "../const"
-import { edtfParse } from "../edtf-parser"
-import { BibDB } from "../import/biblatex"
+} from "../../const"
+import { edtfParse } from "../../edtf-parser"
+import { BibDB } from "../../import/biblatex"
+import { toSentenceCase } from "./sentence-caser"
 
 /** Converts a BibDB to a DB of the CSL type.
  * @param bibDB The bibliography database to convert.
@@ -151,7 +152,7 @@ export class CSLExporter {
                         fValues[key] = this._reformRange(fValue)
                         break
                     case "f_title":
-                        fValues[key] = this._reformText(fValue)
+                        fValues[key] = this._reformTitle(fValue)
                         break
                     case "f_uri":
                     case "f_verbatim":
@@ -238,6 +239,90 @@ export class CSLExporter {
             .replace(/>/g, "&gt;")
             .replace(/'/g, "&apos;")
             .replace(/"/g, "&quot;")
+    }
+
+    _reformTitle(theValue: unknown): string {
+        let html = "",
+            lastMarks: string[] = []
+        if (!Array.isArray(theValue)) {
+            console.warn(`Wrong format for reformTitle`, theValue)
+            return html
+        }
+        let sentenceCasedText: string = toSentenceCase(
+            theValue.reduce((text, node) => {
+                if ("text" in node) {
+                    return text + node.text
+                } else {
+                    return text
+                }
+            }, "")
+        )
+        theValue.forEach((node: NodeObject) => {
+            if (node.type === "variable") {
+                // This is an undefined variable
+                // This should usually not happen, as CSL doesn't know what to
+                // do with these. We'll put them into an unsupported tag.
+                html += `${TAGS.undefined.open}${node.attrs!.variable}${
+                    TAGS.undefined.close
+                }`
+                this.errors.push({
+                    type: "undefined_variable",
+                    variable: node.attrs!.variable as string,
+                })
+                return
+            }
+            let newMarks = node.marks ? node.marks.map((mark) => mark.type) : []
+            // close all tags that are not present in current text node.
+            let closing = false,
+                closeTags: string[] = []
+            lastMarks.forEach((mark, index) => {
+                if (mark != newMarks[index]) {
+                    closing = true
+                }
+                if (closing) {
+                    closeTags.push(TAGS[mark].close)
+                }
+            })
+            // Add close tags in reverse order to close innermost tags
+            // first.
+            closeTags.reverse()
+            html += closeTags.join("")
+
+            // open all new tags that were not present in the last text node.
+            let opening = false
+            newMarks.forEach((mark, index) => {
+                if (mark != lastMarks[index]) {
+                    opening = true
+                }
+                if (opening) {
+                    html += TAGS[mark].open
+                }
+            })
+            if ("text" in node) {
+                const sentencesCasedNodeText = sentenceCasedText.substr(
+                    0,
+                    node.text.length
+                )
+                sentenceCasedText = sentenceCasedText.slice(node.text.length)
+
+                const insertedText = newMarks.find((mark) => mark === "nocase")
+                    ? node.text
+                    : sentencesCasedNodeText
+
+                html += this.config.escapeText
+                    ? this._escapeText(insertedText)
+                    : insertedText
+            }
+            lastMarks = newMarks
+        })
+        // Close all still open tags
+        lastMarks
+            .slice()
+            .reverse()
+            .forEach((mark) => {
+                html += TAGS[mark].close
+            })
+        return html
     }
 
     _reformText(theValue: unknown): string {
