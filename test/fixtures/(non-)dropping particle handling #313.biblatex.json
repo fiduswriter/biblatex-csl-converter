@@ -392,9 +392,6 @@
                                 "type": "nocase"
                             },
                             {
-                                "type": "nocase"
-                            },
-                            {
                                 "type": "em"
                             }
                         ]
@@ -412,9 +409,6 @@
                         "type": "text",
                         "text": "Law",
                         "marks": [
-                            {
-                                "type": "nocase"
-                            },
                             {
                                 "type": "nocase"
                             },

@@ -1,4 +1,5 @@
 import type { NodeObject, TextNodeObject, MarkObject } from "../const"
+import type { ConfigObject } from "./biblatex"
 
 const LATEX_COMMANDS = [
     // commands that can can contain richtext.
@@ -48,6 +49,7 @@ const LATEX_SPECIAL_CHARS: Record<string, string> = {
 
 export class BibLatexLiteralParser {
     string: string
+    config: ConfigObject
     cpMode: boolean
     braceLevel: number
     slen: number
@@ -58,8 +60,9 @@ export class BibLatexLiteralParser {
     inCasePreserve: number | null
     textNode?: TextNodeObject
 
-    constructor(string: string, cpMode = false) {
+    constructor(string: string, config: ConfigObject, cpMode = false) {
         this.string = string
+        this.config = config
         this.cpMode = cpMode // Whether to consider case preservation.
         this.braceLevel = 0
         this.slen = string.length
@@ -76,7 +79,7 @@ export class BibLatexLiteralParser {
         if (this.textNode) {
             if (this.textNode.text.length === 0) {
                 this.json.pop()
-            } else {
+            } else if (!this.config.includeUnusedNocase) {
                 this.removeUnusedNocase()
             }
         }
@@ -86,7 +89,9 @@ export class BibLatexLiteralParser {
         if (this.textNode && this.textNode.text.length > 0) {
             // We have text in the last node already,
             // so we need to start a new text node.
-            this.removeUnusedNocase()
+            if (!this.config.includeUnusedNocase) {
+                this.removeUnusedNocase()
+            }
             this.addNewTextNode()
         }
     }
@@ -141,16 +146,30 @@ export class BibLatexLiteralParser {
                                 ) {
                                     this.currentMarks.pop()
                                     this.inCasePreserve = null
-                                } else {
+                                } else if (
+                                    !this.currentMarks.find(
+                                        (mark) => mark.type === "nocase"
+                                    )
+                                ) {
                                     // If not immediately inside a brace, any styling also
                                     // adds case protection.
-                                    this.currentMarks.push({ type: "nocase" })
+                                    this.currentMarks.push({
+                                        type: "nocase",
+                                    })
                                     this.inCasePreserve = this.braceLevel
                                 }
                             }
-                            this.currentMarks.push({ type: command[1] })
-                            this.textNode!.marks = this.currentMarks.slice()
-                            this.braceClosings.push(true)
+                            if (
+                                this.currentMarks.find(
+                                    (mark) => mark.type === command[1]
+                                )
+                            ) {
+                                this.braceClosings.push(false)
+                            } else {
+                                this.currentMarks.push({ type: command[1] })
+                                this.textNode!.marks = this.currentMarks.slice()
+                                this.braceClosings.push(true)
+                            }
                             continue parseString
                         }
                     }
@@ -174,7 +193,13 @@ export class BibLatexLiteralParser {
                             ) {
                                 this.si++
                             }
-                            this.currentMarks.push({ type: command[1] })
+                            if (
+                                !this.currentMarks.find(
+                                    (mark) => mark.type === command[1]
+                                )
+                            ) {
+                                this.currentMarks.push({ type: command[1] })
+                            }
                             this.textNode!.marks = this.currentMarks.slice()
                             continue parseString
                         }
@@ -244,9 +269,17 @@ export class BibLatexLiteralParser {
                             this.checkAndAddNewTextNode()
                             this.braceLevel++
                             this.si += 2
-                            this.currentMarks.push({ type: "sub" })
-                            this.textNode!.marks = this.currentMarks.slice()
-                            this.braceClosings.push(true)
+                            if (
+                                this.currentMarks.find(
+                                    (mark) => mark.type === "sub"
+                                )
+                            ) {
+                                this.braceClosings.push(false)
+                            } else {
+                                this.currentMarks.push({ type: "sub" })
+                                this.textNode!.marks = this.currentMarks.slice()
+                                this.braceClosings.push(true)
+                            }
                             break
                         case "\\":
                             // There is a command following directly. Ignore the sub symbol.
@@ -270,9 +303,17 @@ export class BibLatexLiteralParser {
                         this.checkAndAddNewTextNode()
                         this.braceLevel++
                         this.si += 2
-                        this.currentMarks.push({ type: "enquote" })
-                        this.textNode!.marks = this.currentMarks.slice()
-                        this.braceClosings.push(true)
+                        if (
+                            this.currentMarks.find(
+                                (mark) => mark.type === "enquote"
+                            )
+                        ) {
+                            this.braceClosings.push(false)
+                        } else {
+                            this.currentMarks.push({ type: "enquote" })
+                            this.textNode!.marks = this.currentMarks.slice()
+                            this.braceClosings.push(true)
+                        }
                     } else {
                         this.textNode!.text += this.string[this.si]
                         this.si++
@@ -310,9 +351,17 @@ export class BibLatexLiteralParser {
                             this.checkAndAddNewTextNode()
                             this.braceLevel++
                             this.si += 2
-                            this.currentMarks.push({ type: "sup" })
-                            this.textNode!.marks = this.currentMarks.slice()
-                            this.braceClosings.push(true)
+                            if (
+                                this.currentMarks.find(
+                                    (mark) => mark.type === "sup"
+                                )
+                            ) {
+                                this.braceClosings.push(false)
+                            } else {
+                                this.currentMarks.push({ type: "sup" })
+                                this.textNode!.marks = this.currentMarks.slice()
+                                this.braceClosings.push(true)
+                            }
                             break
                         case "\\":
                             // There is a command following directly. Ignore the sup symbol.
