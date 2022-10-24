@@ -1,0 +1,60 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    1902
+                ]
+            ]
+        },
+        "author": [
+            {
+                "literal": "Plato"
+            }
+        ],
+        "editor": [
+            {
+                "given": "John",
+                "family": "Burnet"
+            }
+        ],
+        "language": "en-GB",
+        "publisher-place": "Oxford",
+        "publisher": "Clarendon Press",
+        "collection-title": "Oxford classical texts CSL-VAR",
+        "title": "Clitophon, <span class=\"nocase\">Republic</span>, <span class=\"nocase\">Timaeus</span>, <span class=\"nocase\">Critias</span>",
+        "volume": "4",
+        "type": "book",
+        "id": "1"
+    },
+    "2": {
+        "issued": {
+            "date-parts": [
+                [
+                    1902
+                ]
+            ]
+        },
+        "author": [
+            {
+                "literal": "Plato"
+            }
+        ],
+        "container-title": "Clitophon, <span class=\"nocase\">Republic</span>, <span class=\"nocase\">Timaeus</span>, <span class=\"nocase\">Critias</span>",
+        "editor": [
+            {
+                "given": "John",
+                "family": "Burnet"
+            }
+        ],
+        "language": "en-GB",
+        "publisher-place": "Oxford",
+        "page": "327-621",
+        "publisher": "Clarendon Press",
+        "collection-title": "Oxford classical texts",
+        "title": "Republic",
+        "volume": "4",
+        "type": "chapter",
+        "id": "2"
+    }
+}

@@ -1,0 +1,145 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2009,
+                    1
+                ]
+            ]
+        },
+        "language": "en-US",
+        "abstract": "A distinctive feature of human behaviour is the widespread occurrence of cooperation among unrelated individuals. Explaining the maintenance of costly within-group cooperation is a challenge because the incentive to free ride on the efforts of other group members is expected to lead to decay of cooperation. However, the costs of cooperation can be diminished or overcome when there is competition at a higher level of organizational hierarchy. Here we show that competition between groups resolves the paradigmatic `public goods' social dilemma and increases within-group cooperation and overall productivity. Further, group competition intensifies the moral emotions of anger and guilt associated with violations of the cooperative norm. The results suggest an important role for group conflict in the evolution of human cooperation and moral emotions.",
+        "author": [
+            {
+                "given": "Mikael",
+                "family": "Puurtinen"
+            },
+            {
+                "given": "Tapio",
+                "family": "Mappes"
+            }
+        ],
+        "DOI": "10.1098/rspb.2008.1060",
+        "ISSN": "0962-8452, 1471-2954",
+        "container-title": "Proceedings of the royal society B: biological sciences",
+        "issue": "1655",
+        "page": "355-360",
+        "title": "Between-group competition and human cooperation",
+        "accessed": {
+            "date-parts": [
+                [
+                    2014,
+                    11,
+                    7
+                ]
+            ]
+        },
+        "volume": "276",
+        "type": "article-journal",
+        "id": "1"
+    },
+    "2": {
+        "issued": {
+            "date-parts": [
+                [
+                    2003
+                ]
+            ]
+        },
+        "language": "en-US",
+        "publisher-place": "Bruxelles",
+        "author": [
+            {
+                "given": "Samuel",
+                "family": "Bowles"
+            },
+            {
+                "given": "Jung-Kyoo",
+                "family": "Choi"
+            }
+        ],
+        "container-title": "Cultural diversity versus economic solidarity: proceedings of the <span class=\"nocase\">Seventh Francqui Colloquium</span>, <span class=\"nocase\">Brussels</span>, 28 <span class=\"nocase\">February</span>-1 <span class=\"nocase\">March</span> 2003",
+        "editor": [
+            {
+                "given": "Philippe",
+                "family": "Parijs",
+                "non-dropping-particle": "van"
+            }
+        ],
+        "ISBN": "2-8041-4660-X 978-2-8041-4660-3",
+        "publisher": "De Boeck",
+        "title": "The co-evolution of love and hate",
+        "type": "chapter",
+        "id": "2"
+    },
+    "3": {
+        "issued": {
+            "date-parts": [
+                [
+                    1906
+                ]
+            ]
+        },
+        "language": "en-US",
+        "publisher-place": "Boston, MA",
+        "author": [
+            {
+                "given": "William Graham",
+                "family": "Sumner"
+            }
+        ],
+        "publisher": "Ginn",
+        "title-short": "Folkways",
+        "title": "Folkways: a study of the social importance of usages, manners, customs, mores, and morals",
+        "type": "book",
+        "id": "3"
+    },
+    "4": {
+        "issued": {
+            "date-parts": [
+                [
+                    2014
+                ]
+            ]
+        },
+        "language": "en-US",
+        "abstract": "In suggesting that new nations often coalesce in the decades following war, historians have posed an important psychological question: Does the experience of war generate an enduring elevation in people's egalitarian motivations toward their in-group? We administered social-choice tasks to more than 1,000 children and adults differentially affected by wars in the Republic of Georgia and Sierra Leone. We found that greater exposure to war created a lasting increase in people's egalitarian motivations toward their in-group, but not their out-groups, during a developmental window starting in middle childhood (around 7 years of age) and ending in early adulthood (around 20 years of age). Outside this window, war had no measurable impact on social motivations in young children and had only muted effects on the motivations of older adults. These “war effects” are broadly consistent with predictions from evolutionary approaches that emphasize the importance of group cooperation in defending against external threats, though they also highlight key areas in need of greater theoretical development.",
+        "author": [
+            {
+                "given": "Michal",
+                "family": "Bauer"
+            },
+            {
+                "given": "Alessandra",
+                "family": "Cassar"
+            },
+            {
+                "given": "Julie",
+                "family": "Chytilová"
+            },
+            {
+                "given": "Joseph",
+                "family": "Henrich"
+            }
+        ],
+        "DOI": "10.1177/0956797613493444",
+        "ISSN": "0956-7976, 1467-9280",
+        "container-title": "Psychological science",
+        "issue": "1",
+        "page": "47-57",
+        "title": "War's <span class=\"nocase\">Enduring Effects</span> on the <span class=\"nocase\">Development</span> of <span class=\"nocase\">Egalitarian Motivations</span> and <span class=\"nocase\">In</span>-<span class=\"nocase\">Group Biases</span>",
+        "accessed": {
+            "date-parts": [
+                [
+                    2014,
+                    1,
+                    8
+                ]
+            ]
+        },
+        "volume": "25",
+        "type": "article-journal",
+        "id": "4"
+    }
+}

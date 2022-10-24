@@ -1,0 +1,864 @@
+{
+    "1": {
+        "author": [
+            {
+                "given": "François Hédelin",
+                "family": "Aubignac",
+                "non-dropping-particle": "abbé d'"
+            }
+        ],
+        "title": "<span class=\"nocase\">(abbé d' Aubignac) (François Hédelin)</span>",
+        "type": "article-journal",
+        "id": "1"
+    },
+    "2": {
+        "author": [
+            {
+                "given": "François Hédelin",
+                "family": "Aubignac",
+                "suffix": "abbé d'"
+            }
+        ],
+        "note": "relies on paricleParser fallback detection",
+        "title": "<span class=\"nocase\">(Aubignac) (François Hédelin, abbé d')</span>",
+        "type": "article-journal",
+        "id": "2"
+    },
+    "3": {
+        "issued": {
+            "date-parts": [
+                [
+                    1963
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Alexander",
+                "family": "Humboldt",
+                "non-dropping-particle": "von"
+            },
+            {
+                "given": "Cuba",
+                "family": "Gooding",
+                "suffix": "Jr."
+            },
+            {
+                "given": "Jean",
+                "family": "La Fontaine",
+                "non-dropping-particle": "de"
+            },
+            {
+                "given": "Georg Henrik Auto",
+                "family": "Wright",
+                "non-dropping-particle": "von"
+            },
+            {
+                "given": "Georg Henrik Explicit",
+                "family": "Wright",
+                "non-dropping-particle": "von"
+            }
+        ],
+        "ISBN": "0-7100-3616-7",
+        "language": "en-US",
+        "publisher-place": "Londres",
+        "number-of-pages": "xviii+214",
+        "publisher": "Routledge & Kegan Paul",
+        "collection-title": "International library of philosophy and scientific method",
+        "title-short": "Norm and action",
+        "title": "Norm and action. A logical enquiry",
+        "type": "book",
+        "id": "3"
+    },
+    "4": {
+        "issued": {
+            "date-parts": [
+                [
+                    2013
+                ]
+            ]
+        },
+        "editor": [
+            {
+                "given": "Luís",
+                "family": "Almeida",
+                "non-dropping-particle": "d'"
+            },
+            {
+                "given": "James",
+                "family": "Edwards"
+            },
+            {
+                "given": "Andrea",
+                "family": "Dolcetti"
+            }
+        ],
+        "ISBN": "978-1-84946-324-9",
+        "language": "en-US",
+        "publisher-place": "Oxford",
+        "number-of-pages": "vi+309",
+        "publisher": "Hart Publishing",
+        "title": "Reading <span class=\"nocase\">HLA Hart</span>'s: <span class=\"nocase\"><i>The Concept</i></span><i> of </i><span class=\"nocase\"><i>Law</i></span>",
+        "type": "dataset",
+        "id": "4"
+    },
+    "5": {
+        "issued": {
+            "date-parts": [
+                [
+                    2013
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Frank G.",
+                "family": "Bennett",
+                "suffix": "Jr."
+            }
+        ],
+        "ISBN": "978-1-4793-4771-1",
+        "publisher-place": "Lexington Kentucky",
+        "number-of-pages": "137",
+        "publisher": "CreateSpace Independent Publishing Platform",
+        "title": "Citations, <span class=\"nocase\">Out</span> of the <span class=\"nocase\">Box</span>",
+        "type": "book",
+        "id": "5"
+    },
+    "6": {
+        "issued": {
+            "date-parts": [
+                [
+                    1968
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Martin Luther",
+                "family": "King",
+                "suffix": "Jr."
+            }
+        ],
+        "publisher-place": "New York",
+        "number-of-pages": "154",
+        "publisher": "Grosset & Dunlap",
+        "title": "\"<span class=\"nocase\">I</span> Have a Dream\" : the quotations of <span class=\"nocase\">Martin Luther King JR</span>",
+        "type": "book",
+        "id": "6"
+    },
+    "7": {
+        "author": [
+            {
+                "given": "John",
+                "family": "Jones",
+                "non-dropping-particle": "d'"
+            }
+        ],
+        "title": "bugreports_<span class=\"nocase\">ApostropheOnParticle</span>",
+        "type": "article-journal",
+        "id": "7"
+    },
+    "8": {
+        "author": [
+            {
+                "given": "Doe",
+                "family": "Co."
+            }
+        ],
+        "title": "bugreports_<span class=\"nocase\">AsmJournals</span>",
+        "type": "article-journal",
+        "id": "8"
+    },
+    "9": {
+        "author": [
+            {
+                "literal": "U.S. Bureau of the Census"
+            }
+        ],
+        "title": "bugreports_<span class=\"nocase\">DemoPageFullCiteCruftOnSubsequent</span>",
+        "type": "article-journal",
+        "id": "9"
+    },
+    "10": {
+        "author": [
+            {
+                "given": "Bruce",
+                "family": "D'Arcus"
+            }
+        ],
+        "title": "bugreports_<span class=\"nocase\">DuplicateSpaces</span>",
+        "type": "article-journal",
+        "id": "10"
+    },
+    "11": {
+        "author": [
+            {
+                "given": "N",
+                "family": "Family Name"
+            }
+        ],
+        "title": "bugreports_<span class=\"nocase\">DuplicateSpaces3</span>",
+        "type": "article-journal",
+        "id": "11"
+    },
+    "12": {
+        "author": [
+            {
+                "given": "Κώστας",
+                "family": "Καρυωτάκης"
+            }
+        ],
+        "title": "bugreports_<span class=\"nocase\">GreekStyleProblems</span>",
+        "type": "article-journal",
+        "id": "12"
+    },
+    "13": {
+        "author": [
+            {
+                "given": "R.",
+                "family": "Reynoso-Santos"
+            },
+            {
+                "given": "L.",
+                "family": "Soto-Pinto"
+            },
+            {
+                "given": "C.",
+                "family": "Tejeda-Cruz"
+            },
+            {
+                "given": "G.",
+                "family": "Williams-Linera"
+            }
+        ],
+        "title": "bugreports_<span class=\"nocase\">ProcessorHang1</span>",
+        "type": "article-journal",
+        "id": "13"
+    },
+    "14": {
+        "author": [
+            {
+                "literal": "Africa News"
+            }
+        ],
+        "title": "bugreports_<span class=\"nocase\">YearSuffixInHarvard1</span>",
+        "type": "article-journal",
+        "id": "14"
+    },
+    "15": {
+        "author": [
+            {
+                "given": "Eduard",
+                "family": "Happel",
+                "non-dropping-particle": "van"
+            },
+            {
+                "given": "Gustav",
+                "family": "Hoppel",
+                "non-dropping-particle": "von"
+            }
+        ],
+        "title": "bugreports_<span class=\"nocase\">parseName</span>",
+        "type": "article-journal",
+        "id": "15"
+    },
+    "16": {
+        "author": [
+            {
+                "given": "John",
+                "family": "Doe",
+                "suffix": "III"
+            },
+            {
+                "given": "Jane",
+                "family": "Roe",
+                "non-dropping-particle": "van"
+            }
+        ],
+        "title": "decorations_<span class=\"nocase\">AndTermUnaffectedByNameDecorations</span>",
+        "type": "article-journal",
+        "id": "16"
+    },
+    "17": {
+        "author": [
+            {
+                "given": "Doug",
+                "family": "Dipheria",
+                "non-dropping-particle": "von"
+            }
+        ],
+        "title": "disambiguate_<span class=\"nocase\">CitationLabelInData</span>",
+        "type": "article-journal",
+        "id": "17"
+    },
+    "18": {
+        "author": [
+            {
+                "literal": "Caritas Europa"
+            },
+            {
+                "literal": "JRS-Europe"
+            }
+        ],
+        "title": "disambiguate_<span class=\"nocase\">FailWithYearSuffix</span>",
+        "type": "article-journal",
+        "id": "18"
+    },
+    "19": {
+        "author": [
+            {
+                "given": "Smith",
+                "family": "Co"
+            }
+        ],
+        "title": "disambiguate_<span class=\"nocase\">YearCollapseWithInstitution</span>",
+        "type": "article-journal",
+        "id": "19"
+    },
+    "20": {
+        "author": [
+            {
+                "given": "Frank G.",
+                "family": "Bennett",
+                "suffix": "Jr."
+            }
+        ],
+        "title": "display_<span class=\"nocase\">SecondFieldAlignMigratePunctuation</span>",
+        "type": "article-journal",
+        "id": "20"
+    },
+    "21": {
+        "author": [
+            {
+                "given": "Doe",
+                "family": "Inc."
+            }
+        ],
+        "title": "group_<span class=\"nocase\">ComplexNesting</span>",
+        "type": "article-journal",
+        "id": "21"
+    },
+    "22": {
+        "author": [
+            {
+                "given": "S. P",
+                "family": "Berge",
+                "non-dropping-particle": "la"
+            }
+        ],
+        "title": "integration_<span class=\"nocase\">DuplicateItem</span>",
+        "type": "article-journal",
+        "id": "22"
+    },
+    "23": {
+        "author": [
+            {
+                "given": "Samuel",
+                "family": "Simone",
+                "non-dropping-particle": "de"
+            }
+        ],
+        "title": "magic_<span class=\"nocase\">CapitalizeFirstOccurringNameParticle</span>",
+        "type": "article-journal",
+        "id": "23"
+    },
+    "24": {
+        "author": [
+            {
+                "given": "John",
+                "family": "Doe",
+                "non-dropping-particle": "von"
+            }
+        ],
+        "title": "magic_<span class=\"nocase\">NameParticle</span>",
+        "type": "article-journal",
+        "id": "24"
+    },
+    "25": {
+        "author": [
+            {
+                "literal": "Blob"
+            }
+        ],
+        "title": "magic_<span class=\"nocase\">SuppressDuplicateVariableRendering</span>",
+        "type": "article-journal",
+        "id": "25"
+    },
+    "26": {
+        "author": [
+            {
+                "given": "James",
+                "family": "Doe",
+                "suffix": "III"
+            }
+        ],
+        "title": "name_<span class=\"nocase\">ArticularNameAsSortOrder</span>",
+        "type": "article-journal",
+        "id": "26"
+    },
+    "27": {
+        "author": [
+            {
+                "given": "James",
+                "family": "Doe",
+                "suffix": "Jr"
+            }
+        ],
+        "title": "name_<span class=\"nocase\">ArticularShortFormCommaSuffix</span>",
+        "type": "article-journal",
+        "id": "27"
+    },
+    "28": {
+        "author": [
+            {
+                "given": "Jeffrey",
+                "family": "Doe",
+                "suffix": "Jr."
+            }
+        ],
+        "title": "name_<span class=\"nocase\">ArticularWithComma</span>",
+        "type": "article-journal",
+        "id": "28"
+    },
+    "29": {
+        "author": [
+            {
+                "given": "Noakes",
+                "family": "Inc."
+            }
+        ],
+        "title": "name_<span class=\"nocase\">Delimiter</span>",
+        "type": "article-journal",
+        "id": "29"
+    },
+    "30": {
+        "author": [
+            {
+                "given": "Gerard",
+                "family": "Meer",
+                "non-dropping-particle": "van der"
+            }
+        ],
+        "title": "name_<span class=\"nocase\">FormattingOfParticles</span>",
+        "type": "article-journal",
+        "id": "30"
+    },
+    "31": {
+        "author": [
+            {
+                "given": "Alan",
+                "family": "One",
+                "non-dropping-particle": "al-"
+            }
+        ],
+        "title": "name_<span class=\"nocase\">HyphenatedNonDroppingParticle1</span>",
+        "type": "article-journal",
+        "id": "31"
+    },
+    "32": {
+        "author": [
+            {
+                "literal": "Multi-National United"
+            }
+        ],
+        "title": "name_<span class=\"nocase\">Institution</span>",
+        "type": "article-journal",
+        "id": "32"
+    },
+    "33": {
+        "author": [
+            {
+                "literal": "São Paulo (Estado)"
+            }
+        ],
+        "title": "name_<span class=\"nocase\">InstitutionDecoration</span>",
+        "type": "article-journal",
+        "id": "33"
+    },
+    "34": {
+        "author": [
+            {
+                "given": "Rip",
+                "family": "Winkle",
+                "non-dropping-particle": "van"
+            },
+            {
+                "given": "Carl",
+                "family": "Thucydides",
+                "suffix": "III"
+            }
+        ],
+        "title": "name_<span class=\"nocase\">MixedFormatsInitialSortOrderAllWithDecorationsEtAl</span>",
+        "type": "article-journal",
+        "id": "34"
+    },
+    "35": {
+        "author": [
+            {
+                "literal": "Alfred Benzon Foundation"
+            },
+            {
+                "literal": "James Benson Foundation"
+            },
+            {
+                "literal": "John Candy Foundation"
+            }
+        ],
+        "title": "name_<span class=\"nocase\">MultipleLiteral</span>",
+        "type": "article-journal",
+        "id": "35"
+    },
+    "36": {
+        "author": [
+            {
+                "given": "Eric",
+                "family": "Vlist",
+                "non-dropping-particle": "van der"
+            },
+            {
+                "given": "Vincent",
+                "family": "Gogh",
+                "non-dropping-particle": "van"
+            }
+        ],
+        "title": "name_<span class=\"nocase\">ParseNames</span>",
+        "type": "article-journal",
+        "id": "36"
+    },
+    "37": {
+        "author": [
+            {
+                "given": "Jean",
+                "family": "La Fontaine",
+                "non-dropping-particle": "de"
+            }
+        ],
+        "title": "name_<span class=\"nocase\">ParsedDroppingParticleWithAffixes</span>",
+        "type": "article-journal",
+        "id": "37"
+    },
+    "38": {
+        "author": [
+            {
+                "given": "Jean",
+                "family": "Fontaine",
+                "non-dropping-particle": "de la"
+            }
+        ],
+        "title": "name_<span class=\"nocase\">ParsedNonDroppingParticleWithAffixes</span>",
+        "type": "article-journal",
+        "id": "38"
+    },
+    "39": {
+        "author": [
+            {
+                "given": "François Hédelin",
+                "family": "Aubignac",
+                "suffix": "abbé d'",
+                "non-dropping-particle": "d'"
+            }
+        ],
+        "title": "name_<span class=\"nocase\">ParsedNonDroppingParticleWithApostrophe</span>",
+        "type": "article-journal",
+        "id": "39"
+    },
+    "40": {
+        "author": [
+            {
+                "given": "Onename",
+                "family": "One",
+                "non-dropping-particle": "van"
+            },
+            {
+                "given": "Twoname",
+                "family": "Two",
+                "non-dropping-particle": "van"
+            },
+            {
+                "given": "Threename",
+                "family": "Three",
+                "non-dropping-particle": "van"
+            },
+            {
+                "given": "Fourname",
+                "family": "Van Four"
+            }
+        ],
+        "title": "name_<span class=\"nocase\">ParticleCaps1</span>",
+        "type": "article-journal",
+        "id": "40"
+    },
+    "41": {
+        "author": [
+            {
+                "given": "Dick",
+                "family": "Van Dyke"
+            }
+        ],
+        "title": "name_<span class=\"nocase\">ParticleCaps3</span>",
+        "type": "article-journal",
+        "id": "41"
+    },
+    "42": {
+        "author": [
+            {
+                "given": "John",
+                "family": "Doe",
+                "non-dropping-particle": "de la"
+            }
+        ],
+        "title": "name_<span class=\"nocase\">ParticleFormatting</span>",
+        "type": "article-journal",
+        "id": "42"
+    },
+    "43": {
+        "author": [
+            {
+                "given": "Givenname",
+                "family": "Las Familyname",
+                "non-dropping-particle": "de"
+            },
+            {
+                "given": "Givenname",
+                "family": "Familyname",
+                "non-dropping-particle": "del"
+            },
+            {
+                "given": "Givenname",
+                "family": "Di Familyname"
+            },
+            {
+                "given": "Givenname",
+                "family": "Da Familyname"
+            },
+            {
+                "given": "Givenname",
+                "family": "Do Familyname"
+            },
+            {
+                "given": "Givenname",
+                "family": "Des Familyname"
+            },
+            {
+                "given": "Givenname",
+                "family": "Lou Familyname"
+            },
+            {
+                "given": "Givenname",
+                "family": "Pietro Familyname"
+            },
+            {
+                "given": "Givenname",
+                "family": "Familyname",
+                "non-dropping-particle": "de"
+            },
+            {
+                "given": "Givenname",
+                "family": "La Familyname",
+                "non-dropping-particle": "de"
+            },
+            {
+                "given": "Givenname",
+                "family": "Le Familyname"
+            },
+            {
+                "given": "Givenname",
+                "family": "La Familyname"
+            },
+            {
+                "given": "Givenname",
+                "family": "L'Familyname"
+            },
+            {
+                "given": "Givenname",
+                "family": "Saint Familyname"
+            },
+            {
+                "given": "Givenname",
+                "family": "Sainte Familyname"
+            },
+            {
+                "given": "Givenname",
+                "family": "St. Familyname"
+            },
+            {
+                "given": "Givenname",
+                "family": "Ste. Familyname"
+            },
+            {
+                "given": "Givenname",
+                "family": "Familyname",
+                "non-dropping-particle": "van"
+            },
+            {
+                "given": "Givenname",
+                "family": "Familyname",
+                "non-dropping-particle": "van de"
+            },
+            {
+                "given": "Givenname",
+                "family": "Familyname",
+                "non-dropping-particle": "van der"
+            },
+            {
+                "given": "Givenname",
+                "family": "Familyname",
+                "non-dropping-particle": "van den"
+            },
+            {
+                "given": "Givenname",
+                "family": "Familyname",
+                "non-dropping-particle": "vander"
+            },
+            {
+                "given": "Givenname",
+                "family": "Familyname",
+                "non-dropping-particle": "v.d."
+            },
+            {
+                "given": "Givenname",
+                "family": "Familyname",
+                "non-dropping-particle": "vd"
+            },
+            {
+                "given": "Givenname",
+                "family": "Familyname",
+                "non-dropping-particle": "van het"
+            },
+            {
+                "given": "Givenname",
+                "family": "Familyname",
+                "non-dropping-particle": "ver"
+            }
+        ],
+        "title": "name_<span class=\"nocase\">ParticlesDemoteNonDroppingNever</span>",
+        "type": "article-journal",
+        "id": "43"
+    },
+    "44": {
+        "author": [
+            {
+                "given": "Jacques",
+                "family": "Doe",
+                "non-dropping-particle": "van"
+            }
+        ],
+        "title": "name_<span class=\"nocase\">WesternArticularLowercase</span>",
+        "type": "article-journal",
+        "id": "44"
+    },
+    "45": {
+        "author": [
+            {
+                "given": "Jean",
+                "family": "La Fontaine",
+                "suffix": "III",
+                "non-dropping-particle": "de"
+            }
+        ],
+        "title": "name_<span class=\"nocase\">namepartAffixes</span>",
+        "type": "article-journal",
+        "id": "45"
+    },
+    "46": {
+        "author": [
+            {
+                "given": "Gérard",
+                "family": "Martinière",
+                "suffix": "III",
+                "non-dropping-particle": "de la"
+            }
+        ],
+        "title": "nameorder_<span class=\"nocase\">Long</span>",
+        "type": "article-journal",
+        "id": "46"
+    },
+    "47": {
+        "author": [
+            {
+                "given": "Al-Khatib",
+                "family": "Organization"
+            }
+        ],
+        "title": "position_<span class=\"nocase\">IbidWithSuffix</span>",
+        "type": "article-journal",
+        "id": "47"
+    },
+    "48": {
+        "author": [
+            {
+                "given": "Alan",
+                "family": "De Quincey"
+            }
+        ],
+        "title": "sort_<span class=\"nocase\">ChangeInNameSort</span>",
+        "type": "article-journal",
+        "id": "48"
+    },
+    "49": {
+        "author": [
+            {
+                "given": "Beijing",
+                "family": "Zoo"
+            },
+            {
+                "literal": "Beijing Zoo"
+            }
+        ],
+        "title": "sort_<span class=\"nocase\">ChicagoYearSuffix1</span>",
+        "type": "article-journal",
+        "id": "49"
+    },
+    "50": {
+        "author": [
+            {
+                "given": "ANZ",
+                "family": "Group"
+            }
+        ],
+        "title": "sort_<span class=\"nocase\">FamilyOnly</span>",
+        "type": "article-journal",
+        "id": "50"
+    },
+    "51": {
+        "author": [
+            {
+                "given": "Peter A.C.",
+                "family": "Horvath",
+                "non-dropping-particle": "'t"
+            },
+            {
+                "given": "Peter A.D.",
+                "family": "Horvath",
+                "non-dropping-particle": "in 't"
+            }
+        ],
+        "title": "sort_<span class=\"nocase\">LeadingApostropheOnNameParticle</span>",
+        "type": "article-journal",
+        "id": "51"
+    },
+    "52": {
+        "author": [
+            {
+                "given": "John",
+                "family": "Noakes",
+                "non-dropping-particle": "di"
+            }
+        ],
+        "title": "sort_<span class=\"nocase\">NameParticleInNameSortFalse</span>",
+        "type": "article-journal",
+        "id": "52"
+    },
+    "53": {
+        "author": [
+            {
+                "given": "Jacob",
+                "family": "[F]linders"
+            }
+        ],
+        "title": "sort_<span class=\"nocase\">NameVariable</span>",
+        "type": "article-journal",
+        "id": "53"
+    }
+}

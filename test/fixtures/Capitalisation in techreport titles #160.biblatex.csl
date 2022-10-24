@@ -1,0 +1,26 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2000
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "T.",
+                "family": "Hald"
+            },
+            {
+                "given": "D.M.A.L.F.",
+                "family": "Wong"
+            }
+        ],
+        "title-short": "<span class=\"nocase\"><i>Salmonella</i></span> in <span class=\"nocase\">Pork</span> (<span class=\"nocase\">SALINPORK</span>): <span class=\"nocase\">Pre</span>-harvest and <span class=\"nocase\">Harvest Control Options Based</span> on <span class=\"nocase\">Epidemiologic</span>, <span class=\"nocase\">Diagnostic</span> and <span class=\"nocase\">Economic Research</span>: <span class=\"nocase\">Final Report</span>",
+        "title": "<span class=\"nocase\"><i>Salmonella</i></span> in <span class=\"nocase\">Pork</span> (<span class=\"nocase\">SALINPORK</span>): <span class=\"nocase\">Pre</span>-harvest and <span class=\"nocase\">Harvest Control Options Based</span> on <span class=\"nocase\">Epidemiologic</span>, <span class=\"nocase\">Diagnostic</span> and <span class=\"nocase\">Economic Research</span>: <span class=\"nocase\">Final Report</span>",
+        "URL": "http://www.dfvf.dk/Files/Filer/Zoonosecentret/Publikationer/Salinpork/SALINPORK_final_report.pdf",
+        "type": "report",
+        "id": "1"
+    }
+}

@@ -1,0 +1,44 @@
+{
+    "1": {
+        "author": [
+            {
+                "literal": "愛如生"
+            }
+        ],
+        "language": "zh-CN",
+        "title-short": "leishuku",
+        "title": "中國類書庫",
+        "URL": "http://server.wenzibase.com",
+        "accessed": {
+            "date-parts": [
+                [
+                    2016,
+                    4,
+                    20
+                ]
+            ]
+        },
+        "type": "post-weblog",
+        "id": "1"
+    },
+    "2": {
+        "issued": {
+            "date-parts": [
+                [
+                    2003
+                ]
+            ]
+        },
+        "author": [
+            {
+                "literal": "顏采容"
+            }
+        ],
+        "language": "zh-CN",
+        "number-of-pages": "214",
+        "title": "明清時期出版與文化─以「才子佳人」小說為中心",
+        "URL": "http://ndltd.ncl.edu.tw/cgi-bin/gs32/gsweb.cgi?o=dnclcdr&s=id=%22091NCNU0493006%22.&searchmode=basic",
+        "type": "thesis",
+        "id": "2"
+    }
+}

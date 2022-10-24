@@ -1,0 +1,40 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2014,
+                    12,
+                    9
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Sven",
+                "family": "Bachmann"
+            },
+            {
+                "given": "Wojciech",
+                "family": "Dybalski"
+            },
+            {
+                "given": "Pieter",
+                "family": "Naaijkens"
+            }
+        ],
+        "title": "Lieb-<span class=\"nocase\">Robinson</span> bounds, <span class=\"nocase\">Arveson</span> spectrum and <span class=\"nocase\">Haag</span>-<span class=\"nocase\">Ruelle</span> scattering theory for gapped quantum spin systems",
+        "URL": "http://arxiv.org/abs/1412.2970",
+        "accessed": {
+            "date-parts": [
+                [
+                    2015,
+                    2,
+                    7
+                ]
+            ]
+        },
+        "type": "article-journal",
+        "id": "1"
+    }
+}

@@ -1,0 +1,8 @@
+@inproceedings{Klassen2010,
+date = {2010},
+author = {given={Myungsook}, family={Klassen} and given={Nyunsu}, family={Kim} and given={Wei Ming}, family={Liu}},
+booktitle = {{{CATA}}},
+note = {svm liniowe najlepsze},
+pages = {25--30},
+title = {Empirical {{Study}} of {{Support Vector Machine Kernels}} with {{Applications}} to {{Microarray Data}}}
+}

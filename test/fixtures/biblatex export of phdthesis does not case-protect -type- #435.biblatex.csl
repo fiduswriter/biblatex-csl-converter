@@ -1,0 +1,20 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2012
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Luis Roberto",
+                "family": "Tay Wo Chong Hilares"
+            }
+        ],
+        "title": "Numerical <span class=\"nocase\">Simulation</span> of the <span class=\"nocase\">Dynamics</span> of <span class=\"nocase\">Turbulent Swirling Flames</span>",
+        "type": "thesis",
+        "id": "1"
+    }
+}

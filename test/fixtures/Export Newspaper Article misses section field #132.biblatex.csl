@@ -1,0 +1,34 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2014,
+                    7,
+                    4
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Anders",
+                "family": "Boas"
+            }
+        ],
+        "container-title": "Weekendavisen",
+        "page": "12",
+        "title": "Stikord til en hukommelse",
+        "URL": "http://apps.infomedia.dk.ep.fjernadgang.kb.dk/Ms3E/ShowArticle.aspx?outputFormat=Full&Duid=e4798c41",
+        "accessed": {
+            "date-parts": [
+                [
+                    2014,
+                    9,
+                    15
+                ]
+            ]
+        },
+        "type": "article-newspaper",
+        "id": "1"
+    }
+}

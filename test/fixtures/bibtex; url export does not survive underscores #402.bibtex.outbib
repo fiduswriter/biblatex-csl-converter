@@ -1,0 +1,9 @@
+@inproceedings{EmmerJaens14a,
+date = {2014-09},
+location = {Krakow},
+author = {given={Thomas}, family={Emmert} and given={Stefan}, family={Jaensch} and given={Carlo}, family={Sovardi} and given={Wolfgang}, family={Polifke}},
+booktitle = {7th {{Forum Acusticum}}},
+keywords = {NonPerRev},
+note = {{\url{http://www.fa2014.agh.edu.pl/fa2014_cd/}}},
+title = {{{taX}} - a {{Flexible Tool}} for {{Low}}-{{Order Duct Acoustic Simulation}} in {{Time}} {and} {{Frequency Domain}}}
+}

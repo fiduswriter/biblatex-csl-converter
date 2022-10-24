@@ -1,0 +1,5 @@
+@book{doe_title_????,
+author = {given={John}, family={Doe}},
+pubstate = {forthcoming},
+title = {Title}
+}

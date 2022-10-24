@@ -1,0 +1,7 @@
+@book{id,
+title = {Filename character test. Relative path}
+}
+
+@book{id2,
+title = {Filename character test. Absolute path}
+}

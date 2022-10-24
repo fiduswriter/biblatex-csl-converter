@@ -1,0 +1,56 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2016,
+                    2
+                ]
+            ]
+        },
+        "title": "<span class=\"nocase\">T</span>est <span class=\"nocase\">T</span>itle <span class=\"nocase\">W</span>ith 100 μ<span class=\"nocase\">J</span>, 200 μ<span class=\"nocase\">J</span> <span class=\"nocase\">E</span>nergy, and ±0.1% <span class=\"nocase\">A</span>ccuracy, 0.2 mm<sup>2</sup> <span class=\"nocase\">S</span>ize, and -50 d<span class=\"nocase\">B</span> <span class=\"nocase\">A</span>ttenuation",
+        "author": [
+            {
+                "given": "J.",
+                "family": "Doe"
+            },
+            {
+                "given": "R.",
+                "family": "Smith"
+            }
+        ],
+        "container-title": "[IEEE_J_PROC]",
+        "page": "300-301",
+        "abstract": "Abstract here",
+        "DOI": "10.1109/JPROC.2016.2526118",
+        "type": "paper-conference",
+        "id": "1"
+    },
+    "2": {
+        "issued": {
+            "date-parts": [
+                [
+                    2016,
+                    2
+                ]
+            ]
+        },
+        "title": "<span class=\"nocase\">T</span>est <span class=\"nocase\">T</span>itle with space quad, space semi-colon, space colon, space comma, space nbsp",
+        "author": [
+            {
+                "given": "J.",
+                "family": "Doe"
+            },
+            {
+                "given": "R.",
+                "family": "Smith"
+            }
+        ],
+        "container-title": "[IEEE_J_PROC]",
+        "page": "300-301",
+        "abstract": "Abstract here",
+        "DOI": "10.1109/JPROC.2016.2526118",
+        "type": "paper-conference",
+        "id": "2"
+    }
+}

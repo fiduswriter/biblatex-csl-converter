@@ -1,0 +1,41 @@
+@misc{Doe2015,
+date = {2015},
+location = {US/GB},
+title = {A Film}
+}
+
+@report{Author2015,
+date = {2015},
+author = {given={Ann}, family={Author}},
+institution = {Institution},
+location = {Place},
+note = {\{ :X-genre: xxx\} },
+number = {77},
+title = {A Report},
+type = {Working Paper}
+}
+
+@misc{Kubrick1964,
+date = {1964},
+shorttitle = {Dr. {{Strangelove}}},
+title = {Dr. {{Strangelove}} or: How {{I}} Learned to Stop Worrying {and} Love the Bomb}
+}
+
+@misc{friends:leia:tv,
+date = {1996-09-16},
+langid = {usenglish},
+location = {US},
+title = {The One with the {{Princess Leia}} Fantasy}
+}
+
+@misc{friends:leia:dvd,
+date = {2003},
+langid = {usenglish},
+location = {US},
+title = {The One with the {{Princess Leia}} Fantasy}
+}
+
+@inreference{emptybook,
+editor = {{Xxx}},
+note = {\{ :X-genre: xxx\} }
+}

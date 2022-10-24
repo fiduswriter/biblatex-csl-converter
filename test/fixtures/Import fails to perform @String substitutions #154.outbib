@@ -1,0 +1,6 @@
+@book{Bert:2001:SQL,
+author = {given={R. A.}, family={Bert}},
+title = {SQL is great},
+publisher = {Freds Publishing},
+location = {London, UK}
+}

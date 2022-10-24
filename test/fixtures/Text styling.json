@@ -1,0 +1,245 @@
+{
+    "entries": {
+        "1": {
+            "bib_type": "article-journal",
+            "entry_key": "wilm10",
+            "fields": {
+                "date": "2010",
+                "langid": "usenglish",
+                "author": [
+                    {
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Johannes"
+                            }
+                        ],
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Wilm"
+                            }
+                        ]
+                    }
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Cuba",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": ": Economic "
+                    },
+                    {
+                        "type": "text",
+                        "text": "\ntextbfchanges"
+                    },
+                    {
+                        "type": "text",
+                        "text": " and the future of socialism"
+                    }
+                ],
+                "journaltitle": [
+                    {
+                        "type": "text",
+                        "text": "\ntextit"
+                    },
+                    {
+                        "type": "text",
+                        "text": "Links",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " International Journal of Socialist Renewal"
+                    }
+                ],
+                "subtitle": [
+                    {
+                        "type": "text",
+                        "text": "Interview with Cuban professor "
+                    },
+                    {
+                        "type": "text",
+                        "text": "José Bell Lara",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ],
+                "language": [
+                    "english"
+                ],
+                "url": "http://links.org.au/node/1916",
+                "urldate": "2010-10-31"
+            },
+            "unexpected_fields": {
+                "location": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Sydney"
+                        }
+                    ]
+                ]
+            }
+        },
+        "2": {
+            "bib_type": "misc",
+            "entry_key": "wilm09",
+            "fields": {
+                "date": "2009",
+                "langid": "spanish",
+                "author": [
+                    {
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Johannes"
+                            }
+                        ],
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Wilm"
+                            }
+                        ]
+                    }
+                ],
+                "editor": [
+                    {
+                        "literal": [
+                            {
+                                "type": "text",
+                                "text": "PuenteSur"
+                            }
+                        ]
+                    }
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "La Joven Revolución Hondureña"
+                    }
+                ],
+                "language": [
+                    "spanish"
+                ],
+                "type": [
+                    {
+                        "type": "text",
+                        "text": "movie"
+                    }
+                ],
+                "url": "http://www.johanneswilm.org/honduras/",
+                "urldate": "2010-11-02"
+            }
+        },
+        "3": {
+            "bib_type": "book",
+            "entry_key": "wilm_nicaragua_2011",
+            "fields": {
+                "date": "2011",
+                "location": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Oslo, Norway & Tucson, AZ"
+                        }
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Nicaragua",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": ", Back from the Dead? An Anthropological View of the "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Sandinista",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " Movement in the early 21"
+                    },
+                    {
+                        "type": "text",
+                        "text": "st",
+                        "marks": [
+                            {
+                                "type": "sup"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " Century."
+                    }
+                ],
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "New Left Notes"
+                        }
+                    ]
+                ],
+                "author": [
+                    {
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Johannes"
+                            }
+                        ],
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Wilm"
+                            }
+                        ],
+                        "suffix": [
+                            {
+                                "type": "text",
+                                "text": "Dr."
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "warnings": [
+        {
+            "type": "unexpected_field",
+            "field_name": "location",
+            "entry": "wilm10",
+            "line": 12
+        }
+    ]
+}

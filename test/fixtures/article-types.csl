@@ -1,0 +1,124 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    1980
+                ]
+            ]
+        },
+        "title": "Alle sollen sich erheben",
+        "URL": "http://www.spiegel.de/spiegel/print/d-14332124.html",
+        "page": "183-191",
+        "collection-number": "19",
+        "author": [
+            {
+                "literal": "Der Spiegel"
+            }
+        ],
+        "accessed": {
+            "date-parts": [
+                [
+                    2010,
+                    2,
+                    27
+                ]
+            ]
+        },
+        "type": "article-magazine",
+        "id": "1"
+    },
+    "2": {
+        "issued": {
+            "date-parts": [
+                [
+                    2009,
+                    4,
+                    16
+                ]
+            ]
+        },
+        "title": "Nicaragua sufre mayor impacto por la crisis financiera",
+        "URL": "http://www.elnuevodiario.com.ni/nacionales/45361",
+        "container-title": "El nuevo diario",
+        "author": [
+            {
+                "literal": "AFP"
+            }
+        ],
+        "accessed": {
+            "date-parts": [
+                [
+                    2011,
+                    6,
+                    4
+                ]
+            ]
+        },
+        "type": "article-newspaper",
+        "id": "2"
+    },
+    "3": {
+        "issued": {
+            "date-parts": [
+                [
+                    2005,
+                    3,
+                    10
+                ]
+            ]
+        },
+        "title": "El pacto sigue",
+        "container-title": "La prensa",
+        "author": [
+            {
+                "literal": "La Prensa"
+            }
+        ],
+        "type": "article-newspaper",
+        "id": "3"
+    },
+    "4": {
+        "issued": {
+            "date-parts": [
+                [
+                    2008,
+                    1,
+                    11
+                ]
+            ]
+        },
+        "title": "Corte avala consejos del poder ciudadano",
+        "container-title": "La prensa",
+        "author": [
+            {
+                "literal": "La Prensa"
+            }
+        ],
+        "type": "article-newspaper",
+        "id": "4"
+    },
+    "5": {
+        "issued": {
+            "date-parts": [
+                [
+                    1979,
+                    7
+                ]
+            ]
+        },
+        "title": "Cuban dependency: a comparison of pre-revolutionary and post-revolutionary international economic relations",
+        "volume": "9",
+        "URL": "http://www1.american.edu/faculty/leogrande/Cuban_Studies_1979_Dependency.pdf",
+        "issue": "2",
+        "container-title": "Cuban studies/estudios cubanos",
+        "author": [
+            {
+                "given": "William M.",
+                "family": "LeoGrande"
+            }
+        ],
+        "type": "article-journal",
+        "id": "5"
+    }
+}

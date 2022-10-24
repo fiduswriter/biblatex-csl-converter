@@ -1,0 +1,59 @@
+@article{1e,
+author = {{01e}},
+title = {Blah {\mkbibitalic{emph}} {and} {\enquote{enquote}}.}
+}
+
+@article{1b,
+author = {{01b}},
+title = {Blah {\mkbibitalic{mkbibemph}} {and} {\enquote{mkbibquote}}.}
+}
+
+@book{2e,
+author = {{02e}},
+title = {Blah {\mkbibitalic{emph}} {and} {\enquote{enquote}}.}
+}
+
+@book{2b,
+author = {{02b}},
+title = {Blah {\mkbibitalic{mkbibemph}} {and} {\enquote{mkbibquote}}.}
+}
+
+@thesis{Bennett2003,
+date = {2003},
+title = {Xenonika: medical texts associated with xenones in the late Byzantine period},
+author = {given={David Christopher}, family={Bennett}},
+institution = {University of London},
+type = {Ph.D.}
+}
+
+@incollection{Cooper2013,
+date = {2013},
+title = {Byzantium between East {and} West: Competing Hellenisms in the {{\mkbibitalic{Alexiad}}} of Anna Komnene {and} her Contemporaries},
+author = {given={Glen}, family={Cooper}},
+pages = {263--87}
+}
+
+@article{Correns1891,
+date = {1891},
+title = {Die dem Boethius fälschlich zugeschriebene Abhandlung des Dominicus Gundisalvi {{'De}} unitate'},
+journaltitle = {Beiträge zur Geschichte der Philosophie des Mittelalters},
+pages = {1--11},
+volume = {1},
+editor = {given={Paul}, family={Correns}}
+}
+
+@inreference{Algar1985,
+date = {1985},
+title = {Encyclopedia Iranica},
+author = {given={Hamid}, family={Algar}},
+pages = {172--4},
+volume = {4}
+}
+
+@collection{Arsdall2012,
+date = {2012},
+title = {Herbs {and} Healers from the Ancient Mediterranean through the Medieval West: Essays in Honor of John M. Riddle},
+editor = {given={Anne}, family={Arsdall}, prefix={van}, useprefix=true and given={Timothy}, family={Graham}},
+location = {Burlington, VT},
+publisher = {Ashgate}
+}

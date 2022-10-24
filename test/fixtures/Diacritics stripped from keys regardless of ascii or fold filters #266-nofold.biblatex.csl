@@ -1,0 +1,31 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2014,
+                    5,
+                    15
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Martin",
+                "family": "Vlček"
+            },
+            {
+                "given": "Marek",
+                "family": "Vácha"
+            }
+        ],
+        "DOI": "10.1007/s00276-014-1305-7",
+        "ISSN": "1279-8517",
+        "container-title": "Surgical and radiologic anatomy",
+        "language": "en-US",
+        "title": "The history of <span class=\"nocase\">Latin</span> terminology of human skeletal muscles (from <span class=\"nocase\">Vesalius</span> to the present)",
+        "URL": "http://link.springer.com/10.1007/s00276-014-1305-7",
+        "type": "article-journal",
+        "id": "1"
+    }
+}

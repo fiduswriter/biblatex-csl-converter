@@ -1,0 +1,108 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    1957
+                ]
+            ]
+        },
+        "abstract": "Example from CMoS, 16e, 14.249",
+        "author": [
+            {
+                "given": "Hazel V.",
+                "family": "Clark"
+            }
+        ],
+        "publisher-place": "Mesopotamia, OH",
+        "title": "Mesopotamia: between two rivers",
+        "type": "pamphlet",
+        "id": "1"
+    },
+    "2": {
+        "abstract": "Example from CMoS, 16e, 14.272",
+        "title": "Object name <span class=\"nocase\">IRAS F00400</span>+4059",
+        "URL": "http://nedwww.ipac.caltech.edu/",
+        "accessed": {
+            "date-parts": [
+                [
+                    2009,
+                    10,
+                    6
+                ]
+            ]
+        },
+        "type": "article",
+        "id": "2"
+    },
+    "3": {
+        "issued": {
+            "date-parts": [
+                [
+                    1960
+                ]
+            ]
+        },
+        "abstract": "Example from CMoS, 16e, 14.269 “Prepared from the autographs and earliest printed sources by Nathan Broder”",
+        "author": [
+            {
+                "given": "Wolfgang Amadeus",
+                "family": "Mozart"
+            }
+        ],
+        "editor": [
+            {
+                "given": "Nathan",
+                "family": "Broder"
+            }
+        ],
+        "publisher-place": "Bryn Mawr, PA",
+        "title": "Sonatas and fantasies for the piano",
+        "type": "article",
+        "id": "3"
+    },
+    "4": {
+        "issued": {
+            "date-parts": [
+                [
+                    1999,
+                    4
+                ]
+            ]
+        },
+        "abstract": "Example from CMoS, 16e, 14.215 “ed. and trans. John Charles Chasteen”",
+        "author": [
+            {
+                "given": "Ben",
+                "family": "Ratliff"
+            }
+        ],
+        "language": "en-US",
+        "title": "The mystery of samba: <span class=\"nocase\">Popular</span> music and national identity in <span class=\"nocase\">Brazil</span>",
+        "type": "article",
+        "id": "4"
+    },
+    "5": {
+        "issued": {
+            "date-parts": [
+                [
+                    2006,
+                    4,
+                    23
+                ]
+            ]
+        },
+        "abstract": "Example from CMoS, 16e, 14.125",
+        "author": [
+            {
+                "given": "David",
+                "family": "Kamp"
+            }
+        ],
+        "language": "en-US",
+        "title": "Deconstructing dinner",
+        "URL": "http://www.nytimes.com/2006/04/23/books/review/23kamp.html.",
+        "type": "article",
+        "id": "5"
+    }
+}

@@ -1,0 +1,33 @@
+@article{wilm10,
+date = {2010},
+langid = {usenglish},
+author = {given={Johannes}, family={Wilm}},
+title = {{{Cuba}}: Economic 
+textbfchanges {and} the future of socialism},
+journaltitle = {
+textit{{Links}} International Journal of Socialist Renewal},
+subtitle = {Interview with Cuban professor {{José Bell Lara}}},
+language = {english},
+url = {http://links.org.au/node/1916},
+urldate = {2010-10-31}
+}
+
+@misc{wilm09,
+date = {2009},
+langid = {spanish},
+author = {given={Johannes}, family={Wilm}},
+editor = {{PuenteSur}},
+title = {La Joven Revolución Hondureña},
+language = {spanish},
+type = {movie},
+url = {http://www.johanneswilm.org/honduras/},
+urldate = {2010-11-02}
+}
+
+@book{wilm_nicaragua_2011,
+date = {2011},
+location = {Oslo, Norway {\&} Tucson, AZ},
+title = {{{Nicaragua}}, Back from the Dead? An Anthropological View of the {{Sandinista}} Movement in the early 21$^{st}$ Century.},
+publisher = {New Left Notes},
+author = {given={Johannes}, family={Wilm}, suffix={Dr.}}
+}

@@ -1,0 +1,241 @@
+{
+    "entries": {
+        "1": {
+            "bib_type": "book",
+            "entry_key": "latour_ny_2008",
+            "fields": {
+                "date": "2008",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Latour"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Bruno"
+                            }
+                        ]
+                    }
+                ],
+                "langid": "danish",
+                "location": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "København"
+                        }
+                    ]
+                ],
+                "origdate": "2005",
+                "origlocation": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "origlocation"
+                        }
+                    ]
+                ],
+                "origpublisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "origpublisher"
+                        }
+                    ]
+                ],
+                "origtitle": [
+                    {
+                        "type": "text",
+                        "text": "origtitle"
+                    }
+                ],
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Akademisk Forlag"
+                        }
+                    ]
+                ],
+                "shorttitle": [
+                    {
+                        "type": "text",
+                        "text": "En ny sociologi"
+                    }
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "En ny sociologi for et nyt samfund. Introduktion til Aktør-Netværk-Teori"
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "2": {
+            "bib_type": "book",
+            "entry_key": "kelsen_democratie_2004",
+            "fields": {
+                "abstract": [
+                    {
+                        "type": "text",
+                        "text": "Préface de Ph. Raynaud. Trad. de : \"Vom Wesen und Wert der Demokratie\" - Tübingen : J.C.B. Mohr, 1929. Fac-sim. de la 2e éd., Paris : Sirey : 1932."
+                    }
+                ],
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Kelsen"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Hans"
+                            }
+                        ]
+                    }
+                ],
+                "edition": [
+                    {
+                        "type": "text",
+                        "text": "2"
+                    }
+                ],
+                "isbn": [
+                    {
+                        "type": "text",
+                        "text": "2-247-04268-6"
+                    }
+                ],
+                "langid": "french",
+                "location": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Paris"
+                        }
+                    ]
+                ],
+                "origdate": "1929",
+                "origlocation": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Tübingen"
+                        }
+                    ]
+                ],
+                "origpublisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "J.C.B. Mohr"
+                        }
+                    ]
+                ],
+                "origtitle": [
+                    {
+                        "type": "text",
+                        "text": "Vom Wesen und Wert der Demokratie"
+                    }
+                ],
+                "pagetotal": [
+                    {
+                        "type": "text",
+                        "text": "x+121"
+                    }
+                ],
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Dalloz"
+                        }
+                    ]
+                ],
+                "series": [
+                    {
+                        "type": "text",
+                        "text": "Bibliothèque Dalloz"
+                    }
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "La démocratie. Sa nature, sa valeur"
+                    }
+                ],
+                "translator": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Eisenmann"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Charles"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ],
+                "year": [
+                    {
+                        "type": "text",
+                        "text": "2004 [1929]"
+                    }
+                ]
+            }
+        }
+    },
+    "warnings": [
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "latour_ny_2008",
+            "line": 15
+        },
+        {
+            "type": "unknown_date",
+            "field_name": "year",
+            "value": "2004 [1929]",
+            "entry": "kelsen_democratie_2004"
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "kelsen_democratie_2004",
+            "line": 37
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "year",
+            "entry": "kelsen_democratie_2004",
+            "line": 37
+        }
+    ]
+}

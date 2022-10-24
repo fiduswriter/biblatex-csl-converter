@@ -1,0 +1,22 @@
+@misc{ntp.org_clock_2015,
+date = {2015},
+author = {{NTP.org}},
+howpublished = {{\url{http://www.ntp.org/ntpfaq/NTP-s-sw-clocks-quality.htm}}},
+note = {(accessed 2015-02-13)},
+title = {Clock {{Quality}}},
+urldate = {2015-02-13}
+}
+
+@misc{ntp.org_clock_2015-1,
+date = {2015},
+author = {{NTP.org}},
+howpublished = {{\url{http://www.ntp.org/ntpfaq/NTP-s-sw-clocks-quality.htm}}},
+title = {Clock {{Quality}}}
+}
+
+@misc{ntp.org_clock_2015-2,
+date = {2015},
+author = {{NTP.org}},
+howpublished = {{\url{http://www.ntp.org/ntpfaq/NTP-s-sw-clocks-quality.htm}}},
+title = {Clock {{Quality}}}
+}

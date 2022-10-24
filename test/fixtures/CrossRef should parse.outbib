@@ -1,0 +1,11 @@
+@article{Peters_2004,
+date = {2004},
+title = {Bibtex from CrossRef},
+issn = {0263-9475},
+url = {http://dx.doi.org/10.2307/25564177},
+doi = {10.2307/25564177},
+number = {109},
+journaltitle = {Circa},
+author = {given={Robert}, family={Peters}},
+pages = {24}
+}

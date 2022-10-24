@@ -1,0 +1,16 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2014
+                ]
+            ]
+        },
+        "note": "http://ptolemy.org/books/Systems",
+        "publisher": "Ptolemy.org",
+        "title": "System design, modeling, and simulation using <span class=\"nocase\">Ptolemy II</span>",
+        "type": "book",
+        "id": "1"
+    }
+}

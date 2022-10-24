@@ -1,0 +1,188 @@
+{
+    "entries": {
+        "1": {
+            "bib_type": "inproceedings",
+            "entry_key": "EmmerJaens14a",
+            "fields": {
+                "date": "2014-09",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Emmert"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Thomas"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Jaensch"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Stefan"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Sovardi"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Carlo"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Polifke"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Wolfgang"
+                            }
+                        ]
+                    }
+                ],
+                "booktitle": [
+                    {
+                        "type": "text",
+                        "text": "7th "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Forum Acusticum",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "NonPerRev"
+                ],
+                "location": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Krakow"
+                        }
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "taX",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " - a "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Flexible Tool",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " for "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Low",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": "-"
+                    },
+                    {
+                        "type": "text",
+                        "text": "Order Duct Acoustic Simulation",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " in "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Time",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " and "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Frequency Domain",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ],
+                "url": "http://www.fa2014.agh.edu.pl/fa2014_cd/"
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        }
+    },
+    "warnings": [
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "EmmerJaens14a",
+            "line": 11
+        }
+    ]
+}

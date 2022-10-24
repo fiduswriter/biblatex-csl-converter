@@ -1,0 +1,66 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2015
+                ]
+            ]
+        },
+        "author": [
+            {
+                "literal": "NTP.org"
+            }
+        ],
+        "medium": "http://www.ntp.org/ntpfaq/NTP-s-sw-clocks-quality.htm",
+        "note": "(accessed 2015-02-13)",
+        "title": "Clock <span class=\"nocase\">Quality</span>",
+        "accessed": {
+            "date-parts": [
+                [
+                    2015,
+                    2,
+                    13
+                ]
+            ]
+        },
+        "type": "article",
+        "id": "1"
+    },
+    "2": {
+        "issued": {
+            "date-parts": [
+                [
+                    2015
+                ]
+            ]
+        },
+        "author": [
+            {
+                "literal": "NTP.org"
+            }
+        ],
+        "medium": "http://www.ntp.org/ntpfaq/NTP-s-sw-clocks-quality.htm",
+        "title": "Clock <span class=\"nocase\">Quality</span>",
+        "type": "article",
+        "id": "2"
+    },
+    "3": {
+        "issued": {
+            "date-parts": [
+                [
+                    2015
+                ]
+            ]
+        },
+        "author": [
+            {
+                "literal": "NTP.org"
+            }
+        ],
+        "medium": "http://www.ntp.org/ntpfaq/NTP-s-sw-clocks-quality.htm",
+        "title": "Clock <span class=\"nocase\">Quality</span>",
+        "type": "article",
+        "id": "3"
+    }
+}

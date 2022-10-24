@@ -1,0 +1,34 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2008,
+                    7,
+                    7
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Christopher D.",
+                "family": "Manning"
+            },
+            {
+                "given": "Prabhakar",
+                "family": "Raghavan"
+            },
+            {
+                "given": "Hinrich",
+                "family": "Schütze"
+            }
+        ],
+        "ISBN": "978-0-521-86571-5",
+        "publisher-place": "New York",
+        "number-of-pages": "496",
+        "publisher": "Cambridge University Press",
+        "title": "Introduction to <span class=\"nocase\">Information Retrieval</span>",
+        "type": "book",
+        "id": "1"
+    }
+}

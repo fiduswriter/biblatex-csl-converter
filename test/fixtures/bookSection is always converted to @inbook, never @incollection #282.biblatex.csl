@@ -1,0 +1,28 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    1982
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Charles",
+                "family": "Eisenmann"
+            }
+        ],
+        "container-title": "Cours de droit administratif",
+        "ISBN": "2-275-01408-X",
+        "language": "fr-FR",
+        "publisher-place": "Paris",
+        "page": "155-300",
+        "publisher": "LGDJ",
+        "title": "Problèmes d’organisation de l’administration [1966-1967]",
+        "volume": "t. 1",
+        "number-of-volumes": "2 vol. (786, xxiv+908 p.)",
+        "type": "chapter",
+        "id": "1"
+    }
+}

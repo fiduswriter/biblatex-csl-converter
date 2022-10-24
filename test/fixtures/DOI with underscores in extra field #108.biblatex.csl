@@ -1,0 +1,28 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    1999
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Pieter",
+                "family": "Koopman"
+            },
+            {
+                "given": "Rinus",
+                "family": "Plasmeijer"
+            }
+        ],
+        "container-title": "Implementation of <span class=\"nocase\">Functional Languages</span>",
+        "DOI": "10.1007/3-540-48515-5_8",
+        "page": "120-136",
+        "publisher": "Springer",
+        "title": "Efficient combinator parsers",
+        "type": "chapter",
+        "id": "1"
+    }
+}

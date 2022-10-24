@@ -1,0 +1,32 @@
+@mvbook{descartes_oeuvres_1897,
+date = {1897/1913},
+author = {given={René}, family={Descartes}},
+editor = {given={Charles}, family={Adam} and given={Paul}, family={Tannery}},
+langid = {french},
+location = {Paris},
+publisher = {Cerf},
+title = {Œuvres de Descartes},
+volumes = {13}
+}
+
+@mvbook{descartes_oeuvres_1897-1,
+date = {1897/1913},
+author = {given={René}, family={Descartes}},
+editor = {given={Charles}, family={Adam} and given={Paul}, family={Tannery}},
+langid = {french},
+location = {Paris},
+publisher = {Cerf},
+title = {Œuvres de Descartes},
+volumes = {13}
+}
+
+@mvbook{descartes_oeuvres_1897-2,
+date = {1897/1913},
+author = {given={René}, family={Descartes}},
+editor = {given={Charles}, family={Adam} and given={Paul}, family={Tannery}},
+langid = {french},
+location = {Paris},
+publisher = {Cerf},
+title = {Œuvres de Descartes},
+volumes = {13}
+}

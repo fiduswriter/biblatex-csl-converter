@@ -1,0 +1,27 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    1964
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Milton",
+                "family": "Abramowitz"
+            },
+            {
+                "given": "Irene A.",
+                "family": "Stegun"
+            }
+        ],
+        "title": "Handbook of mathematical functions with formulas, graphs, and mathematical tables",
+        "publisher": "Dover",
+        "publisher-place": "New York",
+        "edition": "ninth Dover printing, tenth GPO printing",
+        "type": "book",
+        "id": "1"
+    }
+}

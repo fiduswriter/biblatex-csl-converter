@@ -1,0 +1,13 @@
+@inproceedings{author:06,
+date = {2006-10},
+editor = {given={First}, family={Editor} and given={Second}, family={Editor}},
+title = {Some Publication Title},
+author = {given={First}, family={Author} and given={Second}, family={Author}},
+pages = {330--331}
+}
+
+@collection{conference:06,
+date = {2006-10},
+editor = {given={First}, family={Editor} and given={Second}, family={Editor}},
+title = {Proceedings of the {{Xth}} Conference on {{XYZ}}}
+}

@@ -1,0 +1,11 @@
+@article{Nome2014,
+date = {2014},
+author = {given={Name}, family={Nöme}},
+title = {Why {{Is Apple Launching}} a {{New Version}} of the {{iPod}}?}
+}
+
+@article{vanGogh2014,
+date = {2014},
+author = {given={Vincent}, family={Gögh}, prefix={van}, useprefix=true},
+title = {Why {{Is Apple Launching}} a {{New Version}} of the {{iPod}}?}
+}

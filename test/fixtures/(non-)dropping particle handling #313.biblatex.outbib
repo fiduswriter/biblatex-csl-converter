@@ -1,0 +1,335 @@
+@article{abbot3,
+author = {given={François Hédelin}, family={Aubignac}, prefix={abbé d'}, useprefix=true},
+title = {{{(abbé d' Aubignac) (François Hédelin)}}}
+}
+
+@article{abbot1,
+author = {given={François Hédelin}, family={Aubignac}, suffix={abbé d'}},
+note = {relies on paricleParser fallback detection},
+title = {{{(Aubignac) (François Hédelin, abbé d')}}}
+}
+
+@book{fixedkey,
+date = {1963},
+author = {given={Alexander}, family={Humboldt}, prefix={von}, useprefix=true and given={Cuba}, family={Gooding}, suffix={Jr.} and given={Jean}, family={La Fontaine}, prefix={de}, useprefix=true and given={Georg Henrik Auto}, family={Wright}, prefix={von}, useprefix=true and given={Georg Henrik Explicit}, family={Wright}, prefix={von}, useprefix=true},
+isbn = {0-7100-3616-7},
+langid = {usenglish},
+location = {Londres},
+pagetotal = {xviii+214},
+publisher = {Routledge {\&} Kegan Paul},
+series = {International Library of Philosophy {and} Scientific Method},
+shorttitle = {Norm {and} Action},
+title = {Norm {and} Action. A Logical Enquiry}
+}
+
+@collection{almeida_reading_2013,
+date = {2013},
+editor = {given={Luís}, family={Almeida}, prefix={d'}, useprefix=true and given={James}, family={Edwards} and given={Andrea}, family={Dolcetti}},
+isbn = {978-1-84946-324-9},
+langid = {usenglish},
+location = {Oxford},
+pagetotal = {vi+309},
+publisher = {Hart Publishing},
+title = {Reading {{HLA Hart}}'s: {{\mkbibitalic{The Concept}}}{\mkbibitalic{ of }}{{\mkbibitalic{Law}}}}
+}
+
+@book{bennett_citations_2013,
+date = {2013},
+author = {given={Frank G.}, family={Bennett}, suffix={Jr.}},
+isbn = {978-1-4793-4771-1},
+location = {Lexington Kentucky},
+pagetotal = {137},
+publisher = {CreateSpace Independent Publishing Platform},
+title = {Citations, {{Out}} of the {{Box}}}
+}
+
+@book{king_have_1968,
+date = {1968},
+author = {given={Martin Luther}, family={King}, suffix={Jr.}},
+location = {New York},
+pagetotal = {154},
+publisher = {Grosset {\&} Dunlap},
+title = {"{{I}} Have a Dream" : The Quotations of {{Martin Luther King JR}}}
+}
+
+@article{bugreports_ApostropheOnParticle,
+author = {given={John}, family={Jones}, prefix={d'}, useprefix=true},
+keywords = {imported},
+title = {bugreports{\_}{{ApostropheOnParticle}}}
+}
+
+@article{bugreports_AsmJournals,
+author = {given={Doe}, family={Co.}},
+keywords = {imported},
+title = {bugreports{\_}{{AsmJournals}}}
+}
+
+@article{bugreports_DemoPageFullCiteCruftOnSubsequent,
+author = {{U.S. Bureau of the Census}},
+keywords = {imported},
+title = {bugreports{\_}{{DemoPageFullCiteCruftOnSubsequent}}}
+}
+
+@article{bugreports_DuplicateSpaces,
+author = {given={Bruce}, family={D'Arcus}},
+keywords = {imported},
+title = {bugreports{\_}{{DuplicateSpaces}}}
+}
+
+@article{bugreports_DuplicateSpaces3,
+author = {given={N}, family={Family Name}},
+keywords = {imported},
+title = {bugreports{\_}{{DuplicateSpaces3}}}
+}
+
+@article{bugreports_GreekStyleProblems,
+author = {given={Κώστας}, family={Καρυωτάκης}},
+keywords = {imported},
+title = {bugreports{\_}{{GreekStyleProblems}}}
+}
+
+@article{bugreports_ProcessorHang1,
+author = {given={R.}, family={Reynoso-Santos} and given={L.}, family={Soto-Pinto} and given={C.}, family={Tejeda-Cruz} and given={G.}, family={Williams-Linera}},
+keywords = {imported},
+title = {bugreports{\_}{{ProcessorHang1}}}
+}
+
+@article{bugreports_YearSuffixInHarvard1,
+author = {{Africa News}},
+keywords = {imported},
+title = {bugreports{\_}{{YearSuffixInHarvard1}}}
+}
+
+@article{bugreports_parseName,
+author = {given={Eduard}, family={Happel}, prefix={van}, useprefix=true and given={Gustav}, family={Hoppel}, prefix={von}, useprefix=true},
+keywords = {imported},
+title = {bugreports{\_}{{parseName}}}
+}
+
+@article{decorations_AndTermUnaffectedByNameDecorations,
+author = {given={John}, family={Doe}, suffix={III} and given={Jane}, family={Roe}, prefix={van}, useprefix=true},
+keywords = {imported},
+title = {decorations{\_}{{AndTermUnaffectedByNameDecorations}}}
+}
+
+@article{disambiguate_CitationLabelInData,
+author = {given={Doug}, family={Dipheria}, prefix={von}, useprefix=true},
+keywords = {imported},
+title = {disambiguate{\_}{{CitationLabelInData}}}
+}
+
+@article{disambiguate_FailWithYearSuffix,
+author = {{Caritas Europa} and {JRS-Europe}},
+keywords = {imported},
+title = {disambiguate{\_}{{FailWithYearSuffix}}}
+}
+
+@article{disambiguate_YearCollapseWithInstitution,
+author = {given={Smith}, family={Co}},
+keywords = {imported},
+title = {disambiguate{\_}{{YearCollapseWithInstitution}}}
+}
+
+@article{display_SecondFieldAlignMigratePunctuation,
+author = {given={Frank G.}, family={Bennett}, suffix={Jr.}},
+keywords = {imported},
+title = {display{\_}{{SecondFieldAlignMigratePunctuation}}}
+}
+
+@article{group_ComplexNesting,
+author = {given={Doe}, family={Inc.}},
+keywords = {imported},
+title = {group{\_}{{ComplexNesting}}}
+}
+
+@article{integration_DuplicateItem,
+author = {given={S. P}, family={Berge}, prefix={la}, useprefix=true},
+keywords = {imported},
+title = {integration{\_}{{DuplicateItem}}}
+}
+
+@article{magic_CapitalizeFirstOccurringNameParticle,
+author = {given={Samuel}, family={Simone}, prefix={de}, useprefix=true},
+keywords = {imported},
+title = {magic{\_}{{CapitalizeFirstOccurringNameParticle}}}
+}
+
+@article{magic_NameParticle,
+author = {given={John}, family={Doe}, prefix={von}, useprefix=true},
+keywords = {imported},
+title = {magic{\_}{{NameParticle}}}
+}
+
+@article{magic_SuppressDuplicateVariableRendering,
+author = {{Blob}},
+keywords = {imported},
+title = {magic{\_}{{SuppressDuplicateVariableRendering}}}
+}
+
+@article{name_ArticularNameAsSortOrder,
+author = {given={James}, family={Doe}, suffix={III}},
+keywords = {imported},
+title = {name{\_}{{ArticularNameAsSortOrder}}}
+}
+
+@article{name_ArticularShortFormCommaSuffix,
+author = {given={James}, family={Doe}, suffix={Jr}},
+keywords = {imported},
+title = {name{\_}{{ArticularShortFormCommaSuffix}}}
+}
+
+@article{name_ArticularWithComma,
+author = {given={Jeffrey}, family={Doe}, suffix={Jr.}},
+keywords = {imported},
+title = {name{\_}{{ArticularWithComma}}}
+}
+
+@article{name_Delimiter,
+author = {given={Noakes}, family={Inc.}},
+keywords = {imported},
+title = {name{\_}{{Delimiter}}}
+}
+
+@article{name_FormattingOfParticles,
+author = {given={Gerard}, family={Meer}, prefix={van der}, useprefix=true},
+keywords = {imported},
+title = {name{\_}{{FormattingOfParticles}}}
+}
+
+@article{name_HyphenatedNonDroppingParticle1,
+author = {given={Alan}, family={One}, prefix={al-}, useprefix=true},
+keywords = {imported},
+title = {name{\_}{{HyphenatedNonDroppingParticle1}}}
+}
+
+@article{name_Institution,
+author = {{Multi-National United}},
+keywords = {imported},
+title = {name{\_}{{Institution}}}
+}
+
+@article{name_InstitutionDecoration,
+author = {{São Paulo (Estado)}},
+keywords = {imported},
+title = {name{\_}{{InstitutionDecoration}}}
+}
+
+@article{name_MixedFormatsInitialSortOrderAllWithDecorationsEtAl,
+author = {given={Rip}, family={Winkle}, prefix={van}, useprefix=true and given={Carl}, family={Thucydides}, suffix={III}},
+keywords = {imported},
+title = {name{\_}{{MixedFormatsInitialSortOrderAllWithDecorationsEtAl}}}
+}
+
+@article{name_MultipleLiteral,
+author = {{Alfred Benzon Foundation} and {James Benson Foundation} and {John Candy Foundation}},
+keywords = {imported},
+title = {name{\_}{{MultipleLiteral}}}
+}
+
+@article{name_ParseNames,
+author = {given={Eric}, family={Vlist}, prefix={van der}, useprefix=true and given={Vincent}, family={Gogh}, prefix={van}, useprefix=true},
+keywords = {imported},
+title = {name{\_}{{ParseNames}}}
+}
+
+@article{name_ParsedDroppingParticleWithAffixes,
+author = {given={Jean}, family={La Fontaine}, prefix={de}, useprefix=true},
+keywords = {imported},
+title = {name{\_}{{ParsedDroppingParticleWithAffixes}}}
+}
+
+@article{name_ParsedNonDroppingParticleWithAffixes,
+author = {given={Jean}, family={Fontaine}, prefix={de la}, useprefix=true},
+keywords = {imported},
+title = {name{\_}{{ParsedNonDroppingParticleWithAffixes}}}
+}
+
+@article{name_ParsedNonDroppingParticleWithApostrophe,
+author = {given={François Hédelin}, family={Aubignac}, suffix={abbé d'}, prefix={d'}, useprefix=true},
+keywords = {imported},
+title = {name{\_}{{ParsedNonDroppingParticleWithApostrophe}}}
+}
+
+@article{name_ParticleCaps1,
+author = {given={Onename}, family={One}, prefix={van}, useprefix=true and given={Twoname}, family={Two}, prefix={van}, useprefix=true and given={Threename}, family={Three}, prefix={van}, useprefix=true and given={Fourname}, family={Van Four}},
+keywords = {imported},
+title = {name{\_}{{ParticleCaps1}}}
+}
+
+@article{name_ParticleCaps3,
+author = {given={Dick}, family={Van Dyke}},
+keywords = {imported},
+title = {name{\_}{{ParticleCaps3}}}
+}
+
+@article{name_ParticleFormatting,
+author = {given={John}, family={Doe}, prefix={de la}, useprefix=true},
+keywords = {imported},
+title = {name{\_}{{ParticleFormatting}}}
+}
+
+@article{name_ParticlesDemoteNonDroppingNever,
+author = {given={Givenname}, family={Las Familyname}, prefix={de}, useprefix=true and given={Givenname}, family={Familyname}, prefix={del}, useprefix=true and given={Givenname}, family={Di Familyname} and given={Givenname}, family={Da Familyname} and given={Givenname}, family={Do Familyname} and given={Givenname}, family={Des Familyname} and given={Givenname}, family={Lou Familyname} and given={Givenname}, family={Pietro Familyname} and given={Givenname}, family={Familyname}, prefix={de}, useprefix=true and given={Givenname}, family={La Familyname}, prefix={de}, useprefix=true and given={Givenname}, family={Le Familyname} and given={Givenname}, family={La Familyname} and given={Givenname}, family={L'Familyname} and given={Givenname}, family={Saint Familyname} and given={Givenname}, family={Sainte Familyname} and given={Givenname}, family={St. Familyname} and given={Givenname}, family={Ste. Familyname} and given={Givenname}, family={Familyname}, prefix={van}, useprefix=true and given={Givenname}, family={Familyname}, prefix={van de}, useprefix=true and given={Givenname}, family={Familyname}, prefix={van der}, useprefix=true and given={Givenname}, family={Familyname}, prefix={van den}, useprefix=true and given={Givenname}, family={Familyname}, prefix={vander}, useprefix=true and given={Givenname}, family={Familyname}, prefix={v.d.}, useprefix=true and given={Givenname}, family={Familyname}, prefix={vd}, useprefix=true and given={Givenname}, family={Familyname}, prefix={van het}, useprefix=true and given={Givenname}, family={Familyname}, prefix={ver}, useprefix=true},
+keywords = {imported},
+title = {name{\_}{{ParticlesDemoteNonDroppingNever}}}
+}
+
+@article{name_WesternArticularLowercase,
+author = {given={Jacques}, family={Doe}, prefix={van}, useprefix=true},
+keywords = {imported},
+title = {name{\_}{{WesternArticularLowercase}}}
+}
+
+@article{name_namepartAffixes,
+author = {given={Jean}, family={La Fontaine}, suffix={III}, prefix={de}, useprefix=true},
+keywords = {imported},
+title = {name{\_}{{namepartAffixes}}}
+}
+
+@article{nameorder_Long,
+author = {given={Gérard}, family={Martinière}, suffix={III}, prefix={de la}, useprefix=true},
+keywords = {imported},
+title = {nameorder{\_}{{Long}}}
+}
+
+@article{position_IbidWithSuffix,
+author = {given={Al-Khatib}, family={Organization}},
+keywords = {imported},
+title = {position{\_}{{IbidWithSuffix}}}
+}
+
+@article{sort_ChangeInNameSort,
+author = {given={Alan}, family={De Quincey}},
+keywords = {imported},
+title = {sort{\_}{{ChangeInNameSort}}}
+}
+
+@article{sort_ChicagoYearSuffix1,
+author = {given={Beijing}, family={Zoo} and {Beijing Zoo}},
+keywords = {imported},
+title = {sort{\_}{{ChicagoYearSuffix1}}}
+}
+
+@article{sort_FamilyOnly,
+author = {given={ANZ}, family={Group}},
+keywords = {imported},
+title = {sort{\_}{{FamilyOnly}}}
+}
+
+@article{sort_LeadingApostropheOnNameParticle,
+author = {given={Peter A.C.}, family={Horvath}, prefix={'t}, useprefix=true and given={Peter A.D.}, family={Horvath}, prefix={in 't}, useprefix=true},
+keywords = {imported},
+title = {sort{\_}{{LeadingApostropheOnNameParticle}}}
+}
+
+@article{sort_NameParticleInNameSortFalse,
+author = {given={John}, family={Noakes}, prefix={di}, useprefix=true},
+keywords = {imported},
+title = {sort{\_}{{NameParticleInNameSortFalse}}}
+}
+
+@article{sort_NameVariable,
+author = {given={Jacob}, family={[F]linders}},
+keywords = {imported},
+title = {sort{\_}{{NameVariable}}}
+}

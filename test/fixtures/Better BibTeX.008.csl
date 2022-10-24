@@ -1,0 +1,32 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2012
+                ]
+            ]
+        },
+        "title": "Public service research foundation",
+        "URL": "http://www.americanrightsatwork.org/blogcategory-275/",
+        "accessed": {
+            "date-parts": [
+                [
+                    2012,
+                    7,
+                    27
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "American Rights",
+                "family": "Work",
+                "non-dropping-particle": "at"
+            }
+        ],
+        "medium": "http://www.americanrightsatwork.org/blogcategory-275/",
+        "type": "article",
+        "id": "1"
+    }
+}

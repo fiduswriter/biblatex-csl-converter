@@ -1,0 +1,27 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    1941
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Leo",
+                "family": "Spitzer"
+            }
+        ],
+        "DOI": "10.2307/2911510",
+        "ISSN": "01496611",
+        "container-title": "Modern language notes",
+        "language": "fr-FR",
+        "issue": "2",
+        "page": "110-113",
+        "title": "Le poêle de descartes",
+        "volume": "56",
+        "type": "article-journal",
+        "id": "1"
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2012
+                ]
+            ]
+        },
+        "title": "<span class=\"nocase\">The Concepts of Risk and Safety</span>",
+        "container-title": "<span class=\"nocase\">Handbook of Risk Theory: Epistemology, Decision Theory, Ethics, and Social Implications of Risk</span>",
+        "publisher": "Springer",
+        "author": [
+            {
+                "given": "Niklas",
+                "family": "Möller"
+            }
+        ],
+        "type": "chapter",
+        "id": "1"
+    }
+}

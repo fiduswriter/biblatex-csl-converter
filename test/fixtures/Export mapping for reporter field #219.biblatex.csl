@@ -1,0 +1,24 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    1998,
+                    4,
+                    1
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Kaetinyeri",
+                "family": "Commonwealth",
+                "non-dropping-particle": "v"
+            }
+        ],
+        "title-short": "Kartinyeri",
+        "title": "Kartinyeri v <span class=\"nocase\">Commonwealth</span>",
+        "type": "article",
+        "id": "1"
+    }
+}

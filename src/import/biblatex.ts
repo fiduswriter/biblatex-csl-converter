@@ -30,7 +30,7 @@ import { edtfParse } from "../edtf-parser"
  * https://code.google.com/archive/p/bibtex-js/
  */
 
-interface ConfigObject {
+export interface ConfigObject {
     /**
      * - processUnknown (object [specifying content type for specific unknown]):
      *
@@ -106,6 +106,7 @@ interface ConfigObject {
      */
     includeRawText?: boolean
     crossRefInheritance?: TypeInheritance[]
+    includeUnusedNocase?: boolean
 }
 
 interface ErrorObject {
@@ -895,7 +896,7 @@ export class BibLatexParser {
     _reformNameList(nameString: string): NameDictObject[] {
         const people = splitTeXString(nameString)
         const names = people.map((person) => {
-            const nameParser = new BibLatexNameParser(person),
+            const nameParser = new BibLatexNameParser(person, this.config),
                 name = nameParser.output
             if (name) {
                 return name
@@ -934,7 +935,7 @@ export class BibLatexParser {
     }
 
     _reformLiteral(theValue: string, cpMode = false): NodeArray {
-        const parser = new BibLatexLiteralParser(theValue, cpMode)
+        const parser = new BibLatexLiteralParser(theValue, this.config, cpMode)
         return parser.output
     }
 

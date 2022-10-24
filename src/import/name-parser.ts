@@ -1,14 +1,17 @@
 import { BibLatexLiteralParser } from "./literal-parser"
 import type { NameDictObject, NodeObject } from "../const"
+import type { ConfigObject } from "./biblatex"
 
 export class BibLatexNameParser {
     nameString: string
+    config: ConfigObject
     nameDict: NameDictObject
     _particle: string[]
     _suffix: string[]
 
-    constructor(nameString: string) {
+    constructor(nameString: string, config: ConfigObject) {
         this.nameString = nameString.trim()
+        this.config = config
         this.nameDict = {}
         this._particle = []
         this._suffix = []
@@ -194,7 +197,7 @@ export class BibLatexNameParser {
     }
 
     _reformLiteral(litString: string): NodeObject[] {
-        let parser = new BibLatexLiteralParser(litString)
+        let parser = new BibLatexLiteralParser(litString, this.config)
         return parser.output
     }
 }

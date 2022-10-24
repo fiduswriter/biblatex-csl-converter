@@ -1,0 +1,20 @@
+@article{Doe-2017,
+date = {2017},
+author = {given={John}, family={Doe}},
+title = {The paper in subgroup}
+}
+
+@article{Other-,
+author = {given={I.}, family={Other}},
+title = {The article in my other subgroup}
+}
+
+@article{Unkonw-,
+author = {given={I}, family={Unkonw}},
+title = {the paper in two groups}
+}
+
+@article{Unkonw,
+author = {given={I}, family={Unkonw}},
+title = {the paper not in a group}
+}

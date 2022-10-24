@@ -1,11 +1,12 @@
 module.exports = {
     root: true,
     parser: "@typescript-eslint/parser",
-    plugins: ["@typescript-eslint"],
+    plugins: ["@typescript-eslint", "prettier"],
     env: {
         browser: true,
         es6: true,
         node: true,
+        mocha: true,
     },
     extends: ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
     parserOptions: {
@@ -164,7 +165,6 @@ module.exports = {
         "no-shadow": "off",
         "no-shadow-restricted-names": "error",
         "no-spaced-func": "error",
-        "no-sync": "error",
         "no-tabs": "error",
         "no-template-curly-in-string": "error",
         "no-ternary": "off",
@@ -187,7 +187,6 @@ module.exports = {
         "no-warning-comments": "off",
         "no-whitespace-before-property": "error",
         "no-with": "error",
-        "nonblock-statement-body-position": "error",
         "object-curly-newline": "error",
         "object-curly-spacing": "off",
         "object-shorthand": "error",
@@ -211,6 +210,7 @@ module.exports = {
         "prefer-rest-params": "error",
         "prefer-spread": "error",
         "prefer-template": "off",
+        "prettier/prettier": "error",
         "quote-props": "off",
         quotes: "off",
         radix: ["error", "as-needed"],

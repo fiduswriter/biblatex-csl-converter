@@ -1,0 +1,306 @@
+{
+    "entries": {
+        "1": {
+            "bib_type": "article-journal",
+            "entry_key": "araz_using_2014",
+            "fields": {
+                "date": "2014-09",
+                "langid": "usenglish",
+                "abstract": [
+                    {
+                        "type": "text",
+                        "text": "Introduction Emergency department (ED) visits increase during the influenza seasons. It is essential to identify statistically significant correlates in order to develop an accurate forecasting model for ED visits. Forecasting influenza-like-illness (ILI)-related ED visits can significantly help in developing robust resource management strategies at the EDs. Methods We first performed correlation analyses to understand temporal correlations between several predictors of ILI-related ED visits. We used the data available for Douglas County, the biggest county in Nebraska, for Omaha, the biggest city in the state, and for a major hospital in Omaha. The data set included total and positive influenza test results from the hospital (ie, Antigen rapid (Ag) and Respiratory Syncytial Virus Infection (RSV) tests); an Internet-based influenza surveillance system data, that is, Google Flu Trends, for both Nebraska and Omaha; total ED visits in Douglas County attributable to ILI; and ILI surveillance network data for Douglas County and Nebraska as the predictors and data for the hospital's ILI-related ED visits as the dependent variable. We used Seasonal Autoregressive Integrated Moving Average and Holt Winters methods with3 linear regression models to forecast ILI-related ED visits at the hospital and evaluated model performances by comparing the root means square errors (RMSEs). Results Because of strong positive correlations with ILI-related ED visits between 2008 and 2012, we validated the use of Google Flu Trends data as a predictor in an ED influenza surveillance tool. Of the 5 forecasting models we have tested, linear regression models performed significantly better when Google Flu Trends data were included as a predictor. Regression models including Google Flu Trends data as a predictor variable have lower RMSE, and the lowest is achieved when all other variables are also included in the model in our forecasting experiments for the first 5 weeks of 2013 (with RMSE = 57.61). Conclusions Google Flu Trends data statistically improve the performance of predicting ILI-related ED visits in Douglas County, and this result can be generalized to other communities. Timely and accurate estimates of ED volume during the influenza season, as well as during pandemic outbreaks, can help hospitals plan their ED resources accordingly and lower their costs by optimizing supplies and staffing and can improve service quality by decreasing ED wait times and overcrowding."
+                    }
+                ],
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Araz"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Ozgur M."
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Bentley"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Dan"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Muelleman"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Robert L."
+                            }
+                        ]
+                    }
+                ],
+                "doi": "10.1016/j.ajem.2014.05.052",
+                "issn": [
+                    {
+                        "type": "text",
+                        "text": "0735-6757, 1532-8171"
+                    }
+                ],
+                "journaltitle": [
+                    {
+                        "type": "text",
+                        "text": "The American Journal of Emergency Medicine"
+                    }
+                ],
+                "language": [
+                    "english"
+                ],
+                "number": [
+                    {
+                        "type": "text",
+                        "text": "9"
+                    }
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "1016"
+                            }
+                        ],
+                        [
+                            {
+                                "type": "text",
+                                "text": "1023"
+                            }
+                        ]
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Using "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Google Flu Trends",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " Data in Forecasting Influenza-like-Illness Related "
+                    },
+                    {
+                        "type": "text",
+                        "text": "ED",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " Visits in "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Omaha",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": ", "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Nebraska",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ],
+                "urldate": "2016-10-07",
+                "volume": [
+                    {
+                        "type": "text",
+                        "text": "32"
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "pmid": [
+                    {
+                        "type": "text",
+                        "text": "25037278"
+                    }
+                ],
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "2": {
+            "bib_type": "article-journal",
+            "entry_key": "davidson_using_2015",
+            "fields": {
+                "date": "2015-01",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Davidson"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Michael W."
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Haim"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Dotan A."
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Radin"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Jennifer M."
+                            }
+                        ]
+                    }
+                ],
+                "doi": "10.1038/srep08154",
+                "issn": [
+                    {
+                        "type": "text",
+                        "text": "2045-2322"
+                    }
+                ],
+                "journaltitle": [
+                    {
+                        "type": "text",
+                        "text": "Scientific Reports"
+                    }
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "8154"
+                            }
+                        ]
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Using Networks to Combine "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Big Data",
+                        "marks": [
+                            {
+                                "type": "enquote"
+                            },
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " and Traditional Surveillance to Improve Influenza Predictions"
+                    }
+                ],
+                "urldate": "2016-10-07",
+                "volume": [
+                    {
+                        "type": "text",
+                        "text": "5"
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        }
+    },
+    "warnings": [
+        {
+            "type": "unknown_field",
+            "field_name": "pmid",
+            "entry": "araz_using_2014",
+            "line": 25
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "araz_using_2014",
+            "line": 25
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "davidson_using_2015",
+            "line": 39
+        }
+    ]
+}

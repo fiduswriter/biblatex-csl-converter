@@ -1,0 +1,24 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    1995
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Wolfgang",
+                "family": "Kaufmann"
+            }
+        ],
+        "ISBN": "3-8007-2141-4 978-3-8007-2141-2 3-8022-0469-7 978-3-8022-0469-2",
+        "language": "de-DE",
+        "publisher-place": "Berlin; Frankfurt am Main",
+        "publisher": "VDE-Verl. ; Verl.- und Wirtschaftsges. der Elektrizitätswerke",
+        "title": "Planung öffentlicher elektrizitätsverteilungs-systeme",
+        "type": "book",
+        "id": "1"
+    }
+}

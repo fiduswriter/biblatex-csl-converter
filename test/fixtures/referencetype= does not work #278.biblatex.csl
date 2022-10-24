@@ -1,0 +1,23 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2009
+                ]
+            ]
+        },
+        "editor": [
+            {
+                "given": "Kees",
+                "family": "Versteegh"
+            }
+        ],
+        "publisher-place": "Leiden",
+        "publisher": "Brill",
+        "title": "Encyclopedia of arabic language and linguistics",
+        "URL": "https://katalog.ub.uni-leipzig.de/Record/0002828121/Multipart",
+        "type": "book",
+        "id": "1"
+    }
+}

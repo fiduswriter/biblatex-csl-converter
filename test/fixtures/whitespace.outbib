@@ -1,0 +1,7 @@
+@article{SomeKey,
+date = {2017},
+author = {given={John}, family={Doe}},
+title = {Foo Bar},
+journaltitle = {Transactions on Foobar},
+volume = {42}
+}

@@ -1,0 +1,20 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2014,
+                    10
+                ]
+            ]
+        },
+        "DOI": "10.1002/9781119019138.ch10",
+        "URL": "https://doi.org/10.1002%2F9781119019138.ch10",
+        "publisher": "John Wiley & Sons, Ltd",
+        "page": "159-169",
+        "title": "The origins of bitcoin",
+        "container-title": "Understanding bitcoin",
+        "type": "chapter",
+        "id": "1"
+    }
+}

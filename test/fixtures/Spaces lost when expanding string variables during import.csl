@@ -1,0 +1,20 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    1990
+                ]
+            ]
+        },
+        "author": [
+            {
+                "literal": "Author"
+            }
+        ],
+        "title": "Title",
+        "container-title": "a space between this and this",
+        "type": "article-journal",
+        "id": "1"
+    }
+}

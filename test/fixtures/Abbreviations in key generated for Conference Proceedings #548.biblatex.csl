@@ -1,0 +1,34 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    1997
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Robert M.",
+                "family": "Corless"
+            },
+            {
+                "given": "David J.",
+                "family": "Jeffrey"
+            },
+            {
+                "given": "Donald E.",
+                "family": "Knuth"
+            }
+        ],
+        "container-title": "Proceedings of the 1997 <span class=\"nocase\">International Symposium</span> on <span class=\"nocase\">Symbolic</span> and <span class=\"nocase\">Algebraic Computation</span>",
+        "DOI": "10.1145/258726.258783",
+        "ISBN": "0-89791-875-4",
+        "language": "en-US",
+        "page": "197-204",
+        "publisher": "ACM Press",
+        "title": "A sequence of series for the <span class=\"nocase\">Lambert</span> <span class=\"nocase\"><i>W</i></span> function",
+        "type": "paper-conference",
+        "id": "1"
+    }
+}

@@ -1,0 +1,313 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    1935
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "J. H.",
+                "family": "Elder"
+            }
+        ],
+        "title": "THE UPPER LIMIT OF HEARING IN CHIMPANZEE",
+        "container-title": "American journal of physiology -- legacy content",
+        "volume": "112",
+        "issue": "1",
+        "page": "109-115",
+        "ISSN": "0002-9513",
+        "URL": "http://ajplegacy.physiology.org/content/112/1/109",
+        "type": "article-journal",
+        "id": "1"
+    },
+    "2": {
+        "issued": {
+            "date-parts": [
+                [
+                    1990
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "S.",
+                "family": "Kojima"
+            }
+        ],
+        "title": "Comparison of auditory functions in the chimpanzee and human",
+        "container-title": "Folia primatol",
+        "volume": "55",
+        "issue": "2",
+        "page": "62-72",
+        "ISSN": "0015-5713",
+        "abstract": "Absolute thresholds for pure tones, loudness, frequency and intensity difference thresholds and the resonance of the external auditory meatus were measured in chimpanzees and compared with those in humans. Chimpanzees were more sensitive than humans to frequencies higher than 8 kHz but less sensitive to frequencies lower than 250 Hz and 2- to 4-kHz tones. Difference thresholds for frequency and intensity were greater in chimpanzees than in humans. The resonance of the external ear was about the same in the two species. The effects of differences in hearing between species upon speech perception are discussed.",
+        "URL": "http://www.karger.com/DOI/10.1159/000156501",
+        "type": "article-journal",
+        "id": "2"
+    },
+    "3": {
+        "issued": {
+            "date-parts": [
+                [
+                    2011,
+                    2
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Michael S.",
+                "family": "Osmanski"
+            },
+            {
+                "given": "Xiaoqin",
+                "family": "Wang"
+            }
+        ],
+        "title": "Measurement of absolute auditory thresholds in the common marmoset (callithrix jacchus)",
+        "container-title": "Hearing research",
+        "volume": "277",
+        "issue": "1-2",
+        "page": "127-133",
+        "ISSN": "1878-5891",
+        "abstract": "The common marmoset is a small, arboreal, New World primate that has emerged as a promising non-human model system in auditory neuroscience. A complete understanding of the neuroethology of auditory processing in marmosets will include behavioral work examining how sounds are perceived by these animals. However, there have been few studies of the marmoset’s hearing and perceptual abilities and the audiogram of this species has not been measured using modern psychophysical methods. The present experiment pairs psychophysics with an operant conditioning technique to examine perception of pure tone stimuli by marmosets using an active behavioral paradigm. Subjects were trained to lick at a feeding tube when they detected a sound. Correct responses provided access to a food reward. Pure tones of varying intensities were presented to subjects using the method of constant stimuli. Behavioral thresholds were calculated for each animal based on hit rate - threshold was defined by the tone intensity that the animal correctly identified 50% of the time. Results show that marmoset hearing is comparable to that of other New World monkeys, with a hearing range extending from about 125 Hz up to 36 kHz and a sensitivity peak around 7 kHz.",
+        "URL": "http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3123402/",
+        "type": "article-journal",
+        "id": "3"
+    },
+    "4": {
+        "issued": {
+            "date-parts": [
+                [
+                    1983
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Rickye S",
+                "family": "Heffner"
+            },
+            {
+                "given": "Henry E",
+                "family": "Heffner"
+            }
+        ],
+        "title": "Hearing in large mammals: horses (equus caballus) and cattle (bos taurus).",
+        "container-title": "Behavioral neuroscience",
+        "volume": "97",
+        "issue": "2",
+        "page": "299",
+        "DOI": "http://psycnet.apa.org/doi/10.1037/0735-7044.97.2.299",
+        "type": "article-journal",
+        "id": "4"
+    },
+    "5": {
+        "issued": {
+            "date-parts": [
+                [
+                    2009
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Mark N.",
+                "family": "Coleman"
+            }
+        ],
+        "title": "What do primates hear? A meta-analysis of all known nonhuman primate behavioral audiograms",
+        "container-title": "International journal of primatology",
+        "volume": "30",
+        "issue": "1",
+        "page": "55-91",
+        "ISSN": "1573-8604",
+        "abstract": "Research on the hearing abilities of nonhuman primates dates back >70 yr and there are audiograms ---graphs showing hearing sensitivity over a range of frequencies--- for 29 different species including representatives from almost every major group. However, the methods used to obtain the audiograms have been nearly as varied as the number of species tested. I sought to determine the degree to which one can directly compare the audiograms by examining several factors that could have a significant impact on the results: the behavioral conditioning procedure employed to train and test the subjects, the type of transducer used to deliver the test tones, the procedure used to calibrate the amplitude of the test tones, the acoustic enclosure used to minimize ambient noise, and the method used to determine the final threshold values. Audiograms produced using speakers cannot be compared directly with those produced using headphones, and in some cases the calibration procedure and testing chamber may also limit the potential for interspecific comparisons. Based on the findings, I provide 2 lists of optimal primate audiograms: 1 for speaker-derived audiograms and the other for headphone-derived audiograms. I measured a set of audiometric variables on each of the optimal audiograms, and phylogenetic comparisons of the data show that superfamilies of primates display unique patterns of hearing sensitivity, particularly at frequencies in the lower range. Lastly, I discuss the implications for behavioralists investigating primate vocalizations in the field.",
+        "DOI": "10.1007/s10764-008-9330-1",
+        "URL": "http://dx.doi.org/10.1007/s10764-008-9330-1",
+        "type": "article-journal",
+        "id": "5"
+    },
+    "6": {
+        "issued": {
+            "date-parts": [
+                [
+                    1934
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "James Harlan",
+                "family": "Elder"
+            }
+        ],
+        "title": "Auditory acuity of the chimpanzee.",
+        "container-title": "Journal of comparative psychology",
+        "volume": "17",
+        "issue": "2",
+        "page": "157",
+        "DOI": "10.1037/h0073798",
+        "type": "article-journal",
+        "id": "6"
+    },
+    "7": {
+        "issued": {
+            "date-parts": [
+                [
+                    2015,
+                    4
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Cathrin",
+                "family": "Pfaff"
+            },
+            {
+                "given": "Thomas",
+                "family": "Martin"
+            },
+            {
+                "given": "Irina",
+                "family": "Ruf"
+            }
+        ],
+        "title": "Bony labyrinth morphometry indicates locomotor adaptations in the squirrel-related clade (rodentia, mammalia)",
+        "container-title": "Proceedings of the royal society B: biological sciences",
+        "volume": "282",
+        "issue": "1809",
+        "page": "20150744",
+        "ISSN": "1471-2954",
+        "abstract": "The semicircular canals (SCs) of the inner ear detect angular acceleration and are located in the bony labyrinth of the petrosal bone. Based on high-resolution computed tomography, we created a size-independent database of the bony labyrinth of 50 mammalian species especially rodents of the squirrel-related clade comprising taxa with fossorial, arboreal and gliding adaptations. Our sampling also includes gliding marsupials, actively flying bats, the arboreal tree shrew and subterranean species. The morphometric anatomy of the SCs was correlated to the locomotion mode. Even if the phylogenetic signal cannot entirely be excluded, the main significance for functional morphological studies has been found in the diameter of the SCs, whereas the radius of curvature is of minor interest. Additionally, we found clear differences in the bias angle of the canals between subterranean and gliding taxa, but also between sciurids and glirids. The sensitivity of the inner ear correlates with the locomotion mode, with a higher sensitivity of the SCs in fossorial species than in flying taxa. We conclude that the inner ear of flying and gliding mammals is less sensitive due to the large information flow into this sense organ during locomotion.",
+        "URL": "http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4590456/",
+        "type": "article-journal",
+        "id": "7"
+    },
+    "8": {
+        "issued": {
+            "date-parts": [
+                [
+                    2017,
+                    5
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Michael E.",
+                "family": "Ravicz"
+            },
+            {
+                "given": "John J.",
+                "family": "Rosowski"
+            }
+        ],
+        "title": "Chinchilla middle ear transmission matrix model and middle-ear flexibility",
+        "container-title": "The journal of the acoustical society of america",
+        "volume": "141",
+        "issue": "5",
+        "page": "3274-3290",
+        "DOI": "10.1121/1.4982925",
+        "type": "article-journal",
+        "id": "8"
+    },
+    "9": {
+        "issued": {
+            "date-parts": [
+                [
+                    2017
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Dominik",
+                "family": "Péus"
+            },
+            {
+                "given": "Ivo",
+                "family": "Dobrev"
+            },
+            {
+                "given": "Lukas",
+                "family": "Prochazka"
+            },
+            {
+                "given": "Konrad",
+                "family": "Thoele"
+            },
+            {
+                "given": "Adrian",
+                "family": "Dalbert"
+            },
+            {
+                "given": "Andreas",
+                "family": "Boss"
+            },
+            {
+                "given": "Nicolas",
+                "family": "Newcomb"
+            },
+            {
+                "given": "Rudolf",
+                "family": "Probst"
+            },
+            {
+                "given": "Christof",
+                "family": "Röösli"
+            },
+            {
+                "given": "Jae Hoon",
+                "family": "Sim"
+            },
+            {
+                "given": "Alexander",
+                "family": "Huber"
+            },
+            {
+                "given": "Flurin",
+                "family": "Pfiffner"
+            }
+        ],
+        "title": "Sheep as a large animal ear model: middle-ear ossicular velocities and intracochlear sound pressure",
+        "container-title": "Hearing research",
+        "volume": "351",
+        "page": "88-97",
+        "ISSN": "0378-5955",
+        "abstract": "Abstract Animals are frequently used for the development and testing of new hearing devices. Dimensions of the middle ear and cochlea differ significantly between humans and commonly used animals, such as rodents or cats. The sheep cochlea is anatomically more like the human cochlea in size and number of turns. This study investigated the middle-ear ossicular velocities and intracochlear sound pressure (ICSP) in sheep temporal bones, with the aim of characterizing the sheep as an experimental model for implantable hearing devices. Measurements were made on fresh sheep temporal bones. Velocity responses of the middle ear ossicles at the umbo, long process of the incus and stapes footplate were measured in the frequency range of 0.25–8 kHz using a laser Doppler vibrometer system. Results were normalized by the corresponding sound pressure level in the external ear canal (PEC). Sequentially, {ICSPs} at the scala vestibuli and tympani were then recorded with custom MEMS-based hydrophones, while presenting identical acoustic stimuli. The sheep middle ear transmitted most effectively around 4.8 kHz, with a maximum stapes velocity of 0.2 mm/s/Pa. At the same frequency, the {ICSP} measurements in the scala vestibuli and tympani showed the maximum gain relative to the {PEC} (24 dB and 5 dB, respectively). The greatest pressure difference across the cochlear partition occurred between 4 and 6 kHz. A comparison between the results of this study and human reference data showed middle-ear resonance and best cochlear sensitivity at higher frequencies in sheep. In summary, sheep can be an appropriate large animal model for research and development of implantable hearing devices.",
+        "DOI": "https://doi.org/10.1016/j.heares.2017.06.002",
+        "URL": "http://www.sciencedirect.com/science/article/pii/S0378595516304737",
+        "type": "article-journal",
+        "id": "9"
+    },
+    "10": {
+        "issued": {
+            "date-parts": [
+                [
+                    2017,
+                    5
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Daisuke",
+                "family": "Koyabu"
+            }
+        ],
+        "title": "3D atlas and comparative osteology of the middle ear ossicles among eulipotyphla (mammalia, placentalia).",
+        "container-title": "<span class=\"nocase\">MorphoMuseuM</span>",
+        "volume": "3",
+        "issue": "2",
+        "page": "e3",
+        "DOI": "10.18563/m3.3.2.e3",
+        "URL": "https://doi.org/10.18563/m3.3.2.e3",
+        "type": "article-journal",
+        "id": "10"
+    }
+}

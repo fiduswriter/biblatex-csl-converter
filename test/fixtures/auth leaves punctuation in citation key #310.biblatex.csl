@@ -1,0 +1,20 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2015
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "james",
+                "family": "O'hara"
+            }
+        ],
+        "title": "A testbook",
+        "type": "book",
+        "id": "1"
+    }
+}

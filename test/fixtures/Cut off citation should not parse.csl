@@ -1,0 +1,55 @@
+{
+    "1": {
+        "title": "The dust-unbiased cosmic star-formation history from the 20 CM VLA-COSMOS survey",
+        "author": [
+            {
+                "given": "V",
+                "family": "ci'c",
+                "non-dropping-particle": "Smol"
+            },
+            {
+                "given": "E",
+                "family": "Schinnerer"
+            },
+            {
+                "given": "G",
+                "family": "Zamorani"
+            },
+            {
+                "given": "EF",
+                "family": "Bell"
+            },
+            {
+                "given": "M",
+                "family": "Bondi"
+            },
+            {
+                "given": "CL",
+                "family": "Carilli"
+            },
+            {
+                "given": "P",
+                "family": "Ciliegi"
+            },
+            {
+                "given": "B",
+                "family": "Mobasher"
+            },
+            {
+                "given": "T",
+                "family": "Paglione"
+            },
+            {
+                "given": "M",
+                "family": "Scodeggio"
+            },
+            {
+                "literal": "others"
+            }
+        ],
+        "container-title": "The astrophysical journal",
+        "volume": "690",
+        "type": "article-journal",
+        "id": "1"
+    }
+}
