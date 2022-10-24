@@ -1,0 +1,25 @@
+@misc{firstname_retorquere_replicate_2015,
+date = {2015},
+abstract = {zotero-better-bibtex - Make Zotero effective for us LaTeX holdouts},
+author = {{Firstname Retorquere}},
+howpublished = {{\url{https://github.com/retorquere/zotero-better-bibtex/issues/439}}},
+title = {Replicate {{Zotero}} Key Algorithm · {{Issue}} {\#}439 · Retorquere/Zotero-Better-Bibtex},
+urldate = {2016-01-29}
+}
+
+@misc{retorquere_replicate_2016,
+date = {2016},
+abstract = {zotero-better-bibtex - Make Zotero effective for us LaTeX holdouts},
+author = {given={Firstname}, family={Retorquere} and given={Firstname2}, family={Retorquere2}},
+howpublished = {{\url{https://github.com/retorquere/zotero-better-bibtex/issues/439}}},
+title = {Replicate {{Zotero}} Key Algorithm · {{Issue}} {\#}439 · Retorquere/Zotero-Better-Bibtex},
+urldate = {2016-01-29}
+}
+
+@misc{retorquere-double_replicate_????,
+abstract = {zotero-better-bibtex - Make Zotero effective for us LaTeX holdouts},
+author = {given={First-Double}, family={Retorquere-Double}},
+howpublished = {{\url{https://github.com/retorquere/zotero-better-bibtex/issues/439}}},
+title = {Replicate {{Zotero}} Key Algorithm · {{Issue}} {\#}439 · Retorquere/Zotero-Better-Bibtex},
+urldate = {2016-01-29}
+}

@@ -6,6 +6,7 @@ module.exports = {
         browser: true,
         es6: true,
         node: true,
+        mocha: true,
     },
     extends: ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
     parserOptions: {
@@ -164,7 +165,6 @@ module.exports = {
         "no-shadow": "off",
         "no-shadow-restricted-names": "error",
         "no-spaced-func": "error",
-        "no-sync": "error",
         "no-tabs": "error",
         "no-template-curly-in-string": "error",
         "no-ternary": "off",

@@ -1,0 +1,12 @@
+{
+    "1": {
+        "title": "Filename character test. Relative path",
+        "type": "book",
+        "id": "1"
+    },
+    "2": {
+        "title": "Filename character test. Absolute path",
+        "type": "book",
+        "id": "2"
+    }
+}

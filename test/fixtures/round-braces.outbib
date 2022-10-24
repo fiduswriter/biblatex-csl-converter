@@ -1,0 +1,6 @@
+@report{McDermott:72,
+date = {1972-05},
+author = {given={Drew V.}, family={McDermott} and given={Gerald J.}, family={Sussman}},
+institution = {MIT Artificial Intelligence Laboratory},
+title = {The {{\textsc{CONNIVER}}} Reference Manual}
+}

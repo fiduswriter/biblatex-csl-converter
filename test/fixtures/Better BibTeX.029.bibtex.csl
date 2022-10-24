@@ -1,0 +1,28 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2000
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Paul B",
+                "family": "Baltes"
+            },
+            {
+                "given": "Ursula M",
+                "family": "Staudinger"
+            }
+        ],
+        "container-title": "Am. Psychol.",
+        "issue": "1",
+        "page": "122",
+        "title": "Wisdom: a metaheuristic (pragmatic) to orchestrate mind and virtue toward excellence.",
+        "volume": "55",
+        "type": "article-journal",
+        "id": "1"
+    }
+}

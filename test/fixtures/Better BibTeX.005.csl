@@ -1,0 +1,24 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2009
+                ]
+            ]
+        },
+        "title": "USGS monitoring ecological impacts",
+        "volume": "107",
+        "issue": "29",
+        "container-title": "Oil & gas journal",
+        "author": [
+            {
+                "given": "A",
+                "family": "Oliveira"
+            }
+        ],
+        "page": "29",
+        "type": "article-journal",
+        "id": "1"
+    }
+}

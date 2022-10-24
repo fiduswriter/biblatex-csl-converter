@@ -1,0 +1,41 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2007
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Adam",
+                "family": "Kolawa"
+            },
+            {
+                "given": "Dorota",
+                "family": "Huizinga"
+            },
+            {
+                "literal": "Wiley InterScience (Online service)"
+            }
+        ],
+        "ISBN": "978-0-470-16516-4",
+        "publisher-place": "Hoboken, NJ, USA",
+        "publisher": "IEEE Computer Society Press",
+        "title-short": "Automated <span class=\"nocase\">Defect Prevention</span>",
+        "title": "Automated <span class=\"nocase\">Defect Prevention</span> : <span class=\"nocase\">Best Practices</span> in <span class=\"nocase\">Software Management</span>",
+        "URL": "http://site.ebrary.com/lib/alltitles/docDetail.action?docID=10296302",
+        "accessed": {
+            "date-parts": [
+                [
+                    2015,
+                    1,
+                    9
+                ]
+            ]
+        },
+        "type": "book",
+        "id": "1"
+    }
+}

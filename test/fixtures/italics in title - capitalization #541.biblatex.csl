@@ -1,0 +1,43 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2006,
+                    9,
+                    23
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "R. W.",
+                "family": "Brill"
+            },
+            {
+                "given": "P. G.",
+                "family": "Bushnell"
+            }
+        ],
+        "DOI": "10.1007/s10695-006-9104-7",
+        "ISSN": "0920-1742, 1573-5168",
+        "container-title": "Fish physiology and biochemistry",
+        "language": "en-US",
+        "issue": "4",
+        "page": "283-294",
+        "title": "Effects of open- and closed-system temperature changes on blood <span class=\"nocase\">O</span><sub>2</sub>-binding characteristics of <span class=\"nocase\">Atlantic</span> bluefin tuna (<span class=\"nocase\"><span class=\"nocase\"><i>Thunnus thynnus</i></span></span>)",
+        "URL": "http://link.springer.com/article/10.1007/s10695-006-9104-7",
+        "accessed": {
+            "date-parts": [
+                [
+                    2016,
+                    8,
+                    18
+                ]
+            ]
+        },
+        "volume": "32",
+        "type": "article-journal",
+        "id": "1"
+    }
+}

@@ -1,0 +1,21 @@
+@inproceedings{test_citation1,
+date = {2016-02},
+title = {{{T}}est {{T}}itle {{W}}ith 100 μ{{J}}, 200 μ{{J}} {{E}}nergy, {and} ±0.1{\%} {{A}}ccuracy, 0.2 mm$^{2}$ {{S}}ize, {and} -50 d{{B}} {{A}}ttenuation},
+author = {given={J.}, family={Doe} and given={R.}, family={Smith}},
+booktitle = IEEE_J_PROC ,
+pages = {300--301},
+abstract = {Abstract here},
+doi = {10.1109/JPROC.2016.2526118},
+keywords = {Keyword 1, Keyword 2}
+}
+
+@inproceedings{test_citation2,
+date = {2016-02},
+title = {{{T}}est {{T}}itle with space quad, space semi-colon, space colon, space comma, space nbsp},
+author = {given={J.}, family={Doe} and given={R.}, family={Smith}},
+booktitle = IEEE_J_PROC ,
+pages = {300--301},
+abstract = {Abstract here},
+doi = {10.1109/JPROC.2016.2526118},
+keywords = {Keyword 1, Keyword 2}
+}

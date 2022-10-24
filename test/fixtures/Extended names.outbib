@@ -1,0 +1,33 @@
+@article{hess2008gromacs,
+date = {2008},
+title = {GROMACS 4: algorithms for highly efficient, load-balanced, {and} scalable molecular simulation},
+author = {given={Berk}, family={Hess} and given={Carsten}, family={Kutzner} and given={David}, family={Spoel}, prefix={van der}, useprefix=false and given={Erik}, family={Lindahl}},
+journaltitle = {Journal of chemical theory {and} computation},
+volume = {4},
+number = {3},
+pages = {435--447}
+}
+
+@article{berendsen1995gromacs,
+date = {1995},
+title = {GROMACS: a message-passing parallel molecular dynamics implementation},
+author = {given={Herman JC}, family={Berendsen} and given={David}, family={Spoel}, prefix={van der}, useprefix=false and given={Rudi}, family={Dronen}, prefix={van}, useprefix=true},
+journaltitle = {Computer Physics Communications},
+volume = {91},
+number = {1},
+pages = {43--56}
+}
+
+@article{doi:10.1056/NEJM197806222982503,
+date = {1978},
+author = {given={David M.}, family={Goldenberg} and given={Frank}, family={DeLand} and given={Euishin}, family={Kim} and given={Sidney}, family={Bennett} and given={F. James}, family={Primus} and given={John R.}, family={Nagell}, suffix={Jr.}, prefix={van}, useprefix=false and given={Norman}, family={Estes} and given={Philip}, family={DeSimone} and given={Pam}, family={Rayburn}},
+title = {Use of Radio-Labeled Antibodies to Carcinoembryonic Antigen for the Detection {and} Localization of Diverse Cancers by External Photoscanning},
+journaltitle = {New England Journal of Medicine},
+volume = {298},
+number = {25},
+pages = {1384--1388},
+doi = {10.1056/NEJM197806222982503},
+note = {PMID: 349387},
+url = {http://dx.doi.org/10.1056/NEJM197806222982503},
+eprint = {http://dx.doi.org/10.1056/NEJM197806222982503}
+}

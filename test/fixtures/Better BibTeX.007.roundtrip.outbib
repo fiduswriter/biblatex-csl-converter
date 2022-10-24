@@ -1,0 +1,9 @@
+@article{Frit2,
+date = {2012},
+author = {given={U.}, family={Fritz} and given={C.}, family={Corti} and given={M.}, family={Päckert}},
+doi = {10.1007/s13127-011-0069-8},
+journaltitle = {Actes du 4$^{ème}$ Congrès Français d'Acoustique},
+pages = {71--80},
+title = {Test of markupconversion: Italics, bold, superscript, subscript, {and} small caps: Mitochondrial DNA$_{2}$ sequences suggest unexpected phylogenetic position of Corso-Sardinian grass snakes ({{\mkbibitalic{Natrix cetti}}}) {and} {\mkbibbold{do not}} support their {\textsc{species status}}, with notes on phylogeography {and} subspecies delineation of grass snakes.},
+volume = {12}
+}

@@ -1,0 +1,179 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2009
+                ]
+            ]
+        },
+        "title": "A new genus and species of dryophthorid weevils (coleoptera, dryophthoridae: stromboscerinae) from the rovno amber",
+        "author": [
+            {
+                "given": "V Yu",
+                "family": "Nazarenko"
+            },
+            {
+                "given": "EE",
+                "family": "Perkovsky"
+            }
+        ],
+        "container-title": "Paleontological journal",
+        "volume": "43",
+        "issue": "9",
+        "page": "1097-1100",
+        "type": "article-journal",
+        "id": "1"
+    },
+    "2": {
+        "issued": {
+            "date-parts": [
+                [
+                    2011
+                ]
+            ]
+        },
+        "title": "A new species of the genus caulophilus woll.(coleoptera: curculionidae: cossoninae) from the rovno amber",
+        "author": [
+            {
+                "given": "V Yu",
+                "family": "Nazarenko"
+            },
+            {
+                "given": "AA",
+                "family": "Legalov"
+            },
+            {
+                "given": "EE",
+                "family": "Perkovsky"
+            }
+        ],
+        "container-title": "Paleontological journal",
+        "volume": "45",
+        "issue": "3",
+        "page": "287-290",
+        "type": "article-journal",
+        "id": "2"
+    },
+    "3": {
+        "issued": {
+            "date-parts": [
+                [
+                    2007
+                ]
+            ]
+        },
+        "title": "Долгоносикообразные жуки (coleoptera, curculionoidea) водоемов г. Киева",
+        "author": [
+            {
+                "given": "ВЮ",
+                "family": "Назаренко"
+            }
+        ],
+        "container-title": "VII з’їзд укр. ентомол. т--ва, ніжин",
+        "page": "14-18",
+        "type": "article-journal",
+        "id": "3"
+    },
+    "4": {
+        "issued": {
+            "date-parts": [
+                [
+                    2012
+                ]
+            ]
+        },
+        "title": "ДОЛГОНОСИКООБРАЗНЫЕ ЖУКИ (COLEOPTERA, CURCULIONOIDEA) ПРИБРЕЖНЫХ БИОТОПОВ ОСТРОВА ОБОЛОНСКОЙ КОСЫ (г. КИЕВ)",
+        "author": [
+            {
+                "given": "Виталий Юрьевич",
+                "family": "Назаренко"
+            }
+        ],
+        "container-title": "ПРОБЛЕМЫ ИЗУЧЕНИЯ КРАЕВЫХ СТРУКТУР БИОЦЕНОЗОВ",
+        "page": "189-193",
+        "type": "paper-conference",
+        "id": "4"
+    },
+    "5": {
+        "issued": {
+            "date-parts": [
+                [
+                    2012
+                ]
+            ]
+        },
+        "title": "ДОЛГОНОСИКООБРАЗНЫЕ ЖУКИ (COLEOPTERA, CURCULIONOIDEA) ОСТРОВА ДИКОГО (Г. КИЕВ)",
+        "author": [
+            {
+                "given": "Виталий Юрьевич",
+                "family": "Назаренко"
+            }
+        ],
+        "container-title": "БИОРАЗНООБРАЗИЕ И УСТОЙЧИВОЕ РАЗВИТИЕ",
+        "page": "218-221",
+        "type": "paper-conference",
+        "id": "5"
+    },
+    "6": {
+        "issued": {
+            "date-parts": [
+                [
+                    2010
+                ]
+            ]
+        },
+        "title": "Водные жуки-долгоносики (insecta: coleoptera, curculionoidea) днепровских островов г. Киева",
+        "author": [
+            {
+                "given": "В. Ю.",
+                "family": "Назаренко"
+            }
+        ],
+        "container-title": "Экология водных беспозвоночных",
+        "page": "210-211",
+        "type": "paper-conference",
+        "id": "6"
+    },
+    "7": {
+        "issued": {
+            "date-parts": [
+                [
+                    2013
+                ]
+            ]
+        },
+        "title": "Предварительный обзор колеоптерофауны (coleoptera) казантипского природного заповедника",
+        "author": [
+            {
+                "given": "АВ",
+                "family": "Пучков"
+            },
+            {
+                "given": "ТЮ",
+                "family": "Маркина"
+            },
+            {
+                "given": "ВЮ",
+                "family": "Назаренко"
+            },
+            {
+                "given": "АА",
+                "family": "Петренко"
+            },
+            {
+                "given": "АВ",
+                "family": "Прохоров"
+            },
+            {
+                "given": "ЛС",
+                "family": "Черней"
+            }
+        ],
+        "container-title": "Наукові записки державного природознавчого музею",
+        "issue": "29",
+        "page": "129-135",
+        "type": "article-journal",
+        "id": "7"
+    }
+}

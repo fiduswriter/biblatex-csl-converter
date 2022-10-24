@@ -1,0 +1,149 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2011
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Franck",
+                "family": "Cappello"
+            },
+            {
+                "given": "Mathias",
+                "family": "Jacquelin"
+            },
+            {
+                "given": "Loris",
+                "family": "Marchal"
+            },
+            {
+                "given": "Yves",
+                "family": "Robert"
+            },
+            {
+                "given": "Marc",
+                "family": "Snir"
+            }
+        ],
+        "container-title": "High performance computing (<span class=\"nocase\">HiPC</span>), 2011 18th international conference on",
+        "DOI": "10.1109/HiPC.2011.6152428",
+        "page": "1-10",
+        "publisher": "IEEE",
+        "title": "Comparing archival policies for <span class=\"nocase\">Blue Waters</span>",
+        "URL": "http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6152428",
+        "accessed": {
+            "date-parts": [
+                [
+                    2014,
+                    10,
+                    23
+                ]
+            ]
+        },
+        "type": "paper-conference",
+        "id": "1"
+    },
+    "2": {
+        "issued": {
+            "date-parts": [
+                [
+                    2014
+                ]
+            ]
+        },
+        "abstract": "We study the energy used by a production-level regional climate and weather simulation code on a distributed memory system with hybrid CPU-GPU nodes. The code is optimised for both processor architectures, for which we investigate both time and energy to solution. Operational constraints for time to solution can be met with both processor types, although on different numbers of nodes. Energy to solution is a factor 3 lower with GPUs, but strong scaling can be pushed to larger node counts with CPUs to minimize time to solution. Our data shows that an affine relationship exists between energy and nodehours consumed by the simulation. We use this property to devise a simple and practical methodology for optimising for energy efficiency that can be applied to other applications, which we demonstrate with the HPCG benchmark. We conclude with a discussion about the relationship to the commonly-used GF/Watt metric.",
+        "author": [
+            {
+                "given": "Ben",
+                "family": "Cumming"
+            },
+            {
+                "given": "Gilles",
+                "family": "Fourestey"
+            },
+            {
+                "given": "Oliver",
+                "family": "Fuhrer"
+            },
+            {
+                "given": "Tobias",
+                "family": "Gysi"
+            },
+            {
+                "given": "Massimiliano",
+                "family": "Fatica"
+            },
+            {
+                "given": "Thomas C.",
+                "family": "Schulthess"
+            }
+        ],
+        "container-title": "Proceedings of the international conference for <span class=\"nocase\">High Performance Computing</span>, <span class=\"nocase\">Networking</span>, <span class=\"nocase\">Storage</span> and <span class=\"nocase\">Analysis</span>",
+        "DOI": "10.1109/SC.2014.72",
+        "ISBN": "978-1-4799-5500-8",
+        "publisher-place": "Piscataway, NJ, USA",
+        "page": "819-829",
+        "publisher": "IEEE Press",
+        "collection-title": "SC '14",
+        "title": "Application centric energy-efficiency study of distributed multi-core and hybrid <span class=\"nocase\">CPU</span>-<span class=\"nocase\">GPU</span> systems",
+        "URL": "http://dx.doi.org/10.1109/SC.2014.72",
+        "accessed": {
+            "date-parts": [
+                [
+                    2015,
+                    1,
+                    12
+                ]
+            ]
+        },
+        "type": "paper-conference",
+        "id": "2"
+    },
+    "3": {
+        "issued": {
+            "date-parts": [
+                [
+                    2011,
+                    10,
+                    7
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Karl E.",
+                "family": "Taylor"
+            },
+            {
+                "given": "Ronald J.",
+                "family": "Stouffer"
+            },
+            {
+                "given": "Gerald A.",
+                "family": "Meehl"
+            }
+        ],
+        "DOI": "10.1175/BAMS-D-11-00094.1",
+        "ISSN": "0003-0007, 1520-0477",
+        "container-title": "Bulletin of the american meteorological society",
+        "page": "485-498",
+        "title": "An overview of <span class=\"nocase\">CMIP5</span> and the <span class=\"nocase\">Experiment Design</span>",
+        "URL": "http://journals.ametsoc.org/doi/abs/10.1175/BAMS-D-11-00094.1",
+        "accessed": {
+            "date-parts": [
+                [
+                    2012,
+                    4,
+                    17
+                ]
+            ]
+        },
+        "volume": "93",
+        "type": "article-journal",
+        "id": "3"
+    }
+}

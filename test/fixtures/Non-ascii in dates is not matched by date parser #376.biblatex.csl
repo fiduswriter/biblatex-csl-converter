@@ -1,0 +1,54 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2008,
+                    3,
+                    1
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Julia",
+                "family": "Wendt"
+            },
+            {
+                "given": "Martin",
+                "family": "Lotze"
+            },
+            {
+                "given": "Almut I.",
+                "family": "Weike"
+            },
+            {
+                "given": "Norbert",
+                "family": "Hosten"
+            },
+            {
+                "given": "Alfons O.",
+                "family": "Hamm"
+            }
+        ],
+        "DOI": "10.1111/j.1469-8986.2007.00620.x",
+        "container-title": "Psychophysiology",
+        "language": "en-US",
+        "issue": "2",
+        "page": "205-215",
+        "title": "Brain activation and defensive response mobilization during sustained exposure to phobia-related and other affective pictures in spider phobia",
+        "URL": "http://onlinelibrary.wiley.com/doi/10.1111/j.1469-8986.2007.00620.x/abstract",
+        "accessed": {
+            "date-parts": [
+                [
+                    2014,
+                    5,
+                    12
+                ]
+            ]
+        },
+        "volume": "45",
+        "type": "article-journal",
+        "id": "1"
+    }
+}

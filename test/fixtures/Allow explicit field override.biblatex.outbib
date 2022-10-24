@@ -1,0 +1,9 @@
+@article{anand2014technicalreportformally,
+date = {2014},
+author = {given={Abhishek}, family={Anand} and given={Vincent}, family={Rahli}},
+note = {http://www.nuprl.org/html/verification/},
+origdate = {1856},
+origtitle = {An Old Title},
+title = {Technical {{Report}} : {{Towards}} a {{Formally Verified Proof Assistant}}},
+url = {http://www.nuprl.org/html/verification/}
+}

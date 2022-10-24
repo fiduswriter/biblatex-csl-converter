@@ -1,0 +1,24 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    1972
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Richard E",
+                "family": "Blahut"
+            }
+        ],
+        "container-title": "[IEEE_J_IT]",
+        "issue": "4",
+        "page": "460-473",
+        "title": "Computation of channel capacity and rate-distortion functions",
+        "volume": "18",
+        "type": "article-journal",
+        "id": "1"
+    }
+}

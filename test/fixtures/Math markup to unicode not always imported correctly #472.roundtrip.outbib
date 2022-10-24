@@ -1,0 +1,21 @@
+@inproceedings{test_citation1,
+date = {2016-02},
+abstract = {Abstract here},
+author = {given={J.}, family={Doe} and given={R.}, family={Smith}},
+booktitle = IEEE_J_PROC ,
+doi = {10.1109/JPROC.2016.2526118},
+keywords = {Keyword 1, Keyword 2},
+pages = {300--301},
+title = {Test {{Title With}} 100 {{μJ}}, 200 {{μJ Energy}}, {and} ±0.1{\%} {{Accuracy}}, 0.2 Mm$^{2}$ {{Size}}, {and} -50 {{dB Attenuation}}}
+}
+
+@inproceedings{test_citation2,
+date = {2016-02},
+abstract = {Abstract here},
+author = {given={J.}, family={Doe} and given={R.}, family={Smith}},
+booktitle = IEEE_J_PROC ,
+doi = {10.1109/JPROC.2016.2526118},
+keywords = {Keyword 1, Keyword 2},
+pages = {300--301},
+title = {Test {{Title}} with Space Quad, Space Semi-Colon, Space Colon, Space Comma, Space Nbsp}
+}

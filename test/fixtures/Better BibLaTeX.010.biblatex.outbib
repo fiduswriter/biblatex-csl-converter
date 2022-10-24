@@ -1,0 +1,12 @@
+@inproceedings{Hulse2009,
+date = {2010-01-27},
+author = {given={Jason Van}, family={Hulse} and given={Taghi M.}, family={Khoshgoftaar} and given={Amri}, family={Napolitano} and given={Randall}, family={Wald}},
+booktitle = {{{ICDM Workshops}}},
+editor = {given={Yücel}, family={Saygin} and given={Jeffrey Xu}, family={Yu} and given={Hillol}, family={Kargupta} and given={Wei}, family={Wang} and given={Sanjay}, family={Ranka} and given={Philip S.}, family={Yu} and given={Xindong}, family={Wu}},
+isbn = {978-0-7695-3902-7},
+keywords = {dblp},
+pages = {507--514},
+publisher = {IEEE Computer Society},
+title = {Feature {{Selection}} with {{High}}-{{Dimensional Imbalanced Data}}.},
+url = {http://dblp.uni-trier.de/db/conf/icdm/icdmw2009.htmlHulseKNW09}
+}

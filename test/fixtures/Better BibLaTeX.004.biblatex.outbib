@@ -1,0 +1,9 @@
+@book{hicks2001,
+date = {2001},
+author = {given={Michael}, family={Hicks}, suffix={III}, prefix={von}, useprefix=true},
+edition = {1st,},
+isbn = {0-69-697269-4},
+location = {Palo Alto},
+publisher = {Stanford Press},
+title = {Design of a {{Carbon Fiber Composite Grid Structure}} for the {{GLAST}} Spacecraft Using a Novel Manufacturing Technique}
+}

@@ -1,0 +1,13 @@
+@inproceedings{Lysenko:2010:GMC:1839778.1839781,
+date = {2010},
+author = {given={Mikola}, family={Lysenko} and given={Saigopal}, family={Nelaturi} and given={Vadim}, family={Shapiro}},
+title = {Group morphology with convolution algebras},
+booktitle = {Proceedings of the 14th ACM Symposium on Solid {and} Physical Modeling},
+series = {SPM '10},
+isbn = {978-1-60558-984-8},
+location = {Haifa, Israel},
+pages = {11--22},
+url = {http://doi.acm.org/10.1145/1839778.1839781},
+doi = {10.1145/1839778.1839781},
+publisher = {ACM}
+}

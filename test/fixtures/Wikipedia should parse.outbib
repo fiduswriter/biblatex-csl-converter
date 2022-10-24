@@ -1,0 +1,8 @@
+@book{abramowitz+stegun,
+date = {1964},
+author = {given={Milton}, family={Abramowitz} and given={Irene A.}, family={Stegun}},
+title = {Handbook of Mathematical Functions with Formulas, Graphs, {and} Mathematical Tables},
+publisher = {Dover},
+location = {New York},
+edition = {ninth Dover printing, tenth GPO printing}
+}

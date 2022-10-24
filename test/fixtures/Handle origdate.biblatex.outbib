@@ -1,0 +1,29 @@
+@book{klein,
+date = {1989},
+author = {given={Ludwig}, family={Wittgenstein}},
+title = {Vortrag über Ethik und andere kleine Schriften},
+editor = {given={Joachim}, family={Schulte}},
+publisher = {Suhrkamp},
+location = {Frankfurt am Main},
+series = {stw},
+number = {770},
+language = {german},
+langid = {ngerman}
+}
+
+@inbook{onFrazer,
+date = {1989},
+author = {given={Ludwig}, family={Wittgenstein}},
+title = {{{Bemerkungen}} über {{Frazers}} {{Golden}} {{Bough}}},
+editor = {given={Joachim}, family={Schulte}},
+publisher = {Suhrkamp},
+location = {Frankfurt am Main},
+series = {stw},
+number = {770},
+language = {german},
+langid = {ngerman},
+bookauthor = {given={Ludwig}, family={Wittgenstein}},
+booktitle = {Vortrag über Ethik und andere kleine Schriften},
+pages = {29--46},
+origdate = {1930/1939}
+}

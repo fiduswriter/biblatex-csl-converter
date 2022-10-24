@@ -1,0 +1,11 @@
+@inproceedings{CorlessJeffreyKnuth1997Proc1997IntSympSymbAlgebrComput,
+date = {1997},
+author = {given={Robert M.}, family={Corless} and given={David J.}, family={Jeffrey} and given={Donald E.}, family={Knuth}},
+booktitle = {Proceedings of the 1997 {{International Symposium}} on {{Symbolic}} {and} {{Algebraic Computation}}},
+doi = {10.1145/258726.258783},
+isbn = {0-89791-875-4},
+langid = {usenglish},
+pages = {197--204},
+publisher = {ACM Press},
+title = {A Sequence of Series for the {{Lambert}} {{{{\mkbibitalic{W}}}}} Function}
+}

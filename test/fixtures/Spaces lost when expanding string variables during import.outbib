@@ -1,0 +1,6 @@
+@article{key,
+date = {1990},
+author = {{Author}},
+title = {Title},
+journaltitle = {a space between this {and} this}
+}

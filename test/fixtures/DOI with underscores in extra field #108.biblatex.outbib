@@ -1,0 +1,9 @@
+@incollection{koopman_efficient_99,
+date = {1999},
+author = {given={Pieter}, family={Koopman} and given={Rinus}, family={Plasmeijer}},
+booktitle = {Implementation of {{Functional Languages}}},
+doi = {10.1007/3-540-48515-5_8},
+pages = {120--136},
+publisher = {Springer},
+title = {Efficient Combinator Parsers}
+}

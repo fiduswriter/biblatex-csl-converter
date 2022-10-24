@@ -1,0 +1,89 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2015
+                ]
+            ]
+        },
+        "publisher-place": "US/GB",
+        "title": "A film",
+        "type": "article",
+        "id": "1"
+    },
+    "2": {
+        "issued": {
+            "date-parts": [
+                [
+                    2015
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Ann",
+                "family": "Author"
+            }
+        ],
+        "publisher-place": "Place",
+        "note": "{:X-genre: xxx}",
+        "collection-number": "77",
+        "title": "A report",
+        "type": "report",
+        "id": "2"
+    },
+    "3": {
+        "issued": {
+            "date-parts": [
+                [
+                    1964
+                ]
+            ]
+        },
+        "title-short": "Dr. <span class=\"nocase\">Strangelove</span>",
+        "title": "Dr. <span class=\"nocase\">Strangelove</span> or: how <span class=\"nocase\">I</span> learned to stop worrying and love the bomb",
+        "type": "article",
+        "id": "3"
+    },
+    "4": {
+        "issued": {
+            "date-parts": [
+                [
+                    1996,
+                    9,
+                    16
+                ]
+            ]
+        },
+        "language": "en-US",
+        "publisher-place": "US",
+        "title": "The one with the <span class=\"nocase\">Princess Leia</span> fantasy",
+        "type": "article",
+        "id": "4"
+    },
+    "5": {
+        "issued": {
+            "date-parts": [
+                [
+                    2003
+                ]
+            ]
+        },
+        "language": "en-US",
+        "publisher-place": "US",
+        "title": "The one with the <span class=\"nocase\">Princess Leia</span> fantasy",
+        "type": "article",
+        "id": "5"
+    },
+    "6": {
+        "editor": [
+            {
+                "literal": "Xxx"
+            }
+        ],
+        "note": "{:X-genre: xxx}",
+        "type": "entry-encyclopedia",
+        "id": "6"
+    }
+}

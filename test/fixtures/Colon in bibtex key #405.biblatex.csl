@@ -1,0 +1,35 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2007
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Y.A.W.",
+                "family": "Kort",
+                "non-dropping-particle": "de"
+            },
+            {
+                "given": "W.A.",
+                "family": "IJsselsteijn"
+            },
+            {
+                "given": "K.",
+                "family": "Poels"
+            }
+        ],
+        "container-title": "Proceedings of the 10th <span class=\"nocase\">Annual International Workshop</span> on <span class=\"nocase\">Presence</span>",
+        "DOI": "http://alexandria.tue.nl/campusonly/Metis215145.pdf",
+        "publisher-place": "Barcelona",
+        "page": "195-203",
+        "publisher": "Starlab",
+        "title": "Digital games as social presence technology: development of the social presence in gaming questionnaire (<span class=\"nocase\">SPGQ</span>)",
+        "URL": "http://repository.tue.nl/663080",
+        "type": "paper-conference",
+        "id": "1"
+    }
+}

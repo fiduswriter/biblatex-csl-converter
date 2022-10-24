@@ -1,0 +1,9 @@
+@book{Manning2008,
+date = {2008-07-07},
+author = {given={Christopher D.}, family={Manning} and given={Prabhakar}, family={Raghavan} and given={Hinrich}, family={Schütze}},
+isbn = {978-0-521-86571-5},
+location = {New York},
+pagetotal = {496},
+publisher = {Cambridge University Press},
+title = {Introduction to {{Information Retrieval}}}
+}

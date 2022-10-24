@@ -1,0 +1,142 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2007
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Christopher",
+                "family": "Kennedy"
+            }
+        ],
+        "DOI": "10.1007/s10988-006-9008-0",
+        "ISSN": "0165-0157, 1573-0549",
+        "container-title": "Linguistics and philosophy",
+        "issue": "1",
+        "page": "1-45",
+        "title-short": "Vagueness and grammar",
+        "title": "Vagueness and grammar: <span class=\"nocase\">The</span> semantics of relative and absolute gradable adjectives",
+        "accessed": {
+            "date-parts": [
+                [
+                    2012,
+                    10,
+                    31
+                ]
+            ]
+        },
+        "volume": "30",
+        "type": "article-journal",
+        "id": "1"
+    },
+    "2": {
+        "issued": {
+            "date-parts": [
+                [
+                    1994
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Kai",
+                "family": "Fintel",
+                "non-dropping-particle": "von"
+            }
+        ],
+        "title": "Restrictions on <span class=\"nocase\">Quantifier Domains</span>",
+        "accessed": {
+            "date-parts": [
+                [
+                    2014,
+                    4,
+                    20
+                ]
+            ]
+        },
+        "type": "thesis",
+        "id": "2"
+    },
+    "3": {
+        "issued": {
+            "date-parts": [
+                [
+                    2010
+                ]
+            ]
+        },
+        "abstract": "It is a well-known but little-studied fact that evaluativeadverbs - adverbs indicating the attitude of the speaker towards theinformation she is conveying - can modify degree ('incredibly tall','ridiculously expensive'...). This thesis offers a syntactosemanticaccount of evaluative degree modi fication of both gradable adjectivesand gradable nouns.Following Morzycki (2004), I propose that evaluative degreemodi fication involves a covert operator (which I will call EVAL);however, my proposal differs from that of Morzycki in several crucialrespects. Most importantly, I argue that evaluative degreeconstructions should not be analysed as embedded exclamatives.Furthermore, I show how their syntactic behaviour illuminates theirsemantic composition, using evidence from different phenomena in bothEnglish and Dutch.Subsequently, I examine the linguistic evidence for the gradability ofcertain nouns, like 'idiot', 'nerd', 'genius', 'Barbie dollenthusiast', and 'weirdo', and conclude that they, like gradableadjectives, have a degree argument. I show how this class of gradablenouns may be defined in prototype-theoretic terms. Morzycki (2009)has shown that gradable nouns can be modified by size adjectives like'big' and 'enormous'; I extend his account by including degreemodification by evaluative adjectives.Finally, several suggestions for further research are offered.",
+        "author": [
+            {
+                "given": "Hanna",
+                "family": "Vries",
+                "non-dropping-particle": "de"
+            }
+        ],
+        "title": "Evaluative <span class=\"nocase\">Degree Modification</span> of <span class=\"nocase\">Adjectives</span> and <span class=\"nocase\">Nouns</span>",
+        "type": "thesis",
+        "id": "3"
+    },
+    "4": {
+        "issued": {
+            "date-parts": [
+                [
+                    1995
+                ]
+            ]
+        },
+        "language": "fr-FR",
+        "publisher-place": "Paris",
+        "author": [
+            {
+                "given": "Danièle",
+                "family": "Velde",
+                "non-dropping-particle": "van de"
+            }
+        ],
+        "ISBN": "978-90-6831-748-0",
+        "publisher": "Peeters",
+        "title": "Le spectre nominal. Des noms de matières aux noms d'abstractions",
+        "type": "book",
+        "id": "4"
+    },
+    "5": {
+        "issued": {
+            "date-parts": [
+                [
+                    1998
+                ]
+            ]
+        },
+        "language": "en-US",
+        "author": [
+            {
+                "given": "Henriëtte",
+                "family": "Swart",
+                "non-dropping-particle": "de"
+            }
+        ],
+        "DOI": "10.1023/A:1005916004600",
+        "ISSN": "0167-806X, 1573-0859",
+        "container-title": "Natural language & linguistic theory",
+        "issue": "2",
+        "page": "347-385",
+        "title": "Aspect <span class=\"nocase\">Shift</span> and <span class=\"nocase\">Coercion</span>",
+        "accessed": {
+            "date-parts": [
+                [
+                    2015,
+                    10,
+                    9
+                ]
+            ]
+        },
+        "volume": "16",
+        "type": "article-journal",
+        "id": "5"
+    }
+}

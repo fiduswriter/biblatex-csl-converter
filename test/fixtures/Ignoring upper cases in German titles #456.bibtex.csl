@@ -1,0 +1,44 @@
+{
+    "1": {
+        "author": [
+            {
+                "given": "Franz-Xaver",
+                "family": "Kaufmann"
+            }
+        ],
+        "container-title": "<span class=\"nocase\">Sozialpolitik und Sozialstaat: Soziologische Analysen</span>",
+        "DOI": "10.1007/978-3-322-99962-7_7",
+        "editor": [
+            {
+                "given": "Franz-Xaver",
+                "family": "Kauffmann"
+            }
+        ],
+        "page": "145-160",
+        "publisher": "VS Verlag für Sozialwissenschaften",
+        "title": "<span class=\"nocase\">Sozialpolitik und Bevölkerungsprozeß</span>",
+        "type": "chapter",
+        "id": "1"
+    },
+    "2": {
+        "author": [
+            {
+                "given": "Franz-Xaver",
+                "family": "Kaufmann"
+            }
+        ],
+        "container-title": "<span class=\"nocase\">Sozialpolitik und Sozialstaat: Soziologische Analysen</span>",
+        "DOI": "10.1007/978-3-322-99962-7_11",
+        "editor": [
+            {
+                "given": "Franz-Xaver",
+                "family": "Kauffmann"
+            }
+        ],
+        "page": "241-260",
+        "publisher": "VS Verlag für Sozialwissenschaften",
+        "title": "<span class=\"nocase\">Schwindet die integrative Funktion des Sozialstaates?</span>",
+        "type": "chapter",
+        "id": "2"
+    }
+}

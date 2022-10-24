@@ -1,0 +1,21 @@
+{
+    "1": {
+        "publisher-place": "Trinidad and Tobago",
+        "original-publisher-place": "Saint Kitts and Nevis",
+        "original-publisher": "Doe and Company",
+        "publisher": "Miller, Smith and Jones",
+        "title": "Publisher",
+        "type": "book",
+        "id": "1"
+    },
+    "2": {
+        "title": "Institution",
+        "type": "report",
+        "id": "2"
+    },
+    "3": {
+        "title": "University",
+        "type": "thesis",
+        "id": "3"
+    }
+}

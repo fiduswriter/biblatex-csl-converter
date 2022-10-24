@@ -1,0 +1,16 @@
+@book{Abramowitz1964,
+date = {1964},
+author = {given={Milton}, family={Abramowitz} and given={Irene A.}, family={Stegun}},
+edition = {ninth Dover printing, tenth GPO printing},
+location = {New York},
+publisher = {Dover},
+title = {Handbook of Mathematical Functions with Formulas, Graphs, {and} Mathematical Tables}
+}
+
+@book{Torre2008,
+date = {2008},
+author = {given={Joe}, family={Torre} and given={Tom}, family={Verducci}},
+isbn = {0-385-52740-3},
+publisher = {Doubleday},
+title = {The {{Yankee}} Years}
+}

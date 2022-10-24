@@ -1,0 +1,85 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2015
+                ]
+            ]
+        },
+        "abstract": "zotero-better-bibtex - Make Zotero effective for us LaTeX holdouts",
+        "author": [
+            {
+                "literal": "Firstname Retorquere"
+            }
+        ],
+        "medium": "https://github.com/retorquere/zotero-better-bibtex/issues/439",
+        "title": "Replicate <span class=\"nocase\">Zotero</span> key algorithm · <span class=\"nocase\">Issue</span> #439 · retorquere/zotero-better-bibtex",
+        "accessed": {
+            "date-parts": [
+                [
+                    2016,
+                    1,
+                    29
+                ]
+            ]
+        },
+        "type": "article",
+        "id": "1"
+    },
+    "2": {
+        "issued": {
+            "date-parts": [
+                [
+                    2016
+                ]
+            ]
+        },
+        "abstract": "zotero-better-bibtex - Make Zotero effective for us LaTeX holdouts",
+        "author": [
+            {
+                "given": "Firstname",
+                "family": "Retorquere"
+            },
+            {
+                "given": "Firstname2",
+                "family": "Retorquere2"
+            }
+        ],
+        "medium": "https://github.com/retorquere/zotero-better-bibtex/issues/439",
+        "title": "Replicate <span class=\"nocase\">Zotero</span> key algorithm · <span class=\"nocase\">Issue</span> #439 · retorquere/zotero-better-bibtex",
+        "accessed": {
+            "date-parts": [
+                [
+                    2016,
+                    1,
+                    29
+                ]
+            ]
+        },
+        "type": "article",
+        "id": "2"
+    },
+    "3": {
+        "abstract": "zotero-better-bibtex - Make Zotero effective for us LaTeX holdouts",
+        "author": [
+            {
+                "given": "First-Double",
+                "family": "Retorquere-Double"
+            }
+        ],
+        "medium": "https://github.com/retorquere/zotero-better-bibtex/issues/439",
+        "title": "Replicate <span class=\"nocase\">Zotero</span> key algorithm · <span class=\"nocase\">Issue</span> #439 · retorquere/zotero-better-bibtex",
+        "accessed": {
+            "date-parts": [
+                [
+                    2016,
+                    1,
+                    29
+                ]
+            ]
+        },
+        "type": "article",
+        "id": "3"
+    }
+}

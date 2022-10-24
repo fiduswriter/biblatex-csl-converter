@@ -1,0 +1,36 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2010
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Mikola",
+                "family": "Lysenko"
+            },
+            {
+                "given": "Saigopal",
+                "family": "Nelaturi"
+            },
+            {
+                "given": "Vadim",
+                "family": "Shapiro"
+            }
+        ],
+        "title": "Group morphology with convolution algebras",
+        "container-title": "Proceedings of the 14th ACM symposium on solid and physical modeling",
+        "collection-title": "SPM '10",
+        "ISBN": "978-1-60558-984-8",
+        "publisher-place": "Haifa, Israel",
+        "page": "11-22",
+        "URL": "http://doi.acm.org/10.1145/1839778.1839781",
+        "DOI": "10.1145/1839778.1839781",
+        "publisher": "ACM",
+        "type": "paper-conference",
+        "id": "1"
+    }
+}

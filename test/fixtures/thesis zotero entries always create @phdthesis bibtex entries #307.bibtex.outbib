@@ -1,0 +1,15 @@
+@thesis{Woller2011DetMultiple,
+date = {2011},
+langid = {norsk},
+author = {given={Sune Brøndum}, family={Wøller}},
+language = {norsk},
+title = {Det multiple arkæologiske objekt. Et studie af materialitet og arkæologiske tekstiler}
+}
+
+@thesis{Woller2011CTRDet,
+date = {2011},
+langid = {norsk},
+author = {given={Sune Brøndum}, family={Wøller}},
+language = {norsk},
+title = {CTR Det multiple arkæologiske objekt. Et studie af materialitet og arkæologiske tekstiler}
+}

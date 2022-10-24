@@ -1,0 +1,62 @@
+@article{nazarenko2009new,
+date = {2009},
+title = {A new genus {and} species of dryophthorid weevils (Coleoptera, Dryophthoridae: Stromboscerinae) from the Rovno amber},
+author = {given={V Yu}, family={Nazarenko} and given={EE}, family={Perkovsky}},
+journaltitle = {Paleontological Journal},
+volume = {43},
+number = {9},
+pages = {1097--1100}
+}
+
+@article{nazarenko2011new,
+date = {2011},
+title = {A new species of the genus Caulophilus Woll.(Coleoptera: Curculionidae: Cossoninae) from the Rovno amber},
+author = {given={V Yu}, family={Nazarenko} and given={AA}, family={Legalov} and given={EE}, family={Perkovsky}},
+journaltitle = {Paleontological Journal},
+volume = {45},
+number = {3},
+pages = {287--290}
+}
+
+@article{назаренко2007долгоносикообразные,
+date = {2007},
+title = {Долгоносикообразные жуки (Coleoptera, Curculionoidea) водоемов г. Киева},
+author = {given={ВЮ}, family={Назаренко}},
+journaltitle = {VII з’їзд Укр. ентомол. т--ва, Ніжин},
+pages = {14--18}
+}
+
+@inproceedings{назаренко2012долгоносикообразные,
+date = {2012},
+title = {ДОЛГОНОСИКООБРАЗНЫЕ ЖУКИ (COLEOPTERA, CURCULIONOIDEA) ПРИБРЕЖНЫХ БИОТОПОВ ОСТРОВА ОБОЛОНСКОЙ КОСЫ (г. КИЕВ)},
+author = {given={Виталий Юрьевич}, family={Назаренко}},
+booktitle = {ПРОБЛЕМЫ ИЗУЧЕНИЯ КРАЕВЫХ СТРУКТУР БИОЦЕНОЗОВ},
+pages = {189--193},
+organization = {Изд-во Сарат. ун-та}
+}
+
+@inproceedings{назаренко2012долгоносикообразные,
+date = {2012},
+title = {ДОЛГОНОСИКООБРАЗНЫЕ ЖУКИ (COLEOPTERA, CURCULIONOIDEA) ОСТРОВА ДИКОГО (Г. КИЕВ)},
+author = {given={Виталий Юрьевич}, family={Назаренко}},
+booktitle = {БИОРАЗНООБРАЗИЕ И УСТОЙЧИВОЕ РАЗВИТИЕ},
+pages = {218--221}
+}
+
+@inproceedings{назаренко2010водные,
+date = {2010},
+title = {Водные жуки-долгоносики (Insecta: Coleoptera, Curculionoidea) Днепровских островов г. Киева},
+author = {given={В. Ю.}, family={Назаренко}},
+booktitle = {Экология водных беспозвоночных},
+pages = {210--211},
+organization = {Принтхаус}
+}
+
+@article{пучков2013предварительный,
+date = {2013},
+title = {Предварительный обзор колеоптерофауны (Coleoptera) Казантипского природного заповедника},
+author = {given={АВ}, family={Пучков} and given={ТЮ}, family={Маркина} and given={ВЮ}, family={Назаренко} and given={АА}, family={Петренко} and given={АВ}, family={Прохоров} and given={ЛС}, family={Черней}},
+journaltitle = {Наукові записки Державного природознавчого музею},
+number = {29},
+pages = {129--135}
+}

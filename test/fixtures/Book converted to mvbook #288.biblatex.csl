@@ -1,0 +1,28 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    1990
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Jacqueline",
+                "family": "Russ"
+            }
+        ],
+        "ISBN": "2-218-05069-2",
+        "language": "fr-FR",
+        "publisher-place": "Paris",
+        "collection-number": "746",
+        "number-of-pages": "79",
+        "publisher": "Hatier",
+        "collection-title": "Profil",
+        "title": "Savoir et pouvoir",
+        "number-of-volumes": "2",
+        "type": "book",
+        "id": "1"
+    }
+}

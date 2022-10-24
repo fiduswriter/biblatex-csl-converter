@@ -1,0 +1,34 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2014
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Abhishek",
+                "family": "Anand"
+            },
+            {
+                "given": "Vincent",
+                "family": "Rahli"
+            }
+        ],
+        "note": "http://www.nuprl.org/html/verification/",
+        "original-date": {
+            "date-parts": [
+                [
+                    1856
+                ]
+            ]
+        },
+        "original-title": "An old title",
+        "title": "Technical <span class=\"nocase\">Report</span> : <span class=\"nocase\">Towards</span> a <span class=\"nocase\">Formally Verified Proof Assistant</span>",
+        "URL": "http://www.nuprl.org/html/verification/",
+        "type": "article-journal",
+        "id": "1"
+    }
+}

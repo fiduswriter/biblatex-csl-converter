@@ -1,0 +1,23 @@
+{
+    "1": {
+        "author": [
+            {
+                "given": "John",
+                "family": "MacFarlane"
+            }
+        ],
+        "title": "Pandoc <span class=\"nocase\">User</span>’s <span class=\"nocase\">Guide</span>",
+        "URL": "http://johnmacfarlane.net/pandoc/README.html#citations",
+        "accessed": {
+            "date-parts": [
+                [
+                    2015,
+                    1,
+                    31
+                ]
+            ]
+        },
+        "type": "article",
+        "id": "1"
+    }
+}

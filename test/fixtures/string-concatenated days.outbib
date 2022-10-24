@@ -1,0 +1,9 @@
+@article{ingrand99:_propice_plan,
+date = {1999-08-13},
+langid = {usenglish},
+title = {Propice-Plan: Toward a Unified Framework for Planning {and} Execution},
+author = {INGRAND  and given={Olivier}, family={Despouys}},
+abstract = {In this paper, we investigate the links between planning {and} plans execution. We propose a new approach (Propice-Plan) which integrates both activities. It implements supervision {and} execution capabilities, combined with different planning techniques: -- plan synthesis to complement existing operational plans; {and} -- anticipation planning to advise the execution for the best option to take when facing choices (by anticipating plans execution), {and} to forecast problems that may arise due to unforeseen situations.},
+annotation = {The Pennsylvania State University CiteSeer Archives},
+language = {en}
+}

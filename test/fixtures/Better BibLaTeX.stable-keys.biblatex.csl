@@ -1,0 +1,182 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2012
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "U.",
+                "family": "Fritz"
+            },
+            {
+                "given": "C.",
+                "family": "Corti"
+            },
+            {
+                "given": "M.",
+                "family": "Päckert"
+            }
+        ],
+        "DOI": "10.1007/s13127-011-0069-8",
+        "container-title": "Actes du 4<sup>ème</sup> congrès français d'acoustique",
+        "page": "71-80",
+        "title": "Fritz2012",
+        "volume": "12",
+        "type": "article-journal",
+        "id": "1"
+    },
+    "2": {
+        "issued": {
+            "date-parts": [
+                [
+                    2012
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "U.",
+                "family": "Fritz"
+            },
+            {
+                "given": "C.",
+                "family": "Corti"
+            },
+            {
+                "given": "M.",
+                "family": "Päckert"
+            }
+        ],
+        "DOI": "10.1007/s13127-011-0069-8",
+        "container-title": "Actes du 4<sup>ème</sup> congrès français d'acoustique",
+        "page": "71-80",
+        "title": "Fritz2012a",
+        "volume": "12",
+        "type": "article-journal",
+        "id": "2"
+    },
+    "3": {
+        "issued": {
+            "date-parts": [
+                [
+                    2012
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "U.",
+                "family": "Fritz"
+            },
+            {
+                "given": "C.",
+                "family": "Corti"
+            },
+            {
+                "given": "M.",
+                "family": "Päckert"
+            }
+        ],
+        "DOI": "10.1007/s13127-011-0069-8",
+        "container-title": "Actes du 4<sup>ème</sup> congrès français d'acoustique",
+        "page": "71-80",
+        "title": "Fritz2012b",
+        "volume": "12",
+        "type": "article-journal",
+        "id": "3"
+    },
+    "4": {
+        "issued": {
+            "date-parts": [
+                [
+                    2012
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "U.",
+                "family": "Fritz"
+            },
+            {
+                "given": "C.",
+                "family": "Corti"
+            },
+            {
+                "given": "M.",
+                "family": "Päckert"
+            }
+        ],
+        "DOI": "10.1007/s13127-011-0069-8",
+        "container-title": "Actes du 4<sup>ème</sup> congrès français d'acoustique",
+        "page": "71-80",
+        "title": "Fritz2012c",
+        "volume": "12",
+        "type": "article-journal",
+        "id": "4"
+    },
+    "5": {
+        "issued": {
+            "date-parts": [
+                [
+                    2012
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "U.",
+                "family": "Fritz"
+            },
+            {
+                "given": "C.",
+                "family": "Corti"
+            },
+            {
+                "given": "M.",
+                "family": "Päckert"
+            }
+        ],
+        "DOI": "10.1007/s13127-011-0069-8",
+        "container-title": "Actes du 4<sup>ème</sup> congrès français d'acoustique",
+        "page": "71-80",
+        "title": "Fritz2012d",
+        "volume": "12",
+        "type": "article-journal",
+        "id": "5"
+    },
+    "6": {
+        "issued": {
+            "date-parts": [
+                [
+                    2012
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "U.",
+                "family": "Fritz"
+            },
+            {
+                "given": "C.",
+                "family": "Corti"
+            },
+            {
+                "given": "M.",
+                "family": "Päckert"
+            }
+        ],
+        "DOI": "10.1007/s13127-011-0069-8",
+        "container-title": "Actes du 4<sup>ème</sup> congrès français d'acoustique",
+        "page": "71-80",
+        "title": "Fritz2012e",
+        "volume": "12",
+        "type": "article-journal",
+        "id": "6"
+    }
+}

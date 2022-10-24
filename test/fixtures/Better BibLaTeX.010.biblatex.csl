@@ -1,0 +1,69 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2010,
+                    1,
+                    27
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Jason Van",
+                "family": "Hulse"
+            },
+            {
+                "given": "Taghi M.",
+                "family": "Khoshgoftaar"
+            },
+            {
+                "given": "Amri",
+                "family": "Napolitano"
+            },
+            {
+                "given": "Randall",
+                "family": "Wald"
+            }
+        ],
+        "container-title": "<span class=\"nocase\">ICDM Workshops</span>",
+        "editor": [
+            {
+                "given": "Yücel",
+                "family": "Saygin"
+            },
+            {
+                "given": "Jeffrey Xu",
+                "family": "Yu"
+            },
+            {
+                "given": "Hillol",
+                "family": "Kargupta"
+            },
+            {
+                "given": "Wei",
+                "family": "Wang"
+            },
+            {
+                "given": "Sanjay",
+                "family": "Ranka"
+            },
+            {
+                "given": "Philip S.",
+                "family": "Yu"
+            },
+            {
+                "given": "Xindong",
+                "family": "Wu"
+            }
+        ],
+        "ISBN": "978-0-7695-3902-7",
+        "page": "507-514",
+        "publisher": "IEEE Computer Society",
+        "title": "Feature <span class=\"nocase\">Selection</span> with <span class=\"nocase\">High</span>-<span class=\"nocase\">Dimensional Imbalanced Data</span>.",
+        "URL": "http://dblp.uni-trier.de/db/conf/icdm/icdmw2009.htmlHulseKNW09",
+        "type": "paper-conference",
+        "id": "1"
+    }
+}

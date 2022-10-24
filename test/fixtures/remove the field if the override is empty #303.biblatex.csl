@@ -1,0 +1,25 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    1988
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Enrico",
+                "family": "Pattaro"
+            }
+        ],
+        "container-title": "Revue interdisciplinaire d’études juridiques",
+        "language": "fr-FR",
+        "issue": "spécial anniversaire 1978-1988",
+        "page": "135-162",
+        "title": "Dimensions du savoir juridique et orientations philosophiques",
+        "volume": "21",
+        "type": "article-journal",
+        "id": "1"
+    }
+}

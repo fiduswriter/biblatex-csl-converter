@@ -1,0 +1,25 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2006
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Roger D.",
+                "family": "Blandford"
+            },
+            {
+                "given": "Kip S.",
+                "family": "Thorne"
+            }
+        ],
+        "publisher": "Caltech",
+        "title": "Applications of <span class=\"nocase\">Classical Physics</span>",
+        "type": "book",
+        "id": "1"
+    }
+}
