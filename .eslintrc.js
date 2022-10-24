@@ -1,7 +1,7 @@
 module.exports = {
     root: true,
     parser: "@typescript-eslint/parser",
-    plugins: ["@typescript-eslint"],
+    plugins: ["@typescript-eslint", "prettier"],
     env: {
         browser: true,
         es6: true,
@@ -211,6 +211,7 @@ module.exports = {
         "prefer-rest-params": "error",
         "prefer-spread": "error",
         "prefer-template": "off",
+        "prettier/prettier": "error",
         "quote-props": "off",
         quotes: "off",
         radix: ["error", "as-needed"],

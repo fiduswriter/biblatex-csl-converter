@@ -30,11 +30,11 @@
     },
     "homepage": "https://github.com/fiduswriter/biblatex-csl-converter#readme",
     "engines": {
-        "node": ">=12"
+        "node": ">=16"
     },
     "scripts": {
-        "lint": "eslint --ext=mjs,js src/ test/ && prettier --check .",
-        "format": "prettier --write .",
+        "lint": "eslint --ext=mjs,ts src/ test/",
+        "format": "eslint --fix --ext=mjs,ts src/ test/",
         "pretest": "npm run lint",
         "compile": "npm run compile_lib && npm run compile_bundle && npm run compile_gh-pages && npm run compile_browser && npm run compile_types",
         "compile_lib": "rollup -c rollup.config.es.mjs --output.file lib/index.mjs",
@@ -70,6 +70,8 @@
         "chai": "^4.3.4",
         "coveralls": "^3.1.1",
         "eslint": "^7.32.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-prettier": "^4.2.1",
         "mocha": "^9.0.3",
         "nyc": "^15.1.0",
         "prettier": "^2.3.2",
