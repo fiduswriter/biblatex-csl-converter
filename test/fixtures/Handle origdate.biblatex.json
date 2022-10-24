@@ -71,7 +71,9 @@
                         "text": "770"
                     }
                 ],
-                "language": ["german"],
+                "language": [
+                    "german"
+                ],
                 "langid": "german"
             }
         },
@@ -190,7 +192,9 @@
                         "text": "770"
                     }
                 ],
-                "language": ["german"],
+                "language": [
+                    "german"
+                ],
                 "langid": "german",
                 "bookauthor": [
                     {

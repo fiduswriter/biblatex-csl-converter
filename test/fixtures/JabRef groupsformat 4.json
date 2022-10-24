@@ -258,15 +258,23 @@
                                 "references": []
                             }
                         ],
-                        "references": ["Doe-2017", "Unkonw-"]
+                        "references": [
+                            "Doe-2017",
+                            "Unkonw-"
+                        ]
                     },
                     {
                         "name": "my-other-subgroup-3",
                         "groups": [],
-                        "references": ["Other-", "Unkonw-"]
+                        "references": [
+                            "Other-",
+                            "Unkonw-"
+                        ]
                     }
                 ],
-                "references": ["Unkonw"]
+                "references": [
+                    "Unkonw"
+                ]
             }
         ],
         "meta": {

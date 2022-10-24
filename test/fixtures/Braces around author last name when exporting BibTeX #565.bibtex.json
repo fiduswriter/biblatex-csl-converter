@@ -302,7 +302,9 @@
                         "text": "978-90-6831-748-0"
                     }
                 ],
-                "language": ["french"],
+                "language": [
+                    "french"
+                ],
                 "publisher": [
                     [
                         {

@@ -109,7 +109,10 @@
                         "text": "), 2011 18th International Conference on"
                     }
                 ],
-                "keywords": ["bdec15", "zotero_testcase"],
+                "keywords": [
+                    "bdec15",
+                    "zotero_testcase"
+                ],
                 "pages": [
                     [
                         [
@@ -318,7 +321,10 @@
                         "text": "978-1-4799-5500-8"
                     }
                 ],
-                "keywords": ["bdec15", "zotero_testcase"],
+                "keywords": [
+                    "bdec15",
+                    "zotero_testcase"
+                ],
                 "location": [
                     [
                         {
@@ -571,7 +577,11 @@
             {
                 "name": "Omit URL export when DOI present. #131",
                 "groups": [],
-                "references": ["CapEA11", "CumEA14", "TayEA11"]
+                "references": [
+                    "CapEA11",
+                    "CumEA14",
+                    "TayEA11"
+                ]
             }
         ]
     }

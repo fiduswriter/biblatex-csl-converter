@@ -172,7 +172,9 @@
                         "text": "arXiv:1412.4006 [quant-ph]"
                     }
                 ],
-                "keywords": ["Quantum Physics"],
+                "keywords": [
+                    "Quantum Physics"
+                ],
                 "eprintclass": [
                     {
                         "type": "text",

@@ -193,7 +193,9 @@
                         "text": "arXiv:1305.4904 [quant-ph]"
                     }
                 ],
-                "keywords": ["Quantum Physics"],
+                "keywords": [
+                    "Quantum Physics"
+                ],
                 "note": [
                     {
                         "type": "text",
@@ -387,7 +389,9 @@
                         "text": "Science"
                     }
                 ],
-                "keywords": ["Quantum Physics"],
+                "keywords": [
+                    "Quantum Physics"
+                ],
                 "note": [
                     {
                         "type": "text",

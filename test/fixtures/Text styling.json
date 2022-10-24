@@ -79,7 +79,9 @@
                         ]
                     }
                 ],
-                "language": ["english"],
+                "language": [
+                    "english"
+                ],
                 "url": "http://links.org.au/node/1916",
                 "urldate": "2010-10-31"
             },
@@ -132,7 +134,9 @@
                         "text": "La Joven Revolución Hondureña"
                     }
                 ],
-                "language": ["spanish"],
+                "language": [
+                    "spanish"
+                ],
                 "type": [
                     {
                         "type": "text",

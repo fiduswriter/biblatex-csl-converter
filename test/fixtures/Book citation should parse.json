@@ -93,7 +93,10 @@
         {
             "type": "unknown_date",
             "field_name": "year,month",
-            "value": ["1993", "7"],
+            "value": [
+                "1993",
+                "7"
+            ],
             "entry": "book"
         },
         {

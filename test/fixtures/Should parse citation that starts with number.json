@@ -29,7 +29,9 @@
                         }
                     ]
                 ],
-                "keywords": ["0sotl"],
+                "keywords": [
+                    "0sotl"
+                ],
                 "title": [
                     {
                         "type": "text",
