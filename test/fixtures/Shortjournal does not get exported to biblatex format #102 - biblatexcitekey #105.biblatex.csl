@@ -26,7 +26,7 @@
         ],
         "DOI": "10.1103/PhysRevLett.97.120405",
         "container-title": "Physical review letters",
-        "issue": "12",
+        "collection-number": "12",
         "page": "120405",
         "title": "From <span class=\"nocase\">Bell</span>’s <span class=\"nocase\">Theorem</span> to secure quantum key distribution",
         "URL": "http://link.aps.org/doi/10.1103/PhysRevLett.97.120405",
@@ -40,7 +40,7 @@
             ]
         },
         "volume": "97",
-        "type": "article-journal",
+        "type": "article",
         "id": "1"
     }
 }

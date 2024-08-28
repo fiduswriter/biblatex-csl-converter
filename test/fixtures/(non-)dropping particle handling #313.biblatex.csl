@@ -8,7 +8,7 @@
             }
         ],
         "title": "<span class=\"nocase\">(abbé d' Aubignac) (François Hédelin)</span>",
-        "type": "article-journal",
+        "type": "article",
         "id": "1"
     },
     "2": {
@@ -21,7 +21,7 @@
         ],
         "note": "relies on paricleParser fallback detection",
         "title": "<span class=\"nocase\">(Aubignac) (François Hédelin, abbé d')</span>",
-        "type": "article-journal",
+        "type": "article",
         "id": "2"
     },
     "3": {
@@ -156,7 +156,7 @@
             }
         ],
         "title": "bugreports_<span class=\"nocase\">ApostropheOnParticle</span>",
-        "type": "article-journal",
+        "type": "article",
         "id": "7"
     },
     "8": {
@@ -167,7 +167,7 @@
             }
         ],
         "title": "bugreports_<span class=\"nocase\">AsmJournals</span>",
-        "type": "article-journal",
+        "type": "article",
         "id": "8"
     },
     "9": {
@@ -177,7 +177,7 @@
             }
         ],
         "title": "bugreports_<span class=\"nocase\">DemoPageFullCiteCruftOnSubsequent</span>",
-        "type": "article-journal",
+        "type": "article",
         "id": "9"
     },
     "10": {
@@ -188,7 +188,7 @@
             }
         ],
         "title": "bugreports_<span class=\"nocase\">DuplicateSpaces</span>",
-        "type": "article-journal",
+        "type": "article",
         "id": "10"
     },
     "11": {
@@ -199,7 +199,7 @@
             }
         ],
         "title": "bugreports_<span class=\"nocase\">DuplicateSpaces3</span>",
-        "type": "article-journal",
+        "type": "article",
         "id": "11"
     },
     "12": {
@@ -210,7 +210,7 @@
             }
         ],
         "title": "bugreports_<span class=\"nocase\">GreekStyleProblems</span>",
-        "type": "article-journal",
+        "type": "article",
         "id": "12"
     },
     "13": {
@@ -233,7 +233,7 @@
             }
         ],
         "title": "bugreports_<span class=\"nocase\">ProcessorHang1</span>",
-        "type": "article-journal",
+        "type": "article",
         "id": "13"
     },
     "14": {
@@ -243,7 +243,7 @@
             }
         ],
         "title": "bugreports_<span class=\"nocase\">YearSuffixInHarvard1</span>",
-        "type": "article-journal",
+        "type": "article",
         "id": "14"
     },
     "15": {
@@ -260,7 +260,7 @@
             }
         ],
         "title": "bugreports_<span class=\"nocase\">parseName</span>",
-        "type": "article-journal",
+        "type": "article",
         "id": "15"
     },
     "16": {
@@ -277,7 +277,7 @@
             }
         ],
         "title": "decorations_<span class=\"nocase\">AndTermUnaffectedByNameDecorations</span>",
-        "type": "article-journal",
+        "type": "article",
         "id": "16"
     },
     "17": {
@@ -289,7 +289,7 @@
             }
         ],
         "title": "disambiguate_<span class=\"nocase\">CitationLabelInData</span>",
-        "type": "article-journal",
+        "type": "article",
         "id": "17"
     },
     "18": {
@@ -302,7 +302,7 @@
             }
         ],
         "title": "disambiguate_<span class=\"nocase\">FailWithYearSuffix</span>",
-        "type": "article-journal",
+        "type": "article",
         "id": "18"
     },
     "19": {
@@ -313,7 +313,7 @@
             }
         ],
         "title": "disambiguate_<span class=\"nocase\">YearCollapseWithInstitution</span>",
-        "type": "article-journal",
+        "type": "article",
         "id": "19"
     },
     "20": {
@@ -325,7 +325,7 @@
             }
         ],
         "title": "display_<span class=\"nocase\">SecondFieldAlignMigratePunctuation</span>",
-        "type": "article-journal",
+        "type": "article",
         "id": "20"
     },
     "21": {
@@ -336,7 +336,7 @@
             }
         ],
         "title": "group_<span class=\"nocase\">ComplexNesting</span>",
-        "type": "article-journal",
+        "type": "article",
         "id": "21"
     },
     "22": {
@@ -348,7 +348,7 @@
             }
         ],
         "title": "integration_<span class=\"nocase\">DuplicateItem</span>",
-        "type": "article-journal",
+        "type": "article",
         "id": "22"
     },
     "23": {
@@ -360,7 +360,7 @@
             }
         ],
         "title": "magic_<span class=\"nocase\">CapitalizeFirstOccurringNameParticle</span>",
-        "type": "article-journal",
+        "type": "article",
         "id": "23"
     },
     "24": {
@@ -372,7 +372,7 @@
             }
         ],
         "title": "magic_<span class=\"nocase\">NameParticle</span>",
-        "type": "article-journal",
+        "type": "article",
         "id": "24"
     },
     "25": {
@@ -382,7 +382,7 @@
             }
         ],
         "title": "magic_<span class=\"nocase\">SuppressDuplicateVariableRendering</span>",
-        "type": "article-journal",
+        "type": "article",
         "id": "25"
     },
     "26": {
@@ -394,7 +394,7 @@
             }
         ],
         "title": "name_<span class=\"nocase\">ArticularNameAsSortOrder</span>",
-        "type": "article-journal",
+        "type": "article",
         "id": "26"
     },
     "27": {
@@ -406,7 +406,7 @@
             }
         ],
         "title": "name_<span class=\"nocase\">ArticularShortFormCommaSuffix</span>",
-        "type": "article-journal",
+        "type": "article",
         "id": "27"
     },
     "28": {
@@ -418,7 +418,7 @@
             }
         ],
         "title": "name_<span class=\"nocase\">ArticularWithComma</span>",
-        "type": "article-journal",
+        "type": "article",
         "id": "28"
     },
     "29": {
@@ -429,7 +429,7 @@
             }
         ],
         "title": "name_<span class=\"nocase\">Delimiter</span>",
-        "type": "article-journal",
+        "type": "article",
         "id": "29"
     },
     "30": {
@@ -441,7 +441,7 @@
             }
         ],
         "title": "name_<span class=\"nocase\">FormattingOfParticles</span>",
-        "type": "article-journal",
+        "type": "article",
         "id": "30"
     },
     "31": {
@@ -453,7 +453,7 @@
             }
         ],
         "title": "name_<span class=\"nocase\">HyphenatedNonDroppingParticle1</span>",
-        "type": "article-journal",
+        "type": "article",
         "id": "31"
     },
     "32": {
@@ -463,7 +463,7 @@
             }
         ],
         "title": "name_<span class=\"nocase\">Institution</span>",
-        "type": "article-journal",
+        "type": "article",
         "id": "32"
     },
     "33": {
@@ -473,7 +473,7 @@
             }
         ],
         "title": "name_<span class=\"nocase\">InstitutionDecoration</span>",
-        "type": "article-journal",
+        "type": "article",
         "id": "33"
     },
     "34": {
@@ -490,7 +490,7 @@
             }
         ],
         "title": "name_<span class=\"nocase\">MixedFormatsInitialSortOrderAllWithDecorationsEtAl</span>",
-        "type": "article-journal",
+        "type": "article",
         "id": "34"
     },
     "35": {
@@ -506,7 +506,7 @@
             }
         ],
         "title": "name_<span class=\"nocase\">MultipleLiteral</span>",
-        "type": "article-journal",
+        "type": "article",
         "id": "35"
     },
     "36": {
@@ -523,7 +523,7 @@
             }
         ],
         "title": "name_<span class=\"nocase\">ParseNames</span>",
-        "type": "article-journal",
+        "type": "article",
         "id": "36"
     },
     "37": {
@@ -535,7 +535,7 @@
             }
         ],
         "title": "name_<span class=\"nocase\">ParsedDroppingParticleWithAffixes</span>",
-        "type": "article-journal",
+        "type": "article",
         "id": "37"
     },
     "38": {
@@ -547,7 +547,7 @@
             }
         ],
         "title": "name_<span class=\"nocase\">ParsedNonDroppingParticleWithAffixes</span>",
-        "type": "article-journal",
+        "type": "article",
         "id": "38"
     },
     "39": {
@@ -560,7 +560,7 @@
             }
         ],
         "title": "name_<span class=\"nocase\">ParsedNonDroppingParticleWithApostrophe</span>",
-        "type": "article-journal",
+        "type": "article",
         "id": "39"
     },
     "40": {
@@ -586,7 +586,7 @@
             }
         ],
         "title": "name_<span class=\"nocase\">ParticleCaps1</span>",
-        "type": "article-journal",
+        "type": "article",
         "id": "40"
     },
     "41": {
@@ -597,7 +597,7 @@
             }
         ],
         "title": "name_<span class=\"nocase\">ParticleCaps3</span>",
-        "type": "article-journal",
+        "type": "article",
         "id": "41"
     },
     "42": {
@@ -609,7 +609,7 @@
             }
         ],
         "title": "name_<span class=\"nocase\">ParticleFormatting</span>",
-        "type": "article-journal",
+        "type": "article",
         "id": "42"
     },
     "43": {
@@ -733,7 +733,7 @@
             }
         ],
         "title": "name_<span class=\"nocase\">ParticlesDemoteNonDroppingNever</span>",
-        "type": "article-journal",
+        "type": "article",
         "id": "43"
     },
     "44": {
@@ -745,7 +745,7 @@
             }
         ],
         "title": "name_<span class=\"nocase\">WesternArticularLowercase</span>",
-        "type": "article-journal",
+        "type": "article",
         "id": "44"
     },
     "45": {
@@ -758,7 +758,7 @@
             }
         ],
         "title": "name_<span class=\"nocase\">namepartAffixes</span>",
-        "type": "article-journal",
+        "type": "article",
         "id": "45"
     },
     "46": {
@@ -771,7 +771,7 @@
             }
         ],
         "title": "nameorder_<span class=\"nocase\">Long</span>",
-        "type": "article-journal",
+        "type": "article",
         "id": "46"
     },
     "47": {
@@ -782,7 +782,7 @@
             }
         ],
         "title": "position_<span class=\"nocase\">IbidWithSuffix</span>",
-        "type": "article-journal",
+        "type": "article",
         "id": "47"
     },
     "48": {
@@ -793,7 +793,7 @@
             }
         ],
         "title": "sort_<span class=\"nocase\">ChangeInNameSort</span>",
-        "type": "article-journal",
+        "type": "article",
         "id": "48"
     },
     "49": {
@@ -807,7 +807,7 @@
             }
         ],
         "title": "sort_<span class=\"nocase\">ChicagoYearSuffix1</span>",
-        "type": "article-journal",
+        "type": "article",
         "id": "49"
     },
     "50": {
@@ -818,7 +818,7 @@
             }
         ],
         "title": "sort_<span class=\"nocase\">FamilyOnly</span>",
-        "type": "article-journal",
+        "type": "article",
         "id": "50"
     },
     "51": {
@@ -835,7 +835,7 @@
             }
         ],
         "title": "sort_<span class=\"nocase\">LeadingApostropheOnNameParticle</span>",
-        "type": "article-journal",
+        "type": "article",
         "id": "51"
     },
     "52": {
@@ -847,7 +847,7 @@
             }
         ],
         "title": "sort_<span class=\"nocase\">NameParticleInNameSortFalse</span>",
-        "type": "article-journal",
+        "type": "article",
         "id": "52"
     },
     "53": {
@@ -858,7 +858,7 @@
             }
         ],
         "title": "sort_<span class=\"nocase\">NameVariable</span>",
-        "type": "article-journal",
+        "type": "article",
         "id": "53"
     }
 }

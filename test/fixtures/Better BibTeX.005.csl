@@ -9,7 +9,7 @@
         },
         "title": "USGS monitoring ecological impacts",
         "volume": "107",
-        "issue": "29",
+        "collection-number": "29",
         "container-title": "Oil & gas journal",
         "author": [
             {
@@ -18,7 +18,7 @@
             }
         ],
         "page": "29",
-        "type": "article-journal",
+        "type": "article",
         "id": "1"
     }
 }

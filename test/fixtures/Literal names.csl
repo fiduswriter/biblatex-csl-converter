@@ -14,7 +14,7 @@
         "ISSN": "1524-4539",
         "title-short": "Increasing cardiopulmonary resuscitation provision in communities with low bystander cardiopulmonary resuscitation rates",
         "DOI": "10.1161/CIR.0b013e318288b4dd",
-        "issue": "12",
+        "collection-number": "12",
         "container-title": "Circulation",
         "author": [
             {
@@ -95,7 +95,7 @@
         ],
         "note": "PMID: 23439512",
         "page": "1342-1350",
-        "type": "article-journal",
+        "type": "article",
         "id": "1"
     }
 }

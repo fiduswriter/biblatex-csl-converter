@@ -14,7 +14,7 @@
             }
         ],
         "title": "Why <span class=\"nocase\">Is Apple Launching</span> a <span class=\"nocase\">New Version</span> of the <span class=\"nocase\">iPod</span>?",
-        "type": "article-journal",
+        "type": "article",
         "id": "1"
     },
     "2": {
@@ -33,7 +33,7 @@
             }
         ],
         "title": "Why <span class=\"nocase\">Is Apple Launching</span> a <span class=\"nocase\">New Version</span> of the <span class=\"nocase\">iPod</span>?",
-        "type": "article-journal",
+        "type": "article",
         "id": "2"
     }
 }

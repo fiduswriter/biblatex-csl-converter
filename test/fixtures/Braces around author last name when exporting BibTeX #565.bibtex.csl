@@ -16,7 +16,7 @@
         "DOI": "10.1007/s10988-006-9008-0",
         "ISSN": "0165-0157, 1573-0549",
         "container-title": "Linguistics and philosophy",
-        "issue": "1",
+        "collection-number": "1",
         "page": "1-45",
         "title-short": "Vagueness and grammar",
         "title": "Vagueness and grammar: <span class=\"nocase\">The</span> semantics of relative and absolute gradable adjectives",
@@ -30,7 +30,7 @@
             ]
         },
         "volume": "30",
-        "type": "article-journal",
+        "type": "article",
         "id": "1"
     },
     "2": {
@@ -123,7 +123,7 @@
         "DOI": "10.1023/A:1005916004600",
         "ISSN": "0167-806X, 1573-0859",
         "container-title": "Natural language & linguistic theory",
-        "issue": "2",
+        "collection-number": "2",
         "page": "347-385",
         "title": "Aspect <span class=\"nocase\">Shift</span> and <span class=\"nocase\">Coercion</span>",
         "accessed": {
@@ -136,7 +136,7 @@
             ]
         },
         "volume": "16",
-        "type": "article-journal",
+        "type": "article",
         "id": "5"
     }
 }

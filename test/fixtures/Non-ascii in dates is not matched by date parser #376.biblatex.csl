@@ -34,7 +34,7 @@
         "DOI": "10.1111/j.1469-8986.2007.00620.x",
         "container-title": "Psychophysiology",
         "language": "en-US",
-        "issue": "2",
+        "collection-number": "2",
         "page": "205-215",
         "title": "Brain activation and defensive response mobilization during sustained exposure to phobia-related and other affective pictures in spider phobia",
         "URL": "http://onlinelibrary.wiley.com/doi/10.1111/j.1469-8986.2007.00620.x/abstract",
@@ -48,7 +48,7 @@
             ]
         },
         "volume": "45",
-        "type": "article-journal",
+        "type": "article",
         "id": "1"
     }
 }

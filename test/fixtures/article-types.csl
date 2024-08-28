@@ -110,7 +110,7 @@
         "title": "Cuban dependency: a comparison of pre-revolutionary and post-revolutionary international economic relations",
         "volume": "9",
         "URL": "http://www1.american.edu/faculty/leogrande/Cuban_Studies_1979_Dependency.pdf",
-        "issue": "2",
+        "collection-number": "2",
         "container-title": "Cuban studies/estudios cubanos",
         "author": [
             {
@@ -118,7 +118,7 @@
                 "family": "LeoGrande"
             }
         ],
-        "type": "article-journal",
+        "type": "article",
         "id": "5"
     }
 }

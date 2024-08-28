@@ -13,7 +13,7 @@
         ],
         "DOI": "10.1364/AO.15.001040",
         "container-title": "Applied optics",
-        "issue": "4",
+        "collection-number": "4",
         "page": "1040-1044",
         "title-short": "Leaky modes on a dielectric waveguide",
         "title": "Leaky modes on a dielectric waveguide: orthogonality and excitation",
@@ -28,7 +28,7 @@
             ]
         },
         "volume": "15",
-        "type": "article-journal",
+        "type": "article",
         "id": "1"
     }
 }

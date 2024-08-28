@@ -25,7 +25,7 @@
             ]
         },
         "volume": "20",
-        "type": "article-journal",
+        "type": "article",
         "id": "1"
     },
     "2": {
@@ -44,7 +44,7 @@
         "title": "A bicycle made for two? <span class=\"nocase\">The</span> integration of scientific techniques into archaeological interpretation",
         "URL": "http://www.annualreviews.org/doi/pdf/10.1146/annurev.anthro.36.081406.094354",
         "volume": "36",
-        "type": "article-journal",
+        "type": "article",
         "id": "2"
     },
     "3": {

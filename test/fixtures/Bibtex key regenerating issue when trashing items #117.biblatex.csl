@@ -23,7 +23,7 @@
         "ISSN": "0016-6731, 1943-2631",
         "container-title": "Genetics",
         "language": "en-US",
-        "issue": "1",
+        "collection-number": "1",
         "page": "185-199",
         "title": "Mapping <span class=\"nocase\">Mendelian</span> factors underlying quantitative traits using <span class=\"nocase\">RFLP</span> linkage maps.",
         "URL": "http://www.genetics.org/content/121/1/185",
@@ -37,7 +37,7 @@
             ]
         },
         "volume": "121",
-        "type": "article-journal",
+        "type": "article",
         "id": "1"
     }
 }

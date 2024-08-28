@@ -28,7 +28,7 @@
         "original-title": "An old title",
         "title": "Technical <span class=\"nocase\">Report</span> : <span class=\"nocase\">Towards</span> a <span class=\"nocase\">Formally Verified Proof Assistant</span>",
         "URL": "http://www.nuprl.org/html/verification/",
-        "type": "article-journal",
+        "type": "article",
         "id": "1"
     }
 }

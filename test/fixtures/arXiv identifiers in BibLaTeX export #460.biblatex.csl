@@ -18,7 +18,7 @@
         "DOI": "10.1007/JHEP02(2016)087",
         "ISSN": "1029-8479",
         "container-title": "Journal of high energy physics",
-        "issue": "2",
+        "collection-number": "2",
         "title": "<span class=\"nocase\">BV Master Action</span> for <span class=\"nocase\">Heterotic</span> and <span class=\"nocase\">Type II String Field Theories</span>",
         "URL": "http://arxiv.org/abs/1508.05387",
         "accessed": {
@@ -31,7 +31,7 @@
             ]
         },
         "volume": "2016",
-        "type": "article-journal",
+        "type": "article",
         "id": "1"
     },
     "2": {
@@ -66,7 +66,7 @@
                 ]
             ]
         },
-        "type": "article-journal",
+        "type": "article",
         "id": "2"
     },
     "3": {
@@ -121,7 +121,7 @@
         "DOI": "10.1126/science.1252319",
         "ISSN": "0036-8075, 1095-9203",
         "container-title": "Science",
-        "issue": "6195",
+        "collection-number": "6195",
         "page": "420-424",
         "title": "Defining and detecting quantum speedup",
         "URL": "http://arxiv.org/abs/1401.2910",
@@ -135,7 +135,7 @@
             ]
         },
         "volume": "345",
-        "type": "article-journal",
+        "type": "article",
         "id": "3"
     }
 }

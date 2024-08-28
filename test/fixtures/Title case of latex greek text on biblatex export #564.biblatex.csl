@@ -16,11 +16,11 @@
         ],
         "ISSN": "0006-0887",
         "container-title": "Biblica",
-        "issue": "3",
+        "collection-number": "3",
         "page": "387-394",
         "title": "The <span class=\"nocase\">Use</span> of καί in <span class=\"nocase\">Revelation</span> 11,1 and the <span class=\"nocase\">Implications</span> for the <span class=\"nocase\">Identification</span> of the <span class=\"nocase\">Temple</span>, the <span class=\"nocase\">Altar</span>, and the <span class=\"nocase\">Worshippers</span>",
         "volume": "87",
-        "type": "article-journal",
+        "type": "article",
         "id": "1"
     },
     "2": {
@@ -40,11 +40,11 @@
         ],
         "ISSN": "0006-0887",
         "container-title": "Biblica",
-        "issue": "3",
+        "collection-number": "3",
         "page": "387-394",
         "title": "The <span class=\"nocase\">Use</span> of καί in <span class=\"nocase\">Revelation</span> 11,1 and the <span class=\"nocase\">Implications</span> for the <span class=\"nocase\">Identification</span> of the <span class=\"nocase\">Temple</span>, the <span class=\"nocase\">Altar</span>, and the <span class=\"nocase\">Worshippers</span>",
         "volume": "87",
-        "type": "article-journal",
+        "type": "article",
         "id": "2"
     }
 }

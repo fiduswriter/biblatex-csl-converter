@@ -23,7 +23,7 @@
         "ISSN": "0920-1742, 1573-5168",
         "container-title": "Fish physiology and biochemistry",
         "language": "en-US",
-        "issue": "4",
+        "collection-number": "4",
         "page": "283-294",
         "title": "Effects of open- and closed-system temperature changes on blood <span class=\"nocase\">O</span><sub>2</sub>-binding characteristics of <span class=\"nocase\">Atlantic</span> bluefin tuna (<span class=\"nocase\"><i>Thunnus thynnus</i></span>)",
         "URL": "http://link.springer.com/article/10.1007/s10695-006-9104-7",
@@ -37,7 +37,7 @@
             ]
         },
         "volume": "32",
-        "type": "article-journal",
+        "type": "article",
         "id": "1"
     }
 }

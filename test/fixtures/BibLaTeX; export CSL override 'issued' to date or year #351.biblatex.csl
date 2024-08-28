@@ -21,7 +21,7 @@
             }
         ],
         "title": "Test",
-        "type": "post-weblog",
+        "type": "webpage",
         "id": "1"
     }
 }

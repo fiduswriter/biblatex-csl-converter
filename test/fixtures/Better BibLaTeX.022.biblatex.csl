@@ -23,7 +23,7 @@
         "ISSN": "00219614",
         "container-title": "The journal of chemical thermodynamics",
         "language": "en-US",
-        "issue": "11",
+        "collection-number": "11",
         "page": "1379-1385",
         "title": "(<span class=\"nocase\">Liquid</span>+liquid) equilibrium of {water+phenol+(1-butanol, or 2-butanol, or tert-butanol)} systems",
         "URL": "http://linkinghub.elsevier.com/retrieve/pii/S0021961410002107",
@@ -37,7 +37,7 @@
             ]
         },
         "volume": "42",
-        "type": "article-journal",
+        "type": "article",
         "id": "1"
     }
 }

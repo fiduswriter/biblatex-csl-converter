@@ -18,11 +18,11 @@
         "container-title": "SIAM JOURNAL ON NUMERICAL ANALYSIS",
         "language": "en-US",
         "note": "Lanzhou Univ, Sch Math & Stat, Lanzhou 730000, Peoples R China.  [Deng, Zhi-Liang] Heilongjiang Univ, Sch Math Sci, Harbin 150080, Peoples R China.;author-email=fuchuli@lzu.edu.cn  zhiliangdeng@gmail.com  fengxl05@163.com  doufang566@163.com;doc-delivery-number=499DD;funding-acknowledgement=National Natural Science Foundation of China [10671085];funding-text=This project was supported by the National Natural Science Foundation  of China (grant 10671085).;journal-iso=SIAM J. Numer. Anal.;keywords-plus=TRANSFORM;number-of-cited-references=13;subject-category=Mathematics, Applied;times-cited=0]",
-        "issue": "4",
+        "collection-number": "4",
         "page": "2982-3000",
         "title": "A <span class=\"nocase\">MODIFIED TIKHONOV REGULARIZATION FOR STABLE ANALYTIC CONTINUATION</span>",
         "volume": "47",
-        "type": "article-journal",
+        "type": "article",
         "id": "1"
     },
     "2": {
@@ -43,11 +43,11 @@
         "ISSN": "0036-1429",
         "container-title": "SIAM JOURNAL ON NUMERICAL ANALYSIS",
         "language": "en-US",
-        "issue": "4",
+        "collection-number": "4",
         "page": "2982-3000",
         "title": "A <span class=\"nocase\">MODIFIED TIKHONOV REGULARIZATION FOR STABLE ANALYTIC CONTINUATION</span>",
         "volume": "47",
-        "type": "article-journal",
+        "type": "article",
         "id": "2"
     }
 }

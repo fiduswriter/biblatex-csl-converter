@@ -23,7 +23,7 @@
         "DOI": "10.1098/rspb.2008.1060",
         "ISSN": "0962-8452, 1471-2954",
         "container-title": "Proceedings of the royal society B: biological sciences",
-        "issue": "1655",
+        "collection-number": "1655",
         "page": "355-360",
         "title": "Between-group competition and human cooperation",
         "accessed": {
@@ -36,7 +36,7 @@
             ]
         },
         "volume": "276",
-        "type": "article-journal",
+        "type": "article",
         "id": "1"
     },
     "2": {
@@ -126,7 +126,7 @@
         "DOI": "10.1177/0956797613493444",
         "ISSN": "0956-7976, 1467-9280",
         "container-title": "Psychological science",
-        "issue": "1",
+        "collection-number": "1",
         "page": "47-57",
         "title": "War's <span class=\"nocase\">Enduring Effects</span> on the <span class=\"nocase\">Development</span> of <span class=\"nocase\">Egalitarian Motivations</span> and <span class=\"nocase\">In</span>-<span class=\"nocase\">Group Biases</span>",
         "accessed": {
@@ -139,7 +139,7 @@
             ]
         },
         "volume": "25",
-        "type": "article-journal",
+        "type": "article",
         "id": "4"
     }
 }

@@ -22,7 +22,7 @@
         ],
         "DOI": "10.1098/rsif.2014.0594",
         "container-title": "Journal of the royal society interface",
-        "issue": "99",
+        "collection-number": "99",
         "page": "20140594",
         "title-short": "Walking in circles",
         "title": "Walking in circles: a modelling approach",
@@ -36,7 +36,7 @@
             ]
         },
         "volume": "11",
-        "type": "article-journal",
+        "type": "article",
         "id": "1"
     }
 }

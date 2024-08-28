@@ -80,7 +80,7 @@
         "page": "B13-B14",
         "title": "The mystery of samba: <span class=\"nocase\">Popular</span> music and national identity in <span class=\"nocase\">Brazil</span>",
         "volume": "9",
-        "type": "article-journal",
+        "type": "article",
         "id": "4"
     },
     "5": {
@@ -100,7 +100,7 @@
             }
         ],
         "title": "Deconstructing dinner",
-        "type": "article-journal",
+        "type": "article",
         "id": "5"
     }
 }

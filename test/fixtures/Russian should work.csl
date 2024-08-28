@@ -20,9 +20,9 @@
         ],
         "container-title": "Paleontological journal",
         "volume": "43",
-        "issue": "9",
+        "collection-number": "9",
         "page": "1097-1100",
-        "type": "article-journal",
+        "type": "article",
         "id": "1"
     },
     "2": {
@@ -50,9 +50,9 @@
         ],
         "container-title": "Paleontological journal",
         "volume": "45",
-        "issue": "3",
+        "collection-number": "3",
         "page": "287-290",
-        "type": "article-journal",
+        "type": "article",
         "id": "2"
     },
     "3": {
@@ -72,7 +72,7 @@
         ],
         "container-title": "VII з’їзд укр. ентомол. т--ва, ніжин",
         "page": "14-18",
-        "type": "article-journal",
+        "type": "article",
         "id": "3"
     },
     "4": {
@@ -171,9 +171,9 @@
             }
         ],
         "container-title": "Наукові записки державного природознавчого музею",
-        "issue": "29",
+        "collection-number": "29",
         "page": "129-135",
-        "type": "article-journal",
+        "type": "article",
         "id": "7"
     }
 }

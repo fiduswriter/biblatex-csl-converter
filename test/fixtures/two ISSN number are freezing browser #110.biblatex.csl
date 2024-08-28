@@ -24,7 +24,7 @@
         "container-title": "Genetics",
         "language": "en-US",
         "note": "04849",
-        "issue": "1",
+        "collection-number": "1",
         "page": "185-199",
         "title": "Mapping <span class=\"nocase\">Mendelian</span> factors underlying quantitative traits using <span class=\"nocase\">RFLP</span> linkage maps.",
         "URL": "http://www.genetics.org/content/121/1/185",
@@ -38,7 +38,7 @@
             ]
         },
         "volume": "121",
-        "type": "article-journal",
+        "type": "article",
         "id": "1"
     }
 }

@@ -14,7 +14,7 @@
             }
         ],
         "title": "The paper in subgroup",
-        "type": "article-journal",
+        "type": "article",
         "id": "1"
     },
     "2": {
@@ -25,7 +25,7 @@
             }
         ],
         "title": "The article in my other subgroup",
-        "type": "article-journal",
+        "type": "article",
         "id": "2"
     },
     "3": {
@@ -36,7 +36,7 @@
             }
         ],
         "title": "the paper in two groups",
-        "type": "article-journal",
+        "type": "article",
         "id": "3"
     },
     "4": {
@@ -47,7 +47,7 @@
             }
         ],
         "title": "the paper not in a group",
-        "type": "article-journal",
+        "type": "article",
         "id": "4"
     }
 }

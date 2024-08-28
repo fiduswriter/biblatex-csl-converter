@@ -51,7 +51,7 @@
         "volume": "744",
         "page": "93",
         "DOI": "10.1088/0004-637X/744/2/93",
-        "type": "article-journal",
+        "type": "article",
         "id": "1"
     },
     "2": {
@@ -106,7 +106,7 @@
         "volume": "744",
         "page": "93",
         "DOI": "10.1088/0004-637X/744/2/93",
-        "type": "article-journal",
+        "type": "article",
         "id": "2"
     }
 }

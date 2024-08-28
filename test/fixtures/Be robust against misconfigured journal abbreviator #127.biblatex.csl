@@ -18,7 +18,7 @@
             }
         ],
         "container-title": "Atomic data and nuclear data tables",
-        "issue": "1",
+        "collection-number": "1",
         "page": "1-155",
         "title-short": "Atomic subshell photoionization cross sections and asymmetry parameters",
         "title": "Atomic subshell photoionization cross sections and asymmetry parameters: 1⩽< i> <span class=\"nocase\">Z</span>⩽ 103",
@@ -33,7 +33,7 @@
             ]
         },
         "volume": "32",
-        "type": "article-journal",
+        "type": "article",
         "id": "1"
     }
 }

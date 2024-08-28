@@ -49,7 +49,7 @@
         "container-title": "The astrophysical journal supplement series",
         "volume": "135",
         "page": "183",
-        "type": "article-journal",
+        "type": "article",
         "id": "1"
     },
     "2": {
@@ -71,7 +71,7 @@
         "container-title": "ApJ",
         "volume": "418",
         "page": "L13",
-        "type": "article-journal",
+        "type": "article",
         "id": "2"
     },
     "3": {
@@ -104,7 +104,7 @@
         "container-title": "The astrophysical journal letters",
         "volume": "456",
         "page": "L91",
-        "type": "article-journal",
+        "type": "article",
         "id": "3"
     },
     "4": {
@@ -137,7 +137,7 @@
         "container-title": "The astrophysical journal",
         "volume": "460",
         "page": "295",
-        "type": "article-journal",
+        "type": "article",
         "id": "4"
     },
     "5": {
@@ -166,7 +166,7 @@
         "container-title": "The astrophysical journal letters",
         "volume": "454",
         "page": "L117",
-        "type": "article-journal",
+        "type": "article",
         "id": "5"
     },
     "6": {
@@ -196,7 +196,7 @@
         "container-title": "The astrophysical journal",
         "volume": "516",
         "page": "744",
-        "type": "article-journal",
+        "type": "article",
         "id": "6"
     },
     "7": {
@@ -257,7 +257,7 @@
         "container-title": "The astrophysical journal",
         "volume": "696",
         "page": "24",
-        "type": "article-journal",
+        "type": "article",
         "id": "7"
     },
     "8": {
@@ -286,7 +286,7 @@
         "container-title": "The astrophysical journal",
         "volume": "484",
         "page": "656",
-        "type": "article-journal",
+        "type": "article",
         "id": "8"
     },
     "9": {
@@ -319,7 +319,7 @@
         "container-title": "The astrophysical journal",
         "volume": "438",
         "page": "695-701",
-        "type": "article-journal",
+        "type": "article",
         "id": "9"
     },
     "10": {
@@ -352,7 +352,7 @@
         "container-title": "The astrophysical journal",
         "volume": "493",
         "page": "680",
-        "type": "article-journal",
+        "type": "article",
         "id": "10"
     },
     "11": {
@@ -413,7 +413,7 @@
         "container-title": "The astrophysical journal",
         "volume": "690",
         "page": "610",
-        "type": "article-journal",
+        "type": "article",
         "id": "11"
     },
     "12": {
@@ -445,7 +445,7 @@
         "container-title": "The astrophysical journal",
         "volume": "418",
         "page": "L13",
-        "type": "article-journal",
+        "type": "article",
         "id": "12"
     },
     "13": {
@@ -478,7 +478,7 @@
         "container-title": "The astrophysical journal",
         "volume": "611",
         "page": "835",
-        "type": "article-journal",
+        "type": "article",
         "id": "13"
     },
     "14": {
@@ -511,7 +511,7 @@
         "container-title": "The astrophysical journal",
         "volume": "478",
         "page": "614",
-        "type": "article-journal",
+        "type": "article",
         "id": "14"
     },
     "15": {
@@ -560,7 +560,7 @@
         "container-title": "The astrophysical journal",
         "volume": "672",
         "page": "198",
-        "type": "article-journal",
+        "type": "article",
         "id": "15"
     },
     "16": {
@@ -593,7 +593,7 @@
         "container-title": "The astronomical journal",
         "volume": "109",
         "page": "1716-1723",
-        "type": "article-journal",
+        "type": "article",
         "id": "16"
     },
     "17": {
@@ -624,7 +624,7 @@
             }
         ],
         "container-title": "L91 first citation in article| CrossRef link| IOP article| abstract at astrophysics data system",
-        "type": "article-journal",
+        "type": "article",
         "id": "17"
     },
     "18": {
@@ -651,7 +651,7 @@
             }
         ],
         "container-title": "L117 first citation in article| IOP article| CrossRef link| abstract at astrophysics data system",
-        "type": "article-journal",
+        "type": "article",
         "id": "18"
     },
     "19": {
@@ -680,7 +680,7 @@
         "container-title": "AJ",
         "volume": "109",
         "page": "1716",
-        "type": "article-journal",
+        "type": "article",
         "id": "19"
     },
     "20": {
@@ -713,7 +713,7 @@
         "container-title": "The astrophysical journal",
         "volume": "542",
         "page": "946",
-        "type": "article-journal",
+        "type": "article",
         "id": "20"
     },
     "21": {
@@ -750,7 +750,7 @@
         "container-title": "Proceedings of SPIE",
         "volume": "4015",
         "page": "467",
-        "type": "article-journal",
+        "type": "article",
         "id": "21"
     },
     "22": {
@@ -839,7 +839,7 @@
         "container-title": "The astrophysical journal",
         "volume": "708",
         "page": "909",
-        "type": "article-journal",
+        "type": "article",
         "id": "23"
     },
     "24": {
@@ -900,7 +900,7 @@
         "container-title": "The astrophysical journal",
         "volume": "708",
         "page": "909",
-        "type": "article-journal",
+        "type": "article",
         "id": "24"
     },
     "25": {
@@ -930,7 +930,7 @@
         "container-title": "Astrophysical letters and communications",
         "volume": "39",
         "page": "169",
-        "type": "article-journal",
+        "type": "article",
         "id": "25"
     },
     "26": {
@@ -980,7 +980,7 @@
                 "family": "Perry"
             }
         ],
-        "type": "article-journal",
+        "type": "article",
         "id": "26"
     },
     "27": {
@@ -999,7 +999,7 @@
                 "family": "Hunt-Walker"
             }
         ],
-        "type": "article-journal",
+        "type": "article",
         "id": "27"
     },
     "28": {
@@ -1058,9 +1058,9 @@
         ],
         "container-title": "Astrophysical journal",
         "volume": "696",
-        "issue": "1",
+        "collection-number": "1",
         "page": "24",
-        "type": "article-journal",
+        "type": "article",
         "id": "28"
     },
     "29": {
@@ -1107,7 +1107,7 @@
                 "family": "Paglione"
             }
         ],
-        "type": "article-journal",
+        "type": "article",
         "id": "30"
     },
     "31": {
@@ -1155,7 +1155,7 @@
                 "family": "Heyer"
             }
         ],
-        "type": "article-journal",
+        "type": "article",
         "id": "32"
     },
     "33": {
@@ -1261,8 +1261,8 @@
             }
         ],
         "container-title": "NASA",
-        "issue": "19980019305",
-        "type": "article-journal",
+        "collection-number": "19980019305",
+        "type": "article",
         "id": "36"
     },
     "37": {
@@ -1478,7 +1478,7 @@
         "container-title": "The astrophysical journal supplement series",
         "volume": "135",
         "page": "183-200",
-        "type": "article-journal",
+        "type": "article",
         "id": "41"
     },
     "42": {
@@ -1509,7 +1509,7 @@
         ],
         "container-title": "Star formation, galaxies and the interstellar medium: proceedings of the 4th EIPC astrophysical workshop held at the elba international physics center, marciana marina, elba island, italy, june 1-6, 1992",
         "page": "177",
-        "type": "article-journal",
+        "type": "article",
         "id": "42"
     },
     "43": {
@@ -1532,7 +1532,7 @@
             }
         ],
         "container-title": "Arxiv preprint arXiv:1206.3530",
-        "type": "article-journal",
+        "type": "article",
         "id": "43"
     },
     "44": {
@@ -1735,9 +1735,9 @@
         ],
         "container-title": "Astrophysical journal",
         "volume": "690",
-        "issue": "1",
+        "collection-number": "1",
         "page": "610",
-        "type": "article-journal",
+        "type": "article",
         "id": "48"
     },
     "49": {
@@ -1787,7 +1787,7 @@
                 "literal": "others"
             }
         ],
-        "type": "article-journal",
+        "type": "article",
         "id": "49"
     },
     "50": {
@@ -2039,9 +2039,9 @@
         ],
         "container-title": "Astrophysical journal",
         "volume": "708",
-        "issue": "1",
+        "collection-number": "1",
         "page": "909",
-        "type": "article-journal",
+        "type": "article",
         "id": "55"
     }
 }

@@ -6,7 +6,7 @@
             }
         ],
         "title": "Blah <i>emph</i> and “enquote”.",
-        "type": "article-journal",
+        "type": "article",
         "id": "1"
     },
     "2": {
@@ -16,7 +16,7 @@
             }
         ],
         "title": "Blah <i>mkbibemph</i> and “mkbibquote”.",
-        "type": "article-journal",
+        "type": "article",
         "id": "2"
     },
     "3": {
@@ -94,7 +94,7 @@
                 "family": "Correns"
             }
         ],
-        "type": "article-journal",
+        "type": "article",
         "id": "7"
     },
     "8": {

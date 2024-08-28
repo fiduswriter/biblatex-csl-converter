@@ -16,7 +16,7 @@
         "title": "Foo bar",
         "container-title": "Transactions on foobar",
         "volume": "42",
-        "type": "article-journal",
+        "type": "article",
         "id": "1"
     }
 }

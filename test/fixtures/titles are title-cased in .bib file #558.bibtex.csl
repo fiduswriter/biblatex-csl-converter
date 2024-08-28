@@ -27,7 +27,7 @@
         "DOI": "10.1016/j.ajem.2014.05.052",
         "ISSN": "0735-6757, 1532-8171",
         "container-title": "The american journal of emergency medicine",
-        "issue": "9",
+        "collection-number": "9",
         "page": "1016-1023",
         "title": "Using <span class=\"nocase\">Google Flu Trends</span> data in forecasting influenza-like-illness related <span class=\"nocase\">ED</span> visits in <span class=\"nocase\">Omaha</span>, <span class=\"nocase\">Nebraska</span>",
         "accessed": {
@@ -40,7 +40,7 @@
             ]
         },
         "volume": "32",
-        "type": "article-journal",
+        "type": "article",
         "id": "1"
     },
     "2": {
@@ -81,7 +81,7 @@
             ]
         },
         "volume": "5",
-        "type": "article-journal",
+        "type": "article",
         "id": "2"
     }
 }

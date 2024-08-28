@@ -26,7 +26,7 @@
         "page": "71-80",
         "title": "Fritz2012",
         "volume": "12",
-        "type": "article-journal",
+        "type": "article",
         "id": "1"
     },
     "2": {
@@ -56,7 +56,7 @@
         "page": "71-80",
         "title": "Fritz2012a",
         "volume": "12",
-        "type": "article-journal",
+        "type": "article",
         "id": "2"
     },
     "3": {
@@ -86,7 +86,7 @@
         "page": "71-80",
         "title": "Fritz2012b",
         "volume": "12",
-        "type": "article-journal",
+        "type": "article",
         "id": "3"
     },
     "4": {
@@ -116,7 +116,7 @@
         "page": "71-80",
         "title": "Fritz2012c",
         "volume": "12",
-        "type": "article-journal",
+        "type": "article",
         "id": "4"
     },
     "5": {
@@ -146,7 +146,7 @@
         "page": "71-80",
         "title": "Fritz2012d",
         "volume": "12",
-        "type": "article-journal",
+        "type": "article",
         "id": "5"
     },
     "6": {
@@ -176,7 +176,7 @@
         "page": "71-80",
         "title": "Fritz2012e",
         "volume": "12",
-        "type": "article-journal",
+        "type": "article",
         "id": "6"
     }
 }
