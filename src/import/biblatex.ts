@@ -952,13 +952,22 @@ export class BibLatexParser {
             }
         }
 
-        let bibType = Object.keys(BibTypes).find((bType) => {
-            return (
-                BibTypes[bType]["biblatex"] === biblatexType &&
-                (!biblatexSubtype ||
-                    BibTypes[bType]["biblatex-subtype"] === biblatexSubtype)
-            )
-        })
+        let bibType
+        if (
+            biblatexType in BibTypes &&
+            (!biblatexSubtype ||
+                BibTypes[biblatexType]["biblatex-subtype"] === biblatexSubtype)
+        ) {
+            bibType = biblatexType
+        } else {
+            bibType = Object.keys(BibTypes).find((bType) => {
+                return (
+                    BibTypes[bType]["biblatex"] === biblatexType &&
+                    (!biblatexSubtype ||
+                        BibTypes[bType]["biblatex-subtype"] === biblatexSubtype)
+                )
+            })
+        }
 
         if (typeof bibType === "undefined") {
             this.warning({
