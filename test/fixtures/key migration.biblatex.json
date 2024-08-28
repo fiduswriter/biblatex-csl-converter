@@ -1,7 +1,7 @@
 {
     "entries": {
         "1": {
-            "bib_type": "article-journal",
+            "bib_type": "article",
             "entry_key": "adams_physical_2001",
             "fields": {
                 "date": "2001",
@@ -177,7 +177,7 @@
             }
         },
         "2": {
-            "bib_type": "article-journal",
+            "bib_type": "article",
             "entry_key": "desilva_physical_2001",
             "fields": {
                 "date": "2001",

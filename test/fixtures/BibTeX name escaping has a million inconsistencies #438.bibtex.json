@@ -1,7 +1,7 @@
 {
     "entries": {
         "1": {
-            "bib_type": "article-journal",
+            "bib_type": "article",
             "entry_key": "Nome2014",
             "fields": {
                 "date": "2014",
@@ -77,7 +77,7 @@
             }
         },
         "2": {
-            "bib_type": "article-journal",
+            "bib_type": "article",
             "entry_key": "vanGogh2014",
             "fields": {
                 "date": "2014",

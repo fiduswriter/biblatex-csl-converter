@@ -1,7 +1,7 @@
 {
     "entries": {
         "1": {
-            "bib_type": "article-journal",
+            "bib_type": "article",
             "entry_key": "2012ApJ...744...93B",
             "fields": {
                 "date": "2012-01",
@@ -208,7 +208,7 @@
             }
         },
         "2": {
-            "bib_type": "article-journal",
+            "bib_type": "article",
             "entry_key": "2012ApJ...744...93C",
             "fields": {
                 "date": "2012-01",

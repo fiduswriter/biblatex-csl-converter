@@ -1,7 +1,7 @@
 {
     "entries": {
         "1": {
-            "bib_type": "article-journal",
+            "bib_type": "article",
             "entry_key": "araz_using_2014",
             "fields": {
                 "date": "2014-09",
@@ -172,7 +172,7 @@
             }
         },
         "2": {
-            "bib_type": "article-journal",
+            "bib_type": "article",
             "entry_key": "davidson_using_2015",
             "fields": {
                 "date": "2015-01",

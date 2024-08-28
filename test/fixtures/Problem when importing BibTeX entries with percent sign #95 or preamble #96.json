@@ -1,7 +1,7 @@
 {
     "entries": {
         "1": {
-            "bib_type": "article-journal",
+            "bib_type": "article",
             "entry_key": "Akhavan_2009",
             "fields": {
                 "date": "2009",
@@ -130,7 +130,7 @@
             }
         },
         "2": {
-            "bib_type": "article-journal",
+            "bib_type": "article",
             "entry_key": "Akhavan_2010_quotes",
             "fields": {
                 "date": "2009",

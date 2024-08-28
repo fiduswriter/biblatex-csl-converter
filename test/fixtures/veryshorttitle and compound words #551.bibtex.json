@@ -1,7 +1,7 @@
 {
     "entries": {
         "1": {
-            "bib_type": "article-journal",
+            "bib_type": "article",
             "entry_key": "puurtinen_betweengroup_2009",
             "fields": {
                 "date": "2009-01",
@@ -336,7 +336,7 @@
             }
         },
         "4": {
-            "bib_type": "article-journal",
+            "bib_type": "article",
             "entry_key": "bauer_war_2014",
             "fields": {
                 "date": "2014",

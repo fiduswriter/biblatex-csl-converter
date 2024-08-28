@@ -1,7 +1,7 @@
 {
     "entries": {
         "1": {
-            "bib_type": "article-journal",
+            "bib_type": "article",
             "entry_key": "Doe-2017",
             "fields": {
                 "date": "2017",
@@ -44,7 +44,7 @@
             }
         },
         "2": {
-            "bib_type": "article-journal",
+            "bib_type": "article",
             "entry_key": "Other-",
             "fields": {
                 "author": [
@@ -86,7 +86,7 @@
             }
         },
         "3": {
-            "bib_type": "article-journal",
+            "bib_type": "article",
             "entry_key": "Unkonw-",
             "fields": {
                 "title": [

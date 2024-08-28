@@ -1,7 +1,7 @@
 {
     "entries": {
         "1": {
-            "bib_type": "article-journal",
+            "bib_type": "article",
             "entry_key": "nazarenko2009new",
             "fields": {
                 "date": "2009",
@@ -88,7 +88,7 @@
             }
         },
         "2": {
-            "bib_type": "article-journal",
+            "bib_type": "article",
             "entry_key": "nazarenko2011new",
             "fields": {
                 "date": "2011",
@@ -189,7 +189,7 @@
             }
         },
         "3": {
-            "bib_type": "article-journal",
+            "bib_type": "article",
             "entry_key": "назаренко2007долгоносикообразные",
             "fields": {
                 "date": "2007",
@@ -409,7 +409,7 @@
             }
         },
         "7": {
-            "bib_type": "article-journal",
+            "bib_type": "article",
             "entry_key": "пучков2013предварительный",
             "fields": {
                 "date": "2013",
