@@ -32,6 +32,20 @@
         "id": "1"
     },
     "2": {
+        "original-date": {
+            "date-parts": [
+                [
+                    1929
+                ]
+            ]
+        },
+        "issued": {
+            "date-parts": [
+                [
+                    2004
+                ]
+            ]
+        },
         "abstract": "Préface de Ph. Raynaud. Trad. de : \"Vom Wesen und Wert der Demokratie\" - Tübingen : J.C.B. Mohr, 1929. Fac-sim. de la 2e éd., Paris : Sirey : 1932.",
         "author": [
             {
@@ -43,13 +57,6 @@
         "ISBN": "2-247-04268-6",
         "language": "fr-FR",
         "publisher-place": "Paris",
-        "original-date": {
-            "date-parts": [
-                [
-                    1929
-                ]
-            ]
-        },
         "original-publisher-place": "Tübingen",
         "original-publisher": "J.C.B. Mohr",
         "original-title": "Vom wesen und wert der demokratie",

@@ -522,62 +522,123 @@ export class BibLatexParser {
             delete rawFields.crossref
         }
 
-        // date may come either as year, year + month or as date field.
-        // We therefore need to catch these here and transform it to the
-        // date field after evaluating all the fields.
-        // All other date fields only come in the form of a date string.
-
-        let date: string | undefined, month: string
+        let date: string | undefined
         if (rawFields.date) {
-            // date string has precedence.
+            // date string has precedence
             date = rawFields.date as string
-        } else if (rawFields.year && rawFields.month) {
-            month = rawFields.month as string
-            if (isNaN(parseInt(month)) && month.toUpperCase() in this.months) {
-                month = this.months[month.toUpperCase() as Month]
-            } else if (
-                typeof month
-                    .split("~")
-                    .find((monthPart: string) => isNaN(parseInt(monthPart))) ===
-                "undefined"
-            ) {
-                // handle cases like '09~26' but not '~09' (approximate month in edtf)
-                month = month.replace(/~/g, "-")
-            }
-            date = `${rawFields.year}-${month}`
         } else if (rawFields.year) {
-            date = `${rawFields.year}`
+            // Extract just the year if month is invalid
+            if (rawFields.month) {
+                let month = rawFields.month as string
+                if (
+                    isNaN(parseInt(month)) &&
+                    month.toUpperCase() in this.months
+                ) {
+                    month = this.months[month.toUpperCase() as Month]
+                }
+                month = month.replace(/~|–|—|\./g, "-")
+
+                // Validate month format: MM or MM-DD
+                // MM: 01-12
+                // DD: 01-31 (simplified, not checking specific months)
+                if (
+                    /^(0?[1-9]|1[0-2])(?:-(0?[1-9]|[12]\d|3[01]))?$/.test(month)
+                ) {
+                    date = `${rawFields.year}-${month}`
+                } else {
+                    // Use just the year if month is invalid
+                    date = `${rawFields.year}`
+
+                    // Add warning about invalid month
+                    this.warnings.push({
+                        type: "invalid_month",
+                        field_name: "month",
+                        value: String(rawFields.month),
+                        entry: this.currentEntry.entry_key,
+                    })
+                }
+            } else {
+                date = `${rawFields.year}`
+            }
         }
+
         if (date) {
             let dateObj = edtfParse(date)
             if (dateObj.valid) {
                 fields["date"] = dateObj.cleanedString
                 delete rawFields.year
                 delete rawFields.month
-            } else {
-                let fieldName, value, errorList
-                if (rawFields.date) {
-                    fieldName = "date"
-                    value = rawFields.date
-                    errorList = this.errors
-                } else if (rawFields.year && rawFields.month) {
-                    fieldName = "year,month"
-                    value = [rawFields.year, rawFields.month]
-                    errorList = this.warnings
-                } else {
-                    fieldName = "year"
-                    value = rawFields.year
-                    errorList = this.warnings
-                }
+            } else if (rawFields.date) {
                 const error: ErrorObject = {
-                    type: "unknown_date",
-                    field_name: fieldName,
-                    value: value as string | string[] | undefined,
+                    type: "invalid_date",
+                    field_name: "date",
+                    value: rawFields.date as string,
+                    entry: this.currentEntry.entry_key,
                 }
                 if (this.currentEntry) {
                     error.entry = this.currentEntry["entry_key"]
                 }
-                errorList.push(error)
+                this.errors.push(error)
+            } else if (rawFields.year) {
+                // Always try to use year even if month was invalid
+                const yearObj = edtfParse(rawFields.year as string)
+                if (yearObj.valid) {
+                    fields["date"] = yearObj.cleanedString
+                    delete rawFields.year
+                    // Add warning about invalid month
+                    const warning: ErrorObject = {
+                        type: "unknown_date",
+                        field_name: "month",
+                        value: String(rawFields.month),
+                        entry: this.currentEntry.entry_key,
+                    }
+                    if (this.currentEntry) {
+                        warning.entry = this.currentEntry["entry_key"]
+                    }
+                    this.warnings.push(warning)
+                } else {
+                    // Try to find a valid year in the string
+                    const yearMatches = Array.from(
+                        String(rawFields.year).matchAll(/\[?(\d{4})\]?/g)
+                    )
+
+                    // Handle non-bracketed dates
+                    // If there are two years, take the non-bracketed one
+                    // If there is only one year, return it
+
+                    let mainYearMatch = yearMatches.find(
+                        (yearMatch) => !/[[\]]/.test(yearMatch[0])
+                    )
+
+                    if (mainYearMatch) {
+                        // Handle bracketed dates (original publication dates)
+                        const bracketedYearMatch = yearMatches.find(
+                            (yearMatch) => /[[\]]/.test(yearMatch[0])
+                        )
+                        if (bracketedYearMatch) {
+                            fields["origdate"] = bracketedYearMatch[1]
+                        }
+                    } else if (yearMatches.length) {
+                        mainYearMatch = yearMatches[0]
+                    }
+
+                    if (mainYearMatch) {
+                        fields["date"] = mainYearMatch[1]
+                        delete rawFields.year
+                    } else {
+                        // Add warning about invalid year
+                        const warning: ErrorObject = {
+                            type: "unknown_date",
+                            field_name: "year",
+                            value: String(rawFields.year),
+                            entry: this.currentEntry.entry_key,
+                        }
+                        if (this.currentEntry) {
+                            warning.entry = this.currentEntry["entry_key"]
+                        }
+                        this.warnings.push(warning)
+                    }
+                }
             }
         }
         // Check for English language. If the citation is in English language,

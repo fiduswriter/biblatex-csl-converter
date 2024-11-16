@@ -18,6 +18,13 @@ const roundTripTest = (biblatex) => {
     const bibExporter2 = new converter.BibLatexExporter(backToParsed)
 
     const bib2 = bibExporter2.parse()
+    // console.log({
+    //     parsed: JSON.stringify(parsed),
+    //     csl: JSON.stringify(csl),
+    //     backToParsed: JSON.stringify(parsed),
+    //     bib1,
+    //     bib2,
+    // })
     return [bib1, bib2]
 }
 
@@ -46,5 +53,16 @@ describe("Round-trip conversion tests", () => {
         expect(bib2).to.equal(bib1)
     })
 
+    it("should preserve date range entry data", () => {
+        const biblatex = `@book{bookentry,
+            author = {John Doe},
+            title = {{{Test Article}}},
+            publisher = {{{New World Publishers}}},
+            year = {2014-2020}
+        }`
+
+        const [bib1, bib2] = roundTripTest(biblatex)
+        expect(bib2).to.equal(bib1)
+    })
     // Add more round-trip tests as needed
 })

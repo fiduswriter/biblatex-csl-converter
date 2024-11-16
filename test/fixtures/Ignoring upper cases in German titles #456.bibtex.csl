@@ -1,5 +1,19 @@
 {
     "1": {
+        "original-date": {
+            "date-parts": [
+                [
+                    1990
+                ]
+            ]
+        },
+        "issued": {
+            "date-parts": [
+                [
+                    2002
+                ]
+            ]
+        },
         "author": [
             {
                 "given": "Franz-Xaver",
@@ -21,6 +35,20 @@
         "id": "1"
     },
     "2": {
+        "original-date": {
+            "date-parts": [
+                [
+                    1997
+                ]
+            ]
+        },
+        "issued": {
+            "date-parts": [
+                [
+                    2002
+                ]
+            ]
+        },
         "author": [
             {
                 "given": "Franz-Xaver",

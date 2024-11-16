@@ -1,4 +1,6 @@
 @incollection{Kaufmann1990,
+origdate = {1990},
+date = {2002},
 author = {given={Franz-Xaver}, family={Kaufmann}},
 booktitle = {{{Sozialpolitik und Sozialstaat: Soziologische Analysen}}},
 doi = {10.1007/978-3-322-99962-7_7},
@@ -9,6 +11,8 @@ title = {{{Sozialpolitik und Bevölkerungsprozeß}}}
 }
 
 @incollection{Kaufmann1997,
+origdate = {1997},
+date = {2002},
 author = {given={Franz-Xaver}, family={Kaufmann}},
 booktitle = {{{Sozialpolitik und Sozialstaat: Soziologische Analysen}}},
 doi = {10.1007/978-3-322-99962-7_11},

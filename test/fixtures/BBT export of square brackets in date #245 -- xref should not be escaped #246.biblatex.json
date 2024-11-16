@@ -4,6 +4,7 @@
             "bib_type": "article",
             "entry_key": "bentley_academic_2011",
             "fields": {
+                "date": "2014",
                 "abstract": [
                     {
                         "type": "text",
@@ -156,12 +157,6 @@
                         "type": "text",
                         "text": "999"
                     }
-                ],
-                "year": [
-                    {
-                        "type": "text",
-                        "text": "[2014]"
-                    }
                 ]
             },
             "unexpected_fields": {
@@ -177,6 +172,7 @@
             "bib_type": "article",
             "entry_key": "pollard_bicycle_2007",
             "fields": {
+                "date": "2007",
                 "author": [
                     {
                         "family": [
@@ -269,12 +265,6 @@
                     {
                         "type": "text",
                         "text": "2015-02-24 12:14:36 +0100"
-                    }
-                ],
-                "year": [
-                    {
-                        "type": "text",
-                        "text": "[2007]"
                     }
                 ]
             }
@@ -386,12 +376,6 @@
     },
     "warnings": [
         {
-            "type": "unknown_date",
-            "field_name": "year",
-            "value": "[2014]",
-            "entry": "bentley_academic_2011"
-        },
-        {
             "type": "unknown_field",
             "field_name": "rights",
             "entry": "bentley_academic_2011",
@@ -416,18 +400,6 @@
             "line": 22
         },
         {
-            "type": "unknown_field",
-            "field_name": "year",
-            "entry": "bentley_academic_2011",
-            "line": 22
-        },
-        {
-            "type": "unknown_date",
-            "field_name": "year",
-            "value": "[2007]",
-            "entry": "pollard_bicycle_2007"
-        },
-        {
             "type": "unexpected_field",
             "field_name": "shortjournal",
             "entry": "pollard_bicycle_2007",
@@ -436,12 +408,6 @@
         {
             "type": "unknown_field",
             "field_name": "timestamp",
-            "entry": "pollard_bicycle_2007",
-            "line": 34
-        },
-        {
-            "type": "unknown_field",
-            "field_name": "year",
             "entry": "pollard_bicycle_2007",
             "line": 34
         },

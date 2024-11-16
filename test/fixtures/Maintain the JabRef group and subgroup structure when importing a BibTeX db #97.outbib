@@ -3248,6 +3248,7 @@ pages = {453--457}
 }
 
 @article{Herion_1982,
+date = {1982/1983},
 title = {The effect of ion beams on the composition of {{Cu$_{2}$O(111)}} surfaces},
 author = {given={J.}, family={Herion} and given={G.}, family={Scharl} and given={M.}, family={Tapiero}},
 journaltitle = {Applications of Surface Science},
@@ -3784,6 +3785,7 @@ doi = {10.1080/01422448308209643}
 }
 
 @article{Iwanowski_1984,
+date = {1984/1985-01},
 title = {{{Cu/Cu$_{2}$O}} {{S}}chottky barrier solar cells prepared by multistep irradiation of a {{Cu$_{2}$O}} substrate by {{H$^{+}$}} ions},
 author = {given={R. J.}, family={Iwanowski} and given={Dan}, family={Trivich}},
 journaltitle = {Solar Cells},
@@ -4249,6 +4251,7 @@ doi = {10.1149/1.2108497}
 }
 
 @patent{Kaufman_1986_patent,
+date = {1986},
 langid = {usenglish},
 title = {Ohmic copper--cuprous oxide contacts},
 number = {4582542},
@@ -7549,6 +7552,7 @@ keywords = {Atomic force microscopy, Oxidation, Reflection spectroscopy, Surface
 }
 
 @article{Ronnquist_1961,
+date = {1960/1961},
 title = {The oxidation of copper -- {{A}} review of published data},
 author = {given={A.}, family={Rönnquist} and given={H.}, family={Fischmeister}},
 journaltitle = {Journal of the Institute of Metals},

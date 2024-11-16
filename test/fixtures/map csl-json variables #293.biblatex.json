@@ -87,6 +87,8 @@
             "bib_type": "book",
             "entry_key": "kelsen_democratie_2004",
             "fields": {
+                "origdate": "1929",
+                "date": "2004",
                 "abstract": [
                     {
                         "type": "text",
@@ -130,7 +132,6 @@
                         }
                     ]
                 ],
-                "origdate": "1929",
                 "origlocation": [
                     [
                         {
@@ -202,12 +203,6 @@
                         "type": "text",
                         "text": "2015-02-24 12:14:36 +0100"
                     }
-                ],
-                "year": [
-                    {
-                        "type": "text",
-                        "text": "2004 [1929]"
-                    }
                 ]
             }
         }
@@ -220,20 +215,8 @@
             "line": 15
         },
         {
-            "type": "unknown_date",
-            "field_name": "year",
-            "value": "2004 [1929]",
-            "entry": "kelsen_democratie_2004"
-        },
-        {
             "type": "unknown_field",
             "field_name": "timestamp",
-            "entry": "kelsen_democratie_2004",
-            "line": 37
-        },
-        {
-            "type": "unknown_field",
-            "field_name": "year",
             "entry": "kelsen_democratie_2004",
             "line": 37
         }

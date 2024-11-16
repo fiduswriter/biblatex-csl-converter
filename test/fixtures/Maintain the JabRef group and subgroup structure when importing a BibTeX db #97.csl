@@ -9174,6 +9174,16 @@
         "id": "291"
     },
     "292": {
+        "issued": {
+            "date-parts": [
+                [
+                    1982
+                ],
+                [
+                    1983
+                ]
+            ]
+        },
         "title": "The effect of ion beams on the composition of <span class=\"nocase\">Cu<sub>2</sub>O(111)</span> surfaces",
         "author": [
             {
@@ -10859,6 +10869,17 @@
         "id": "338"
     },
     "339": {
+        "issued": {
+            "date-parts": [
+                [
+                    1984
+                ],
+                [
+                    1985,
+                    1
+                ]
+            ]
+        },
         "title": "<span class=\"nocase\">Cu/Cu<sub>2</sub>O</span> <span class=\"nocase\">S</span>chottky barrier solar cells prepared by multistep irradiation of a <span class=\"nocase\">Cu<sub>2</sub>O</span> substrate by <span class=\"nocase\">H<sup>+</sup></span> ions",
         "author": [
             {
@@ -12172,6 +12193,13 @@
         "id": "378"
     },
     "379": {
+        "issued": {
+            "date-parts": [
+                [
+                    1986
+                ]
+            ]
+        },
         "language": "en-US",
         "title": "Ohmic copper--cuprous oxide contacts",
         "number": "4582542",
@@ -21347,6 +21375,16 @@
         "id": "671"
     },
     "672": {
+        "issued": {
+            "date-parts": [
+                [
+                    1960
+                ],
+                [
+                    1961
+                ]
+            ]
+        },
         "title": "The oxidation of copper -- <span class=\"nocase\">A</span> review of published data",
         "author": [
             {

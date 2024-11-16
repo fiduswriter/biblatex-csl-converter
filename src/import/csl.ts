@@ -277,8 +277,13 @@ export class CSLParser {
                     : ""
             } else {
                 // Map of options (like langid)
-                const option = Object.keys(fieldType.options).find(
-                    (key) => fieldType.options![key].csl === stringValue
+                // Add type assertion here
+                const options = fieldType.options as Record<
+                    string,
+                    { csl: string }
+                >
+                const option = Object.keys(options).find(
+                    (key) => options[key].csl === stringValue
                 )
                 return option || ""
             }
@@ -287,17 +292,17 @@ export class CSLParser {
     }
 
     private convertRange(value: string): RangeArray[] {
-        // Convert ranges like "1-3" to [[{text:"1"}, {text:"3"}]]
         return String(value)
             .split(",")
             .map((range) => {
                 const parts = range.split(/[-–—]/)
-                return parts.map((part) => [
-                    {
+                // Ensure we always return an array with exactly one element
+                return [
+                    parts.map((part) => ({
                         type: "text",
                         text: part.trim(),
-                    },
-                ])
+                    })),
+                ]
             })
     }
 

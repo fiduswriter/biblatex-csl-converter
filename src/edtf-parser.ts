@@ -117,7 +117,8 @@ class SimpleEDTFParser {
     }
 
     splitInterval() {
-        let parts = this.string.split("/")
+        const normalizedString = this.string.replace(/--/, "/")
+        let parts = normalizedString.split("/")
         if (parts.length > 2) {
             this.valid = false
         } else if (parts.length === 2) {
@@ -195,7 +196,7 @@ class SimpleEDTFParser {
             this.valid = false
             return
         }
-        let monthChecker = /^[0-2][0-9]|uu$/ // uu or 01, 02, 03, ..., 11, 12
+        let monthChecker = /^([0-2][0-9]|[1-9])|uu$/ // uu or 1, 2, 3, ..., 01, 02, 03, ..., 11, 12
         let monthInt = parseInt(month.replace("uu", "01"))
         if (
             !monthChecker.test(month) ||
