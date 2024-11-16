@@ -1212,17 +1212,6 @@ export class BibLatexParser {
         )
     }
 
-    get output(): BibDB {
-        console.warn(
-            "BibLatexParser.output will be deprecated in biblatex-csl-converter 2.x. Use BibLatexParser.parse() instead."
-        )
-        this.replaceTeXChars()
-        this.stepThroughBibtex()
-        this.createBibDB()
-        this.cleanDB()
-        return this.bibDB
-    }
-
     _resolveCrossRef(key: string, parentKey: string): void {
         const entry = this.entries.find((e) => e.entry_key === key)!
         const parent = this.entries.find((e) => e.entry_key === parentKey)!

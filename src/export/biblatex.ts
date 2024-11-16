@@ -69,13 +69,6 @@ export class BibLatexExporter {
         this.bibtexStr = ""
     }
 
-    get output(): string {
-        console.warn(
-            "BibLatexExporter.output will be deprecated in biblatex-csl-converter 2.x. Use BibLatexExporter.parse() instead."
-        )
-        return this.parse()
-    }
-
     parse(): string {
         this.pks.forEach((pk) => {
             let bib = this.bibDB[pk as unknown as number]

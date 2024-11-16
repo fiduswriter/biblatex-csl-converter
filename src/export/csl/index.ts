@@ -88,13 +88,6 @@ export class CSLExporter {
         this.errors = []
     }
 
-    get output(): CSLOutput {
-        console.warn(
-            "CSLExporter.output will be deprecated in biblatex-csl-converter 2.x. Use CSLExporter.parse() instead."
-        )
-        return this.parse()
-    }
-
     parse(): CSLOutput {
         for (let bibId in this.bibDB) {
             if (this.pks.indexOf(bibId) !== -1) {

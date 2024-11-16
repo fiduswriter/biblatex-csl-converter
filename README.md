@@ -55,11 +55,41 @@ parsing of fields that are known, but shouldn't be in the bibliography entry due
 
 ## Upgrading
 
--   From 1.x to 2.x: Note that the APi for the asynchronousparser has changed.
+-   From 2.x to 3.x: Note that the `output` getter has been removed. Use `parse()` instead.
+
+This applied to `BibLatexExporter`, `CSLExporter` and `BibLatexParser`. Note that the output of `BibLatexParser` is structured differently when using the `parse()` function if you previously used the `output` getter.
+
+
+In the case of `BibLatexExporter` and `CSLExporter`, instead of:
+
+```JavaScript
+const output = parser.output
+```
+
+Do:
+
+```JavaScript
+const output = parser.parse()
+```
+
+In the case of `BibLatexParser`, instead of:
+
+```JavaScript
+const output = parser.output
+```
+
+Do:
+
+```JavaScript
+const parsed = parser.parse()
+const output = parsed.entries
+```
+
+-   From 1.x to 2.x: Note that the API for the asynchronous parser has changed.
 
 You need to change instances of this:
 
-```
+```JavaScript
 let parser = new BibLatexParser(input, {processUnexpected: true, processUnknown: true, async: true})
 parser.parse().then((bib) => { ... })
 ```
