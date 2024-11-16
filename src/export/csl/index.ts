@@ -36,6 +36,7 @@ const TAGS: Tags = {
 
 type ConfigObject = {
     escapeText?: boolean
+    useEntryKeys?: boolean // Whether to output using the entry keys
 }
 
 type ErrorObject = {
@@ -80,7 +81,7 @@ export class CSLExporter {
         if (pks) {
             this.pks = pks // A list of pk values of the bibliography items to be exported.
         } else {
-            this.pks = Object.keys(bibDB) // If none are selected, all keys are exporter
+            this.pks = Object.keys(bibDB) // If none are selected, all keys are exported.
         }
         this.config = config
         this.cslDB = {}
@@ -97,8 +98,11 @@ export class CSLExporter {
     parse(): CSLOutput {
         for (let bibId in this.bibDB) {
             if (this.pks.indexOf(bibId) !== -1) {
-                this.cslDB[bibId] = this.getCSLEntry(bibId)
-                this.cslDB[bibId].id = bibId
+                const id = this.config.useEntryKeys
+                    ? this.bibDB[bibId].entry_key || bibId
+                    : bibId
+                this.cslDB[id] = this.getCSLEntry(bibId)
+                this.cslDB[id].id = id
             }
         }
         return this.cslDB

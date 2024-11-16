@@ -1,5 +1,6 @@
 export { BibLatexParser, parse, parseAsync } from "./import/biblatex"
 export { BibLatexExporter } from "./export/biblatex"
+export { CSLParser, parse as parseCSL } from "./import/csl"
 export { CSLExporter } from "./export/csl"
 export { BibFieldTypes, BibTypes } from "./const"
 export { edtfParse } from "./edtf-parser"
