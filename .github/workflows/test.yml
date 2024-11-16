@@ -13,11 +13,11 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout
-              uses: actions/checkout@v2
+              uses: actions/checkout@v4
             - name: Test
-              uses: actions/setup-node@v2
+              uses: actions/setup-node@v4
               with:
-                  node-version: "18.x"
+                  node-version: "22.x"
             - run: |
                   npm install
                   npm test
@@ -29,7 +29,7 @@ jobs:
               run: echo "BRANCH=$(echo ${GITHUB_REF##*/})" >> $GITHUB_ENV
             - name: Deploy gh-pages branch
               if: env.BRANCH == 'main'
-              uses: crazy-max/ghaction-github-pages@v2
+              uses: crazy-max/ghaction-github-pages@v4
               with:
                   target_branch: gh-pages
                   build_dir: gh-pages
@@ -37,7 +37,7 @@ jobs:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             - name: Deploy browser branch
               if: env.BRANCH == 'main'
-              uses: crazy-max/ghaction-github-pages@v2
+              uses: crazy-max/ghaction-github-pages@v4
               with:
                   target_branch: browser
                   build_dir: browser
