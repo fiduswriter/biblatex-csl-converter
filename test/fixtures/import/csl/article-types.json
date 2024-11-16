@@ -1,0 +1,172 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "article-magazine",
+        "fields": {
+            "date": "1980",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Alle sollen sich erheben"
+                }
+            ],
+            "url": "http://www.spiegel.de/spiegel/print/d-14332124.html",
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "183"
+                        },
+                        {
+                            "type": "text",
+                            "text": "191"
+                        }
+                    ]
+                ]
+            ],
+            "author": [
+                {
+                    "literal": [
+                        {
+                            "type": "text",
+                            "text": "Der Spiegel"
+                        }
+                    ]
+                }
+            ],
+            "urldate": "2010-02-27"
+        }
+    },
+    "2": {
+        "entry_key": "2",
+        "bib_type": "article-newspaper",
+        "fields": {
+            "date": "2009-04-16",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Nicaragua sufre mayor impacto por la crisis financiera"
+                }
+            ],
+            "url": "http://www.elnuevodiario.com.ni/nacionales/45361",
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "El nuevo diario"
+                }
+            ],
+            "author": [
+                {
+                    "literal": [
+                        {
+                            "type": "text",
+                            "text": "AFP"
+                        }
+                    ]
+                }
+            ],
+            "urldate": "2011-06-04"
+        }
+    },
+    "3": {
+        "entry_key": "3",
+        "bib_type": "article-newspaper",
+        "fields": {
+            "date": "2005-03-10",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "El pacto sigue"
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "La prensa"
+                }
+            ],
+            "author": [
+                {
+                    "literal": [
+                        {
+                            "type": "text",
+                            "text": "La Prensa"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "4": {
+        "entry_key": "4",
+        "bib_type": "article-newspaper",
+        "fields": {
+            "date": "2008-01-11",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Corte avala consejos del poder ciudadano"
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "La prensa"
+                }
+            ],
+            "author": [
+                {
+                    "literal": [
+                        {
+                            "type": "text",
+                            "text": "La Prensa"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "5": {
+        "entry_key": "5",
+        "bib_type": "article",
+        "fields": {
+            "date": "1979-07",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Cuban dependency: a comparison of pre-revolutionary and post-revolutionary international economic relations"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "9"
+                }
+            ],
+            "url": "http://www1.american.edu/faculty/leogrande/Cuban_Studies_1979_Dependency.pdf",
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Cuban studies/estudios cubanos"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "LeoGrande"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "William M."
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

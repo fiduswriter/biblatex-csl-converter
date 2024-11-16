@@ -1,0 +1,205 @@
+{
+    "entries": {
+        "1": {
+            "bib_type": "incollection",
+            "entry_key": "Madelung_1998_LB_10681727_56",
+            "fields": {
+                "date": "1998",
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Cuprous oxide ("
+                    },
+                    {
+                        "type": "text",
+                        "text": "Cu",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": "2",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            },
+                            {
+                                "type": "sub"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": "O",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": ") crystal structure, lattice parameters"
+                    }
+                ],
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Madelung"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "O."
+                            }
+                        ]
+                    },
+                    {
+                        "literal": [
+                            {
+                                "type": "text",
+                                "text": "others"
+                            }
+                        ]
+                    }
+                ],
+                "booktitle": [
+                    {
+                        "type": "text",
+                        "text": "L",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": "andolt-"
+                    },
+                    {
+                        "type": "text",
+                        "text": "B",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": "örnstein"
+                    }
+                ],
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Springer-Verlag"
+                        }
+                    ]
+                ],
+                "editor": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Madelung"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "O."
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Rössler"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "U."
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Schulz"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "M."
+                            }
+                        ]
+                    }
+                ],
+                "series": [
+                    {
+                        "type": "text",
+                        "text": "SpringerMaterials - The Landolt-Börnstein Database"
+                    }
+                ],
+                "volume": [
+                    {
+                        "type": "text",
+                        "text": "III/41c"
+                    }
+                ],
+                "doi": "10.1007/10681727_56"
+            },
+            "unexpected_fields": {
+                "file": "Madelung_1998_LB_10681727_56.pdf:CopperOxides\\Madelung_1998_LB_10681727_56.pdf:PDF"
+            },
+            "unknown_fields": {
+                "owner": [
+                    {
+                        "type": "text",
+                        "text": "Francesco"
+                    }
+                ],
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2010.02.22"
+                    }
+                ]
+            }
+        }
+    },
+    "warnings": [
+        {
+            "type": "unexpected_field",
+            "field_name": "file",
+            "entry": "Madelung_1998_LB_10681727_56",
+            "line": 15
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "owner",
+            "entry": "Madelung_1998_LB_10681727_56",
+            "line": 15
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "Madelung_1998_LB_10681727_56",
+            "line": 15
+        }
+    ]
+}

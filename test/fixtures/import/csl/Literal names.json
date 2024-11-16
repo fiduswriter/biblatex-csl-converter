@@ -1,0 +1,313 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "article",
+        "fields": {
+            "date": "2013-03",
+            "langid": "",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Increasing cardiopulmonary resuscitation provision in communities with low bystander cardiopulmonary resuscitation rates: a science advisory from the american heart association for healthcare providers, policymakers, public health departments, and community leaders"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "127"
+                }
+            ],
+            "issn": [
+                {
+                    "type": "text",
+                    "text": "1524-4539"
+                }
+            ],
+            "shorttitle": [
+                {
+                    "type": "text",
+                    "text": "Increasing cardiopulmonary resuscitation provision in communities with low bystander cardiopulmonary resuscitation rates"
+                }
+            ],
+            "doi": "10.1161/CIR.0b013e318288b4dd",
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Circulation"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Sasson"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Comilla"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Meischke"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Hendrika"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Abella"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Benjamin S"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Berg"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Robert A"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Bobrow"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Bentley J"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Chan"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Paul S"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Root"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Elisabeth Dowling"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Heisler"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Michele"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Levy"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Jerrold H"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Link"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Mark"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Masoudi"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Frederick"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Ong"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Marcus"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Sayre"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Michael R"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Rumsfeld"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "John S"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Rea"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Thomas D"
+                        }
+                    ]
+                },
+                {
+                    "literal": [
+                        {
+                            "type": "text",
+                            "text": "American Heart Association Council on Quality of Care and Outcomes Research"
+                        }
+                    ]
+                },
+                {
+                    "literal": [
+                        {
+                            "type": "text",
+                            "text": "Emergency Cardiovascular Care Committee"
+                        }
+                    ]
+                },
+                {
+                    "literal": [
+                        {
+                            "type": "text",
+                            "text": "Council on Cardiopulmonary, Critical Care, Perioperative and Resuscitation"
+                        }
+                    ]
+                },
+                {
+                    "literal": [
+                        {
+                            "type": "text",
+                            "text": "Council on Clinical Cardiology"
+                        }
+                    ]
+                },
+                {
+                    "literal": [
+                        {
+                            "type": "text",
+                            "text": "Council on Cardiovascular Surgery and Anesthesia"
+                        }
+                    ]
+                }
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "PMID: 23439512"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "1342"
+                        },
+                        {
+                            "type": "text",
+                            "text": "1350"
+                        }
+                    ]
+                ]
+            ]
+        }
+    }
+}

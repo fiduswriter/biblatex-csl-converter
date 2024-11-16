@@ -1,0 +1,24 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2001
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Kendra",
+                "family": "Secondname",
+                "non-dropping-particle": "Arbesman von"
+            }
+        ],
+        "DOI": "10.1175/1520-0493(1987)115<1606:GARSPP>2.0.CO;2",
+        "container-title": "Title, with comma",
+        "title": "The physical volcanology of the 1600 eruption of <span class=\"nocase\">Huaynaputina</span>, with L<sup>A</sup>T<sub>E</sub>X!",
+        "volume": "62",
+        "type": "article",
+        "id": "1"
+    }
+}

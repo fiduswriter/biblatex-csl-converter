@@ -1,0 +1,192 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "book",
+        "fields": {
+            "date": "2008",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Latour"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Bruno"
+                        }
+                    ]
+                }
+            ],
+            "langid": "",
+            "location": [
+                [
+                    {
+                        "type": "text",
+                        "text": "København"
+                    }
+                ]
+            ],
+            "origdate": "2005",
+            "origlocation": [
+                [
+                    {
+                        "type": "text",
+                        "text": "origlocation"
+                    }
+                ]
+            ],
+            "origpublisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "origpublisher"
+                    }
+                ]
+            ],
+            "origtitle": [
+                {
+                    "type": "text",
+                    "text": "origtitle"
+                }
+            ],
+            "publisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Akademisk Forlag"
+                    }
+                ]
+            ],
+            "shorttitle": [
+                {
+                    "type": "text",
+                    "text": "En ny sociologi"
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "En ny sociologi for et nyt samfund. Introduktion til aktør-netværk-teori"
+                }
+            ]
+        }
+    },
+    "2": {
+        "entry_key": "2",
+        "bib_type": "book",
+        "fields": {
+            "origdate": "1929",
+            "date": "2004",
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "Préface de Ph. Raynaud. Trad. de : \"Vom Wesen und Wert der Demokratie\" - Tübingen : J.C.B. Mohr, 1929. Fac-sim. de la 2e éd., Paris : Sirey : 1932."
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Kelsen"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Hans"
+                        }
+                    ]
+                }
+            ],
+            "edition": [
+                {
+                    "type": "text",
+                    "text": "2"
+                }
+            ],
+            "isbn": [
+                {
+                    "type": "text",
+                    "text": "2-247-04268-6"
+                }
+            ],
+            "langid": "",
+            "location": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Paris"
+                    }
+                ]
+            ],
+            "origlocation": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Tübingen"
+                    }
+                ]
+            ],
+            "origpublisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "J.C.B. Mohr"
+                    }
+                ]
+            ],
+            "origtitle": [
+                {
+                    "type": "text",
+                    "text": "Vom wesen und wert der demokratie"
+                }
+            ],
+            "pagetotal": [
+                {
+                    "type": "text",
+                    "text": "x+121"
+                }
+            ],
+            "publisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Dalloz"
+                    }
+                ]
+            ],
+            "series": [
+                {
+                    "type": "text",
+                    "text": "Bibliothèque dalloz"
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "La démocratie. Sa nature, sa valeur"
+                }
+            ],
+            "translator": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Eisenmann"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Charles"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

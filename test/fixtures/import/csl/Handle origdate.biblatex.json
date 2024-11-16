@@ -1,0 +1,225 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "book",
+        "fields": {
+            "date": "1989",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Wittgenstein"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Ludwig"
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Vortrag über ethik und andere kleine schriften"
+                }
+            ],
+            "editor": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Schulte"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Joachim"
+                        }
+                    ]
+                }
+            ],
+            "publisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Suhrkamp"
+                    }
+                ]
+            ],
+            "location": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Frankfurt am Main"
+                    }
+                ]
+            ],
+            "series": [
+                {
+                    "type": "text",
+                    "text": "stw"
+                }
+            ],
+            "langid": ""
+        }
+    },
+    "2": {
+        "entry_key": "2",
+        "bib_type": "inbook",
+        "fields": {
+            "date": "1989",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Wittgenstein"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Ludwig"
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Bemerkungen über ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Frazers ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Golden ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Bough",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "editor": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Schulte"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Joachim"
+                        }
+                    ]
+                }
+            ],
+            "publisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Suhrkamp"
+                    }
+                ]
+            ],
+            "location": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Frankfurt am Main"
+                    }
+                ]
+            ],
+            "series": [
+                {
+                    "type": "text",
+                    "text": "stw"
+                }
+            ],
+            "langid": "",
+            "bookauthor": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Wittgenstein"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Ludwig"
+                        }
+                    ]
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "Vortrag über ethik und andere kleine schriften"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "29"
+                        },
+                        {
+                            "type": "text",
+                            "text": "46"
+                        }
+                    ]
+                ]
+            ],
+            "origdate": "1930"
+        }
+    }
+}

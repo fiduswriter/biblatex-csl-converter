@@ -1,0 +1,121 @@
+{
+    "entries": {
+        "1": {
+            "bib_type": "article",
+            "entry_key": "sanders_largest_2016",
+            "fields": {
+                "date": "2016-04-06",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Sanders"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Bernie"
+                            }
+                        ]
+                    }
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "The Largest "
+                    },
+                    {
+                        "type": "text",
+                        "text": "U",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": "."
+                    },
+                    {
+                        "type": "text",
+                        "text": "S",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": ". Companies Would Owe $620 Billion in "
+                    },
+                    {
+                        "type": "text",
+                        "text": "U",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": "."
+                    },
+                    {
+                        "type": "text",
+                        "text": "S",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": ". Taxes on the Cash They Store in Tax Havens, the Equivalent of Our Defense Budget. ["
+                    },
+                    {
+                        "type": "text",
+                        "text": "Tweet",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": "]"
+                    }
+                ],
+                "titleaddon": [
+                    {
+                        "type": "text",
+                        "text": "SenSanders"
+                    }
+                ],
+                "url": "https://twitter.com/SenSanders/status/717771426284060673"
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        }
+    },
+    "warnings": [
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "sanders_largest_2016",
+            "line": 9
+        }
+    ]
+}

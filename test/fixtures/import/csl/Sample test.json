@@ -1,0 +1,14 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "article",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "sample title"
+                }
+            ]
+        }
+    }
+}

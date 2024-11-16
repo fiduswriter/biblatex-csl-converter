@@ -1,0 +1,124 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "article",
+        "fields": {
+            "date": "1998",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Hannam"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Walter A."
+                        }
+                    ]
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Florilegium"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "145"
+                        },
+                        {
+                            "type": "text",
+                            "text": "165"
+                        }
+                    ]
+                ]
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Nodo unitatis et caritatis",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "em"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": ": ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "The structure and argument of ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Augustine's ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "De doctrina Christiana",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "em"
+                        }
+                    ]
+                }
+            ],
+            "url": "https://journals.lib.unb.ca/index.php/flor/article/view/14263",
+            "urldate": "2015-07-07",
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "15"
+                }
+            ]
+        }
+    }
+}

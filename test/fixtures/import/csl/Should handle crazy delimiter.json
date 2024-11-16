@@ -1,0 +1,106 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "article",
+        "fields": {
+            "date": "2003",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Synthesis and structural characterization of unprecedented bis-asymmetric heteroscorpionate U(III) complexes: [u"
+                },
+                {
+                    "type": "text",
+                    "text": "kappa(3)-H2B(pz(tBu),(Me))(pz(Me,tBu))(2)I] and [u",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "kappa(3) -H2B(pz(tBu,Me))( pz(Me2))(2)I]",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Inorganic chemistry"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Maria"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "L"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Domingos"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "A"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Santos"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "I"
+                        }
+                    ]
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "42"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "3323"
+                        },
+                        {
+                            "type": "text",
+                            "text": "3330"
+                        }
+                    ]
+                ]
+            ]
+        }
+    }
+}

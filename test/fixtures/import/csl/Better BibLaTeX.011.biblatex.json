@@ -1,0 +1,144 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "inproceedings",
+        "fields": {
+            "date": "2010",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Klassen"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Myungsook"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Kim"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Nyunsu"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Liu"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Wei Ming"
+                        }
+                    ]
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "CATA",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "svm liniowe najlepsze"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "25"
+                        },
+                        {
+                            "type": "text",
+                            "text": "30"
+                        }
+                    ]
+                ]
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Empirical "
+                },
+                {
+                    "type": "text",
+                    "text": "Study of ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Support Vector Machine Kernels with ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Applications to ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Microarray Data",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

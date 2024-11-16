@@ -1,0 +1,474 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "article",
+        "fields": {
+            "date": "2009-01",
+            "langid": "",
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "A distinctive feature of human behaviour is the widespread occurrence of cooperation among unrelated individuals. Explaining the maintenance of costly within-group cooperation is a challenge because the incentive to free ride on the efforts of other group members is expected to lead to decay of cooperation. However, the costs of cooperation can be diminished or overcome when there is competition at a higher level of organizational hierarchy. Here we show that competition between groups resolves the paradigmatic `public goods' social dilemma and increases within-group cooperation and overall productivity. Further, group competition intensifies the moral emotions of anger and guilt associated with violations of the cooperative norm. The results suggest an important role for group conflict in the evolution of human cooperation and moral emotions."
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Puurtinen"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Mikael"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Mappes"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Tapio"
+                        }
+                    ]
+                }
+            ],
+            "doi": "10.1098/rspb.2008.1060",
+            "issn": [
+                {
+                    "type": "text",
+                    "text": "0962-8452, 1471-2954"
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Proceedings of the royal society B: biological sciences"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "355"
+                        },
+                        {
+                            "type": "text",
+                            "text": "360"
+                        }
+                    ]
+                ]
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Between-group competition and human cooperation"
+                }
+            ],
+            "urldate": "2014-11-07",
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "276"
+                }
+            ]
+        }
+    },
+    "2": {
+        "entry_key": "2",
+        "bib_type": "inbook",
+        "fields": {
+            "date": "2003",
+            "langid": "",
+            "location": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Bruxelles"
+                    }
+                ]
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Bowles"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Samuel"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Choi"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Jung-Kyoo"
+                        }
+                    ]
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "Cultural diversity versus economic solidarity: proceedings of the "
+                },
+                {
+                    "type": "text",
+                    "text": "Seventh Francqui Colloquium, ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Brussels, 28 ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "February-1 ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "March 2003",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "editor": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Parijs"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Philippe"
+                        }
+                    ],
+                    "prefix": [
+                        {
+                            "type": "text",
+                            "text": "van"
+                        }
+                    ],
+                    "useprefix": true
+                }
+            ],
+            "isbn": [
+                {
+                    "type": "text",
+                    "text": "2-8041-4660-X 978-2-8041-4660-3"
+                }
+            ],
+            "publisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "De Boeck"
+                    }
+                ]
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "The co-evolution of love and hate"
+                }
+            ]
+        }
+    },
+    "3": {
+        "entry_key": "3",
+        "bib_type": "book",
+        "fields": {
+            "date": "1906",
+            "langid": "",
+            "location": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Boston, MA"
+                    }
+                ]
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Sumner"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "William Graham"
+                        }
+                    ]
+                }
+            ],
+            "publisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Ginn"
+                    }
+                ]
+            ],
+            "shorttitle": [
+                {
+                    "type": "text",
+                    "text": "Folkways"
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Folkways: a study of the social importance of usages, manners, customs, mores, and morals"
+                }
+            ]
+        }
+    },
+    "4": {
+        "entry_key": "4",
+        "bib_type": "article",
+        "fields": {
+            "date": "2014",
+            "langid": "",
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "In suggesting that new nations often coalesce in the decades following war, historians have posed an important psychological question: Does the experience of war generate an enduring elevation in people's egalitarian motivations toward their in-group? We administered social-choice tasks to more than 1,000 children and adults differentially affected by wars in the Republic of Georgia and Sierra Leone. We found that greater exposure to war created a lasting increase in people's egalitarian motivations toward their in-group, but not their out-groups, during a developmental window starting in middle childhood (around 7 years of age) and ending in early adulthood (around 20 years of age). Outside this window, war had no measurable impact on social motivations in young children and had only muted effects on the motivations of older adults. These “war effects” are broadly consistent with predictions from evolutionary approaches that emphasize the importance of group cooperation in defending against external threats, though they also highlight key areas in need of greater theoretical development."
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Bauer"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Michal"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Cassar"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Alessandra"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Chytilová"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Julie"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Henrich"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Joseph"
+                        }
+                    ]
+                }
+            ],
+            "doi": "10.1177/0956797613493444",
+            "issn": [
+                {
+                    "type": "text",
+                    "text": "0956-7976, 1467-9280"
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Psychological science"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "47"
+                        },
+                        {
+                            "type": "text",
+                            "text": "57"
+                        }
+                    ]
+                ]
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "War's "
+                },
+                {
+                    "type": "text",
+                    "text": "Enduring Effects on the ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Development of ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Egalitarian Motivations and ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "In-",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Group Biases",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "urldate": "2014-01-08",
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "25"
+                }
+            ]
+        }
+    }
+}

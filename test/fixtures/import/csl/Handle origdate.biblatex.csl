@@ -1,0 +1,78 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    1989
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Ludwig",
+                "family": "Wittgenstein"
+            }
+        ],
+        "title": "Vortrag über ethik und andere kleine schriften",
+        "editor": [
+            {
+                "given": "Joachim",
+                "family": "Schulte"
+            }
+        ],
+        "publisher": "Suhrkamp",
+        "publisher-place": "Frankfurt am Main",
+        "collection-title": "stw",
+        "collection-number": "770",
+        "language": "de-DE",
+        "type": "book",
+        "id": "1"
+    },
+    "2": {
+        "issued": {
+            "date-parts": [
+                [
+                    1989
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Ludwig",
+                "family": "Wittgenstein"
+            }
+        ],
+        "title": "<span class=\"nocase\">Bemerkungen</span> über <span class=\"nocase\">Frazers</span> <span class=\"nocase\">Golden</span> <span class=\"nocase\">Bough</span>",
+        "editor": [
+            {
+                "given": "Joachim",
+                "family": "Schulte"
+            }
+        ],
+        "publisher": "Suhrkamp",
+        "publisher-place": "Frankfurt am Main",
+        "collection-title": "stw",
+        "collection-number": "770",
+        "language": "de-DE",
+        "container-author": [
+            {
+                "given": "Ludwig",
+                "family": "Wittgenstein"
+            }
+        ],
+        "container-title": "Vortrag über ethik und andere kleine schriften",
+        "page": "29-46",
+        "original-date": {
+            "date-parts": [
+                [
+                    1930
+                ],
+                [
+                    1939
+                ]
+            ]
+        },
+        "type": "chapter",
+        "id": "2"
+    }
+}

@@ -1,0 +1,106 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    1957
+                ]
+            ]
+        },
+        "abstract": "Example from CMoS, 16e, 14.249",
+        "publisher-place": "Mesopotamia, OH",
+        "author": [
+            {
+                "given": "Hazel V.",
+                "family": "Clark"
+            }
+        ],
+        "title": "Mesopotamia: between two rivers",
+        "type": "pamphlet",
+        "id": "1"
+    },
+    "2": {
+        "abstract": "Example from CMoS, 16e, 14.272",
+        "title": "Object name <span class=\"nocase\">IRAS F00400</span>+4059",
+        "accessed": {
+            "date-parts": [
+                [
+                    2009,
+                    10,
+                    6
+                ]
+            ]
+        },
+        "type": "article",
+        "id": "2"
+    },
+    "3": {
+        "issued": {
+            "date-parts": [
+                [
+                    1960
+                ]
+            ]
+        },
+        "abstract": "Example from CMoS, 16e, 14.269 “Prepared from the autographs and earliest printed sources by Nathan Broder”",
+        "publisher-place": "Bryn Mawr, PA",
+        "author": [
+            {
+                "given": "Wolfgang Amadeus",
+                "family": "Mozart"
+            }
+        ],
+        "editor": [
+            {
+                "given": "Nathan",
+                "family": "Broder"
+            }
+        ],
+        "title": "Sonatas and fantasies for the piano",
+        "type": "article",
+        "id": "3"
+    },
+    "4": {
+        "issued": {
+            "date-parts": [
+                [
+                    1999,
+                    4
+                ]
+            ]
+        },
+        "abstract": "Example from CMoS, 16e, 14.215 “ed. and trans. John Charles Chasteen”",
+        "author": [
+            {
+                "given": "Ben",
+                "family": "Ratliff"
+            }
+        ],
+        "container-title": "Lingua franca",
+        "page": "B13-B14",
+        "title": "The mystery of samba: <span class=\"nocase\">Popular</span> music and national identity in <span class=\"nocase\">Brazil</span>",
+        "volume": "9",
+        "type": "article",
+        "id": "4"
+    },
+    "5": {
+        "issued": {
+            "date-parts": [
+                [
+                    2006,
+                    4
+                ]
+            ]
+        },
+        "abstract": "Example from CMoS, 16e, 14.125",
+        "author": [
+            {
+                "given": "David",
+                "family": "Kamp"
+            }
+        ],
+        "title": "Deconstructing dinner",
+        "type": "article",
+        "id": "5"
+    }
+}

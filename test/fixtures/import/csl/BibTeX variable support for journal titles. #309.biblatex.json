@@ -1,0 +1,57 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "article",
+        "fields": {
+            "date": "1972",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Blahut"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Richard E"
+                        }
+                    ]
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "[IEEE_J_IT]"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "460"
+                        },
+                        {
+                            "type": "text",
+                            "text": "473"
+                        }
+                    ]
+                ]
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Computation of channel capacity and rate-distortion functions"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "18"
+                }
+            ]
+        }
+    }
+}

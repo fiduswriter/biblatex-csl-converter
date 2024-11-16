@@ -1,0 +1,16 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "article",
+        "fields": {
+            "date": "2010-12-23",
+            "langid": "",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Dalain"
+                }
+            ]
+        }
+    }
+}

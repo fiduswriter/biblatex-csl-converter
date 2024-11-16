@@ -1,0 +1,112 @@
+{
+    "entries": {
+        "1": {
+            "bib_type": "article",
+            "entry_key": "anand2014technicalreportformally",
+            "fields": {
+                "date": "2014",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Anand"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Abhishek"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Rahli"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Vincent"
+                            }
+                        ]
+                    }
+                ],
+                "note": [
+                    {
+                        "type": "text",
+                        "text": "http://www.nuprl.org/html/verification/"
+                    }
+                ],
+                "origdate": "1856",
+                "origtitle": [
+                    {
+                        "type": "text",
+                        "text": "An Old Title"
+                    }
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Technical "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Report",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " : "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Towards",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " a "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Formally Verified Proof Assistant",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ],
+                "url": "http://www.nuprl.org/html/verification/"
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2011.03.22"
+                    }
+                ]
+            }
+        }
+    },
+    "warnings": [
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "anand2014technicalreportformally",
+            "line": 11
+        }
+    ]
+}

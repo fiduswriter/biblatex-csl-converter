@@ -1,0 +1,166 @@
+{
+    "entries": {
+        "1": {
+            "bib_type": "online",
+            "entry_key": "leishuku",
+            "fields": {
+                "author": [
+                    {
+                        "literal": [
+                            {
+                                "type": "text",
+                                "text": "愛如生"
+                            }
+                        ]
+                    }
+                ],
+                "langid": "chinese",
+                "shorttitle": [
+                    {
+                        "type": "text",
+                        "text": "leishuku"
+                    }
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "中國類書庫"
+                    }
+                ],
+                "titleaddon": [
+                    {
+                        "type": "text",
+                        "text": "Zhōngguó lèishū kù"
+                    }
+                ],
+                "url": "http://server.wenzibase.com",
+                "urldate": "2016-04-20"
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ],
+                "usere": [
+                    {
+                        "type": "text",
+                        "text": "Database of Chinese Encyclopeadias"
+                    }
+                ],
+                "year": [
+                    {
+                        "type": "text",
+                        "text": "n.d."
+                    }
+                ]
+            },
+            "unexpected_fields": {
+                "type": [
+                    {
+                        "type": "text",
+                        "text": "Full-text databse"
+                    }
+                ]
+            }
+        },
+        "2": {
+            "bib_type": "thesis",
+            "entry_key": "yan_cairong__2003",
+            "fields": {
+                "date": "2003",
+                "author": [
+                    {
+                        "literal": [
+                            {
+                                "type": "text",
+                                "text": "顏采容"
+                            }
+                        ]
+                    }
+                ],
+                "institution": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "國立暨南國際大學"
+                        }
+                    ]
+                ],
+                "langid": "chinese",
+                "pagetotal": [
+                    {
+                        "type": "text",
+                        "text": "214"
+                    }
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "明清時期出版與文化─以「才子佳人」小說為中心"
+                    }
+                ],
+                "titleaddon": [
+                    {
+                        "type": "text",
+                        "text": "Publishing and Culture in Ming-Qing period : The Scholar-Beauty Novels as an Example"
+                    }
+                ],
+                "type": [
+                    {
+                        "type": "text",
+                        "text": "Ph.D. Dissertation"
+                    }
+                ],
+                "url": "http://ndltd.ncl.edu.tw/cgi-bin/gs32/gsweb.cgi?o=dnclcdr&s=id=%22091NCNU0493006%22.&searchmode=basic"
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        }
+    },
+    "warnings": [
+        {
+            "type": "unknown_date",
+            "field_name": "year",
+            "value": "n.d.",
+            "entry": "leishuku"
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "leishuku",
+            "line": 14
+        },
+        {
+            "type": "unexpected_field",
+            "field_name": "type",
+            "entry": "leishuku",
+            "line": 14
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "usere",
+            "entry": "leishuku",
+            "line": 14
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "year",
+            "entry": "leishuku",
+            "line": 14
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "yan_cairong__2003",
+            "line": 27
+        }
+    ]
+}

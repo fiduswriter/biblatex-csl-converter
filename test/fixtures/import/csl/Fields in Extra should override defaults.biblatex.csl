@@ -1,0 +1,34 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2013,
+                    10,
+                    22
+                ]
+            ]
+        },
+        "abstract": "The community that built the largest encyclopedia in history is shrinking, even as more people and Internet services depend on it than ever. Can it be revived, or is this the end of the Web’s idealistic era?",
+        "author": [
+            {
+                "given": "Tom",
+                "family": "Simonite"
+            }
+        ],
+        "title-short": "The decline of <span class=\"nocase\">Wikipedia</span>",
+        "title": "The decline of <span class=\"nocase\">Wikipedia</span>: even as more people than ever rely on it, fewer people create it",
+        "URL": "http://www.technologyreview.com/featuredstory/520446/the-decline-of-wikipedia/",
+        "accessed": {
+            "date-parts": [
+                [
+                    2013,
+                    10,
+                    26
+                ]
+            ]
+        },
+        "type": "webpage",
+        "id": "1"
+    }
+}

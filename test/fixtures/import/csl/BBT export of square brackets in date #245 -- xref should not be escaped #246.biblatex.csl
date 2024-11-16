@@ -1,0 +1,86 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2014
+                ]
+            ]
+        },
+        "abstract": "State planning has been a defining means for modern subjects to regulate the passage of time. In practice, it is the focus of multiple conflicts and doubts, which planners attempt to mediate. In this paper, I address the regimes of time that planning both promotes and encounters, and tease out what these imply for anthropology. Using ethnography of Norwegian and Swedish planning offices and their encounters with participatory planning, I question recent claims that there has been an evacuation of the near future or a retreat of administrative intervention. I also suggest that recent anthropological concerns with time have been confined by their attempts to characterize the changing timescapes of specific modal shifts, such as from the modern to the neoliberal. Instead, in my ethnography, I focus not on tracking epochal breaks in time, but on demonstrating how time is manipulated, and how multiple temporalities are performed in ongoing projects of democratic planning.",
+        "author": [
+            {
+                "given": "Simone",
+                "family": "Abram"
+            }
+        ],
+        "DOI": "10.1111/1467-9655.12097",
+        "ISSN": "1467-9655",
+        "container-title": "Journal of the royal anthropological institute",
+        "language": "en-US",
+        "page": "129-147",
+        "title-short": "6 <span class=\"nocase\">The</span> time it takes",
+        "title": "6 <span class=\"nocase\">The</span> time it takes: temporalities of planning",
+        "URL": "http://onlinelibrary.wiley.com.ep.fjernadgang.kb.dk/doi/10.1111/1467-9655.12097/abstract",
+        "accessed": {
+            "date-parts": [
+                [
+                    2014,
+                    12,
+                    27
+                ]
+            ]
+        },
+        "volume": "20",
+        "type": "article",
+        "id": "1"
+    },
+    "2": {
+        "issued": {
+            "date-parts": [
+                [
+                    2007
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "A. Mark",
+                "family": "Pollard"
+            },
+            {
+                "given": "Peter",
+                "family": "Bray"
+            }
+        ],
+        "container-title": "Annu. Rev. Anthropol.",
+        "page": "245-59",
+        "title": "A bicycle made for two? <span class=\"nocase\">The</span> integration of scientific techniques into archaeological interpretation",
+        "URL": "http://www.annualreviews.org/doi/pdf/10.1146/annurev.anthro.36.081406.094354",
+        "volume": "36",
+        "type": "article",
+        "id": "2"
+    },
+    "3": {
+        "issued": {
+            "date-parts": [
+                [
+                    1998,
+                    4,
+                    1
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Kaetinyeri",
+                "family": "Commonwealth",
+                "non-dropping-particle": "v"
+            }
+        ],
+        "title-short": "Kartinyeri",
+        "title": "Kartinyeri v <span class=\"nocase\">Commonwealth</span>",
+        "type": "article",
+        "id": "3"
+    }
+}

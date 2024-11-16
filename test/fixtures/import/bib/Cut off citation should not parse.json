@@ -1,0 +1,205 @@
+{
+    "entries": {
+        "1": {
+            "bib_type": "article",
+            "entry_key": "smolvcic2009dust",
+            "fields": {
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "The Dust-Unbiased Cosmic Star-Formation History from the 20 CM VLA-COSMOS Survey"
+                    }
+                ],
+                "author": [
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "Smol"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "ci'c"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "V"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Schinnerer"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "E"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Zamorani"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "G"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Bell"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "EF"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Bondi"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "M"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Carilli"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "CL"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Ciliegi"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "P"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Mobasher"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "B"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Paglione"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "T"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Scodeggio"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "M"
+                            }
+                        ]
+                    },
+                    {
+                        "literal": [
+                            {
+                                "type": "text",
+                                "text": "others"
+                            }
+                        ]
+                    }
+                ],
+                "journaltitle": [
+                    {
+                        "type": "text",
+                        "text": "The Astrophysical Journal"
+                    }
+                ],
+                "volume": [
+                    {
+                        "type": "text",
+                        "text": "690"
+                    }
+                ]
+            }
+        }
+    },
+    "errors": [
+        {
+            "type": "runaway_key",
+            "line": 7
+        },
+        {
+            "type": "cut_off_citation",
+            "line": 7
+        },
+        {
+            "type": "key_value_error",
+            "line": 7
+        },
+        {
+            "type": "token_mismatch",
+            "expected": "}",
+            "found": "",
+            "line": 7
+        }
+    ]
+}

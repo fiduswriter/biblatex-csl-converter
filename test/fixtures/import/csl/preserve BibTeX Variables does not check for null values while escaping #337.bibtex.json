@@ -1,0 +1,70 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "book",
+        "fields": {
+            "date": "1980",
+            "author": [
+                {
+                    "literal": [
+                        {
+                            "type": "text",
+                            "text": "Geophysics Study Committee"
+                        }
+                    ]
+                },
+                {
+                    "literal": [
+                        {
+                            "type": "text",
+                            "text": "Geophysics Research Board"
+                        }
+                    ]
+                },
+                {
+                    "literal": [
+                        {
+                            "type": "text",
+                            "text": "Assembly of Mathematical and Physical Sciences, National Research Council"
+                        }
+                    ]
+                }
+            ],
+            "isbn": [
+                {
+                    "type": "text",
+                    "text": "978-0-309-02928-5"
+                }
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "http://www.nap.edu/openbook.php?record_id=203"
+                }
+            ],
+            "publisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "The National Academies Press"
+                    }
+                ]
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Continental "
+                },
+                {
+                    "type": "text",
+                    "text": "Tectonics",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

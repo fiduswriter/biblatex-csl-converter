@@ -1,0 +1,142 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "article",
+        "fields": {
+            "date": "2009",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Tusseau"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Guillaume"
+                        }
+                    ]
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Revue française de droit administratif"
+                }
+            ],
+            "langid": "",
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "641"
+                        },
+                        {
+                            "type": "text",
+                            "text": "656"
+                        }
+                    ]
+                ]
+            ],
+            "shorttitle": [
+                {
+                    "type": "text",
+                    "text": "Critique d'une métanotion fonctionnelle"
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Critique d'une métanotion fonctionnelle. La notion (trop) fonctionnelle de “notion fonctionnelle”"
+                }
+            ]
+        }
+    },
+    "2": {
+        "entry_key": "2",
+        "bib_type": "article",
+        "fields": {
+            "date": "1964",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Searle"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "John R."
+                        }
+                    ]
+                }
+            ],
+            "doi": "10.2307/2183201",
+            "issn": [
+                {
+                    "type": "text",
+                    "text": "00318108"
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "The philosophical review"
+                }
+            ],
+            "langid": "",
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "43"
+                        },
+                        {
+                            "type": "text",
+                            "text": "58"
+                        }
+                    ]
+                ]
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "How to derive \""
+                },
+                {
+                    "type": "text",
+                    "text": "Ought\" from \"",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Is\"",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "73"
+                }
+            ]
+        }
+    }
+}

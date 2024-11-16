@@ -1,0 +1,122 @@
+{
+    "entries": {
+        "1": {
+            "bib_type": "article",
+            "entry_key": "2009PhLA..373.2301C",
+            "fields": {
+                "date": "2009-06",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Chru'sci'nski"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "D."
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Kossakowski"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "A."
+                            }
+                        ]
+                    }
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Geometry of quantum states: New construction of positive maps",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ],
+                "journaltitle": [
+                    {
+                        "type": "text",
+                        "text": "Physics Letters A"
+                    }
+                ],
+                "eprinttype": [
+                    {
+                        "type": "text",
+                        "text": "arXiv"
+                    }
+                ],
+                "eprint": "0902.0885",
+                "eprintclass": [
+                    {
+                        "type": "text",
+                        "text": "quant-ph"
+                    }
+                ],
+                "volume": [
+                    {
+                        "type": "text",
+                        "text": "373"
+                    }
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "2301"
+                            }
+                        ],
+                        [
+                            {
+                                "type": "text",
+                                "text": "2305"
+                            }
+                        ]
+                    ]
+                ],
+                "doi": "10.1016/j.physleta.2009.04.068"
+            },
+            "unknown_fields": {
+                "adsurl": [
+                    {
+                        "type": "text",
+                        "text": "http://adsabs.harvard.edu/abs/2009PhLA..373.2301C"
+                    }
+                ],
+                "adsnote": [
+                    {
+                        "type": "text",
+                        "text": "Provided by the SAO/NASA Astrophysics Data System"
+                    }
+                ]
+            }
+        }
+    },
+    "warnings": [
+        {
+            "type": "unknown_field",
+            "field_name": "adsurl",
+            "entry": "2009PhLA..373.2301C",
+            "line": 15
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "adsnote",
+            "entry": "2009PhLA..373.2301C",
+            "line": 15
+        }
+    ]
+}

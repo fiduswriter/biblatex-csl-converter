@@ -1,0 +1,90 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "book",
+        "fields": {
+            "date": "1999",
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "This history of the books of Reading Abbey covers the period from the abbey's foundation to its dissolution, and also charts the dispersal of the book collections up until c.1610. It provides valuable evidence for intellectual life and the use of books in a medieval monastery. By continuing the story beyond the Dissolution of the Monasteries, and charting the initial stages of the dispersal of the Abbey's books (many into the large institutional collections which are their homes today), Alan Coates makes a valuable contribution to our understanding of the fate of monastic books and book-collecting in the second half of the sixteenth century."
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Coates"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Alan"
+                        }
+                    ]
+                }
+            ],
+            "isbn": [
+                {
+                    "type": "text",
+                    "text": "978-0-19-820756-6"
+                }
+            ],
+            "langid": "",
+            "location": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Oxford"
+                    }
+                ]
+            ],
+            "pagetotal": [
+                {
+                    "type": "text",
+                    "text": "246"
+                }
+            ],
+            "publisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Clarendon Press"
+                    }
+                ]
+            ],
+            "shorttitle": [
+                {
+                    "type": "text",
+                    "text": "English "
+                },
+                {
+                    "type": "text",
+                    "text": "Medieval Books",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "English medieval books: the "
+                },
+                {
+                    "type": "text",
+                    "text": "Reading Abbey collections from foundation to dispersal",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

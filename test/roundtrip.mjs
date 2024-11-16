@@ -18,13 +18,7 @@ const roundTripTest = (biblatex) => {
     const bibExporter2 = new converter.BibLatexExporter(backToParsed)
 
     const bib2 = bibExporter2.parse()
-    // console.log({
-    //     parsed: JSON.stringify(parsed),
-    //     csl: JSON.stringify(csl),
-    //     backToParsed: JSON.stringify(parsed),
-    //     bib1,
-    //     bib2,
-    // })
+
     return [bib1, bib2]
 }
 

@@ -1,0 +1,134 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "inproceedings",
+        "fields": {
+            "date": "2007",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Kort"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Y.A.W."
+                        }
+                    ],
+                    "prefix": [
+                        {
+                            "type": "text",
+                            "text": "de"
+                        }
+                    ],
+                    "useprefix": true
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "IJsselsteijn"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "W.A."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Poels"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "K."
+                        }
+                    ]
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "Proceedings of the 10th "
+                },
+                {
+                    "type": "text",
+                    "text": "Annual International Workshop on ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Presence",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "doi": "http://alexandria.tue.nl/campusonly/Metis215145.pdf",
+            "location": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Barcelona"
+                    }
+                ]
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "195"
+                        },
+                        {
+                            "type": "text",
+                            "text": "203"
+                        }
+                    ]
+                ]
+            ],
+            "publisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Starlab"
+                    }
+                ]
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Digital games as social presence technology: development of the social presence in gaming questionnaire ("
+                },
+                {
+                    "type": "text",
+                    "text": "SPGQ)",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "url": "http://repository.tue.nl/663080"
+        }
+    }
+}

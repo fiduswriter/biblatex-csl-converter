@@ -1,0 +1,51 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "book",
+        "fields": {
+            "date": "1978",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Warren"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Beatrice"
+                        }
+                    ]
+                }
+            ],
+            "publisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Acta Universitatis Gothoburgen"
+                    }
+                ]
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Semantic patterns of noun-noun compound"
+                }
+            ],
+            "series": [
+                {
+                    "type": "text",
+                    "text": "Gothenburg studies in english"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "41"
+                }
+            ]
+        }
+    }
+}

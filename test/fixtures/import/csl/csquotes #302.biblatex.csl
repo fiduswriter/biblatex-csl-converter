@@ -1,0 +1,50 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2009
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Guillaume",
+                "family": "Tusseau"
+            }
+        ],
+        "container-title": "Revue française de droit administratif",
+        "language": "fr-FR",
+        "collection-number": "4",
+        "page": "641-656",
+        "title-short": "Critique d'une métanotion fonctionnelle",
+        "title": "Critique d'une métanotion fonctionnelle. La notion (trop) fonctionnelle de “notion fonctionnelle”",
+        "type": "article",
+        "id": "1"
+    },
+    "2": {
+        "issued": {
+            "date-parts": [
+                [
+                    1964
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "John R.",
+                "family": "Searle"
+            }
+        ],
+        "DOI": "10.2307/2183201",
+        "ISSN": "00318108",
+        "container-title": "The philosophical review",
+        "language": "en-US",
+        "collection-number": "1",
+        "page": "43-58",
+        "title": "How to derive \"<span class=\"nocase\">Ought</span>\" from \"<span class=\"nocase\">Is</span>\"",
+        "volume": "73",
+        "type": "article",
+        "id": "2"
+    }
+}

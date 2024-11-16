@@ -1,0 +1,157 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "inbook",
+        "fields": {
+            "date": "1998",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Cuprous oxide ("
+                },
+                {
+                    "type": "text",
+                    "text": "Cu",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "2",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "sub"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "O) crystal structure, lattice parameters",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Madelung"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "O."
+                        }
+                    ]
+                },
+                {
+                    "literal": [
+                        {
+                            "type": "text",
+                            "text": "others"
+                        }
+                    ]
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "Landolt-",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Börnstein",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "publisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Springer-Verlag"
+                    }
+                ]
+            ],
+            "editor": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Madelung"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "O."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Rössler"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "U."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Schulz"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "M."
+                        }
+                    ]
+                }
+            ],
+            "series": [
+                {
+                    "type": "text",
+                    "text": "SpringerMaterials - the landolt-börnstein database"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "III/41c"
+                }
+            ],
+            "doi": "10.1007/10681727_56"
+        }
+    }
+}

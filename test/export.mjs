@@ -28,7 +28,7 @@ const verify = (jsonfile) => {
     const bibGetter = new converter.BibLatexExporter(input.entries)
     const foundBib = bibGetter.parse()
 
-    let expectedBib = path.join(path.dirname(jsonfile), name + ".outbib")
+    let expectedBib = path.join(path.dirname(jsonfile), name + ".bib")
     if (writeFixtures) {
         fs.writeFileSync(expectedBib, foundBib)
     }
@@ -41,7 +41,7 @@ const verify = (jsonfile) => {
 
 const fixtures = path.join(
     path.dirname(fileURLToPath(import.meta.url)),
-    "fixtures"
+    "fixtures/export"
 )
 const jsonfiles = fs.readdirSync(fixtures)
 
@@ -54,3 +54,30 @@ for (let fixture of jsonfiles) {
 
     verify(fixture)
 }
+
+const verifyEscape = (jsonfile) => {
+    let name = path.basename(jsonfile, path.extname(jsonfile))
+    it(`verify escape: ${name}`, () => {
+        let input = JSON.parse(fs.readFileSync(jsonfile, "utf8"))
+        const exporter = new converter.CSLExporter(input.entries, null, {
+            escapeText: true,
+        })
+        const escapedOutput = exporter.parse()
+        const escapedTitle = escapedOutput["1"].title
+        expect(escapedTitle).to.equal("A title with &lt;i&gt;style&lt;/i&gt;!")
+        const citeprocedTitle = escapedTitle.replace(/&/g, "&#38;")
+        expect(citeprocedTitle).to.equal(
+            "A title with &#38;lt;i&#38;gt;style&#38;lt;/i&#38;gt;!"
+        )
+        const unciteprocedTitle = converter.unescapeCSL(citeprocedTitle)
+        expect(unciteprocedTitle).to.equal(
+            "A title with &lt;i&gt;style&lt;/i&gt;!"
+        )
+        const unescapedTitle = unciteprocedTitle
+            .replace(/&lt;/g, "<")
+            .replace(/&gt;/g, ">")
+        expect(unescapedTitle).to.equal("A title with <i>style</i>!")
+    })
+}
+
+verifyEscape(path.join(fixtures, "escape.json"))

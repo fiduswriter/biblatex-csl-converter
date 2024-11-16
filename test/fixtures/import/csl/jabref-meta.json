@@ -1,0 +1,87 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "article",
+        "fields": {
+            "date": "2017",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Doe"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "John"
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "The paper in subgroup"
+                }
+            ]
+        }
+    },
+    "2": {
+        "entry_key": "2",
+        "bib_type": "article",
+        "fields": {
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Other"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "I."
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "The article in my other subgroup"
+                }
+            ]
+        }
+    },
+    "3": {
+        "entry_key": "3",
+        "bib_type": "article",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "the paper not in a group"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Unkonw"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "I"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

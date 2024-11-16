@@ -1,0 +1,148 @@
+{
+    "entries": {
+        "1": {
+            "bib_type": "article",
+            "entry_key": "deOliveira2010",
+            "fields": {
+                "date": "2010-11",
+                "author": [
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "de"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Oliveira"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Leonardo Hadlich"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Aznar"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Martín"
+                            }
+                        ]
+                    }
+                ],
+                "doi": "10.1016/j.jct.2010.06.007",
+                "issn": [
+                    {
+                        "type": "text",
+                        "text": "00219614"
+                    }
+                ],
+                "journaltitle": [
+                    {
+                        "type": "text",
+                        "text": "The Journal of Chemical Thermodynamics"
+                    }
+                ],
+                "langid": "usenglish",
+                "number": [
+                    {
+                        "type": "text",
+                        "text": "11"
+                    }
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "1379"
+                            }
+                        ],
+                        [
+                            {
+                                "type": "text",
+                                "text": "1385"
+                            }
+                        ]
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "("
+                    },
+                    {
+                        "type": "text",
+                        "text": "Liquid",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": "+liquid) Equilibrium of {water+phenol+(1-Butanol, or 2-Butanol, or Tert-Butanol)} Systems"
+                    }
+                ],
+                "url": "http://linkinghub.elsevier.com/retrieve/pii/S0021961410002107",
+                "urldate": "2014-06-18",
+                "volume": [
+                    {
+                        "type": "text",
+                        "text": "42"
+                    }
+                ]
+            },
+            "unexpected_fields": {
+                "file": "de Oliveira, Aznar-2010-(Liquid+liquid) equilibrium of \\{water+phenol+(1-butanol, or 2-butanol, or2.pdf:files/1/de Oliveira, Aznar-2010-(Liquid+liquid) equilibrium of water+phenol+(1-butanol, or 2-butanol, or2.pdf:application/pdf"
+            },
+            "unknown_fields": {
+                "options": [
+                    {
+                        "type": "text",
+                        "text": "useprefix=true"
+                    }
+                ],
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        }
+    },
+    "warnings": [
+        {
+            "type": "unexpected_field",
+            "field_name": "file",
+            "entry": "deOliveira2010",
+            "line": 18
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "options",
+            "entry": "deOliveira2010",
+            "line": 18
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "deOliveira2010",
+            "line": 18
+        }
+    ]
+}

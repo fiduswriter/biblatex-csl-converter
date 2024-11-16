@@ -1,0 +1,153 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "inproceedings",
+        "fields": {
+            "date": "2006-10",
+            "editor": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Editor"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "First"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Editor"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Second"
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Some publication title"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Author"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "First"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Author"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Second"
+                        }
+                    ]
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "330"
+                        },
+                        {
+                            "type": "text",
+                            "text": "331"
+                        }
+                    ]
+                ]
+            ]
+        }
+    },
+    "2": {
+        "entry_key": "2",
+        "bib_type": "collection",
+        "fields": {
+            "date": "2006-10",
+            "editor": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Editor"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "First"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Editor"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Second"
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Proceedings of the "
+                },
+                {
+                    "type": "text",
+                    "text": "Xth conference on ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "XYZ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

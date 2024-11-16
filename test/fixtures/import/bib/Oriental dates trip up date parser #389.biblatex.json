@@ -1,0 +1,126 @@
+{
+    "entries": {
+        "1": {
+            "bib_type": "article",
+            "entry_key": "Sammut1976",
+            "fields": {
+                "date": "1976",
+                "abstract": [
+                    {
+                        "type": "text",
+                        "text": "Because they are not proper spectral modes, leaky modes do not obey the usual power orthogonality relations for an ideal waveguide. Two methods for circumventing this problem are presented in this paper. One approach is to use the fact that weakly leaky modes are approximately power orthogonal within a restricted region of space to define a new set of slightly coupled modes. The other is to abandon power orthogonality in favor of a more general, mathematically exact orthogonality relation. The relative merits of these two approaches are discussed."
+                    }
+                ],
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Sammut"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Rowland"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Snyder"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Allan W."
+                            }
+                        ]
+                    }
+                ],
+                "doi": "10.1364/AO.15.001040",
+                "journaltitle": [
+                    {
+                        "type": "text",
+                        "text": "Applied Optics"
+                    }
+                ],
+                "number": [
+                    {
+                        "type": "text",
+                        "text": "4"
+                    }
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "1040"
+                            }
+                        ],
+                        [
+                            {
+                                "type": "text",
+                                "text": "1044"
+                            }
+                        ]
+                    ]
+                ],
+                "shorttitle": [
+                    {
+                        "type": "text",
+                        "text": "Leaky Modes on a Dielectric Waveguide"
+                    }
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Leaky Modes on a Dielectric Waveguide: Orthogonality and Excitation"
+                    }
+                ],
+                "url": "http://ao.osa.org/abstract.cfm?URI=ao-15-4-1040",
+                "urldate": "2015-04-02",
+                "volume": [
+                    {
+                        "type": "text",
+                        "text": "15"
+                    }
+                ]
+            },
+            "unexpected_fields": {
+                "shortjournal": [
+                    {
+                        "type": "text",
+                        "text": "Appl. Opt."
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        }
+    },
+    "warnings": [
+        {
+            "type": "unexpected_field",
+            "field_name": "shortjournal",
+            "entry": "Sammut1976",
+            "line": 17
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "Sammut1976",
+            "line": 17
+        }
+    ]
+}

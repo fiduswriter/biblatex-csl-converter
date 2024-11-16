@@ -1,0 +1,63 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "online",
+        "fields": {
+            "date": "2013-10-22",
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "The community that built the largest encyclopedia in history is shrinking, even as more people and Internet services depend on it than ever. Can it be revived, or is this the end of the Web’s idealistic era?"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Simonite"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Tom"
+                        }
+                    ]
+                }
+            ],
+            "shorttitle": [
+                {
+                    "type": "text",
+                    "text": "The decline of "
+                },
+                {
+                    "type": "text",
+                    "text": "Wikipedia",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "The decline of "
+                },
+                {
+                    "type": "text",
+                    "text": "Wikipedia: even as more people than ever rely on it, fewer people create it",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "url": "http://www.technologyreview.com/featuredstory/520446/the-decline-of-wikipedia/",
+            "urldate": "2013-10-26"
+        }
+    }
+}

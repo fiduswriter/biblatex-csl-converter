@@ -1,0 +1,49 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "article-newspaper",
+        "fields": {
+            "date": "2014-07-04",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Boas"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Anders"
+                        }
+                    ]
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Weekendavisen"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "12"
+                        }
+                    ]
+                ]
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Stikord til en hukommelse"
+                }
+            ],
+            "url": "http://apps.infomedia.dk.ep.fjernadgang.kb.dk/Ms3E/ShowArticle.aspx?outputFormat=Full&Duid=e4798c41",
+            "urldate": "2014-09-15"
+        }
+    }
+}

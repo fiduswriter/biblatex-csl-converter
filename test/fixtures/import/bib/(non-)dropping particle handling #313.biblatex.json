@@ -1,0 +1,4273 @@
+{
+    "entries": {
+        "1": {
+            "bib_type": "article",
+            "entry_key": "abbot3",
+            "fields": {
+                "author": [
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "abbé d'"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Aubignac"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "François Hédelin"
+                            }
+                        ]
+                    }
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "(abbé d' Aubignac) (François Hédelin)",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "options": [
+                    {
+                        "type": "text",
+                        "text": "useprefix=true"
+                    }
+                ],
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "2": {
+            "bib_type": "article",
+            "entry_key": "abbot1",
+            "fields": {
+                "author": [
+                    {
+                        "suffix": [
+                            {
+                                "type": "text",
+                                "text": "abbé d'"
+                            }
+                        ],
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Aubignac"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "François Hédelin"
+                            }
+                        ]
+                    }
+                ],
+                "note": [
+                    {
+                        "type": "text",
+                        "text": "relies on paricleParser fallback detection"
+                    }
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "(Aubignac) (François Hédelin, abbé d')",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "3": {
+            "bib_type": "book",
+            "entry_key": "fixedkey",
+            "fields": {
+                "date": "1963",
+                "author": [
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "von"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Humboldt"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Alexander"
+                            }
+                        ]
+                    },
+                    {
+                        "suffix": [
+                            {
+                                "type": "text",
+                                "text": "Jr."
+                            }
+                        ],
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Gooding"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Cuba"
+                            }
+                        ]
+                    },
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "de"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "La Fontaine"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Jean"
+                            }
+                        ]
+                    },
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "von"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Wright"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Georg Henrik Auto"
+                            }
+                        ]
+                    },
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "von"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Wright"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Georg Henrik Explicit"
+                            }
+                        ]
+                    }
+                ],
+                "isbn": [
+                    {
+                        "type": "text",
+                        "text": "0-7100-3616-7"
+                    }
+                ],
+                "langid": "usenglish",
+                "location": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Londres"
+                        }
+                    ]
+                ],
+                "pagetotal": [
+                    {
+                        "type": "text",
+                        "text": "xviii+214"
+                    }
+                ],
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Routledge & Kegan Paul"
+                        }
+                    ]
+                ],
+                "series": [
+                    {
+                        "type": "text",
+                        "text": "International Library of Philosophy and Scientific Method"
+                    }
+                ],
+                "shorttitle": [
+                    {
+                        "type": "text",
+                        "text": "Norm and Action"
+                    }
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Norm and Action. A Logical Enquiry"
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "options": [
+                    {
+                        "type": "text",
+                        "text": "useprefix=true"
+                    }
+                ],
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "4": {
+            "bib_type": "collection",
+            "entry_key": "almeida_reading_2013",
+            "fields": {
+                "date": "2013",
+                "editor": [
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "d'"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Almeida"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Luís"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Edwards"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "James"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Dolcetti"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Andrea"
+                            }
+                        ]
+                    }
+                ],
+                "isbn": [
+                    {
+                        "type": "text",
+                        "text": "978-1-84946-324-9"
+                    }
+                ],
+                "langid": "usenglish",
+                "location": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Oxford"
+                        }
+                    ]
+                ],
+                "pagetotal": [
+                    {
+                        "type": "text",
+                        "text": "vi+309"
+                    }
+                ],
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Hart Publishing"
+                        }
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Reading "
+                    },
+                    {
+                        "type": "text",
+                        "text": "HLA Hart",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": "'s: "
+                    },
+                    {
+                        "type": "text",
+                        "text": "The Concept",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            },
+                            {
+                                "type": "em"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " of ",
+                        "marks": [
+                            {
+                                "type": "em"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": "Law",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            },
+                            {
+                                "type": "em"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "5": {
+            "bib_type": "book",
+            "entry_key": "bennett_citations_2013",
+            "fields": {
+                "date": "2013",
+                "author": [
+                    {
+                        "suffix": [
+                            {
+                                "type": "text",
+                                "text": "Jr."
+                            }
+                        ],
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Bennett"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Frank G."
+                            }
+                        ]
+                    }
+                ],
+                "isbn": [
+                    {
+                        "type": "text",
+                        "text": "978-1-4793-4771-1"
+                    }
+                ],
+                "location": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Lexington Kentucky"
+                        }
+                    ]
+                ],
+                "pagetotal": [
+                    {
+                        "type": "text",
+                        "text": "137"
+                    }
+                ],
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "CreateSpace Independent Publishing Platform"
+                        }
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Citations, "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Out",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " of the "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Box",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "6": {
+            "bib_type": "book",
+            "entry_key": "king_have_1968",
+            "fields": {
+                "date": "1968",
+                "author": [
+                    {
+                        "suffix": [
+                            {
+                                "type": "text",
+                                "text": "Jr."
+                            }
+                        ],
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "King"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Martin Luther"
+                            }
+                        ]
+                    }
+                ],
+                "location": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "New York"
+                        }
+                    ]
+                ],
+                "pagetotal": [
+                    {
+                        "type": "text",
+                        "text": "154"
+                    }
+                ],
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Grosset & Dunlap"
+                        }
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "\""
+                    },
+                    {
+                        "type": "text",
+                        "text": "I",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " Have a Dream\" : The Quotations of "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Martin Luther King JR",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "7": {
+            "bib_type": "article",
+            "entry_key": "bugreports_ApostropheOnParticle",
+            "fields": {
+                "author": [
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "d'"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Jones"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "John"
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "imported"
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "bugreports_"
+                    },
+                    {
+                        "type": "text",
+                        "text": "ApostropheOnParticle",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "options": [
+                    {
+                        "type": "text",
+                        "text": "useprefix=true"
+                    }
+                ],
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "8": {
+            "bib_type": "article",
+            "entry_key": "bugreports_AsmJournals",
+            "fields": {
+                "author": [
+                    {
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Doe"
+                            }
+                        ],
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Co."
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "imported"
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "bugreports_"
+                    },
+                    {
+                        "type": "text",
+                        "text": "AsmJournals",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "9": {
+            "bib_type": "article",
+            "entry_key": "bugreports_DemoPageFullCiteCruftOnSubsequent",
+            "fields": {
+                "author": [
+                    {
+                        "literal": [
+                            {
+                                "type": "text",
+                                "text": "U.S. Bureau of the Census"
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "imported"
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "bugreports_"
+                    },
+                    {
+                        "type": "text",
+                        "text": "DemoPageFullCiteCruftOnSubsequent",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "10": {
+            "bib_type": "article",
+            "entry_key": "bugreports_DuplicateSpaces",
+            "fields": {
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "D'Arcus"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Bruce"
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "imported"
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "bugreports_"
+                    },
+                    {
+                        "type": "text",
+                        "text": "DuplicateSpaces",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "11": {
+            "bib_type": "article",
+            "entry_key": "bugreports_DuplicateSpaces3",
+            "fields": {
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Family Name"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "N"
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "imported"
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "bugreports_"
+                    },
+                    {
+                        "type": "text",
+                        "text": "DuplicateSpaces3",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "12": {
+            "bib_type": "article",
+            "entry_key": "bugreports_GreekStyleProblems",
+            "fields": {
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Καρυωτάκης"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Κώστας"
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "imported"
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "bugreports_"
+                    },
+                    {
+                        "type": "text",
+                        "text": "GreekStyleProblems",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "13": {
+            "bib_type": "article",
+            "entry_key": "bugreports_ProcessorHang1",
+            "fields": {
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Reynoso-Santos"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "R."
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Soto-Pinto"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "L."
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Tejeda-Cruz"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "C."
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Williams-Linera"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "G."
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "imported"
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "bugreports_"
+                    },
+                    {
+                        "type": "text",
+                        "text": "ProcessorHang1",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "14": {
+            "bib_type": "article",
+            "entry_key": "bugreports_YearSuffixInHarvard1",
+            "fields": {
+                "author": [
+                    {
+                        "literal": [
+                            {
+                                "type": "text",
+                                "text": "Africa News"
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "imported"
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "bugreports_"
+                    },
+                    {
+                        "type": "text",
+                        "text": "YearSuffixInHarvard1",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "15": {
+            "bib_type": "article",
+            "entry_key": "bugreports_parseName",
+            "fields": {
+                "author": [
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "van"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Happel"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Eduard"
+                            }
+                        ]
+                    },
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "von"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Hoppel"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Gustav"
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "imported"
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "bugreports_"
+                    },
+                    {
+                        "type": "text",
+                        "text": "parseName",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "options": [
+                    {
+                        "type": "text",
+                        "text": "useprefix=true"
+                    }
+                ],
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "16": {
+            "bib_type": "article",
+            "entry_key": "decorations_AndTermUnaffectedByNameDecorations",
+            "fields": {
+                "author": [
+                    {
+                        "suffix": [
+                            {
+                                "type": "text",
+                                "text": "III"
+                            }
+                        ],
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Doe"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "John"
+                            }
+                        ]
+                    },
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "van"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Roe"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Jane"
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "imported"
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "decorations_"
+                    },
+                    {
+                        "type": "text",
+                        "text": "AndTermUnaffectedByNameDecorations",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "options": [
+                    {
+                        "type": "text",
+                        "text": "useprefix=true"
+                    }
+                ],
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "17": {
+            "bib_type": "article",
+            "entry_key": "disambiguate_CitationLabelInData",
+            "fields": {
+                "author": [
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "von"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Dipheria"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Doug"
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "imported"
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "disambiguate_"
+                    },
+                    {
+                        "type": "text",
+                        "text": "CitationLabelInData",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "options": [
+                    {
+                        "type": "text",
+                        "text": "useprefix=true"
+                    }
+                ],
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "18": {
+            "bib_type": "article",
+            "entry_key": "disambiguate_FailWithYearSuffix",
+            "fields": {
+                "author": [
+                    {
+                        "literal": [
+                            {
+                                "type": "text",
+                                "text": "Caritas Europa"
+                            }
+                        ]
+                    },
+                    {
+                        "literal": [
+                            {
+                                "type": "text",
+                                "text": "JRS-Europe"
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "imported"
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "disambiguate_"
+                    },
+                    {
+                        "type": "text",
+                        "text": "FailWithYearSuffix",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "19": {
+            "bib_type": "article",
+            "entry_key": "disambiguate_YearCollapseWithInstitution",
+            "fields": {
+                "author": [
+                    {
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Smith"
+                            }
+                        ],
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Co"
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "imported"
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "disambiguate_"
+                    },
+                    {
+                        "type": "text",
+                        "text": "YearCollapseWithInstitution",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "20": {
+            "bib_type": "article",
+            "entry_key": "display_SecondFieldAlignMigratePunctuation",
+            "fields": {
+                "author": [
+                    {
+                        "suffix": [
+                            {
+                                "type": "text",
+                                "text": "Jr."
+                            }
+                        ],
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Bennett"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Frank G."
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "imported"
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "display_"
+                    },
+                    {
+                        "type": "text",
+                        "text": "SecondFieldAlignMigratePunctuation",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "21": {
+            "bib_type": "article",
+            "entry_key": "group_ComplexNesting",
+            "fields": {
+                "author": [
+                    {
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Doe"
+                            }
+                        ],
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Inc."
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "imported"
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "group_"
+                    },
+                    {
+                        "type": "text",
+                        "text": "ComplexNesting",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "22": {
+            "bib_type": "article",
+            "entry_key": "integration_DuplicateItem",
+            "fields": {
+                "author": [
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "la"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Berge"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "S. P"
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "imported"
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "integration_"
+                    },
+                    {
+                        "type": "text",
+                        "text": "DuplicateItem",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "options": [
+                    {
+                        "type": "text",
+                        "text": "useprefix=true"
+                    }
+                ],
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "23": {
+            "bib_type": "article",
+            "entry_key": "magic_CapitalizeFirstOccurringNameParticle",
+            "fields": {
+                "author": [
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "de"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Simone"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Samuel"
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "imported"
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "magic_"
+                    },
+                    {
+                        "type": "text",
+                        "text": "CapitalizeFirstOccurringNameParticle",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "options": [
+                    {
+                        "type": "text",
+                        "text": "useprefix=true"
+                    }
+                ],
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "24": {
+            "bib_type": "article",
+            "entry_key": "magic_NameParticle",
+            "fields": {
+                "author": [
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "von"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Doe"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "John"
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "imported"
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "magic_"
+                    },
+                    {
+                        "type": "text",
+                        "text": "NameParticle",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "options": [
+                    {
+                        "type": "text",
+                        "text": "useprefix=true"
+                    }
+                ],
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "25": {
+            "bib_type": "article",
+            "entry_key": "magic_SuppressDuplicateVariableRendering",
+            "fields": {
+                "author": [
+                    {
+                        "literal": [
+                            {
+                                "type": "text",
+                                "text": "Blob"
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "imported"
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "magic_"
+                    },
+                    {
+                        "type": "text",
+                        "text": "SuppressDuplicateVariableRendering",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "26": {
+            "bib_type": "article",
+            "entry_key": "name_ArticularNameAsSortOrder",
+            "fields": {
+                "author": [
+                    {
+                        "suffix": [
+                            {
+                                "type": "text",
+                                "text": "III"
+                            }
+                        ],
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Doe"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "James"
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "imported"
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "name_"
+                    },
+                    {
+                        "type": "text",
+                        "text": "ArticularNameAsSortOrder",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "27": {
+            "bib_type": "article",
+            "entry_key": "name_ArticularShortFormCommaSuffix",
+            "fields": {
+                "author": [
+                    {
+                        "suffix": [
+                            {
+                                "type": "text",
+                                "text": "Jr"
+                            }
+                        ],
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Doe"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "James"
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "imported"
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "name_"
+                    },
+                    {
+                        "type": "text",
+                        "text": "ArticularShortFormCommaSuffix",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "28": {
+            "bib_type": "article",
+            "entry_key": "name_ArticularWithComma",
+            "fields": {
+                "author": [
+                    {
+                        "suffix": [
+                            {
+                                "type": "text",
+                                "text": "Jr."
+                            }
+                        ],
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Doe"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Jeffrey"
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "imported"
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "name_"
+                    },
+                    {
+                        "type": "text",
+                        "text": "ArticularWithComma",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "29": {
+            "bib_type": "article",
+            "entry_key": "name_Delimiter",
+            "fields": {
+                "author": [
+                    {
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Noakes"
+                            }
+                        ],
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Inc."
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "imported"
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "name_"
+                    },
+                    {
+                        "type": "text",
+                        "text": "Delimiter",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "30": {
+            "bib_type": "article",
+            "entry_key": "name_FormattingOfParticles",
+            "fields": {
+                "author": [
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "van der"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Meer"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Gerard"
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "imported"
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "name_"
+                    },
+                    {
+                        "type": "text",
+                        "text": "FormattingOfParticles",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "options": [
+                    {
+                        "type": "text",
+                        "text": "useprefix=true"
+                    }
+                ],
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "31": {
+            "bib_type": "article",
+            "entry_key": "name_HyphenatedNonDroppingParticle1",
+            "fields": {
+                "author": [
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "al-"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "One"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Alan"
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "imported"
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "name_"
+                    },
+                    {
+                        "type": "text",
+                        "text": "HyphenatedNonDroppingParticle1",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "options": [
+                    {
+                        "type": "text",
+                        "text": "useprefix=true"
+                    }
+                ],
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "32": {
+            "bib_type": "article",
+            "entry_key": "name_Institution",
+            "fields": {
+                "author": [
+                    {
+                        "literal": [
+                            {
+                                "type": "text",
+                                "text": "Multi-National United"
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "imported"
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "name_"
+                    },
+                    {
+                        "type": "text",
+                        "text": "Institution",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "33": {
+            "bib_type": "article",
+            "entry_key": "name_InstitutionDecoration",
+            "fields": {
+                "author": [
+                    {
+                        "literal": [
+                            {
+                                "type": "text",
+                                "text": "São Paulo (Estado)"
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "imported"
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "name_"
+                    },
+                    {
+                        "type": "text",
+                        "text": "InstitutionDecoration",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "34": {
+            "bib_type": "article",
+            "entry_key": "name_MixedFormatsInitialSortOrderAllWithDecorationsEtAl",
+            "fields": {
+                "author": [
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "van"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Winkle"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Rip"
+                            }
+                        ]
+                    },
+                    {
+                        "suffix": [
+                            {
+                                "type": "text",
+                                "text": "III"
+                            }
+                        ],
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Thucydides"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Carl"
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "imported"
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "name_"
+                    },
+                    {
+                        "type": "text",
+                        "text": "MixedFormatsInitialSortOrderAllWithDecorationsEtAl",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "options": [
+                    {
+                        "type": "text",
+                        "text": "useprefix=true"
+                    }
+                ],
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "35": {
+            "bib_type": "article",
+            "entry_key": "name_MultipleLiteral",
+            "fields": {
+                "author": [
+                    {
+                        "literal": [
+                            {
+                                "type": "text",
+                                "text": "Alfred Benzon Foundation"
+                            }
+                        ]
+                    },
+                    {
+                        "literal": [
+                            {
+                                "type": "text",
+                                "text": "James Benson Foundation"
+                            }
+                        ]
+                    },
+                    {
+                        "literal": [
+                            {
+                                "type": "text",
+                                "text": "John Candy Foundation"
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "imported"
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "name_"
+                    },
+                    {
+                        "type": "text",
+                        "text": "MultipleLiteral",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "36": {
+            "bib_type": "article",
+            "entry_key": "name_ParseNames",
+            "fields": {
+                "author": [
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "van der"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Vlist"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Eric"
+                            }
+                        ]
+                    },
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "van"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Gogh"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Vincent"
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "imported"
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "name_"
+                    },
+                    {
+                        "type": "text",
+                        "text": "ParseNames",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "options": [
+                    {
+                        "type": "text",
+                        "text": "useprefix=true"
+                    }
+                ],
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "37": {
+            "bib_type": "article",
+            "entry_key": "name_ParsedDroppingParticleWithAffixes",
+            "fields": {
+                "author": [
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "de"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "La Fontaine"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Jean"
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "imported"
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "name_"
+                    },
+                    {
+                        "type": "text",
+                        "text": "ParsedDroppingParticleWithAffixes",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "38": {
+            "bib_type": "article",
+            "entry_key": "name_ParsedNonDroppingParticleWithAffixes",
+            "fields": {
+                "author": [
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "de la"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Fontaine"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Jean"
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "imported"
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "name_"
+                    },
+                    {
+                        "type": "text",
+                        "text": "ParsedNonDroppingParticleWithAffixes",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "options": [
+                    {
+                        "type": "text",
+                        "text": "useprefix=true"
+                    }
+                ],
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "39": {
+            "bib_type": "article",
+            "entry_key": "name_ParsedNonDroppingParticleWithApostrophe",
+            "fields": {
+                "author": [
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "d'"
+                            }
+                        ],
+                        "useprefix": true,
+                        "suffix": [
+                            {
+                                "type": "text",
+                                "text": "abbé d'"
+                            }
+                        ],
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Aubignac"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "François Hédelin"
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "imported"
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "name_"
+                    },
+                    {
+                        "type": "text",
+                        "text": "ParsedNonDroppingParticleWithApostrophe",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "options": [
+                    {
+                        "type": "text",
+                        "text": "useprefix=true"
+                    }
+                ],
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "40": {
+            "bib_type": "article",
+            "entry_key": "name_ParticleCaps1",
+            "fields": {
+                "author": [
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "van"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "One"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Onename"
+                            }
+                        ]
+                    },
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "van"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Two"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Twoname"
+                            }
+                        ]
+                    },
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "van"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Three"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Threename"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Van Four"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Fourname"
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "imported"
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "name_"
+                    },
+                    {
+                        "type": "text",
+                        "text": "ParticleCaps1",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "options": [
+                    {
+                        "type": "text",
+                        "text": "useprefix=true"
+                    }
+                ],
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "41": {
+            "bib_type": "article",
+            "entry_key": "name_ParticleCaps3",
+            "fields": {
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Van Dyke"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Dick"
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "imported"
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "name_"
+                    },
+                    {
+                        "type": "text",
+                        "text": "ParticleCaps3",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "42": {
+            "bib_type": "article",
+            "entry_key": "name_ParticleFormatting",
+            "fields": {
+                "author": [
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "de la"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Doe"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "John"
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "imported"
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "name_"
+                    },
+                    {
+                        "type": "text",
+                        "text": "ParticleFormatting",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "options": [
+                    {
+                        "type": "text",
+                        "text": "useprefix=true"
+                    }
+                ],
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "43": {
+            "bib_type": "article",
+            "entry_key": "name_ParticlesDemoteNonDroppingNever",
+            "fields": {
+                "author": [
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "de"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Las Familyname"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Givenname"
+                            }
+                        ]
+                    },
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "del"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Familyname"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Givenname"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Di Familyname"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Givenname"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Da Familyname"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Givenname"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Do Familyname"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Givenname"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Des Familyname"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Givenname"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Lou Familyname"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Givenname"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Pietro Familyname"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Givenname"
+                            }
+                        ]
+                    },
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "de"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Familyname"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Givenname"
+                            }
+                        ]
+                    },
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "de"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "La Familyname"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Givenname"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Le Familyname"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Givenname"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "La Familyname"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Givenname"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "L'Familyname"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Givenname"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Saint Familyname"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Givenname"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Sainte Familyname"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Givenname"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "St. Familyname"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Givenname"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Ste. Familyname"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Givenname"
+                            }
+                        ]
+                    },
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "van"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Familyname"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Givenname"
+                            }
+                        ]
+                    },
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "van de"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Familyname"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Givenname"
+                            }
+                        ]
+                    },
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "van der"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Familyname"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Givenname"
+                            }
+                        ]
+                    },
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "van den"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Familyname"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Givenname"
+                            }
+                        ]
+                    },
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "vander"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Familyname"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Givenname"
+                            }
+                        ]
+                    },
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "v.d."
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Familyname"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Givenname"
+                            }
+                        ]
+                    },
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "vd"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Familyname"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Givenname"
+                            }
+                        ]
+                    },
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "van het"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Familyname"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Givenname"
+                            }
+                        ]
+                    },
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "ver"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Familyname"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Givenname"
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "imported"
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "name_"
+                    },
+                    {
+                        "type": "text",
+                        "text": "ParticlesDemoteNonDroppingNever",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "options": [
+                    {
+                        "type": "text",
+                        "text": "useprefix=true"
+                    }
+                ],
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "44": {
+            "bib_type": "article",
+            "entry_key": "name_WesternArticularLowercase",
+            "fields": {
+                "author": [
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "van"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Doe"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Jacques"
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "imported"
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "name_"
+                    },
+                    {
+                        "type": "text",
+                        "text": "WesternArticularLowercase",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "options": [
+                    {
+                        "type": "text",
+                        "text": "useprefix=true"
+                    }
+                ],
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "45": {
+            "bib_type": "article",
+            "entry_key": "name_namepartAffixes",
+            "fields": {
+                "author": [
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "de"
+                            }
+                        ],
+                        "useprefix": true,
+                        "suffix": [
+                            {
+                                "type": "text",
+                                "text": "III"
+                            }
+                        ],
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "La Fontaine"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Jean"
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "imported"
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "name_"
+                    },
+                    {
+                        "type": "text",
+                        "text": "namepartAffixes",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "options": [
+                    {
+                        "type": "text",
+                        "text": "useprefix=true"
+                    }
+                ],
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "46": {
+            "bib_type": "article",
+            "entry_key": "nameorder_Long",
+            "fields": {
+                "author": [
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "de la"
+                            }
+                        ],
+                        "useprefix": true,
+                        "suffix": [
+                            {
+                                "type": "text",
+                                "text": "III"
+                            }
+                        ],
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Martinière"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Gérard"
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "imported"
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "nameorder_"
+                    },
+                    {
+                        "type": "text",
+                        "text": "Long",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "options": [
+                    {
+                        "type": "text",
+                        "text": "useprefix=true"
+                    }
+                ],
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "47": {
+            "bib_type": "article",
+            "entry_key": "position_IbidWithSuffix",
+            "fields": {
+                "author": [
+                    {
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Al-Khatib"
+                            }
+                        ],
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Organization"
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "imported"
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "position_"
+                    },
+                    {
+                        "type": "text",
+                        "text": "IbidWithSuffix",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "48": {
+            "bib_type": "article",
+            "entry_key": "sort_ChangeInNameSort",
+            "fields": {
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "De Quincey"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Alan"
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "imported"
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "sort_"
+                    },
+                    {
+                        "type": "text",
+                        "text": "ChangeInNameSort",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "49": {
+            "bib_type": "article",
+            "entry_key": "sort_ChicagoYearSuffix1",
+            "fields": {
+                "author": [
+                    {
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Beijing"
+                            }
+                        ],
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Zoo"
+                            }
+                        ]
+                    },
+                    {
+                        "literal": [
+                            {
+                                "type": "text",
+                                "text": "Beijing Zoo"
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "imported"
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "sort_"
+                    },
+                    {
+                        "type": "text",
+                        "text": "ChicagoYearSuffix1",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "50": {
+            "bib_type": "article",
+            "entry_key": "sort_FamilyOnly",
+            "fields": {
+                "author": [
+                    {
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "ANZ"
+                            }
+                        ],
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Group"
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "imported"
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "sort_"
+                    },
+                    {
+                        "type": "text",
+                        "text": "FamilyOnly",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "51": {
+            "bib_type": "article",
+            "entry_key": "sort_LeadingApostropheOnNameParticle",
+            "fields": {
+                "author": [
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "'t"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Horvath"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Peter A.C."
+                            }
+                        ]
+                    },
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "in 't"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Horvath"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Peter A.D."
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "imported"
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "sort_"
+                    },
+                    {
+                        "type": "text",
+                        "text": "LeadingApostropheOnNameParticle",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "options": [
+                    {
+                        "type": "text",
+                        "text": "useprefix=true"
+                    }
+                ],
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "52": {
+            "bib_type": "article",
+            "entry_key": "sort_NameParticleInNameSortFalse",
+            "fields": {
+                "author": [
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "di"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Noakes"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "John"
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "imported"
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "sort_"
+                    },
+                    {
+                        "type": "text",
+                        "text": "NameParticleInNameSortFalse",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "options": [
+                    {
+                        "type": "text",
+                        "text": "useprefix=true"
+                    }
+                ],
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "53": {
+            "bib_type": "article",
+            "entry_key": "sort_NameVariable",
+            "fields": {
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "[F]linders"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Jacob"
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "imported"
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "sort_"
+                    },
+                    {
+                        "type": "text",
+                        "text": "NameVariable",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        }
+    },
+    "warnings": [
+        {
+            "type": "unknown_field",
+            "field_name": "options",
+            "entry": "abbot3",
+            "line": 7
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "abbot3",
+            "line": 7
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "abbot1",
+            "line": 14
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "options",
+            "entry": "fixedkey",
+            "line": 29
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "fixedkey",
+            "line": 29
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "almeida_reading_2013",
+            "line": 41
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "bennett_citations_2013",
+            "line": 52
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "king_have_1968",
+            "line": 62
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "options",
+            "entry": "bugreports_ApostropheOnParticle",
+            "line": 70
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "bugreports_ApostropheOnParticle",
+            "line": 70
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "bugreports_AsmJournals",
+            "line": 77
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "bugreports_DemoPageFullCiteCruftOnSubsequent",
+            "line": 84
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "bugreports_DuplicateSpaces",
+            "line": 91
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "bugreports_DuplicateSpaces3",
+            "line": 98
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "bugreports_GreekStyleProblems",
+            "line": 105
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "bugreports_ProcessorHang1",
+            "line": 112
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "bugreports_YearSuffixInHarvard1",
+            "line": 119
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "options",
+            "entry": "bugreports_parseName",
+            "line": 127
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "bugreports_parseName",
+            "line": 127
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "options",
+            "entry": "decorations_AndTermUnaffectedByNameDecorations",
+            "line": 135
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "decorations_AndTermUnaffectedByNameDecorations",
+            "line": 135
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "options",
+            "entry": "disambiguate_CitationLabelInData",
+            "line": 143
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "disambiguate_CitationLabelInData",
+            "line": 143
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "disambiguate_FailWithYearSuffix",
+            "line": 150
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "disambiguate_YearCollapseWithInstitution",
+            "line": 157
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "display_SecondFieldAlignMigratePunctuation",
+            "line": 164
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "group_ComplexNesting",
+            "line": 171
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "options",
+            "entry": "integration_DuplicateItem",
+            "line": 179
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "integration_DuplicateItem",
+            "line": 179
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "options",
+            "entry": "magic_CapitalizeFirstOccurringNameParticle",
+            "line": 187
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "magic_CapitalizeFirstOccurringNameParticle",
+            "line": 187
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "options",
+            "entry": "magic_NameParticle",
+            "line": 195
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "magic_NameParticle",
+            "line": 195
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "magic_SuppressDuplicateVariableRendering",
+            "line": 202
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "name_ArticularNameAsSortOrder",
+            "line": 209
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "name_ArticularShortFormCommaSuffix",
+            "line": 216
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "name_ArticularWithComma",
+            "line": 223
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "name_Delimiter",
+            "line": 230
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "options",
+            "entry": "name_FormattingOfParticles",
+            "line": 238
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "name_FormattingOfParticles",
+            "line": 238
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "options",
+            "entry": "name_HyphenatedNonDroppingParticle1",
+            "line": 246
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "name_HyphenatedNonDroppingParticle1",
+            "line": 246
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "name_Institution",
+            "line": 253
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "name_InstitutionDecoration",
+            "line": 260
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "options",
+            "entry": "name_MixedFormatsInitialSortOrderAllWithDecorationsEtAl",
+            "line": 268
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "name_MixedFormatsInitialSortOrderAllWithDecorationsEtAl",
+            "line": 268
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "name_MultipleLiteral",
+            "line": 275
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "options",
+            "entry": "name_ParseNames",
+            "line": 283
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "name_ParseNames",
+            "line": 283
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "name_ParsedDroppingParticleWithAffixes",
+            "line": 290
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "options",
+            "entry": "name_ParsedNonDroppingParticleWithAffixes",
+            "line": 298
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "name_ParsedNonDroppingParticleWithAffixes",
+            "line": 298
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "options",
+            "entry": "name_ParsedNonDroppingParticleWithApostrophe",
+            "line": 306
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "name_ParsedNonDroppingParticleWithApostrophe",
+            "line": 306
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "options",
+            "entry": "name_ParticleCaps1",
+            "line": 314
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "name_ParticleCaps1",
+            "line": 314
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "name_ParticleCaps3",
+            "line": 321
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "options",
+            "entry": "name_ParticleFormatting",
+            "line": 329
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "name_ParticleFormatting",
+            "line": 329
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "options",
+            "entry": "name_ParticlesDemoteNonDroppingNever",
+            "line": 337
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "name_ParticlesDemoteNonDroppingNever",
+            "line": 337
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "options",
+            "entry": "name_WesternArticularLowercase",
+            "line": 345
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "name_WesternArticularLowercase",
+            "line": 345
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "options",
+            "entry": "name_namepartAffixes",
+            "line": 353
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "name_namepartAffixes",
+            "line": 353
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "options",
+            "entry": "nameorder_Long",
+            "line": 361
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "nameorder_Long",
+            "line": 361
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "position_IbidWithSuffix",
+            "line": 368
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "sort_ChangeInNameSort",
+            "line": 375
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "sort_ChicagoYearSuffix1",
+            "line": 382
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "sort_FamilyOnly",
+            "line": 389
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "options",
+            "entry": "sort_LeadingApostropheOnNameParticle",
+            "line": 397
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "sort_LeadingApostropheOnNameParticle",
+            "line": 397
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "options",
+            "entry": "sort_NameParticleInNameSortFalse",
+            "line": 405
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "sort_NameParticleInNameSortFalse",
+            "line": 405
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "sort_NameVariable",
+            "line": 412
+        }
+    ]
+}

@@ -1,0 +1,446 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "report",
+        "fields": {
+            "date": "2000",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Hald"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "T."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Wong"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "D.M.A.L.F."
+                        }
+                    ]
+                }
+            ],
+            "shorttitle": [
+                {
+                    "type": "text",
+                    "text": "Salmonella",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "em"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": " in ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Pork (",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "SALINPORK): ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Pre-harvest and ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Harvest Control Options Based on ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Epidemiologic, ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Diagnostic and ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Economic Research: ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Final Report",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Salmonella",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "em"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": " in ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Pork (",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "SALINPORK): ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Pre-harvest and ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Harvest Control Options Based on ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Epidemiologic, ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Diagnostic and ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Economic Research: ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Final Report",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "url": "http://www.dfvf.dk/Files/Filer/Zoonosecentret/Publikationer/Salinpork/SALINPORK_final_report.pdf"
+        }
+    }
+}

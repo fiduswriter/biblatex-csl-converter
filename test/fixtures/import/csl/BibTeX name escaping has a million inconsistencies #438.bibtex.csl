@@ -1,0 +1,39 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2014
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Name",
+                "family": "Nöme"
+            }
+        ],
+        "title": "Why <span class=\"nocase\">Is Apple Launching</span> a <span class=\"nocase\">New Version</span> of the <span class=\"nocase\">iPod</span>?",
+        "type": "article",
+        "id": "1"
+    },
+    "2": {
+        "issued": {
+            "date-parts": [
+                [
+                    2014
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Vincent",
+                "family": "Gögh",
+                "non-dropping-particle": "van"
+            }
+        ],
+        "title": "Why <span class=\"nocase\">Is Apple Launching</span> a <span class=\"nocase\">New Version</span> of the <span class=\"nocase\">iPod</span>?",
+        "type": "article",
+        "id": "2"
+    }
+}

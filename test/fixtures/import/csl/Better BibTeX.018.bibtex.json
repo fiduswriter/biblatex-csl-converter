@@ -1,0 +1,65 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "article",
+        "fields": {
+            "date": "2001",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Däßler"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Klaus"
+                        }
+                    ]
+                }
+            ],
+            "doi": "10.1175/1520-0493(1987)115<1606:GARSPP>2.0.CO;2",
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Title, with comma"
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "The physical: violent volcanology of the 1600 eruption of "
+                },
+                {
+                    "type": "text",
+                    "text": "Huaynaputina, southern ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Peru",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "62"
+                }
+            ]
+        }
+    }
+}

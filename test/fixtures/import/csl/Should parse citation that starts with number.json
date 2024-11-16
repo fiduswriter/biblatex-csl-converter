@@ -1,0 +1,31 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "report",
+        "fields": {
+            "date": "2013",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Lack"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Kelly A."
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Current status of research on online learning in postsecondary education"
+                }
+            ]
+        }
+    }
+}

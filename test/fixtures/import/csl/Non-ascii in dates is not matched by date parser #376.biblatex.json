@@ -1,0 +1,117 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "article",
+        "fields": {
+            "date": "2008-03-01",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Wendt"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Julia"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Lotze"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Martin"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Weike"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Almut I."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Hosten"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Norbert"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Hamm"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Alfons O."
+                        }
+                    ]
+                }
+            ],
+            "doi": "10.1111/j.1469-8986.2007.00620.x",
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Psychophysiology"
+                }
+            ],
+            "langid": "",
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "205"
+                        },
+                        {
+                            "type": "text",
+                            "text": "215"
+                        }
+                    ]
+                ]
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Brain activation and defensive response mobilization during sustained exposure to phobia-related and other affective pictures in spider phobia"
+                }
+            ],
+            "url": "http://onlinelibrary.wiley.com/doi/10.1111/j.1469-8986.2007.00620.x/abstract",
+            "urldate": "2014-05-12",
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "45"
+                }
+            ]
+        }
+    }
+}

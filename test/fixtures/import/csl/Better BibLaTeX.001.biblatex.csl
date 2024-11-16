@@ -1,0 +1,47 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2001
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Nancy K",
+                "family": "Adams"
+            },
+            {
+                "given": "Shanaka L",
+                "family": "DeSilva"
+            },
+            {
+                "given": "Steven",
+                "family": "Self"
+            },
+            {
+                "given": "Guido",
+                "family": "Salas"
+            },
+            {
+                "given": "Steven",
+                "family": "Schubring"
+            },
+            {
+                "given": "Jason L",
+                "family": "Permenter"
+            },
+            {
+                "given": "Kendra",
+                "family": "Arbesman"
+            }
+        ],
+        "container-title": "Bulletin of volcanology",
+        "page": "493-518",
+        "title": "The physical volcanology of the 1600 eruption of <span class=\"nocase\">Huaynaputina</span>, southern <span class=\"nocase\">Peru</span>",
+        "volume": "62",
+        "type": "article",
+        "id": "1"
+    }
+}

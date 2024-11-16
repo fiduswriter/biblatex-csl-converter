@@ -1,0 +1,98 @@
+{
+    "entries": {
+        "1": {
+            "bib_type": "article",
+            "entry_key": "pattaro_dimensions_1988",
+            "fields": {
+                "date": "1988",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Pattaro"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Enrico"
+                            }
+                        ]
+                    }
+                ],
+                "journaltitle": [
+                    {
+                        "type": "text",
+                        "text": "Revue interdisciplinaire d’études juridiques"
+                    }
+                ],
+                "langid": "french",
+                "number": [
+                    {
+                        "type": "text",
+                        "text": "spécial anniversaire 1978-1988"
+                    }
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "135"
+                            }
+                        ],
+                        [
+                            {
+                                "type": "text",
+                                "text": "162"
+                            }
+                        ]
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Dimensions du savoir juridique et orientations philosophiques"
+                    }
+                ],
+                "volume": [
+                    {
+                        "type": "text",
+                        "text": "21"
+                    }
+                ]
+            },
+            "unexpected_fields": {
+                "shortjournal": [
+                    {
+                        "type": "text",
+                        "text": "RIEJ"
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        }
+    },
+    "warnings": [
+        {
+            "type": "unexpected_field",
+            "field_name": "shortjournal",
+            "entry": "pattaro_dimensions_1988",
+            "line": 13
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "pattaro_dimensions_1988",
+            "line": 13
+        }
+    ]
+}

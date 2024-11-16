@@ -1,0 +1,85 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "inproceedings",
+        "fields": {
+            "date": "2010",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Klassen"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Myungsook"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Kim"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Nyunsu"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Liu"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Wei Ming"
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Empirical study of support vector machine kernels with applications to microarray data"
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "CATA"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "25"
+                        },
+                        {
+                            "type": "text",
+                            "text": "30"
+                        }
+                    ]
+                ]
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "svm liniowe najlepsze"
+                }
+            ]
+        }
+    }
+}

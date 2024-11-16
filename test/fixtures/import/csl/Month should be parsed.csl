@@ -1,0 +1,112 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2012,
+                    1
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "A. J.",
+                "family": "Battisti"
+            },
+            {
+                "given": "J. D.",
+                "family": "Meiring"
+            },
+            {
+                "given": "T. M.",
+                "family": "Tripp"
+            },
+            {
+                "given": "J. X.",
+                "family": "Prochaska"
+            },
+            {
+                "given": "J. K.",
+                "family": "Werk"
+            },
+            {
+                "given": "E. B.",
+                "family": "Jenkins"
+            },
+            {
+                "given": "N.",
+                "family": "Lehner"
+            },
+            {
+                "given": "J.",
+                "family": "Tumlinson"
+            },
+            {
+                "given": "C.",
+                "family": "Thom"
+            }
+        ],
+        "title": "<span class=\"nocase\">The First Observations of Low-redshift Damped Lyalpha Systems with the Cosmic Origins Spectrograph: Chemical Abundances and Affiliated Galaxies</span>",
+        "container-title": "apj",
+        "volume": "744",
+        "page": "93",
+        "DOI": "10.1088/0004-637X/744/2/93",
+        "type": "article",
+        "id": "1"
+    },
+    "2": {
+        "issued": {
+            "date-parts": [
+                [
+                    2012,
+                    1
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "A. J.",
+                "family": "Battisti"
+            },
+            {
+                "given": "J. D.",
+                "family": "Meiring"
+            },
+            {
+                "given": "T. M.",
+                "family": "Tripp"
+            },
+            {
+                "given": "J. X.",
+                "family": "Prochaska"
+            },
+            {
+                "given": "J. K.",
+                "family": "Werk"
+            },
+            {
+                "given": "E. B.",
+                "family": "Jenkins"
+            },
+            {
+                "given": "N.",
+                "family": "Lehner"
+            },
+            {
+                "given": "J.",
+                "family": "Tumlinson"
+            },
+            {
+                "given": "C.",
+                "family": "Thom"
+            }
+        ],
+        "title": "<span class=\"nocase\">The First Observations of Low-redshift Damped Lyalpha Systems with the Cosmic Origins Spectrograph: Chemical Abundances and Affiliated Galaxies</span>",
+        "container-title": "apj",
+        "volume": "744",
+        "page": "93",
+        "DOI": "10.1088/0004-637X/744/2/93",
+        "type": "article",
+        "id": "2"
+    }
+}

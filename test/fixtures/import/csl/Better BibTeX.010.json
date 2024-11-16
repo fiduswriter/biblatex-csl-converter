@@ -1,0 +1,208 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "inproceedings",
+        "fields": {
+            "date": "2010-01-27",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Hulse"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Jason Van"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Khoshgoftaar"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Taghi M."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Napolitano"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Amri"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Wald"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Randall"
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Feature selection with high-dimensional imbalanced data#"
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "ICDM workshops"
+                }
+            ],
+            "editor": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Saygin"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Yücel"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Yu"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Jeffrey Xu"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Kargupta"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Hillol"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Wang"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Wei"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Ranka"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Sanjay"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Yu"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Philip S."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Wu"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Xindong"
+                        }
+                    ]
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "507"
+                        },
+                        {
+                            "type": "text",
+                            "text": "514"
+                        }
+                    ]
+                ]
+            ],
+            "publisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "IEEE Computer Society"
+                    }
+                ]
+            ],
+            "isbn": [
+                {
+                    "type": "text",
+                    "text": "978-0-7695-3902-7"
+                }
+            ],
+            "url": "http://dblp.uni-trier.de/db/conf/icdm/icdmw2009.html#HulseKNW09"
+        }
+    }
+}

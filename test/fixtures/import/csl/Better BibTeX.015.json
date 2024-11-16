@@ -1,0 +1,69 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "inbook",
+        "fields": {
+            "date": "2007",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Theories of globalization",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "The Blackwell companion to globalization",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "publisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "John Wiley & Sons"
+                    }
+                ]
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Robinson"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "William I"
+                        }
+                    ]
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "125"
+                        },
+                        {
+                            "type": "text",
+                            "text": "143"
+                        }
+                    ]
+                ]
+            ]
+        }
+    }
+}

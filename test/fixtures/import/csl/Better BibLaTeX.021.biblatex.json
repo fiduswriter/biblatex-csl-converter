@@ -1,0 +1,97 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "article",
+        "fields": {
+            "date": "2010-11",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Oliveira"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Leonardo Hadlich"
+                        }
+                    ],
+                    "prefix": [
+                        {
+                            "type": "text",
+                            "text": "de"
+                        }
+                    ],
+                    "useprefix": true
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Aznar"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Martín"
+                        }
+                    ]
+                }
+            ],
+            "doi": "10.1016/j.jct.2010.06.007",
+            "issn": [
+                {
+                    "type": "text",
+                    "text": "00219614"
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "The journal of chemical thermodynamics"
+                }
+            ],
+            "langid": "",
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "1379"
+                        },
+                        {
+                            "type": "text",
+                            "text": "1385"
+                        }
+                    ]
+                ]
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "("
+                },
+                {
+                    "type": "text",
+                    "text": "Liquid+liquid) equilibrium of {water+phenol+(1-butanol, or 2-butanol, or tert-butanol)} systems",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "url": "http://linkinghub.elsevier.com/retrieve/pii/S0021961410002107",
+            "urldate": "2014-06-18",
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "42"
+                }
+            ]
+        }
+    }
+}

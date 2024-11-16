@@ -1,0 +1,42 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2011,
+                    11
+                ]
+            ]
+        },
+        "language": "en-US",
+        "author": [
+            {
+                "given": "Jason F.",
+                "family": "Hammond"
+            },
+            {
+                "given": "David M.",
+                "family": "Bortz"
+            }
+        ],
+        "DOI": "10.1016/j.amc.2011.03.163",
+        "ISSN": "00963003",
+        "container-title": "Appl. Math. Comput.",
+        "note": "http://linkinghub.elsevier.com/retrieve/pii/S0096300311010137",
+        "collection-number": "6",
+        "page": "2497-2508",
+        "title": "Analytical solutions to <span class=\"nocase\">Fisher</span>'s equation with time-variable coefficients",
+        "accessed": {
+            "date-parts": [
+                [
+                    2014,
+                    7,
+                    2
+                ]
+            ]
+        },
+        "volume": "218",
+        "type": "article",
+        "id": "1"
+    }
+}

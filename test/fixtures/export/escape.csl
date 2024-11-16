@@ -1,0 +1,21 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2009
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Peter",
+                "family": "H.T.M.L."
+            }
+        ],
+        "title": "A title with <i>style</i>!",
+        "container-title": "Issues with <span>unescaped</span> HTML",
+        "type": "article",
+        "id": "1"
+    }
+}

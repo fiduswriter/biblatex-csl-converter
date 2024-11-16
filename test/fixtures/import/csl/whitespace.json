@@ -1,0 +1,43 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "article",
+        "fields": {
+            "date": "2017",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Doe"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "John"
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Foo bar"
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Transactions on foobar"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "42"
+                }
+            ]
+        }
+    }
+}

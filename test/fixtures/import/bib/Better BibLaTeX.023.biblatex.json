@@ -1,0 +1,114 @@
+{
+    "entries": {
+        "1": {
+            "bib_type": "book",
+            "entry_key": "Manning2008",
+            "fields": {
+                "date": "2008-07-07",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Manning"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Christopher D."
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Raghavan"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Prabhakar"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Schütze"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Hinrich"
+                            }
+                        ]
+                    }
+                ],
+                "isbn": [
+                    {
+                        "type": "text",
+                        "text": "978-0-521-86571-5"
+                    }
+                ],
+                "location": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "New York"
+                        }
+                    ]
+                ],
+                "pagetotal": [
+                    {
+                        "type": "text",
+                        "text": "496"
+                    }
+                ],
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Cambridge University Press"
+                        }
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Introduction to "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Information Retrieval",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        }
+    },
+    "warnings": [
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "Manning2008",
+            "line": 11
+        }
+    ]
+}

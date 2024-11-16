@@ -1,0 +1,150 @@
+{
+    "entries": {
+        "1": {
+            "bib_type": "inproceedings",
+            "entry_key": "Lysenko:2010:GMC:1839778.1839781",
+            "fields": {
+                "date": "2010",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Lysenko"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Mikola"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Nelaturi"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Saigopal"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Shapiro"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Vadim"
+                            }
+                        ]
+                    }
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Group morphology with convolution algebras"
+                    }
+                ],
+                "booktitle": [
+                    {
+                        "type": "text",
+                        "text": "Proceedings of the 14th ACM Symposium on Solid and Physical Modeling"
+                    }
+                ],
+                "series": [
+                    {
+                        "type": "text",
+                        "text": "SPM '10"
+                    }
+                ],
+                "isbn": [
+                    {
+                        "type": "text",
+                        "text": "978-1-60558-984-8"
+                    }
+                ],
+                "location": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Haifa, Israel"
+                        }
+                    ]
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "11"
+                            }
+                        ],
+                        [
+                            {
+                                "type": "text",
+                                "text": "22"
+                            }
+                        ]
+                    ]
+                ],
+                "url": "http://doi.acm.org/10.1145/1839778.1839781",
+                "doi": "10.1145/1839778.1839781",
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "ACM"
+                        }
+                    ]
+                ]
+            },
+            "unknown_fields": {
+                "numpages": [
+                    {
+                        "type": "text",
+                        "text": "12"
+                    }
+                ],
+                "acmid": [
+                    {
+                        "type": "text",
+                        "text": "1839781"
+                    }
+                ]
+            }
+        }
+    },
+    "warnings": [
+        {
+            "type": "unknown_field",
+            "field_name": "numpages",
+            "entry": "Lysenko:2010:GMC:1839778.1839781",
+            "line": 17
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "acmid",
+            "entry": "Lysenko:2010:GMC:1839778.1839781",
+            "line": 17
+        },
+        {
+            "type": "alias_creates_duplicate_field",
+            "field": "address",
+            "alias_of": "location",
+            "value": "New York, NY, USA",
+            "alias_of_value": "Haifa, Israel",
+            "entry": "Lysenko:2010:GMC:1839778.1839781",
+            "line": 17
+        }
+    ]
+}

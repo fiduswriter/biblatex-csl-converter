@@ -1,0 +1,115 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "article",
+        "fields": {
+            "date": "2014-12-09",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Bachmann"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Sven"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Dybalski"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Wojciech"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Naaijkens"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Pieter"
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Lieb-"
+                },
+                {
+                    "type": "text",
+                    "text": "Robinson bounds, ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Arveson spectrum and ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Haag-",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Ruelle scattering theory for gapped quantum spin systems",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "url": "http://arxiv.org/abs/1412.2970",
+            "urldate": "2015-02-07"
+        }
+    }
+}

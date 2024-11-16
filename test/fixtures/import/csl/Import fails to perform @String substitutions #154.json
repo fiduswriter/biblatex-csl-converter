@@ -1,0 +1,46 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "book",
+        "fields": {
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Bert"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "R. A."
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "SQL is great"
+                }
+            ],
+            "publisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Freds Publishing"
+                    }
+                ]
+            ],
+            "location": [
+                [
+                    {
+                        "type": "text",
+                        "text": "London, UK"
+                    }
+                ]
+            ]
+        }
+    }
+}

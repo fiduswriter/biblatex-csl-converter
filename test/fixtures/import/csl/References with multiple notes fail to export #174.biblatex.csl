@@ -1,0 +1,24 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2008
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Joe",
+                "family": "Torre"
+            },
+            {
+                "given": "Tom",
+                "family": "Verducci"
+            }
+        ],
+        "title": "<span class=\"nocase\">XYZZY</span>",
+        "type": "article",
+        "id": "1"
+    }
+}

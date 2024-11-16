@@ -1,0 +1,466 @@
+{
+    "1": {
+        "author": [
+            {
+                "given": "Vincent",
+                "family": "Gogh",
+                "non-dropping-particle": "van"
+            }
+        ],
+        "note": "[van Gogh][Vincent]",
+        "type": "book",
+        "id": "1"
+    },
+    "2": {
+        "author": [
+            {
+                "given": "Alexander",
+                "family": "Humboldt",
+                "non-dropping-particle": "von"
+            }
+        ],
+        "note": "[Humboldt][Alexander von]",
+        "type": "book",
+        "id": "2"
+    },
+    "3": {
+        "author": [
+            {
+                "given": "Simone",
+                "family": "Beauvoir",
+                "non-dropping-particle": "de"
+            }
+        ],
+        "note": "[Beauvoir][Simone de]",
+        "type": "book",
+        "id": "3"
+    },
+    "4": {
+        "author": [
+            {
+                "given": "Charles",
+                "family": "Gaulle",
+                "non-dropping-particle": "de"
+            }
+        ],
+        "note": "[\"de Gaulle\"][Charles]",
+        "type": "book",
+        "id": "4"
+    },
+    "5": {
+        "author": [
+            {
+                "given": "Martin Luther",
+                "family": "King",
+                "suffix": "Jr."
+            }
+        ],
+        "note": "[King][Martin Luther, Jr.]",
+        "type": "book",
+        "id": "5"
+    },
+    "6": {
+        "author": [
+            {
+                "given": "Adlai E.",
+                "family": "Stevenson",
+                "suffix": "III"
+            }
+        ],
+        "note": "[Stevenson][Adlai E.,! III]",
+        "type": "book",
+        "id": "6"
+    },
+    "7": {
+        "author": [
+            {
+                "literal": "National Aeronautics and Space Administration"
+            }
+        ],
+        "note": "[[National Aeronautics and Space Administration]]",
+        "type": "book",
+        "id": "7"
+    },
+    "8": {
+        "author": [
+            {
+                "given": "Christianus",
+                "family": "Eert",
+                "non-dropping-particle": "boven d'"
+            }
+        ],
+        "note": "[boven d'Eert][Christianus]",
+        "type": "book",
+        "id": "8"
+    },
+    "9": {
+        "author": [
+            {
+                "given": "Goverdus",
+                "family": "Gravesande",
+                "non-dropping-particle": "'s-"
+            }
+        ],
+        "note": "['s-Gravesande][Goverdus]",
+        "type": "book",
+        "id": "9"
+    },
+    "10": {
+        "author": [
+            {
+                "given": "Thomas",
+                "family": "De Quincey"
+            }
+        ],
+        "note": "[De Quincey][Thomas]",
+        "type": "book",
+        "id": "10"
+    },
+    "11": {
+        "author": [
+            {
+                "given": "José",
+                "family": "Gasset",
+                "non-dropping-particle": "Ortega y"
+            }
+        ],
+        "note": "[Ortega y Gasset][José]",
+        "type": "book",
+        "id": "11"
+    },
+    "12": {
+        "author": [
+            {
+                "given": "Alfonse",
+                "family": "D’Amato"
+            }
+        ],
+        "note": "[D’Amato][Alfonse]",
+        "type": "book",
+        "id": "12"
+    },
+    "13": {
+        "author": [
+            {
+                "given": "Anwar",
+                "family": "Sadat",
+                "non-dropping-particle": "el-"
+            }
+        ],
+        "note": "[Sadat][Anwar el-]",
+        "type": "book",
+        "id": "13"
+    },
+    "14": {
+        "author": [
+            {
+                "given": "Robert M.",
+                "family": "La Follette",
+                "suffix": "Sr."
+            }
+        ],
+        "note": "[La Follette][Robert M., Sr.]",
+        "type": "book",
+        "id": "14"
+    },
+    "15": {
+        "author": [
+            {
+                "given": "Walter",
+                "family": "Mare",
+                "non-dropping-particle": "de la"
+            }
+        ],
+        "note": "[\"de la Mare\"][Walter]",
+        "type": "book",
+        "id": "15"
+    },
+    "16": {
+        "author": [
+            {
+                "given": "Diana",
+                "family": "DeGette"
+            }
+        ],
+        "note": "[DeGette][Diana]",
+        "type": "book",
+        "id": "16"
+    },
+    "17": {
+        "author": [
+            {
+                "given": "John Bertrand de Cusance Morant",
+                "family": "Saunders"
+            }
+        ],
+        "note": "[Saunders][John Bertrand de Cusance Morant]",
+        "type": "book",
+        "id": "17"
+    },
+    "18": {
+        "author": [
+            {
+                "literal": "Marcus Aurelius"
+            }
+        ],
+        "note": "[[Marcus Aurelius]]",
+        "type": "book",
+        "id": "18"
+    },
+    "19": {
+        "author": [
+            {
+                "given": "Alexandre",
+                "family": "Dumas",
+                "suffix": "père"
+            }
+        ],
+        "note": "[Dumas][Alexandre, père]",
+        "type": "book",
+        "id": "19"
+    },
+    "20": {
+        "author": [
+            {
+                "given": "Stephen",
+                "family": "Van Rensselaer"
+            }
+        ],
+        "note": "[Van Rensselaer][Stephen]",
+        "type": "book",
+        "id": "20"
+    },
+    "21": {
+        "author": [
+            {
+                "given": "Pierre-Charles",
+                "family": "L’Enfant"
+            }
+        ],
+        "note": "[L’Enfant][Pierre-Charles]",
+        "type": "book",
+        "id": "21"
+    },
+    "22": {
+        "author": [
+            {
+                "given": "Robert",
+                "family": "Gulik",
+                "non-dropping-particle": "van"
+            }
+        ],
+        "note": "[\"van Gulik\"][Robert]",
+        "type": "book",
+        "id": "22"
+    },
+    "23": {
+        "author": [
+            {
+                "given": "Victoria",
+                "family": "Sackville-West"
+            }
+        ],
+        "note": "[Sackville-West][Victoria]",
+        "type": "book",
+        "id": "23"
+    },
+    "24": {
+        "author": [
+            {
+                "given": "Ralph",
+                "family": "Vaughan Williams"
+            }
+        ],
+        "note": "[Vaughan Williams][Ralph]",
+        "type": "book",
+        "id": "24"
+    },
+    "25": {
+        "author": [
+            {
+                "given": "Ludwig",
+                "family": "Rohe",
+                "non-dropping-particle": "Mies van der"
+            }
+        ],
+        "note": "[Mies van der Rohe][Ludwig]",
+        "type": "book",
+        "id": "25"
+    },
+    "26": {
+        "author": [
+            {
+                "given": "Jean le Rond",
+                "family": "Alembert",
+                "non-dropping-particle": "d’"
+            }
+        ],
+        "note": "[d’Alembert][Jean le Rond]",
+        "type": "book",
+        "id": "26"
+    },
+    "27": {
+        "author": [
+            {
+                "given": "Alexis",
+                "family": "Tocqueville",
+                "non-dropping-particle": "de"
+            }
+        ],
+        "note": "[Tocqueville][Alexis de]",
+        "type": "book",
+        "id": "27"
+    },
+    "28": {
+        "author": [
+            {
+                "given": "Jean",
+                "family": "La Fontaine",
+                "non-dropping-particle": "de"
+            }
+        ],
+        "note": "[La Fontaine][Jean de]",
+        "type": "book",
+        "id": "28"
+    },
+    "29": {
+        "author": [
+            {
+                "given": "René-Robert Cavelier",
+                "family": "La Salle",
+                "non-dropping-particle": "de"
+            }
+        ],
+        "note": "[La Salle][René-Robert Cavelier de]",
+        "type": "book",
+        "id": "29"
+    },
+    "30": {
+        "author": [
+            {
+                "given": "Philippe",
+                "family": "Clinchamps",
+                "non-dropping-particle": "du Puy de"
+            }
+        ],
+        "note": "[du Puy de Clinchamps][PhU+0097ilippe]",
+        "type": "book",
+        "id": "30"
+    },
+    "31": {
+        "author": [
+            {
+                "given": "Heinrich Friedrich Karl",
+                "family": "Stein",
+                "non-dropping-particle": "vom und zum"
+            }
+        ],
+        "note": "[Stein][Heinrich Friedrich Karl vom und zum]",
+        "type": "book",
+        "id": "31"
+    },
+    "32": {
+        "author": [
+            {
+                "given": "Agostinho",
+                "family": "Silva",
+                "non-dropping-particle": "da"
+            }
+        ],
+        "note": "[Silva][Agostinho da]",
+        "type": "book",
+        "id": "32"
+    },
+    "33": {
+        "author": [
+            {
+                "given": "Vasco",
+                "family": "Gama",
+                "non-dropping-particle": "da"
+            }
+        ],
+        "note": "[\"da Gama\"][Vasco]",
+        "type": "book",
+        "id": "33"
+    },
+    "34": {
+        "author": [
+            {
+                "given": "Gabriele",
+                "family": "D’Annunzio"
+            }
+        ],
+        "note": "[D’Annunzio][Gabriele]",
+        "type": "book",
+        "id": "34"
+    },
+    "35": {
+        "author": [
+            {
+                "given": "Lorenzo",
+                "family": "Da Ponte"
+            }
+        ],
+        "note": "[Da Ponte][Lorenzo]",
+        "type": "book",
+        "id": "35"
+    },
+    "36": {
+        "author": [
+            {
+                "given": "Luca",
+                "family": "Della Robbia"
+            }
+        ],
+        "note": "[Della Robbia][Luca]",
+        "type": "book",
+        "id": "36"
+    },
+    "37": {
+        "author": [
+            {
+                "given": "Beatrice",
+                "family": "Este",
+                "non-dropping-particle": "d’"
+            }
+        ],
+        "note": "[Este][Beatrice d’]",
+        "type": "book",
+        "id": "37"
+    },
+    "38": {
+        "author": [
+            {
+                "given": "Lorenzo",
+                "family": "Medici",
+                "non-dropping-particle": "de’"
+            }
+        ],
+        "note": "[Medici][Lorenzo de’U+200B]",
+        "type": "book",
+        "id": "38"
+    },
+    "39": {
+        "author": [
+            {
+                "given": "Tawfiq",
+                "family": "Hakim",
+                "non-dropping-particle": "al-"
+            }
+        ],
+        "note": "[al-Hakim][Tawfiq]",
+        "type": "book",
+        "id": "39"
+    },
+    "40": {
+        "author": [
+            {
+                "given": "François de La Mothe",
+                "family": "Le Vayer"
+            }
+        ],
+        "note": "[Le Vayer][François de La Mothe]",
+        "type": "book",
+        "id": "40"
+    }
+}

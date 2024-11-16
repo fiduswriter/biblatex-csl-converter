@@ -1,0 +1,241 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "booklet",
+        "fields": {
+            "date": "1957",
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "Example from CMoS, 16e, 14.249"
+                }
+            ],
+            "location": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Mesopotamia, OH"
+                    }
+                ]
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Clark"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Hazel V."
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Mesopotamia: between two rivers"
+                }
+            ]
+        }
+    },
+    "2": {
+        "entry_key": "2",
+        "bib_type": "article",
+        "fields": {
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "Example from CMoS, 16e, 14.272"
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Object name "
+                },
+                {
+                    "type": "text",
+                    "text": "IRAS F00400+4059",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "urldate": "2009-10-06"
+        }
+    },
+    "3": {
+        "entry_key": "3",
+        "bib_type": "article",
+        "fields": {
+            "date": "1960",
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "Example from CMoS, 16e, 14.269 “Prepared from the autographs and earliest printed sources by Nathan Broder”"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Mozart"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Wolfgang Amadeus"
+                        }
+                    ]
+                }
+            ],
+            "editor": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Broder"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Nathan"
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Sonatas and fantasies for the piano"
+                }
+            ]
+        }
+    },
+    "4": {
+        "entry_key": "4",
+        "bib_type": "article",
+        "fields": {
+            "date": "1999-04",
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "Example from CMoS, 16e, 14.215 “ed. and trans. John Charles Chasteen”"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Ratliff"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Ben"
+                        }
+                    ]
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Lingua franca"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "B13"
+                        },
+                        {
+                            "type": "text",
+                            "text": "B14"
+                        }
+                    ]
+                ]
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "The mystery of samba: "
+                },
+                {
+                    "type": "text",
+                    "text": "Popular music and national identity in ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Brazil",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "9"
+                }
+            ]
+        }
+    },
+    "5": {
+        "entry_key": "5",
+        "bib_type": "article",
+        "fields": {
+            "date": "2006-04",
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "Example from CMoS, 16e, 14.125"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Kamp"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "David"
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Deconstructing dinner"
+                }
+            ]
+        }
+    }
+}

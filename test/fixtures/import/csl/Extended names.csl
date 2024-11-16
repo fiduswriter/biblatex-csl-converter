@@ -1,0 +1,128 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2008
+                ]
+            ]
+        },
+        "title": "GROMACS 4: algorithms for highly efficient, load-balanced, and scalable molecular simulation",
+        "author": [
+            {
+                "given": "Berk",
+                "family": "Hess"
+            },
+            {
+                "given": "Carsten",
+                "family": "Kutzner"
+            },
+            {
+                "given": "David",
+                "family": "Spoel",
+                "dropping-particle": "van der"
+            },
+            {
+                "given": "Erik",
+                "family": "Lindahl"
+            }
+        ],
+        "container-title": "Journal of chemical theory and computation",
+        "volume": "4",
+        "collection-number": "3",
+        "page": "435-447",
+        "type": "article",
+        "id": "1"
+    },
+    "2": {
+        "issued": {
+            "date-parts": [
+                [
+                    1995
+                ]
+            ]
+        },
+        "title": "GROMACS: a message-passing parallel molecular dynamics implementation",
+        "author": [
+            {
+                "given": "Herman JC",
+                "family": "Berendsen"
+            },
+            {
+                "given": "David",
+                "family": "Spoel",
+                "dropping-particle": "van der"
+            },
+            {
+                "given": "Rudi",
+                "family": "Dronen",
+                "non-dropping-particle": "van"
+            }
+        ],
+        "container-title": "Computer physics communications",
+        "volume": "91",
+        "collection-number": "1",
+        "page": "43-56",
+        "type": "article",
+        "id": "2"
+    },
+    "3": {
+        "issued": {
+            "date-parts": [
+                [
+                    1978
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "David M.",
+                "family": "Goldenberg"
+            },
+            {
+                "given": "Frank",
+                "family": "DeLand"
+            },
+            {
+                "given": "Euishin",
+                "family": "Kim"
+            },
+            {
+                "given": "Sidney",
+                "family": "Bennett"
+            },
+            {
+                "given": "F. James",
+                "family": "Primus"
+            },
+            {
+                "given": "John R.",
+                "family": "Nagell",
+                "suffix": "Jr.",
+                "dropping-particle": "van"
+            },
+            {
+                "given": "Norman",
+                "family": "Estes"
+            },
+            {
+                "given": "Philip",
+                "family": "DeSimone"
+            },
+            {
+                "given": "Pam",
+                "family": "Rayburn"
+            }
+        ],
+        "title": "Use of radio-labeled antibodies to carcinoembryonic antigen for the detection and localization of diverse cancers by external photoscanning",
+        "container-title": "New england journal of medicine",
+        "volume": "298",
+        "collection-number": "25",
+        "page": "1384-1388",
+        "DOI": "10.1056/NEJM197806222982503",
+        "note": "PMID: 349387",
+        "URL": "http://dx.doi.org/10.1056/NEJM197806222982503",
+        "type": "article",
+        "id": "3"
+    }
+}

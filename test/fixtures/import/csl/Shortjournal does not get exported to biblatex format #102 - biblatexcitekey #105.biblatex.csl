@@ -1,0 +1,46 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2006,
+                    9,
+                    20
+                ]
+            ]
+        },
+        "abstract": "The first step in any quantum key distribution (QKD) protocol consists of sequences of measurements that produce correlated classical data. We show that these correlation data must violate some Bell inequality in order to contain distillable secrecy, if not they could be produced by quantum measurements performed on a separable state of larger dimension. We introduce a new QKD protocol and prove its security against any individual attack by an adversary only limited by the no-signaling condition.",
+        "author": [
+            {
+                "given": "Antonio",
+                "family": "Acín"
+            },
+            {
+                "given": "Nicolas",
+                "family": "Gisin"
+            },
+            {
+                "given": "Lluis",
+                "family": "Masanes"
+            }
+        ],
+        "DOI": "10.1103/PhysRevLett.97.120405",
+        "container-title": "Physical review letters",
+        "collection-number": "12",
+        "page": "120405",
+        "title": "From <span class=\"nocase\">Bell</span>’s <span class=\"nocase\">Theorem</span> to secure quantum key distribution",
+        "URL": "http://link.aps.org/doi/10.1103/PhysRevLett.97.120405",
+        "accessed": {
+            "date-parts": [
+                [
+                    2014,
+                    8,
+                    20
+                ]
+            ]
+        },
+        "volume": "97",
+        "type": "article",
+        "id": "1"
+    }
+}

@@ -1,0 +1,128 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "book",
+        "fields": {
+            "date": "2007",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Kolawa"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Adam"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Huizinga"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Dorota"
+                        }
+                    ]
+                },
+                {
+                    "literal": [
+                        {
+                            "type": "text",
+                            "text": "Wiley InterScience (Online service)"
+                        }
+                    ]
+                }
+            ],
+            "isbn": [
+                {
+                    "type": "text",
+                    "text": "978-0-470-16516-4"
+                }
+            ],
+            "location": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Hoboken, NJ, USA"
+                    }
+                ]
+            ],
+            "publisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "IEEE Computer Society Press"
+                    }
+                ]
+            ],
+            "shorttitle": [
+                {
+                    "type": "text",
+                    "text": "Automated "
+                },
+                {
+                    "type": "text",
+                    "text": "Defect Prevention",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Automated "
+                },
+                {
+                    "type": "text",
+                    "text": "Defect Prevention : ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Best Practices in ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Software Management",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "url": "http://site.ebrary.com/lib/alltitles/docDetail.action?docID=10296302",
+            "urldate": "2015-01-09"
+        }
+    }
+}

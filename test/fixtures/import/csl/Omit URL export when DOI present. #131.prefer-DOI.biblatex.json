@@ -1,0 +1,489 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "inproceedings",
+        "fields": {
+            "date": "2011",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Cappello"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Franck"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Jacquelin"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Mathias"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Marchal"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Loris"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Robert"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Yves"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Snir"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Marc"
+                        }
+                    ]
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "High "
+                },
+                {
+                    "type": "text",
+                    "text": "Performance Computing (",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "HiPC), 2011 18th international conference on",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "doi": "10.1109/HiPC.2011.6152428",
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "1"
+                        },
+                        {
+                            "type": "text",
+                            "text": "10"
+                        }
+                    ]
+                ]
+            ],
+            "publisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "IEEE"
+                    }
+                ]
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Comparing archival policies for "
+                },
+                {
+                    "type": "text",
+                    "text": "Blue Waters",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "urldate": "2014-10-23"
+        }
+    },
+    "2": {
+        "entry_key": "2",
+        "bib_type": "inproceedings",
+        "fields": {
+            "date": "2014",
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "We study the energy used by a production-level regional climate and weather simulation code on a distributed memory system with hybrid CPU-GPU nodes. The code is optimised for both processor architectures, for which we investigate both time and energy to solution. Operational constraints for time to solution can be met with both processor types, although on different numbers of nodes. Energy to solution is a factor 3 lower with GPUs, but strong scaling can be pushed to larger node counts with CPUs to minimize time to solution. Our data shows that an affine relationship exists between energy and nodehours consumed by the simulation. We use this property to devise a simple and practical methodology for optimising for energy efficiency that can be applied to other applications, which we demonstrate with the HPCG benchmark. We conclude with a discussion about the relationship to the commonly-used GF/Watt metric."
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Cumming"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Ben"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Fourestey"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Gilles"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Fuhrer"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Oliver"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Gysi"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Tobias"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Fatica"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Massimiliano"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Schulthess"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Thomas C."
+                        }
+                    ]
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "Proceedings of the international conference for "
+                },
+                {
+                    "type": "text",
+                    "text": "High Performance Computing, ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Networking, ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Storage and ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Analysis",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "doi": "10.1109/SC.2014.72",
+            "isbn": [
+                {
+                    "type": "text",
+                    "text": "978-1-4799-5500-8"
+                }
+            ],
+            "location": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Piscataway, NJ, USA"
+                    }
+                ]
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "819"
+                        },
+                        {
+                            "type": "text",
+                            "text": "829"
+                        }
+                    ]
+                ]
+            ],
+            "publisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "IEEE Press"
+                    }
+                ]
+            ],
+            "series": [
+                {
+                    "type": "text",
+                    "text": "SC '14"
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Application centric energy-efficiency study of distributed multi-core and hybrid "
+                },
+                {
+                    "type": "text",
+                    "text": "CPU-",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "GPU systems",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "urldate": "2015-01-12"
+        }
+    },
+    "3": {
+        "entry_key": "3",
+        "bib_type": "article",
+        "fields": {
+            "date": "2011-10-07",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Taylor"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Karl E."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Stouffer"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Ronald J."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Meehl"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Gerald A."
+                        }
+                    ]
+                }
+            ],
+            "doi": "10.1175/BAMS-D-11-00094.1",
+            "issn": [
+                {
+                    "type": "text",
+                    "text": "0003-0007, 1520-0477"
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Bulletin of the american meteorological society"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "485"
+                        },
+                        {
+                            "type": "text",
+                            "text": "498"
+                        }
+                    ]
+                ]
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "An overview of "
+                },
+                {
+                    "type": "text",
+                    "text": "CMIP5 and the ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Experiment Design",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "urldate": "2012-04-17",
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "93"
+                }
+            ]
+        }
+    }
+}

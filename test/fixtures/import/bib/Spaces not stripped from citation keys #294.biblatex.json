@@ -1,0 +1,125 @@
+{
+    "entries": {
+        "1": {
+            "bib_type": "article",
+            "entry_key": "vlcek_historylatinterminology_2014",
+            "fields": {
+                "date": "2014-05-15",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Vlček"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Martin"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Vácha"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Marek"
+                            }
+                        ]
+                    }
+                ],
+                "doi": "10.1007/s00276-014-1305-7",
+                "eprint": "24828123",
+                "eprinttype": [
+                    {
+                        "type": "text",
+                        "text": "pmid"
+                    }
+                ],
+                "issn": [
+                    {
+                        "type": "text",
+                        "text": "1279-8517"
+                    }
+                ],
+                "journaltitle": [
+                    {
+                        "type": "text",
+                        "text": "Surgical and Radiologic Anatomy"
+                    }
+                ],
+                "langid": "usenglish",
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "The History of "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Latin",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " Terminology of Human Skeletal Muscles (from "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Vesalius",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " to the Present)"
+                    }
+                ],
+                "url": "http://link.springer.com/10.1007/s00276-014-1305-7"
+            },
+            "unexpected_fields": {
+                "shortjournal": [
+                    {
+                        "type": "text",
+                        "text": "Surg Radiol Anat"
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        }
+    },
+    "warnings": [
+        {
+            "type": "unexpected_field",
+            "field_name": "shortjournal",
+            "entry": "vlcek_historylatinterminology_2014",
+            "line": 15
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "vlcek_historylatinterminology_2014",
+            "line": 15
+        }
+    ]
+}

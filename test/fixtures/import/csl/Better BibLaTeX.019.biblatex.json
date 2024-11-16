@@ -1,0 +1,102 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "article",
+        "fields": {
+            "date": "2001",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Secondname"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Kendra"
+                        }
+                    ],
+                    "prefix": [
+                        {
+                            "type": "text",
+                            "text": "Arbesman von"
+                        }
+                    ],
+                    "useprefix": true
+                }
+            ],
+            "doi": "10.1175/1520-0493(1987)115<1606:GARSPP>2.0.CO;2",
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Title, with comma"
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "The physical volcanology of the 1600 eruption of "
+                },
+                {
+                    "type": "text",
+                    "text": "Huaynaputina, with L",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "A",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "sup"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "T",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "E",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "sub"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "X!",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "62"
+                }
+            ]
+        }
+    }
+}

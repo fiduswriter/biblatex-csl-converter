@@ -1,0 +1,76 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2002
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Franz-Xaver",
+                "family": "Kaufmann"
+            }
+        ],
+        "container-title": "Sozialpolitik und sozialstaat: soziologische analysen",
+        "DOI": "10.1007/978-3-322-99962-7_7",
+        "editor": [
+            {
+                "given": "Franz-Xaver",
+                "family": "Kauffmann"
+            }
+        ],
+        "language": "de-DE",
+        "original-date": {
+            "date-parts": [
+                [
+                    1990
+                ]
+            ]
+        },
+        "page": "145-160",
+        "publisher": "VS Verlag für Sozialwissenschaften",
+        "title": "Sozialpolitik und bevölkerungsprozeß",
+        "URL": "http://link.springer.com/chapter/10.1007/978-3-322-99962-7_7",
+        "type": "chapter",
+        "id": "1"
+    },
+    "2": {
+        "issued": {
+            "date-parts": [
+                [
+                    2002
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Franz-Xaver",
+                "family": "Kaufmann"
+            }
+        ],
+        "container-title": "Sozialpolitik und sozialstaat: soziologische analysen",
+        "DOI": "10.1007/978-3-322-99962-7_11",
+        "editor": [
+            {
+                "given": "Franz-Xaver",
+                "family": "Kauffmann"
+            }
+        ],
+        "language": "de-DE",
+        "original-date": {
+            "date-parts": [
+                [
+                    1997
+                ]
+            ]
+        },
+        "page": "241-260",
+        "publisher": "VS Verlag für Sozialwissenschaften",
+        "title": "Schwindet die integrative funktion des sozialstaates?",
+        "URL": "http://link.springer.com/chapter/10.1007/978-3-322-99962-7_11",
+        "type": "chapter",
+        "id": "2"
+    }
+}

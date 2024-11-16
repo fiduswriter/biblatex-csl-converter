@@ -1,0 +1,31 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "article",
+        "fields": {
+            "date": "1990",
+            "author": [
+                {
+                    "literal": [
+                        {
+                            "type": "text",
+                            "text": "Author"
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Title"
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "a space between this and this"
+                }
+            ]
+        }
+    }
+}

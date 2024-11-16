@@ -1,0 +1,32 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    1994
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Georges",
+                "family": "Canguilhem"
+            }
+        ],
+        "container-author": [
+            {
+                "given": "Jean",
+                "family": "Cavaillès"
+            }
+        ],
+        "container-title": "Œuvres complètes de philosophie des sciences",
+        "ISBN": "2-7056-6221-9",
+        "language": "fr-FR",
+        "publisher-place": "Paris",
+        "page": "665-86",
+        "publisher": "Hermann",
+        "title": "In memoriam",
+        "type": "chapter",
+        "id": "1"
+    }
+}

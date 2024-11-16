@@ -1,0 +1,53 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "article",
+        "fields": {
+            "date": "2009",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "USGS monitoring ecological impacts"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "107"
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Oil & gas journal"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Oliveira"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "A"
+                        }
+                    ]
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "29"
+                        }
+                    ]
+                ]
+            ]
+        }
+    }
+}

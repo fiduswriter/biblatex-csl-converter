@@ -1,0 +1,70 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "book",
+        "fields": {
+            "location": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Trinidad and Tobago"
+                    }
+                ]
+            ],
+            "origlocation": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Saint Kitts and Nevis"
+                    }
+                ]
+            ],
+            "origpublisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Doe and Company"
+                    }
+                ]
+            ],
+            "publisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Miller, Smith and Jones"
+                    }
+                ]
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Publisher"
+                }
+            ]
+        }
+    },
+    "2": {
+        "entry_key": "2",
+        "bib_type": "report",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Institution"
+                }
+            ]
+        }
+    },
+    "3": {
+        "entry_key": "3",
+        "bib_type": "thesis",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "University"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "1": {
+        "author": [
+            {
+                "given": "Morten",
+                "family": "Brøns"
+            }
+        ],
+        "note": "Hello hej",
+        "title": "pretest",
+        "type": "article",
+        "id": "1"
+    }
+}

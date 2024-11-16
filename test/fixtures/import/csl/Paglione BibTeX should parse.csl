@@ -1,0 +1,2047 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2001
+                ]
+            ]
+        },
+        "title": "A mapping survey of the 13CO and 12CO emission in galaxies",
+        "author": [
+            {
+                "given": "T.A.D.",
+                "family": "Paglione"
+            },
+            {
+                "given": "WF",
+                "family": "Wall"
+            },
+            {
+                "given": "J.S.",
+                "family": "Young"
+            },
+            {
+                "given": "M.H.",
+                "family": "Heyer"
+            },
+            {
+                "given": "M.",
+                "family": "Richard"
+            },
+            {
+                "given": "M.",
+                "family": "Goldstein"
+            },
+            {
+                "given": "Z.",
+                "family": "Kaufman"
+            },
+            {
+                "given": "J.",
+                "family": "Nantais"
+            },
+            {
+                "given": "G.",
+                "family": "Perry"
+            }
+        ],
+        "container-title": "The astrophysical journal supplement series",
+        "volume": "135",
+        "page": "183",
+        "type": "article",
+        "id": "1"
+    },
+    "2": {
+        "title": "Nguyen-Q-rieu. 1993",
+        "author": [
+            {
+                "given": "J.M.",
+                "family": "Jackson"
+            },
+            {
+                "given": "T.A.D.",
+                "family": "Paglione"
+            },
+            {
+                "given": "S.",
+                "family": "Ishizuki"
+            }
+        ],
+        "container-title": "ApJ",
+        "volume": "418",
+        "page": "L13",
+        "type": "article",
+        "id": "2"
+    },
+    "3": {
+        "issued": {
+            "date-parts": [
+                [
+                    1996
+                ]
+            ]
+        },
+        "title": "HCN and CO in the central 630 parsecs of the galaxy",
+        "author": [
+            {
+                "given": "J.M.",
+                "family": "Jackson"
+            },
+            {
+                "given": "M.H.",
+                "family": "Heyer"
+            },
+            {
+                "given": "T.A.D.",
+                "family": "Paglione"
+            },
+            {
+                "given": "A.D.",
+                "family": "Bolatto"
+            }
+        ],
+        "container-title": "The astrophysical journal letters",
+        "volume": "456",
+        "page": "L91",
+        "type": "article",
+        "id": "3"
+    },
+    "4": {
+        "issued": {
+            "date-parts": [
+                [
+                    1996
+                ]
+            ]
+        },
+        "title": "Diffuse gamma-ray emission from the starburst galaxy NGC 253",
+        "author": [
+            {
+                "given": "T.A.D.",
+                "family": "Paglione"
+            },
+            {
+                "given": "A.P.",
+                "family": "Marscher"
+            },
+            {
+                "given": "J.M.",
+                "family": "Jackson"
+            },
+            {
+                "given": "D.L.",
+                "family": "Bertsch"
+            }
+        ],
+        "container-title": "The astrophysical journal",
+        "volume": "460",
+        "page": "295",
+        "type": "article",
+        "id": "4"
+    },
+    "5": {
+        "issued": {
+            "date-parts": [
+                [
+                    1995
+                ]
+            ]
+        },
+        "title": "The distribution of the dense clouds in the starburst nucleus of NGC 253",
+        "author": [
+            {
+                "given": "T.A.D.",
+                "family": "Paglione"
+            },
+            {
+                "given": "T.",
+                "family": "Tosaki"
+            },
+            {
+                "given": "J.M.",
+                "family": "Jackson"
+            }
+        ],
+        "container-title": "The astrophysical journal letters",
+        "volume": "454",
+        "page": "L117",
+        "type": "article",
+        "id": "5"
+    },
+    "6": {
+        "issued": {
+            "date-parts": [
+                [
+                    1999
+                ]
+            ]
+        },
+        "title": "Diffuse gamma-ray emission from starburst galaxies and M31",
+        "author": [
+            {
+                "given": "J.J.",
+                "family": "Blom"
+            },
+            {
+                "given": "T.A.D.",
+                "family": "Paglione"
+            },
+            {
+                "given": "A.",
+                "family": "nana",
+                "non-dropping-particle": "Carrami"
+            }
+        ],
+        "container-title": "The astrophysical journal",
+        "volume": "516",
+        "page": "744",
+        "type": "article",
+        "id": "6"
+    },
+    "7": {
+        "issued": {
+            "date-parts": [
+                [
+                    2009
+                ]
+            ]
+        },
+        "title": "Cosmic evolution of radio selected active galactic nuclei in the COSMOS field",
+        "author": [
+            {
+                "given": "V.",
+                "family": "ci'c",
+                "non-dropping-particle": "Smol"
+            },
+            {
+                "given": "G.",
+                "family": "Zamorani"
+            },
+            {
+                "given": "E.",
+                "family": "Schinnerer"
+            },
+            {
+                "given": "S.",
+                "family": "Bardelli"
+            },
+            {
+                "given": "M.",
+                "family": "Bondi"
+            },
+            {
+                "given": "L.",
+                "family": "B<sup>i</sup>rzan"
+            },
+            {
+                "given": "CL",
+                "family": "Carilli"
+            },
+            {
+                "given": "P.",
+                "family": "Ciliegi"
+            },
+            {
+                "given": "M.",
+                "family": "Elvis"
+            },
+            {
+                "given": "CD",
+                "family": "Impey"
+            },
+            {
+                "literal": "others"
+            }
+        ],
+        "container-title": "The astrophysical journal",
+        "volume": "696",
+        "page": "24",
+        "type": "article",
+        "id": "7"
+    },
+    "8": {
+        "issued": {
+            "date-parts": [
+                [
+                    1997
+                ]
+            ]
+        },
+        "title": "The average properties of the dense molecular gas in galaxies",
+        "author": [
+            {
+                "given": "T.A.D.",
+                "family": "Paglione"
+            },
+            {
+                "given": "J.M.",
+                "family": "Jackson"
+            },
+            {
+                "given": "S.",
+                "family": "Ishizuki"
+            }
+        ],
+        "container-title": "The astrophysical journal",
+        "volume": "484",
+        "page": "656",
+        "type": "article",
+        "id": "8"
+    },
+    "9": {
+        "issued": {
+            "date-parts": [
+                [
+                    1995
+                ]
+            ]
+        },
+        "title": "Submillimeter HCN and HCO (+) emission from galaxies",
+        "author": [
+            {
+                "given": "J.M.",
+                "family": "Jackson"
+            },
+            {
+                "given": "T.A.D.",
+                "family": "Paglione"
+            },
+            {
+                "given": "J.E.",
+                "family": "Carlstrom"
+            },
+            {
+                "given": "N.Q.",
+                "family": "Rieu"
+            }
+        ],
+        "container-title": "The astrophysical journal",
+        "volume": "438",
+        "page": "695-701",
+        "type": "article",
+        "id": "9"
+    },
+    "10": {
+        "issued": {
+            "date-parts": [
+                [
+                    1998
+                ]
+            ]
+        },
+        "title": "Interpreting the HCN/CO intensity ratio in the galactic center",
+        "author": [
+            {
+                "given": "T.A.D.",
+                "family": "Paglione"
+            },
+            {
+                "given": "J.M.",
+                "family": "Jackson"
+            },
+            {
+                "given": "A.D.",
+                "family": "Bolatto"
+            },
+            {
+                "given": "M.H.",
+                "family": "Heyer"
+            }
+        ],
+        "container-title": "The astrophysical journal",
+        "volume": "493",
+        "page": "680",
+        "type": "article",
+        "id": "10"
+    },
+    "11": {
+        "issued": {
+            "date-parts": [
+                [
+                    2009
+                ]
+            ]
+        },
+        "title": "The dust-unbiased cosmic star-formation history from the 20 CM VLA-COSMOS survey",
+        "author": [
+            {
+                "given": "V.",
+                "family": "ci'c",
+                "non-dropping-particle": "Smol"
+            },
+            {
+                "given": "E.",
+                "family": "Schinnerer"
+            },
+            {
+                "given": "G.",
+                "family": "Zamorani"
+            },
+            {
+                "given": "EF",
+                "family": "Bell"
+            },
+            {
+                "given": "M.",
+                "family": "Bondi"
+            },
+            {
+                "given": "CL",
+                "family": "Carilli"
+            },
+            {
+                "given": "P.",
+                "family": "Ciliegi"
+            },
+            {
+                "given": "B.",
+                "family": "Mobasher"
+            },
+            {
+                "given": "T.",
+                "family": "Paglione"
+            },
+            {
+                "given": "M.",
+                "family": "Scodeggio"
+            },
+            {
+                "literal": "others"
+            }
+        ],
+        "container-title": "The astrophysical journal",
+        "volume": "690",
+        "page": "610",
+        "type": "article",
+        "id": "11"
+    },
+    "12": {
+        "issued": {
+            "date-parts": [
+                [
+                    1993
+                ]
+            ]
+        },
+        "title": "Dense molecular gas toward the nucleus of the seyfert galaxy NGC 1068",
+        "author": [
+            {
+                "given": "J.M.",
+                "family": "Jackson"
+            },
+            {
+                "given": "T.A.D.",
+                "family": "Paglione"
+            },
+            {
+                "given": "S.",
+                "family": "Ishizuki"
+            },
+            {
+                "literal": "others"
+            }
+        ],
+        "container-title": "The astrophysical journal",
+        "volume": "418",
+        "page": "L13",
+        "type": "article",
+        "id": "12"
+    },
+    "13": {
+        "issued": {
+            "date-parts": [
+                [
+                    2004
+                ]
+            ]
+        },
+        "title": "The structure, kinematics, and physical properties of the molecular gas in the starburst nucleus of NGC 253",
+        "author": [
+            {
+                "given": "T.A.D.",
+                "family": "Paglione"
+            },
+            {
+                "given": "O.",
+                "family": "Yam"
+            },
+            {
+                "given": "T.",
+                "family": "Tosaki"
+            },
+            {
+                "given": "J.M.",
+                "family": "Jackson"
+            }
+        ],
+        "container-title": "The astrophysical journal",
+        "volume": "611",
+        "page": "835",
+        "type": "article",
+        "id": "13"
+    },
+    "14": {
+        "issued": {
+            "date-parts": [
+                [
+                    1997
+                ]
+            ]
+        },
+        "title": "A 2000 M rotating molecular disk around NGC 6334A",
+        "author": [
+            {
+                "given": "K.E.",
+                "family": "Kraemer"
+            },
+            {
+                "given": "J.M.",
+                "family": "Jackson"
+            },
+            {
+                "given": "T.A.D.",
+                "family": "Paglione"
+            },
+            {
+                "given": "A.D.",
+                "family": "Bolatto"
+            }
+        ],
+        "container-title": "The astrophysical journal",
+        "volume": "478",
+        "page": "614",
+        "type": "article",
+        "id": "14"
+    },
+    "15": {
+        "issued": {
+            "date-parts": [
+                [
+                    2008
+                ]
+            ]
+        },
+        "title": "The faint-end slopes of galaxy luminosity functions in the COSMOS field",
+        "author": [
+            {
+                "given": "C.T.",
+                "family": "Liu"
+            },
+            {
+                "given": "P.",
+                "family": "Capak"
+            },
+            {
+                "given": "B.",
+                "family": "Mobasher"
+            },
+            {
+                "given": "T.A.D.",
+                "family": "Paglione"
+            },
+            {
+                "given": "R.M.",
+                "family": "Rich"
+            },
+            {
+                "given": "N.Z.",
+                "family": "Scoville"
+            },
+            {
+                "given": "S.M.",
+                "family": "Tribiano"
+            },
+            {
+                "given": "N.D.",
+                "family": "Tyson"
+            }
+        ],
+        "container-title": "The astrophysical journal",
+        "volume": "672",
+        "page": "198",
+        "type": "article",
+        "id": "15"
+    },
+    "16": {
+        "issued": {
+            "date-parts": [
+                [
+                    1995
+                ]
+            ]
+        },
+        "title": "First observations of extragalactic CSJ= 1 goes to 0",
+        "author": [
+            {
+                "given": "T.A.D.",
+                "family": "Paglione"
+            },
+            {
+                "given": "J.M.",
+                "family": "Jackson"
+            },
+            {
+                "given": "S.",
+                "family": "Ishizuki"
+            },
+            {
+                "given": "N.Q.",
+                "family": "Rieu"
+            }
+        ],
+        "container-title": "The astronomical journal",
+        "volume": "109",
+        "page": "1716-1723",
+        "type": "article",
+        "id": "16"
+    },
+    "17": {
+        "issued": {
+            "date-parts": [
+                [
+                    1996
+                ]
+            ]
+        },
+        "title": "ApJ, 456",
+        "author": [
+            {
+                "given": "JM",
+                "family": "Jackson"
+            },
+            {
+                "given": "MH",
+                "family": "Heyer"
+            },
+            {
+                "given": "TAD",
+                "family": "Paglione"
+            },
+            {
+                "given": "AD",
+                "family": "Bolatto"
+            }
+        ],
+        "container-title": "L91 first citation in article| CrossRef link| IOP article| abstract at astrophysics data system",
+        "type": "article",
+        "id": "17"
+    },
+    "18": {
+        "issued": {
+            "date-parts": [
+                [
+                    1995
+                ]
+            ]
+        },
+        "title": "ApJ, 454",
+        "author": [
+            {
+                "given": "TAD",
+                "family": "Paglione"
+            },
+            {
+                "given": "T.",
+                "family": "Tosaki"
+            },
+            {
+                "given": "JM",
+                "family": "Jackson"
+            }
+        ],
+        "container-title": "L117 first citation in article| IOP article| CrossRef link| abstract at astrophysics data system",
+        "type": "article",
+        "id": "18"
+    },
+    "19": {
+        "issued": {
+            "date-parts": [
+                [
+                    1716
+                ]
+            ]
+        },
+        "title": "Nguyen-Q-rieu 1995",
+        "author": [
+            {
+                "given": "TAD",
+                "family": "Paglione"
+            },
+            {
+                "given": "JM",
+                "family": "Jackson"
+            },
+            {
+                "given": "S.",
+                "family": "Ishizuki"
+            }
+        ],
+        "container-title": "AJ",
+        "volume": "109",
+        "page": "1716",
+        "type": "article",
+        "id": "19"
+    },
+    "20": {
+        "issued": {
+            "date-parts": [
+                [
+                    2000
+                ]
+            ]
+        },
+        "title": "Properties of the photodissociated gas in NGC 6334",
+        "author": [
+            {
+                "given": "K.E.",
+                "family": "Kraemer"
+            },
+            {
+                "given": "J.M.",
+                "family": "Jackson"
+            },
+            {
+                "given": "A.P.",
+                "family": "Lane"
+            },
+            {
+                "given": "T.A.D.",
+                "family": "Paglione"
+            }
+        ],
+        "container-title": "The astrophysical journal",
+        "volume": "542",
+        "page": "946",
+        "type": "article",
+        "id": "20"
+    },
+    "21": {
+        "issued": {
+            "date-parts": [
+                [
+                    2000
+                ]
+            ]
+        },
+        "title": "Measurements of dynamic pointing variations of a large radio telescope",
+        "author": [
+            {
+                "given": "D.R.",
+                "family": "Smith"
+            },
+            {
+                "given": "T.A.D.",
+                "family": "Paglione"
+            },
+            {
+                "given": "A.J.",
+                "family": "Lovell"
+            },
+            {
+                "given": "N.",
+                "family": "Ukita"
+            },
+            {
+                "given": "H.",
+                "family": "Matsuo"
+            }
+        ],
+        "container-title": "Proceedings of SPIE",
+        "volume": "4015",
+        "page": "467",
+        "type": "article",
+        "id": "21"
+    },
+    "22": {
+        "issued": {
+            "date-parts": [
+                [
+                    2002
+                ]
+            ]
+        },
+        "title": "CN/HCN: a global indicator of star formation?",
+        "author": [
+            {
+                "given": "TAD",
+                "family": "Paglione"
+            },
+            {
+                "given": "JM",
+                "family": "Jackson"
+            },
+            {
+                "given": "EA",
+                "family": "Bergin"
+            }
+        ],
+        "container-title": "Bulletin of the american astronomical society",
+        "volume": "34",
+        "page": "1229",
+        "type": "paper-conference",
+        "id": "22"
+    },
+    "23": {
+        "issued": {
+            "date-parts": [
+                [
+                    2010
+                ]
+            ]
+        },
+        "title": "ERRATUM",
+        "author": [
+            {
+                "given": "V.",
+                "family": "Smolcic"
+            },
+            {
+                "given": "G.",
+                "family": "Zamorani"
+            },
+            {
+                "given": "E.",
+                "family": "Schinnerer"
+            },
+            {
+                "given": "S.",
+                "family": "Bardelli"
+            },
+            {
+                "given": "M.",
+                "family": "Bondi"
+            },
+            {
+                "given": "L.",
+                "family": "B<sup>i</sup>rzan"
+            },
+            {
+                "given": "CL",
+                "family": "Carilli"
+            },
+            {
+                "given": "P.",
+                "family": "Ciliegi"
+            },
+            {
+                "given": "M.",
+                "family": "Elvis"
+            },
+            {
+                "given": "CD",
+                "family": "Impey"
+            },
+            {
+                "literal": "others"
+            }
+        ],
+        "container-title": "The astrophysical journal",
+        "volume": "708",
+        "page": "909",
+        "type": "article",
+        "id": "23"
+    },
+    "24": {
+        "issued": {
+            "date-parts": [
+                [
+                    2010
+                ]
+            ]
+        },
+        "title": "ERRATUM",
+        "author": [
+            {
+                "given": "V.",
+                "family": "ci'c",
+                "non-dropping-particle": "Smol"
+            },
+            {
+                "given": "G.",
+                "family": "Zamorani"
+            },
+            {
+                "given": "E.",
+                "family": "Schinnerer"
+            },
+            {
+                "given": "S.",
+                "family": "Bardelli"
+            },
+            {
+                "given": "M.",
+                "family": "Bondi"
+            },
+            {
+                "given": "L.",
+                "family": "B<sup>i</sup>rzan"
+            },
+            {
+                "given": "CL",
+                "family": "Carilli"
+            },
+            {
+                "given": "P.",
+                "family": "Ciliegi"
+            },
+            {
+                "given": "M.",
+                "family": "Elvis"
+            },
+            {
+                "given": "CD",
+                "family": "Impey"
+            },
+            {
+                "literal": "others"
+            }
+        ],
+        "container-title": "The astrophysical journal",
+        "volume": "708",
+        "page": "909",
+        "type": "article",
+        "id": "24"
+    },
+    "25": {
+        "issued": {
+            "date-parts": [
+                [
+                    1999
+                ]
+            ]
+        },
+        "title": "Gamma-rays from starbursts and M31",
+        "author": [
+            {
+                "given": "JJ",
+                "family": "Blom"
+            },
+            {
+                "given": "TAD",
+                "family": "Paglione"
+            },
+            {
+                "given": "A.",
+                "family": "nana",
+                "non-dropping-particle": "Carrami"
+            }
+        ],
+        "container-title": "Astrophysical letters and communications",
+        "volume": "39",
+        "page": "169",
+        "type": "article",
+        "id": "25"
+    },
+    "26": {
+        "issued": {
+            "date-parts": [
+                [
+                    2001
+                ]
+            ]
+        },
+        "title": "A mapping survey of the (CO)-C-13 and (CO)-C-12 emission in galaxies",
+        "author": [
+            {
+                "given": "TAD",
+                "family": "Paglione"
+            },
+            {
+                "given": "WF",
+                "family": "Wall"
+            },
+            {
+                "given": "JS",
+                "family": "Young"
+            },
+            {
+                "given": "MH",
+                "family": "Heyer"
+            },
+            {
+                "given": "M.",
+                "family": "Richard"
+            },
+            {
+                "given": "M.",
+                "family": "Goldstein"
+            },
+            {
+                "given": "Z.",
+                "family": "Kaufman"
+            },
+            {
+                "given": "J.",
+                "family": "Nantais"
+            },
+            {
+                "given": "G.",
+                "family": "Perry"
+            }
+        ],
+        "type": "article",
+        "id": "26"
+    },
+    "27": {
+        "title": "The source of diffuse gamma-rays from the seyfert/starburst NGC 4945",
+        "author": [
+            {
+                "given": "T.A.D.",
+                "family": "Paglione"
+            },
+            {
+                "given": "M.",
+                "family": "Georganopoulos"
+            },
+            {
+                "given": "N.",
+                "family": "Hunt-Walker"
+            }
+        ],
+        "type": "article",
+        "id": "27"
+    },
+    "28": {
+        "issued": {
+            "date-parts": [
+                [
+                    2009
+                ]
+            ]
+        },
+        "title": "COSMIC EVOLUTION OF RADIO SELECTED ACTIVE GALACTIC NUCLEI IN THE COSMOS fieldbased on observations with the national radio astronomy observatory which is a facility of the national science foundation operated under cooperative agreement by associated universities, inc.",
+        "author": [
+            {
+                "given": "V.",
+                "family": "Smoli"
+            },
+            {
+                "given": "G.",
+                "family": "Zamorani"
+            },
+            {
+                "given": "E.",
+                "family": "Schinnerer"
+            },
+            {
+                "given": "S.",
+                "family": "Bardelli"
+            },
+            {
+                "given": "M.",
+                "family": "Bondi"
+            },
+            {
+                "given": "L.",
+                "family": "B<sup>i</sup>rzan"
+            },
+            {
+                "given": "CL",
+                "family": "Carilli"
+            },
+            {
+                "given": "P.",
+                "family": "Ciliegi"
+            },
+            {
+                "given": "M.",
+                "family": "Elvis"
+            },
+            {
+                "given": "CD",
+                "family": "Impey"
+            },
+            {
+                "literal": "others"
+            }
+        ],
+        "container-title": "Astrophysical journal",
+        "volume": "696",
+        "collection-number": "1",
+        "page": "24",
+        "type": "article",
+        "id": "28"
+    },
+    "29": {
+        "issued": {
+            "date-parts": [
+                [
+                    2002
+                ]
+            ]
+        },
+        "title": "Utilizing the light curves of binary stars in undergraduate and secondary school education",
+        "author": [
+            {
+                "given": "M.",
+                "family": "Spergel"
+            },
+            {
+                "given": "T.",
+                "family": "Paglione"
+            },
+            {
+                "given": "B.",
+                "family": "Paczynski"
+            }
+        ],
+        "container-title": "34th COSPAR scientific assembly",
+        "volume": "34",
+        "page": "3142",
+        "type": "paper-conference",
+        "id": "29"
+    },
+    "30": {
+        "issued": {
+            "date-parts": [
+                [
+                    1997
+                ]
+            ]
+        },
+        "title": "The properties of the dense gas in the nuclei of spiral galaxies",
+        "author": [
+            {
+                "given": "T.A.D.",
+                "family": "Paglione"
+            }
+        ],
+        "type": "article",
+        "id": "30"
+    },
+    "31": {
+        "issued": {
+            "date-parts": [
+                [
+                    1993
+                ]
+            ]
+        },
+        "title": "Observations of the CS J= 1-> 0 line in galaxies",
+        "author": [
+            {
+                "given": "TAD",
+                "family": "Paglione"
+            },
+            {
+                "given": "JM",
+                "family": "Jackson"
+            },
+            {
+                "given": "S.",
+                "family": "Ishizuki"
+            }
+        ],
+        "container-title": "Bulletin of the american astronomical society",
+        "volume": "25",
+        "page": "1328",
+        "type": "paper-conference",
+        "id": "31"
+    },
+    "32": {
+        "title": "UMIGS home",
+        "author": [
+            {
+                "given": "TAD",
+                "family": "Paglione"
+            },
+            {
+                "given": "WF",
+                "family": "Wall"
+            },
+            {
+                "given": "MH",
+                "family": "Heyer"
+            }
+        ],
+        "type": "article",
+        "id": "32"
+    },
+    "33": {
+        "issued": {
+            "date-parts": [
+                [
+                    2004
+                ]
+            ]
+        },
+        "title": "Molecular photodissociation regions in NGC 253",
+        "author": [
+            {
+                "given": "T.",
+                "family": "Paglione"
+            }
+        ],
+        "container-title": "The neutral ISM in starburst galaxies",
+        "volume": "320",
+        "page": "47",
+        "type": "paper-conference",
+        "id": "33"
+    },
+    "34": {
+        "issued": {
+            "date-parts": [
+                [
+                    2002
+                ]
+            ]
+        },
+        "title": "The york college observatory outreach program",
+        "author": [
+            {
+                "given": "T.",
+                "family": "Paglione"
+            },
+            {
+                "given": "M.",
+                "family": "Spergel"
+            }
+        ],
+        "container-title": "34th COSPAR scientific assembly",
+        "volume": "34",
+        "page": "3144",
+        "type": "paper-conference",
+        "id": "34"
+    },
+    "35": {
+        "issued": {
+            "date-parts": [
+                [
+                    2010
+                ]
+            ]
+        },
+        "title": "Diffuse gamma-rays from star forming galaxies",
+        "author": [
+            {
+                "given": "T.",
+                "family": "Paglione"
+            },
+            {
+                "given": "M.",
+                "family": "Crocker"
+            },
+            {
+                "given": "N.",
+                "family": "Hunt-Walker"
+            }
+        ],
+        "container-title": "Bulletin of the american astronomical society",
+        "volume": "42",
+        "page": "248",
+        "type": "paper-conference",
+        "id": "35"
+    },
+    "36": {
+        "issued": {
+            "date-parts": [
+                [
+                    1995
+                ]
+            ]
+        },
+        "title": "Diffuse gamma-ray emission from the starburst galaxy NGC 253",
+        "author": [
+            {
+                "given": "D.L.",
+                "family": "Bertsch"
+            },
+            {
+                "given": "T.A.D.",
+                "family": "Paglione"
+            },
+            {
+                "given": "A.P.",
+                "family": "Marscher"
+            },
+            {
+                "given": "J.M.",
+                "family": "Jackson"
+            }
+        ],
+        "container-title": "NASA",
+        "collection-number": "19980019305",
+        "type": "article",
+        "id": "36"
+    },
+    "37": {
+        "issued": {
+            "date-parts": [
+                [
+                    1996
+                ]
+            ]
+        },
+        "title": "The dense interstellar medium in the central 600 PC of the milky way",
+        "author": [
+            {
+                "given": "AD",
+                "family": "Bolatto"
+            },
+            {
+                "given": "TAD",
+                "family": "Paglione"
+            },
+            {
+                "given": "JM",
+                "family": "Jackson"
+            },
+            {
+                "given": "MH",
+                "family": "Heyer"
+            }
+        ],
+        "container-title": "Revista mexicana de astronomia y astrofisica conference series",
+        "volume": "4",
+        "page": "120",
+        "type": "paper-conference",
+        "id": "37"
+    },
+    "38": {
+        "issued": {
+            "date-parts": [
+                [
+                    1998
+                ]
+            ]
+        },
+        "title": "The properties of the dense molecular gas in the galactic center",
+        "author": [
+            {
+                "given": "O.",
+                "family": "Yam"
+            },
+            {
+                "given": "TAD",
+                "family": "Paglione"
+            },
+            {
+                "given": "JM",
+                "family": "Jackson"
+            },
+            {
+                "given": "AD",
+                "family": "Bolatto"
+            }
+        ],
+        "container-title": "IX latin american regional IAU meeting,",
+        "volume": "1",
+        "page": "80",
+        "type": "paper-conference",
+        "id": "38"
+    },
+    "39": {
+        "issued": {
+            "date-parts": [
+                [
+                    2005
+                ]
+            ]
+        },
+        "title": "The local starburst galaxy luminosity function in the COSMOS 2 square degree field",
+        "author": [
+            {
+                "given": "CT",
+                "family": "Liu"
+            },
+            {
+                "given": "TAD",
+                "family": "Paglione"
+            },
+            {
+                "given": "S.",
+                "family": "Tribiano"
+            },
+            {
+                "given": "ND",
+                "family": "Tyson"
+            },
+            {
+                "given": "C.",
+                "family": "Collaboration"
+            }
+        ],
+        "container-title": "Bulletin of the american astronomical society",
+        "volume": "37",
+        "page": "1245",
+        "type": "paper-conference",
+        "id": "39"
+    },
+    "40": {
+        "issued": {
+            "date-parts": [
+                [
+                    1999
+                ]
+            ]
+        },
+        "title": "The umass/INAOE galaxy survey",
+        "author": [
+            {
+                "given": "TAD",
+                "family": "Paglione"
+            },
+            {
+                "given": "MH",
+                "family": "Heyer"
+            },
+            {
+                "given": "JS",
+                "family": "Young"
+            },
+            {
+                "given": "M.",
+                "family": "Belniak"
+            },
+            {
+                "given": "N.",
+                "family": "Cartel"
+            },
+            {
+                "given": "H.",
+                "family": "Cameron"
+            },
+            {
+                "given": "M.",
+                "family": "Goldstein"
+            },
+            {
+                "given": "M.",
+                "family": "Gruol"
+            },
+            {
+                "given": "Z.",
+                "family": "Kaufman"
+            },
+            {
+                "given": "S.",
+                "family": "Litchfield"
+            },
+            {
+                "literal": "others"
+            }
+        ],
+        "container-title": "Bulletin of the american astronomical society",
+        "volume": "31",
+        "page": "892",
+        "type": "paper-conference",
+        "id": "40"
+    },
+    "41": {
+        "issued": {
+            "date-parts": [
+                [
+                    2001
+                ]
+            ]
+        },
+        "title": "Mapping 13CO and 12CO in galaxies",
+        "author": [
+            {
+                "given": "T.A.D.",
+                "family": "Paglione"
+            },
+            {
+                "given": "WF",
+                "family": "Wall"
+            },
+            {
+                "given": "J.S.",
+                "family": "Young"
+            },
+            {
+                "given": "M.H.",
+                "family": "Heyer"
+            },
+            {
+                "given": "M.",
+                "family": "Richard"
+            },
+            {
+                "given": "M.",
+                "family": "Goldstein"
+            },
+            {
+                "given": "Z.",
+                "family": "Kaufman"
+            },
+            {
+                "given": "J.",
+                "family": "Nantais"
+            },
+            {
+                "given": "G.",
+                "family": "Perry"
+            }
+        ],
+        "container-title": "The astrophysical journal supplement series",
+        "volume": "135",
+        "page": "183-200",
+        "type": "article",
+        "id": "41"
+    },
+    "42": {
+        "issued": {
+            "date-parts": [
+                [
+                    1993
+                ]
+            ]
+        },
+        "title": "Submillimeter HCN and HCO+ lines in galaxies.",
+        "author": [
+            {
+                "given": "J.M.",
+                "family": "Jackson"
+            },
+            {
+                "given": "T.A.",
+                "family": "Paglione"
+            },
+            {
+                "given": "J.E.",
+                "family": "Carlstrom"
+            },
+            {
+                "literal": "others"
+            }
+        ],
+        "container-title": "Star formation, galaxies and the interstellar medium: proceedings of the 4th EIPC astrophysical workshop held at the elba international physics center, marciana marina, elba island, italy, june 1-6, 1992",
+        "page": "177",
+        "type": "article",
+        "id": "42"
+    },
+    "43": {
+        "issued": {
+            "date-parts": [
+                [
+                    2012
+                ]
+            ]
+        },
+        "title": "Properties of nearby starburst galaxies based on their diffuse gamma-ray emission",
+        "author": [
+            {
+                "given": "T.A.D.",
+                "family": "Paglione"
+            },
+            {
+                "given": "R.D.",
+                "family": "Abrahams"
+            }
+        ],
+        "container-title": "Arxiv preprint arXiv:1206.3530",
+        "type": "article",
+        "id": "43"
+    },
+    "44": {
+        "issued": {
+            "date-parts": [
+                [
+                    1996
+                ]
+            ]
+        },
+        "title": "Dense molecular gas in the central 630 parsecs of the milky way",
+        "author": [
+            {
+                "given": "T.",
+                "family": "Paglione"
+            },
+            {
+                "given": "J.",
+                "family": "Jackson"
+            },
+            {
+                "given": "M.",
+                "family": "Heyer"
+            },
+            {
+                "given": "A.",
+                "family": "Bolatto"
+            }
+        ],
+        "container-title": "Bulletin of the american astronomical society",
+        "volume": "28",
+        "page": "888",
+        "type": "paper-conference",
+        "id": "44"
+    },
+    "45": {
+        "issued": {
+            "date-parts": [
+                [
+                    2002
+                ]
+            ]
+        },
+        "title": "An urban observatory for research, education and outreach",
+        "author": [
+            {
+                "given": "TAD",
+                "family": "Paglione"
+            },
+            {
+                "given": "M.",
+                "family": "Spergel"
+            },
+            {
+                "given": "J.",
+                "family": "Schlein"
+            },
+            {
+                "given": "E.",
+                "family": "Denecke"
+            }
+        ],
+        "container-title": "Bulletin of the american astronomical society",
+        "volume": "34",
+        "page": "1106",
+        "type": "paper-conference",
+        "id": "45"
+    },
+    "46": {
+        "issued": {
+            "date-parts": [
+                [
+                    1997
+                ]
+            ]
+        },
+        "title": "Tracing the mass of dense gas in giant molecular clouds",
+        "author": [
+            {
+                "given": "TAD",
+                "family": "Paglione"
+            },
+            {
+                "given": "O.",
+                "family": "Yam"
+            },
+            {
+                "given": "MH",
+                "family": "Heyer"
+            },
+            {
+                "given": "JM",
+                "family": "Jackson"
+            }
+        ],
+        "container-title": "Bulletin of the american astronomical society",
+        "volume": "29",
+        "page": "785",
+        "type": "paper-conference",
+        "id": "46"
+    },
+    "47": {
+        "issued": {
+            "date-parts": [
+                [
+                    2005
+                ]
+            ]
+        },
+        "title": "Evolution of clustering of starburst galaxies in the COSMOS field",
+        "author": [
+            {
+                "given": "SM",
+                "family": "Tribiano"
+            },
+            {
+                "given": "TAD",
+                "family": "Paglione"
+            },
+            {
+                "given": "PL",
+                "family": "Shopbell"
+            },
+            {
+                "given": "P.",
+                "family": "Capek"
+            },
+            {
+                "given": "C.",
+                "family": "Liu"
+            },
+            {
+                "given": "ND",
+                "family": "Tyson"
+            },
+            {
+                "given": "T.",
+                "family": "COSMOS"
+            }
+        ],
+        "container-title": "Bulletin of the american astronomical society",
+        "volume": "37",
+        "page": "1245",
+        "type": "paper-conference",
+        "id": "47"
+    },
+    "48": {
+        "issued": {
+            "date-parts": [
+                [
+                    2009
+                ]
+            ]
+        },
+        "title": "THE DUST-UNBIASED COSMIC STAR-FORMATION HISTORY FROM THE 20 CM VLA-COSMOS surveybased on observations with the national radio astronomy observatory which is a facility of the national science foundation operated under cooperative agreement by associated universities, inc.",
+        "author": [
+            {
+                "given": "V.",
+                "family": "Smoli"
+            },
+            {
+                "given": "E.",
+                "family": "Schinnerer"
+            },
+            {
+                "given": "G.",
+                "family": "Zamorani"
+            },
+            {
+                "given": "EF",
+                "family": "Bell"
+            },
+            {
+                "given": "M.",
+                "family": "Bondi"
+            },
+            {
+                "given": "CL",
+                "family": "Carilli"
+            },
+            {
+                "given": "P.",
+                "family": "Ciliegi"
+            },
+            {
+                "given": "B.",
+                "family": "Mobasher"
+            },
+            {
+                "given": "T.",
+                "family": "Paglione"
+            },
+            {
+                "given": "M.",
+                "family": "Scodeggio"
+            },
+            {
+                "literal": "others"
+            }
+        ],
+        "container-title": "Astrophysical journal",
+        "volume": "690",
+        "collection-number": "1",
+        "page": "610",
+        "type": "article",
+        "id": "48"
+    },
+    "49": {
+        "title": "Session 47. Between the stars I: the ISM, galactic and extragalactic display, tuesday, june 1, 1999, 10: 00am-7: 00pm, southwest exhibit hall",
+        "author": [
+            {
+                "given": "TAD",
+                "family": "Paglione"
+            },
+            {
+                "given": "MH",
+                "family": "Heyer"
+            },
+            {
+                "given": "JS",
+                "family": "Young"
+            },
+            {
+                "given": "M.",
+                "family": "Belniak"
+            },
+            {
+                "given": "N.",
+                "family": "Cartel"
+            },
+            {
+                "given": "H.",
+                "family": "Cameron"
+            },
+            {
+                "given": "M.",
+                "family": "Goldstein"
+            },
+            {
+                "given": "M.",
+                "family": "Gruol"
+            },
+            {
+                "given": "Z.",
+                "family": "Kaufman"
+            },
+            {
+                "given": "S.",
+                "family": "Litchfield"
+            },
+            {
+                "literal": "others"
+            }
+        ],
+        "type": "article",
+        "id": "49"
+    },
+    "50": {
+        "issued": {
+            "date-parts": [
+                [
+                    1997
+                ]
+            ]
+        },
+        "title": "The distribution of molecular gas in the starburst galaxy NGC 253",
+        "author": [
+            {
+                "given": "TAD",
+                "family": "Paglione"
+            },
+            {
+                "given": "O.",
+                "family": "Yam"
+            },
+            {
+                "given": "T.",
+                "family": "Tosaki"
+            },
+            {
+                "given": "JM",
+                "family": "Jackson"
+            }
+        ],
+        "container-title": "Bulletin of the american astronomical society",
+        "volume": "29",
+        "page": "1247",
+        "type": "paper-conference",
+        "id": "50"
+    },
+    "51": {
+        "issued": {
+            "date-parts": [
+                [
+                    2006
+                ]
+            ]
+        },
+        "title": "The faint end slope of starburst galaxy luminosity functions in the COSMOS 2-square degree field",
+        "author": [
+            {
+                "given": "C.",
+                "family": "Liu"
+            },
+            {
+                "given": "P.",
+                "family": "Capak"
+            },
+            {
+                "given": "B.",
+                "family": "Mobasher"
+            },
+            {
+                "given": "TA",
+                "family": "Paglione"
+            },
+            {
+                "given": "RM",
+                "family": "Rich"
+            },
+            {
+                "given": "NZ",
+                "family": "Scoville"
+            },
+            {
+                "given": "SM",
+                "family": "Tribiano"
+            },
+            {
+                "given": "N.",
+                "family": "Tyson"
+            },
+            {
+                "given": "C.",
+                "family": "Collaboration"
+            }
+        ],
+        "container-title": "Bulletin of the american astronomical society",
+        "volume": "38",
+        "page": "1005",
+        "type": "paper-conference",
+        "id": "51"
+    },
+    "52": {
+        "issued": {
+            "date-parts": [
+                [
+                    1995
+                ]
+            ]
+        },
+        "title": "Molecular, atomic, and ionized gas in the NGC 6334 star forming region",
+        "author": [
+            {
+                "given": "KE",
+                "family": "Kraemer"
+            },
+            {
+                "given": "JM",
+                "family": "Jackson"
+            },
+            {
+                "given": "TAD",
+                "family": "Paglione"
+            },
+            {
+                "given": "AP",
+                "family": "Lane"
+            }
+        ],
+        "container-title": "From gas to stars to dust",
+        "volume": "73",
+        "page": "83-86",
+        "type": "paper-conference",
+        "id": "52"
+    },
+    "53": {
+        "issued": {
+            "date-parts": [
+                [
+                    1993
+                ]
+            ]
+        },
+        "title": "HCN in the central 300 PC of the galaxy",
+        "author": [
+            {
+                "given": "JM",
+                "family": "Jackson"
+            },
+            {
+                "given": "MH",
+                "family": "Heyer"
+            },
+            {
+                "given": "TAD",
+                "family": "Paglione"
+            }
+        ],
+        "container-title": "Bulletin of the american astronomical society",
+        "volume": "25",
+        "page": "1467",
+        "type": "paper-conference",
+        "id": "53"
+    },
+    "54": {
+        "issued": {
+            "date-parts": [
+                [
+                    2006
+                ]
+            ]
+        },
+        "title": "The luminosity function of COSMOS radio sources",
+        "author": [
+            {
+                "given": "T.",
+                "family": "Paglione"
+            },
+            {
+                "given": "V.",
+                "family": "Smolcic"
+            },
+            {
+                "given": "E.",
+                "family": "Schinnerer"
+            },
+            {
+                "given": "K.",
+                "family": "Salvador"
+            },
+            {
+                "given": "P.",
+                "family": "Ciliegi"
+            },
+            {
+                "given": "M.",
+                "family": "Bondi"
+            },
+            {
+                "given": "S.",
+                "family": "Tribiano"
+            }
+        ],
+        "container-title": "Bulletin of the american astronomical society",
+        "volume": "38",
+        "page": "1005",
+        "type": "paper-conference",
+        "id": "54"
+    },
+    "55": {
+        "issued": {
+            "date-parts": [
+                [
+                    2010
+                ]
+            ]
+        },
+        "title": "ERRATUM:\" COSMIC EVOLUTION OF RADIO SELECTED ACTIVE GALACTIC NUCLEI IN THE COSMOS FIELD\"(2009, ApJ, 696, 24)",
+        "author": [
+            {
+                "given": "V.",
+                "family": "Smoli"
+            },
+            {
+                "given": "G.",
+                "family": "Zamorani"
+            },
+            {
+                "given": "E.",
+                "family": "Schinnerer"
+            },
+            {
+                "given": "S.",
+                "family": "Bardelli"
+            },
+            {
+                "given": "M.",
+                "family": "Bondi"
+            },
+            {
+                "given": "L.",
+                "family": "B<sup>i</sup>rzan"
+            },
+            {
+                "given": "CL",
+                "family": "Carilli"
+            },
+            {
+                "given": "P.",
+                "family": "Ciliegi"
+            },
+            {
+                "given": "M.",
+                "family": "Elvis"
+            },
+            {
+                "given": "CD",
+                "family": "Impey"
+            },
+            {
+                "literal": "others"
+            }
+        ],
+        "container-title": "Astrophysical journal",
+        "volume": "708",
+        "collection-number": "1",
+        "page": "909",
+        "type": "article",
+        "id": "55"
+    }
+}

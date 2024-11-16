@@ -1,0 +1,76 @@
+{
+    "entries": {
+        "1": {
+            "bib_type": "article-newspaper",
+            "entry_key": "barker_2016_swiss",
+            "fields": {
+                "date": "2016-06-06",
+                "abstract": [
+                    {
+                        "type": "text",
+                        "text": "Voters in Switzerland overwhelmingly reject a proposal to introduce a guaranteed monthly income for all citizens."
+                    }
+                ],
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Barker"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Anne"
+                            }
+                        ]
+                    }
+                ],
+                "journaltitle": [
+                    {
+                        "type": "text",
+                        "text": "ABC News"
+                    }
+                ],
+                "langid": "auenglish",
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Swiss Voters Say No to Guaranteed Free Money"
+                    }
+                ],
+                "url": "http://www.abc.net.au/news/2016-06-06/swiss-voters-reject-basic-income-proposal/7481672",
+                "urldate": "2017-12-06"
+            },
+            "unknown_fields": {
+                "rights": [
+                    {
+                        "type": "text",
+                        "text": "http://www.abc.net.au/conditions.htm#UseOfContent"
+                    }
+                ],
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        }
+    },
+    "warnings": [
+        {
+            "type": "unknown_field",
+            "field_name": "rights",
+            "entry": "barker_2016_swiss",
+            "line": 14
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "barker_2016_swiss",
+            "line": 14
+        }
+    ]
+}

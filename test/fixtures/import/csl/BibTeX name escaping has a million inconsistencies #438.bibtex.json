@@ -1,0 +1,139 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "article",
+        "fields": {
+            "date": "2014",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Nöme"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Name"
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Why "
+                },
+                {
+                    "type": "text",
+                    "text": "Is Apple Launching a ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "New Version of the ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "iPod?",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "2": {
+        "entry_key": "2",
+        "bib_type": "article",
+        "fields": {
+            "date": "2014",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Gögh"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Vincent"
+                        }
+                    ],
+                    "prefix": [
+                        {
+                            "type": "text",
+                            "text": "van"
+                        }
+                    ],
+                    "useprefix": true
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Why "
+                },
+                {
+                    "type": "text",
+                    "text": "Is Apple Launching a ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "New Version of the ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "iPod?",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

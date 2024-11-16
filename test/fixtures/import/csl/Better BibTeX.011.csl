@@ -1,0 +1,31 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2010
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Myungsook",
+                "family": "Klassen"
+            },
+            {
+                "given": "Nyunsu",
+                "family": "Kim"
+            },
+            {
+                "given": "Wei Ming",
+                "family": "Liu"
+            }
+        ],
+        "title": "Empirical study of support vector machine kernels with applications to microarray data",
+        "container-title": "CATA",
+        "page": "25-30",
+        "note": "svm liniowe najlepsze",
+        "type": "paper-conference",
+        "id": "1"
+    }
+}

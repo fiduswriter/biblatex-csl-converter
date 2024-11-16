@@ -1,0 +1,101 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2013,
+                    3
+                ]
+            ]
+        },
+        "language": "en-US",
+        "title": "Increasing cardiopulmonary resuscitation provision in communities with low bystander cardiopulmonary resuscitation rates: a science advisory from the american heart association for healthcare providers, policymakers, public health departments, and community leaders",
+        "volume": "127",
+        "ISSN": "1524-4539",
+        "title-short": "Increasing cardiopulmonary resuscitation provision in communities with low bystander cardiopulmonary resuscitation rates",
+        "DOI": "10.1161/CIR.0b013e318288b4dd",
+        "collection-number": "12",
+        "container-title": "Circulation",
+        "author": [
+            {
+                "given": "Comilla",
+                "family": "Sasson"
+            },
+            {
+                "given": "Hendrika",
+                "family": "Meischke"
+            },
+            {
+                "given": "Benjamin S",
+                "family": "Abella"
+            },
+            {
+                "given": "Robert A",
+                "family": "Berg"
+            },
+            {
+                "given": "Bentley J",
+                "family": "Bobrow"
+            },
+            {
+                "given": "Paul S",
+                "family": "Chan"
+            },
+            {
+                "given": "Elisabeth Dowling",
+                "family": "Root"
+            },
+            {
+                "given": "Michele",
+                "family": "Heisler"
+            },
+            {
+                "given": "Jerrold H",
+                "family": "Levy"
+            },
+            {
+                "given": "Mark",
+                "family": "Link"
+            },
+            {
+                "given": "Frederick",
+                "family": "Masoudi"
+            },
+            {
+                "given": "Marcus",
+                "family": "Ong"
+            },
+            {
+                "given": "Michael R",
+                "family": "Sayre"
+            },
+            {
+                "given": "John S",
+                "family": "Rumsfeld"
+            },
+            {
+                "given": "Thomas D",
+                "family": "Rea"
+            },
+            {
+                "literal": "American Heart Association Council on Quality of Care and Outcomes Research"
+            },
+            {
+                "literal": "Emergency Cardiovascular Care Committee"
+            },
+            {
+                "literal": "Council on Cardiopulmonary, Critical Care, Perioperative and Resuscitation"
+            },
+            {
+                "literal": "Council on Clinical Cardiology"
+            },
+            {
+                "literal": "Council on Cardiovascular Surgery and Anesthesia"
+            }
+        ],
+        "note": "PMID: 23439512",
+        "page": "1342-1350",
+        "type": "article",
+        "id": "1"
+    }
+}

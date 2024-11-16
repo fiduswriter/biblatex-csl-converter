@@ -1,0 +1,23 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2007
+                ]
+            ]
+        },
+        "title": "<span class=\"nocase\">Theories of globalization</span>",
+        "container-title": "<span class=\"nocase\">The Blackwell companion to globalization</span>",
+        "publisher": "John Wiley & Sons",
+        "author": [
+            {
+                "given": "William I",
+                "family": "Robinson"
+            }
+        ],
+        "page": "125-143",
+        "type": "chapter",
+        "id": "1"
+    }
+}

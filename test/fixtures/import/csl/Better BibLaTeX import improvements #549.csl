@@ -1,0 +1,145 @@
+{
+    "1": {
+        "author": [
+            {
+                "literal": "01e"
+            }
+        ],
+        "title": "Blah <i>emph</i> and “enquote”.",
+        "type": "article",
+        "id": "1"
+    },
+    "2": {
+        "author": [
+            {
+                "literal": "01b"
+            }
+        ],
+        "title": "Blah <i>mkbibemph</i> and “mkbibquote”.",
+        "type": "article",
+        "id": "2"
+    },
+    "3": {
+        "author": [
+            {
+                "literal": "02e"
+            }
+        ],
+        "title": "Blah <i>emph</i> and “enquote”.",
+        "type": "book",
+        "id": "3"
+    },
+    "4": {
+        "author": [
+            {
+                "literal": "02b"
+            }
+        ],
+        "title": "Blah <i>mkbibemph</i> and “mkbibquote”.",
+        "type": "book",
+        "id": "4"
+    },
+    "5": {
+        "issued": {
+            "date-parts": [
+                [
+                    2003
+                ]
+            ]
+        },
+        "title": "Xenonika: medical texts associated with xenones in the late byzantine period",
+        "author": [
+            {
+                "given": "David Christopher",
+                "family": "Bennett"
+            }
+        ],
+        "type": "thesis",
+        "id": "5"
+    },
+    "6": {
+        "issued": {
+            "date-parts": [
+                [
+                    2013
+                ]
+            ]
+        },
+        "title": "Byzantium between east and west: competing hellenisms in the <span class=\"nocase\"><i>Alexiad</i></span> of anna komnene and her contemporaries",
+        "author": [
+            {
+                "given": "Glen",
+                "family": "Cooper"
+            }
+        ],
+        "page": "263-87",
+        "type": "chapter",
+        "id": "6"
+    },
+    "7": {
+        "issued": {
+            "date-parts": [
+                [
+                    1891
+                ]
+            ]
+        },
+        "title": "Die dem boethius fälschlich zugeschriebene abhandlung des dominicus gundisalvi <span class=\"nocase\">'De</span> unitate'",
+        "container-title": "Beiträge zur geschichte der philosophie des mittelalters",
+        "page": "1-11",
+        "volume": "1",
+        "editor": [
+            {
+                "given": "Paul",
+                "family": "Correns"
+            }
+        ],
+        "type": "article",
+        "id": "7"
+    },
+    "8": {
+        "issued": {
+            "date-parts": [
+                [
+                    1985
+                ]
+            ]
+        },
+        "title": "Encyclopedia iranica",
+        "author": [
+            {
+                "given": "Hamid",
+                "family": "Algar"
+            }
+        ],
+        "page": "172-4",
+        "volume": "4",
+        "type": "entry-encyclopedia",
+        "id": "8"
+    },
+    "9": {
+        "issued": {
+            "date-parts": [
+                [
+                    2012
+                ]
+            ]
+        },
+        "title": "Herbs and healers from the ancient mediterranean through the medieval west: essays in honor of john M. Riddle",
+        "editor": [
+            {
+                "given": "Anne",
+                "family": "Arsdall",
+                "non-dropping-particle": "van"
+            },
+            {
+                "given": "Timothy",
+                "family": "Graham"
+            }
+        ],
+        "publisher-place": "Burlington, VT",
+        "publisher": "Ashgate",
+        "type": "dataset",
+        "id": "9"
+    }
+}

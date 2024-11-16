@@ -1,0 +1,5977 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "article",
+        "fields": {
+            "date": "2001",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "A mapping survey of the 13CO and 12CO emission in galaxies"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paglione"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "T.A.D."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Wall"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "WF"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Young"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "J.S."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Heyer"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "M.H."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Richard"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "M."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Goldstein"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "M."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Kaufman"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Z."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Nantais"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "J."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Perry"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "G."
+                        }
+                    ]
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "The astrophysical journal supplement series"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "135"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "183"
+                        }
+                    ]
+                ]
+            ]
+        }
+    },
+    "2": {
+        "entry_key": "2",
+        "bib_type": "article",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Nguyen-Q-rieu. 1993"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Jackson"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "J.M."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paglione"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "T.A.D."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Ishizuki"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "S."
+                        }
+                    ]
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "ApJ"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "418"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "L13"
+                        }
+                    ]
+                ]
+            ]
+        }
+    },
+    "3": {
+        "entry_key": "3",
+        "bib_type": "article",
+        "fields": {
+            "date": "1996",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "HCN and CO in the central 630 parsecs of the galaxy"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Jackson"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "J.M."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Heyer"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "M.H."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paglione"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "T.A.D."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Bolatto"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "A.D."
+                        }
+                    ]
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "The astrophysical journal letters"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "456"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "L91"
+                        }
+                    ]
+                ]
+            ]
+        }
+    },
+    "4": {
+        "entry_key": "4",
+        "bib_type": "article",
+        "fields": {
+            "date": "1996",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Diffuse gamma-ray emission from the starburst galaxy NGC 253"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paglione"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "T.A.D."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Marscher"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "A.P."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Jackson"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "J.M."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Bertsch"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "D.L."
+                        }
+                    ]
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "The astrophysical journal"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "460"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "295"
+                        }
+                    ]
+                ]
+            ]
+        }
+    },
+    "5": {
+        "entry_key": "5",
+        "bib_type": "article",
+        "fields": {
+            "date": "1995",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "The distribution of the dense clouds in the starburst nucleus of NGC 253"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paglione"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "T.A.D."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Tosaki"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "T."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Jackson"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "J.M."
+                        }
+                    ]
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "The astrophysical journal letters"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "454"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "L117"
+                        }
+                    ]
+                ]
+            ]
+        }
+    },
+    "6": {
+        "entry_key": "6",
+        "bib_type": "article",
+        "fields": {
+            "date": "1999",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Diffuse gamma-ray emission from starburst galaxies and M31"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Blom"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "J.J."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paglione"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "T.A.D."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "nana"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "A."
+                        }
+                    ],
+                    "prefix": [
+                        {
+                            "type": "text",
+                            "text": "Carrami"
+                        }
+                    ],
+                    "useprefix": true
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "The astrophysical journal"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "516"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "744"
+                        }
+                    ]
+                ]
+            ]
+        }
+    },
+    "7": {
+        "entry_key": "7",
+        "bib_type": "article",
+        "fields": {
+            "date": "2009",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Cosmic evolution of radio selected active galactic nuclei in the COSMOS field"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "ci'c"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "V."
+                        }
+                    ],
+                    "prefix": [
+                        {
+                            "type": "text",
+                            "text": "Smol"
+                        }
+                    ],
+                    "useprefix": true
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Zamorani"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "G."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Schinnerer"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "E."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Bardelli"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "S."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Bondi"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "M."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "B"
+                        },
+                        {
+                            "type": "text",
+                            "text": "i",
+                            "marks": [
+                                {
+                                    "type": "sup"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "text",
+                            "text": "rzan"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "L."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Carilli"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "CL"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Ciliegi"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "P."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Elvis"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "M."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Impey"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "CD"
+                        }
+                    ]
+                },
+                {
+                    "literal": [
+                        {
+                            "type": "text",
+                            "text": "others"
+                        }
+                    ]
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "The astrophysical journal"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "696"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "24"
+                        }
+                    ]
+                ]
+            ]
+        }
+    },
+    "8": {
+        "entry_key": "8",
+        "bib_type": "article",
+        "fields": {
+            "date": "1997",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "The average properties of the dense molecular gas in galaxies"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paglione"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "T.A.D."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Jackson"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "J.M."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Ishizuki"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "S."
+                        }
+                    ]
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "The astrophysical journal"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "484"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "656"
+                        }
+                    ]
+                ]
+            ]
+        }
+    },
+    "9": {
+        "entry_key": "9",
+        "bib_type": "article",
+        "fields": {
+            "date": "1995",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Submillimeter HCN and HCO (+) emission from galaxies"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Jackson"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "J.M."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paglione"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "T.A.D."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Carlstrom"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "J.E."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Rieu"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "N.Q."
+                        }
+                    ]
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "The astrophysical journal"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "438"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "695"
+                        },
+                        {
+                            "type": "text",
+                            "text": "701"
+                        }
+                    ]
+                ]
+            ]
+        }
+    },
+    "10": {
+        "entry_key": "10",
+        "bib_type": "article",
+        "fields": {
+            "date": "1998",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Interpreting the HCN/CO intensity ratio in the galactic center"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paglione"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "T.A.D."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Jackson"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "J.M."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Bolatto"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "A.D."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Heyer"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "M.H."
+                        }
+                    ]
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "The astrophysical journal"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "493"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "680"
+                        }
+                    ]
+                ]
+            ]
+        }
+    },
+    "11": {
+        "entry_key": "11",
+        "bib_type": "article",
+        "fields": {
+            "date": "2009",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "The dust-unbiased cosmic star-formation history from the 20 CM VLA-COSMOS survey"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "ci'c"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "V."
+                        }
+                    ],
+                    "prefix": [
+                        {
+                            "type": "text",
+                            "text": "Smol"
+                        }
+                    ],
+                    "useprefix": true
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Schinnerer"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "E."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Zamorani"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "G."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Bell"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "EF"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Bondi"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "M."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Carilli"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "CL"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Ciliegi"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "P."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Mobasher"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "B."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paglione"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "T."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Scodeggio"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "M."
+                        }
+                    ]
+                },
+                {
+                    "literal": [
+                        {
+                            "type": "text",
+                            "text": "others"
+                        }
+                    ]
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "The astrophysical journal"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "690"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "610"
+                        }
+                    ]
+                ]
+            ]
+        }
+    },
+    "12": {
+        "entry_key": "12",
+        "bib_type": "article",
+        "fields": {
+            "date": "1993",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Dense molecular gas toward the nucleus of the seyfert galaxy NGC 1068"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Jackson"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "J.M."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paglione"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "T.A.D."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Ishizuki"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "S."
+                        }
+                    ]
+                },
+                {
+                    "literal": [
+                        {
+                            "type": "text",
+                            "text": "others"
+                        }
+                    ]
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "The astrophysical journal"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "418"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "L13"
+                        }
+                    ]
+                ]
+            ]
+        }
+    },
+    "13": {
+        "entry_key": "13",
+        "bib_type": "article",
+        "fields": {
+            "date": "2004",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "The structure, kinematics, and physical properties of the molecular gas in the starburst nucleus of NGC 253"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paglione"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "T.A.D."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Yam"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "O."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Tosaki"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "T."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Jackson"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "J.M."
+                        }
+                    ]
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "The astrophysical journal"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "611"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "835"
+                        }
+                    ]
+                ]
+            ]
+        }
+    },
+    "14": {
+        "entry_key": "14",
+        "bib_type": "article",
+        "fields": {
+            "date": "1997",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "A 2000 M rotating molecular disk around NGC 6334A"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Kraemer"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "K.E."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Jackson"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "J.M."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paglione"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "T.A.D."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Bolatto"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "A.D."
+                        }
+                    ]
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "The astrophysical journal"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "478"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "614"
+                        }
+                    ]
+                ]
+            ]
+        }
+    },
+    "15": {
+        "entry_key": "15",
+        "bib_type": "article",
+        "fields": {
+            "date": "2008",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "The faint-end slopes of galaxy luminosity functions in the COSMOS field"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Liu"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "C.T."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Capak"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "P."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Mobasher"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "B."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paglione"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "T.A.D."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Rich"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "R.M."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Scoville"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "N.Z."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Tribiano"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "S.M."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Tyson"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "N.D."
+                        }
+                    ]
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "The astrophysical journal"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "672"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "198"
+                        }
+                    ]
+                ]
+            ]
+        }
+    },
+    "16": {
+        "entry_key": "16",
+        "bib_type": "article",
+        "fields": {
+            "date": "1995",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "First observations of extragalactic CSJ= 1 goes to 0"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paglione"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "T.A.D."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Jackson"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "J.M."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Ishizuki"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "S."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Rieu"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "N.Q."
+                        }
+                    ]
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "The astronomical journal"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "109"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "1716"
+                        },
+                        {
+                            "type": "text",
+                            "text": "1723"
+                        }
+                    ]
+                ]
+            ]
+        }
+    },
+    "17": {
+        "entry_key": "17",
+        "bib_type": "article",
+        "fields": {
+            "date": "1996",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "ApJ, 456"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Jackson"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "JM"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Heyer"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "MH"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paglione"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "TAD"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Bolatto"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "AD"
+                        }
+                    ]
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "L91 first citation in article| CrossRef link| IOP article| abstract at astrophysics data system"
+                }
+            ]
+        }
+    },
+    "18": {
+        "entry_key": "18",
+        "bib_type": "article",
+        "fields": {
+            "date": "1995",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "ApJ, 454"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paglione"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "TAD"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Tosaki"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "T."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Jackson"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "JM"
+                        }
+                    ]
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "L117 first citation in article| IOP article| CrossRef link| abstract at astrophysics data system"
+                }
+            ]
+        }
+    },
+    "19": {
+        "entry_key": "19",
+        "bib_type": "article",
+        "fields": {
+            "date": "1716",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Nguyen-Q-rieu 1995"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paglione"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "TAD"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Jackson"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "JM"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Ishizuki"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "S."
+                        }
+                    ]
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "AJ"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "109"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "1716"
+                        }
+                    ]
+                ]
+            ]
+        }
+    },
+    "20": {
+        "entry_key": "20",
+        "bib_type": "article",
+        "fields": {
+            "date": "2000",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Properties of the photodissociated gas in NGC 6334"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Kraemer"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "K.E."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Jackson"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "J.M."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Lane"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "A.P."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paglione"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "T.A.D."
+                        }
+                    ]
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "The astrophysical journal"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "542"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "946"
+                        }
+                    ]
+                ]
+            ]
+        }
+    },
+    "21": {
+        "entry_key": "21",
+        "bib_type": "article",
+        "fields": {
+            "date": "2000",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Measurements of dynamic pointing variations of a large radio telescope"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Smith"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "D.R."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paglione"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "T.A.D."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Lovell"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "A.J."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Ukita"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "N."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Matsuo"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "H."
+                        }
+                    ]
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Proceedings of SPIE"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "4015"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "467"
+                        }
+                    ]
+                ]
+            ]
+        }
+    },
+    "22": {
+        "entry_key": "22",
+        "bib_type": "inproceedings",
+        "fields": {
+            "date": "2002",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "CN/HCN: a global indicator of star formation?"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paglione"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "TAD"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Jackson"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "JM"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Bergin"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "EA"
+                        }
+                    ]
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "Bulletin of the american astronomical society"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "34"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "1229"
+                        }
+                    ]
+                ]
+            ]
+        }
+    },
+    "23": {
+        "entry_key": "23",
+        "bib_type": "article",
+        "fields": {
+            "date": "2010",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "ERRATUM"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Smolcic"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "V."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Zamorani"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "G."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Schinnerer"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "E."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Bardelli"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "S."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Bondi"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "M."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "B"
+                        },
+                        {
+                            "type": "text",
+                            "text": "i",
+                            "marks": [
+                                {
+                                    "type": "sup"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "text",
+                            "text": "rzan"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "L."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Carilli"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "CL"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Ciliegi"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "P."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Elvis"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "M."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Impey"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "CD"
+                        }
+                    ]
+                },
+                {
+                    "literal": [
+                        {
+                            "type": "text",
+                            "text": "others"
+                        }
+                    ]
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "The astrophysical journal"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "708"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "909"
+                        }
+                    ]
+                ]
+            ]
+        }
+    },
+    "24": {
+        "entry_key": "24",
+        "bib_type": "article",
+        "fields": {
+            "date": "2010",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "ERRATUM"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "ci'c"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "V."
+                        }
+                    ],
+                    "prefix": [
+                        {
+                            "type": "text",
+                            "text": "Smol"
+                        }
+                    ],
+                    "useprefix": true
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Zamorani"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "G."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Schinnerer"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "E."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Bardelli"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "S."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Bondi"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "M."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "B"
+                        },
+                        {
+                            "type": "text",
+                            "text": "i",
+                            "marks": [
+                                {
+                                    "type": "sup"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "text",
+                            "text": "rzan"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "L."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Carilli"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "CL"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Ciliegi"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "P."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Elvis"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "M."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Impey"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "CD"
+                        }
+                    ]
+                },
+                {
+                    "literal": [
+                        {
+                            "type": "text",
+                            "text": "others"
+                        }
+                    ]
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "The astrophysical journal"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "708"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "909"
+                        }
+                    ]
+                ]
+            ]
+        }
+    },
+    "25": {
+        "entry_key": "25",
+        "bib_type": "article",
+        "fields": {
+            "date": "1999",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Gamma-rays from starbursts and M31"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Blom"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "JJ"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paglione"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "TAD"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "nana"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "A."
+                        }
+                    ],
+                    "prefix": [
+                        {
+                            "type": "text",
+                            "text": "Carrami"
+                        }
+                    ],
+                    "useprefix": true
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Astrophysical letters and communications"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "39"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "169"
+                        }
+                    ]
+                ]
+            ]
+        }
+    },
+    "26": {
+        "entry_key": "26",
+        "bib_type": "article",
+        "fields": {
+            "date": "2001",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "A mapping survey of the (CO)-C-13 and (CO)-C-12 emission in galaxies"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paglione"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "TAD"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Wall"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "WF"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Young"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "JS"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Heyer"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "MH"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Richard"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "M."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Goldstein"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "M."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Kaufman"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Z."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Nantais"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "J."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Perry"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "G."
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "27": {
+        "entry_key": "27",
+        "bib_type": "article",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "The source of diffuse gamma-rays from the seyfert/starburst NGC 4945"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paglione"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "T.A.D."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Georganopoulos"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "M."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Hunt-Walker"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "N."
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "28": {
+        "entry_key": "28",
+        "bib_type": "article",
+        "fields": {
+            "date": "2009",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "COSMIC EVOLUTION OF RADIO SELECTED ACTIVE GALACTIC NUCLEI IN THE COSMOS fieldbased on observations with the national radio astronomy observatory which is a facility of the national science foundation operated under cooperative agreement by associated universities, inc."
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Smoli"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "V."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Zamorani"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "G."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Schinnerer"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "E."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Bardelli"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "S."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Bondi"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "M."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "B"
+                        },
+                        {
+                            "type": "text",
+                            "text": "i",
+                            "marks": [
+                                {
+                                    "type": "sup"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "text",
+                            "text": "rzan"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "L."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Carilli"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "CL"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Ciliegi"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "P."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Elvis"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "M."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Impey"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "CD"
+                        }
+                    ]
+                },
+                {
+                    "literal": [
+                        {
+                            "type": "text",
+                            "text": "others"
+                        }
+                    ]
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Astrophysical journal"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "696"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "24"
+                        }
+                    ]
+                ]
+            ]
+        }
+    },
+    "29": {
+        "entry_key": "29",
+        "bib_type": "inproceedings",
+        "fields": {
+            "date": "2002",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Utilizing the light curves of binary stars in undergraduate and secondary school education"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Spergel"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "M."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paglione"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "T."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paczynski"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "B."
+                        }
+                    ]
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "34th COSPAR scientific assembly"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "34"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "3142"
+                        }
+                    ]
+                ]
+            ]
+        }
+    },
+    "30": {
+        "entry_key": "30",
+        "bib_type": "article",
+        "fields": {
+            "date": "1997",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "The properties of the dense gas in the nuclei of spiral galaxies"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paglione"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "T.A.D."
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "31": {
+        "entry_key": "31",
+        "bib_type": "inproceedings",
+        "fields": {
+            "date": "1993",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Observations of the CS J= 1-> 0 line in galaxies"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paglione"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "TAD"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Jackson"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "JM"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Ishizuki"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "S."
+                        }
+                    ]
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "Bulletin of the american astronomical society"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "25"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "1328"
+                        }
+                    ]
+                ]
+            ]
+        }
+    },
+    "32": {
+        "entry_key": "32",
+        "bib_type": "article",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "UMIGS home"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paglione"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "TAD"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Wall"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "WF"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Heyer"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "MH"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "33": {
+        "entry_key": "33",
+        "bib_type": "inproceedings",
+        "fields": {
+            "date": "2004",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Molecular photodissociation regions in NGC 253"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paglione"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "T."
+                        }
+                    ]
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "The neutral ISM in starburst galaxies"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "320"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "47"
+                        }
+                    ]
+                ]
+            ]
+        }
+    },
+    "34": {
+        "entry_key": "34",
+        "bib_type": "inproceedings",
+        "fields": {
+            "date": "2002",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "The york college observatory outreach program"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paglione"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "T."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Spergel"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "M."
+                        }
+                    ]
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "34th COSPAR scientific assembly"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "34"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "3144"
+                        }
+                    ]
+                ]
+            ]
+        }
+    },
+    "35": {
+        "entry_key": "35",
+        "bib_type": "inproceedings",
+        "fields": {
+            "date": "2010",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Diffuse gamma-rays from star forming galaxies"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paglione"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "T."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Crocker"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "M."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Hunt-Walker"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "N."
+                        }
+                    ]
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "Bulletin of the american astronomical society"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "42"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "248"
+                        }
+                    ]
+                ]
+            ]
+        }
+    },
+    "36": {
+        "entry_key": "36",
+        "bib_type": "article",
+        "fields": {
+            "date": "1995",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Diffuse gamma-ray emission from the starburst galaxy NGC 253"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Bertsch"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "D.L."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paglione"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "T.A.D."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Marscher"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "A.P."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Jackson"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "J.M."
+                        }
+                    ]
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "NASA"
+                }
+            ]
+        }
+    },
+    "37": {
+        "entry_key": "37",
+        "bib_type": "inproceedings",
+        "fields": {
+            "date": "1996",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "The dense interstellar medium in the central 600 PC of the milky way"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Bolatto"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "AD"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paglione"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "TAD"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Jackson"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "JM"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Heyer"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "MH"
+                        }
+                    ]
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "Revista mexicana de astronomia y astrofisica conference series"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "4"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "120"
+                        }
+                    ]
+                ]
+            ]
+        }
+    },
+    "38": {
+        "entry_key": "38",
+        "bib_type": "inproceedings",
+        "fields": {
+            "date": "1998",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "The properties of the dense molecular gas in the galactic center"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Yam"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "O."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paglione"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "TAD"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Jackson"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "JM"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Bolatto"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "AD"
+                        }
+                    ]
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "IX latin american regional IAU meeting,"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "1"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "80"
+                        }
+                    ]
+                ]
+            ]
+        }
+    },
+    "39": {
+        "entry_key": "39",
+        "bib_type": "inproceedings",
+        "fields": {
+            "date": "2005",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "The local starburst galaxy luminosity function in the COSMOS 2 square degree field"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Liu"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "CT"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paglione"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "TAD"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Tribiano"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "S."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Tyson"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "ND"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Collaboration"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "C."
+                        }
+                    ]
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "Bulletin of the american astronomical society"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "37"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "1245"
+                        }
+                    ]
+                ]
+            ]
+        }
+    },
+    "40": {
+        "entry_key": "40",
+        "bib_type": "inproceedings",
+        "fields": {
+            "date": "1999",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "The umass/INAOE galaxy survey"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paglione"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "TAD"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Heyer"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "MH"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Young"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "JS"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Belniak"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "M."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Cartel"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "N."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Cameron"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "H."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Goldstein"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "M."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Gruol"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "M."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Kaufman"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Z."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Litchfield"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "S."
+                        }
+                    ]
+                },
+                {
+                    "literal": [
+                        {
+                            "type": "text",
+                            "text": "others"
+                        }
+                    ]
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "Bulletin of the american astronomical society"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "31"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "892"
+                        }
+                    ]
+                ]
+            ]
+        }
+    },
+    "41": {
+        "entry_key": "41",
+        "bib_type": "article",
+        "fields": {
+            "date": "2001",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Mapping 13CO and 12CO in galaxies"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paglione"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "T.A.D."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Wall"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "WF"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Young"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "J.S."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Heyer"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "M.H."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Richard"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "M."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Goldstein"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "M."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Kaufman"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Z."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Nantais"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "J."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Perry"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "G."
+                        }
+                    ]
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "The astrophysical journal supplement series"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "135"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "183"
+                        },
+                        {
+                            "type": "text",
+                            "text": "200"
+                        }
+                    ]
+                ]
+            ]
+        }
+    },
+    "42": {
+        "entry_key": "42",
+        "bib_type": "article",
+        "fields": {
+            "date": "1993",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Submillimeter HCN and HCO+ lines in galaxies."
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Jackson"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "J.M."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paglione"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "T.A."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Carlstrom"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "J.E."
+                        }
+                    ]
+                },
+                {
+                    "literal": [
+                        {
+                            "type": "text",
+                            "text": "others"
+                        }
+                    ]
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Star formation, galaxies and the interstellar medium: proceedings of the 4th EIPC astrophysical workshop held at the elba international physics center, marciana marina, elba island, italy, june 1-6, 1992"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "177"
+                        }
+                    ]
+                ]
+            ]
+        }
+    },
+    "43": {
+        "entry_key": "43",
+        "bib_type": "article",
+        "fields": {
+            "date": "2012",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Properties of nearby starburst galaxies based on their diffuse gamma-ray emission"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paglione"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "T.A.D."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Abrahams"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "R.D."
+                        }
+                    ]
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Arxiv preprint arXiv:1206.3530"
+                }
+            ]
+        }
+    },
+    "44": {
+        "entry_key": "44",
+        "bib_type": "inproceedings",
+        "fields": {
+            "date": "1996",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Dense molecular gas in the central 630 parsecs of the milky way"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paglione"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "T."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Jackson"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "J."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Heyer"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "M."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Bolatto"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "A."
+                        }
+                    ]
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "Bulletin of the american astronomical society"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "28"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "888"
+                        }
+                    ]
+                ]
+            ]
+        }
+    },
+    "45": {
+        "entry_key": "45",
+        "bib_type": "inproceedings",
+        "fields": {
+            "date": "2002",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "An urban observatory for research, education and outreach"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paglione"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "TAD"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Spergel"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "M."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Schlein"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "J."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Denecke"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "E."
+                        }
+                    ]
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "Bulletin of the american astronomical society"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "34"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "1106"
+                        }
+                    ]
+                ]
+            ]
+        }
+    },
+    "46": {
+        "entry_key": "46",
+        "bib_type": "inproceedings",
+        "fields": {
+            "date": "1997",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Tracing the mass of dense gas in giant molecular clouds"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paglione"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "TAD"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Yam"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "O."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Heyer"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "MH"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Jackson"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "JM"
+                        }
+                    ]
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "Bulletin of the american astronomical society"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "29"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "785"
+                        }
+                    ]
+                ]
+            ]
+        }
+    },
+    "47": {
+        "entry_key": "47",
+        "bib_type": "inproceedings",
+        "fields": {
+            "date": "2005",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Evolution of clustering of starburst galaxies in the COSMOS field"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Tribiano"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "SM"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paglione"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "TAD"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Shopbell"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "PL"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Capek"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "P."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Liu"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "C."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Tyson"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "ND"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "COSMOS"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "T."
+                        }
+                    ]
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "Bulletin of the american astronomical society"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "37"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "1245"
+                        }
+                    ]
+                ]
+            ]
+        }
+    },
+    "48": {
+        "entry_key": "48",
+        "bib_type": "article",
+        "fields": {
+            "date": "2009",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "THE DUST-UNBIASED COSMIC STAR-FORMATION HISTORY FROM THE 20 CM VLA-COSMOS surveybased on observations with the national radio astronomy observatory which is a facility of the national science foundation operated under cooperative agreement by associated universities, inc."
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Smoli"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "V."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Schinnerer"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "E."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Zamorani"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "G."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Bell"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "EF"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Bondi"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "M."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Carilli"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "CL"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Ciliegi"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "P."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Mobasher"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "B."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paglione"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "T."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Scodeggio"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "M."
+                        }
+                    ]
+                },
+                {
+                    "literal": [
+                        {
+                            "type": "text",
+                            "text": "others"
+                        }
+                    ]
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Astrophysical journal"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "690"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "610"
+                        }
+                    ]
+                ]
+            ]
+        }
+    },
+    "49": {
+        "entry_key": "49",
+        "bib_type": "article",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Session 47. Between the stars I: the ISM, galactic and extragalactic display, tuesday, june 1, 1999, 10: 00am-7: 00pm, southwest exhibit hall"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paglione"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "TAD"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Heyer"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "MH"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Young"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "JS"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Belniak"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "M."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Cartel"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "N."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Cameron"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "H."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Goldstein"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "M."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Gruol"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "M."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Kaufman"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Z."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Litchfield"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "S."
+                        }
+                    ]
+                },
+                {
+                    "literal": [
+                        {
+                            "type": "text",
+                            "text": "others"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "50": {
+        "entry_key": "50",
+        "bib_type": "inproceedings",
+        "fields": {
+            "date": "1997",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "The distribution of molecular gas in the starburst galaxy NGC 253"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paglione"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "TAD"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Yam"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "O."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Tosaki"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "T."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Jackson"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "JM"
+                        }
+                    ]
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "Bulletin of the american astronomical society"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "29"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "1247"
+                        }
+                    ]
+                ]
+            ]
+        }
+    },
+    "51": {
+        "entry_key": "51",
+        "bib_type": "inproceedings",
+        "fields": {
+            "date": "2006",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "The faint end slope of starburst galaxy luminosity functions in the COSMOS 2-square degree field"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Liu"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "C."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Capak"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "P."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Mobasher"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "B."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paglione"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "TA"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Rich"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "RM"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Scoville"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "NZ"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Tribiano"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "SM"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Tyson"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "N."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Collaboration"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "C."
+                        }
+                    ]
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "Bulletin of the american astronomical society"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "38"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "1005"
+                        }
+                    ]
+                ]
+            ]
+        }
+    },
+    "52": {
+        "entry_key": "52",
+        "bib_type": "inproceedings",
+        "fields": {
+            "date": "1995",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Molecular, atomic, and ionized gas in the NGC 6334 star forming region"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Kraemer"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "KE"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Jackson"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "JM"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paglione"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "TAD"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Lane"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "AP"
+                        }
+                    ]
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "From gas to stars to dust"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "73"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "83"
+                        },
+                        {
+                            "type": "text",
+                            "text": "86"
+                        }
+                    ]
+                ]
+            ]
+        }
+    },
+    "53": {
+        "entry_key": "53",
+        "bib_type": "inproceedings",
+        "fields": {
+            "date": "1993",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "HCN in the central 300 PC of the galaxy"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Jackson"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "JM"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Heyer"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "MH"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paglione"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "TAD"
+                        }
+                    ]
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "Bulletin of the american astronomical society"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "25"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "1467"
+                        }
+                    ]
+                ]
+            ]
+        }
+    },
+    "54": {
+        "entry_key": "54",
+        "bib_type": "inproceedings",
+        "fields": {
+            "date": "2006",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "The luminosity function of COSMOS radio sources"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paglione"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "T."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Smolcic"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "V."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Schinnerer"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "E."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Salvador"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "K."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Ciliegi"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "P."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Bondi"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "M."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Tribiano"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "S."
+                        }
+                    ]
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "Bulletin of the american astronomical society"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "38"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "1005"
+                        }
+                    ]
+                ]
+            ]
+        }
+    },
+    "55": {
+        "entry_key": "55",
+        "bib_type": "article",
+        "fields": {
+            "date": "2010",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "ERRATUM:\" COSMIC EVOLUTION OF RADIO SELECTED ACTIVE GALACTIC NUCLEI IN THE COSMOS FIELD\"(2009, ApJ, 696, 24)"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Smoli"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "V."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Zamorani"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "G."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Schinnerer"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "E."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Bardelli"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "S."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Bondi"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "M."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "B"
+                        },
+                        {
+                            "type": "text",
+                            "text": "i",
+                            "marks": [
+                                {
+                                    "type": "sup"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "text",
+                            "text": "rzan"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "L."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Carilli"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "CL"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Ciliegi"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "P."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Elvis"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "M."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Impey"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "CD"
+                        }
+                    ]
+                },
+                {
+                    "literal": [
+                        {
+                            "type": "text",
+                            "text": "others"
+                        }
+                    ]
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Astrophysical journal"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "708"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "909"
+                        }
+                    ]
+                ]
+            ]
+        }
+    }
+}

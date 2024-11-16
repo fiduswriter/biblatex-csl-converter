@@ -1,0 +1,180 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "article",
+        "fields": {
+            "date": "2015",
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "zotero-better-bibtex - Make Zotero effective for us LaTeX holdouts"
+                }
+            ],
+            "author": [
+                {
+                    "literal": [
+                        {
+                            "type": "text",
+                            "text": "Firstname Retorquere"
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Replicate "
+                },
+                {
+                    "type": "text",
+                    "text": "Zotero key algorithm · ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Issue #439 · retorquere/zotero-better-bibtex",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "urldate": "2016-01-29"
+        }
+    },
+    "2": {
+        "entry_key": "2",
+        "bib_type": "article",
+        "fields": {
+            "date": "2016",
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "zotero-better-bibtex - Make Zotero effective for us LaTeX holdouts"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Retorquere"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Firstname"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Retorquere2"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Firstname2"
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Replicate "
+                },
+                {
+                    "type": "text",
+                    "text": "Zotero key algorithm · ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Issue #439 · retorquere/zotero-better-bibtex",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "urldate": "2016-01-29"
+        }
+    },
+    "3": {
+        "entry_key": "3",
+        "bib_type": "article",
+        "fields": {
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "zotero-better-bibtex - Make Zotero effective for us LaTeX holdouts"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Retorquere-Double"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "First-Double"
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Replicate "
+                },
+                {
+                    "type": "text",
+                    "text": "Zotero key algorithm · ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Issue #439 · retorquere/zotero-better-bibtex",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "urldate": "2016-01-29"
+        }
+    }
+}

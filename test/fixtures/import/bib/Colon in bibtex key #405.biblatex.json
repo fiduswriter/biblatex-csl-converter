@@ -1,0 +1,171 @@
+{
+    "entries": {
+        "1": {
+            "bib_type": "inproceedings",
+            "entry_key": "deKort:2007:DigitalGamesSocial",
+            "fields": {
+                "date": "2007",
+                "author": [
+                    {
+                        "prefix": [
+                            {
+                                "type": "text",
+                                "text": "de"
+                            }
+                        ],
+                        "useprefix": true,
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Kort"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Y.A.W."
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "IJsselsteijn"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "W.A."
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Poels"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "K."
+                            }
+                        ]
+                    }
+                ],
+                "booktitle": [
+                    {
+                        "type": "text",
+                        "text": "Proceedings of the 10th "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Annual International Workshop",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " on "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Presence",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ],
+                "doi": "http://alexandria.tue.nl/campusonly/Metis215145.pdf",
+                "location": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Barcelona"
+                        }
+                    ]
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "195"
+                            }
+                        ],
+                        [
+                            {
+                                "type": "text",
+                                "text": "203"
+                            }
+                        ]
+                    ]
+                ],
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Starlab"
+                        }
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Digital Games as Social Presence Technology: Development of the Social Presence in Gaming Questionnaire ("
+                    },
+                    {
+                        "type": "text",
+                        "text": "SPGQ",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": ")"
+                    }
+                ],
+                "url": "http://repository.tue.nl/663080"
+            },
+            "unknown_fields": {
+                "options": [
+                    {
+                        "type": "text",
+                        "text": "useprefix=true"
+                    }
+                ],
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        }
+    },
+    "warnings": [
+        {
+            "type": "unknown_field",
+            "field_name": "options",
+            "entry": "deKort:2007:DigitalGamesSocial",
+            "line": 14
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "deKort:2007:DigitalGamesSocial",
+            "line": 14
+        }
+    ]
+}

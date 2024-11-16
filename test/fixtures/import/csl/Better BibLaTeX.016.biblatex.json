@@ -1,0 +1,85 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "article",
+        "fields": {
+            "date": "2001",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Secondname"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Kendra"
+                        }
+                    ],
+                    "prefix": [
+                        {
+                            "type": "text",
+                            "text": "Arbesman von"
+                        }
+                    ],
+                    "useprefix": true
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Title, with comma"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "493"
+                        },
+                        {
+                            "type": "text",
+                            "text": "518"
+                        }
+                    ]
+                ]
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "The physical: violent volcanology of the 1600 eruption of "
+                },
+                {
+                    "type": "text",
+                    "text": "Huaynaputina, southern ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Peru",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "62"
+                }
+            ]
+        }
+    }
+}

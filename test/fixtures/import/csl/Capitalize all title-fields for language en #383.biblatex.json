@@ -1,0 +1,279 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "article",
+        "fields": {
+            "langid": "",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "A carbocyclic carbene as an efficient catalyst ligand for "
+                },
+                {
+                    "type": "text",
+                    "text": "C–",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "C coupling reactions",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "2": {
+        "entry_key": "2",
+        "bib_type": "book",
+        "fields": {
+            "langid": "",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Alkanethiolate gold cluster molecules with core diameters from 1.5 to 5.2 nm"
+                }
+            ]
+        }
+    },
+    "3": {
+        "entry_key": "3",
+        "bib_type": "book",
+        "fields": {
+            "langid": "",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "A stochastic model of "
+                },
+                {
+                    "type": "text",
+                    "text": "TCP Reno congestion avoidance and control",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "4": {
+        "entry_key": "4",
+        "bib_type": "article",
+        "fields": {
+            "langid": "",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Effect of immobilization on catalytic characteristics of saturated "
+                },
+                {
+                    "type": "text",
+                    "text": "Pd-",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "N-heterocyclic carbenes in ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Mizoroki-",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Heck reactions",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "5": {
+        "entry_key": "5",
+        "bib_type": "book",
+        "fields": {
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "in French, so no case conversion, nor protection."
+                }
+            ],
+            "langid": "",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Estimateur d'un défaut de fonctionnement d'un modulateur en quadrature et étage de modulation l'utilisant"
+                }
+            ]
+        }
+    },
+    "6": {
+        "entry_key": "6",
+        "bib_type": "book",
+        "fields": {
+            "langid": "",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "High-speed digital-to-"
+                },
+                {
+                    "type": "text",
+                    "text": "RF converter",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "7": {
+        "entry_key": "7",
+        "bib_type": "article",
+        "fields": {
+            "langid": "",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Pleistocene "
+                },
+                {
+                    "type": "text",
+                    "text": "Homo sapiens",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "em"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": " from ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Middle Awash, ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Ethiopia",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "8": {
+        "entry_key": "8",
+        "bib_type": "book",
+        "fields": {
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "Zotero’s “Language” field empty, so “en-US” is assumed."
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Some remarks on "
+                },
+                {
+                    "type": "text",
+                    "text": "’t Hooft’s ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "S-matrix for black holes",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

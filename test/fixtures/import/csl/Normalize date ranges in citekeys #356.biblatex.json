@@ -1,0 +1,248 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "book",
+        "fields": {
+            "date": "1897",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Descartes"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "René"
+                        }
+                    ]
+                }
+            ],
+            "editor": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Adam"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Charles"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Tannery"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Paul"
+                        }
+                    ]
+                }
+            ],
+            "langid": "",
+            "location": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Paris"
+                    }
+                ]
+            ],
+            "publisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Cerf"
+                    }
+                ]
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Œuvres de descartes"
+                }
+            ],
+            "volumes": [
+                {
+                    "type": "text",
+                    "text": "13"
+                }
+            ]
+        }
+    },
+    "2": {
+        "entry_key": "2",
+        "bib_type": "book",
+        "fields": {
+            "date": "1897",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Descartes"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "René"
+                        }
+                    ]
+                }
+            ],
+            "editor": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Adam"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Charles"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Tannery"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Paul"
+                        }
+                    ]
+                }
+            ],
+            "langid": "",
+            "location": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Paris"
+                    }
+                ]
+            ],
+            "publisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Cerf"
+                    }
+                ]
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Œuvres de descartes"
+                }
+            ],
+            "volumes": [
+                {
+                    "type": "text",
+                    "text": "13"
+                }
+            ]
+        }
+    },
+    "3": {
+        "entry_key": "3",
+        "bib_type": "book",
+        "fields": {
+            "date": "1897",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Descartes"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "René"
+                        }
+                    ]
+                }
+            ],
+            "editor": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Adam"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Charles"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Tannery"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Paul"
+                        }
+                    ]
+                }
+            ],
+            "langid": "",
+            "location": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Paris"
+                    }
+                ]
+            ],
+            "publisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Cerf"
+                    }
+                ]
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Œuvres de descartes"
+                }
+            ],
+            "volumes": [
+                {
+                    "type": "text",
+                    "text": "13"
+                }
+            ]
+        }
+    }
+}

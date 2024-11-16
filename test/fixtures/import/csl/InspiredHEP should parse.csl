@@ -1,0 +1,32 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2014
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Chien-Yi",
+                "family": "Chen"
+            },
+            {
+                "given": "Hooman",
+                "family": "Davoudiasl"
+            },
+            {
+                "given": "Doojin",
+                "family": "Kim"
+            }
+        ],
+        "title": "Warped graviton \"Z + Missing Energy\" signal at hadron colliders",
+        "container-title": "Phys.Rev.",
+        "volume": "D89",
+        "page": "096007",
+        "DOI": "10.1103/PhysRevD.89.096007",
+        "type": "article",
+        "id": "1"
+    }
+}

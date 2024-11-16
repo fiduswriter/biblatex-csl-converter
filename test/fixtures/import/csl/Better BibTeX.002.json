@@ -1,0 +1,124 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "book",
+        "fields": {
+            "date": "1964",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Abramowitz"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Milton"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Stegun"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Irene A."
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Handbook of mathematical functions with formulas, graphs, and mathematical tables"
+                }
+            ],
+            "publisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Dover"
+                    }
+                ]
+            ],
+            "location": [
+                [
+                    {
+                        "type": "text",
+                        "text": "New York"
+                    }
+                ]
+            ],
+            "edition": [
+                {
+                    "type": "text",
+                    "text": "ninth Dover printing, tenth GPO printing"
+                }
+            ]
+        }
+    },
+    "2": {
+        "entry_key": "2",
+        "bib_type": "book",
+        "fields": {
+            "date": "2008",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Torre"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Joe"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Verducci"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Tom"
+                        }
+                    ]
+                }
+            ],
+            "publisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Doubleday"
+                    }
+                ]
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "The yankee years"
+                }
+            ],
+            "isbn": [
+                {
+                    "type": "text",
+                    "text": "0385527403"
+                }
+            ]
+        }
+    }
+}

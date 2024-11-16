@@ -1,0 +1,82 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "article",
+        "fields": {
+            "date": "2014",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Chen"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Chien-Yi"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Davoudiasl"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Hooman"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Kim"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Doojin"
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Warped graviton \"Z + Missing Energy\" signal at hadron colliders"
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Phys.Rev."
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "D89"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "096007"
+                        }
+                    ]
+                ]
+            ],
+            "doi": "10.1103/PhysRevD.89.096007"
+        }
+    }
+}

@@ -1,0 +1,138 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "inbook",
+        "fields": {
+            "date": "1979",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Orlin"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Eric M."
+                        }
+                    ]
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "Studies in "
+                },
+                {
+                    "type": "text",
+                    "text": "Latin literature and ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Roman history",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "editor": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Deroux"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Carl"
+                        }
+                    ]
+                }
+            ],
+            "isbn": [
+                {
+                    "type": "text",
+                    "text": "978-2-87031-104-2 978-2-87031-228-5 978-2-87031-179-0 978-2-87031-184-4 978-2-87031-195-0 978-2-87031-213-1 978-2-87031-256-8 978-2-87031-264-3 978-2-87031-284-1"
+                }
+            ],
+            "langid": "",
+            "location": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Bruxelles"
+                    }
+                ]
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "70"
+                        },
+                        {
+                            "type": "text",
+                            "text": "90"
+                        }
+                    ]
+                ]
+            ],
+            "publisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Latomus"
+                    }
+                ]
+            ],
+            "series": [
+                {
+                    "type": "text",
+                    "text": "Collection latomus"
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Why a "
+                },
+                {
+                    "type": "text",
+                    "text": "Second Temple for ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Venus Erycina?",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

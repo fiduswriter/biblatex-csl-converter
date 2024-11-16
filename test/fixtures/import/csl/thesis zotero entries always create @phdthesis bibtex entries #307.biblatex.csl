@@ -1,0 +1,40 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2011
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Sune Brøndum",
+                "family": "Wøller"
+            }
+        ],
+        "language": "nb-NO",
+        "title": "Det multiple arkæologiske objekt. Et studie af materialitet og arkæologiske tekstiler",
+        "type": "thesis",
+        "id": "1"
+    },
+    "2": {
+        "issued": {
+            "date-parts": [
+                [
+                    2011
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Sune Brøndum",
+                "family": "Wøller"
+            }
+        ],
+        "language": "nb-NO",
+        "title": "CTR det multiple arkæologiske objekt. Et studie af materialitet og arkæologiske tekstiler",
+        "type": "thesis",
+        "id": "2"
+    }
+}

@@ -1,0 +1,64 @@
+{
+    "entries": {
+        "1": {
+            "bib_type": "book",
+            "entry_key": "Blandford2006",
+            "fields": {
+                "date": "2006",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Blandford"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Roger D."
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Thorne"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Kip S."
+                            }
+                        ]
+                    }
+                ],
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Caltech"
+                        }
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Applications of "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Classical Physics",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

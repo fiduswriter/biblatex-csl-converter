@@ -1,0 +1,209 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "article",
+        "fields": {
+            "date": "1955",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Herzog"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Hershel L."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Payne"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Constance C."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Jevnik"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Margaret A."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Gould"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "David"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Shapiro"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Elliot L."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Oliveto"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Eugene P."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Hershberg"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "E. B."
+                        }
+                    ]
+                }
+            ],
+            "doi": "10.1021/ja01623a027",
+            "issn": [
+                {
+                    "type": "text",
+                    "text": "0002-7863"
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Journal of the american chemical society"
+                }
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "http://dx.doi.org/10.1021/ja01623a027"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "4781"
+                        },
+                        {
+                            "type": "text",
+                            "text": "4784"
+                        }
+                    ]
+                ]
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "11-"
+                },
+                {
+                    "type": "text",
+                    "text": "Oxygenated Steroids. ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "XIII. ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Synthesis and proof of structure of ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Δ1,4-Pregnadiene-17α,21-diol-3,11,20-trione and Δ1,4-Pregnadiene-11β,17α,21-triol-3,20-dione",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "urldate": "2015-02-02",
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "77"
+                }
+            ]
+        }
+    }
+}

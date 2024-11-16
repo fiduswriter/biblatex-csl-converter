@@ -1,0 +1,46 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "book",
+        "fields": {
+            "date": "2002",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Медведев"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Григорий"
+                        }
+                    ]
+                }
+            ],
+            "langid": "",
+            "pagetotal": [
+                {
+                    "type": "text",
+                    "text": "520"
+                }
+            ],
+            "publisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "МК-Периодика"
+                    }
+                ]
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Ядерный загар"
+                }
+            ]
+        }
+    }
+}

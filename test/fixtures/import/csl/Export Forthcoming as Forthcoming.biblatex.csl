@@ -1,0 +1,34 @@
+{
+    "1": {
+        "author": [
+            {
+                "given": "Stefano",
+                "family": "Bartolini"
+            },
+            {
+                "given": "Ennio",
+                "family": "Bilancini"
+            },
+            {
+                "given": "Francesco",
+                "family": "Sarracino"
+            }
+        ],
+        "container-title": "Policies for <span class=\"nocase\">Happiness</span>",
+        "publisher-place": "Oxford",
+        "publisher": "Oxford University Press",
+        "title": "Social <span class=\"nocase\">Capital Predicts Happiness</span>: <span class=\"nocase\">World</span>-<span class=\"nocase\">Wide Evidence From Time Series</span>",
+        "URL": "http://www.econ-pol.unisi.it/bartolini/papers/BARTOLINI-BILANCINI-SARRACINO.pdf",
+        "accessed": {
+            "date-parts": [
+                [
+                    2015,
+                    2,
+                    7
+                ]
+            ]
+        },
+        "type": "chapter",
+        "id": "1"
+    }
+}

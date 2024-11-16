@@ -1,0 +1,110 @@
+{
+    "entries": {
+        "1": {
+            "bib_type": "thesis",
+            "entry_key": "Woller2011DetMultiple",
+            "fields": {
+                "date": "2011",
+                "langid": "norwegian",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Wøller"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Sune Brøndum"
+                            }
+                        ]
+                    }
+                ],
+                "language": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "norsk"
+                        }
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Det multiple arkæologiske objekt. Et studie af materialitet og arkæologiske tekstiler"
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "2": {
+            "bib_type": "thesis",
+            "entry_key": "Woller2011CTRDet",
+            "fields": {
+                "date": "2011",
+                "langid": "norwegian",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Wøller"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Sune Brøndum"
+                            }
+                        ]
+                    }
+                ],
+                "language": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "norsk"
+                        }
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "CTR Det multiple arkæologiske objekt. Et studie af materialitet og arkæologiske tekstiler"
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        }
+    },
+    "warnings": [
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "Woller2011DetMultiple",
+            "line": 8
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "Woller2011CTRDet",
+            "line": 16
+        }
+    ]
+}

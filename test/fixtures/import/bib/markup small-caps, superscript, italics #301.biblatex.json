@@ -1,0 +1,340 @@
+{
+    "entries": {
+        "1": {
+            "bib_type": "incollection",
+            "entry_key": "burgorgue-larsen_interventions_2011",
+            "fields": {
+                "date": "2011",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Burgorgue-Larsen"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Laurence"
+                            }
+                        ]
+                    }
+                ],
+                "booktitle": [
+                    {
+                        "type": "text",
+                        "text": "La conscience des droits. Mélanges en l'honneur de Jean-Paul Costa"
+                    }
+                ],
+                "isbn": [
+                    {
+                        "type": "text",
+                        "text": "978-2-247-10748-3"
+                    }
+                ],
+                "langid": "french",
+                "location": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Paris"
+                        }
+                    ]
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "68"
+                            }
+                        ],
+                        [
+                            {
+                                "type": "text",
+                                "text": "82"
+                            }
+                        ]
+                    ]
+                ],
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Dalloz"
+                        }
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Les interventions "
+                    },
+                    {
+                        "type": "text",
+                        "text": "éclairées",
+                        "marks": [
+                            {
+                                "type": "em"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " devant la Cour européenne des droits de l'homme ou le rôle stratégique des "
+                    },
+                    {
+                        "type": "text",
+                        "text": "amici curiae",
+                        "marks": [
+                            {
+                                "type": "em"
+                            }
+                        ]
+                    }
+                ],
+                "volumes": [
+                    {
+                        "type": "text",
+                        "text": "xxxi+710 p."
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "2": {
+            "bib_type": "incollection",
+            "entry_key": "leveleux-teixeira_opinion_2010",
+            "fields": {
+                "date": "2010",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Leveleux-Teixeira"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Corinne"
+                            }
+                        ]
+                    }
+                ],
+                "booktitle": [
+                    {
+                        "type": "text",
+                        "text": "Consulter, délibérer, décider : donner son avis au Moyen Âge (France-Espagne, "
+                    },
+                    {
+                        "type": "text",
+                        "text": "vii",
+                        "marks": [
+                            {
+                                "type": "smallcaps"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": "e",
+                        "marks": [
+                            {
+                                "type": "sup"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": "-"
+                    },
+                    {
+                        "type": "text",
+                        "text": "xvi",
+                        "marks": [
+                            {
+                                "type": "smallcaps"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": "e",
+                        "marks": [
+                            {
+                                "type": "sup"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " siècles)"
+                    }
+                ],
+                "editor": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Charageat"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Martine"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Leveleux-Teixeira"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Corinne"
+                            }
+                        ]
+                    }
+                ],
+                "isbn": [
+                    {
+                        "type": "text",
+                        "text": "978-2-912025-68-5"
+                    }
+                ],
+                "langid": "french",
+                "location": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Toulouse"
+                        }
+                    ]
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "33"
+                            }
+                        ],
+                        [
+                            {
+                                "type": "text",
+                                "text": "50"
+                            }
+                        ]
+                    ]
+                ],
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "CNRS et Université de Toulouse-Le Mirail [Framespa]"
+                        }
+                    ]
+                ],
+                "series": [
+                    {
+                        "type": "text",
+                        "text": "Méridiennes. Études médiévales ibériques"
+                    }
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Opinion et conseil dans la doctrine juridique savante ("
+                    },
+                    {
+                        "type": "text",
+                        "text": "xii",
+                        "marks": [
+                            {
+                                "type": "smallcaps"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": "e",
+                        "marks": [
+                            {
+                                "type": "sup"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": "-"
+                    },
+                    {
+                        "type": "text",
+                        "text": "xiv",
+                        "marks": [
+                            {
+                                "type": "smallcaps"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": "e",
+                        "marks": [
+                            {
+                                "type": "sup"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " siècles)"
+                    }
+                ],
+                "volumes": [
+                    {
+                        "type": "text",
+                        "text": "355 p."
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        }
+    },
+    "warnings": [
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "burgorgue-larsen_interventions_2011",
+            "line": 14
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "leveleux-teixeira_opinion_2010",
+            "line": 30
+        }
+    ]
+}

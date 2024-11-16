@@ -1,0 +1,187 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "inbook",
+        "fields": {
+            "date": "2010",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Lust"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Thibaut"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Teghem"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Jacques"
+                        }
+                    ]
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "Advances in "
+                },
+                {
+                    "type": "text",
+                    "text": "Multi-",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Objective Nature Inspired Computing",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "doi": "10.1007/978-3-642-11218-8_6",
+            "editor": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Coello"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Carlos A. Coello"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Dhaenens"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Clarisse"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Jourdan"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Laetitia"
+                        }
+                    ]
+                }
+            ],
+            "isbn": [
+                {
+                    "type": "text",
+                    "text": "978-3-642-11217-1 978-3-642-11218-8"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "119"
+                        },
+                        {
+                            "type": "text",
+                            "text": "141"
+                        }
+                    ]
+                ]
+            ],
+            "publisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Springer Berlin Heidelberg"
+                    }
+                ]
+            ],
+            "series": [
+                {
+                    "type": "text",
+                    "text": "Studies in computational intelligence"
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "The "
+                },
+                {
+                    "type": "text",
+                    "text": "Multiobjective Traveling Salesman Problem: ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "A Survey and a ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "New Approach",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

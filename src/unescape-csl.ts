@@ -1,4 +1,4 @@
-// If one runs the csl converter with escapeText = true, the output from
+// If one runs the CSL exporter with escapeText = true, the output from
 // citeproc (bibliography and citation entries) will need to be unescaped
 // using this function.
 

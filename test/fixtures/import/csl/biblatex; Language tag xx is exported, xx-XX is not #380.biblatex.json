@@ -1,0 +1,65 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "article",
+        "fields": {
+            "date": "1941",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Spitzer"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Leo"
+                        }
+                    ]
+                }
+            ],
+            "doi": "10.2307/2911510",
+            "issn": [
+                {
+                    "type": "text",
+                    "text": "01496611"
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Modern language notes"
+                }
+            ],
+            "langid": "",
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "110"
+                        },
+                        {
+                            "type": "text",
+                            "text": "113"
+                        }
+                    ]
+                ]
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Le poêle de descartes"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "56"
+                }
+            ]
+        }
+    }
+}

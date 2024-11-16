@@ -1,0 +1,14 @@
+{
+    "1": {
+        "author": [
+            {
+                "given": "John",
+                "family": "Doe"
+            }
+        ],
+        "status": "forthcoming",
+        "title": "Title",
+        "type": "book",
+        "id": "1"
+    }
+}

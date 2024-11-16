@@ -1,0 +1,86 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "inbook",
+        "fields": {
+            "date": "1983",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Eisenmann"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Charles"
+                        }
+                    ]
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "Cours de droit administratif"
+                }
+            ],
+            "isbn": [
+                {
+                    "type": "text",
+                    "text": "2-275-01408-X"
+                }
+            ],
+            "langid": "",
+            "location": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Paris"
+                    }
+                ]
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "9"
+                        },
+                        {
+                            "type": "text",
+                            "text": "332"
+                        }
+                    ]
+                ]
+            ],
+            "publisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "LGDJ"
+                    }
+                ]
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Les actes de l’administration [1949-1950]"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "t. 2"
+                }
+            ],
+            "volumes": [
+                {
+                    "type": "text",
+                    "text": "2 vol. (786, xxiv+908 p.)"
+                }
+            ]
+        }
+    }
+}

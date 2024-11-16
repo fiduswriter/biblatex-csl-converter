@@ -1,0 +1,93 @@
+{
+    "entries": {
+        "1": {
+            "bib_type": "book",
+            "entry_key": "geophysicsstudycommittee_continental_1980",
+            "fields": {
+                "date": "1980",
+                "author": [
+                    {
+                        "literal": [
+                            {
+                                "type": "text",
+                                "text": "Geophysics Study Committee"
+                            }
+                        ]
+                    },
+                    {
+                        "literal": [
+                            {
+                                "type": "text",
+                                "text": "Geophysics Research Board"
+                            }
+                        ]
+                    },
+                    {
+                        "literal": [
+                            {
+                                "type": "text",
+                                "text": "Assembly of Mathematical and Physical Sciences, National Research Council"
+                            }
+                        ]
+                    }
+                ],
+                "isbn": [
+                    {
+                        "type": "text",
+                        "text": "978-0-309-02928-5"
+                    }
+                ],
+                "note": [
+                    {
+                        "type": "text",
+                        "text": "http://www.nap.edu/openbook.php?record_id=203",
+                        "marks": [
+                            {
+                                "type": "url"
+                            }
+                        ]
+                    }
+                ],
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "The National Academies Press"
+                        }
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Continental "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Tectonics",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        }
+    },
+    "warnings": [
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "geophysicsstudycommittee_continental_1980",
+            "line": 10
+        }
+    ]
+}

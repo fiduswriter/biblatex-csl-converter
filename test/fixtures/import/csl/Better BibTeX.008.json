@@ -1,0 +1,40 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "article",
+        "fields": {
+            "date": "2012",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Public service research foundation"
+                }
+            ],
+            "url": "http://www.americanrightsatwork.org/blogcategory-275/",
+            "urldate": "2012-07-27",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Work"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "American Rights"
+                        }
+                    ],
+                    "prefix": [
+                        {
+                            "type": "text",
+                            "text": "at"
+                        }
+                    ],
+                    "useprefix": true
+                }
+            ]
+        }
+    }
+}

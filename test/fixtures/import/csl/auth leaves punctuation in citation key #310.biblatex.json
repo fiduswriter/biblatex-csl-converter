@@ -1,0 +1,31 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "book",
+        "fields": {
+            "date": "2015",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "O'hara"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "james"
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "A testbook"
+                }
+            ]
+        }
+    }
+}

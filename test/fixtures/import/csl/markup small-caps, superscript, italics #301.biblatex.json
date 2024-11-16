@@ -1,0 +1,354 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "inbook",
+        "fields": {
+            "date": "2011",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Burgorgue-Larsen"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Laurence"
+                        }
+                    ]
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "La conscience des droits. Mélanges en l'honneur de jean-paul costa"
+                }
+            ],
+            "isbn": [
+                {
+                    "type": "text",
+                    "text": "978-2-247-10748-3"
+                }
+            ],
+            "langid": "",
+            "location": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Paris"
+                    }
+                ]
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "68"
+                        },
+                        {
+                            "type": "text",
+                            "text": "82"
+                        }
+                    ]
+                ]
+            ],
+            "publisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Dalloz"
+                    }
+                ]
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Les interventions "
+                },
+                {
+                    "type": "text",
+                    "text": "éclairées",
+                    "marks": [
+                        {
+                            "type": "em"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": " devant la cour européenne des droits de l'homme ou le rôle stratégique des "
+                },
+                {
+                    "type": "text",
+                    "text": "amici curiae",
+                    "marks": [
+                        {
+                            "type": "em"
+                        }
+                    ]
+                }
+            ],
+            "volumes": [
+                {
+                    "type": "text",
+                    "text": "xxxi+710 p."
+                }
+            ]
+        }
+    },
+    "2": {
+        "entry_key": "2",
+        "bib_type": "inbook",
+        "fields": {
+            "date": "2010",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Leveleux-Teixeira"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Corinne"
+                        }
+                    ]
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "Consulter, délibérer, décider : donner son avis au moyen âge (france-espagne, "
+                },
+                {
+                    "type": "text",
+                    "text": "vii",
+                    "marks": [
+                        {
+                            "type": "smallcaps"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "e",
+                    "marks": [
+                        {
+                            "type": "smallcaps"
+                        },
+                        {
+                            "type": "sup"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "-",
+                    "marks": [
+                        {
+                            "type": "smallcaps"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "xvi",
+                    "marks": [
+                        {
+                            "type": "smallcaps"
+                        },
+                        {
+                            "type": "smallcaps"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "e",
+                    "marks": [
+                        {
+                            "type": "smallcaps"
+                        },
+                        {
+                            "type": "smallcaps"
+                        },
+                        {
+                            "type": "sup"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": " siècles)",
+                    "marks": [
+                        {
+                            "type": "smallcaps"
+                        },
+                        {
+                            "type": "smallcaps"
+                        }
+                    ]
+                }
+            ],
+            "editor": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Charageat"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Martine"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Leveleux-Teixeira"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Corinne"
+                        }
+                    ]
+                }
+            ],
+            "isbn": [
+                {
+                    "type": "text",
+                    "text": "978-2-912025-68-5"
+                }
+            ],
+            "langid": "",
+            "location": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Toulouse"
+                    }
+                ]
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "33"
+                        },
+                        {
+                            "type": "text",
+                            "text": "50"
+                        }
+                    ]
+                ]
+            ],
+            "publisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "CNRS et Université de Toulouse-Le Mirail [Framespa]"
+                    }
+                ]
+            ],
+            "series": [
+                {
+                    "type": "text",
+                    "text": "Méridiennes. Études médiévales ibériques"
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Opinion et conseil dans la doctrine juridique savante ("
+                },
+                {
+                    "type": "text",
+                    "text": "xii",
+                    "marks": [
+                        {
+                            "type": "smallcaps"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "e",
+                    "marks": [
+                        {
+                            "type": "smallcaps"
+                        },
+                        {
+                            "type": "sup"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "-",
+                    "marks": [
+                        {
+                            "type": "smallcaps"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "xiv",
+                    "marks": [
+                        {
+                            "type": "smallcaps"
+                        },
+                        {
+                            "type": "smallcaps"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "e",
+                    "marks": [
+                        {
+                            "type": "smallcaps"
+                        },
+                        {
+                            "type": "smallcaps"
+                        },
+                        {
+                            "type": "sup"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": " siècles)",
+                    "marks": [
+                        {
+                            "type": "smallcaps"
+                        },
+                        {
+                            "type": "smallcaps"
+                        }
+                    ]
+                }
+            ],
+            "volumes": [
+                {
+                    "type": "text",
+                    "text": "355 p."
+                }
+            ]
+        }
+    }
+}

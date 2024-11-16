@@ -1,0 +1,29 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2009,
+                    6
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "D.",
+                "family": "Chru'sci'nski"
+            },
+            {
+                "given": "A.",
+                "family": "Kossakowski"
+            }
+        ],
+        "title": "<span class=\"nocase\">Geometry of quantum states: New construction of positive maps</span>",
+        "container-title": "Physics letters A",
+        "volume": "373",
+        "page": "2301-2305",
+        "DOI": "10.1016/j.physleta.2009.04.068",
+        "type": "article",
+        "id": "1"
+    }
+}

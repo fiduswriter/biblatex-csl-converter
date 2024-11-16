@@ -1,0 +1,51 @@
+{
+    "1": {
+        "language": "en-GB",
+        "title": "A carbocyclic carbene as an efficient catalyst ligand for <span class=\"nocase\">C</span>–<span class=\"nocase\">C</span> coupling reactions",
+        "type": "article",
+        "id": "1"
+    },
+    "2": {
+        "language": "en-US",
+        "title": "Alkanethiolate gold cluster molecules with core diameters from 1.5 to 5.2 nm",
+        "type": "book",
+        "id": "2"
+    },
+    "3": {
+        "language": "en-US",
+        "title": "A stochastic model of <span class=\"nocase\">TCP Reno</span> congestion avoidance and control",
+        "type": "book",
+        "id": "3"
+    },
+    "4": {
+        "language": "en-US",
+        "title": "Effect of immobilization on catalytic characteristics of saturated <span class=\"nocase\">Pd</span>-<span class=\"nocase\">N</span>-heterocyclic carbenes in <span class=\"nocase\">Mizoroki</span>-<span class=\"nocase\">Heck</span> reactions",
+        "type": "article",
+        "id": "4"
+    },
+    "5": {
+        "abstract": "in French, so no case conversion, nor protection.",
+        "language": "fr-FR",
+        "title": "Estimateur d'un défaut de fonctionnement d'un modulateur en quadrature et étage de modulation l'utilisant",
+        "type": "book",
+        "id": "5"
+    },
+    "6": {
+        "language": "en-US",
+        "title": "High-speed digital-to-<span class=\"nocase\">RF</span> converter",
+        "type": "book",
+        "id": "6"
+    },
+    "7": {
+        "language": "en-GB",
+        "title": "Pleistocene <span class=\"nocase\"><i>Homo sapiens</i></span> from <span class=\"nocase\">Middle Awash</span>, <span class=\"nocase\">Ethiopia</span>",
+        "type": "article",
+        "id": "7"
+    },
+    "8": {
+        "abstract": "Zotero’s “Language” field empty, so “en-US” is assumed.",
+        "title": "Some remarks on <span class=\"nocase\">’t Hooft’s</span> <span class=\"nocase\">S</span>-matrix for black holes",
+        "type": "book",
+        "id": "8"
+    }
+}

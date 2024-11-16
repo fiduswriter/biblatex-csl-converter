@@ -1,0 +1,340 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "article",
+        "fields": {
+            "date": "2012-01",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Battisti"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "A. J."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Meiring"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "J. D."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Tripp"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "T. M."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Prochaska"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "J. X."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Werk"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "J. K."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Jenkins"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "E. B."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Lehner"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "N."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Tumlinson"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "J."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Thom"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "C."
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "The First Observations of Low-redshift Damped Lyalpha Systems with the Cosmic Origins Spectrograph: Chemical Abundances and Affiliated Galaxies",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "apj"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "744"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "93"
+                        }
+                    ]
+                ]
+            ],
+            "doi": "10.1088/0004-637X/744/2/93"
+        }
+    },
+    "2": {
+        "entry_key": "2",
+        "bib_type": "article",
+        "fields": {
+            "date": "2012-01",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Battisti"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "A. J."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Meiring"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "J. D."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Tripp"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "T. M."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Prochaska"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "J. X."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Werk"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "J. K."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Jenkins"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "E. B."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Lehner"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "N."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Tumlinson"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "J."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Thom"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "C."
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "The First Observations of Low-redshift Damped Lyalpha Systems with the Cosmic Origins Spectrograph: Chemical Abundances and Affiliated Galaxies",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "apj"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "744"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "93"
+                        }
+                    ]
+                ]
+            ],
+            "doi": "10.1088/0004-637X/744/2/93"
+        }
+    }
+}

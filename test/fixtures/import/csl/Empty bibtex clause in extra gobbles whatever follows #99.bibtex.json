@@ -1,0 +1,38 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "book",
+        "fields": {
+            "date": "2014",
+            "note": [
+                {
+                    "type": "text",
+                    "text": "http://ptolemy.org/books/Systems"
+                }
+            ],
+            "publisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Ptolemy.org"
+                    }
+                ]
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "System design, modeling, and simulation using "
+                },
+                {
+                    "type": "text",
+                    "text": "Ptolemy II",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

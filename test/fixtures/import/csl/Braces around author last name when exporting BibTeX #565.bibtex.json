@@ -1,0 +1,355 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "article",
+        "fields": {
+            "date": "2007",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Kennedy"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Christopher"
+                        }
+                    ]
+                }
+            ],
+            "doi": "10.1007/s10988-006-9008-0",
+            "issn": [
+                {
+                    "type": "text",
+                    "text": "0165-0157, 1573-0549"
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Linguistics and philosophy"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "1"
+                        },
+                        {
+                            "type": "text",
+                            "text": "45"
+                        }
+                    ]
+                ]
+            ],
+            "shorttitle": [
+                {
+                    "type": "text",
+                    "text": "Vagueness and grammar"
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Vagueness and grammar: "
+                },
+                {
+                    "type": "text",
+                    "text": "The semantics of relative and absolute gradable adjectives",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "urldate": "2012-10-31",
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "30"
+                }
+            ]
+        }
+    },
+    "2": {
+        "entry_key": "2",
+        "bib_type": "thesis",
+        "fields": {
+            "date": "1994",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Fintel"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Kai"
+                        }
+                    ],
+                    "prefix": [
+                        {
+                            "type": "text",
+                            "text": "von"
+                        }
+                    ],
+                    "useprefix": true
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Restrictions on "
+                },
+                {
+                    "type": "text",
+                    "text": "Quantifier Domains",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "urldate": "2014-04-20"
+        }
+    },
+    "3": {
+        "entry_key": "3",
+        "bib_type": "thesis",
+        "fields": {
+            "date": "2010",
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "It is a well-known but little-studied fact that evaluativeadverbs - adverbs indicating the attitude of the speaker towards theinformation she is conveying - can modify degree ('incredibly tall','ridiculously expensive'...). This thesis offers a syntactosemanticaccount of evaluative degree modi fication of both gradable adjectivesand gradable nouns.Following Morzycki (2004), I propose that evaluative degreemodi fication involves a covert operator (which I will call EVAL);however, my proposal differs from that of Morzycki in several crucialrespects. Most importantly, I argue that evaluative degreeconstructions should not be analysed as embedded exclamatives.Furthermore, I show how their syntactic behaviour illuminates theirsemantic composition, using evidence from different phenomena in bothEnglish and Dutch.Subsequently, I examine the linguistic evidence for the gradability ofcertain nouns, like 'idiot', 'nerd', 'genius', 'Barbie dollenthusiast', and 'weirdo', and conclude that they, like gradableadjectives, have a degree argument. I show how this class of gradablenouns may be defined in prototype-theoretic terms. Morzycki (2009)has shown that gradable nouns can be modified by size adjectives like'big' and 'enormous'; I extend his account by including degreemodification by evaluative adjectives.Finally, several suggestions for further research are offered."
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Vries"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Hanna"
+                        }
+                    ],
+                    "prefix": [
+                        {
+                            "type": "text",
+                            "text": "de"
+                        }
+                    ],
+                    "useprefix": true
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Evaluative "
+                },
+                {
+                    "type": "text",
+                    "text": "Degree Modification of ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Adjectives and ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Nouns",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "4": {
+        "entry_key": "4",
+        "bib_type": "book",
+        "fields": {
+            "date": "1995",
+            "langid": "",
+            "location": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Paris"
+                    }
+                ]
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Velde"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Danièle"
+                        }
+                    ],
+                    "prefix": [
+                        {
+                            "type": "text",
+                            "text": "van de"
+                        }
+                    ],
+                    "useprefix": true
+                }
+            ],
+            "isbn": [
+                {
+                    "type": "text",
+                    "text": "978-90-6831-748-0"
+                }
+            ],
+            "publisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Peeters"
+                    }
+                ]
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Le spectre nominal. Des noms de matières aux noms d'abstractions"
+                }
+            ]
+        }
+    },
+    "5": {
+        "entry_key": "5",
+        "bib_type": "article",
+        "fields": {
+            "date": "1998",
+            "langid": "",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Swart"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Henriëtte"
+                        }
+                    ],
+                    "prefix": [
+                        {
+                            "type": "text",
+                            "text": "de"
+                        }
+                    ],
+                    "useprefix": true
+                }
+            ],
+            "doi": "10.1023/A:1005916004600",
+            "issn": [
+                {
+                    "type": "text",
+                    "text": "0167-806X, 1573-0859"
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Natural language & linguistic theory"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "347"
+                        },
+                        {
+                            "type": "text",
+                            "text": "385"
+                        }
+                    ]
+                ]
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Aspect "
+                },
+                {
+                    "type": "text",
+                    "text": "Shift and ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Coercion",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "urldate": "2015-10-09",
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "16"
+                }
+            ]
+        }
+    }
+}

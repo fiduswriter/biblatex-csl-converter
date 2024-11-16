@@ -116,7 +116,7 @@ const verifyIncludeRawText = (bibfile) => {
 
 const fixtures = path.join(
     path.dirname(fileURLToPath(import.meta.url)),
-    "fixtures"
+    "fixtures/import/bib"
 )
 const bibfiles = fs.readdirSync(fixtures)
 const promised = []

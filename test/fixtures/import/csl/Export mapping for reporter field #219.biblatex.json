@@ -1,0 +1,53 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "article",
+        "fields": {
+            "date": "1998-04-01",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Commonwealth"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Kaetinyeri"
+                        }
+                    ],
+                    "prefix": [
+                        {
+                            "type": "text",
+                            "text": "v"
+                        }
+                    ],
+                    "useprefix": true
+                }
+            ],
+            "shorttitle": [
+                {
+                    "type": "text",
+                    "text": "Kartinyeri"
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Kartinyeri v "
+                },
+                {
+                    "type": "text",
+                    "text": "Commonwealth",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

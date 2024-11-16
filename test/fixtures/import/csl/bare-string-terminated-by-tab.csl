@@ -1,0 +1,23 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    1978
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Beatrice",
+                "family": "Warren"
+            }
+        ],
+        "publisher": "Acta Universitatis Gothoburgen",
+        "title": "Semantic patterns of noun-noun compound",
+        "collection-title": "Gothenburg studies in english",
+        "volume": "41",
+        "type": "book",
+        "id": "1"
+    }
+}

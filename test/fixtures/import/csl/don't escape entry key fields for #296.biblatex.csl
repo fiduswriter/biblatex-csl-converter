@@ -1,0 +1,28 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    1983
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Charles",
+                "family": "Eisenmann"
+            }
+        ],
+        "container-title": "Cours de droit administratif",
+        "ISBN": "2-275-01408-X",
+        "language": "fr-FR",
+        "publisher-place": "Paris",
+        "page": "9-332",
+        "publisher": "LGDJ",
+        "title": "Les actes de l’administration [1949-1950]",
+        "volume": "t. 2",
+        "number-of-volumes": "2 vol. (786, xxiv+908 p.)",
+        "type": "chapter",
+        "id": "1"
+    }
+}

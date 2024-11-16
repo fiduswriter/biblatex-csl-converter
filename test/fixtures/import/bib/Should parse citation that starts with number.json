@@ -1,0 +1,84 @@
+{
+    "entries": {
+        "1": {
+            "bib_type": "report",
+            "entry_key": "2013current",
+            "fields": {
+                "date": "2013",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Lack"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Kelly A."
+                            }
+                        ]
+                    }
+                ],
+                "institution": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Ithaka S+R"
+                        }
+                    ]
+                ],
+                "keywords": [
+                    "0sotl"
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Current Status of Research on Online Learning in Postsecondary Education"
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "date-added": [
+                    {
+                        "type": "text",
+                        "text": "2013-04-09 19:09:56 +0000"
+                    }
+                ],
+                "date-modified": [
+                    {
+                        "type": "text",
+                        "text": "2013-04-09 19:10:58 +0000"
+                    }
+                ],
+                "oa-url": [
+                    {
+                        "type": "text",
+                        "text": "http://www.sr.ithaka.org/sites/default/files/reports/ithaka-sr-online-learning-postsecondary-education-may2012.pdf"
+                    }
+                ]
+            }
+        }
+    },
+    "warnings": [
+        {
+            "type": "unknown_field",
+            "field_name": "date-added",
+            "entry": "2013current",
+            "line": 10
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "date-modified",
+            "entry": "2013current",
+            "line": 10
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "oa-url",
+            "entry": "2013current",
+            "line": 10
+        }
+    ]
+}

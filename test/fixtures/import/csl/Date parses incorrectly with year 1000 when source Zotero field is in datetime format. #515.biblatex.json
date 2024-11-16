@@ -1,0 +1,46 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "article-newspaper",
+        "fields": {
+            "date": "2016-06-06",
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "Voters in Switzerland overwhelmingly reject a proposal to introduce a guaranteed monthly income for all citizens."
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Barker"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Anne"
+                        }
+                    ]
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "ABC news"
+                }
+            ],
+            "langid": "",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Swiss voters say no to guaranteed free money"
+                }
+            ],
+            "url": "http://www.abc.net.au/news/2016-06-06/swiss-voters-reject-basic-income-proposal/7481672",
+            "urldate": "2017-12-06"
+        }
+    }
+}

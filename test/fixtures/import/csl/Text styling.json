@@ -1,0 +1,191 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "article",
+        "fields": {
+            "date": "2010",
+            "langid": "",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Wilm"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Johannes"
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Cuba: economic \ntextbfchanges and the future of socialism",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "\ntextit"
+                },
+                {
+                    "type": "text",
+                    "text": "Links international journal of socialist renewal",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "url": "http://links.org.au/node/1916",
+            "urldate": "2010-10-31"
+        }
+    },
+    "2": {
+        "entry_key": "2",
+        "bib_type": "article",
+        "fields": {
+            "date": "2009",
+            "langid": "",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Wilm"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Johannes"
+                        }
+                    ]
+                }
+            ],
+            "editor": [
+                {
+                    "literal": [
+                        {
+                            "type": "text",
+                            "text": "PuenteSur"
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "La joven revolución hondureña"
+                }
+            ],
+            "url": "http://www.johanneswilm.org/honduras/",
+            "urldate": "2010-11-02"
+        }
+    },
+    "3": {
+        "entry_key": "3",
+        "bib_type": "book",
+        "fields": {
+            "date": "2011",
+            "location": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Oslo, Norway & Tucson, AZ"
+                    }
+                ]
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Nicaragua, back from the dead? An anthropological view of the ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Sandinista movement in the early 21",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "st",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "sup"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": " century.",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "publisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "New Left Notes"
+                    }
+                ]
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Wilm"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Johannes"
+                        }
+                    ],
+                    "suffix": [
+                        {
+                            "type": "text",
+                            "text": "Dr."
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

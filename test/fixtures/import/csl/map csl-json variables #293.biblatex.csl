@@ -1,0 +1,76 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2008
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Bruno",
+                "family": "Latour"
+            }
+        ],
+        "language": "da-DK",
+        "publisher-place": "København",
+        "original-date": {
+            "date-parts": [
+                [
+                    2005
+                ]
+            ]
+        },
+        "original-publisher-place": "origlocation",
+        "original-publisher": "origpublisher",
+        "original-title": "origtitle",
+        "publisher": "Akademisk Forlag",
+        "title-short": "En ny sociologi",
+        "title": "En ny sociologi for et nyt samfund. Introduktion til aktør-netværk-teori",
+        "type": "book",
+        "id": "1"
+    },
+    "2": {
+        "original-date": {
+            "date-parts": [
+                [
+                    1929
+                ]
+            ]
+        },
+        "issued": {
+            "date-parts": [
+                [
+                    2004
+                ]
+            ]
+        },
+        "abstract": "Préface de Ph. Raynaud. Trad. de : \"Vom Wesen und Wert der Demokratie\" - Tübingen : J.C.B. Mohr, 1929. Fac-sim. de la 2e éd., Paris : Sirey : 1932.",
+        "author": [
+            {
+                "given": "Hans",
+                "family": "Kelsen"
+            }
+        ],
+        "edition": 2,
+        "ISBN": "2-247-04268-6",
+        "language": "fr-FR",
+        "publisher-place": "Paris",
+        "original-publisher-place": "Tübingen",
+        "original-publisher": "J.C.B. Mohr",
+        "original-title": "Vom wesen und wert der demokratie",
+        "number-of-pages": "x+121",
+        "publisher": "Dalloz",
+        "collection-title": "Bibliothèque dalloz",
+        "title": "La démocratie. Sa nature, sa valeur",
+        "translator": [
+            {
+                "given": "Charles",
+                "family": "Eisenmann"
+            }
+        ],
+        "type": "book",
+        "id": "2"
+    }
+}

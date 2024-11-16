@@ -1,0 +1,57 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "report",
+        "fields": {
+            "date": "1972-05",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "McDermott"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Drew V."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Sussman"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Gerald J."
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "The "
+                },
+                {
+                    "type": "text",
+                    "text": "CONNIVER reference manual",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "smallcaps"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,115 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2000,
+                    8,
+                    22
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Douglas Brent",
+                "family": "West"
+            }
+        ],
+        "edition": 2,
+        "ISBN": "978-0-13-014400-3",
+        "number-of-pages": "470",
+        "publisher": "Prentice Hall",
+        "title": "Introduction to <span class=\"nocase\">Graph Theory</span>",
+        "type": "book",
+        "id": "1"
+    },
+    "2": {
+        "issued": {
+            "date-parts": [
+                [
+                    2012,
+                    9,
+                    27
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Adam",
+                "family": "Skubala"
+            }
+        ],
+        "publisher-place": "Masterthesis, Fakultät Statistik",
+        "publisher": "TU Dortmund",
+        "title": "Modellierung niederfrequenter <span class=\"nocase\">Schwingungen</span> in einem elektrischen <span class=\"nocase\">Energienetz</span>",
+        "type": "book",
+        "id": "2"
+    },
+    "3": {
+        "issued": {
+            "date-parts": [
+                [
+                    1995,
+                    12
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Tsutomu",
+                "family": "Michigami"
+            }
+        ],
+        "DOI": "10.1002/eej.4391150705",
+        "container-title": "Electrical engineering in japan",
+        "collection-number": "7",
+        "page": "49-68",
+        "title": "Development of a new two-input <span class=\"nocase\">PSS</span> to control low-frequency oscillation in interconnecting power systems and the study of a low-frequency oscillation model",
+        "volume": "115",
+        "type": "article",
+        "id": "3"
+    },
+    "4": {
+        "issued": {
+            "date-parts": [
+                [
+                    2014,
+                    2,
+                    11
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Sebastian",
+                "family": "Brato"
+            },
+            {
+                "given": "Dirk",
+                "family": "Surmann"
+            },
+            {
+                "given": "Sebastian",
+                "family": "Krey"
+            },
+            {
+                "given": "Jürgen",
+                "family": "Götze"
+            },
+            {
+                "given": "Uwe",
+                "family": "Ligges"
+            },
+            {
+                "given": "Claus",
+                "family": "Weihs"
+            }
+        ],
+        "publisher-place": "Eldorado",
+        "collection-number": "2003/32864",
+        "title": "Stability <span class=\"nocase\">Analysis</span> and <span class=\"nocase\">Clustering</span> of <span class=\"nocase\">Electrical Transmission Systems</span>",
+        "URL": "http://dx.doi.org/10.17877/DE290R-13190",
+        "type": "report",
+        "id": "4"
+    }
+}

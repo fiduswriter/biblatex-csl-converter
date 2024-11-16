@@ -1,0 +1,156 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "article",
+        "fields": {
+            "date": "2006-09-23",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Brill"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "R. W."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Bushnell"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "P. G."
+                        }
+                    ]
+                }
+            ],
+            "doi": "10.1007/s10695-006-9104-7",
+            "issn": [
+                {
+                    "type": "text",
+                    "text": "0920-1742, 1573-5168"
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Fish physiology and biochemistry"
+                }
+            ],
+            "langid": "",
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "283"
+                        },
+                        {
+                            "type": "text",
+                            "text": "294"
+                        }
+                    ]
+                ]
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Effects of open- and closed-system temperature changes on blood "
+                },
+                {
+                    "type": "text",
+                    "text": "O",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "2",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "sub"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "-binding characteristics of ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Atlantic bluefin tuna (",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Thunnus thynnus",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "em"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": ")",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "url": "http://link.springer.com/article/10.1007/s10695-006-9104-7",
+            "urldate": "2016-08-18",
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "32"
+                }
+            ]
+        }
+    }
+}

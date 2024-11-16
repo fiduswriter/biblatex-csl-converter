@@ -1,0 +1,107 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    1897
+                ],
+                [
+                    1913
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "René",
+                "family": "Descartes"
+            }
+        ],
+        "editor": [
+            {
+                "given": "Charles",
+                "family": "Adam"
+            },
+            {
+                "given": "Paul",
+                "family": "Tannery"
+            }
+        ],
+        "language": "fr-FR",
+        "publisher-place": "Paris",
+        "publisher": "Cerf",
+        "title": "Œuvres de descartes",
+        "number-of-volumes": "13",
+        "type": "book",
+        "id": "1"
+    },
+    "2": {
+        "issued": {
+            "date-parts": [
+                [
+                    1897
+                ],
+                [
+                    1913
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "René",
+                "family": "Descartes"
+            }
+        ],
+        "editor": [
+            {
+                "given": "Charles",
+                "family": "Adam"
+            },
+            {
+                "given": "Paul",
+                "family": "Tannery"
+            }
+        ],
+        "language": "fr-FR",
+        "publisher-place": "Paris",
+        "publisher": "Cerf",
+        "title": "Œuvres de descartes",
+        "number-of-volumes": "13",
+        "type": "book",
+        "id": "2"
+    },
+    "3": {
+        "issued": {
+            "date-parts": [
+                [
+                    1897
+                ],
+                [
+                    1913
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "René",
+                "family": "Descartes"
+            }
+        ],
+        "editor": [
+            {
+                "given": "Charles",
+                "family": "Adam"
+            },
+            {
+                "given": "Paul",
+                "family": "Tannery"
+            }
+        ],
+        "language": "fr-FR",
+        "publisher-place": "Paris",
+        "publisher": "Cerf",
+        "title": "Œuvres de descartes",
+        "number-of-volumes": "13",
+        "type": "book",
+        "id": "3"
+    }
+}

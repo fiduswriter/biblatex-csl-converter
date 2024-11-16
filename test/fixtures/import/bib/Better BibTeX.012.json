@@ -1,0 +1,57 @@
+{
+    "entries": {
+        "1": {
+            "bib_type": "incollection",
+            "entry_key": "moller2012conceptsrisksafety",
+            "fields": {
+                "date": "2012",
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "The Concepts of Risk and Safety",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ],
+                "booktitle": [
+                    {
+                        "type": "text",
+                        "text": "Handbook of Risk Theory: Epistemology, Decision Theory, Ethics, and Social Implications of Risk",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ],
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Springer"
+                        }
+                    ]
+                ],
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Möller"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Niklas"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

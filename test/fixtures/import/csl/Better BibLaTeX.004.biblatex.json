@@ -1,0 +1,93 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "book",
+        "fields": {
+            "date": "2001",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Hicks"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Michael"
+                        }
+                    ],
+                    "suffix": [
+                        {
+                            "type": "text",
+                            "text": "III"
+                        }
+                    ],
+                    "prefix": [
+                        {
+                            "type": "text",
+                            "text": "von"
+                        }
+                    ],
+                    "useprefix": true
+                }
+            ],
+            "edition": [
+                {
+                    "type": "text",
+                    "text": "1"
+                }
+            ],
+            "isbn": [
+                {
+                    "type": "text",
+                    "text": "0-69-697269-4"
+                }
+            ],
+            "location": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Palo Alto"
+                    }
+                ]
+            ],
+            "publisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Stanford Press"
+                    }
+                ]
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Design of a "
+                },
+                {
+                    "type": "text",
+                    "text": "Carbon Fiber Composite Grid Structure for the ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "GLAST spacecraft using a novel manufacturing technique",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

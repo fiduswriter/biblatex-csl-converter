@@ -1,0 +1,83 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "inbook",
+        "fields": {
+            "date": "1999",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Koopman"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Pieter"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Plasmeijer"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Rinus"
+                        }
+                    ]
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "Implementation of "
+                },
+                {
+                    "type": "text",
+                    "text": "Functional Languages",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "doi": "10.1007/3-540-48515-5_8",
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "120"
+                        },
+                        {
+                            "type": "text",
+                            "text": "136"
+                        }
+                    ]
+                ]
+            ],
+            "publisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Springer"
+                    }
+                ]
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Efficient combinator parsers"
+                }
+            ]
+        }
+    }
+}

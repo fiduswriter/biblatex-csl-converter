@@ -1,0 +1,81 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "article",
+        "fields": {
+            "date": "2014-05-15",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Vlček"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Martin"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Vácha"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Marek"
+                        }
+                    ]
+                }
+            ],
+            "doi": "10.1007/s00276-014-1305-7",
+            "issn": [
+                {
+                    "type": "text",
+                    "text": "1279-8517"
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Surgical and radiologic anatomy"
+                }
+            ],
+            "langid": "",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "The history of "
+                },
+                {
+                    "type": "text",
+                    "text": "Latin terminology of human skeletal muscles (from ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Vesalius to the present)",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "url": "http://link.springer.com/10.1007/s00276-014-1305-7"
+        }
+    }
+}

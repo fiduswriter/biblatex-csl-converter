@@ -1,0 +1,36 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    1986
+                ]
+            ]
+        },
+        "title": "Determination of the thickness and refractive index of <span class=\"nocase\">Cu<sub>2</sub>O</span> thin film using thermal and optical interferometry",
+        "author": [
+            {
+                "given": "M. E.",
+                "family": "Abu-Zeid"
+            },
+            {
+                "given": "A. E.",
+                "family": "Rakhshani"
+            },
+            {
+                "given": "A. A.",
+                "family": "Al-Jassar"
+            },
+            {
+                "given": "Y. A.",
+                "family": "Youssef"
+            }
+        ],
+        "container-title": "Physica status solidi (a)",
+        "page": "613-620",
+        "volume": "93",
+        "DOI": "10.1002/pssa.2210930226",
+        "type": "article",
+        "id": "1"
+    }
+}

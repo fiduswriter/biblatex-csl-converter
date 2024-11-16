@@ -1,0 +1,230 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "book",
+        "fields": {
+            "date": "1902",
+            "author": [
+                {
+                    "literal": [
+                        {
+                            "type": "text",
+                            "text": "Plato"
+                        }
+                    ]
+                }
+            ],
+            "editor": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Burnet"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "John"
+                        }
+                    ]
+                }
+            ],
+            "langid": "",
+            "location": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Oxford"
+                    }
+                ]
+            ],
+            "publisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Clarendon Press"
+                    }
+                ]
+            ],
+            "series": [
+                {
+                    "type": "text",
+                    "text": "Oxford classical texts CSL-VAR"
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Clitophon, "
+                },
+                {
+                    "type": "text",
+                    "text": "Republic, ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Timaeus, ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Critias",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "4"
+                }
+            ]
+        }
+    },
+    "2": {
+        "entry_key": "2",
+        "bib_type": "inbook",
+        "fields": {
+            "date": "1902",
+            "author": [
+                {
+                    "literal": [
+                        {
+                            "type": "text",
+                            "text": "Plato"
+                        }
+                    ]
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "Clitophon, "
+                },
+                {
+                    "type": "text",
+                    "text": "Republic, ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Timaeus, ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Critias",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "editor": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Burnet"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "John"
+                        }
+                    ]
+                }
+            ],
+            "langid": "",
+            "location": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Oxford"
+                    }
+                ]
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "327"
+                        },
+                        {
+                            "type": "text",
+                            "text": "621"
+                        }
+                    ]
+                ]
+            ],
+            "publisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Clarendon Press"
+                    }
+                ]
+            ],
+            "series": [
+                {
+                    "type": "text",
+                    "text": "Oxford classical texts"
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Republic"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "4"
+                }
+            ]
+        }
+    }
+}

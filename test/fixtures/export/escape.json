@@ -1,0 +1,39 @@
+{
+    "entries": {
+        "1": {
+            "bib_type": "article",
+            "entry_key": "unescaped_html",
+            "fields": {
+                "date": "2009",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "H.T.M.L."
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Peter"
+                            }
+                        ]
+                    }
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "A title with <i>Style</i>!"
+                    }
+                ],
+                "journaltitle": [
+                    {
+                        "type": "text",
+                        "text": "Issues with <span>unescaped</span> HTML"
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,138 @@
+{
+    "entries": {
+        "1": {
+            "bib_type": "article",
+            "entry_key": "Abu-Zeid_1986",
+            "fields": {
+                "date": "1986",
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Determination of the Thickness and Refractive Index of "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Cu",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": "2",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            },
+                            {
+                                "type": "sub"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": "O",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " Thin Film Using Thermal and Optical Interferometry"
+                    }
+                ],
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Abu-Zeid"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "M. E."
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Rakhshani"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "A. E."
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Al-Jassar"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "A. A."
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Youssef"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Y. A."
+                            }
+                        ]
+                    }
+                ],
+                "journaltitle": [
+                    {
+                        "type": "text",
+                        "text": "Physica Status Solidi (a)"
+                    }
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "613"
+                            }
+                        ],
+                        [
+                            {
+                                "type": "text",
+                                "text": "620"
+                            }
+                        ]
+                    ]
+                ],
+                "volume": [
+                    {
+                        "type": "text",
+                        "text": "93"
+                    }
+                ],
+                "doi": "10.1002/pssa.2210930226"
+            }
+        }
+    }
+}

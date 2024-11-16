@@ -1,0 +1,77 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "article",
+        "fields": {
+            "date": "2009-06",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Chru'sci'nski"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "D."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Kossakowski"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "A."
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Geometry of quantum states: New construction of positive maps",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Physics letters A"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "373"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "2301"
+                        },
+                        {
+                            "type": "text",
+                            "text": "2305"
+                        }
+                    ]
+                ]
+            ],
+            "doi": "10.1016/j.physleta.2009.04.068"
+        }
+    }
+}

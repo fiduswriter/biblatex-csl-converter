@@ -1,0 +1,684 @@
+{
+    "entries": {
+        "1": {
+            "bib_type": "article",
+            "entry_key": "Fritz2012",
+            "fields": {
+                "date": "2012",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Fritz"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "U."
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Corti"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "C."
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Päckert"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "M."
+                            }
+                        ]
+                    }
+                ],
+                "doi": "10.1007/s13127-011-0069-8",
+                "journaltitle": [
+                    {
+                        "type": "text",
+                        "text": "Actes du 4"
+                    },
+                    {
+                        "type": "text",
+                        "text": "ème",
+                        "marks": [
+                            {
+                                "type": "sup"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " Congrès Français d'Acoustique"
+                    }
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "71"
+                            }
+                        ],
+                        [
+                            {
+                                "type": "text",
+                                "text": "80"
+                            }
+                        ]
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Fritz2012"
+                    }
+                ],
+                "volume": [
+                    {
+                        "type": "text",
+                        "text": "12"
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "2": {
+            "bib_type": "article",
+            "entry_key": "Fritz2012a",
+            "fields": {
+                "date": "2012",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Fritz"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "U."
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Corti"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "C."
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Päckert"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "M."
+                            }
+                        ]
+                    }
+                ],
+                "doi": "10.1007/s13127-011-0069-8",
+                "journaltitle": [
+                    {
+                        "type": "text",
+                        "text": "Actes du 4"
+                    },
+                    {
+                        "type": "text",
+                        "text": "ème",
+                        "marks": [
+                            {
+                                "type": "sup"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " Congrès Français d'Acoustique"
+                    }
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "71"
+                            }
+                        ],
+                        [
+                            {
+                                "type": "text",
+                                "text": "80"
+                            }
+                        ]
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Fritz2012a"
+                    }
+                ],
+                "volume": [
+                    {
+                        "type": "text",
+                        "text": "12"
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "3": {
+            "bib_type": "article",
+            "entry_key": "Fritz2012b",
+            "fields": {
+                "date": "2012",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Fritz"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "U."
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Corti"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "C."
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Päckert"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "M."
+                            }
+                        ]
+                    }
+                ],
+                "doi": "10.1007/s13127-011-0069-8",
+                "journaltitle": [
+                    {
+                        "type": "text",
+                        "text": "Actes du 4"
+                    },
+                    {
+                        "type": "text",
+                        "text": "ème",
+                        "marks": [
+                            {
+                                "type": "sup"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " Congrès Français d'Acoustique"
+                    }
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "71"
+                            }
+                        ],
+                        [
+                            {
+                                "type": "text",
+                                "text": "80"
+                            }
+                        ]
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Fritz2012b"
+                    }
+                ],
+                "volume": [
+                    {
+                        "type": "text",
+                        "text": "12"
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "4": {
+            "bib_type": "article",
+            "entry_key": "Fritz2012c",
+            "fields": {
+                "date": "2012",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Fritz"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "U."
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Corti"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "C."
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Päckert"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "M."
+                            }
+                        ]
+                    }
+                ],
+                "doi": "10.1007/s13127-011-0069-8",
+                "journaltitle": [
+                    {
+                        "type": "text",
+                        "text": "Actes du 4"
+                    },
+                    {
+                        "type": "text",
+                        "text": "ème",
+                        "marks": [
+                            {
+                                "type": "sup"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " Congrès Français d'Acoustique"
+                    }
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "71"
+                            }
+                        ],
+                        [
+                            {
+                                "type": "text",
+                                "text": "80"
+                            }
+                        ]
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Fritz2012c"
+                    }
+                ],
+                "volume": [
+                    {
+                        "type": "text",
+                        "text": "12"
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "5": {
+            "bib_type": "article",
+            "entry_key": "Fritz2012d",
+            "fields": {
+                "date": "2012",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Fritz"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "U."
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Corti"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "C."
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Päckert"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "M."
+                            }
+                        ]
+                    }
+                ],
+                "doi": "10.1007/s13127-011-0069-8",
+                "journaltitle": [
+                    {
+                        "type": "text",
+                        "text": "Actes du 4"
+                    },
+                    {
+                        "type": "text",
+                        "text": "ème",
+                        "marks": [
+                            {
+                                "type": "sup"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " Congrès Français d'Acoustique"
+                    }
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "71"
+                            }
+                        ],
+                        [
+                            {
+                                "type": "text",
+                                "text": "80"
+                            }
+                        ]
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Fritz2012d"
+                    }
+                ],
+                "volume": [
+                    {
+                        "type": "text",
+                        "text": "12"
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "6": {
+            "bib_type": "article",
+            "entry_key": "Fritz2012e",
+            "fields": {
+                "date": "2012",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Fritz"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "U."
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Corti"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "C."
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Päckert"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "M."
+                            }
+                        ]
+                    }
+                ],
+                "doi": "10.1007/s13127-011-0069-8",
+                "journaltitle": [
+                    {
+                        "type": "text",
+                        "text": "Actes du 4"
+                    },
+                    {
+                        "type": "text",
+                        "text": "ème",
+                        "marks": [
+                            {
+                                "type": "sup"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " Congrès Français d'Acoustique"
+                    }
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "71"
+                            }
+                        ],
+                        [
+                            {
+                                "type": "text",
+                                "text": "80"
+                            }
+                        ]
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Fritz2012e"
+                    }
+                ],
+                "volume": [
+                    {
+                        "type": "text",
+                        "text": "12"
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        }
+    },
+    "warnings": [
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "Fritz2012",
+            "line": 11
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "Fritz2012a",
+            "line": 22
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "Fritz2012b",
+            "line": 33
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "Fritz2012c",
+            "line": 44
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "Fritz2012d",
+            "line": 55
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "Fritz2012e",
+            "line": 66
+        }
+    ]
+}

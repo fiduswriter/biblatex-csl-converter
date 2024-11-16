@@ -1,0 +1,72 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "book",
+        "fields": {
+            "date": "1990",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Russ"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Jacqueline"
+                        }
+                    ]
+                }
+            ],
+            "isbn": [
+                {
+                    "type": "text",
+                    "text": "2-218-05069-2"
+                }
+            ],
+            "langid": "",
+            "location": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Paris"
+                    }
+                ]
+            ],
+            "pagetotal": [
+                {
+                    "type": "text",
+                    "text": "79"
+                }
+            ],
+            "publisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Hatier"
+                    }
+                ]
+            ],
+            "series": [
+                {
+                    "type": "text",
+                    "text": "Profil"
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Savoir et pouvoir"
+                }
+            ],
+            "volumes": [
+                {
+                    "type": "text",
+                    "text": "2"
+                }
+            ]
+        }
+    }
+}

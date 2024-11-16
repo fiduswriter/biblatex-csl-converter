@@ -1,0 +1,31 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "online",
+        "fields": {
+            "date": "2014-12-31",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Doe"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "John"
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Test"
+                }
+            ]
+        }
+    }
+}

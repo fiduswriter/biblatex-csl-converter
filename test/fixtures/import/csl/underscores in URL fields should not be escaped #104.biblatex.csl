@@ -1,0 +1,31 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2012
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "American Rights",
+                "family": "Work",
+                "non-dropping-particle": "at"
+            }
+        ],
+        "title": "Public <span class=\"nocase\">Service Research Foundation</span>",
+        "URL": "http://www.americanrightsatwork.org/blogcategory_275/",
+        "accessed": {
+            "date-parts": [
+                [
+                    2012,
+                    7,
+                    27
+                ]
+            ]
+        },
+        "type": "article",
+        "id": "1"
+    }
+}

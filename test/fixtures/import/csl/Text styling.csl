@@ -1,0 +1,87 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2010
+                ]
+            ]
+        },
+        "language": "en-US",
+        "author": [
+            {
+                "given": "Johannes",
+                "family": "Wilm"
+            }
+        ],
+        "title": "<span class=\"nocase\">Cuba</span>: economic \ntextbfchanges and the future of socialism",
+        "container-title": "\ntextit<span class=\"nocase\">Links</span> international journal of socialist renewal",
+        "URL": "http://links.org.au/node/1916",
+        "accessed": {
+            "date-parts": [
+                [
+                    2010,
+                    10,
+                    31
+                ]
+            ]
+        },
+        "type": "article",
+        "id": "1"
+    },
+    "2": {
+        "issued": {
+            "date-parts": [
+                [
+                    2009
+                ]
+            ]
+        },
+        "language": "es-ES",
+        "author": [
+            {
+                "given": "Johannes",
+                "family": "Wilm"
+            }
+        ],
+        "editor": [
+            {
+                "literal": "PuenteSur"
+            }
+        ],
+        "title": "La joven revolución hondureña",
+        "URL": "http://www.johanneswilm.org/honduras/",
+        "accessed": {
+            "date-parts": [
+                [
+                    2010,
+                    11,
+                    2
+                ]
+            ]
+        },
+        "type": "article",
+        "id": "2"
+    },
+    "3": {
+        "issued": {
+            "date-parts": [
+                [
+                    2011
+                ]
+            ]
+        },
+        "publisher-place": "Oslo, Norway & Tucson, AZ",
+        "title": "<span class=\"nocase\">Nicaragua</span>, back from the dead? An anthropological view of the <span class=\"nocase\">Sandinista</span> movement in the early 21<sup>st</sup> century.",
+        "publisher": "New Left Notes",
+        "author": [
+            {
+                "given": "Johannes",
+                "family": "Wilm",
+                "suffix": "Dr."
+            }
+        ],
+        "type": "book",
+        "id": "3"
+    }
+}

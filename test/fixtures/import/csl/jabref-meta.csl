@@ -1,0 +1,42 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2017
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "John",
+                "family": "Doe"
+            }
+        ],
+        "title": "The paper in subgroup",
+        "type": "article",
+        "id": "1"
+    },
+    "2": {
+        "author": [
+            {
+                "given": "I.",
+                "family": "Other"
+            }
+        ],
+        "title": "The article in my other subgroup",
+        "type": "article",
+        "id": "2"
+    },
+    "3": {
+        "title": "the paper not in a group",
+        "author": [
+            {
+                "given": "I",
+                "family": "Unkonw"
+            }
+        ],
+        "type": "article",
+        "id": "3"
+    }
+}

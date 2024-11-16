@@ -1,0 +1,1225 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "book",
+        "fields": {
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Gogh"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Vincent"
+                        }
+                    ]
+                }
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "[van Gogh][Vincent]"
+                }
+            ]
+        }
+    },
+    "2": {
+        "entry_key": "2",
+        "bib_type": "book",
+        "fields": {
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Humboldt"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Alexander"
+                        }
+                    ]
+                }
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "[Humboldt][Alexander von]"
+                }
+            ]
+        }
+    },
+    "3": {
+        "entry_key": "3",
+        "bib_type": "book",
+        "fields": {
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Beauvoir"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Simone"
+                        }
+                    ]
+                }
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "[Beauvoir][Simone de]"
+                }
+            ]
+        }
+    },
+    "4": {
+        "entry_key": "4",
+        "bib_type": "book",
+        "fields": {
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Gaulle"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Charles"
+                        }
+                    ],
+                    "prefix": [
+                        {
+                            "type": "text",
+                            "text": "de"
+                        }
+                    ],
+                    "useprefix": true
+                }
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "[\"de Gaulle\"][Charles]"
+                }
+            ]
+        }
+    },
+    "5": {
+        "entry_key": "5",
+        "bib_type": "book",
+        "fields": {
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "King"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Martin Luther"
+                        }
+                    ],
+                    "suffix": [
+                        {
+                            "type": "text",
+                            "text": "Jr."
+                        }
+                    ]
+                }
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "[King][Martin Luther, Jr.]"
+                }
+            ]
+        }
+    },
+    "6": {
+        "entry_key": "6",
+        "bib_type": "book",
+        "fields": {
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Stevenson"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Adlai E."
+                        }
+                    ],
+                    "suffix": [
+                        {
+                            "type": "text",
+                            "text": "III"
+                        }
+                    ]
+                }
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "[Stevenson][Adlai E.,! III]"
+                }
+            ]
+        }
+    },
+    "7": {
+        "entry_key": "7",
+        "bib_type": "book",
+        "fields": {
+            "author": [
+                {
+                    "literal": [
+                        {
+                            "type": "text",
+                            "text": "National Aeronautics and Space Administration"
+                        }
+                    ]
+                }
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "[[National Aeronautics and Space Administration]]"
+                }
+            ]
+        }
+    },
+    "8": {
+        "entry_key": "8",
+        "bib_type": "book",
+        "fields": {
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "d'Eert"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Christianus"
+                        }
+                    ]
+                }
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "[boven d'Eert][Christianus]"
+                }
+            ]
+        }
+    },
+    "9": {
+        "entry_key": "9",
+        "bib_type": "book",
+        "fields": {
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "'s-Gravesande"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Goverdus"
+                        }
+                    ]
+                }
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "['s-Gravesande][Goverdus]"
+                }
+            ]
+        }
+    },
+    "10": {
+        "entry_key": "10",
+        "bib_type": "book",
+        "fields": {
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "De Quincey"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Thomas"
+                        }
+                    ]
+                }
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "[De Quincey][Thomas]"
+                }
+            ]
+        }
+    },
+    "11": {
+        "entry_key": "11",
+        "bib_type": "book",
+        "fields": {
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Gasset"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "José"
+                        }
+                    ],
+                    "prefix": [
+                        {
+                            "type": "text",
+                            "text": "Ortega y"
+                        }
+                    ],
+                    "useprefix": true
+                }
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "[Ortega y Gasset][José]"
+                }
+            ]
+        }
+    },
+    "12": {
+        "entry_key": "12",
+        "bib_type": "book",
+        "fields": {
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "D'Amato"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Alfonse"
+                        }
+                    ]
+                }
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "[D'Amato][Alfonse]"
+                }
+            ]
+        }
+    },
+    "13": {
+        "entry_key": "13",
+        "bib_type": "book",
+        "fields": {
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Sadat"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Anwar"
+                        }
+                    ],
+                    "prefix": [
+                        {
+                            "type": "text",
+                            "text": "-"
+                        }
+                    ],
+                    "useprefix": true
+                }
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "[Sadat][Anwar el-]"
+                }
+            ]
+        }
+    },
+    "14": {
+        "entry_key": "14",
+        "bib_type": "book",
+        "fields": {
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "La Follette"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Robert M."
+                        }
+                    ],
+                    "suffix": [
+                        {
+                            "type": "text",
+                            "text": "Sr."
+                        }
+                    ]
+                }
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "[La Follette][Robert M., Sr.]"
+                }
+            ]
+        }
+    },
+    "15": {
+        "entry_key": "15",
+        "bib_type": "book",
+        "fields": {
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Mare"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Walter"
+                        }
+                    ],
+                    "prefix": [
+                        {
+                            "type": "text",
+                            "text": "de la"
+                        }
+                    ],
+                    "useprefix": true
+                }
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "[\"de la Mare\"][Walter]"
+                }
+            ]
+        }
+    },
+    "16": {
+        "entry_key": "16",
+        "bib_type": "book",
+        "fields": {
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "DeGette"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Diana"
+                        }
+                    ]
+                }
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "[DeGette][Diana]"
+                }
+            ]
+        }
+    },
+    "17": {
+        "entry_key": "17",
+        "bib_type": "book",
+        "fields": {
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Saunders"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "John Bertrand de Cusance Morant"
+                        }
+                    ]
+                }
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "[Saunders][John Bertrand de Cusance Morant]"
+                }
+            ]
+        }
+    },
+    "18": {
+        "entry_key": "18",
+        "bib_type": "book",
+        "fields": {
+            "author": [
+                {
+                    "literal": [
+                        {
+                            "type": "text",
+                            "text": "Marcus Aurelius"
+                        }
+                    ]
+                }
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "[[Marcus Aurelius]]"
+                }
+            ]
+        }
+    },
+    "19": {
+        "entry_key": "19",
+        "bib_type": "book",
+        "fields": {
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Dumas"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Alexandre"
+                        }
+                    ],
+                    "suffix": [
+                        {
+                            "type": "text",
+                            "text": "père"
+                        }
+                    ]
+                }
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "[Dumas][Alexandre, père]"
+                }
+            ]
+        }
+    },
+    "20": {
+        "entry_key": "20",
+        "bib_type": "book",
+        "fields": {
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Van Rensselaer"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Stephen"
+                        }
+                    ]
+                }
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "[Van Rensselaer][Stephen]"
+                }
+            ]
+        }
+    },
+    "21": {
+        "entry_key": "21",
+        "bib_type": "book",
+        "fields": {
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "L'Enfant"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Pierre-Charles"
+                        }
+                    ]
+                }
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "[L'Enfant][Pierre-Charles]"
+                }
+            ]
+        }
+    },
+    "22": {
+        "entry_key": "22",
+        "bib_type": "book",
+        "fields": {
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Gulik"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Robert"
+                        }
+                    ],
+                    "prefix": [
+                        {
+                            "type": "text",
+                            "text": "van"
+                        }
+                    ],
+                    "useprefix": true
+                }
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "[\"van Gulik\"][Robert]"
+                }
+            ]
+        }
+    },
+    "23": {
+        "entry_key": "23",
+        "bib_type": "book",
+        "fields": {
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Sackville-West"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Victoria"
+                        }
+                    ]
+                }
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "[Sackville-West][Victoria]"
+                }
+            ]
+        }
+    },
+    "24": {
+        "entry_key": "24",
+        "bib_type": "book",
+        "fields": {
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Vaughan Williams"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Ralph"
+                        }
+                    ]
+                }
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "[Vaughan Williams][Ralph]"
+                }
+            ]
+        }
+    },
+    "25": {
+        "entry_key": "25",
+        "bib_type": "book",
+        "fields": {
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Rohe"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Ludwig"
+                        }
+                    ],
+                    "prefix": [
+                        {
+                            "type": "text",
+                            "text": "Mies van der"
+                        }
+                    ],
+                    "useprefix": true
+                }
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "[Mies van der Rohe][Ludwig]"
+                }
+            ]
+        }
+    },
+    "26": {
+        "entry_key": "26",
+        "bib_type": "book",
+        "fields": {
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "'Alembert"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Jean le Rond"
+                        }
+                    ]
+                }
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "[d'Alembert][Jean le Rond]"
+                }
+            ]
+        }
+    },
+    "27": {
+        "entry_key": "27",
+        "bib_type": "book",
+        "fields": {
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Tocqueville"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Alexis"
+                        }
+                    ]
+                }
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "[Tocqueville][Alexis de]"
+                }
+            ]
+        }
+    },
+    "28": {
+        "entry_key": "28",
+        "bib_type": "book",
+        "fields": {
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "La Fontaine"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Jean"
+                        }
+                    ],
+                    "prefix": [
+                        {
+                            "type": "text",
+                            "text": " fontainede"
+                        }
+                    ],
+                    "useprefix": true
+                }
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "[La Fontaine][Jean de]"
+                }
+            ]
+        }
+    },
+    "29": {
+        "entry_key": "29",
+        "bib_type": "book",
+        "fields": {
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "La Salle"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "René-Robert Cavelier"
+                        }
+                    ],
+                    "prefix": [
+                        {
+                            "type": "text",
+                            "text": " sallede"
+                        }
+                    ],
+                    "useprefix": true
+                }
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "[La Salle][René-Robert Cavelier de]"
+                }
+            ]
+        }
+    },
+    "30": {
+        "entry_key": "30",
+        "bib_type": "book",
+        "fields": {
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Clinchamps"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Philippe"
+                        }
+                    ],
+                    "prefix": [
+                        {
+                            "type": "text",
+                            "text": " de clinchampsdu Puy de"
+                        }
+                    ],
+                    "useprefix": true
+                }
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "[du Puy de Clinchamps][PhU+0097ilippe]"
+                }
+            ]
+        }
+    },
+    "31": {
+        "entry_key": "31",
+        "bib_type": "book",
+        "fields": {
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Stein"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Heinrich Friedrich Karl"
+                        }
+                    ],
+                    "prefix": [
+                        {
+                            "type": "text",
+                            "text": " und zum"
+                        }
+                    ],
+                    "useprefix": true
+                }
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "[Stein][Heinrich Friedrich Karl vom und zum]"
+                }
+            ]
+        }
+    },
+    "32": {
+        "entry_key": "32",
+        "bib_type": "book",
+        "fields": {
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Silva"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Agostinho"
+                        }
+                    ]
+                }
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "[Silva][Agostinho da]"
+                }
+            ]
+        }
+    },
+    "33": {
+        "entry_key": "33",
+        "bib_type": "book",
+        "fields": {
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Gama"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Vasco"
+                        }
+                    ],
+                    "prefix": [
+                        {
+                            "type": "text",
+                            "text": "da"
+                        }
+                    ],
+                    "useprefix": true
+                }
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "[\"da Gama\"][Vasco]"
+                }
+            ]
+        }
+    },
+    "34": {
+        "entry_key": "34",
+        "bib_type": "book",
+        "fields": {
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "D'Annunzio"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Gabriele"
+                        }
+                    ]
+                }
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "[D'Annunzio][Gabriele]"
+                }
+            ]
+        }
+    },
+    "35": {
+        "entry_key": "35",
+        "bib_type": "book",
+        "fields": {
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Da Ponte"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Lorenzo"
+                        }
+                    ]
+                }
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "[Da Ponte][Lorenzo]"
+                }
+            ]
+        }
+    },
+    "36": {
+        "entry_key": "36",
+        "bib_type": "book",
+        "fields": {
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Della Robbia"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Luca"
+                        }
+                    ]
+                }
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "[Della Robbia][Luca]"
+                }
+            ]
+        }
+    },
+    "37": {
+        "entry_key": "37",
+        "bib_type": "book",
+        "fields": {
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Este"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Beatrice"
+                        }
+                    ],
+                    "prefix": [
+                        {
+                            "type": "text",
+                            "text": "'"
+                        }
+                    ],
+                    "useprefix": true
+                }
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "[Este][Beatrice d']"
+                }
+            ]
+        }
+    },
+    "38": {
+        "entry_key": "38",
+        "bib_type": "book",
+        "fields": {
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Medici"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Lorenzo"
+                        }
+                    ],
+                    "prefix": [
+                        {
+                            "type": "text",
+                            "text": "'"
+                        }
+                    ],
+                    "useprefix": true
+                }
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "[Medici][Lorenzo de'U+200B]"
+                }
+            ]
+        }
+    },
+    "39": {
+        "entry_key": "39",
+        "bib_type": "book",
+        "fields": {
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "-Hakim"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Tawfiq"
+                        }
+                    ]
+                }
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "[al-Hakim][Tawfiq]"
+                }
+            ]
+        }
+    },
+    "40": {
+        "entry_key": "40",
+        "bib_type": "book",
+        "fields": {
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Le Vayer"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "François de La Mothe"
+                        }
+                    ]
+                }
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "[Le Vayer][François de La Mothe]"
+                }
+            ]
+        }
+    }
+}

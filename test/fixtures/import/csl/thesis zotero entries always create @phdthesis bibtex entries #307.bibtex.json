@@ -1,0 +1,62 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "thesis",
+        "fields": {
+            "date": "2011",
+            "langid": "",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Wøller"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Sune Brøndum"
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Det multiple arkæologiske objekt. Et studie af materialitet og arkæologiske tekstiler"
+                }
+            ]
+        }
+    },
+    "2": {
+        "entry_key": "2",
+        "bib_type": "thesis",
+        "fields": {
+            "date": "2011",
+            "langid": "",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Wøller"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Sune Brøndum"
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "CTR det multiple arkæologiske objekt. Et studie af materialitet og arkæologiske tekstiler"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,179 @@
+{
+    "entries": {
+        "1": {
+            "bib_type": "inproceedings",
+            "entry_key": "CorlessJeffreyKnuth1997Proc1997IntSympSymbAlgebrComput",
+            "fields": {
+                "date": "1997",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Corless"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Robert M."
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Jeffrey"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "David J."
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Knuth"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Donald E."
+                            }
+                        ]
+                    }
+                ],
+                "booktitle": [
+                    {
+                        "type": "text",
+                        "text": "Proceedings of the 1997 "
+                    },
+                    {
+                        "type": "text",
+                        "text": "International Symposium",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " on "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Symbolic",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " and "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Algebraic Computation",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ],
+                "doi": "10.1145/258726.258783",
+                "isbn": [
+                    {
+                        "type": "text",
+                        "text": "0-89791-875-4"
+                    }
+                ],
+                "langid": "usenglish",
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "197"
+                            }
+                        ],
+                        [
+                            {
+                                "type": "text",
+                                "text": "204"
+                            }
+                        ]
+                    ]
+                ],
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "ACM Press"
+                        }
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "A Sequence of Series for the "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Lambert",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " "
+                    },
+                    {
+                        "type": "text",
+                        "text": "W",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            },
+                            {
+                                "type": "em"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " Function"
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        }
+    },
+    "warnings": [
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "CorlessJeffreyKnuth1997Proc1997IntSympSymbAlgebrComput",
+            "line": 12
+        }
+    ]
+}

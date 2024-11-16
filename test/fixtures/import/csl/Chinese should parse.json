@@ -1,0 +1,45 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "article",
+        "fields": {
+            "date": "1999",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "人的素質提昇之重要性--建立在法治精神之上的多元主義"
+                }
+            ],
+            "author": [
+                {
+                    "literal": [
+                        {
+                            "type": "text",
+                            "text": "羊憶蓉"
+                        }
+                    ]
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "人的素質--[人文關懷與社會實踐] 國際學術研討會論文集"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "174"
+                        },
+                        {
+                            "type": "text",
+                            "text": "180"
+                        }
+                    ]
+                ]
+            ]
+        }
+    }
+}

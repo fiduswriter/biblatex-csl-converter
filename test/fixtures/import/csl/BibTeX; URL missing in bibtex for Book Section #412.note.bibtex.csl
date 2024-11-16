@@ -1,0 +1,46 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2010
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Thibaut",
+                "family": "Lust"
+            },
+            {
+                "given": "Jacques",
+                "family": "Teghem"
+            }
+        ],
+        "container-title": "Advances in <span class=\"nocase\">Multi</span>-<span class=\"nocase\">Objective Nature Inspired Computing</span>",
+        "DOI": "10.1007/978-3-642-11218-8_6",
+        "editor": [
+            {
+                "given": "Carlos A. Coello",
+                "family": "Coello"
+            },
+            {
+                "given": "Clarisse",
+                "family": "Dhaenens"
+            },
+            {
+                "given": "Laetitia",
+                "family": "Jourdan"
+            }
+        ],
+        "ISBN": "978-3-642-11217-1 978-3-642-11218-8",
+        "note": "http://link.springer.com/chapter/10.1007/978-3-642-11218-8_6",
+        "collection-number": "272",
+        "page": "119-141",
+        "publisher": "Springer Berlin Heidelberg",
+        "collection-title": "Studies in computational intelligence",
+        "title": "The <span class=\"nocase\">Multiobjective Traveling Salesman Problem</span>: <span class=\"nocase\">A Survey</span> and a <span class=\"nocase\">New Approach</span>",
+        "type": "chapter",
+        "id": "1"
+    }
+}

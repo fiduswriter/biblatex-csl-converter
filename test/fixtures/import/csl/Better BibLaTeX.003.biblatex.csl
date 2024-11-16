@@ -1,0 +1,59 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2006,
+                    10
+                ]
+            ]
+        },
+        "editor": [
+            {
+                "given": "First",
+                "family": "Editor"
+            },
+            {
+                "given": "Second",
+                "family": "Editor"
+            }
+        ],
+        "title": "Some publication title",
+        "author": [
+            {
+                "given": "First",
+                "family": "Author"
+            },
+            {
+                "given": "Second",
+                "family": "Author"
+            }
+        ],
+        "page": "330-331",
+        "type": "paper-conference",
+        "id": "1"
+    },
+    "2": {
+        "issued": {
+            "date-parts": [
+                [
+                    2006,
+                    10
+                ]
+            ]
+        },
+        "editor": [
+            {
+                "given": "First",
+                "family": "Editor"
+            },
+            {
+                "given": "Second",
+                "family": "Editor"
+            }
+        ],
+        "title": "Proceedings of the <span class=\"nocase\">Xth</span> conference on <span class=\"nocase\">XYZ</span>",
+        "type": "dataset",
+        "id": "2"
+    }
+}

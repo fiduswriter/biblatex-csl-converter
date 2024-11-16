@@ -1,0 +1,36 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2014,
+                    9
+                ]
+            ]
+        },
+        "author": [
+            {
+                "given": "Thomas",
+                "family": "Emmert"
+            },
+            {
+                "given": "Stefan",
+                "family": "Jaensch"
+            },
+            {
+                "given": "Carlo",
+                "family": "Sovardi"
+            },
+            {
+                "given": "Wolfgang",
+                "family": "Polifke"
+            }
+        ],
+        "container-title": "7th <span class=\"nocase\">Forum Acusticum</span>",
+        "publisher-place": "Krakow",
+        "title": "<span class=\"nocase\">taX</span> - a <span class=\"nocase\">Flexible Tool</span> for <span class=\"nocase\">Low</span>-<span class=\"nocase\">Order Duct Acoustic Simulation</span> in <span class=\"nocase\">Time</span> and <span class=\"nocase\">Frequency Domain</span>",
+        "URL": "http://www.fa2014.agh.edu.pl/fa2014_cd/",
+        "type": "paper-conference",
+        "id": "1"
+    }
+}

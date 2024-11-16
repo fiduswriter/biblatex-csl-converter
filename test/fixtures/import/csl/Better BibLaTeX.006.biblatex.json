@@ -1,0 +1,23 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "article",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Non-breaking space: ; accented characters: Ñ and Ñ; tilde in "
+                },
+                {
+                    "type": "text",
+                    "text": "URL: http://example.com/~user",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

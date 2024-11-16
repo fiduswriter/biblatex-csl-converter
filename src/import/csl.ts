@@ -415,7 +415,7 @@ export class CSLParser {
     }
 }
 
-export function parse(
+export function parseCSL(
     input: Record<string, CSLEntry>
 ): Record<number, EntryObject> {
     return new CSLParser(input).parse()

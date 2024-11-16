@@ -1,0 +1,138 @@
+{
+    "entries": {
+        "1": {
+            "bib_type": "article",
+            "entry_key": "HammondBortz2011ApplMathComput",
+            "fields": {
+                "date": "2011-11",
+                "langid": "usenglish",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Hammond"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Jason F."
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Bortz"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "David M."
+                            }
+                        ]
+                    }
+                ],
+                "doi": "10.1016/j.amc.2011.03.163",
+                "issn": [
+                    {
+                        "type": "text",
+                        "text": "00963003"
+                    }
+                ],
+                "journaltitle": [
+                    {
+                        "type": "text",
+                        "text": "Appl. Math. Comput."
+                    }
+                ],
+                "language": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "en"
+                        }
+                    ]
+                ],
+                "note": [
+                    {
+                        "type": "text",
+                        "text": "http://linkinghub.elsevier.com/retrieve/pii/S0096300311010137",
+                        "marks": [
+                            {
+                                "type": "url"
+                            }
+                        ]
+                    }
+                ],
+                "number": [
+                    {
+                        "type": "text",
+                        "text": "6"
+                    }
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "2497"
+                            }
+                        ],
+                        [
+                            {
+                                "type": "text",
+                                "text": "2508"
+                            }
+                        ]
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Analytical Solutions to "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Fisher",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": "'s Equation with Time-Variable Coefficients"
+                    }
+                ],
+                "urldate": "2014-07-02",
+                "volume": [
+                    {
+                        "type": "text",
+                        "text": "218"
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        }
+    },
+    "warnings": [
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "HammondBortz2011ApplMathComput",
+            "line": 17
+        }
+    ]
+}

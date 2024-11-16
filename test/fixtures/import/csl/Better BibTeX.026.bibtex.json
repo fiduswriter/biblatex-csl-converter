@@ -1,0 +1,51 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "unpublished",
+        "fields": {
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Traum"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "David"
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Computational "
+                },
+                {
+                    "type": "text",
+                    "text": "Models of ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Non-cooperative dialogue",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

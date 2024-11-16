@@ -1,0 +1,175 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "article",
+        "fields": {
+            "date": "2015",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "A film"
+                }
+            ]
+        }
+    },
+    "2": {
+        "entry_key": "2",
+        "bib_type": "report",
+        "fields": {
+            "date": "2015",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Author"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Ann"
+                        }
+                    ]
+                }
+            ],
+            "location": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Place"
+                    }
+                ]
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "{:X-genre: xxx}"
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "A report"
+                }
+            ]
+        }
+    },
+    "3": {
+        "entry_key": "3",
+        "bib_type": "article",
+        "fields": {
+            "date": "1964",
+            "shorttitle": [
+                {
+                    "type": "text",
+                    "text": "Dr. "
+                },
+                {
+                    "type": "text",
+                    "text": "Strangelove",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Dr. "
+                },
+                {
+                    "type": "text",
+                    "text": "Strangelove or: how ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "I learned to stop worrying and love the bomb",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "4": {
+        "entry_key": "4",
+        "bib_type": "article",
+        "fields": {
+            "date": "1996-09-16",
+            "langid": "",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "The one with the "
+                },
+                {
+                    "type": "text",
+                    "text": "Princess Leia fantasy",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "5": {
+        "entry_key": "5",
+        "bib_type": "article",
+        "fields": {
+            "date": "2003",
+            "langid": "",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "The one with the "
+                },
+                {
+                    "type": "text",
+                    "text": "Princess Leia fantasy",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "6": {
+        "entry_key": "6",
+        "bib_type": "inreference",
+        "fields": {
+            "editor": [
+                {
+                    "literal": [
+                        {
+                            "type": "text",
+                            "text": "Xxx"
+                        }
+                    ]
+                }
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "{:X-genre: xxx}"
+                }
+            ]
+        }
+    }
+}

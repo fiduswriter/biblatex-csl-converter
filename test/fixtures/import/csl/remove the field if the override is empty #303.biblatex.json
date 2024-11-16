@@ -1,0 +1,58 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "article",
+        "fields": {
+            "date": "1988",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Pattaro"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Enrico"
+                        }
+                    ]
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Revue interdisciplinaire d’études juridiques"
+                }
+            ],
+            "langid": "",
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "135"
+                        },
+                        {
+                            "type": "text",
+                            "text": "162"
+                        }
+                    ]
+                ]
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Dimensions du savoir juridique et orientations philosophiques"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "21"
+                }
+            ]
+        }
+    }
+}

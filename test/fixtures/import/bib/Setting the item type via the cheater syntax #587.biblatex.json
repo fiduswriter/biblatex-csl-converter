@@ -1,0 +1,492 @@
+{
+    "entries": {
+        "1": {
+            "bib_type": "booklet",
+            "entry_key": "clark_mesopotamia:_1957",
+            "fields": {
+                "date": "1957",
+                "abstract": [
+                    {
+                        "type": "text",
+                        "text": "Example from CMoS, 16e, 14.249"
+                    }
+                ],
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Clark"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Hazel V."
+                            }
+                        ]
+                    }
+                ],
+                "location": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Mesopotamia, OH"
+                        }
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Mesopotamia: Between Two Rivers"
+                    }
+                ]
+            },
+            "unexpected_fields": {
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Trumbull County Historical Society"
+                        }
+                    ]
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "2": {
+            "bib_type": "misc",
+            "entry_key": "_object_????",
+            "fields": {
+                "abstract": [
+                    {
+                        "type": "text",
+                        "text": "Example from CMoS, 16e, 14.272"
+                    }
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Object Name "
+                    },
+                    {
+                        "type": "text",
+                        "text": "IRAS F00400",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": "+4059"
+                    }
+                ],
+                "url": "http://nedwww.ipac.caltech.edu/",
+                "urldate": "2009-10-06"
+            },
+            "unexpected_fields": {
+                "journaltitle": [
+                    {
+                        "type": "text",
+                        "text": "NASA/IPAC Extragalactic Database"
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "3": {
+            "bib_type": "misc",
+            "entry_key": "mozart_sonatas_1960",
+            "fields": {
+                "date": "1960",
+                "abstract": [
+                    {
+                        "type": "text",
+                        "text": "Example from CMoS, 16e, 14.269 “Prepared from the autographs and earliest printed sources by Nathan Broder”"
+                    }
+                ],
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Mozart"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Wolfgang Amadeus"
+                            }
+                        ]
+                    }
+                ],
+                "editor": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Broder"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Nathan"
+                            }
+                        ]
+                    }
+                ],
+                "location": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Bryn Mawr, PA"
+                        }
+                    ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Sonatas and Fantasies for the Piano"
+                    }
+                ]
+            },
+            "unexpected_fields": {
+                "edition": [
+                    {
+                        "type": "text",
+                        "text": "Rev. ed."
+                    }
+                ],
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Theodore Presser"
+                        }
+                    ]
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "4": {
+            "bib_type": "misc",
+            "entry_key": "ratliff_mystery_1999",
+            "fields": {
+                "date": "1999-04",
+                "abstract": [
+                    {
+                        "type": "text",
+                        "text": "Example from CMoS, 16e, 14.215 “ed. and trans. John Charles Chasteen”"
+                    }
+                ],
+                "annotation": [
+                    {
+                        "type": "text",
+                        "text": "biblatex-chicago example, adapted from http://mirrors.ctan.org/macros/latex/contrib/biblatex-contrib/biblatex-chicago/doc/examples/dates-test.bib Original annotation: *16th edition only.* A Review entry presenting a review from a scholarly journaltitle, hence no entrysubtype needed.  Note the bibstrings in the title of the review, and the formatting of the title of the book reviewed there.  Also note the use of \\parteditandtrans.  The author-date system doesn't absolutely require the use of these mechanisms, which were invented to cope with the differences between notes and bibliography in the other Chicago style.  Still, although simply writing \"edited and translated by\" yourself will suffice, using these mechanisms will make your .bib file work across multiple languages, and will also allow it to work, with fewer modifications, in the notes \\& bibliography style, should that be needed.  See next entry.   Example from CMoS, 16e, 14.125"
+                    }
+                ],
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Ratliff"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Ben"
+                            }
+                        ]
+                    }
+                ],
+                "langid": "usenglish",
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "The Mystery of Samba: "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Popular",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " Music and National Identity in "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Brazil",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "unexpected_fields": {
+                "editora": [
+                    {
+                        "literal": [
+                            {
+                                "type": "text",
+                                "text": "Hermano Vianna"
+                            }
+                        ]
+                    }
+                ],
+                "editoratype": "collaborator",
+                "journaltitle": [
+                    {
+                        "type": "text",
+                        "text": "Lingua Franca"
+                    }
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "B13"
+                            }
+                        ],
+                        [
+                            {
+                                "type": "text",
+                                "text": "B14"
+                            }
+                        ]
+                    ]
+                ],
+                "volume": [
+                    {
+                        "type": "text",
+                        "text": "9"
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        },
+        "5": {
+            "bib_type": "misc",
+            "entry_key": "kamp_deconstructing_2006",
+            "fields": {
+                "date": "2006-04-23",
+                "abstract": [
+                    {
+                        "type": "text",
+                        "text": "Example from CMoS, 16e, 14.125"
+                    }
+                ],
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Kamp"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "David"
+                            }
+                        ]
+                    }
+                ],
+                "langid": "usenglish",
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Deconstructing Dinner"
+                    }
+                ],
+                "url": "http://www.nytimes.com/2006/04/23/books/review/23kamp.html."
+            },
+            "unexpected_fields": {
+                "editora": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Pollan"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Michael"
+                            }
+                        ]
+                    }
+                ],
+                "editoratype": "collaborator"
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        }
+    },
+    "warnings": [
+        {
+            "type": "unexpected_field",
+            "field_name": "publisher",
+            "entry": "clark_mesopotamia:_1957",
+            "line": 10
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "clark_mesopotamia:_1957",
+            "line": 10
+        },
+        {
+            "type": "unknown_type",
+            "type_name": "data",
+            "line": 19
+        },
+        {
+            "type": "unexpected_field",
+            "field_name": "journaltitle",
+            "entry": "_object_????",
+            "line": 19
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "_object_????",
+            "line": 19
+        },
+        {
+            "type": "unknown_type",
+            "type_name": "audio",
+            "line": 33
+        },
+        {
+            "type": "unexpected_field",
+            "field_name": "edition",
+            "entry": "mozart_sonatas_1960",
+            "line": 33
+        },
+        {
+            "type": "unexpected_field",
+            "field_name": "publisher",
+            "entry": "mozart_sonatas_1960",
+            "line": 33
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "mozart_sonatas_1960",
+            "line": 33
+        },
+        {
+            "type": "unknown_type",
+            "type_name": "review",
+            "line": 53
+        },
+        {
+            "type": "unexpected_field",
+            "field_name": "editora",
+            "entry": "ratliff_mystery_1999",
+            "line": 53
+        },
+        {
+            "type": "unexpected_field",
+            "field_name": "editoratype",
+            "entry": "ratliff_mystery_1999",
+            "line": 53
+        },
+        {
+            "type": "unexpected_field",
+            "field_name": "journaltitle",
+            "entry": "ratliff_mystery_1999",
+            "line": 53
+        },
+        {
+            "type": "unexpected_field",
+            "field_name": "pages",
+            "entry": "ratliff_mystery_1999",
+            "line": 53
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "ratliff_mystery_1999",
+            "line": 53
+        },
+        {
+            "type": "unexpected_field",
+            "field_name": "volume",
+            "entry": "ratliff_mystery_1999",
+            "line": 53
+        },
+        {
+            "type": "unknown_type",
+            "type_name": "review",
+            "line": 65
+        },
+        {
+            "type": "unexpected_field",
+            "field_name": "editora",
+            "entry": "kamp_deconstructing_2006",
+            "line": 65
+        },
+        {
+            "type": "unexpected_field",
+            "field_name": "editoratype",
+            "entry": "kamp_deconstructing_2006",
+            "line": 65
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "kamp_deconstructing_2006",
+            "line": 65
+        }
+    ]
+}

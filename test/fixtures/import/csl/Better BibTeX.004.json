@@ -1,0 +1,72 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "book",
+        "fields": {
+            "date": "2001",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Hicks"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Michael"
+                        }
+                    ],
+                    "suffix": [
+                        {
+                            "type": "text",
+                            "text": "III"
+                        }
+                    ],
+                    "prefix": [
+                        {
+                            "type": "text",
+                            "text": "von"
+                        }
+                    ],
+                    "useprefix": true
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Design of a carbon fiber composite grid structure for the GLAST spacecraft using a novel manufacturing technique"
+                }
+            ],
+            "publisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Stanford Press"
+                    }
+                ]
+            ],
+            "location": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Palo Alto"
+                    }
+                ]
+            ],
+            "edition": [
+                {
+                    "type": "text",
+                    "text": "1"
+                }
+            ],
+            "isbn": [
+                {
+                    "type": "text",
+                    "text": "0-69-697269-4"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,90 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "inbook",
+        "fields": {
+            "date": "1994",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Canguilhem"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Georges"
+                        }
+                    ]
+                }
+            ],
+            "bookauthor": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Cavaillès"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Jean"
+                        }
+                    ]
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "Œuvres complètes de philosophie des sciences"
+                }
+            ],
+            "isbn": [
+                {
+                    "type": "text",
+                    "text": "2-7056-6221-9"
+                }
+            ],
+            "langid": "",
+            "location": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Paris"
+                    }
+                ]
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "665"
+                        },
+                        {
+                            "type": "text",
+                            "text": "86"
+                        }
+                    ]
+                ]
+            ],
+            "publisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Hermann"
+                    }
+                ]
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "In memoriam"
+                }
+            ]
+        }
+    }
+}

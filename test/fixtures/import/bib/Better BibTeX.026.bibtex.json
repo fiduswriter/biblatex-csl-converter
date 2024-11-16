@@ -1,0 +1,83 @@
+{
+    "entries": {
+        "1": {
+            "bib_type": "unpublished",
+            "entry_key": "traumNDcomputationalmodelsnoncooperative",
+            "fields": {
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Traum"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "David"
+                            }
+                        ]
+                    }
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Computational "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Models",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " of "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Non",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": "-Cooperative Dialogue"
+                    }
+                ]
+            },
+            "unexpected_fields": {
+                "file": "Traum - Computational Models of Non-cooperative dialogue.pdf:files/1/Traum - Computational Models of Non-cooperative dialogue.pdf:application/pdf"
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        }
+    },
+    "warnings": [
+        {
+            "type": "unexpected_field",
+            "field_name": "file",
+            "entry": "traumNDcomputationalmodelsnoncooperative",
+            "line": 7
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "traumNDcomputationalmodelsnoncooperative",
+            "line": 7
+        }
+    ]
+}

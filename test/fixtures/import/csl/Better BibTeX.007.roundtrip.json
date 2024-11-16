@@ -1,0 +1,166 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "article",
+        "fields": {
+            "date": "2012",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Fritz"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "U."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Corti"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "C."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Päckert"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "M."
+                        }
+                    ]
+                }
+            ],
+            "doi": "10.1007/s13127-011-0069-8",
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Actes du 4"
+                },
+                {
+                    "type": "text",
+                    "text": "ème",
+                    "marks": [
+                        {
+                            "type": "sup"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": " congrès français d'acoustique"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "71"
+                        },
+                        {
+                            "type": "text",
+                            "text": "80"
+                        }
+                    ]
+                ]
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Test of markupconversion: italics, bold, superscript, subscript, and small caps: mitochondrial DNA"
+                },
+                {
+                    "type": "text",
+                    "text": "2",
+                    "marks": [
+                        {
+                            "type": "sub"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": " sequences suggest unexpected phylogenetic position of corso-sardinian grass snakes ("
+                },
+                {
+                    "type": "text",
+                    "text": "Natrix cetti",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "em"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": ") and ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "do not",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "strong"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": " support their ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "species status, with notes on phylogeography and subspecies delineation of grass snakes.",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "smallcaps"
+                        }
+                    ]
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "12"
+                }
+            ]
+        }
+    }
+}

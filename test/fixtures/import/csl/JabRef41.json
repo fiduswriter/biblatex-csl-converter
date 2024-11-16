@@ -1,0 +1,844 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "article",
+        "fields": {
+            "date": "1935",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Elder"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "J. H."
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "THE UPPER LIMIT OF HEARING IN CHIMPANZEE"
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "American journal of physiology -- legacy content"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "112"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "109"
+                        },
+                        {
+                            "type": "text",
+                            "text": "115"
+                        }
+                    ]
+                ]
+            ],
+            "issn": [
+                {
+                    "type": "text",
+                    "text": "0002-9513"
+                }
+            ],
+            "url": "http://ajplegacy.physiology.org/content/112/1/109"
+        }
+    },
+    "2": {
+        "entry_key": "2",
+        "bib_type": "article",
+        "fields": {
+            "date": "1990",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Kojima"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "S."
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Comparison of auditory functions in the chimpanzee and human"
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Folia primatol"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "55"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "62"
+                        },
+                        {
+                            "type": "text",
+                            "text": "72"
+                        }
+                    ]
+                ]
+            ],
+            "issn": [
+                {
+                    "type": "text",
+                    "text": "0015-5713"
+                }
+            ],
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "Absolute thresholds for pure tones, loudness, frequency and intensity difference thresholds and the resonance of the external auditory meatus were measured in chimpanzees and compared with those in humans. Chimpanzees were more sensitive than humans to frequencies higher than 8 kHz but less sensitive to frequencies lower than 250 Hz and 2- to 4-kHz tones. Difference thresholds for frequency and intensity were greater in chimpanzees than in humans. The resonance of the external ear was about the same in the two species. The effects of differences in hearing between species upon speech perception are discussed."
+                }
+            ],
+            "url": "http://www.karger.com/DOI/10.1159/000156501"
+        }
+    },
+    "3": {
+        "entry_key": "3",
+        "bib_type": "article",
+        "fields": {
+            "date": "2011-02",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Osmanski"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Michael S."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Wang"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Xiaoqin"
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Measurement of absolute auditory thresholds in the common marmoset (callithrix jacchus)"
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Hearing research"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "277"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "127"
+                        },
+                        {
+                            "type": "text",
+                            "text": "133"
+                        }
+                    ]
+                ]
+            ],
+            "issn": [
+                {
+                    "type": "text",
+                    "text": "1878-5891"
+                }
+            ],
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "The common marmoset is a small, arboreal, New World primate that has emerged as a promising non-human model system in auditory neuroscience. A complete understanding of the neuroethology of auditory processing in marmosets will include behavioral work examining how sounds are perceived by these animals. However, there have been few studies of the marmoset’s hearing and perceptual abilities and the audiogram of this species has not been measured using modern psychophysical methods. The present experiment pairs psychophysics with an operant conditioning technique to examine perception of pure tone stimuli by marmosets using an active behavioral paradigm. Subjects were trained to lick at a feeding tube when they detected a sound. Correct responses provided access to a food reward. Pure tones of varying intensities were presented to subjects using the method of constant stimuli. Behavioral thresholds were calculated for each animal based on hit rate - threshold was defined by the tone intensity that the animal correctly identified 50% of the time. Results show that marmoset hearing is comparable to that of other New World monkeys, with a hearing range extending from about 125 Hz up to 36 kHz and a sensitivity peak around 7 kHz."
+                }
+            ],
+            "url": "http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3123402/"
+        }
+    },
+    "4": {
+        "entry_key": "4",
+        "bib_type": "article",
+        "fields": {
+            "date": "1983",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Heffner"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Rickye S"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Heffner"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Henry E"
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Hearing in large mammals: horses (equus caballus) and cattle (bos taurus)."
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Behavioral neuroscience"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "97"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "299"
+                        }
+                    ]
+                ]
+            ],
+            "doi": "http://psycnet.apa.org/doi/10.1037/0735-7044.97.2.299"
+        }
+    },
+    "5": {
+        "entry_key": "5",
+        "bib_type": "article",
+        "fields": {
+            "date": "2009",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Coleman"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Mark N."
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "What do primates hear? A meta-analysis of all known nonhuman primate behavioral audiograms"
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "International journal of primatology"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "30"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "55"
+                        },
+                        {
+                            "type": "text",
+                            "text": "91"
+                        }
+                    ]
+                ]
+            ],
+            "issn": [
+                {
+                    "type": "text",
+                    "text": "1573-8604"
+                }
+            ],
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "Research on the hearing abilities of nonhuman primates dates back >70 yr and there are audiograms ---graphs showing hearing sensitivity over a range of frequencies--- for 29 different species including representatives from almost every major group. However, the methods used to obtain the audiograms have been nearly as varied as the number of species tested. I sought to determine the degree to which one can directly compare the audiograms by examining several factors that could have a significant impact on the results: the behavioral conditioning procedure employed to train and test the subjects, the type of transducer used to deliver the test tones, the procedure used to calibrate the amplitude of the test tones, the acoustic enclosure used to minimize ambient noise, and the method used to determine the final threshold values. Audiograms produced using speakers cannot be compared directly with those produced using headphones, and in some cases the calibration procedure and testing chamber may also limit the potential for interspecific comparisons. Based on the findings, I provide 2 lists of optimal primate audiograms: 1 for speaker-derived audiograms and the other for headphone-derived audiograms. I measured a set of audiometric variables on each of the optimal audiograms, and phylogenetic comparisons of the data show that superfamilies of primates display unique patterns of hearing sensitivity, particularly at frequencies in the lower range. Lastly, I discuss the implications for behavioralists investigating primate vocalizations in the field."
+                }
+            ],
+            "doi": "10.1007/s10764-008-9330-1",
+            "url": "http://dx.doi.org/10.1007/s10764-008-9330-1"
+        }
+    },
+    "6": {
+        "entry_key": "6",
+        "bib_type": "article",
+        "fields": {
+            "date": "1934",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Elder"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "James Harlan"
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Auditory acuity of the chimpanzee."
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Journal of comparative psychology"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "17"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "157"
+                        }
+                    ]
+                ]
+            ],
+            "doi": "10.1037/h0073798"
+        }
+    },
+    "7": {
+        "entry_key": "7",
+        "bib_type": "article",
+        "fields": {
+            "date": "2015-04",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Pfaff"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Cathrin"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Martin"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Thomas"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Ruf"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Irina"
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Bony labyrinth morphometry indicates locomotor adaptations in the squirrel-related clade (rodentia, mammalia)"
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Proceedings of the royal society B: biological sciences"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "282"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "20150744"
+                        }
+                    ]
+                ]
+            ],
+            "issn": [
+                {
+                    "type": "text",
+                    "text": "1471-2954"
+                }
+            ],
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "The semicircular canals (SCs) of the inner ear detect angular acceleration and are located in the bony labyrinth of the petrosal bone. Based on high-resolution computed tomography, we created a size-independent database of the bony labyrinth of 50 mammalian species especially rodents of the squirrel-related clade comprising taxa with fossorial, arboreal and gliding adaptations. Our sampling also includes gliding marsupials, actively flying bats, the arboreal tree shrew and subterranean species. The morphometric anatomy of the SCs was correlated to the locomotion mode. Even if the phylogenetic signal cannot entirely be excluded, the main significance for functional morphological studies has been found in the diameter of the SCs, whereas the radius of curvature is of minor interest. Additionally, we found clear differences in the bias angle of the canals between subterranean and gliding taxa, but also between sciurids and glirids. The sensitivity of the inner ear correlates with the locomotion mode, with a higher sensitivity of the SCs in fossorial species than in flying taxa. We conclude that the inner ear of flying and gliding mammals is less sensitive due to the large information flow into this sense organ during locomotion."
+                }
+            ],
+            "url": "http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4590456/"
+        }
+    },
+    "8": {
+        "entry_key": "8",
+        "bib_type": "article",
+        "fields": {
+            "date": "2017-05",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Ravicz"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Michael E."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Rosowski"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "John J."
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Chinchilla middle ear transmission matrix model and middle-ear flexibility"
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "The journal of the acoustical society of america"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "141"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "3274"
+                        },
+                        {
+                            "type": "text",
+                            "text": "3290"
+                        }
+                    ]
+                ]
+            ],
+            "doi": "10.1121/1.4982925"
+        }
+    },
+    "9": {
+        "entry_key": "9",
+        "bib_type": "article",
+        "fields": {
+            "date": "2017",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Péus"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Dominik"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Dobrev"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Ivo"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Prochazka"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Lukas"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Thoele"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Konrad"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Dalbert"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Adrian"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Boss"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Andreas"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Newcomb"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Nicolas"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Probst"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Rudolf"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Röösli"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Christof"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Sim"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Jae Hoon"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Huber"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Alexander"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Pfiffner"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Flurin"
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Sheep as a large animal ear model: middle-ear ossicular velocities and intracochlear sound pressure"
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Hearing research"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "351"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "88"
+                        },
+                        {
+                            "type": "text",
+                            "text": "97"
+                        }
+                    ]
+                ]
+            ],
+            "issn": [
+                {
+                    "type": "text",
+                    "text": "0378-5955"
+                }
+            ],
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "Abstract Animals are frequently used for the development and testing of new hearing devices. Dimensions of the middle ear and cochlea differ significantly between humans and commonly used animals, such as rodents or cats. The sheep cochlea is anatomically more like the human cochlea in size and number of turns. This study investigated the middle-ear ossicular velocities and intracochlear sound pressure (ICSP) in sheep temporal bones, with the aim of characterizing the sheep as an experimental model for implantable hearing devices. Measurements were made on fresh sheep temporal bones. Velocity responses of the middle ear ossicles at the umbo, long process of the incus and stapes footplate were measured in the frequency range of 0.25–8 kHz using a laser Doppler vibrometer system. Results were normalized by the corresponding sound pressure level in the external ear canal (PEC). Sequentially, {ICSPs} at the scala vestibuli and tympani were then recorded with custom MEMS-based hydrophones, while presenting identical acoustic stimuli. The sheep middle ear transmitted most effectively around 4.8 kHz, with a maximum stapes velocity of 0.2 mm/s/Pa. At the same frequency, the {ICSP} measurements in the scala vestibuli and tympani showed the maximum gain relative to the {PEC} (24 dB and 5 dB, respectively). The greatest pressure difference across the cochlear partition occurred between 4 and 6 kHz. A comparison between the results of this study and human reference data showed middle-ear resonance and best cochlear sensitivity at higher frequencies in sheep. In summary, sheep can be an appropriate large animal model for research and development of implantable hearing devices."
+                }
+            ],
+            "doi": "https://doi.org/10.1016/j.heares.2017.06.002",
+            "url": "http://www.sciencedirect.com/science/article/pii/S0378595516304737"
+        }
+    },
+    "10": {
+        "entry_key": "10",
+        "bib_type": "article",
+        "fields": {
+            "date": "2017-05",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Koyabu"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Daisuke"
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "3D atlas and comparative osteology of the middle ear ossicles among eulipotyphla (mammalia, placentalia)."
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "MorphoMuseuM",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "3"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "e3"
+                        }
+                    ]
+                ]
+            ],
+            "doi": "10.18563/m3.3.2.e3",
+            "url": "https://doi.org/10.18563/m3.3.2.e3"
+        }
+    }
+}

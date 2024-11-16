@@ -1,0 +1,46 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "article",
+        "fields": {
+            "date": "1999-08-13",
+            "langid": "",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Propice-plan: toward a unified framework for planning and execution"
+                }
+            ],
+            "author": [
+                {
+                    "literal": [
+                        {
+                            "type": "text",
+                            "text": "[INGRAND]"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Despouys"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Olivier"
+                        }
+                    ]
+                }
+            ],
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "In this paper, we investigate the links between planning and plans execution. We propose a new approach (Propice-Plan) which integrates both activities. It implements supervision and execution capabilities, combined with different planning techniques: -- plan synthesis to complement existing operational plans; and -- anticipation planning to advise the execution for the best option to take when facing choices (by anticipating plans execution), and to forecast problems that may arise due to unforeseen situations."
+                }
+            ]
+        }
+    }
+}

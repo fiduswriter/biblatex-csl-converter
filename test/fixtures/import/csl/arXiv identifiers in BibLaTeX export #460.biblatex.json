@@ -1,0 +1,323 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "article",
+        "fields": {
+            "date": "2016-02",
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "We construct the quantum BV master action for heterotic and type II string field theories."
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Sen"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Ashoke"
+                        }
+                    ]
+                }
+            ],
+            "doi": "10.1007/JHEP02(2016)087",
+            "issn": [
+                {
+                    "type": "text",
+                    "text": "1029-8479"
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Journal of high energy physics"
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "BV Master Action for ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Heterotic and ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Type II String Field Theories",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "url": "http://arxiv.org/abs/1508.05387",
+            "urldate": "2016-04-17",
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "2016"
+                }
+            ]
+        }
+    },
+    "2": {
+        "entry_key": "2",
+        "bib_type": "article",
+        "fields": {
+            "date": "2013-05-21",
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "A pair of recent articles concluded that the D-Wave One machine actually operates in the quantum regime, rather than performing some classical evolution. Here we give a classical model that leads to the same behaviors used in those works to infer quantum effects. Thus, the evidence presented does not demonstrate the presence of quantum effects."
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Smolin"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "John A."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Smith"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Graeme"
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Classical signature of quantum annealing"
+                }
+            ],
+            "url": "http://arxiv.org/abs/1305.4904",
+            "urldate": "2016-04-18"
+        }
+    },
+    "3": {
+        "entry_key": "3",
+        "bib_type": "article",
+        "fields": {
+            "date": "2014-07-25",
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "The development of small-scale digital and analog quantum devices raises the question of how to fairly assess and compare the computational power of classical and quantum devices, and of how to detect quantum speedup. Here we show how to define and measure quantum speedup in various scenarios, and how to avoid pitfalls that might mask or fake quantum speedup. We illustrate our discussion with data from a randomized benchmark test on a D-Wave Two device with up to 503 qubits. Comparing the performance of the device on random spin glass instances with limited precision to simulated classical and quantum annealers, we find no evidence of quantum speedup when the entire data set is considered, and obtain inconclusive results when comparing subsets of instances on an instance-by-instance basis. Our results for one particular benchmark do not rule out the possibility of speedup for other classes of problems and illustrate that quantum speedup is elusive and can depend on the question posed."
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Rønnow"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Troels F."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Wang"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Zhihui"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Job"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Joshua"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Boixo"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Sergio"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Isakov"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Sergei V."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Wecker"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "David"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Martinis"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "John M."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Lidar"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Daniel A."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Troyer"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Matthias"
+                        }
+                    ]
+                }
+            ],
+            "doi": "10.1126/science.1252319",
+            "issn": [
+                {
+                    "type": "text",
+                    "text": "0036-8075, 1095-9203"
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Science"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "420"
+                        },
+                        {
+                            "type": "text",
+                            "text": "424"
+                        }
+                    ]
+                ]
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Defining and detecting quantum speedup"
+                }
+            ],
+            "url": "http://arxiv.org/abs/1401.2910",
+            "urldate": "2016-04-18",
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "345"
+                }
+            ]
+        }
+    }
+}

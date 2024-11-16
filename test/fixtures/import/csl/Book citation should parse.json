@@ -1,0 +1,77 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "book",
+        "fields": {
+            "date": "1993-07",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Babington"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Peter"
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "The title of the work"
+                }
+            ],
+            "publisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "The name of the publisher"
+                    }
+                ]
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "4"
+                }
+            ],
+            "series": [
+                {
+                    "type": "text",
+                    "text": "10"
+                }
+            ],
+            "location": [
+                [
+                    {
+                        "type": "text",
+                        "text": "The address"
+                    }
+                ]
+            ],
+            "edition": [
+                {
+                    "type": "text",
+                    "text": "3"
+                }
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "An optional note"
+                }
+            ],
+            "isbn": [
+                {
+                    "type": "text",
+                    "text": "3257227892"
+                }
+            ]
+        }
+    }
+}

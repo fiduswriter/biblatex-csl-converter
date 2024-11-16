@@ -1,0 +1,55 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "article",
+        "fields": {
+            "date": "2004",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Bibtex from CrossRef"
+                }
+            ],
+            "issn": [
+                {
+                    "type": "text",
+                    "text": "0263-9475"
+                }
+            ],
+            "url": "http://dx.doi.org/10.2307/25564177",
+            "doi": "10.2307/25564177",
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Circa"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Peters"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Robert"
+                        }
+                    ]
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "24"
+                        }
+                    ]
+                ]
+            ]
+        }
+    }
+}

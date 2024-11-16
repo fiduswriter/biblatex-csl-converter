@@ -1,0 +1,57 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "article",
+        "fields": {
+            "note": [
+                {
+                    "type": "text",
+                    "text": "http://www.patanalyse.com/sample-analysis.html"
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Patent "
+                },
+                {
+                    "type": "text",
+                    "text": "Landscape analysis: sample from ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "SPECFEM3D_",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "GLOBE",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "urldate": "2014-10-18"
+        }
+    }
+}

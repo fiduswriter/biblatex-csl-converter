@@ -1,0 +1,140 @@
+{
+    "entries": {
+        "1": {
+            "bib_type": "article",
+            "entry_key": "Yeh1985",
+            "fields": {
+                "date": "1985",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Yeh"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "J. J."
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Lindau"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "I."
+                            }
+                        ]
+                    }
+                ],
+                "journaltitle": [
+                    {
+                        "type": "text",
+                        "text": "Atomic data and nuclear data tables"
+                    }
+                ],
+                "number": [
+                    {
+                        "type": "text",
+                        "text": "1"
+                    }
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "1"
+                            }
+                        ],
+                        [
+                            {
+                                "type": "text",
+                                "text": "155"
+                            }
+                        ]
+                    ]
+                ],
+                "shorttitle": [
+                    {
+                        "type": "text",
+                        "text": "Atomic Subshell Photoionization Cross Sections and Asymmetry Parameters"
+                    }
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Atomic Subshell Photoionization Cross Sections and Asymmetry Parameters: 1⩽< "
+                    },
+                    {
+                        "type": "text",
+                        "text": "i"
+                    },
+                    {
+                        "type": "text",
+                        "text": "> "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Z",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": "⩽ 103"
+                    }
+                ],
+                "url": "http://www.sciencedirect.com/science/article/pii/0092640X85900166",
+                "urldate": "2013-01-11",
+                "volume": [
+                    {
+                        "type": "text",
+                        "text": "32"
+                    }
+                ]
+            },
+            "unexpected_fields": {
+                "shortjournal": [
+                    {
+                        "type": "text",
+                        "text": "At. Data Nucl. Data Tables"
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
+                ]
+            }
+        }
+    },
+    "warnings": [
+        {
+            "type": "unexpected_field",
+            "field_name": "shortjournal",
+            "entry": "Yeh1985",
+            "line": 15
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "timestamp",
+            "entry": "Yeh1985",
+            "line": 15
+        }
+    ]
+}

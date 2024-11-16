@@ -1,0 +1,105 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "article",
+        "fields": {
+            "date": "2015",
+            "author": [
+                {
+                    "literal": [
+                        {
+                            "type": "text",
+                            "text": "NTP.org"
+                        }
+                    ]
+                }
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "(accessed 2015-02-13)"
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Clock "
+                },
+                {
+                    "type": "text",
+                    "text": "Quality",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "urldate": "2015-02-13"
+        }
+    },
+    "2": {
+        "entry_key": "2",
+        "bib_type": "article",
+        "fields": {
+            "date": "2015",
+            "author": [
+                {
+                    "literal": [
+                        {
+                            "type": "text",
+                            "text": "NTP.org"
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Clock "
+                },
+                {
+                    "type": "text",
+                    "text": "Quality",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "3": {
+        "entry_key": "3",
+        "bib_type": "article",
+        "fields": {
+            "date": "2015",
+            "author": [
+                {
+                    "literal": [
+                        {
+                            "type": "text",
+                            "text": "NTP.org"
+                        }
+                    ]
+                }
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Clock "
+                },
+                {
+                    "type": "text",
+                    "text": "Quality",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

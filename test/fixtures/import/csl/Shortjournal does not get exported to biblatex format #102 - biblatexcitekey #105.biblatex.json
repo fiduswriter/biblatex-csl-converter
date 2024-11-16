@@ -1,0 +1,111 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "article",
+        "fields": {
+            "date": "2006-09-20",
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "The first step in any quantum key distribution (QKD) protocol consists of sequences of measurements that produce correlated classical data. We show that these correlation data must violate some Bell inequality in order to contain distillable secrecy, if not they could be produced by quantum measurements performed on a separable state of larger dimension. We introduce a new QKD protocol and prove its security against any individual attack by an adversary only limited by the no-signaling condition."
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Acín"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Antonio"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Gisin"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Nicolas"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Masanes"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Lluis"
+                        }
+                    ]
+                }
+            ],
+            "doi": "10.1103/PhysRevLett.97.120405",
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Physical review letters"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "120405"
+                        }
+                    ]
+                ]
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "From "
+                },
+                {
+                    "type": "text",
+                    "text": "Bell’s ",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "text": "Theorem to secure quantum key distribution",
+                    "marks": [
+                        {
+                            "type": "nocase"
+                        },
+                        {
+                            "type": "nocase"
+                        }
+                    ]
+                }
+            ],
+            "url": "http://link.aps.org/doi/10.1103/PhysRevLett.97.120405",
+            "urldate": "2014-08-20",
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "97"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,59 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "inbook",
+        "fields": {
+            "date": "2009",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Vernetzung in der grundlagenforschung"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Hennemann"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "S."
+                        }
+                    ]
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "Planungsverband ballungsraum frankfurt-rhein-main (hrsg.): wissensatlas FrankfurtRheinMain: die wissensregion stellt sich vor"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "33"
+                        },
+                        {
+                            "type": "text",
+                            "text": "36"
+                        }
+                    ]
+                ]
+            ],
+            "publisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Planungsverband, Frankfurt-Rhein-Main"
+                    }
+                ]
+            ]
+        }
+    }
+}

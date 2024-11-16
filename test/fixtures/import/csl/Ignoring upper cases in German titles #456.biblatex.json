@@ -1,0 +1,156 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "inbook",
+        "fields": {
+            "date": "2002",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Kaufmann"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Franz-Xaver"
+                        }
+                    ]
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "Sozialpolitik und sozialstaat: soziologische analysen"
+                }
+            ],
+            "doi": "10.1007/978-3-322-99962-7_7",
+            "editor": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Kauffmann"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Franz-Xaver"
+                        }
+                    ]
+                }
+            ],
+            "langid": "",
+            "origdate": "1990",
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "145"
+                        },
+                        {
+                            "type": "text",
+                            "text": "160"
+                        }
+                    ]
+                ]
+            ],
+            "publisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "VS Verlag für Sozialwissenschaften"
+                    }
+                ]
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Sozialpolitik und bevölkerungsprozeß"
+                }
+            ],
+            "url": "http://link.springer.com/chapter/10.1007/978-3-322-99962-7_7"
+        }
+    },
+    "2": {
+        "entry_key": "2",
+        "bib_type": "inbook",
+        "fields": {
+            "date": "2002",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Kaufmann"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Franz-Xaver"
+                        }
+                    ]
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "Sozialpolitik und sozialstaat: soziologische analysen"
+                }
+            ],
+            "doi": "10.1007/978-3-322-99962-7_11",
+            "editor": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Kauffmann"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Franz-Xaver"
+                        }
+                    ]
+                }
+            ],
+            "langid": "",
+            "origdate": "1997",
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "241"
+                        },
+                        {
+                            "type": "text",
+                            "text": "260"
+                        }
+                    ]
+                ]
+            ],
+            "publisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "VS Verlag für Sozialwissenschaften"
+                    }
+                ]
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Schwindet die integrative funktion des sozialstaates?"
+                }
+            ],
+            "url": "http://link.springer.com/chapter/10.1007/978-3-322-99962-7_11"
+        }
+    }
+}

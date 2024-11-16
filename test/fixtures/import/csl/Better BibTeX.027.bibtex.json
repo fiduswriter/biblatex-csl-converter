@@ -1,0 +1,67 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "article",
+        "fields": {
+            "date": "2000",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Baltes"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Paul B"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Staudinger"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Ursula M"
+                        }
+                    ]
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "American psychologist"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "122"
+                        }
+                    ]
+                ]
+            ],
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Wisdom: a metaheuristic (pragmatic) to orchestrate mind and virtue toward excellence."
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "55"
+                }
+            ]
+        }
+    }
+}

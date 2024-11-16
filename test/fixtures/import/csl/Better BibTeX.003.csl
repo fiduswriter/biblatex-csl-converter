@@ -1,0 +1,60 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2006,
+                    10
+                ]
+            ]
+        },
+        "editor": [
+            {
+                "given": "First",
+                "family": "Editor"
+            },
+            {
+                "given": "Second",
+                "family": "Editor"
+            }
+        ],
+        "title": "Some publication title",
+        "container-title": "Proceedings of the xth conference on XYZ",
+        "author": [
+            {
+                "given": "First",
+                "family": "Author"
+            },
+            {
+                "given": "Second",
+                "family": "Author"
+            }
+        ],
+        "page": "330—331",
+        "type": "paper-conference",
+        "id": "1"
+    },
+    "2": {
+        "issued": {
+            "date-parts": [
+                [
+                    2006,
+                    10
+                ]
+            ]
+        },
+        "editor": [
+            {
+                "given": "First",
+                "family": "Editor"
+            },
+            {
+                "given": "Second",
+                "family": "Editor"
+            }
+        ],
+        "title": "Proceedings of the xth conference on XYZ",
+        "type": "book",
+        "id": "2"
+    }
+}
