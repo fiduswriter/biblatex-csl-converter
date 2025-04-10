@@ -37,6 +37,7 @@ const TAGS: Tags = {
 type ConfigObject = {
     escapeText?: boolean
     useEntryKeys?: boolean // Whether to output using the entry keys
+    language?: string // Language of the citation
 }
 
 type ErrorObject = {
@@ -110,6 +111,12 @@ export class CSLExporter {
         if (!bib.fields || !bib.bib_type || !BibTypes[bib.bib_type]) {
             return fValues
         }
+
+        // If there's a language field, use it for deciding whether to apply sentence casing
+        if (bib.fields.langid) {
+            this.config.language = bib.fields.langid as string
+        }
+
         for (let fKey in bib.fields) {
             if (
                 bib.fields[fKey] !== "" &&
@@ -245,15 +252,28 @@ export class CSLExporter {
             console.warn(`Wrong format for reformTitle`, theValue)
             return html
         }
-        let sentenceCasedText: string = toSentenceCase(
-            theValue.reduce((text, node) => {
-                if ("text" in node) {
-                    return text + node.text
-                } else {
-                    return text
-                }
-            }, "")
-        )
+
+        // Get the plain text to potentially apply sentence casing
+        const plainText = theValue.reduce((text, node) => {
+            if ("text" in node) {
+                return text + node.text
+            } else {
+                return text
+            }
+        }, "")
+
+        // Check if the language is English or not specified
+        // Check against all English language variants based on langidOptions values
+        // Only apply sentence casing for English (default) language
+        const isEnglishLanguage =
+            !this.config.language ||
+            this.config.language.toLowerCase().endsWith("english")
+
+        // Only apply sentence casing for English or unspecified language
+        let sentenceCasedText: string = isEnglishLanguage
+            ? toSentenceCase(plainText)
+            : plainText
+
         theValue.forEach((node: NodeObject) => {
             if (node.type === "variable") {
                 // This is an undefined variable
