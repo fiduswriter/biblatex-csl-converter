@@ -125,45 +125,114 @@ class SimpleEDTFParser {
             this.type = "Interval"
             let valid = false
 
-            // Parse both parts first
-            const parsedParts = parts.map(part => {
+            // Parse both parts
+            const parsedParts = parts.map((part) => {
                 let parser = new SimpleEDTFParser(part)
                 parser.init()
                 return parser
-            });
+            })
 
-            // Check if the interval makes sense
+            // Check if the individual parts are valid
             if (
                 (parsedParts[0].valid || parsedParts[0].type === "Open") &&
                 (parsedParts[1].valid || parsedParts[1].type === "Open")
             ) {
-                // For the second part, validate that it's either:
-                // 1. A complete date/datetime with same precision as the first part
-                // 2. An open range (..)
-                // Don't allow just a year number as second part if first part is more precise
+                // Now check chronological order if neither part is open
                 if (
                     parsedParts[0].type === "Open" ||
-                    parsedParts[1].type === "Open" ||
-                    (parsedParts[0].values.length === parsedParts[1].values.length) ||
-                    // Special case for intervals like 2020/2021 (year only)
-                    (parsedParts[0].values.length === 1 && parsedParts[1].values.length === 1)
+                    parsedParts[1].type === "Open"
                 ) {
-                    this.parts = parsedParts;
-                    valid = true;
+                    this.parts = parsedParts
+                    valid = true
                 } else {
-                    this.valid = false;
+                    // Try to compare the dates chronologically
+                    const isChronological = this.isChronologicalInterval(
+                        parsedParts[0],
+                        parsedParts[1]
+                    )
+
+                    if (isChronological) {
+                        this.parts = parsedParts
+                        valid = true
+                    } else {
+                        this.valid = false
+                    }
                 }
             } else {
-                this.valid = false;
+                this.valid = false
             }
 
-            if (!valid) {
+            if (
+                parsedParts[0].type === "Open" &&
+                parsedParts[1].type === "Open"
+            ) {
                 // From open to open is invalid
-                this.valid = false;
+                this.valid = false
+            } else if (!valid) {
+                this.valid = false
             }
         } else {
             this.splitDateParts()
         }
+    }
+
+    isChronologicalInterval(
+        start: SimpleEDTFParser,
+        end: SimpleEDTFParser
+    ): boolean {
+        // For simplicity, we'll compare years first
+        if (start.values.length > 0 && end.values.length > 0) {
+            const startYear = Number(start.values[0])
+            const endYear = Number(end.values[0])
+
+            if (endYear < startYear) {
+                return false // End year before start year (clearly invalid)
+            }
+
+            if (endYear > startYear) {
+                return true // End year after start year (clearly valid)
+            }
+
+            // Years are equal, check month if available
+            if (start.values.length > 1 && end.values.length > 1) {
+                const startMonth = Number(start.values[1])
+                const endMonth = Number(end.values[1])
+
+                if (endMonth < startMonth) {
+                    return false
+                }
+
+                if (endMonth > startMonth) {
+                    return true
+                }
+
+                // Months are equal, check day if available
+                if (start.values.length > 2 && end.values.length > 2) {
+                    const startDay = Number(start.values[2])
+                    const endDay = Number(end.values[2])
+
+                    if (endDay < startDay) {
+                        return false
+                    }
+
+                    if (endDay > startDay) {
+                        return true
+                    }
+
+                    // Could continue with hours, minutes, seconds if needed
+                    // But for brevity, equal dates are considered valid
+                    return true
+                }
+            }
+
+            // If we get here, either:
+            // 1. Only years were compared and they were equal (valid interval)
+            // 2. Years and months were compared and they were equal (valid interval)
+            return true
+        }
+
+        // If we can't extract values to compare, default to invalid
+        return false
     }
 
     splitDateParts() {
