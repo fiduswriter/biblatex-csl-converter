@@ -124,21 +124,42 @@ class SimpleEDTFParser {
         } else if (parts.length === 2) {
             this.type = "Interval"
             let valid = false
-            parts.forEach((part) => {
+
+            // Parse both parts first
+            const parsedParts = parts.map(part => {
                 let parser = new SimpleEDTFParser(part)
                 parser.init()
-                if (parser.valid || parser.type === "Open") {
-                    this.parts.push(parser)
-                    if (parser.valid) {
-                        valid = true
-                    }
+                return parser
+            });
+
+            // Check if the interval makes sense
+            if (
+                (parsedParts[0].valid || parsedParts[0].type === "Open") &&
+                (parsedParts[1].valid || parsedParts[1].type === "Open")
+            ) {
+                // For the second part, validate that it's either:
+                // 1. A complete date/datetime with same precision as the first part
+                // 2. An open range (..)
+                // Don't allow just a year number as second part if first part is more precise
+                if (
+                    parsedParts[0].type === "Open" ||
+                    parsedParts[1].type === "Open" ||
+                    (parsedParts[0].values.length === parsedParts[1].values.length) ||
+                    // Special case for intervals like 2020/2021 (year only)
+                    (parsedParts[0].values.length === 1 && parsedParts[1].values.length === 1)
+                ) {
+                    this.parts = parsedParts;
+                    valid = true;
                 } else {
-                    this.valid = false
+                    this.valid = false;
                 }
-            })
+            } else {
+                this.valid = false;
+            }
+
             if (!valid) {
                 // From open to open is invalid
-                this.valid = false
+                this.valid = false;
             }
         } else {
             this.splitDateParts()
