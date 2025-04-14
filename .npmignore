@@ -13,7 +13,6 @@ browser/
 .nyc_output/
 coverage/
 tmp/
-src/
 .github/
 .editorconfig
 .prettierignore
