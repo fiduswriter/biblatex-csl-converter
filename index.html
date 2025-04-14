@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <style>
+            td {
+                vertical-align: top;
+            }
+            .spinner {
+                border: 16px solid #ddd;
+                border-top: 16px solid #f3b52b;
+                border-radius: 50%;
+                width: 80px;
+                height: 80px;
+                animation: turn 1s linear infinite;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            @keyframes turn {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+            #paste-input {
+                border: 2px dotted #f3622b;
+                min-width: 300px;
+                min-height: 100px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h3>Import .bib test</h3>
+        <table>
+            <tr>
+                <td>
+                    <p>
+                        Select the .bib file here:
+                        <input type="file" accept=".bib" id="file-upload" />
+                    </p>
+                </td>
+                <td>
+                    <p>Or paste here:</p>
+                </td>
+                <td>
+                    <div contenteditable="true" id="paste-input"></div>
+                </td>
+            </tr>
+        </table>
+
+        <table width="100%">
+            <tr>
+                <th width="34%">bibDB</th>
+                <th width="33%">CSL</th>
+                <th width="33%">Biblatex (export)</th>
+            </tr>
+            <tr>
+                <td id="bib-db"></td>
+                <td id="csl-db"></td>
+                <td id="biblatex"></td>
+            </tr>
+        </table>
+        <script src="demo.js"></script>
+    </body>
+</html>
