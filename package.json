@@ -1,6 +1,6 @@
 {
     "name": "biblatex-csl-converter",
-    "version": "3.1.1",
+    "version": "3.2.0",
     "description": "a set of converters: biblatex => json, CSL => json, json => biblatex, json => CSL",
     "main": "lib/index.js",
     "module": "lib/index.js",
