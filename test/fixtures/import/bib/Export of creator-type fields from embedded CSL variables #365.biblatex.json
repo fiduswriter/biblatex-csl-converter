@@ -1,7 +1,7 @@
 {
     "entries": {
         "1": {
-            "bib_type": "misc",
+            "bib_type": "video",
             "entry_key": "Doe2015",
             "fields": {
                 "date": "2015",
@@ -149,7 +149,7 @@
             }
         },
         "3": {
-            "bib_type": "misc",
+            "bib_type": "video",
             "entry_key": "Kubrick1964",
             "fields": {
                 "date": "1964",
@@ -217,7 +217,7 @@
             }
         },
         "4": {
-            "bib_type": "misc",
+            "bib_type": "video",
             "entry_key": "friends:leia:tv",
             "fields": {
                 "date": "1996-09-16",
@@ -306,7 +306,7 @@
             }
         },
         "5": {
-            "bib_type": "misc",
+            "bib_type": "video",
             "entry_key": "friends:leia:dvd",
             "fields": {
                 "date": "2003",
@@ -319,6 +319,7 @@
                         }
                     ]
                 ],
+                "origdate": "1996-09-16",
                 "title": [
                     {
                         "type": "text",
@@ -352,7 +353,6 @@
                         "text": "1"
                     }
                 ],
-                "origdate": "1996-09-16",
                 "origpublisher": [
                     [
                         {
@@ -430,11 +430,6 @@
     },
     "warnings": [
         {
-            "type": "unknown_type",
-            "type_name": "movie",
-            "line": 9
-        },
-        {
             "type": "unknown_field",
             "field_name": "director",
             "entry": "Doe2015",
@@ -465,11 +460,6 @@
             "line": 22
         },
         {
-            "type": "unknown_type",
-            "type_name": "video",
-            "line": 30
-        },
-        {
             "type": "unknown_field",
             "field_name": "director",
             "entry": "Kubrick1964",
@@ -480,11 +470,6 @@
             "field_name": "timestamp",
             "entry": "Kubrick1964",
             "line": 30
-        },
-        {
-            "type": "unknown_type",
-            "type_name": "video",
-            "line": 45
         },
         {
             "type": "unexpected_field",
@@ -535,11 +520,6 @@
             "line": 45
         },
         {
-            "type": "unknown_type",
-            "type_name": "video",
-            "line": 61
-        },
-        {
             "type": "unexpected_field",
             "field_name": "booktitle",
             "entry": "friends:leia:dvd",
@@ -554,12 +534,6 @@
         {
             "type": "unexpected_field",
             "field_name": "number",
-            "entry": "friends:leia:dvd",
-            "line": 61
-        },
-        {
-            "type": "unexpected_field",
-            "field_name": "origdate",
             "entry": "friends:leia:dvd",
             "line": 61
         },

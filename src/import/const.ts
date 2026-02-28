@@ -20,6 +20,9 @@ export const BiblatexAliasTypes = {
     periodical: ["article"],
     suppperiodical: ["article"],
     newsarticle: ["article", "newspaper"],
+    movie: ["video"],
+    film: ["video"],
+    song: ["audio"],
 }
 
 const langidAliases = {

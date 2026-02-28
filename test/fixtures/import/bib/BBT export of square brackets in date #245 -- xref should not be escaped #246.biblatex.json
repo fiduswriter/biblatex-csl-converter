@@ -270,7 +270,7 @@
             }
         },
         "3": {
-            "bib_type": "misc",
+            "bib_type": "legal_case",
             "entry_key": "kartinyeri",
             "fields": {
                 "date": "1998-04-01",
@@ -410,11 +410,6 @@
             "field_name": "timestamp",
             "entry": "pollard_bicycle_2007",
             "line": 34
-        },
-        {
-            "type": "unknown_type",
-            "type_name": "jurisdiction",
-            "line": 48
         },
         {
             "type": "unexpected_field",
