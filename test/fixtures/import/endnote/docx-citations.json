@@ -1,0 +1,1979 @@
+{
+    "1": {
+        "entry_key": "1",
+        "bib_type": "article-journal",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Sample Article Title for Testing"
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "Journal of Synthetic Testing"
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Journal of Synthetic Testing"
+                }
+            ],
+            "shortjournal": [
+                {
+                    "type": "text",
+                    "text": "J. Synth. Test."
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "42"
+                }
+            ],
+            "number": [
+                {
+                    "type": "text",
+                    "text": "4"
+                }
+            ],
+            "issue": [
+                {
+                    "type": "text",
+                    "text": "Special Issue"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "45"
+                        },
+                        {
+                            "type": "text",
+                            "text": "67"
+                        }
+                    ]
+                ]
+            ],
+            "publisher": [
+                {
+                    "type": "text",
+                    "text": "Academic Press"
+                }
+            ],
+            "location": [
+                {
+                    "type": "text",
+                    "text": "New York"
+                }
+            ],
+            "isbn": [
+                {
+                    "type": "text",
+                    "text": "1234-5678"
+                }
+            ],
+            "issn": [
+                {
+                    "type": "text",
+                    "text": "9876-5432"
+                }
+            ],
+            "eprint": [
+                {
+                    "type": "text",
+                    "text": "SYNTH789012"
+                }
+            ],
+            "library": [
+                {
+                    "type": "text",
+                    "text": "Q123 .S65 2023"
+                }
+            ],
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "This is a synthetic abstract created for testing purposes only."
+                }
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "Research notes for testing"
+                }
+            ],
+            "annotation": [
+                {
+                    "type": "text",
+                    "text": "Additional research notes"
+                }
+            ],
+            "label": [
+                {
+                    "type": "text",
+                    "text": "Test1"
+                }
+            ],
+            "langid": [
+                {
+                    "type": "text",
+                    "text": "English"
+                }
+            ],
+            "url": [
+                {
+                    "type": "text",
+                    "text": "https://example.com/article1; https://doi.org/10.1234/example"
+                }
+            ],
+            "date": "2023",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Smith"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Robert A."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Jones"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Emily B."
+                        }
+                    ]
+                }
+            ],
+            "keywords": "testing, synthetic data, examples"
+        }
+    },
+    "2": {
+        "entry_key": "2",
+        "bib_type": "inbook",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Beitrag zum Testen"
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "Handbuch der Testmethoden"
+                }
+            ],
+            "chapter": [
+                {
+                    "type": "text",
+                    "text": "Chapter 5"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "123"
+                        },
+                        {
+                            "type": "text",
+                            "text": "145"
+                        }
+                    ]
+                ]
+            ],
+            "publisher": [
+                {
+                    "type": "text",
+                    "text": "Deutscher Verlag"
+                }
+            ],
+            "location": [
+                {
+                    "type": "text",
+                    "text": "Berlin"
+                }
+            ],
+            "isbn": [
+                {
+                    "type": "text",
+                    "text": "978-3-123-45678-9"
+                }
+            ],
+            "issn": [
+                {
+                    "type": "text",
+                    "text": "978-3-123-45678-9"
+                }
+            ],
+            "langid": [
+                {
+                    "type": "text",
+                    "text": "German"
+                }
+            ],
+            "date": "2022",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Müller"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Hans Dieter"
+                        }
+                    ]
+                }
+            ],
+            "editor": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Schmidt"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Klaus"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Weber"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Anna"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "3": {
+        "entry_key": "3",
+        "bib_type": "proceedings",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Danske Konference Paper"
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "Proceedings of Nordic Testing Conference"
+                }
+            ],
+            "publisher": [
+                {
+                    "type": "text",
+                    "text": "Nordic Academic Press"
+                }
+            ],
+            "langid": [
+                {
+                    "type": "text",
+                    "text": "Danish"
+                }
+            ],
+            "date": "15-17 June 2021",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Andersen"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Peter"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "4": {
+        "entry_key": "4",
+        "bib_type": "thesis",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Tesis de Ejemplo en Español"
+                }
+            ],
+            "publisher": [
+                {
+                    "type": "text",
+                    "text": "Universidad Complutense de Madrid"
+                }
+            ],
+            "location": [
+                {
+                    "type": "text",
+                    "text": "Madrid"
+                }
+            ],
+            "langid": [
+                {
+                    "type": "text",
+                    "text": "Spanish"
+                }
+            ],
+            "date": "2020",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "García López"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "María Elena"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "5": {
+        "entry_key": "5",
+        "bib_type": "article",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "电子文章测试"
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "在线科学杂志"
+                }
+            ],
+            "langid": [
+                {
+                    "type": "text",
+                    "text": "Chinese"
+                }
+            ],
+            "url": [
+                {
+                    "type": "text",
+                    "text": "https://example.cn/article123"
+                }
+            ],
+            "urldate": [
+                {
+                    "type": "text",
+                    "text": "2023-11-15"
+                }
+            ],
+            "date": "2023",
+            "author": [
+                {
+                    "literal": [
+                        {
+                            "type": "text",
+                            "text": "王明"
+                        }
+                    ]
+                },
+                {
+                    "literal": [
+                        {
+                            "type": "text",
+                            "text": "李华"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "6": {
+        "entry_key": "6",
+        "bib_type": "unpublished",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Неопубликованная рукопись"
+                }
+            ],
+            "langid": [
+                {
+                    "type": "text",
+                    "text": "Russian"
+                }
+            ],
+            "date": "2019",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Иванов"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Сергей Петрович"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "7": {
+        "entry_key": "19",
+        "bib_type": "article-journal",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Bayesian Analysis of Radiocarbon Dates"
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "Radiocarbon"
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Radiocarbon"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "51"
+                }
+            ],
+            "number": [
+                {
+                    "type": "text",
+                    "text": "1"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "337"
+                        },
+                        {
+                            "type": "text",
+                            "text": "360"
+                        }
+                    ]
+                ]
+            ],
+            "publisher": [
+                {
+                    "type": "text",
+                    "text": "Cambridge University Press"
+                }
+            ],
+            "location": [
+                {
+                    "type": "text",
+                    "text": "New York, US"
+                }
+            ],
+            "url": [
+                {
+                    "type": "text",
+                    "text": "https://www.cambridge.org/core/article/div-class-title-bayesian-analysis-of-radiocarbon-dates-div/F622173B70F9C1597F2738DEFC597114"
+                }
+            ],
+            "date": "2009/001/001",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Bronk Ramsey"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Christopher"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "8": {
+        "entry_key": "994",
+        "bib_type": "article-journal",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Rethinking Early Iron Age urbanisation in Central Europe: the Heuneburg site and its archaeological environment"
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "Antiquity"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "87"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "473"
+                        },
+                        {
+                            "type": "text",
+                            "text": "487"
+                        }
+                    ]
+                ]
+            ],
+            "date": "2013",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Fernández-Götz"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "M."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Krausse"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "D."
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "9": {
+        "entry_key": "995",
+        "bib_type": "article-journal",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Ein Jahrhundert Chronologie der vorrömischen Eisenzeit in Mittel- und Nordeuropa"
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "Bonner Jahrbücher"
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Bonner Jahrbücher"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "180"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "1"
+                        },
+                        {
+                            "type": "text",
+                            "text": "30"
+                        }
+                    ]
+                ]
+            ],
+            "date": "1980",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Jacob-Friesen"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "G."
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "10": {
+        "entry_key": "960",
+        "bib_type": "inbook",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Stand der Dendrochronologie der Eisenzeit nördlich der Alpen mit neuen Daten aus der Heuneburg-Vorburg"
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "Frühe Zentralisierungs- und Urbanisierungsprozesse: zur Genese und Entwicklung frühkeltischer Fürstensitze und ihres territorialen Umlandes. Kolloquium des DFG-Schwerpunktprogramms 1171 in Blaubeuren, 9.–11. Oktober 2006"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "229"
+                        },
+                        {
+                            "type": "text",
+                            "text": "248"
+                        }
+                    ]
+                ]
+            ],
+            "publisher": [
+                {
+                    "type": "text",
+                    "text": "K. Theiss"
+                }
+            ],
+            "location": [
+                {
+                    "type": "text",
+                    "text": "Stuttgart"
+                }
+            ],
+            "date": "2008",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Billamboz"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "A."
+                        }
+                    ]
+                }
+            ],
+            "editor": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Krauße"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "D."
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "11": {
+        "entry_key": "2438",
+        "bib_type": "inbook",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Some observations on the high-precision calibration of routine dates"
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "Archaeology, Dendrochronology and the Radiocarbon Calibration Curve"
+                }
+            ],
+            "series": [
+                {
+                    "type": "text",
+                    "text": "Department of Archaeology Occasional Paper"
+                }
+            ],
+            "number": [
+                {
+                    "type": "text",
+                    "text": "9"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "51"
+                        },
+                        {
+                            "type": "text",
+                            "text": "63"
+                        }
+                    ]
+                ]
+            ],
+            "publisher": [
+                {
+                    "type": "text",
+                    "text": "University of Edinburgh"
+                }
+            ],
+            "location": [
+                {
+                    "type": "text",
+                    "text": "Edinburgh"
+                }
+            ],
+            "date": "1983",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Baillie"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "M G L"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Pilcher"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "J R"
+                        }
+                    ]
+                }
+            ],
+            "editor": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Ottaway"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "B S"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "12": {
+        "entry_key": "2385",
+        "bib_type": "article-journal",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "A new chronological framework for prehistoric Southeast Asia, based on a Bayesian model from Ban Non Wat"
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "Antiquity"
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Antiquity"
+                }
+            ],
+            "shortjournal": [
+                {
+                    "type": "text",
+                    "text": "Antiquity"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "83"
+                }
+            ],
+            "number": [
+                {
+                    "type": "text",
+                    "text": "319"
+                }
+            ],
+            "edition": [
+                {
+                    "type": "text",
+                    "text": "2015/01/02"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "125"
+                        },
+                        {
+                            "type": "text",
+                            "text": "144"
+                        }
+                    ]
+                ]
+            ],
+            "publisher": [
+                {
+                    "type": "text",
+                    "text": "Cambridge University Press"
+                }
+            ],
+            "isbn": [
+                {
+                    "type": "text",
+                    "text": "0003-598X"
+                }
+            ],
+            "issn": [
+                {
+                    "type": "text",
+                    "text": "0003-598X"
+                }
+            ],
+            "url": [
+                {
+                    "type": "text",
+                    "text": "https://www.cambridge.org/core/article/new-chronological-framework-for-prehistoric-southeast-asia-based-on-a-bayesian-model-from-ban-non-wat/4AA644BD284B1522DF1B4D193422600D"
+                }
+            ],
+            "date": "2009",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Higham"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Charles"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Higham"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Thomas"
+                        }
+                    ]
+                }
+            ],
+            "keywords": "Southeast Asia, Thailand, Neolithic, Bronze Age, Iron Age, radiocarbon, Bayesian modelling"
+        }
+    },
+    "13": {
+        "entry_key": "2386",
+        "bib_type": "article-journal",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "A comprehensive numerical chronology for the pre-Columbian cultures of the Palpa valleys, south coast of Peru"
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "Journal of Archaeological Science"
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Journal of Archaeological Science"
+                }
+            ],
+            "shortjournal": [
+                {
+                    "type": "text",
+                    "text": "J Archaeol Sci"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "39"
+                }
+            ],
+            "number": [
+                {
+                    "type": "text",
+                    "text": "7"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "2294"
+                        },
+                        {
+                            "type": "text",
+                            "text": "2303"
+                        }
+                    ]
+                ]
+            ],
+            "isbn": [
+                {
+                    "type": "text",
+                    "text": "0305-4403"
+                }
+            ],
+            "issn": [
+                {
+                    "type": "text",
+                    "text": "0305-4403"
+                }
+            ],
+            "url": [
+                {
+                    "type": "text",
+                    "text": "https://www.sciencedirect.com/science/article/pii/S0305440312000854"
+                }
+            ],
+            "date": "2012/07/01/",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Unkel"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Ingmar"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Reindel"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Markus"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Gorbahn"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Hermann"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Isla Cuadrado"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Johny"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Kromer"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Bernd"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Sossna"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Volker"
+                        }
+                    ]
+                }
+            ],
+            "keywords": "Radiocarbon, Numerical chronology, Nasca, Peru"
+        }
+    },
+    "14": {
+        "entry_key": "2387",
+        "bib_type": "article-journal",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Towards a precise timing of groundwater use in the lower Yellow River area during the late Bronze age: Bayesian inference from the radiocarbon ages of ancient water wells at the Liang&apos;ercun site, north China"
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "Quaternary Geochronology"
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Quaternary Geochronology"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "66"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "101214"
+                        }
+                    ]
+                ]
+            ],
+            "isbn": [
+                {
+                    "type": "text",
+                    "text": "1871-1014"
+                }
+            ],
+            "issn": [
+                {
+                    "type": "text",
+                    "text": "1871-1014"
+                }
+            ],
+            "url": [
+                {
+                    "type": "text",
+                    "text": "https://www.sciencedirect.com/science/article/pii/S1871101421000649"
+                }
+            ],
+            "date": "2021/10/01/",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Yu"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Shi-Yong"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Chen"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Xuexiang"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Fang"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Zhen"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Liu"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Xiuling"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Li"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Ming"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Guo"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Junfeng"
+                        }
+                    ]
+                }
+            ],
+            "keywords": "Bronze Age, Lower Yellow River, Water wells, Radiocarbon plateau, Bayesian inference, Groundwater use"
+        }
+    },
+    "15": {
+        "entry_key": "819",
+        "bib_type": "article-journal",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "The IntCal20 Northern Hemisphere Radiocarbon Age Calibration Curve (0-55 cal kBP)"
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "Radiocarbon"
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Radiocarbon"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "62"
+                }
+            ],
+            "number": [
+                {
+                    "type": "text",
+                    "text": "4"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "725"
+                        },
+                        {
+                            "type": "text",
+                            "text": "757"
+                        }
+                    ]
+                ]
+            ],
+            "date": "2020",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Reimer"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "P.J."
+                        }
+                    ],
+                    "suffix": [
+                        {
+                            "type": "text",
+                            "text": "Austin"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "16": {
+        "entry_key": "19",
+        "bib_type": "article-journal",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Bayesian Analysis of Radiocarbon Dates"
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "Radiocarbon"
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Radiocarbon"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "51"
+                }
+            ],
+            "number": [
+                {
+                    "type": "text",
+                    "text": "1"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "337"
+                        },
+                        {
+                            "type": "text",
+                            "text": "360"
+                        }
+                    ]
+                ]
+            ],
+            "publisher": [
+                {
+                    "type": "text",
+                    "text": "Cambridge University Press"
+                }
+            ],
+            "location": [
+                {
+                    "type": "text",
+                    "text": "New York, US"
+                }
+            ],
+            "url": [
+                {
+                    "type": "text",
+                    "text": "https://www.cambridge.org/core/article/div-class-title-bayesian-analysis-of-radiocarbon-dates-div/F622173B70F9C1597F2738DEFC597114"
+                }
+            ],
+            "date": "2009/001/001",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Bronk Ramsey"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Christopher"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "17": {
+        "entry_key": "1935",
+        "bib_type": "article-journal",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "An independent assessment of uncertainty for radiocarbon analysis with the new generation high-yield accelerator mass spectrometers"
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "Radiocarbon"
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Radiocarbon"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "63"
+                }
+            ],
+            "number": [
+                {
+                    "type": "text",
+                    "text": "1"
+                }
+            ],
+            "edition": [
+                {
+                    "type": "text",
+                    "text": "2020/11/03"
+                }
+            ],
+            "chapter": [
+                {
+                    "type": "text",
+                    "text": "1"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "1"
+                        },
+                        {
+                            "type": "text",
+                            "text": "22"
+                        }
+                    ]
+                ]
+            ],
+            "publisher": [
+                {
+                    "type": "text",
+                    "text": "Cambridge University Press"
+                }
+            ],
+            "isbn": [
+                {
+                    "type": "text",
+                    "text": "0033-8222"
+                }
+            ],
+            "issn": [
+                {
+                    "type": "text",
+                    "text": "0033-8222"
+                }
+            ],
+            "url": [
+                {
+                    "type": "text",
+                    "text": "https://www.cambridge.org/core/article/an-independent-assessment-of-uncertainty-for-radiocarbon-analysis-with-the-new-generation-highyield-accelerator-mass-spectrometers/AC6555454A6A2FF4F4898964803B4C4F"
+                }
+            ],
+            "date": "2020",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Aerts-Bijma"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "A. T."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Paul"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "D."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Dee"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "M. W."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Palstra"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "S. W. L."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Meijer"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "H. A. J."
+                        }
+                    ]
+                }
+            ],
+            "keywords": "contamination, MICADAS, Poisson statistics, quality assurance radiocarbon, sample duplicates, uncertainty analysis"
+        }
+    },
+    "18": {
+        "entry_key": "852",
+        "bib_type": "article-journal",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "The IntCal20 Approach to Radiocarbon Calibration Curve Construction: A New Methodology Using Bayesian Splines and Errors-in-Variables"
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "Radiocarbon"
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Radiocarbon"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "62"
+                }
+            ],
+            "number": [
+                {
+                    "type": "text",
+                    "text": "4"
+                }
+            ],
+            "edition": [
+                {
+                    "type": "text",
+                    "text": "2020/08/12"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "821"
+                        },
+                        {
+                            "type": "text",
+                            "text": "863"
+                        }
+                    ]
+                ]
+            ],
+            "publisher": [
+                {
+                    "type": "text",
+                    "text": "Cambridge University Press"
+                }
+            ],
+            "isbn": [
+                {
+                    "type": "text",
+                    "text": "0033-8222"
+                }
+            ],
+            "issn": [
+                {
+                    "type": "text",
+                    "text": "0033-8222"
+                }
+            ],
+            "url": [
+                {
+                    "type": "text",
+                    "text": "https://www.cambridge.org/core/article/intcal20-approach-to-radiocarbon-calibration-curve-construction-a-new-methodology-using-bayesian-splines-and-errorsinvariables/FF2C650D3A7BBA277E9C51380BEC4050"
+                }
+            ],
+            "date": "2020",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Heaton"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Timothy J."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Blaauw"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Maarten"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Blackwell"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Paul G."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Bronk Ramsey"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Christopher"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Reimer"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Paula J."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Scott"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "E. Marian"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "19": {
+        "entry_key": "819",
+        "bib_type": "article-journal",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "The IntCal20 Northern Hemisphere Radiocarbon Age Calibration Curve (0-55 cal kBP)"
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "Radiocarbon"
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Radiocarbon"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "62"
+                }
+            ],
+            "number": [
+                {
+                    "type": "text",
+                    "text": "4"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "725"
+                        },
+                        {
+                            "type": "text",
+                            "text": "757"
+                        }
+                    ]
+                ]
+            ],
+            "date": "2020",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Reimer"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "P.J."
+                        }
+                    ],
+                    "suffix": [
+                        {
+                            "type": "text",
+                            "text": "Austin"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "20": {
+        "entry_key": "2445",
+        "bib_type": "article-journal",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "A signature of cosmic-ray increase in AD 774–775 from tree rings in Japan"
+                }
+            ],
+            "booktitle": [
+                {
+                    "type": "text",
+                    "text": "Nature"
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Nature"
+                }
+            ],
+            "shortjournal": [
+                {
+                    "type": "text",
+                    "text": "Nature"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "486"
+                }
+            ],
+            "number": [
+                {
+                    "type": "text",
+                    "text": "7402"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "240"
+                        },
+                        {
+                            "type": "text",
+                            "text": "242"
+                        }
+                    ]
+                ]
+            ],
+            "isbn": [
+                {
+                    "type": "text",
+                    "text": "1476-4687"
+                }
+            ],
+            "issn": [
+                {
+                    "type": "text",
+                    "text": "1476-4687"
+                }
+            ],
+            "url": [
+                {
+                    "type": "text",
+                    "text": "https://doi.org/10.1038/nature11123"
+                }
+            ],
+            "date": "2012/06/01",
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Miyake"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Fusa"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Nagaya"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Kentaro"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Masuda"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Kimiaki"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Nakamura"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Toshio"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,770 @@
+{
+    "1": {
+        "entry_key": "Smith2023",
+        "bib_type": "article-journal",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "The Impact of Artificial Intelligence on Modern Research Methodologies"
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Journal of Computational Science"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Smith"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "John A."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Doe"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Jane B."
+                        }
+                    ]
+                }
+            ],
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "This study examines how artificial intelligence technologies are transforming research methodologies across various scientific disciplines. We analyze the integration of machine learning algorithms in data collection, processing, and analysis phases of research projects."
+                }
+            ],
+            "date": "2023",
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "45"
+                }
+            ],
+            "number": [
+                {
+                    "type": "text",
+                    "text": "3"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "123"
+                        },
+                        {
+                            "type": "text",
+                            "text": "145"
+                        }
+                    ]
+                ]
+            ],
+            "doi": [
+                {
+                    "type": "text",
+                    "text": "10.1234/example.doi.001\n%! AI Impact on Research"
+                }
+            ],
+            "url": [
+                {
+                    "type": "text",
+                    "text": "https://example.com/journal/article1"
+                }
+            ],
+            "keywords": "Artificial Intelligence\nMachine Learning\nResearch Methods\nData Science",
+            "eprint": [
+                {
+                    "type": "text",
+                    "text": "12345678\n%@ 1234-5678"
+                }
+            ]
+        }
+    },
+    "2": {
+        "entry_key": "Johnson2022",
+        "bib_type": "book",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Comprehensive Guide to Research Methods in the Digital Age"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Johnson"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Robert C."
+                        }
+                    ]
+                }
+            ],
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "This comprehensive textbook covers modern research methodologies with a focus on digital tools and techniques. It includes chapters on statistical analysis, survey design, and qualitative research methods.\n%@ 978-3-123456-78-9"
+                }
+            ],
+            "date": "2022",
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "2"
+                }
+            ],
+            "publisher": [
+                {
+                    "type": "text",
+                    "text": "Academic Publishing House"
+                }
+            ],
+            "location": [
+                {
+                    "type": "text",
+                    "text": "New York, NY"
+                }
+            ],
+            "edition": [
+                {
+                    "type": "text",
+                    "text": "3rd"
+                }
+            ],
+            "doi": [
+                {
+                    "type": "text",
+                    "text": "10.1234/example.doi.002"
+                }
+            ],
+            "keywords": "Research Methods\nDigital Tools\nTextbook",
+            "library": [
+                {
+                    "type": "text",
+                    "text": "Q180.55.M4 J64 2022"
+                }
+            ]
+        }
+    },
+    "3": {
+        "entry_key": "Williams2021",
+        "bib_type": "inbook",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Machine Learning Applications in Healthcare"
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Handbook of Medical Informatics"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Williams"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Sarah L."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Brown"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Michael D."
+                        }
+                    ]
+                }
+            ],
+            "editor": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Davis"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Patricia M."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Wilson"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Thomas H."
+                        }
+                    ]
+                }
+            ],
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "This chapter explores the various applications of machine learning algorithms in healthcare settings, including diagnostic imaging, drug discovery, and patient care optimization."
+                }
+            ],
+            "date": "2021",
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "256"
+                        },
+                        {
+                            "type": "text",
+                            "text": "289"
+                        }
+                    ]
+                ]
+            ],
+            "publisher": [
+                {
+                    "type": "text",
+                    "text": "Medical Science Press"
+                }
+            ],
+            "location": [
+                {
+                    "type": "text",
+                    "text": "Boston, MA"
+                }
+            ],
+            "doi": [
+                {
+                    "type": "text",
+                    "text": "10.1234/example.doi.003"
+                }
+            ],
+            "keywords": "Healthcare\nMachine Learning\nMedical Informatics"
+        }
+    },
+    "4": {
+        "entry_key": "Chen2023",
+        "bib_type": "inproceedings",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Advances in Natural Language Processing for Scientific Literature"
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Proceedings of the International Conference on Computational Linguistics"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Chen"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Lisa Y."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Garcia"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Carlos M."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Lee"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "David K."
+                        }
+                    ]
+                }
+            ],
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "This paper presents novel approaches to natural language processing specifically designed for analyzing scientific literature. Our methods improve entity recognition and relationship extraction in technical texts."
+                }
+            ],
+            "date": "2023",
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "45"
+                        },
+                        {
+                            "type": "text",
+                            "text": "52"
+                        }
+                    ]
+                ]
+            ],
+            "location": [
+                {
+                    "type": "text",
+                    "text": "Paris, France"
+                }
+            ],
+            "doi": [
+                {
+                    "type": "text",
+                    "text": "10.1234/example.doi.004"
+                }
+            ],
+            "keywords": "Natural Language Processing\nComputational Linguistics\nScientific Literature",
+            "eprint": [
+                {
+                    "type": "text",
+                    "text": "CONF-2023-001"
+                }
+            ]
+        }
+    },
+    "5": {
+        "entry_key": "National Institute of Standards and Technology2022",
+        "bib_type": "report",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Cybersecurity Framework for Research Institutions"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Technology"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "National Institute of Standards and"
+                        }
+                    ]
+                }
+            ],
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "This report outlines best practices and guidelines for implementing cybersecurity measures in research institutions. It covers risk assessment, access controls, and incident response protocols."
+                }
+            ],
+            "date": "2022",
+            "publisher": [
+                {
+                    "type": "text",
+                    "text": "NIST"
+                }
+            ],
+            "location": [
+                {
+                    "type": "text",
+                    "text": "Gaithersburg, MD"
+                }
+            ],
+            "doi": [
+                {
+                    "type": "text",
+                    "text": "10.1234/example.doi.005"
+                }
+            ],
+            "url": [
+                {
+                    "type": "text",
+                    "text": "https://example.com/nist/report2022"
+                }
+            ],
+            "keywords": "Cybersecurity\nResearch Institutions\nRisk Management\n%@ 978-1-947666-33-0"
+        }
+    },
+    "6": {
+        "entry_key": "Martinez2021",
+        "bib_type": "thesis",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Development of Novel Algorithms for Large-Scale Data Analysis"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Martinez"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Elena R."
+                        }
+                    ]
+                }
+            ],
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "This doctoral dissertation presents new algorithms for analyzing large-scale datasets in distributed computing environments. The work includes theoretical foundations and experimental validation."
+                }
+            ],
+            "date": "2021",
+            "publisher": [
+                {
+                    "type": "text",
+                    "text": "Stanford University"
+                }
+            ],
+            "location": [
+                {
+                    "type": "text",
+                    "text": "Stanford, CA"
+                }
+            ],
+            "doi": [
+                {
+                    "type": "text",
+                    "text": "10.1234/example.doi.006"
+                }
+            ],
+            "keywords": "Algorithms\nBig Data\nDistributed Computing",
+            "library": [
+                {
+                    "type": "text",
+                    "text": "QA76.76.A65 M37 2021"
+                }
+            ]
+        }
+    },
+    "7": {
+        "entry_key": "World Health Organization2023",
+        "bib_type": "online",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Global Health Observatory Data Repository"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Organization"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "World Health"
+                        }
+                    ]
+                }
+            ],
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "The Global Health Observatory provides comprehensive data and analyses on global health priorities. This resource includes statistics on mortality, disease burden, and health system performance."
+                }
+            ],
+            "note": [
+                {
+                    "type": "text",
+                    "text": "Accessed: 2023-11-15"
+                }
+            ],
+            "date": "2023",
+            "url": [
+                {
+                    "type": "text",
+                    "text": "https://example.com/who/gho"
+                }
+            ],
+            "keywords": "Global Health\nPublic Health Data\nStatistics"
+        }
+    },
+    "8": {
+        "entry_key": "Anderson2022",
+        "bib_type": "patent",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Method and System for Distributed Data Processing"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Anderson"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "James P."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Taylor"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Susan M."
+                        }
+                    ]
+                }
+            ],
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "A system and method for processing large datasets across distributed computing nodes. The invention improves efficiency through intelligent task scheduling and data locality optimization."
+                }
+            ],
+            "date": "2022",
+            "publisher": [
+                {
+                    "type": "text",
+                    "text": "United States Patent and Trademark Office"
+                }
+            ],
+            "location": [
+                {
+                    "type": "text",
+                    "text": "Alexandria, VA"
+                }
+            ],
+            "keywords": "Patent\nDistributed Computing\nData Processing",
+            "library": [
+                {
+                    "type": "text",
+                    "text": "US Patent 10,123,456"
+                }
+            ]
+        }
+    },
+    "9": {
+        "entry_key": "Thompson2023",
+        "bib_type": "article-newspaper",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Breakthrough in Quantum Computing Announced by Research Team"
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "The Daily Science Tribune"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Thompson"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "William H."
+                        }
+                    ]
+                }
+            ],
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "Scientists at a leading research university have announced a significant breakthrough in quantum computing stability. The new technique extends coherence time by a factor of ten."
+                }
+            ],
+            "date": "2023",
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "128"
+                }
+            ],
+            "number": [
+                {
+                    "type": "text",
+                    "text": "45"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "A1"
+                        }
+                    ]
+                ],
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "A4"
+                        }
+                    ]
+                ]
+            ],
+            "keywords": "Quantum Computing\nBreaking News\nResearch Breakthrough"
+        }
+    },
+    "10": {
+        "entry_key": "Rodriguez2022",
+        "bib_type": "article-magazine",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "The Future of Remote Collaboration Tools"
+                }
+            ],
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Technology Review Monthly"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Rodriguez"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Maria G."
+                        }
+                    ]
+                }
+            ],
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "An in-depth look at emerging technologies enabling remote scientific collaboration. From virtual laboratories to cloud-based data sharing, we explore tools shaping the future of research."
+                }
+            ],
+            "date": "2022",
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "35"
+                }
+            ],
+            "number": [
+                {
+                    "type": "text",
+                    "text": "8"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "34"
+                        },
+                        {
+                            "type": "text",
+                            "text": "41"
+                        }
+                    ]
+                ]
+            ],
+            "keywords": "Remote Work\nCollaboration Tools\nTechnology Trends\n%! Future of Remote Collaboration"
+        }
+    }
+}
