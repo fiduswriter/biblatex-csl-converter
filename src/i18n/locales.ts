@@ -5,7 +5,7 @@
 // To regenerate:
 //   npm run compile_i18n
 
-import type { Locale } from "./index.ts"
+import type { Locale } from "./types"
 
 // Locale: bg
 export const bg: Locale = {
