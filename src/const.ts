@@ -414,12 +414,6 @@ export const BibFieldTypes: Record<string, BibFieldType> = {
         biblatex: "editor",
         csl: "editor",
     },
-    director: {
-        // Only used for video
-        type: "l_name",
-        biblatex: "editor",
-        csl: "director",
-    },
     editora: {
         type: "l_name",
         biblatex: "editora",
@@ -2429,10 +2423,7 @@ export const BibTypes: Record<string, BibType> = {
         biblatex: "video",
         csl: "motion_picture",
         required: ["title", "date", "langid"],
-        eitheror: [
-            "director", // "editor" in BibLaTeX
-            "author",
-        ],
+        eitheror: ["author", "editor"],
         optional: [
             "abstract",
             "addendum",

@@ -7,6 +7,8 @@ export const BiblatexFieldAliasTypes = {
     pdf: "file",
     primaryclass: "eprintclass",
     school: "institution",
+    director: "author",
+    producer: "editor",
 }
 
 /** A list of all bibentry aliases and what they refer to. */
