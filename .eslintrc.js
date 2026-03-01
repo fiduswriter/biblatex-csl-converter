@@ -10,7 +10,7 @@ module.exports = {
     },
     extends: ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
     parserOptions: {
-        ecmaVersion: 2018,
+        ecmaVersion: 2020,
         sourceType: "module",
     },
     rules: {
@@ -171,7 +171,7 @@ module.exports = {
         "no-throw-literal": "error",
         "no-trailing-spaces": "error",
         "no-undef-init": "error",
-        "no-undefined": "error",
+        "no-undefined": "off",
         "no-unmodified-loop-condition": "error",
         "no-unneeded-ternary": "error",
         "no-unused-expressions": "error",

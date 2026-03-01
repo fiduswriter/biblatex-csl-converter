@@ -1,3 +1,3 @@
 import { CSLParser } from "../import/csl"
 
-global.CSLParser = CSLParser
+Object.assign(globalThis, { CSLParser })

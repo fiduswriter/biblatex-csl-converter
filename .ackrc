@@ -1,5 +1,5 @@
 --ignore-directory=is:lib
---ignore-directory=is:gh-pages
+--ignore-directory=is:demo
 --ignore-directory=is:browser
 --ignore-directory=is:venv
 --ignore-directory=is:coverage

@@ -1,3 +1,3 @@
 import { CSLExporter } from "../export/csl"
 
-global.CSLExporter = CSLExporter
+Object.assign(globalThis, { CSLExporter })

@@ -5,7 +5,7 @@
 // To regenerate:
 //   npm run compile_i18n
 
-import type {Locale} from "./index.ts"
+import type { Locale } from "./index.ts"
 
 // Locale: bg
 export const bg: Locale = {
@@ -107,14 +107,19 @@ export const bg: Locale = {
     },
     fieldHelp: {
         date: "В <em> Формат на удължена дата </em> (EDTF) 1.0 <br> ниво 0 или 1",
-        origdate: "В <em> Формат на удължена дата </em> (EDTF) 1.0 <br> ниво 0 или 1",
+        origdate:
+            "В <em> Формат на удължена дата </em> (EDTF) 1.0 <br> ниво 0 или 1",
         pages: "Обхват или една страница, колона, параграф, раздел, ред",
-        author: "Префиксът се \"използва\", когато се използва в случаите, когато се използва само фамилното име. Например: „Лудвиг ван Бетовен“ се превръща в „Бетовен“, така че префиксът „ван“ не се използва. \"Vincent van Gogh\" се превръща във \"van Gogh\", така че се използва префиксът \"van\".",
-        editor: "Префиксът се \"използва\", когато се използва в случаите, когато се използва само фамилното име. Например: „Лудвиг ван Бетовен“ се превръща в „Бетовен“, така че префиксът „ван“ не се използва. \"Vincent van Gogh\" се превръща във \"van Gogh\", така че се използва префиксът \"van\".",
-        editora: "Префиксът се \"използва\", когато се използва в случаите, когато се използва само фамилното име. Например: „Лудвиг ван Бетовен“ се превръща в „Бетовен“, така че префиксът „ван“ не се използва. \"Vincent van Gogh\" се превръща във \"van Gogh\", така че се използва префиксът \"van\".",
-        editorb: "Префиксът се \"използва\", когато се използва в случаите, когато се използва само фамилното име. Например: „Лудвиг ван Бетовен“ се превръща в „Бетовен“, така че префиксът „ван“ не се използва. \"Vincent van Gogh\" се превръща във \"van Gogh\", така че се използва префиксът \"van\".",
-        editorc: "Префиксът се \"използва\", когато се използва в случаите, когато се използва само фамилното име. Например: „Лудвиг ван Бетовен“ се превръща в „Бетовен“, така че префиксът „ван“ не се използва. \"Vincent van Gogh\" се превръща във \"van Gogh\", така че се използва префиксът \"van\".",
-        translator: "Префиксът се \"използва\", когато се използва в случаите, когато се използва само фамилното име. Например: „Лудвиг ван Бетовен“ се превръща в „Бетовен“, така че префиксът „ван“ не се използва. \"Vincent van Gogh\" се превръща във \"van Gogh\", така че се използва префиксът \"van\".",
+        author: 'Префиксът се "използва", когато се използва в случаите, когато се използва само фамилното име. Например: „Лудвиг ван Бетовен“ се превръща в „Бетовен“, така че префиксът „ван“ не се използва. "Vincent van Gogh" се превръща във "van Gogh", така че се използва префиксът "van".',
+        editor: 'Префиксът се "използва", когато се използва в случаите, когато се използва само фамилното име. Например: „Лудвиг ван Бетовен“ се превръща в „Бетовен“, така че префиксът „ван“ не се използва. "Vincent van Gogh" се превръща във "van Gogh", така че се използва префиксът "van".',
+        editora:
+            'Префиксът се "използва", когато се използва в случаите, когато се използва само фамилното име. Например: „Лудвиг ван Бетовен“ се превръща в „Бетовен“, така че префиксът „ван“ не се използва. "Vincent van Gogh" се превръща във "van Gogh", така че се използва префиксът "van".',
+        editorb:
+            'Префиксът се "използва", когато се използва в случаите, когато се използва само фамилното име. Например: „Лудвиг ван Бетовен“ се превръща в „Бетовен“, така че префиксът „ван“ не се използва. "Vincent van Gogh" се превръща във "van Gogh", така че се използва префиксът "van".',
+        editorc:
+            'Префиксът се "използва", когато се използва в случаите, когато се използва само фамилното име. Например: „Лудвиг ван Бетовен“ се превръща в „Бетовен“, така че префиксът „ван“ не се използва. "Vincent van Gogh" се превръща във "van Gogh", така че се използва префиксът "van".',
+        translator:
+            'Префиксът се "използва", когато се използва в случаите, когато се използва само фамилното име. Например: „Лудвиг ван Бетовен“ се превръща в „Бетовен“, така че префиксът „ван“ не се използва. "Vincent van Gogh" се превръща във "van Gogh", така че се използва префиксът "van".',
     },
     typeTitles: {
         article: "Статия",
@@ -386,14 +391,19 @@ export const de: Locale = {
     },
     fieldHelp: {
         date: "Im <em>Extended Date Time Format</em> (EDTF) 1.0 <br> Level 0 oder 1",
-        origdate: "Im <em>Extended Date Time Format</em> (EDTF) 1.0 <br> Level 0 oder 1",
+        origdate:
+            "Im <em>Extended Date Time Format</em> (EDTF) 1.0 <br> Level 0 oder 1",
         pages: "Bereich oder einzelne Seite, Spalte, Absatz, Abschnitt, Zeile",
-        author: "Das Präfix wird verwendet, wenn er in Fällen in denen nur der Nachname verwendet wird auftaucht. Zum Beispiel: Aus \"Ludwig van Beethoven\" wird \"Beethoven\", daher wird das Präfix \"van\" nicht verwendet. Aus \"Vincent van Gogh\" wird \"van Gogh\", daher wird das Präfix \"van\" verwendet.",
-        editor: "Das Präfix wird verwendet, wenn er in Fällen in denen nur der Nachname verwendet wird auftaucht. Zum Beispiel: Aus \"Ludwig van Beethoven\" wird \"Beethoven\", daher wird das Präfix \"van\" nicht verwendet. Aus \"Vincent van Gogh\" wird \"van Gogh\", daher wird das Präfix \"van\" verwendet.",
-        editora: "Das Präfix wird verwendet, wenn er in Fällen in denen nur der Nachname verwendet wird auftaucht. Zum Beispiel: Aus \"Ludwig van Beethoven\" wird \"Beethoven\", daher wird das Präfix \"van\" nicht verwendet. Aus \"Vincent van Gogh\" wird \"van Gogh\", daher wird das Präfix \"van\" verwendet.",
-        editorb: "Das Präfix wird verwendet, wenn er in Fällen in denen nur der Nachname verwendet wird auftaucht. Zum Beispiel: Aus \"Ludwig van Beethoven\" wird \"Beethoven\", daher wird das Präfix \"van\" nicht verwendet. Aus \"Vincent van Gogh\" wird \"van Gogh\", daher wird das Präfix \"van\" verwendet.",
-        editorc: "Das Präfix wird verwendet, wenn er in Fällen in denen nur der Nachname verwendet wird auftaucht. Zum Beispiel: Aus \"Ludwig van Beethoven\" wird \"Beethoven\", daher wird das Präfix \"van\" nicht verwendet. Aus \"Vincent van Gogh\" wird \"van Gogh\", daher wird das Präfix \"van\" verwendet.",
-        translator: "Das Präfix wird verwendet, wenn er in Fällen in denen nur der Nachname verwendet wird auftaucht. Zum Beispiel: Aus \"Ludwig van Beethoven\" wird \"Beethoven\", daher wird das Präfix \"van\" nicht verwendet. Aus \"Vincent van Gogh\" wird \"van Gogh\", daher wird das Präfix \"van\" verwendet.",
+        author: 'Das Präfix wird verwendet, wenn er in Fällen in denen nur der Nachname verwendet wird auftaucht. Zum Beispiel: Aus "Ludwig van Beethoven" wird "Beethoven", daher wird das Präfix "van" nicht verwendet. Aus "Vincent van Gogh" wird "van Gogh", daher wird das Präfix "van" verwendet.',
+        editor: 'Das Präfix wird verwendet, wenn er in Fällen in denen nur der Nachname verwendet wird auftaucht. Zum Beispiel: Aus "Ludwig van Beethoven" wird "Beethoven", daher wird das Präfix "van" nicht verwendet. Aus "Vincent van Gogh" wird "van Gogh", daher wird das Präfix "van" verwendet.',
+        editora:
+            'Das Präfix wird verwendet, wenn er in Fällen in denen nur der Nachname verwendet wird auftaucht. Zum Beispiel: Aus "Ludwig van Beethoven" wird "Beethoven", daher wird das Präfix "van" nicht verwendet. Aus "Vincent van Gogh" wird "van Gogh", daher wird das Präfix "van" verwendet.',
+        editorb:
+            'Das Präfix wird verwendet, wenn er in Fällen in denen nur der Nachname verwendet wird auftaucht. Zum Beispiel: Aus "Ludwig van Beethoven" wird "Beethoven", daher wird das Präfix "van" nicht verwendet. Aus "Vincent van Gogh" wird "van Gogh", daher wird das Präfix "van" verwendet.',
+        editorc:
+            'Das Präfix wird verwendet, wenn er in Fällen in denen nur der Nachname verwendet wird auftaucht. Zum Beispiel: Aus "Ludwig van Beethoven" wird "Beethoven", daher wird das Präfix "van" nicht verwendet. Aus "Vincent van Gogh" wird "van Gogh", daher wird das Präfix "van" verwendet.',
+        translator:
+            'Das Präfix wird verwendet, wenn er in Fällen in denen nur der Nachname verwendet wird auftaucht. Zum Beispiel: Aus "Ludwig van Beethoven" wird "Beethoven", daher wird das Präfix "van" nicht verwendet. Aus "Vincent van Gogh" wird "van Gogh", daher wird das Präfix "van" verwendet.',
     },
     typeTitles: {
         article: "Artikel",
@@ -665,14 +675,19 @@ export const en: Locale = {
     },
     fieldHelp: {
         date: "In <em>Extended Date Time Format</em> (EDTF) 1.0<br>Level 0 or 1",
-        origdate: "In <em>Extended Date Time Format</em> (EDTF) 1.0<br>Level 0 or 1",
+        origdate:
+            "In <em>Extended Date Time Format</em> (EDTF) 1.0<br>Level 0 or 1",
         pages: "Range or single page, column, paragraph, section, line",
-        author: "Prefixed is \"used\" when it is used in cases where only the last name is used.     For example: \"Ludwig van Beethoven\" turns into \"Beethoven\", so the prefix \"van\"     is not used. \"Vincent van Gogh\" turns into \"van Gogh\", so the prefix \"van\" is used.",
-        editor: "Prefixed is \"used\" when it is used in cases where only the last name is used.     For example: \"Ludwig van Beethoven\" turns into \"Beethoven\", so the prefix \"van\"     is not used. \"Vincent van Gogh\" turns into \"van Gogh\", so the prefix \"van\" is used.",
-        editora: "Prefixed is \"used\" when it is used in cases where only the last name is used.     For example: \"Ludwig van Beethoven\" turns into \"Beethoven\", so the prefix \"van\"     is not used. \"Vincent van Gogh\" turns into \"van Gogh\", so the prefix \"van\" is used.",
-        editorb: "Prefixed is \"used\" when it is used in cases where only the last name is used.     For example: \"Ludwig van Beethoven\" turns into \"Beethoven\", so the prefix \"van\"     is not used. \"Vincent van Gogh\" turns into \"van Gogh\", so the prefix \"van\" is used.",
-        editorc: "Prefixed is \"used\" when it is used in cases where only the last name is used.     For example: \"Ludwig van Beethoven\" turns into \"Beethoven\", so the prefix \"van\"     is not used. \"Vincent van Gogh\" turns into \"van Gogh\", so the prefix \"van\" is used.",
-        translator: "Prefixed is \"used\" when it is used in cases where only the last name is used.     For example: \"Ludwig van Beethoven\" turns into \"Beethoven\", so the prefix \"van\"     is not used. \"Vincent van Gogh\" turns into \"van Gogh\", so the prefix \"van\" is used.",
+        author: 'Prefixed is "used" when it is used in cases where only the last name is used.     For example: "Ludwig van Beethoven" turns into "Beethoven", so the prefix "van"     is not used. "Vincent van Gogh" turns into "van Gogh", so the prefix "van" is used.',
+        editor: 'Prefixed is "used" when it is used in cases where only the last name is used.     For example: "Ludwig van Beethoven" turns into "Beethoven", so the prefix "van"     is not used. "Vincent van Gogh" turns into "van Gogh", so the prefix "van" is used.',
+        editora:
+            'Prefixed is "used" when it is used in cases where only the last name is used.     For example: "Ludwig van Beethoven" turns into "Beethoven", so the prefix "van"     is not used. "Vincent van Gogh" turns into "van Gogh", so the prefix "van" is used.',
+        editorb:
+            'Prefixed is "used" when it is used in cases where only the last name is used.     For example: "Ludwig van Beethoven" turns into "Beethoven", so the prefix "van"     is not used. "Vincent van Gogh" turns into "van Gogh", so the prefix "van" is used.',
+        editorc:
+            'Prefixed is "used" when it is used in cases where only the last name is used.     For example: "Ludwig van Beethoven" turns into "Beethoven", so the prefix "van"     is not used. "Vincent van Gogh" turns into "van Gogh", so the prefix "van" is used.',
+        translator:
+            'Prefixed is "used" when it is used in cases where only the last name is used.     For example: "Ludwig van Beethoven" turns into "Beethoven", so the prefix "van"     is not used. "Vincent van Gogh" turns into "van Gogh", so the prefix "van" is used.',
     },
     typeTitles: {
         article: "Article",
@@ -944,14 +959,19 @@ export const es: Locale = {
     },
     fieldHelp: {
         date: "En <em>Formato de fecha y hora extendida</em> (EDTF) 1.0<br>Nivel 0 o 1",
-        origdate: "En <em>Formato de fecha y hora extendida</em> (EDTF) 1.0<br>Nivel 0 o 1",
+        origdate:
+            "En <em>Formato de fecha y hora extendida</em> (EDTF) 1.0<br>Nivel 0 o 1",
         pages: "Intervalo de páginas o página única, columna, párrafo, sección, línea",
-        author: "El prefijo se \"utiliza\" en casos donde solo se usa el apellido.     Por ejemplo: \"Ludwig van Beethoven\" se convierte en \"Beethoven\", por lo que \"van\"     no es utilizado. \"Vincent van Gogh\" se conviente en \"van Gogh\", por lo que \"van\" sí es utilizado.",
-        editor: "El prefijo se \"utiliza\" en casos donde solo se usa el apellido.     Por ejemplo: \"Ludwig van Beethoven\" se convierte en \"Beethoven\", por lo que \"van\"     no es utilizado. \"Vincent van Gogh\" se conviente en \"van Gogh\", por lo que \"van\" sí es utilizado.",
-        editora: "El prefijo se \"utiliza\" en casos donde solo se usa el apellido.     Por ejemplo: \"Ludwig van Beethoven\" se convierte en \"Beethoven\", por lo que \"van\"     no es utilizado. \"Vincent van Gogh\" se conviente en \"van Gogh\", por lo que \"van\" sí es utilizado.",
-        editorb: "El prefijo se \"utiliza\" en casos donde solo se usa el apellido.     Por ejemplo: \"Ludwig van Beethoven\" se convierte en \"Beethoven\", por lo que \"van\"     no es utilizado. \"Vincent van Gogh\" se conviente en \"van Gogh\", por lo que \"van\" sí es utilizado.",
-        editorc: "El prefijo se \"utiliza\" en casos donde solo se usa el apellido.     Por ejemplo: \"Ludwig van Beethoven\" se convierte en \"Beethoven\", por lo que \"van\"     no es utilizado. \"Vincent van Gogh\" se conviente en \"van Gogh\", por lo que \"van\" sí es utilizado.",
-        translator: "El prefijo se \"utiliza\" en casos donde solo se usa el apellido.     Por ejemplo: \"Ludwig van Beethoven\" se convierte en \"Beethoven\", por lo que \"van\"     no es utilizado. \"Vincent van Gogh\" se conviente en \"van Gogh\", por lo que \"van\" sí es utilizado.",
+        author: 'El prefijo se "utiliza" en casos donde solo se usa el apellido.     Por ejemplo: "Ludwig van Beethoven" se convierte en "Beethoven", por lo que "van"     no es utilizado. "Vincent van Gogh" se conviente en "van Gogh", por lo que "van" sí es utilizado.',
+        editor: 'El prefijo se "utiliza" en casos donde solo se usa el apellido.     Por ejemplo: "Ludwig van Beethoven" se convierte en "Beethoven", por lo que "van"     no es utilizado. "Vincent van Gogh" se conviente en "van Gogh", por lo que "van" sí es utilizado.',
+        editora:
+            'El prefijo se "utiliza" en casos donde solo se usa el apellido.     Por ejemplo: "Ludwig van Beethoven" se convierte en "Beethoven", por lo que "van"     no es utilizado. "Vincent van Gogh" se conviente en "van Gogh", por lo que "van" sí es utilizado.',
+        editorb:
+            'El prefijo se "utiliza" en casos donde solo se usa el apellido.     Por ejemplo: "Ludwig van Beethoven" se convierte en "Beethoven", por lo que "van"     no es utilizado. "Vincent van Gogh" se conviente en "van Gogh", por lo que "van" sí es utilizado.',
+        editorc:
+            'El prefijo se "utiliza" en casos donde solo se usa el apellido.     Por ejemplo: "Ludwig van Beethoven" se convierte en "Beethoven", por lo que "van"     no es utilizado. "Vincent van Gogh" se conviente en "van Gogh", por lo que "van" sí es utilizado.',
+        translator:
+            'El prefijo se "utiliza" en casos donde solo se usa el apellido.     Por ejemplo: "Ludwig van Beethoven" se convierte en "Beethoven", por lo que "van"     no es utilizado. "Vincent van Gogh" se conviente en "van Gogh", por lo que "van" sí es utilizado.',
     },
     typeTitles: {
         article: "Artículo",
@@ -1223,14 +1243,19 @@ export const fr: Locale = {
     },
     fieldHelp: {
         date: "Dans <em> Format de date et d'heure étendu </em> (EDTF) 1.0 <br> Niveau 0 ou 1",
-        origdate: "Dans <em> Format de date et d'heure étendu </em> (EDTF) 1.0 <br> Niveau 0 ou 1",
+        origdate:
+            "Dans <em> Format de date et d'heure étendu </em> (EDTF) 1.0 <br> Niveau 0 ou 1",
         pages: "Plage ou page unique, colonne, paragraphe, section, ligne",
-        author: "Le préfixe est \"utilisé\" lorsqu'il est utilisé dans les cas où seul le nom de famille est utilisé. Par exemple: \"Ludwig van Beethoven\" devient \"Beethoven\", donc le préfixe \"van\" n'est pas utilisé. \"Vincent van Gogh\" se transforme en \"van Gogh\", donc le préfixe \"van\" est utilisé.",
-        editor: "Le préfixe est \"utilisé\" lorsqu'il est utilisé dans les cas où seul le nom de famille est utilisé. Par exemple: \"Ludwig van Beethoven\" devient \"Beethoven\", donc le préfixe \"van\" n'est pas utilisé. \"Vincent van Gogh\" se transforme en \"van Gogh\", donc le préfixe \"van\" est utilisé.",
-        editora: "Le préfixe est \"utilisé\" lorsqu'il est utilisé dans les cas où seul le nom de famille est utilisé. Par exemple: \"Ludwig van Beethoven\" devient \"Beethoven\", donc le préfixe \"van\" n'est pas utilisé. \"Vincent van Gogh\" se transforme en \"van Gogh\", donc le préfixe \"van\" est utilisé.",
-        editorb: "Le préfixe est \"utilisé\" lorsqu'il est utilisé dans les cas où seul le nom de famille est utilisé. Par exemple: \"Ludwig van Beethoven\" devient \"Beethoven\", donc le préfixe \"van\" n'est pas utilisé. \"Vincent van Gogh\" se transforme en \"van Gogh\", donc le préfixe \"van\" est utilisé.",
-        editorc: "Le préfixe est \"utilisé\" lorsqu'il est utilisé dans les cas où seul le nom de famille est utilisé. Par exemple: \"Ludwig van Beethoven\" devient \"Beethoven\", donc le préfixe \"van\" n'est pas utilisé. \"Vincent van Gogh\" se transforme en \"van Gogh\", donc le préfixe \"van\" est utilisé.",
-        translator: "Le préfixe est \"utilisé\" lorsqu'il est utilisé dans les cas où seul le nom de famille est utilisé. Par exemple: \"Ludwig van Beethoven\" devient \"Beethoven\", donc le préfixe \"van\" n'est pas utilisé. \"Vincent van Gogh\" se transforme en \"van Gogh\", donc le préfixe \"van\" est utilisé.",
+        author: 'Le préfixe est "utilisé" lorsqu\'il est utilisé dans les cas où seul le nom de famille est utilisé. Par exemple: "Ludwig van Beethoven" devient "Beethoven", donc le préfixe "van" n\'est pas utilisé. "Vincent van Gogh" se transforme en "van Gogh", donc le préfixe "van" est utilisé.',
+        editor: 'Le préfixe est "utilisé" lorsqu\'il est utilisé dans les cas où seul le nom de famille est utilisé. Par exemple: "Ludwig van Beethoven" devient "Beethoven", donc le préfixe "van" n\'est pas utilisé. "Vincent van Gogh" se transforme en "van Gogh", donc le préfixe "van" est utilisé.',
+        editora:
+            'Le préfixe est "utilisé" lorsqu\'il est utilisé dans les cas où seul le nom de famille est utilisé. Par exemple: "Ludwig van Beethoven" devient "Beethoven", donc le préfixe "van" n\'est pas utilisé. "Vincent van Gogh" se transforme en "van Gogh", donc le préfixe "van" est utilisé.',
+        editorb:
+            'Le préfixe est "utilisé" lorsqu\'il est utilisé dans les cas où seul le nom de famille est utilisé. Par exemple: "Ludwig van Beethoven" devient "Beethoven", donc le préfixe "van" n\'est pas utilisé. "Vincent van Gogh" se transforme en "van Gogh", donc le préfixe "van" est utilisé.',
+        editorc:
+            'Le préfixe est "utilisé" lorsqu\'il est utilisé dans les cas où seul le nom de famille est utilisé. Par exemple: "Ludwig van Beethoven" devient "Beethoven", donc le préfixe "van" n\'est pas utilisé. "Vincent van Gogh" se transforme en "van Gogh", donc le préfixe "van" est utilisé.',
+        translator:
+            'Le préfixe est "utilisé" lorsqu\'il est utilisé dans les cas où seul le nom de famille est utilisé. Par exemple: "Ludwig van Beethoven" devient "Beethoven", donc le préfixe "van" n\'est pas utilisé. "Vincent van Gogh" se transforme en "van Gogh", donc le préfixe "van" est utilisé.',
     },
     typeTitles: {
         article: "Article",
@@ -1502,14 +1527,19 @@ export const it: Locale = {
     },
     fieldHelp: {
         date: "In <em> Formato data e ora esteso </em> (EDTF) 1.0 <br> Livello 0 o 1",
-        origdate: "In <em> Formato data e ora esteso </em> (EDTF) 1.0 <br> Livello 0 o 1",
+        origdate:
+            "In <em> Formato data e ora esteso </em> (EDTF) 1.0 <br> Livello 0 o 1",
         pages: "Intervallo o pagina singola, colonna, paragrafo, sezione, linea",
-        author: "Il prefisso viene \"utilizzato\" quando viene utilizzato nei casi in cui viene utilizzato solo il cognome. Ad esempio: \"Ludwig van Beethoven\" si trasforma in \"Beethoven\", quindi il prefisso \"van\" non viene utilizzato. \"Vincent van Gogh\" si trasforma in \"van Gogh\", quindi viene utilizzato il prefisso \"van\".",
-        editor: "Il prefisso viene \"utilizzato\" quando viene utilizzato nei casi in cui viene utilizzato solo il cognome. Ad esempio: \"Ludwig van Beethoven\" si trasforma in \"Beethoven\", quindi il prefisso \"van\" non viene utilizzato. \"Vincent van Gogh\" si trasforma in \"van Gogh\", quindi viene utilizzato il prefisso \"van\".",
-        editora: "Il prefisso viene \"utilizzato\" quando viene utilizzato nei casi in cui viene utilizzato solo il cognome. Ad esempio: \"Ludwig van Beethoven\" si trasforma in \"Beethoven\", quindi il prefisso \"van\" non viene utilizzato. \"Vincent van Gogh\" si trasforma in \"van Gogh\", quindi viene utilizzato il prefisso \"van\".",
-        editorb: "Il prefisso viene \"utilizzato\" quando viene utilizzato nei casi in cui viene utilizzato solo il cognome. Ad esempio: \"Ludwig van Beethoven\" si trasforma in \"Beethoven\", quindi il prefisso \"van\" non viene utilizzato. \"Vincent van Gogh\" si trasforma in \"van Gogh\", quindi viene utilizzato il prefisso \"van\".",
-        editorc: "Il prefisso viene \"utilizzato\" quando viene utilizzato nei casi in cui viene utilizzato solo il cognome. Ad esempio: \"Ludwig van Beethoven\" si trasforma in \"Beethoven\", quindi il prefisso \"van\" non viene utilizzato. \"Vincent van Gogh\" si trasforma in \"van Gogh\", quindi viene utilizzato il prefisso \"van\".",
-        translator: "Il prefisso viene \"utilizzato\" quando viene utilizzato nei casi in cui viene utilizzato solo il cognome. Ad esempio: \"Ludwig van Beethoven\" si trasforma in \"Beethoven\", quindi il prefisso \"van\" non viene utilizzato. \"Vincent van Gogh\" si trasforma in \"van Gogh\", quindi viene utilizzato il prefisso \"van\".",
+        author: 'Il prefisso viene "utilizzato" quando viene utilizzato nei casi in cui viene utilizzato solo il cognome. Ad esempio: "Ludwig van Beethoven" si trasforma in "Beethoven", quindi il prefisso "van" non viene utilizzato. "Vincent van Gogh" si trasforma in "van Gogh", quindi viene utilizzato il prefisso "van".',
+        editor: 'Il prefisso viene "utilizzato" quando viene utilizzato nei casi in cui viene utilizzato solo il cognome. Ad esempio: "Ludwig van Beethoven" si trasforma in "Beethoven", quindi il prefisso "van" non viene utilizzato. "Vincent van Gogh" si trasforma in "van Gogh", quindi viene utilizzato il prefisso "van".',
+        editora:
+            'Il prefisso viene "utilizzato" quando viene utilizzato nei casi in cui viene utilizzato solo il cognome. Ad esempio: "Ludwig van Beethoven" si trasforma in "Beethoven", quindi il prefisso "van" non viene utilizzato. "Vincent van Gogh" si trasforma in "van Gogh", quindi viene utilizzato il prefisso "van".',
+        editorb:
+            'Il prefisso viene "utilizzato" quando viene utilizzato nei casi in cui viene utilizzato solo il cognome. Ad esempio: "Ludwig van Beethoven" si trasforma in "Beethoven", quindi il prefisso "van" non viene utilizzato. "Vincent van Gogh" si trasforma in "van Gogh", quindi viene utilizzato il prefisso "van".',
+        editorc:
+            'Il prefisso viene "utilizzato" quando viene utilizzato nei casi in cui viene utilizzato solo il cognome. Ad esempio: "Ludwig van Beethoven" si trasforma in "Beethoven", quindi il prefisso "van" non viene utilizzato. "Vincent van Gogh" si trasforma in "van Gogh", quindi viene utilizzato il prefisso "van".',
+        translator:
+            'Il prefisso viene "utilizzato" quando viene utilizzato nei casi in cui viene utilizzato solo il cognome. Ad esempio: "Ludwig van Beethoven" si trasforma in "Beethoven", quindi il prefisso "van" non viene utilizzato. "Vincent van Gogh" si trasforma in "van Gogh", quindi viene utilizzato il prefisso "van".',
     },
     typeTitles: {
         article: "Articolo",
@@ -1781,14 +1811,19 @@ export const ptBR: Locale = {
     },
     fieldHelp: {
         date: "No <em> Formato estendido de data e hora </em> (EDTF) 1.0, nível 0 ou 1",
-        origdate: "No <em> Formato estendido de data e hora </em> (EDTF) 1.0, nível 0 ou 1",
+        origdate:
+            "No <em> Formato estendido de data e hora </em> (EDTF) 1.0, nível 0 ou 1",
         pages: "Intervalo ou página única, coluna, parágrafo, seção, linha",
-        author: "Prefixado é \" usado \"quando usado nos casos em que apenas o sobrenome éused. Por exemplo: \" Ludwig van Beethoven \"se transforma em \" Beethoven \", entãoo prefixo \" van \"não é usado. \" Vincent van Gogh \"se transforma em \" van Gogh \", então o prefixo \"van \" é usado.",
-        editor: "Prefixado é \" usado \"quando usado nos casos em que apenas o sobrenome éused. Por exemplo: \" Ludwig van Beethoven \"se transforma em \" Beethoven \", entãoo prefixo \" van \"não é usado. \" Vincent van Gogh \"se transforma em \" van Gogh \", então o prefixo \"van \" é usado.",
-        editora: "Prefixado é \" usado \"quando usado nos casos em que apenas o sobrenome éused. Por exemplo: \" Ludwig van Beethoven \"se transforma em \" Beethoven \", entãoo prefixo \" van \"não é usado. \" Vincent van Gogh \"se transforma em \" van Gogh \", então o prefixo \"van \" é usado.",
-        editorb: "Prefixado é \" usado \"quando usado nos casos em que apenas o sobrenome éused. Por exemplo: \" Ludwig van Beethoven \"se transforma em \" Beethoven \", entãoo prefixo \" van \"não é usado. \" Vincent van Gogh \"se transforma em \" van Gogh \", então o prefixo \"van \" é usado.",
-        editorc: "Prefixado é \" usado \"quando usado nos casos em que apenas o sobrenome éused. Por exemplo: \" Ludwig van Beethoven \"se transforma em \" Beethoven \", entãoo prefixo \" van \"não é usado. \" Vincent van Gogh \"se transforma em \" van Gogh \", então o prefixo \"van \" é usado.",
-        translator: "Prefixado é \" usado \"quando usado nos casos em que apenas o sobrenome éused. Por exemplo: \" Ludwig van Beethoven \"se transforma em \" Beethoven \", entãoo prefixo \" van \"não é usado. \" Vincent van Gogh \"se transforma em \" van Gogh \", então o prefixo \"van \" é usado.",
+        author: 'Prefixado é " usado "quando usado nos casos em que apenas o sobrenome éused. Por exemplo: " Ludwig van Beethoven "se transforma em " Beethoven ", entãoo prefixo " van "não é usado. " Vincent van Gogh "se transforma em " van Gogh ", então o prefixo "van " é usado.',
+        editor: 'Prefixado é " usado "quando usado nos casos em que apenas o sobrenome éused. Por exemplo: " Ludwig van Beethoven "se transforma em " Beethoven ", entãoo prefixo " van "não é usado. " Vincent van Gogh "se transforma em " van Gogh ", então o prefixo "van " é usado.',
+        editora:
+            'Prefixado é " usado "quando usado nos casos em que apenas o sobrenome éused. Por exemplo: " Ludwig van Beethoven "se transforma em " Beethoven ", entãoo prefixo " van "não é usado. " Vincent van Gogh "se transforma em " van Gogh ", então o prefixo "van " é usado.',
+        editorb:
+            'Prefixado é " usado "quando usado nos casos em que apenas o sobrenome éused. Por exemplo: " Ludwig van Beethoven "se transforma em " Beethoven ", entãoo prefixo " van "não é usado. " Vincent van Gogh "se transforma em " van Gogh ", então o prefixo "van " é usado.',
+        editorc:
+            'Prefixado é " usado "quando usado nos casos em que apenas o sobrenome éused. Por exemplo: " Ludwig van Beethoven "se transforma em " Beethoven ", entãoo prefixo " van "não é usado. " Vincent van Gogh "se transforma em " van Gogh ", então o prefixo "van " é usado.',
+        translator:
+            'Prefixado é " usado "quando usado nos casos em que apenas o sobrenome éused. Por exemplo: " Ludwig van Beethoven "se transforma em " Beethoven ", entãoo prefixo " van "não é usado. " Vincent van Gogh "se transforma em " van Gogh ", então o prefixo "van " é usado.',
     },
     typeTitles: {
         article: "Artigo",

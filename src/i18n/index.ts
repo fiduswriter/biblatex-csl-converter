@@ -88,9 +88,9 @@ export interface Locale {
 // Locale registry
 // ---------------------------------------------------------------------------
 
-import {bg, de, en, es, fr, it, ptBR} from "./locales.ts"
+import { bg, de, en, es, fr, it, ptBR } from "./locales.ts"
 
-export {bg, de, en, es, fr, it, ptBR}
+export { bg, de, en, es, fr, it, ptBR }
 
 /**
  * All built-in locales keyed by IETF language tag.
@@ -105,7 +105,7 @@ export const locales: Readonly<Record<string, Locale>> = Object.freeze({
     es,
     fr,
     it,
-    'pt-BR': ptBR,
+    "pt-BR": ptBR,
 })
 
 // ---------------------------------------------------------------------------
@@ -129,11 +129,11 @@ export function getLocale(lang: string): Locale {
     if (lang in locales) {
         return locales[lang]
     }
-    const base = lang.split('-')[0]
+    const base = lang.split("-")[0]
     if (base !== lang && base in locales) {
         return locales[base]
     }
-    return locales['en']
+    return locales["en"]
 }
 
 /**
@@ -148,7 +148,11 @@ export function getLocale(lang: string): Locale {
  * getFieldTitle(locales.en, "video", "author")  // → "Director(s)"
  * getFieldTitle(locales.de, "book",  "author")  // → "Autor(en)"
  */
-export function getFieldTitle(locale: Locale, typeKey: string, fieldKey: string): string {
+export function getFieldTitle(
+    locale: Locale,
+    typeKey: string,
+    fieldKey: string
+): string {
     return (
         locale.fieldTitlesByType[typeKey]?.[fieldKey] ??
         locale.fieldTitles[fieldKey] ??
@@ -175,7 +179,10 @@ export function getTypeTitle(locale: Locale, typeKey: string): string {
  * getFieldHelp(locales.en, "date")   // → "In <em>Extended Date Time Format</em>…"
  * getFieldHelp(locales.en, "title")  // → undefined
  */
-export function getFieldHelp(locale: Locale, fieldKey: string): string | undefined {
+export function getFieldHelp(
+    locale: Locale,
+    fieldKey: string
+): string | undefined {
     return locale.fieldHelp[fieldKey]
 }
 

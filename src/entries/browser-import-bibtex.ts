@@ -1,3 +1,3 @@
 import { BibLatexParser } from "../import/biblatex"
 
-global.BibLatexParser = BibLatexParser
+Object.assign(globalThis, { BibLatexParser })

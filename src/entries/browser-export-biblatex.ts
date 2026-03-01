@@ -1,3 +1,3 @@
 import { BibLatexExporter } from "../export/biblatex"
 
-global.BibLatexExporter = BibLatexExporter
+Object.assign(globalThis, { BibLatexExporter })
