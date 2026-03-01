@@ -49,6 +49,65 @@ type JSONValue =
     | JSONValue[]
     | { [key: string]: JSONValue }
 
+// ─── Sample BibLaTeX data ─────────────────────────────────────────────────────
+
+const SAMPLE_BIBLATEX = `% Sample bibliography — covers five common entry types.
+% Load it with the "Try a sample" button to explore the converter.
+
+@article{einstein1905,
+  author       = {Einstein, Albert},
+  title        = {Zur Elektrodynamik bewegter {Körper}},
+  journaltitle = {Annalen der Physik},
+  year         = {1905},
+  volume       = {322},
+  number       = {10},
+  pages        = {891--921},
+  doi          = {10.1002/andp.19053221004},
+  langid       = {german},
+}
+
+@book{knuth1997,
+  author    = {Knuth, Donald E.},
+  title     = {The Art of Computer Programming},
+  subtitle  = {Fundamental Algorithms},
+  volume    = {1},
+  edition   = {3},
+  publisher = {Addison-Wesley},
+  location  = {Reading, MA},
+  year      = {1997},
+  isbn      = {978-0-201-89683-1},
+}
+
+@inproceedings{turing1950,
+  author    = {Turing, Alan M.},
+  title     = {Computing Machinery and Intelligence},
+  booktitle = {Mind},
+  year      = {1950},
+  volume    = {59},
+  number    = {236},
+  pages     = {433--460},
+  doi       = {10.1093/mind/LIX.236.433},
+}
+
+@thesis{curie1903,
+  author      = {Curie, Marie},
+  title       = {Recherches sur les substances radioactives},
+  type        = {phdthesis},
+  institution = {Université de Paris},
+  location    = {Paris},
+  year        = {1903},
+  langid      = {french},
+}
+
+@online{berners-lee1992,
+  author  = {Berners-Lee, Tim},
+  title   = {A Proposal for {HTML}},
+  url     = {https://www.w3.org/History/19921103-hypertext/hypertext/WWW/MarkUp/MarkUp.html},
+  urldate = {2024-01-15},
+  year    = {1992},
+}
+`
+
 // ─── State ───────────────────────────────────────────────────────────────────
 
 let currentBibDB: BibDB = {}
@@ -358,10 +417,23 @@ function readPaste(event: ClipboardEvent): void {
     processInput(format, clipBoardText)
 }
 
+function loadSample(): void {
+    // Switch to BibLaTeX format in case another was selected
+    const formatSelect = getEl<HTMLSelectElement>("format-select")
+    if (formatSelect) formatSelect.value = "biblatex"
+
+    // Show the sample text in the paste area so the user can inspect it
+    const pasteInput = getEl("paste-input")
+    if (pasteInput) pasteInput.textContent = SAMPLE_BIBLATEX
+
+    processInput("biblatex", SAMPLE_BIBLATEX)
+}
+
 // Wire up after DOM ready
 document.addEventListener("DOMContentLoaded", () => {
     getEl("file-upload")?.addEventListener("change", readFile)
     getEl("paste-input")?.addEventListener("paste", readPaste as EventListener)
+    getEl("sample-btn")?.addEventListener("click", loadSample)
 
     getEl("lang-select")?.addEventListener("change", (e) => {
         currentLang = (e.target as HTMLSelectElement).value
