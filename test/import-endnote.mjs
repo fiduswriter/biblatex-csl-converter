@@ -40,12 +40,17 @@ const parseXMLText = (xml) => {
 const parseRecord = (xml) => {
     const record = {}
 
-    // Parse ref-type
+    // Parse ref-type — handle both regular and self-closing forms:
+    //   <ref-type name="Journal Article">17</ref-type>  (standard EndNote)
+    //   <ref-type name="Journal Article"/>              (Mendeley)
     const refTypeMatch = xml.match(
-        /<ref-type\s+name="([^"]+)"[^>]*>([^<]*)<\/ref-type>/
+        /<ref-type\s+name="([^"]+)"[^>]*\/>|<ref-type\s+name="([^"]+)"[^>]*>([^<]*)<\/ref-type>/
     )
     if (refTypeMatch) {
-        record["ref-type"] = { name: refTypeMatch[1], "#text": refTypeMatch[2] }
+        // Group 1 = self-closing form, groups 2+3 = regular form
+        const name = refTypeMatch[1] || refTypeMatch[2]
+        const text = refTypeMatch[3] || ""
+        record["ref-type"] = { name, "#text": text }
     }
 
     // Parse rec-number
@@ -430,6 +435,17 @@ const parseRecord = (xml) => {
     const doiMatch = xml.match(/<doi>([\s\S]*?)<\/doi>/)
     if (doiMatch) {
         record.doi = parseXMLText(doiMatch[1])
+    }
+
+    // Parse electronic-resource-num (DOI field used by Mendeley and newer
+    // EndNote exports instead of the legacy <doi> element)
+    const electronicResourceNumMatch = xml.match(
+        /<electronic-resource-num>([\s\S]*?)<\/electronic-resource-num>/
+    )
+    if (electronicResourceNumMatch) {
+        record["electronic-resource-num"] = parseXMLText(
+            electronicResourceNumMatch[1]
+        )
     }
 
     // Parse abstract

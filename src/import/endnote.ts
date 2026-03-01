@@ -896,7 +896,22 @@ export class EndNoteParser {
         record: EndNoteRecord,
         processedFields?: Set<string>
     ): string {
-        // Try pub-dates first
+        // Always read the base year from the <year> element first so it can be
+        // used as a fallback when pub-dates only carries month/day information
+        // (e.g. Mendeley exports <pub-dates><date>4</date></pub-dates> for April).
+        let baseYear = ""
+        const yearEl = record.dates?.year
+        if (yearEl) {
+            if (processedFields) processedFields.add("dates.year")
+            baseYear = Array.isArray(yearEl)
+                ? this.getTextContent(yearEl[0])
+                : yearEl.year ||
+                  this.getTextContent(yearEl) ||
+                  yearEl["#text"] ||
+                  ""
+        }
+
+        // Try pub-dates for month / day refinement
         const pubDates = record.dates?.["pub-dates"]
         if (pubDates?.date) {
             if (processedFields) processedFields.add("dates.pub-dates")
@@ -905,11 +920,15 @@ export class EndNoteParser {
                 : [pubDates.date]
             const dateTexts: string[] = []
             for (const d of dates) {
-                const year = d.year || this.getTextContent(d)
+                const dYear = d.year || ""
                 const month = d.month
                 const day = d.day
-                if (year || month || day) {
-                    let dateStr = year || ""
+
+                if (dYear || month || day) {
+                    // Has structured attributes — use explicit year or fall back
+                    // to the base year extracted from <year>.
+                    const effectiveYear = dYear || baseYear
+                    let dateStr = effectiveYear
                     if (month) {
                         dateStr += `-${month.padStart(2, "0")}`
                         if (day) {
@@ -919,7 +938,27 @@ export class EndNoteParser {
                     dateTexts.push(dateStr)
                 } else {
                     const text = this.getTextContent(d)
-                    if (text) dateTexts.push(text)
+                    if (text) {
+                        // Mendeley exports month as a bare integer (e.g. "4"
+                        // for April).  When the text is a pure integer in the
+                        // range 1–12 AND we already have a base year, treat it
+                        // as a month number and build a proper YYYY-MM string.
+                        const trimmed = text.trim()
+                        const monthNum = parseInt(trimmed)
+                        if (
+                            baseYear &&
+                            !isNaN(monthNum) &&
+                            monthNum >= 1 &&
+                            monthNum <= 12 &&
+                            String(monthNum) === trimmed
+                        ) {
+                            dateTexts.push(
+                                `${baseYear}-${trimmed.padStart(2, "0")}`
+                            )
+                        } else {
+                            dateTexts.push(text)
+                        }
+                    }
                 }
             }
             if (dateTexts.length > 0) {
@@ -927,33 +966,23 @@ export class EndNoteParser {
             }
         }
 
-        // Try year element with attributes
-        const yearEl = record.dates?.year
-        if (yearEl) {
-            if (processedFields) processedFields.add("dates.year")
-            const year = Array.isArray(yearEl)
-                ? this.getTextContent(yearEl[0])
-                : yearEl.year ||
-                  this.getTextContent(yearEl) ||
-                  yearEl["#text"] ||
-                  ""
+        // Fall back to the year element alone (with any inline month/day attrs)
+        if (baseYear) {
             const month =
-                (Array.isArray(yearEl) ? null : yearEl.month) ||
+                (yearEl && !Array.isArray(yearEl) ? yearEl.month : null) ||
                 this.getTextContent(record.dates?.month)
             const day =
-                (Array.isArray(yearEl) ? null : yearEl.day) ||
+                (yearEl && !Array.isArray(yearEl) ? yearEl.day : null) ||
                 this.getTextContent(record.dates?.day)
 
-            if (year || month || day) {
-                let dateStr = year
-                if (month) {
-                    dateStr += `-${month.padStart(2, "0")}`
-                    if (day) {
-                        dateStr += `-${day.padStart(2, "0")}`
-                    }
+            let dateStr = baseYear
+            if (month) {
+                dateStr += `-${month.padStart(2, "0")}`
+                if (day) {
+                    dateStr += `-${day.padStart(2, "0")}`
                 }
-                return dateStr
             }
+            return dateStr
         }
 
         return ""
