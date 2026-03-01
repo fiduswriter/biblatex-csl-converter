@@ -5,6 +5,36 @@
             "entry_key": "Doe2015",
             "fields": {
                 "date": "2015",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Doe"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "John"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Roe"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Rob"
+                            }
+                        ]
+                    }
+                ],
                 "location": [
                     [
                         {
@@ -20,20 +50,6 @@
                     }
                 ]
             },
-            "unknown_fields": {
-                "director": [
-                    {
-                        "type": "text",
-                        "text": "Doe, John and Roe, Rob"
-                    }
-                ],
-                "timestamp": [
-                    {
-                        "type": "text",
-                        "text": "2015-02-24 12:14:36 +0100"
-                    }
-                ]
-            },
             "unexpected_fields": {
                 "publisher": [
                     [
@@ -42,6 +58,14 @@
                             "text": "The Distributor"
                         }
                     ]
+                ]
+            },
+            "unknown_fields": {
+                "timestamp": [
+                    {
+                        "type": "text",
+                        "text": "2015-02-24 12:14:36 +0100"
+                    }
                 ]
             }
         },
@@ -153,6 +177,22 @@
             "entry_key": "Kubrick1964",
             "fields": {
                 "date": "1964",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Kubrick"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Stanley"
+                            }
+                        ]
+                    }
+                ],
                 "shorttitle": [
                     {
                         "type": "text",
@@ -202,12 +242,6 @@
                 ]
             },
             "unknown_fields": {
-                "director": [
-                    {
-                        "type": "text",
-                        "text": "Kubrick, Stanley"
-                    }
-                ],
                 "timestamp": [
                     {
                         "type": "text",
@@ -221,6 +255,22 @@
             "entry_key": "friends:leia:tv",
             "fields": {
                 "date": "1996-09-16",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Mancuso"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Gail"
+                            }
+                        ]
+                    }
+                ],
                 "langid": "usenglish",
                 "location": [
                     [
@@ -285,12 +335,6 @@
                 ]
             },
             "unknown_fields": {
-                "director": [
-                    {
-                        "type": "text",
-                        "text": "Mancuso, Gail"
-                    }
-                ],
                 "scriptwriter": [
                     {
                         "type": "text",
@@ -310,6 +354,22 @@
             "entry_key": "friends:leia:dvd",
             "fields": {
                 "date": "2003",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Mancuso"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Gail"
+                            }
+                        ]
+                    }
+                ],
                 "langid": "usenglish",
                 "location": [
                     [
@@ -377,12 +437,6 @@
                 ]
             },
             "unknown_fields": {
-                "director": [
-                    {
-                        "type": "text",
-                        "text": "Mancuso, Gail"
-                    }
-                ],
                 "scriptwriter": [
                     {
                         "type": "text",
@@ -430,12 +484,6 @@
     },
     "warnings": [
         {
-            "type": "unknown_field",
-            "field_name": "director",
-            "entry": "Doe2015",
-            "line": 9
-        },
-        {
             "type": "unexpected_field",
             "field_name": "publisher",
             "entry": "Doe2015",
@@ -461,12 +509,6 @@
         },
         {
             "type": "unknown_field",
-            "field_name": "director",
-            "entry": "Kubrick1964",
-            "line": 30
-        },
-        {
-            "type": "unknown_field",
             "field_name": "timestamp",
             "entry": "Kubrick1964",
             "line": 30
@@ -474,12 +516,6 @@
         {
             "type": "unexpected_field",
             "field_name": "booktitle",
-            "entry": "friends:leia:tv",
-            "line": 45
-        },
-        {
-            "type": "unknown_field",
-            "field_name": "director",
             "entry": "friends:leia:tv",
             "line": 45
         },
@@ -522,12 +558,6 @@
         {
             "type": "unexpected_field",
             "field_name": "booktitle",
-            "entry": "friends:leia:dvd",
-            "line": 61
-        },
-        {
-            "type": "unknown_field",
-            "field_name": "director",
             "entry": "friends:leia:dvd",
             "line": 61
         },
