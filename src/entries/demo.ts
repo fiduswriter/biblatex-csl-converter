@@ -86,7 +86,7 @@ function importBiblatex(bibString: string): void {
 
 function exportCSL(bibDB: BibDB): void {
     const exporter = new CSLExporter(bibDB)
-    const cslDB = exporter.output
+    const cslDB = exporter.parse()
     const cslDbEl = document.getElementById("csl-db")
     if (cslDbEl) {
         cslDbEl.innerHTML = printObject(cslDB as unknown as JSONValue)
@@ -95,7 +95,7 @@ function exportCSL(bibDB: BibDB): void {
 
 function exportBibLatex(bibDB: BibDB): void {
     const exporter = new BibLatexExporter(bibDB)
-    const biblatex = exporter.output.split("\n").join("<br>")
+    const biblatex = exporter.parse().split("\n").join("<br>")
     const biblatexEl = document.getElementById("biblatex")
     if (biblatexEl) {
         biblatexEl.innerHTML = biblatex
