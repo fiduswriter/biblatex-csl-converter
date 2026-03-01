@@ -2,11 +2,9 @@
 /**
  * scripts/build-i18n.ts
  *
- * Reads every locale JSON file from src/i18n/locales/ and writes a single
- * i18n/index.js that inlines all locale data as plain JS object literals.
- *
- * This means downstream consumers of i18n/index.js require no JSON-import
- * support and no bundler configuration — it is a self-contained CJS module.
+ * Reads every locale JSON file from src/i18n/locales/ and writes
+ * src/i18n/locales.ts, which exports each locale as a typed TypeScript const
+ * using the Locale interface from src/i18n/index.ts.
  *
  * Usage:
  *   node --experimental-strip-types scripts/build-i18n.ts
@@ -19,8 +17,8 @@ import {fileURLToPath} from "url"
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const rootDir = join(__dirname, "..")
 const localesDir = join(rootDir, "src", "i18n", "locales")
-const outDir = join(rootDir, "i18n")
-const outFile = join(outDir, "index.js")
+const outDir = join(rootDir, "src", "i18n")
+const outFile = join(outDir, "locales.ts")
 
 // ---------------------------------------------------------------------------
 // Read locale files
@@ -42,7 +40,7 @@ if (localeFiles.length === 0) {
 }
 
 /**
- * Derive a safe JS identifier from an IETF language tag.
+ * Derive a safe TypeScript identifier from an IETF language tag.
  * e.g. "pt-BR" → "ptBR", "en" → "en"
  */
 function tagToIdentifier(tag: string): string {
@@ -61,7 +59,7 @@ const locales: LocaleEntry[] = localeFiles.map((file: string) => {
 // ---------------------------------------------------------------------------
 
 /**
- * Serialise a plain JSON value to a JS literal. We intentionally avoid
+ * Serialise a plain JSON value to a TypeScript literal. We intentionally avoid
  * JSON.stringify so we get readable output with keys quoted only when they
  * contain non-identifier characters (e.g. "article-journal").
  */
@@ -95,173 +93,30 @@ function serializeValue(value: unknown, indent: string): string {
     return String(value)
 }
 
-/** Render a single locale const declaration. */
+/** Render a single typed locale export const declaration. */
 function renderLocaleConst({id, tag, data}: LocaleEntry): string {
-    return `// Locale: ${tag}\nconst ${id} = ${serializeValue(data, "")}\n`
+    return `// Locale: ${tag}\nexport const ${id}: Locale = ${serializeValue(data, "")}\n`
 }
-
-// ---------------------------------------------------------------------------
-// Build the locales registry object literal
-// ---------------------------------------------------------------------------
-
-function renderRegistry(entries: LocaleEntry[]): string {
-    const lines = entries
-        .map(({tag, id}) => {
-            const needsQuotes = !/^[a-zA-Z_$][a-zA-Z0-9_$]*$/.test(tag)
-            const keyStr = needsQuotes ? `"${tag}"` : tag
-            return `    ${keyStr}: ${id}`
-        })
-        .join(",\n")
-    return `const locales = Object.freeze({\n${lines},\n})\n`
-}
-
-// ---------------------------------------------------------------------------
-// Helper functions — mirrors src/i18n/index.ts, without TypeScript types,
-// emitted verbatim into the generated output file.
-// ---------------------------------------------------------------------------
-
-const helperFunctions = `
-/**
- * Return the Locale for lang, falling back to English when not available.
- *
- * Lookup order:
- * 1. Exact tag  (e.g. "pt-BR")
- * 2. Base subtag (e.g. "pt" from "pt-BR")
- * 3. English fallback
- *
- * @param {string} lang
- * @returns {object}
- */
-function getLocale(lang) {
-    if (Object.prototype.hasOwnProperty.call(locales, lang)) {
-        return locales[lang]
-    }
-    const base = lang.split("-")[0]
-    if (base !== lang && Object.prototype.hasOwnProperty.call(locales, base)) {
-        return locales[base]
-    }
-    return locales["en"]
-}
-
-/**
- * Return the human-readable label for fieldKey in the context of typeKey.
- * Checks locale.fieldTitlesByType[typeKey][fieldKey] first, then falls back
- * to locale.fieldTitles[fieldKey], and finally to the raw key itself.
- *
- * @param {object} locale
- * @param {string} typeKey
- * @param {string} fieldKey
- * @returns {string}
- */
-function getFieldTitle(locale, typeKey, fieldKey) {
-    const byType = locale.fieldTitlesByType[typeKey]
-    if (byType && Object.prototype.hasOwnProperty.call(byType, fieldKey)) {
-        return byType[fieldKey]
-    }
-    if (Object.prototype.hasOwnProperty.call(locale.fieldTitles, fieldKey)) {
-        return locale.fieldTitles[fieldKey]
-    }
-    return fieldKey
-}
-
-/**
- * Return the human-readable label for typeKey in locale, falling back to the
- * raw key if not found.
- *
- * @param {object} locale
- * @param {string} typeKey
- * @returns {string}
- */
-function getTypeTitle(locale, typeKey) {
-    return Object.prototype.hasOwnProperty.call(locale.typeTitles, typeKey)
-        ? locale.typeTitles[typeKey]
-        : typeKey
-}
-
-/**
- * Return the help/hint text for fieldKey in locale, or undefined when no help
- * text is defined for that field.
- *
- * @param {object} locale
- * @param {string} fieldKey
- * @returns {string|undefined}
- */
-function getFieldHelp(locale, fieldKey) {
-    return Object.prototype.hasOwnProperty.call(locale.fieldHelp, fieldKey)
-        ? locale.fieldHelp[fieldKey]
-        : undefined
-}
-
-/**
- * Return the human-readable label for a langid field value in locale, falling
- * back to the raw key if not found.
- *
- * @param {object} locale
- * @param {string} langidKey
- * @returns {string}
- */
-function getLangidTitle(locale, langidKey) {
-    return Object.prototype.hasOwnProperty.call(locale.langidOptions, langidKey)
-        ? locale.langidOptions[langidKey]
-        : langidKey
-}
-
-/**
- * Return the human-readable label for a non-language option value in locale
- * (editortype, pagination, pubstate, or type sub-field value), falling back
- * to the raw key if not found.
- *
- * @param {object} locale
- * @param {string} optionKey
- * @returns {string}
- */
-function getOtherOptionTitle(locale, optionKey) {
-    return Object.prototype.hasOwnProperty.call(locale.otherOptions, optionKey)
-        ? locale.otherOptions[optionKey]
-        : optionKey
-}
-`
 
 // ---------------------------------------------------------------------------
 // Assemble output
 // ---------------------------------------------------------------------------
 
-const banner = `/**
- * i18n/index.js — AUTO-GENERATED, DO NOT EDIT BY HAND.
- *
- * Generated by: scripts/build-i18n.ts
- * Source files: src/i18n/locales/*.json
- *
- * To regenerate:
- *   npm run compile_i18n
- *
- * This file inlines all locale data as plain JavaScript object literals so
- * that no JSON-import support is required by consumers of this module.
- */
+const banner = `\
+// AUTO-GENERATED — DO NOT EDIT BY HAND.
+// Generated by: scripts/build-i18n.ts
+// Source files: src/i18n/locales/*.json
+//
+// To regenerate:
+//   npm run compile_i18n
 
-"use strict"
+import type {Locale} from "./index.ts"
 
-`
-
-const exports_ = `
-module.exports = {
-    locales,
-    getLocale,
-    getFieldTitle,
-    getTypeTitle,
-    getFieldHelp,
-    getLangidTitle,
-    getOtherOptionTitle,
-}
 `
 
 const output = [
     banner,
     locales.map(renderLocaleConst).join("\n"),
-    "\n",
-    renderRegistry(locales),
-    helperFunctions,
-    exports_,
 ].join("")
 
 // ---------------------------------------------------------------------------
@@ -272,5 +127,5 @@ mkdirSync(outDir, {recursive: true})
 writeFileSync(outFile, output, "utf8")
 
 console.log(
-    `i18n/index.js written (${locales.length} locale${locales.length === 1 ? "" : "s"}: ${locales.map((l) => l.tag).join(", ")})`,
+    `src/i18n/locales.ts written (${locales.length} locale${locales.length === 1 ? "" : "s"}: ${locales.map((l) => l.tag).join(", ")})`,
 )
