@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+  Synthetic DOCX word/document.xml fragment — Mendeley Cite v3 (current add-in).
+
+  Format: <w:sdt> with w:tag w:val="MENDELEY_CITATION_v3_{base64json}"
+  The base64 payload decodes to a CSL-JSON-based structure with Mendeley-
+  specific additions. The w:sdtContent contains only the rendered citation text.
+
+  The base64 strings below decode to the JSON shown in the comments above each
+  <w:sdt> block.
+-->
+<w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">
+  <w:body>
+    <w:p>
+      <w:r>
+        <w:t xml:space="preserve">According to recent research </w:t>
+      </w:r>
+    </w:p>
+
+    <!--
+      Decoded payload:
+      {
+        "citationID": "MENDELEY_CITATION_1de18c13-0c8d-4a3b-9e70-96407afdc71e",
+        "properties": { "noteIndex": 0 },
+        "isEdited": false,
+        "manualOverride": {
+          "isManuallyOverridden": false,
+          "citeprocText": "(Ezquerro et al., 2024)",
+          "manualOverrideText": ""
+        },
+        "citationItems": [{
+          "id": "e219b34e-d397-37b4-818e-80ca578eae74",
+          "itemData": {
+            "type": "article-journal",
+            "id": "e219b34e-d397-37b4-818e-80ca578eae74",
+            "title": "Large dinosaur egg accumulations and their implications for dinosaur reproductive biology",
+            "author": [
+              { "family": "Ezquerro", "given": "L.", "parse-names": false, "dropping-particle": "", "non-dropping-particle": "" }
+            ],
+            "container-title": "Geoscience Frontiers",
+            "volume": "15",
+            "issue": "5",
+            "page": "101872",
+            "DOI": "10.1016/j.gsf.2024.101872",
+            "issued": { "date-parts": [[2024, 9, 1]] }
+          },
+          "isTemporary": false,
+          "suppress-author": false,
+          "composite": false,
+          "author-only": false
+        }]
+      }
+    -->
+    <w:sdt>
+      <w:sdtPr>
+        <w:tag w:val="MENDELEY_CITATION_v3_eyJjaXRhdGlvbklEIjoiTUVOREVMRVlfQ0lUQVRJT05fMWRlMThjMTMtMGM4ZC00YTNiLTllNzAtOTY0MDdhZmRjNzFlIiwicHJvcGVydGllcyI6eyJub3RlSW5kZXgiOjB9LCJpc0VkaXRlZCI6ZmFsc2UsIm1hbnVhbE92ZXJyaWRlIjp7ImlzTWFudWFsbHlPdmVycmlkZGVuIjpmYWxzZSwiY2l0ZXByb2NUZXh0IjoiKEV6cXVlcnJvIGV0IGFsLiwgMjAyNCkiLCJtYW51YWxPdmVycmlkZVRleHQiOiIifSwiY2l0YXRpb25JdGVtcyI6W3siaWQiOiJlMjE5YjM0ZS1kMzk3LTM3YjQtODE4ZS04MGNhNTc4ZWFlNzQiLCJpdGVtRGF0YSI6eyJ0eXBlIjoiYXJ0aWNsZS1qb3VybmFsIiwiaWQiOiJlMjE5YjM0ZS1kMzk3LTM3YjQtODE4ZS04MGNhNTc4ZWFlNzQiLCJ0aXRsZSI6IkxhcmdlIGRpbm9zYXVyIGVnZyBhY2N1bXVsYXRpb25zIGFuZCB0aGVpciBpbXBsaWNhdGlvbnMgZm9yIGRpbm9zYXVyIHJlcHJvZHVjdGl2ZSBiaW9sb2d5IiwiYXV0aG9yIjpbeyJmYW1pbHkiOiJFenF1ZXJybyIsImdpdmVuIjoiTC4iLCJwYXJzZS1uYW1lcyI6ZmFsc2UsImRyb3BwaW5nLXBhcnRpY2xlIjoiIiwibm9uLWRyb3BwaW5nLXBhcnRpY2xlIjoiIn1dLCJjb250YWluZXItdGl0bGUiOiJHZW9zY2llbmNlIEZyb250aWVycyIsInZvbHVtZSI6IjE1IiwiaXNzdWUiOiI1IiwicGFnZSI6IjEwMTg3MiIsIkRPSSI6IjEwLjEwMTYvai5nc2YuMjAyNC4xMDE4NzIiLCJpc3N1ZWQiOnsiZGF0ZS1wYXJ0cyI6W1syMDI0LDksMV1dfX0sImlzVGVtcG9yYXJ5IjpmYWxzZSwic3VwcHJlc3MtYXV0aG9yIjpmYWxzZSwiY29tcG9zaXRlIjpmYWxzZSwiYXV0aG9yLW9ubHkiOmZhbHNlfV19"/>
+        <w:id w:val="-1410928299"/>
+        <w:placeholder>
+          <w:docPart w:val="DefaultPlaceholder_-1854013440"/>
+        </w:placeholder>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:p>
+          <w:r>
+            <w:t>(Ezquerro et al., 2024)</w:t>
+          </w:r>
+        </w:p>
+      </w:sdtContent>
+    </w:sdt>
+
+    <!--
+      Second citation — a book entry.
+
+      Decoded payload:
+      {
+        "citationID": "MENDELEY_CITATION_abc12345-0000-0000-0000-000000000001",
+        "properties": { "noteIndex": 0 },
+        "isEdited": false,
+        "manualOverride": {
+          "isManuallyOverridden": false,
+          "citeprocText": "(Smith, 2020)",
+          "manualOverrideText": ""
+        },
+        "citationItems": [{
+          "id": "abc12345-0000-0000-0000-000000000001",
+          "itemData": {
+            "type": "book",
+            "id": "abc12345-0000-0000-0000-000000000001",
+            "title": "Introduction to Palaeontology",
+            "author": [
+              { "family": "Smith", "given": "John A.", "parse-names": false, "dropping-particle": "", "non-dropping-particle": "" }
+            ],
+            "publisher": "Academic Press",
+            "publisher-place": "London",
+            "edition": "3",
+            "ISBN": "978-0-12-345678-9",
+            "issued": { "date-parts": [[2020]] }
+          },
+          "isTemporary": false,
+          "suppress-author": false,
+          "composite": false,
+          "author-only": false
+        }]
+      }
+    -->
+    <w:sdt>
+      <w:sdtPr>
+        <w:tag w:val="MENDELEY_CITATION_v3_eyJjaXRhdGlvbklEIjoiTUVOREVMRVlfQ0lUQVRJT05fYWJjMTIzNDUtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDAxIiwicHJvcGVydGllcyI6eyJub3RlSW5kZXgiOjB9LCJpc0VkaXRlZCI6ZmFsc2UsIm1hbnVhbE92ZXJyaWRlIjp7ImlzTWFudWFsbHlPdmVycmlkZGVuIjpmYWxzZSwiY2l0ZXByb2NUZXh0IjoiKFNtaXRoLCAyMDIwKSIsIm1hbnVhbE92ZXJyaWRlVGV4dCI6IiJ9LCJjaXRhdGlvbkl0ZW1zIjpbeyJpZCI6ImFiYzEyMzQ1LTAwMDAtMDAwMC0wMDAwLTAwMDAwMDAwMDAwMSIsIml0ZW1EYXRhIjp7InR5cGUiOiJib29rIiwiaWQiOiJhYmMxMjM0NS0wMDAwLTAwMDAtMDAwMC0wMDAwMDAwMDAwMDEiLCJ0aXRsZSI6IkludHJvZHVjdGlvbiB0byBQYWxhZW9udG9sb2d5IiwiYXV0aG9yIjpbeyJmYW1pbHkiOiJTbWl0aCIsImdpdmVuIjoiSm9obiBBLiIsInBhcnNlLW5hbWVzIjpmYWxzZSwiZHJvcHBpbmctcGFydGljbGUiOiIiLCJub24tZHJvcHBpbmctcGFydGljbGUiOiIifV0sInB1Ymxpc2hlciI6IkFjYWRlbWljIFByZXNzIiwicHVibGlzaGVyLXBsYWNlIjoiTG9uZG9uIiwiZWRpdGlvbiI6IjMiLCJJU0JOIjoiOTc4LTAtMTItMzQ1Njc4LTkiLCJpc3N1ZWQiOnsiZGF0ZS1wYXJ0cyI6W1syMDIwXV19fSwiaXNUZW1wb3JhcnkiOmZhbHNlLCJzdXBwcmVzcy1hdXRob3IiOmZhbHNlLCJjb21wb3NpdGUiOmZhbHNlLCJhdXRob3Itb25seSI6ZmFsc2V9XX0="/>
+        <w:id w:val="987654321"/>
+        <w:placeholder>
+          <w:docPart w:val="DefaultPlaceholder_-1854013440"/>
+        </w:placeholder>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:p>
+          <w:r>
+            <w:t>(Smith, 2020)</w:t>
+          </w:r>
+        </w:p>
+      </w:sdtContent>
+    </w:sdt>
+
+    <!-- Mendeley bibliography marker — no importable source data -->
+    <w:sdt>
+      <w:sdtPr>
+        <w:tag w:val="MENDELEY_BIBLIOGRAPHY"/>
+        <w:id w:val="-770855039"/>
+        <w:placeholder>
+          <w:docPart w:val="DefaultPlaceholder_-1854013440"/>
+        </w:placeholder>
+      </w:sdtPr>
+      <w:sdtContent>
+        <w:p>
+          <w:r>
+            <w:t>Ezquerro L. Large dinosaur egg accumulations... Geoscience Frontiers. 2024;15(5):101872.</w:t>
+          </w:r>
+        </w:p>
+        <w:p>
+          <w:r>
+            <w:t>Smith JA. Introduction to Palaeontology. 3rd ed. London: Academic Press; 2020.</w:t>
+          </w:r>
+        </w:p>
+      </w:sdtContent>
+    </w:sdt>
+
+  </w:body>
+</w:document>

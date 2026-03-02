@@ -1,0 +1,174 @@
+{
+    "entries": {
+        "1": {
+            "entry_key": "42",
+            "bib_type": "book",
+            "fields": {
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Introduction to Testing"
+                    }
+                ],
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Test Press"
+                        }
+                    ]
+                ],
+                "location": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "New York"
+                        }
+                    ]
+                ],
+                "isbn": [
+                    {
+                        "type": "text",
+                        "text": "978-3-16-148410-0"
+                    }
+                ],
+                "date": "2020",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Smith"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Alice"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Doe"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Bob"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "2": {
+            "entry_key": "7",
+            "bib_type": "thesis",
+            "fields": {
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Experimental Methods in Software Engineering"
+                    }
+                ],
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "University of Example"
+                        }
+                    ]
+                ],
+                "date": "2018",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Jones"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Carol"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "3": {
+            "entry_key": "88",
+            "bib_type": "article-journal",
+            "fields": {
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Methods in Computational Linguistics"
+                    }
+                ],
+                "booktitle": [
+                    {
+                        "type": "text",
+                        "text": "Journal of Linguistics"
+                    }
+                ],
+                "journaltitle": [
+                    {
+                        "type": "text",
+                        "text": "Journal of Linguistics"
+                    }
+                ],
+                "volume": [
+                    {
+                        "type": "text",
+                        "text": "22"
+                    }
+                ],
+                "number": [
+                    {
+                        "type": "text",
+                        "text": "4"
+                    }
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "200"
+                            },
+                            {
+                                "type": "text",
+                                "text": "215"
+                            }
+                        ]
+                    ]
+                ],
+                "doi": "10.1017/jling.2015.0042",
+                "date": "2015",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Doe"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Jane"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

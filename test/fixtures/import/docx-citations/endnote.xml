@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+  Synthetic DOCX word/document.xml fragment — EndNote inline citations.
+
+  Two field variants are demonstrated:
+
+  1. Inline form: the <EndNote> XML is entity-escaped directly inside
+     <w:instrText>.  This is the most common form produced by the Cite While
+     You Write (CWYW) plugin.
+
+  2. fldData form: the same XML payload is base64-encoded in <w:fldData> on
+     the begin marker.  The outer field is ADDIN EN.CITE and the inner field
+     is ADDIN EN.CITE.DATA.  The parser must read the base64 from the begin
+     marker and decode it.
+
+  The base64 in the fldData form below decodes to the same
+  <EndNote>…</EndNote> XML as the second entity-escaped citation.
+-->
+<w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">
+  <w:body>
+
+    <!-- ============================================================
+         Citation 1 — inline (entity-escaped) form
+         Journal Article: Bronk Ramsey 2009, rec-number 19
+         ============================================================ -->
+    <w:p>
+      <w:r>
+        <w:fldChar w:fldCharType="begin"/>
+      </w:r>
+      <w:r>
+        <w:instrText xml:space="preserve"> ADDIN EN.CITE &lt;EndNote&gt;&lt;Cite&gt;&lt;Author&gt;Bronk Ramsey&lt;/Author&gt;&lt;Year&gt;2009&lt;/Year&gt;&lt;RecNum&gt;19&lt;/RecNum&gt;&lt;DisplayText&gt;(Bronk Ramsey 2009)&lt;/DisplayText&gt;&lt;record&gt;&lt;rec-number&gt;19&lt;/rec-number&gt;&lt;foreign-keys&gt;&lt;key app="EN" db-id="z2asfrdsndpezaeta27x5ff5d022r5x9x9x0" timestamp="1483621777"&gt;19&lt;/key&gt;&lt;/foreign-keys&gt;&lt;ref-type name="Journal Article"&gt;17&lt;/ref-type&gt;&lt;contributors&gt;&lt;authors&gt;&lt;author&gt;Bronk Ramsey, Christopher&lt;/author&gt;&lt;/authors&gt;&lt;/contributors&gt;&lt;titles&gt;&lt;title&gt;Bayesian Analysis of Radiocarbon Dates&lt;/title&gt;&lt;secondary-title&gt;Radiocarbon&lt;/secondary-title&gt;&lt;/titles&gt;&lt;periodical&gt;&lt;full-title&gt;Radiocarbon&lt;/full-title&gt;&lt;/periodical&gt;&lt;pages&gt;337-360&lt;/pages&gt;&lt;volume&gt;51&lt;/volume&gt;&lt;number&gt;1&lt;/number&gt;&lt;dates&gt;&lt;year&gt;2009&lt;/year&gt;&lt;/dates&gt;&lt;publisher&gt;Cambridge University Press&lt;/publisher&gt;&lt;urls&gt;&lt;related-urls&gt;&lt;url&gt;https://doi.org/10.1017/S0033822200033865&lt;/url&gt;&lt;/related-urls&gt;&lt;/urls&gt;&lt;electronic-resource-num&gt;10.1017/S0033822200033865&lt;/electronic-resource-num&gt;&lt;/record&gt;&lt;/Cite&gt;&lt;/EndNote&gt;</w:instrText>
+      </w:r>
+      <w:r>
+        <w:fldChar w:fldCharType="separate"/>
+      </w:r>
+      <w:r>
+        <w:t>(Bronk Ramsey 2009)</w:t>
+      </w:r>
+      <w:r>
+        <w:fldChar w:fldCharType="end"/>
+      </w:r>
+    </w:p>
+
+    <!-- ============================================================
+         Citation 2 — inline form, multi-cite
+         Book: Smith 2020, rec-number 42
+         Thesis: Jones 2018, rec-number 7
+         Multiple <Cite> elements inside a single <EndNote> root.
+         ============================================================ -->
+    <w:p>
+      <w:r>
+        <w:fldChar w:fldCharType="begin"/>
+      </w:r>
+      <w:r>
+        <w:instrText xml:space="preserve"> ADDIN EN.CITE &lt;EndNote&gt;&lt;Cite&gt;&lt;Author&gt;Smith&lt;/Author&gt;&lt;Year&gt;2020&lt;/Year&gt;&lt;RecNum&gt;42&lt;/RecNum&gt;&lt;DisplayText&gt;(Smith 2020; Jones 2018)&lt;/DisplayText&gt;&lt;record&gt;&lt;rec-number&gt;42&lt;/rec-number&gt;&lt;ref-type name="Book"&gt;6&lt;/ref-type&gt;&lt;contributors&gt;&lt;authors&gt;&lt;author&gt;Smith, Alice&lt;/author&gt;&lt;author&gt;Doe, Bob&lt;/author&gt;&lt;/authors&gt;&lt;/contributors&gt;&lt;titles&gt;&lt;title&gt;Introduction to Testing&lt;/title&gt;&lt;/titles&gt;&lt;dates&gt;&lt;year&gt;2020&lt;/year&gt;&lt;/dates&gt;&lt;pub-location&gt;New York&lt;/pub-location&gt;&lt;publisher&gt;Test Press&lt;/publisher&gt;&lt;isbn&gt;978-3-16-148410-0&lt;/isbn&gt;&lt;/record&gt;&lt;/Cite&gt;&lt;Cite&gt;&lt;Author&gt;Jones&lt;/Author&gt;&lt;Year&gt;2018&lt;/Year&gt;&lt;RecNum&gt;7&lt;/RecNum&gt;&lt;record&gt;&lt;rec-number&gt;7&lt;/rec-number&gt;&lt;ref-type name="Thesis"&gt;32&lt;/ref-type&gt;&lt;contributors&gt;&lt;authors&gt;&lt;author&gt;Jones, Carol&lt;/author&gt;&lt;/authors&gt;&lt;/contributors&gt;&lt;titles&gt;&lt;title&gt;Experimental Methods in Software Engineering&lt;/title&gt;&lt;/titles&gt;&lt;dates&gt;&lt;year&gt;2018&lt;/year&gt;&lt;/dates&gt;&lt;publisher&gt;University of Example&lt;/publisher&gt;&lt;/record&gt;&lt;/Cite&gt;&lt;/EndNote&gt;</w:instrText>
+      </w:r>
+      <w:r>
+        <w:fldChar w:fldCharType="separate"/>
+      </w:r>
+      <w:r>
+        <w:t>(Smith 2020; Jones 2018)</w:t>
+      </w:r>
+      <w:r>
+        <w:fldChar w:fldCharType="end"/>
+      </w:r>
+    </w:p>
+
+    <!-- ============================================================
+         Citation 3 — fldData (base64) form
+         Journal Article: Doe 2015, rec-number 88
+
+         The base64 string below decodes to:
+         <EndNote><Cite><Author>Doe</Author><Year>2015</Year><RecNum>88</RecNum><DisplayText>(Doe 2015)</DisplayText><record><rec-number>88</rec-number><ref-type name="Journal Article">17</ref-type><contributors><authors><author>Doe, Jane</author></authors></contributors><titles><title>Methods in Computational Linguistics</title><secondary-title>Journal of Linguistics</secondary-title></titles><periodical><full-title>Journal of Linguistics</full-title></periodical><pages>200-215</pages><volume>22</volume><number>4</number><dates><year>2015</year></dates><electronic-resource-num>10.1017/jling.2015.0042</electronic-resource-num></record></Cite></EndNote>
+         ============================================================ -->
+    <w:p>
+      <!-- Outer ADDIN EN.CITE field begin — carries the base64 payload -->
+      <w:r>
+        <w:fldChar w:fldCharType="begin">
+          <w:fldData xml:space="preserve">PEVuZE5vdGU+PENpdGU+PEF1dGhvcj5Eb2U8L0F1dGhvcj48WWVhcj4yMDE1PC9ZZWFyPjxSZWNOdW0+ODg8L1JlY051bT48RGlzcGxheVRleHQ+KERvZSAyMDE1KTwvRGlzcGxheVRleHQ+PHJlY29yZD48cmVjLW51bWJlcj44ODwvcmVjLW51bWJlcj48cmVmLXR5cGUgbmFtZT0iSm91cm5hbCBBcnRpY2xlIj4xNzwvcmVmLXR5cGU+PGNvbnRyaWJ1dG9ycz48YXV0aG9ycz48YXV0aG9yPkRvZSwgSmFuZTwvYXV0aG9yPjwvYXV0aG9ycz48L2NvbnRyaWJ1dG9ycz48dGl0bGVzPjx0aXRsZT5NZXRob2RzIGluIENvbXB1dGF0aW9uYWwgTGluZ3Vpc3RpY3M8L3RpdGxlPjxzZWNvbmRhcnktdGl0bGU+Sm91cm5hbCBvZiBMaW5ndWlzdGljczwvc2Vjb25kYXJ5LXRpdGxlPjwvdGl0bGVzPjxwZXJpb2RpY2FsPjxmdWxsLXRpdGxlPkpvdXJuYWwgb2YgTGluZ3Vpc3RpY3M8L2Z1bGwtdGl0bGU+PC9wZXJpb2RpY2FsPjxwYWdlcz4yMDAtMjE1PC9wYWdlcz48dm9sdW1lPjIyPC92b2x1bWU+PG51bWJlcj40PC9udW1iZXI+PGRhdGVzPjx5ZWFyPjIwMTU8L3llYXI+PC9kYXRlcz48ZWxlY3Ryb25pYy1yZXNvdXJjZS1udW0+MTAuMTAxNy9qbGluZy4yMDE1LjAwNDI8L2VsZWN0cm9uaWMtcmVzb3VyY2UtbnVtPjwvcmVjb3JkPjwvQ2l0ZT48L0VuZE5vdGU+</w:fldData>
+        </w:fldChar>
+      </w:r>
+      <w:r>
+        <w:instrText xml:space="preserve"> ADDIN EN.CITE </w:instrText>
+      </w:r>
+      <!-- Inner ADDIN EN.CITE.DATA field — same base64 payload -->
+      <w:r>
+        <w:fldChar w:fldCharType="begin">
+          <w:fldData xml:space="preserve">PEVuZE5vdGU+PENpdGU+PEF1dGhvcj5Eb2U8L0F1dGhvcj48WWVhcj4yMDE1PC9ZZWFyPjxSZWNOdW0+ODg8L1JlY051bT48RGlzcGxheVRleHQ+KERvZSAyMDE1KTwvRGlzcGxheVRleHQ+PHJlY29yZD48cmVjLW51bWJlcj44ODwvcmVjLW51bWJlcj48cmVmLXR5cGUgbmFtZT0iSm91cm5hbCBBcnRpY2xlIj4xNzwvcmVmLXR5cGU+PGNvbnRyaWJ1dG9ycz48YXV0aG9ycz48YXV0aG9yPkRvZSwgSmFuZTwvYXV0aG9yPjwvYXV0aG9ycz48L2NvbnRyaWJ1dG9ycz48dGl0bGVzPjx0aXRsZT5NZXRob2RzIGluIENvbXB1dGF0aW9uYWwgTGluZ3Vpc3RpY3M8L3RpdGxlPjxzZWNvbmRhcnktdGl0bGU+Sm91cm5hbCBvZiBMaW5ndWlzdGljczwvc2Vjb25kYXJ5LXRpdGxlPjwvdGl0bGVzPjxwZXJpb2RpY2FsPjxmdWxsLXRpdGxlPkpvdXJuYWwgb2YgTGluZ3Vpc3RpY3M8L2Z1bGwtdGl0bGU+PC9wZXJpb2RpY2FsPjxwYWdlcz4yMDAtMjE1PC9wYWdlcz48dm9sdW1lPjIyPC92b2x1bWU+PG51bWJlcj40PC9udW1iZXI+PGRhdGVzPjx5ZWFyPjIwMTU8L3llYXI+PC9kYXRlcz48ZWxlY3Ryb25pYy1yZXNvdXJjZS1udW0+MTAuMTAxNy9qbGluZy4yMDE1LjAwNDI8L2VsZWN0cm9uaWMtcmVzb3VyY2UtbnVtPjwvcmVjb3JkPjwvQ2l0ZT48L0VuZE5vdGU+</w:fldData>
+        </w:fldChar>
+      </w:r>
+      <w:r>
+        <w:instrText xml:space="preserve"> ADDIN EN.CITE.DATA </w:instrText>
+      </w:r>
+      <!-- End of inner EN.CITE.DATA field -->
+      <w:r>
+        <w:fldChar w:fldCharType="end"/>
+      </w:r>
+      <!-- Separator and rendered text for outer EN.CITE field -->
+      <w:r>
+        <w:fldChar w:fldCharType="separate"/>
+      </w:r>
+      <w:r>
+        <w:t>(Doe 2015)</w:t>
+      </w:r>
+      <w:r>
+        <w:fldChar w:fldCharType="end"/>
+      </w:r>
+    </w:p>
+
+    <!-- ============================================================
+         Bibliography field — no importable source data
+         ============================================================ -->
+    <w:p w:rsidR="00000001">
+      <w:pPr>
+        <w:pStyle w:val="EndNoteBibliography"/>
+      </w:pPr>
+      <w:r>
+        <w:fldChar w:fldCharType="begin"/>
+      </w:r>
+      <w:r>
+        <w:instrText xml:space="preserve"> ADDIN EN.REFLIST </w:instrText>
+      </w:r>
+      <w:r>
+        <w:fldChar w:fldCharType="separate"/>
+      </w:r>
+      <w:r>
+        <w:t>Bronk Ramsey C (2009) Bayesian Analysis of Radiocarbon Dates. Radiocarbon 51(1):337-360.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00000001">
+      <w:pPr>
+        <w:pStyle w:val="EndNoteBibliography"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Doe J (2015) Methods in Computational Linguistics. Journal of Linguistics 22(4):200-215.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00000001">
+      <w:pPr>
+        <w:pStyle w:val="EndNoteBibliography"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Smith A, Doe B (2020) Introduction to Testing. Test Press, New York.</w:t>
+      </w:r>
+      <w:r>
+        <w:fldChar w:fldCharType="end"/>
+      </w:r>
+    </w:p>
+
+  </w:body>
+</w:document>
