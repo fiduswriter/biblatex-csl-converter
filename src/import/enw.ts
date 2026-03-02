@@ -5,6 +5,8 @@
 
 import {
     BibTypes,
+    BibFieldTypes,
+    LangidOptions,
     NodeArray,
     EntryObject,
     NameDictObject,
@@ -238,7 +240,7 @@ export class ENWParser {
         // Title
         const title = this.getFirstValue(record["%T"])
         if (title) {
-            fields["title"] = this.convertRichText(title)
+            fields["title"] = this.setField("title", title)
         } else {
             this.warnings.push({
                 type: "missing_required_field",
@@ -251,13 +253,16 @@ export class ENWParser {
         const secondaryTitle =
             this.getFirstValue(record["%J"]) || this.getFirstValue(record["%B"])
         if (secondaryTitle) {
-            fields["journaltitle"] = this.convertRichText(secondaryTitle)
+            fields["journaltitle"] = this.setField(
+                "journaltitle",
+                secondaryTitle
+            )
         }
 
         // Book title (for chapters)
         const bookTitle = this.getFirstValue(record["%B"])
         if (bookTitle && !secondaryTitle) {
-            fields["booktitle"] = this.convertRichText(bookTitle)
+            fields["booktitle"] = this.setField("booktitle", bookTitle)
         }
 
         // Authors
@@ -279,13 +284,13 @@ export class ENWParser {
         // Abstract
         const abstract = this.getFirstValue(record["%X"])
         if (abstract) {
-            fields["abstract"] = this.convertRichText(abstract)
+            fields["abstract"] = this.setField("abstract", abstract)
         }
 
         // Notes
         const notes = this.getFirstValue(record["%Z"])
         if (notes) {
-            fields["note"] = this.convertRichText(notes)
+            fields["note"] = this.setField("note", notes)
         }
 
         // Year
@@ -303,13 +308,13 @@ export class ENWParser {
         // Volume
         const volume = this.getFirstValue(record["%V"])
         if (volume) {
-            fields["volume"] = this.convertRichText(volume)
+            fields["volume"] = this.setField("volume", volume)
         }
 
         // Number/Issue
         const number = this.getFirstValue(record["%N"])
         if (number) {
-            fields["number"] = this.convertRichText(number)
+            fields["number"] = this.setField("number", number)
         }
 
         // Pages
@@ -321,66 +326,72 @@ export class ENWParser {
         // Publisher
         const publisher = this.getFirstValue(record["%I"])
         if (publisher) {
-            fields["publisher"] = this.convertRichText(publisher)
+            fields["publisher"] = this.setField("publisher", publisher)
         }
 
         // Place
         const place = this.getFirstValue(record["%C"])
         if (place) {
-            fields["location"] = this.convertRichText(place)
+            fields["location"] = this.setField("location", place)
         }
 
         // Edition
         const edition = this.getFirstValue(record["%7"])
         if (edition) {
-            fields["edition"] = this.convertRichText(edition)
+            fields["edition"] = this.setField("edition", edition)
         }
 
         // DOI
         const doi = this.getFirstValue(record["%O"])
         if (doi) {
-            fields["doi"] = this.convertRichText(doi)
+            fields["doi"] = this.setField("doi", doi)
         }
 
         // URL
         const url = this.getFirstValue(record["%U"])
         if (url) {
-            fields["url"] = this.convertRichText(url)
+            fields["url"] = this.setField("url", url)
         }
 
         // ISBN/ISSN
         const isbn = this.getFirstValue(record["%@"])
         if (isbn) {
-            fields["isbn"] = this.convertRichText(isbn)
+            fields["isbn"] = this.setField("isbn", isbn)
         }
 
-        // Keywords
+        // Keywords — l_tag expects string[], split on comma/semicolon like
+        // the BibLaTeX importer does
         if (record["%K"] && record["%K"].length > 0) {
-            fields["keywords"] = record["%K"].join(", ")
+            fields["keywords"] = record["%K"].flatMap((kw) =>
+                kw
+                    .split(/[,;]/)
+                    .map((s) => s.trim())
+                    .filter(Boolean)
+            )
         }
 
         // PubMed ID / Accession
         const pmid = this.getFirstValue(record["%M"])
         if (pmid) {
-            fields["eprint"] = this.convertRichText(pmid)
+            fields["eprint"] = this.setField("eprint", pmid)
         }
 
         // Short title
         const shortTitle = this.getFirstValue(record["%!"])
         if (shortTitle) {
-            fields["shorttitle"] = this.convertRichText(shortTitle)
+            fields["shorttitle"] = this.setField("shorttitle", shortTitle)
         }
 
         // Call number
         const callNum = this.getFirstValue(record["%L"])
         if (callNum) {
-            fields["library"] = this.convertRichText(callNum)
+            fields["library"] = this.setField("library", callNum)
         }
 
         // Label
         const label = this.getFirstValue(record["%F"])
         if (label) {
-            fields["label"] = this.convertRichText(label)
+            fields["label"] = this.setField("label", label)
         }
 
         // Warn about tags present in the record that are not handled
@@ -480,6 +491,45 @@ export class ENWParser {
                     })),
                 ]
             })
+    }
+
+    /**
+     * Stores a plain text value into the correct internal shape for the given
+     * BibField key:
+     *   - l_literal  → NodeArray[]  (array of NodeArrays)
+     *   - f_verbatim / f_uri / f_date → plain string
+     *   - f_key      → matched option key string, or undefined if unrecognised
+     *   - everything else → NodeArray
+     */
+    private setField(
+        fieldKey: string,
+        text: string
+    ): NodeArray | NodeArray[] | string | undefined {
+        const fieldDef = BibFieldTypes[fieldKey]
+        const fieldType = fieldDef?.type
+        if (fieldType === "l_literal") {
+            return [this.convertRichText(text)]
+        } else if (
+            fieldType === "f_verbatim" ||
+            fieldType === "f_uri" ||
+            fieldType === "f_date"
+        ) {
+            return text
+        } else if (fieldType === "f_key") {
+            const options = fieldDef?.options as LangidOptions | undefined
+            if (options) {
+                const lower = text.toLowerCase().trim()
+                const matched = Object.keys(options).find(
+                    (k) =>
+                        k.toLowerCase() === lower ||
+                        options[k].csl.toLowerCase() === lower ||
+                        options[k].biblatex.toLowerCase() === lower
+                )
+                return matched // undefined if no match — caller omits the field
+            }
+            return text
+        }
+        return this.convertRichText(text)
     }
 
     private convertRichText(text: string): NodeArray {

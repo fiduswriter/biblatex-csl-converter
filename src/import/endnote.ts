@@ -7,6 +7,7 @@
 import {
     BibTypes,
     BibFieldTypes,
+    LangidOptions,
     NodeArray,
     EntryObject,
     NameDictObject,
@@ -675,10 +676,8 @@ export class EndNoteParser {
             }
         }
         if (urls.length > 0) {
-            fields["url"] = this.convertRichText(urls[0])
-            if (urls.length > 1) {
-                fields["url"] = this.convertRichText(urls.join("; "))
-            }
+            // url is f_uri — store as a plain string, not a NodeArray
+            fields["url"] = urls.length > 1 ? urls.join("; ") : urls[0]
         }
 
         // Access date
@@ -790,7 +789,7 @@ export class EndNoteParser {
             processedFields
         )
         if (keywords.length > 0) {
-            fields["keywords"] = keywords.join(", ")
+            fields["keywords"] = keywords
         }
 
         // Handle image
@@ -929,9 +928,42 @@ export class EndNoteParser {
             processedFields.add(sourceField)
         }
 
-        const fieldType = BibFieldTypes[targetField]?.type
+        const fieldDef = BibFieldTypes[targetField]
+        const fieldType = fieldDef?.type
         if (fieldType === "l_range") {
             fields[targetField] = this.convertRange(textContent)
+        } else if (fieldType === "l_literal") {
+            // l_literal expects NodeArray[] — an array of NodeArrays
+            fields[targetField] = [this.convertRichText(textContent)]
+        } else if (
+            fieldType === "f_verbatim" ||
+            fieldType === "f_uri" ||
+            fieldType === "f_date"
+        ) {
+            // verbatim, URI, and date fields are stored as plain strings
+            fields[targetField] = textContent
+        } else if (fieldType === "f_key") {
+            // f_key fields (e.g. langid) must be stored as a key string that
+            // matches one of the option keys in the field definition.
+            // Try a case-insensitive match against the known options first;
+            // fall back to the raw text if no match is found.
+            const options = fieldDef?.options as LangidOptions | undefined
+            if (options) {
+                const lower = textContent.toLowerCase().trim()
+                const matched = Object.keys(options).find(
+                    (k) =>
+                        k.toLowerCase() === lower ||
+                        options[k].csl.toLowerCase() === lower ||
+                        options[k].biblatex.toLowerCase() === lower
+                )
+                if (matched) {
+                    fields[targetField] = matched
+                }
+                // If no match is found, omit the field entirely rather than
+                // storing an invalid key that would break the exporters.
+            } else {
+                fields[targetField] = textContent
+            }
         } else {
             fields[targetField] = this.convertRichText(textContent)
         }
