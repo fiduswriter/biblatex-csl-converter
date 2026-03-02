@@ -6,7 +6,28 @@
 [![npm downloads](https://img.shields.io/npm/dm/biblatex-csl-converter.svg)](https://www.npmjs.com/package/biblatex-csl-converter)
 [![License: LGPL-3.0](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)
 
-A set of JavaScript converters: biblatex => json, json => csl, and json => biblatex
+A set of JavaScript converters: 
+
+The main types we work with
+
+biblatex => internal json
+csl => internal json
+internal json => csl 
+internal json => biblatex
+
+
+But also:
+
+Endnote => internal json
+RIS => internal json
+Citavi => internal json
+DOCX native format => internal json
+ODT native format => internal json
+
+We can even read the citation information from various citation managers inside of ODT/DOCX files
+
+
+Try demo [here](https://fiduswriter.github.io/biblatex-csl-converter/).
 
 Usage:
 
@@ -22,7 +43,6 @@ let parser = new BibLatexParser(input, {processUnexpected: true, processUnknown:
 parser.parseAsync().then((bib) => { ... })
 ```
 
-Try demo [here](https://fiduswriter.github.io/biblatex-csl-converter/).
 
 ## Extracting Citations from ODT and DOCX Files
 
