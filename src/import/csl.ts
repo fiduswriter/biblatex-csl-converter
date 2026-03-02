@@ -152,9 +152,23 @@ export class CSLParser {
                 convertedValue = this.convertInteger(value)
                 break
 
-            case "f_key":
-                convertedValue = this.convertKey(value, bibField)
+            case "f_key": {
+                const keyVal = this.convertKey(value, bibField)
+                if (!keyVal) {
+                    // Unrecognized option value — skip this field entirely to
+                    // avoid storing an empty string that would crash the
+                    // BibLaTeX exporter's options lookup.
+                    this.warnings.push({
+                        type: "unknown_field_value",
+                        field: bibField,
+                        value,
+                        entry: entryId,
+                    })
+                    return false
+                }
+                convertedValue = keyVal
                 break
+            }
 
             case "f_literal":
             case "f_long_literal":
