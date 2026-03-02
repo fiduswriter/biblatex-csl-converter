@@ -1,0 +1,117 @@
+{
+    "entries": {
+        "1": {
+            "entry_key": "46",
+            "bib_type": "article-journal",
+            "fields": {
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Test article one"
+                    }
+                ],
+                "journaltitle": [
+                    {
+                        "type": "text",
+                        "text": "Physical Review Letters"
+                    }
+                ],
+                "volume": [
+                    {
+                        "type": "text",
+                        "text": "105"
+                    }
+                ],
+                "issue": [
+                    {
+                        "type": "text",
+                        "text": "3"
+                    }
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "1"
+                            },
+                            {
+                                "type": "text",
+                                "text": "10"
+                            }
+                        ]
+                    ]
+                ],
+                "doi": "10.1103/PhysRevLett.105.031301",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Hawking"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Stephen"
+                            }
+                        ]
+                    }
+                ],
+                "date": "2010-07-15"
+            }
+        },
+        "2": {
+            "entry_key": "99",
+            "bib_type": "book",
+            "fields": {
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "The Emperor's New Mind"
+                    }
+                ],
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Oxford University Press"
+                        }
+                    ]
+                ],
+                "location": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Oxford"
+                        }
+                    ]
+                ],
+                "isbn": [
+                    {
+                        "type": "text",
+                        "text": "978-0-19-851973-7"
+                    }
+                ],
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Penrose"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Roger"
+                            }
+                        ]
+                    }
+                ],
+                "date": "1989"
+            }
+        }
+    }
+}

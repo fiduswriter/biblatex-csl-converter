@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Synthetic ODT content.xml fragment — JabRef reference marks and EndNote
+  plain-text citation placeholders.
+
+  JabRef (ODT):
+    Reference mark names follow the pattern:
+      JABREF_{citationKey} CID_{sequenceNumber} {randomId}
+    The content inside the marks is fully rendered citation text produced by
+    JabRef's layout engine — not raw bibliographic data.  The parser can only
+    extract the citation key from the mark name; a stub misc entry is emitted.
+    JabRef replaces spaces in citation keys with underscores in the mark name.
+
+    Three citation marks are included:
+      Hooper_2012        → citation key "Hooper 2012" (space restored)
+      Di_Renzo_2012      → citation key "Di Renzo 2012"
+      Hooper_2012        → duplicate — must be de-duplicated
+
+  EndNote (ODT):
+    EndNote does not insert live reference marks.  Unformatted citations are
+    left as plain text placeholders:
+      {Author, Year #RecordNumber}
+    Multiple simultaneous citations are separated by semicolons:
+      {Smith, 2020 #42; Jones, 2018 #7}
+
+    Four placeholder segments are exercised:
+      {Bronk Ramsey, 2009 #19}                 → key EN19
+      {Smith, 2020 #42; Jones, 2018 #7}        → keys EN42, EN7
+      {Bronk Ramsey, 2009 #19}                 → duplicate EN19 — de-duplicated
+      {Mueller 2015 #5}                         → key EN5 (no comma between
+                                                  name and year)
+-->
+<office:document-content
+    xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0"
+    xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0"
+    xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0">
+
+  <office:body>
+    <office:text>
+
+      <!-- ============================================================
+           JabRef citation marks
+           ============================================================ -->
+
+      <!-- Citation 1: Hooper 2012 (key has a space, stored as underscore) -->
+      <text:p text:style-name="Text Body">
+        <text:span xml:space="preserve">Chocolate consumption was examined in </text:span>
+        <text:reference-mark-start text:name="JABREF_Hooper_2012 CID_1 du6kcoxv"/>
+        <text:span>L. Hooper et al., &#x201C;Effects of chocolate, cocoa, and flavan-3-ols on cardiovascular health&#x201D;, <text:span text:style-name="Emphasis">The American Journal of Clinical Nutrition</text:span> 95.3 (2012), 740&#x2013;51.</text:span>
+        <text:reference-mark-end text:name="JABREF_Hooper_2012 CID_1 du6kcoxv"/>
+        <text:span xml:space="preserve"> and found to be beneficial.</text:span>
+      </text:p>
+
+      <!-- Citation 2: Di Renzo 2012 (citation key contains spaces) -->
+      <text:p text:style-name="Text Body">
+        <text:span xml:space="preserve">A further study confirmed this in </text:span>
+        <text:reference-mark-start text:name="JABREF_Di_Renzo_2012 CID_2 ab3xpqr7"/>
+        <text:span>G.C. Di Renzo et al., &#x201C;Cocoa and chocolate consumption during pregnancy&#x201D;, <text:span text:style-name="Emphasis">The Journal of Maternal-Fetal &amp; Neonatal Medicine</text:span> 25.10 (2012), 1860&#x2013;1867.</text:span>
+        <text:reference-mark-end text:name="JABREF_Di_Renzo_2012 CID_2 ab3xpqr7"/>
+        <text:span>.</text:span>
+      </text:p>
+
+      <!-- Citation 3: Hooper 2012 again — should be de-duplicated -->
+      <text:p text:style-name="Text Body">
+        <text:span xml:space="preserve">As previously noted </text:span>
+        <text:reference-mark-start text:name="JABREF_Hooper_2012 CID_3 zz9mmn12"/>
+        <text:span>L. Hooper et al., &#x201C;Effects of chocolate, cocoa, and flavan-3-ols on cardiovascular health&#x201D;, <text:span text:style-name="Emphasis">The American Journal of Clinical Nutrition</text:span> 95.3 (2012), 740&#x2013;51.</text:span>
+        <text:reference-mark-end text:name="JABREF_Hooper_2012 CID_3 zz9mmn12"/>
+        <text:span xml:space="preserve">, the same conclusion was reached.</text:span>
+      </text:p>
+
+      <!-- JabRef bibliography section — plain text, no structured data -->
+      <text:section text:style-name="Sect1" text:name="JR_bib">
+        <text:h text:style-name="Heading_20_2" text:outline-level="2">References</text:h>
+        <text:p text:style-name="P2">1. Hooper L, Kay C, Abdelhamid A, et al. Effects of chocolate, cocoa, and flavan-3-ols on cardiovascular health: a systematic review and meta-analysis of randomized trials. The American Journal of Clinical Nutrition 2012;95(3):740&#x2013;751.</text:p>
+        <text:p text:style-name="P2">2. Di Renzo GC, Brillo E, Romanelli M, et al. Potential effects of chocolate on human health. The Journal of Maternal-Fetal &amp; Neonatal Medicine 2012;25(10):1860&#x2013;1867.</text:p>
+      </text:section>
+
+      <!-- ============================================================
+           EndNote plain-text placeholders
+           ============================================================ -->
+
+      <!-- Placeholder 1: single citation — Bronk Ramsey 2009 -->
+      <text:p text:style-name="Text Body">
+        <text:span xml:space="preserve">Radiocarbon dating was calibrated using OxCal </text:span>
+        <text:span>{Bronk Ramsey, 2009 #19}</text:span>
+        <text:span xml:space="preserve"> with the IntCal13 curve.</text:span>
+      </text:p>
+
+      <!-- Placeholder 2: multiple simultaneous citations -->
+      <text:p text:style-name="Text Body">
+        <text:span xml:space="preserve">These results are consistent with earlier work </text:span>
+        <text:span>{Smith, 2020 #42; Jones, 2018 #7}</text:span>
+        <text:span xml:space="preserve"> on the same subject.</text:span>
+      </text:p>
+
+      <!-- Placeholder 3: duplicate of placeholder 1 — EN19 must not be repeated -->
+      <text:p text:style-name="Text Body">
+        <text:span xml:space="preserve">The calibration procedure follows </text:span>
+        <text:span>{Bronk Ramsey, 2009 #19}</text:span>
+        <text:span xml:space="preserve"> as described above.</text:span>
+      </text:p>
+
+      <!-- Placeholder 4: name without comma between name and year -->
+      <text:p text:style-name="Text Body">
+        <text:span xml:space="preserve">Additional evidence comes from </text:span>
+        <text:span>{Mueller 2015 #5}</text:span>
+        <text:span xml:space="preserve"> who studied related phenomena.</text:span>
+      </text:p>
+
+    </office:text>
+  </office:body>
+</office:document-content>

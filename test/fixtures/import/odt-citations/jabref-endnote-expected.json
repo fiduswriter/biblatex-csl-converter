@@ -1,0 +1,82 @@
+{
+    "entries": {
+        "1": {
+            "entry_key": "Hooper 2012",
+            "bib_type": "misc",
+            "fields": {}
+        },
+        "2": {
+            "entry_key": "Di Renzo 2012",
+            "bib_type": "misc",
+            "fields": {}
+        },
+        "3": {
+            "entry_key": "EN42",
+            "bib_type": "misc",
+            "fields": {
+                "author": [
+                    {
+                        "literal": [
+                            {
+                                "type": "text",
+                                "text": "Smith"
+                            }
+                        ]
+                    }
+                ],
+                "date": "2020"
+            }
+        },
+        "4": {
+            "entry_key": "EN7",
+            "bib_type": "misc",
+            "fields": {
+                "author": [
+                    {
+                        "literal": [
+                            {
+                                "type": "text",
+                                "text": "Jones"
+                            }
+                        ]
+                    }
+                ],
+                "date": "2018"
+            }
+        },
+        "5": {
+            "entry_key": "EN19",
+            "bib_type": "misc",
+            "fields": {
+                "author": [
+                    {
+                        "literal": [
+                            {
+                                "type": "text",
+                                "text": "Bronk Ramsey"
+                            }
+                        ]
+                    }
+                ],
+                "date": "2009"
+            }
+        },
+        "6": {
+            "entry_key": "EN5",
+            "bib_type": "misc",
+            "fields": {
+                "author": [
+                    {
+                        "literal": [
+                            {
+                                "type": "text",
+                                "text": "Mueller"
+                            }
+                        ]
+                    }
+                ],
+                "date": "2015"
+            }
+        }
+    }
+}
