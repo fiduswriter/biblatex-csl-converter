@@ -6,6 +6,11 @@ export { EndNoteParser, parseEndNote } from "./import/endnote"
 export { RISParser, parseRIS } from "./import/ris"
 export { ENWParser, parseENW } from "./import/enw"
 export { CitaviParser, parseCitavi } from "./import/citavi"
+export {
+    DocxCitationsParser,
+    parseDocxCitations,
+} from "./import/docx-citations"
+export { OdtCitationsParser, parseOdtCitations } from "./import/odt-citations"
 export { CitaviXmlParser, parseCitaviXml } from "./import/citavi-xml"
 export { BibFieldTypes, BibTypes } from "./const"
 export { edtfParse } from "./edtf-parser"
@@ -33,3 +38,8 @@ export type { CSLEntry, CSLOutput } from "./export/csl"
 export type { EndNoteRecord, EndNoteParseResult } from "./import/endnote"
 export type { RISParseResult } from "./import/ris"
 export type { ENWParseResult } from "./import/enw"
+export type {
+    DocxCitationsParseResult,
+    DocxCitationsParserOptions,
+} from "./import/docx-citations"
+export type { OdtCitationsParseResult } from "./import/odt-citations"
