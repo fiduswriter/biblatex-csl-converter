@@ -11,20 +11,28 @@ A set of JavaScript converters:
 The main types we work with
 
 biblatex => internal json
+
 csl => internal json
+
 internal json => csl 
+
 internal json => biblatex
 
 
 But also:
 
 Endnote => internal json
+
 RIS => internal json
+
 Citavi => internal json
+
 DOCX native format => internal json
+
 ODT native format => internal json
 
-We can even read the citation information from various citation managers inside of ODT/DOCX files
+
+We can even read the citation information from various citation managers inside of ODT/DOCX files!
 
 
 Try demo [here](https://fiduswriter.github.io/biblatex-csl-converter/).
