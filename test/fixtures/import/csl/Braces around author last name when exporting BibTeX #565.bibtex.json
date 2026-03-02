@@ -206,7 +206,6 @@
         "bib_type": "book",
         "fields": {
             "date": "1995",
-            "langid": "",
             "location": [
                 [
                     {
@@ -265,7 +264,6 @@
         "bib_type": "article",
         "fields": {
             "date": "1998",
-            "langid": "",
             "author": [
                 {
                     "family": [

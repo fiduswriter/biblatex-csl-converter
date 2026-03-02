@@ -63,8 +63,7 @@
                     "type": "text",
                     "text": "stw"
                 }
-            ],
-            "langid": ""
+            ]
         }
     },
     "2": {
@@ -182,7 +181,6 @@
                     "text": "stw"
                 }
             ],
-            "langid": "",
             "bookauthor": [
                 {
                     "family": [

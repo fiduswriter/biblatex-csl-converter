@@ -4,7 +4,6 @@
         "bib_type": "article",
         "fields": {
             "date": "2009-01",
-            "langid": "",
             "abstract": [
                 {
                     "type": "text",
@@ -88,7 +87,6 @@
         "bib_type": "inbook",
         "fields": {
             "date": "2003",
-            "langid": "",
             "location": [
                 [
                     {
@@ -237,7 +235,6 @@
         "bib_type": "book",
         "fields": {
             "date": "1906",
-            "langid": "",
             "location": [
                 [
                     {
@@ -289,7 +286,6 @@
         "bib_type": "article",
         "fields": {
             "date": "2014",
-            "langid": "",
             "abstract": [
                 {
                     "type": "text",
