@@ -325,6 +325,26 @@
                 margin-top: 6px;
             }
 
+            /* ── Acknowledgement footer ──────────────────────────────────── */
+            .acknowledgement {
+                background: #1a1a2e;
+                color: #bbb;
+                padding: 14px 20px;
+                font-size: .75rem;
+                line-height: 1.6;
+                border-top: 2px solid #f3b52b;
+            }
+            .acknowledgement a {
+                color: #f3b52b;
+                text-decoration: none;
+            }
+            .acknowledgement a:hover {
+                text-decoration: underline;
+            }
+            .acknowledgement strong {
+                color: #eee;
+            }
+
             /* ── Language showcase section ───────────────────────────────── */
             .locale-showcase {
                 background: #fff;
@@ -397,6 +417,10 @@
                     <option value="enw">EndNote Web (.enw)</option>
                     <option value="endnote">EndNote XML (.xml)</option>
                     <option value="citavi">Citavi JSON (.json)</option>
+                    <optgroup label="Document files (extracts citations)">
+                        <option value="docx">Word Document (.docx)</option>
+                        <option value="odt">OpenDocument Text (.odt)</option>
+                    </optgroup>
                 </select>
             </label>
 
@@ -429,9 +453,16 @@
         </div>
 
         <!-- ── Paste area ───────────────────────────────────────────────── -->
-        <div class="paste-row">
+        <div class="paste-row" id="paste-row">
             <label for="paste-input">Or paste text:</label>
             <div contenteditable="true" id="paste-input" spellcheck="false"></div>
+        </div>
+
+        <!-- ── Document format note (shown only for DOCX / ODT) ────────── -->
+        <div id="doc-format-note" style="display:none; background:#fff8e1; border-bottom:1px solid #ffe082; padding:8px 20px; font-size:.78rem; color:#795548;">
+            &#128196; <strong>Document mode:</strong> Upload a <span id="doc-format-label">DOCX</span> file using <em>Open file</em> above.
+            Citations from Zotero, Mendeley, EndNote, Citavi, JabRef and LibreOffice native marks will be extracted automatically.
+            Pasting text is not supported for document files.
         </div>
 
         <!-- ── Stats bar ────────────────────────────────────────────────── -->
@@ -466,12 +497,23 @@
             </div>
 
             <div class="output-col">
-                <div class="col-header">BibLaTeX re-export</div>
+                <div class="col-header">BibLaTeX export</div>
                 <div class="col-body" id="biblatex">
                     <p class="empty-msg">&nbsp;</p>
                 </div>
             </div>
 
+        </div>
+
+        <!-- ── Acknowledgement footer ───────────────────────────────────── -->
+        <div class="acknowledgement">
+            <strong>Acknowledgement:</strong> DOCX and ODT citation extraction in this demo was inspired by
+            <a href="https://github.com/rmzelle/ref-extractor/" target="_blank" rel="noopener noreferrer">ref-extractor</a>
+            by <strong>Rintze M. Zelle</strong> &mdash; a free, privacy-respecting online tool that extracts
+            Zotero and Mendeley references from Word and LibreOffice documents.
+            If you need to extract citations from documents and export them to CSL&nbsp;JSON, BibTeX, or RIS,
+            ref-extractor is well worth a visit at
+            <a href="https://rintze.zelle.me/ref-extractor/" target="_blank" rel="noopener noreferrer">rintze.zelle.me/ref-extractor</a>.
         </div>
 
         <!-- ── i18n locale showcase ─────────────────────────────────────── -->
@@ -480,10 +522,36 @@
             <div id="locale-demo-grid"></div>
         </div>
 
+        <!-- ── JSZip (required for DOCX / ODT unpacking) ───────────────── -->
+        <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+
         <!-- ── Bundle ───────────────────────────────────────────────────── -->
         <script src="demo.js"></script>
 
         <!-- ── Locale showcase (runs after bundle) ──────────────────────── -->
+        <!-- ── Document format UI toggle ────────────────────────────────── -->
+        <script>
+            (function wireDocFormatToggle() {
+                var formatSelect = document.getElementById("format-select")
+                var pasteRow = document.getElementById("paste-row")
+                var docNote = document.getElementById("doc-format-note")
+                var docLabel = document.getElementById("doc-format-label")
+
+                function updateDocMode() {
+                    var fmt = formatSelect ? formatSelect.value : ""
+                    var isDoc = fmt === "docx" || fmt === "odt"
+                    if (pasteRow) pasteRow.style.display = isDoc ? "none" : ""
+                    if (docNote) docNote.style.display = isDoc ? "" : "none"
+                    if (docLabel) docLabel.textContent = fmt === "odt" ? "ODT" : "DOCX"
+                }
+
+                if (formatSelect) {
+                    formatSelect.addEventListener("change", updateDocMode)
+                    updateDocMode()
+                }
+            })()
+        </script>
+
         <script>
             (function buildLocaleShowcase() {
                 var grid = document.getElementById("locale-demo-grid")

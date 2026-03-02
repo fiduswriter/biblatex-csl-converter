@@ -8,6 +8,8 @@ import {
     ENWParser,
     CitaviParser,
     CitaviXmlParser,
+    DocxCitationsParser,
+    OdtCitationsParser,
     edtfParse,
     locales,
     getLocale,
@@ -31,6 +33,8 @@ Object.assign(globalThis, {
     ENWParser,
     CitaviParser,
     CitaviXmlParser,
+    DocxCitationsParser,
+    OdtCitationsParser,
     edtfParse,
     locales,
     getLocale,
@@ -314,6 +318,74 @@ function runImport(format: string, input: string): BibDB {
     }
 }
 
+// ─── Document file import (DOCX / ODT) ───────────────────────────────────────
+
+/**
+ * Reads a binary File as an ArrayBuffer and processes it as a DOCX or ODT
+ * archive using JSZip (loaded from CDN).  Extracts the relevant XML parts and
+ * delegates to DocxCitationsParser / OdtCitationsParser exposed on globalThis
+ * by the demo bundle.
+ */
+async function importDocumentFile(
+    file: File,
+    format: "docx" | "odt"
+): Promise<BibDB> {
+    // JSZip is loaded via CDN script tag — access it through globalThis
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const JSZip = (globalThis as any).JSZip as {
+        loadAsync(data: ArrayBuffer): Promise<{
+            files: Record<string, { async(type: "string"): Promise<string> }>
+        }>
+    }
+    if (!JSZip) {
+        throw new Error(
+            "JSZip is not loaded. Make sure the CDN script tag is present."
+        )
+    }
+
+    const buffer = await file.arrayBuffer()
+    const zip = await JSZip.loadAsync(buffer)
+
+    if (format === "docx") {
+        // Primary XML: word/document.xml
+        const docXmlFile = zip.files["word/document.xml"]
+        if (!docXmlFile) {
+            throw new Error("Not a valid DOCX file: missing word/document.xml")
+        }
+        const documentXml = await docXmlFile.async("string")
+
+        // Optional: customXml/item1.xml for Word-native / JabRef sources
+        let sourcesXml: string | undefined
+        const sourcesFile = zip.files["customXml/item1.xml"]
+        if (sourcesFile) {
+            sourcesXml = await sourcesFile.async("string")
+        }
+
+        const parser = new DocxCitationsParser(documentXml, {
+            sourcesXml,
+        })
+        const result = parser.parse()
+        if (result.errors.length) console.warn("DOCX errors:", result.errors)
+        if (result.warnings.length)
+            console.warn("DOCX warnings:", result.warnings)
+        return result.entries
+    } else {
+        // ODT: content.xml holds all the bibliography marks
+        const contentXmlFile = zip.files["content.xml"]
+        if (!contentXmlFile) {
+            throw new Error("Not a valid ODT file: missing content.xml")
+        }
+        const contentXml = await contentXmlFile.async("string")
+
+        const parser = new OdtCitationsParser(contentXml)
+        const result = parser.parse()
+        if (result.errors.length) console.warn("ODT errors:", result.errors)
+        if (result.warnings.length)
+            console.warn("ODT warnings:", result.warnings)
+        return result.entries
+    }
+}
+
 // ─── Export drivers ──────────────────────────────────────────────────────────
 
 function renderCSLPanel(bibDB: BibDB): void {
@@ -409,11 +481,50 @@ function readFile(): void {
     const fileUpload = getEl<HTMLInputElement>("file-upload")
     if (!fileUpload?.files?.length) return
     const format = getSelectedFormat()
+    const file = fileUpload.files[0]
+
+    if (format === "docx" || format === "odt") {
+        // Show spinners immediately before async work begins
+        const bibDbEl = getEl("bib-db")
+        const cslDbEl = getEl("csl-db")
+        const biblatexEl = getEl("biblatex")
+        if (bibDbEl) bibDbEl.innerHTML = '<div class="spinner"></div>'
+        if (cslDbEl) cslDbEl.innerHTML = '<div class="spinner"></div>'
+        if (biblatexEl) biblatexEl.innerHTML = '<div class="spinner"></div>'
+
+        const t0 = performance.now()
+        importDocumentFile(file, format as "docx" | "odt")
+            .then((bibDB) => {
+                currentBibDB = bibDB
+                if (bibDbEl) bibDbEl.innerHTML = renderBibDB(currentBibDB)
+                renderCSLPanel(currentBibDB)
+                renderBibLatexPanel(currentBibDB)
+
+                const t1 = performance.now()
+                const statsEl = getEl("stats")
+                if (statsEl) {
+                    const count = Object.keys(currentBibDB).length
+                    statsEl.textContent = `${count} entr${
+                        count === 1 ? "y" : "ies"
+                    } — processed in ${(t1 - t0).toFixed(1)} ms`
+                }
+            })
+            .catch((e) => {
+                const msg = `<span class="error-msg">Import failed: ${escapeHtml(
+                    String(e)
+                )}</span>`
+                if (bibDbEl) bibDbEl.innerHTML = msg
+                if (cslDbEl) cslDbEl.innerHTML = ""
+                if (biblatexEl) biblatexEl.innerHTML = ""
+            })
+        return
+    }
+
     const fr = new FileReader()
     fr.onload = (event) => {
         processInput(format, event.target?.result as string)
     }
-    fr.readAsText(fileUpload.files[0])
+    fr.readAsText(file)
 }
 
 function readPaste(event: ClipboardEvent): void {
@@ -457,6 +568,8 @@ document.addEventListener("DOMContentLoaded", () => {
             enw: ".enw",
             endnote: ".xml",
             citavi: ".json",
+            docx: ".docx",
+            odt: ".odt",
         }
         fileUpload.accept = acceptMap[fmt] ?? ""
     })
