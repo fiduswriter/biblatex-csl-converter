@@ -4,7 +4,7 @@ import fs from "fs"
 import path from "path"
 import { fileURLToPath } from "url"
 
-const writeFixtures = true // Set to true to save the results as expected test results.
+const writeFixtures = false // Set to true to save the results as expected test results.
 
 const clean = (state) => {
     for (let prop of ["comments", "errors", "warnings"]) {

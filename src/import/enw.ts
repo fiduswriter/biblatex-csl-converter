@@ -71,11 +71,49 @@ const EndNoteTypeMap: Record<string, string> = {
     "Web Page": "online",
 }
 
+/**
+ * ENW tags that are explicitly handled during conversion.
+ * Any tag present in a record but not in this set will trigger an
+ * `unknown_tag` warning so callers know data may have been dropped.
+ */
+const KNOWN_ENW_TAGS = new Set([
+    "%0", // Reference type
+    "%T", // Title
+    "%J", // Journal title
+    "%B", // Secondary title / book title
+    "%A", // Authors
+    "%E", // Editors
+    "%X", // Abstract
+    "%Z", // Notes
+    "%D", // Year
+    "%V", // Volume
+    "%N", // Number / issue
+    "%P", // Pages
+    "%I", // Publisher
+    "%C", // Place
+    "%7", // Edition
+    "%O", // DOI / other info
+    "%U", // URL
+    "%@", // ISBN / ISSN
+    "%K", // Keywords
+    "%M", // PubMed ID / accession number
+    "%!", // Short title
+    "%L", // Call number
+    "%F", // Label / entry key
+])
+
 interface ErrorObject {
     type: string
     field?: string
     value?: unknown
     entry?: string
+    tag?: string
+}
+
+export interface ENWParseResult {
+    entries: Record<number, EntryObject>
+    errors: ErrorObject[]
+    warnings: ErrorObject[]
 }
 
 interface ENWRecord {
@@ -95,7 +133,7 @@ export class ENWParser {
         this.warnings = []
     }
 
-    parse(): Record<number, EntryObject> {
+    parse(): ENWParseResult {
         // Parse records
         const records = this.parseENWFormat()
 
@@ -108,12 +146,16 @@ export class ENWParser {
         }
 
         // Create numbered index
-        const bibDB: Record<number, EntryObject> = {}
+        const entries: Record<number, EntryObject> = {}
         this.entries.forEach((entry, index) => {
-            bibDB[index + 1] = entry
+            entries[index + 1] = entry
         })
 
-        return bibDB
+        return {
+            entries,
+            errors: this.errors,
+            warnings: this.warnings,
+        }
     }
 
     private parseENWFormat(): ENWRecord[] {
@@ -129,7 +171,7 @@ export class ENWParser {
 
         for (const line of lines) {
             // EndNote format: %X value
-            const match = line.match(/^%([0-9A-Z])\s+(.*)$/)
+            const match = line.match(/^%([0-9A-Z!@])\s+(.*)$/)
             if (match) {
                 currentTag = "%" + match[1]
                 const value = match[2].trim()
@@ -169,10 +211,18 @@ export class ENWParser {
     ): EntryObject | false {
         // Get the reference type
         const typeValue = this.getFirstValue(record["%0"]) || "Generic"
-        const bibType = EndNoteTypeMap[typeValue] || "misc"
+        const mappedBibType = EndNoteTypeMap[typeValue]
+        const bibType = mappedBibType || "misc"
 
-        // Verify the BibType exists
-        if (!BibTypes[bibType]) {
+        // Warn when the ENW type string is not recognised at all
+        if (!mappedBibType) {
+            this.warnings.push({
+                type: "unknown_type",
+                value: typeValue,
+                entry: String(index),
+            })
+        } else if (!BibTypes[bibType]) {
+            // The mapped type itself is not a known BibType — treat as error
             this.errors.push({
                 type: "unknown_type",
                 value: typeValue,
@@ -181,12 +231,20 @@ export class ENWParser {
             return false
         }
 
+        // Derive the entry key early so warnings can reference it
+        const entryKey = this.generateEntryKey(record, index)
         const fields: Record<string, unknown> = {}
 
         // Title
         const title = this.getFirstValue(record["%T"])
         if (title) {
             fields["title"] = this.convertRichText(title)
+        } else {
+            this.warnings.push({
+                type: "missing_required_field",
+                field: "title",
+                entry: entryKey,
+            })
         }
 
         // Secondary title (journal)
@@ -205,6 +263,12 @@ export class ENWParser {
         // Authors
         if (record["%A"] && record["%A"].length > 0) {
             fields["author"] = this.parseNames(record["%A"])
+        } else {
+            this.warnings.push({
+                type: "missing_required_field",
+                field: "author",
+                entry: entryKey,
+            })
         }
 
         // Secondary authors (editors)
@@ -228,6 +292,12 @@ export class ENWParser {
         const year = this.getFirstValue(record["%D"])
         if (year) {
             fields["date"] = year
+        } else {
+            this.warnings.push({
+                type: "missing_required_field",
+                field: "date",
+                entry: entryKey,
+            })
         }
 
         // Volume
@@ -313,13 +383,32 @@ export class ENWParser {
             fields["label"] = this.convertRichText(label)
         }
 
-        // Generate entry key
-        const entryKey = this.generateEntryKey(record, index)
+        // Warn about tags present in the record that are not handled
+        this.checkUnknownTags(record, entryKey)
 
         return {
             entry_key: entryKey,
             bib_type: bibType,
             fields,
+        }
+    }
+
+    /**
+     * Emit `unknown_tag` warnings for every ENW tag in a parsed record that
+     * is not present in the {@link KNOWN_ENW_TAGS} set.  This lets callers
+     * detect data that the converter silently dropped.
+     */
+    private checkUnknownTags(record: ENWRecord, entryKey: string): void {
+        for (const tag of Object.keys(record)) {
+            if (!KNOWN_ENW_TAGS.has(tag)) {
+                const value = this.getFirstValue(record[tag])
+                this.warnings.push({
+                    type: "unknown_tag",
+                    tag,
+                    value: value ? value.substring(0, 100) : undefined,
+                    entry: entryKey,
+                })
+            }
         }
     }
 
@@ -417,6 +506,6 @@ export class ENWParser {
     }
 }
 
-export function parseENW(input: string): Record<number, EntryObject> {
+export function parseENW(input: string): ENWParseResult {
     return new ENWParser(input).parse()
 }

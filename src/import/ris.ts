@@ -73,11 +73,68 @@ const RISTypeMap: Record<string, string> = {
     WEB: "online", // Web page
 }
 
+/**
+ * RIS tags that are explicitly handled during conversion.
+ * Any tag present in a record but not in this set will trigger an
+ * `unknown_tag` warning so callers know data may have been dropped.
+ */
+const KNOWN_RIS_TAGS = new Set([
+    "TY", // Reference type (always handled)
+    "ER", // End of record (always handled)
+    "TI",
+    "T1", // Title
+    "T2",
+    "JF",
+    "JO",
+    "J2", // Secondary / journal title
+    "ST", // Short title
+    "AU",
+    "A1", // Primary authors
+    "A2", // Secondary authors (editors)
+    "A3", // Tertiary authors
+    "AB",
+    "N2", // Abstract
+    "N1", // Notes
+    "PY",
+    "Y1", // Publication year
+    "DA",
+    "Y2", // Full date / access date
+    "VL", // Volume
+    "IS",
+    "C7", // Issue / article number
+    "SP", // Start page
+    "EP", // End page
+    "PB", // Publisher
+    "CY",
+    "PP", // Place / city
+    "DO",
+    "M3", // DOI
+    "UR",
+    "L1",
+    "L2",
+    "L3", // URL / link
+    "SN",
+    "SE", // ISBN / ISSN / section (dual-use: handled with fallback)
+    "KW", // Keywords
+    "ET", // Edition
+    "CN", // Call number
+    "AN",
+    "M1", // Accession / article number
+    "LA", // Language
+])
+
 interface ErrorObject {
     type: string
     field?: string
     value?: unknown
     entry?: string
+    tag?: string
+}
+
+export interface RISParseResult {
+    entries: Record<number, EntryObject>
+    errors: ErrorObject[]
+    warnings: ErrorObject[]
 }
 
 interface RISRecord {
@@ -97,7 +154,7 @@ export class RISParser {
         this.warnings = []
     }
 
-    parse(): Record<number, EntryObject> {
+    parse(): RISParseResult {
         // Parse records
         const records = this.parseRISFormat()
 
@@ -110,12 +167,16 @@ export class RISParser {
         }
 
         // Create numbered index
-        const bibDB: Record<number, EntryObject> = {}
+        const entries: Record<number, EntryObject> = {}
         this.entries.forEach((entry, index) => {
-            bibDB[index + 1] = entry
+            entries[index + 1] = entry
         })
 
-        return bibDB
+        return {
+            entries,
+            errors: this.errors,
+            warnings: this.warnings,
+        }
     }
 
     private parseRISFormat(): RISRecord[] {
@@ -185,10 +246,18 @@ export class RISParser {
     ): EntryObject | false {
         // Get the reference type
         const risType = this.getFirstValue(record["TY"]) || "GEN"
-        const bibType = RISTypeMap[risType] || "misc"
+        const mappedBibType = RISTypeMap[risType]
+        const bibType = mappedBibType || "misc"
 
-        // Verify the BibType exists
-        if (!BibTypes[bibType]) {
+        // Warn when the RIS type is not recognised at all
+        if (!mappedBibType) {
+            this.warnings.push({
+                type: "unknown_type",
+                value: risType,
+                entry: String(index),
+            })
+        } else if (!BibTypes[bibType]) {
+            // The mapped type itself is not a known BibType — treat as error
             this.errors.push({
                 type: "unknown_type",
                 value: risType,
@@ -197,6 +266,7 @@ export class RISParser {
             return false
         }
 
+        const entryKey = this.generateEntryKey(record, index)
         const fields: Record<string, unknown> = {}
 
         // Title
@@ -204,6 +274,12 @@ export class RISParser {
             this.getFirstValue(record["TI"]) || this.getFirstValue(record["T1"])
         if (title) {
             fields["title"] = this.convertRichText(title)
+        } else {
+            this.warnings.push({
+                type: "missing_required_field",
+                field: "title",
+                entry: entryKey,
+            })
         }
 
         // Secondary title (journal/book title)
@@ -229,6 +305,12 @@ export class RISParser {
         ]
         if (authors.length > 0) {
             fields["author"] = this.parseNames(authors)
+        } else {
+            this.warnings.push({
+                type: "missing_required_field",
+                field: "author",
+                entry: entryKey,
+            })
         }
 
         // Secondary authors (editors)
@@ -265,6 +347,12 @@ export class RISParser {
             fields["date"] = year
         } else if (date) {
             fields["date"] = date
+        } else {
+            this.warnings.push({
+                type: "missing_required_field",
+                field: "date",
+                entry: entryKey,
+            })
         }
 
         // Volume
@@ -374,13 +462,32 @@ export class RISParser {
             fields["chapter"] = this.convertRichText(section)
         }
 
-        // Generate entry key
-        const entryKey = this.generateEntryKey(record, index)
+        // Warn about tags present in the record that are not handled
+        this.checkUnknownTags(record, entryKey)
 
         return {
             entry_key: entryKey,
             bib_type: bibType,
             fields,
+        }
+    }
+
+    /**
+     * Emit `unknown_tag` warnings for every tag in a parsed RIS record that
+     * is not present in the {@link KNOWN_RIS_TAGS} set.  This lets callers
+     * detect data that the converter silently dropped.
+     */
+    private checkUnknownTags(record: RISRecord, entryKey: string): void {
+        for (const tag of Object.keys(record)) {
+            if (!KNOWN_RIS_TAGS.has(tag)) {
+                const value = this.getFirstValue(record[tag])
+                this.warnings.push({
+                    type: "unknown_tag",
+                    tag,
+                    value: value ? value.substring(0, 100) : undefined,
+                    entry: entryKey,
+                })
+            }
         }
     }
 
@@ -480,6 +587,6 @@ export class RISParser {
     }
 }
 
-export function parseRIS(input: string): Record<number, EntryObject> {
+export function parseRIS(input: string): RISParseResult {
     return new RISParser(input).parse()
 }

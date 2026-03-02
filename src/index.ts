@@ -30,4 +30,6 @@ export type {
 } from "./i18n"
 export type { BibDB, BiblatexParseResult } from "./import/biblatex"
 export type { CSLEntry, CSLOutput } from "./export/csl"
-export type { EndNoteRecord } from "./import/endnote"
+export type { EndNoteRecord, EndNoteParseResult } from "./import/endnote"
+export type { RISParseResult } from "./import/ris"
+export type { ENWParseResult } from "./import/enw"

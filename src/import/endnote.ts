@@ -81,6 +81,12 @@ interface ErrorObject {
     entry?: string
 }
 
+export interface EndNoteParseResult {
+    entries: Record<number, EntryObject>
+    errors: ErrorObject[]
+    warnings: ErrorObject[]
+}
+
 // Style element for formatted text
 interface EndNoteStyle {
     "#text"?: string
@@ -299,7 +305,7 @@ export class EndNoteParser {
         this.warnings = []
     }
 
-    parse(): Record<number, EntryObject> {
+    parse(): EndNoteParseResult {
         // Convert each EndNote entry to internal format
         for (let i = 0; i < this.input.length; i++) {
             const record = this.input[i]
@@ -310,12 +316,16 @@ export class EndNoteParser {
         }
 
         // Create numbered index
-        const bibDB: Record<number, EntryObject> = {}
+        const entries: Record<number, EntryObject> = {}
         this.entries.forEach((entry, index) => {
-            bibDB[index + 1] = entry
+            entries[index + 1] = entry
         })
 
-        return bibDB
+        return {
+            entries,
+            errors: this.errors,
+            warnings: this.warnings,
+        }
     }
 
     private convertRecord(
@@ -324,10 +334,18 @@ export class EndNoteParser {
     ): EntryObject | false {
         // Get the reference type and map directly to BibType
         const refType = this.getRefType(record)
-        const bibType = EndNoteTypeMap[refType] || "misc"
+        const mappedBibType = EndNoteTypeMap[refType]
+        const bibType = mappedBibType || "misc"
 
-        // Verify the BibType exists
-        if (!BibTypes[bibType]) {
+        // Warn when the EndNote ref-type string is not recognised at all
+        if (!mappedBibType) {
+            this.warnings.push({
+                type: "unknown_type",
+                value: refType,
+                entry: String(index),
+            })
+        } else if (!BibTypes[bibType]) {
+            // The mapped type itself is not a known BibType — treat as error
             this.errors.push({
                 type: "unknown_type",
                 value: refType,
@@ -336,6 +354,7 @@ export class EndNoteParser {
             return false
         }
 
+        const entryKey = String(record["rec-number"] || index)
         const fields: Record<string, unknown> = {}
         const processedFields: Set<string> = new Set()
         const unhandledData: string[] = []
@@ -786,6 +805,33 @@ export class EndNoteParser {
         }
 
         // Check for unprocessed fields and add warnings
+        // Warn about missing title
+        if (!fields["title"]) {
+            this.warnings.push({
+                type: "missing_required_field",
+                field: "title",
+                entry: entryKey,
+            })
+        }
+
+        // Warn about missing author/editor when neither is present
+        if (!fields["author"] && !fields["editor"]) {
+            this.warnings.push({
+                type: "missing_required_field",
+                field: "author",
+                entry: entryKey,
+            })
+        }
+
+        // Warn about missing date
+        if (!fields["date"]) {
+            this.warnings.push({
+                type: "missing_required_field",
+                field: "date",
+                entry: entryKey,
+            })
+        }
+
         this.checkUnhandledFields(
             record,
             processedFields,
@@ -802,7 +848,7 @@ export class EndNoteParser {
         }
 
         return {
-            entry_key: String(record["rec-number"] || index),
+            entry_key: entryKey,
             bib_type: bibType,
             fields,
         }
@@ -1304,7 +1350,7 @@ export function parseEndNote(
               records?: { record?: EndNoteRecord | EndNoteRecord[] }
               xml?: { records?: { record?: EndNoteRecord | EndNoteRecord[] } }
           }
-): Record<number, EntryObject> {
+): EndNoteParseResult {
     let records: EndNoteRecord[] = []
 
     if (Array.isArray(input)) {

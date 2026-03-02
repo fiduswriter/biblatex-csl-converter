@@ -232,16 +232,18 @@ function importCSL(input: string): BibDB {
 
 function importRIS(input: string): BibDB {
     const parser = new RISParser(input)
-    const bibDB = parser.parse()
-    if (parser.errors.length) console.warn("RIS errors:", parser.errors)
-    return bibDB
+    const { entries, errors, warnings } = parser.parse()
+    if (errors.length) console.warn("RIS errors:", errors)
+    if (warnings.length) console.warn("RIS warnings:", warnings)
+    return entries
 }
 
 function importENW(input: string): BibDB {
     const parser = new ENWParser(input)
-    const bibDB = parser.parse()
-    if (parser.errors.length) console.warn("ENW errors:", parser.errors)
-    return bibDB
+    const { entries, errors, warnings } = parser.parse()
+    if (errors.length) console.warn("ENW errors:", errors)
+    if (warnings.length) console.warn("ENW warnings:", warnings)
+    return entries
 }
 
 function importEndNote(input: string): BibDB {
@@ -278,9 +280,10 @@ function importEndNote(input: string): BibDB {
 
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const parser = new EndNoteParser(records as any)
-    const bibDB = parser.parse()
-    if (parser.errors.length) console.warn("EndNote errors:", parser.errors)
-    return bibDB
+    const { entries, errors, warnings } = parser.parse()
+    if (errors.length) console.warn("EndNote errors:", errors)
+    if (warnings.length) console.warn("EndNote warnings:", warnings)
+    return entries
 }
 
 function importCitavi(input: string): BibDB {

@@ -1,396 +1,398 @@
 {
-    "1": {
-        "entry_key": "1",
-        "bib_type": "article-journal",
-        "fields": {
-            "title": [
-                {
-                    "type": "text",
-                    "text": "The Effect of Procrastination on Physical Exercise among College Students—The Chain Effect of Exercise Commitment and Action Control"
-                }
-            ],
-            "journaltitle": [
-                {
-                    "type": "text",
-                    "text": "International Journal of Mental Health Promotion"
-                }
-            ],
-            "volume": [
-                {
-                    "type": "text",
-                    "text": "26"
-                }
-            ],
-            "issue": [
-                {
-                    "type": "text",
-                    "text": "8"
-                }
-            ],
-            "pages": [
-                [
+    "entries": {
+        "1": {
+            "entry_key": "1",
+            "bib_type": "article-journal",
+            "fields": {
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "The Effect of Procrastination on Physical Exercise among College Students—The Chain Effect of Exercise Commitment and Action Control"
+                    }
+                ],
+                "journaltitle": [
+                    {
+                        "type": "text",
+                        "text": "International Journal of Mental Health Promotion"
+                    }
+                ],
+                "volume": [
+                    {
+                        "type": "text",
+                        "text": "26"
+                    }
+                ],
+                "issue": [
+                    {
+                        "type": "text",
+                        "text": "8"
+                    }
+                ],
+                "pages": [
                     [
-                        {
-                            "type": "text",
-                            "text": "611"
-                        },
-                        {
-                            "type": "text",
-                            "text": "622"
-                        }
+                        [
+                            {
+                                "type": "text",
+                                "text": "611"
+                            },
+                            {
+                                "type": "text",
+                                "text": "622"
+                            }
+                        ]
                     ]
-                ]
-            ],
-            "publisher": [
-                {
-                    "type": "text",
-                    "text": "Tech Science Press"
-                }
-            ],
-            "doi": [
-                {
-                    "type": "text",
-                    "text": "10.32604/ijmhp.2024.052730"
-                }
-            ],
-            "abstract": [
-                {
-                    "type": "text",
-                    "text": "Background: Exercise procrastination is prevalent among college students, causing decline in physical fitness. It is imperative to investigate the mechanism affecting college students' physical activity behaviors. This study was aimed at investigating the effect of procrastination on college students' physical exercise behavior, and the chain mediation effects of exercise commitment and action control (AC), to provide a theoretical basis for interventions targeting physical exercise behavior among college students. Methods: A questionnaire survey was conducted using convenience sampling. The General Procrastination Scale, Exercise Commitment Scale, Action Control Scale, and Physical Activity Rating Scale-3 questionnaires were used. Participants were 581 college students (age 19.27 ± 0.94 years; 243 males and 338 females). Statistical methods of regression analysis and structural equation modeling (SEM) were applied. Results: Procrastination, exercise commitment, and action control were found to be significant predictors of physical exercise behavior. Among these predictors, exercise commitment and action control showed full mediation effects in the relationship between procrastination and physical exercise behavior, and explained 25.48% and 30.77% of the total variance, respectively. The chain mediation effect of exercise commitment-action control was significant, accounting for 22.60% of the total variance, and the total indirect effect was 79.33%. Conclusion: Therefore, higher procrastination was associated with less participation in physical exercise behavior among college students. Improvements in exercise commitment and volitional decision-making ability for physical exercise behavior promoted physical exercise behavior, and increased exercise commitment promoted volitional decision-making ability among the students. The chain reaction effect of exercise commitment and action control also buffered the negative effects of procrastination on physical exercise behavior, thereby increasing physical exercise behavior among college students."
-                }
-            ],
-            "date": "2024",
-            "author": [
-                {
-                    "family": [
-                        {
-                            "type": "text",
-                            "text": "Zhang"
-                        }
-                    ],
-                    "given": [
-                        {
-                            "type": "text",
-                            "text": "Wenjuan"
-                        }
-                    ]
-                },
-                {
-                    "family": [
-                        {
-                            "type": "text",
-                            "text": "Xu"
-                        }
-                    ],
-                    "given": [
-                        {
-                            "type": "text",
-                            "text": "Menglin"
-                        }
-                    ]
-                },
-                {
-                    "family": [
-                        {
-                            "type": "text",
-                            "text": "Feng"
-                        }
-                    ],
-                    "given": [
-                        {
-                            "type": "text",
-                            "text": "Yujuan"
-                        }
-                    ]
-                },
-                {
-                    "family": [
-                        {
-                            "type": "text",
-                            "text": "Mao"
-                        }
-                    ],
-                    "given": [
-                        {
-                            "type": "text",
-                            "text": "Zhixiong"
-                        }
-                    ]
-                },
-                {
-                    "family": [
-                        {
-                            "type": "text",
-                            "text": "Yan"
-                        }
-                    ],
-                    "given": [
-                        {
-                            "type": "text",
-                            "text": "Zengyin"
-                        }
-                    ]
-                }
-            ],
-            "keywords": "College student, action control, chain intermediary, exercise behavior, exercise commitment, procrastination"
-        }
-    },
-    "2": {
-        "entry_key": "2",
-        "bib_type": "article-journal",
-        "fields": {
-            "title": [
-                {
-                    "type": "text",
-                    "text": "Artificial intelligence and social media on academic performance and mental well-being: Student perceptions of positive impact in the age of smart learning"
-                }
-            ],
-            "journaltitle": [
-                {
-                    "type": "text",
-                    "text": "Heliyon"
-                }
-            ],
-            "volume": [
-                {
-                    "type": "text",
-                    "text": "10"
-                }
-            ],
-            "issue": [
-                {
-                    "type": "text",
-                    "text": "8"
-                }
-            ],
-            "publisher": [
-                {
-                    "type": "text",
-                    "text": "Elsevier Ltd"
-                }
-            ],
-            "doi": [
-                {
-                    "type": "text",
-                    "text": "10.1016/j.heliyon.2024.e29523"
-                }
-            ],
-            "abstract": [
-                {
-                    "type": "text",
-                    "text": "The advancement of artificial intelligence (AI) and the ubiquity of social media have become transformative agents in contemporary educational ecosystems. The spotlight of this inquiry focuses on the nexus between AI and social media usage in relation to academic performance and mental well-being, and the role of smart learning in facilitating these relationships. Using partial least squares–structural equation modeling (PLS-SEM) on a sample of 401 Chinese university students. The study results reveal that both AI and social media have a positive impact on academic performance and mental well-being among university students. Furthermore, smart learning serves as a positive mediating variable, amplifying the beneficial effects of AI and social media on both academic performance and mental well-being. These revelations contribute to the discourse on technology-enhanced education, showing that embracing AI and social media can have a positive impact on student performance and well-being."
-                }
-            ],
-            "date": "2024-04",
-            "author": [
-                {
-                    "family": [
-                        {
-                            "type": "text",
-                            "text": "Shahzad"
-                        }
-                    ],
-                    "given": [
-                        {
-                            "type": "text",
-                            "text": "Muhammad Farrukh"
-                        }
-                    ]
-                },
-                {
-                    "family": [
-                        {
-                            "type": "text",
-                            "text": "Xu"
-                        }
-                    ],
-                    "given": [
-                        {
-                            "type": "text",
-                            "text": "Shuo"
-                        }
-                    ]
-                },
-                {
-                    "family": [
-                        {
-                            "type": "text",
-                            "text": "Lim"
-                        }
-                    ],
-                    "given": [
-                        {
-                            "type": "text",
-                            "text": "Weng Marc"
-                        }
-                    ]
-                },
-                {
-                    "family": [
-                        {
-                            "type": "text",
-                            "text": "Yang"
-                        }
-                    ],
-                    "given": [
-                        {
-                            "type": "text",
-                            "text": "Xingbing"
-                        }
-                    ]
-                },
-                {
-                    "family": [
-                        {
-                            "type": "text",
-                            "text": "Khan"
-                        }
-                    ],
-                    "given": [
-                        {
-                            "type": "text",
-                            "text": "Qasim Raza"
-                        }
-                    ]
-                }
-            ],
-            "keywords": "Academic performance, Artificial intelligence, Mental well-being, Smart learning, Social media"
-        }
-    },
-    "3": {
-        "entry_key": "3",
-        "bib_type": "article-journal",
-        "fields": {
-            "title": [
-                {
-                    "type": "text",
-                    "text": "Large dinosaur egg accumulations and their significance for understanding nesting behaviour"
-                }
-            ],
-            "journaltitle": [
-                {
-                    "type": "text",
-                    "text": "Geoscience Frontiers"
-                }
-            ],
-            "volume": [
-                {
-                    "type": "text",
-                    "text": "15"
-                }
-            ],
-            "issue": [
-                {
-                    "type": "text",
-                    "text": "5"
-                }
-            ],
-            "publisher": [
-                {
-                    "type": "text",
-                    "text": "Elsevier B.V."
-                }
-            ],
-            "doi": [
-                {
-                    "type": "text",
-                    "text": "10.1016/j.gsf.2024.101872"
-                }
-            ],
-            "abstract": [
-                {
-                    "type": "text",
-                    "text": "The accurate identification of dinosaur egg accumulations as nests or clutches is crucial for understanding the reproductive behaviour of these extinct species. However, existing methods often rely on the presence of complete eggs and embryo remains, and sedimentological criteria that are only applicable to well-structured sediments. In this study, we introduce an innovative approach to characterize egg accumulations in structureless sediments, where traditional nest structures may not be preserved. Our methodology employs a unique combination of sedimentological, taphonomic, geochemical, and geophysical proxies for the study of egg accumulations. We applied this approach to the egg accumulation from Paimogo (Jurassic, Portugal), traditionally interpreted as a nest. Our findings reveal that the Paimogo egg assemblage is a secondary deposit, resulting from a flooding event in a fluvial plain that dismantled several allosauroid and crocodylomorph clutches. The eggshell vapor conductance results, coupled with sedimentological evidence, suggest that allosauroid dinosaurs buried their eggs in the dry terrain of overbank areas close to a main channel during the breeding season, likely during the dry season to prevent the embryos from drowning. This research underscores the necessity of multidisciplinary approaches in interpreting egg accumulations and offers a novel methodology for studying these accumulations in structureless sediments. Our findings provide new insights into the breeding behaviour and nesting preferences of these extinct organisms, contributing to our understanding of dinosaur ecology."
-                }
-            ],
-            "date": "2024-09",
-            "author": [
-                {
-                    "family": [
-                        {
-                            "type": "text",
-                            "text": "Ezquerro"
-                        }
-                    ],
-                    "given": [
-                        {
-                            "type": "text",
-                            "text": "L."
-                        }
-                    ]
-                },
-                {
-                    "family": [
-                        {
-                            "type": "text",
-                            "text": "Coimbra"
-                        }
-                    ],
-                    "given": [
-                        {
-                            "type": "text",
-                            "text": "R."
-                        }
-                    ]
-                },
-                {
-                    "family": [
-                        {
-                            "type": "text",
-                            "text": "Bauluz"
-                        }
-                    ],
-                    "given": [
-                        {
-                            "type": "text",
-                            "text": "B."
-                        }
-                    ]
-                },
-                {
-                    "family": [
-                        {
-                            "type": "text",
-                            "text": "Núñez-Lahuerta"
-                        }
-                    ],
-                    "given": [
-                        {
-                            "type": "text",
-                            "text": "C."
-                        }
-                    ]
-                },
-                {
-                    "family": [
-                        {
-                            "type": "text",
-                            "text": "Román-Berdiel"
-                        }
-                    ],
-                    "given": [
-                        {
-                            "type": "text",
-                            "text": "T."
-                        }
-                    ]
-                },
-                {
-                    "family": [
-                        {
-                            "type": "text",
-                            "text": "Moreno-Azanza"
-                        }
-                    ],
-                    "given": [
-                        {
-                            "type": "text",
-                            "text": "M."
-                        }
-                    ]
-                }
-            ],
-            "keywords": "Breeding behaviour, Jurassic, Magnetic susceptibility, Stable isotopes, Taphonomy, Theropod"
+                ],
+                "publisher": [
+                    {
+                        "type": "text",
+                        "text": "Tech Science Press"
+                    }
+                ],
+                "doi": [
+                    {
+                        "type": "text",
+                        "text": "10.32604/ijmhp.2024.052730"
+                    }
+                ],
+                "abstract": [
+                    {
+                        "type": "text",
+                        "text": "Background: Exercise procrastination is prevalent among college students, causing decline in physical fitness. It is imperative to investigate the mechanism affecting college students' physical activity behaviors. This study was aimed at investigating the effect of procrastination on college students' physical exercise behavior, and the chain mediation effects of exercise commitment and action control (AC), to provide a theoretical basis for interventions targeting physical exercise behavior among college students. Methods: A questionnaire survey was conducted using convenience sampling. The General Procrastination Scale, Exercise Commitment Scale, Action Control Scale, and Physical Activity Rating Scale-3 questionnaires were used. Participants were 581 college students (age 19.27 ± 0.94 years; 243 males and 338 females). Statistical methods of regression analysis and structural equation modeling (SEM) were applied. Results: Procrastination, exercise commitment, and action control were found to be significant predictors of physical exercise behavior. Among these predictors, exercise commitment and action control showed full mediation effects in the relationship between procrastination and physical exercise behavior, and explained 25.48% and 30.77% of the total variance, respectively. The chain mediation effect of exercise commitment-action control was significant, accounting for 22.60% of the total variance, and the total indirect effect was 79.33%. Conclusion: Therefore, higher procrastination was associated with less participation in physical exercise behavior among college students. Improvements in exercise commitment and volitional decision-making ability for physical exercise behavior promoted physical exercise behavior, and increased exercise commitment promoted volitional decision-making ability among the students. The chain reaction effect of exercise commitment and action control also buffered the negative effects of procrastination on physical exercise behavior, thereby increasing physical exercise behavior among college students."
+                    }
+                ],
+                "date": "2024",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Zhang"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Wenjuan"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Xu"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Menglin"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Feng"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Yujuan"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Mao"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Zhixiong"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Yan"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Zengyin"
+                            }
+                        ]
+                    }
+                ],
+                "keywords": "College student, action control, chain intermediary, exercise behavior, exercise commitment, procrastination"
+            }
+        },
+        "2": {
+            "entry_key": "2",
+            "bib_type": "article-journal",
+            "fields": {
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Artificial intelligence and social media on academic performance and mental well-being: Student perceptions of positive impact in the age of smart learning"
+                    }
+                ],
+                "journaltitle": [
+                    {
+                        "type": "text",
+                        "text": "Heliyon"
+                    }
+                ],
+                "volume": [
+                    {
+                        "type": "text",
+                        "text": "10"
+                    }
+                ],
+                "issue": [
+                    {
+                        "type": "text",
+                        "text": "8"
+                    }
+                ],
+                "publisher": [
+                    {
+                        "type": "text",
+                        "text": "Elsevier Ltd"
+                    }
+                ],
+                "doi": [
+                    {
+                        "type": "text",
+                        "text": "10.1016/j.heliyon.2024.e29523"
+                    }
+                ],
+                "abstract": [
+                    {
+                        "type": "text",
+                        "text": "The advancement of artificial intelligence (AI) and the ubiquity of social media have become transformative agents in contemporary educational ecosystems. The spotlight of this inquiry focuses on the nexus between AI and social media usage in relation to academic performance and mental well-being, and the role of smart learning in facilitating these relationships. Using partial least squares–structural equation modeling (PLS-SEM) on a sample of 401 Chinese university students. The study results reveal that both AI and social media have a positive impact on academic performance and mental well-being among university students. Furthermore, smart learning serves as a positive mediating variable, amplifying the beneficial effects of AI and social media on both academic performance and mental well-being. These revelations contribute to the discourse on technology-enhanced education, showing that embracing AI and social media can have a positive impact on student performance and well-being."
+                    }
+                ],
+                "date": "2024-04",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Shahzad"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Muhammad Farrukh"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Xu"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Shuo"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Lim"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Weng Marc"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Yang"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Xingbing"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Khan"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Qasim Raza"
+                            }
+                        ]
+                    }
+                ],
+                "keywords": "Academic performance, Artificial intelligence, Mental well-being, Smart learning, Social media"
+            }
+        },
+        "3": {
+            "entry_key": "3",
+            "bib_type": "article-journal",
+            "fields": {
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Large dinosaur egg accumulations and their significance for understanding nesting behaviour"
+                    }
+                ],
+                "journaltitle": [
+                    {
+                        "type": "text",
+                        "text": "Geoscience Frontiers"
+                    }
+                ],
+                "volume": [
+                    {
+                        "type": "text",
+                        "text": "15"
+                    }
+                ],
+                "issue": [
+                    {
+                        "type": "text",
+                        "text": "5"
+                    }
+                ],
+                "publisher": [
+                    {
+                        "type": "text",
+                        "text": "Elsevier B.V."
+                    }
+                ],
+                "doi": [
+                    {
+                        "type": "text",
+                        "text": "10.1016/j.gsf.2024.101872"
+                    }
+                ],
+                "abstract": [
+                    {
+                        "type": "text",
+                        "text": "The accurate identification of dinosaur egg accumulations as nests or clutches is crucial for understanding the reproductive behaviour of these extinct species. However, existing methods often rely on the presence of complete eggs and embryo remains, and sedimentological criteria that are only applicable to well-structured sediments. In this study, we introduce an innovative approach to characterize egg accumulations in structureless sediments, where traditional nest structures may not be preserved. Our methodology employs a unique combination of sedimentological, taphonomic, geochemical, and geophysical proxies for the study of egg accumulations. We applied this approach to the egg accumulation from Paimogo (Jurassic, Portugal), traditionally interpreted as a nest. Our findings reveal that the Paimogo egg assemblage is a secondary deposit, resulting from a flooding event in a fluvial plain that dismantled several allosauroid and crocodylomorph clutches. The eggshell vapor conductance results, coupled with sedimentological evidence, suggest that allosauroid dinosaurs buried their eggs in the dry terrain of overbank areas close to a main channel during the breeding season, likely during the dry season to prevent the embryos from drowning. This research underscores the necessity of multidisciplinary approaches in interpreting egg accumulations and offers a novel methodology for studying these accumulations in structureless sediments. Our findings provide new insights into the breeding behaviour and nesting preferences of these extinct organisms, contributing to our understanding of dinosaur ecology."
+                    }
+                ],
+                "date": "2024-09",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Ezquerro"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "L."
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Coimbra"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "R."
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Bauluz"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "B."
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Núñez-Lahuerta"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "C."
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Román-Berdiel"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "T."
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Moreno-Azanza"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "M."
+                            }
+                        ]
+                    }
+                ],
+                "keywords": "Breeding behaviour, Jurassic, Magnetic susceptibility, Stable isotopes, Taphonomy, Theropod"
+            }
         }
     }
 }
