@@ -1,4 +1,10 @@
-# biblatex-csl-converter [![Build Status](https://travis-ci.org/fiduswriter/biblatex-csl-converter.svg?branch=master)](https://travis-ci.org/fiduswriter/biblatex-csl-converter)
+# biblatex-csl-converter
+
+[![Test CI](https://github.com/fiduswriter/biblatex-csl-converter/actions/workflows/test.yml/badge.svg)](https://github.com/fiduswriter/biblatex-csl-converter/actions/workflows/test.yml)
+[![Coverage Status](https://coveralls.io/repos/github/fiduswriter/biblatex-csl-converter/badge.svg?branch=main)](https://coveralls.io/github/fiduswriter/biblatex-csl-converter?branch=main)
+[![npm version](https://img.shields.io/npm/v/biblatex-csl-converter.svg)](https://www.npmjs.com/package/biblatex-csl-converter)
+[![npm downloads](https://img.shields.io/npm/dm/biblatex-csl-converter.svg)](https://www.npmjs.com/package/biblatex-csl-converter)
+[![License: LGPL-3.0](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)
 
 A set of JavaScript converters: biblatex => json, json => csl, and json => biblatex
 
