@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+  Synthetic DOCX word/document.xml fragment — Word-native bibliography.
+
+  Format: CITATION key \l locale  (inline field)
+  Source data lives in customXml/item1.xml (the MS Office Bibliography XML),
+  which is passed to the parser as the `sourcesXml` option.
+
+  JabRef uses exactly this same mechanism: it exports an MS Office Bibliography
+  XML file that the user imports into Word's source manager, after which Word
+  inserts standard CITATION fields with no JabRef-specific markup.
+
+  The b:Sources XML that acts as the `sourcesXml` option is provided in the
+  companion file word-native-sources.xml.
+-->
+<w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">
+  <w:body>
+
+    <!-- ============================================================
+         Inline citation 1 — journal article
+         Key: Smith2020  locale: 1033 (en-US)
+         ============================================================ -->
+    <w:p>
+      <w:r>
+        <w:t xml:space="preserve">As demonstrated by </w:t>
+      </w:r>
+      <w:r>
+        <w:fldChar w:fldCharType="begin"/>
+      </w:r>
+      <w:r>
+        <w:instrText xml:space="preserve"> CITATION Smith2020 \l 1033 </w:instrText>
+      </w:r>
+      <w:r>
+        <w:fldChar w:fldCharType="separate"/>
+      </w:r>
+      <w:r>
+        <w:t>(Smith, 2020)</w:t>
+      </w:r>
+      <w:r>
+        <w:fldChar w:fldCharType="end"/>
+      </w:r>
+      <w:r>
+        <w:t xml:space="preserve">, the results are clear.</w:t>
+      </w:r>
+    </w:p>
+
+    <!-- ============================================================
+         Inline citation 2 — book
+         Key: Jones2018  locale: 1033 (en-US)
+         ============================================================ -->
+    <w:p>
+      <w:r>
+        <w:t xml:space="preserve">This is supported by </w:t>
+      </w:r>
+      <w:r>
+        <w:fldChar w:fldCharType="begin"/>
+      </w:r>
+      <w:r>
+        <w:instrText xml:space="preserve"> CITATION Jones2018 \l 1033 </w:instrText>
+      </w:r>
+      <w:r>
+        <w:fldChar w:fldCharType="separate"/>
+      </w:r>
+      <w:r>
+        <w:t>(Jones, 2018)</w:t>
+      </w:r>
+      <w:r>
+        <w:fldChar w:fldCharType="end"/>
+      </w:r>
+      <w:r>
+        <w:t>.</w:t>
+      </w:r>
+    </w:p>
+
+    <!-- ============================================================
+         Inline citation 3 — conference proceedings
+         Key: Doe2019  locale: 1033 (en-US)
+         ============================================================ -->
+    <w:p>
+      <w:r>
+        <w:fldChar w:fldCharType="begin"/>
+      </w:r>
+      <w:r>
+        <w:instrText xml:space="preserve"> CITATION Doe2019 \l 1033 </w:instrText>
+      </w:r>
+      <w:r>
+        <w:fldChar w:fldCharType="separate"/>
+      </w:r>
+      <w:r>
+        <w:t>(Doe, 2019)</w:t>
+      </w:r>
+      <w:r>
+        <w:fldChar w:fldCharType="end"/>
+      </w:r>
+    </w:p>
+
+    <!-- ============================================================
+         Bibliography field — rendered output, no importable data here
+         ============================================================ -->
+    <w:p>
+      <w:r>
+        <w:fldChar w:fldCharType="begin"/>
+      </w:r>
+      <w:r>
+        <w:instrText xml:space="preserve"> BIBLIOGRAPHY </w:instrText>
+      </w:r>
+      <w:r>
+        <w:fldChar w:fldCharType="separate"/>
+      </w:r>
+      <w:r>
+        <w:t>Smith, J. (2020). Advances in Testing Methodology. Journal of Software Testing, 15(3), 100–120.</w:t>
+      </w:r>
+      <w:r>
+        <w:fldChar w:fldCharType="end"/>
+      </w:r>
+    </w:p>
+
+  </w:body>
+</w:document>

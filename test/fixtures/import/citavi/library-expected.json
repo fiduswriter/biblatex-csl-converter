@@ -1,0 +1,104 @@
+{
+    "1": {
+        "entry_key": "TestArticle2024",
+        "bib_type": "article-journal",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "A Synthetic Test Article for Citavi Import"
+                }
+            ],
+            "shorttitle": [
+                {
+                    "type": "text",
+                    "text": "Test Article"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Anderson"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Alice"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Baker"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Bob"
+                        }
+                    ]
+                }
+            ],
+            "keywords": "Synthetic Testing, Research Data"
+        }
+    },
+    "2": {
+        "entry_key": "TestBook2023",
+        "bib_type": "book",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Test Book for Citavi Import Testing"
+                }
+            ],
+            "shorttitle": [
+                {
+                    "type": "text",
+                    "text": "Test Book"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Baker"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Bob"
+                        }
+                    ]
+                }
+            ],
+            "publisher": [
+                {
+                    "type": "text",
+                    "text": "Test Publishers Inc"
+                }
+            ],
+            "location": [
+                {
+                    "type": "text",
+                    "text": "London"
+                }
+            ],
+            "isbn": [
+                {
+                    "type": "text",
+                    "text": "978-3-16-148410-0"
+                }
+            ],
+            "keywords": "Synthetic Testing"
+        }
+    }
+}

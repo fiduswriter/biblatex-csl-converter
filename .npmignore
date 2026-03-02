@@ -8,12 +8,11 @@ venv/
 coverage/
 .direnv/
 .envrc
-gh-pages/
+demo/
 browser/
 .nyc_output/
 coverage/
 tmp/
-src/
 .github/
 .editorconfig
 .prettierignore

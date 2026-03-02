@@ -463,8 +463,12 @@ export class CSLExporter {
                     return false
                 }
             } else {
-                reformedName["given"] = this._reformText(name.given!)
-                reformedName["family"] = this._reformText(name.family!)
+                if (name.given) {
+                    reformedName["given"] = this._reformText(name.given)
+                }
+                if (name.family) {
+                    reformedName["family"] = this._reformText(name.family)
+                }
                 if (name.suffix) {
                     reformedName["suffix"] = this._reformText(name.suffix)
                 }
@@ -478,7 +482,6 @@ export class CSLExporter {
                         )
                     }
                 }
-                reformedName["family"] = this._reformText(name["family"]!)
             }
             return reformedName
         })

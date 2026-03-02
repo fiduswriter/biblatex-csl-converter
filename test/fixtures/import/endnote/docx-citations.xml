@@ -1,0 +1,822 @@
+<EndNote>
+	<Cite>
+		<Author>Smith</Author>
+		<Year>2023</Year>
+		<RecNum>1</RecNum>
+		<DisplayText>(Smith &amp; Jones, 2023)</DisplayText>
+		<record>
+			<rec-number>1</rec-number>
+			<foreign-keys>
+				<key app="EN" db-id="synth789" timestamp="1699999999">1</key>
+			</foreign-keys>
+			<ref-type name="Journal Article">17</ref-type>
+			<contributors>
+				<authors>
+					<author>Smith, Robert A.</author>
+					<author>Jones, Emily B.</author>
+				</authors>
+			</contributors>
+			<titles>
+				<title>Sample Article Title for Testing</title>
+				<secondary-title>Journal of Synthetic Testing</secondary-title>
+			</titles>
+			<periodical>
+				<full-title>Journal of Synthetic Testing</full-title>
+				<abbr-1>J. Synth. Test.</abbr-1>
+			</periodical>
+			<pages>45-67</pages>
+			<volume>42</volume>
+			<number>4</number>
+			<issue>Special Issue</issue>
+			<dates>
+				<year>2023</year>
+			</dates>
+			<pub-location>New York</pub-location>
+			<publisher>Academic Press</publisher>
+			<isbn>1234-5678</isbn>
+			<issn>9876-5432</issn>
+			<accession-num>SYNTH789012</accession-num>
+			<call-num>Q123 .S65 2023</call-num>
+			<abstract>This is a synthetic abstract created for testing purposes only.</abstract>
+			<label>Test1</label>
+			<notes>Research notes for testing</notes>
+			<research-notes>Additional research notes</research-notes>
+			<keywords>
+				<keyword>testing</keyword>
+				<keyword>synthetic data</keyword>
+				<keyword>examples</keyword>
+			</keywords>
+			<urls>
+				<related-urls>
+					<url>https://example.com/article1</url>
+					<url>https://doi.org/10.1234/example</url>
+				</related-urls>
+			</urls>
+			<language>English</language>
+		</record>
+	</Cite>
+	<Cite>
+		<Author>Mueller</Author>
+		<Year>2022</Year>
+		<RecNum>2</RecNum>
+		<record>
+			<rec-number>2</rec-number>
+			<foreign-keys>
+				<key app="EN" db-id="synth789" timestamp="1699999998">2</key>
+			</foreign-keys>
+			<ref-type name="Book Section">5</ref-type>
+			<contributors>
+				<authors>
+					<author>Müller, Hans Dieter</author>
+				</authors>
+				<secondary-authors>
+					<author>Schmidt, Klaus</author>
+					<author>Weber, Anna</author>
+				</secondary-authors>
+			</contributors>
+			<titles>
+				<title>Beitrag zum Testen</title>
+				<secondary-title>Handbuch der Testmethoden</secondary-title>
+			</titles>
+			<pages>123-145</pages>
+			<section>Chapter 5</section>
+			<dates>
+				<year>2022</year>
+			</dates>
+			<pub-location>Berlin</pub-location>
+			<publisher>Deutscher Verlag</publisher>
+			<isbn>978-3-123-45678-9</isbn>
+			<language>German</language>
+		</record>
+	</Cite>
+	<Cite>
+		<Author>Andersen</Author>
+		<Year>2021</Year>
+		<RecNum>3</RecNum>
+		<record>
+			<rec-number>3</rec-number>
+			<foreign-keys>
+				<key app="EN" db-id="synth789" timestamp="1699999997">3</key>
+			</foreign-keys>
+			<ref-type name="Conference Proceedings">10</ref-type>
+			<contributors>
+				<authors>
+					<author>Andersen, Peter</author>
+				</authors>
+			</contributors>
+			<titles>
+				<title>Danske Konference Paper</title>
+				<secondary-title>Proceedings of Nordic Testing Conference</secondary-title>
+			</titles>
+			<dates>
+				<year>2021</year>
+				<pub-dates>
+					<date>15-17 June 2021</date>
+				</pub-dates>
+			</dates>
+			<meeting-place>København</meeting-place>
+			<publisher>Nordic Academic Press</publisher>
+			<language>Danish</language>
+		</record>
+	</Cite>
+	<Cite>
+		<Author>Garcia</Author>
+		<Year>2020</Year>
+		<RecNum>4</RecNum>
+		<record>
+			<rec-number>4</rec-number>
+			<foreign-keys>
+				<key app="EN" db-id="synth789" timestamp="1699999996">4</key>
+			</foreign-keys>
+			<ref-type name="Thesis">32</ref-type>
+			<contributors>
+				<authors>
+					<author>García López, María Elena</author>
+				</authors>
+			</contributors>
+			<titles>
+				<title>Tesis de Ejemplo en Español</title>
+			</titles>
+			<dates>
+				<year>2020</year>
+			</dates>
+			<pub-location>Madrid</pub-location>
+			<publisher>Universidad Complutense de Madrid</publisher>
+			<language>Spanish</language>
+		</record>
+	</Cite>
+	<Cite>
+		<Author>Wang</Author>
+		<Year>2023</Year>
+		<RecNum>5</RecNum>
+		<record>
+			<rec-number>5</rec-number>
+			<foreign-keys>
+				<key app="EN" db-id="synth789" timestamp="1699999995">5</key>
+			</foreign-keys>
+			<ref-type name="Electronic Article">43</ref-type>
+			<contributors>
+				<authors>
+					<author>王明</author>
+					<author>李华</author>
+				</authors>
+			</contributors>
+			<titles>
+				<title>电子文章测试</title>
+				<secondary-title>在线科学杂志</secondary-title>
+			</titles>
+			<dates>
+				<year>2023</year>
+			</dates>
+			<urls>
+				<web-urls>
+					<url>https://example.cn/article123</url>
+				</web-urls>
+			</urls>
+			<access-date>2023-11-15</access-date>
+			<language>Chinese</language>
+		</record>
+	</Cite>
+	<Cite>
+		<Author>Ivanov</Author>
+		<Year>2019</Year>
+		<RecNum>6</RecNum>
+		<record>
+			<rec-number>6</rec-number>
+			<foreign-keys>
+				<key app="EN" db-id="synth789" timestamp="1699999994">6</key>
+			</foreign-keys>
+			<ref-type name="Unpublished Work">34</ref-type>
+			<contributors>
+				<authors>
+					<author>Иванов, Сергей Петрович</author>
+				</authors>
+			</contributors>
+			<titles>
+				<title>Неопубликованная рукопись</title>
+			</titles>
+			<dates>
+				<year>2019</year>
+			</dates>
+			<language>Russian</language>
+		</record>
+	</Cite>
+	<Cite>
+		<Author>Bronk Ramsey</Author>
+		<Year>2009</Year>
+		<RecNum>19</RecNum>
+		<DisplayText>(Bronk Ramsey 2009a)</DisplayText>
+		<record>
+			<rec-number>19</rec-number>
+			<foreign-keys>
+				<key app="EN" db-id="z2asfrdsndpezaeta27x5ff5d022r5x9x9x0" timestamp="1483621777" guid="2c101334-654a-4888-9294-c124110af7c0">19</key>
+			</foreign-keys>
+			<ref-type name="Journal Article">17</ref-type>
+			<contributors>
+				<authors>
+					<author>Bronk Ramsey, Christopher</author>
+				</authors>
+			</contributors>
+			<titles>
+				<title>Bayesian Analysis of Radiocarbon Dates</title>
+				<secondary-title>Radiocarbon</secondary-title>
+			</titles>
+			<periodical>
+				<full-title>Radiocarbon</full-title>
+			</periodical>
+			<pages>337-360</pages>
+			<volume>51</volume>
+			<number>1</number>
+			<dates>
+				<year>2009</year>
+				<pub-dates>
+					<date>2009/001/001</date>
+				</pub-dates>
+			</dates>
+			<pub-location>New York, US</pub-location>
+			<publisher>Cambridge University Press</publisher>
+			<urls>
+				<related-urls>
+					<url>https://www.cambridge.org/core/article/div-class-title-bayesian-analysis-of-radiocarbon-dates-div/F622173B70F9C1597F2738DEFC597114</url>
+				</related-urls>
+			</urls>
+			<electronic-resource-num>10.1017/S0033822200033865</electronic-resource-num>
+		</record>
+	</Cite>
+	<Cite>
+		<Author>Fernández-Götz</Author>
+		<Year>2013</Year>
+		<RecNum>994</RecNum>
+		<DisplayText>(Fernández-Götz and Krausse 2013)</DisplayText>
+		<record>
+			<rec-number>994</rec-number>
+			<foreign-keys>
+				<key app="EN" db-id="z2asfrdsndpezaeta27x5ff5d022r5x9x9x0" timestamp="1632808500" guid="3fc85a03-5ab1-41ab-ab59-c965d8d1088d">994</key>
+			</foreign-keys>
+			<ref-type name="Journal Article">17</ref-type>
+			<contributors>
+				<authors>
+					<author>Fernández-Götz, M.</author>
+					<author>Krausse, D.</author>
+				</authors>
+			</contributors>
+			<titles>
+				<title>Rethinking Early Iron Age urbanisation in Central Europe: the Heuneburg site and its archaeological environment</title>
+				<secondary-title>Antiquity </secondary-title>
+			</titles>
+			<pages>473-487</pages>
+			<volume>87</volume>
+			<dates>
+				<year>2013</year>
+			</dates>
+			<urls></urls>
+		</record>
+	</Cite>
+	<Cite>
+		<Author>Jacob-Friesen</Author>
+		<Year>1980</Year>
+		<RecNum>995</RecNum>
+		<DisplayText>(Jacob-Friesen 1980)</DisplayText>
+		<record>
+			<rec-number>995</rec-number>
+			<foreign-keys>
+				<key app="EN" db-id="z2asfrdsndpezaeta27x5ff5d022r5x9x9x0" timestamp="1632808804" guid="d7424127-0bcc-4905-bffd-4ce863584aac">995</key>
+			</foreign-keys>
+			<ref-type name="Journal Article">17</ref-type>
+			<contributors>
+				<authors>
+					<author>Jacob-Friesen, G.</author>
+				</authors>
+			</contributors>
+			<titles>
+				<title>Ein Jahrhundert Chronologie der vorrömischen Eisenzeit in Mittel- und Nordeuropa</title>
+				<secondary-title>Bonner Jahrbücher</secondary-title>
+			</titles>
+			<periodical>
+				<full-title>Bonner Jahrbücher</full-title>
+			</periodical>
+			<pages>1-30</pages>
+			<volume>180</volume>
+			<dates>
+				<year>1980</year>
+			</dates>
+			<urls></urls>
+		</record>
+	</Cite>
+	<Cite>
+		<Author>Billamboz</Author>
+		<Year>2008</Year>
+		<RecNum>960</RecNum>
+		<DisplayText>(Billamboz 2008)</DisplayText>
+		<record>
+			<rec-number>960</rec-number>
+			<foreign-keys>
+				<key app="EN" db-id="z2asfrdsndpezaeta27x5ff5d022r5x9x9x0" timestamp="1630665484" guid="c667339a-6c51-498a-bd1b-57fe79cf5695">960</key>
+			</foreign-keys>
+			<ref-type name="Book Section">5</ref-type>
+			<contributors>
+				<authors>
+					<author>Billamboz, A.</author>
+				</authors>
+				<secondary-authors>
+					<author>Krauße, D.</author>
+				</secondary-authors>
+			</contributors>
+			<titles>
+				<title>Stand der Dendrochronologie der Eisenzeit nördlich der Alpen mit neuen Daten aus der Heuneburg-Vorburg</title>
+				<secondary-title>Frühe Zentralisierungs- und Urbanisierungsprozesse: zur Genese und Entwicklung frühkeltischer Fürstensitze und ihres territorialen Umlandes. Kolloquium des DFG-Schwerpunktprogramms 1171 in Blaubeuren, 9.–11. Oktober 2006</secondary-title>
+			</titles>
+			<pages>229-248</pages>
+			<dates>
+				<year>2008</year>
+			</dates>
+			<pub-location>Stuttgart</pub-location>
+			<publisher>K. Theiss</publisher>
+			<urls></urls>
+		</record>
+	</Cite>
+	<Cite>
+		<Author>Baillie</Author>
+		<Year>1983</Year>
+		<RecNum>2438</RecNum>
+		<Pages>58</Pages>
+		<DisplayText>(Baillie and Pilcher 1983)</DisplayText>
+		<record>
+			<rec-number>2438</rec-number>
+			<foreign-keys>
+				<key app="EN" db-id="x925ptv9nwp0pjef9zmxa2x3fxzwtdzwzw2r" timestamp="1629210218">2438</key>
+			</foreign-keys>
+			<ref-type name="Book Section">5</ref-type>
+			<contributors>
+				<authors>
+					<author>Baillie, M G L</author>
+					<author>Pilcher, J R</author>
+				</authors>
+				<secondary-authors>
+					<author>Ottaway, B S </author>
+				</secondary-authors>
+			</contributors>
+			<titles>
+				<title>Some observations on the high-precision calibration of routine dates</title>
+				<secondary-title>Archaeology, Dendrochronology and the Radiocarbon Calibration Curve</secondary-title>
+				<tertiary-title>Department of Archaeology Occasional Paper</tertiary-title>
+			</titles>
+			<pages>51-63</pages>
+			<number>9</number>
+			<dates>
+				<year>1983</year>
+			</dates>
+			<pub-location>Edinburgh</pub-location>
+			<publisher>University of Edinburgh</publisher>
+			<urls></urls>
+		</record>
+	</Cite>
+	<Cite>
+		<Author>Higham</Author>
+		<Year>2009</Year>
+		<RecNum>2385</RecNum>
+		<DisplayText>(Higham and Higham 2009)</DisplayText>
+		<record>
+			<rec-number>2385</rec-number>
+			<foreign-keys>
+				<key app="EN" db-id="x925ptv9nwp0pjef9zmxa2x3fxzwtdzwzw2r" timestamp="1626886235">2385</key>
+			</foreign-keys>
+			<ref-type name="Journal Article">17</ref-type>
+			<contributors>
+				<authors>
+					<author>Higham, Charles</author>
+					<author>Higham, Thomas</author>
+				</authors>
+			</contributors>
+			<titles>
+				<title>A new chronological framework for prehistoric Southeast Asia, based on a Bayesian model from Ban Non Wat</title>
+				<secondary-title>Antiquity</secondary-title>
+			</titles>
+			<periodical>
+				<full-title>Antiquity</full-title>
+				<abbr-1>Antiquity</abbr-1>
+			</periodical>
+			<pages>125-144</pages>
+			<volume>83</volume>
+			<number>319</number>
+			<edition>2015/01/02</edition>
+			<keywords>
+				<keyword>Southeast Asia</keyword>
+				<keyword>Thailand</keyword>
+				<keyword>Neolithic</keyword>
+				<keyword>Bronze Age</keyword>
+				<keyword>Iron Age</keyword>
+				<keyword>radiocarbon</keyword>
+				<keyword>Bayesian modelling</keyword>
+			</keywords>
+			<dates>
+				<year>2009</year>
+			</dates>
+			<publisher>Cambridge University Press</publisher>
+			<isbn>0003-598X</isbn>
+			<urls>
+				<related-urls>
+					<url>https://www.cambridge.org/core/article/new-chronological-framework-for-prehistoric-southeast-asia-based-on-a-bayesian-model-from-ban-non-wat/4AA644BD284B1522DF1B4D193422600D</url>
+				</related-urls>
+			</urls>
+			<electronic-resource-num>10.1017/S0003598X00098136</electronic-resource-num>
+			<remote-database-name>Cambridge Core</remote-database-name>
+			<remote-database-provider>Cambridge University Press</remote-database-provider>
+		</record>
+	</Cite>
+	<Cite>
+		<Author>Unkel</Author>
+		<Year>2012</Year>
+		<RecNum>2386</RecNum>
+		<DisplayText>(Unkel et al. 2012)</DisplayText>
+		<record>
+			<rec-number>2386</rec-number>
+			<foreign-keys>
+				<key app="EN" db-id="x925ptv9nwp0pjef9zmxa2x3fxzwtdzwzw2r" timestamp="1626886314">2386</key>
+			</foreign-keys>
+			<ref-type name="Journal Article">17</ref-type>
+			<contributors>
+				<authors>
+					<author>Unkel, Ingmar</author>
+					<author>Reindel, Markus</author>
+					<author>Gorbahn, Hermann</author>
+					<author>Isla Cuadrado, Johny</author>
+					<author>Kromer, Bernd</author>
+					<author>Sossna, Volker</author>
+				</authors>
+			</contributors>
+			<titles>
+				<title>A comprehensive numerical chronology for the pre-Columbian cultures of the Palpa valleys, south coast of Peru</title>
+				<secondary-title>Journal of Archaeological Science</secondary-title>
+			</titles>
+			<periodical>
+				<full-title>Journal of Archaeological Science</full-title>
+				<abbr-1>J Archaeol Sci</abbr-1>
+			</periodical>
+			<pages>2294-2303</pages>
+			<volume>39</volume>
+			<number>7</number>
+			<keywords>
+				<keyword>Radiocarbon</keyword>
+				<keyword>Numerical chronology</keyword>
+				<keyword>Nasca</keyword>
+				<keyword>Peru</keyword>
+			</keywords>
+			<dates>
+				<year>2012</year>
+				<pub-dates>
+					<date>2012/07/01/</date>
+				</pub-dates>
+			</dates>
+			<isbn>0305-4403</isbn>
+			<urls>
+				<related-urls>
+					<url>https://www.sciencedirect.com/science/article/pii/S0305440312000854</url>
+				</related-urls>
+			</urls>
+			<electronic-resource-num>10.1016/j.jas.2012.02.021</electronic-resource-num>
+		</record>
+	</Cite>
+	<Cite>
+		<Author>Yu</Author>
+		<Year>2021</Year>
+		<RecNum>2387</RecNum>
+		<DisplayText>(Yu et al. 2021)</DisplayText>
+		<record>
+			<rec-number>2387</rec-number>
+			<foreign-keys>
+				<key app="EN" db-id="x925ptv9nwp0pjef9zmxa2x3fxzwtdzwzw2r" timestamp="1626886459">2387</key>
+			</foreign-keys>
+			<ref-type name="Journal Article">17</ref-type>
+			<contributors>
+				<authors>
+					<author>Yu, Shi-Yong</author>
+					<author>Chen, Xuexiang</author>
+					<author>Fang, Zhen</author>
+					<author>Liu, Xiuling</author>
+					<author>Li, Ming</author>
+					<author>Guo, Junfeng</author>
+				</authors>
+			</contributors>
+			<titles>
+				<title>Towards a precise timing of groundwater use in the lower Yellow River area during the late Bronze age: Bayesian inference from the radiocarbon ages of ancient water wells at the Liang&apos;ercun site, north China</title>
+				<secondary-title>Quaternary Geochronology</secondary-title>
+			</titles>
+			<periodical>
+				<full-title>Quaternary Geochronology</full-title>
+			</periodical>
+			<pages>101214</pages>
+			<volume>66</volume>
+			<keywords>
+				<keyword>Bronze Age</keyword>
+				<keyword>Lower Yellow River</keyword>
+				<keyword>Water wells</keyword>
+				<keyword>Radiocarbon plateau</keyword>
+				<keyword>Bayesian inference</keyword>
+				<keyword>Groundwater use</keyword>
+			</keywords>
+			<dates>
+				<year>2021</year>
+				<pub-dates>
+					<date>2021/10/01/</date>
+				</pub-dates>
+			</dates>
+			<isbn>1871-1014</isbn>
+			<urls>
+				<related-urls>
+					<url>https://www.sciencedirect.com/science/article/pii/S1871101421000649</url>
+				</related-urls>
+			</urls>
+			<electronic-resource-num>10.1016/j.quageo.2021.101214</electronic-resource-num>
+		</record>
+	</Cite>
+	<Cite>
+		<Author>Reimer</Author>
+		<Year>2020</Year>
+		<RecNum>819</RecNum>
+		<DisplayText>(Reimer 2020)</DisplayText>
+		<record>
+			<rec-number>819</rec-number>
+			<foreign-keys>
+				<key app="EN" db-id="z2asfrdsndpezaeta27x5ff5d022r5x9x9x0" timestamp="1597246372" guid="f23e0f85-9cf7-45cf-bfd2-a931289e6b3d">819</key>
+			</foreign-keys>
+			<ref-type name="Journal Article">17</ref-type>
+			<contributors>
+				<authors>
+					<author>Reimer, P.J., Austin, W.E.N., Bard, E., Bayliss, A., Blackwell, P.G., Bronk Ramsey, C., Butzin, M., Cheng, H., Edwards, R.L., Friedrich, M., Grootes, P.M., Guilderson, T.P., Hajdas, I., Heaton, T.J., Hogg, A.G., Hughen, K.A., Kromer, B., Manning, S.W., Muscheler, R., Palmer, J.G., Pearson, C., van der Plicht, J., Reimer, R.W., Richards, D.A., Scott, E.M., Southon, J.R., Turney, C.S.M., Wacker, L., Adolphi, F., Büntgen, U., Capano, M., Fahrni, S.M., Fogtmann-Schulz, A., Friedrich, R., Köhler, P., Kudsk, S., Miyake, F., Olsen, J., Reinig, F., Sakamoto, M., Sookdeo, A., Talamo, S.</author>
+				</authors>
+			</contributors>
+			<titles>
+				<title>The IntCal20 Northern Hemisphere Radiocarbon Age Calibration Curve (0-55 cal kBP)</title>
+				<secondary-title>Radiocarbon</secondary-title>
+			</titles>
+			<periodical>
+				<full-title>Radiocarbon</full-title>
+			</periodical>
+			<pages>725-757</pages>
+			<volume>62</volume>
+			<number>4</number>
+			<dates>
+				<year>2020</year>
+			</dates>
+			<urls></urls>
+		</record>
+	</Cite>
+	<Cite>
+		<Author>Bronk Ramsey</Author>
+		<Year>2009</Year>
+		<RecNum>19</RecNum>
+		<DisplayText>(Bronk Ramsey 2009a)</DisplayText>
+		<record>
+			<rec-number>19</rec-number>
+			<foreign-keys>
+				<key app="EN" db-id="z2asfrdsndpezaeta27x5ff5d022r5x9x9x0" timestamp="1483621777" guid="2c101334-654a-4888-9294-c124110af7c0">19</key>
+			</foreign-keys>
+			<ref-type name="Journal Article">17</ref-type>
+			<contributors>
+				<authors>
+					<author>Bronk Ramsey, Christopher</author>
+				</authors>
+			</contributors>
+			<titles>
+				<title>Bayesian Analysis of Radiocarbon Dates</title>
+				<secondary-title>Radiocarbon</secondary-title>
+			</titles>
+			<periodical>
+				<full-title>Radiocarbon</full-title>
+			</periodical>
+			<pages>337-360</pages>
+			<volume>51</volume>
+			<number>1</number>
+			<dates>
+				<year>2009</year>
+				<pub-dates>
+					<date>2009/001/001</date>
+				</pub-dates>
+			</dates>
+			<pub-location>New York, US</pub-location>
+			<publisher>Cambridge University Press</publisher>
+			<urls>
+				<related-urls>
+					<url>https://www.cambridge.org/core/article/div-class-title-bayesian-analysis-of-radiocarbon-dates-div/F622173B70F9C1597F2738DEFC597114</url>
+				</related-urls>
+			</urls>
+			<electronic-resource-num>10.1017/S0033822200033865</electronic-resource-num>
+		</record>
+	</Cite>
+	<Cite AuthorYear="1">
+		<Author>Baillie</Author>
+		<Year>1983</Year>
+		<RecNum>2438</RecNum>
+		<DisplayText>Baillie and Pilcher (1983)</DisplayText>
+		<record>
+			<rec-number>2438</rec-number>
+			<foreign-keys>
+				<key app="EN" db-id="x925ptv9nwp0pjef9zmxa2x3fxzwtdzwzw2r" timestamp="1629210218">2438</key>
+			</foreign-keys>
+			<ref-type name="Book Section">5</ref-type>
+			<contributors>
+				<authors>
+					<author>Baillie, M G L</author>
+					<author>Pilcher, J R</author>
+				</authors>
+				<secondary-authors>
+					<author>Ottaway, B S </author>
+				</secondary-authors>
+			</contributors>
+			<titles>
+				<title>Some observations on the high-precision calibration of routine dates</title>
+				<secondary-title>Archaeology, Dendrochronology and the Radiocarbon Calibration Curve</secondary-title>
+				<tertiary-title>Department of Archaeology Occasional Paper</tertiary-title>
+			</titles>
+			<pages>51-63</pages>
+			<number>9</number>
+			<dates>
+				<year>1983</year>
+			</dates>
+			<pub-location>Edinburgh</pub-location>
+			<publisher>University of Edinburgh</publisher>
+			<urls></urls>
+		</record>
+	</Cite>
+	<Cite>
+		<Author>Aerts-Bijma</Author>
+		<Year>2020</Year>
+		<RecNum>1935</RecNum>
+		<Prefix>e.g. </Prefix>
+		<DisplayText>(e.g. Aerts-Bijma et al. 2020)</DisplayText>
+		<record>
+			<rec-number>1935</rec-number>
+			<foreign-keys>
+				<key app="EN" db-id="x925ptv9nwp0pjef9zmxa2x3fxzwtdzwzw2r" timestamp="1604681483">1935</key>
+			</foreign-keys>
+			<ref-type name="Journal Article">17</ref-type>
+			<contributors>
+				<authors>
+					<author>Aerts-Bijma, A. T.</author>
+					<author>Paul, D.</author>
+					<author>Dee, M. W.</author>
+					<author>Palstra, S. W. L.</author>
+					<author>Meijer, H. A. J.</author>
+				</authors>
+			</contributors>
+			<titles>
+				<title>An independent assessment of uncertainty for radiocarbon analysis with the new generation high-yield accelerator mass spectrometers</title>
+				<secondary-title>Radiocarbon</secondary-title>
+			</titles>
+			<periodical>
+				<full-title>Radiocarbon</full-title>
+			</periodical>
+			<pages>1-22</pages>
+			<volume>63</volume>
+			<number>1</number>
+			<edition>2020/11/03</edition>
+			<section>1</section>
+			<keywords>
+				<keyword>contamination</keyword>
+				<keyword>MICADAS</keyword>
+				<keyword>Poisson statistics</keyword>
+				<keyword>quality assurance radiocarbon</keyword>
+				<keyword>sample duplicates</keyword>
+				<keyword>uncertainty analysis</keyword>
+			</keywords>
+			<dates>
+				<year>2020</year>
+			</dates>
+			<publisher>Cambridge University Press</publisher>
+			<isbn>0033-8222</isbn>
+			<urls>
+				<related-urls>
+					<url>https://www.cambridge.org/core/article/an-independent-assessment-of-uncertainty-for-radiocarbon-analysis-with-the-new-generation-highyield-accelerator-mass-spectrometers/AC6555454A6A2FF4F4898964803B4C4F</url>
+				</related-urls>
+			</urls>
+			<electronic-resource-num>10.1017/RDC.2020.101</electronic-resource-num>
+			<remote-database-name>Cambridge Core</remote-database-name>
+			<remote-database-provider>Cambridge University Press</remote-database-provider>
+		</record>
+	</Cite>
+	<Cite>
+    	<Author>Heaton</Author>
+    	<Year>2020</Year>
+    	<RecNum>852</RecNum>
+    	<DisplayText>(Heaton et al. 2020)</DisplayText>
+    	<record>
+    		<rec-number>852</rec-number>
+    		<foreign-keys>
+    			<key app="EN" db-id="z2asfrdsndpezaeta27x5ff5d022r5x9x9x0" timestamp="1605272838" guid="325bc74b-10a7-4a4f-8ff4-72fc4281d8e0">852</key>
+    		</foreign-keys>
+    		<ref-type name="Journal Article">17</ref-type>
+    		<contributors>
+    			<authors>
+    				<author>Heaton, Timothy J.</author>
+    				<author>Blaauw, Maarten</author>
+    				<author>Blackwell, Paul G.</author>
+    				<author>Bronk Ramsey, Christopher</author>
+    				<author>Reimer, Paula J.</author>
+    				<author>Scott, E. Marian</author>
+    			</authors>
+    		</contributors>
+    		<titles>
+    			<title>The IntCal20 Approach to Radiocarbon Calibration Curve Construction: A New Methodology Using Bayesian Splines and Errors-in-Variables</title>
+    			<secondary-title>Radiocarbon</secondary-title>
+    		</titles>
+    		<periodical>
+    			<full-title>Radiocarbon</full-title>
+    		</periodical>
+    		<pages>821-863</pages>
+    		<volume>62</volume>
+    		<number>4</number>
+    		<edition>2020/08/12</edition>
+    		<dates>
+    			<year>2020</year>
+    		</dates>
+    		<publisher>Cambridge University Press</publisher>
+    		<isbn>0033-8222</isbn>
+    		<urls>
+    			<related-urls>
+    				<url>https://www.cambridge.org/core/article/intcal20-approach-to-radiocarbon-calibration-curve-construction-a-new-methodology-using-bayesian-splines-and-errorsinvariables/FF2C650D3A7BBA277E9C51380BEC4050</url>
+    			</related-urls>
+    		</urls>
+    		<electronic-resource-num>10.1017/RDC.2020.46</electronic-resource-num>
+    		<remote-database-name>Cambridge Core</remote-database-name>
+    		<remote-database-provider>Cambridge University Press</remote-database-provider>
+    	</record>
+    </Cite>
+    <Cite>
+    	<Author>Reimer</Author>
+    	<Year>2020</Year>
+    	<RecNum>819</RecNum>
+    	<DisplayText>(Reimer 2020)</DisplayText>
+    	<record>
+    		<rec-number>819</rec-number>
+    		<foreign-keys>
+    			<key app="EN" db-id="z2asfrdsndpezaeta27x5ff5d022r5x9x9x0" timestamp="1597246372" guid="f23e0f85-9cf7-45cf-bfd2-a931289e6b3d">819</key>
+    		</foreign-keys>
+    		<ref-type name="Journal Article">17</ref-type>
+    		<contributors>
+    			<authors>
+    				<author>Reimer, P.J., Austin, W.E.N., Bard, E., Bayliss, A., Blackwell, P.G., Bronk Ramsey, C., Butzin, M., Cheng, H., Edwards, R.L., Friedrich, M., Grootes, P.M., Guilderson, T.P., Hajdas, I., Heaton, T.J., Hogg, A.G., Hughen, K.A., Kromer, B., Manning, S.W., Muscheler, R., Palmer, J.G., Pearson, C., van der Plicht, J., Reimer, R.W., Richards, D.A., Scott, E.M., Southon, J.R., Turney, C.S.M., Wacker, L., Adolphi, F., Büntgen, U., Capano, M., Fahrni, S.M., Fogtmann-Schulz, A., Friedrich, R., Köhler, P., Kudsk, S., Miyake, F., Olsen, J., Reinig, F., Sakamoto, M., Sookdeo, A., Talamo, S.</author>
+    			</authors>
+    		</contributors>
+    		<titles>
+    			<title>The IntCal20 Northern Hemisphere Radiocarbon Age Calibration Curve (0-55 cal kBP)</title>
+    			<secondary-title>Radiocarbon</secondary-title>
+    		</titles>
+    		<periodical>
+    			<full-title>Radiocarbon</full-title>
+    		</periodical>
+    		<pages>725-757</pages>
+    		<volume>62</volume>
+    		<number>4</number>
+    		<dates>
+    			<year>2020</year>
+    		</dates>
+    		<urls></urls>
+    	</record>
+    </Cite>
+    <Cite>
+        <Author>Miyake</Author>
+        <Year>2012</Year>
+        <RecNum>2445</RecNum>
+        <DisplayText>(Miyake et al. 2012)</DisplayText>
+        <record>
+       	<rec-number>2445</rec-number>
+       	<foreign-keys>
+      		<key app="EN" db-id="x925ptv9nwp0pjef9zmxa2x3fxzwtdzwzw2r" timestamp="1629385324">2445</key>
+       	</foreign-keys>
+       	<ref-type name="Journal Article">17</ref-type>
+       	<contributors>
+      		<authors>
+     			<author>Miyake, Fusa</author>
+     			<author>Nagaya, Kentaro</author>
+     			<author>Masuda, Kimiaki</author>
+     			<author>Nakamura, Toshio</author>
+      		</authors>
+       	</contributors>
+       	<titles>
+      		<title>A signature of cosmic-ray increase in AD 774–775 from tree rings in Japan</title>
+      		<secondary-title>Nature</secondary-title>
+       	</titles>
+       	<periodical>
+      		<full-title>Nature</full-title>
+      		<abbr-1>Nature</abbr-1>
+       	</periodical>
+       	<pages>240-242</pages>
+       	<volume>486</volume>
+       	<number>7402</number>
+       	<dates>
+      		<year>2012</year>
+      		<pub-dates>
+     			<date>2012/06/01</date>
+      		</pub-dates>
+       	</dates>
+       	<isbn>1476-4687</isbn>
+       	<urls>
+      		<related-urls>
+     			<url>https://doi.org/10.1038/nature11123</url>
+      		</related-urls>
+       	</urls>
+       	<electronic-resource-num>10.1038/nature11123</electronic-resource-num>
+        </record>
+    </Cite>
+</EndNote>

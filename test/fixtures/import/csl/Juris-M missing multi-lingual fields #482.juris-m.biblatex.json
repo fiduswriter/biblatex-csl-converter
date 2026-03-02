@@ -13,7 +13,6 @@
                     ]
                 }
             ],
-            "langid": "",
             "shorttitle": [
                 {
                     "type": "text",
@@ -45,7 +44,6 @@
                     ]
                 }
             ],
-            "langid": "",
             "pagetotal": [
                 {
                     "type": "text",

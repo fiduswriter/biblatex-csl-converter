@@ -1,0 +1,1058 @@
+{
+    "entries": {
+        "1": {
+            "entry_key": "1",
+            "bib_type": "article-journal",
+            "fields": {
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "A Comprehensive Study of Example Phenomena"
+                    }
+                ],
+                "booktitle": [
+                    {
+                        "type": "text",
+                        "text": "Journal of Examples"
+                    }
+                ],
+                "shorttitle": [
+                    {
+                        "type": "text",
+                        "text": "Example Study"
+                    }
+                ],
+                "journaltitle": [
+                    {
+                        "type": "text",
+                        "text": "Journal of Examples"
+                    }
+                ],
+                "shortjournal": [
+                    {
+                        "type": "text",
+                        "text": "J. Ex."
+                    }
+                ],
+                "volume": [
+                    {
+                        "type": "text",
+                        "text": "45"
+                    }
+                ],
+                "number": [
+                    {
+                        "type": "text",
+                        "text": "3"
+                    }
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "123"
+                            },
+                            {
+                                "type": "text",
+                                "text": "145"
+                            }
+                        ]
+                    ]
+                ],
+                "isbn": [
+                    {
+                        "type": "text",
+                        "text": "1234-5678"
+                    }
+                ],
+                "issn": [
+                    {
+                        "type": "text",
+                        "text": "1234-5678"
+                    }
+                ],
+                "eprint": "TEST123456",
+                "abstract": [
+                    {
+                        "type": "text",
+                        "text": "This is a comprehensive abstract describing the research."
+                    }
+                ],
+                "note": [
+                    {
+                        "type": "text",
+                        "text": "Research notes here"
+                    }
+                ],
+                "label": [
+                    {
+                        "type": "text",
+                        "text": "Article1"
+                    }
+                ],
+                "url": "https://example.com/article1",
+                "date": "Mar",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Smith"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "John A."
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Johnson"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Mary B."
+                            }
+                        ]
+                    }
+                ],
+                "keywords": [
+                    "example",
+                    "research",
+                    "science"
+                ]
+            }
+        },
+        "2": {
+            "entry_key": "2",
+            "bib_type": "book",
+            "fields": {
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Deutsche Beispiele in der Wissenschaft"
+                    }
+                ],
+                "booktitle": [
+                    {
+                        "type": "text",
+                        "text": "Eine Sammlung"
+                    }
+                ],
+                "volumes": [
+                    {
+                        "type": "text",
+                        "text": "2"
+                    }
+                ],
+                "edition": [
+                    {
+                        "type": "text",
+                        "text": "3rd"
+                    }
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "viii"
+                            }
+                        ]
+                    ],
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "342"
+                            }
+                        ]
+                    ]
+                ],
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Springer-Verlag"
+                        }
+                    ]
+                ],
+                "location": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Berlin"
+                        }
+                    ]
+                ],
+                "isbn": [
+                    {
+                        "type": "text",
+                        "text": "978-3-030-12345-6"
+                    }
+                ],
+                "issn": [
+                    {
+                        "type": "text",
+                        "text": "978-3-030-12345-6"
+                    }
+                ],
+                "abstract": [
+                    {
+                        "type": "text",
+                        "text": "Dies ist ein deutsches Buch über wissenschaftliche Beispiele."
+                    }
+                ],
+                "langid": "german",
+                "date": "2022",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Müller"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Hans"
+                            }
+                        ]
+                    }
+                ],
+                "editor": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Schmidt"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Klaus"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "3": {
+            "entry_key": "3",
+            "bib_type": "inproceedings",
+            "fields": {
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Danske Konference Resultater"
+                    }
+                ],
+                "booktitle": [
+                    {
+                        "type": "text",
+                        "text": "Proceedings of the Danish Science Conference"
+                    }
+                ],
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Dansk Videnskabsforlag"
+                        }
+                    ]
+                ],
+                "location": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "København"
+                        }
+                    ]
+                ],
+                "langid": "danish",
+                "date": "2021",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Jensen"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Anders"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Nielsen"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Peter"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "4": {
+            "entry_key": "4",
+            "bib_type": "thesis",
+            "fields": {
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Estudio de Ejemplos en Español"
+                    }
+                ],
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Universidad de Madrid"
+                        }
+                    ]
+                ],
+                "location": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Madrid"
+                        }
+                    ]
+                ],
+                "langid": "spanish",
+                "date": "2020",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "García"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "María Elena"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "5": {
+            "entry_key": "5",
+            "bib_type": "article-journal",
+            "fields": {
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "中文科学研究示例"
+                    }
+                ],
+                "booktitle": [
+                    {
+                        "type": "text",
+                        "text": "中国科学杂志"
+                    }
+                ],
+                "volume": [
+                    {
+                        "type": "text",
+                        "text": "12"
+                    }
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "45"
+                            },
+                            {
+                                "type": "text",
+                                "text": "67"
+                            }
+                        ]
+                    ]
+                ],
+                "isbn": [
+                    {
+                        "type": "text",
+                        "text": "0258-7025"
+                    }
+                ],
+                "issn": [
+                    {
+                        "type": "text",
+                        "text": "0258-7025"
+                    }
+                ],
+                "langid": "chinese",
+                "date": "2023",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "王"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "明"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "李"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "华"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "6": {
+            "entry_key": "6",
+            "bib_type": "book",
+            "fields": {
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Русская книга примеров"
+                    }
+                ],
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Издательство Наука"
+                        }
+                    ]
+                ],
+                "location": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Москва"
+                        }
+                    ]
+                ],
+                "langid": "russian",
+                "date": "2022",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Ким"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Иван"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "7": {
+            "entry_key": "7",
+            "bib_type": "collection",
+            "fields": {
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "日本語の編集書"
+                    }
+                ],
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "岩波書店"
+                        }
+                    ]
+                ],
+                "location": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "東京"
+                        }
+                    ]
+                ],
+                "langid": "japanese",
+                "date": "2021",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "佐藤"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "太郎"
+                            }
+                        ]
+                    }
+                ],
+                "editor": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "田中"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "花子"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "8": {
+            "entry_key": "8",
+            "bib_type": "report",
+            "fields": {
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "한국어 연구 보고서"
+                    }
+                ],
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "한국과학기술원"
+                        }
+                    ]
+                ],
+                "location": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "서울"
+                        }
+                    ]
+                ],
+                "number": [
+                    {
+                        "type": "text",
+                        "text": "KIST-2023-001"
+                    }
+                ],
+                "date": "2023",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Kim"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Min-Jae"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "9": {
+            "entry_key": "9",
+            "bib_type": "patent",
+            "fields": {
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "براءة اختراع عربية"
+                    }
+                ],
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "مكتب براءات الاختراع"
+                        }
+                    ]
+                ],
+                "langid": "arabic",
+                "date": "2022",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "الأحمد"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "خالد"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "10": {
+            "entry_key": "10",
+            "bib_type": "online",
+            "fields": {
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Example Web Page Title"
+                    }
+                ],
+                "url": "https://www.example.org/page",
+                "urldate": "2023-12-01",
+                "date": "2023",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Organization"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Example"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "11": {
+            "entry_key": "11",
+            "bib_type": "inbook",
+            "fields": {
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Book Section with Multiple Author Types"
+                    }
+                ],
+                "date": "2023",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Green"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Gary"
+                            }
+                        ]
+                    }
+                ],
+                "translator": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Doe"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "John"
+                            }
+                        ]
+                    }
+                ],
+                "editor": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Smith"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Jane"
+                            }
+                        ]
+                    }
+                ],
+                "bookauthor": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Brown"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Bob"
+                            }
+                        ]
+                    }
+                ],
+                "editora": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "White"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Walter"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "12": {
+            "entry_key": "12",
+            "bib_type": "figure",
+            "fields": {
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Figure with Image"
+                    }
+                ],
+                "date": "2023",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Artist"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Ann"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "13": {
+            "entry_key": "13",
+            "bib_type": "article-journal",
+            "fields": {
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Article with Custom and Misc Fields"
+                    }
+                ],
+                "booktitle": [
+                    {
+                        "type": "text",
+                        "text": "Journal from Secondary Title"
+                    }
+                ],
+                "custom1": [
+                    {
+                        "type": "text",
+                        "text": "Custom Value 1"
+                    }
+                ],
+                "custom2": [
+                    {
+                        "type": "text",
+                        "text": "Custom Value 2"
+                    }
+                ],
+                "custom3": [
+                    {
+                        "type": "text",
+                        "text": "Custom Value 3"
+                    }
+                ],
+                "custom4": [
+                    {
+                        "type": "text",
+                        "text": "Custom Value 4"
+                    }
+                ],
+                "custom5": [
+                    {
+                        "type": "text",
+                        "text": "Custom Value 5"
+                    }
+                ],
+                "custom6": [
+                    {
+                        "type": "text",
+                        "text": "Custom Value 6"
+                    }
+                ],
+                "custom7": [
+                    {
+                        "type": "text",
+                        "text": "Custom Value 7"
+                    }
+                ],
+                "misc1": [
+                    {
+                        "type": "text",
+                        "text": "Misc Value 1"
+                    }
+                ],
+                "misc2": [
+                    {
+                        "type": "text",
+                        "text": "Misc Value 2"
+                    }
+                ],
+                "misc3": [
+                    {
+                        "type": "text",
+                        "text": "Misc Value 3"
+                    }
+                ],
+                "url": "https://example.com/article.pdf; https://example.com/article.txt",
+                "date": "2023",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Researcher"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Ron"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "14": {
+            "entry_key": "14",
+            "bib_type": "book",
+            "fields": {
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Book with Only Tertiary Author"
+                    }
+                ],
+                "date": "2023",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Author"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Primary"
+                            }
+                        ]
+                    }
+                ],
+                "bookauthor": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Tertiary"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Author"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "15": {
+            "entry_key": "15",
+            "bib_type": "misc",
+            "fields": {
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "A Generic Work with Type"
+                    }
+                ],
+                "type": {
+                    "type": "text",
+                    "text": "Technical Note"
+                },
+                "date": "2022",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Doe"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Jane"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "16": {
+            "entry_key": "16",
+            "bib_type": "article-journal",
+            "fields": {
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Review of an Important Work"
+                    }
+                ],
+                "booktitle": [
+                    {
+                        "type": "text",
+                        "text": "Review Journal"
+                    }
+                ],
+                "related": [
+                    {
+                        "type": "text",
+                        "text": "The Important Work Being Reviewed"
+                    }
+                ],
+                "date": "2021",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Reviewer"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Ray"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "17": {
+            "entry_key": "17",
+            "bib_type": "article-journal",
+            "fields": {
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Article with Attribute-Based Page Range"
+                    }
+                ],
+                "booktitle": [
+                    {
+                        "type": "text",
+                        "text": "Attribute Test Journal"
+                    }
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "101"
+                            },
+                            {
+                                "type": "text",
+                                "text": "115"
+                            }
+                        ]
+                    ]
+                ],
+                "date": "2020",
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Page"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Peter"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

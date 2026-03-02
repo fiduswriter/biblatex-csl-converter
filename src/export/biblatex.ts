@@ -158,7 +158,7 @@ export class BibLatexExporter {
                 return this._escapeTeX(theValue)
             } else {
                 return this._escapeTeX(
-                    fieldType.options?.[theValue]["biblatex"] ?? ""
+                    fieldType.options?.[theValue]?.["biblatex"] ?? ""
                 )
             }
         } else {

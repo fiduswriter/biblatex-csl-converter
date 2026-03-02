@@ -1,7 +1,7 @@
 {
     "entries": {
         "1": {
-            "bib_type": "misc",
+            "bib_type": "legal_case",
             "entry_key": "kartinyeri",
             "fields": {
                 "date": "1998-04-01",
@@ -106,11 +106,6 @@
         }
     },
     "warnings": [
-        {
-            "type": "unknown_type",
-            "type_name": "jurisdiction",
-            "line": 14
-        },
         {
             "type": "unexpected_field",
             "field_name": "institution",

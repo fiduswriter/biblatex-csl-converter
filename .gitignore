@@ -2,8 +2,8 @@ node_modules/
 lib/
 venv/
 coverage/
-gh-pages/*.js
-gh-pages/*.js.map
+demo/*.js
+demo/*.js.map
 browser/*.js
 browser/*.js.map
 tmp/

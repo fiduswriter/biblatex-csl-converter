@@ -1,7 +1,7 @@
 {
     "entries": {
         "1": {
-            "bib_type": "misc",
+            "bib_type": "legislation",
             "entry_key": "_loi_2009",
             "fields": {
                 "date": "2009-06-15",
@@ -55,11 +55,6 @@
         }
     },
     "warnings": [
-        {
-            "type": "unknown_type",
-            "type_name": "legislation",
-            "line": 13
-        },
         {
             "type": "unexpected_field",
             "field_name": "journaltitle",

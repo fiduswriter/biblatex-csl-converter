@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+  Synthetic customXml/item1.xml — MS Office Bibliography XML.
+
+  This file is the `sourcesXml` companion to word-native.xml.  It uses the
+  namespace http://schemas.microsoft.com/office/word/2004/10/bibliography and
+  contains three <b:Source> entries matching the CITATION keys referenced in
+  word-native.xml:
+
+    Smith2020  — journal article
+    Jones2018  — book with two authors
+    Doe2019    — conference proceedings
+
+  JabRef exports its bibliography data in exactly this format for import into
+  Word's built-in source manager.
+-->
+<b:Sources
+    xmlns:b="http://schemas.microsoft.com/office/word/2004/10/bibliography"
+    SelectedStyle="\APA.XSL"
+    StyleName="APA">
+
+  <!-- Journal article -->
+  <b:Source>
+    <b:Tag>Smith2020</b:Tag>
+    <b:SourceType>JournalArticle</b:SourceType>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:Last>Smith</b:Last>
+            <b:First>John</b:First>
+            <b:Middle>A.</b:Middle>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:Title>Advances in Testing Methodology</b:Title>
+    <b:JournalName>Journal of Software Testing</b:JournalName>
+    <b:Year>2020</b:Year>
+    <b:Volume>15</b:Volume>
+    <b:Issue>3</b:Issue>
+    <b:Pages>100-120</b:Pages>
+    <b:DOI>10.1234/jst.2020.15.3.100</b:DOI>
+    <b:ISSN>1234-5678</b:ISSN>
+  </b:Source>
+
+  <!-- Book with two authors -->
+  <b:Source>
+    <b:Tag>Jones2018</b:Tag>
+    <b:SourceType>Book</b:SourceType>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:Last>Jones</b:Last>
+            <b:First>Alice</b:First>
+          </b:Person>
+          <b:Person>
+            <b:Last>Brown</b:Last>
+            <b:First>Robert</b:First>
+            <b:Middle>C.</b:Middle>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+    </b:Author>
+    <b:Title>Foundations of Software Quality</b:Title>
+    <b:Year>2018</b:Year>
+    <b:City>Cambridge</b:City>
+    <b:Publisher>University Press</b:Publisher>
+    <b:Edition>2</b:Edition>
+    <b:ISBN>978-0-521-12345-6</b:ISBN>
+  </b:Source>
+
+  <!-- Conference proceedings with editor -->
+  <b:Source>
+    <b:Tag>Doe2019</b:Tag>
+    <b:SourceType>ConferenceProceedings</b:SourceType>
+    <b:Author>
+      <b:Author>
+        <b:NameList>
+          <b:Person>
+            <b:Last>Doe</b:Last>
+            <b:First>Jane</b:First>
+          </b:Person>
+        </b:NameList>
+      </b:Author>
+      <b:Editor>
+        <b:NameList>
+          <b:Person>
+            <b:Last>Williams</b:Last>
+            <b:First>Peter</b:First>
+          </b:Person>
+        </b:NameList>
+      </b:Editor>
+    </b:Author>
+    <b:Title>Automated Test Generation for Microservices</b:Title>
+    <b:ConferenceName>International Conference on Software Engineering</b:ConferenceName>
+    <b:Year>2019</b:Year>
+    <b:City>San Francisco</b:City>
+    <b:Publisher>ACM</b:Publisher>
+    <b:Pages>55-68</b:Pages>
+    <b:DOI>10.1145/3338906.3338912</b:DOI>
+  </b:Source>
+
+</b:Sources>

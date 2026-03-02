@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>biblatex-csl-converter — Live Demo</title>
+        <style>
+            /* ── Reset & base ───────────────────────────────────────────── */
+            *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+            body {
+                font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+                font-size: 14px;
+                line-height: 1.5;
+                background: #f5f5f5;
+                color: #222;
+            }
+
+            /* ── Layout shell ───────────────────────────────────────────── */
+            header {
+                background: #1a1a2e;
+                color: #eee;
+                padding: 14px 20px;
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                flex-wrap: wrap;
+            }
+            header h1 {
+                font-size: 1.1rem;
+                font-weight: 700;
+                letter-spacing: .02em;
+                white-space: nowrap;
+                color: #f3b52b;
+            }
+            header p {
+                font-size: .8rem;
+                opacity: .75;
+                flex: 1 1 200px;
+            }
+
+            /* ── Controls toolbar ───────────────────────────────────────── */
+            .toolbar {
+                background: #fff;
+                border-bottom: 1px solid #ddd;
+                padding: 12px 20px;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 14px;
+                align-items: center;
+            }
+            .toolbar label {
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                font-size: .82rem;
+                font-weight: 600;
+                color: #555;
+                white-space: nowrap;
+            }
+            .toolbar select,
+            .toolbar input[type="file"] {
+                font-size: .82rem;
+                padding: 4px 8px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                background: #fafafa;
+                cursor: pointer;
+            }
+            .toolbar select:focus,
+            .toolbar input[type="file"]:focus {
+                outline: 2px solid #f3b52b;
+                outline-offset: 1px;
+            }
+            .toolbar .divider {
+                width: 1px;
+                height: 28px;
+                background: #ddd;
+            }
+            .btn-sample {
+                font-size: .82rem;
+                font-weight: 700;
+                padding: 5px 14px;
+                border: none;
+                border-radius: 4px;
+                background: #f3b52b;
+                color: #1a1a2e;
+                cursor: pointer;
+                white-space: nowrap;
+                transition: background .15s, transform .1s;
+            }
+            .btn-sample:hover {
+                background: #e0a420;
+            }
+            .btn-sample:active {
+                transform: scale(.97);
+            }
+
+            /* ── Paste area ─────────────────────────────────────────────── */
+            .paste-row {
+                background: #fff;
+                padding: 10px 20px 12px;
+                border-bottom: 1px solid #ddd;
+                display: flex;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            .paste-row label {
+                font-size: .82rem;
+                font-weight: 600;
+                color: #555;
+                padding-top: 6px;
+                white-space: nowrap;
+            }
+            #paste-input {
+                flex: 1;
+                min-height: 52px;
+                max-height: 180px;
+                overflow-y: auto;
+                border: 2px dashed #f3b52b;
+                border-radius: 4px;
+                padding: 6px 10px;
+                font-family: "SFMono-Regular", Consolas, monospace;
+                font-size: .78rem;
+                color: #333;
+                background: #fffdf5;
+                cursor: text;
+                transition: border-color .15s;
+            }
+            #paste-input:focus,
+            #paste-input:hover {
+                border-color: #f3622b;
+                outline: none;
+            }
+            #paste-input:empty::before {
+                content: "Paste bibliography text here (Ctrl+V / Cmd+V)…";
+                color: #aaa;
+            }
+            #stats {
+                font-size: .75rem;
+                color: #888;
+                padding: 2px 20px 6px;
+                background: #fff;
+                border-bottom: 1px solid #ddd;
+                min-height: 20px;
+            }
+
+            /* ── i18n info banner ───────────────────────────────────────── */
+            .i18n-banner {
+                background: #eef6ff;
+                border-bottom: 1px solid #c5dcf5;
+                padding: 8px 20px;
+                font-size: .78rem;
+                color: #2a5a8c;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+            .i18n-banner strong { font-weight: 700; }
+
+            /* ── Three-column output grid ────────────────────────────────── */
+            .output-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 0;
+                min-height: calc(100vh - 240px);
+            }
+            .output-col {
+                border-right: 1px solid #ddd;
+                display: flex;
+                flex-direction: column;
+                overflow: hidden;
+            }
+            .output-col:last-child { border-right: none; }
+
+            .col-header {
+                background: #2c2c4e;
+                color: #f3b52b;
+                padding: 8px 14px;
+                font-size: .78rem;
+                font-weight: 700;
+                letter-spacing: .06em;
+                text-transform: uppercase;
+                position: sticky;
+                top: 0;
+                z-index: 1;
+            }
+            .col-body {
+                padding: 12px 14px;
+                overflow-y: auto;
+                flex: 1;
+                background: #fafafa;
+            }
+
+            /* ── Entry blocks (bibDB panel) ─────────────────────────────── */
+            details.entry-block {
+                background: #fff;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                margin-bottom: 10px;
+                overflow: hidden;
+            }
+            details.entry-block > summary {
+                padding: 7px 12px;
+                cursor: pointer;
+                background: #f0f0fa;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                user-select: none;
+                list-style: none;
+            }
+            details.entry-block > summary::-webkit-details-marker { display: none; }
+            details.entry-block > summary::before {
+                content: "▶";
+                font-size: .65rem;
+                color: #888;
+                transition: transform .15s;
+            }
+            details.entry-block[open] > summary::before { transform: rotate(90deg); }
+
+            .entry-key {
+                font-family: "SFMono-Regular", Consolas, monospace;
+                font-size: .82rem;
+                font-weight: 700;
+                color: #1a1a2e;
+            }
+            .entry-type-badge {
+                background: #f3b52b;
+                color: #1a1a2e;
+                font-size: .68rem;
+                font-weight: 700;
+                padding: 1px 6px;
+                border-radius: 10px;
+                text-transform: uppercase;
+                letter-spacing: .04em;
+            }
+
+            table.field-table {
+                width: 100%;
+                border-collapse: collapse;
+                font-size: .78rem;
+            }
+            .field-table td {
+                padding: 3px 8px;
+                border-bottom: 1px solid #f0f0f0;
+                vertical-align: top;
+            }
+            .field-table tr:last-child td { border-bottom: none; }
+            td.field-label {
+                width: 38%;
+                color: #555;
+                font-weight: 600;
+                white-space: nowrap;
+            }
+            .field-help {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 14px;
+                height: 14px;
+                border-radius: 50%;
+                background: #ccc;
+                color: #555;
+                font-size: .65rem;
+                font-weight: 700;
+                cursor: help;
+                vertical-align: middle;
+                margin-left: 2px;
+            }
+
+            /* ── JSON pretty-print colours ──────────────────────────────── */
+            table.obj-table {
+                border-collapse: collapse;
+                font-family: "SFMono-Regular", Consolas, monospace;
+                font-size: .76rem;
+            }
+            .obj-table td { padding: 1px 4px; vertical-align: top; }
+            .obj-key { color: #7c6000; font-weight: 600; white-space: nowrap; }
+            .val-str { color: #1a6e2e; }
+            .val-prim { color: #8b30a0; }
+            .val-null { color: #c0392b; }
+            .bracket { color: #888; }
+
+            /* ── BibLaTeX export panel ───────────────────────────────────── */
+            pre.bib-pre {
+                font-family: "SFMono-Regular", Consolas, monospace;
+                font-size: .76rem;
+                line-height: 1.6;
+                white-space: pre-wrap;
+                word-break: break-all;
+                color: #1a1a2e;
+            }
+
+            /* ── Spinner ────────────────────────────────────────────────── */
+            .spinner {
+                border: 6px solid #ddd;
+                border-top: 6px solid #f3b52b;
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                animation: spin 0.8s linear infinite;
+                margin: 30px auto;
+            }
+            @keyframes spin {
+                0%   { transform: rotate(0deg); }
+                100% { transform: rotate(360deg); }
+            }
+
+            /* ── Misc messages ──────────────────────────────────────────── */
+            .empty-msg {
+                color: #aaa;
+                font-size: .82rem;
+                padding: 16px 0;
+                text-align: center;
+            }
+            .error-msg {
+                color: #c0392b;
+                font-size: .8rem;
+                padding: 8px 12px;
+                background: #fdecea;
+                border: 1px solid #f5c6cb;
+                border-radius: 4px;
+                display: block;
+                margin-top: 6px;
+            }
+
+            /* ── Acknowledgement footer ──────────────────────────────────── */
+            .acknowledgement {
+                background: #1a1a2e;
+                color: #bbb;
+                padding: 14px 20px;
+                font-size: .75rem;
+                line-height: 1.6;
+                border-top: 2px solid #f3b52b;
+            }
+            .acknowledgement a {
+                color: #f3b52b;
+                text-decoration: none;
+            }
+            .acknowledgement a:hover {
+                text-decoration: underline;
+            }
+            .acknowledgement strong {
+                color: #eee;
+            }
+
+            /* ── Language showcase section ───────────────────────────────── */
+            .locale-showcase {
+                background: #fff;
+                border-top: 2px solid #e0e0e0;
+                padding: 16px 20px 20px;
+            }
+            .locale-showcase h2 {
+                font-size: .9rem;
+                font-weight: 700;
+                color: #1a1a2e;
+                margin-bottom: 10px;
+            }
+            #locale-demo-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+                gap: 10px;
+            }
+            .locale-card {
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                padding: 10px 12px;
+                background: #fafafa;
+            }
+            .locale-card .locale-tag {
+                font-size: .7rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: .06em;
+                color: #888;
+                margin-bottom: 4px;
+            }
+            .locale-card .locale-type {
+                font-size: .9rem;
+                font-weight: 700;
+                color: #1a1a2e;
+                margin-bottom: 2px;
+            }
+            .locale-card .locale-field {
+                font-size: .78rem;
+                color: #555;
+            }
+
+            /* ── Responsive: stack columns on narrow screens ─────────────── */
+            @media (max-width: 900px) {
+                .output-grid {
+                    grid-template-columns: 1fr;
+                }
+                .output-col { border-right: none; border-bottom: 1px solid #ddd; }
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <!-- ── Header ──────────────────────────────────────────────────── -->
+        <header>
+            <h1>biblatex-csl-converter</h1>
+            <p>Live demo — import from multiple formats, inspect the internal BibDB, CSL output, and BibLaTeX re-export.</p>
+        </header>
+
+        <!-- ── Controls toolbar ────────────────────────────────────────── -->
+        <div class="toolbar">
+
+            <label for="format-select">
+                Input format
+                <select id="format-select">
+                    <option value="biblatex">BibLaTeX / BibTeX (.bib)</option>
+                    <option value="csl">CSL JSON (.json)</option>
+                    <option value="ris">RIS (.ris)</option>
+                    <option value="enw">EndNote Web (.enw)</option>
+                    <option value="endnote">EndNote XML (.xml)</option>
+                    <option value="citavi">Citavi JSON (.json)</option>
+                    <optgroup label="Document files (extracts citations)">
+                        <option value="docx">Word Document (.docx)</option>
+                        <option value="odt">OpenDocument Text (.odt)</option>
+                    </optgroup>
+                </select>
+            </label>
+
+            <div class="divider"></div>
+
+            <label for="file-upload">
+                Open file
+                <input type="file" id="file-upload" accept=".bib" />
+            </label>
+
+            <div class="divider"></div>
+
+            <button id="sample-btn" class="btn-sample">&#9654; Try a sample</button>
+
+            <div class="divider"></div>
+
+            <label for="lang-select">
+                UI language
+                <select id="lang-select">
+                    <option value="en">English</option>
+                    <option value="de">Deutsch</option>
+                    <option value="fr">Fran&#231;ais</option>
+                    <option value="es">Espa&#241;ol</option>
+                    <option value="it">Italiano</option>
+                    <option value="bg">&#1041;&#1098;&#1083;&#1075;&#1072;&#1088;&#1089;&#1082;&#1080;</option>
+                    <option value="pt-BR">Portugu&#234;s (BR)</option>
+                </select>
+            </label>
+
+        </div>
+
+        <!-- ── Paste area ───────────────────────────────────────────────── -->
+        <div class="paste-row" id="paste-row">
+            <label for="paste-input">Or paste text:</label>
+            <div contenteditable="true" id="paste-input" spellcheck="false"></div>
+        </div>
+
+        <!-- ── Document format note (shown only for DOCX / ODT) ────────── -->
+        <div id="doc-format-note" style="display:none; background:#fff8e1; border-bottom:1px solid #ffe082; padding:8px 20px; font-size:.78rem; color:#795548;">
+            &#128196; <strong>Document mode:</strong> Upload a <span id="doc-format-label">DOCX</span> file using <em>Open file</em> above.
+            Citations from Zotero, Mendeley, EndNote, Citavi, JabRef and LibreOffice native marks will be extracted automatically.
+            Pasting text is not supported for document files.
+        </div>
+
+        <!-- ── Stats bar ────────────────────────────────────────────────── -->
+        <div id="stats"></div>
+
+        <!-- ── i18n info banner ─────────────────────────────────────────── -->
+        <div class="i18n-banner">
+            <span>&#127760;</span>
+            <span>
+                The <strong>BibDB</strong> column uses the selected UI language to display
+                field labels and entry-type names via the built-in
+                <code>getFieldTitle()</code> / <code>getTypeTitle()</code> helpers.
+                Switch language above to see the labels update instantly.
+            </span>
+        </div>
+
+        <!-- ── Three-column output ──────────────────────────────────────── -->
+        <div class="output-grid">
+
+            <div class="output-col">
+                <div class="col-header">BibDB (internal JSON)</div>
+                <div class="col-body" id="bib-db">
+                    <p class="empty-msg">Import or paste a bibliography file to see results.</p>
+                </div>
+            </div>
+
+            <div class="output-col">
+                <div class="col-header">CSL JSON export</div>
+                <div class="col-body" id="csl-db">
+                    <p class="empty-msg">&nbsp;</p>
+                </div>
+            </div>
+
+            <div class="output-col">
+                <div class="col-header">BibLaTeX export</div>
+                <div class="col-body" id="biblatex">
+                    <p class="empty-msg">&nbsp;</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ── Acknowledgement footer ───────────────────────────────────── -->
+        <div class="acknowledgement">
+            <strong>Acknowledgement:</strong> DOCX and ODT citation extraction in this demo was inspired by
+            <a href="https://github.com/rmzelle/ref-extractor/" target="_blank" rel="noopener noreferrer">ref-extractor</a>
+            by <strong>Rintze M. Zelle</strong> &mdash; a free, privacy-respecting online tool that extracts
+            Zotero and Mendeley references from Word and LibreOffice documents.
+            If you need to extract citations from documents and export them to CSL&nbsp;JSON, BibTeX, or RIS,
+            ref-extractor is well worth a visit at
+            <a href="https://rintze.zelle.me/ref-extractor/" target="_blank" rel="noopener noreferrer">rintze.zelle.me/ref-extractor</a>.
+        </div>
+
+        <!-- ── i18n locale showcase ─────────────────────────────────────── -->
+        <div class="locale-showcase">
+            <h2>i18n locale showcase — "Journal article" in all supported languages</h2>
+            <div id="locale-demo-grid"></div>
+        </div>
+
+        <!-- ── JSZip (required for DOCX / ODT unpacking) ───────────────── -->
+        <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+
+        <!-- ── Bundle ───────────────────────────────────────────────────── -->
+        <script src="demo.js"></script>
+
+        <!-- ── Locale showcase (runs after bundle) ──────────────────────── -->
+        <!-- ── Document format UI toggle ────────────────────────────────── -->
+        <script>
+            (function wireDocFormatToggle() {
+                var formatSelect = document.getElementById("format-select")
+                var pasteRow = document.getElementById("paste-row")
+                var docNote = document.getElementById("doc-format-note")
+                var docLabel = document.getElementById("doc-format-label")
+
+                function updateDocMode() {
+                    var fmt = formatSelect ? formatSelect.value : ""
+                    var isDoc = fmt === "docx" || fmt === "odt"
+                    if (pasteRow) pasteRow.style.display = isDoc ? "none" : ""
+                    if (docNote) docNote.style.display = isDoc ? "" : "none"
+                    if (docLabel) docLabel.textContent = fmt === "odt" ? "ODT" : "DOCX"
+                }
+
+                if (formatSelect) {
+                    formatSelect.addEventListener("change", updateDocMode)
+                    updateDocMode()
+                }
+            })()
+        </script>
+
+        <script>
+            (function buildLocaleShowcase() {
+                var grid = document.getElementById("locale-demo-grid")
+                if (!grid || typeof locales === "undefined") return
+
+                var langNames = {
+                    en: "English",
+                    de: "Deutsch",
+                    fr: "Fran\u00e7ais",
+                    es: "Espa\u00f1ol",
+                    it: "Italiano",
+                    bg: "\u0411\u044a\u043b\u0075\u0430\u0440\u0441\u043a\u0438",
+                    "pt-BR": "Portugu\u00eas (BR)"
+                }
+
+                var typeKey = "article-journal"
+                var fieldKey = "author"
+
+                Object.keys(locales).forEach(function(tag) {
+                    var locale = locales[tag]
+                    var typeLabel = getTypeTitle(locale, typeKey)
+                    var fieldLabel = getFieldTitle(locale, typeKey, fieldKey)
+                    var help = getFieldHelp(locale, "date")
+
+                    var card = document.createElement("div")
+                    card.className = "locale-card"
+                    card.innerHTML =
+                        "<div class=\"locale-tag\">" + tag + " &mdash; " + (langNames[tag] || tag) + "</div>" +
+                        "<div class=\"locale-type\">" + typeLabel + "</div>" +
+                        "<div class=\"locale-field\">" + fieldLabel +
+                            (help ? " &nbsp;<span class=\"field-help\" title=\"" + help.replace(/<[^>]*>/g,"") + "\">?</span>" : "") +
+                        "</div>"
+                    grid.appendChild(card)
+                })
+            })()
+        </script>
+
+    </body>
+</html>

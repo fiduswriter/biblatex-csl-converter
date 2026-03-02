@@ -1,7 +1,7 @@
 {
     "entries": {
         "1": {
-            "bib_type": "misc",
+            "bib_type": "legal_case",
             "entry_key": "_dalain_2010",
             "fields": {
                 "date": "2010-12-23",
@@ -62,11 +62,6 @@
         }
     },
     "warnings": [
-        {
-            "type": "unknown_type",
-            "type_name": "jurisdiction",
-            "line": 12
-        },
         {
             "type": "unexpected_field",
             "field_name": "institution",

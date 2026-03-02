@@ -12,11 +12,12 @@ export default {
     output: {
         file: "tmp/bundle.test.js",
         format: "cjs",
+        sourcemap: true,
     },
     plugins: [
         commonjs(),
-        typescript({ sourceMap: false }),
-        nodePolyfills({ sourceMap: false }),
+        typescript({ sourceMap: true }),
+        nodePolyfills({ sourceMap: true }),
         globals(),
         resolve(),
         json(),

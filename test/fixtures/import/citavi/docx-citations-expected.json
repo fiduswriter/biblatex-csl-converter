@@ -1,0 +1,174 @@
+{
+    "1": {
+        "entry_key": "Smith.2023",
+        "bib_type": "article-journal",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "A Comprehensive Study of Example Phenomena"
+                }
+            ],
+            "shorttitle": [
+                {
+                    "type": "text",
+                    "text": "Example Study"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Smith"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "John A."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Johnson"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Mary B."
+                        }
+                    ]
+                }
+            ],
+            "date": "2023",
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Journal of Examples"
+                }
+            ],
+            "shortjournal": [
+                {
+                    "type": "text",
+                    "text": "J. Ex."
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "45"
+                }
+            ],
+            "issue": [
+                {
+                    "type": "text",
+                    "text": "3"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "123"
+                        },
+                        {
+                            "type": "text",
+                            "text": "145"
+                        }
+                    ]
+                ]
+            ],
+            "isbn": [
+                {
+                    "type": "text",
+                    "text": "1234-5678"
+                }
+            ],
+            "url": "https://example.com/article1",
+            "keywords": "example, research, science",
+            "langid": "en"
+        }
+    },
+    "2": {
+        "entry_key": "Muller.2022",
+        "bib_type": "book",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Deutsche Beispiele in der Wissenschaft"
+                }
+            ],
+            "shorttitle": [
+                {
+                    "type": "text",
+                    "text": "Deutsche Beispiele in der Wissenschaft"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Müller"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Hans"
+                        }
+                    ]
+                }
+            ],
+            "editor": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Schmidt"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Klaus"
+                        }
+                    ]
+                }
+            ],
+            "date": "2022",
+            "publisher": [
+                {
+                    "type": "text",
+                    "text": "Springer-Verlag"
+                }
+            ],
+            "location": [
+                {
+                    "type": "text",
+                    "text": "Berlin"
+                }
+            ],
+            "edition": [
+                {
+                    "type": "text",
+                    "text": "3rd"
+                }
+            ],
+            "isbn": [
+                {
+                    "type": "text",
+                    "text": "978-3-030-12345-6"
+                }
+            ],
+            "langid": "de"
+        }
+    }
+}

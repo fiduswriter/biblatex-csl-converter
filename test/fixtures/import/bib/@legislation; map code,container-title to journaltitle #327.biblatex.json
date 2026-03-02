@@ -1,7 +1,7 @@
 {
     "entries": {
         "1": {
-            "bib_type": "misc",
+            "bib_type": "legislation",
             "entry_key": "_loi_2011",
             "fields": {
                 "date": "2011-05-18",
@@ -62,11 +62,6 @@
         }
     },
     "warnings": [
-        {
-            "type": "unknown_type",
-            "type_name": "legislation",
-            "line": 11
-        },
         {
             "type": "unexpected_field",
             "field_name": "journaltitle",

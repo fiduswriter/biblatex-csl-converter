@@ -1,0 +1,128 @@
+{
+    "entries": {
+        "1": {
+            "entry_key": "Smith2020",
+            "bib_type": "book",
+            "fields": {
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Introduction to Testing"
+                    }
+                ],
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Smith"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "John"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Doe"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Jane"
+                            }
+                        ]
+                    }
+                ],
+                "date": "2020",
+                "publisher": [
+                    {
+                        "type": "text",
+                        "text": "Test Press"
+                    }
+                ],
+                "location": [
+                    {
+                        "type": "text",
+                        "text": "New York"
+                    }
+                ],
+                "edition": [
+                    {
+                        "type": "text",
+                        "text": "3"
+                    }
+                ],
+                "isbn": [
+                    {
+                        "type": "text",
+                        "text": "978-3-16-148410-0"
+                    }
+                ],
+                "url": "https://example.org/smith2020"
+            }
+        },
+        "2": {
+            "entry_key": "Doe2018",
+            "bib_type": "thesis",
+            "fields": {
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Experimental Methods in Software Engineering"
+                    }
+                ],
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Doe"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Robert"
+                            }
+                        ]
+                    }
+                ],
+                "date": "2018",
+                "location": [
+                    {
+                        "type": "text",
+                        "text": "Example City"
+                    }
+                ],
+                "note": [
+                    {
+                        "type": "text",
+                        "text": "Available from institutional repository"
+                    }
+                ],
+                "institution": [
+                    {
+                        "type": "text",
+                        "text": "University of Example"
+                    }
+                ],
+                "type": "PhD thesis"
+            }
+        }
+    },
+    "warnings": [
+        {
+            "type": "odt_bibmark_missing_identifier"
+        },
+        {
+            "type": "odt_bibmark_missing_identifier"
+        }
+    ]
+}

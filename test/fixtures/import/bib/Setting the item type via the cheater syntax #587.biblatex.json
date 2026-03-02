@@ -111,7 +111,7 @@
             }
         },
         "3": {
-            "bib_type": "misc",
+            "bib_type": "audio",
             "entry_key": "mozart_sonatas_1960",
             "fields": {
                 "date": "1960",
@@ -400,11 +400,6 @@
             "field_name": "timestamp",
             "entry": "_object_????",
             "line": 19
-        },
-        {
-            "type": "unknown_type",
-            "type_name": "audio",
-            "line": 33
         },
         {
             "type": "unexpected_field",

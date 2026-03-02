@@ -1,0 +1,744 @@
+ ```<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<records>
+		<record>
+			<database name="Test Library.enl" path="/Users/Test/Documents/Test Library.enl">Test Library.enl</database>
+			<source-app name="EndNote" version="20.0">EndNote</source-app>
+			<rec-number>1</rec-number>
+			<foreign-keys>
+				<key app="EN" db-id="test123">1</key>
+			</foreign-keys>
+			<ref-type name="Journal Article">17</ref-type>
+			<contributors>
+				<authors>
+					<author>
+						<style face="normal" font="default" size="100%">Smith, John A.</style>
+					</author>
+					<author>
+						<style face="normal" font="default" size="100%">Johnson, Mary B.</style>
+					</author>
+				</authors>
+			</contributors>
+			<auth-address>
+				<style face="normal" font="default" size="100%">University of Example, Department of Science</style>
+			</auth-address>
+			<titles>
+				<title>
+					<style face="normal" font="default" size="100%">A Comprehensive Study of Example Phenomena</style>
+				</title>
+				<secondary-title>
+					<style face="normal" font="default" size="100%">Journal of Examples</style>
+				</secondary-title>
+				<short-title>
+					<style face="normal" font="default" size="100%">Example Study</style>
+				</short-title>
+			</titles>
+			<periodical>
+				<full-title>
+					<style face="normal" font="default" size="100%">Journal of Examples</style>
+				</full-title>
+				<abbr-1>
+					<style face="normal" font="default" size="100%">J. Ex.</style>
+				</abbr-1>
+			</periodical>
+			<pages>
+				<style face="normal" font="default" size="100%">123-145</style>
+			</pages>
+			<volume>
+				<style face="normal" font="default" size="100%">45</style>
+			</volume>
+			<number>
+				<style face="normal" font="default" size="100%">3</style>
+			</number>
+			<dates>
+				<year>
+					<style face="normal" font="default" size="100%">2023</style>
+				</year>
+				<pub-dates>
+					<date>
+						<style face="normal" font="default" size="100%">Mar</style>
+					</date>
+				</pub-dates>
+			</dates>
+			<isbn>
+				<style face="normal" font="default" size="100%">1234-5678</style>
+			</isbn>
+			<accession-num>TEST123456</accession-num>
+			<abstract>
+				<style face="normal" font="default" size="100%">This is a comprehensive abstract describing the research.</style>
+			</abstract>
+			<notes>
+				<style face="normal" font="default" size="100%">Research notes here</style>
+			</notes>
+			<keywords>
+				<keyword>example</keyword>
+				<keyword>research</keyword>
+				<keyword>science</keyword>
+			</keywords>
+			<label>Article1</label>
+			<language>
+				<style face="normal" font="default" size="100%">English</style>
+			</language>
+			<urls>
+				<related-urls>
+					<url>
+						<style face="normal" font="default" size="100%">https://example.com/article1</style>
+					</url>
+				</related-urls>
+			</urls>
+		</record>
+		<record>
+			<database name="Test Library.enl" path="/Users/Test/Documents/Test Library.enl">Test Library.enl</database>
+			<source-app name="EndNote" version="20.0">EndNote</source-app>
+			<rec-number>2</rec-number>
+			<foreign-keys>
+				<key app="EN" db-id="test123">2</key>
+			</foreign-keys>
+			<ref-type name="Book">6</ref-type>
+			<contributors>
+				<authors>
+					<author>
+						<style face="normal" font="default" size="100%">Müller, Hans</style>
+					</author>
+				</authors>
+				<secondary-authors>
+					<author>
+						<style face="normal" font="default" size="100%">Schmidt, Klaus</style>
+					</author>
+				</secondary-authors>
+			</contributors>
+			<titles>
+				<title>
+					<style face="normal" font="default" size="100%">Deutsche Beispiele in der Wissenschaft</style>
+				</title>
+				<secondary-title>
+					<style face="normal" font="default" size="100%">Eine Sammlung</style>
+				</secondary-title>
+			</titles>
+			<pages>
+				<style face="normal" font="default" size="100%">viii, 342</style>
+			</pages>
+			<num-vols>2</num-vols>
+			<edition>
+				<style face="normal" font="default" size="100%">3rd</style>
+			</edition>
+			<dates>
+				<year>
+					<style face="normal" font="default" size="100%">2022</style>
+				</year>
+			</dates>
+			<pub-location>
+				<style face="normal" font="default" size="100%">Berlin</style>
+			</pub-location>
+			<publisher>
+				<style face="normal" font="default" size="100%">Springer-Verlag</style>
+			</publisher>
+			<isbn>
+				<style face="normal" font="default" size="100%">978-3-030-12345-6</style>
+			</isbn>
+			<abstract>
+				<style face="normal" font="default" size="100%">Dies ist ein deutsches Buch über wissenschaftliche Beispiele.</style>
+			</abstract>
+			<language>
+				<style face="normal" font="default" size="100%">German</style>
+			</language>
+		</record>
+		<record>
+			<database name="Test Library.enl" path="/Users/Test/Documents/Test Library.enl">Test Library.enl</database>
+			<source-app name="EndNote" version="20.0">EndNote</source-app>
+			<rec-number>3</rec-number>
+			<foreign-keys>
+				<key app="EN" db-id="test123">3</key>
+			</foreign-keys>
+			<ref-type name="Conference Paper">47</ref-type>
+			<contributors>
+				<authors>
+					<author>
+						<style face="normal" font="default" size="100%">Jensen, Anders</style>
+					</author>
+					<author>
+						<style face="normal" font="default" size="100%">Nielsen, Peter</style>
+					</author>
+				</authors>
+			</contributors>
+			<titles>
+				<title>
+					<style face="normal" font="default" size="100%">Danske Konference Resultater</style>
+				</title>
+				<secondary-title>
+					<style face="normal" font="default" size="100%">Proceedings of the Danish Science Conference</style>
+				</secondary-title>
+			</titles>
+			<dates>
+				<year>
+					<style face="normal" font="default" size="100%">2021</style>
+				</year>
+			</dates>
+			<pub-location>
+				<style face="normal" font="default" size="100%">København</style>
+			</pub-location>
+			<publisher>
+				<style face="normal" font="default" size="100%">Dansk Videnskabsforlag</style>
+			</publisher>
+			<language>
+				<style face="normal" font="default" size="100%">Danish</style>
+			</language>
+		</record>
+		<record>
+			<database name="Test Library.enl" path="/Users/Test/Documents/Test Library.enl">Test Library.enl</database>
+			<source-app name="EndNote" version="20.0">EndNote</source-app>
+			<rec-number>4</rec-number>
+			<foreign-keys>
+				<key app="EN" db-id="test123">4</key>
+			</foreign-keys>
+			<ref-type name="Thesis">32</ref-type>
+			<contributors>
+				<authors>
+					<author>
+						<style face="normal" font="default" size="100%">García, María Elena</style>
+					</author>
+				</authors>
+			</contributors>
+			<titles>
+				<title>
+					<style face="normal" font="default" size="100%">Estudio de Ejemplos en Español</style>
+				</title>
+			</titles>
+			<dates>
+				<year>
+					<style face="normal" font="default" size="100%">2020</style>
+				</year>
+			</dates>
+			<pub-location>
+				<style face="normal" font="default" size="100%">Madrid</style>
+			</pub-location>
+			<publisher>
+				<style face="normal" font="default" size="100%">Universidad de Madrid</style>
+			</publisher>
+			<language>
+				<style face="normal" font="default" size="100%">Spanish</style>
+			</language>
+		</record>
+		<record>
+			<database name="Test Library.enl" path="/Users/Test/Documents/Test Library.enl">Test Library.enl</database>
+			<source-app name="EndNote" version="20.0">EndNote</source-app>
+			<rec-number>5</rec-number>
+			<foreign-keys>
+				<key app="EN" db-id="test123">5</key>
+			</foreign-keys>
+			<ref-type name="Journal Article">17</ref-type>
+			<contributors>
+				<authors>
+					<author>
+						<style face="normal" font="default" size="100%">王, 明</style>
+					</author>
+					<author>
+						<style face="normal" font="default" size="100%">李, 华</style>
+					</author>
+				</authors>
+			</contributors>
+			<titles>
+				<title>
+					<style face="normal" font="default" size="100%">中文科学研究示例</style>
+				</title>
+				<secondary-title>
+					<style face="normal" font="default" size="100%">中国科学杂志</style>
+				</secondary-title>
+			</titles>
+			<pages>
+				<style face="normal" font="default" size="100%">45-67</style>
+			</pages>
+			<volume>
+				<style face="normal" font="default" size="100%">12</style>
+			</volume>
+			<dates>
+				<year>
+					<style face="normal" font="default" size="100%">2023</style>
+				</year>
+			</dates>
+			<isbn>
+				<style face="normal" font="default" size="100%">0258-7025</style>
+			</isbn>
+			<language>
+				<style face="normal" font="default" size="100%">Chinese</style>
+			</language>
+		</record>
+		<record>
+			<database name="Test Library.enl" path="/Users/Test/Documents/Test Library.enl">Test Library.enl</database>
+			<source-app name="EndNote" version="20.0">EndNote</source-app>
+			<rec-number>6</rec-number>
+			<foreign-keys>
+				<key app="EN" db-id="test123">6</key>
+			</foreign-keys>
+			<ref-type name="Book">6</ref-type>
+			<contributors>
+				<authors>
+					<author>
+						<style face="normal" font="default" size="100%">Ким, Иван</style>
+					</author>
+				</authors>
+			</contributors>
+			<titles>
+				<title>
+					<style face="normal" font="default" size="100%">Русская книга примеров</style>
+				</title>
+			</titles>
+			<dates>
+				<year>
+					<style face="normal" font="default" size="100%">2022</style>
+				</year>
+			</dates>
+			<pub-location>
+				<style face="normal" font="default" size="100%">Москва</style>
+			</pub-location>
+			<publisher>
+				<style face="normal" font="default" size="100%">Издательство Наука</style>
+			</publisher>
+			<language>
+				<style face="normal" font="default" size="100%">Russian</style>
+			</language>
+		</record>
+		<record>
+			<database name="Test Library.enl" path="/Users/Test/Documents/Test Library.enl">Test Library.enl</database>
+			<source-app name="EndNote" version="20.0">EndNote</source-app>
+			<rec-number>7</rec-number>
+			<foreign-keys>
+				<key app="EN" db-id="test123">7</key>
+			</foreign-keys>
+			<ref-type name="Edited Book">5</ref-type>
+			<contributors>
+				<authors>
+					<author>
+						<style face="normal" font="default" size="100%">佐藤, 太郎</style>
+					</author>
+				</authors>
+				<secondary-authors>
+					<author>
+						<style face="normal" font="default" size="100%">田中, 花子</style>
+					</author>
+				</secondary-authors>
+			</contributors>
+			<titles>
+				<title>
+					<style face="normal" font="default" size="100%">日本語の編集書</style>
+				</title>
+			</titles>
+			<dates>
+				<year>
+					<style face="normal" font="default" size="100%">2021</style>
+				</year>
+			</dates>
+			<pub-location>
+				<style face="normal" font="default" size="100%">東京</style>
+			</pub-location>
+			<publisher>
+				<style face="normal" font="default" size="100%">岩波書店</style>
+			</publisher>
+			<language>
+				<style face="normal" font="default" size="100%">Japanese</style>
+			</language>
+		</record>
+		<record>
+			<database name="Test Library.enl" path="/Users/Test/Documents/Test Library.enl">Test Library.enl</database>
+			<source-app name="EndNote" version="20.0">EndNote</source-app>
+			<rec-number>8</rec-number>
+			<foreign-keys>
+				<key app="EN" db-id="test123">8</key>
+			</foreign-keys>
+			<ref-type name="Report">27</ref-type>
+			<contributors>
+				<authors>
+					<author>
+						<style face="normal" font="default" size="100%">Kim, Min-Jae</style>
+					</author>
+				</authors>
+			</contributors>
+			<titles>
+				<title>
+					<style face="normal" font="default" size="100%">한국어 연구 보고서</style>
+				</title>
+			</titles>
+			<dates>
+				<year>
+					<style face="normal" font="default" size="100%">2023</style>
+				</year>
+			</dates>
+			<pub-location>
+				<style face="normal" font="default" size="100%">서울</style>
+			</pub-location>
+			<publisher>
+				<style face="normal" font="default" size="100%">한국과학기술원</style>
+			</publisher>
+			<report-id>KIST-2023-001</report-id>
+			<language>
+				<style face="normal" font="default" size="100%">Korean</style>
+			</language>
+		</record>
+		<record>
+			<database name="Test Library.enl" path="/Users/Test/Documents/Test Library.enl">Test Library.enl</database>
+			<source-app name="EndNote" version="20.0">EndNote</source-app>
+			<rec-number>9</rec-number>
+			<foreign-keys>
+				<key app="EN" db-id="test123">9</key>
+			</foreign-keys>
+			<ref-type name="Patent">25</ref-type>
+			<contributors>
+				<authors>
+					<author>
+						<style face="normal" font="default" size="100%">الأحمد, خالد</style>
+					</author>
+				</authors>
+			</contributors>
+			<titles>
+				<title>
+					<style face="normal" font="default" size="100%">براءة اختراع عربية</style>
+				</title>
+			</titles>
+			<dates>
+				<year>
+					<style face="normal" font="default" size="100%">2022</style>
+				</year>
+			</dates>
+			<publisher>
+				<style face="normal" font="default" size="100%">مكتب براءات الاختراع</style>
+			</publisher>
+			<language>
+				<style face="normal" font="default" size="100%">Arabic</style>
+			</language>
+		</record>
+		<record>
+			<database name="Test Library.enl" path="/Users/Test/Documents/Test Library.enl">Test Library.enl</database>
+			<source-app name="EndNote" version="20.0">EndNote</source-app>
+			<rec-number>10</rec-number>
+			<foreign-keys>
+				<key app="EN" db-id="test123">10</key>
+			</foreign-keys>
+			<ref-type name="Web Page">12</ref-type>
+			<contributors>
+				<authors>
+					<author>
+						<style face="normal" font="default" size="100%">Example Organization</style>
+					</author>
+				</authors>
+			</contributors>
+			<titles>
+				<title>
+					<style face="normal" font="default" size="100%">Example Web Page Title</style>
+				</title>
+			</titles>
+			<dates>
+				<year>
+					<style face="normal" font="default" size="100%">2023</style>
+				</year>
+			</dates>
+			<urls>
+				<web-urls>
+					<url>
+						<style face="normal" font="default" size="100%">https://www.example.org/page</style>
+					</url>
+				</web-urls>
+			</urls>
+			<access-date>
+				<style face="normal" font="default" size="100%">2023-12-01</style>
+			</access-date>
+			<language>
+				<style face="normal" font="default" size="100%">English</style>
+			</language>
+		</record>
+		<record>
+			<database name="Test Library.enl" path="/Users/Test/Documents/Test Library.enl">Test Library.enl</database>
+			<source-app name="EndNote" version="20.0">EndNote</source-app>
+			<rec-number>11</rec-number>
+			<foreign-keys>
+				<key app="EN" db-id="test123">11</key>
+			</foreign-keys>
+			<ref-type name="Book Section">5</ref-type>
+			<contributors>
+				<authors>
+					<author>
+						<style face="normal" font="default" size="100%">Doe, John</style>
+					</author>
+				</authors>
+				<secondary-authors>
+					<author>
+						<style face="normal" font="default" size="100%">Smith, Jane</style>
+					</author>
+				</secondary-authors>
+				<tertiary-authors>
+					<author>
+						<style face="normal" font="default" size="100%">Brown, Bob</style>
+					</author>
+				</tertiary-authors>
+				<subsidiary-authors>
+					<author>
+						<style face="normal" font="default" size="100%">White, Walter</style>
+					</author>
+				</subsidiary-authors>
+				<translated-authors>
+					<author>
+						<style face="normal" font="default" size="100%">Green, Gary</style>
+					</author>
+				</translated-authors>
+			</contributors>
+			<titles>
+				<title>
+					<style face="normal" font="default" size="100%">Book Section with Multiple Author Types</style>
+				</title>
+			</titles>
+			<dates>
+				<year>
+					<style face="normal" font="default" size="100%">2023</style>
+				</year>
+			</dates>
+			<language>
+				<style face="normal" font="default" size="100%">English</style>
+			</language>
+		</record>
+		<record>
+			<database name="Test Library.enl" path="/Users/Test/Documents/Test Library.enl">Test Library.enl</database>
+			<source-app name="EndNote" version="20.0">EndNote</source-app>
+			<rec-number>12</rec-number>
+			<foreign-keys>
+				<key app="EN" db-id="test123">12</key>
+			</foreign-keys>
+			<ref-type name="Figure">15</ref-type>
+			<contributors>
+				<authors>
+					<author>
+						<style face="normal" font="default" size="100%">Artist, Ann</style>
+					</author>
+				</authors>
+			</contributors>
+			<titles>
+				<title>
+					<style face="normal" font="default" size="100%">Figure with Image</style>
+				</title>
+			</titles>
+			<image>
+				<file>figure1.png</file>
+				<name>Figure 1: Test Image</name>
+			</image>
+			<dates>
+				<year>
+					<style face="normal" font="default" size="100%">2023</style>
+				</year>
+			</dates>
+			<language>
+				<style face="normal" font="default" size="100%">English</style>
+			</language>
+		</record>
+		<record>
+			<database name="Test Library.enl" path="/Users/Test/Documents/Test Library.enl">Test Library.enl</database>
+			<source-app name="EndNote" version="20.0">EndNote</source-app>
+			<rec-number>13</rec-number>
+			<foreign-keys>
+				<key app="EN" db-id="test123">13</key>
+			</foreign-keys>
+			<ref-type name="Journal Article">17</ref-type>
+			<contributors>
+				<authors>
+					<author>
+						<style face="normal" font="default" size="100%">Researcher, Ron</style>
+					</author>
+				</authors>
+			</contributors>
+			<titles>
+				<title>
+					<style face="normal" font="default" size="100%">Article with Custom and Misc Fields</style>
+				</title>
+				<secondary-title>
+					<style face="normal" font="default" size="100%">Journal from Secondary Title</style>
+				</secondary-title>
+			</titles>
+			<dates>
+				<year>
+					<style face="normal" font="default" size="100%">2023</style>
+				</year>
+				<copyright-dates>
+					<date>
+						<year>2022</year>
+					</date>
+				</copyright-dates>
+			</dates>
+			<custom1>
+				<style face="normal" font="default" size="100%">Custom Value 1</style>
+			</custom1>
+			<custom2>
+				<style face="normal" font="default" size="100%">Custom Value 2</style>
+			</custom2>
+			<custom3>
+				<style face="normal" font="default" size="100%">Custom Value 3</style>
+			</custom3>
+			<custom4>
+				<style face="normal" font="default" size="100%">Custom Value 4</style>
+			</custom4>
+			<custom5>
+				<style face="normal" font="default" size="100%">Custom Value 5</style>
+			</custom5>
+			<custom6>
+				<style face="normal" font="default" size="100%">Custom Value 6</style>
+			</custom6>
+			<custom7>
+				<style face="normal" font="default" size="100%">Custom Value 7</style>
+			</custom7>
+			<misc1>
+				<style face="normal" font="default" size="100%">Misc Value 1</style>
+			</misc1>
+			<misc2>
+				<style face="normal" font="default" size="100%">Misc Value 2</style>
+			</misc2>
+			<misc3>
+				<style face="normal" font="default" size="100%">Misc Value 3</style>
+			</misc3>
+			<urls>
+				<pdf-urls>
+					<url>
+						<style face="normal" font="default" size="100%">https://example.com/article.pdf</style>
+					</url>
+				</pdf-urls>
+				<text-urls>
+					<url>
+						<style face="normal" font="default" size="100%">https://example.com/article.txt</style>
+					</url>
+				</text-urls>
+			</urls>
+			<language>
+				<style face="normal" font="default" size="100%">English</style>
+			</language>
+		</record>
+		<record>
+			<database name="Test Library.enl" path="/Users/Test/Documents/Test Library.enl">Test Library.enl</database>
+			<source-app name="EndNote" version="20.0">EndNote</source-app>
+			<rec-number>14</rec-number>
+			<foreign-keys>
+				<key app="EN" db-id="test123">14</key>
+			</foreign-keys>
+			<ref-type name="Book">6</ref-type>
+			<contributors>
+				<authors>
+					<author>
+						<style face="normal" font="default" size="100%">Author, Primary</style>
+					</author>
+				</authors>
+				<tertiary-authors>
+					<author>
+						<style face="normal" font="default" size="100%">Tertiary, Author</style>
+					</author>
+				</tertiary-authors>
+			</contributors>
+			<titles>
+				<title>
+					<style face="normal" font="default" size="100%">Book with Only Tertiary Author</style>
+				</title>
+			</titles>
+			<dates>
+				<year>
+					<style face="normal" font="default" size="100%">2023</style>
+				</year>
+			</dates>
+			<language>
+				<style face="normal" font="default" size="100%">English</style>
+			</language>
+		</record>
+		<record>
+			<database name="Test Library.enl" path="/Users/Test/Documents/Test Library.enl">Test Library.enl</database>
+			<source-app name="EndNote" version="20.0">EndNote</source-app>
+			<rec-number>15</rec-number>
+			<foreign-keys>
+				<key app="EN" db-id="test123">15</key>
+			</foreign-keys>
+			<ref-type name="Generic">13</ref-type>
+			<contributors>
+				<authors>
+					<author>
+						<style face="normal" font="default" size="100%">Doe, Jane</style>
+					</author>
+				</authors>
+			</contributors>
+			<titles>
+				<title>
+					<style face="normal" font="default" size="100%">A Generic Work with Type</style>
+				</title>
+			</titles>
+			<work-type>
+				<style face="normal" font="default" size="100%">Technical Note</style>
+			</work-type>
+			<dates>
+				<year>
+					<style face="normal" font="default" size="100%">2022</style>
+				</year>
+			</dates>
+			<language>
+				<style face="normal" font="default" size="100%">English</style>
+			</language>
+		</record>
+		<record>
+			<database name="Test Library.enl" path="/Users/Test/Documents/Test Library.enl">Test Library.enl</database>
+			<source-app name="EndNote" version="20.0">EndNote</source-app>
+			<rec-number>16</rec-number>
+			<foreign-keys>
+				<key app="EN" db-id="test123">16</key>
+			</foreign-keys>
+			<ref-type name="Journal Article">17</ref-type>
+			<contributors>
+				<authors>
+					<author>
+						<style face="normal" font="default" size="100%">Reviewer, Ray</style>
+					</author>
+				</authors>
+			</contributors>
+			<titles>
+				<title>
+					<style face="normal" font="default" size="100%">Review of an Important Work</style>
+				</title>
+				<secondary-title>
+					<style face="normal" font="default" size="100%">Review Journal</style>
+				</secondary-title>
+			</titles>
+			<reviewed-item>
+				<style face="normal" font="default" size="100%">The Important Work Being Reviewed</style>
+			</reviewed-item>
+			<dates>
+				<year>
+					<style face="normal" font="default" size="100%">2021</style>
+				</year>
+			</dates>
+			<language>
+				<style face="normal" font="default" size="100%">English</style>
+			</language>
+		</record>
+		<record>
+			<database name="Test Library.enl" path="/Users/Test/Documents/Test Library.enl">Test Library.enl</database>
+			<source-app name="EndNote" version="20.0">EndNote</source-app>
+			<rec-number>17</rec-number>
+			<foreign-keys>
+				<key app="EN" db-id="test123">17</key>
+			</foreign-keys>
+			<ref-type name="Journal Article">17</ref-type>
+			<contributors>
+				<authors>
+					<author>
+						<style face="normal" font="default" size="100%">Page, Peter</style>
+					</author>
+				</authors>
+			</contributors>
+			<titles>
+				<title>
+					<style face="normal" font="default" size="100%">Article with Attribute-Based Page Range</style>
+				</title>
+				<secondary-title>
+					<style face="normal" font="default" size="100%">Attribute Test Journal</style>
+				</secondary-title>
+			</titles>
+			<pages start="101" end="115"></pages>
+			<dates>
+				<year>
+					<style face="normal" font="default" size="100%">2020</style>
+				</year>
+			</dates>
+			<language>
+				<style face="normal" font="default" size="100%">English</style>
+			</language>
+		</record>
+	</records>
+</xml>

@@ -1,0 +1,119 @@
+{
+    "entries": {
+        "1": {
+            "entry_key": "e219b34e-d397-37b4-818e-80ca578eae74",
+            "bib_type": "article-journal",
+            "fields": {
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Large dinosaur egg accumulations and their implications for dinosaur reproductive biology"
+                    }
+                ],
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Ezquerro"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "L."
+                            }
+                        ]
+                    }
+                ],
+                "journaltitle": [
+                    {
+                        "type": "text",
+                        "text": "Geoscience Frontiers"
+                    }
+                ],
+                "volume": [
+                    {
+                        "type": "text",
+                        "text": "15"
+                    }
+                ],
+                "issue": [
+                    {
+                        "type": "text",
+                        "text": "5"
+                    }
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "101872"
+                            }
+                        ]
+                    ]
+                ],
+                "doi": "10.1016/j.gsf.2024.101872",
+                "date": "2024-09-01"
+            }
+        },
+        "2": {
+            "entry_key": "abc12345-0000-0000-0000-000000000001",
+            "bib_type": "book",
+            "fields": {
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Introduction to Palaeontology"
+                    }
+                ],
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Smith"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "John A."
+                            }
+                        ]
+                    }
+                ],
+                "publisher": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Academic Press"
+                        }
+                    ]
+                ],
+                "location": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "London"
+                        }
+                    ]
+                ],
+                "edition": [
+                    {
+                        "type": "text",
+                        "text": "3"
+                    }
+                ],
+                "isbn": [
+                    {
+                        "type": "text",
+                        "text": "978-0-12-345678-9"
+                    }
+                ],
+                "date": "2020"
+            }
+        }
+    }
+}

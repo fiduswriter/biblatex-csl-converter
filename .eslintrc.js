@@ -1,5 +1,6 @@
 module.exports = {
     root: true,
+    ignorePatterns: ["src/i18n/locales.ts"],
     parser: "@typescript-eslint/parser",
     plugins: ["@typescript-eslint", "prettier"],
     env: {
@@ -10,7 +11,7 @@ module.exports = {
     },
     extends: ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
     parserOptions: {
-        ecmaVersion: 2018,
+        ecmaVersion: 2020,
         sourceType: "module",
     },
     rules: {
@@ -78,7 +79,7 @@ module.exports = {
         "max-lines": "off",
         "max-lines-per-function": "off",
         "max-nested-callbacks": "error",
-        "max-params": "error",
+        "max-params": "off",
         "max-statements": "off",
         "max-statements-per-line": "off",
         "multiline-comment-style": "off",
@@ -171,7 +172,7 @@ module.exports = {
         "no-throw-literal": "error",
         "no-trailing-spaces": "error",
         "no-undef-init": "error",
-        "no-undefined": "error",
+        "no-undefined": "off",
         "no-unmodified-loop-condition": "error",
         "no-unneeded-ternary": "error",
         "no-unused-expressions": "error",

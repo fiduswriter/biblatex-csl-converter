@@ -3,7 +3,6 @@
         "entry_key": "1",
         "bib_type": "article",
         "fields": {
-            "langid": "",
             "title": [
                 {
                     "type": "text",
@@ -37,7 +36,6 @@
         "entry_key": "2",
         "bib_type": "book",
         "fields": {
-            "langid": "",
             "title": [
                 {
                     "type": "text",
@@ -50,7 +48,6 @@
         "entry_key": "3",
         "bib_type": "book",
         "fields": {
-            "langid": "",
             "title": [
                 {
                     "type": "text",
@@ -72,7 +69,6 @@
         "entry_key": "4",
         "bib_type": "article",
         "fields": {
-            "langid": "",
             "title": [
                 {
                     "type": "text",
@@ -145,7 +141,6 @@
                     "text": "in French, so no case conversion, nor protection."
                 }
             ],
-            "langid": "",
             "title": [
                 {
                     "type": "text",
@@ -158,7 +153,6 @@
         "entry_key": "6",
         "bib_type": "book",
         "fields": {
-            "langid": "",
             "title": [
                 {
                     "type": "text",
@@ -180,7 +174,6 @@
         "entry_key": "7",
         "bib_type": "article",
         "fields": {
-            "langid": "",
             "title": [
                 {
                     "type": "text",

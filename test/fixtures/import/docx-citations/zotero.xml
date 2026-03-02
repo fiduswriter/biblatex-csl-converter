@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+  Synthetic DOCX word/document.xml fragment — Zotero inline citation.
+
+  Format: ADDIN ZOTERO_ITEM CSL_CITATION {json}
+  The instrText content is split across three <w:r> runs (as Word does when
+  character formatting changes mid-field), requiring the parser to concatenate
+  all instrText nodes between the begin and separate markers.
+-->
+<w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">
+  <w:body>
+    <w:p>
+      <w:r>
+        <w:fldChar w:fldCharType="begin"/>
+      </w:r>
+      <w:r>
+        <w:instrText xml:space="preserve"> ADDIN ZOTERO_ITEM CSL_CITATION {
+  "citationID": "AQwSemPs",
+  "properties": {
+    "formattedCitation": "(Hawking, 2010)",
+    "plainCitation": "(Hawking, 2010)",
+    "noteIndex": 0
+  },
+  "citationItems": [
+    {
+      "id": 46,
+      "uris": ["http://zotero.org/users/40613/items/EAG35HWU"],
+      "itemData": {
+        "id": 46,
+        "type": "article-journal",
+        "title": "Test article one",
+        "container-title": "Physical Review Letters",
+        "volume": "105",
+        "issue": "3",
+        "page": "1-10",
+        "DOI": "10.1103/PhysRevLett.105.031301",
+        "author": [
+          { "family": "Hawking", "given": "Stephen" }
+        ],
+        "issued": { "date-parts": [[2010, 7, 15]] }
+      }
+    }
+  ],
+  "schema": "https://github.com/citation-style-language/schema/raw/master/csl-citation.json"
+} </w:instrText>
+      </w:r>
+      <w:r>
+        <w:fldChar w:fldCharType="separate"/>
+      </w:r>
+      <w:r>
+        <w:t>(Hawking, 2010)</w:t>
+      </w:r>
+      <w:r>
+        <w:fldChar w:fldCharType="end"/>
+      </w:r>
+    </w:p>
+    <w:p>
+      <!-- Second citation field — two items, one already seen (id=46) -->
+      <w:r>
+        <w:fldChar w:fldCharType="begin"/>
+      </w:r>
+      <w:r>
+        <w:instrText xml:space="preserve"> ADDIN ZOTERO_ITEM CSL_CITATION {
+  "citationID": "Bx9Qr7Zt",
+  "properties": { "noteIndex": 0 },
+  "citationItems": [
+    {
+      "id": 46,
+      "itemData": {
+        "id": 46,
+        "type": "article-journal",
+        "title": "Test article one",
+        "author": [{ "family": "Hawking", "given": "Stephen" }],
+        "issued": { "date-parts": [[2010]] }
+      }
+    },
+    {
+      "id": 99,
+      "itemData": {
+        "id": 99,
+        "type": "book",
+        "title": "A Brief History of Time",
+        "publisher": "Bantam Books",
+        "publisher-place": "New York",
+        "edition": "2",
+        "ISBN": "978-0-553-38016-3",
+        "author": [
+          { "family": "Hawking", "given": "Stephen" }
+        ],
+        "issued": { "date-parts": [[1998]] }
+      }
+    }
+  ],
+  "schema": "https://github.com/citation-style-language/schema/raw/master/csl-citation.json"
+} </w:instrText>
+      </w:r>
+      <w:r>
+        <w:fldChar w:fldCharType="separate"/>
+      </w:r>
+      <w:r>
+        <w:t>(Hawking, 1998, 2010)</w:t>
+      </w:r>
+      <w:r>
+        <w:fldChar w:fldCharType="end"/>
+      </w:r>
+    </w:p>
+    <w:p>
+      <!-- Bibliography field — no importable source data -->
+      <w:r>
+        <w:fldChar w:fldCharType="begin"/>
+      </w:r>
+      <w:r>
+        <w:instrText xml:space="preserve"> ADDIN ZOTERO_BIBL {"uncited":[],"custom":[]} CSL_BIBLIOGRAPHY </w:instrText>
+      </w:r>
+      <w:r>
+        <w:fldChar w:fldCharType="separate"/>
+      </w:r>
+      <w:r>
+        <w:t>Hawking, S. (1998). A Brief History of Time. Bantam Books.</w:t>
+      </w:r>
+      <w:r>
+        <w:fldChar w:fldCharType="end"/>
+      </w:r>
+    </w:p>
+  </w:body>
+</w:document>

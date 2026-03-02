@@ -3,18 +3,18 @@ name: Test CI
 on:
     push:
         branches-ignore:
-            - gh-pages
             - browser
     pull_request:
         branches:
             - "*"
+
 jobs:
     test:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout
               uses: actions/checkout@v4
-            - name: Test
+            - name: Setup Node
               uses: actions/setup-node@v4
               with:
                   node-version: "22.x"
@@ -25,18 +25,11 @@ jobs:
               uses: coverallsapp/github-action@master
               with:
                   github-token: ${{ secrets.GITHUB_TOKEN }}
-            - name: Extract Branch Name
-              run: echo "BRANCH=$(echo ${GITHUB_REF##*/})" >> $GITHUB_ENV
-            - name: Deploy gh-pages branch
-              if: env.BRANCH == 'main'
-              uses: crazy-max/ghaction-github-pages@v4
-              with:
-                  target_branch: gh-pages
-                  build_dir: gh-pages
-              env:
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            - name: Compile browser bundles
+              if: github.ref == 'refs/heads/main'
+              run: npm run compile_browser
             - name: Deploy browser branch
-              if: env.BRANCH == 'main'
+              if: github.ref == 'refs/heads/main'
               uses: crazy-max/ghaction-github-pages@v4
               with:
                   target_branch: browser

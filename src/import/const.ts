@@ -7,6 +7,8 @@ export const BiblatexFieldAliasTypes = {
     pdf: "file",
     primaryclass: "eprintclass",
     school: "institution",
+    director: "author",
+    producer: "editor",
 }
 
 /** A list of all bibentry aliases and what they refer to. */
@@ -20,6 +22,9 @@ export const BiblatexAliasTypes = {
     periodical: ["article"],
     suppperiodical: ["article"],
     newsarticle: ["article", "newspaper"],
+    movie: ["video"],
+    film: ["video"],
+    song: ["audio"],
 }
 
 const langidAliases = {
