@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CitaviExchangeData Version="6.11.0.0" ConnectionIdentifier="C:\Users\test\Library.ctv6" Changeset="215">
+  <ProjectSettings>
+    <AttachmentsFolderPath></AttachmentsFolderPath>
+    <ColorScheme><![CDATA[Blue]]></ColorScheme>
+    <CustomFields>
+      <CustomFieldSettings>
+        <CompareType>Text</CompareType>
+        <DefaultValue />
+        <DropDownStyle>None</DropDownStyle>
+        <PropertyName>SpecificField1</PropertyName>
+      </CustomFieldSettings>
+      <CustomFieldSettings>
+        <CompareType>Text</CompareType>
+        <DefaultValue />
+        <DropDownStyle>None</DropDownStyle>
+        <PropertyName>SpecificField2</PropertyName>
+      </CustomFieldSettings>
+      <CustomFieldSettings>
+        <CompareType>Text</CompareType>
+        <DefaultValue />
+        <DropDownStyle>None</DropDownStyle>
+        <PropertyName>SpecificField3</PropertyName>
+      </CustomFieldSettings>
+      <CustomFieldSettings>
+        <CompareType>Text</CompareType>
+        <DefaultValue />
+        <DropDownStyle>None</DropDownStyle>
+        <PropertyName>SpecificField4</PropertyName>
+      </CustomFieldSettings>
+      <CustomFieldSettings>
+        <CompareType>Text</CompareType>
+        <DefaultValue />
+        <DropDownStyle>None</DropDownStyle>
+        <PropertyName>SpecificField5</PropertyName>
+      </CustomFieldSettings>
+      <CustomFieldSettings>
+        <CompareType>Text</CompareType>
+        <DefaultValue />
+        <DropDownStyle>None</DropDownStyle>
+        <PropertyName>SpecificField6</PropertyName>
+      </CustomFieldSettings>
+      <CustomFieldSettings>
+        <CompareType>Text</CompareType>
+        <DefaultValue />
+        <DropDownStyle>None</DropDownStyle>
+        <PropertyName>SpecificField7</PropertyName>
+      </CustomFieldSettings>
+    </CustomFields>
+    <Description><![CDATA[Synthetic test library]]></Description>
+    <IsUtc>true</IsUtc>
+    <LastChangeTime>01/03/2026 12:00:00</LastChangeTime>
+  </ProjectSettings>
+  <Persons>
+    <Person id="syn-p-001">
+      <CreatedBy>_Synthetic</CreatedBy>
+      <CreatedOn>2026-03-01T12:00:00</CreatedOn>
+      <ModifiedBy>_Synthetic</ModifiedBy>
+      <ModifiedOn>2026-03-01T12:00:00</ModifiedOn>
+      <FirstName>Alice</FirstName>
+      <LastName>Anderson</LastName>
+      <Protected>false</Protected>
+      <SortFullName>anderson, alice</SortFullName>
+    </Person>
+    <Person id="syn-p-002">
+      <CreatedBy>_Synthetic</CreatedBy>
+      <CreatedOn>2026-03-01T12:00:00</CreatedOn>
+      <ModifiedBy>_Synthetic</ModifiedBy>
+      <ModifiedOn>2026-03-01T12:00:00</ModifiedOn>
+      <FirstName>Bob</FirstName>
+      <LastName>Baker</LastName>
+      <Protected>false</Protected>
+      <SortFullName>baker, bob</SortFullName>
+    </Person>
+  </Persons>
+  <Keywords>
+    <Keyword id="syn-k-001">
+      <CreatedBy>_Synthetic</CreatedBy>
+      <CreatedOn>2026-03-01T12:00:00</CreatedOn>
+      <ModifiedBy>_Synthetic</ModifiedBy>
+      <ModifiedOn>2026-03-01T12:00:00</ModifiedOn>
+      <Name>Synthetic Testing</Name>
+      <Protected>false</Protected>
+      <SortFullName>synthetic testing</SortFullName>
+    </Keyword>
+    <Keyword id="syn-k-002">
+      <CreatedBy>_Synthetic</CreatedBy>
+      <CreatedOn>2026-03-01T12:00:00</CreatedOn>
+      <ModifiedBy>_Synthetic</ModifiedBy>
+      <ModifiedOn>2026-03-01T12:00:00</ModifiedOn>
+      <Name>Research Data</Name>
+      <Protected>false</Protected>
+      <SortFullName>research data</SortFullName>
+    </Keyword>
+  </Keywords>
+  <Publishers>
+    <Publisher id="syn-pub-001">
+      <CreatedBy>_Synthetic</CreatedBy>
+      <CreatedOn>2026-03-01T12:00:00</CreatedOn>
+      <ModifiedBy>_Synthetic</ModifiedBy>
+      <ModifiedOn>2026-03-01T12:00:00</ModifiedOn>
+      <Name>Test Publishers Inc</Name>
+      <Protected>false</Protected>
+      <SortFullName>test publishers inc</SortFullName>
+    </Publisher>
+  </Publishers>
+  <SeriesTitles>
+    <SeriesTitle id="syn-s-001">
+      <CreatedBy>_Synthetic</CreatedBy>
+      <CreatedOn>2026-03-01T12:00:00</CreatedOn>
+      <ModifiedBy>_Synthetic</ModifiedBy>
+      <ModifiedOn>2026-03-01T12:00:00</ModifiedOn>
+      <Name>Synthetic Series</Name>
+      <Protected>false</Protected>
+      <SortFullName>synthetic series</SortFullName>
+    </SeriesTitle>
+  </SeriesTitles>
+  <References>
+    <Reference id="syn-ref-001">
+      <CreatedBy>_Synthetic</CreatedBy>
+      <CreatedOn>2026-03-01T12:00:00</CreatedOn>
+      <ModifiedBy>_Synthetic</ModifiedBy>
+      <ModifiedOn>2026-03-01T12:00:00</ModifiedOn>
+      <AbstractComplexity>0</AbstractComplexity>
+      <AbstractSourceTextFormat>0</AbstractSourceTextFormat>
+      <CitationKey>TestArticle2024</CitationKey>
+      <CitationKeyUpdateType>0</CitationKeyUpdateType>
+      <DateForSorting>2024-06-15T00:00:00</DateForSorting>
+      <EvaluationComplexity>0</EvaluationComplexity>
+      <EvaluationSourceTextFormat>0</EvaluationSourceTextFormat>
+      <HasLabel1>false</HasLabel1>
+      <HasLabel2>false</HasLabel2>
+      <PageRangeNumber>-1</PageRangeNumber>
+      <Rating>0</Rating>
+      <ReferenceType>JournalArticle</ReferenceType>
+      <ShortTitle>Anderson, Baker 2024 – Test Article</ShortTitle>
+      <ShortTitleUpdateType>0</ShortTitleUpdateType>
+      <TableOfContentsComplexity>0</TableOfContentsComplexity>
+      <TableOfContentsSourceTextFormat>0</TableOfContentsSourceTextFormat>
+      <Title>A Synthetic Test Article for Citavi Import</Title>
+      <Year>2024</Year>
+    </Reference>
+    <Reference id="syn-ref-002">
+      <CreatedBy>_Synthetic</CreatedBy>
+      <CreatedOn>2026-03-01T12:00:00</CreatedOn>
+      <ModifiedBy>_Synthetic</ModifiedBy>
+      <ModifiedOn>2026-03-01T12:00:00</ModifiedOn>
+      <AbstractComplexity>0</AbstractComplexity>
+      <AbstractSourceTextFormat>0</AbstractSourceTextFormat>
+      <CitationKey>TestBook2023</CitationKey>
+      <CitationKeyUpdateType>0</CitationKeyUpdateType>
+      <DateForSorting>2023-01-20T00:00:00</DateForSorting>
+      <EvaluationComplexity>0</EvaluationComplexity>
+      <EvaluationSourceTextFormat>0</EvaluationSourceTextFormat>
+      <HasLabel1>false</HasLabel1>
+      <HasLabel2>false</HasLabel2>
+      <ISBN>978-3-16-148410-0</ISBN>
+      <PageRangeNumber>-1</PageRangeNumber>
+      <PlaceOfPublication>London</PlaceOfPublication>
+      <Rating>0</Rating>
+      <ReferenceType>Book</ReferenceType>
+      <ShortTitle>Baker 2023 – Test Book</ShortTitle>
+      <ShortTitleUpdateType>0</ShortTitleUpdateType>
+      <TableOfContentsComplexity>0</TableOfContentsComplexity>
+      <TableOfContentsSourceTextFormat>0</TableOfContentsSourceTextFormat>
+      <Title>Test Book for Citavi Import Testing</Title>
+      <Year>2023</Year>
+    </Reference>
+  </References>
+  <ReferenceAuthors>
+    <OnetoN>syn-ref-001;syn-p-001;syn-p-002</OnetoN>
+    <OnetoN>syn-ref-002;syn-p-002</OnetoN>
+  </ReferenceAuthors>
+  <ReferenceKeywords>
+    <OnetoN>syn-ref-001;syn-k-001;syn-k-002</OnetoN>
+    <OnetoN>syn-ref-002;syn-k-001</OnetoN>
+  </ReferenceKeywords>
+  <ReferencePublishers>
+    <OnetoN>syn-ref-002;syn-pub-001</OnetoN>
+  </ReferencePublishers>
+</CitaviExchangeData>

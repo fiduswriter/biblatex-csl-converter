@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CitaviExchangeData Version="6.11.0.0" ConnectionIdentifier="C:\Users\test\collections.ctv6" Changeset="143">
+  <ProjectSettings>
+    <AttachmentsFolderPath></AttachmentsFolderPath>
+    <ColorScheme><![CDATA[Blue]]></ColorScheme>
+    <CustomFields>
+      <CustomFieldSettings>
+        <CompareType>Text</CompareType>
+        <DefaultValue />
+        <DropDownStyle>None</DropDownStyle>
+        <PropertyName>SpecificField1</PropertyName>
+      </CustomFieldSettings>
+      <CustomFieldSettings>
+        <CompareType>Text</CompareType>
+        <DefaultValue />
+        <DropDownStyle>None</DropDownStyle>
+        <PropertyName>SpecificField2</PropertyName>
+      </CustomFieldSettings>
+      <CustomFieldSettings>
+        <CompareType>Text</CompareType>
+        <DefaultValue />
+        <DropDownStyle>None</DropDownStyle>
+        <PropertyName>SpecificField3</PropertyName>
+      </CustomFieldSettings>
+      <CustomFieldSettings>
+        <CompareType>Text</CompareType>
+        <DefaultValue />
+        <DropDownStyle>None</DropDownStyle>
+        <PropertyName>SpecificField4</PropertyName>
+      </CustomFieldSettings>
+      <CustomFieldSettings>
+        <CompareType>Text</CompareType>
+        <DefaultValue />
+        <DropDownStyle>None</DropDownStyle>
+        <PropertyName>SpecificField5</PropertyName>
+      </CustomFieldSettings>
+      <CustomFieldSettings>
+        <CompareType>Text</CompareType>
+        <DefaultValue />
+        <DropDownStyle>None</DropDownStyle>
+        <PropertyName>SpecificField6</PropertyName>
+      </CustomFieldSettings>
+      <CustomFieldSettings>
+        <CompareType>Text</CompareType>
+        <DefaultValue />
+        <DropDownStyle>None</DropDownStyle>
+        <PropertyName>SpecificField7</PropertyName>
+      </CustomFieldSettings>
+    </CustomFields>
+    <Description><![CDATA[Synthetic test collections project]]></Description>
+    <IsUtc>true</IsUtc>
+    <LastChangeTime>01/03/2026 12:00:00</LastChangeTime>
+  </ProjectSettings>
+  <Categories>
+    <Category id="syn-cat-root-a">
+      <CreatedBy>_Synthetic</CreatedBy>
+      <CreatedOn>2026-03-01T12:00:00</CreatedOn>
+      <ModifiedBy>_Synthetic</ModifiedBy>
+      <ModifiedOn>2026-03-01T12:00:00</ModifiedOn>
+      <Name>Top Level Collection A</Name>
+    </Category>
+    <Category id="syn-cat-sub-1a">
+      <CreatedBy>_Synthetic</CreatedBy>
+      <CreatedOn>2026-03-01T12:00:00</CreatedOn>
+      <ModifiedBy>_Synthetic</ModifiedBy>
+      <ModifiedOn>2026-03-01T12:00:00</ModifiedOn>
+      <Name>Sublevel 1A</Name>
+    </Category>
+    <Category id="syn-cat-sub-1b">
+      <CreatedBy>_Synthetic</CreatedBy>
+      <CreatedOn>2026-03-01T12:00:00</CreatedOn>
+      <ModifiedBy>_Synthetic</ModifiedBy>
+      <ModifiedOn>2026-03-01T12:00:00</ModifiedOn>
+      <Name>Sublevel 1B</Name>
+    </Category>
+    <Category id="syn-cat-sub-2a">
+      <CreatedBy>_Synthetic</CreatedBy>
+      <CreatedOn>2026-03-01T12:00:00</CreatedOn>
+      <ModifiedBy>_Synthetic</ModifiedBy>
+      <ModifiedOn>2026-03-01T12:00:00</ModifiedOn>
+      <Name>Sublevel 2A</Name>
+    </Category>
+    <Category id="syn-cat-sub-3a">
+      <CreatedBy>_Synthetic</CreatedBy>
+      <CreatedOn>2026-03-01T12:00:00</CreatedOn>
+      <ModifiedBy>_Synthetic</ModifiedBy>
+      <ModifiedOn>2026-03-01T12:00:00</ModifiedOn>
+      <Name>Sublevel 3A</Name>
+    </Category>
+    <Category id="syn-cat-sub-4a">
+      <CreatedBy>_Synthetic</CreatedBy>
+      <CreatedOn>2026-03-01T12:00:00</CreatedOn>
+      <ModifiedBy>_Synthetic</ModifiedBy>
+      <ModifiedOn>2026-03-01T12:00:00</ModifiedOn>
+      <Name>Sublevel 4A</Name>
+    </Category>
+    <Category id="syn-cat-sub-5a">
+      <CreatedBy>_Synthetic</CreatedBy>
+      <CreatedOn>2026-03-01T12:00:00</CreatedOn>
+      <ModifiedBy>_Synthetic</ModifiedBy>
+      <ModifiedOn>2026-03-01T12:00:00</ModifiedOn>
+      <Name>Sublevel 5A</Name>
+    </Category>
+    <Category id="syn-cat-sub-5b">
+      <CreatedBy>_Synthetic</CreatedBy>
+      <CreatedOn>2026-03-01T12:00:00</CreatedOn>
+      <ModifiedBy>_Synthetic</ModifiedBy>
+      <ModifiedOn>2026-03-01T12:00:00</ModifiedOn>
+      <Name>Sublevel 5B</Name>
+    </Category>
+    <Category id="syn-cat-root-b">
+      <CreatedBy>_Synthetic</CreatedBy>
+      <CreatedOn>2026-03-01T12:00:00</CreatedOn>
+      <ModifiedBy>_Synthetic</ModifiedBy>
+      <ModifiedOn>2026-03-01T12:00:00</ModifiedOn>
+      <Name>Top Level Collection B</Name>
+    </Category>
+  </Categories>
+  <CategoryCategories>
+    <OnetoN>00000000-0000-0000-0000-000000000000;syn-cat-root-a;syn-cat-root-b</OnetoN>
+    <OnetoN>syn-cat-root-a;syn-cat-sub-1a;syn-cat-sub-1b</OnetoN>
+    <OnetoN>syn-cat-sub-1a;syn-cat-sub-2a</OnetoN>
+    <OnetoN>syn-cat-sub-2a;syn-cat-sub-3a</OnetoN>
+    <OnetoN>syn-cat-sub-3a;syn-cat-sub-4a</OnetoN>
+    <OnetoN>syn-cat-sub-4a;syn-cat-sub-5a;syn-cat-sub-5b</OnetoN>
+  </CategoryCategories>
+  <Keywords>
+    <Keyword id="syn-kc-001">
+      <CreatedBy>_Synthetic</CreatedBy>
+      <CreatedOn>2026-03-01T12:00:00</CreatedOn>
+      <ModifiedBy>_Synthetic</ModifiedBy>
+      <ModifiedOn>2026-03-01T12:00:00</ModifiedOn>
+      <Name>Test Keyword A</Name>
+      <Protected>false</Protected>
+    </Keyword>
+    <Keyword id="syn-kc-002">
+      <CreatedBy>_Synthetic</CreatedBy>
+      <CreatedOn>2026-03-01T12:00:00</CreatedOn>
+      <ModifiedBy>_Synthetic</ModifiedBy>
+      <ModifiedOn>2026-03-01T12:00:00</ModifiedOn>
+      <Name>Test Keyword B</Name>
+      <Protected>false</Protected>
+    </Keyword>
+  </Keywords>
+  <Persons>
+    <Person id="syn-pc-001">
+      <CreatedBy>_Synthetic</CreatedBy>
+      <CreatedOn>2026-03-01T12:00:00</CreatedOn>
+      <ModifiedBy>_Synthetic</ModifiedBy>
+      <ModifiedOn>2026-03-01T12:00:00</ModifiedOn>
+      <FirstName>Charles</FirstName>
+      <LastName>Carter</LastName>
+      <Protected>false</Protected>
+    </Person>
+    <Person id="syn-pc-002">
+      <CreatedBy>_Synthetic</CreatedBy>
+      <CreatedOn>2026-03-01T12:00:00</CreatedOn>
+      <ModifiedBy>_Synthetic</ModifiedBy>
+      <ModifiedOn>2026-03-01T12:00:00</ModifiedOn>
+      <FirstName>Diana</FirstName>
+      <LastName>Davis</LastName>
+      <Protected>false</Protected>
+    </Person>
+  </Persons>
+  <Publishers>
+    <Publisher id="syn-pubc-001">
+      <CreatedBy>_Synthetic</CreatedBy>
+      <CreatedOn>2026-03-01T12:00:00</CreatedOn>
+      <ModifiedBy>_Synthetic</ModifiedBy>
+      <ModifiedOn>2026-03-01T12:00:00</ModifiedOn>
+      <Name>Collection Publishers</Name>
+      <Place>Boston</Place>
+      <Protected>false</Protected>
+    </Publisher>
+  </Publishers>
+  <SeriesTitles>
+    <SeriesTitle id="syn-sc-001">
+      <CreatedBy>_Synthetic</CreatedBy>
+      <CreatedOn>2026-03-01T12:00:00</CreatedOn>
+      <ModifiedBy>_Synthetic</ModifiedBy>
+      <ModifiedOn>2026-03-01T12:00:00</ModifiedOn>
+      <Name>Test Collection Series</Name>
+      <Protected>false</Protected>
+    </SeriesTitle>
+  </SeriesTitles>
+  <References>
+    <Reference id="syn-refc-001">
+      <CreatedBy>_Synthetic</CreatedBy>
+      <CreatedOn>2026-03-01T12:00:00</CreatedOn>
+      <ModifiedBy>_Synthetic</ModifiedBy>
+      <ModifiedOn>2026-03-01T12:00:00</ModifiedOn>
+      <AbstractComplexity>0</AbstractComplexity>
+      <AbstractSourceTextFormat>0</AbstractSourceTextFormat>
+      <CitationKey>CollectionTest1</CitationKey>
+      <CitationKeyUpdateType>0</CitationKeyUpdateType>
+      <DateForSorting>2025-05-10T00:00:00</DateForSorting>
+      <EvaluationComplexity>0</EvaluationComplexity>
+      <EvaluationSourceTextFormat>0</EvaluationSourceTextFormat>
+      <HasLabel1>false</HasLabel1>
+      <HasLabel2>false</HasLabel2>
+      <PageRangeNumber>-1</PageRangeNumber>
+      <Rating>0</Rating>
+      <ReferenceType>ConferenceProceedings</ReferenceType>
+      <ShortTitle>Carter 2025 – Collection Test Paper</ShortTitle>
+      <ShortTitleUpdateType>0</ShortTitleUpdateType>
+      <TableOfContentsComplexity>0</TableOfContentsComplexity>
+      <TableOfContentsSourceTextFormat>0</TableOfContentsSourceTextFormat>
+      <Title>Collection Test: Synthetic Conference Proceedings</Title>
+      <Year>2025</Year>
+    </Reference>
+  </References>
+  <ReferenceAuthors>
+    <OnetoN>syn-refc-001;syn-pc-001</OnetoN>
+  </ReferenceAuthors>
+  <ReferenceKeywords>
+    <OnetoN>syn-refc-001;syn-kc-001;syn-kc-002</OnetoN>
+  </ReferenceKeywords>
+  <ReferencePublishers>
+    <OnetoN>syn-refc-001;syn-pubc-001</OnetoN>
+  </ReferencePublishers>
+</CitaviExchangeData>

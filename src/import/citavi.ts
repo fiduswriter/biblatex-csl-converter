@@ -5,6 +5,8 @@
  * including the "WordPlaceholder" citation format used in docx exports
  * and direct project-export arrays.
  *
+ * For the native XML project format (.ctv5 / .ctv6) see citavi-xml.ts.
+ *
  * Field semantics are derived from the official per-type documentation at:
  * https://www1.citavi.com/sub/manual-citaviweb/en/fields_in_citavi.html
  *
@@ -719,6 +721,7 @@ export type CitaviInput =
 interface ErrorObject {
     type: string
     field?: string
+    field_name?: string
     value?: unknown
     entry?: string
 }
@@ -749,6 +752,10 @@ export class CitaviParser {
             const id = ref.Id || String(i + 1)
 
             if (this.seenIds.has(id)) {
+                this.warnings.push({
+                    type: "duplicate_entry",
+                    entry: id,
+                })
                 continue
             }
             this.seenIds.add(id)
@@ -819,31 +826,53 @@ export class CitaviParser {
         ref: CitaviReference,
         index: number
     ): EntryObject | false {
-        const refType = ref.ReferenceType || "Unknown"
-        const bibType = CitaviTypeMap[refType] || "misc"
-        const effectiveBibType = BibTypes[bibType] ? bibType : "misc"
+        const entryId = ref.Id || String(index)
 
-        if (!BibTypes[effectiveBibType]) {
+        if (!ref.ReferenceType) {
+            this.warnings.push({
+                type: "missing_reference_type",
+                entry: entryId,
+            })
+        }
+
+        const refType = ref.ReferenceType || "Unknown"
+
+        // Warn when refType has no entry in our mapping table (falls back to misc)
+        if (refType !== "Unknown" && !CitaviTypeMap[refType]) {
+            this.warnings.push({
+                type: "unknown_type",
+                value: refType,
+                entry: entryId,
+            })
+        }
+
+        const bibType = CitaviTypeMap[refType] || "misc"
+
+        // Error when the type map itself points to an unregistered internal type
+        // (this would be a bug in CitaviTypeMap)
+        if (!BibTypes[bibType]) {
             this.errors.push({
                 type: "unknown_type",
                 value: refType,
-                entry: ref.Id || String(index),
+                entry: entryId,
             })
             return false
         }
+
+        const effectiveBibType = bibType
 
         const fields: Record<string, unknown> = {}
         const roleOverrides = TypeRoleOverrides[refType] || {}
         const fieldOverrides = TypeFieldOverrides[refType] || {}
 
         // ── Titles ──────────────────────────────────────────────────────────
-        this.processTitle(ref, fields, refType, fieldOverrides)
+        this.processTitle(ref, fields, refType, fieldOverrides, entryId)
 
         // ── People ──────────────────────────────────────────────────────────
         this.processNames(ref, fields, roleOverrides)
 
         // ── Date ────────────────────────────────────────────────────────────
-        this.processDate(ref, fields, refType)
+        this.processDate(ref, fields, refType, entryId)
 
         // ── Access date ─────────────────────────────────────────────────────
         if (ref.AccessDate) {
@@ -863,7 +892,16 @@ export class CitaviParser {
         // ── Pages ───────────────────────────────────────────────────────────
         if (ref.PageRange) {
             const parsed = this.parsePageRange(ref.PageRange)
-            if (parsed) fields["pages"] = parsed
+            if (parsed) {
+                fields["pages"] = parsed
+            } else {
+                this.warnings.push({
+                    type: "unparsed_page_range",
+                    field_name: "pages",
+                    value: ref.PageRange,
+                    entry: entryId,
+                })
+            }
         }
 
         // ── Page total / number of pages ────────────────────────────────────
@@ -872,7 +910,7 @@ export class CitaviParser {
         }
 
         // ── Identifiers ─────────────────────────────────────────────────────
-        this.processIdentifiers(ref, fields)
+        this.processIdentifiers(ref, fields, entryId)
 
         // ── Online address / URL ─────────────────────────────────────────────
         // OnlineAddress is a dedicated top-level field (shown in table view)
@@ -892,10 +930,10 @@ export class CitaviParser {
         this.processKeywords(ref, fields)
 
         // ── Language ────────────────────────────────────────────────────────
-        this.processLanguage(ref, fields)
+        this.processLanguage(ref, fields, entryId)
 
         // ── SpecificField slots ──────────────────────────────────────────────
-        this.processSpecificFields(ref, fields, fieldOverrides)
+        this.processSpecificFields(ref, fields, fieldOverrides, entryId)
 
         // ── Parent reference ─────────────────────────────────────────────────
         if (ref.ParentReference) {
@@ -903,7 +941,7 @@ export class CitaviParser {
         }
 
         // ── Entry key ───────────────────────────────────────────────────────
-        const entryKey = this.buildEntryKey(ref, index)
+        const entryKey = this.buildEntryKey(ref, index, entryId)
 
         return {
             entry_key: entryKey,
@@ -918,11 +956,18 @@ export class CitaviParser {
         ref: CitaviReference,
         fields: Record<string, unknown>,
         refType: string,
-        fo: FieldOverride
+        fo: FieldOverride,
+        entryId: string
     ) {
         // Older Citavi JSON exports use "Title1"; newer use "Title"
         const rawTitle = ref.Title || ref.Title1
-        if (!rawTitle) return
+        if (!rawTitle) {
+            this.warnings.push({
+                type: "missing_title",
+                entry: entryId,
+            })
+            return
+        }
 
         const subtitle = ref.Subtitle
         const fo_subtitle = fo.SubtitleField
@@ -1047,7 +1092,8 @@ export class CitaviParser {
     private processDate(
         ref: CitaviReference,
         fields: Record<string, unknown>,
-        refType: string
+        refType: string,
+        entryId: string
     ) {
         // For most types:
         //   Date  = primary date (release, publication, …)
@@ -1074,7 +1120,20 @@ export class CitaviParser {
             } else if (/^\d{4}$/.test(primaryRaw.trim())) {
                 fields["date"] = primaryRaw.trim()
             } else if (yearFallback && /^\d{4}$/.test(yearFallback.trim())) {
+                this.warnings.push({
+                    type: "unparsed_date",
+                    field_name: "date",
+                    value: primaryRaw,
+                    entry: entryId,
+                })
                 fields["date"] = yearFallback.trim()
+            } else {
+                this.warnings.push({
+                    type: "unparsed_date",
+                    field_name: "date",
+                    value: primaryRaw,
+                    entry: entryId,
+                })
             }
         } else if (yearFallback && /^\d{4}$/.test(yearFallback.trim())) {
             fields["date"] = yearFallback.trim()
@@ -1188,10 +1247,21 @@ export class CitaviParser {
 
     private processIdentifiers(
         ref: CitaviReference,
-        fields: Record<string, unknown>
+        fields: Record<string, unknown>,
+        entryId: string
     ) {
         if (ref.Doi) {
-            fields["doi"] = this.convertRichText(ref.Doi)
+            const doi = ref.Doi.trim()
+            // A DOI should never contain spaces; warn if it looks malformed
+            if (doi.includes(" ")) {
+                this.warnings.push({
+                    type: "suspect_doi",
+                    field_name: "doi",
+                    value: doi,
+                    entry: entryId,
+                })
+            }
+            fields["doi"] = this.convertRichText(doi)
         }
         if (ref.Isbn) {
             fields["isbn"] = this.convertRichText(ref.Isbn)
@@ -1230,19 +1300,30 @@ export class CitaviParser {
 
     private processLanguage(
         ref: CitaviReference,
-        fields: Record<string, unknown>
+        fields: Record<string, unknown>,
+        entryId: string
     ) {
         // Prefer LanguageCode (BCP-47) over Language (full name string)
         const code = ref.LanguageCode || ref.Language
         if (code) {
-            fields["langid"] = code
+            const trimmed = code.trim()
+            if (trimmed) {
+                fields["langid"] = trimmed
+            } else {
+                this.warnings.push({
+                    type: "empty_language",
+                    field_name: "langid",
+                    entry: entryId,
+                })
+            }
         }
     }
 
     private processSpecificFields(
         ref: CitaviReference,
         fields: Record<string, unknown>,
-        fo: FieldOverride
+        fo: FieldOverride,
+        entryId: string
     ) {
         const slots: Array<[keyof CitaviReference, keyof FieldOverride]> = [
             ["SpecificField1", "SpecificField1"],
@@ -1260,7 +1341,17 @@ export class CitaviParser {
 
             const target = fo[foKey] as string | null | undefined
             if (target === null) continue // explicitly ignored
-            if (target === undefined) continue // no mapping defined → skip
+            if (target === undefined) {
+                // The slot has a value but no mapping has been defined for this
+                // reference type — the data would be silently lost, so warn.
+                this.warnings.push({
+                    type: "unmapped_specific_field",
+                    field_name: String(refKey),
+                    value,
+                    entry: entryId,
+                })
+                continue
+            }
             // Append rather than overwrite if the field already has content
             if (fields[target]) {
                 // For note, append with semicolon
@@ -1410,7 +1501,13 @@ export class CitaviParser {
             (!person.FirstName && !person.LastName && person.Name)
         ) {
             const name = person.Name
-            if (!name) return null
+            if (!name) {
+                this.warnings.push({
+                    type: "skipped_person",
+                    value: person,
+                })
+                return null
+            }
             return { literal: this.convertRichText(name) }
         }
 
@@ -1428,7 +1525,13 @@ export class CitaviParser {
             nameObj.given = this.convertRichText(givenParts.join(" "))
         }
 
-        if (!nameObj.family && !nameObj.given) return null
+        if (!nameObj.family && !nameObj.given) {
+            this.warnings.push({
+                type: "skipped_person",
+                value: person,
+            })
+            return null
+        }
 
         return nameObj
     }
@@ -1499,7 +1602,11 @@ export class CitaviParser {
 
     // ─── Entry-key generation ────────────────────────────────────────────────
 
-    private buildEntryKey(ref: CitaviReference, index: number): string {
+    private buildEntryKey(
+        ref: CitaviReference,
+        index: number,
+        entryId: string
+    ): string {
         // 1. Prefer the BibTeX key that Citavi already computed
         if (ref.BibTeXKey) return ref.BibTeXKey
 
@@ -1518,7 +1625,12 @@ export class CitaviParser {
         }
 
         // 3. Fall back to the Citavi UUID or a sequential number
-        return ref.Id || String(index)
+        const fallback = ref.Id || String(index)
+        this.warnings.push({
+            type: "missing_entry_key",
+            entry: entryId,
+        })
+        return fallback
     }
 
     // ─── Text utilities ──────────────────────────────────────────────────────

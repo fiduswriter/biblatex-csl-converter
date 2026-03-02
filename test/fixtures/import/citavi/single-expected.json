@@ -1,0 +1,45 @@
+{
+    "1": {
+        "entry_key": "SingleTest2025",
+        "bib_type": "online",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Synthetic Single Reference Entry"
+                }
+            ],
+            "shorttitle": [
+                {
+                    "type": "text",
+                    "text": "Single Test"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Isaac"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Isaac"
+                        }
+                    ]
+                }
+            ],
+            "urldate": "01.03.2026",
+            "url": "https://example.com/single-test",
+            "abstract": [
+                {
+                    "type": "text",
+                    "text": "A brief guide to single reference testing for Citavi import."
+                }
+            ],
+            "keywords": "Single Test"
+        }
+    }
+}

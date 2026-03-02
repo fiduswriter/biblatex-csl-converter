@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CitaviExchangeData Version="5.4.0.2" FilePath="C:\Users\test\project.ctv5" Changeset="2">
+  <ProjectSettings>
+    <AutoSave>true</AutoSave>
+    <AttachmentsFolderPath></AttachmentsFolderPath>
+    <CacheId>33333333-3333-3333-3333-333333333333</CacheId>
+    <ColorScheme>Blue</ColorScheme>
+    <CustomFields>
+      <CustomFieldSettings>
+        <CompareType>Text</CompareType>
+        <DefaultValue />
+        <DropDownStyle>None</DropDownStyle>
+        <PropertyName>CustomField1</PropertyName>
+      </CustomFieldSettings>
+      <CustomFieldSettings>
+        <CompareType>Text</CompareType>
+        <DefaultValue />
+        <DropDownStyle>None</DropDownStyle>
+        <PropertyName>CustomField2</PropertyName>
+      </CustomFieldSettings>
+      <CustomFieldSettings>
+        <CompareType>Text</CompareType>
+        <DefaultValue />
+        <DropDownStyle>None</DropDownStyle>
+        <PropertyName>CustomField3</PropertyName>
+      </CustomFieldSettings>
+      <CustomFieldSettings>
+        <CompareType>Text</CompareType>
+        <DefaultValue />
+        <DropDownStyle>None</DropDownStyle>
+        <PropertyName>CustomField4</PropertyName>
+      </CustomFieldSettings>
+      <CustomFieldSettings>
+        <CompareType>Text</CompareType>
+        <DefaultValue />
+        <DropDownStyle>None</DropDownStyle>
+        <PropertyName>CustomField5</PropertyName>
+      </CustomFieldSettings>
+      <CustomFieldSettings>
+        <CompareType>Text</CompareType>
+        <DefaultValue />
+        <DropDownStyle>None</DropDownStyle>
+        <PropertyName>CustomField6</PropertyName>
+      </CustomFieldSettings>
+      <CustomFieldSettings>
+        <CompareType>Text</CompareType>
+        <DefaultValue />
+        <DropDownStyle>None</DropDownStyle>
+        <PropertyName>CustomField7</PropertyName>
+      </CustomFieldSettings>
+      <CustomFieldSettings>
+        <CompareType>Text</CompareType>
+        <DefaultValue />
+        <DropDownStyle>None</DropDownStyle>
+        <PropertyName>CustomField8</PropertyName>
+      </CustomFieldSettings>
+      <CustomFieldSettings>
+        <CompareType>Text</CompareType>
+        <DefaultValue />
+        <DropDownStyle>None</DropDownStyle>
+        <PropertyName>CustomField9</PropertyName>
+      </CustomFieldSettings>
+      <CustomFieldSettings>
+        <CompareType>Text</CompareType>
+        <DefaultValue />
+        <DropDownStyle>None</DropDownStyle>
+        <PropertyName>CustomField10</PropertyName>
+      </CustomFieldSettings>
+    </CustomFields>
+    <Description>Synthetic project test</Description>
+    <LastChangeTime>2026-03-01T12:00:00</LastChangeTime>
+    <OptimizeForSlowDatabaseAccess>false</OptimizeForSlowDatabaseAccess>
+  </ProjectSettings>
+  <Persons>
+    <Person id="syn-prp-001">
+      <FirstName>Greg</FirstName>
+      <LastName>Green</LastName>
+    </Person>
+    <Person id="syn-prp-002">
+      <FirstName>Helen</FirstName>
+      <LastName>Harris</LastName>
+    </Person>
+  </Persons>
+  <Keywords>
+    <Keyword id="syn-prk-001">
+      <Name>Project Test A</Name>
+    </Keyword>
+    <Keyword id="syn-prk-002">
+      <Name>Project Test B</Name>
+    </Keyword>
+  </Keywords>
+  <Publishers>
+    <Publisher id="syn-prpub-001">
+      <Name>Project Publishers</Name>
+    </Publisher>
+  </Publishers>
+  <References>
+    <Reference id="syn-prref-001">
+      <ReferenceType>ConferenceProceedings</ReferenceType>
+      <Title>Synthetic Project Conference Paper</Title>
+      <ShortTitle>Green, Harris 2023 – Project Test</ShortTitle>
+      <Year>2023</Year>
+      <Date>2023-06-10</Date>
+      <DateForSorting>2023-06-10T00:00:00</DateForSorting>
+      <PlaceOfPublication>Seattle</PlaceOfPublication>
+      <PageRangeNumber>-1</PageRangeNumber>
+      <AbstractComplexity>0</AbstractComplexity>
+      <AbstractSourceTextFormat>0</AbstractSourceTextFormat>
+      <EvaluationComplexity>0</EvaluationComplexity>
+      <EvaluationSourceTextFormat>0</EvaluationSourceTextFormat>
+      <TableOfContentsComplexity>0</TableOfContentsComplexity>
+      <TableOfContentsSourceTextFormat>0</TableOfContentsSourceTextFormat>
+      <HasLabel1>false</HasLabel1>
+      <HasLabel2>false</HasLabel2>
+      <Rating>0</Rating>
+      <SequenceNumber>1</SequenceNumber>
+      <CitationKeyUpdateType>0</CitationKeyUpdateType>
+      <ShortTitleUpdateType>0</ShortTitleUpdateType>
+      <CitationKey>ProjectTest2023</CitationKey>
+    </Reference>
+    <Reference id="syn-prref-002">
+      <ReferenceType>JournalArticle</ReferenceType>
+      <Title>Synthetic Project Journal Article</Title>
+      <ShortTitle>Harris 2022 – Project Journal</ShortTitle>
+      <Year>2022</Year>
+      <DateForSorting>2022-04-05T00:00:00</DateForSorting>
+      <PageRangeNumber>-1</PageRangeNumber>
+      <AbstractComplexity>0</AbstractComplexity>
+      <AbstractSourceTextFormat>0</AbstractSourceTextFormat>
+      <EvaluationComplexity>0</EvaluationComplexity>
+      <EvaluationSourceTextFormat>0</EvaluationSourceTextFormat>
+      <TableOfContentsComplexity>0</TableOfContentsComplexity>
+      <TableOfContentsSourceTextFormat>0</TableOfContentsSourceTextFormat>
+      <HasLabel1>false</HasLabel1>
+      <HasLabel2>false</HasLabel2>
+      <Rating>0</Rating>
+      <SequenceNumber>2</SequenceNumber>
+      <CitationKeyUpdateType>0</CitationKeyUpdateType>
+      <ShortTitleUpdateType>0</ShortTitleUpdateType>
+      <CitationKey>ProjectJournal2022</CitationKey>
+    </Reference>
+  </References>
+  <ReferenceAuthors>
+    <OnetoN>syn-prref-001;syn-prp-001;syn-prp-002</OnetoN>
+    <OnetoN>syn-prref-002;syn-prp-002</OnetoN>
+  </ReferenceAuthors>
+  <ReferenceKeywords>
+    <OnetoN>syn-prref-001;syn-prk-001</OnetoN>
+    <OnetoN>syn-prref-002;syn-prk-002</OnetoN>
+  </ReferenceKeywords>
+  <ReferencePublishers>
+    <OnetoN>syn-prref-001;syn-prpub-001</OnetoN>
+  </ReferencePublishers>
+</CitaviExchangeData>

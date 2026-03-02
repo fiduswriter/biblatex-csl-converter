@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CitaviExchangeData Version="5.4.0.2" FilePath="C:\Users\test\single.ctv5" Changeset="209">
+  <ProjectSettings>
+    <AutoSave>true</AutoSave>
+    <AttachmentsFolderPath></AttachmentsFolderPath>
+    <CacheId>44444444-4444-4444-4444-444444444444</CacheId>
+    <ColorScheme>Blue</ColorScheme>
+    <CustomFields>
+      <CustomFieldSettings>
+        <CompareType>Text</CompareType>
+        <DefaultValue />
+        <DropDownStyle>None</DropDownStyle>
+        <PropertyName>CustomField1</PropertyName>
+      </CustomFieldSettings>
+      <CustomFieldSettings>
+        <CompareType>Text</CompareType>
+        <DefaultValue />
+        <DropDownStyle>None</DropDownStyle>
+        <PropertyName>CustomField2</PropertyName>
+      </CustomFieldSettings>
+      <CustomFieldSettings>
+        <CompareType>Text</CompareType>
+        <DefaultValue />
+        <DropDownStyle>None</DropDownStyle>
+        <PropertyName>CustomField3</PropertyName>
+      </CustomFieldSettings>
+      <CustomFieldSettings>
+        <CompareType>Text</CompareType>
+        <DefaultValue />
+        <DropDownStyle>None</DropDownStyle>
+        <PropertyName>CustomField4</PropertyName>
+      </CustomFieldSettings>
+      <CustomFieldSettings>
+        <CompareType>Text</CompareType>
+        <DefaultValue />
+        <DropDownStyle>None</DropDownStyle>
+        <PropertyName>CustomField5</PropertyName>
+      </CustomFieldSettings>
+      <CustomFieldSettings>
+        <CompareType>Text</CompareType>
+        <DefaultValue />
+        <DropDownStyle>None</DropDownStyle>
+        <PropertyName>CustomField6</PropertyName>
+      </CustomFieldSettings>
+      <CustomFieldSettings>
+        <CompareType>Text</CompareType>
+        <DefaultValue />
+        <DropDownStyle>None</DropDownStyle>
+        <PropertyName>CustomField7</PropertyName>
+      </CustomFieldSettings>
+      <CustomFieldSettings>
+        <CompareType>Text</CompareType>
+        <DefaultValue />
+        <DropDownStyle>None</DropDownStyle>
+        <PropertyName>CustomField8</PropertyName>
+      </CustomFieldSettings>
+      <CustomFieldSettings>
+        <CompareType>Text</CompareType>
+        <DefaultValue />
+        <DropDownStyle>None</DropDownStyle>
+        <PropertyName>CustomField9</PropertyName>
+      </CustomFieldSettings>
+    </CustomFields>
+    <Description></Description>
+    <LastChangeTime>2026-03-01T12:00:00</LastChangeTime>
+    <OptimizeForSlowDatabaseAccess>false</OptimizeForSlowDatabaseAccess>
+  </ProjectSettings>
+  <Persons>
+    <Person id="syn-sp-001">
+      <FirstName>Isaac</FirstName>
+      <LastName>Isaac</LastName>
+    </Person>
+  </Persons>
+  <Keywords>
+    <Keyword id="syn-sk-001">
+      <Name>Single Test</Name>
+    </Keyword>
+  </Keywords>
+  <Publishers>
+    <Publisher id="syn-spub-001">
+      <Name>Single Publishers</Name>
+    </Publisher>
+  </Publishers>
+  <References>
+    <Reference id="syn-sref-001">
+      <ReferenceType>InternetDocument</ReferenceType>
+      <Title>Synthetic Single Reference Entry</Title>
+      <ShortTitle>Isaac 2025 – Single Test</ShortTitle>
+      <Abstract>A brief guide to single reference testing for Citavi import.</Abstract>
+      <AccessDate>01.03.2026</AccessDate>
+      <OnlineAddress>https://example.com/single-test</OnlineAddress>
+      <Date>01.03.2025</Date>
+      <DateForSorting>2025-03-01T00:00:00</DateForSorting>
+      <PageRangeNumber>-1</PageRangeNumber>
+      <AbstractComplexity>0</AbstractComplexity>
+      <AbstractSourceTextFormat>0</AbstractSourceTextFormat>
+      <EvaluationComplexity>0</EvaluationComplexity>
+      <EvaluationSourceTextFormat>0</EvaluationSourceTextFormat>
+      <TableOfContentsComplexity>0</TableOfContentsComplexity>
+      <TableOfContentsSourceTextFormat>0</TableOfContentsSourceTextFormat>
+      <HasLabel1>false</HasLabel1>
+      <HasLabel2>false</HasLabel2>
+      <Rating>0</Rating>
+      <SequenceNumber>1</SequenceNumber>
+      <CitationKeyUpdateType>0</CitationKeyUpdateType>
+      <ShortTitleUpdateType>0</ShortTitleUpdateType>
+      <CitationKey>SingleTest2025</CitationKey>
+    </Reference>
+  </References>
+  <ReferenceAuthors>
+    <OnetoN>syn-sref-001;syn-sp-001</OnetoN>
+  </ReferenceAuthors>
+  <ReferenceCategories>
+    <OnetoN>syn-sref-001</OnetoN>
+  </ReferenceCategories>
+  <ReferenceKeywords>
+    <OnetoN>syn-sref-001;syn-sk-001</OnetoN>
+  </ReferenceKeywords>
+</CitaviExchangeData>

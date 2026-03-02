@@ -67,6 +67,7 @@
         "@rollup/plugin-typescript": "^9.0.2",
         "@typescript-eslint/eslint-plugin": "^5.62.0",
         "@typescript-eslint/parser": "^5.62.0",
+        "@xmldom/xmldom": "^0.8.11",
         "babel-plugin-istanbul": "^6.1.1",
         "benchmark": "^2.1.4",
         "chai": "^4.5.0",

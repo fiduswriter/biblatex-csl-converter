@@ -3,6 +3,7 @@ import { expect } from "chai"
 import fs from "fs"
 import path from "path"
 import { fileURLToPath } from "url"
+import { DOMParser } from "@xmldom/xmldom"
 
 const writeFixtures = false // Set to true to regenerate expected test results.
 
@@ -16,11 +17,45 @@ const clean = (state) => {
         delete state.strings
 }
 
-const verify = (citavifile) => {
+const verifyJson = (citavifile) => {
     const input = JSON.parse(fs.readFileSync(citavifile, "utf8"))
     const name = path.basename(citavifile, path.extname(citavifile))
 
     const found = converter.parseCitavi(input)
+    clean(found)
+
+    const expectedPath = path.join(
+        path.dirname(citavifile),
+        name + "-expected.json"
+    )
+
+    if (writeFixtures) {
+        fs.writeFileSync(expectedPath, JSON.stringify(found, null, 4) + "\n")
+    }
+
+    if (!fs.existsSync(expectedPath)) {
+        console.log(
+            `Expected file ${expectedPath} does not exist, creating fixture`
+        )
+        fs.writeFileSync(expectedPath, JSON.stringify(found, null, 4) + "\n")
+        return
+    }
+
+    const expected = JSON.parse(fs.readFileSync(expectedPath, "utf8"))
+    clean(expected)
+
+    it(name, () => {
+        expect(found).to.be.deep.equal(expected)
+    })
+}
+
+const verifyXml = (citavifile) => {
+    const xmlContent = fs.readFileSync(citavifile, "utf8")
+    const name = path.basename(citavifile, path.extname(citavifile))
+
+    const doc = new DOMParser().parseFromString(xmlContent, "text/xml")
+    const parser = new converter.CitaviXmlParser(doc)
+    const found = parser.parse()
     clean(found)
 
     const expectedPath = path.join(
@@ -55,14 +90,18 @@ const fixtures = path.join(
 const citavifiles = fs.readdirSync(fixtures)
 
 for (let fixture of citavifiles) {
-    // Only process source Citavi JSON files (not the -expected.json fixtures)
-    if (
-        path.extname(fixture).toLowerCase() !== ".json" ||
-        fixture.endsWith("-expected.json")
-    ) {
+    const ext = path.extname(fixture).toLowerCase()
+
+    // Skip expected-output fixtures
+    if (fixture.endsWith("-expected.json")) {
         continue
     }
 
     fixture = path.join(fixtures, fixture)
-    verify(fixture)
+
+    if (ext === ".json") {
+        verifyJson(fixture)
+    } else if (ext === ".ctv5" || ext === ".ctv6") {
+        verifyXml(fixture)
+    }
 }
