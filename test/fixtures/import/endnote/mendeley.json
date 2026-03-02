@@ -43,17 +43,14 @@
                     ]
                 ],
                 "publisher": [
-                    {
-                        "type": "text",
-                        "text": "Tech Science Press"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "Tech Science Press"
+                        }
+                    ]
                 ],
-                "doi": [
-                    {
-                        "type": "text",
-                        "text": "10.32604/ijmhp.2024.052730"
-                    }
-                ],
+                "doi": "10.32604/ijmhp.2024.052730",
                 "abstract": [
                     {
                         "type": "text",
@@ -133,7 +130,14 @@
                         ]
                     }
                 ],
-                "keywords": "College student, action control, chain intermediary, exercise behavior, exercise commitment, procrastination"
+                "keywords": [
+                    "College student",
+                    "action control",
+                    "chain intermediary",
+                    "exercise behavior",
+                    "exercise commitment",
+                    "procrastination"
+                ]
             }
         },
         "2": {
@@ -165,17 +169,14 @@
                     }
                 ],
                 "publisher": [
-                    {
-                        "type": "text",
-                        "text": "Elsevier Ltd"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "Elsevier Ltd"
+                        }
+                    ]
                 ],
-                "doi": [
-                    {
-                        "type": "text",
-                        "text": "10.1016/j.heliyon.2024.e29523"
-                    }
-                ],
+                "doi": "10.1016/j.heliyon.2024.e29523",
                 "abstract": [
                     {
                         "type": "text",
@@ -255,7 +256,13 @@
                         ]
                     }
                 ],
-                "keywords": "Academic performance, Artificial intelligence, Mental well-being, Smart learning, Social media"
+                "keywords": [
+                    "Academic performance",
+                    "Artificial intelligence",
+                    "Mental well-being",
+                    "Smart learning",
+                    "Social media"
+                ]
             }
         },
         "3": {
@@ -287,17 +294,14 @@
                     }
                 ],
                 "publisher": [
-                    {
-                        "type": "text",
-                        "text": "Elsevier B.V."
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "Elsevier B.V."
+                        }
+                    ]
                 ],
-                "doi": [
-                    {
-                        "type": "text",
-                        "text": "10.1016/j.gsf.2024.101872"
-                    }
-                ],
+                "doi": "10.1016/j.gsf.2024.101872",
                 "abstract": [
                     {
                         "type": "text",
@@ -391,7 +395,14 @@
                         ]
                     }
                 ],
-                "keywords": "Breeding behaviour, Jurassic, Magnetic susceptibility, Stable isotopes, Taphonomy, Theropod"
+                "keywords": [
+                    "Breeding behaviour",
+                    "Jurassic",
+                    "Magnetic susceptibility",
+                    "Stable isotopes",
+                    "Taphonomy",
+                    "Theropod"
+                ]
             }
         }
     }

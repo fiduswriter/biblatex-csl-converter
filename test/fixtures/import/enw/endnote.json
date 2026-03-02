@@ -79,31 +79,18 @@
                         ]
                     ]
                 ],
-                "doi": [
-                    {
-                        "type": "text",
-                        "text": "10.1234/example.doi.001"
-                    }
-                ],
-                "url": [
-                    {
-                        "type": "text",
-                        "text": "https://example.com/journal/article1"
-                    }
-                ],
+                "doi": "10.1234/example.doi.001",
+                "url": "https://example.com/journal/article1",
                 "isbn": [
                     {
                         "type": "text",
                         "text": "1234-5678"
                     }
                 ],
-                "keywords": "Artificial Intelligence\nMachine Learning\nResearch Methods\nData Science",
-                "eprint": [
-                    {
-                        "type": "text",
-                        "text": "12345678"
-                    }
+                "keywords": [
+                    "Artificial Intelligence\nMachine Learning\nResearch Methods\nData Science"
                 ],
+                "eprint": "12345678",
                 "shorttitle": [
                     {
                         "type": "text",
@@ -152,16 +139,20 @@
                     }
                 ],
                 "publisher": [
-                    {
-                        "type": "text",
-                        "text": "Academic Publishing House"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "Academic Publishing House"
+                        }
+                    ]
                 ],
                 "location": [
-                    {
-                        "type": "text",
-                        "text": "New York, NY"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "New York, NY"
+                        }
+                    ]
                 ],
                 "edition": [
                     {
@@ -169,19 +160,16 @@
                         "text": "3rd"
                     }
                 ],
-                "doi": [
-                    {
-                        "type": "text",
-                        "text": "10.1234/example.doi.002"
-                    }
-                ],
+                "doi": "10.1234/example.doi.002",
                 "isbn": [
                     {
                         "type": "text",
                         "text": "978-3-123456-78-9"
                     }
                 ],
-                "keywords": "Research Methods\nDigital Tools\nTextbook",
+                "keywords": [
+                    "Research Methods\nDigital Tools\nTextbook"
+                ],
                 "library": [
                     {
                         "type": "text",
@@ -288,24 +276,25 @@
                     ]
                 ],
                 "publisher": [
-                    {
-                        "type": "text",
-                        "text": "Medical Science Press"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "Medical Science Press"
+                        }
+                    ]
                 ],
                 "location": [
-                    {
-                        "type": "text",
-                        "text": "Boston, MA"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "Boston, MA"
+                        }
+                    ]
                 ],
-                "doi": [
-                    {
-                        "type": "text",
-                        "text": "10.1234/example.doi.003"
-                    }
-                ],
-                "keywords": "Healthcare\nMachine Learning\nMedical Informatics"
+                "doi": "10.1234/example.doi.003",
+                "keywords": [
+                    "Healthcare\nMachine Learning\nMedical Informatics"
+                ]
             }
         },
         "4": {
@@ -390,24 +379,18 @@
                     ]
                 ],
                 "location": [
-                    {
-                        "type": "text",
-                        "text": "Paris, France"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "Paris, France"
+                        }
+                    ]
                 ],
-                "doi": [
-                    {
-                        "type": "text",
-                        "text": "10.1234/example.doi.004"
-                    }
+                "doi": "10.1234/example.doi.004",
+                "keywords": [
+                    "Natural Language Processing\nComputational Linguistics\nScientific Literature"
                 ],
-                "keywords": "Natural Language Processing\nComputational Linguistics\nScientific Literature",
-                "eprint": [
-                    {
-                        "type": "text",
-                        "text": "CONF-2023-001"
-                    }
-                ]
+                "eprint": "CONF-2023-001"
             }
         },
         "5": {
@@ -444,36 +427,32 @@
                 ],
                 "date": "2022",
                 "publisher": [
-                    {
-                        "type": "text",
-                        "text": "NIST"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "NIST"
+                        }
+                    ]
                 ],
                 "location": [
-                    {
-                        "type": "text",
-                        "text": "Gaithersburg, MD"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "Gaithersburg, MD"
+                        }
+                    ]
                 ],
-                "doi": [
-                    {
-                        "type": "text",
-                        "text": "10.1234/example.doi.005"
-                    }
-                ],
-                "url": [
-                    {
-                        "type": "text",
-                        "text": "https://example.com/nist/report2022"
-                    }
-                ],
+                "doi": "10.1234/example.doi.005",
+                "url": "https://example.com/nist/report2022",
                 "isbn": [
                     {
                         "type": "text",
                         "text": "978-1-947666-33-0"
                     }
                 ],
-                "keywords": "Cybersecurity\nResearch Institutions\nRisk Management"
+                "keywords": [
+                    "Cybersecurity\nResearch Institutions\nRisk Management"
+                ]
             }
         },
         "6": {
@@ -510,24 +489,25 @@
                 ],
                 "date": "2021",
                 "publisher": [
-                    {
-                        "type": "text",
-                        "text": "Stanford University"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "Stanford University"
+                        }
+                    ]
                 ],
                 "location": [
-                    {
-                        "type": "text",
-                        "text": "Stanford, CA"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "Stanford, CA"
+                        }
+                    ]
                 ],
-                "doi": [
-                    {
-                        "type": "text",
-                        "text": "10.1234/example.doi.006"
-                    }
+                "doi": "10.1234/example.doi.006",
+                "keywords": [
+                    "Algorithms\nBig Data\nDistributed Computing"
                 ],
-                "keywords": "Algorithms\nBig Data\nDistributed Computing",
                 "library": [
                     {
                         "type": "text",
@@ -575,13 +555,10 @@
                     }
                 ],
                 "date": "2023",
-                "url": [
-                    {
-                        "type": "text",
-                        "text": "https://example.com/who/gho"
-                    }
-                ],
-                "keywords": "Global Health\nPublic Health Data\nStatistics"
+                "url": "https://example.com/who/gho",
+                "keywords": [
+                    "Global Health\nPublic Health Data\nStatistics"
+                ]
             }
         },
         "8": {
@@ -632,18 +609,24 @@
                 ],
                 "date": "2022",
                 "publisher": [
-                    {
-                        "type": "text",
-                        "text": "United States Patent and Trademark Office"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "United States Patent and Trademark Office"
+                        }
+                    ]
                 ],
                 "location": [
-                    {
-                        "type": "text",
-                        "text": "Alexandria, VA"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "Alexandria, VA"
+                        }
+                    ]
                 ],
-                "keywords": "Patent\nDistributed Computing\nData Processing",
+                "keywords": [
+                    "Patent\nDistributed Computing\nData Processing"
+                ],
                 "library": [
                     {
                         "type": "text",
@@ -721,7 +704,9 @@
                         ]
                     ]
                 ],
-                "keywords": "Quantum Computing\nBreaking News\nResearch Breakthrough"
+                "keywords": [
+                    "Quantum Computing\nBreaking News\nResearch Breakthrough"
+                ]
             }
         },
         "10": {
@@ -789,7 +774,9 @@
                         ]
                     ]
                 ],
-                "keywords": "Remote Work\nCollaboration Tools\nTechnology Trends",
+                "keywords": [
+                    "Remote Work\nCollaboration Tools\nTechnology Trends"
+                ],
                 "shorttitle": [
                     {
                         "type": "text",

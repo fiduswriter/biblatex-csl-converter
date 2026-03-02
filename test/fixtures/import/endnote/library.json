@@ -72,12 +72,7 @@
                         "text": "1234-5678"
                     }
                 ],
-                "eprint": [
-                    {
-                        "type": "text",
-                        "text": "TEST123456"
-                    }
-                ],
+                "eprint": "TEST123456",
                 "abstract": [
                     {
                         "type": "text",
@@ -96,18 +91,7 @@
                         "text": "Article1"
                     }
                 ],
-                "langid": [
-                    {
-                        "type": "text",
-                        "text": "English"
-                    }
-                ],
-                "url": [
-                    {
-                        "type": "text",
-                        "text": "https://example.com/article1"
-                    }
-                ],
+                "url": "https://example.com/article1",
                 "date": "Mar",
                 "author": [
                     {
@@ -139,7 +123,11 @@
                         ]
                     }
                 ],
-                "keywords": "example, research, science"
+                "keywords": [
+                    "example",
+                    "research",
+                    "science"
+                ]
             }
         },
         "2": {
@@ -189,16 +177,20 @@
                     ]
                 ],
                 "publisher": [
-                    {
-                        "type": "text",
-                        "text": "Springer-Verlag"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "Springer-Verlag"
+                        }
+                    ]
                 ],
                 "location": [
-                    {
-                        "type": "text",
-                        "text": "Berlin"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "Berlin"
+                        }
+                    ]
                 ],
                 "isbn": [
                     {
@@ -218,12 +210,7 @@
                         "text": "Dies ist ein deutsches Buch über wissenschaftliche Beispiele."
                     }
                 ],
-                "langid": [
-                    {
-                        "type": "text",
-                        "text": "German"
-                    }
-                ],
+                "langid": "german",
                 "date": "2022",
                 "author": [
                     {
@@ -276,23 +263,22 @@
                     }
                 ],
                 "publisher": [
-                    {
-                        "type": "text",
-                        "text": "Dansk Videnskabsforlag"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "Dansk Videnskabsforlag"
+                        }
+                    ]
                 ],
                 "location": [
-                    {
-                        "type": "text",
-                        "text": "København"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "København"
+                        }
+                    ]
                 ],
-                "langid": [
-                    {
-                        "type": "text",
-                        "text": "Danish"
-                    }
-                ],
+                "langid": "danish",
                 "date": "2021",
                 "author": [
                     {
@@ -337,23 +323,22 @@
                     }
                 ],
                 "publisher": [
-                    {
-                        "type": "text",
-                        "text": "Universidad de Madrid"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "Universidad de Madrid"
+                        }
+                    ]
                 ],
                 "location": [
-                    {
-                        "type": "text",
-                        "text": "Madrid"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "Madrid"
+                        }
+                    ]
                 ],
-                "langid": [
-                    {
-                        "type": "text",
-                        "text": "Spanish"
-                    }
-                ],
+                "langid": "spanish",
                 "date": "2020",
                 "author": [
                     {
@@ -421,12 +406,7 @@
                         "text": "0258-7025"
                     }
                 ],
-                "langid": [
-                    {
-                        "type": "text",
-                        "text": "Chinese"
-                    }
-                ],
+                "langid": "chinese",
                 "date": "2023",
                 "author": [
                     {
@@ -471,23 +451,22 @@
                     }
                 ],
                 "publisher": [
-                    {
-                        "type": "text",
-                        "text": "Издательство Наука"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "Издательство Наука"
+                        }
+                    ]
                 ],
                 "location": [
-                    {
-                        "type": "text",
-                        "text": "Москва"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "Москва"
+                        }
+                    ]
                 ],
-                "langid": [
-                    {
-                        "type": "text",
-                        "text": "Russian"
-                    }
-                ],
+                "langid": "russian",
                 "date": "2022",
                 "author": [
                     {
@@ -518,23 +497,22 @@
                     }
                 ],
                 "publisher": [
-                    {
-                        "type": "text",
-                        "text": "岩波書店"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "岩波書店"
+                        }
+                    ]
                 ],
                 "location": [
-                    {
-                        "type": "text",
-                        "text": "東京"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "東京"
+                        }
+                    ]
                 ],
-                "langid": [
-                    {
-                        "type": "text",
-                        "text": "Japanese"
-                    }
-                ],
+                "langid": "japanese",
                 "date": "2021",
                 "author": [
                     {
@@ -581,27 +559,25 @@
                     }
                 ],
                 "publisher": [
-                    {
-                        "type": "text",
-                        "text": "한국과학기술원"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "한국과학기술원"
+                        }
+                    ]
                 ],
                 "location": [
-                    {
-                        "type": "text",
-                        "text": "서울"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "서울"
+                        }
+                    ]
                 ],
                 "number": [
                     {
                         "type": "text",
                         "text": "KIST-2023-001"
-                    }
-                ],
-                "langid": [
-                    {
-                        "type": "text",
-                        "text": "Korean"
                     }
                 ],
                 "date": "2023",
@@ -634,17 +610,14 @@
                     }
                 ],
                 "publisher": [
-                    {
-                        "type": "text",
-                        "text": "مكتب براءات الاختراع"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "مكتب براءات الاختراع"
+                        }
+                    ]
                 ],
-                "langid": [
-                    {
-                        "type": "text",
-                        "text": "Arabic"
-                    }
-                ],
+                "langid": "arabic",
                 "date": "2022",
                 "author": [
                     {
@@ -674,24 +647,8 @@
                         "text": "Example Web Page Title"
                     }
                 ],
-                "langid": [
-                    {
-                        "type": "text",
-                        "text": "English"
-                    }
-                ],
-                "url": [
-                    {
-                        "type": "text",
-                        "text": "https://www.example.org/page"
-                    }
-                ],
-                "urldate": [
-                    {
-                        "type": "text",
-                        "text": "2023-12-01"
-                    }
-                ],
+                "url": "https://www.example.org/page",
+                "urldate": "2023-12-01",
                 "date": "2023",
                 "author": [
                     {
@@ -719,12 +676,6 @@
                     {
                         "type": "text",
                         "text": "Book Section with Multiple Author Types"
-                    }
-                ],
-                "langid": [
-                    {
-                        "type": "text",
-                        "text": "English"
                     }
                 ],
                 "date": "2023",
@@ -820,12 +771,6 @@
                         "text": "Figure with Image"
                     }
                 ],
-                "langid": [
-                    {
-                        "type": "text",
-                        "text": "English"
-                    }
-                ],
                 "date": "2023",
                 "author": [
                     {
@@ -859,12 +804,6 @@
                     {
                         "type": "text",
                         "text": "Journal from Secondary Title"
-                    }
-                ],
-                "langid": [
-                    {
-                        "type": "text",
-                        "text": "English"
                     }
                 ],
                 "custom1": [
@@ -927,12 +866,7 @@
                         "text": "Misc Value 3"
                     }
                 ],
-                "url": [
-                    {
-                        "type": "text",
-                        "text": "https://example.com/article.pdf; https://example.com/article.txt"
-                    }
-                ],
+                "url": "https://example.com/article.pdf; https://example.com/article.txt",
                 "date": "2023",
                 "author": [
                     {
@@ -960,12 +894,6 @@
                     {
                         "type": "text",
                         "text": "Book with Only Tertiary Author"
-                    }
-                ],
-                "langid": [
-                    {
-                        "type": "text",
-                        "text": "English"
                     }
                 ],
                 "date": "2023",
@@ -1013,12 +941,6 @@
                         "text": "A Generic Work with Type"
                     }
                 ],
-                "langid": [
-                    {
-                        "type": "text",
-                        "text": "English"
-                    }
-                ],
                 "type": {
                     "type": "text",
                     "text": "Technical Note"
@@ -1056,12 +978,6 @@
                     {
                         "type": "text",
                         "text": "Review Journal"
-                    }
-                ],
-                "langid": [
-                    {
-                        "type": "text",
-                        "text": "English"
                     }
                 ],
                 "related": [
@@ -1118,12 +1034,6 @@
                             }
                         ]
                     ]
-                ],
-                "langid": [
-                    {
-                        "type": "text",
-                        "text": "English"
-                    }
                 ],
                 "date": "2020",
                 "author": [

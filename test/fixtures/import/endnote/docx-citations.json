@@ -61,16 +61,20 @@
                     ]
                 ],
                 "publisher": [
-                    {
-                        "type": "text",
-                        "text": "Academic Press"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "Academic Press"
+                        }
+                    ]
                 ],
                 "location": [
-                    {
-                        "type": "text",
-                        "text": "New York"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "New York"
+                        }
+                    ]
                 ],
                 "isbn": [
                     {
@@ -84,12 +88,7 @@
                         "text": "9876-5432"
                     }
                 ],
-                "eprint": [
-                    {
-                        "type": "text",
-                        "text": "SYNTH789012"
-                    }
-                ],
+                "eprint": "SYNTH789012",
                 "library": [
                     {
                         "type": "text",
@@ -120,18 +119,7 @@
                         "text": "Test1"
                     }
                 ],
-                "langid": [
-                    {
-                        "type": "text",
-                        "text": "English"
-                    }
-                ],
-                "url": [
-                    {
-                        "type": "text",
-                        "text": "https://example.com/article1; https://doi.org/10.1234/example"
-                    }
-                ],
+                "url": "https://example.com/article1; https://doi.org/10.1234/example",
                 "date": "2023",
                 "author": [
                     {
@@ -163,7 +151,11 @@
                         ]
                     }
                 ],
-                "keywords": "testing, synthetic data, examples"
+                "keywords": [
+                    "testing",
+                    "synthetic data",
+                    "examples"
+                ]
             }
         },
         "2": {
@@ -203,16 +195,20 @@
                     ]
                 ],
                 "publisher": [
-                    {
-                        "type": "text",
-                        "text": "Deutscher Verlag"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "Deutscher Verlag"
+                        }
+                    ]
                 ],
                 "location": [
-                    {
-                        "type": "text",
-                        "text": "Berlin"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "Berlin"
+                        }
+                    ]
                 ],
                 "isbn": [
                     {
@@ -226,12 +222,7 @@
                         "text": "978-3-123-45678-9"
                     }
                 ],
-                "langid": [
-                    {
-                        "type": "text",
-                        "text": "German"
-                    }
-                ],
+                "langid": "german",
                 "date": "2022",
                 "author": [
                     {
@@ -298,17 +289,14 @@
                     }
                 ],
                 "publisher": [
-                    {
-                        "type": "text",
-                        "text": "Nordic Academic Press"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "Nordic Academic Press"
+                        }
+                    ]
                 ],
-                "langid": [
-                    {
-                        "type": "text",
-                        "text": "Danish"
-                    }
-                ],
+                "langid": "danish",
                 "date": "15-17 June 2021",
                 "author": [
                     {
@@ -339,23 +327,22 @@
                     }
                 ],
                 "publisher": [
-                    {
-                        "type": "text",
-                        "text": "Universidad Complutense de Madrid"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "Universidad Complutense de Madrid"
+                        }
+                    ]
                 ],
                 "location": [
-                    {
-                        "type": "text",
-                        "text": "Madrid"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "Madrid"
+                        }
+                    ]
                 ],
-                "langid": [
-                    {
-                        "type": "text",
-                        "text": "Spanish"
-                    }
-                ],
+                "langid": "spanish",
                 "date": "2020",
                 "author": [
                     {
@@ -391,24 +378,9 @@
                         "text": "在线科学杂志"
                     }
                 ],
-                "langid": [
-                    {
-                        "type": "text",
-                        "text": "Chinese"
-                    }
-                ],
-                "url": [
-                    {
-                        "type": "text",
-                        "text": "https://example.cn/article123"
-                    }
-                ],
-                "urldate": [
-                    {
-                        "type": "text",
-                        "text": "2023-11-15"
-                    }
-                ],
+                "langid": "chinese",
+                "url": "https://example.cn/article123",
+                "urldate": "2023-11-15",
                 "date": "2023",
                 "author": [
                     {
@@ -440,12 +412,7 @@
                         "text": "Неопубликованная рукопись"
                     }
                 ],
-                "langid": [
-                    {
-                        "type": "text",
-                        "text": "Russian"
-                    }
-                ],
+                "langid": "russian",
                 "date": "2019",
                 "author": [
                     {
@@ -514,29 +481,23 @@
                     ]
                 ],
                 "publisher": [
-                    {
-                        "type": "text",
-                        "text": "Cambridge University Press"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "Cambridge University Press"
+                        }
+                    ]
                 ],
                 "location": [
-                    {
-                        "type": "text",
-                        "text": "New York, US"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "New York, US"
+                        }
+                    ]
                 ],
-                "doi": [
-                    {
-                        "type": "text",
-                        "text": "10.1017/S0033822200033865"
-                    }
-                ],
-                "url": [
-                    {
-                        "type": "text",
-                        "text": "https://www.cambridge.org/core/article/div-class-title-bayesian-analysis-of-radiocarbon-dates-div/F622173B70F9C1597F2738DEFC597114"
-                    }
-                ],
+                "doi": "10.1017/S0033822200033865",
+                "url": "https://www.cambridge.org/core/article/div-class-title-bayesian-analysis-of-radiocarbon-dates-div/F622173B70F9C1597F2738DEFC597114",
                 "date": "2009/001/001",
                 "author": [
                     {
@@ -717,16 +678,20 @@
                     ]
                 ],
                 "publisher": [
-                    {
-                        "type": "text",
-                        "text": "K. Theiss"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "K. Theiss"
+                        }
+                    ]
                 ],
                 "location": [
-                    {
-                        "type": "text",
-                        "text": "Stuttgart"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "Stuttgart"
+                        }
+                    ]
                 ],
                 "date": "2008",
                 "author": [
@@ -806,16 +771,20 @@
                     ]
                 ],
                 "publisher": [
-                    {
-                        "type": "text",
-                        "text": "University of Edinburgh"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "University of Edinburgh"
+                        }
+                    ]
                 ],
                 "location": [
-                    {
-                        "type": "text",
-                        "text": "Edinburgh"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "Edinburgh"
+                        }
+                    ]
                 ],
                 "date": "1983",
                 "author": [
@@ -927,10 +896,12 @@
                     ]
                 ],
                 "publisher": [
-                    {
-                        "type": "text",
-                        "text": "Cambridge University Press"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "Cambridge University Press"
+                        }
+                    ]
                 ],
                 "isbn": [
                     {
@@ -944,18 +915,8 @@
                         "text": "0003-598X"
                     }
                 ],
-                "doi": [
-                    {
-                        "type": "text",
-                        "text": "10.1017/S0003598X00098136"
-                    }
-                ],
-                "url": [
-                    {
-                        "type": "text",
-                        "text": "https://www.cambridge.org/core/article/new-chronological-framework-for-prehistoric-southeast-asia-based-on-a-bayesian-model-from-ban-non-wat/4AA644BD284B1522DF1B4D193422600D"
-                    }
-                ],
+                "doi": "10.1017/S0003598X00098136",
+                "url": "https://www.cambridge.org/core/article/new-chronological-framework-for-prehistoric-southeast-asia-based-on-a-bayesian-model-from-ban-non-wat/4AA644BD284B1522DF1B4D193422600D",
                 "date": "2009",
                 "author": [
                     {
@@ -987,7 +948,15 @@
                         ]
                     }
                 ],
-                "keywords": "Southeast Asia, Thailand, Neolithic, Bronze Age, Iron Age, radiocarbon, Bayesian modelling"
+                "keywords": [
+                    "Southeast Asia",
+                    "Thailand",
+                    "Neolithic",
+                    "Bronze Age",
+                    "Iron Age",
+                    "radiocarbon",
+                    "Bayesian modelling"
+                ]
             }
         },
         "13": {
@@ -1056,18 +1025,8 @@
                         "text": "0305-4403"
                     }
                 ],
-                "doi": [
-                    {
-                        "type": "text",
-                        "text": "10.1016/j.jas.2012.02.021"
-                    }
-                ],
-                "url": [
-                    {
-                        "type": "text",
-                        "text": "https://www.sciencedirect.com/science/article/pii/S0305440312000854"
-                    }
-                ],
+                "doi": "10.1016/j.jas.2012.02.021",
+                "url": "https://www.sciencedirect.com/science/article/pii/S0305440312000854",
                 "date": "2012/07/01/",
                 "author": [
                     {
@@ -1155,7 +1114,12 @@
                         ]
                     }
                 ],
-                "keywords": "Radiocarbon, Numerical chronology, Nasca, Peru"
+                "keywords": [
+                    "Radiocarbon",
+                    "Numerical chronology",
+                    "Nasca",
+                    "Peru"
+                ]
             }
         },
         "14": {
@@ -1208,18 +1172,8 @@
                         "text": "1871-1014"
                     }
                 ],
-                "doi": [
-                    {
-                        "type": "text",
-                        "text": "10.1016/j.quageo.2021.101214"
-                    }
-                ],
-                "url": [
-                    {
-                        "type": "text",
-                        "text": "https://www.sciencedirect.com/science/article/pii/S1871101421000649"
-                    }
-                ],
+                "doi": "10.1016/j.quageo.2021.101214",
+                "url": "https://www.sciencedirect.com/science/article/pii/S1871101421000649",
                 "date": "2021/10/01/",
                 "author": [
                     {
@@ -1307,7 +1261,14 @@
                         ]
                     }
                 ],
-                "keywords": "Bronze Age, Lower Yellow River, Water wells, Radiocarbon plateau, Bayesian inference, Groundwater use"
+                "keywords": [
+                    "Bronze Age",
+                    "Lower Yellow River",
+                    "Water wells",
+                    "Radiocarbon plateau",
+                    "Bayesian inference",
+                    "Groundwater use"
+                ]
             }
         },
         "15": {
@@ -1432,29 +1393,23 @@
                     ]
                 ],
                 "publisher": [
-                    {
-                        "type": "text",
-                        "text": "Cambridge University Press"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "Cambridge University Press"
+                        }
+                    ]
                 ],
                 "location": [
-                    {
-                        "type": "text",
-                        "text": "New York, US"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "New York, US"
+                        }
+                    ]
                 ],
-                "doi": [
-                    {
-                        "type": "text",
-                        "text": "10.1017/S0033822200033865"
-                    }
-                ],
-                "url": [
-                    {
-                        "type": "text",
-                        "text": "https://www.cambridge.org/core/article/div-class-title-bayesian-analysis-of-radiocarbon-dates-div/F622173B70F9C1597F2738DEFC597114"
-                    }
-                ],
+                "doi": "10.1017/S0033822200033865",
+                "url": "https://www.cambridge.org/core/article/div-class-title-bayesian-analysis-of-radiocarbon-dates-div/F622173B70F9C1597F2738DEFC597114",
                 "date": "2009/001/001",
                 "author": [
                     {
@@ -1535,10 +1490,12 @@
                     ]
                 ],
                 "publisher": [
-                    {
-                        "type": "text",
-                        "text": "Cambridge University Press"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "Cambridge University Press"
+                        }
+                    ]
                 ],
                 "isbn": [
                     {
@@ -1552,18 +1509,8 @@
                         "text": "0033-8222"
                     }
                 ],
-                "doi": [
-                    {
-                        "type": "text",
-                        "text": "10.1017/RDC.2020.101"
-                    }
-                ],
-                "url": [
-                    {
-                        "type": "text",
-                        "text": "https://www.cambridge.org/core/article/an-independent-assessment-of-uncertainty-for-radiocarbon-analysis-with-the-new-generation-highyield-accelerator-mass-spectrometers/AC6555454A6A2FF4F4898964803B4C4F"
-                    }
-                ],
+                "doi": "10.1017/RDC.2020.101",
+                "url": "https://www.cambridge.org/core/article/an-independent-assessment-of-uncertainty-for-radiocarbon-analysis-with-the-new-generation-highyield-accelerator-mass-spectrometers/AC6555454A6A2FF4F4898964803B4C4F",
                 "date": "2020",
                 "author": [
                     {
@@ -1637,7 +1584,14 @@
                         ]
                     }
                 ],
-                "keywords": "contamination, MICADAS, Poisson statistics, quality assurance radiocarbon, sample duplicates, uncertainty analysis"
+                "keywords": [
+                    "contamination",
+                    "MICADAS",
+                    "Poisson statistics",
+                    "quality assurance radiocarbon",
+                    "sample duplicates",
+                    "uncertainty analysis"
+                ]
             }
         },
         "18": {
@@ -1695,10 +1649,12 @@
                     ]
                 ],
                 "publisher": [
-                    {
-                        "type": "text",
-                        "text": "Cambridge University Press"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "Cambridge University Press"
+                        }
+                    ]
                 ],
                 "isbn": [
                     {
@@ -1712,18 +1668,8 @@
                         "text": "0033-8222"
                     }
                 ],
-                "doi": [
-                    {
-                        "type": "text",
-                        "text": "10.1017/RDC.2020.46"
-                    }
-                ],
-                "url": [
-                    {
-                        "type": "text",
-                        "text": "https://www.cambridge.org/core/article/intcal20-approach-to-radiocarbon-calibration-curve-construction-a-new-methodology-using-bayesian-splines-and-errorsinvariables/FF2C650D3A7BBA277E9C51380BEC4050"
-                    }
-                ],
+                "doi": "10.1017/RDC.2020.46",
+                "url": "https://www.cambridge.org/core/article/intcal20-approach-to-radiocarbon-calibration-curve-construction-a-new-methodology-using-bayesian-splines-and-errorsinvariables/FF2C650D3A7BBA277E9C51380BEC4050",
                 "date": "2020",
                 "author": [
                     {
@@ -1952,18 +1898,8 @@
                         "text": "1476-4687"
                     }
                 ],
-                "doi": [
-                    {
-                        "type": "text",
-                        "text": "10.1038/nature11123"
-                    }
-                ],
-                "url": [
-                    {
-                        "type": "text",
-                        "text": "https://doi.org/10.1038/nature11123"
-                    }
-                ],
+                "doi": "10.1038/nature11123",
+                "url": "https://doi.org/10.1038/nature11123",
                 "date": "2012/06/01",
                 "author": [
                     {
