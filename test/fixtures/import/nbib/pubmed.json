@@ -1,0 +1,645 @@
+{
+    "entries": {
+        "1": {
+            "entry_key": "Raulic2025",
+            "bib_type": "article-journal",
+            "fields": {
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Fish Gastroenterology."
+                    }
+                ],
+                "journaltitle": [
+                    {
+                        "type": "text",
+                        "text": "The veterinary clinics of North America. Exotic animal practice"
+                    }
+                ],
+                "shortjournal": [
+                    {
+                        "type": "text",
+                        "text": "Vet Clin North Am Exot Anim Pract"
+                    }
+                ],
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Raulic"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Juliette"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Béland"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Karine"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Vergneau-Grosset"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Claire"
+                            }
+                        ]
+                    }
+                ],
+                "abstract": [
+                    {
+                        "type": "text",
+                        "text": "Fish represent the most common companion exotic animal in the United States and  Canada in number of individuals and hold the third place after dogs and cats in terms of the number of households. Beyond companion animals, fish gastrointestinal diseases are particularly relevant for the aquaculture industry as feeding represents about 50% to 70% of the costs associated with fish production. Thus, nutrient malabsorption may have dramatic consequences both for the fish health and body condition score, but also for farmers. In this review, the authors discuss the anatomy, physiology, and pathology of the digestive system of fish."
+                    }
+                ],
+                "date": "2025-05",
+                "volume": [
+                    {
+                        "type": "text",
+                        "text": "28"
+                    }
+                ],
+                "issue": [
+                    {
+                        "type": "text",
+                        "text": "2"
+                    }
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "315"
+                            },
+                            {
+                                "type": "text",
+                                "text": "330"
+                            }
+                        ]
+                    ]
+                ],
+                "location": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "United States"
+                        }
+                    ]
+                ],
+                "doi": "10.1016/j.cvex.2024.11.004",
+                "issn": [
+                    {
+                        "type": "text",
+                        "text": "1558-4232 (Electronic)"
+                    }
+                ],
+                "eprint": "39730211",
+                "eprinttype": "pubmed",
+                "keywords": [
+                    "Anatomy",
+                    "Digestive system",
+                    "Fish",
+                    "Gastroenterology",
+                    "Infectious disease",
+                    "Noninfectious disease",
+                    "Physiology",
+                    "Animals",
+                    "Fishes",
+                    "Gastrointestinal Diseases",
+                    "Fish Diseases",
+                    "Aquaculture",
+                    "Gastrointestinal Tract"
+                ]
+            }
+        },
+        "2": {
+            "entry_key": "Chen2024",
+            "bib_type": "article-journal",
+            "fields": {
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Structural basis of CRISPR-Cas9 off-target activity."
+                    }
+                ],
+                "journaltitle": [
+                    {
+                        "type": "text",
+                        "text": "Nature"
+                    }
+                ],
+                "shortjournal": [
+                    {
+                        "type": "text",
+                        "text": "Nature"
+                    }
+                ],
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Chen"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Jennifer S"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Palumbo"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Christopher M"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Doudna"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Jennifer A"
+                            }
+                        ]
+                    }
+                ],
+                "abstract": [
+                    {
+                        "type": "text",
+                        "text": "CRISPR-Cas9 genome editing is widely used for research and therapeutic  applications, but off-target activity remains a critical safety concern. Here we present cryo-electron microscopy structures of Cas9 bound to mismatched guide RNA-DNA duplexes, revealing the structural mechanisms underlying tolerance of mismatches at different positions. Our structures show that mismatches distal to the PAM are accommodated through local distortions, whereas PAM-proximal mismatches destabilise the R-loop and prevent HNH domain repositioning. These findings provide a structural framework for understanding Cas9 fidelity and guide rational engineering of high-fidelity variants."
+                    }
+                ],
+                "date": "2024-07-11",
+                "volume": [
+                    {
+                        "type": "text",
+                        "text": "631"
+                    }
+                ],
+                "issue": [
+                    {
+                        "type": "text",
+                        "text": "8020"
+                    }
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "913"
+                            },
+                            {
+                                "type": "text",
+                                "text": "920"
+                            }
+                        ]
+                    ]
+                ],
+                "location": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "England"
+                        }
+                    ]
+                ],
+                "doi": "10.1038/s41586-024-07508-y",
+                "issn": [
+                    {
+                        "type": "text",
+                        "text": "1476-4687 (Electronic)"
+                    }
+                ],
+                "eprint": "38901234",
+                "eprinttype": "pubmed",
+                "keywords": [
+                    "CRISPR",
+                    "Cas9",
+                    "Genome editing",
+                    "Off-target cleavage",
+                    "Structural biology",
+                    "CRISPR-Cas Systems",
+                    "Gene Editing",
+                    "Off-Target Effects",
+                    "Cryoelectron Microscopy",
+                    "RNA, Guide, CRISPR-Cas Systems"
+                ],
+                "note": [
+                    {
+                        "type": "text",
+                        "text": "Grants: R01 GM131137/GM/NIGMS NIH HHS/United States; R35 GM118061/GM/NIGMS NIH HHS/United States"
+                    }
+                ]
+            }
+        },
+        "3": {
+            "entry_key": "Zhao2023",
+            "bib_type": "article-journal",
+            "fields": {
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Effect of High-Dose Vitamin D Supplementation on All-Cause Mortality: A  Systematic Review and Meta-Analysis of Randomized Clinical Trials."
+                    }
+                ],
+                "journaltitle": [
+                    {
+                        "type": "text",
+                        "text": "JAMA"
+                    }
+                ],
+                "shortjournal": [
+                    {
+                        "type": "text",
+                        "text": "JAMA"
+                    }
+                ],
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Zhao"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "James Z"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Manson"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "JoAnn E"
+                            }
+                        ]
+                    }
+                ],
+                "abstract": [
+                    {
+                        "type": "text",
+                        "text": "IMPORTANCE: Whether high-dose vitamin D supplementation reduces all-cause  mortality remains uncertain despite numerous randomized clinical trials. OBJECTIVE: To examine the association between high-dose vitamin D supplementation and all-cause mortality. DATA SOURCES: MEDLINE, Embase, Cochrane Central Register of Controlled Trials, and ClinicalTrials.gov searched from inception to August 2023. STUDY SELECTION: Randomized clinical trials comparing high-dose vitamin D supplementation with lower doses or placebo in adults. DATA EXTRACTION AND SYNTHESIS: Two independent reviewers extracted data and assessed risk of bias. MAIN OUTCOMES AND MEASURES: All-cause mortality was the primary outcome. RESULTS: Fifty-three trials enrolling 94 148 participants were included. High-dose vitamin D did not reduce all-cause mortality compared with controls (relative risk, 0.97; 95% CI, 0.93-1.02; P = .23). CONCLUSIONS AND RELEVANCE: High-dose vitamin D supplementation does not appear to reduce all-cause mortality."
+                    }
+                ],
+                "date": "2023-10-10",
+                "volume": [
+                    {
+                        "type": "text",
+                        "text": "330"
+                    }
+                ],
+                "issue": [
+                    {
+                        "type": "text",
+                        "text": "14"
+                    }
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "1355"
+                            },
+                            {
+                                "type": "text",
+                                "text": "1366"
+                            }
+                        ]
+                    ]
+                ],
+                "location": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "United States"
+                        }
+                    ]
+                ],
+                "doi": "10.1001/jama.2023.17009",
+                "issn": [
+                    {
+                        "type": "text",
+                        "text": "0098-7484 (Print)"
+                    }
+                ],
+                "eprint": "37654321",
+                "eprinttype": "pubmed",
+                "keywords": [
+                    "Meta-analysis",
+                    "Mortality",
+                    "Randomized controlled trial",
+                    "Systematic review",
+                    "Vitamin D",
+                    "Adult",
+                    "Dietary Supplements",
+                    "Randomized Controlled Trials as Topic"
+                ]
+            }
+        },
+        "4": {
+            "entry_key": "Tarantino2023",
+            "bib_type": "article-journal",
+            "fields": {
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Antibody-drug conjugates: the new frontier in targeted cancer therapy."
+                    }
+                ],
+                "journaltitle": [
+                    {
+                        "type": "text",
+                        "text": "Nature reviews. Drug discovery"
+                    }
+                ],
+                "shortjournal": [
+                    {
+                        "type": "text",
+                        "text": "Nat Rev Drug Discov"
+                    }
+                ],
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Tarantino"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Paolo"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Ricciuti"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Biagio"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Tolaney"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Sara M"
+                            }
+                        ]
+                    }
+                ],
+                "abstract": [
+                    {
+                        "type": "text",
+                        "text": "Antibody-drug conjugates (ADCs) represent a rapidly evolving class of  targeted therapeutics that combine the specificity of monoclonal antibodies with the cytotoxic potency of small-molecule drugs. Recent approvals of multiple ADCs across a broad range of tumour types have validated this approach and invigorated the field. Here we review the principles of ADC design, mechanisms of action and resistance, and the latest clinical data for approved and late-stage ADCs. We also discuss emerging strategies to enhance therapeutic windows and expand indications, including novel linker chemistry, site-specific conjugation and combination approaches."
+                    }
+                ],
+                "date": "2023-06",
+                "volume": [
+                    {
+                        "type": "text",
+                        "text": "22"
+                    }
+                ],
+                "issue": [
+                    {
+                        "type": "text",
+                        "text": "6"
+                    }
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "463"
+                            },
+                            {
+                                "type": "text",
+                                "text": "482"
+                            }
+                        ]
+                    ]
+                ],
+                "location": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "England"
+                        }
+                    ]
+                ],
+                "doi": "10.1038/s41573-023-00651-z",
+                "issn": [
+                    {
+                        "type": "text",
+                        "text": "1474-1776 (Electronic)"
+                    }
+                ],
+                "eprint": "36512345",
+                "eprinttype": "pubmed",
+                "keywords": [
+                    "Antibody-drug conjugate",
+                    "Cancer therapy",
+                    "Drug delivery",
+                    "Targeted therapy",
+                    "Antibodies, Monoclonal",
+                    "Drug Delivery Systems",
+                    "Immunoconjugates",
+                    "Neoplasms"
+                ]
+            }
+        },
+        "5": {
+            "entry_key": "Davis2022",
+            "bib_type": "article-journal",
+            "fields": {
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Prevalence of Long COVID Symptoms and COVID-19 Complications."
+                    }
+                ],
+                "journaltitle": [
+                    {
+                        "type": "text",
+                        "text": "JAMA network open"
+                    }
+                ],
+                "shortjournal": [
+                    {
+                        "type": "text",
+                        "text": "JAMA Netw Open"
+                    }
+                ],
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Davis"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Hannah E"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "McCorkell"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Lisa"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Vogel"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Julia Moore"
+                            }
+                        ]
+                    }
+                ],
+                "abstract": [
+                    {
+                        "type": "text",
+                        "text": "IMPORTANCE: Long COVID, also known as post-acute sequelae of SARS-CoV-2  infection, affects a substantial proportion of individuals following acute COVID-19. OBJECTIVE: To estimate the prevalence of long COVID symptoms and associated complications. DESIGN, SETTING, AND PARTICIPANTS: Cross-sectional study using electronic health records from a large integrated health system. EXPOSURES: Laboratory-confirmed COVID-19 diagnosis between March 2020 and December 2021. MAIN OUTCOMES AND MEASURES: Presence of long COVID symptoms 4 or more weeks after infection. RESULTS: Among 9764 patients with COVID-19, 30.1% reported at least one long COVID symptom. The most common symptoms were fatigue (18.7%), dyspnea (14.2%), and cognitive impairment (7.8%). CONCLUSIONS AND RELEVANCE: Long COVID affects a significant proportion of patients and warrants ongoing clinical attention and research."
+                    }
+                ],
+                "date": "2022-10-01",
+                "volume": [
+                    {
+                        "type": "text",
+                        "text": "6"
+                    }
+                ],
+                "issue": [
+                    {
+                        "type": "text",
+                        "text": "10"
+                    }
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "e2238804"
+                            }
+                        ]
+                    ]
+                ],
+                "location": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "United States"
+                        }
+                    ]
+                ],
+                "doi": "10.1001/jamanetworkopen.2022.38804",
+                "issn": [
+                    {
+                        "type": "text",
+                        "text": "2374-2445 (Electronic)"
+                    }
+                ],
+                "eprint": "35987654",
+                "eprinttype": "pubmed",
+                "note": [
+                    {
+                        "type": "text",
+                        "text": "PMC: PMC9580836"
+                    }
+                ],
+                "keywords": [
+                    "COVID-19",
+                    "Long COVID",
+                    "Post-acute sequelae",
+                    "Prevalence",
+                    "Post-Acute COVID-19 Syndrome",
+                    "Humans",
+                    "Fatigue",
+                    "SARS-CoV-2"
+                ]
+            }
+        }
+    }
+}

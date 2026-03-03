@@ -6,6 +6,7 @@ import {
     EndNoteParser,
     RISParser,
     ENWParser,
+    NBIBParser,
     CitaviParser,
     CitaviXmlParser,
     DocxCitationsParser,
@@ -31,6 +32,7 @@ Object.assign(globalThis, {
     EndNoteParser,
     RISParser,
     ENWParser,
+    NBIBParser,
     CitaviParser,
     CitaviXmlParser,
     DocxCitationsParser,
@@ -242,6 +244,14 @@ function importRIS(input: string): BibDB {
     return entries
 }
 
+function importNBIB(input: string): BibDB {
+    const parser = new NBIBParser(input)
+    const { entries, errors, warnings } = parser.parse()
+    if (errors.length) console.warn("NBIB errors:", errors)
+    if (warnings.length) console.warn("NBIB warnings:", warnings)
+    return entries
+}
+
 function importENW(input: string): BibDB {
     const parser = new ENWParser(input)
     const { entries, errors, warnings } = parser.parse()
@@ -307,6 +317,8 @@ function runImport(format: string, input: string): BibDB {
             return importCSL(input)
         case "ris":
             return importRIS(input)
+        case "nbib":
+            return importNBIB(input)
         case "enw":
             return importENW(input)
         case "endnote":
@@ -568,6 +580,7 @@ document.addEventListener("DOMContentLoaded", () => {
             enw: ".enw",
             endnote: ".xml",
             citavi: ".json",
+            nbib: ".nbib",
             docx: ".docx",
             odt: ".odt",
         }

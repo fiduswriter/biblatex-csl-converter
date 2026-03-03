@@ -5,6 +5,7 @@ export { CSLExporter } from "./export/csl"
 export { EndNoteParser, parseEndNote } from "./import/endnote"
 export { RISParser, parseRIS } from "./import/ris"
 export { ENWParser, parseENW } from "./import/enw"
+export { NBIBParser, parseNBIB } from "./import/nbib"
 export { CitaviParser, parseCitavi } from "./import/citavi"
 export {
     DocxCitationsParser,
@@ -38,6 +39,7 @@ export type { CSLEntry, CSLOutput } from "./export/csl"
 export type { EndNoteRecord, EndNoteParseResult } from "./import/endnote"
 export type { RISParseResult } from "./import/ris"
 export type { ENWParseResult } from "./import/enw"
+export type { NBIBParseResult } from "./import/nbib"
 export type {
     DocxCitationsParseResult,
     DocxCitationsParserOptions,
