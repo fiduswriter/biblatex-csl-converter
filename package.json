@@ -2,10 +2,22 @@
     "name": "biblatex-csl-converter",
     "type": "module",
     "version": "3.2.2",
-    "description": "a set of converters: biblatex => json, CSL => json, json => biblatex, json => CSL",
+    "description": "Bibliography format converter: BibLaTeX, BibTeX, CSL-JSON, RIS, ENW, EndNote XML, Citavi, DOCX citations, ODT citations — parse, convert, and export with round-trip fidelity",
     "main": "lib/index.js",
-    "module": "lib/index.js",
+    "module": "lib/index.mjs",
     "types": "lib/index.d.ts",
+    "exports": {
+        ".": {
+            "import": "./lib/index.mjs",
+            "require": "./lib/index.js",
+            "types": "./lib/index.d.ts"
+        }
+    },
+    "files": [
+        "lib/",
+        "browser/",
+        "src/"
+    ],
     "repository": {
         "type": "git",
         "url": "git+https://github.com/fiduswriter/biblatex-csl-converter.git"
@@ -15,7 +27,26 @@
         "biblatex",
         "citations",
         "csl",
-        "citeproc"
+        "csl-json",
+        "citavi",
+        "citeproc",
+        "bibliography",
+        "reference-management",
+        "citation-manager",
+        "ris",
+        "endnote",
+        "enw",
+        "citavi",
+        "zotero",
+        "mendeley",
+        "jabref",
+        "docx",
+        "odt",
+        "latex",
+        "converter",
+        "parser",
+        "i18n",
+        "typescript"
     ],
     "author": "Johannes Wilm",
     "contributors": [
