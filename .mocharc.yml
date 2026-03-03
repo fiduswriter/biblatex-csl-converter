@@ -1,0 +1,4 @@
+spec: test/*.ts
+node-option:
+  - experimental-strip-types
+timeout: 3000

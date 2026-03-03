@@ -1,4 +1,4 @@
-import converter from "../tmp/bundle.test.js"
+import * as converter from "../tmp/bundle.test.js"
 import { expect } from "chai"
 import fs from "fs"
 import path from "path"
@@ -16,14 +16,14 @@ const clean = (state) => {
         delete state.strings
 }
 
-const verify = (enwfile) => {
-    let input = fs.readFileSync(enwfile, "utf8")
-    let name = path.basename(enwfile, path.extname(enwfile))
+const verify = (risfile) => {
+    let input = fs.readFileSync(risfile, "utf8")
+    let name = path.basename(risfile, path.extname(risfile))
 
-    let found = converter.parseENW(input)
+    let found = converter.parseRIS(input)
     clean(found)
 
-    let expected = path.join(path.dirname(enwfile), name + ".json")
+    let expected = path.join(path.dirname(risfile), name + ".json")
     if (writeFixtures) {
         fs.writeFileSync(expected, JSON.stringify(found, null, 4) + "\n")
     }
@@ -46,12 +46,13 @@ const verify = (enwfile) => {
 
 const fixtures = path.join(
     path.dirname(fileURLToPath(import.meta.url)),
-    "fixtures/import/enw"
+    "fixtures/import/ris"
 )
-const enwfiles = fs.readdirSync(fixtures)
+const risfiles = fs.readdirSync(fixtures)
 
-for (let fixture of enwfiles) {
-    if (path.extname(fixture).toLowerCase() !== ".enw") {
+for (let fixture of risfiles) {
+    const ext = path.extname(fixture).toLowerCase()
+    if (ext !== ".ris" && ext !== ".end") {
         continue
     }
 

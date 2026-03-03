@@ -1,4 +1,4 @@
-import converter from "../tmp/bundle.test.js"
+import * as converter from "../tmp/bundle.test.js"
 import { expect } from "chai"
 import fs from "fs"
 import path from "path"
@@ -17,23 +17,15 @@ const clean = (state) => {
 }
 
 /**
- * Verify a DOCX citations fixture.
+ * Verify an ODT citations fixture.
  *
- * @param {string} xmlFile   - Path to the document XML fixture.
- * @param {string} [sourcesFile] - Optional path to a companion sources XML
- *   file (the customXml/item1.xml equivalent).  When present it is passed to
- *   the parser as `options.sourcesXml`.
+ * @param {string} xmlFile - Path to the content XML fixture.
  */
-const verify = (xmlFile, sourcesFile) => {
-    const documentXml = fs.readFileSync(xmlFile, "utf8")
+const verify = (xmlFile) => {
+    const contentXml = fs.readFileSync(xmlFile, "utf8")
     const name = path.basename(xmlFile, path.extname(xmlFile))
 
-    const options = {}
-    if (sourcesFile && fs.existsSync(sourcesFile)) {
-        options.sourcesXml = fs.readFileSync(sourcesFile, "utf8")
-    }
-
-    const found = converter.parseDocxCitations(documentXml, options)
+    const found = converter.parseOdtCitations(contentXml)
     clean(found)
 
     const expectedPath = path.join(
@@ -63,21 +55,16 @@ const verify = (xmlFile, sourcesFile) => {
 
 const fixturesDir = path.join(
     path.dirname(fileURLToPath(import.meta.url)),
-    "fixtures/import/docx-citations"
+    "fixtures/import/odt-citations"
 )
 
 const allFiles = fs.readdirSync(fixturesDir)
 
 for (let filename of allFiles) {
     if (path.extname(filename).toLowerCase() !== ".xml") continue
-    // Skip companion sources files — they are loaded alongside their primary fixture
-    if (filename.endsWith("-sources.xml")) continue
     // Skip expected-output JSON files
     if (filename.endsWith("-expected.json")) continue
 
     const xmlFile = path.join(fixturesDir, filename)
-    const base = path.basename(filename, ".xml")
-    const sourcesFile = path.join(fixturesDir, base + "-sources.xml")
-
-    verify(xmlFile, sourcesFile)
+    verify(xmlFile)
 }

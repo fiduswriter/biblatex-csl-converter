@@ -1,6 +1,7 @@
 module.exports = {
     root: true,
     ignorePatterns: ["src/i18n/locales.ts"],
+    // .mjs files have been migrated to .ts
     parser: "@typescript-eslint/parser",
     plugins: ["@typescript-eslint", "prettier"],
     env: {

@@ -5,6 +5,6 @@ export default {
     output: {
         sourcemap: true,
     },
-    plugins: [typescript({ sourceMap: true })],
+    plugins: [typescript({ sourceMap: true, declaration: false })],
     external: ["xregexp"],
 }

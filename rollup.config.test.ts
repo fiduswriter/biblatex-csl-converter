@@ -11,12 +11,12 @@ export default {
     input: "src/index.ts",
     output: {
         file: "tmp/bundle.test.js",
-        format: "cjs",
+        format: "es",
         sourcemap: true,
     },
     plugins: [
         commonjs(),
-        typescript({ sourceMap: true }),
+        typescript({ sourceMap: true, outDir: "tmp" }),
         nodePolyfills({ sourceMap: true }),
         globals(),
         resolve(),

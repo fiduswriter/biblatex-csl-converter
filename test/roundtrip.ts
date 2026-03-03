@@ -1,4 +1,4 @@
-import converter from "../tmp/bundle.test.js"
+import * as converter from "../tmp/bundle.test.js"
 import { expect } from "chai"
 
 const roundTripTest = (biblatex) => {
