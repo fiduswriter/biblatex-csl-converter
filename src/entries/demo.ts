@@ -11,6 +11,7 @@ import {
     CitaviXmlParser,
     DocxCitationsParser,
     OdtCitationsParser,
+    sniffFormat,
     edtfParse,
     locales,
     getLocale,
@@ -20,6 +21,7 @@ import {
     getLangidTitle,
     getOtherOptionTitle,
     type BibDB,
+    type ImportFormat,
 } from ".."
 
 // ─── Expose everything on globalThis for inline browser scripts ──────────────
@@ -37,6 +39,7 @@ Object.assign(globalThis, {
     CitaviXmlParser,
     DocxCitationsParser,
     OdtCitationsParser,
+    sniffFormat,
     edtfParse,
     locales,
     getLocale,
@@ -309,11 +312,29 @@ function importCitavi(input: string): BibDB {
     return bibDB
 }
 
+// Human-readable label for each format identifier (used in the stats bar).
+const FORMAT_LABELS: Record<string, string> = {
+    biblatex: "BibLaTeX / BibTeX",
+    csl: "CSL JSON",
+    csl_json: "CSL JSON",
+    ris: "RIS",
+    nbib: "PubMed NBIB",
+    enw: "EndNote Web (.enw)",
+    endnote: "EndNote XML",
+    endnote_xml: "EndNote XML",
+    citavi: "Citavi JSON",
+    citavi_json: "Citavi JSON",
+    citavi_xml: "Citavi XML",
+    odt_citations: "ODT citations",
+    docx_citations: "DOCX citations",
+}
+
 function runImport(format: string, input: string): BibDB {
     switch (format) {
         case "biblatex":
             return importBibLatex(input)
         case "csl":
+        case "csl_json":
             return importCSL(input)
         case "ris":
             return importRIS(input)
@@ -322,12 +343,65 @@ function runImport(format: string, input: string): BibDB {
         case "enw":
             return importENW(input)
         case "endnote":
+        case "endnote_xml":
             return importEndNote(input)
         case "citavi":
+        case "citavi_json":
             return importCitavi(input)
+        case "citavi_xml":
+            return importCitaviXml(input)
+        case "odt_citations":
+            return importOdtCitations(input)
         default:
             return importBibLatex(input)
     }
+}
+
+function importCitaviXml(input: string): BibDB {
+    const parser = new CitaviXmlParser(input)
+    const bibDB = parser.parse()
+    if (parser.errors.length) console.warn("Citavi XML errors:", parser.errors)
+    if (parser.warnings.length)
+        console.warn("Citavi XML warnings:", parser.warnings)
+    return bibDB
+}
+
+function importOdtCitations(input: string): BibDB {
+    const parser = new OdtCitationsParser(input)
+    const result = parser.parse()
+    if (result.errors.length) console.warn("ODT errors:", result.errors)
+    if (result.warnings.length) console.warn("ODT warnings:", result.warnings)
+    return result.entries
+}
+
+/**
+ * Sniff the format of `input` and run the appropriate importer.
+ * Returns the BibDB and the detected format label string (for display).
+ * Throws if the format cannot be identified.
+ */
+function sniffAndImport(input: string): {
+    bibDB: BibDB
+    detectedLabel: string
+} {
+    const sniffed = sniffFormat(input)
+    if (sniffed === null) {
+        throw new Error(
+            "Could not detect the bibliography format. " +
+                "Please select a format manually from the drop-down."
+        )
+    }
+    // odt_citations and docx_citations require an extracted XML string, not the
+    // raw bytes of a zip archive — those formats must come through readFile.
+    if (sniffed === "odt_citations" || sniffed === "docx_citations") {
+        throw new Error(
+            `Detected ${FORMAT_LABELS[sniffed]} format. ` +
+                "This format must be loaded by uploading the file (.odt / .docx) — " +
+                "pasting the raw XML is not supported in the demo."
+        )
+    }
+    const bibDB = runImport(sniffed, input)
+    const detectedLabel = FORMAT_LABELS[sniffed] ?? sniffed
+    return { bibDB, detectedLabel }
 }
 
 // ─── Document file import (DOCX / ODT) ───────────────────────────────────────
@@ -446,8 +520,15 @@ function processInput(format: string, input: string): void {
 
     // Use setTimeout so spinners render before heavy work
     setTimeout(() => {
+        let detectedLabel: string | null = null
         try {
-            currentBibDB = runImport(format, input)
+            if (format === "auto") {
+                const result = sniffAndImport(input)
+                currentBibDB = result.bibDB
+                detectedLabel = result.detectedLabel
+            } else {
+                currentBibDB = runImport(format, input)
+            }
         } catch (e) {
             const msg = `<span class="error-msg">Import failed: ${escapeHtml(
                 String(e)
@@ -466,9 +547,12 @@ function processInput(format: string, input: string): void {
         const statsEl = getEl("stats")
         if (statsEl) {
             const count = Object.keys(currentBibDB).length
-            statsEl.textContent = `${count} entr${
+            const formatNote = detectedLabel
+                ? ` — detected as <strong>${escapeHtml(detectedLabel)}</strong>`
+                : ""
+            statsEl.innerHTML = `${count} entr${
                 count === 1 ? "y" : "ies"
-            } — processed in ${(t1 - t0).toFixed(1)} ms`
+            } — processed in ${(t1 - t0).toFixed(1)} ms${formatNote}`
         }
 
         console.log(`Total: ${(t1 - t0).toFixed(1)} ms`)
@@ -489,13 +573,41 @@ function getSelectedFormat(): string {
     return sel?.value ?? "biblatex"
 }
 
+/** Map a sniffed ImportFormat to the demo's legacy format key where they differ. */
+function sniffedToLegacyFormat(sniffed: ImportFormat): string {
+    switch (sniffed) {
+        case "csl_json":
+            return "csl"
+        case "endnote_xml":
+            return "endnote"
+        case "citavi_json":
+            return "citavi"
+        default:
+            return sniffed
+    }
+}
+
 function readFile(): void {
     const fileUpload = getEl<HTMLInputElement>("file-upload")
     if (!fileUpload?.files?.length) return
     const format = getSelectedFormat()
     const file = fileUpload.files[0]
 
-    if (format === "docx" || format === "odt") {
+    // For document formats (zip archives) we always need the binary path.
+    const isDocFormat = format === "docx" || format === "odt"
+
+    // In auto mode, sniff the file name extension to decide whether it's a
+    // binary document archive (DOCX/ODT) or a text format we can read and sniff.
+    const isAutoDoc = format === "auto" && /\.(docx|odt)$/i.test(file.name)
+
+    if (isDocFormat || isAutoDoc) {
+        let docFormat: "docx" | "odt"
+        if (isAutoDoc) {
+            docFormat = /\.odt$/i.test(file.name) ? "odt" : "docx"
+        } else {
+            docFormat = format as "docx" | "odt"
+        }
+
         // Show spinners immediately before async work begins
         const bibDbEl = getEl("bib-db")
         const cslDbEl = getEl("csl-db")
@@ -505,7 +617,7 @@ function readFile(): void {
         if (biblatexEl) biblatexEl.innerHTML = '<div class="spinner"></div>'
 
         const t0 = performance.now()
-        importDocumentFile(file, format as "docx" | "odt")
+        importDocumentFile(file, docFormat)
             .then((bibDB) => {
                 currentBibDB = bibDB
                 if (bibDbEl) bibDbEl.innerHTML = renderBibDB(currentBibDB)
@@ -516,9 +628,15 @@ function readFile(): void {
                 const statsEl = getEl("stats")
                 if (statsEl) {
                     const count = Object.keys(currentBibDB).length
-                    statsEl.textContent = `${count} entr${
+                    const formatNote = isAutoDoc
+                        ? ` — detected as <strong>${escapeHtml(
+                              FORMAT_LABELS[docFormat + "_citations"] ??
+                                  docFormat
+                          )}</strong>`
+                        : ""
+                    statsEl.innerHTML = `${count} entr${
                         count === 1 ? "y" : "ies"
-                    } — processed in ${(t1 - t0).toFixed(1)} ms`
+                    } — processed in ${(t1 - t0).toFixed(1)} ms${formatNote}`
                 }
             })
             .catch((e) => {
@@ -534,7 +652,24 @@ function readFile(): void {
 
     const fr = new FileReader()
     fr.onload = (event) => {
-        processInput(format, event.target?.result as string)
+        const text = event.target?.result as string
+        if (format === "auto") {
+            // Sniff the text content and, if recognised, sync the select back
+            // to the detected format so the user sees what was found.
+            const sniffed = sniffFormat(text)
+            if (sniffed !== null) {
+                const legacy = sniffedToLegacyFormat(sniffed)
+                const sel = getEl<HTMLSelectElement>("format-select")
+                if (sel) {
+                    // Only update if the option actually exists in the select.
+                    const exists = Array.from(sel.options).some(
+                        (o) => o.value === legacy
+                    )
+                    if (exists) sel.value = legacy
+                }
+            }
+        }
+        processInput(format, text)
     }
     fr.readAsText(file)
 }
@@ -542,19 +677,32 @@ function readFile(): void {
 function readPaste(event: ClipboardEvent): void {
     const clipBoardText = event.clipboardData?.getData("text") ?? ""
     const format = getSelectedFormat()
+    if (format === "auto") {
+        // Sniff first so we can sync the select to the detected format.
+        const sniffed = sniffFormat(clipBoardText)
+        if (sniffed !== null) {
+            const legacy = sniffedToLegacyFormat(sniffed)
+            const sel = getEl<HTMLSelectElement>("format-select")
+            if (sel) {
+                const exists = Array.from(sel.options).some(
+                    (o) => o.value === legacy
+                )
+                if (exists) sel.value = legacy
+            }
+        }
+    }
     processInput(format, clipBoardText)
 }
 
 function loadSample(): void {
-    // Switch to BibLaTeX format in case another was selected
-    const formatSelect = getEl<HTMLSelectElement>("format-select")
-    if (formatSelect) formatSelect.value = "biblatex"
-
     // Show the sample text in the paste area so the user can inspect it
     const pasteInput = getEl("paste-input")
     if (pasteInput) pasteInput.textContent = SAMPLE_BIBLATEX
 
-    processInput("biblatex", SAMPLE_BIBLATEX)
+    // Leave the format selector wherever it is — auto-detect will handle it.
+    // If the user had manually selected something other than auto, honour that.
+    const format = getSelectedFormat()
+    processInput(format, SAMPLE_BIBLATEX)
 }
 
 // Wire up after DOM ready
@@ -574,6 +722,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const fileUpload = getEl<HTMLInputElement>("file-upload")
         if (!fileUpload) return
         const acceptMap: Record<string, string> = {
+            auto: ".bib,.json,.ris,.enw,.xml,.nbib,.ctv5,.ctv6",
             biblatex: ".bib",
             csl: ".json",
             ris: ".ris",

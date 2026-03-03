@@ -133,7 +133,7 @@
                 outline: none;
             }
             #paste-input:empty::before {
-                content: "Paste bibliography text here (Ctrl+V / Cmd+V)…";
+                content: attr(data-placeholder);
                 color: #aaa;
             }
             #stats {
@@ -411,6 +411,7 @@
             <label for="format-select">
                 Input format
                 <select id="format-select">
+                    <option value="auto" selected>Auto-detect format</option>
                     <option value="biblatex">BibLaTeX / BibTeX (.bib)</option>
                     <option value="csl">CSL JSON (.json)</option>
                     <option value="ris">RIS (.ris)</option>
@@ -456,7 +457,7 @@
         <!-- ── Paste area ───────────────────────────────────────────────── -->
         <div class="paste-row" id="paste-row">
             <label for="paste-input">Or paste text:</label>
-            <div contenteditable="true" id="paste-input" spellcheck="false"></div>
+            <div contenteditable="true" id="paste-input" spellcheck="false" data-placeholder="Paste any supported bibliography format here — the format will be detected automatically…"></div>
         </div>
 
         <!-- ── Document format note (shown only for DOCX / ODT) ────────── -->
@@ -544,6 +545,16 @@
                     if (pasteRow) pasteRow.style.display = isDoc ? "none" : ""
                     if (docNote) docNote.style.display = isDoc ? "" : "none"
                     if (docLabel) docLabel.textContent = fmt === "odt" ? "ODT" : "DOCX"
+                    // Update paste-area placeholder to reflect auto vs. manual mode
+                    var pasteInput = document.getElementById("paste-input")
+                    if (pasteInput) {
+                        pasteInput.setAttribute(
+                            "data-placeholder",
+                            fmt === "auto"
+                                ? "Paste any supported bibliography format here — the format will be detected automatically\u2026"
+                                : "Paste here\u2026"
+                        )
+                    }
                 }
 
                 if (formatSelect) {

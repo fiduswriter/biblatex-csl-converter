@@ -1,3 +1,5 @@
+export { sniffFormat } from "./import/sniffer"
+export type { ImportFormat } from "./import/sniffer"
 export { BibLatexParser, parse, parseAsync } from "./import/biblatex"
 export { BibLatexExporter } from "./export/biblatex"
 export { CSLParser, parseCSL } from "./import/csl"
