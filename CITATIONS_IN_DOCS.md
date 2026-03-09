@@ -358,7 +358,7 @@ Key observations from the real-world DOCX:
 >   to store citations in this document.
 >
 > Multiple `ZOTERO_PREF_N` properties may exist (numbered `ZOTERO_PREF_1`,
-> `ZOTERO_PREF_2`, etc.) when the serialized XML exceeds the character limit for a
+> `ZOTERO_PREF_2`, etc.) when the serialized XML exceeds the character limit (255) for a
 > single property value. In this case, the XML string is split across multiple
 > properties that must be concatenated in order before parsing. The `fmtid` attribute
 > is the standard Windows FMTID for custom properties
@@ -379,7 +379,7 @@ In ODT files, Zotero stores session and style metadata in `meta.xml` using
 ```
 
 > **Split across properties**: The `<data>` element may be split across multiple
-> `ZOTERO_PREF_N` properties when the serialized XML exceeds the character limit for
+> `ZOTERO_PREF_N` properties when the serialized XML exceeds the character limit (378?) for
 > a single property value. In the example above, `ZOTERO_PREF_1` ends mid-tag
 > (`...&lt;pr`) and `ZOTERO_PREF_2` continues (`ef name=...`). Parsers must concatenate
 > all `ZOTERO_PREF_N` values in order before decoding entities and parsing the XML.
