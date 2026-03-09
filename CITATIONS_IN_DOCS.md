@@ -201,7 +201,75 @@ The following is the complete body of a real Zotero DOCX with three citations in
     <w:t xml:space="preserve">? </w:t>
   </w:r>
 </w:p>
-<!-- bibliography is in its own paragraph -->
+<!-- bibliography in multiple paragraphs (Word + Zotero 5.0.96.3) -->
+<w:p>
+  <w:pPr>
+    <w:pStyle w:val="Bibliography"/>
+  </w:pPr>
+  <w:r>
+    <w:fldChar w:fldCharType="begin"/>
+    <w:instrText xml:space="preserve"> ADDIN ZOTERO_BIBL CSL_BIBLIOGRAPHY </w:instrText>
+  </w:r>
+  <w:r>
+    <w:fldChar w:fldCharType="separate"/>
+  </w:r>
+  <w:r>
+    <w:t xml:space="preserve"> [1]A. Pantoja, "CPC fuera de la ley," El Nuevo Diario, Nov. 2007, ...</w:t>
+  </w:r>
+</w:p>
+<w:p>
+  <w:pPr>
+    <w:pStyle w:val="Bibliography"/>
+  </w:pPr>
+  <w:r>
+    <w:t xml:space="preserve"> [2]Organisation for Economic Co-operation and Development, "Nicaragua." ...</w:t>
+  </w:r>
+</w:p>
+<w:p>
+  <w:pPr>
+    <w:pStyle w:val="Bibliography"/>
+  </w:pPr>
+  <w:r>
+    <w:t xml:space="preserve"> [3]J. D. Ortega Saavedra, "Nothing Will Hold Back Our Struggle for Liberation," ...</w:t>
+  </w:r>
+</w:p>
+<w:p>
+  <w:pPr>
+    <w:pStyle w:val="Bibliography"/>
+  </w:pPr>
+  <w:r>
+    <w:t xml:space="preserve"> [4]H. Rodríguez, "Ya somos ALBA," El Nuevo Diario, Jan. 2007, ...</w:t>
+  </w:r>
+</w:p>
+<w:p>
+  <w:pPr>
+    <w:pStyle w:val="Bibliography"/>
+  </w:pPr>
+  <w:r>
+    <w:t xml:space="preserve"> [5]J. D. Hirst, "A Guide to ALBA." ...</w:t>
+  </w:r>
+</w:p>
+<w:p>
+  <w:pPr>
+    <w:pStyle w:val="Bibliography"/>
+  </w:pPr>
+  <w:r>
+    <w:t xml:space="preserve"> [6]J. Capelán, "Nicaragua y el ALBA," Tortilla con Sal. ...</w:t>
+  </w:r>
+</w:p>
+<w:p>
+  <w:pPr/>
+  <w:r>
+    <w:fldChar w:fldCharType="end"/>
+  </w:r>
+</w:p>
+</w:body>
+```
+
+In ONLYOFFICE 9.3.0.140, the bibliography appears in a single paragraph instead, like this:
+
+```xml
+<!-- bibliography in single paragraph (ONLYOFFICE 9.3.0.140) -->
 <w:p>
   <w:r/>
   <w:r>
@@ -230,8 +298,9 @@ The following is the complete body of a real Zotero DOCX with three citations in
     <w:fldChar w:fldCharType="end"/>
   </w:r>
 </w:p>
-</w:body>
 ```
+
+Indentation at the beginning of the line is handled throuhg the bibliography paragraph style in Word, whereas in ONLYOFFICE, it is handled by adding spaces.
 
 Key observations from the real-world DOCX:
 
@@ -258,7 +327,65 @@ Key observations from the real-world DOCX:
 > them (e.g. `ADDIN ZOTERO_BIBL {"uncited":[],"custom":[]} CSL_BIBLIOGRAPHY`). Parsers
 > should handle both forms.
 
+> **Zotero metadata in `docProps/custom.xml`**: In addition to the field codes in the
+> document body, Zotero DOCX files contain a metadata entry in `docProps/custom.xml`.
+> This file stores custom document properties that Zotero uses to persist session and
+> style information across document editing sessions. A typical entry looks like:
+>
+> ```xml
+<property fmtid="{D5CDD505-2E9C-101B-9397-08002B2CF9AE}" pid="2" name="ZOTERO_PREF_1"><vt:lpwstr>&lt;data data-version="3" zotero-version="5.0.96.3"&gt;&lt;session id="RYC4roRa"/&gt;&lt;style id="http://www.zotero.org/styles/apa" locale="en-US" hasBibliography="1" bibliographyStyleHasBeenSet="1"/&gt;&lt;prefs&gt;&lt;pref name="fieldType" value="Field"/&gt;&lt;/prefs&gt;&lt;/data&gt;</vt:lpwstr></property>
+```
+>
+> Note that the inner `<data>` element is **serialized XML** stored as text inside the
+> `<vt:lpwstr>` element. The angle brackets are escaped as `&lt;` and `&gt;`. To parse
+> the metadata, you must first extract the text content of `<vt:lpwstr>`, then decode
+> the XML entities, and finally parse the resulting XML string.
+> ```
+>
+> The `<data>` element (after unescaping from `<vt:lpwstr>`) contains:
+>
+> - `data-version` — the internal Zotero data format version (currently `3`).
+> - `zotero-version` — the Zotero version that created the document (e.g. `5.0.96.3`).
+> - `<session id="..."/>` — a unique session identifier generated when the document was
+>   first linked to a Zotero library.
+> - `<style id="..."/>` — the CSL style URI used for formatting citations and the
+>   bibliography. The `locale` attribute specifies the citation locale (e.g. `en-US`).
+>   The `hasBibliography` attribute indicates whether the style includes a bibliography,
+>   and `bibliographyStyleHasBeenSet` tracks whether the user has confirmed the style
+>   choice.
+> - `<prefs>` — a list of preference key-value pairs. The `fieldType` preference
+>   indicates whether Zotero uses Word field codes (`Field`) or bookmarks (`Bookmark`)
+>   to store citations in this document.
+>
+> Multiple `ZOTERO_PREF_N` properties may exist (numbered `ZOTERO_PREF_1`,
+> `ZOTERO_PREF_2`, etc.) when the serialized XML exceeds the character limit for a
+> single property value. In this case, the XML string is split across multiple
+> properties that must be concatenated in order before parsing. The `fmtid` attribute
+> is the standard Windows FMTID for custom properties
+> (`{D5CDD505-2E9C-101B-9397-08002B2CF9AE}`), and `pid` is the property index within
+> that format.
+>
+> **Note**: ONLYOFFICE 9.3.0.140 omits the `docProps/custom.xml` file entirely when
+> saving Zotero DOCX files. Parsers should not rely on the presence of this metadata.
+
 #### Zotero (ODT)
+
+In ODT files, Zotero stores session and style metadata in `meta.xml` using
+`<meta:user-defined>` elements. Like the DOCX format, the inner XML is serialized
+(escaped) and may be split across multiple properties due to character limits:
+
+```xml
+<meta:user-defined meta:name="ZOTERO_PREF_1">&lt;data data-version=&quot;3&quot; zotero-version=&quot;8.0.2&quot;&gt;&lt;session id=&quot;sqSj43VZ&quot;/&gt;&lt;style id=&quot;http://www.zotero.org/styles/chicago-author-date&quot; locale=&quot;en-US&quot; hasBibliography=&quot;1&quot; bibliographyStyleHasBeenSet=&quot;1&quot;/&gt;&lt;prefs&gt;&lt;pref name=&quot;fieldType&quot; value=&quot;ReferenceMark&quot;/&gt;&lt;pr</meta:user-defined><meta:user-defined meta:name="ZOTERO_PREF_2">ef name=&quot;automaticJournalAbbreviations&quot; value=&quot;true&quot;/&gt;&lt;/prefs&gt;&lt;/data&gt;</meta:user-defined>
+```
+
+> **Split across properties**: The `<data>` element may be split across multiple
+> `ZOTERO_PREF_N` properties when the serialized XML exceeds the character limit for
+> a single property value. In the example above, `ZOTERO_PREF_1` ends mid-tag
+> (`...&lt;pr`) and `ZOTERO_PREF_2` continues (`ef name=...`). Parsers must concatenate
+> all `ZOTERO_PREF_N` values in order before decoding entities and parsing the XML.
+>
+> The structure of the `<data>` element (after unescaping) is identical to the DOCX
+> format: `data-version`, `zotero-version`, `<session>`, `<style>`, and `<prefs>`.
 
 The reference mark name contains the full CSL-JSON payload (with `"` encoded as `&quot;`), prefixed with `ZOTERO_ITEM CSL_CITATION`:
 
@@ -292,12 +419,12 @@ The reference mark name contains the full CSL-JSON payload (with `"` encoded as 
 > removed. These RTF sequences appear only in the display string inside `properties`
 > and do not affect the importable `citationItems[].itemData` records.
 
-The bibliography section uses a reference mark whose name starts with `ZOTERO_BIBL` and ends with `CSL_BIBLIOGRAPHY`:
+The bibliography section uses a section whose name starts with `ZOTERO_BIBL` and ends with `CSL_BIBLIOGRAPHY`:
 
 ```xml
-<text:reference-mark-start text:name="ZOTERO_BIBL {...} CSL_BIBLIOGRAPHY"/>
+<text:section text:style-name="Sect1" text:name="ZOTERO_BIBL {\"uncited\":[],\"omitted\":[],\"custom\":[]} CSL_BIBLIOGRAPHY RNDjURflxggFg">
 ... rendered bibliography text ...
-<text:reference-mark-end text:name="ZOTERO_BIBL {...} CSL_BIBLIOGRAPHY"/>
+</text:section>
 ```
 
 ---
