@@ -5,8 +5,9 @@
  * closing brace, or `null` if no balanced closing brace is found.
  *
  * This is used to extract a JSON object from a larger string that may contain
- * trailing text after the object (e.g. Zotero ODT/DOCX mark names append a
- * random ID such as " RND6KERMIacgp" after the JSON payload).
+ * trailing text after the object (e.g. Zotero ODT mark names append a
+ * random ID such as " RNDjURflxg9F1" after the JSON payload). The random ID
+ * format is: space + "RND" + exactly 10 alphanumeric characters.
  */
 export function extractJsonObject(str: string, startIndex = 0): string | null {
     let depth = 0

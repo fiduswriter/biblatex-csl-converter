@@ -47,6 +47,10 @@ let parser = new BibLatexParser(input, {processUnexpected: true, processUnknown:
 parser.parseAsync().then((bib) => { ... })
 ```
 
+## API Documentation
+
+For comprehensive API documentation, see **[API.md](API.md)**.
+
 ## Extracting Citations from ODT and DOCX Files
 
 See [CITATIONS_IN_DOCS.md](CITATIONS_IN_DOCS.md) for documentation on how Zotero, Mendeley, EndNote, Citavi, and JabRef store citations and bibliographies inside ODT and DOCX files.
