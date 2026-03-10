@@ -45,5 +45,11 @@ export type { NBIBParseResult } from "./import/nbib"
 export type {
     DocxCitationsParseResult,
     DocxCitationsParserOptions,
+    CitationResult as DocxCitationResult,
+    BibliographyResult as DocxBibliographyResult,
 } from "./import/docx-citations"
-export type { OdtCitationsParseResult } from "./import/odt-citations"
+export type {
+    OdtCitationsParseResult,
+    CitationResult as OdtCitationResult,
+    BibliographyResult as OdtBibliographyResult,
+} from "./import/odt-citations"
