@@ -62,6 +62,23 @@ interface ErrorObject {
 }
 
 // ---------------------------------------------------------------------------
+// Static utility result types
+// ---------------------------------------------------------------------------
+
+export interface CitationResult {
+    isCitation: boolean
+    format?: string // e.g., "zotero", "mendeley_legacy", "jabref", "libreoffice_native", "endnote"
+    entries?: Record<number, EntryObject>
+    errors?: ErrorObject[]
+    warnings?: ErrorObject[]
+}
+
+export interface BibliographyResult {
+    isBibliography: boolean
+    format?: string
+}
+
+// ---------------------------------------------------------------------------
 // Parser class
 // ---------------------------------------------------------------------------
 
@@ -82,7 +99,425 @@ export class OdtCitationsParser {
     }
 
     // -----------------------------------------------------------------------
-    // Public API
+    // Static utility methods for reusable citation detection and extraction
+    // -----------------------------------------------------------------------
+
+    /**
+     * Check or extract citation data from a reference mark name.
+     *
+     * @param markName - The text:name attribute value from a reference-mark-start
+     * @param retrieve - If true, extract and return full citation data; if false, only check presence
+     * @returns CitationResult with format and optionally entries/errors/warnings
+     */
+    static referenceMarkCitation(
+        markName: string,
+        retrieve = true,
+        entries: EntryObject[] = [],
+        errors: ErrorObject[] = [],
+        warnings: ErrorObject[] = [],
+        seenKeys: Set<string> = new Set<string>()
+    ): CitationResult {
+        // Detect format
+        let format: string | undefined
+
+        if (markName.startsWith("ZOTERO_ITEM CSL_CITATION")) {
+            format = "zotero"
+        } else if (markName.startsWith("CSL_CITATION")) {
+            format = "mendeley_legacy"
+        } else if (markName.startsWith("JABREF_")) {
+            format = "jabref"
+        }
+
+        if (!format) {
+            return { isCitation: false }
+        }
+
+        if (!retrieve) {
+            return { isCitation: true, format }
+        }
+
+        // Extract citation data
+        if (format === "zotero" || format === "mendeley_legacy") {
+            OdtCitationsParser.extractCslMarkData(
+                markName,
+                format,
+                entries,
+                errors,
+                warnings,
+                seenKeys
+            )
+        } else if (format === "jabref") {
+            OdtCitationsParser.extractJabRefMarkData(
+                markName,
+                entries,
+                warnings,
+                seenKeys
+            )
+        }
+
+        const bibDB: Record<number, EntryObject> = {}
+        entries.forEach((entry, i) => {
+            bibDB[i + 1] = entry
+        })
+
+        return {
+            isCitation: true,
+            format,
+            entries: bibDB,
+            errors,
+            warnings,
+        }
+    }
+
+    /**
+     * Check or extract bibliography rendering region from a reference mark name.
+     *
+     * @param markName - The text:name attribute value from a reference-mark-start
+     * @param retrieve - If true, extract data (currently returns empty as bibliographies have no importable data)
+     * @returns BibliographyResult indicating whether it's a bibliography
+     */
+    static referenceMarkBibliography(markName: string): BibliographyResult {
+        let format: string | undefined
+
+        if (markName.startsWith("ZOTERO_BIBL")) {
+            format = "zotero"
+        } else if (markName.startsWith("CSL_BIBLIOGRAPHY")) {
+            format = "mendeley_legacy"
+        }
+
+        if (!format) {
+            return { isBibliography: false }
+        }
+
+        // Bibliography marks are rendering regions with no importable source data
+        const result: BibliographyResult = {
+            isBibliography: true,
+            format,
+        }
+
+        return result
+    }
+
+    /**
+     * Check or extract bibliography rendering region from a text:section element.
+     *
+     * @param sectionName - The text:name attribute value from a text:section element
+     * @returns BibliographyResult indicating whether it's a bibliography and the format
+     */
+    static sectionBibliography(sectionName: string): BibliographyResult {
+        let format: string | undefined
+
+        // JabRef creates bibliography sections with text:name="JR_bib" or "JR_BIB"
+        if (sectionName.toUpperCase() === "JR_BIB") {
+            format = "jabref"
+        }
+
+        if (!format) {
+            return { isBibliography: false }
+        }
+
+        // Section bibliographies are rendering regions with no importable source data
+        const result: BibliographyResult = {
+            isBibliography: true,
+            format,
+        }
+
+        return result
+    }
+
+    /**
+     * Check or extract citation data from a LibreOffice native bibliography-mark element.
+     *
+     * @param bibMarkXml - XML string of a <text:bibliography-mark> element
+     * @param retrieve - If true, extract and return full citation data
+     * @returns CitationResult with format and optionally entries/errors/warnings
+     */
+    static bibliographyMarkCitation(
+        bibMarkXml: string,
+        retrieve = true
+    ): CitationResult {
+        if (!bibMarkXml.includes("<text:bibliography-mark")) {
+            return { isCitation: false }
+        }
+
+        const format = "libreoffice_native"
+
+        if (!retrieve) {
+            return { isCitation: true, format }
+        }
+
+        // Extract citation data by delegating to OdtNativeParser
+        const errors: ErrorObject[] = []
+        const warnings: ErrorObject[] = []
+
+        try {
+            const nativeParser = new OdtNativeParser(bibMarkXml)
+            const { entries: entryList, warnings: parseWarnings } =
+                nativeParser.parse()
+
+            warnings.push(...parseWarnings)
+
+            const bibDB: Record<number, EntryObject> = {}
+            entryList.forEach((entry, i) => {
+                bibDB[i + 1] = entry
+            })
+
+            return {
+                isCitation: true,
+                format,
+                entries: bibDB,
+                errors,
+                warnings,
+            }
+        } catch (error) {
+            errors.push({
+                type: "libreoffice_parse_error",
+                value: String(error),
+            })
+            return {
+                isCitation: true,
+                format,
+                entries: {},
+                errors,
+                warnings,
+            }
+        }
+    }
+
+    /**
+     * Check or extract citation data from EndNote placeholder text.
+     *
+     * @param text - Text containing EndNote placeholders like {Author, Year #RecNum}
+     * @param retrieve - If true, extract and return full citation data
+     * @returns CitationResult with format and optionally entries/errors/warnings
+     */
+    static endNotePlaceholder(text: string, retrieve = true): CitationResult {
+        // EndNote placeholders look like {Author, Year #RecNum}
+        const hasPlaceholder = /\{[^{}]+#\d+[^{}]*\}/g.test(text)
+
+        if (!hasPlaceholder) {
+            return { isCitation: false }
+        }
+
+        const format = "endnote"
+
+        if (!retrieve) {
+            return { isCitation: true, format }
+        }
+
+        // Extract citation data
+        const entries: EntryObject[] = []
+        const seenKeys = new Set<string>()
+        const placeholderRe = /\{([^{}]+#\d+[^{}]*)\}/g
+        let m: RegExpExecArray | null
+
+        while ((m = placeholderRe.exec(text)) !== null) {
+            for (const part of m[1].split(";").map((s) => s.trim())) {
+                OdtCitationsParser.extractEndNotePlaceholderData(
+                    part,
+                    entries,
+                    seenKeys
+                )
+            }
+        }
+
+        const bibDB: Record<number, EntryObject> = {}
+        entries.forEach((entry, i) => {
+            bibDB[i + 1] = entry
+        })
+
+        return {
+            isCitation: true,
+            format,
+            entries: bibDB,
+            errors: [],
+            warnings: [],
+        }
+    }
+
+    // -----------------------------------------------------------------------
+    // Static helper methods for extraction logic
+    // -----------------------------------------------------------------------
+
+    /**
+     * Extract CSL citation data from Zotero or Mendeley legacy marks.
+     */
+    private static extractCslMarkData(
+        markName: string,
+        source: string,
+        entries: EntryObject[],
+        errors: ErrorObject[],
+        warnings: ErrorObject[],
+        seenKeys: Set<string>
+    ): void {
+        const jsonStart = markName.indexOf("{")
+        if (jsonStart === -1) {
+            warnings.push({ type: `${source}_missing_json` })
+            return
+        }
+
+        const jsonStr = extractJsonObject(markName, jsonStart)
+        if (jsonStr === null) {
+            warnings.push({ type: `${source}_missing_json` })
+            return
+        }
+
+        OdtCitationsParser.processCslJson(
+            jsonStr,
+            source,
+            entries,
+            errors,
+            warnings,
+            seenKeys
+        )
+    }
+
+    /**
+     * Extract JabRef citation key from mark name.
+     */
+    private static extractJabRefMarkData(
+        markName: string,
+        entries: EntryObject[],
+        warnings: ErrorObject[],
+        seenKeys: Set<string>
+    ): void {
+        const withoutPrefix = markName.slice("JABREF_".length)
+        const cidIndex = withoutPrefix.indexOf(" CID_")
+        const rawKey =
+            cidIndex === -1
+                ? withoutPrefix.split(" ")[0]
+                : withoutPrefix.slice(0, cidIndex)
+
+        if (!rawKey) {
+            warnings.push({ type: "jabref_missing_key", value: markName })
+            return
+        }
+
+        const citationKey = rawKey.replace(/_/g, " ").trim()
+
+        if (seenKeys.has(citationKey)) return
+        seenKeys.add(citationKey)
+
+        entries.push({
+            entry_key: citationKey,
+            bib_type: "misc",
+            fields: {},
+        })
+    }
+
+    /**
+     * Process CSL-JSON citation payload.
+     */
+    private static processCslJson(
+        jsonStr: string,
+        source: string,
+        entries: EntryObject[],
+        errors: ErrorObject[],
+        warnings: ErrorObject[],
+        seenKeys: Set<string>
+    ): void {
+        let citation: {
+            citationItems?: Array<{ itemData?: CSLEntry; id?: unknown }>
+        }
+        try {
+            citation = JSON.parse(jsonStr) as typeof citation
+        } catch {
+            warnings.push({
+                type: `${source}_invalid_json`,
+                value: jsonStr.slice(0, 80),
+            })
+            return
+        }
+
+        const items = citation.citationItems ?? []
+        if (items.length === 0) return
+
+        const cslRecord: Record<string, CSLEntry> = {}
+        items.forEach((item, i) => {
+            if (!item.itemData) return
+            const key =
+                item.itemData.id === undefined
+                    ? `${source}_${i}`
+                    : String(item.itemData.id)
+            if (seenKeys.has(key)) return
+            cslRecord[key] = item.itemData
+        })
+
+        if (Object.keys(cslRecord).length === 0) return
+
+        const parser = new CSLParser(cslRecord)
+        const bibDB = parser.parse()
+
+        errors.push(...parser.errors)
+        warnings.push(...parser.warnings)
+
+        for (const entry of Object.values(bibDB)) {
+            seenKeys.add(entry.entry_key)
+            entries.push(entry)
+        }
+    }
+
+    /**
+     * Parse a single EndNote placeholder segment.
+     */
+    private static extractEndNotePlaceholderData(
+        segment: string,
+        entries: EntryObject[],
+        seenKeys: Set<string>
+    ): void {
+        const re = /^(.*?)[,\s]+(\d{4})\s+#(\d+)/
+        const m = re.exec(segment.trim())
+        if (!m) return
+
+        const authorPart = m[1].trim()
+        const year = m[2]
+        const recNum = m[3]
+        const key = `EN${recNum}`
+
+        if (seenKeys.has(key)) return
+        seenKeys.add(key)
+
+        const fields: Record<string, unknown> = {}
+
+        if (authorPart) {
+            const nameObj: {
+                family?: import("../const").NodeArray
+                given?: import("../const").NodeArray
+                literal?: import("../const").NodeArray
+            } = {}
+            if (authorPart.includes(",")) {
+                const parts = authorPart.split(",").map((p) => p.trim())
+                nameObj.family = [{ type: "text", text: parts[0] }]
+                if (parts[1]) nameObj.given = [{ type: "text", text: parts[1] }]
+            } else {
+                nameObj.literal = [{ type: "text", text: authorPart }]
+            }
+            fields["author"] = [nameObj]
+        }
+
+        if (year) fields["date"] = year
+
+        entries.push({
+            entry_key: key,
+            bib_type: "misc",
+            fields,
+        })
+    }
+
+    /**
+     * Unescape XML entities.
+     */
+    private static unescapeXmlEntitiesStatic(text: string): string {
+        return text
+            .replace(/&lt;/g, "<")
+            .replace(/&gt;/g, ">")
+            .replace(/&amp;/g, "&")
+            .replace(/&quot;/g, '"')
+            .replace(/&apos;/g, "'")
+    }
+
+    // -----------------------------------------------------------------------
+    // Instance API
     // -----------------------------------------------------------------------
 
     parse(): OdtCitationsParseResult {
@@ -128,158 +563,24 @@ export class OdtCitationsParser {
     // -----------------------------------------------------------------------
 
     private parseReferenceMarks(): void {
-        // Only start-marks carry the name; end-marks repeat it but hold no
-        // additional information.
-        const startRe = /<text:reference-mark-start\s+text:name="([^"]*)"/g
+        // Match all text:reference-mark-start elements
+        // All marks must be properly closed but we ignore the end tags for extraction.
+        const markRe = /<text:reference-mark-start[^>]+text:name="([^"]+)"/g
         let m: RegExpExecArray | null
-        while ((m = startRe.exec(this.contentXml)) !== null) {
-            const name = this.unescapeXmlEntities(m[1])
-            this.dispatchReferenceMark(name)
+        while ((m = markRe.exec(this.contentXml)) !== null) {
+            const name = OdtCitationsParser.unescapeXmlEntitiesStatic(m[1])
+            OdtCitationsParser.referenceMarkCitation(
+                name,
+                true,
+                this.entries,
+                this.errors,
+                this.warnings,
+                this.seenKeys
+            )
         }
     }
 
-    private dispatchReferenceMark(name: string): void {
-        if (name.startsWith("ZOTERO_ITEM CSL_CITATION")) {
-            this.processZoteroMark(name)
-        } else if (name.startsWith("CSL_CITATION")) {
-            // Mendeley Desktop legacy: "CSL_CITATION {json}"
-            this.processMendeleyLegacyMark(name)
-        } else if (name.startsWith("JABREF_")) {
-            this.processJabRefMark(name)
-        }
-        // ZOTERO_BIBL … CSL_BIBLIOGRAPHY and CSL_BIBLIOGRAPHY marks are
-        // bibliography rendering regions — no importable source data.
-    }
-
-    // --- Zotero ODT ---
-
-    private processZoteroMark(name: string): void {
-        // "ZOTERO_ITEM CSL_CITATION {…json…} RND<randomId>"
-        // Zotero appends a trailing random ID after the JSON object; use
-        // extractJsonObject to take only the balanced {} portion.
-        const jsonStart = name.indexOf("{")
-        if (jsonStart === -1) {
-            this.warnings.push({ type: "zotero_missing_json" })
-        } else {
-            const jsonStr = extractJsonObject(name, jsonStart)
-            if (jsonStr === null) {
-                this.warnings.push({ type: "zotero_missing_json" })
-            } else {
-                this.processCslCitationJson(jsonStr, "zotero")
-            }
-        }
-    }
-
-    // --- Mendeley Desktop legacy ODT ---
-
-    private processMendeleyLegacyMark(name: string): void {
-        // "CSL_CITATION {…json…}" — may also have a trailing random ID
-        const jsonStart = name.indexOf("{")
-        if (jsonStart === -1) {
-            this.warnings.push({ type: "mendeley_missing_json" })
-        } else {
-            const jsonStr = extractJsonObject(name, jsonStart)
-            if (jsonStr === null) {
-                this.warnings.push({ type: "mendeley_missing_json" })
-            } else {
-                this.processCslCitationJson(jsonStr, "mendeley_legacy")
-            }
-        }
-    }
-
-    /**
-     * Shared handler for any CSL-JSON citation payload (Zotero, Mendeley).
-     *
-     * The payload shape is:
-     *   { citationItems: [{ itemData: CSLEntry, id: … }, …] }
-     *
-     * We extract the `itemData` objects, key them by their `id` field (falling
-     * back to a positional string), and hand the resulting Record to
-     * CSLParser — the same parser used for standalone CSL-JSON imports.
-     */
-    private processCslCitationJson(jsonStr: string, source: string): void {
-        let citation: {
-            citationItems?: Array<{ itemData?: CSLEntry; id?: unknown }>
-        }
-        try {
-            citation = JSON.parse(jsonStr) as typeof citation
-        } catch {
-            this.warnings.push({
-                type: `${source}_invalid_json`,
-                value: jsonStr.slice(0, 80),
-            })
-            return
-        }
-
-        const items = citation.citationItems ?? []
-        if (items.length === 0) return
-
-        // Build Record<string, CSLEntry> for CSLParser, skipping keys already
-        // seen from a previous citation mark in the same document.
-        const cslRecord: Record<string, CSLEntry> = {}
-        items.forEach((item, i) => {
-            if (!item.itemData) return
-            const key =
-                item.itemData.id === undefined
-                    ? `${source}_${i}`
-                    : String(item.itemData.id)
-            if (this.seenKeys.has(key)) return
-            cslRecord[key] = item.itemData
-        })
-
-        if (Object.keys(cslRecord).length === 0) return
-
-        const parser = new CSLParser(cslRecord)
-        const bibDB = parser.parse()
-
-        this.errors.push(...parser.errors)
-        this.warnings.push(...parser.warnings)
-
-        for (const entry of Object.values(bibDB)) {
-            this.seenKeys.add(entry.entry_key)
-            this.entries.push(entry)
-        }
-    }
-
-    // --- JabRef ODT ---
-
-    /**
-     * JabRef reference mark names have the format:
-     *   `JABREF_{citationKey} CID_{sequenceNumber} {randomId}`
-     *
-     * The content inside the marks is fully rendered text produced by JabRef's
-     * layout engine — not raw bibliographic data.  We extract the citation key
-     * from the mark name and emit a stub `misc` entry so callers know which
-     * references are cited.  JabRef replaces spaces in citation keys with
-     * underscores, so we reverse that substitution.
-     */
-    private processJabRefMark(name: string): void {
-        // Strip "JABREF_" prefix; the key ends at " CID_"
-        const withoutPrefix = name.slice("JABREF_".length)
-        const cidIndex = withoutPrefix.indexOf(" CID_")
-        const rawKey =
-            cidIndex === -1
-                ? withoutPrefix.split(" ")[0]
-                : withoutPrefix.slice(0, cidIndex)
-
-        if (!rawKey) {
-            this.warnings.push({ type: "jabref_missing_key", value: name })
-            return
-        }
-
-        // JabRef replaces spaces with underscores in the mark name
-        const citationKey = rawKey.replace(/_/g, " ").trim()
-
-        if (this.seenKeys.has(citationKey)) return
-        this.seenKeys.add(citationKey)
-
-        this.entries.push({
-            entry_key: citationKey,
-            bib_type: "misc",
-            fields: {},
-        })
-    }
-
+    // --- LibreOffice Native Bibliography Marks ---
     // -----------------------------------------------------------------------
     // Step 3 — EndNote plain-text placeholders
     // -----------------------------------------------------------------------
@@ -304,72 +605,13 @@ export class OdtCitationsParser {
         while ((m = placeholderRe.exec(this.contentXml)) !== null) {
             // Multiple simultaneous citations are separated by ";"
             for (const part of m[1].split(";").map((s) => s.trim())) {
-                this.parseEndNotePlaceholder(part)
+                OdtCitationsParser.extractEndNotePlaceholderData(
+                    part,
+                    this.entries,
+                    this.seenKeys
+                )
             }
         }
-    }
-
-    /**
-     * Parses a single EndNote placeholder segment such as `Smith, 2023 #291`
-     * or `Bronk Ramsey, 2009 #19`.
-     *
-     * Format: `Author[,] Year #RecordNumber[suffix]`
-     */
-    private parseEndNotePlaceholder(segment: string): void {
-        const re = /^(.*?)[,\s]+(\d{4})\s+#(\d+)/
-        const m = re.exec(segment.trim())
-        if (!m) return
-
-        const authorPart = m[1].trim()
-        const year = m[2]
-        const recNum = m[3]
-        const key = `EN${recNum}`
-
-        if (this.seenKeys.has(key)) return
-        this.seenKeys.add(key)
-
-        const fields: Record<string, unknown> = {}
-
-        if (authorPart) {
-            const nameObj: {
-                family?: import("../const").NodeArray
-                given?: import("../const").NodeArray
-                literal?: import("../const").NodeArray
-            } = {}
-            if (authorPart.includes(",")) {
-                const parts = authorPart.split(",").map((p) => p.trim())
-                nameObj.family = this.makeRichText(parts[0])
-                if (parts[1]) nameObj.given = this.makeRichText(parts[1])
-            } else {
-                nameObj.literal = this.makeRichText(authorPart)
-            }
-            fields["author"] = [nameObj]
-        }
-
-        if (year) fields["date"] = year
-
-        this.entries.push({
-            entry_key: key,
-            bib_type: "misc",
-            fields,
-        })
-    }
-
-    // -----------------------------------------------------------------------
-    // Shared utilities
-    // -----------------------------------------------------------------------
-
-    private makeRichText(text: string): import("../const").NodeArray {
-        return [{ type: "text", text: text.trim() }]
-    }
-
-    private unescapeXmlEntities(text: string): string {
-        return text
-            .replace(/&lt;/g, "<")
-            .replace(/&gt;/g, ">")
-            .replace(/&amp;/g, "&")
-            .replace(/&quot;/g, '"')
-            .replace(/&apos;/g, "'")
     }
 }
 

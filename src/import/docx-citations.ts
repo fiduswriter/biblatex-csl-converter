@@ -6,7 +6,7 @@
  *
  * Supported citation manager formats and how each is handled:
  *
- *   - Word native / JabRef  `CITATION key \l locale` inline field +
+ *   - Word native           `CITATION key \l locale` inline field +
  *                           `customXml/item1.xml` sources (passed as
  *                           `sourcesXml` option). Delegated to
  *                           DocxNativeParser in docx-native.ts.
@@ -40,16 +40,14 @@
  *                              objects (some Citavi export modes), they are
  *                              passed directly to CitaviParser.
  *
- *                           B. Otherwise (the common case) only UUIDs are
- *                              present.  The caller must supply the full
- *                              Citavi project JSON via `options.citaviJson`;
- *                              matching references are looked up by UUID and
- *                              converted via CitaviParser.
+ *                           B. In older or incomplete formats, only UUIDs may
+ *                              be present without embedded references. Such
+ *                              citations cannot be fully resolved and will
+ *                              generate warnings.
  *
  * Usage:
  *   const parser = new DocxCitationsParser(documentXml, {
- *     sourcesXml,   // contents of customXml/item1.xml (Word-native / JabRef)
- *     citaviJson,   // parsed Citavi project JSON export (CitaviInput)
+ *     sourcesXml,   // contents of customXml/item1.xml (Word-native)
  *   })
  *   const result  = parser.parse()
  *   // result.entries  → BibDB  (Record<number, EntryObject>)
@@ -57,15 +55,15 @@
  *   // result.warnings → ErrorObject[]
  *
  * The `sourcesXml` option must be the contents of `customXml/item1.xml` from
- * the DOCX ZIP when Word-native / JabRef citations are present.
+ * the DOCX ZIP when Word-native citations are present.
  *
- * The `citaviJson` option must be the parsed JSON from a Citavi project export
- * (any shape accepted by CitaviInput) when Citavi citations are present.
+ * Citavi citations embed complete bibliographic data directly in each citation
+ * field, so no external Citavi project file is required.
  */
 
 import { EntryObject } from "../const"
 import { CSLParser, CSLEntry } from "./csl"
-import { CitaviParser, CitaviInput, CitaviReference } from "./citavi"
+import { CitaviParser, CitaviInput } from "./citavi"
 import { EndNoteParser, EndNoteRecord } from "./endnote"
 import { DocxNativeParser } from "./docx-native"
 import { extractJsonObject } from "./tools"
@@ -88,6 +86,23 @@ interface ErrorObject {
 }
 
 // ---------------------------------------------------------------------------
+// Static utility result types
+// ---------------------------------------------------------------------------
+
+export interface CitationResult {
+    isCitation: boolean
+    format?: string // e.g., "zotero", "mendeley_v3", "endnote", "citavi", "word_native"
+    entries?: Record<number, EntryObject>
+    errors?: ErrorObject[]
+    warnings?: ErrorObject[]
+}
+
+export interface BibliographyResult {
+    isBibliography: boolean
+    format?: string
+}
+
+// ---------------------------------------------------------------------------
 // Options
 // ---------------------------------------------------------------------------
 
@@ -95,22 +110,9 @@ export interface DocxCitationsParserOptions {
     /**
      * Contents of `customXml/item1.xml` from the DOCX ZIP, using the MS
      * Office Bibliography XML namespace.  Required to resolve Word-native and
-     * JabRef `CITATION` keys into full bibliographic data.
+     * `CITATION` keys into full bibliographic data.
      */
     sourcesXml?: string
-
-    /**
-     * Parsed Citavi project JSON export (`CitaviInput`).  When provided, the
-     * `ReferenceId` UUIDs collected from `ADDIN CitaviPlaceholder` field codes
-     * are looked up in this data set and the matching references are converted
-     * via `CitaviParser`.
-     *
-     * Citavi's WordPlaceholder payloads embed only a `ReferenceId` (UUID) and
-     * formatted display text — the full bibliographic data lives in the Citavi
-     * project file, which must be exported separately (as JSON) and supplied
-     * here.
-     */
-    citaviJson?: CitaviInput
 }
 
 // ---------------------------------------------------------------------------
@@ -125,11 +127,6 @@ export class DocxCitationsParser {
     warnings: ErrorObject[]
     /** Entry keys already added — prevents duplicates across multiple fields. */
     private seenKeys: Set<string>
-    /**
-     * Citavi ReferenceId UUIDs collected from WordPlaceholder payloads.
-     * Populated during `parseSdtBlocks()`; consumed by `parseCitaviJson()`.
-     */
-    private citaviReferenceIds: Set<string>
 
     constructor(documentXml: string, options: DocxCitationsParserOptions = {}) {
         this.documentXml = documentXml
@@ -138,7 +135,795 @@ export class DocxCitationsParser {
         this.errors = []
         this.warnings = []
         this.seenKeys = new Set()
-        this.citaviReferenceIds = new Set()
+    }
+
+    // -----------------------------------------------------------------------
+    // Static utility methods for reusable citation detection and extraction
+    // -----------------------------------------------------------------------
+
+    /**
+     * Check if an SDT block contains citation data (without full document parsing).
+     *
+     * @param sdtXml - XML string of a single <w:sdt>...</w:sdt> block
+     * @returns CitationCheckResult indicating whether it's a citation and its format
+     */
+    static sdtCitation(
+        sdtXml: string,
+        retrieve = true,
+        entries: EntryObject[] = [],
+        errors: ErrorObject[] = [],
+        warnings: ErrorObject[] = [],
+        seenKeys: Set<string> = new Set<string>()
+    ): CitationResult {
+        const tagMatch = sdtXml.match(/<w:tag\s+w:val="([^"]*)"/)
+        if (!tagMatch) return { isCitation: false }
+        const tagVal = tagMatch[1]
+
+        let format: string | undefined
+
+        if (tagVal.startsWith("MENDELEY_CITATION_v3_")) {
+            format = "mendeley_v3"
+        } else if (tagVal.startsWith("CitaviPlaceholder#")) {
+            format = "citavi"
+        }
+
+        if (!format) {
+            return { isCitation: false }
+        }
+
+        if (!retrieve) {
+            return { isCitation: true, format }
+        }
+
+        // Extract citation data
+        if (format === "mendeley_v3") {
+            const b64 = tagVal.slice("MENDELEY_CITATION_v3_".length)
+            DocxCitationsParser.extractCslJsonData(
+                DocxCitationsParser.decodeBase64Static(b64),
+                "mendeley_v3",
+                entries,
+                errors,
+                warnings,
+                seenKeys
+            )
+        } else if (format === "citavi") {
+            const instrMatch = sdtXml.match(
+                /<w:instrText[^>]*>ADDIN CitaviPlaceholder([A-Za-z0-9+/=\s]+)<\/w:instrText>/
+            )
+            if (instrMatch) {
+                DocxCitationsParser.extractCitaviData(
+                    instrMatch[1].replace(/\s/g, ""),
+                    entries,
+                    errors,
+                    warnings,
+                    seenKeys
+                )
+            } else {
+                warnings.push({
+                    type: "citavi_missing_payload",
+                    value: tagVal,
+                })
+            }
+        }
+
+        const bibDB: Record<number, EntryObject> = {}
+        entries.forEach((entry, i) => {
+            bibDB[i + 1] = entry
+        })
+
+        return {
+            isCitation: true,
+            format,
+            entries: bibDB,
+            errors,
+            warnings,
+        }
+    }
+
+    /**
+     * Check or extract bibliography rendering region from an SDT block.
+     *
+     * @param sdtXml - XML string of a single <w:sdt>...</w:sdt> block
+     * @param retrieve - If true, extract data (currently returns empty as bibliographies have no importable data)
+     * @returns BibliographyResult indicating whether it's a bibliography
+     */
+    static sdtBibliography(sdtXml: string): BibliographyResult {
+        const tagMatch = sdtXml.match(/<w:tag\s+w:val="([^"]*)"/)
+        if (!tagMatch) return { isBibliography: false }
+        const tagVal = tagMatch[1]
+
+        let format: string | undefined
+
+        if (tagVal.startsWith("MENDELEY_BIBLIOGRAPHY_v3_")) {
+            format = "mendeley_v3"
+        }
+
+        if (!format) {
+            return { isBibliography: false }
+        }
+
+        const result: BibliographyResult = {
+            isBibliography: true,
+            format,
+        }
+
+        return result
+    }
+
+    /**
+     * Check or extract citation data from a field instruction.
+     *
+     * @param instrText - The concatenated instruction text from w:instrText elements
+     * @param retrieve - If true, extract and return full citation data
+     * @param fldData - Optional field data (for EndNote base64 payloads)
+     * @param options - Optional parser options (e.g., sourcesXml for Word native)
+     * @returns CitationResult with format and optionally entries/errors/warnings
+     */
+    static fieldCitation(
+        instrText: string,
+        retrieve = true,
+        fldData?: string,
+        options: DocxCitationsParserOptions = {},
+        entries: EntryObject[] = [],
+        errors: ErrorObject[] = [],
+        warnings: ErrorObject[] = [],
+        seenKeys: Set<string> = new Set<string>(),
+        extractWordNative = true
+    ): CitationResult {
+        const upper = instrText.trim().toUpperCase()
+
+        let format: string | undefined
+
+        if (upper.startsWith("ADDIN ZOTERO_ITEM")) {
+            format = "zotero"
+        } else if (
+            upper.startsWith("ADDIN CSL_CITATION") ||
+            upper.startsWith("CSL_CITATION")
+        ) {
+            format = "mendeley_legacy"
+        } else if (upper.startsWith("ADDIN EN.CITE")) {
+            format = "endnote"
+        } else if (upper.startsWith("ADDIN CITAVIPLACEHOLDER")) {
+            format = "citavi"
+        } else if (upper.startsWith("CITATION ")) {
+            format = "word_native"
+        }
+
+        if (!format) {
+            return { isCitation: false }
+        }
+
+        if (!retrieve) {
+            return { isCitation: true, format }
+        }
+
+        // Extract citation data
+        if (format === "zotero" || format === "mendeley_legacy") {
+            const jsonStart = instrText.indexOf("{")
+            if (jsonStart === -1) {
+                warnings.push({ type: `${format}_missing_json` })
+            } else {
+                const jsonStr = extractJsonObject(instrText, jsonStart)
+                if (jsonStr === null) {
+                    warnings.push({ type: `${format}_missing_json` })
+                } else {
+                    DocxCitationsParser.extractCslJsonData(
+                        jsonStr,
+                        format,
+                        entries,
+                        errors,
+                        warnings,
+                        seenKeys
+                    )
+                }
+            }
+        } else if (format === "endnote") {
+            DocxCitationsParser.extractEndNoteData(
+                instrText,
+                fldData,
+                entries,
+                errors,
+                warnings,
+                seenKeys
+            )
+        } else if (format === "citavi") {
+            const b64Match = instrText.match(
+                /ADDIN CitaviPlaceholder([A-Za-z0-9+/=\s]+)/i
+            )
+            if (b64Match) {
+                DocxCitationsParser.extractCitaviData(
+                    b64Match[1].replace(/\s/g, ""),
+                    entries,
+                    errors,
+                    warnings,
+                    seenKeys
+                )
+            }
+        } else if (format === "word_native") {
+            // Record the key for later resolution
+            const m = /^CITATION\s+(\S+)/i.exec(instrText.trim())
+            if (m) {
+                seenKeys.add(m[1])
+            }
+            // Only extract data if sourcesXml is provided AND extractWordNative is true.
+            // When called from instance methods, extractWordNative is false and we
+            // should only record keys - extraction happens later in parseSourcesXml.
+            if (options.sourcesXml && extractWordNative) {
+                DocxCitationsParser.extractWordNativeData(
+                    instrText,
+                    options.sourcesXml,
+                    entries,
+                    errors,
+                    warnings,
+                    seenKeys
+                )
+            }
+        }
+
+        const bibDB: Record<number, EntryObject> = {}
+        entries.forEach((entry, i) => {
+            bibDB[i + 1] = entry
+        })
+
+        return {
+            isCitation: true,
+            format,
+            entries: bibDB,
+            errors,
+            warnings,
+        }
+    }
+
+    /**
+     * Check or extract bibliography rendering region from a field instruction.
+     *
+     * @param instrText - The concatenated instruction text
+     * @param retrieve - If true, extract data (currently returns empty as bibliographies have no importable data)
+     * @returns BibliographyResult indicating whether it's a bibliography
+     */
+    static fieldBibliography(instrText: string): BibliographyResult {
+        const upper = instrText.trim().toUpperCase()
+
+        let format: string | undefined
+
+        if (upper.startsWith("ADDIN ZOTERO_BIBL")) {
+            format = "zotero"
+        } else if (upper.startsWith("ADDIN EN.REFLIST")) {
+            format = "endnote"
+        } else if (upper.startsWith("BIBLIOGRAPHY")) {
+            format = "word_native"
+        }
+
+        if (!format) {
+            return { isBibliography: false }
+        }
+
+        const result: BibliographyResult = {
+            isBibliography: true,
+            format,
+        }
+
+        return result
+    }
+
+    // -----------------------------------------------------------------------
+    // Static helper methods for extraction logic
+    // -----------------------------------------------------------------------
+
+    /**
+     * Extract CSL citation JSON data.
+     */
+    private static extractCslJsonData(
+        jsonStr: string,
+        source: string,
+        entries: EntryObject[],
+        errors: ErrorObject[],
+        warnings: ErrorObject[],
+        seenKeys: Set<string>
+    ): void {
+        let citation: {
+            citationItems?: Array<{ itemData?: CSLEntry; id?: unknown }>
+        }
+        try {
+            citation = JSON.parse(jsonStr) as typeof citation
+        } catch {
+            warnings.push({
+                type: `${source}_invalid_json`,
+                value: jsonStr.slice(0, 80),
+            })
+            return
+        }
+
+        const items = citation.citationItems ?? []
+        if (items.length === 0) return
+
+        const cslRecord: Record<string, CSLEntry> = {}
+        items.forEach((item, i) => {
+            if (!item.itemData) return
+            const key =
+                item.itemData.id === undefined
+                    ? `${source}_${i}`
+                    : String(item.itemData.id)
+            if (seenKeys.has(key)) return
+            cslRecord[key] = item.itemData
+        })
+
+        if (Object.keys(cslRecord).length === 0) return
+
+        const parser = new CSLParser(cslRecord)
+        const bibDB = parser.parse()
+
+        errors.push(...parser.errors)
+        warnings.push(...parser.warnings)
+
+        for (const entry of Object.values(bibDB)) {
+            seenKeys.add(entry.entry_key)
+            entries.push(entry)
+        }
+    }
+
+    /**
+     * Extract EndNote citation data.
+     */
+    private static extractEndNoteData(
+        instrText: string,
+        fldData: string | undefined,
+        entries: EntryObject[],
+        errors: ErrorObject[],
+        warnings: ErrorObject[],
+        seenKeys: Set<string>
+    ): void {
+        let xmlPayload = ""
+
+        if (fldData && fldData.length > 0) {
+            try {
+                xmlPayload = DocxCitationsParser.decodeBase64Static(fldData)
+            } catch {
+                warnings.push({
+                    type: "endnote_invalid_flddata",
+                    value: fldData.slice(0, 40),
+                })
+                return
+            }
+        } else {
+            const idx = instrText.toUpperCase().indexOf("ADDIN EN.CITE")
+            if (idx === -1) return
+            xmlPayload = DocxCitationsParser.unescapeXmlEntitiesStatic(
+                instrText.slice(idx + "ADDIN EN.CITE".length).trim()
+            )
+        }
+
+        if (xmlPayload.includes("<EndNote") || xmlPayload.includes("<record")) {
+            DocxCitationsParser.parseEndNoteXml(
+                xmlPayload,
+                entries,
+                errors,
+                warnings,
+                seenKeys
+            )
+        } else {
+            warnings.push({
+                type: "endnote_no_xml",
+                value: xmlPayload.slice(0, 80),
+            })
+        }
+    }
+
+    /**
+     * Extract Citavi citation data from base64-encoded WordPlaceholder JSON.
+     *
+     * Citavi embeds complete bibliographic data directly in each citation via
+     * `Reference` objects within the `Entries` array. This method checks for
+     * embedded references and converts them via CitaviParser. If no embedded
+     * references are found (only UUIDs), a warning is generated.
+     */
+    private static extractCitaviData(
+        b64: string,
+        entries: EntryObject[],
+        errors: ErrorObject[],
+        warnings: ErrorObject[],
+        seenKeys: Set<string>
+    ): void {
+        let payload: CitaviInput
+        try {
+            const decoded = DocxCitationsParser.decodeBase64Static(b64)
+            payload = JSON.parse(decoded) as CitaviInput
+        } catch {
+            warnings.push({
+                type: "citavi_invalid_payload",
+                value: b64.slice(0, 40),
+            })
+            return
+        }
+
+        // Check if the payload has embedded references
+        const hasEmbeddedReferences =
+            !Array.isArray(payload) &&
+            Array.isArray((payload as { Entries?: unknown[] }).Entries) &&
+            (
+                payload as { Entries: Array<{ Reference?: unknown }> }
+            ).Entries!.some(
+                (e) => e.Reference !== null && e.Reference !== undefined
+            )
+
+        if (!hasEmbeddedReferences) {
+            warnings.push({
+                type: "citavi_missing_embedded_references",
+                value: b64.slice(0, 40),
+            })
+            return
+        }
+
+        const parser = new CitaviParser(payload)
+        const bibDB = parser.parse()
+
+        errors.push(...parser.errors)
+        warnings.push(...parser.warnings)
+
+        for (const entry of Object.values(bibDB)) {
+            if (!seenKeys.has(entry.entry_key)) {
+                seenKeys.add(entry.entry_key)
+                entries.push(entry)
+            }
+        }
+    }
+
+    /**
+     * Extract Word native citation data.
+     */
+    private static extractWordNativeData(
+        instrText: string,
+        sourcesXml: string,
+        entries: EntryObject[],
+        errors: ErrorObject[],
+        warnings: ErrorObject[],
+        seenKeys: Set<string>
+    ): void {
+        const m = /^CITATION\s+(\S+)/i.exec(instrText.trim())
+        if (m) {
+            const citationKey = m[1]
+            seenKeys.add(citationKey)
+
+            const nativeParser = new DocxNativeParser(sourcesXml)
+            const result = nativeParser.parse(seenKeys)
+
+            errors.push(...result.errors)
+            warnings.push(...result.warnings)
+            entries.push(...result.entries)
+        }
+    }
+
+    /**
+     * Parse EndNote XML payload.
+     */
+    private static parseEndNoteXml(
+        xml: string,
+        entries: EntryObject[],
+        errors: ErrorObject[],
+        warnings: ErrorObject[],
+        seenKeys: Set<string>
+    ): void {
+        const records: EndNoteRecord[] = []
+
+        const citeRe = /<Cite>([\s\S]*?)<\/Cite>/g
+        let citeMatch: RegExpExecArray | null
+        while ((citeMatch = citeRe.exec(xml)) !== null) {
+            const citeXml = citeMatch[1]
+            const recordMatch = /<record>([\s\S]*?)<\/record>/.exec(citeXml)
+            if (recordMatch) {
+                const record = DocxCitationsParser.parseEndNoteRecordXml(
+                    recordMatch[0]
+                )
+                const key = String(record["rec-number"] ?? "")
+                if (key && !seenKeys.has(key)) {
+                    records.push(record)
+                    seenKeys.add(key)
+                }
+            }
+        }
+
+        if (records.length === 0) return
+
+        const parser = new EndNoteParser(records)
+        const result = parser.parse()
+
+        errors.push(...result.errors)
+        warnings.push(...result.warnings)
+        entries.push(...Object.values(result.entries))
+    }
+
+    /**
+     * Parse EndNote record XML.
+     */
+    private static parseEndNoteRecordXml(recordXml: string): EndNoteRecord {
+        const record: EndNoteRecord = {}
+
+        const refTypeMatch = recordXml.match(
+            /<ref-type(?:\s+name="([^"]*)")?[^>]*>(\d+)<\/ref-type>/
+        )
+        if (refTypeMatch) {
+            record["ref-type"] = {
+                name: refTypeMatch[1] ?? "",
+                "#text": refTypeMatch[2],
+            }
+        }
+
+        const recNumMatch = recordXml.match(
+            /<rec-number[^>]*>([\s\S]*?)<\/rec-number>/
+        )
+        if (recNumMatch) {
+            record["rec-number"] = recNumMatch[1].trim()
+        }
+
+        const titlesMatch = recordXml.match(/<titles>([\s\S]*?)<\/titles>/)
+        if (titlesMatch) {
+            const t = titlesMatch[1]
+            const titles: Record<string, { "#text": string }> = {}
+            for (const tag of [
+                "title",
+                "secondary-title",
+                "tertiary-title",
+                "short-title",
+                "alt-title",
+                "translated-title",
+            ] as const) {
+                const m = t.match(
+                    new RegExp(`<${tag}[^>]*>([\\s\\S]*?)<\\/${tag}>`)
+                )
+                if (m)
+                    titles[tag] = {
+                        "#text": DocxCitationsParser.stripStyleTagsStatic(m[1]),
+                    }
+            }
+            if (Object.keys(titles).length > 0) record.titles = titles
+        }
+
+        const contribMatch = recordXml.match(
+            /<contributors>([\s\S]*?)<\/contributors>/
+        )
+        if (contribMatch) {
+            record.contributors = DocxCitationsParser.parseContributorsXml(
+                contribMatch[1]
+            )
+        }
+
+        const periodicalMatch = recordXml.match(
+            /<periodical>([\s\S]*?)<\/periodical>/
+        )
+        if (periodicalMatch) {
+            const p = periodicalMatch[1]
+            const periodical: Record<string, { "#text": string }> = {}
+            for (const tag of [
+                "full-title",
+                "abbr-1",
+                "abbr-2",
+                "abbr-3",
+            ] as const) {
+                const m = p.match(
+                    new RegExp(`<${tag}[^>]*>([\\s\\S]*?)<\\/${tag}>`)
+                )
+                if (m)
+                    periodical[tag] = {
+                        "#text": DocxCitationsParser.stripStyleTagsStatic(m[1]),
+                    }
+            }
+            if (Object.keys(periodical).length > 0)
+                record.periodical = periodical
+        }
+
+        const scalarFields: Array<[keyof EndNoteRecord, string]> = [
+            ["pages", "pages"],
+            ["volume", "volume"],
+            ["number", "number"],
+            ["issue", "issue"],
+            ["edition", "edition"],
+            ["section", "section"],
+            ["publisher", "publisher"],
+            ["isbn", "isbn"],
+            ["issn", "issn"],
+            ["abstract", "abstract"],
+            ["notes", "notes"],
+            ["language", "language"],
+            ["label", "label"],
+            ["doi", "doi"],
+            ["electronic-resource-num", "electronic-resource-num"],
+        ]
+        for (const [recordKey, xmlTag] of scalarFields) {
+            const m = recordXml.match(
+                new RegExp(`<${xmlTag}[^>]*>([\\s\\S]*?)<\\/${xmlTag}>`)
+            )
+            if (m) {
+                // eslint-disable-next-line @typescript-eslint/no-extra-semi
+                ;(record as Record<string, unknown>)[recordKey as string] = {
+                    "#text": DocxCitationsParser.stripStyleTagsStatic(m[1]),
+                }
+            }
+        }
+
+        const pubLocMatch = recordXml.match(
+            /<pub-location[^>]*>([\s\S]*?)<\/pub-location>/
+        )
+        if (pubLocMatch) {
+            record["pub-location"] = {
+                "#text": DocxCitationsParser.stripStyleTagsStatic(
+                    pubLocMatch[1]
+                ),
+            }
+        }
+
+        const datesMatch = recordXml.match(/<dates>([\s\S]*?)<\/dates>/)
+        if (datesMatch) {
+            record.dates = DocxCitationsParser.parseDatesXml(datesMatch[1])
+        }
+
+        const keywordsMatch = recordXml.match(
+            /<keywords>([\s\S]*?)<\/keywords>/
+        )
+        if (keywordsMatch) {
+            const kwMatches = [
+                ...keywordsMatch[1].matchAll(
+                    /<keyword[^>]*>([\s\S]*?)<\/keyword>/g
+                ),
+            ]
+            if (kwMatches.length > 0) {
+                record.keywords = {
+                    keyword: kwMatches.map((kw) => ({
+                        "#text": DocxCitationsParser.stripStyleTagsStatic(
+                            kw[1]
+                        ),
+                    })),
+                }
+            }
+        }
+
+        const urlsMatch = recordXml.match(/<urls>([\s\S]*?)<\/urls>/)
+        if (urlsMatch) {
+            record.urls = DocxCitationsParser.parseUrlsXml(urlsMatch[1])
+        }
+
+        return record
+    }
+
+    /**
+     * Parse contributors XML.
+     */
+    private static parseContributorsXml(
+        xml: string
+    ): Record<string, { author: Array<{ "#text": string }> }> {
+        const result: Record<string, { author: Array<{ "#text": string }> }> =
+            {}
+
+        for (const group of [
+            "authors",
+            "secondary-authors",
+            "tertiary-authors",
+            "subsidiary-authors",
+        ] as const) {
+            const m = xml.match(
+                new RegExp(`<${group}[^>]*>([\\s\\S]*?)<\\/${group}>`)
+            )
+            if (m) {
+                const authorMatches = [
+                    ...m[1].matchAll(/<author[^>]*>([\s\S]*?)<\/author>/g),
+                ]
+                if (authorMatches.length > 0) {
+                    result[group] = {
+                        author: authorMatches.map((author) => ({
+                            "#text": DocxCitationsParser.stripStyleTagsStatic(
+                                author[1]
+                            ),
+                        })),
+                    }
+                }
+            }
+        }
+
+        return result
+    }
+
+    /**
+     * Parse dates XML.
+     */
+    private static parseDatesXml(xml: string): Record<string, unknown> {
+        const dates: Record<string, unknown> = {}
+
+        const yearMatch = xml.match(/<year[^>]*>([\s\S]*?)<\/year>/)
+        if (yearMatch) {
+            dates.year = {
+                "#text": DocxCitationsParser.stripStyleTagsStatic(yearMatch[1]),
+            }
+        }
+
+        const pubDatesMatch = xml.match(/<pub-dates>([\s\S]*?)<\/pub-dates>/)
+        if (pubDatesMatch) {
+            const dateMatches = [
+                ...pubDatesMatch[1].matchAll(/<date[^>]*>([\s\S]*?)<\/date>/g),
+            ]
+            if (dateMatches.length > 0) {
+                dates["pub-dates"] = {
+                    date: dateMatches.map((d) => ({
+                        "#text": DocxCitationsParser.stripStyleTagsStatic(d[1]),
+                    })),
+                }
+            }
+        }
+
+        return dates
+    }
+
+    /**
+     * Parse URLs XML.
+     */
+    private static parseUrlsXml(xml: string): Record<string, unknown> {
+        const urls: Record<string, unknown> = {}
+
+        for (const group of [
+            "web-urls",
+            "pdf-urls",
+            "related-urls",
+            "text-urls",
+            "image-urls",
+        ] as const) {
+            const m = xml.match(
+                new RegExp(`<${group}>([\\s\\S]*?)<\\/${group}>`)
+            )
+            if (!m) continue
+            const urlMatches = [
+                ...m[1].matchAll(/<url[^>]*>([\s\S]*?)<\/url>/g),
+            ]
+            if (urlMatches.length > 0) {
+                urls[group] = {
+                    url: urlMatches.map((u) => ({
+                        "#text": DocxCitationsParser.stripStyleTagsStatic(u[1]),
+                    })),
+                }
+            }
+        }
+
+        return urls
+    }
+
+    /**
+     * Strip style tags and decode XML entities.
+     */
+    private static stripStyleTagsStatic(text: string): string {
+        return text
+            .replace(/<style[^>]*>([\s\S]*?)<\/style>/g, "$1")
+            .replace(/<[^>]+>/g, "")
+            .replace(/&lt;/g, "<")
+            .replace(/&gt;/g, ">")
+            .replace(/&amp;/g, "&")
+            .replace(/&quot;/g, '"')
+            .replace(/&apos;/g, "'")
+            .trim()
+    }
+
+    /**
+     * Unescape XML entities.
+     */
+    private static unescapeXmlEntitiesStatic(text: string): string {
+        return text
+            .replace(/&lt;/g, "<")
+            .replace(/&gt;/g, ">")
+            .replace(/&amp;/g, "&")
+            .replace(/&quot;/g, '"')
+            .replace(/&apos;/g, "'")
+    }
+
+    /**
+     * Decode base64.
+     */
+    private static decodeBase64Static(b64: string): string {
+        const binary = atob(b64)
+        const bytes = new Uint8Array(binary.length)
+        for (let i = 0; i < binary.length; i++) {
+            bytes[i] = binary.charCodeAt(i)
+        }
+        let end = bytes.length
+        while (end > 0 && bytes[end - 1] === 0) {
+            end--
+        }
+        return new TextDecoder("utf-8").decode(bytes.subarray(0, end))
     }
 
     // -----------------------------------------------------------------------
@@ -146,23 +931,18 @@ export class DocxCitationsParser {
     // -----------------------------------------------------------------------
 
     parse(): DocxCitationsParseResult {
-        // 1. Structured Document Tags (Mendeley Cite v3, Citavi)
+        // 1) Parse SDT blocks (Mendeley v3, Citavi with embedded references).
         this.parseSdtBlocks()
 
-        // 2. Field codes (begin → separate), which covers Zotero, Mendeley
-        //    Desktop legacy, EndNote, Word-native CITATION fields
+        // 2) Parse field codes (Zotero, legacy Mendeley, Word native, etc.).
         this.parseFieldCodes()
 
-        // 3. Citavi: resolve collected ReferenceIds against the project JSON
-        if (this.options.citaviJson) {
-            this.parseCitaviJson(this.options.citaviJson)
-        }
-
-        // 4. Word-native / JabRef sources from customXml/item1.xml
+        // 3) Parse sources XML if provided (Word native).
         if (this.options.sourcesXml) {
             this.parseSourcesXml(this.options.sourcesXml)
         }
 
+        // Build final BibDB
         const bibDB: Record<number, EntryObject> = {}
         this.entries.forEach((entry, i) => {
             bibDB[i + 1] = entry
@@ -183,36 +963,14 @@ export class DocxCitationsParser {
         const sdtRe = /<w:sdt\b[^>]*>([\s\S]*?)<\/w:sdt>/g
         let m: RegExpExecArray | null
         while ((m = sdtRe.exec(this.documentXml)) !== null) {
-            this.processSdtBlock(m[1])
-        }
-    }
-
-    private processSdtBlock(sdtBody: string): void {
-        const tagMatch = sdtBody.match(/<w:tag\s+w:val="([^"]*)"/)
-        if (!tagMatch) return
-        const tagVal = tagMatch[1]
-
-        // --- Mendeley Cite v3 ---
-        if (tagVal.startsWith("MENDELEY_CITATION_v3_")) {
-            const b64 = tagVal.slice("MENDELEY_CITATION_v3_".length)
-            this.processCslCitationJson(this.decodeBase64(b64), "mendeley_v3")
-            return
-        }
-
-        // --- Citavi ---
-        if (tagVal.startsWith("CitaviPlaceholder#")) {
-            // The base64 payload is inside w:instrText within the sdt content
-            const instrMatch = sdtBody.match(
-                /<w:instrText[^>]*>ADDIN CitaviPlaceholder([A-Za-z0-9+/=\s]+)<\/w:instrText>/
+            DocxCitationsParser.sdtCitation(
+                m[1],
+                true,
+                this.entries,
+                this.errors,
+                this.warnings,
+                this.seenKeys
             )
-            if (instrMatch) {
-                this.processCitaviBase64(instrMatch[1].replace(/\s/g, ""))
-            } else {
-                this.warnings.push({
-                    type: "citavi_missing_payload",
-                    value: tagVal,
-                })
-            }
         }
     }
 
@@ -306,7 +1064,17 @@ export class DocxCitationsParser {
                 if (stack.length === 0) continue
                 const frame = stack.pop()!
                 const instr = frame.instrParts.join("").trim()
-                this.dispatchFieldInstruction(instr, frame.fldData)
+                DocxCitationsParser.fieldCitation(
+                    instr,
+                    true,
+                    frame.fldData,
+                    this.options,
+                    this.entries,
+                    this.errors,
+                    this.warnings,
+                    this.seenKeys,
+                    false // Don't extract Word-native here; defer to parseSourcesXml
+                )
             } else if (
                 stack.length > 0 &&
                 !stack[stack.length - 1].pastSeparate
@@ -316,603 +1084,13 @@ export class DocxCitationsParser {
         }
     }
 
-    private dispatchFieldInstruction(instr: string, fldData?: string): void {
-        const upper = instr.toUpperCase()
-
-        if (upper.startsWith("ADDIN ZOTERO_ITEM")) {
-            this.processZoteroField(instr)
-        } else if (
-            upper.startsWith("ADDIN CSL_CITATION") ||
-            // older Mendeley: "ADDIN Mendeley Citation{UUID} CSL_CITATION …"
-            upper.match(/^ADDIN MENDELEY[_ ]CITATION/)
-        ) {
-            this.processMendeleyLegacyField(instr)
-        } else if (
-            upper.startsWith("ADDIN EN.CITE") &&
-            !upper.startsWith("ADDIN EN.CITE.DATA")
-        ) {
-            this.processEndNoteField(instr, fldData)
-        } else if (upper.startsWith("ADDIN EN.CITE.DATA")) {
-            // Inner nested field — the payload is in fldData
-            this.processEndNoteField("", fldData)
-        } else if (upper.startsWith("ADDIN CITAVIPLACHOLDER")) {
-            // Older Citavi without the w:sdt wrapper
-            const b64 = instr.slice("ADDIN CitaviPlaceholder".length).trim()
-            this.processCitaviBase64(b64)
-        } else if (upper.startsWith("CITATION ")) {
-            // Word-native / JabRef: resolved later from sourcesXml
-            this.processWordNativeCitationKey(instr)
-        }
-        // ZOTERO_BIBL, EN.REFLIST, BIBLIOGRAPHY — bibliography rendering
-        // fields that carry no source data we can import.
-    }
-
     // -----------------------------------------------------------------------
     // Format handlers — each delegates to an existing parser
     // -----------------------------------------------------------------------
 
     // --- Zotero DOCX ---
 
-    private processZoteroField(instr: string): void {
-        // "ADDIN ZOTERO_ITEM CSL_CITATION {…json…} RND<randomId>"
-        // Zotero appends a trailing random ID after the JSON object; use
-        // extractJsonObject to take only the balanced {} portion.
-        const jsonStart = instr.indexOf("{")
-        if (jsonStart === -1) {
-            this.warnings.push({ type: "zotero_missing_json" })
-            return
-        }
-        const jsonStr = extractJsonObject(instr, jsonStart)
-        if (jsonStr === null) {
-            this.warnings.push({ type: "zotero_missing_json" })
-            return
-        }
-        this.processCslCitationJson(jsonStr, "zotero")
-    }
-
-    // --- Mendeley Desktop legacy DOCX ---
-
-    private processMendeleyLegacyField(instr: string): void {
-        // "ADDIN CSL_CITATION {…json…}" — may also have a trailing random ID
-        const jsonStart = instr.indexOf("{")
-        if (jsonStart === -1) {
-            this.warnings.push({ type: "mendeley_missing_json" })
-            return
-        }
-        const jsonStr = extractJsonObject(instr, jsonStart)
-        if (jsonStr === null) {
-            this.warnings.push({ type: "mendeley_missing_json" })
-            return
-        }
-        this.processCslCitationJson(jsonStr, "mendeley_legacy")
-    }
-
-    /**
-     * Shared handler for any CSL-JSON citation payload (Zotero, Mendeley).
-     *
-     * The payload shape is:
-     *   { citationItems: [{ itemData: CSLEntry, id: … }, …] }
-     *
-     * We extract the `itemData` objects, key them by their `id` field (falling
-     * back to a positional index), and hand the resulting Record to CSLParser.
-     */
-    private processCslCitationJson(jsonStr: string, source: string): void {
-        let citation: {
-            citationItems?: Array<{ itemData?: CSLEntry; id?: unknown }>
-        }
-        try {
-            citation = JSON.parse(jsonStr) as typeof citation
-        } catch {
-            this.warnings.push({
-                type: `${source}_invalid_json`,
-                value: jsonStr.slice(0, 80),
-            })
-            return
-        }
-
-        const items = citation.citationItems ?? []
-        if (items.length === 0) return
-
-        // Build a Record<string, CSLEntry> for CSLParser, skipping items whose
-        // key we have already seen in a previous field.
-        const cslRecord: Record<string, CSLEntry> = {}
-        items.forEach((item, i) => {
-            if (!item.itemData) return
-            const key =
-                item.itemData.id === undefined
-                    ? `${source}_${i}`
-                    : String(item.itemData.id)
-            if (this.seenKeys.has(key)) return
-            cslRecord[key] = item.itemData
-        })
-
-        if (Object.keys(cslRecord).length === 0) return
-
-        const parser = new CSLParser(cslRecord)
-        const bibDB = parser.parse()
-
-        this.errors.push(...parser.errors)
-        this.warnings.push(...parser.warnings)
-
-        for (const entry of Object.values(bibDB)) {
-            this.seenKeys.add(entry.entry_key)
-            this.entries.push(entry)
-        }
-    }
-
-    // --- EndNote DOCX ---
-
-    private processEndNoteField(instr: string, fldData?: string): void {
-        let xmlPayload = ""
-
-        if (fldData && fldData.length > 0) {
-            // fldData form: base64-encoded EndNote XML
-            try {
-                xmlPayload = this.decodeBase64(fldData)
-            } catch {
-                this.warnings.push({
-                    type: "endnote_invalid_flddata",
-                    value: fldData.slice(0, 40),
-                })
-                return
-            }
-        } else {
-            // Inline form: XML is entity-escaped directly in instrText
-            const idx = instr.toUpperCase().indexOf("ADDIN EN.CITE")
-            if (idx === -1) return
-            xmlPayload = this.unescapeXmlEntities(
-                instr.slice(idx + "ADDIN EN.CITE".length).trim()
-            )
-        }
-
-        if (xmlPayload.includes("<EndNote") || xmlPayload.includes("<record")) {
-            this.parseAndDelegateEndNoteXml(xmlPayload)
-        } else {
-            this.warnings.push({
-                type: "endnote_no_xml",
-                value: xmlPayload.slice(0, 80),
-            })
-        }
-    }
-
-    /**
-     * Parses the raw EndNote XML payload (the `<EndNote><Cite>…</Cite></EndNote>`
-     * structure) into EndNoteRecord objects using the same regex approach used
-     * by the existing import-endnote.mjs test helper, then delegates to
-     * EndNoteParser.
-     */
-    private parseAndDelegateEndNoteXml(xml: string): void {
-        const records: EndNoteRecord[] = []
-
-        // Extract every <record>…</record> from within <Cite> blocks
-        const citeRe = /<Cite>([\s\S]*?)<\/Cite>/g
-        let citeMatch: RegExpExecArray | null
-        while ((citeMatch = citeRe.exec(xml)) !== null) {
-            const citeXml = citeMatch[1]
-            const recordMatch = /<record>([\s\S]*?)<\/record>/.exec(citeXml)
-            if (recordMatch) {
-                const record = this.parseEndNoteRecordXml(recordMatch[0])
-                const key = String(record["rec-number"] ?? "")
-                if (key && !this.seenKeys.has(key)) {
-                    records.push(record)
-                    // Mark now; EndNoteParser will assign the real entry_key
-                    this.seenKeys.add(key)
-                }
-            }
-        }
-
-        if (records.length === 0) return
-
-        const parser = new EndNoteParser(records)
-        const result = parser.parse()
-
-        this.errors.push(...result.errors)
-        this.warnings.push(...result.warnings)
-        this.entries.push(...Object.values(result.entries))
-    }
-
-    /**
-     * Converts a raw `<record>…</record>` XML string into an EndNoteRecord
-     * plain object that EndNoteParser expects.
-     *
-     * The structure mirrors what the import-endnote.mjs `parseRecord` helper
-     * produces: simple string values for scalar elements, and nested objects /
-     * arrays for multi-valued elements.
-     */
-    private parseEndNoteRecordXml(recordXml: string): EndNoteRecord {
-        const record: EndNoteRecord = {}
-
-        // ref-type (may carry a `name` attribute and a numeric text node)
-        const refTypeMatch = recordXml.match(
-            /<ref-type(?:\s+name="([^"]*)")?[^>]*>(\d+)<\/ref-type>/
-        )
-        if (refTypeMatch) {
-            record["ref-type"] = {
-                name: refTypeMatch[1] ?? "",
-                "#text": refTypeMatch[2],
-            }
-        }
-
-        // rec-number
-        const recNumMatch = recordXml.match(
-            /<rec-number[^>]*>([\s\S]*?)<\/rec-number>/
-        )
-        if (recNumMatch) {
-            record["rec-number"] = recNumMatch[1].trim()
-        }
-
-        // titles
-        const titlesMatch = recordXml.match(/<titles>([\s\S]*?)<\/titles>/)
-        if (titlesMatch) {
-            const t = titlesMatch[1]
-            const titles: Record<string, { "#text": string }> = {}
-            for (const tag of [
-                "title",
-                "secondary-title",
-                "tertiary-title",
-                "short-title",
-                "alt-title",
-                "translated-title",
-            ] as const) {
-                const m = t.match(
-                    new RegExp(`<${tag}[^>]*>([\\s\\S]*?)<\\/${tag}>`)
-                )
-                if (m) titles[tag] = { "#text": this.stripStyleTags(m[1]) }
-            }
-            if (Object.keys(titles).length > 0) record.titles = titles
-        }
-
-        // contributors
-        const contribMatch = recordXml.match(
-            /<contributors>([\s\S]*?)<\/contributors>/
-        )
-        if (contribMatch) {
-            record.contributors = this.parseContributorsXml(contribMatch[1])
-        }
-
-        // periodical
-        const periodicalMatch = recordXml.match(
-            /<periodical>([\s\S]*?)<\/periodical>/
-        )
-        if (periodicalMatch) {
-            const p = periodicalMatch[1]
-            const periodical: Record<string, { "#text": string }> = {}
-            for (const tag of [
-                "full-title",
-                "abbr-1",
-                "abbr-2",
-                "abbr-3",
-            ] as const) {
-                const m = p.match(
-                    new RegExp(`<${tag}[^>]*>([\\s\\S]*?)<\\/${tag}>`)
-                )
-                if (m) periodical[tag] = { "#text": this.stripStyleTags(m[1]) }
-            }
-            if (Object.keys(periodical).length > 0)
-                record.periodical = periodical
-        }
-
-        // scalar text fields
-        const scalarFields: Array<[keyof EndNoteRecord, string]> = [
-            ["pages", "pages"],
-            ["volume", "volume"],
-            ["number", "number"],
-            ["issue", "issue"],
-            ["edition", "edition"],
-            ["section", "section"],
-            ["publisher", "publisher"],
-            ["isbn", "isbn"],
-            ["issn", "issn"],
-            ["abstract", "abstract"],
-            ["notes", "notes"],
-            ["language", "language"],
-            ["label", "label"],
-            ["doi", "doi"],
-            ["electronic-resource-num", "electronic-resource-num"],
-        ]
-        for (const [recordKey, xmlTag] of scalarFields) {
-            const m = recordXml.match(
-                new RegExp(`<${xmlTag}[^>]*>([\\s\\S]*?)<\\/${xmlTag}>`)
-            )
-            if (m) {
-                // eslint-disable-next-line @typescript-eslint/no-extra-semi
-                ;(record as Record<string, unknown>)[recordKey as string] = {
-                    "#text": this.stripStyleTags(m[1]),
-                }
-            }
-        }
-
-        // pub-location maps to publisher-place
-        const pubLocMatch = recordXml.match(
-            /<pub-location[^>]*>([\s\S]*?)<\/pub-location>/
-        )
-        if (pubLocMatch) {
-            record["pub-location"] = {
-                "#text": this.stripStyleTags(pubLocMatch[1]),
-            }
-        }
-
-        // dates
-        const datesMatch = recordXml.match(/<dates>([\s\S]*?)<\/dates>/)
-        if (datesMatch) {
-            record.dates = this.parseDatesXml(datesMatch[1])
-        }
-
-        // keywords
-        const keywordsMatch = recordXml.match(
-            /<keywords>([\s\S]*?)<\/keywords>/
-        )
-        if (keywordsMatch) {
-            const kwMatches = [
-                ...keywordsMatch[1].matchAll(
-                    /<keyword[^>]*>([\s\S]*?)<\/keyword>/g
-                ),
-            ]
-            if (kwMatches.length > 0) {
-                record.keywords = {
-                    keyword: kwMatches.map((kw) => ({
-                        "#text": this.stripStyleTags(kw[1]),
-                    })),
-                }
-            }
-        }
-
-        // urls
-        const urlsMatch = recordXml.match(/<urls>([\s\S]*?)<\/urls>/)
-        if (urlsMatch) {
-            record.urls = this.parseUrlsXml(urlsMatch[1])
-        }
-
-        return record
-    }
-
-    private parseContributorsXml(
-        xml: string
-    ): Record<string, { author: Array<{ "#text": string }> }> {
-        const result: Record<string, { author: Array<{ "#text": string }> }> =
-            {}
-
-        for (const group of [
-            "authors",
-            "secondary-authors",
-            "tertiary-authors",
-            "subsidiary-authors",
-            "translated-authors",
-        ] as const) {
-            const m = xml.match(
-                new RegExp(`<${group}>([\\s\\S]*?)<\\/${group}>`)
-            )
-            if (!m) continue
-            const authorMatches = [
-                ...m[1].matchAll(/<author[^>]*>([\s\S]*?)<\/author>/g),
-            ]
-            if (authorMatches.length > 0) {
-                result[group] = {
-                    author: authorMatches.map((a) => ({
-                        "#text": this.stripStyleTags(a[1]),
-                    })),
-                }
-            }
-        }
-
-        return result
-    }
-
-    private parseDatesXml(xml: string): Record<string, unknown> {
-        const dates: Record<string, unknown> = {}
-
-        const yearMatch = xml.match(/<year[^>]*>([\s\S]*?)<\/year>/)
-        if (yearMatch) {
-            dates.year = { "#text": this.stripStyleTags(yearMatch[1]) }
-        }
-
-        const pubDatesMatch = xml.match(/<pub-dates>([\s\S]*?)<\/pub-dates>/)
-        if (pubDatesMatch) {
-            const dateMatches = [
-                ...pubDatesMatch[1].matchAll(/<date[^>]*>([\s\S]*?)<\/date>/g),
-            ]
-            if (dateMatches.length > 0) {
-                dates["pub-dates"] = {
-                    date: dateMatches.map((d) => ({
-                        "#text": this.stripStyleTags(d[1]),
-                    })),
-                }
-            }
-        }
-
-        return dates
-    }
-
-    private parseUrlsXml(xml: string): Record<string, unknown> {
-        const urls: Record<string, unknown> = {}
-
-        for (const group of [
-            "web-urls",
-            "pdf-urls",
-            "related-urls",
-            "text-urls",
-            "image-urls",
-        ] as const) {
-            const m = xml.match(
-                new RegExp(`<${group}>([\\s\\S]*?)<\\/${group}>`)
-            )
-            if (!m) continue
-            const urlMatches = [
-                ...m[1].matchAll(/<url[^>]*>([\s\S]*?)<\/url>/g),
-            ]
-            if (urlMatches.length > 0) {
-                urls[group] = {
-                    url: urlMatches.map((u) => ({
-                        "#text": this.stripStyleTags(u[1]),
-                    })),
-                }
-            }
-        }
-
-        return urls
-    }
-
-    /** Strips `<style>` and other inline XML markup to yield plain text. */
-    private stripStyleTags(text: string): string {
-        return text
-            .replace(/<style[^>]*>([\s\S]*?)<\/style>/g, "$1")
-            .replace(/<[^>]+>/g, "")
-            .replace(/&lt;/g, "<")
-            .replace(/&gt;/g, ">")
-            .replace(/&amp;/g, "&")
-            .replace(/&quot;/g, '"')
-            .replace(/&apos;/g, "'")
-            .trim()
-    }
-
-    // --- Citavi DOCX ---
-
-    /**
-     * Decodes the base64 CitaviPlaceholder JSON.
-     *
-     * Two cases are handled:
-     *
-     *   A. The payload contains embedded `Reference` objects inside `Entries`
-     *      (occurs in some Citavi versions / export modes).  In this case the
-     *      payload is handed directly to `CitaviParser` for immediate
-     *      conversion.
-     *
-     *   B. The payload contains only `ReferenceId` UUIDs with no embedded
-     *      reference data (another case of Citavi DOCX files).  In
-     *      this case the UUIDs are stored in `citaviReferenceIds` so that
-     *      `parseCitaviJson()` can resolve them later against the Citavi
-     *      project JSON supplied via `options.citaviJson`.
-     */
-    private processCitaviBase64(b64: string): void {
-        let payload: CitaviInput
-        try {
-            const decoded = this.decodeBase64(b64)
-            payload = JSON.parse(decoded) as CitaviInput
-        } catch {
-            this.warnings.push({
-                type: "citavi_invalid_payload",
-                value: b64.slice(0, 40),
-            })
-            return
-        }
-
-        // Check whether the Entries carry embedded Reference objects.
-        const hasEmbeddedReferences =
-            !Array.isArray(payload) &&
-            Array.isArray((payload as { Entries?: unknown[] }).Entries) &&
-            (
-                payload as { Entries: Array<{ Reference?: unknown }> }
-            ).Entries!.some(
-                (e) => e.Reference !== null && e.Reference !== undefined
-            )
-
-        if (hasEmbeddedReferences) {
-            // Case A — full reference data is embedded; convert immediately.
-            const parser = new CitaviParser(payload)
-            const bibDB = parser.parse()
-
-            this.errors.push(...parser.errors)
-            this.warnings.push(...parser.warnings)
-
-            for (const entry of Object.values(bibDB)) {
-                if (!this.seenKeys.has(entry.entry_key)) {
-                    this.seenKeys.add(entry.entry_key)
-                    this.entries.push(entry)
-                }
-            }
-        } else if (!Array.isArray(payload)) {
-            // Case B — only ReferenceIds present; collect them for later
-            // resolution via parseCitaviJson().
-            const entries = (
-                payload as { Entries?: Array<{ ReferenceId?: string }> }
-            ).Entries
-            if (Array.isArray(entries)) {
-                for (const e of entries) {
-                    if (e.ReferenceId) {
-                        this.citaviReferenceIds.add(e.ReferenceId)
-                    }
-                }
-            }
-        }
-    }
-
-    /**
-     * Resolves Citavi `ReferenceId` UUIDs (collected during `parseSdtBlocks`)
-     * against the full Citavi project JSON supplied in `options.citaviJson`.
-     *
-     * The project JSON may be in any of the three shapes that `CitaviInput`
-     * supports:
-     *   - `{ References: CitaviReference[] }`  (project-export format)
-     *   - `CitaviReference[]`                  (plain array)
-     *   - `{ Entries: [{ Reference: … }] }`    (WordPlaceholder with refs)
-     *
-     * Only references whose `Id` matches a collected UUID are converted,
-     * unless no UUIDs were collected (i.e. no CitaviPlaceholder fields were
-     * found in the document), in which case the entire project JSON is
-     * imported.
-     */
-    private parseCitaviJson(citaviJson: CitaviInput): void {
-        // Flatten all references from the project JSON.
-        let allRefs: CitaviReference[]
-        if (Array.isArray(citaviJson)) {
-            allRefs = citaviJson as CitaviReference[]
-        } else {
-            const obj = citaviJson as {
-                References?: CitaviReference[]
-                Entries?: Array<{ Reference?: CitaviReference }>
-            }
-            if (obj.References && Array.isArray(obj.References)) {
-                allRefs = obj.References
-            } else if (obj.Entries && Array.isArray(obj.Entries)) {
-                allRefs = obj.Entries.flatMap((e) => {
-                    return e.Reference ? [e.Reference] : []
-                })
-            } else {
-                allRefs = []
-            }
-        }
-
-        // Filter to only the cited references (or take all if no IDs were
-        // collected, which happens when the document had no CitaviPlaceholder
-        // fields but the caller still supplied a project JSON).
-        const filtered: CitaviReference[] =
-            this.citaviReferenceIds.size > 0
-                ? allRefs.filter((r) =>
-                      Boolean(r.Id && this.citaviReferenceIds.has(r.Id))
-                  )
-                : allRefs
-
-        if (filtered.length === 0) return
-
-        const parser = new CitaviParser(filtered)
-        const bibDB = parser.parse()
-
-        this.errors.push(...parser.errors)
-        this.warnings.push(...parser.warnings)
-
-        for (const entry of Object.values(bibDB)) {
-            if (!this.seenKeys.has(entry.entry_key)) {
-                this.seenKeys.add(entry.entry_key)
-                this.entries.push(entry)
-            }
-        }
-    }
-
-    // --- Word native / JabRef CITATION key ---
-
-    /**
-     * Records the cited key so that `parseSourcesXml` can later look up
-     * matching `<b:Source>` entries.  No conversion happens here.
-     */
-    private processWordNativeCitationKey(instr: string): void {
-        const m = /^CITATION\s+(\S+)/i.exec(instr.trim())
-        if (m) {
-            // Store the key; actual source data comes from sourcesXml
-            this.seenKeys.add(m[1])
-        }
-    }
-
-    // --- Word native / JabRef sources XML ---
+    // --- Word native sources XML ---
 
     /**
      * Delegates to DocxNativeParser, passing `seenKeys` so that sources
@@ -926,38 +1104,6 @@ export class DocxCitationsParser {
         this.errors.push(...result.errors)
         this.warnings.push(...result.warnings)
         this.entries.push(...result.entries)
-    }
-
-    // -----------------------------------------------------------------------
-    // Utilities
-    // -----------------------------------------------------------------------
-
-    private unescapeXmlEntities(text: string): string {
-        return text
-            .replace(/&lt;/g, "<")
-            .replace(/&gt;/g, ">")
-            .replace(/&amp;/g, "&")
-            .replace(/&quot;/g, '"')
-            .replace(/&apos;/g, "'")
-    }
-
-    private decodeBase64(b64: string): string {
-        // Use atob + TextDecoder for browser compatibility.
-        // atob() decodes base64 to a binary string (one char per byte);
-        // TextDecoder then re-interprets those bytes as UTF-8, which is
-        // required for EndNote XML that contains non-ASCII characters.
-        // We also strip any trailing null bytes that Word appends (\x00).
-        const binary = atob(b64)
-        const bytes = new Uint8Array(binary.length)
-        for (let i = 0; i < binary.length; i++) {
-            bytes[i] = binary.charCodeAt(i)
-        }
-        // Strip trailing null terminator(s) that Word appends to the payload
-        let end = bytes.length
-        while (end > 0 && bytes[end - 1] === 0) {
-            end--
-        }
-        return new TextDecoder("utf-8").decode(bytes.subarray(0, end))
     }
 }
 
