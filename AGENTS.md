@@ -150,137 +150,35 @@ Tests typically:
 3. Compare output against expected JSON fixtures
 4. Clean metadata (errors, warnings, comments) before comparison
 
-## Key Classes and Usage
+## API Reference
 
-### BibLatexParser
+For comprehensive API documentation, see **[API.md](API.md)**.
 
-```typescript
-import { BibLatexParser } from 'biblatex-csl-converter'
+### Quick Reference
 
-// Synchronous parsing
-const parser = new BibLatexParser(input, {
-  processUnexpected: true,
-  processUnknown: { collaborator: 'l_name' },
-})
-const { entries: bibDB, errors, warnings } = parser.parse()
+**Core Parsers:**
+- `BibLatexParser` — Parse BibLaTeX/BibTeX files
+- `CSLParser` — Parse CSL JSON
+- `RISParser`, `ENWParser`, `NBIBParser` — Parse various bibliography formats
+- `EndNoteParser`, `CitaviParser` — Parse EndNote and Citavi data
 
-// Asynchronous parsing
-const result = await new BibLatexParser(input, options).parseAsync()
-```
+**Core Exporters:**
+- `BibLatexExporter` — Export to BibLaTeX
+- `CSLExporter` — Export to CSL JSON
 
-### BibLatexExporter
+**Document Citation Parsers:**
+- `DocxCitationsParser` — Extract citations from DOCX files (Zotero, Mendeley, EndNote, Citavi, Word native, JabRef)
+- `OdtCitationsParser` — Extract citations from ODT files (Zotero, Mendeley, JabRef, LibreOffice native, EndNote)
 
-```typescript
-import { BibLatexExporter } from 'biblatex-csl-converter'
+Both document citation parsers provide:
+- **Instance methods** for full-document parsing
+- **Static methods** for element-level checking and extraction with a `retrieve` parameter
 
-const exporter = new BibLatexExporter(bibDB, pks, {
-  traditionalNames: false,
-})
-const biblatexString = exporter.parse()
-```
+**i18n Module:**
+- `getLocale()`, `getFieldTitle()`, `getTypeTitle()` — Get translated labels
+- Available languages: `bg`, `de`, `en`, `es`, `fr`, `it`, `pt-BR`
 
-### CSLExporter
-
-```typescript
-import { CSLExporter } from 'biblatex-csl-converter'
-
-const exporter = new CSLExporter(bibDB, pks, {
-  escapeText: true,
-  useEntryKeys: false,
-})
-const cslData = exporter.parse()
-```
-
-### CSLParser
-
-```typescript
-import { CSLParser } from 'biblatex-csl-converter'
-
-const parser = new CSLParser(cslData)   // cslData: Record<string, CSLEntry>
-const bibDB = parser.parse()
-```
-
-### RISParser
-
-```typescript
-import { RISParser } from 'biblatex-csl-converter'
-
-const parser = new RISParser(risString)
-const bibDB = parser.parse()
-```
-
-### ENWParser
-
-```typescript
-import { ENWParser } from 'biblatex-csl-converter'
-
-const parser = new ENWParser(enwString)
-const bibDB = parser.parse()
-```
-
-### EndNoteParser
-
-```typescript
-import { EndNoteParser } from 'biblatex-csl-converter'
-
-// input is an array of plain JS objects converted from the EndNote XML DOM
-const parser = new EndNoteParser(records)
-const bibDB = parser.parse()
-```
-
-### CitaviParser
-
-```typescript
-import { CitaviParser } from 'biblatex-csl-converter'
-
-const parser = new CitaviParser(citaviJson)
-const bibDB = parser.parse()
-```
-
-## i18n Module
-
-The `src/i18n/` module provides human-readable labels for all reference types, field
-names, help text, and option values in seven languages: `bg`, `de`, `en`, `es`, `fr`,
-`it`, `pt-BR`.
-
-### Structure of a Locale Object
-
-Each JSON file (and the compiled `Locale` object) has six sections:
-
-| Key | Contents |
-|-----|----------|
-| `fieldTitles` | Label for every field key, e.g. `"author": "Author(s)"` |
-| `fieldHelp` | Optional hint text for selected fields (e.g. date format) |
-| `typeTitles` | Label for every entry-type key, e.g. `"article-journal": "Journal article"` |
-| `fieldTitlesByType` | Per-type overrides, e.g. `"video" → { "author": "Director(s)" }` |
-| `langidOptions` | Labels for every valid `langid` field value |
-| `otherOptions` | Labels for `editortype`, `pagination`, `pubstate`, and `type` sub-field values |
-
-### Helper Functions
-
-```typescript
-import {
-  locales,        // Record<string, Locale> — all built-in locales keyed by IETF tag
-  getLocale,      // (lang: string) => Locale  — with en fallback
-  getFieldTitle,  // (locale, typeKey, fieldKey) => string
-  getTypeTitle,   // (locale, typeKey) => string
-  getFieldHelp,   // (locale, fieldKey) => string | undefined
-  getLangidTitle, // (locale, langidKey) => string
-  getOtherOptionTitle, // (locale, optionKey) => string
-} from 'biblatex-csl-converter'
-```
-
-`getFieldTitle()` checks `fieldTitlesByType[typeKey][fieldKey]` first and falls back to
-`fieldTitles[fieldKey]`, so per-type label overrides are applied automatically.
-
-### Adding or Updating Translations
-
-1. Edit (or create) the relevant file in `src/i18n/locales/`.
-2. Run `npm run compile_i18n` to regenerate `src/i18n/locales.ts`.
-3. Commit both the JSON source file and the regenerated `locales.ts`.
-
-Do **not** edit `src/i18n/locales.ts` by hand — it is fully overwritten by
-`scripts/build-i18n.ts`.
+See [API.md](API.md) for detailed usage examples and type definitions.
 
 ## Demo Page (`demo/`)
 
