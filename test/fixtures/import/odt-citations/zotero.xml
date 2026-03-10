@@ -5,18 +5,28 @@
   Format: text:reference-mark-start / text:reference-mark-end pairs where the
   text:name attribute holds the full citation payload:
 
-    "ZOTERO_ITEM CSL_CITATION {json}"
+    "ZOTERO_ITEM CSL_CITATION {json} RND<randomId>"
 
   The JSON uses the same CSL-JSON citationItems structure as Zotero DOCX, with
   " encoded as &quot; inside the XML attribute value.
+
+  Zotero appends a random ID suffix after the JSON object:
+    - A single space
+    - The literal string "RND"
+    - Exactly 10 alphanumeric characters (uppercase/lowercase letters + digits)
+    - Example: " RNDjURflxg9F1"
+  
+  The random ID is consistent across all citation and bibliography marks in the
+  same document. Parsers must use brace-balancing to extract the JSON object
+  and ignore the trailing suffix.
 
   Two citation marks are included:
     - First mark:  one item (article-journal, Hawking 2010)
     - Second mark: two items — the same Hawking 2010 item (should be
                    de-duplicated) plus a new book entry (Penrose 1989)
 
-  The bibliography mark (ZOTERO_BIBL … CSL_BIBLIOGRAPHY) contains only
-  rendered text and should produce no entries.
+  The bibliography mark (ZOTERO_BIBL … CSL_BIBLIOGRAPHY RND<randomId>) contains
+  only rendered text and should produce no entries.
 -->
 <office:document-content
     xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0"
@@ -31,9 +41,9 @@
            ============================================================ -->
       <text:p text:style-name="Text Body">
         <text:span xml:space="preserve">According to recent work </text:span>
-        <text:reference-mark-start text:name="ZOTERO_ITEM CSL_CITATION {&quot;citationID&quot;:&quot;AQwSemPs&quot;,&quot;properties&quot;:{&quot;formattedCitation&quot;:&quot;(Hawking, 2010)&quot;,&quot;plainCitation&quot;:&quot;(Hawking, 2010)&quot;,&quot;noteIndex&quot;:0},&quot;citationItems&quot;:[{&quot;id&quot;:46,&quot;uris&quot;:[&quot;http://zotero.org/users/40613/items/EAG35HWU&quot;],&quot;itemData&quot;:{&quot;id&quot;:46,&quot;type&quot;:&quot;article-journal&quot;,&quot;title&quot;:&quot;Test article one&quot;,&quot;container-title&quot;:&quot;Physical Review Letters&quot;,&quot;volume&quot;:&quot;105&quot;,&quot;issue&quot;:&quot;3&quot;,&quot;page&quot;:&quot;1-10&quot;,&quot;DOI&quot;:&quot;10.1103/PhysRevLett.105.031301&quot;,&quot;author&quot;:[{&quot;family&quot;:&quot;Hawking&quot;,&quot;given&quot;:&quot;Stephen&quot;}],&quot;issued&quot;:{&quot;date-parts&quot;:[[2010,7,15]]}}}],&quot;schema&quot;:&quot;https://github.com/citation-style-language/schema/raw/master/csl-citation.json&quot;}"/>
+        <text:reference-mark-start text:name="ZOTERO_ITEM CSL_CITATION {&quot;citationID&quot;:&quot;AQwSemPs&quot;,&quot;properties&quot;:{&quot;formattedCitation&quot;:&quot;(Hawking, 2010)&quot;,&quot;plainCitation&quot;:&quot;(Hawking, 2010)&quot;,&quot;noteIndex&quot;:0},&quot;citationItems&quot;:[{&quot;id&quot;:46,&quot;uris&quot;:[&quot;http://zotero.org/users/40613/items/EAG35HWU&quot;],&quot;itemData&quot;:{&quot;id&quot;:46,&quot;type&quot;:&quot;article-journal&quot;,&quot;title&quot;:&quot;Test article one&quot;,&quot;container-title&quot;:&quot;Physical Review Letters&quot;,&quot;volume&quot;:&quot;105&quot;,&quot;issue&quot;:&quot;3&quot;,&quot;page&quot;:&quot;1-10&quot;,&quot;DOI&quot;:&quot;10.1103/PhysRevLett.105.031301&quot;,&quot;author&quot;:[{&quot;family&quot;:&quot;Hawking&quot;,&quot;given&quot;:&quot;Stephen&quot;}],&quot;issued&quot;:{&quot;date-parts&quot;:[[2010,7,15]]}}}],&quot;schema&quot;:&quot;https://github.com/citation-style-language/schema/raw/master/csl-citation.json&quot;} RNDjURflxg9F1"/>
         <text:span>(Hawking, 2010)</text:span>
-        <text:reference-mark-end text:name="ZOTERO_ITEM CSL_CITATION {&quot;citationID&quot;:&quot;AQwSemPs&quot;,&quot;properties&quot;:{&quot;formattedCitation&quot;:&quot;(Hawking, 2010)&quot;,&quot;plainCitation&quot;:&quot;(Hawking, 2010)&quot;,&quot;noteIndex&quot;:0},&quot;citationItems&quot;:[{&quot;id&quot;:46,&quot;uris&quot;:[&quot;http://zotero.org/users/40613/items/EAG35HWU&quot;],&quot;itemData&quot;:{&quot;id&quot;:46,&quot;type&quot;:&quot;article-journal&quot;,&quot;title&quot;:&quot;Test article one&quot;,&quot;container-title&quot;:&quot;Physical Review Letters&quot;,&quot;volume&quot;:&quot;105&quot;,&quot;issue&quot;:&quot;3&quot;,&quot;page&quot;:&quot;1-10&quot;,&quot;DOI&quot;:&quot;10.1103/PhysRevLett.105.031301&quot;,&quot;author&quot;:[{&quot;family&quot;:&quot;Hawking&quot;,&quot;given&quot;:&quot;Stephen&quot;}],&quot;issued&quot;:{&quot;date-parts&quot;:[[2010,7,15]]}}}],&quot;schema&quot;:&quot;https://github.com/citation-style-language/schema/raw/master/csl-citation.json&quot;}"/>
+        <text:reference-mark-end text:name="ZOTERO_ITEM CSL_CITATION {&quot;citationID&quot;:&quot;AQwSemPs&quot;,&quot;properties&quot;:{&quot;formattedCitation&quot;:&quot;(Hawking, 2010)&quot;,&quot;plainCitation&quot;:&quot;(Hawking, 2010)&quot;,&quot;noteIndex&quot;:0},&quot;citationItems&quot;:[{&quot;id&quot;:46,&quot;uris&quot;:[&quot;http://zotero.org/users/40613/items/EAG35HWU&quot;],&quot;itemData&quot;:{&quot;id&quot;:46,&quot;type&quot;:&quot;article-journal&quot;,&quot;title&quot;:&quot;Test article one&quot;,&quot;container-title&quot;:&quot;Physical Review Letters&quot;,&quot;volume&quot;:&quot;105&quot;,&quot;issue&quot;:&quot;3&quot;,&quot;page&quot;:&quot;1-10&quot;,&quot;DOI&quot;:&quot;10.1103/PhysRevLett.105.031301&quot;,&quot;author&quot;:[{&quot;family&quot;:&quot;Hawking&quot;,&quot;given&quot;:&quot;Stephen&quot;}],&quot;issued&quot;:{&quot;date-parts&quot;:[[2010,7,15]]}}}],&quot;schema&quot;:&quot;https://github.com/citation-style-language/schema/raw/master/csl-citation.json&quot;} RNDjURflxg9F1"/>
         <text:span xml:space="preserve">, gravity is described.</text:span>
       </text:p>
 
@@ -43,9 +53,9 @@
              id=99  Penrose 1989 (new book entry)
            ============================================================ -->
       <text:p text:style-name="Text Body">
-        <text:reference-mark-start text:name="ZOTERO_ITEM CSL_CITATION {&quot;citationID&quot;:&quot;Bx9Qr7Zt&quot;,&quot;properties&quot;:{&quot;noteIndex&quot;:0},&quot;citationItems&quot;:[{&quot;id&quot;:46,&quot;itemData&quot;:{&quot;id&quot;:46,&quot;type&quot;:&quot;article-journal&quot;,&quot;title&quot;:&quot;Test article one&quot;,&quot;author&quot;:[{&quot;family&quot;:&quot;Hawking&quot;,&quot;given&quot;:&quot;Stephen&quot;}],&quot;issued&quot;:{&quot;date-parts&quot;:[[2010]]}}},{&quot;id&quot;:99,&quot;itemData&quot;:{&quot;id&quot;:99,&quot;type&quot;:&quot;book&quot;,&quot;title&quot;:&quot;The Emperor&apos;s New Mind&quot;,&quot;publisher&quot;:&quot;Oxford University Press&quot;,&quot;publisher-place&quot;:&quot;Oxford&quot;,&quot;ISBN&quot;:&quot;978-0-19-851973-7&quot;,&quot;author&quot;:[{&quot;family&quot;:&quot;Penrose&quot;,&quot;given&quot;:&quot;Roger&quot;}],&quot;issued&quot;:{&quot;date-parts&quot;:[[1989]]}}}],&quot;schema&quot;:&quot;https://github.com/citation-style-language/schema/raw/master/csl-citation.json&quot;}"/>
+        <text:reference-mark-start text:name="ZOTERO_ITEM CSL_CITATION {&quot;citationID&quot;:&quot;Bx9Qr7Zt&quot;,&quot;properties&quot;:{&quot;noteIndex&quot;:0},&quot;citationItems&quot;:[{&quot;id&quot;:46,&quot;itemData&quot;:{&quot;id&quot;:46,&quot;type&quot;:&quot;article-journal&quot;,&quot;title&quot;:&quot;Test article one&quot;,&quot;author&quot;:[{&quot;family&quot;:&quot;Hawking&quot;,&quot;given&quot;:&quot;Stephen&quot;}],&quot;issued&quot;:{&quot;date-parts&quot;:[[2010]]}}},{&quot;id&quot;:99,&quot;itemData&quot;:{&quot;id&quot;:99,&quot;type&quot;:&quot;book&quot;,&quot;title&quot;:&quot;The Emperor&apos;s New Mind&quot;,&quot;publisher&quot;:&quot;Oxford University Press&quot;,&quot;publisher-place&quot;:&quot;Oxford&quot;,&quot;ISBN&quot;:&quot;978-0-19-851973-7&quot;,&quot;author&quot;:[{&quot;family&quot;:&quot;Penrose&quot;,&quot;given&quot;:&quot;Roger&quot;}],&quot;issued&quot;:{&quot;date-parts&quot;:[[1989]]}}}],&quot;schema&quot;:&quot;https://github.com/citation-style-language/schema/raw/master/csl-citation.json&quot;} RNDjURflxg9F1"/>
         <text:span>(Hawking, 2010; Penrose, 1989)</text:span>
-        <text:reference-mark-end text:name="ZOTERO_ITEM CSL_CITATION {&quot;citationID&quot;:&quot;Bx9Qr7Zt&quot;,&quot;properties&quot;:{&quot;noteIndex&quot;:0},&quot;citationItems&quot;:[{&quot;id&quot;:46,&quot;itemData&quot;:{&quot;id&quot;:46,&quot;type&quot;:&quot;article-journal&quot;,&quot;title&quot;:&quot;Test article one&quot;,&quot;author&quot;:[{&quot;family&quot;:&quot;Hawking&quot;,&quot;given&quot;:&quot;Stephen&quot;}],&quot;issued&quot;:{&quot;date-parts&quot;:[[2010]]}}},{&quot;id&quot;:99,&quot;itemData&quot;:{&quot;id&quot;:99,&quot;type&quot;:&quot;book&quot;,&quot;title&quot;:&quot;The Emperor&apos;s New Mind&quot;,&quot;publisher&quot;:&quot;Oxford University Press&quot;,&quot;publisher-place&quot;:&quot;Oxford&quot;,&quot;ISBN&quot;:&quot;978-0-19-851973-7&quot;,&quot;author&quot;:[{&quot;family&quot;:&quot;Penrose&quot;,&quot;given&quot;:&quot;Roger&quot;}],&quot;issued&quot;:{&quot;date-parts&quot;:[[1989]]}}}],&quot;schema&quot;:&quot;https://github.com/citation-style-language/schema/raw/master/csl-citation.json&quot;}"/>
+        <text:reference-mark-end text:name="ZOTERO_ITEM CSL_CITATION {&quot;citationID&quot;:&quot;Bx9Qr7Zt&quot;,&quot;properties&quot;:{&quot;noteIndex&quot;:0},&quot;citationItems&quot;:[{&quot;id&quot;:46,&quot;itemData&quot;:{&quot;id&quot;:46,&quot;type&quot;:&quot;article-journal&quot;,&quot;title&quot;:&quot;Test article one&quot;,&quot;author&quot;:[{&quot;family&quot;:&quot;Hawking&quot;,&quot;given&quot;:&quot;Stephen&quot;}],&quot;issued&quot;:{&quot;date-parts&quot;:[[2010]]}}},{&quot;id&quot;:99,&quot;itemData&quot;:{&quot;id&quot;:99,&quot;type&quot;:&quot;book&quot;,&quot;title&quot;:&quot;The Emperor&apos;s New Mind&quot;,&quot;publisher&quot;:&quot;Oxford University Press&quot;,&quot;publisher-place&quot;:&quot;Oxford&quot;,&quot;ISBN&quot;:&quot;978-0-19-851973-7&quot;,&quot;author&quot;:[{&quot;family&quot;:&quot;Penrose&quot;,&quot;given&quot;:&quot;Roger&quot;}],&quot;issued&quot;:{&quot;date-parts&quot;:[[1989]]}}}],&quot;schema&quot;:&quot;https://github.com/citation-style-language/schema/raw/master/csl-citation.json&quot;} RNDjURflxg9F1"/>
       </text:p>
 
       <!-- ============================================================
@@ -53,9 +63,9 @@
            Contains only rendered text; produces no entries.
            ============================================================ -->
       <text:p text:style-name="Text Body">
-        <text:reference-mark-start text:name="ZOTERO_BIBL {&quot;uncited&quot;:[],&quot;custom&quot;:[]} CSL_BIBLIOGRAPHY"/>
+        <text:reference-mark-start text:name="ZOTERO_BIBL {&quot;uncited&quot;:[],&quot;custom&quot;:[]} CSL_BIBLIOGRAPHY RNDjURflxg9F1"/>
         <text:span>Hawking, S. (2010). Test article one. <text:span text:style-name="Emphasis">Physical Review Letters</text:span>, 105(3), 1–10.</text:span>
-        <text:reference-mark-end text:name="ZOTERO_BIBL {&quot;uncited&quot;:[],&quot;custom&quot;:[]} CSL_BIBLIOGRAPHY"/>
+        <text:reference-mark-end text:name="ZOTERO_BIBL {&quot;uncited&quot;:[],&quot;custom&quot;:[]} CSL_BIBLIOGRAPHY RNDjURflxg9F1"/>
       </text:p>
 
     </office:text>
