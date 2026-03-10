@@ -45,6 +45,7 @@ export type { NBIBParseResult } from "./import/nbib"
 export type {
     DocxCitationsParseResult,
     DocxCitationsParserOptions,
+    CitationAccumulator,
     CitationResult as DocxCitationResult,
     BibliographyResult as DocxBibliographyResult,
     CitationItemMetadata as DocxCitationItemMetadata,

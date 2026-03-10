@@ -54,6 +54,22 @@ export interface OdtCitationsParseResult {
     warnings: ErrorObject[]
 }
 
+// ---------------------------------------------------------------------------
+// Citation accumulator — shared mutable state for multi-element processing
+// ---------------------------------------------------------------------------
+
+/**
+ * Mutable accumulator passed to static extraction methods when processing
+ * multiple document elements in a single pass.  All four fields are mutated
+ * in place as entries are discovered and keys are deduplicated.
+ */
+export interface CitationAccumulator {
+    entries: EntryObject[]
+    errors: ErrorObject[]
+    warnings: ErrorObject[]
+    seenKeys: Set<string>
+}
+
 interface ErrorObject {
     type: string
     field?: string
@@ -179,11 +195,14 @@ export class OdtCitationsParser {
         markName: string,
         retrieve = true,
         retrieveMetadata = false,
-        entries: EntryObject[] = [],
-        errors: ErrorObject[] = [],
-        warnings: ErrorObject[] = [],
-        seenKeys: Set<string> = new Set<string>()
+        acc: CitationAccumulator = {
+            entries: [],
+            errors: [],
+            warnings: [],
+            seenKeys: new Set<string>(),
+        }
     ): CitationResult {
+        const { entries, errors, warnings } = acc
         // Detect format
         let format: string | undefined
 
@@ -210,19 +229,11 @@ export class OdtCitationsParser {
             OdtCitationsParser.extractCslMarkData(
                 markName,
                 format,
-                entries,
-                errors,
-                warnings,
-                seenKeys,
+                acc,
                 retrieveMetadata ? metadata : undefined
             )
         } else if (format === "jabref") {
-            OdtCitationsParser.extractJabRefMarkData(
-                markName,
-                entries,
-                warnings,
-                seenKeys
-            )
+            OdtCitationsParser.extractJabRefMarkData(markName, acc)
         }
 
         const bibDB: Record<number, EntryObject> = {}
@@ -378,23 +389,23 @@ export class OdtCitationsParser {
         }
 
         // Extract citation data
-        const entries: EntryObject[] = []
-        const seenKeys = new Set<string>()
+        const acc: CitationAccumulator = {
+            entries: [],
+            errors: [],
+            warnings: [],
+            seenKeys: new Set<string>(),
+        }
         const placeholderRe = /\{([^{}]+#\d+[^{}]*)\}/g
         let m: RegExpExecArray | null
 
         while ((m = placeholderRe.exec(text)) !== null) {
             for (const part of m[1].split(";").map((s) => s.trim())) {
-                OdtCitationsParser.extractEndNotePlaceholderData(
-                    part,
-                    entries,
-                    seenKeys
-                )
+                OdtCitationsParser.extractEndNotePlaceholderData(part, acc)
             }
         }
 
         const bibDB: Record<number, EntryObject> = {}
-        entries.forEach((entry, i) => {
+        acc.entries.forEach((entry, i) => {
             bibDB[i + 1] = entry
         })
 
@@ -417,12 +428,10 @@ export class OdtCitationsParser {
     private static extractCslMarkData(
         markName: string,
         source: string,
-        entries: EntryObject[],
-        errors: ErrorObject[],
-        warnings: ErrorObject[],
-        seenKeys: Set<string>,
+        acc: CitationAccumulator,
         metadata?: CitationItemMetadata[]
     ): void {
+        const { warnings } = acc
         const jsonStart = markName.indexOf("{")
         if (jsonStart === -1) {
             warnings.push({ type: `${source}_missing_json` })
@@ -435,15 +444,7 @@ export class OdtCitationsParser {
             return
         }
 
-        OdtCitationsParser.processCslJson(
-            jsonStr,
-            source,
-            entries,
-            errors,
-            warnings,
-            seenKeys,
-            metadata
-        )
+        OdtCitationsParser.processCslJson(jsonStr, source, acc, metadata)
     }
 
     /**
@@ -451,10 +452,9 @@ export class OdtCitationsParser {
      */
     private static extractJabRefMarkData(
         markName: string,
-        entries: EntryObject[],
-        warnings: ErrorObject[],
-        seenKeys: Set<string>
+        acc: CitationAccumulator
     ): void {
+        const { entries, warnings, seenKeys } = acc
         const withoutPrefix = markName.slice("JABREF_".length)
         const cidIndex = withoutPrefix.indexOf(" CID_")
         const rawKey =
@@ -485,12 +485,10 @@ export class OdtCitationsParser {
     private static processCslJson(
         jsonStr: string,
         source: string,
-        entries: EntryObject[],
-        errors: ErrorObject[],
-        warnings: ErrorObject[],
-        seenKeys: Set<string>,
+        acc: CitationAccumulator,
         metadata?: CitationItemMetadata[]
     ): void {
+        const { entries, errors, warnings, seenKeys } = acc
         let citation: {
             citationItems?: Array<{
                 itemData?: CSLEntry
@@ -602,9 +600,9 @@ export class OdtCitationsParser {
      */
     private static extractEndNotePlaceholderData(
         segment: string,
-        entries: EntryObject[],
-        seenKeys: Set<string>
+        acc: CitationAccumulator
     ): void {
+        const { entries, seenKeys } = acc
         const re = /^(.*?)[,\s]+(\d{4})\s+#(\d+)/
         const m = re.exec(segment.trim())
         if (!m) return
@@ -709,15 +707,12 @@ export class OdtCitationsParser {
         let m: RegExpExecArray | null
         while ((m = markRe.exec(this.contentXml)) !== null) {
             const name = OdtCitationsParser.unescapeXmlEntitiesStatic(m[1])
-            OdtCitationsParser.referenceMarkCitation(
-                name,
-                true,
-                false,
-                this.entries,
-                this.errors,
-                this.warnings,
-                this.seenKeys
-            )
+            OdtCitationsParser.referenceMarkCitation(name, true, false, {
+                entries: this.entries,
+                errors: this.errors,
+                warnings: this.warnings,
+                seenKeys: this.seenKeys,
+            })
         }
     }
 
@@ -746,11 +741,12 @@ export class OdtCitationsParser {
         while ((m = placeholderRe.exec(this.contentXml)) !== null) {
             // Multiple simultaneous citations are separated by ";"
             for (const part of m[1].split(";").map((s) => s.trim())) {
-                OdtCitationsParser.extractEndNotePlaceholderData(
-                    part,
-                    this.entries,
-                    this.seenKeys
-                )
+                OdtCitationsParser.extractEndNotePlaceholderData(part, {
+                    entries: this.entries,
+                    errors: this.errors,
+                    warnings: this.warnings,
+                    seenKeys: this.seenKeys,
+                })
             }
         }
     }

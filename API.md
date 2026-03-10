@@ -342,10 +342,8 @@ Check or extract citation data from a Structured Document Tag (SDT) block.
 static sdtCitation(
   sdtXml: string,
   retrieve?: boolean,
-  entries?: EntryObject[],
-  errors?: ErrorObject[],
-  warnings?: ErrorObject[],
-  seenKeys?: Set<string>
+  retrieveMetadata?: boolean,
+  acc?: CitationAccumulator
 ): CitationResult
 ```
 
@@ -353,12 +351,10 @@ static sdtCitation(
 
 - `sdtXml`: XML string of a `<w:sdt>...</w:sdt>` block
 - `retrieve`: If `true` (default), extract and return full citation data; if `false`, only check presence
-- `entries`: Optional array to accumulate entries across multiple calls (default: `[]`)
-- `errors`: Optional array to accumulate errors across multiple calls (default: `[]`)
-- `warnings`: Optional array to accumulate warnings across multiple calls (default: `[]`)
-- `seenKeys`: Optional set to track processed citation keys for deduplication (default: `new Set()`)
+- `retrieveMetadata`: If `true`, populate `result.metadata` with per-item citation metadata (locators, prefixes, etc.)
+- `acc`: Optional accumulator object to share state across multiple calls (default: a fresh accumulator). See `CitationAccumulator`.
 
-**Note:** The optional arrays/set parameters are typically used when processing multiple elements and need to maintain state across calls. For single-element checks or when using the full document parser, these can be omitted.
+**Note:** The `acc` parameter is typically used when processing multiple elements and maintaining state across calls. For single-element checks or when using the full document parser, it can be omitted.
 
 **Returns:** `CitationResult`
 - `isCitation` (boolean): Whether the element contains citation data
@@ -415,10 +411,7 @@ const citaviResult = DocxCitationsParser.sdtCitation(
 Check or extract bibliography rendering region from an SDT block.
 
 ```typescript
-static sdtBibliography(
-  sdtXml: string,
-  retrieve?: boolean
-): BibliographyResult
+static sdtBibliography(sdtXml: string): BibliographyResult
 ```
 
 **Note:** Bibliography regions contain no importable source data; `retrieve=true` returns empty entries.
@@ -431,13 +424,11 @@ Check or extract citation data from a field instruction.
 static fieldCitation(
   instrText: string,
   retrieve?: boolean,
+  retrieveMetadata?: boolean,
+  extractWordNative?: boolean,
   fldData?: string,
   options?: DocxCitationsParserOptions,
-  entries?: EntryObject[],
-  errors?: ErrorObject[],
-  warnings?: ErrorObject[],
-  seenKeys?: Set<string>,
-  extractWordNative?: boolean
+  acc?: CitationAccumulator
 ): CitationResult
 ```
 
@@ -445,16 +436,14 @@ static fieldCitation(
 
 - `instrText`: Concatenated instruction text from `<w:instrText>` elements between field begin and separate
 - `retrieve`: If `true` (default), extract full citation data; if `false`, only check presence
+- `retrieveMetadata`: If `true`, populate `result.metadata` with per-item citation metadata (locators, prefixes, etc.)
+- `extractWordNative`: Whether to immediately extract Word-native citations (default: `true`). Set to `false` when using the full document parser, which defers extraction to `parseSourcesXml()`
 - `fldData`: Optional base64-encoded field data (used by EndNote)
 - `options`: Parser options
   - `sourcesXml`: Contents of `customXml/item1.xml` (required for Word native/JabRef citations)
-- `entries`: Optional array to accumulate entries across multiple calls (default: `[]`)
-- `errors`: Optional array to accumulate errors across multiple calls (default: `[]`)
-- `warnings`: Optional array to accumulate warnings across multiple calls (default: `[]`)
-- `seenKeys`: Optional set to track processed citation keys for deduplication (default: `new Set()`)
-- `extractWordNative`: Whether to immediately extract Word-native citations (default: `true`). Set to `false` when using the full document parser, which defers extraction to `parseSourcesXml()`
+- `acc`: Optional accumulator object to share state across multiple calls (default: a fresh accumulator). See `CitationAccumulator`.
 
-**Note:** The optional arrays/set parameters are useful for batch processing. The `extractWordNative` parameter controls whether Word-native citations are extracted immediately or deferred for later batch processing.
+**Note:** The `acc` parameter is useful for batch processing multiple field codes into one shared result. The `extractWordNative` parameter controls whether Word-native citations are extracted immediately or deferred for later batch processing.
 
 **Supported formats:**
 - `zotero`: Zotero field codes (`ADDIN ZOTERO_ITEM CSL_CITATION`)
@@ -498,7 +487,9 @@ const endnoteInstr = 'ADDIN EN.CITE'
 const fldData = 'PD94bWw...' // Base64-encoded EndNote XML
 const endnoteResult = DocxCitationsParser.fieldCitation(
   endnoteInstr,
-  true,
+  true,    // retrieve
+  false,   // retrieveMetadata
+  true,    // extractWordNative
   fldData
 )
 
@@ -507,8 +498,10 @@ const wordInstr = 'CITATION Smith2020 \\l 1033'
 const sourcesXml = await readFile('customXml/item1.xml', 'utf-8')
 const wordResult = DocxCitationsParser.fieldCitation(
   wordInstr,
-  true,
-  undefined,
+  true,       // retrieve
+  false,      // retrieveMetadata
+  true,       // extractWordNative
+  undefined,  // fldData
   { sourcesXml }
 )
 ```
@@ -518,10 +511,7 @@ const wordResult = DocxCitationsParser.fieldCitation(
 Check or extract bibliography rendering region from a field instruction.
 
 ```typescript
-static fieldBibliography(
-  instrText: string,
-  retrieve?: boolean
-): BibliographyResult
+static fieldBibliography(instrText: string): BibliographyResult
 ```
 
 #### Full Document Example
@@ -570,10 +560,8 @@ Check or extract citation data from a reference mark name.
 static referenceMarkCitation(
   markName: string,
   retrieve?: boolean,
-  entries?: EntryObject[],
-  errors?: ErrorObject[],
-  warnings?: ErrorObject[],
-  seenKeys?: Set<string>
+  retrieveMetadata?: boolean,
+  acc?: CitationAccumulator
 ): CitationResult
 ```
 
@@ -581,12 +569,10 @@ static referenceMarkCitation(
 
 - `markName`: The `text:name` attribute value from `<text:reference-mark-start>`
 - `retrieve`: If `true` (default), extract full citation data; if `false`, only check presence
-- `entries`: Optional array to accumulate entries across multiple calls (default: `[]`)
-- `errors`: Optional array to accumulate errors across multiple calls (default: `[]`)
-- `warnings`: Optional array to accumulate warnings across multiple calls (default: `[]`)
-- `seenKeys`: Optional set to track processed citation keys for deduplication (default: `new Set()`)
+- `retrieveMetadata`: If `true`, populate `result.metadata` with per-item citation metadata (locators, prefixes, etc.)
+- `acc`: Optional accumulator object to share state across multiple calls (default: a fresh accumulator). See `CitationAccumulator`.
 
-**Note:** The optional arrays/set parameters allow accumulating results when processing multiple reference marks. For single-element processing, these can be omitted.
+**Note:** The `acc` parameter allows accumulating results when processing multiple reference marks. For single-element processing, it can be omitted.
 
 **Supported formats:**
 - `zotero`: Zotero reference marks (`ZOTERO_ITEM CSL_CITATION {...}`)
@@ -904,6 +890,19 @@ type BibDB = Record<number, EntryObject>
 
 ### Result Types
 
+#### `CitationAccumulator`
+
+Mutable accumulator passed to static extraction methods when processing multiple document elements in a single pass. All four fields are mutated in place as entries are discovered and keys are deduplicated.
+
+```typescript
+interface CitationAccumulator {
+  entries: EntryObject[]
+  errors: ErrorObject[]
+  warnings: ErrorObject[]
+  seenKeys: Set<string>
+}
+```
+
 #### `CitationResult`
 
 ```typescript
@@ -913,6 +912,7 @@ interface CitationResult {
   entries?: BibDB
   errors?: ErrorObject[]
   warnings?: ErrorObject[]
+  metadata?: CitationItemMetadata[]
 }
 ```
 
@@ -922,9 +922,6 @@ interface CitationResult {
 interface BibliographyResult {
   isBibliography: boolean
   format?: string
-  entries?: BibDB
-  errors?: ErrorObject[]
-  warnings?: ErrorObject[]
 }
 ```
 
@@ -970,70 +967,67 @@ const result = await parser.parseAsync()
 
 ### Element-Level Citation Processing
 
-When processing documents incrementally or with streaming, use the optional parameters to accumulate state:
+When processing documents incrementally or with streaming, pass a shared `CitationAccumulator` to accumulate state across calls:
 
 ```typescript
 async function* processDocxStream(elementStream) {
   // Maintain state across multiple calls
-  const entries: EntryObject[] = []
-  const errors: ErrorObject[] = []
-  const warnings: ErrorObject[] = []
-  const seenKeys = new Set<string>()
-  
+  const acc: CitationAccumulator = {
+    entries: [],
+    errors: [],
+    warnings: [],
+    seenKeys: new Set(),
+  }
+
   for await (const element of elementStream) {
     const check = DocxCitationsParser.sdtCitation(element.xml, false)
-    
+
     if (check.isCitation) {
-      // Pass state arrays to accumulate results and deduplicate
-      DocxCitationsParser.sdtCitation(
-        element.xml,
-        true,
-        entries,
-        errors,
-        warnings,
-        seenKeys
-      )
+      // Pass acc to accumulate results and deduplicate across calls
+      DocxCitationsParser.sdtCitation(element.xml, true, false, acc)
     }
   }
-  
+
   // Return accumulated results
-  return { entries, errors, warnings }
+  return acc
 }
 ```
 
 ### Deduplication Across Static Calls
 
-When processing multiple citations, pass shared arrays and a `seenKeys` set to automatically deduplicate:
+When processing multiple citations, pass a shared `CitationAccumulator` to automatically deduplicate entries:
 
 ```typescript
-// Shared state for accumulating results
-const entries: EntryObject[] = []
-const errors: ErrorObject[] = []
-const warnings: ErrorObject[] = []
-const seenKeys = new Set<string>()
+import { CitationAccumulator } from 'biblatex-csl-converter'
+
+// Shared accumulator for all elements
+const acc: CitationAccumulator = {
+  entries: [],
+  errors: [],
+  warnings: [],
+  seenKeys: new Set(),
+}
 
 // Process multiple elements
 for (const element of elements) {
   DocxCitationsParser.fieldCitation(
     element.instrText,
-    true,
+    true,    // retrieve
+    false,   // retrieveMetadata
+    false,   // extractWordNative — defer to parseSourcesXml
     element.fldData,
     { sourcesXml },
-    entries,      // Accumulate entries
-    errors,       // Accumulate errors
-    warnings,     // Accumulate warnings
-    seenKeys,     // Track seen keys for deduplication
-    false         // Don't extract Word-native yet
+    acc      // shared accumulator: deduplicates and collects all results
   )
 }
 
 // Convert accumulated entries to BibDB
 const bibDB: Record<number, EntryObject> = {}
-entries.forEach((entry, i) => {
+acc.entries.forEach((entry, i) => {
   bibDB[i + 1] = entry
 })
 
-console.log(`Extracted ${entries.length} unique entries`)
+console.log(`Extracted ${acc.entries.length} unique entries`)
 ```
 
 ---
@@ -1058,7 +1052,7 @@ if (check.isCitation) {
 
 ```typescript
 // Single method with retrieve parameter
-const result = DocxCitationsParser.sdtCitation(xml, true, options)
+const result = DocxCitationsParser.sdtCitation(xml, true)
 if (result.isCitation) {
   // result.entries available
 }
@@ -1073,4 +1067,34 @@ const check = DocxCitationsParser.sdtCitation(xml, false)
 - `BibliographyCheckResult` → `BibliographyResult`
 - `CitationExtractResult` → removed (merged into `CitationResult`)
 
-The static methods now call internal extraction logic directly instead of creating temporary XML documents, improving performance.
+### From v3.x accumulator API (individual params → `CitationAccumulator`)
+
+The optional trailing `entries, errors, warnings, seenKeys` parameters on static methods have been replaced by a single `acc?: CitationAccumulator` object.
+
+**Before:**
+
+```typescript
+const entries: EntryObject[] = []
+const errors: ErrorObject[] = []
+const warnings: ErrorObject[] = []
+const seenKeys = new Set<string>()
+
+DocxCitationsParser.sdtCitation(xml, true, false, entries, errors, warnings, seenKeys)
+DocxCitationsParser.fieldCitation(instr, true, false, true, undefined, {}, entries, errors, warnings, seenKeys)
+OdtCitationsParser.referenceMarkCitation(name, true, false, entries, errors, warnings, seenKeys)
+```
+
+**After:**
+
+```typescript
+const acc: CitationAccumulator = {
+  entries: [],
+  errors: [],
+  warnings: [],
+  seenKeys: new Set(),
+}
+
+DocxCitationsParser.sdtCitation(xml, true, false, acc)
+DocxCitationsParser.fieldCitation(instr, true, false, true, undefined, {}, acc)
+OdtCitationsParser.referenceMarkCitation(name, true, false, acc)
+```

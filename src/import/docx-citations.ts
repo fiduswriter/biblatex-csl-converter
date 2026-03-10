@@ -78,6 +78,22 @@ export interface DocxCitationsParseResult {
     warnings: ErrorObject[]
 }
 
+// ---------------------------------------------------------------------------
+// Citation accumulator — shared mutable state for multi-element processing
+// ---------------------------------------------------------------------------
+
+/**
+ * Mutable accumulator passed to static extraction methods when processing
+ * multiple document elements in a single pass.  All four fields are mutated
+ * in place as entries are discovered and keys are deduplicated.
+ */
+export interface CitationAccumulator {
+    entries: EntryObject[]
+    errors: ErrorObject[]
+    warnings: ErrorObject[]
+    seenKeys: Set<string>
+}
+
 interface ErrorObject {
     type: string
     field?: string
@@ -219,11 +235,14 @@ export class DocxCitationsParser {
         sdtXml: string,
         retrieve = true,
         retrieveMetadata = false,
-        entries: EntryObject[] = [],
-        errors: ErrorObject[] = [],
-        warnings: ErrorObject[] = [],
-        seenKeys: Set<string> = new Set<string>()
+        acc: CitationAccumulator = {
+            entries: [],
+            errors: [],
+            warnings: [],
+            seenKeys: new Set<string>(),
+        }
     ): CitationResult {
+        const { entries, errors, warnings } = acc
         const tagMatch = sdtXml.match(/<w:tag\s+w:val="([^"]*)"/)
         if (!tagMatch) return { isCitation: false }
         const tagVal = tagMatch[1]
@@ -252,10 +271,7 @@ export class DocxCitationsParser {
             DocxCitationsParser.extractCslJsonData(
                 DocxCitationsParser.decodeBase64Static(b64),
                 "mendeley_v3",
-                entries,
-                errors,
-                warnings,
-                seenKeys,
+                acc,
                 retrieveMetadata ? metadata : undefined
             )
         } else if (format === "citavi") {
@@ -265,10 +281,7 @@ export class DocxCitationsParser {
             if (instrMatch) {
                 DocxCitationsParser.extractCitaviData(
                     instrMatch[1].replace(/\s/g, ""),
-                    entries,
-                    errors,
-                    warnings,
-                    seenKeys,
+                    acc,
                     retrieveMetadata ? metadata : undefined
                 )
             } else {
@@ -341,11 +354,14 @@ export class DocxCitationsParser {
         extractWordNative = true,
         fldData?: string,
         options: DocxCitationsParserOptions = {},
-        entries: EntryObject[] = [],
-        errors: ErrorObject[] = [],
-        warnings: ErrorObject[] = [],
-        seenKeys: Set<string> = new Set<string>()
+        acc: CitationAccumulator = {
+            entries: [],
+            errors: [],
+            warnings: [],
+            seenKeys: new Set<string>(),
+        }
     ): CitationResult {
+        const { entries, errors, warnings, seenKeys } = acc
         const upper = instrText.trim().toUpperCase()
 
         let format: string | undefined
@@ -388,10 +404,7 @@ export class DocxCitationsParser {
                     DocxCitationsParser.extractCslJsonData(
                         jsonStr,
                         format,
-                        entries,
-                        errors,
-                        warnings,
-                        seenKeys,
+                        acc,
                         retrieveMetadata ? metadata : undefined
                     )
                 }
@@ -400,10 +413,7 @@ export class DocxCitationsParser {
             DocxCitationsParser.extractEndNoteData(
                 instrText,
                 fldData,
-                entries,
-                errors,
-                warnings,
-                seenKeys,
+                acc,
                 retrieveMetadata ? metadata : undefined
             )
         } else if (format === "citavi") {
@@ -413,10 +423,7 @@ export class DocxCitationsParser {
             if (b64Match) {
                 DocxCitationsParser.extractCitaviData(
                     b64Match[1].replace(/\s/g, ""),
-                    entries,
-                    errors,
-                    warnings,
-                    seenKeys,
+                    acc,
                     retrieveMetadata ? metadata : undefined
                 )
             }
@@ -433,10 +440,7 @@ export class DocxCitationsParser {
                 DocxCitationsParser.extractWordNativeData(
                     instrText,
                     options.sourcesXml,
-                    entries,
-                    errors,
-                    warnings,
-                    seenKeys
+                    acc
                 )
             }
         }
@@ -499,12 +503,10 @@ export class DocxCitationsParser {
     private static extractCslJsonData(
         jsonStr: string,
         source: string,
-        entries: EntryObject[],
-        errors: ErrorObject[],
-        warnings: ErrorObject[],
-        seenKeys: Set<string>,
+        acc: CitationAccumulator,
         metadata?: CitationItemMetadata[]
     ): void {
+        const { entries, errors, warnings, seenKeys } = acc
         let citation: {
             citationItems?: Array<{
                 itemData?: CSLEntry
@@ -617,12 +619,10 @@ export class DocxCitationsParser {
     private static extractEndNoteData(
         instrText: string,
         fldData: string | undefined,
-        entries: EntryObject[],
-        errors: ErrorObject[],
-        warnings: ErrorObject[],
-        seenKeys: Set<string>,
+        acc: CitationAccumulator,
         metadata?: CitationItemMetadata[]
     ): void {
+        const { warnings } = acc
         let xmlPayload = ""
 
         if (fldData && fldData.length > 0) {
@@ -644,14 +644,7 @@ export class DocxCitationsParser {
         }
 
         if (xmlPayload.includes("<EndNote") || xmlPayload.includes("<record")) {
-            DocxCitationsParser.parseEndNoteXml(
-                xmlPayload,
-                entries,
-                errors,
-                warnings,
-                seenKeys,
-                metadata
-            )
+            DocxCitationsParser.parseEndNoteXml(xmlPayload, acc, metadata)
         } else {
             warnings.push({
                 type: "endnote_no_xml",
@@ -670,12 +663,10 @@ export class DocxCitationsParser {
      */
     private static extractCitaviData(
         b64: string,
-        entries: EntryObject[],
-        errors: ErrorObject[],
-        warnings: ErrorObject[],
-        seenKeys: Set<string>,
+        acc: CitationAccumulator,
         metadata?: CitationItemMetadata[]
     ): void {
+        const { entries, errors, warnings, seenKeys } = acc
         let payload: CitaviInput
         try {
             const decoded = DocxCitationsParser.decodeBase64Static(b64)
@@ -754,11 +745,9 @@ export class DocxCitationsParser {
     private static extractWordNativeData(
         instrText: string,
         sourcesXml: string,
-        entries: EntryObject[],
-        errors: ErrorObject[],
-        warnings: ErrorObject[],
-        seenKeys: Set<string>
+        acc: CitationAccumulator
     ): void {
+        const { entries, errors, warnings, seenKeys } = acc
         const m = /^CITATION\s+(\S+)/i.exec(instrText.trim())
         if (m) {
             const citationKey = m[1]
@@ -778,12 +767,10 @@ export class DocxCitationsParser {
      */
     private static parseEndNoteXml(
         xml: string,
-        entries: EntryObject[],
-        errors: ErrorObject[],
-        warnings: ErrorObject[],
-        seenKeys: Set<string>,
+        acc: CitationAccumulator,
         metadata?: CitationItemMetadata[]
     ): void {
+        const { entries, errors, warnings, seenKeys } = acc
         const records: EndNoteRecord[] = []
 
         // When collecting metadata, capture per-Cite fields before deduplication
@@ -1210,15 +1197,12 @@ export class DocxCitationsParser {
         const sdtRe = /<w:sdt\b[^>]*>([\s\S]*?)<\/w:sdt>/g
         let m: RegExpExecArray | null
         while ((m = sdtRe.exec(this.documentXml)) !== null) {
-            DocxCitationsParser.sdtCitation(
-                m[1],
-                true,
-                false,
-                this.entries,
-                this.errors,
-                this.warnings,
-                this.seenKeys
-            )
+            DocxCitationsParser.sdtCitation(m[1], true, false, {
+                entries: this.entries,
+                errors: this.errors,
+                warnings: this.warnings,
+                seenKeys: this.seenKeys,
+            })
         }
     }
 
@@ -1315,14 +1299,16 @@ export class DocxCitationsParser {
                 DocxCitationsParser.fieldCitation(
                     instr,
                     true,
-                    false, // Don't retrieve metadata here; defer to parseSourcesXml
+                    false, // Don't retrieve metadata here;
                     false, // Don't extract Word-native here; defer to parseSourcesXml
                     frame.fldData,
                     this.options,
-                    this.entries,
-                    this.errors,
-                    this.warnings,
-                    this.seenKeys
+                    {
+                        entries: this.entries,
+                        errors: this.errors,
+                        warnings: this.warnings,
+                        seenKeys: this.seenKeys,
+                    }
                 )
             } else if (
                 stack.length > 0 &&
