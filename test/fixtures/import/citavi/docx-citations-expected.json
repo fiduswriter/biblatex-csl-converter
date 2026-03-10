@@ -12,7 +12,7 @@
             "shorttitle": [
                 {
                     "type": "text",
-                    "text": "Example Study"
+                    "text": "Comprehensive Study"
                 }
             ],
             "author": [
@@ -55,7 +55,7 @@
             "shortjournal": [
                 {
                     "type": "text",
-                    "text": "J. Ex."
+                    "text": "J. Exam."
                 }
             ],
             "volume": [
@@ -87,11 +87,11 @@
             "isbn": [
                 {
                     "type": "text",
-                    "text": "1234-5678"
+                    "text": "978-0-12-345678-9"
                 }
             ],
-            "url": "https://example.com/article1",
-            "keywords": "example, research, science",
+            "url": "https://doi.org/10.1234/example.2023.001",
+            "keywords": "methodology, research design",
             "langid": "en"
         }
     },
@@ -108,7 +108,7 @@
             "shorttitle": [
                 {
                     "type": "text",
-                    "text": "Deutsche Beispiele in der Wissenschaft"
+                    "text": "Deutsche Beispiele"
                 }
             ],
             "author": [
@@ -162,6 +162,16 @@
                     "text": "3rd"
                 }
             ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "42"
+                        }
+                    ]
+                ]
+            ],
             "isbn": [
                 {
                     "type": "text",
@@ -169,6 +179,144 @@
                 }
             ],
             "langid": "de"
+        }
+    },
+    "3": {
+        "entry_key": "Brown.2021",
+        "bib_type": "book",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Research Methods in Social Sciences"
+                }
+            ],
+            "shorttitle": [
+                {
+                    "type": "text",
+                    "text": "Research Methods"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Brown"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Alice"
+                        }
+                    ]
+                }
+            ],
+            "date": "2021",
+            "publisher": [
+                {
+                    "type": "text",
+                    "text": "Cambridge University Press"
+                }
+            ],
+            "location": [
+                {
+                    "type": "text",
+                    "text": "Cambridge"
+                }
+            ],
+            "edition": [
+                {
+                    "type": "text",
+                    "text": "2nd"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "xvii"
+                        }
+                    ]
+                ]
+            ],
+            "doi": [
+                {
+                    "type": "text",
+                    "text": "10.1234/example.2021.002"
+                }
+            ],
+            "url": "https://doi.org/10.1234/example.2021.002",
+            "langid": "en"
+        }
+    },
+    "4": {
+        "entry_key": "Davis.2020",
+        "bib_type": "article-journal",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Modern Testing Frameworks: A Comprehensive Review"
+                }
+            ],
+            "shorttitle": [
+                {
+                    "type": "text",
+                    "text": "Testing Frameworks"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Davis"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Robert C."
+                        }
+                    ]
+                }
+            ],
+            "date": "2020",
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "International Journal of Testing"
+                }
+            ],
+            "shortjournal": [
+                {
+                    "type": "text",
+                    "text": "Int. J. Test."
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "12"
+                }
+            ],
+            "issue": [
+                {
+                    "type": "text",
+                    "text": "2"
+                }
+            ],
+            "doi": [
+                {
+                    "type": "text",
+                    "text": "10.1234/example.2020.003"
+                }
+            ],
+            "url": "https://doi.org/10.1234/example.2020.003",
+            "langid": "en"
         }
     }
 }
