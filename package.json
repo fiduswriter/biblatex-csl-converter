@@ -1,7 +1,7 @@
 {
     "name": "biblatex-csl-converter",
     "type": "module",
-    "version": "3.4.0",
+    "version": "3.5.0",
     "description": "Bibliography format converter: BibLaTeX, BibTeX, CSL-JSON, RIS, ENW, EndNote XML, Citavi, DOCX citations, ODT citations — parse, convert, and export with round-trip fidelity",
     "main": "lib/index.js",
     "module": "lib/index.mjs",
