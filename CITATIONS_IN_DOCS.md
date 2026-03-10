@@ -312,7 +312,7 @@ Key observations from the real-world DOCX:
 - `properties` contains only `plainCitation` (no `formattedCitation`, no `noteIndex`) in this example; other fields may or may not appear depending on Zotero version and citation style.
 - `itemData` may include a `language` field (plain language name such as `"spanish"` or `"english"`, not a BCP-47 tag) and a `custom` object — both should be treated gracefully and are not required for import.
 - Author entries may use `literal` instead of `family`/`given` for institutional authors.
-- No trailing random ID has been observed in DOCX field instructions. The trailing random token is an ODT-specific behaviour (see the ODT section below); the brace-balancing JSON extraction is nonetheless applied defensively in the DOCX parser.
+- **No trailing random ID in DOCX**: Zotero does not append a trailing random ID in DOCX field instructions. The JSON object ends immediately after the closing `}`.
 - The bibliography field (`ADDIN ZOTERO_BIBL CSL_BIBLIOGRAPHY`) is in its own separate paragraph. Its `begin` and `instrText` share a single `<w:r>`. The rendered entries appear as multiple `<w:t>` + `<w:br/>` nodes inside a single `<w:r>` between `separate` and `end`.
 
 > **RTF escape sequences in `formattedCitation`**: When `properties.formattedCitation`
@@ -390,19 +390,24 @@ In ODT files, Zotero stores session and style metadata in `meta.xml` using
 The reference mark name contains the full CSL-JSON payload (with `"` encoded as `&quot;`), prefixed with `ZOTERO_ITEM CSL_CITATION`:
 
 ```xml
-<text:reference-mark-start text:name="ZOTERO_ITEM CSL_CITATION {&quot;citationID&quot;:&quot;AQwSemPs&quot;,...}"/>
+<text:reference-mark-start text:name="ZOTERO_ITEM CSL_CITATION {&quot;citationID&quot;:&quot;AQwSemPs&quot;,...} RNDjURflxg9F1"/>
 (Hawking, 2010)
-<text:reference-mark-end text:name="ZOTERO_ITEM CSL_CITATION {&quot;citationID&quot;:&quot;AQwSemPs&quot;,...}"/>
+<text:reference-mark-end text:name="ZOTERO_ITEM CSL_CITATION {&quot;citationID&quot;:&quot;AQwSemPs&quot;,...} RNDjURflxg9F1"/>
 ```
 
 > **Trailing random ID**: Zotero appends a random alphanumeric token after the closing
-> `}` of the JSON object in the mark name, separated by a space. For example:
+> `}` of the JSON object in the mark name. The token consists of:
+> - A single space
+> - The literal string `"RND"`
+> - Exactly 10 alphanumeric characters (uppercase and lowercase letters plus digits)
+>
+> For example:
 >
 > ```
 > ZOTERO_ITEM CSL_CITATION {"citationID":"IQc5TguB",...,"schema":"..."} RND6KERMIacgp
 > ```
 >
-> After XML entity-unescaping the `&quot;` sequences the full attribute value therefore
+> After XML entity-unescaping the `&quot;` sequences, the full attribute value therefore
 > ends with `} RND6KERMIacgp` (or a similar random string). A bare
 > `name.slice(name.indexOf("{"))` produces text that is not valid JSON and causes
 > `JSON.parse` to throw. The JSON object must be extracted by walking the string and
@@ -410,6 +415,9 @@ The reference mark name contains the full CSL-JSON payload (with `"` encoded as 
 > then taking only that substring. The same brace-balancing extraction is applied
 > defensively to DOCX field instructions, where the trailing token has not been
 > confirmed but cannot be ruled out.
+>
+> The random ID differs across citation and
+> bibliography marks in the same document.
 
 > **RTF escape sequences in `formattedCitation`**: The `properties.formattedCitation`
 > value inside the JSON may contain RTF Unicode escapes such as `\\uc0\\u8211{}` (RTF
@@ -422,7 +430,7 @@ The reference mark name contains the full CSL-JSON payload (with `"` encoded as 
 The bibliography section uses a section whose name starts with `ZOTERO_BIBL` and ends with `CSL_BIBLIOGRAPHY`:
 
 ```xml
-<text:section text:style-name="Sect1" text:name="ZOTERO_BIBL {\"uncited\":[],\"omitted\":[],\"custom\":[]} CSL_BIBLIOGRAPHY RNDjURflxggFg">
+<text:section text:style-name="Sect1" text:name="ZOTERO_BIBL {\"uncited\":[],\"omitted\":[],\"custom\":[]} CSL_BIBLIOGRAPHY RNDjURflxg9F1">
 ... rendered bibliography text ...
 </text:section>
 ```
@@ -659,7 +667,7 @@ EndNote does not integrate with ODT using live field codes. Instead, it uses a "
 {Smith, 2023 #291}
 ```
 
-The format is `{Author, Year #RecordNumber}`. The document is processed by EndNote's "Format Paper" function, which replaces these text strings with formatted citations and appends a static bibliography. No live reference marks are created.
+The format is `{Author, Year #RecordNumber}`. The document is processed by EndNote's "Format Paper" function, which replaces these text strings with formatted citations and appends a static bibliography. No live reference marks are created. See [https://endnotee.w.uib.no/endnote-og-andre-tekstbehandlere/](https://endnotee.w.uib.no/endnote-og-andre-tekstbehandlere/)
 
 ---
 
@@ -687,20 +695,29 @@ Citavi wraps its citations in a `<w:sdt>` (Structured Document Tag / content con
 </w:sdt>
 ```
 
-The base64-decoded payload is proprietary Citavi JSON (using Newtonsoft-style `$type`/`$id` metadata, not CSL-JSON):
+The base64-decoded payload is proprietary Citavi JSON (using Newtonsoft-style `$type`/`$id` metadata, not CSL-JSON). The payload embeds complete bibliographic data for each cited reference within the `Reference` field of each entry:
 
 ```json
 {
   "$type": "SwissAcademic.Citavi.Citations.WordPlaceholder",
-  "WAIVersion": 2,
+  "WAIVersion": "6.11.0.0",
   "Entries": [{
     "$type": "SwissAcademic.Citavi.Citations.WordPlaceholderEntry",
-    "ReferenceId": "uuid-of-reference-in-citavi-project",
-    "FormattedText": "(Burton 2013)"
+    "ReferenceId": "d782ade0-bb47-45a0-93ce-0352b64e91ab",
+    "Reference": {
+      "$type": "SwissAcademic.Citavi.Reference",
+      "Authors": [{"FirstName": "Tim", "LastName": "Burton", ...}],
+      "BibTeXKey": "Burton.2013",
+      "Title": "Sweeney Todd",
+      "Year": "2013",
+      ...
+    }
   }],
   "Text": "(Burton 2013; Manning 2016)"
 }
 ```
+
+All bibliographic information needed to generate citations is embedded directly in each citation field, so no external Citavi project file is required for extraction.
 
 An older citation format uses `ADDIN CITAVI.PLACEHOLDER` with a UUID and data payload directly in `w:instrText` (without base64 encoding in `w:tag`):
 
