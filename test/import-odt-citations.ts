@@ -413,5 +413,230 @@ describe("Static utility methods", () => {
                 expect(result.format).to.equal(undefined)
             })
         })
+
+        describe("retrieveMetadata", () => {
+            // Shared Zotero mark with all three author-rendering modes and a
+            // full set of locator/prefix/suffix fields on the first item.
+            const zoteroMark =
+                "ZOTERO_ITEM CSL_CITATION " +
+                JSON.stringify({
+                    citationID: "odt-meta-test",
+                    properties: { noteIndex: 0 },
+                    citationItems: [
+                        {
+                            id: "z-ref-1",
+                            locator: "123",
+                            label: "page",
+                            prefix: "see ",
+                            suffix: " for more",
+                            "suppress-author": false,
+                            itemData: {
+                                id: "z-ref-1",
+                                type: "article-journal",
+                                title: "Zotero Article",
+                                author: [{ family: "Adams", given: "Anne" }],
+                                issued: { "date-parts": [[2018]] },
+                            },
+                        },
+                        {
+                            id: "z-ref-2",
+                            "suppress-author": true,
+                            itemData: {
+                                id: "z-ref-2",
+                                type: "book",
+                                title: "Zotero Book",
+                                author: [{ family: "Baker", given: "Ben" }],
+                                issued: { "date-parts": [[2019]] },
+                            },
+                        },
+                        {
+                            id: "z-ref-3",
+                            "author-only": true,
+                            itemData: {
+                                id: "z-ref-3",
+                                type: "book",
+                                title: "Third Work",
+                                author: [{ family: "Clark", given: "Carla" }],
+                                issued: { "date-parts": [[2020]] },
+                            },
+                        },
+                    ],
+                }) +
+                " RNDtestABCD1"
+
+            it("metadata is absent when retrieveMetadata is false (default)", () => {
+                const result =
+                    converter.OdtCitationsParser.referenceMarkCitation(
+                        zoteroMark,
+                        true
+                    )
+                expect(result.isCitation).to.equal(true)
+                expect(result.metadata).to.equal(undefined)
+            })
+
+            it("metadata is absent when retrieve is false even if retrieveMetadata is true", () => {
+                const result =
+                    converter.OdtCitationsParser.referenceMarkCitation(
+                        zoteroMark,
+                        false, // retrieve=false → no data extraction at all
+                        true // retrieveMetadata=true
+                    )
+                expect(result.isCitation).to.equal(true)
+                expect(result.entries).to.equal(undefined)
+                expect(result.metadata).to.equal(undefined)
+            })
+
+            it("Zotero: returns one metadata object per citation item", () => {
+                const result =
+                    converter.OdtCitationsParser.referenceMarkCitation(
+                        zoteroMark,
+                        true,
+                        true // retrieveMetadata
+                    )
+                expect(result.isCitation).to.equal(true)
+                expect(result.metadata).to.be.an("array").with.lengthOf(3)
+            })
+
+            it("Zotero: metadata entry_key matches the corresponding entry", () => {
+                const result =
+                    converter.OdtCitationsParser.referenceMarkCitation(
+                        zoteroMark,
+                        true,
+                        true
+                    )
+                const entryKeys = Object.values(result.entries!).map(
+                    (e) => e.entry_key
+                )
+                const metaKeys = result.metadata!.map((m) => m.entry_key)
+                for (const key of metaKeys) {
+                    expect(entryKeys).to.include(key)
+                }
+                // All three items must have distinct keys
+                expect(new Set(metaKeys).size).to.equal(3)
+            })
+
+            it("Zotero: locator and label are extracted for the first item", () => {
+                const result =
+                    converter.OdtCitationsParser.referenceMarkCitation(
+                        zoteroMark,
+                        true,
+                        true
+                    )
+                const meta0 = result.metadata![0]
+                expect(meta0.locator).to.equal("123")
+                expect(meta0.label).to.equal("page")
+            })
+
+            it("Zotero: prefix and suffix are extracted for the first item", () => {
+                const result =
+                    converter.OdtCitationsParser.referenceMarkCitation(
+                        zoteroMark,
+                        true,
+                        true
+                    )
+                const meta0 = result.metadata![0]
+                expect(meta0.prefix).to.equal("see ")
+                expect(meta0.suffix).to.equal(" for more")
+            })
+
+            it("Zotero: suppressAuthor is true for the second item", () => {
+                const result =
+                    converter.OdtCitationsParser.referenceMarkCitation(
+                        zoteroMark,
+                        true,
+                        true
+                    )
+                const meta1 = result.metadata![1]
+                expect(meta1.suppressAuthor).to.equal(true)
+                expect(meta1.authorOnly).to.equal(undefined)
+                expect(meta1.authorYear).to.equal(undefined)
+            })
+
+            it("Zotero: authorOnly is true for the third item", () => {
+                const result =
+                    converter.OdtCitationsParser.referenceMarkCitation(
+                        zoteroMark,
+                        true,
+                        true
+                    )
+                const meta2 = result.metadata![2]
+                expect(meta2.authorOnly).to.equal(true)
+                expect(meta2.suppressAuthor).to.equal(undefined)
+                expect(meta2.authorYear).to.equal(undefined)
+            })
+
+            it("Zotero: items without optional fields have no extra keys in metadata", () => {
+                const result =
+                    converter.OdtCitationsParser.referenceMarkCitation(
+                        zoteroMark,
+                        true,
+                        true
+                    )
+                // Second item has only suppress-author set; no locator/label/prefix/suffix
+                const meta1 = result.metadata![1]
+                expect(meta1.locator).to.equal(undefined)
+                expect(meta1.label).to.equal(undefined)
+                expect(meta1.prefix).to.equal(undefined)
+                expect(meta1.suffix).to.equal(undefined)
+            })
+
+            it("Mendeley legacy: metadata is extracted the same way as Zotero", () => {
+                // Mendeley legacy uses CSL_CITATION prefix (no ZOTERO_ITEM)
+                const mendeleyMark =
+                    "CSL_CITATION " +
+                    JSON.stringify({
+                        citationID: "odt-mendeley-test",
+                        properties: { noteIndex: 0 },
+                        citationItems: [
+                            {
+                                id: "m-ref-1",
+                                locator: "55",
+                                label: "chapter",
+                                prefix: "cf. ",
+                                itemData: {
+                                    id: "m-ref-1",
+                                    type: "book",
+                                    title: "Mendeley Book",
+                                    author: [{ family: "Davis", given: "Dan" }],
+                                    issued: { "date-parts": [[2017]] },
+                                },
+                            },
+                        ],
+                    })
+                const result =
+                    converter.OdtCitationsParser.referenceMarkCitation(
+                        mendeleyMark,
+                        true,
+                        true // retrieveMetadata
+                    )
+                expect(result.isCitation).to.equal(true)
+                expect(result.format).to.equal("mendeley_legacy")
+                expect(result.metadata).to.be.an("array").with.lengthOf(1)
+
+                const meta = result.metadata![0]
+                expect(meta.locator).to.equal("55")
+                expect(meta.label).to.equal("chapter")
+                expect(meta.prefix).to.equal("cf. ")
+                expect(meta.suffix).to.equal(undefined)
+                expect(meta.suppressAuthor).to.equal(undefined)
+            })
+
+            it("JabRef: metadata array is empty (no citation-level data available)", () => {
+                // JabRef reference marks contain only the citation key — no
+                // locators, prefixes, or author flags can be extracted.
+                const jabrefMark = "JABREF_Smith2020 CID_1 abc123"
+                const result =
+                    converter.OdtCitationsParser.referenceMarkCitation(
+                        jabrefMark,
+                        true,
+                        true // retrieveMetadata
+                    )
+                expect(result.isCitation).to.equal(true)
+                expect(result.format).to.equal("jabref")
+                // retrieveMetadata is true so metadata is present, but JabRef
+                // has no cite-item metadata to expose — the array is empty.
+                expect(result.metadata).to.be.an("array").with.lengthOf(0)
+            })
+        })
     })
 })

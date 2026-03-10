@@ -62,6 +62,67 @@ interface ErrorObject {
 }
 
 // ---------------------------------------------------------------------------
+// Citation item metadata
+// ---------------------------------------------------------------------------
+
+/**
+ * Per-entry citation metadata, keyed by `entry_key`.
+ *
+ * This captures the cite-specific decorations that surround a bibliographic
+ * reference inside a single citation: page locators, textual prefixes /
+ * suffixes, and author-rendering flags.  It is returned alongside the
+ * `entries` BibDB when `retrieveMetadata` is `true` on a static method call.
+ *
+ * Field availability by format:
+ *
+ * | Field          | Zotero | Mendeley | EndNote (ODT placeholder) |
+ * |----------------|--------|----------|---------------------------|
+ * | locator        | ✅     | ✅       | –                         |
+ * | label          | ✅     | ✅       | –                         |
+ * | prefix         | ✅     | ✅       | –                         |
+ * | suffix         | ✅     | ✅       | –                         |
+ * | suppressAuthor | ✅     | ✅       | –                         |
+ * | authorOnly     | ✅     | ✅       | –                         |
+ * | authorYear     | –      | –        | –                         |
+ */
+export interface CitationItemMetadata {
+    /** The `entry_key` of the corresponding entry in the returned `entries` BibDB. */
+    entry_key: string
+    /**
+     * Pinpoint location within the cited work (page number, chapter, etc.).
+     * For CSL formats this is the raw `locator` string.
+     */
+    locator?: string
+    /**
+     * CSL locator type label (e.g. `"page"`, `"chapter"`, `"section"`).
+     * Only populated for CSL-based formats (Zotero, Mendeley).
+     */
+    label?: string
+    /** Text to prepend to the formatted citation (e.g. `"see "`, `"cf. "`). */
+    prefix?: string
+    /** Text to append to the formatted citation. */
+    suffix?: string
+    /**
+     * When `true`, author names are suppressed in the formatted output,
+     * leaving only the year (and locator) in parentheses: `(2020, p. 45)`.
+     * Only populated for CSL-based formats (Zotero, Mendeley).
+     */
+    suppressAuthor?: boolean
+    /**
+     * When `true`, only the author name is rendered with nothing else:
+     * `William T. Williams`.
+     * Only populated for CSL-based formats (Zotero, Mendeley).
+     */
+    authorOnly?: boolean
+    /**
+     * When `true`, the author name is rendered outside the parentheses while
+     * the year (and locator) remain inside: `William T. Williams (2020, p. 45)`.
+     * Not used by ODT formats; included for interface parity with the DOCX parser.
+     */
+    authorYear?: boolean
+}
+
+// ---------------------------------------------------------------------------
 // Static utility result types
 // ---------------------------------------------------------------------------
 
@@ -71,6 +132,11 @@ export interface CitationResult {
     entries?: Record<number, EntryObject>
     errors?: ErrorObject[]
     warnings?: ErrorObject[]
+    /**
+     * Per-entry citation metadata (locators, prefixes, suffixes, flags).
+     * Only populated when `retrieveMetadata` is `true` on the static method call.
+     */
+    metadata?: CitationItemMetadata[]
 }
 
 export interface BibliographyResult {
@@ -112,6 +178,7 @@ export class OdtCitationsParser {
     static referenceMarkCitation(
         markName: string,
         retrieve = true,
+        retrieveMetadata = false,
         entries: EntryObject[] = [],
         errors: ErrorObject[] = [],
         warnings: ErrorObject[] = [],
@@ -137,6 +204,8 @@ export class OdtCitationsParser {
         }
 
         // Extract citation data
+        const metadata: CitationItemMetadata[] = []
+
         if (format === "zotero" || format === "mendeley_legacy") {
             OdtCitationsParser.extractCslMarkData(
                 markName,
@@ -144,7 +213,8 @@ export class OdtCitationsParser {
                 entries,
                 errors,
                 warnings,
-                seenKeys
+                seenKeys,
+                retrieveMetadata ? metadata : undefined
             )
         } else if (format === "jabref") {
             OdtCitationsParser.extractJabRefMarkData(
@@ -160,13 +230,15 @@ export class OdtCitationsParser {
             bibDB[i + 1] = entry
         })
 
-        return {
+        const result: CitationResult = {
             isCitation: true,
             format,
             entries: bibDB,
             errors,
             warnings,
         }
+        if (retrieveMetadata) result.metadata = metadata
+        return result
     }
 
     /**
@@ -348,7 +420,8 @@ export class OdtCitationsParser {
         entries: EntryObject[],
         errors: ErrorObject[],
         warnings: ErrorObject[],
-        seenKeys: Set<string>
+        seenKeys: Set<string>,
+        metadata?: CitationItemMetadata[]
     ): void {
         const jsonStart = markName.indexOf("{")
         if (jsonStart === -1) {
@@ -368,7 +441,8 @@ export class OdtCitationsParser {
             entries,
             errors,
             warnings,
-            seenKeys
+            seenKeys,
+            metadata
         )
     }
 
@@ -414,10 +488,20 @@ export class OdtCitationsParser {
         entries: EntryObject[],
         errors: ErrorObject[],
         warnings: ErrorObject[],
-        seenKeys: Set<string>
+        seenKeys: Set<string>,
+        metadata?: CitationItemMetadata[]
     ): void {
         let citation: {
-            citationItems?: Array<{ itemData?: CSLEntry; id?: unknown }>
+            citationItems?: Array<{
+                itemData?: CSLEntry
+                id?: unknown
+                locator?: unknown
+                label?: unknown
+                prefix?: unknown
+                suffix?: unknown
+                "suppress-author"?: unknown
+                "author-only"?: unknown
+            }>
         }
         try {
             citation = JSON.parse(jsonStr) as typeof citation
@@ -433,27 +517,83 @@ export class OdtCitationsParser {
         if (items.length === 0) return
 
         const cslRecord: Record<string, CSLEntry> = {}
+        // Track resolved key per item index for metadata correlation
+        const itemKeys: Array<string | undefined> = []
         items.forEach((item, i) => {
-            if (!item.itemData) return
+            if (!item.itemData) {
+                itemKeys.push(undefined)
+                return
+            }
             const key =
                 item.itemData.id === undefined
                     ? `${source}_${i}`
                     : String(item.itemData.id)
-            if (seenKeys.has(key)) return
+            if (seenKeys.has(key)) {
+                itemKeys.push(key)
+                return
+            }
             cslRecord[key] = item.itemData
+            itemKeys.push(key)
         })
 
-        if (Object.keys(cslRecord).length === 0) return
+        // Map rawKey (CSL id string) → normalised entry_key produced by CSLParser
+        const rawKeyToEntryKey = new Map<string, string>()
 
-        const parser = new CSLParser(cslRecord)
-        const bibDB = parser.parse()
+        if (Object.keys(cslRecord).length > 0) {
+            const parser = new CSLParser(cslRecord)
+            const bibDB = parser.parse()
 
-        errors.push(...parser.errors)
-        warnings.push(...parser.warnings)
+            errors.push(...parser.errors)
+            warnings.push(...parser.warnings)
 
-        for (const entry of Object.values(bibDB)) {
-            seenKeys.add(entry.entry_key)
-            entries.push(entry)
+            for (const entry of Object.values(bibDB)) {
+                seenKeys.add(entry.entry_key)
+                entries.push(entry)
+            }
+            // Build rawKey → entry_key from cslRecord order matching bibDB order
+            const cslIds = Object.keys(cslRecord)
+            const bibEntries = Object.values(bibDB)
+            cslIds.forEach((cslId, i) => {
+                if (bibEntries[i])
+                    rawKeyToEntryKey.set(cslId, bibEntries[i].entry_key)
+            })
+        }
+
+        if (metadata) {
+            items.forEach((item, i) => {
+                const rawKey = itemKeys[i]
+                if (!rawKey) return
+                // Resolve normalised entry_key; fall back to rawKey if not found
+                const entry_key = rawKeyToEntryKey.get(rawKey) ?? rawKey
+                const meta: CitationItemMetadata = { entry_key }
+                if (
+                    item.locator !== undefined &&
+                    item.locator !== null &&
+                    item.locator !== ""
+                )
+                    meta.locator = String(item.locator)
+                if (
+                    item.label !== undefined &&
+                    item.label !== null &&
+                    item.label !== ""
+                )
+                    meta.label = String(item.label)
+                if (
+                    item.prefix !== undefined &&
+                    item.prefix !== null &&
+                    item.prefix !== ""
+                )
+                    meta.prefix = String(item.prefix)
+                if (
+                    item.suffix !== undefined &&
+                    item.suffix !== null &&
+                    item.suffix !== ""
+                )
+                    meta.suffix = String(item.suffix)
+                if (item["suppress-author"]) meta.suppressAuthor = true
+                if (item["author-only"]) meta.authorOnly = true
+                metadata.push(meta)
+            })
         }
     }
 
@@ -572,6 +712,7 @@ export class OdtCitationsParser {
             OdtCitationsParser.referenceMarkCitation(
                 name,
                 true,
+                false,
                 this.entries,
                 this.errors,
                 this.warnings,

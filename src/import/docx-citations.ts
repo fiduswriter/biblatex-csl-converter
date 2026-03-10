@@ -86,6 +86,69 @@ interface ErrorObject {
 }
 
 // ---------------------------------------------------------------------------
+// Citation item metadata
+// ---------------------------------------------------------------------------
+
+/**
+ * Per-entry citation metadata, keyed by `entry_key`.
+ *
+ * This captures the cite-specific decorations that surround a bibliographic
+ * reference inside a single citation: page locators, textual prefixes /
+ * suffixes, and author-rendering flags.  It is returned alongside the
+ * `entries` BibDB when `retrieveMetadata` is `true` on a static method call.
+ *
+ * Field availability by format:
+ *
+ * | Field          | Zotero | Mendeley | EndNote              | Citavi |
+ * |----------------|--------|----------|----------------------|--------|
+ * | locator        | ✅     | ✅       | ✅ (Pages)           | ✅ (PageRange.OriginalString) |
+ * | label          | ✅     | ✅       | –                    | –      |
+ * | prefix         | ✅     | ✅       | ✅                   | ✅     |
+ * | suffix         | ✅     | ✅       | ✅                   | –      |
+ * | suppressAuthor | ✅     | ✅       | –                    | –      |
+ * | authorOnly     | ✅     | ✅       | –                    | –      |
+ * | authorYear     | –      | –        | ✅ (AuthorYear attr) | –      |
+ */
+export interface CitationItemMetadata {
+    /** The `entry_key` of the corresponding entry in the returned `entries` BibDB. */
+    entry_key: string
+    /**
+     * Pinpoint location within the cited work (page number, chapter, etc.).
+     * For CSL formats this is the raw `locator` string; for EndNote it is the
+     * `<Pages>` element text; for Citavi it is `PageRange.OriginalString`.
+     */
+    locator?: string
+    /**
+     * CSL locator type label (e.g. `"page"`, `"chapter"`, `"section"`).
+     * Only populated for CSL-based formats (Zotero, Mendeley).
+     */
+    label?: string
+    /** Text to prepend to the formatted citation (e.g. `"see "`, `"cf. "`). */
+    prefix?: string
+    /** Text to append to the formatted citation. Not available for Citavi. */
+    suffix?: string
+    /**
+     * When `true`, author names are suppressed in the formatted output,
+     * leaving only the year (and locator) in parentheses: `(2020, p. 45)`.
+     * Only populated for CSL-based formats (Zotero, Mendeley).
+     */
+    suppressAuthor?: boolean
+    /**
+     * When `true`, only the author name is rendered with nothing else:
+     * `William T. Williams`.
+     * Only populated for CSL-based formats (Zotero, Mendeley).
+     */
+    authorOnly?: boolean
+    /**
+     * When `true`, the author name is rendered outside the parentheses while
+     * the year (and locator) remain inside: `William T. Williams (2020, p. 45)`.
+     * This reflects the `AuthorYear="1"` attribute on EndNote's `<Cite>` element.
+     * Only populated for EndNote citations.
+     */
+    authorYear?: boolean
+}
+
+// ---------------------------------------------------------------------------
 // Static utility result types
 // ---------------------------------------------------------------------------
 
@@ -95,6 +158,11 @@ export interface CitationResult {
     entries?: Record<number, EntryObject>
     errors?: ErrorObject[]
     warnings?: ErrorObject[]
+    /**
+     * Per-entry citation metadata (locators, prefixes, suffixes, flags).
+     * Only populated when `retrieveMetadata` is `true` on the static method call.
+     */
+    metadata?: CitationItemMetadata[]
 }
 
 export interface BibliographyResult {
@@ -150,6 +218,7 @@ export class DocxCitationsParser {
     static sdtCitation(
         sdtXml: string,
         retrieve = true,
+        retrieveMetadata = false,
         entries: EntryObject[] = [],
         errors: ErrorObject[] = [],
         warnings: ErrorObject[] = [],
@@ -176,6 +245,8 @@ export class DocxCitationsParser {
         }
 
         // Extract citation data
+        const metadata: CitationItemMetadata[] = []
+
         if (format === "mendeley_v3") {
             const b64 = tagVal.slice("MENDELEY_CITATION_v3_".length)
             DocxCitationsParser.extractCslJsonData(
@@ -184,7 +255,8 @@ export class DocxCitationsParser {
                 entries,
                 errors,
                 warnings,
-                seenKeys
+                seenKeys,
+                retrieveMetadata ? metadata : undefined
             )
         } else if (format === "citavi") {
             const instrMatch = sdtXml.match(
@@ -196,7 +268,8 @@ export class DocxCitationsParser {
                     entries,
                     errors,
                     warnings,
-                    seenKeys
+                    seenKeys,
+                    retrieveMetadata ? metadata : undefined
                 )
             } else {
                 warnings.push({
@@ -211,13 +284,15 @@ export class DocxCitationsParser {
             bibDB[i + 1] = entry
         })
 
-        return {
+        const result: CitationResult = {
             isCitation: true,
             format,
             entries: bibDB,
             errors,
             warnings,
         }
+        if (retrieveMetadata) result.metadata = metadata
+        return result
     }
 
     /**
@@ -262,13 +337,14 @@ export class DocxCitationsParser {
     static fieldCitation(
         instrText: string,
         retrieve = true,
+        retrieveMetadata = false,
+        extractWordNative = true,
         fldData?: string,
         options: DocxCitationsParserOptions = {},
         entries: EntryObject[] = [],
         errors: ErrorObject[] = [],
         warnings: ErrorObject[] = [],
-        seenKeys: Set<string> = new Set<string>(),
-        extractWordNative = true
+        seenKeys: Set<string> = new Set<string>()
     ): CitationResult {
         const upper = instrText.trim().toUpperCase()
 
@@ -298,6 +374,8 @@ export class DocxCitationsParser {
         }
 
         // Extract citation data
+        const metadata: CitationItemMetadata[] = []
+
         if (format === "zotero" || format === "mendeley_legacy") {
             const jsonStart = instrText.indexOf("{")
             if (jsonStart === -1) {
@@ -313,7 +391,8 @@ export class DocxCitationsParser {
                         entries,
                         errors,
                         warnings,
-                        seenKeys
+                        seenKeys,
+                        retrieveMetadata ? metadata : undefined
                     )
                 }
             }
@@ -324,7 +403,8 @@ export class DocxCitationsParser {
                 entries,
                 errors,
                 warnings,
-                seenKeys
+                seenKeys,
+                retrieveMetadata ? metadata : undefined
             )
         } else if (format === "citavi") {
             const b64Match = instrText.match(
@@ -336,7 +416,8 @@ export class DocxCitationsParser {
                     entries,
                     errors,
                     warnings,
-                    seenKeys
+                    seenKeys,
+                    retrieveMetadata ? metadata : undefined
                 )
             }
         } else if (format === "word_native") {
@@ -365,13 +446,15 @@ export class DocxCitationsParser {
             bibDB[i + 1] = entry
         })
 
-        return {
+        const result: CitationResult = {
             isCitation: true,
             format,
             entries: bibDB,
             errors,
             warnings,
         }
+        if (retrieveMetadata) result.metadata = metadata
+        return result
     }
 
     /**
@@ -419,10 +502,20 @@ export class DocxCitationsParser {
         entries: EntryObject[],
         errors: ErrorObject[],
         warnings: ErrorObject[],
-        seenKeys: Set<string>
+        seenKeys: Set<string>,
+        metadata?: CitationItemMetadata[]
     ): void {
         let citation: {
-            citationItems?: Array<{ itemData?: CSLEntry; id?: unknown }>
+            citationItems?: Array<{
+                itemData?: CSLEntry
+                id?: unknown
+                locator?: unknown
+                label?: unknown
+                prefix?: unknown
+                suffix?: unknown
+                "suppress-author"?: unknown
+                "author-only"?: unknown
+            }>
         }
         try {
             citation = JSON.parse(jsonStr) as typeof citation
@@ -438,27 +531,83 @@ export class DocxCitationsParser {
         if (items.length === 0) return
 
         const cslRecord: Record<string, CSLEntry> = {}
+        // Track the resolved key for each item index so we can attach metadata later
+        const itemKeys: Array<string | undefined> = []
         items.forEach((item, i) => {
-            if (!item.itemData) return
+            if (!item.itemData) {
+                itemKeys.push(undefined)
+                return
+            }
             const key =
                 item.itemData.id === undefined
                     ? `${source}_${i}`
                     : String(item.itemData.id)
-            if (seenKeys.has(key)) return
+            if (seenKeys.has(key)) {
+                itemKeys.push(key)
+                return
+            }
             cslRecord[key] = item.itemData
+            itemKeys.push(key)
         })
 
-        if (Object.keys(cslRecord).length === 0) return
+        // Map rawKey (CSL id string) → normalised entry_key produced by CSLParser
+        const rawKeyToEntryKey = new Map<string, string>()
 
-        const parser = new CSLParser(cslRecord)
-        const bibDB = parser.parse()
+        if (Object.keys(cslRecord).length > 0) {
+            const parser = new CSLParser(cslRecord)
+            const bibDB = parser.parse()
 
-        errors.push(...parser.errors)
-        warnings.push(...parser.warnings)
+            errors.push(...parser.errors)
+            warnings.push(...parser.warnings)
 
-        for (const entry of Object.values(bibDB)) {
-            seenKeys.add(entry.entry_key)
-            entries.push(entry)
+            for (const entry of Object.values(bibDB)) {
+                seenKeys.add(entry.entry_key)
+                entries.push(entry)
+            }
+            // Build rawKey → entry_key from cslRecord order matching bibDB order
+            const cslIds = Object.keys(cslRecord)
+            const bibEntries = Object.values(bibDB)
+            cslIds.forEach((cslId, i) => {
+                if (bibEntries[i])
+                    rawKeyToEntryKey.set(cslId, bibEntries[i].entry_key)
+            })
+        }
+
+        if (metadata) {
+            items.forEach((item, i) => {
+                const rawKey = itemKeys[i]
+                if (!rawKey) return
+                // Resolve normalised entry_key; fall back to rawKey if not found
+                const entry_key = rawKeyToEntryKey.get(rawKey) ?? rawKey
+                const meta: CitationItemMetadata = { entry_key }
+                if (
+                    item.locator !== undefined &&
+                    item.locator !== null &&
+                    item.locator !== ""
+                )
+                    meta.locator = String(item.locator)
+                if (
+                    item.label !== undefined &&
+                    item.label !== null &&
+                    item.label !== ""
+                )
+                    meta.label = String(item.label)
+                if (
+                    item.prefix !== undefined &&
+                    item.prefix !== null &&
+                    item.prefix !== ""
+                )
+                    meta.prefix = String(item.prefix)
+                if (
+                    item.suffix !== undefined &&
+                    item.suffix !== null &&
+                    item.suffix !== ""
+                )
+                    meta.suffix = String(item.suffix)
+                if (item["suppress-author"]) meta.suppressAuthor = true
+                if (item["author-only"]) meta.authorOnly = true
+                metadata.push(meta)
+            })
         }
     }
 
@@ -471,7 +620,8 @@ export class DocxCitationsParser {
         entries: EntryObject[],
         errors: ErrorObject[],
         warnings: ErrorObject[],
-        seenKeys: Set<string>
+        seenKeys: Set<string>,
+        metadata?: CitationItemMetadata[]
     ): void {
         let xmlPayload = ""
 
@@ -499,7 +649,8 @@ export class DocxCitationsParser {
                 entries,
                 errors,
                 warnings,
-                seenKeys
+                seenKeys,
+                metadata
             )
         } else {
             warnings.push({
@@ -522,7 +673,8 @@ export class DocxCitationsParser {
         entries: EntryObject[],
         errors: ErrorObject[],
         warnings: ErrorObject[],
-        seenKeys: Set<string>
+        seenKeys: Set<string>,
+        metadata?: CitationItemMetadata[]
     ): void {
         let payload: CitaviInput
         try {
@@ -537,12 +689,18 @@ export class DocxCitationsParser {
         }
 
         // Check if the payload has embedded references
+        const typedPayload = payload as {
+            Entries?: Array<{
+                Reference?: { Id?: string } | null
+                ReferenceId?: string
+                Prefix?: string
+                PageRange?: { OriginalString?: string } | null
+            }>
+        }
         const hasEmbeddedReferences =
             !Array.isArray(payload) &&
-            Array.isArray((payload as { Entries?: unknown[] }).Entries) &&
-            (
-                payload as { Entries: Array<{ Reference?: unknown }> }
-            ).Entries!.some(
+            Array.isArray(typedPayload.Entries) &&
+            typedPayload.Entries!.some(
                 (e) => e.Reference !== null && e.Reference !== undefined
             )
 
@@ -564,6 +722,28 @@ export class DocxCitationsParser {
             if (!seenKeys.has(entry.entry_key)) {
                 seenKeys.add(entry.entry_key)
                 entries.push(entry)
+            }
+        }
+
+        if (metadata && typedPayload.Entries) {
+            // After insertion, re-scan entries to map ReferenceId → entry_key
+            // CitaviParser uses ReferenceId (UUID) as entry_key when available
+            for (const citaviEntry of typedPayload.Entries) {
+                const refId = citaviEntry.ReferenceId
+                if (!refId) continue
+                // Find the entry whose key matches (CitaviParser normalises UUIDs)
+                const entry = entries.find(
+                    (e) =>
+                        e.entry_key === refId ||
+                        e.entry_key.startsWith(refId.slice(0, 8))
+                )
+                const entry_key = entry?.entry_key ?? refId
+                const meta: CitationItemMetadata = { entry_key }
+                if (citaviEntry.Prefix) meta.prefix = citaviEntry.Prefix
+                const pageStr = citaviEntry.PageRange?.OriginalString
+                if (pageStr !== undefined && pageStr !== null && pageStr !== "")
+                    meta.locator = pageStr
+                metadata.push(meta)
             }
         }
     }
@@ -601,14 +781,27 @@ export class DocxCitationsParser {
         entries: EntryObject[],
         errors: ErrorObject[],
         warnings: ErrorObject[],
-        seenKeys: Set<string>
+        seenKeys: Set<string>,
+        metadata?: CitationItemMetadata[]
     ): void {
         const records: EndNoteRecord[] = []
 
-        const citeRe = /<Cite>([\s\S]*?)<\/Cite>/g
+        // When collecting metadata, capture per-Cite fields before deduplication
+        interface CiteFields {
+            recNum: string
+            prefix?: string
+            suffix?: string
+            pages?: string
+            authorYear?: boolean
+        }
+        const citeFieldsList: CiteFields[] = []
+
+        // Match the full opening tag (which may carry AuthorYear="1") plus body
+        const citeRe = /<Cite(\s[^>]*)?>([\s\S]*?)<\/Cite>/g
         let citeMatch: RegExpExecArray | null
         while ((citeMatch = citeRe.exec(xml)) !== null) {
-            const citeXml = citeMatch[1]
+            const citeAttrs = citeMatch[1] ?? ""
+            const citeXml = citeMatch[2]
             const recordMatch = /<record>([\s\S]*?)<\/record>/.exec(citeXml)
             if (recordMatch) {
                 const record = DocxCitationsParser.parseEndNoteRecordXml(
@@ -618,6 +811,41 @@ export class DocxCitationsParser {
                 if (key && !seenKeys.has(key)) {
                     records.push(record)
                     seenKeys.add(key)
+                }
+
+                if (metadata && key) {
+                    // AuthorYear="1" on the opening <Cite> tag means show author outside parens
+                    const authorYear = /AuthorYear\s*=\s*["']?1["']?/i.test(
+                        citeAttrs
+                    )
+
+                    const prefixMatch =
+                        /<Prefix[^>]*>([\s\S]*?)<\/Prefix>/i.exec(citeXml)
+                    const suffixMatch =
+                        /<Suffix[^>]*>([\s\S]*?)<\/Suffix>/i.exec(citeXml)
+                    const pagesMatch = /<Pages[^>]*>([\s\S]*?)<\/Pages>/i.exec(
+                        citeXml
+                    )
+
+                    citeFieldsList.push({
+                        recNum: key,
+                        prefix: prefixMatch
+                            ? DocxCitationsParser.stripStyleTagsStatic(
+                                  prefixMatch[1]
+                              )
+                            : undefined,
+                        suffix: suffixMatch
+                            ? DocxCitationsParser.stripStyleTagsStatic(
+                                  suffixMatch[1]
+                              )
+                            : undefined,
+                        pages: pagesMatch
+                            ? DocxCitationsParser.stripStyleTagsStatic(
+                                  pagesMatch[1]
+                              )
+                            : undefined,
+                        authorYear,
+                    })
                 }
             }
         }
@@ -630,6 +858,25 @@ export class DocxCitationsParser {
         errors.push(...result.errors)
         warnings.push(...result.warnings)
         entries.push(...Object.values(result.entries))
+
+        if (metadata) {
+            // EndNoteParser uses the rec-number as the entry_key prefix; find by matching
+            for (const cite of citeFieldsList) {
+                const entry = entries.find(
+                    (e) =>
+                        e.entry_key === cite.recNum ||
+                        e.entry_key === `EN${cite.recNum}` ||
+                        e.entry_key.endsWith(cite.recNum)
+                )
+                const entry_key = entry?.entry_key ?? cite.recNum
+                const meta: CitationItemMetadata = { entry_key }
+                if (cite.prefix) meta.prefix = cite.prefix
+                if (cite.suffix) meta.suffix = cite.suffix
+                if (cite.pages) meta.locator = cite.pages
+                if (cite.authorYear) meta.authorYear = true
+                metadata.push(meta)
+            }
+        }
     }
 
     /**
@@ -966,6 +1213,7 @@ export class DocxCitationsParser {
             DocxCitationsParser.sdtCitation(
                 m[1],
                 true,
+                false,
                 this.entries,
                 this.errors,
                 this.warnings,
@@ -1067,13 +1315,14 @@ export class DocxCitationsParser {
                 DocxCitationsParser.fieldCitation(
                     instr,
                     true,
+                    false, // Don't retrieve metadata here; defer to parseSourcesXml
+                    false, // Don't extract Word-native here; defer to parseSourcesXml
                     frame.fldData,
                     this.options,
                     this.entries,
                     this.errors,
                     this.warnings,
-                    this.seenKeys,
-                    false // Don't extract Word-native here; defer to parseSourcesXml
+                    this.seenKeys
                 )
             } else if (
                 stack.length > 0 &&

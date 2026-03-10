@@ -47,9 +47,11 @@ export type {
     DocxCitationsParserOptions,
     CitationResult as DocxCitationResult,
     BibliographyResult as DocxBibliographyResult,
+    CitationItemMetadata as DocxCitationItemMetadata,
 } from "./import/docx-citations"
 export type {
     OdtCitationsParseResult,
     CitationResult as OdtCitationResult,
     BibliographyResult as OdtBibliographyResult,
+    CitationItemMetadata as OdtCitationItemMetadata,
 } from "./import/odt-citations"
