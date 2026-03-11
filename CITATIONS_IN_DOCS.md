@@ -770,25 +770,40 @@ The format is `{Author, Year #RecordNumber}`. The document is processed by EndNo
 
 Citavi is DOCX-only. Saving a Citavi-annotated DOCX as ODT converts all fields to static text.
 
-**Citation item metadata**: Citavi's proprietary JSON format includes **page range information and prefix text** within each entry in the `Entries` array. Based on analysis of the [thomjur/docx-citavi-parser](https://github.com/thomjur/docx-citavi-parser) project and real-world examples, the structure is:
+**Citation item metadata**: Citavi's proprietary JSON format includes **page range information and prefix text** within each entry in the `Entries` array. Based on analysis of the [thomjur/docx-citavi-parser](https://github.com/thomjur/docx-citavi-parser) project and real-world examples (including confirmed output from Citavi 6.14.0.0), the structure is:
 
 **Prefix (`Entries[].Prefix`)**:
-- String containing text to appear before the citation (e.g., `"Vgl. "` for German "cf.", `"see "`)
+- String containing text to appear before the citation (e.g., `"Vgl. "` for German "cf.", `"See "`)
 - **Only present when a prefix is set**; omitted entirely when no prefix is used
 - Appears at the entry level, same level as `PageRange` and `Reference`
+- Citavi formats the prefix according to citation style rules (e.g. auto-capitalising the first word in a footnote)
+
+**Suffix (`Entries[].Suffix`)**:
+- String containing text to appear after the citation (e.g., `"etc."`)
+- **Only present when a suffix is set**; omitted entirely when no suffix is used
+- Appears at the entry level alongside `Prefix`, `PageRange`, and `Reference`
+- Not observed in any real-world examples yet; existence confirmed by the Citavi manual
 
 **PageRange at Entry Level (`Entries[].PageRange`)**:
 - Object containing citation-specific page range data, stored at the same level as `Reference` and `Prefix` within each entry
-- `OriginalString`: The formatted page range as a string (e.g., `"100-105"`, `"69"`) — **at the PageRange level**
+- `OriginalString`: The formatted page range as a string (e.g., `"100-105"`, `"69"`) — **at the PageRange level**; absent when no pages are set
 - `StartPage` and `EndPage` objects, each containing:
   - `OriginalString`: The page number as a string (e.g., `"100"`, `"105"`) — **only present when pages are set**
-  - `PrettyString`: Formatted/display version of the page number (e.g., `"100"`)
+  - `PrettyString`: Formatted/display version of the page number (e.g., `"100"`, `"xvii"`)
   - `Number`: Numeric value of the page (e.g., `100`) — **only present when page is fully numeric**
   - `IsFullyNumeric`: Boolean indicating if the page number is purely numeric
-  - `NumberingType`: Integer enum (0 = Arabic numerals; other values unknown)
-  - `NumeralSystem`: Integer enum (0 = Western/Arabic; other values unknown)
-- `NumberingType` and `NumeralSystem` at the PageRange level (may duplicate the page-level values)
+  - `NumberingType`: Integer enum controlling what the locator numbers represent and thus what prefix the citation style uses (e.g. `p.`, `Col.`, `Nr.`, `§`). The Citavi manual names five types — pages (default), columns, section numbers, margin numbers, and other — but **does not state which integer corresponds to which type**. Based on the assumption that they are listed in order starting from 0, the likely mapping is:
+    - `0` = Pages (default) — confirmed observed value
+    - `1` = Columns (`Col.`) — integer value inferred, not confirmed
+    - `2` = Section numbers (`Nr.` or `§`) — integer value inferred, not confirmed
+    - `3` = Margin numbers — integer value inferred, not confirmed
+    - `4` = Other — allows manually entered complex ranges with multiple prefixes (e.g. `§14 Col. 12`); integer value inferred, not confirmed; `OriginalString` likely carries the full custom locator text
+  - `NumeralSystem`: Integer enum for the numeral system. The Citavi manual mentions Arabic and Roman numerals but **does not state which integer corresponds to which**. Based on the assumption that Arabic (the default) is `0`:
+    - `0` = Arabic numerals (default, e.g. `14`) — confirmed observed value
+    - `1` = Roman numerals (e.g. `xiv`) — integer value inferred, not confirmed
+- `NumberingType` and `NumeralSystem` at the PageRange level mirror the page-level values and apply to the range as a whole
 - **When pages are empty**: PageRange object exists but StartPage/EndPage lack `OriginalString`, `Number`, and `PrettyString`
+- **When only a single page is cited**: `StartPage` is fully populated; `EndPage` exists but is empty (no `OriginalString`, `PrettyString`, or `Number`, and `IsFullyNumeric` is `false`) — the same empty-sub-object pattern as when no pages are set at all. The `PageRange.OriginalString` contains just the single page number (e.g. `"306"`).
 
 **PageRange at Reference Level (`Reference.PageRange`)**:
 - In the bibliographic `Reference` object, `PageRange` may be stored as a **serialized XML string** instead of a JSON object
@@ -797,6 +812,7 @@ Citavi is DOCX-only. Saving a Citavi-annotated DOCX as ODT converts all fields t
 - XML elements: `<sp>` (start page), `<ep>` (end page, omitted for single pages), `<n>` (number), `<in>` (is numeric?), `<os>` (original string), `<ps>` (parsed string?)
 - The top-level `<os>` contains the formatted range string (e.g., `"593-596"` or `"69"`)
 - This represents the page range for the reference itself, not citation-specific locators
+- **This format is confirmed to still be used in Citavi 6.14.0.0** — the open question about whether it was legacy-only is resolved; parsers must handle it in all versions
 
 **FormattedText**:
 - Object containing pre-rendered citation text with formatting metadata
@@ -811,28 +827,48 @@ Citavi is DOCX-only. Saving a Citavi-annotated DOCX as ODT converts all fields t
 - **Multi-unit structure**: Citations with prefixes or complex formatting are split into multiple TextUnits. For example, a citation with prefix `"Vgl. "` and italicized author name has three units: the prefix (Neutral), the author name (Italic), and the rest of the citation (Neutral).
 - The FormattedText preserves rich formatting that may be lost in the plain `Text` field
 
+**`Reference` object additional fields** (beyond those shared with the standalone Citavi JSON import):
+- **`Reference.SourceOfBibliographicInformation`**: String recording where the bibliographic metadata was originally imported from (e.g. `"CrossRef"`, `"PubMed"`). Absent when not known or not imported from an external source.
+- **`Reference.Periodical.Issn`**: Print ISSN of the journal (e.g. `"1865-7362"`). Complement to `Eissn` (electronic ISSN). Either or both may be present.
+- **`Reference.BibTeXKey`** and **`Reference.CitationKey`**: Both optional — absent in some real-world examples even in 6.14.0.0.
+
 Additional top-level and entry-level fields:
 - **`Tag`**: Duplicates the `w:tag` attribute value (e.g., `"CitaviPlaceholder#3162ebc6-3d3c-4cee-8909-ce083d4b7d58"`)
 - **`Text`**: Plain-text rendered citation (e.g., `"[1]"` or `"Vgl. Bitzios u. a.: Dissonance..., hier S. 100-105."`)
 - **`Entries[].Id`**: UUID identifying the placeholder entry instance
 - **`Entries[].ReferenceId`**: UUID linking to the Reference object
 - **`Entries[].RangeLength`**: Integer (purpose unknown; possibly character count or citation span)
-- **`Entries[].UseNumberingTypeOfParentDocument`**: Boolean (likely controls whether to use document or citation-specific page numbering)
-- **`Entries[].UseStandardPrefix`**: Boolean (purpose unknown; possibly controls whether to use style's default prefix or custom prefix)
+- **`Entries[].UseNumberingTypeOfParentDocument`**: Boolean — when `true`, the `NumberingType` for the locator is inherited from the document's default rather than set per-citation
+- **`Entries[].UseStandardPrefix`**: Boolean — when `true`, the citation style's own default prefix is used rather than any custom `Prefix` string set on this entry; when `false` (and `Prefix` is absent), no prefix is added. **Can be absent entirely** (observed in real files); absence appears equivalent to `false`.
+- **`Entries[].AssociateWithKnowledgeItemId`**: UUID string linking this citation entry to a Citavi knowledge item (quotation, thought, or summary). Present when the citation was inserted from the Citavi knowledge panel rather than directly from the reference list. Absent when the citation has no associated knowledge item.
+- **`Entries[].QuotationType`**: Integer indicating what type of knowledge item the citation is associated with (e.g. direct quotation, paraphrase, summary). Observed value: `1`. Full enum mapping not yet known. Absent when `AssociateWithKnowledgeItemId` is absent.
+- **`Entries[].BibliographyEntry`**: String controlling whether and where this reference appears in the bibliography. Known values:
+  - absent / default: reference appears in both in-text citation and bibliography (normal behaviour)
+  - `"/bibonly"`: reference appears only in the bibliography, not as an in-text citation
+  - `"/nobib"`: reference appears only as an in-text citation, not in the bibliography
+  - Not yet observed in real-world examples; confirmed by Citavi manual
+- **`Entries[].RuleSet`**: String or enum controlling which rule set (formatting variant) the citation style uses for this entry. The citation style determines whether a reference goes in-text or in a footnote; this field lets the author override that for a single citation (e.g. to use the "bibliography" rule set for one in-text citation). Not yet observed in real-world examples; confirmed by Citavi manual.
+- **`Entries[].FormatOption`**: Integer (1, 2, or 3) selecting among the citation style's optional formatting variants for this entry. Commonly used to suppress or force "ibid."-style short forms when the same source is cited consecutively. Not yet observed in real-world examples; confirmed by Citavi manual.
+- **`Entries[].InsertAs`**: String or enum overriding where the citation is physically inserted (in-text vs. footnote), independently of what the citation style normally dictates. Not yet observed in real-world examples; confirmed by Citavi manual.
 
 **Confirmed support**:
 - ✅ **Prefix text**: Stored in `Entries[].Prefix` field
+- ✅ **Suffix text**: Stored in `Entries[].Suffix` field (confirmed by manual; not yet seen in real examples)
 - ✅ **Page ranges**: Stored in `Entries[].PageRange` with full metadata (start, end, numbering type, numeral system)
+- ✅ **Locator types beyond pages**: `NumberingType` covers columns, section/margin numbers, and free-form locators (exact integer values beyond `0` inferred from manual, not confirmed)
+- ✅ **Roman numerals**: `NumeralSystem` can switch the numeral display from Arabic to Roman (exact integer value inferred from manual, not confirmed)
+- ✅ **Bibliography-only / no-bibliography**: `BibliographyEntry` field with `/bibonly` or `/nobib` values
+- ✅ **Rule set override**: `RuleSet` field per entry
+- ✅ **Format options**: `FormatOption` field (values 1, 2, 3) per entry
+- ✅ **Insert-as override**: `InsertAs` field per entry
 
 **Unknown/undocumented**:
-- Whether **suffix** text is supported at the entry level (no `Suffix` field observed in any examples; likely not supported or uses a different mechanism)
-- Whether **author suppression** or other CSL-style cite modifiers are available
-- Whether **locator labels** (chapter, section, figure, etc.) beyond page numbers are supported or if `PageRange` only handles numeric/page locators
-- The meaning and purpose of `RangeLength` (observed values: 3, 255 in examples)
-- The exact meaning of `NumberingType` and `NumeralSystem` enum values beyond 0 (Arabic/Western numerals)
-- The purpose of `UseStandardPrefix` boolean (possibly controls whether a style-specific default prefix is applied vs. custom prefix)
-- Whether the XML-serialized `Reference.PageRange` format is still used in current versions (6.14.0.0) or only in older Citavi versions
-- How `FormattedText.TextUnits` FontStyle properties beyond `Neutral` and `Italic` work
+- Whether **author suppression** or other CSL-style cite modifiers (e.g. `suppress-author`) are available
+- The meaning and purpose of `RangeLength` (observed values: 8, 15, 18, 27, 42 in real files; no clear pattern)
+- The exact integer values for `NumberingType` (beyond `0`) and `NumeralSystem` (beyond `0`) — the mappings in this document are inferred from the order the manual lists the options, not from observed data
+- The exact serialised form for `RuleSet`, `FormatOption`, and `InsertAs` (confirmed to exist by manual but not yet observed in real files)
+- The full `QuotationType` enum mapping (only value `1` observed so far)
+- How `FormattedText.TextUnits` FontStyle properties beyond `Neutral` and `Italic` work (e.g. `Bold`, `Underline`)
 
 #### Citavi (DOCX)
 
