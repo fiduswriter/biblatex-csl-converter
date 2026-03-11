@@ -730,6 +730,35 @@ The decoded XML structure (shown unescaped for readability):
 
 Key fields: `<RecNum>` is the record number in the local EndNote library; `<foreign-keys>` carries the library database ID and a GUID; `<Prefix>` is optional citation prefix text. Multiple simultaneous citations use multiple `<Cite>` elements inside the single `<EndNote>` root.
 
+**Important: `<pages>` is a reference field, not a citation locator.** The `<pages>` element inside `<record>` stores the page range of the published article (e.g. `<pages>337-360</pages>`). It must **not** be confused with the `<Pages>` element that can appear as a direct child of `<Cite>` (outside `<record>`), which *is* a per-citation locator. A parser must restrict its locator search to the portion of the `<Cite>` element that precedes the `<record>` block.
+
+**`<pub-dates>` is unreliable free-text.** EndNote allows users to type arbitrary text in the publication-date field, so the content of `<pub-dates><date>` cannot be relied upon to conform to any fixed format. Real-world examples include:
+
+| `<date>` content | Normalised to | Notes |
+|---|---|---|
+| `2009` | `2009` | Bare four-digit year |
+| `4` | `YYYY-04` | Bare integer 1–12 — Mendeley-style month number, combined with `<year>` |
+| `April 2005` | `2005-04` | Month name + year (any order) |
+| `Apr 2005` | `2005-04` | Abbreviated month name |
+| `2005 April` | `2005-04` | Year-first variant |
+| `Apr. 2005` | `2005-04` | Abbreviated month name with period |
+| `01 Jan. 2020` | `2020-01-01` | DD Mon. YYYY |
+| `August 02` | `YYYY-08-02` | Month + day, no year — day combined with `<year>` |
+| `2012/07/01/` | `2012-07-01` | YYYY/MM/DD/ with trailing slash |
+| `2021/10/01/` | `2021-10-01` | same |
+| `2012/06/01` | `2012-06-01` | YYYY/MM/DD without trailing slash |
+| `2009/001/001` | *(discarded)* | EndNote pseudo-date — month token `001` is out of range; fall back to `<year>` |
+| `10/31/print` | *(discarded)* | Non-numeric third token — no usable year; fall back to `<year>` |
+| `Mar` | `Mar` (verbatim) | Bare month name with no `<year>` available — kept as-is |
+| `15-17 June 2021` | `15-17 June 2021` (verbatim) | Complex range that cannot be normalised — kept as-is |
+
+A robust parser should:
+1. Try to normalise the `<pub-dates><date>` text to an ISO 8601 / EDTF string using best-effort heuristics (see table above).
+2. Silently discard the `<pub-dates>` value and fall back to the plain `<year>` element only when the text contains no recoverable date information at all — specifically the `YYYY/NNN/NNN` pseudo-date format (invalid month/day ranges) and similar non-date constructs.
+3. For anything else that cannot be fully normalised, keep the value verbatim so that human-readable date information is not silently lost.
+
+The authoritative year is always in `<dates><year>` and should be used as the fallback source of truth.
+
 The bibliography uses `ADDIN EN.REFLIST`. It is a multi-paragraph field: the `begin`, `instrText`, and `separate` markers are all in the **first** bibliography paragraph, each entry then occupies its own `<w:p>` with `<w:pStyle w:val="EndNoteBibliography"/>`, and the `end` marker appears in the last bibliography paragraph:
 
 ```xml

@@ -1017,35 +1017,14 @@ export class EndNoteParser {
                 } else {
                     const text = this.getTextContent(d)
                     if (text) {
-                        // Mendeley exports month as a bare integer (e.g. "4"
-                        // for April).  When the text is a pure integer in the
-                        // range 1–12 AND we already have a base year, treat it
-                        // as a month number and build a proper YYYY-MM string.
                         const trimmed = text.trim()
-                        const monthNum = parseInt(trimmed)
-                        if (
-                            baseYear &&
-                            !isNaN(monthNum) &&
-                            monthNum >= 1 &&
-                            monthNum <= 12 &&
-                            String(monthNum) === trimmed
-                        ) {
-                            dateTexts.push(
-                                `${baseYear}-${trimmed.padStart(2, "0")}`
-                            )
-                        } else if (
-                            // EndNote's XML export encodes pub-dates as
-                            // "YYYY/NNN/NNN" (year / issue / page-ish tokens).
-                            // This is not a real calendar date — discard it and
-                            // let the code fall through to the plain <year>
-                            // element so we don't end up with a nonsense date
-                            // string like "2009/001/001".
-                            /^\d{4}\/\d+\/\d+$/.test(trimmed)
-                        ) {
-                            // intentionally ignored
-                        } else {
-                            dateTexts.push(text)
+                        const parsed = this.parsePubDateText(trimmed, baseYear)
+                        if (parsed) {
+                            dateTexts.push(parsed)
                         }
+                        // If parsePubDateText returns null the text could not
+                        // be interpreted as a real calendar date — skip it and
+                        // let the fallback below use the plain <year> element.
                     }
                 }
             }
@@ -1074,6 +1053,183 @@ export class EndNoteParser {
         }
 
         return ""
+    }
+
+    /**
+     * Try to turn a free-text pub-date string from an EndNote `<date>` element
+     * into a valid EDTF / ISO-8601 date string (YYYY, YYYY-MM, or YYYY-MM-DD),
+     * or preserve it verbatim when it carries human-readable date information
+     * that cannot be normalised.
+     *
+     * EndNote lets users type arbitrary text in the publication-date field, so
+     * the content is unreliable.  Known patterns encountered in real exports:
+     *
+     *   "2009"           → "2009"       bare four-digit year
+     *   "4"              → "YYYY-04"    bare integer 1–12 (Mendeley month)
+     *   "April 2005"     → "2005-04"    month-name + year (any order)
+     *   "Apr 2005"       → "2005-04"    abbreviated month name
+     *   "2005 April"     → "2005-04"    year-first variant
+     *   "Apr. 2005"      → "2005-04"    abbreviated with period
+     *   "August 02"      → "YYYY-08-02" month + day, no year → uses baseYear
+     *   "01 Jan. 2020"   → "2020-01-01" DD Mon. YYYY
+     *   "2012/07/01/"    → "2012-07-01" YYYY/MM/DD/ (trailing slash)
+     *   "2021/10/01/"    → "2021-10-01" same
+     *   "2012/06/01"     → "2012-06-01" YYYY/MM/DD (no trailing slash)
+     *   "2009/001/001"   → null         EndNote pseudo-date (invalid month 001)
+     *   "10/31/print"    → null         MM/DD/garbage — no usable year
+     *   "15-17 June 2021"→ (verbatim)   complex range — kept as-is
+     *   "Mar"            → (verbatim)   bare month name, no baseYear available
+     *
+     * The only values actively discarded (returning `null`, causing the caller
+     * to fall back to the plain `<year>` element) are those that contain no
+     * recoverable date information at all — specifically the EndNote
+     * `YYYY/NNN/NNN` pseudo-date format and similar non-date constructs.
+     * Everything else is either normalised to ISO 8601 or returned verbatim.
+     *
+     * @param trimmed   Already-trimmed text content of the `<date>` element.
+     * @param baseYear  Year string from the sibling `<year>` element, used when
+     *                  the pub-date text supplies only a month (and/or day).
+     * @returns A date string (normalised or verbatim), or `null` to signal
+     *          "no usable date information here".
+     */
+    private parsePubDateText(trimmed: string, baseYear: string): string | null {
+        // Shared month-name lookup (full names + standard abbreviations).
+        const monthMap: Record<string, string> = {
+            january: "01",
+            february: "02",
+            march: "03",
+            april: "04",
+            may: "05",
+            june: "06",
+            july: "07",
+            august: "08",
+            september: "09",
+            october: "10",
+            november: "11",
+            december: "12",
+            jan: "01",
+            feb: "02",
+            mar: "03",
+            apr: "04",
+            jun: "06",
+            jul: "07",
+            aug: "08",
+            sep: "09",
+            oct: "10",
+            nov: "11",
+            dec: "12",
+        }
+
+        // Helper: normalise a month token ("Jan", "Jan.", "january") → "01" | undefined
+        const resolveMonth = (tok: string): string | undefined =>
+            monthMap[tok.replace(/\.$/, "").toLowerCase()]
+
+        // ── 1. Bare four-digit year ───────────────────────────────────────────
+        if (/^\d{4}$/.test(trimmed)) {
+            return trimmed
+        }
+
+        // ── 2. Bare integer 1–12 — Mendeley month number ─────────────────────
+        //    Must be an exact integer string with no leading zeros so that we
+        //    don't accidentally treat "01" (a day token elsewhere) as a month.
+        const bareInt = parseInt(trimmed)
+        if (
+            !isNaN(bareInt) &&
+            bareInt >= 1 &&
+            bareInt <= 12 &&
+            String(bareInt) === trimmed
+        ) {
+            if (!baseYear) return null
+            return `${baseYear}-${trimmed.padStart(2, "0")}`
+        }
+
+        // ── 3. Slash-separated numeric dates: YYYY/MM/DD[/] ──────────────────
+        //    EndNote sometimes emits "2012/07/01/" (note trailing slash).
+        //    We accept both with and without the trailing slash and validate the
+        //    month/day ranges so that the "2009/001/001" pseudo-date (invalid
+        //    month 001) is correctly rejected here.
+        //    Tokens are limited to 1–2 digits so that zero-padded issue numbers
+        //    like "001" (3 digits) are always rejected rather than silently
+        //    parsed as integer 1 and accepted as a valid month.
+        const slashDateRe = /^(\d{4})\/(\d{1,2})\/(\d{1,2})\/?$/
+        const slashMatch = slashDateRe.exec(trimmed)
+        if (slashMatch) {
+            const mm = parseInt(slashMatch[2])
+            const dd = parseInt(slashMatch[3])
+            if (mm >= 1 && mm <= 12 && dd >= 1 && dd <= 31) {
+                // Valid calendar date — normalise to ISO 8601 with 2-digit padding
+                return `${slashMatch[1]}-${String(mm).padStart(
+                    2,
+                    "0"
+                )}-${String(dd).padStart(2, "0")}`
+            }
+            // Out-of-range values → not a real calendar date
+            return null
+        }
+        // Slash-date with 3+-digit tokens (e.g. "2009/001/001") — pseudo-date
+        if (/^\d{4}\/\d{3,}\/\d+$|^\d{4}\/\d+\/\d{3,}/.test(trimmed)) {
+            return null
+        }
+
+        // ── 4. "DD Mon. YYYY" — e.g. "01 Jan. 2020" ─────────────────────────
+        const ddMonYearRe = /^(\d{1,2})\s+([a-z]+\.?)\s+(\d{4})$/i
+        const ddMonYearMatch = ddMonYearRe.exec(trimmed)
+        if (ddMonYearMatch) {
+            const monthNum = resolveMonth(ddMonYearMatch[2])
+            if (monthNum) {
+                const day = parseInt(ddMonYearMatch[1])
+                if (day >= 1 && day <= 31) {
+                    return `${
+                        ddMonYearMatch[3]
+                    }-${monthNum}-${ddMonYearMatch[1].padStart(2, "0")}`
+                }
+            }
+        }
+
+        // ── 5. "Month YYYY" or "YYYY Month" — e.g. "April 2005", "2005 Apr." ─
+        const monthYearRe = /^([a-z]+\.?)\s+(\d{4})$|^(\d{4})\s+([a-z]+\.?)$/i
+        const myMatch = monthYearRe.exec(trimmed)
+        if (myMatch) {
+            const monthStr = myMatch[1] ?? myMatch[4]
+            const yearStr = myMatch[2] ?? myMatch[3]
+            const monthNum = resolveMonth(monthStr)
+            if (monthNum) {
+                return `${yearStr}-${monthNum}`
+            }
+            // Recognised the year but not the month name — return just the year.
+            return yearStr
+        }
+
+        // ── 6. "Month DD" — e.g. "August 02" — use baseYear ─────────────────
+        const monthDayRe = /^([a-z]+\.?)\s+(\d{1,2})$/i
+        const mdMatch = monthDayRe.exec(trimmed)
+        if (mdMatch) {
+            const monthNum = resolveMonth(mdMatch[1])
+            const day = parseInt(mdMatch[2])
+            if (monthNum && day >= 1 && day <= 31 && baseYear) {
+                return `${baseYear}-${monthNum}-${mdMatch[2].padStart(2, "0")}`
+            }
+            // Can't build a full date — fall through to verbatim return
+        }
+
+        // ── 7. Bare month name — e.g. "Mar", "March" ─────────────────────────
+        const monthOnlyRe = /^([a-z]+\.?)$/i
+        const moMatch = monthOnlyRe.exec(trimmed)
+        if (moMatch) {
+            const monthNum = resolveMonth(moMatch[1])
+            if (monthNum && baseYear) {
+                return `${baseYear}-${monthNum}`
+            }
+            // Known month but no year, or unknown word — keep verbatim so the
+            // caller preserves whatever signal is present.
+            return trimmed
+        }
+
+        // ── 8. Everything else — keep verbatim ───────────────────────────────
+        //    Complex strings like "15-17 June 2021" that we cannot normalise are
+        //    passed through unchanged so that human-readable date information is
+        //    not silently discarded.
+        return trimmed
     }
 
     private extractCopyrightDate(
