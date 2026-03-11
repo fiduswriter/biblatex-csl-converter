@@ -22,17 +22,17 @@ jobs:
             url: ${{ steps.deployment.outputs.page_url }}
         steps:
             - name: Checkout
-              uses: actions/checkout@v4
+              uses: actions/checkout@v6
             - name: Setup Node
-              uses: actions/setup-node@v4
+              uses: actions/setup-node@v6
               with:
-                  node-version: "22.x"
+                  node-version: "24.x"
             - name: Install dependencies
               run: npm install
             - name: Compile demo
               run: npm run compile_demo
             - name: Upload Pages artifact
-              uses: actions/upload-pages-artifact@v3
+              uses: actions/upload-pages-artifact@v4
               with:
                   path: demo
             - name: Deploy to GitHub Pages
