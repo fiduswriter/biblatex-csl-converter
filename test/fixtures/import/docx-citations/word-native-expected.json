@@ -1,3 +1,215 @@
 {
-    "entries": {}
+    "entries": {
+        "1": {
+            "entry_key": "Smith2020",
+            "bib_type": "article-journal",
+            "fields": {
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Advances in Testing Methodology"
+                    }
+                ],
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Smith"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "John A."
+                            }
+                        ]
+                    }
+                ],
+                "date": "2020",
+                "journaltitle": [
+                    {
+                        "type": "text",
+                        "text": "Journal of Software Testing"
+                    }
+                ],
+                "volume": [
+                    {
+                        "type": "text",
+                        "text": "15"
+                    }
+                ],
+                "issue": [
+                    {
+                        "type": "text",
+                        "text": "3"
+                    }
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "100"
+                            }
+                        ],
+                        [
+                            {
+                                "type": "text",
+                                "text": "120"
+                            }
+                        ]
+                    ]
+                ],
+                "doi": "10.1234/jst.2020.15.3.100"
+            }
+        },
+        "2": {
+            "entry_key": "Jones2018",
+            "bib_type": "book",
+            "fields": {
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Foundations of Software Quality"
+                    }
+                ],
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Jones"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Alice"
+                            }
+                        ]
+                    },
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Brown"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Robert C."
+                            }
+                        ]
+                    }
+                ],
+                "date": "2018",
+                "publisher": [
+                    {
+                        "type": "text",
+                        "text": "University Press"
+                    }
+                ],
+                "location": [
+                    {
+                        "type": "text",
+                        "text": "Cambridge"
+                    }
+                ],
+                "edition": [
+                    {
+                        "type": "text",
+                        "text": "2"
+                    }
+                ],
+                "isbn": [
+                    {
+                        "type": "text",
+                        "text": "978-0-521-12345-6"
+                    }
+                ]
+            }
+        },
+        "3": {
+            "entry_key": "Doe2019",
+            "bib_type": "inproceedings",
+            "fields": {
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Automated Test Generation for Microservices"
+                    }
+                ],
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Doe"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Jane"
+                            }
+                        ]
+                    }
+                ],
+                "editor": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Williams"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Peter"
+                            }
+                        ]
+                    }
+                ],
+                "date": "2019",
+                "publisher": [
+                    {
+                        "type": "text",
+                        "text": "ACM"
+                    }
+                ],
+                "location": [
+                    {
+                        "type": "text",
+                        "text": "San Francisco"
+                    }
+                ],
+                "booktitle": [
+                    {
+                        "type": "text",
+                        "text": "International Conference on Software Engineering"
+                    }
+                ],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "55"
+                            }
+                        ],
+                        [
+                            {
+                                "type": "text",
+                                "text": "68"
+                            }
+                        ]
+                    ]
+                ],
+                "doi": "10.1145/3338906.3338912"
+            }
+        }
+    }
 }

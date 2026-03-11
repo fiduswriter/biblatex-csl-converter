@@ -79,12 +79,18 @@ export class DocxNativeParser {
      * Parses `customXml/item1.xml` — the MS Office Bibliography XML file that
      * JabRef exports and Word stores inside the DOCX ZIP.
      *
-     * Only sources whose citation tag is present in `seenKeys` are included
-     * in the output; pass an empty set (or omit the argument) to import all
-     * sources unconditionally.  The set is updated with the entry_key of
-     * every entry that is added so callers can detect duplicates.
+     * When `citedKeys` is provided, only sources whose citation tag appears in
+     * that set are included (i.e. only sources actually cited in the document).
+     * Pass `undefined` to import all sources unconditionally.
+     *
+     * `importedKeys` tracks entry keys that have already been added to the
+     * result set (across multiple calls) to prevent duplicates.  Every newly
+     * imported key is added to this set.
      */
-    parse(seenKeys?: Set<string>): DocxNativeParseResult {
+    parse(
+        citedKeys?: Set<string>,
+        importedKeys: Set<string> = new Set<string>()
+    ): DocxNativeParseResult {
         const sourceRe = /<b:Source\b[^>]*>([\s\S]*?)<\/b:Source>/g
         let m: RegExpExecArray | null
         const entries: EntryObject[] = []
@@ -94,8 +100,13 @@ export class DocxNativeParser {
             const result = parseWordSource(m[1])
             if (result.warning) warnings.push(result.warning)
             if (result.entry) {
-                if (seenKeys && seenKeys.has(result.entry.entry_key)) continue
-                seenKeys?.add(result.entry.entry_key)
+                const key = result.entry.entry_key
+                // Skip sources that were not cited in the document (when the
+                // caller provides a cited-keys allowlist).
+                if (citedKeys && !citedKeys.has(key)) continue
+                // Skip sources already imported in a previous call.
+                if (importedKeys.has(key)) continue
+                importedKeys.add(key)
                 entries.push(result.entry)
             }
         }

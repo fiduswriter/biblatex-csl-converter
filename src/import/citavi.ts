@@ -599,6 +599,10 @@ export interface CitaviPeriodical {
     Name?: string
     StandardAbbreviation?: string
     UserAbbreviation1?: string
+    /** Electronic ISSN */
+    Eissn?: string
+    /** Print ISSN */
+    Issn?: string
     [key: string]: unknown
 }
 
@@ -681,6 +685,11 @@ export interface CitaviReference {
     LanguageCode?: string
     Locations?: CitaviLocation[]
     StorageMedium?: string
+    /**
+     * Records where the bibliographic metadata was imported from
+     * (e.g. `"CrossRef"`, `"PubMed"`).
+     */
+    SourceOfBibliographicInformation?: string
 
     // Citavi SpecificField slots (meaning varies per ReferenceType)
     SpecificField1?: string
@@ -697,10 +706,139 @@ export interface CitaviReference {
     [key: string]: unknown
 }
 
-interface CitaviEntry {
+/**
+ * A single entry in a Citavi `WordPlaceholder.Entries` array.
+ * Each entry links a bibliographic reference to citation-specific decorations
+ * (page locator, prefix/suffix, etc.).
+ */
+export interface CitaviEntry {
+    /** UUID identifying this placeholder entry instance */
     Id?: string
+    /** UUID of the linked bibliographic reference */
     ReferenceId?: string
+    /** Embedded bibliographic reference (present in WordPlaceholder format) */
     Reference?: CitaviReference
+    /**
+     * UUID of a Citavi knowledge item (quotation, thought, or summary) that
+     * this citation entry is associated with.  Present when the citation was
+     * inserted from the Citavi knowledge panel rather than directly from the
+     * reference list.
+     */
+    AssociateWithKnowledgeItemId?: string
+    /**
+     * Integer indicating the type of quotation/knowledge item this citation
+     * represents within Citavi.  Observed value: `1`.  The full enum mapping
+     * is not yet known.
+     */
+    QuotationType?: number
+
+    /**
+     * Text to prepend to the formatted citation (e.g. `"Vgl. "`, `"See "`).
+     * Absent when no prefix is set.  Citavi formats this according to the
+     * active citation style (e.g. auto-capitalising the first word in footnotes).
+     */
+    Prefix?: string
+
+    /**
+     * Text to append to the formatted citation (e.g. `", etc."`).
+     * Absent when no suffix is set.
+     * Existence confirmed by the Citavi manual; not yet observed in real files.
+     */
+    Suffix?: string
+
+    /**
+     * Citation-specific page/locator range.  Contains `OriginalString` with
+     * the full range text plus typed `StartPage`/`EndPage` sub-objects.
+     */
+    PageRange?: {
+        /** Full range string, e.g. `"100-105"` or `"Col. 12-14"`. Absent when no pages are set. */
+        OriginalString?: string
+        /**
+         * What the locator numbers represent; determines the prefix the
+         * citation style renders (e.g. `p.`, `Col.`, `Nr.`, `§`).
+         *
+         * Known values (integer-to-type mapping inferred from the Citavi
+         * manual's prose — exact values NOT confirmed by observed data):
+         *   0 = Pages (default, confirmed observed)
+         *   1 = Columns  (inferred)
+         *   2 = Section numbers  (inferred)
+         *   3 = Margin numbers  (inferred)
+         *   4 = Other / free-form  (inferred)
+         */
+        NumberingType?: number
+        /**
+         * Whether Arabic or Roman numerals are used.
+         *
+         * Known values (inferred from the Citavi manual; not confirmed by
+         * observed data beyond 0):
+         *   0 = Arabic (default, confirmed observed)
+         *   1 = Roman  (inferred)
+         */
+        NumeralSystem?: number
+        StartPage?: {
+            OriginalString?: string
+            PrettyString?: string
+            /** Numeric value; absent when the page is not fully numeric */
+            Number?: number
+            IsFullyNumeric?: boolean
+            NumberingType?: number
+            NumeralSystem?: number
+        }
+        EndPage?: {
+            OriginalString?: string
+            PrettyString?: string
+            Number?: number
+            IsFullyNumeric?: boolean
+            NumberingType?: number
+            NumeralSystem?: number
+        }
+        [key: string]: unknown
+    } | null
+
+    /**
+     * Controls bibliography inclusion for this citation entry.
+     *
+     * Known string values (confirmed by Citavi manual; not yet observed in real files):
+     *   absent / default = reference appears in both citation and bibliography
+     *   `"/bibonly"`     = reference appears only in the bibliography, not in-text
+     *   `"/nobib"`       = reference appears only in-text, not in the bibliography
+     */
+    BibliographyEntry?: string
+
+    /**
+     * Overrides which citation-style rule set (formatting variant) is used for
+     * this entry — e.g. to use the bibliography layout for a single in-text
+     * citation.  Serialised form not yet observed in real files.
+     */
+    RuleSet?: unknown
+
+    /**
+     * Selects among the citation style's optional formatting variants (1, 2,
+     * or 3) for this entry.  Commonly used to suppress or force "ibid."-style
+     * short forms.  Serialised form not yet observed in real files.
+     */
+    FormatOption?: unknown
+
+    /**
+     * Overrides where this citation is physically inserted (in-text vs.
+     * footnote), independently of what the citation style normally dictates.
+     * Serialised form not yet observed in real files.
+     */
+    InsertAs?: unknown
+
+    /**
+     * When `true`, the `NumberingType` for the locator is inherited from the
+     * document default rather than set per-citation.
+     */
+    UseNumberingTypeOfParentDocument?: boolean
+
+    /**
+     * When `true`, the citation style's own default prefix overrides any
+     * custom `Prefix` string on this entry.  When `false` and `Prefix` is
+     * absent, no prefix is added.
+     */
+    UseStandardPrefix?: boolean
+
     [key: string]: unknown
 }
 

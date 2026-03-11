@@ -318,5 +318,301 @@
             "url": "https://doi.org/10.1234/example.2020.003",
             "langid": "en"
         }
+    },
+    "5": {
+        "entry_key": "Evans.2019",
+        "bib_type": "book",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Citation Practices in the Humanities"
+                }
+            ],
+            "shorttitle": [
+                {
+                    "type": "text",
+                    "text": "Citation Practices"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Evans"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Clara"
+                        }
+                    ]
+                }
+            ],
+            "date": "2019",
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "14"
+                        },
+                        {
+                            "type": "text",
+                            "text": "15"
+                        }
+                    ]
+                ]
+            ],
+            "langid": "en"
+        }
+    },
+    "6": {
+        "entry_key": "Wagner.2018",
+        "bib_type": "book",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Rechtsquellen des Mittelalters"
+                }
+            ],
+            "shorttitle": [
+                {
+                    "type": "text",
+                    "text": "Rechtsquellen"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Wagner"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Friedrich"
+                        }
+                    ]
+                }
+            ],
+            "date": "2018",
+            "publisher": [
+                {
+                    "type": "text",
+                    "text": "Klostermann"
+                }
+            ],
+            "location": [
+                {
+                    "type": "text",
+                    "text": "Frankfurt"
+                }
+            ],
+            "langid": "de"
+        }
+    },
+    "7": {
+        "entry_key": "Foster.2017",
+        "bib_type": "book",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Classical Traditions in Modern Scholarship"
+                }
+            ],
+            "shorttitle": [
+                {
+                    "type": "text",
+                    "text": "Classical Traditions"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Foster"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Margaret"
+                        }
+                    ]
+                }
+            ],
+            "date": "2017",
+            "publisher": [
+                {
+                    "type": "text",
+                    "text": "Oxford University Press"
+                }
+            ],
+            "location": [
+                {
+                    "type": "text",
+                    "text": "Oxford"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "xiv"
+                        },
+                        {
+                            "type": "text",
+                            "text": "xvi"
+                        }
+                    ]
+                ]
+            ],
+            "langid": "en"
+        }
+    },
+    "8": {
+        "entry_key": "Nguyen.2016",
+        "bib_type": "book",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Background Reading in Comparative Literature"
+                }
+            ],
+            "shorttitle": [
+                {
+                    "type": "text",
+                    "text": "Background Reading"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Nguyen"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Thomas"
+                        }
+                    ]
+                }
+            ],
+            "date": "2016",
+            "publisher": [
+                {
+                    "type": "text",
+                    "text": "Academic Press"
+                }
+            ],
+            "location": [
+                {
+                    "type": "text",
+                    "text": "New York"
+                }
+            ],
+            "langid": "en"
+        }
+    },
+    "9": {
+        "entry_key": "Hofer.2022",
+        "bib_type": "article-journal",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "RApid Data Integration and Visualization (RADIV) in Subsurface Operations"
+                }
+            ],
+            "shorttitle": [
+                {
+                    "type": "text",
+                    "text": "RApid Data Integration and Visualization"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Hofer"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Peter"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Eder"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Julian"
+                        }
+                    ]
+                }
+            ],
+            "date": "2022",
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Geomechanics and Tunnelling"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "15"
+                }
+            ],
+            "issue": [
+                {
+                    "type": "text",
+                    "text": "3"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "305"
+                        },
+                        {
+                            "type": "text",
+                            "text": "310"
+                        }
+                    ]
+                ]
+            ],
+            "doi": [
+                {
+                    "type": "text",
+                    "text": "10.1002/geot.202100068"
+                }
+            ],
+            "url": "https://doi.org/10.1002/geot.202100068"
+        }
     }
 }

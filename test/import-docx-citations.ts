@@ -694,8 +694,7 @@ describe("Static utility methods", () => {
                 const meta0 = result.metadata![0]
                 expect(meta0.prefix).to.equal("see ")
                 expect(meta0.locator).to.equal("100-105")
-                // Citavi has no suffix or author-suppression support
-                expect(meta0.suffix).to.equal(undefined)
+                // Citavi has no author-suppression support
                 expect(meta0.suppressAuthor).to.equal(undefined)
                 expect(meta0.authorYear).to.equal(undefined)
 

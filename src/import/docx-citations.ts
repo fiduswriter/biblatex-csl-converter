@@ -115,15 +115,19 @@ interface ErrorObject {
  *
  * Field availability by format:
  *
- * | Field          | Zotero | Mendeley | EndNote              | Citavi |
- * |----------------|--------|----------|----------------------|--------|
- * | locator        | ✅     | ✅       | ✅ (Pages)           | ✅ (PageRange.OriginalString) |
- * | label          | ✅     | ✅       | –                    | –      |
- * | prefix         | ✅     | ✅       | ✅                   | ✅     |
- * | suffix         | ✅     | ✅       | ✅                   | –      |
- * | suppressAuthor | ✅     | ✅       | –                    | –      |
- * | authorOnly     | ✅     | ✅       | –                    | –      |
- * | authorYear     | –      | –        | ✅ (AuthorYear attr) | –      |
+ * | Field            | Zotero | Mendeley | EndNote              | Citavi                              |
+ * |------------------|--------|----------|----------------------|-------------------------------------|
+ * | locator          | ✅     | ✅       | ✅ (Pages)           | ✅ (PageRange.OriginalString)       |
+ * | label            | ✅     | ✅       | –                    | ✅ (derived from PageRange.NumberingType; mapping inferred from manual) |
+ * | prefix           | ✅     | ✅       | ✅                   | ✅                                  |
+ * | suffix           | ✅     | ✅       | ✅                   | ✅ (confirmed by manual; not yet seen in real files) |
+ * | suppressAuthor   | ✅     | ✅       | –                    | –                                   |
+ * | authorOnly       | ✅     | ✅       | –                    | –                                   |
+ * | authorYear       | –      | –        | ✅ (AuthorYear attr) | –                                   |
+ * | bibliographyEntry| –      | –        | –                    | ✅ (confirmed by manual; not yet seen in real files) |
+ * | ruleSet          | –      | –        | –                    | ✅ (confirmed by manual; serialised form unknown) |
+ * | formatOption     | –      | –        | –                    | ✅ (confirmed by manual; serialised form unknown) |
+ * | insertAs         | –      | –        | –                    | ✅ (confirmed by manual; serialised form unknown) |
  */
 export interface CitationItemMetadata {
     /** The `entry_key` of the corresponding entry in the returned `entries` BibDB. */
@@ -136,12 +140,18 @@ export interface CitationItemMetadata {
     locator?: string
     /**
      * CSL locator type label (e.g. `"page"`, `"chapter"`, `"section"`).
-     * Only populated for CSL-based formats (Zotero, Mendeley).
+     * For CSL-based formats (Zotero, Mendeley) this is the raw `label` string
+     * from the citation item.  For Citavi it is derived from `PageRange.NumberingType`:
+     * `0` (Pages) → `"page"`, `1` (Columns) → `"column"`,
+     * `2` (Section numbers) → `"section"`, `3` (Margin numbers) → `"note"`,
+     * `4` (Other / free-form) → `"custom"`.
+     * The integer-to-label mapping for Citavi is inferred from the Citavi manual
+     * and has not been confirmed against observed data beyond value `0`.
      */
     label?: string
     /** Text to prepend to the formatted citation (e.g. `"see "`, `"cf. "`). */
     prefix?: string
-    /** Text to append to the formatted citation. Not available for Citavi. */
+    /** Text to append to the formatted citation (e.g. `", etc."`). */
     suffix?: string
     /**
      * When `true`, author names are suppressed in the formatted output,
@@ -162,6 +172,36 @@ export interface CitationItemMetadata {
      * Only populated for EndNote citations.
      */
     authorYear?: boolean
+    /**
+     * Controls whether and where this reference appears in the bibliography.
+     * Only populated for Citavi citations (from `Entries[].BibliographyEntry`).
+     *
+     * Known values:
+     *   `"/bibonly"` – reference appears only in the bibliography, not in-text
+     *   `"/nobib"`   – reference appears only in-text, not in the bibliography
+     *
+     * When absent the reference appears in both (default behaviour).
+     * Confirmed by the Citavi manual; not yet observed in real files.
+     */
+    bibliographyEntry?: string
+    /**
+     * Overrides which citation-style rule set (formatting variant) is used for
+     * this entry.  Only populated for Citavi citations (from `Entries[].RuleSet`).
+     * Serialised form not yet observed in real files.
+     */
+    ruleSet?: unknown
+    /**
+     * Selects among the citation style's optional formatting variants for this
+     * entry (values 1, 2, or 3).  Only populated for Citavi citations (from
+     * `Entries[].FormatOption`).  Serialised form not yet observed in real files.
+     */
+    formatOption?: unknown
+    /**
+     * Overrides where the citation is physically inserted (in-text vs. footnote).
+     * Only populated for Citavi citations (from `Entries[].InsertAs`).
+     * Serialised form not yet observed in real files.
+     */
+    insertAs?: unknown
 }
 
 // ---------------------------------------------------------------------------
@@ -681,12 +721,7 @@ export class DocxCitationsParser {
 
         // Check if the payload has embedded references
         const typedPayload = payload as {
-            Entries?: Array<{
-                Reference?: { Id?: string } | null
-                ReferenceId?: string
-                Prefix?: string
-                PageRange?: { OriginalString?: string } | null
-            }>
+            Entries?: Array<import("./citavi").CitaviEntry>
         }
         const hasEmbeddedReferences =
             !Array.isArray(payload) &&
@@ -730,10 +765,54 @@ export class DocxCitationsParser {
                 )
                 const entry_key = entry?.entry_key ?? refId
                 const meta: CitationItemMetadata = { entry_key }
+
                 if (citaviEntry.Prefix) meta.prefix = citaviEntry.Prefix
-                const pageStr = citaviEntry.PageRange?.OriginalString
+                if (citaviEntry.Suffix) meta.suffix = citaviEntry.Suffix
+
+                const pageRange = citaviEntry.PageRange
+                const pageStr = pageRange?.OriginalString
                 if (pageStr !== undefined && pageStr !== null && pageStr !== "")
                     meta.locator = pageStr
+
+                // Derive a CSL-style locator label from NumberingType.
+                // The integer-to-type mapping is inferred from the Citavi manual's
+                // prose (types listed in order) and has NOT been confirmed against
+                // observed data beyond value 0 (Pages).
+                if (
+                    pageRange &&
+                    !citaviEntry.UseNumberingTypeOfParentDocument
+                ) {
+                    const nt = pageRange.NumberingType
+                    if (nt !== undefined && nt !== null && nt !== 0) {
+                        const numberingTypeLabels: Record<number, string> = {
+                            1: "column", // Columns (Col.) — inferred
+                            2: "section", // Section numbers (Nr./§) — inferred
+                            3: "note", // Margin numbers — inferred
+                            4: "custom", // Other / free-form — inferred
+                        }
+                        const label = numberingTypeLabels[nt]
+                        if (label !== undefined) meta.label = label
+                    }
+                }
+
+                if (citaviEntry.BibliographyEntry)
+                    meta.bibliographyEntry = citaviEntry.BibliographyEntry
+                if (
+                    citaviEntry.RuleSet !== undefined &&
+                    citaviEntry.RuleSet !== null
+                )
+                    meta.ruleSet = citaviEntry.RuleSet
+                if (
+                    citaviEntry.FormatOption !== undefined &&
+                    citaviEntry.FormatOption !== null
+                )
+                    meta.formatOption = citaviEntry.FormatOption
+                if (
+                    citaviEntry.InsertAs !== undefined &&
+                    citaviEntry.InsertAs !== null
+                )
+                    meta.insertAs = citaviEntry.InsertAs
+
                 metadata.push(meta)
             }
         }
@@ -753,8 +832,15 @@ export class DocxCitationsParser {
             const citationKey = m[1]
             seenKeys.add(citationKey)
 
+            // citedKeys = the key we just recorded (the allowlist for this call).
+            // importedKeys = keys already pushed into `entries` so we don't
+            // duplicate them across multiple CITATION fields in the same document.
+            const citedKeys = new Set<string>([citationKey])
+            const importedKeys = new Set<string>(
+                entries.map((e) => e.entry_key)
+            )
             const nativeParser = new DocxNativeParser(sourcesXml)
-            const result = nativeParser.parse(seenKeys)
+            const result = nativeParser.parse(citedKeys, importedKeys)
 
             errors.push(...result.errors)
             warnings.push(...result.warnings)
@@ -806,12 +892,24 @@ export class DocxCitationsParser {
                         citeAttrs
                     )
 
+                    // Only search for citation-level fields (Prefix, Suffix,
+                    // Pages) in the portion of <Cite> that comes *before* the
+                    // embedded <record> element.  The <record> block contains
+                    // the reference's own <pages> field, and matching against
+                    // the full citeXml would confuse the reference page range
+                    // with a per-citation locator.
+                    const recordStart = citeXml.indexOf("<record>")
+                    const citeHeader =
+                        recordStart === -1
+                            ? citeXml
+                            : citeXml.slice(0, recordStart)
+
                     const prefixMatch =
-                        /<Prefix[^>]*>([\s\S]*?)<\/Prefix>/i.exec(citeXml)
+                        /<Prefix[^>]*>([\s\S]*?)<\/Prefix>/i.exec(citeHeader)
                     const suffixMatch =
-                        /<Suffix[^>]*>([\s\S]*?)<\/Suffix>/i.exec(citeXml)
+                        /<Suffix[^>]*>([\s\S]*?)<\/Suffix>/i.exec(citeHeader)
                     const pagesMatch = /<Pages[^>]*>([\s\S]*?)<\/Pages>/i.exec(
-                        citeXml
+                        citeHeader
                     )
 
                     citeFieldsList.push({
@@ -1333,8 +1431,17 @@ export class DocxCitationsParser {
      * newly imported keys are recorded for future deduplication.
      */
     private parseSourcesXml(xml: string): void {
+        // this.seenKeys contains every citation key recorded from CITATION
+        // field instructions — use it as the cited-keys allowlist so that only
+        // sources actually referenced in the document are imported.
+        // A fresh importedKeys set is used for deduplication within this call;
+        // at this point this.entries is still empty for the Word-native path so
+        // there is nothing to pre-populate it with.
+        const importedKeys = new Set<string>(
+            this.entries.map((e) => e.entry_key)
+        )
         const nativeParser = new DocxNativeParser(xml)
-        const result = nativeParser.parse(this.seenKeys)
+        const result = nativeParser.parse(this.seenKeys, importedKeys)
 
         this.errors.push(...result.errors)
         this.warnings.push(...result.warnings)

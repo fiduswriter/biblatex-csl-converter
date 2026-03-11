@@ -1033,6 +1033,16 @@ export class EndNoteParser {
                             dateTexts.push(
                                 `${baseYear}-${trimmed.padStart(2, "0")}`
                             )
+                        } else if (
+                            // EndNote's XML export encodes pub-dates as
+                            // "YYYY/NNN/NNN" (year / issue / page-ish tokens).
+                            // This is not a real calendar date — discard it and
+                            // let the code fall through to the plain <year>
+                            // element so we don't end up with a nonsense date
+                            // string like "2009/001/001".
+                            /^\d{4}\/\d+\/\d+$/.test(trimmed)
+                        ) {
+                            // intentionally ignored
                         } else {
                             dateTexts.push(text)
                         }
