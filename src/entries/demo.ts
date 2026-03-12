@@ -717,22 +717,24 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 
     // Update file-input accept attribute when format changes
-    getEl("format-select")?.addEventListener("change", () => {
+    const acceptMap: Record<string, string> = {
+        auto: ".bib,.json,.ris,.enw,.xml,.nbib,.ctv5,.ctv6,.docx,.odt",
+        biblatex: ".bib",
+        csl: ".json",
+        ris: ".ris",
+        enw: ".enw",
+        endnote: ".xml",
+        citavi: ".json",
+        nbib: ".nbib",
+        docx: ".docx",
+        odt: ".odt",
+    }
+    function updateFileAccept() {
         const fmt = getSelectedFormat()
         const fileUpload = getEl<HTMLInputElement>("file-upload")
         if (!fileUpload) return
-        const acceptMap: Record<string, string> = {
-            auto: ".bib,.json,.ris,.enw,.xml,.nbib,.ctv5,.ctv6",
-            biblatex: ".bib",
-            csl: ".json",
-            ris: ".ris",
-            enw: ".enw",
-            endnote: ".xml",
-            citavi: ".json",
-            nbib: ".nbib",
-            docx: ".docx",
-            odt: ".odt",
-        }
         fileUpload.accept = acceptMap[fmt] ?? ""
-    })
+    }
+    getEl("format-select")?.addEventListener("change", updateFileAccept)
+    updateFileAccept()
 })
