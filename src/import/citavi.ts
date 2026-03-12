@@ -24,7 +24,7 @@ import {
     NameDictObject,
     RangeArray,
 } from "../const"
-import { makeEntryKey } from "./tools"
+import { makeEntryKey, lookupLangid } from "./tools"
 
 // ─── Citavi reference type → internal BibType mapping ───────────────────────
 
@@ -1413,7 +1413,8 @@ export class CitaviParser {
                     entry: entryId,
                 })
             }
-            fields["doi"] = this.convertRichText(doi)
+            // doi is f_verbatim → store as a plain string, not a NodeArray
+            fields["doi"] = doi
         }
         if (ref.Isbn) {
             fields["isbn"] = this.convertRichText(ref.Isbn)
@@ -1442,10 +1443,8 @@ export class CitaviParser {
         fields: Record<string, unknown>
     ) {
         if (!ref.Keywords || ref.Keywords.length === 0) return
-        const kws = ref.Keywords.map((k) => k.Name || "")
-            .filter(Boolean)
-            .join(", ")
-        if (kws) {
+        const kws = ref.Keywords.map((k) => k.Name || "").filter(Boolean)
+        if (kws.length > 0) {
             fields["keywords"] = kws
         }
     }
@@ -1459,12 +1458,24 @@ export class CitaviParser {
         const code = ref.LanguageCode || ref.Language
         if (code) {
             const trimmed = code.trim()
-            if (trimmed) {
-                fields["langid"] = trimmed
-            } else {
+            if (!trimmed) {
                 this.warnings.push({
                     type: "empty_language",
                     field_name: "langid",
+                    entry: entryId,
+                })
+                return
+            }
+            // Map the raw code/name to one of the internal langid option keys
+            // recognised by BibFieldTypes.langid (e.g. "german", "usenglish").
+            const langidKey = lookupLangid(trimmed)
+            if (langidKey) {
+                fields["langid"] = langidKey
+            } else {
+                this.warnings.push({
+                    type: "unknown_language",
+                    field_name: "langid",
+                    value: trimmed,
                     entry: entryId,
                 })
             }
@@ -1768,7 +1779,7 @@ export class CitaviParser {
             return makeEntryKey(ref.BibTeXKey, this.usedKeys)
         }
 
-        // 2. Derive from first author/editor surname + year
+        // 2. Derive from first author/editor/organization surname + year.
         const yearRaw = ref.YearResolved || ref.Year || ""
         const year = yearRaw ? String(yearRaw).match(/\d{4}/)?.[0] ?? "" : ""
         const firstPerson =
@@ -1783,21 +1794,26 @@ export class CitaviParser {
             if (surname) lastName = surname
         }
 
-        // 3. Fall back to the Citavi UUID or a sequential number as candidate.
-        //    If neither author nor year could be extracted, emit a warning.
-        const candidate = ref.Id || String(index)
-        if (!lastName && !year) {
+        // 3. Build the best candidate we can from the available information.
+        //    • If we have a surname and/or year, compose those directly so that
+        //      makeEntryKey never sees the UUID and falls back to it.
+        //    • Only use the UUID (or a sequential index) when we truly have
+        //      nothing better — in that case also emit a warning.
+        let candidate: string
+        if (lastName) {
+            candidate = year ? `${lastName}${year}` : lastName
+        } else if (year) {
+            candidate = `ref${year}`
+        } else {
+            // Absolute last resort: use the Citavi UUID or the entry index.
+            candidate = ref.Id || String(index)
             this.warnings.push({
                 type: "missing_entry_key",
                 entry: entryId,
             })
         }
-        return makeEntryKey(
-            candidate,
-            this.usedKeys,
-            lastName,
-            year || undefined
-        )
+
+        return makeEntryKey(candidate, this.usedKeys)
     }
 
     // ─── Text utilities ──────────────────────────────────────────────────────

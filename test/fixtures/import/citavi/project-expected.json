@@ -62,7 +62,7 @@
                     }
                 ]
             ],
-            "keywords": "Project Test A"
+            "keywords": ["Project Test A"]
         }
     },
     "2": {
@@ -97,7 +97,7 @@
                     ]
                 }
             ],
-            "keywords": "Project Test B"
+            "keywords": ["Project Test B"]
         }
     }
 }

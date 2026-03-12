@@ -6,13 +6,12 @@
 import {
     BibTypes,
     BibFieldTypes,
-    LangidOptions,
     NodeArray,
     EntryObject,
     NameDictObject,
     RangeArray,
 } from "../const"
-import { makeEntryKey } from "./tools"
+import { makeEntryKey, lookupLangid } from "./tools"
 
 // RIS type to BibType mapping
 // Source of types: https://github.com/zotero/translators/blob/873602eb8b0961da0b306161dc386032631ffaeb/RIS.js
@@ -606,16 +605,18 @@ export class RISParser {
         ) {
             return text
         } else if (fieldType === "f_key") {
-            const options = fieldDef?.options as LangidOptions | undefined
-            if (options) {
+            const options = fieldDef?.options
+            if (Array.isArray(options)) {
+                // Array options (e.g. bookpagination, type): plain string match
                 const lower = text.toLowerCase().trim()
-                const matched = Object.keys(options).find(
-                    (k) =>
-                        k.toLowerCase() === lower ||
-                        options[k].csl.toLowerCase() === lower ||
-                        options[k].biblatex.toLowerCase() === lower
+                const matched = options.find(
+                    (k: string) => k.toLowerCase() === lower
                 )
-                return matched // undefined if no match — caller omits the field
+                return matched // undefined if no match
+            } else if (options) {
+                // Object options (e.g. langid): use shared lookup that handles
+                // BCP-47 codes, ISO 639-2 codes, full names, biblatex aliases
+                return lookupLangid(text) // undefined if no match
             }
             return text
         }

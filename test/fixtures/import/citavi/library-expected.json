@@ -45,7 +45,7 @@
                     ]
                 }
             ],
-            "keywords": "Synthetic Testing, Research Data"
+            "keywords": ["Synthetic Testing", "Research Data"]
         }
     },
     "2": {
@@ -102,7 +102,7 @@
                     "text": "978-3-16-148410-0"
                 }
             ],
-            "keywords": "Synthetic Testing"
+            "keywords": ["Synthetic Testing"]
         }
     }
 }

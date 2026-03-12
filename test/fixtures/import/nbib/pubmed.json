@@ -116,6 +116,7 @@
                 ],
                 "eprint": "39730211",
                 "eprinttype": "pubmed",
+                "langid": "usenglish",
                 "keywords": [
                     "Anatomy",
                     "Digestive system",
@@ -249,6 +250,7 @@
                 ],
                 "eprint": "38901234",
                 "eprinttype": "pubmed",
+                "langid": "usenglish",
                 "keywords": [
                     "CRISPR",
                     "Cas9",
@@ -371,6 +373,7 @@
                 ],
                 "eprint": "37654321",
                 "eprinttype": "pubmed",
+                "langid": "usenglish",
                 "keywords": [
                     "Meta-analysis",
                     "Mortality",
@@ -499,6 +502,7 @@
                 ],
                 "eprint": "36512345",
                 "eprinttype": "pubmed",
+                "langid": "usenglish",
                 "keywords": [
                     "Antibody-drug conjugate",
                     "Cancer therapy",
@@ -629,6 +633,7 @@
                         "text": "PMC: PMC9580836"
                     }
                 ],
+                "langid": "usenglish",
                 "keywords": [
                     "COVID-19",
                     "Long COVID",

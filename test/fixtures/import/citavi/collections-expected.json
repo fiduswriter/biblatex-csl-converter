@@ -47,7 +47,7 @@
                     }
                 ]
             ],
-            "keywords": "Test Keyword A, Test Keyword B"
+            "keywords": ["Test Keyword A", "Test Keyword B"]
         }
     }
 }

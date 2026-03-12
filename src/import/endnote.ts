@@ -7,13 +7,12 @@
 import {
     BibTypes,
     BibFieldTypes,
-    LangidOptions,
     NodeArray,
     EntryObject,
     NameDictObject,
     RangeArray,
 } from "../const"
-import { makeEntryKey } from "./tools"
+import { makeEntryKey, lookupLangid } from "./tools"
 
 // EndNote reference type name to BibType mapping
 // Direct mapping to internal BibType names
@@ -1008,17 +1007,20 @@ export class EndNoteParser {
         } else if (fieldType === "f_key") {
             // f_key fields (e.g. langid) must be stored as a key string that
             // matches one of the option keys in the field definition.
-            // Try a case-insensitive match against the known options first;
-            // fall back to the raw text if no match is found.
-            const options = fieldDef?.options as LangidOptions | undefined
-            if (options) {
+            const options = fieldDef?.options
+            if (Array.isArray(options)) {
+                // Array options (e.g. bookpagination, type): plain string match
                 const lower = textContent.toLowerCase().trim()
-                const matched = Object.keys(options).find(
-                    (k) =>
-                        k.toLowerCase() === lower ||
-                        options[k].csl.toLowerCase() === lower ||
-                        options[k].biblatex.toLowerCase() === lower
+                const matched = options.find(
+                    (k: string) => k.toLowerCase() === lower
                 )
+                if (matched) {
+                    fields[targetField] = matched
+                }
+            } else if (options) {
+                // Object options (e.g. langid): use shared lookup that handles
+                // BCP-47 codes, ISO 639-2 codes, full names, biblatex aliases
+                const matched = lookupLangid(textContent)
                 if (matched) {
                     fields[targetField] = matched
                 }

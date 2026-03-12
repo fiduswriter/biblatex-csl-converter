@@ -1,3 +1,161 @@
+import { langidOptions } from "../const"
+
+/**
+ * Reverse-lookup map: various representations of a language → internal langid
+ * key used by BibFieldTypes.langid (e.g. "german", "usenglish").
+ *
+ * Covers:
+ *  - The internal key itself          ("german" → "german")
+ *  - Full BCP-47 CSL code             ("de-de"  → "german")
+ *  - Bare BCP-47 language subtag      ("de"     → "german")
+ *  - BibLaTeX alias                   ("ngerman"→ "german")
+ *  - Common full English name         ("german" → "german", already identity)
+ *  - ISO 639-2/T three-letter codes   ("ger"    → "german", "eng" → "usenglish")
+ */
+const LANGID_BY_CODE: Map<string, string> = (() => {
+    const m = new Map<string, string>()
+
+    // Preferred mappings for bare BCP-47 language subtags and common full names
+    // that would otherwise resolve to an unexpected regional variant.
+    const preferred: Record<string, string> = {
+        // BCP-47 bare subtags
+        en: "usenglish",
+        de: "german",
+        fr: "french",
+        pt: "portuguese",
+        zh: "chinese",
+        sr: "serbian",
+        no: "norwegian",
+        // ISO 639-2/T codes (used by PubMed NBIB, some RIS exporters, etc.)
+        eng: "usenglish",
+        ger: "german",
+        deu: "german",
+        fra: "french",
+        fre: "french",
+        spa: "spanish",
+        ita: "italian",
+        por: "portuguese",
+        por_br: "brportuguese",
+        zho: "chinese",
+        chi: "chinese",
+        jpn: "japanese",
+        kor: "korean",
+        ara: "arabic",
+        rus: "russian",
+        pol: "polish",
+        nld: "dutch",
+        dut: "dutch",
+        swe: "swedish",
+        nor: "norwegian",
+        dan: "danish",
+        fin: "finnish",
+        ces: "czech",
+        cze: "czech",
+        slk: "slovak",
+        slo: "slovak",
+        hrv: "croatian",
+        slv: "slovene",
+        bul: "bulgarian",
+        ron: "romanian",
+        rum: "romanian",
+        hun: "hungarian",
+        tur: "turkish",
+        heb: "hebrew",
+        ell: "greek",
+        gre: "greek",
+        lat: "latin",
+        cat: "catalan",
+        eus: "basque",
+        baq: "basque",
+        afr: "afrikaans",
+        ukr: "ukrainian",
+        vie: "vietnamese",
+        tha: "thai",
+        lit: "lithuanian",
+        lav: "latvian",
+        est: "estonian",
+        isl: "icelandic",
+        ice: "icelandic",
+        mon: "mongolian",
+        fas: "farsi",
+        per: "farsi",
+        srp: "serbian",
+        // Common full English language names (case-insensitively applied below)
+        english: "usenglish",
+        german: "german",
+        french: "french",
+        spanish: "spanish",
+        italian: "italian",
+        portuguese: "portuguese",
+        chinese: "chinese",
+        japanese: "japanese",
+        arabic: "arabic",
+        russian: "russian",
+        polish: "polish",
+        dutch: "dutch",
+        swedish: "swedish",
+        norwegian: "norwegian",
+        danish: "danish",
+        finnish: "finnish",
+        czech: "czech",
+        slovak: "slovak",
+        croatian: "croatian",
+        slovene: "slovene",
+        slovenian: "slovene",
+        bulgarian: "bulgarian",
+        romanian: "romanian",
+        hungarian: "hungarian",
+        turkish: "turkish",
+        hebrew: "hebrew",
+        greek: "greek",
+        latin: "latin",
+        catalan: "catalan",
+        basque: "basque",
+        afrikaans: "afrikaans",
+        ukrainian: "ukrainian",
+        vietnamese: "vietnamese",
+        thai: "thai",
+        lithuanian: "lithuanian",
+        latvian: "latvian",
+        estonian: "estonian",
+        icelandic: "icelandic",
+        mongolian: "mongolian",
+        farsi: "farsi",
+        persian: "farsi",
+        serbian: "serbian",
+    }
+    for (const [code, key] of Object.entries(preferred)) {
+        m.set(code, key)
+    }
+
+    for (const [key, val] of Object.entries(langidOptions)) {
+        // Full BCP-47 CSL code (lower-cased), e.g. "de-de"
+        const cslCode = val.csl.toLowerCase()
+        if (!m.has(cslCode)) m.set(cslCode, key)
+        // Bare language subtag, e.g. "de"
+        const lang = cslCode.split("-")[0]
+        if (!m.has(lang)) m.set(lang, key)
+        // BibLaTeX alias, e.g. "ngerman"
+        const bbl = val.biblatex.toLowerCase()
+        if (!m.has(bbl)) m.set(bbl, key)
+        // Internal key itself (identity), e.g. "german"
+        if (!m.has(key.toLowerCase())) m.set(key.toLowerCase(), key)
+    }
+    return m
+})()
+
+/**
+ * Map a raw language string (BCP-47 code, ISO 639-2 code, BibLaTeX alias, or
+ * full English language name) to the internal langid option key recognised by
+ * BibFieldTypes.langid (e.g. "german", "usenglish").
+ *
+ * Returns `undefined` when no match is found so the caller can omit the field
+ * rather than storing an invalid value that would crash the exporters.
+ */
+export function lookupLangid(text: string): string | undefined {
+    return LANGID_BY_CODE.get(text.toLowerCase().trim())
+}
+
 /**
  * Normalise a candidate BibLaTeX citation key so that it always starts with a
  * letter.  If `candidate` already starts with a letter it is used as-is;

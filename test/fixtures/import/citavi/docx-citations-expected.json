@@ -91,8 +91,8 @@
                 }
             ],
             "url": "https://doi.org/10.1234/example.2023.001",
-            "keywords": "methodology, research design",
-            "langid": "en"
+            "keywords": ["methodology", "research design"],
+            "langid": "usenglish"
         }
     },
     "2": {
@@ -182,7 +182,7 @@
                     "text": "978-3-030-12345-6"
                 }
             ],
-            "langid": "de"
+            "langid": "german"
         }
     },
     "3": {
@@ -250,14 +250,9 @@
                     ]
                 ]
             ],
-            "doi": [
-                {
-                    "type": "text",
-                    "text": "10.1234/example.2021.002"
-                }
-            ],
+            "doi": "10.1234/example.2021.002",
             "url": "https://doi.org/10.1234/example.2021.002",
-            "langid": "en"
+            "langid": "usenglish"
         }
     },
     "4": {
@@ -317,14 +312,9 @@
                     "text": "2"
                 }
             ],
-            "doi": [
-                {
-                    "type": "text",
-                    "text": "10.1234/example.2020.003"
-                }
-            ],
+            "doi": "10.1234/example.2020.003",
             "url": "https://doi.org/10.1234/example.2020.003",
-            "langid": "en"
+            "langid": "usenglish"
         }
     },
     "5": {
@@ -374,7 +364,7 @@
                     ]
                 ]
             ],
-            "langid": "en"
+            "langid": "usenglish"
         }
     },
     "6": {
@@ -426,7 +416,7 @@
                     }
                 ]
             ],
-            "langid": "de"
+            "langid": "german"
         }
     },
     "7": {
@@ -492,7 +482,7 @@
                     ]
                 ]
             ],
-            "langid": "en"
+            "langid": "usenglish"
         }
     },
     "8": {
@@ -544,7 +534,7 @@
                     }
                 ]
             ],
-            "langid": "en"
+            "langid": "usenglish"
         }
     },
     "9": {
@@ -626,12 +616,7 @@
                     ]
                 ]
             ],
-            "doi": [
-                {
-                    "type": "text",
-                    "text": "10.1002/geot.202100068"
-                }
-            ],
+            "doi": "10.1002/geot.202100068",
             "url": "https://doi.org/10.1002/geot.202100068"
         }
     }

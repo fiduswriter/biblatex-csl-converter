@@ -91,6 +91,7 @@
                         "text": "Article1"
                     }
                 ],
+                "langid": "usenglish",
                 "url": "https://example.com/article1",
                 "date": "2023-03",
                 "author": [
@@ -647,6 +648,7 @@
                         "text": "Example Web Page Title"
                     }
                 ],
+                "langid": "usenglish",
                 "url": "https://www.example.org/page",
                 "urldate": "2023-12-01",
                 "date": "2023",
@@ -678,6 +680,7 @@
                         "text": "Book Section with Multiple Author Types"
                     }
                 ],
+                "langid": "usenglish",
                 "date": "2023",
                 "author": [
                     {
@@ -771,6 +774,7 @@
                         "text": "Figure with Image"
                     }
                 ],
+                "langid": "usenglish",
                 "date": "2023",
                 "author": [
                     {
@@ -806,6 +810,7 @@
                         "text": "Journal from Secondary Title"
                     }
                 ],
+                "langid": "usenglish",
                 "custom1": [
                     {
                         "type": "text",
@@ -896,6 +901,7 @@
                         "text": "Book with Only Tertiary Author"
                     }
                 ],
+                "langid": "usenglish",
                 "date": "2023",
                 "author": [
                     {
@@ -941,6 +947,7 @@
                         "text": "A Generic Work with Type"
                     }
                 ],
+                "langid": "usenglish",
                 "type": {
                     "type": "text",
                     "text": "Technical Note"
@@ -980,6 +987,7 @@
                         "text": "Review Journal"
                     }
                 ],
+                "langid": "usenglish",
                 "related": [
                     {
                         "type": "text",
@@ -1035,6 +1043,7 @@
                         ]
                     ]
                 ],
+                "langid": "usenglish",
                 "date": "2020",
                 "author": [
                     {

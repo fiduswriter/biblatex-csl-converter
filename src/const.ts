@@ -72,7 +72,7 @@ export interface LangidOptions {
 }
 
 /** A list of supported languages (without aliases)  in the langid field */
-const langidOptions: LangidOptions = {
+export const langidOptions: LangidOptions = {
     acadian: {
         csl: "fr-CA",
         biblatex: "acadian",

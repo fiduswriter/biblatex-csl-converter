@@ -119,6 +119,7 @@
                         "text": "Test1"
                     }
                 ],
+                "langid": "usenglish",
                 "url": "https://example.com/article1; https://doi.org/10.1234/example",
                 "date": "2023",
                 "author": [
