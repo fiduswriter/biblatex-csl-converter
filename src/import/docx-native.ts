@@ -173,10 +173,10 @@ function parseWordSource(sourceXml: string): {
 
     // Publisher / location
     const publisher = getB("Publisher")
-    if (publisher) fields["publisher"] = makeRichText(publisher)
+    if (publisher) fields["publisher"] = [makeRichText(publisher)]
 
     const city = getB("City")
-    if (city) fields["location"] = makeRichText(city)
+    if (city) fields["location"] = [makeRichText(city)]
 
     // Journal / periodical title
     const journal = getB("JournalName") || getB("PeriodicalTitle")

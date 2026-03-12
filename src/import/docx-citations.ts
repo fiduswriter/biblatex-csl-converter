@@ -315,12 +315,38 @@ export class DocxCitationsParser {
                 retrieveMetadata ? metadata : undefined
             )
         } else if (format === "citavi") {
-            const instrMatch = sdtXml.match(
-                /<w:instrText[^>]*>ADDIN CitaviPlaceholder([A-Za-z0-9+/=\s]+)<\/w:instrText>/
+            // Word may split long field codes across multiple <w:instrText> runs.
+            // Always concatenate every instrText fragment inside <w:sdtContent>
+            // before searching for the "ADDIN CitaviPlaceholder" prefix so that
+            // we assemble the complete Base64 payload regardless of how many runs
+            // were used.
+            let b64: string | null = null
+            const sdtContentMatch = sdtXml.match(
+                /<w:sdtContent\b[^>]*>([\s\S]*?)<\/w:sdtContent>/
             )
-            if (instrMatch) {
+            if (sdtContentMatch) {
+                const sdtContent = sdtContentMatch[1]
+                const allInstrTexts: string[] = []
+                const fragRe = /<w:instrText[^>]*>([\s\S]*?)<\/w:instrText>/g
+                let frag: RegExpExecArray | null
+                while ((frag = fragRe.exec(sdtContent)) !== null) {
+                    allInstrTexts.push(frag[1])
+                }
+                const combined = allInstrTexts.join("")
+                const prefixUpper = "ADDIN CITAVIPLACEHOLDER"
+                const upperCombined = combined.toUpperCase()
+                const prefixIdx = upperCombined.indexOf(prefixUpper)
+                if (prefixIdx !== -1) {
+                    b64 = combined
+                        .slice(prefixIdx + prefixUpper.length)
+                        .replace(/\s/g, "")
+                        .replace(/^\{/, "")
+                        .replace(/\}$/, "")
+                }
+            }
+            if (b64 !== null && b64.length > 0) {
                 DocxCitationsParser.extractCitaviData(
-                    instrMatch[1].replace(/\s/g, ""),
+                    b64,
                     acc,
                     retrieveMetadata ? metadata : undefined
                 )
@@ -458,7 +484,7 @@ export class DocxCitationsParser {
             )
         } else if (format === "citavi") {
             const b64Match = instrText.match(
-                /ADDIN CitaviPlaceholder([A-Za-z0-9+/=\s]+)/i
+                /ADDIN CitaviPlaceholder\{?([A-Za-z0-9+/=\s]+)\}?/i
             )
             if (b64Match) {
                 DocxCitationsParser.extractCitaviData(

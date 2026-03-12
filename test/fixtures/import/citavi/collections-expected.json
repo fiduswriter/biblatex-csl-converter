@@ -1,49 +1,53 @@
 {
-    "1": {
-        "entry_key": "CollectionTest1",
-        "bib_type": "proceedings",
-        "fields": {
-            "title": [
-                {
-                    "type": "text",
-                    "text": "Collection Test: Synthetic Conference Proceedings"
-                }
-            ],
-            "shorttitle": [
-                {
-                    "type": "text",
-                    "text": "Collection Test Paper"
-                }
-            ],
-            "author": [
-                {
-                    "family": [
-                        {
-                            "type": "text",
-                            "text": "Carter"
-                        }
-                    ],
-                    "given": [
-                        {
-                            "type": "text",
-                            "text": "Charles"
-                        }
-                    ]
-                }
-            ],
-            "publisher": [
-                {
-                    "type": "text",
-                    "text": "Collection Publishers"
-                }
-            ],
-            "location": [
-                {
-                    "type": "text",
-                    "text": "Boston"
-                }
-            ],
-            "keywords": "Test Keyword A, Test Keyword B"
+  "1": {
+    "entry_key": "CollectionTest1",
+    "bib_type": "proceedings",
+    "fields": {
+      "title": [
+        {
+          "type": "text",
+          "text": "Collection Test: Synthetic Conference Proceedings"
         }
+      ],
+      "shorttitle": [
+        {
+          "type": "text",
+          "text": "Collection Test Paper"
+        }
+      ],
+      "author": [
+        {
+          "family": [
+            {
+              "type": "text",
+              "text": "Carter"
+            }
+          ],
+          "given": [
+            {
+              "type": "text",
+              "text": "Charles"
+            }
+          ]
+        }
+      ],
+      "publisher": [
+        [
+          {
+            "type": "text",
+            "text": "Collection Publishers"
+          }
+        ]
+      ],
+      "location": [
+        [
+          {
+            "type": "text",
+            "text": "Boston"
+          }
+        ]
+      ],
+      "keywords": "Test Keyword A, Test Keyword B"
     }
+  }
 }

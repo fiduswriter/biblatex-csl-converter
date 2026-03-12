@@ -42,16 +42,20 @@
                 ],
                 "date": "2020",
                 "publisher": [
-                    {
-                        "type": "text",
-                        "text": "Test Press"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "Test Press"
+                        }
+                    ]
                 ],
                 "location": [
-                    {
-                        "type": "text",
-                        "text": "New York"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "New York"
+                        }
+                    ]
                 ],
                 "edition": [
                     {
@@ -96,10 +100,12 @@
                 ],
                 "date": "2018",
                 "location": [
-                    {
-                        "type": "text",
-                        "text": "Example City"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "Example City"
+                        }
+                    ]
                 ],
                 "note": [
                     {
@@ -108,10 +114,12 @@
                     }
                 ],
                 "institution": [
-                    {
-                        "type": "text",
-                        "text": "University of Example"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "University of Example"
+                        }
+                    ]
                 ],
                 "type": "PhD thesis"
             }

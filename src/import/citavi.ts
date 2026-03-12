@@ -1299,20 +1299,20 @@ export class CitaviParser {
                 Boolean
             )
             if (names.length > 0) {
-                fields["publisher"] = this.convertRichText(names.join(" / "))
+                fields["publisher"] = [this.convertRichText(names.join(" / "))]
             }
             // Some Publisher objects also carry a Place
             const places = ref.Publishers.map((p) => p.Place || "").filter(
                 Boolean
             )
             if (places.length > 0 && !ref.PlaceOfPublication) {
-                fields["location"] = this.convertRichText(places.join(" / "))
+                fields["location"] = [this.convertRichText(places.join(" / "))]
             }
         }
 
         // Explicit PlaceOfPublication always wins over Places from Publishers
         if (ref.PlaceOfPublication) {
-            fields["location"] = this.convertRichText(ref.PlaceOfPublication)
+            fields["location"] = [this.convertRichText(ref.PlaceOfPublication)]
         }
 
         // For Thesis, Organizations = Academic institution → institution field
@@ -1586,11 +1586,13 @@ export class CitaviParser {
                 Boolean
             )
             if (names.length) {
-                fields["publisher"] = this.convertRichText(names.join(" / "))
+                fields["publisher"] = [this.convertRichText(names.join(" / "))]
             }
         }
         if (parent.PlaceOfPublication && !fields["location"]) {
-            fields["location"] = this.convertRichText(parent.PlaceOfPublication)
+            fields["location"] = [
+                this.convertRichText(parent.PlaceOfPublication),
+            ]
         }
 
         // ── Parent ISBN ───────────────────────────────────────────────────────

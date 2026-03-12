@@ -168,11 +168,11 @@ function processLibreOfficeMarkAttrs(
     if (pages) fields["pages"] = convertRange(pages)
 
     const publisher = getAttr("text:publisher")
-    if (publisher) fields["publisher"] = makeRichText(publisher)
+    if (publisher) fields["publisher"] = [makeRichText(publisher)]
 
     // text:address is the ODF attribute for publisher address / place
     const address = getAttr("text:address")
-    if (address) fields["location"] = makeRichText(address)
+    if (address) fields["location"] = [makeRichText(address)]
 
     const edition = getAttr("text:edition")
     if (edition) fields["edition"] = makeRichText(edition)
@@ -199,11 +199,11 @@ function processLibreOfficeMarkAttrs(
 
     // text:institution / text:school → institution field
     const institution = getAttr("text:institution")
-    if (institution) fields["institution"] = makeRichText(institution)
+    if (institution) fields["institution"] = [makeRichText(institution)]
 
     const school = getAttr("text:school")
     if (school && !fields["institution"]) {
-        fields["institution"] = makeRichText(school)
+        fields["institution"] = [makeRichText(school)]
     }
 
     const reportType = getAttr("text:report-type")

@@ -702,6 +702,144 @@ describe("Static utility methods", () => {
                 expect(meta1.locator).to.equal("42")
                 expect(meta1.prefix).to.equal(undefined)
             })
+
+            it("Citavi SDT: extracts payload when instrText is split across multiple runs", () => {
+                // Real-world Word documents split long field codes across multiple
+                // <w:r><w:instrText> elements. The first run starts with
+                // "ADDIN CitaviPlaceholder" and subsequent runs continue the Base64.
+                const citaviPayload = JSON.stringify({
+                    $type: "SwissAcademic.Citavi.Citations.WordPlaceholder",
+                    WAIVersion: "6.14.0.0",
+                    Entries: [
+                        {
+                            $type: "SwissAcademic.Citavi.Citations.WordPlaceholderEntry",
+                            Id: "aaaa-split-0001",
+                            ReferenceId: "bbbb-split-0001",
+                            RangeLength: 12,
+                            UseNumberingTypeOfParentDocument: false,
+                            UseStandardPrefix: false,
+                            PageRange: {
+                                $type: "SwissAcademic.PageRange",
+                                OriginalString: "99",
+                                NumberingType: 0,
+                                NumeralSystem: 0,
+                                StartPage: {
+                                    $type: "SwissAcademic.PageNumber",
+                                    OriginalString: "99",
+                                    PrettyString: "99",
+                                    Number: 99,
+                                    IsFullyNumeric: true,
+                                    NumberingType: 0,
+                                    NumeralSystem: 0,
+                                },
+                            },
+                            Reference: {
+                                $type: "SwissAcademic.Citavi.Reference",
+                                Authors: [
+                                    { FirstName: "Peter", LastName: "Hofer" },
+                                ],
+                                Title: "Improving Urban Operations by Integration",
+                                Year: "2022",
+                                ReferenceType: "InternetDocument",
+                            },
+                        },
+                    ],
+                    Text: "(Hofer 2022)",
+                })
+                const fullB64 = btoa(citaviPayload)
+                // Real-world Word documents wrap the Base64 in curly braces:
+                //   ADDIN CitaviPlaceholder{<base64>}
+                // and split the content across multiple <w:instrText> runs.
+                // Split so that the opening { is in the first run and the
+                // closing } is in the last run, mirroring the observed format.
+                const splitAt = Math.floor(fullB64.length / 2)
+                const part1 = fullB64.slice(0, splitAt)
+                const part2 = fullB64.slice(splitAt)
+
+                const sdtXml =
+                    `<w:sdt><w:sdtPr>` +
+                    `<w:alias w:val="To edit, see citavi.com/edit"/>` +
+                    `<w:tag w:val="CitaviPlaceholder#6cab9f3a-1cf8-4da4-a08d-4c9f9a797540"/>` +
+                    `<w:id w:val="1945261596"/>` +
+                    `</w:sdtPr><w:sdtContent>` +
+                    `<w:r><w:fldChar w:fldCharType="begin"/></w:r>` +
+                    `<w:r><w:instrText>ADDIN CitaviPlaceholder{${part1}</w:instrText></w:r>` +
+                    `<w:r><w:instrText>${part2}}</w:instrText></w:r>` +
+                    `<w:r><w:fldChar w:fldCharType="separate"/></w:r>` +
+                    `<w:r><w:t>(Hofer 2022)</w:t></w:r>` +
+                    `<w:r><w:fldChar w:fldCharType="end"/></w:r>` +
+                    `</w:sdtContent></w:sdt>`
+
+                const result = converter.DocxCitationsParser.sdtCitation(
+                    sdtXml,
+                    true,
+                    true // retrieveMetadata
+                )
+                expect(result.isCitation).to.equal(true)
+                expect(result.format).to.equal("citavi")
+                expect(result.warnings).to.be.an("array").with.lengthOf(0)
+                expect(result.metadata).to.be.an("array").with.lengthOf(1)
+
+                const meta0 = result.metadata![0]
+                expect(meta0.locator).to.equal("99")
+                expect(meta0.prefix).to.equal(undefined)
+                expect(meta0.suppressAuthor).to.equal(undefined)
+            })
+
+            it("Citavi SDT: extracts payload when instrText is split across multiple runs (no curly braces)", () => {
+                // Some versions of Citavi omit the curly-brace wrapper and emit
+                // the Base64 directly: ADDIN CitaviPlaceholder<base64>
+                const citaviPayload = JSON.stringify({
+                    $type: "SwissAcademic.Citavi.Citations.WordPlaceholder",
+                    WAIVersion: "6.11.0.0",
+                    Entries: [
+                        {
+                            $type: "SwissAcademic.Citavi.Citations.WordPlaceholderEntry",
+                            Id: "aaaa-nobrace-0001",
+                            ReferenceId: "bbbb-nobrace-0001",
+                            RangeLength: 3,
+                            UseNumberingTypeOfParentDocument: false,
+                            UseStandardPrefix: false,
+                            Reference: {
+                                $type: "SwissAcademic.Citavi.Reference",
+                                Authors: [
+                                    { FirstName: "Jane", LastName: "Smith" },
+                                ],
+                                Title: "No-Brace Test Work",
+                                Year: "2021",
+                                ReferenceType: "Book",
+                            },
+                        },
+                    ],
+                    Text: "(Smith 2021)",
+                })
+                const fullB64 = btoa(citaviPayload)
+                const splitAt = Math.floor(fullB64.length / 2)
+                const part1 = fullB64.slice(0, splitAt)
+                const part2 = fullB64.slice(splitAt)
+
+                const sdtXml =
+                    `<w:sdt><w:sdtPr>` +
+                    `<w:tag w:val="CitaviPlaceholder#no-brace-test"/>` +
+                    `</w:sdtPr><w:sdtContent>` +
+                    `<w:r><w:fldChar w:fldCharType="begin"/></w:r>` +
+                    `<w:r><w:instrText>ADDIN CitaviPlaceholder${part1}</w:instrText></w:r>` +
+                    `<w:r><w:instrText>${part2}</w:instrText></w:r>` +
+                    `<w:r><w:fldChar w:fldCharType="separate"/></w:r>` +
+                    `<w:r><w:t>(Smith 2021)</w:t></w:r>` +
+                    `<w:r><w:fldChar w:fldCharType="end"/></w:r>` +
+                    `</w:sdtContent></w:sdt>`
+
+                const result = converter.DocxCitationsParser.sdtCitation(
+                    sdtXml,
+                    true,
+                    true
+                )
+                expect(result.isCitation).to.equal(true)
+                expect(result.format).to.equal("citavi")
+                expect(result.warnings).to.be.an("array").with.lengthOf(0)
+                expect(result.metadata).to.be.an("array").with.lengthOf(1)
+            })
         })
     })
 })

@@ -106,16 +106,20 @@
                 ],
                 "date": "2018",
                 "publisher": [
-                    {
-                        "type": "text",
-                        "text": "University Press"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "University Press"
+                        }
+                    ]
                 ],
                 "location": [
-                    {
-                        "type": "text",
-                        "text": "Cambridge"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "Cambridge"
+                        }
+                    ]
                 ],
                 "edition": [
                     {
@@ -175,16 +179,20 @@
                 ],
                 "date": "2019",
                 "publisher": [
-                    {
-                        "type": "text",
-                        "text": "ACM"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "ACM"
+                        }
+                    ]
                 ],
                 "location": [
-                    {
-                        "type": "text",
-                        "text": "San Francisco"
-                    }
+                    [
+                        {
+                            "type": "text",
+                            "text": "San Francisco"
+                        }
+                    ]
                 ],
                 "booktitle": [
                     {
