@@ -480,7 +480,7 @@ export class OdtCitationsParser {
             return
         }
 
-        const citationKey = rawKey.replace(/_/g, " ").trim()
+        const citationKey = rawKey.trim()
 
         if (seenKeys.has(citationKey)) return
         seenKeys.add(citationKey)
