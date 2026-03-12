@@ -232,27 +232,6 @@ describe("Static utility methods", () => {
         })
 
         describe("referenceMarkBibliography", () => {
-            it("detects Zotero bibliography mark", () => {
-                const markName = "ZOTERO_BIBL CSL_BIBLIOGRAPHY RNDEk1MPyJ9IL"
-                const result =
-                    converter.OdtCitationsParser.referenceMarkBibliography(
-                        markName
-                    )
-                expect(result.isBibliography).to.equal(true)
-                expect(result.format).to.equal("zotero")
-            })
-
-            it("detects Zotero bibliography mark with JSON and random ID", () => {
-                const markName =
-                    'ZOTERO_BIBL {"uncited":[],"custom":[]} CSL_BIBLIOGRAPHY RNDjURflxg9F1'
-                const result =
-                    converter.OdtCitationsParser.referenceMarkBibliography(
-                        markName
-                    )
-                expect(result.isBibliography).to.equal(true)
-                expect(result.format).to.equal("zotero")
-            })
-
             it("detects Mendeley bibliography mark", () => {
                 const markName = "CSL_BIBLIOGRAPHY"
                 const result =
@@ -294,6 +273,27 @@ describe("Static utility methods", () => {
         })
 
         describe("sectionBibliography", () => {
+            it("detects Zotero bibliography section", () => {
+                const sectionName = "ZOTERO_BIBL CSL_BIBLIOGRAPHY RNDEk1MPyJ9IL"
+                const result =
+                    converter.OdtCitationsParser.sectionBibliography(
+                        sectionName
+                    )
+                expect(result.isBibliography).to.equal(true)
+                expect(result.format).to.equal("zotero")
+            })
+
+            it("detects Zotero bibliography section with JSON and random ID", () => {
+                const sectionName =
+                    'ZOTERO_BIBL {"uncited":[],"omitted":[],"custom":[]} CSL_BIBLIOGRAPHY RNDjURflxggFg'
+                const result =
+                    converter.OdtCitationsParser.sectionBibliography(
+                        sectionName
+                    )
+                expect(result.isBibliography).to.equal(true)
+                expect(result.format).to.equal("zotero")
+            })
+
             it("detects JabRef bibliography section (lowercase)", () => {
                 const sectionName = "JR_bib"
                 const result =

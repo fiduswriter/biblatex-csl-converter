@@ -480,7 +480,7 @@ The reference mark name contains the full CSL-JSON payload (with `"` encoded as 
 > removed. These RTF sequences appear only in the display string inside `properties`
 > and do not affect the importable `citationItems[].itemData` records.
 
-The bibliography section uses a section whose name starts with `ZOTERO_BIBL` and ends with `CSL_BIBLIOGRAPHY`:
+The bibliography section uses a section whose name starts with `ZOTERO_BIBL` and ends with `CSL_BIBLIOGRAPHY` + a random ID:
 
 ```xml
 <text:section text:style-name="Sect1" text:name="ZOTERO_BIBL {\"uncited\":[],\"omitted\":[],\"custom\":[]} CSL_BIBLIOGRAPHY RNDjURflxg9F1">
@@ -1067,7 +1067,7 @@ Where `Mor01` is the citation key (stored as `<b:Tag>` in the XML). Word stores 
 
 | Manager | DOCX inline | DOCX bibliography | ODT inline | ODT bibliography | Citation metadata support |
 |---------|-------------|-------------------|------------|-----------------|---------------------------|
-| Zotero | `ADDIN ZOTERO_ITEM CSL_CITATION {json} RND<id>` (trailing random ID after JSON) | `ADDIN ZOTERO_BIBL {json} CSL_BIBLIOGRAPHY` | reference mark: `ZOTERO_ITEM CSL_CITATION {json} RND<id>` (trailing random ID after JSON) | reference mark: `ZOTERO_BIBL ... CSL_BIBLIOGRAPHY` | **Full CSL support**: `locator`, `label`, `prefix`, `suffix`, `suppress-author`, `author-only` |
+| Zotero | `ADDIN ZOTERO_ITEM CSL_CITATION {json} RND<id>` (trailing random ID after JSON) | `ADDIN ZOTERO_BIBL {json} CSL_BIBLIOGRAPHY` | reference mark: `ZOTERO_ITEM CSL_CITATION {json} RND<id>` (trailing random ID after JSON) | `<text:section text:name="ZOTERO_BIBL {json} CSL_BIBLIOGRAPHY RND<id>">` | **Full CSL support**: `locator`, `label`, `prefix`, `suffix`, `suppress-author`, `author-only` |
 | Mendeley Cite (current) | `w:sdt` with `w:tag="MENDELEY_CITATION_v3_{base64json}"` | `w:sdt` with `w:tag="MENDELEY_BIBLIOGRAPHY"` | not supported | not supported | **CSL-based**: `suppress-author`, `author-only`, `composite`; likely supports `locator`, `label`, `prefix`, `suffix` |
 | Mendeley Desktop (legacy) | `ADDIN CSL_CITATION {json}` | `ADDIN Mendeley Bibliography CSL_BIBLIOGRAPHY` | reference mark: `CSL_CITATION {json}` | reference mark: `CSL_BIBLIOGRAPHY` | **Full CSL support**: same as Zotero |
 | EndNote | `ADDIN EN.CITE <EndNote>...</EndNote>` (XML in field) | `ADDIN EN.REFLIST` | `{Author, Year #RecordNum}` plain text only | static text | **Limited**: `<Prefix>`, `<Suffix>`, `<Pages>`; no label or author suppression |

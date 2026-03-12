@@ -59,14 +59,12 @@
       </text:p>
 
       <!-- ============================================================
-           Bibliography mark — ZOTERO_BIBL … CSL_BIBLIOGRAPHY
+           Bibliography section — ZOTERO_BIBL … CSL_BIBLIOGRAPHY
            Contains only rendered text; produces no entries.
            ============================================================ -->
-      <text:p text:style-name="Text Body">
-        <text:reference-mark-start text:name="ZOTERO_BIBL {&quot;uncited&quot;:[],&quot;custom&quot;:[]} CSL_BIBLIOGRAPHY RNDjURflxg9F1"/>
-        <text:span>Hawking, S. (2010). Test article one. <text:span text:style-name="Emphasis">Physical Review Letters</text:span>, 105(3), 1–10.</text:span>
-        <text:reference-mark-end text:name="ZOTERO_BIBL {&quot;uncited&quot;:[],&quot;custom&quot;:[]} CSL_BIBLIOGRAPHY RNDjURflxg9F1"/>
-      </text:p>
+      <text:section text:style-name="Sect1" text:name="ZOTERO_BIBL {&quot;uncited&quot;:[],&quot;omitted&quot;:[],&quot;custom&quot;:[]} CSL_BIBLIOGRAPHY RNDjURflxggFg">
+        <text:p text:style-name="Bibliography_20_1">Hawking, S. (2010). Test article one. <text:span text:style-name="Emphasis">Physical Review Letters</text:span>, 105(3), 1–10.</text:p>
+      </text:section>
 
     </office:text>
   </office:body>

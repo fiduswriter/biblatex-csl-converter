@@ -273,9 +273,7 @@ export class OdtCitationsParser {
     static referenceMarkBibliography(markName: string): BibliographyResult {
         let format: string | undefined
 
-        if (markName.startsWith("ZOTERO_BIBL")) {
-            format = "zotero"
-        } else if (markName.startsWith("CSL_BIBLIOGRAPHY")) {
+        if (markName.startsWith("CSL_BIBLIOGRAPHY")) {
             format = "mendeley_legacy"
         }
 
@@ -301,8 +299,11 @@ export class OdtCitationsParser {
     static sectionBibliography(sectionName: string): BibliographyResult {
         let format: string | undefined
 
-        // JabRef creates bibliography sections with text:name="JR_bib" or "JR_BIB"
-        if (sectionName.toUpperCase() === "JR_BIB") {
+        // Zotero creates bibliography sections with text:name starting with "ZOTERO_BIBL"
+        if (sectionName.startsWith("ZOTERO_BIBL")) {
+            format = "zotero"
+            // JabRef creates bibliography sections with text:name="JR_bib" or "JR_BIB"
+        } else if (sectionName.toUpperCase() === "JR_BIB") {
             format = "jabref"
         }
 
