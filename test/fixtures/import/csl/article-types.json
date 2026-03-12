@@ -1,6 +1,6 @@
 {
     "1": {
-        "entry_key": "1",
+        "entry_key": "Der1980",
         "bib_type": "article-magazine",
         "fields": {
             "date": "1980",
@@ -39,7 +39,7 @@
         }
     },
     "2": {
-        "entry_key": "2",
+        "entry_key": "AFP2009",
         "bib_type": "article-newspaper",
         "fields": {
             "date": "2009-04-16",
@@ -70,7 +70,7 @@
         }
     },
     "3": {
-        "entry_key": "3",
+        "entry_key": "La2005",
         "bib_type": "article-newspaper",
         "fields": {
             "date": "2005-03-10",
@@ -99,7 +99,7 @@
         }
     },
     "4": {
-        "entry_key": "4",
+        "entry_key": "La2008",
         "bib_type": "article-newspaper",
         "fields": {
             "date": "2008-01-11",
@@ -128,7 +128,7 @@
         }
     },
     "5": {
-        "entry_key": "5",
+        "entry_key": "LeoGrande1979",
         "bib_type": "article",
         "fields": {
             "date": "1979-07",

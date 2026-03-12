@@ -1,6 +1,6 @@
 {
     "1": {
-        "entry_key": "1",
+        "entry_key": "Kaufmann2002",
         "bib_type": "inbook",
         "fields": {
             "date": "2002",
@@ -76,7 +76,7 @@
         }
     },
     "2": {
-        "entry_key": "2",
+        "entry_key": "Kaufmann2002a",
         "bib_type": "inbook",
         "fields": {
             "date": "2002",

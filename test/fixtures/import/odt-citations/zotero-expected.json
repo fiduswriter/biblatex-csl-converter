@@ -1,7 +1,7 @@
 {
     "entries": {
         "1": {
-            "entry_key": "46",
+            "entry_key": "Hawking2010",
             "bib_type": "article-journal",
             "fields": {
                 "title": [
@@ -63,7 +63,36 @@
             }
         },
         "2": {
-            "entry_key": "99",
+            "entry_key": "Hawking2010",
+            "bib_type": "article-journal",
+            "fields": {
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Test article one"
+                    }
+                ],
+                "author": [
+                    {
+                        "family": [
+                            {
+                                "type": "text",
+                                "text": "Hawking"
+                            }
+                        ],
+                        "given": [
+                            {
+                                "type": "text",
+                                "text": "Stephen"
+                            }
+                        ]
+                    }
+                ],
+                "date": "2010"
+            }
+        },
+        "3": {
+            "entry_key": "Penrose1989",
             "bib_type": "book",
             "fields": {
                 "title": [

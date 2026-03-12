@@ -1,6 +1,6 @@
 {
     "1": {
-        "entry_key": "1",
+        "entry_key": "Firstname2015",
         "bib_type": "article",
         "fields": {
             "date": "2015",
@@ -51,7 +51,7 @@
         }
     },
     "2": {
-        "entry_key": "2",
+        "entry_key": "Retorquere2016",
         "bib_type": "article",
         "fields": {
             "date": "2016",
@@ -122,7 +122,7 @@
         }
     },
     "3": {
-        "entry_key": "3",
+        "entry_key": "RetorquereDouble",
         "bib_type": "article",
         "fields": {
             "abstract": [

@@ -1,6 +1,6 @@
 {
     "1": {
-        "entry_key": "1",
+        "entry_key": "West2000",
         "bib_type": "book",
         "fields": {
             "date": "2000-08-22",
@@ -64,7 +64,7 @@
         }
     },
     "2": {
-        "entry_key": "2",
+        "entry_key": "Skubala2012",
         "bib_type": "book",
         "fields": {
             "date": "2012-09-27",
@@ -130,7 +130,7 @@
         }
     },
     "3": {
-        "entry_key": "3",
+        "entry_key": "Michigami1995",
         "bib_type": "article",
         "fields": {
             "date": "1995-12",
@@ -195,7 +195,7 @@
         }
     },
     "4": {
-        "entry_key": "4",
+        "entry_key": "Brato2014",
         "bib_type": "report",
         "fields": {
             "date": "2014-02-11",

@@ -1,6 +1,6 @@
 {
     "1": {
-        "entry_key": "1",
+        "entry_key": "Kennedy2007",
         "bib_type": "article",
         "fields": {
             "date": "2007",
@@ -78,7 +78,7 @@
         }
     },
     "2": {
-        "entry_key": "2",
+        "entry_key": "Fintel1994",
         "bib_type": "thesis",
         "fields": {
             "date": "1994",
@@ -124,7 +124,7 @@
         }
     },
     "3": {
-        "entry_key": "3",
+        "entry_key": "Vries2010",
         "bib_type": "thesis",
         "fields": {
             "date": "2010",
@@ -202,7 +202,7 @@
         }
     },
     "4": {
-        "entry_key": "4",
+        "entry_key": "Velde1995",
         "bib_type": "book",
         "fields": {
             "date": "1995",
@@ -260,7 +260,7 @@
         }
     },
     "5": {
-        "entry_key": "5",
+        "entry_key": "Swart1998",
         "bib_type": "article",
         "fields": {
             "date": "1998",

@@ -92,6 +92,13 @@ export interface CitationAccumulator {
     errors: ErrorObject[]
     warnings: ErrorObject[]
     seenKeys: Set<string>
+    /**
+     * Persistent map from raw CSL `id` strings to the normalised `entry_key`
+     * values assigned by `CSLParser`.  Accumulated across all citation elements
+     * processed with the same accumulator so that duplicate items (already in
+     * `seenKeys`) can still have their metadata resolved to the correct key.
+     */
+    cslRawIdToEntryKey: Map<string, string>
 }
 
 interface ErrorObject {
@@ -251,6 +258,8 @@ export class DocxCitationsParser {
     warnings: ErrorObject[]
     /** Entry keys already added — prevents duplicates across multiple fields. */
     private seenKeys: Set<string>
+    /** Persistent raw CSL id → normalised entry_key map for the instance parse. */
+    private cslRawIdToEntryKey: Map<string, string>
 
     constructor(documentXml: string, options: DocxCitationsParserOptions = {}) {
         this.documentXml = documentXml
@@ -259,6 +268,7 @@ export class DocxCitationsParser {
         this.errors = []
         this.warnings = []
         this.seenKeys = new Set()
+        this.cslRawIdToEntryKey = new Map()
     }
 
     // -----------------------------------------------------------------------
@@ -280,6 +290,7 @@ export class DocxCitationsParser {
             errors: [],
             warnings: [],
             seenKeys: new Set<string>(),
+            cslRawIdToEntryKey: new Map<string, string>(),
         }
     ): CitationResult {
         const { entries, errors, warnings } = acc
@@ -425,6 +436,7 @@ export class DocxCitationsParser {
             errors: [],
             warnings: [],
             seenKeys: new Set<string>(),
+            cslRawIdToEntryKey: new Map<string, string>(),
         }
     ): CitationResult {
         const { entries, errors, warnings, seenKeys } = acc
@@ -599,7 +611,7 @@ export class DocxCitationsParser {
         if (items.length === 0) return
 
         const cslRecord: Record<string, CSLEntry> = {}
-        // Track the resolved key for each item index so we can attach metadata later
+        // Track the raw CSL id for each item index so we can attach metadata later
         const itemKeys: Array<string | undefined> = []
         items.forEach((item, i) => {
             if (!item.itemData) {
@@ -610,16 +622,11 @@ export class DocxCitationsParser {
                 item.itemData.id === undefined
                     ? `${source}_${i}`
                     : String(item.itemData.id)
-            if (seenKeys.has(key)) {
-                itemKeys.push(key)
-                return
-            }
-            cslRecord[key] = item.itemData
+            // Always record the raw key; skip adding to cslRecord if already seen
             itemKeys.push(key)
+            if (seenKeys.has(key)) return
+            cslRecord[key] = item.itemData
         })
-
-        // Map rawKey (CSL id string) → normalised entry_key produced by CSLParser
-        const rawKeyToEntryKey = new Map<string, string>()
 
         if (Object.keys(cslRecord).length > 0) {
             const parser = new CSLParser(cslRecord)
@@ -632,21 +639,20 @@ export class DocxCitationsParser {
                 seenKeys.add(entry.entry_key)
                 entries.push(entry)
             }
-            // Build rawKey → entry_key from cslRecord order matching bibDB order
-            const cslIds = Object.keys(cslRecord)
-            const bibEntries = Object.values(bibDB)
-            cslIds.forEach((cslId, i) => {
-                if (bibEntries[i])
-                    rawKeyToEntryKey.set(cslId, bibEntries[i].entry_key)
-            })
+            // Merge the authoritative raw-id → entry_key map from this parse
+            // into the accumulator so future citations can resolve duplicates.
+            for (const [rawId, entryKey] of parser.rawIdToEntryKey) {
+                acc.cslRawIdToEntryKey.set(rawId, entryKey)
+            }
         }
 
         if (metadata) {
             items.forEach((item, i) => {
                 const rawKey = itemKeys[i]
                 if (!rawKey) return
-                // Resolve normalised entry_key; fall back to rawKey if not found
-                const entry_key = rawKeyToEntryKey.get(rawKey) ?? rawKey
+                // Resolve normalised entry_key via the persistent accumulator map;
+                // fall back to rawKey only if the entry was never successfully parsed.
+                const entry_key = acc.cslRawIdToEntryKey.get(rawKey) ?? rawKey
                 const meta: CitationItemMetadata = { entry_key }
                 if (
                     item.locator !== undefined &&
@@ -778,18 +784,15 @@ export class DocxCitationsParser {
         }
 
         if (metadata && typedPayload.Entries) {
-            // After insertion, re-scan entries to map ReferenceId → entry_key
-            // CitaviParser uses ReferenceId (UUID) as entry_key when available
+            // Use the authoritative ReferenceId → entry_key map that CitaviParser
+            // builds during parse().  This is reliable even when the parser
+            // synthesises a lastname+year key that bears no resemblance to the
+            // original UUID.
             for (const citaviEntry of typedPayload.Entries) {
                 const refId = citaviEntry.ReferenceId
                 if (!refId) continue
-                // Find the entry whose key matches (CitaviParser normalises UUIDs)
-                const entry = entries.find(
-                    (e) =>
-                        e.entry_key === refId ||
-                        e.entry_key.startsWith(refId.slice(0, 8))
-                )
-                const entry_key = entry?.entry_key ?? refId
+                const entry_key =
+                    parser.referenceIdToEntryKey.get(refId) ?? refId
                 const meta: CitationItemMetadata = { entry_key }
 
                 if (citaviEntry.Prefix) meta.prefix = citaviEntry.Prefix
@@ -971,15 +974,13 @@ export class DocxCitationsParser {
         entries.push(...Object.values(result.entries))
 
         if (metadata) {
-            // EndNoteParser uses the rec-number as the entry_key prefix; find by matching
+            // Use the authoritative rec-number → entry_key map that EndNoteParser
+            // builds during parse().  This is reliable even when the parser
+            // synthesises a lastname+year key that bears no resemblance to the
+            // original rec-number.
             for (const cite of citeFieldsList) {
-                const entry = entries.find(
-                    (e) =>
-                        e.entry_key === cite.recNum ||
-                        e.entry_key === `EN${cite.recNum}` ||
-                        e.entry_key.endsWith(cite.recNum)
-                )
-                const entry_key = entry?.entry_key ?? cite.recNum
+                const entry_key =
+                    parser.recNumberToEntryKey.get(cite.recNum) ?? cite.recNum
                 const meta: CitationItemMetadata = { entry_key }
                 if (cite.prefix) meta.prefix = cite.prefix
                 if (cite.suffix) meta.suffix = cite.suffix
@@ -1326,6 +1327,7 @@ export class DocxCitationsParser {
                 errors: this.errors,
                 warnings: this.warnings,
                 seenKeys: this.seenKeys,
+                cslRawIdToEntryKey: this.cslRawIdToEntryKey,
             })
         }
     }
@@ -1432,6 +1434,7 @@ export class DocxCitationsParser {
                         errors: this.errors,
                         warnings: this.warnings,
                         seenKeys: this.seenKeys,
+                        cslRawIdToEntryKey: this.cslRawIdToEntryKey,
                     }
                 )
             } else if (

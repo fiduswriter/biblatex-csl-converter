@@ -1,7 +1,7 @@
 {
     "entries": {
         "1": {
-            "entry_key": "1",
+            "entry_key": "SmithRobertA2023",
             "bib_type": "article-journal",
             "fields": {
                 "title": [
@@ -159,7 +159,7 @@
             }
         },
         "2": {
-            "entry_key": "2",
+            "entry_key": "MllerHansDieter2022",
             "bib_type": "inbook",
             "fields": {
                 "title": [
@@ -273,7 +273,7 @@
             }
         },
         "3": {
-            "entry_key": "3",
+            "entry_key": "AndersenPeter2021",
             "bib_type": "proceedings",
             "fields": {
                 "title": [
@@ -317,7 +317,7 @@
             }
         },
         "4": {
-            "entry_key": "4",
+            "entry_key": "GarcaLpezMaraElena2020",
             "bib_type": "thesis",
             "fields": {
                 "title": [
@@ -363,7 +363,7 @@
             }
         },
         "5": {
-            "entry_key": "5",
+            "entry_key": "ref2023",
             "bib_type": "article",
             "fields": {
                 "title": [
@@ -403,7 +403,7 @@
             }
         },
         "6": {
-            "entry_key": "6",
+            "entry_key": "ref2019",
             "bib_type": "unpublished",
             "fields": {
                 "title": [
@@ -433,7 +433,7 @@
             }
         },
         "7": {
-            "entry_key": "19",
+            "entry_key": "BronkRamseyChristopher2009",
             "bib_type": "article-journal",
             "fields": {
                 "title": [
@@ -518,7 +518,7 @@
             }
         },
         "8": {
-            "entry_key": "994",
+            "entry_key": "FernndezGtzM2013",
             "bib_type": "article-journal",
             "fields": {
                 "title": [
@@ -587,7 +587,7 @@
             }
         },
         "9": {
-            "entry_key": "995",
+            "entry_key": "JacobFriesenG1980",
             "bib_type": "article-journal",
             "fields": {
                 "title": [
@@ -648,7 +648,7 @@
             }
         },
         "10": {
-            "entry_key": "960",
+            "entry_key": "BillambozA2008",
             "bib_type": "inbook",
             "fields": {
                 "title": [
@@ -729,7 +729,7 @@
             }
         },
         "11": {
-            "entry_key": "2438",
+            "entry_key": "BaillieMGL1983",
             "bib_type": "inbook",
             "fields": {
                 "title": [
@@ -836,7 +836,7 @@
             }
         },
         "12": {
-            "entry_key": "2385",
+            "entry_key": "HighamCharles2009",
             "bib_type": "article-journal",
             "fields": {
                 "title": [
@@ -960,7 +960,7 @@
             }
         },
         "13": {
-            "entry_key": "2386",
+            "entry_key": "UnkelIngmar2012",
             "bib_type": "article-journal",
             "fields": {
                 "title": [
@@ -1123,7 +1123,7 @@
             }
         },
         "14": {
-            "entry_key": "2387",
+            "entry_key": "YuShiYong2021",
             "bib_type": "article-journal",
             "fields": {
                 "title": [
@@ -1272,7 +1272,7 @@
             }
         },
         "15": {
-            "entry_key": "819",
+            "entry_key": "ReimerPJAustinWENBardEBaylissABlackwellPGBronkRamseyCButzinMChengHEdwardsRLFriedrichMGrootesPMGuildersonTPHajdasIHeatonTJHoggAGHughenKAKromerBManningSWMuschelerRPalmerJGPearsonCvanderPlichtJReimerRWRichardsDAScottEMSouthonJRTurneyCSMWackerLAdolphiFBntgenUCapanoMFahrniSMFogtmannSchulzAFriedrichRKhlerPKudskSMiyakeFOlsenJReinigFSakamotoMSookdeoATalamoS2020",
             "bib_type": "article-journal",
             "fields": {
                 "title": [
@@ -1345,7 +1345,7 @@
             }
         },
         "16": {
-            "entry_key": "19",
+            "entry_key": "BronkRamseyChristopher2009a",
             "bib_type": "article-journal",
             "fields": {
                 "title": [
@@ -1430,7 +1430,7 @@
             }
         },
         "17": {
-            "entry_key": "1935",
+            "entry_key": "AertsBijmaAT2020",
             "bib_type": "article-journal",
             "fields": {
                 "title": [
@@ -1595,7 +1595,7 @@
             }
         },
         "18": {
-            "entry_key": "852",
+            "entry_key": "HeatonTimothyJ2020",
             "bib_type": "article-journal",
             "fields": {
                 "title": [
@@ -1760,7 +1760,7 @@
             }
         },
         "19": {
-            "entry_key": "819",
+            "entry_key": "ReimerPJAustinWENBardEBaylissABlackwellPGBronkRamseyCButzinMChengHEdwardsRLFriedrichMGrootesPMGuildersonTPHajdasIHeatonTJHoggAGHughenKAKromerBManningSWMuschelerRPalmerJGPearsonCvanderPlichtJReimerRWRichardsDAScottEMSouthonJRTurneyCSMWackerLAdolphiFBntgenUCapanoMFahrniSMFogtmannSchulzAFriedrichRKhlerPKudskSMiyakeFOlsenJReinigFSakamotoMSookdeoATalamoS2020a",
             "bib_type": "article-journal",
             "fields": {
                 "title": [
@@ -1833,7 +1833,7 @@
             }
         },
         "20": {
-            "entry_key": "2445",
+            "entry_key": "MiyakeFusa2012",
             "bib_type": "article-journal",
             "fields": {
                 "title": [

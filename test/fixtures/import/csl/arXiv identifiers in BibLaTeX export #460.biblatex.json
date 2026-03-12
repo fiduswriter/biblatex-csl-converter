@@ -1,6 +1,6 @@
 {
     "1": {
-        "entry_key": "1",
+        "entry_key": "Sen2016",
         "bib_type": "article",
         "fields": {
             "date": "2016-02",
@@ -88,7 +88,7 @@
         }
     },
     "2": {
-        "entry_key": "2",
+        "entry_key": "Smolin2013",
         "bib_type": "article",
         "fields": {
             "date": "2013-05-21",
@@ -139,7 +139,7 @@
         }
     },
     "3": {
-        "entry_key": "3",
+        "entry_key": "Rnnow2014",
         "bib_type": "article",
         "fields": {
             "date": "2014-07-25",

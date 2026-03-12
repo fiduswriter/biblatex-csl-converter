@@ -13,6 +13,7 @@ import {
     NameDictObject,
     RangeArray,
 } from "../const"
+import { makeEntryKey } from "./tools"
 
 // EndNote reference type name to BibType mapping
 // Direct mapping to internal BibType names
@@ -298,6 +299,14 @@ export class EndNoteParser {
     entries: EntryObject[]
     errors: ErrorObject[]
     warnings: ErrorObject[]
+    private usedKeys: Set<string> = new Set()
+    /**
+     * Maps each record's `rec-number` string to the final `entry_key` assigned
+     * after normalisation.  Populated during `parse()` so that callers (e.g.
+     * `DocxCitationsParser`) can resolve a rec-number back to the actual key
+     * used in the returned entries without fragile suffix-matching heuristics.
+     */
+    recNumberToEntryKey: Map<string, string> = new Map()
 
     constructor(input: EndNoteRecord[]) {
         this.input = Array.isArray(input) ? input : [input]
@@ -355,7 +364,7 @@ export class EndNoteParser {
             return false
         }
 
-        const entryKey = String(record["rec-number"] || index)
+        const entryKey = this.generateEntryKey(record, index)
         const fields: Record<string, unknown> = {}
         const processedFields: Set<string> = new Set()
         const unhandledData: string[] = []
@@ -851,6 +860,60 @@ export class EndNoteParser {
             bib_type: bibType,
             fields,
         }
+    }
+
+    private generateEntryKey(record: EndNoteRecord, index: number): string {
+        // Try to get the first primary author's last name for the key.
+        const authorsRaw = record.contributors?.authors?.author
+        let authorsArr: EndNoteAuthor[]
+        if (!authorsRaw) {
+            authorsArr = []
+        } else if (Array.isArray(authorsRaw)) {
+            authorsArr = authorsRaw
+        } else {
+            authorsArr = [authorsRaw]
+        }
+        const firstAuthor = authorsArr[0]
+        let lastName: string | undefined
+        if (firstAuthor) {
+            const raw =
+                firstAuthor["last-name"] ||
+                firstAuthor["#text"] ||
+                firstAuthor["corp-name"] ||
+                ""
+            const clean = (typeof raw === "string" ? raw : "").replace(
+                /[^A-Za-z0-9]/g,
+                ""
+            )
+            if (clean) lastName = clean
+        }
+
+        // Extract a four-digit year from the dates structure.
+        const datesYear = record.dates?.year
+        const yearNode = Array.isArray(datesYear) ? datesYear[0] : datesYear
+        let year: string | undefined
+        if (yearNode) {
+            const rawYear =
+                typeof yearNode === "string"
+                    ? yearNode
+                    : yearNode["#text"] ?? ""
+            const m = String(rawYear).match(/\d{4}/)
+            if (m) year = m[0]
+        }
+
+        // Use rec-number as the candidate so the numeric identifier is
+        // preserved in the key prefix ("ref{recNum}") when no author/year
+        // are available.
+        const candidate = String(record["rec-number"] || index)
+        const key = makeEntryKey(candidate, this.usedKeys, lastName, year)
+
+        // Record rec-number → entry_key so callers can do an O(1) lookup.
+        const recNum = String(record["rec-number"] ?? "")
+        if (recNum) {
+            this.recNumberToEntryKey.set(recNum, key)
+        }
+
+        return key
     }
 
     private getRefType(record: EndNoteRecord): string {

@@ -1,6 +1,6 @@
 {
     "1": {
-        "entry_key": "1",
+        "entry_key": "Clark1957",
         "bib_type": "booklet",
         "fields": {
             "date": "1957",
@@ -43,7 +43,7 @@
         }
     },
     "2": {
-        "entry_key": "2",
+        "entry_key": "ref2",
         "bib_type": "article",
         "fields": {
             "abstract": [
@@ -71,7 +71,7 @@
         }
     },
     "3": {
-        "entry_key": "3",
+        "entry_key": "Mozart1960",
         "bib_type": "article",
         "fields": {
             "date": "1960",
@@ -122,7 +122,7 @@
         }
     },
     "4": {
-        "entry_key": "4",
+        "entry_key": "Ratliff1999",
         "bib_type": "article",
         "fields": {
             "date": "1999-04",
@@ -204,7 +204,7 @@
         }
     },
     "5": {
-        "entry_key": "5",
+        "entry_key": "Kamp2006",
         "bib_type": "article",
         "fields": {
             "date": "2006-04",

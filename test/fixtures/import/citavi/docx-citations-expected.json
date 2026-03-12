@@ -1,638 +1,638 @@
 {
-  "1": {
-    "entry_key": "Smith.2023",
-    "bib_type": "article-journal",
-    "fields": {
-      "title": [
-        {
-          "type": "text",
-          "text": "A Comprehensive Study of Example Phenomena"
+    "1": {
+        "entry_key": "Smith.2023",
+        "bib_type": "article-journal",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "A Comprehensive Study of Example Phenomena"
+                }
+            ],
+            "shorttitle": [
+                {
+                    "type": "text",
+                    "text": "Comprehensive Study"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Smith"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "John A."
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Johnson"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Mary B."
+                        }
+                    ]
+                }
+            ],
+            "date": "2023",
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Journal of Examples"
+                }
+            ],
+            "shortjournal": [
+                {
+                    "type": "text",
+                    "text": "J. Exam."
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "45"
+                }
+            ],
+            "issue": [
+                {
+                    "type": "text",
+                    "text": "3"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "123"
+                        },
+                        {
+                            "type": "text",
+                            "text": "145"
+                        }
+                    ]
+                ]
+            ],
+            "isbn": [
+                {
+                    "type": "text",
+                    "text": "978-0-12-345678-9"
+                }
+            ],
+            "url": "https://doi.org/10.1234/example.2023.001",
+            "keywords": "methodology, research design",
+            "langid": "en"
         }
-      ],
-      "shorttitle": [
-        {
-          "type": "text",
-          "text": "Comprehensive Study"
+    },
+    "2": {
+        "entry_key": "Muller.2022",
+        "bib_type": "book",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Deutsche Beispiele in der Wissenschaft"
+                }
+            ],
+            "shorttitle": [
+                {
+                    "type": "text",
+                    "text": "Deutsche Beispiele"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Müller"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Hans"
+                        }
+                    ]
+                }
+            ],
+            "editor": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Schmidt"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Klaus"
+                        }
+                    ]
+                }
+            ],
+            "date": "2022",
+            "publisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Springer-Verlag"
+                    }
+                ]
+            ],
+            "location": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Berlin"
+                    }
+                ]
+            ],
+            "edition": [
+                {
+                    "type": "text",
+                    "text": "3rd"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "42"
+                        }
+                    ]
+                ]
+            ],
+            "isbn": [
+                {
+                    "type": "text",
+                    "text": "978-3-030-12345-6"
+                }
+            ],
+            "langid": "de"
         }
-      ],
-      "author": [
-        {
-          "family": [
-            {
-              "type": "text",
-              "text": "Smith"
-            }
-          ],
-          "given": [
-            {
-              "type": "text",
-              "text": "John A."
-            }
-          ]
-        },
-        {
-          "family": [
-            {
-              "type": "text",
-              "text": "Johnson"
-            }
-          ],
-          "given": [
-            {
-              "type": "text",
-              "text": "Mary B."
-            }
-          ]
+    },
+    "3": {
+        "entry_key": "Brown.2021",
+        "bib_type": "book",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Research Methods in Social Sciences"
+                }
+            ],
+            "shorttitle": [
+                {
+                    "type": "text",
+                    "text": "Research Methods"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Brown"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Alice"
+                        }
+                    ]
+                }
+            ],
+            "date": "2021",
+            "publisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Cambridge University Press"
+                    }
+                ]
+            ],
+            "location": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Cambridge"
+                    }
+                ]
+            ],
+            "edition": [
+                {
+                    "type": "text",
+                    "text": "2nd"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "xvii"
+                        }
+                    ]
+                ]
+            ],
+            "doi": [
+                {
+                    "type": "text",
+                    "text": "10.1234/example.2021.002"
+                }
+            ],
+            "url": "https://doi.org/10.1234/example.2021.002",
+            "langid": "en"
         }
-      ],
-      "date": "2023",
-      "journaltitle": [
-        {
-          "type": "text",
-          "text": "Journal of Examples"
+    },
+    "4": {
+        "entry_key": "Davis.2020",
+        "bib_type": "article-journal",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Modern Testing Frameworks: A Comprehensive Review"
+                }
+            ],
+            "shorttitle": [
+                {
+                    "type": "text",
+                    "text": "Testing Frameworks"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Davis"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Robert C."
+                        }
+                    ]
+                }
+            ],
+            "date": "2020",
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "International Journal of Testing"
+                }
+            ],
+            "shortjournal": [
+                {
+                    "type": "text",
+                    "text": "Int. J. Test."
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "12"
+                }
+            ],
+            "issue": [
+                {
+                    "type": "text",
+                    "text": "2"
+                }
+            ],
+            "doi": [
+                {
+                    "type": "text",
+                    "text": "10.1234/example.2020.003"
+                }
+            ],
+            "url": "https://doi.org/10.1234/example.2020.003",
+            "langid": "en"
         }
-      ],
-      "shortjournal": [
-        {
-          "type": "text",
-          "text": "J. Exam."
+    },
+    "5": {
+        "entry_key": "Evans.2019",
+        "bib_type": "book",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Citation Practices in the Humanities"
+                }
+            ],
+            "shorttitle": [
+                {
+                    "type": "text",
+                    "text": "Citation Practices"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Evans"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Clara"
+                        }
+                    ]
+                }
+            ],
+            "date": "2019",
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "14"
+                        },
+                        {
+                            "type": "text",
+                            "text": "15"
+                        }
+                    ]
+                ]
+            ],
+            "langid": "en"
         }
-      ],
-      "volume": [
-        {
-          "type": "text",
-          "text": "45"
+    },
+    "6": {
+        "entry_key": "Wagner.2018",
+        "bib_type": "book",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Rechtsquellen des Mittelalters"
+                }
+            ],
+            "shorttitle": [
+                {
+                    "type": "text",
+                    "text": "Rechtsquellen"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Wagner"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Friedrich"
+                        }
+                    ]
+                }
+            ],
+            "date": "2018",
+            "publisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Klostermann"
+                    }
+                ]
+            ],
+            "location": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Frankfurt"
+                    }
+                ]
+            ],
+            "langid": "de"
         }
-      ],
-      "issue": [
-        {
-          "type": "text",
-          "text": "3"
+    },
+    "7": {
+        "entry_key": "Foster.2017",
+        "bib_type": "book",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Classical Traditions in Modern Scholarship"
+                }
+            ],
+            "shorttitle": [
+                {
+                    "type": "text",
+                    "text": "Classical Traditions"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Foster"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Margaret"
+                        }
+                    ]
+                }
+            ],
+            "date": "2017",
+            "publisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Oxford University Press"
+                    }
+                ]
+            ],
+            "location": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Oxford"
+                    }
+                ]
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "xiv"
+                        },
+                        {
+                            "type": "text",
+                            "text": "xvi"
+                        }
+                    ]
+                ]
+            ],
+            "langid": "en"
         }
-      ],
-      "pages": [
-        [
-          [
-            {
-              "type": "text",
-              "text": "123"
-            },
-            {
-              "type": "text",
-              "text": "145"
-            }
-          ]
-        ]
-      ],
-      "isbn": [
-        {
-          "type": "text",
-          "text": "978-0-12-345678-9"
+    },
+    "8": {
+        "entry_key": "Nguyen.2016",
+        "bib_type": "book",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Background Reading in Comparative Literature"
+                }
+            ],
+            "shorttitle": [
+                {
+                    "type": "text",
+                    "text": "Background Reading"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Nguyen"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Thomas"
+                        }
+                    ]
+                }
+            ],
+            "date": "2016",
+            "publisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Academic Press"
+                    }
+                ]
+            ],
+            "location": [
+                [
+                    {
+                        "type": "text",
+                        "text": "New York"
+                    }
+                ]
+            ],
+            "langid": "en"
         }
-      ],
-      "url": "https://doi.org/10.1234/example.2023.001",
-      "keywords": "methodology, research design",
-      "langid": "en"
+    },
+    "9": {
+        "entry_key": "Hofer2022",
+        "bib_type": "article-journal",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "RApid Data Integration and Visualization (RADIV) in Subsurface Operations"
+                }
+            ],
+            "shorttitle": [
+                {
+                    "type": "text",
+                    "text": "RApid Data Integration and Visualization"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Hofer"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Peter"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Eder"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Julian"
+                        }
+                    ]
+                }
+            ],
+            "date": "2022",
+            "journaltitle": [
+                {
+                    "type": "text",
+                    "text": "Geomechanics and Tunnelling"
+                }
+            ],
+            "volume": [
+                {
+                    "type": "text",
+                    "text": "15"
+                }
+            ],
+            "issue": [
+                {
+                    "type": "text",
+                    "text": "3"
+                }
+            ],
+            "pages": [
+                [
+                    [
+                        {
+                            "type": "text",
+                            "text": "305"
+                        },
+                        {
+                            "type": "text",
+                            "text": "310"
+                        }
+                    ]
+                ]
+            ],
+            "doi": [
+                {
+                    "type": "text",
+                    "text": "10.1002/geot.202100068"
+                }
+            ],
+            "url": "https://doi.org/10.1002/geot.202100068"
+        }
     }
-  },
-  "2": {
-    "entry_key": "Muller.2022",
-    "bib_type": "book",
-    "fields": {
-      "title": [
-        {
-          "type": "text",
-          "text": "Deutsche Beispiele in der Wissenschaft"
-        }
-      ],
-      "shorttitle": [
-        {
-          "type": "text",
-          "text": "Deutsche Beispiele"
-        }
-      ],
-      "author": [
-        {
-          "family": [
-            {
-              "type": "text",
-              "text": "Müller"
-            }
-          ],
-          "given": [
-            {
-              "type": "text",
-              "text": "Hans"
-            }
-          ]
-        }
-      ],
-      "editor": [
-        {
-          "family": [
-            {
-              "type": "text",
-              "text": "Schmidt"
-            }
-          ],
-          "given": [
-            {
-              "type": "text",
-              "text": "Klaus"
-            }
-          ]
-        }
-      ],
-      "date": "2022",
-      "publisher": [
-        [
-          {
-            "type": "text",
-            "text": "Springer-Verlag"
-          }
-        ]
-      ],
-      "location": [
-        [
-          {
-            "type": "text",
-            "text": "Berlin"
-          }
-        ]
-      ],
-      "edition": [
-        {
-          "type": "text",
-          "text": "3rd"
-        }
-      ],
-      "pages": [
-        [
-          [
-            {
-              "type": "text",
-              "text": "42"
-            }
-          ]
-        ]
-      ],
-      "isbn": [
-        {
-          "type": "text",
-          "text": "978-3-030-12345-6"
-        }
-      ],
-      "langid": "de"
-    }
-  },
-  "3": {
-    "entry_key": "Brown.2021",
-    "bib_type": "book",
-    "fields": {
-      "title": [
-        {
-          "type": "text",
-          "text": "Research Methods in Social Sciences"
-        }
-      ],
-      "shorttitle": [
-        {
-          "type": "text",
-          "text": "Research Methods"
-        }
-      ],
-      "author": [
-        {
-          "family": [
-            {
-              "type": "text",
-              "text": "Brown"
-            }
-          ],
-          "given": [
-            {
-              "type": "text",
-              "text": "Alice"
-            }
-          ]
-        }
-      ],
-      "date": "2021",
-      "publisher": [
-        [
-          {
-            "type": "text",
-            "text": "Cambridge University Press"
-          }
-        ]
-      ],
-      "location": [
-        [
-          {
-            "type": "text",
-            "text": "Cambridge"
-          }
-        ]
-      ],
-      "edition": [
-        {
-          "type": "text",
-          "text": "2nd"
-        }
-      ],
-      "pages": [
-        [
-          [
-            {
-              "type": "text",
-              "text": "xvii"
-            }
-          ]
-        ]
-      ],
-      "doi": [
-        {
-          "type": "text",
-          "text": "10.1234/example.2021.002"
-        }
-      ],
-      "url": "https://doi.org/10.1234/example.2021.002",
-      "langid": "en"
-    }
-  },
-  "4": {
-    "entry_key": "Davis.2020",
-    "bib_type": "article-journal",
-    "fields": {
-      "title": [
-        {
-          "type": "text",
-          "text": "Modern Testing Frameworks: A Comprehensive Review"
-        }
-      ],
-      "shorttitle": [
-        {
-          "type": "text",
-          "text": "Testing Frameworks"
-        }
-      ],
-      "author": [
-        {
-          "family": [
-            {
-              "type": "text",
-              "text": "Davis"
-            }
-          ],
-          "given": [
-            {
-              "type": "text",
-              "text": "Robert C."
-            }
-          ]
-        }
-      ],
-      "date": "2020",
-      "journaltitle": [
-        {
-          "type": "text",
-          "text": "International Journal of Testing"
-        }
-      ],
-      "shortjournal": [
-        {
-          "type": "text",
-          "text": "Int. J. Test."
-        }
-      ],
-      "volume": [
-        {
-          "type": "text",
-          "text": "12"
-        }
-      ],
-      "issue": [
-        {
-          "type": "text",
-          "text": "2"
-        }
-      ],
-      "doi": [
-        {
-          "type": "text",
-          "text": "10.1234/example.2020.003"
-        }
-      ],
-      "url": "https://doi.org/10.1234/example.2020.003",
-      "langid": "en"
-    }
-  },
-  "5": {
-    "entry_key": "Evans.2019",
-    "bib_type": "book",
-    "fields": {
-      "title": [
-        {
-          "type": "text",
-          "text": "Citation Practices in the Humanities"
-        }
-      ],
-      "shorttitle": [
-        {
-          "type": "text",
-          "text": "Citation Practices"
-        }
-      ],
-      "author": [
-        {
-          "family": [
-            {
-              "type": "text",
-              "text": "Evans"
-            }
-          ],
-          "given": [
-            {
-              "type": "text",
-              "text": "Clara"
-            }
-          ]
-        }
-      ],
-      "date": "2019",
-      "pages": [
-        [
-          [
-            {
-              "type": "text",
-              "text": "14"
-            },
-            {
-              "type": "text",
-              "text": "15"
-            }
-          ]
-        ]
-      ],
-      "langid": "en"
-    }
-  },
-  "6": {
-    "entry_key": "Wagner.2018",
-    "bib_type": "book",
-    "fields": {
-      "title": [
-        {
-          "type": "text",
-          "text": "Rechtsquellen des Mittelalters"
-        }
-      ],
-      "shorttitle": [
-        {
-          "type": "text",
-          "text": "Rechtsquellen"
-        }
-      ],
-      "author": [
-        {
-          "family": [
-            {
-              "type": "text",
-              "text": "Wagner"
-            }
-          ],
-          "given": [
-            {
-              "type": "text",
-              "text": "Friedrich"
-            }
-          ]
-        }
-      ],
-      "date": "2018",
-      "publisher": [
-        [
-          {
-            "type": "text",
-            "text": "Klostermann"
-          }
-        ]
-      ],
-      "location": [
-        [
-          {
-            "type": "text",
-            "text": "Frankfurt"
-          }
-        ]
-      ],
-      "langid": "de"
-    }
-  },
-  "7": {
-    "entry_key": "Foster.2017",
-    "bib_type": "book",
-    "fields": {
-      "title": [
-        {
-          "type": "text",
-          "text": "Classical Traditions in Modern Scholarship"
-        }
-      ],
-      "shorttitle": [
-        {
-          "type": "text",
-          "text": "Classical Traditions"
-        }
-      ],
-      "author": [
-        {
-          "family": [
-            {
-              "type": "text",
-              "text": "Foster"
-            }
-          ],
-          "given": [
-            {
-              "type": "text",
-              "text": "Margaret"
-            }
-          ]
-        }
-      ],
-      "date": "2017",
-      "publisher": [
-        [
-          {
-            "type": "text",
-            "text": "Oxford University Press"
-          }
-        ]
-      ],
-      "location": [
-        [
-          {
-            "type": "text",
-            "text": "Oxford"
-          }
-        ]
-      ],
-      "pages": [
-        [
-          [
-            {
-              "type": "text",
-              "text": "xiv"
-            },
-            {
-              "type": "text",
-              "text": "xvi"
-            }
-          ]
-        ]
-      ],
-      "langid": "en"
-    }
-  },
-  "8": {
-    "entry_key": "Nguyen.2016",
-    "bib_type": "book",
-    "fields": {
-      "title": [
-        {
-          "type": "text",
-          "text": "Background Reading in Comparative Literature"
-        }
-      ],
-      "shorttitle": [
-        {
-          "type": "text",
-          "text": "Background Reading"
-        }
-      ],
-      "author": [
-        {
-          "family": [
-            {
-              "type": "text",
-              "text": "Nguyen"
-            }
-          ],
-          "given": [
-            {
-              "type": "text",
-              "text": "Thomas"
-            }
-          ]
-        }
-      ],
-      "date": "2016",
-      "publisher": [
-        [
-          {
-            "type": "text",
-            "text": "Academic Press"
-          }
-        ]
-      ],
-      "location": [
-        [
-          {
-            "type": "text",
-            "text": "New York"
-          }
-        ]
-      ],
-      "langid": "en"
-    }
-  },
-  "9": {
-    "entry_key": "Hofer.2022",
-    "bib_type": "article-journal",
-    "fields": {
-      "title": [
-        {
-          "type": "text",
-          "text": "RApid Data Integration and Visualization (RADIV) in Subsurface Operations"
-        }
-      ],
-      "shorttitle": [
-        {
-          "type": "text",
-          "text": "RApid Data Integration and Visualization"
-        }
-      ],
-      "author": [
-        {
-          "family": [
-            {
-              "type": "text",
-              "text": "Hofer"
-            }
-          ],
-          "given": [
-            {
-              "type": "text",
-              "text": "Peter"
-            }
-          ]
-        },
-        {
-          "family": [
-            {
-              "type": "text",
-              "text": "Eder"
-            }
-          ],
-          "given": [
-            {
-              "type": "text",
-              "text": "Julian"
-            }
-          ]
-        }
-      ],
-      "date": "2022",
-      "journaltitle": [
-        {
-          "type": "text",
-          "text": "Geomechanics and Tunnelling"
-        }
-      ],
-      "volume": [
-        {
-          "type": "text",
-          "text": "15"
-        }
-      ],
-      "issue": [
-        {
-          "type": "text",
-          "text": "3"
-        }
-      ],
-      "pages": [
-        [
-          [
-            {
-              "type": "text",
-              "text": "305"
-            },
-            {
-              "type": "text",
-              "text": "310"
-            }
-          ]
-        ]
-      ],
-      "doi": [
-        {
-          "type": "text",
-          "text": "10.1002/geot.202100068"
-        }
-      ],
-      "url": "https://doi.org/10.1002/geot.202100068"
-    }
-  }
 }

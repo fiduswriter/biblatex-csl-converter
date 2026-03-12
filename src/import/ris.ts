@@ -12,6 +12,7 @@ import {
     NameDictObject,
     RangeArray,
 } from "../const"
+import { makeEntryKey } from "./tools"
 
 // RIS type to BibType mapping
 // Source of types: https://github.com/zotero/translators/blob/873602eb8b0961da0b306161dc386032631ffaeb/RIS.js
@@ -148,6 +149,7 @@ export class RISParser {
     entries: EntryObject[]
     errors: ErrorObject[]
     warnings: ErrorObject[]
+    private usedKeys: Set<string> = new Set()
 
     constructor(input: string) {
         this.input = input
@@ -551,13 +553,17 @@ export class RISParser {
     private generateEntryKey(record: RISRecord, index: number): string {
         const firstAuthor =
             this.getFirstValue(record["AU"]) || this.getFirstValue(record["A1"])
-        const year =
+        const yearRaw =
             this.getFirstValue(record["PY"]) || this.getFirstValue(record["Y1"])
-        if (firstAuthor && year) {
-            const lastName = firstAuthor.split(",")[0].trim()
-            return `${lastName}${year}`
-        }
-        return String(index)
+        // Extract a clean four-digit year from whatever the field contains.
+        const year = yearRaw ? yearRaw.match(/\d{4}/)?.[0] ?? "" : ""
+        const lastName = firstAuthor ? firstAuthor.split(",")[0].trim() : ""
+        return makeEntryKey(
+            String(index),
+            this.usedKeys,
+            lastName || undefined,
+            year || undefined
+        )
     }
 
     private convertRange(value: string): RangeArray[] {

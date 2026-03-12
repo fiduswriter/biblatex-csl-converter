@@ -1,6 +1,6 @@
 {
     "1": {
-        "entry_key": "1",
+        "entry_key": "ref1",
         "bib_type": "book",
         "fields": {
             "title": [
@@ -12,7 +12,7 @@
         }
     },
     "2": {
-        "entry_key": "2",
+        "entry_key": "ref2",
         "bib_type": "book",
         "fields": {
             "title": [

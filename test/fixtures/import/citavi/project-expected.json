@@ -1,103 +1,103 @@
 {
-  "1": {
-    "entry_key": "ProjectTest2023",
-    "bib_type": "proceedings",
-    "fields": {
-      "title": [
-        {
-          "type": "text",
-          "text": "Synthetic Project Conference Paper"
+    "1": {
+        "entry_key": "ProjectTest2023",
+        "bib_type": "proceedings",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Synthetic Project Conference Paper"
+                }
+            ],
+            "shorttitle": [
+                {
+                    "type": "text",
+                    "text": "Project Test"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Green"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Greg"
+                        }
+                    ]
+                },
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Harris"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Helen"
+                        }
+                    ]
+                }
+            ],
+            "date": "2023-06-10",
+            "publisher": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Project Publishers"
+                    }
+                ]
+            ],
+            "location": [
+                [
+                    {
+                        "type": "text",
+                        "text": "Seattle"
+                    }
+                ]
+            ],
+            "keywords": "Project Test A"
         }
-      ],
-      "shorttitle": [
-        {
-          "type": "text",
-          "text": "Project Test"
+    },
+    "2": {
+        "entry_key": "ProjectJournal2022",
+        "bib_type": "article-journal",
+        "fields": {
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Synthetic Project Journal Article"
+                }
+            ],
+            "shorttitle": [
+                {
+                    "type": "text",
+                    "text": "Project Journal"
+                }
+            ],
+            "author": [
+                {
+                    "family": [
+                        {
+                            "type": "text",
+                            "text": "Harris"
+                        }
+                    ],
+                    "given": [
+                        {
+                            "type": "text",
+                            "text": "Helen"
+                        }
+                    ]
+                }
+            ],
+            "keywords": "Project Test B"
         }
-      ],
-      "author": [
-        {
-          "family": [
-            {
-              "type": "text",
-              "text": "Green"
-            }
-          ],
-          "given": [
-            {
-              "type": "text",
-              "text": "Greg"
-            }
-          ]
-        },
-        {
-          "family": [
-            {
-              "type": "text",
-              "text": "Harris"
-            }
-          ],
-          "given": [
-            {
-              "type": "text",
-              "text": "Helen"
-            }
-          ]
-        }
-      ],
-      "date": "2023-06-10",
-      "publisher": [
-        [
-          {
-            "type": "text",
-            "text": "Project Publishers"
-          }
-        ]
-      ],
-      "location": [
-        [
-          {
-            "type": "text",
-            "text": "Seattle"
-          }
-        ]
-      ],
-      "keywords": "Project Test A"
     }
-  },
-  "2": {
-    "entry_key": "ProjectJournal2022",
-    "bib_type": "article-journal",
-    "fields": {
-      "title": [
-        {
-          "type": "text",
-          "text": "Synthetic Project Journal Article"
-        }
-      ],
-      "shorttitle": [
-        {
-          "type": "text",
-          "text": "Project Journal"
-        }
-      ],
-      "author": [
-        {
-          "family": [
-            {
-              "type": "text",
-              "text": "Harris"
-            }
-          ],
-          "given": [
-            {
-              "type": "text",
-              "text": "Helen"
-            }
-          ]
-        }
-      ],
-      "keywords": "Project Test B"
-    }
-  }
 }

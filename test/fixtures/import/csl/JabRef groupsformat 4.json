@@ -1,6 +1,6 @@
 {
     "1": {
-        "entry_key": "1",
+        "entry_key": "Doe2017",
         "bib_type": "article",
         "fields": {
             "date": "2017",
@@ -29,7 +29,7 @@
         }
     },
     "2": {
-        "entry_key": "2",
+        "entry_key": "Other",
         "bib_type": "article",
         "fields": {
             "author": [
@@ -57,7 +57,7 @@
         }
     },
     "3": {
-        "entry_key": "3",
+        "entry_key": "Unkonw",
         "bib_type": "article",
         "fields": {
             "author": [
@@ -85,7 +85,7 @@
         }
     },
     "4": {
-        "entry_key": "4",
+        "entry_key": "Unkonwa",
         "bib_type": "article",
         "fields": {
             "author": [

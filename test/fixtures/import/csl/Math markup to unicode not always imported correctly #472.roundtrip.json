@@ -1,6 +1,6 @@
 {
     "1": {
-        "entry_key": "1",
+        "entry_key": "Doe2016",
         "bib_type": "inproceedings",
         "fields": {
             "date": "2016-02",
@@ -208,7 +208,7 @@
         }
     },
     "2": {
-        "entry_key": "2",
+        "entry_key": "Doe2016a",
         "bib_type": "inproceedings",
         "fields": {
             "date": "2016-02",

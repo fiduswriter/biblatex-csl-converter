@@ -1,6 +1,6 @@
 {
     "1": {
-        "entry_key": "1",
+        "entry_key": "Descartes1897",
         "bib_type": "book",
         "fields": {
             "date": "1897",
@@ -81,7 +81,7 @@
         }
     },
     "2": {
-        "entry_key": "2",
+        "entry_key": "Descartes1897a",
         "bib_type": "book",
         "fields": {
             "date": "1897",
@@ -162,7 +162,7 @@
         }
     },
     "3": {
-        "entry_key": "3",
+        "entry_key": "Descartes1897b",
         "bib_type": "book",
         "fields": {
             "date": "1897",

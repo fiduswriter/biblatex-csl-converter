@@ -15,6 +15,7 @@ import {
     NameDictObject,
     RangeArray,
 } from "../const"
+import { makeEntryKey } from "./tools"
 
 /**
  * Map from PubMed publication type strings (PT tag) to internal BibTypes.
@@ -200,6 +201,7 @@ export class NBIBParser {
     entries: EntryObject[]
     errors: ErrorObject[]
     warnings: ErrorObject[]
+    private usedKeys: Set<string> = new Set()
 
     constructor(input: string) {
         this.input = input
@@ -784,31 +786,30 @@ export class NBIBParser {
             this.getFirstValue(record["FAU"]) ||
             this.getFirstValue(record["AU"])
         const dp = this.getFirstValue(record["DP"])
-        const year = dp ? dp.match(/\d{4}/)?.[0] || "" : ""
+        const year = dp ? dp.match(/\d{4}/)?.[0] ?? "" : ""
 
+        // Use the family name part (before the comma, if present)
+        let lastName: string | undefined
         if (firstAuthor) {
-            // Use the family name part (before the comma, if present)
             const family = firstAuthor.includes(",")
                 ? firstAuthor.split(",")[0].trim()
                 : firstAuthor.split(/\s+/).slice(0, -1).join("") ||
                   firstAuthor.split(/\s+/)[0]
-            // Remove non-ASCII and spaces for a clean key
             const cleanFamily = family.replace(/[^A-Za-z0-9]/g, "")
-            if (cleanFamily && year) {
-                return `${cleanFamily}${year}`
-            }
-            if (cleanFamily) {
-                return cleanFamily
-            }
+            if (cleanFamily) lastName = cleanFamily
         }
 
-        // Fallback: use the PMID if available
+        // Use PMID as the candidate when no author is available so that the
+        // prefixed form "pmid{number}" is preserved as a fallback base.
         const pmid = this.getFirstValue(record["PMID"])
-        if (pmid) {
-            return `pmid${pmid.trim()}`
-        }
+        const candidate = pmid ? `pmid${pmid.trim()}` : String(index)
 
-        return String(index)
+        return makeEntryKey(
+            candidate,
+            this.usedKeys,
+            lastName,
+            year || undefined
+        )
     }
 
     private convertRange(value: string): RangeArray[] {

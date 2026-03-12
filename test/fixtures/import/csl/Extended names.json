@@ -1,6 +1,6 @@
 {
     "1": {
-        "entry_key": "1",
+        "entry_key": "Hess2008",
         "bib_type": "article",
         "fields": {
             "date": "2008",
@@ -104,7 +104,7 @@
         }
     },
     "2": {
-        "entry_key": "2",
+        "entry_key": "Berendsen1995",
         "bib_type": "article",
         "fields": {
             "date": "1995",
@@ -201,7 +201,7 @@
         }
     },
     "3": {
-        "entry_key": "3",
+        "entry_key": "Goldenberg1978",
         "bib_type": "article",
         "fields": {
             "date": "1978",

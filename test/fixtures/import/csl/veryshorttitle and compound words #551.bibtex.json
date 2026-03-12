@@ -1,6 +1,6 @@
 {
     "1": {
-        "entry_key": "1",
+        "entry_key": "Puurtinen2009",
         "bib_type": "article",
         "fields": {
             "date": "2009-01",
@@ -83,7 +83,7 @@
         }
     },
     "2": {
-        "entry_key": "2",
+        "entry_key": "Bowles2003",
         "bib_type": "inbook",
         "fields": {
             "date": "2003",
@@ -231,7 +231,7 @@
         }
     },
     "3": {
-        "entry_key": "3",
+        "entry_key": "Sumner1906",
         "bib_type": "book",
         "fields": {
             "date": "1906",
@@ -282,7 +282,7 @@
         }
     },
     "4": {
-        "entry_key": "4",
+        "entry_key": "Bauer2014",
         "bib_type": "article",
         "fields": {
             "date": "2014",

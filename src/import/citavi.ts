@@ -24,6 +24,7 @@ import {
     NameDictObject,
     RangeArray,
 } from "../const"
+import { makeEntryKey } from "./tools"
 
 // ─── Citavi reference type → internal BibType mapping ───────────────────────
 
@@ -874,6 +875,14 @@ export class CitaviParser {
 
     /** Track processed Citavi Reference IDs to avoid duplicate imports */
     private seenIds: Set<string> = new Set()
+    private usedKeys: Set<string> = new Set()
+    /**
+     * Maps each Citavi Reference `Id` (UUID) to the final `entry_key` that was
+     * assigned to it after normalisation.  Populated during `parse()` so that
+     * callers (e.g. `DocxCitationsParser`) can resolve a `ReferenceId` from a
+     * `CitaviEntry` back to the actual key used in the returned `BibDB`.
+     */
+    referenceIdToEntryKey: Map<string, string> = new Map()
 
     constructor(input: CitaviInput) {
         this.input = input
@@ -1080,6 +1089,11 @@ export class CitaviParser {
 
         // ── Entry key ───────────────────────────────────────────────────────
         const entryKey = this.buildEntryKey(ref, index, entryId)
+
+        // Record the UUID → entry_key mapping so callers can resolve metadata.
+        if (ref.Id) {
+            this.referenceIdToEntryKey.set(ref.Id, entryKey)
+        }
 
         return {
             entry_key: entryKey,
@@ -1747,30 +1761,43 @@ export class CitaviParser {
         index: number,
         entryId: string
     ): string {
-        // 1. Prefer the BibTeX key that Citavi already computed
-        if (ref.BibTeXKey) return ref.BibTeXKey
+        // 1. Prefer the BibTeX key that Citavi already computed — but still
+        //    run it through makeEntryKey to guarantee a letter prefix and
+        //    uniqueness within this parse session.
+        if (ref.BibTeXKey) {
+            return makeEntryKey(ref.BibTeXKey, this.usedKeys)
+        }
 
         // 2. Derive from first author/editor surname + year
-        const year = ref.YearResolved || ref.Year || ""
+        const yearRaw = ref.YearResolved || ref.Year || ""
+        const year = yearRaw ? String(yearRaw).match(/\d{4}/)?.[0] ?? "" : ""
         const firstPerson =
             ref.Authors?.[0] || ref.Editors?.[0] || ref.Organizations?.[0]
+        let lastName: string | undefined
         if (firstPerson) {
             const surname = (
                 firstPerson.LastName ||
                 firstPerson.Name ||
                 ""
-            ).replace(/\s+/g, "")
-            if (surname && year) return `${surname}.${year}`
-            if (surname) return surname
+            ).replace(/[^A-Za-z0-9]/g, "")
+            if (surname) lastName = surname
         }
 
-        // 3. Fall back to the Citavi UUID or a sequential number
-        const fallback = ref.Id || String(index)
-        this.warnings.push({
-            type: "missing_entry_key",
-            entry: entryId,
-        })
-        return fallback
+        // 3. Fall back to the Citavi UUID or a sequential number as candidate.
+        //    If neither author nor year could be extracted, emit a warning.
+        const candidate = ref.Id || String(index)
+        if (!lastName && !year) {
+            this.warnings.push({
+                type: "missing_entry_key",
+                entry: entryId,
+            })
+        }
+        return makeEntryKey(
+            candidate,
+            this.usedKeys,
+            lastName,
+            year || undefined
+        )
     }
 
     // ─── Text utilities ──────────────────────────────────────────────────────

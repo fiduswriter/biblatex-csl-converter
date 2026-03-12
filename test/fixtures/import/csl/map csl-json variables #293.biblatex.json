@@ -1,6 +1,6 @@
 {
     "1": {
-        "entry_key": "1",
+        "entry_key": "Latour2008",
         "bib_type": "book",
         "fields": {
             "date": "2008",
@@ -74,7 +74,7 @@
         }
     },
     "2": {
-        "entry_key": "2",
+        "entry_key": "Kelsen2004",
         "bib_type": "book",
         "fields": {
             "origdate": "1929",

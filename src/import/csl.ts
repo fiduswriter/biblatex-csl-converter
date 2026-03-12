@@ -6,6 +6,7 @@ import {
     NameDictObject,
     RangeArray,
 } from "../const"
+import { makeEntryKey } from "./tools"
 
 interface CSLNameObject {
     literal?: string
@@ -39,6 +40,15 @@ export class CSLParser {
     entries: EntryObject[]
     errors: ErrorObject[]
     warnings: ErrorObject[]
+    private usedKeys: Set<string> = new Set()
+    /**
+     * Maps each raw CSL `id` string to the final `entry_key` assigned after
+     * normalisation.  Populated during `parse()` so that callers (e.g.
+     * `DocxCitationsParser`, `OdtCitationsParser`) can resolve a raw CSL id
+     * back to the actual key used in the returned BibDB — even when the parser
+     * synthesised a lastname+year key that bears no resemblance to the original.
+     */
+    rawIdToEntryKey: Map<string, string> = new Map()
 
     constructor(input: Record<string, CSLEntry>) {
         this.input = input
@@ -89,8 +99,32 @@ export class CSLParser {
             }
         }
 
+        // Derive a name/year hint for key synthesis when the raw id is not
+        // letter-prefixed (e.g. purely numeric ids from some CSL producers).
+        let lastName: string | undefined
+        let year: string | undefined
+        if (!/^[A-Za-z]/.test(id)) {
+            const authors = entry["author"] as CSLNameObject[] | undefined
+            const first = Array.isArray(authors) ? authors[0] : undefined
+            if (first?.family) {
+                lastName = first.family.replace(/[^A-Za-z0-9]/g, "")
+            } else if (first?.literal) {
+                lastName = first.literal
+                    .split(/\s+/)[0]
+                    .replace(/[^A-Za-z0-9]/g, "")
+            }
+            const issued = entry["issued"] as CSLDateObject | undefined
+            const parts = issued?.["date-parts"]?.[0]
+            if (parts?.[0]) year = String(parts[0])
+        }
+
+        const entryKey = makeEntryKey(id, this.usedKeys, lastName, year)
+
+        // Record the raw id → normalised entry_key for caller lookup.
+        this.rawIdToEntryKey.set(id, entryKey)
+
         return {
-            entry_key: id,
+            entry_key: entryKey,
             bib_type: bibType,
             fields,
         }

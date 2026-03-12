@@ -1,6 +1,6 @@
 {
     "1": {
-        "entry_key": "1",
+        "entry_key": "ref1",
         "bib_type": "article",
         "fields": {
             "title": [
@@ -33,7 +33,7 @@
         }
     },
     "2": {
-        "entry_key": "2",
+        "entry_key": "ref2",
         "bib_type": "book",
         "fields": {
             "title": [
@@ -45,7 +45,7 @@
         }
     },
     "3": {
-        "entry_key": "3",
+        "entry_key": "ref3",
         "bib_type": "book",
         "fields": {
             "title": [
@@ -66,7 +66,7 @@
         }
     },
     "4": {
-        "entry_key": "4",
+        "entry_key": "ref4",
         "bib_type": "article",
         "fields": {
             "title": [
@@ -132,7 +132,7 @@
         }
     },
     "5": {
-        "entry_key": "5",
+        "entry_key": "ref5",
         "bib_type": "book",
         "fields": {
             "abstract": [
@@ -150,7 +150,7 @@
         }
     },
     "6": {
-        "entry_key": "6",
+        "entry_key": "ref6",
         "bib_type": "book",
         "fields": {
             "title": [
@@ -171,7 +171,7 @@
         }
     },
     "7": {
-        "entry_key": "7",
+        "entry_key": "ref7",
         "bib_type": "article",
         "fields": {
             "title": [
@@ -231,7 +231,7 @@
         }
     },
     "8": {
-        "entry_key": "8",
+        "entry_key": "ref8",
         "bib_type": "book",
         "fields": {
             "abstract": [

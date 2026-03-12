@@ -1,6 +1,6 @@
 {
     "1": {
-        "entry_key": "1",
+        "entry_key": "Abram2014",
         "bib_type": "article",
         "fields": {
             "date": "2014",
@@ -94,7 +94,7 @@
         }
     },
     "2": {
-        "entry_key": "2",
+        "entry_key": "Pollard2007",
         "bib_type": "article",
         "fields": {
             "date": "2007",
@@ -173,7 +173,7 @@
         }
     },
     "3": {
-        "entry_key": "3",
+        "entry_key": "Commonwealth1998",
         "bib_type": "article",
         "fields": {
             "date": "1998-04-01",

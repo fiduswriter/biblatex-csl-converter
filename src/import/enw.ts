@@ -12,6 +12,7 @@ import {
     NameDictObject,
     RangeArray,
 } from "../const"
+import { makeEntryKey } from "./tools"
 
 // EndNote .enw format type mapping (%0)
 // Source: Endnote 21 User Guide, p. 248-249
@@ -127,6 +128,7 @@ export class ENWParser {
     entries: EntryObject[]
     errors: ErrorObject[]
     warnings: ErrorObject[]
+    private usedKeys: Set<string> = new Set()
 
     constructor(input: string) {
         this.input = input
@@ -468,12 +470,16 @@ export class ENWParser {
 
     private generateEntryKey(record: ENWRecord, index: number): string {
         const firstAuthor = this.getFirstValue(record["%A"])
-        const year = this.getFirstValue(record["%D"])
-        if (firstAuthor && year) {
-            const lastName = firstAuthor.split(",")[0].trim()
-            return `${lastName}${year}`
-        }
-        return String(index)
+        const yearRaw = this.getFirstValue(record["%D"])
+        // Extract a clean four-digit year from whatever the field contains.
+        const year = yearRaw ? yearRaw.match(/\d{4}/)?.[0] ?? "" : ""
+        const lastName = firstAuthor ? firstAuthor.split(",")[0].trim() : ""
+        return makeEntryKey(
+            String(index),
+            this.usedKeys,
+            lastName || undefined,
+            year || undefined
+        )
     }
 
     private convertRange(value: string): RangeArray[] {

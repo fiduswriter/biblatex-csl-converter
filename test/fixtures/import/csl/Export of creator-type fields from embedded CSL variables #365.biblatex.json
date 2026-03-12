@@ -1,6 +1,6 @@
 {
     "1": {
-        "entry_key": "1",
+        "entry_key": "ref2015",
         "bib_type": "article",
         "fields": {
             "date": "2015",
@@ -13,7 +13,7 @@
         }
     },
     "2": {
-        "entry_key": "2",
+        "entry_key": "Author2015",
         "bib_type": "report",
         "fields": {
             "date": "2015",
@@ -56,7 +56,7 @@
         }
     },
     "3": {
-        "entry_key": "3",
+        "entry_key": "ref1964",
         "bib_type": "article",
         "fields": {
             "date": "1964",
@@ -105,7 +105,7 @@
         }
     },
     "4": {
-        "entry_key": "4",
+        "entry_key": "ref1996",
         "bib_type": "article",
         "fields": {
             "date": "1996-09-16",
@@ -127,7 +127,7 @@
         }
     },
     "5": {
-        "entry_key": "5",
+        "entry_key": "ref2003",
         "bib_type": "article",
         "fields": {
             "date": "2003",
@@ -149,7 +149,7 @@
         }
     },
     "6": {
-        "entry_key": "6",
+        "entry_key": "ref6",
         "bib_type": "inreference",
         "fields": {
             "editor": [

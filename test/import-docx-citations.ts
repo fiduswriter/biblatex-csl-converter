@@ -479,8 +479,8 @@ describe("Static utility methods", () => {
                 expect(result.metadata).to.be.an("array").with.lengthOf(1)
 
                 const meta = result.metadata![0]
-                // entry_key is the rec-number string
-                expect(meta.entry_key).to.equal("99")
+                // entry_key is now the normalised lastname+year key from EndNoteParser
+                expect(meta.entry_key).to.equal("WilliamsWilliamT2020")
                 // Pages → locator
                 expect(meta.locator).to.equal("45-50")
                 // Prefix/suffix are trimmed by stripStyleTags

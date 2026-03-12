@@ -1,6 +1,6 @@
 {
     "1": {
-        "entry_key": "1",
+        "entry_key": "Nazarenko2009",
         "bib_type": "article",
         "fields": {
             "date": "2009",
@@ -69,7 +69,7 @@
         }
     },
     "2": {
-        "entry_key": "2",
+        "entry_key": "Nazarenko2011",
         "bib_type": "article",
         "fields": {
             "date": "2011",
@@ -152,7 +152,7 @@
         }
     },
     "3": {
-        "entry_key": "3",
+        "entry_key": "ref2007",
         "bib_type": "article",
         "fields": {
             "date": "2007",
@@ -201,7 +201,7 @@
         }
     },
     "4": {
-        "entry_key": "4",
+        "entry_key": "ref2012",
         "bib_type": "inproceedings",
         "fields": {
             "date": "2012",
@@ -250,7 +250,7 @@
         }
     },
     "5": {
-        "entry_key": "5",
+        "entry_key": "ref2012a",
         "bib_type": "inproceedings",
         "fields": {
             "date": "2012",
@@ -299,7 +299,7 @@
         }
     },
     "6": {
-        "entry_key": "6",
+        "entry_key": "ref2010",
         "bib_type": "inproceedings",
         "fields": {
             "date": "2010",
@@ -348,7 +348,7 @@
         }
     },
     "7": {
-        "entry_key": "7",
+        "entry_key": "ref2013",
         "bib_type": "article",
         "fields": {
             "date": "2013",

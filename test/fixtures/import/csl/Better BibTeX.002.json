@@ -1,6 +1,6 @@
 {
     "1": {
-        "entry_key": "1",
+        "entry_key": "Abramowitz1964",
         "bib_type": "book",
         "fields": {
             "date": "1964",
@@ -65,7 +65,7 @@
         }
     },
     "2": {
-        "entry_key": "2",
+        "entry_key": "Torre2008",
         "bib_type": "book",
         "fields": {
             "date": "2008",

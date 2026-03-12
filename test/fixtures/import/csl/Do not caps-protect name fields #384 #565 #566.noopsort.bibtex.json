@@ -1,6 +1,6 @@
 {
     "1": {
-        "entry_key": "1",
+        "entry_key": "Gogh",
         "bib_type": "book",
         "fields": {
             "author": [
@@ -28,7 +28,7 @@
         }
     },
     "2": {
-        "entry_key": "2",
+        "entry_key": "Humboldt",
         "bib_type": "book",
         "fields": {
             "author": [
@@ -56,7 +56,7 @@
         }
     },
     "3": {
-        "entry_key": "3",
+        "entry_key": "Beauvoir",
         "bib_type": "book",
         "fields": {
             "author": [
@@ -84,7 +84,7 @@
         }
     },
     "4": {
-        "entry_key": "4",
+        "entry_key": "Gaulle",
         "bib_type": "book",
         "fields": {
             "author": [
@@ -119,7 +119,7 @@
         }
     },
     "5": {
-        "entry_key": "5",
+        "entry_key": "King",
         "bib_type": "book",
         "fields": {
             "author": [
@@ -153,7 +153,7 @@
         }
     },
     "6": {
-        "entry_key": "6",
+        "entry_key": "Stevenson",
         "bib_type": "book",
         "fields": {
             "author": [
@@ -187,7 +187,7 @@
         }
     },
     "7": {
-        "entry_key": "7",
+        "entry_key": "National",
         "bib_type": "book",
         "fields": {
             "author": [
@@ -209,7 +209,7 @@
         }
     },
     "8": {
-        "entry_key": "8",
+        "entry_key": "dEert",
         "bib_type": "book",
         "fields": {
             "author": [
@@ -237,7 +237,7 @@
         }
     },
     "9": {
-        "entry_key": "9",
+        "entry_key": "sGravesande",
         "bib_type": "book",
         "fields": {
             "author": [
@@ -265,7 +265,7 @@
         }
     },
     "10": {
-        "entry_key": "10",
+        "entry_key": "DeQuincey",
         "bib_type": "book",
         "fields": {
             "author": [
@@ -293,7 +293,7 @@
         }
     },
     "11": {
-        "entry_key": "11",
+        "entry_key": "Gasset",
         "bib_type": "book",
         "fields": {
             "author": [
@@ -328,7 +328,7 @@
         }
     },
     "12": {
-        "entry_key": "12",
+        "entry_key": "DAmato",
         "bib_type": "book",
         "fields": {
             "author": [
@@ -356,7 +356,7 @@
         }
     },
     "13": {
-        "entry_key": "13",
+        "entry_key": "Sadat",
         "bib_type": "book",
         "fields": {
             "author": [
@@ -391,7 +391,7 @@
         }
     },
     "14": {
-        "entry_key": "14",
+        "entry_key": "LaFollette",
         "bib_type": "book",
         "fields": {
             "author": [
@@ -425,7 +425,7 @@
         }
     },
     "15": {
-        "entry_key": "15",
+        "entry_key": "Mare",
         "bib_type": "book",
         "fields": {
             "author": [
@@ -460,7 +460,7 @@
         }
     },
     "16": {
-        "entry_key": "16",
+        "entry_key": "DeGette",
         "bib_type": "book",
         "fields": {
             "author": [
@@ -488,7 +488,7 @@
         }
     },
     "17": {
-        "entry_key": "17",
+        "entry_key": "Saunders",
         "bib_type": "book",
         "fields": {
             "author": [
@@ -516,7 +516,7 @@
         }
     },
     "18": {
-        "entry_key": "18",
+        "entry_key": "Marcus",
         "bib_type": "book",
         "fields": {
             "author": [
@@ -538,7 +538,7 @@
         }
     },
     "19": {
-        "entry_key": "19",
+        "entry_key": "Dumas",
         "bib_type": "book",
         "fields": {
             "author": [
@@ -572,7 +572,7 @@
         }
     },
     "20": {
-        "entry_key": "20",
+        "entry_key": "VanRensselaer",
         "bib_type": "book",
         "fields": {
             "author": [
@@ -600,7 +600,7 @@
         }
     },
     "21": {
-        "entry_key": "21",
+        "entry_key": "LEnfant",
         "bib_type": "book",
         "fields": {
             "author": [
@@ -628,7 +628,7 @@
         }
     },
     "22": {
-        "entry_key": "22",
+        "entry_key": "Gulik",
         "bib_type": "book",
         "fields": {
             "author": [
@@ -663,7 +663,7 @@
         }
     },
     "23": {
-        "entry_key": "23",
+        "entry_key": "SackvilleWest",
         "bib_type": "book",
         "fields": {
             "author": [
@@ -691,7 +691,7 @@
         }
     },
     "24": {
-        "entry_key": "24",
+        "entry_key": "VaughanWilliams",
         "bib_type": "book",
         "fields": {
             "author": [
@@ -719,7 +719,7 @@
         }
     },
     "25": {
-        "entry_key": "25",
+        "entry_key": "Rohe",
         "bib_type": "book",
         "fields": {
             "author": [
@@ -754,7 +754,7 @@
         }
     },
     "26": {
-        "entry_key": "26",
+        "entry_key": "Alembert",
         "bib_type": "book",
         "fields": {
             "author": [
@@ -782,7 +782,7 @@
         }
     },
     "27": {
-        "entry_key": "27",
+        "entry_key": "Tocqueville",
         "bib_type": "book",
         "fields": {
             "author": [
@@ -810,7 +810,7 @@
         }
     },
     "28": {
-        "entry_key": "28",
+        "entry_key": "LaFontaine",
         "bib_type": "book",
         "fields": {
             "author": [
@@ -845,7 +845,7 @@
         }
     },
     "29": {
-        "entry_key": "29",
+        "entry_key": "LaSalle",
         "bib_type": "book",
         "fields": {
             "author": [
@@ -880,7 +880,7 @@
         }
     },
     "30": {
-        "entry_key": "30",
+        "entry_key": "Clinchamps",
         "bib_type": "book",
         "fields": {
             "author": [
@@ -915,7 +915,7 @@
         }
     },
     "31": {
-        "entry_key": "31",
+        "entry_key": "Stein",
         "bib_type": "book",
         "fields": {
             "author": [
@@ -950,7 +950,7 @@
         }
     },
     "32": {
-        "entry_key": "32",
+        "entry_key": "Silva",
         "bib_type": "book",
         "fields": {
             "author": [
@@ -978,7 +978,7 @@
         }
     },
     "33": {
-        "entry_key": "33",
+        "entry_key": "Gama",
         "bib_type": "book",
         "fields": {
             "author": [
@@ -1013,7 +1013,7 @@
         }
     },
     "34": {
-        "entry_key": "34",
+        "entry_key": "DAnnunzio",
         "bib_type": "book",
         "fields": {
             "author": [
@@ -1041,7 +1041,7 @@
         }
     },
     "35": {
-        "entry_key": "35",
+        "entry_key": "DaPonte",
         "bib_type": "book",
         "fields": {
             "author": [
@@ -1069,7 +1069,7 @@
         }
     },
     "36": {
-        "entry_key": "36",
+        "entry_key": "DellaRobbia",
         "bib_type": "book",
         "fields": {
             "author": [
@@ -1097,7 +1097,7 @@
         }
     },
     "37": {
-        "entry_key": "37",
+        "entry_key": "Este",
         "bib_type": "book",
         "fields": {
             "author": [
@@ -1132,7 +1132,7 @@
         }
     },
     "38": {
-        "entry_key": "38",
+        "entry_key": "Medici",
         "bib_type": "book",
         "fields": {
             "author": [
@@ -1167,7 +1167,7 @@
         }
     },
     "39": {
-        "entry_key": "39",
+        "entry_key": "Hakim",
         "bib_type": "book",
         "fields": {
             "author": [
@@ -1195,7 +1195,7 @@
         }
     },
     "40": {
-        "entry_key": "40",
+        "entry_key": "LeVayer",
         "bib_type": "book",
         "fields": {
             "author": [

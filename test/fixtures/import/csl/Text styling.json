@@ -1,6 +1,6 @@
 {
     "1": {
-        "entry_key": "1",
+        "entry_key": "Wilm2010",
         "bib_type": "article",
         "fields": {
             "date": "2010",
@@ -51,7 +51,7 @@
         }
     },
     "2": {
-        "entry_key": "2",
+        "entry_key": "Wilm2009",
         "bib_type": "article",
         "fields": {
             "date": "2009",
@@ -92,7 +92,7 @@
         }
     },
     "3": {
-        "entry_key": "3",
+        "entry_key": "Wilm2011",
         "bib_type": "book",
         "fields": {
             "date": "2011",

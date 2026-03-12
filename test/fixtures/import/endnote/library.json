@@ -1,7 +1,7 @@
 {
     "entries": {
         "1": {
-            "entry_key": "1",
+            "entry_key": "SmithJohnA2023",
             "bib_type": "article-journal",
             "fields": {
                 "title": [
@@ -131,7 +131,7 @@
             }
         },
         "2": {
-            "entry_key": "2",
+            "entry_key": "MllerHans2022",
             "bib_type": "book",
             "fields": {
                 "title": [
@@ -247,7 +247,7 @@
             }
         },
         "3": {
-            "entry_key": "3",
+            "entry_key": "JensenAnders2021",
             "bib_type": "inproceedings",
             "fields": {
                 "title": [
@@ -313,7 +313,7 @@
             }
         },
         "4": {
-            "entry_key": "4",
+            "entry_key": "GarcaMaraElena2020",
             "bib_type": "thesis",
             "fields": {
                 "title": [
@@ -359,7 +359,7 @@
             }
         },
         "5": {
-            "entry_key": "5",
+            "entry_key": "ref2023",
             "bib_type": "article-journal",
             "fields": {
                 "title": [
@@ -441,7 +441,7 @@
             }
         },
         "6": {
-            "entry_key": "6",
+            "entry_key": "ref2022",
             "bib_type": "book",
             "fields": {
                 "title": [
@@ -487,7 +487,7 @@
             }
         },
         "7": {
-            "entry_key": "7",
+            "entry_key": "ref2021",
             "bib_type": "collection",
             "fields": {
                 "title": [
@@ -549,7 +549,7 @@
             }
         },
         "8": {
-            "entry_key": "8",
+            "entry_key": "KimMinJae2023",
             "bib_type": "report",
             "fields": {
                 "title": [
@@ -600,7 +600,7 @@
             }
         },
         "9": {
-            "entry_key": "9",
+            "entry_key": "ref2022a",
             "bib_type": "patent",
             "fields": {
                 "title": [
@@ -638,7 +638,7 @@
             }
         },
         "10": {
-            "entry_key": "10",
+            "entry_key": "ExampleOrganization2023",
             "bib_type": "online",
             "fields": {
                 "title": [
@@ -669,7 +669,7 @@
             }
         },
         "11": {
-            "entry_key": "11",
+            "entry_key": "DoeJohn2023",
             "bib_type": "inbook",
             "fields": {
                 "title": [
@@ -762,7 +762,7 @@
             }
         },
         "12": {
-            "entry_key": "12",
+            "entry_key": "ArtistAnn2023",
             "bib_type": "figure",
             "fields": {
                 "title": [
@@ -791,7 +791,7 @@
             }
         },
         "13": {
-            "entry_key": "13",
+            "entry_key": "ResearcherRon2023",
             "bib_type": "article-journal",
             "fields": {
                 "title": [
@@ -887,7 +887,7 @@
             }
         },
         "14": {
-            "entry_key": "14",
+            "entry_key": "AuthorPrimary2023",
             "bib_type": "book",
             "fields": {
                 "title": [
@@ -932,7 +932,7 @@
             }
         },
         "15": {
-            "entry_key": "15",
+            "entry_key": "DoeJane2022",
             "bib_type": "misc",
             "fields": {
                 "title": [
@@ -965,7 +965,7 @@
             }
         },
         "16": {
-            "entry_key": "16",
+            "entry_key": "ReviewerRay2021",
             "bib_type": "article-journal",
             "fields": {
                 "title": [
@@ -1006,7 +1006,7 @@
             }
         },
         "17": {
-            "entry_key": "17",
+            "entry_key": "PagePeter2020",
             "bib_type": "article-journal",
             "fields": {
                 "title": [

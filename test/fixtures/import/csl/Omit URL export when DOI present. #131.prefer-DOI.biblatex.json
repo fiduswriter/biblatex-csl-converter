@@ -1,6 +1,6 @@
 {
     "1": {
-        "entry_key": "1",
+        "entry_key": "Cappello2011",
         "bib_type": "inproceedings",
         "fields": {
             "date": "2011",
@@ -145,7 +145,7 @@
         }
     },
     "2": {
-        "entry_key": "2",
+        "entry_key": "Cumming2014",
         "bib_type": "inproceedings",
         "fields": {
             "date": "2014",
@@ -375,7 +375,7 @@
         }
     },
     "3": {
-        "entry_key": "3",
+        "entry_key": "Taylor2011",
         "bib_type": "article",
         "fields": {
             "date": "2011-10-07",
