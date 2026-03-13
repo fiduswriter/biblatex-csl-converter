@@ -22,7 +22,7 @@ jobs:
                   npm install
                   npm test
             - name: Coveralls
-              uses: coverallsapp/github-action@master
+              uses: coverallsapp/github-action@v2
               with:
                   github-token: ${{ secrets.GITHUB_TOKEN }}
             - name: Compile browser bundles
@@ -30,7 +30,7 @@ jobs:
               run: npm run compile_browser
             - name: Deploy browser branch
               if: github.ref == 'refs/heads/main'
-              uses: crazy-max/ghaction-github-pages@v4
+              uses: crazy-max/ghaction-github-pages@v5
               with:
                   target_branch: browser
                   build_dir: browser
