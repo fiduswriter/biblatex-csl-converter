@@ -1,12 +1,12 @@
 import {
-    BibTypes,
     BibFieldTypes,
-    NodeArray,
-    NameDictObject,
-    NodeObject,
+    BibTypes,
+    type NameDictObject,
+    type NodeArray,
+    type NodeObject,
 } from "../../const"
 import { edtfParse } from "../../edtf-parser"
-import { BibDB } from "../../import/biblatex"
+import type { BibDB } from "../../import/biblatex"
 import { toSentenceCase } from "./sentence-caser"
 
 /** Converts a BibDB to a DB of the CSL type.
@@ -76,7 +76,7 @@ export class CSLExporter {
     constructor(
         bibDB: BibDB,
         pks: string[] | false = false,
-        config: ConfigObject = {}
+        config: ConfigObject = {},
     ) {
         this.bibDB = bibDB
         if (pks) {
@@ -90,7 +90,7 @@ export class CSLExporter {
     }
 
     parse(): CSLOutput {
-        for (let bibId in this.bibDB) {
+        for (const bibId in this.bibDB) {
             if (this.pks.indexOf(bibId) !== -1) {
                 const id = this.config.useEntryKeys
                     ? this.bibDB[bibId].entry_key || bibId
@@ -106,7 +106,7 @@ export class CSLExporter {
      * @param id The id identifying the bibliography entry.
      */
     getCSLEntry(id: string): CSLEntry {
-        let bib = this.bibDB[id as unknown as number],
+        const bib = this.bibDB[id as unknown as number],
             fValues: CSLEntry = {}
         if (!bib.fields || !bib.bib_type || !BibTypes[bib.bib_type]) {
             return fValues
@@ -117,14 +117,14 @@ export class CSLExporter {
             this.config.language = bib.fields.langid as string
         }
 
-        for (let fKey in bib.fields) {
+        for (const fKey in bib.fields) {
             if (
                 bib.fields[fKey] !== "" &&
                 fKey in BibFieldTypes &&
                 "csl" in BibFieldTypes[fKey]
             ) {
-                let fValue = bib.fields[fKey]
-                let fType = BibFieldTypes[fKey]["type"]
+                const fValue = bib.fields[fKey]
+                const fType = BibFieldTypes[fKey].type
                 let key: string
                 const csl = BibFieldTypes[fKey].csl!
                 if (typeof csl === "string") {
@@ -176,7 +176,7 @@ export class CSLExporter {
                         break
                     case "l_name":
                         fValues[key] = this._reformName(
-                            fValue as NameDictObject[]
+                            fValue as NameDictObject[],
                         )
                         break
                     case "l_tag":
@@ -187,17 +187,17 @@ export class CSLExporter {
                 }
             }
         }
-        fValues["type"] = BibTypes[bib.bib_type].csl
+        fValues.type = BibTypes[bib.bib_type].csl
         return fValues
     }
 
     _reformKey(theValue: string | unknown, fKey: string): string {
         if (typeof theValue === "string") {
-            let fieldType = BibFieldTypes[fKey]!
-            if (Array.isArray(fieldType["options"])) {
+            const fieldType = BibFieldTypes[fKey]!
+            if (Array.isArray(fieldType.options)) {
                 return theValue
             } else {
-                return fieldType["options"]![theValue]["csl"]
+                return fieldType.options?.[theValue].csl
             }
         } else {
             return this._reformText(theValue)
@@ -224,8 +224,8 @@ export class CSLExporter {
     }
 
     _reformInteger(theValue: unknown): string | number {
-        let theString = this._reformText(theValue)
-        let theInt = parseInt(theString)
+        const theString = this._reformText(theValue)
+        const theInt = parseInt(theString, 10)
         if (theString !== String(theInt)) {
             return theString
         }
@@ -279,21 +279,23 @@ export class CSLExporter {
                 // This is an undefined variable
                 // This should usually not happen, as CSL doesn't know what to
                 // do with these. We'll put them into an unsupported tag.
-                html += `${TAGS.undefined.open}${node.attrs!.variable}${
+                html += `${TAGS.undefined.open}${node.attrs?.variable}${
                     TAGS.undefined.close
                 }`
                 this.errors.push({
                     type: "undefined_variable",
-                    variable: node.attrs!.variable as string,
+                    variable: node.attrs?.variable as string,
                 })
                 return
             }
-            let newMarks = node.marks ? node.marks.map((mark) => mark.type) : []
+            const newMarks = node.marks
+                ? node.marks.map((mark) => mark.type)
+                : []
             // close all tags that are not present in current text node.
             let closing = false,
                 closeTags: string[] = []
             lastMarks.forEach((mark, index) => {
-                if (mark != newMarks[index]) {
+                if (mark !== newMarks[index]) {
                     closing = true
                 }
                 if (closing) {
@@ -308,7 +310,7 @@ export class CSLExporter {
             // open all new tags that were not present in the last text node.
             let opening = false
             newMarks.forEach((mark, index) => {
-                if (mark != lastMarks[index]) {
+                if (mark !== lastMarks[index]) {
                     opening = true
                 }
                 if (opening) {
@@ -318,7 +320,7 @@ export class CSLExporter {
             if ("text" in node) {
                 const sentencesCasedNodeText = sentenceCasedText.substr(
                     0,
-                    node.text.length
+                    node.text.length,
                 )
                 sentenceCasedText = sentenceCasedText.slice(node.text.length)
 
@@ -354,21 +356,23 @@ export class CSLExporter {
                 // This is an undefined variable
                 // This should usually not happen, as CSL doesn't know what to
                 // do with these. We'll put them into an unsupported tag.
-                html += `${TAGS.undefined.open}${node.attrs!.variable}${
+                html += `${TAGS.undefined.open}${node.attrs?.variable}${
                     TAGS.undefined.close
                 }`
                 this.errors.push({
                     type: "undefined_variable",
-                    variable: node.attrs!.variable as string,
+                    variable: node.attrs?.variable as string,
                 })
                 return
             }
-            let newMarks = node.marks ? node.marks.map((mark) => mark.type) : []
+            const newMarks = node.marks
+                ? node.marks.map((mark) => mark.type)
+                : []
             // close all tags that are not present in current text node.
             let closing = false,
                 closeTags: string[] = []
             lastMarks.forEach((mark, index) => {
-                if (mark != newMarks[index]) {
+                if (mark !== newMarks[index]) {
                     closing = true
                 }
                 if (closing) {
@@ -383,7 +387,7 @@ export class CSLExporter {
             // open all new tags that were not present in the last text node.
             let opening = false
             newMarks.forEach((mark, index) => {
-                if (mark != lastMarks[index]) {
+                if (mark !== lastMarks[index]) {
                     opening = true
                 }
                 if (opening) {
@@ -408,7 +412,7 @@ export class CSLExporter {
     }
 
     _reformDate(dateStr: string): false | CSLDateObject {
-        let dateObj = edtfParse(dateStr)
+        const dateObj = edtfParse(dateStr)
         const reformedDate: CSLDateObject = {}
         if (!dateObj.valid) {
             return false
@@ -429,25 +433,25 @@ export class CSLExporter {
             const intervalDateParts: [number[], number[]] = [
                 intervalFrom
                     .slice(0, 3)
-                    .map((value) => parseInt(value as string)),
+                    .map((value) => parseInt(value as string, 10)),
                 intervalTo
                     .slice(0, 3)
-                    .map((value) => parseInt(value as string)),
+                    .map((value) => parseInt(value as string, 10)),
             ]
             reformedDate["date-parts"] = intervalDateParts
         } else {
             const values: number[] = dateObj.values
                 .slice(0, 3)
-                .map((value) => parseInt(value as string))
+                .map((value) => parseInt(value as string, 10))
             reformedDate["date-parts"] = [values]
             if (dateObj.type === "Interval") {
                 // Open interval that we cannot represent, so we make it circa instead.
-                reformedDate["circa"] = true
+                reformedDate.circa = true
             }
         }
 
         if (dateObj.uncertain || dateObj.approximate) {
-            reformedDate["circa"] = true
+            reformedDate.circa = true
         }
         return reformedDate
     }
@@ -456,21 +460,21 @@ export class CSLExporter {
         const names = theNames.map((name) => {
             const reformedName: CSLNameObject = {}
             if (name.literal) {
-                let literal = this._reformText(name.literal)
+                const literal = this._reformText(name.literal)
                 if (literal.length) {
-                    reformedName["literal"] = literal
+                    reformedName.literal = literal
                 } else {
                     return false
                 }
             } else {
                 if (name.given) {
-                    reformedName["given"] = this._reformText(name.given)
+                    reformedName.given = this._reformText(name.given)
                 }
                 if (name.family) {
-                    reformedName["family"] = this._reformText(name.family)
+                    reformedName.family = this._reformText(name.family)
                 }
                 if (name.suffix) {
-                    reformedName["suffix"] = this._reformText(name.suffix)
+                    reformedName.suffix = this._reformText(name.suffix)
                 }
                 if (name.prefix) {
                     if (name.useprefix) {
@@ -478,7 +482,7 @@ export class CSLExporter {
                             this._reformText(name.prefix)
                     } else {
                         reformedName["dropping-particle"] = this._reformText(
-                            name.prefix
+                            name.prefix,
                         )
                     }
                 }

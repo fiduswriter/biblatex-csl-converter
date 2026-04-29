@@ -1,14 +1,14 @@
-import * as converter from "../tmp/bundle.test.js"
+import fs from "node:fs"
+import path from "node:path"
+import { fileURLToPath } from "node:url"
 import { expect } from "chai"
-import fs from "fs"
-import path from "path"
-import { fileURLToPath } from "url"
+import * as converter from "../tmp/bundle.test.js"
 
 const writeFixtures = false // Set to true to save the results as expected test results.
 
 const clean = (state) => {
-    for (let prop of ["comments", "errors", "warnings"]) {
-        if (!state[prop] || state[prop].length == 0) {
+    for (const prop of ["comments", "errors", "warnings"]) {
+        if (!state[prop] || state[prop].length === 0) {
             delete state[prop]
         }
     }
@@ -17,22 +17,22 @@ const clean = (state) => {
 }
 
 const verify = (nbibfile) => {
-    let input = fs.readFileSync(nbibfile, "utf8")
-    let name = path.basename(nbibfile, path.extname(nbibfile))
+    const input = fs.readFileSync(nbibfile, "utf8")
+    const name = path.basename(nbibfile, path.extname(nbibfile))
 
-    let found = converter.parseNBIB(input)
+    const found = converter.parseNBIB(input)
     clean(found)
 
-    let expected = path.join(path.dirname(nbibfile), name + ".json")
+    let expected = path.join(path.dirname(nbibfile), `${name}.json`)
     if (writeFixtures) {
-        fs.writeFileSync(expected, JSON.stringify(found, null, 4) + "\n")
+        fs.writeFileSync(expected, `${JSON.stringify(found, null, 4)}\n`)
     }
 
     if (!fs.existsSync(expected)) {
         console.log(
-            `Expected file ${expected} does not exist, creating fixture`
+            `Expected file ${expected} does not exist, creating fixture`,
         )
-        fs.writeFileSync(expected, JSON.stringify(found, null, 4) + "\n")
+        fs.writeFileSync(expected, `${JSON.stringify(found, null, 4)}\n`)
         return
     }
 
@@ -46,7 +46,7 @@ const verify = (nbibfile) => {
 
 const fixtures = path.join(
     path.dirname(fileURLToPath(import.meta.url)),
-    "fixtures/import/nbib"
+    "fixtures/import/nbib",
 )
 const nbibfiles = fs.readdirSync(fixtures)
 

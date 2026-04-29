@@ -4,14 +4,13 @@
  */
 
 import {
-    BibTypes,
     BibFieldTypes,
-    NodeArray,
-    EntryObject,
-    NameDictObject,
-    RangeArray,
+    BibTypes,
+    type EntryObject,
+    type NameDictObject,
+    type NodeArray,
 } from "../const"
-import { makeEntryKey, lookupLangid } from "./tools"
+import { lookupLangid, makeEntryKey } from "./tools"
 
 // RIS type to BibType mapping
 // Source of types: https://github.com/zotero/translators/blob/873602eb8b0961da0b306161dc386032631ffaeb/RIS.js
@@ -245,10 +244,10 @@ export class RISParser {
 
     private convertRecord(
         record: RISRecord,
-        index: number
+        index: number,
     ): EntryObject | false {
         // Get the reference type
-        const risType = this.getFirstValue(record["TY"]) || "GEN"
+        const risType = this.getFirstValue(record.TY) || "GEN"
         const mappedBibType = RISTypeMap[risType]
         const bibType = mappedBibType || "misc"
 
@@ -274,9 +273,9 @@ export class RISParser {
 
         // Title
         const title =
-            this.getFirstValue(record["TI"]) || this.getFirstValue(record["T1"])
+            this.getFirstValue(record.TI) || this.getFirstValue(record.T1)
         if (title) {
-            fields["title"] = this.setField("title", title)
+            fields.title = this.setField("title", title)
         } else {
             this.warnings.push({
                 type: "missing_required_field",
@@ -287,30 +286,24 @@ export class RISParser {
 
         // Secondary title (journal/book title)
         const secondaryTitle =
-            this.getFirstValue(record["T2"]) ||
-            this.getFirstValue(record["JF"]) ||
-            this.getFirstValue(record["JO"]) ||
-            this.getFirstValue(record["J2"])
+            this.getFirstValue(record.T2) ||
+            this.getFirstValue(record.JF) ||
+            this.getFirstValue(record.JO) ||
+            this.getFirstValue(record.J2)
         if (secondaryTitle) {
-            fields["journaltitle"] = this.setField(
-                "journaltitle",
-                secondaryTitle
-            )
+            fields.journaltitle = this.setField("journaltitle", secondaryTitle)
         }
 
         // Short title
-        const shortTitle = this.getFirstValue(record["ST"])
+        const shortTitle = this.getFirstValue(record.ST)
         if (shortTitle) {
-            fields["shorttitle"] = this.setField("shorttitle", shortTitle)
+            fields.shorttitle = this.setField("shorttitle", shortTitle)
         }
 
         // Authors
-        const authors: string[] = [
-            ...(record["AU"] || []),
-            ...(record["A1"] || []),
-        ]
+        const authors: string[] = [...(record.AU || []), ...(record.A1 || [])]
         if (authors.length > 0) {
-            fields["author"] = this.parseNames(authors)
+            fields.author = this.parseNames(authors)
         } else {
             this.warnings.push({
                 type: "missing_required_field",
@@ -320,39 +313,39 @@ export class RISParser {
         }
 
         // Secondary authors (editors)
-        const secondaryAuthors = record["A2"] || []
+        const secondaryAuthors = record.A2 || []
         if (secondaryAuthors.length > 0) {
-            fields["editor"] = this.parseNames(secondaryAuthors)
+            fields.editor = this.parseNames(secondaryAuthors)
         }
 
         // Tertiary authors
-        const tertiaryAuthors = record["A3"] || []
+        const tertiaryAuthors = record.A3 || []
         if (tertiaryAuthors.length > 0) {
-            fields["editora"] = this.parseNames(tertiaryAuthors)
+            fields.editora = this.parseNames(tertiaryAuthors)
         }
 
         // Abstract
         const abstract =
-            this.getFirstValue(record["AB"]) || this.getFirstValue(record["N2"])
+            this.getFirstValue(record.AB) || this.getFirstValue(record.N2)
         if (abstract) {
-            fields["abstract"] = this.setField("abstract", abstract)
+            fields.abstract = this.setField("abstract", abstract)
         }
 
         // Notes
-        const notes = this.getFirstValue(record["N1"])
+        const notes = this.getFirstValue(record.N1)
         if (notes) {
-            fields["note"] = this.setField("note", notes)
+            fields.note = this.setField("note", notes)
         }
 
         // Date/Publication Year
         const year =
-            this.getFirstValue(record["PY"]) || this.getFirstValue(record["Y1"])
+            this.getFirstValue(record.PY) || this.getFirstValue(record.Y1)
         const date =
-            this.getFirstValue(record["DA"]) || this.getFirstValue(record["Y2"])
+            this.getFirstValue(record.DA) || this.getFirstValue(record.Y2)
         if (year) {
-            fields["date"] = year
+            fields.date = year
         } else if (date) {
-            fields["date"] = date
+            fields.date = date
         } else {
             this.warnings.push({
                 type: "missing_required_field",
@@ -362,23 +355,23 @@ export class RISParser {
         }
 
         // Volume
-        const volume = this.getFirstValue(record["VL"])
+        const volume = this.getFirstValue(record.VL)
         if (volume) {
-            fields["volume"] = this.setField("volume", volume)
+            fields.volume = this.setField("volume", volume)
         }
 
         // Issue/Number
         const issue =
-            this.getFirstValue(record["IS"]) || this.getFirstValue(record["C7"])
+            this.getFirstValue(record.IS) || this.getFirstValue(record.C7)
         if (issue) {
-            fields["issue"] = this.setField("issue", issue)
+            fields.issue = this.setField("issue", issue)
         }
 
         // Pages
-        const startPage = this.getFirstValue(record["SP"])
-        const endPage = this.getFirstValue(record["EP"])
+        const startPage = this.getFirstValue(record.SP)
+        const endPage = this.getFirstValue(record.EP)
         if (startPage && endPage) {
-            fields["pages"] = [
+            fields.pages = [
                 [
                     [
                         { type: "text", text: startPage },
@@ -387,94 +380,94 @@ export class RISParser {
                 ],
             ]
         } else if (startPage) {
-            fields["pages"] = [[[{ type: "text", text: startPage }]]]
+            fields.pages = [[[{ type: "text", text: startPage }]]]
         }
 
         // Publisher
-        const publisher = this.getFirstValue(record["PB"])
+        const publisher = this.getFirstValue(record.PB)
         if (publisher) {
-            fields["publisher"] = this.setField("publisher", publisher)
+            fields.publisher = this.setField("publisher", publisher)
         }
 
         // Place/City
         const place =
-            this.getFirstValue(record["CY"]) || this.getFirstValue(record["PP"])
+            this.getFirstValue(record.CY) || this.getFirstValue(record.PP)
         if (place) {
-            fields["location"] = this.setField("location", place)
+            fields.location = this.setField("location", place)
         }
 
         // DOI
         const doi =
-            this.getFirstValue(record["DO"]) || this.getFirstValue(record["M3"])
+            this.getFirstValue(record.DO) || this.getFirstValue(record.M3)
         if (doi) {
-            fields["doi"] = this.setField("doi", doi)
+            fields.doi = this.setField("doi", doi)
         }
 
         // URL
         const url =
-            this.getFirstValue(record["UR"]) ||
-            this.getFirstValue(record["L1"]) ||
-            this.getFirstValue(record["L2"]) ||
-            this.getFirstValue(record["L3"])
+            this.getFirstValue(record.UR) ||
+            this.getFirstValue(record.L1) ||
+            this.getFirstValue(record.L2) ||
+            this.getFirstValue(record.L3)
         if (url) {
-            fields["url"] = this.setField("url", url)
+            fields.url = this.setField("url", url)
         }
 
         // ISBN/ISSN
         const isbn =
-            this.getFirstValue(record["SN"]) || this.getFirstValue(record["SE"])
+            this.getFirstValue(record.SN) || this.getFirstValue(record.SE)
         if (isbn) {
             // Could be ISBN or ISSN, try to determine
             if (isbn.includes("-") && isbn.length <= 13) {
-                fields["isbn"] = this.setField("isbn", isbn)
+                fields.isbn = this.setField("isbn", isbn)
             } else {
-                fields["issn"] = this.setField("issn", isbn)
+                fields.issn = this.setField("issn", isbn)
             }
         }
 
         // Keywords — l_tag expects string[], split on comma/semicolon like
         // the BibLaTeX importer does
-        if (record["KW"] && record["KW"].length > 0) {
-            fields["keywords"] = record["KW"].flatMap((kw) =>
+        if (record.KW && record.KW.length > 0) {
+            fields.keywords = record.KW.flatMap((kw) =>
                 kw
                     .split(/[,;]/)
                     .map((s) => s.trim())
-                    .filter(Boolean)
+                    .filter(Boolean),
             )
         }
 
         // Edition
-        const edition = this.getFirstValue(record["ET"])
+        const edition = this.getFirstValue(record.ET)
         if (edition) {
-            fields["edition"] = this.setField("edition", edition)
+            fields.edition = this.setField("edition", edition)
         }
 
         // Call Number
-        const callNum = this.getFirstValue(record["CN"])
+        const callNum = this.getFirstValue(record.CN)
         if (callNum) {
-            fields["library"] = this.setField("library", callNum)
+            fields.library = this.setField("library", callNum)
         }
 
         // Accession Number
         const accNum =
-            this.getFirstValue(record["AN"]) || this.getFirstValue(record["M1"])
+            this.getFirstValue(record.AN) || this.getFirstValue(record.M1)
         if (accNum) {
-            fields["eprint"] = this.setField("eprint", accNum)
+            fields.eprint = this.setField("eprint", accNum)
         }
 
         // Language
-        const language = this.getFirstValue(record["LA"])
+        const language = this.getFirstValue(record.LA)
         if (language) {
             const langid = this.setField("langid", language)
             if (langid !== undefined) {
-                fields["langid"] = langid
+                fields.langid = langid
             }
         }
 
         // Section/Chapter
-        const section = this.getFirstValue(record["SE"])
+        const section = this.getFirstValue(record.SE)
         if (section) {
-            fields["chapter"] = this.setField("chapter", section)
+            fields.chapter = this.setField("chapter", section)
         }
 
         // Warn about tags present in the record that are not handled
@@ -551,35 +544,18 @@ export class RISParser {
 
     private generateEntryKey(record: RISRecord, index: number): string {
         const firstAuthor =
-            this.getFirstValue(record["AU"]) || this.getFirstValue(record["A1"])
+            this.getFirstValue(record.AU) || this.getFirstValue(record.A1)
         const yearRaw =
-            this.getFirstValue(record["PY"]) || this.getFirstValue(record["Y1"])
+            this.getFirstValue(record.PY) || this.getFirstValue(record.Y1)
         // Extract a clean four-digit year from whatever the field contains.
-        const year = yearRaw ? yearRaw.match(/\d{4}/)?.[0] ?? "" : ""
+        const year = yearRaw ? (yearRaw.match(/\d{4}/)?.[0] ?? "") : ""
         const lastName = firstAuthor ? firstAuthor.split(",")[0].trim() : ""
         return makeEntryKey(
             String(index),
             this.usedKeys,
             lastName || undefined,
-            year || undefined
+            year || undefined,
         )
-    }
-
-    private convertRange(value: string): RangeArray[] {
-        if (!value) {
-            return []
-        }
-        return String(value)
-            .split(/,|;/)
-            .map((range) => {
-                const parts = range.split(/[-–—]/)
-                return [
-                    parts.map((part) => ({
-                        type: "text",
-                        text: part.trim(),
-                    })),
-                ]
-            })
     }
 
     /**
@@ -592,7 +568,7 @@ export class RISParser {
      */
     private setField(
         fieldKey: string,
-        text: string
+        text: string,
     ): NodeArray | NodeArray[] | string | undefined {
         const fieldDef = BibFieldTypes[fieldKey]
         const fieldType = fieldDef?.type
@@ -610,7 +586,7 @@ export class RISParser {
                 // Array options (e.g. bookpagination, type): plain string match
                 const lower = text.toLowerCase().trim()
                 const matched = options.find(
-                    (k: string) => k.toLowerCase() === lower
+                    (k: string) => k.toLowerCase() === lower,
                 )
                 return matched // undefined if no match
             } else if (options) {

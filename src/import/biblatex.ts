@@ -1,26 +1,26 @@
 import {
     BibFieldTypes,
     BibTypes,
-    GroupObject,
-    NodeArray,
-    EntryObject,
-    NameDictObject,
-    RangeArray,
-    LangidOptions,
+    type EntryObject,
+    type GroupObject,
+    type LangidOptions,
+    type NameDictObject,
+    type NodeArray,
+    type RangeArray,
 } from "../const"
+import { edtfParse } from "../edtf-parser"
 import {
-    TeXSpecialChars,
+    BiblatexAliasOptions,
     BiblatexAliasTypes,
     BiblatexFieldAliasTypes,
-    BiblatexAliasOptions,
     DefaultCrossRefInheritance,
-    TypeInheritance,
+    TeXSpecialChars,
+    type TypeInheritance,
 } from "./const"
-import { BibLatexNameParser } from "./name-parser"
-import { BibLatexLiteralParser } from "./literal-parser"
 import { GroupParser } from "./group-parser"
+import { BibLatexLiteralParser } from "./literal-parser"
+import { BibLatexNameParser } from "./name-parser"
 import { splitTeXString } from "./tools"
-import { edtfParse } from "../edtf-parser"
 
 /** Parses files in BibTeX/BibLaTeX format
  */
@@ -234,14 +234,14 @@ export class BibLatexParser {
     }
 
     isWhitespace(s: string): boolean {
-        return s == " " || s == "\r" || s == "\t" || s == "\n"
+        return s === " " || s === "\r" || s === "\t" || s === "\n"
     }
 
     error(data: ErrorObject): void {
         this.errors.push(
             Object.assign({}, data, {
                 line: this.input.slice(0, this.pos).split("\n").length,
-            })
+            }),
         )
     }
 
@@ -249,13 +249,13 @@ export class BibLatexParser {
         this.warnings.push(
             Object.assign({}, data, {
                 line: this.input.slice(0, this.pos).split("\n").length,
-            })
+            }),
         )
     }
 
     match(
         s: string,
-        options: MatchOptionsObject = { skipWhitespace: true }
+        options: MatchOptionsObject = { skipWhitespace: true },
     ): void {
         if (
             options.skipWhitespace === true ||
@@ -263,7 +263,7 @@ export class BibLatexParser {
         ) {
             this.skipWhitespace()
         }
-        if (this.input.substring(this.pos, this.pos + s.length) == s) {
+        if (this.input.substring(this.pos, this.pos + s.length) === s) {
             this.pos += s.length
         } else {
             this.error({
@@ -282,7 +282,7 @@ export class BibLatexParser {
 
     tryMatch(s: string): boolean {
         this.skipWhitespace()
-        if (this.input.substring(this.pos, this.pos + s.length) == s) {
+        if (this.input.substring(this.pos, this.pos + s.length) === s) {
             return true
         } else {
             return false
@@ -293,8 +293,8 @@ export class BibLatexParser {
         while (this.isWhitespace(this.input[this.pos])) {
             this.pos++
         }
-        if (this.input[this.pos] == "%") {
-            while (this.input[this.pos] != "\n") {
+        if (this.input[this.pos] === "%") {
+            while (this.input[this.pos] !== "\n") {
                 this.pos++
             }
             this.skipWhitespace()
@@ -302,10 +302,10 @@ export class BibLatexParser {
     }
 
     skipToNext(): boolean {
-        while (this.input.length > this.pos && this.input[this.pos] != "@") {
+        while (this.input.length > this.pos && this.input[this.pos] !== "@") {
             this.pos++
         }
-        if (this.input.length == this.pos) {
+        if (this.input.length === this.pos) {
             return false
         } else {
             return true
@@ -372,7 +372,7 @@ export class BibLatexParser {
         } else if (this.tryMatch('"')) {
             return this.valueQuotes()
         } else {
-            let k = this.key()
+            const k = this.key()
             const kUp = k.toUpperCase()
             if (this.strings[k.toUpperCase()]) {
                 return this.strings[k.toUpperCase()]
@@ -386,7 +386,7 @@ export class BibLatexParser {
                     variable: k,
                 }
                 if (this.currentEntry) {
-                    warning.entry = this.currentEntry["entry_key"]
+                    warning.entry = this.currentEntry.entry_key
                 }
                 if (this.currentKey) {
                     warning.key = this.currentKey
@@ -400,7 +400,7 @@ export class BibLatexParser {
     }
 
     value(asis = false): string {
-        let values: string[] = []
+        const values: string[] = []
         values.push(this.singleValue())
         while (this.tryMatch("#")) {
             this.match("#")
@@ -412,21 +412,21 @@ export class BibLatexParser {
     }
 
     key(optional = false): string {
-        let start = this.pos
+        const start = this.pos
         while (true) {
-            if (this.pos == this.input.length) {
+            if (this.pos === this.input.length) {
                 this.error({ type: "runaway_key" })
                 break
             }
             if (
                 ["(", ")", ",", "{", "}", " ", "=", "\t", "\n"].includes(
-                    this.input[this.pos]
+                    this.input[this.pos],
                 )
             ) {
-                let key = this.input.substring(start, this.pos)
-                if (optional && this.input[this.pos] != ",") {
+                const key = this.input.substring(start, this.pos)
+                if (optional && this.input[this.pos] !== ",") {
                     this.skipWhitespace()
-                    if (this.input[this.pos] != ",") {
+                    if (this.input[this.pos] !== ",") {
                         this.pos = start
                         return ""
                     }
@@ -441,15 +441,15 @@ export class BibLatexParser {
     }
 
     keyEqualsValue(asis = false): [string, string] | false {
-        let key = this.key()
+        const key = this.key()
         if (!key.length) {
             const error: ErrorObject = {
                 type: "cut_off_citation",
             }
             if (this.currentEntry) {
-                error.entry = this.currentEntry["entry_key"]
+                error.entry = this.currentEntry.entry_key
                 // The citation is not full, we remove the existing parts.
-                this.currentEntry["incomplete"] = true
+                this.currentEntry.incomplete = true
             }
             this.error(error)
             return false
@@ -468,7 +468,7 @@ export class BibLatexParser {
                 type: "missing_equal_sign",
             }
             if (this.currentEntry) {
-                error.entry = this.currentEntry["entry_key"]
+                error.entry = this.currentEntry.entry_key
             }
             if (this.currentKey) {
                 error.key = this.currentKey
@@ -486,7 +486,7 @@ export class BibLatexParser {
             this.entries.pop()
             return
         }
-        let rawFields = this.currentRawFields
+        const rawFields = this.currentRawFields
         rawFields[kv[0]] = kv[1]
         while (this.tryMatch(",")) {
             this.match(",")
@@ -500,7 +500,7 @@ export class BibLatexParser {
                     type: "key_value_error",
                 }
                 if (this.currentEntry) {
-                    error.entry = this.currentEntry["entry_key"]
+                    error.entry = this.currentEntry.entry_key
                 }
                 this.error(error)
                 break
@@ -513,8 +513,8 @@ export class BibLatexParser {
         if (!this.currentEntry) {
             return
         }
-        let rawFields = this.currentRawFields!
-        let fields = this.currentEntry["fields"]
+        const rawFields = this.currentRawFields!
+        const fields = this.currentEntry.fields
 
         if ("crossref" in rawFields) {
             this.crossrefs[this.currentEntry.entry_key] =
@@ -531,7 +531,7 @@ export class BibLatexParser {
             if (rawFields.month) {
                 let month = rawFields.month as string
                 if (
-                    isNaN(parseInt(month)) &&
+                    Number.isNaN(parseInt(month, 10)) &&
                     month.toUpperCase() in this.months
                 ) {
                     month = this.months[month.toUpperCase() as Month]
@@ -563,9 +563,9 @@ export class BibLatexParser {
         }
 
         if (date) {
-            let dateObj = edtfParse(date)
+            const dateObj = edtfParse(date)
             if (dateObj.valid) {
-                fields["date"] = dateObj.cleanedString
+                fields.date = dateObj.cleanedString
                 delete rawFields.year
                 delete rawFields.month
             } else if (rawFields.date) {
@@ -576,14 +576,14 @@ export class BibLatexParser {
                     entry: this.currentEntry.entry_key,
                 }
                 if (this.currentEntry) {
-                    error.entry = this.currentEntry["entry_key"]
+                    error.entry = this.currentEntry.entry_key
                 }
                 this.errors.push(error)
             } else if (rawFields.year) {
                 // Always try to use year even if month was invalid
                 const yearObj = edtfParse(rawFields.year as string)
                 if (yearObj.valid) {
-                    fields["date"] = yearObj.cleanedString
+                    fields.date = yearObj.cleanedString
                     delete rawFields.year
                     // Add warning about invalid month
                     const warning: ErrorObject = {
@@ -593,13 +593,13 @@ export class BibLatexParser {
                         entry: this.currentEntry.entry_key,
                     }
                     if (this.currentEntry) {
-                        warning.entry = this.currentEntry["entry_key"]
+                        warning.entry = this.currentEntry.entry_key
                     }
                     this.warnings.push(warning)
                 } else {
                     // Try to find a valid year in the string
                     const yearMatches = Array.from(
-                        String(rawFields.year).matchAll(/\[?(\d{4})\]?/g)
+                        String(rawFields.year).matchAll(/\[?(\d{4})\]?/g),
                     )
 
                     // Handle non-bracketed dates
@@ -607,23 +607,23 @@ export class BibLatexParser {
                     // If there is only one year, return it
 
                     let mainYearMatch = yearMatches.find(
-                        (yearMatch) => !/[[\]]/.test(yearMatch[0])
+                        (yearMatch) => !/[[\]]/.test(yearMatch[0]),
                     )
 
                     if (mainYearMatch) {
                         // Handle bracketed dates (original publication dates)
                         const bracketedYearMatch = yearMatches.find(
-                            (yearMatch) => /[[\]]/.test(yearMatch[0])
+                            (yearMatch) => /[[\]]/.test(yearMatch[0]),
                         )
                         if (bracketedYearMatch) {
-                            fields["origdate"] = bracketedYearMatch[1]
+                            fields.origdate = bracketedYearMatch[1]
                         }
                     } else if (yearMatches.length) {
                         mainYearMatch = yearMatches[0]
                     }
 
                     if (mainYearMatch) {
-                        fields["date"] = mainYearMatch[1]
+                        fields.date = mainYearMatch[1]
                         delete rawFields.year
                     } else {
                         // Add warning about invalid year
@@ -634,7 +634,7 @@ export class BibLatexParser {
                             entry: this.currentEntry.entry_key,
                         }
                         if (this.currentEntry) {
-                            warning.entry = this.currentEntry["entry_key"]
+                            warning.entry = this.currentEntry.entry_key
                         }
                         this.warnings.push(warning)
                     }
@@ -645,8 +645,8 @@ export class BibLatexParser {
         // titles may use case preservation.
         let langEnglish = true // By default we assume everything to be written in English.
         if (rawFields.langid && (rawFields.langid as string).length) {
-            let langString = (rawFields.langid as string).toLowerCase().trim()
-            let englishOptions = [
+            const langString = (rawFields.langid as string).toLowerCase().trim()
+            const englishOptions = [
                 "english",
                 "american",
                 "british",
@@ -668,9 +668,12 @@ export class BibLatexParser {
             // but in bibtex, language is often used for what is essentially langid.
             // If there is no langid, but a language, and the language happens to be
             // a known langid, set the langid to be equal to the language.
-            let langid = this._reformKey(rawFields.language as string, "langid")
+            const langid = this._reformKey(
+                rawFields.language as string,
+                "langid",
+            )
             if (langid.length) {
-                fields["langid"] = langid
+                fields.langid = langid
                 if (
                     typeof langid === "string" &&
                     ![
@@ -686,14 +689,14 @@ export class BibLatexParser {
             }
         }
 
-        iterateFields: for (let bKey in rawFields) {
+        for (const bKey in rawFields) {
             if (
                 bKey === "date" ||
                 (["year", "month"].includes(bKey) &&
                     !this.config.processUnknown)
             ) {
                 // Handled above
-                continue iterateFields
+                continue
             }
 
             // Replace alias fields with their main term.
@@ -716,10 +719,10 @@ export class BibLatexParser {
                         alias_of_value: rawFields[aliasKey],
                     }
                     if (this.currentEntry) {
-                        warning.entry = this.currentEntry["entry_key"]
+                        warning.entry = this.currentEntry.entry_key
                     }
                     this.warning(warning)
-                    continue iterateFields
+                    continue
                 }
 
                 fKey =
@@ -740,8 +743,8 @@ export class BibLatexParser {
             }
 
             let oFields: Record<string, unknown>, fType: string
-            let bType =
-                BibTypes[this.currentEntry["bib_type"] as keyof typeof BibTypes]
+            const bType =
+                BibTypes[this.currentEntry.bib_type as keyof typeof BibTypes]
 
             if (!fKey.length) {
                 const warning: ErrorObject = {
@@ -749,19 +752,18 @@ export class BibLatexParser {
                     field_name: bKey,
                 }
                 if (this.currentEntry) {
-                    warning.entry = this.currentEntry["entry_key"]
+                    warning.entry = this.currentEntry.entry_key
                 }
                 this.warning(warning)
                 if (!this.config.processUnknown) {
-                    continue iterateFields
+                    continue
                 }
-                if (this.currentEntry && !this.currentEntry["unknown_fields"]) {
-                    this.currentEntry["unknown_fields"] = {}
+                if (this.currentEntry && !this.currentEntry.unknown_fields) {
+                    this.currentEntry.unknown_fields = {}
                 }
-                oFields =
-                    this.currentEntry && this.currentEntry["unknown_fields"]
-                        ? this.currentEntry["unknown_fields"]
-                        : {}
+                oFields = this.currentEntry?.unknown_fields
+                    ? this.currentEntry.unknown_fields
+                    : {}
                 fType =
                     this.config.processUnknown &&
                     typeof this.config.processUnknown === "object" &&
@@ -770,41 +772,35 @@ export class BibLatexParser {
                         : "f_literal"
                 fKey = bKey
             } else if (
-                bType["required"].includes(fKey) ||
-                bType["optional"].includes(fKey) ||
-                bType["eitheror"].includes(fKey)
+                bType.required.includes(fKey) ||
+                bType.optional.includes(fKey) ||
+                bType.eitheror.includes(fKey)
             ) {
                 oFields = fields
-                fType =
-                    BibFieldTypes[fKey as keyof typeof BibFieldTypes]["type"]
+                fType = BibFieldTypes[fKey as keyof typeof BibFieldTypes].type
             } else if (fKey === "entrysubtype" && bType["biblatex-subtype"]) {
-                fType = BibFieldTypes[fKey]["type"]
+                fType = BibFieldTypes[fKey].type
                 oFields = {}
-                continue iterateFields
+                continue
             } else {
                 const warning: ErrorObject = {
                     type: "unexpected_field",
                     field_name: bKey,
                 }
                 if (this.currentEntry) {
-                    warning.entry = this.currentEntry["entry_key"]
+                    warning.entry = this.currentEntry.entry_key
                 }
                 this.warning(warning)
                 if (!this.config.processUnexpected) {
-                    continue iterateFields
+                    continue
                 }
-                if (
-                    this.currentEntry &&
-                    !this.currentEntry["unexpected_fields"]
-                ) {
-                    this.currentEntry["unexpected_fields"] = {}
+                if (this.currentEntry && !this.currentEntry.unexpected_fields) {
+                    this.currentEntry.unexpected_fields = {}
                 }
-                oFields =
-                    this.currentEntry && this.currentEntry["unexpected_fields"]
-                        ? this.currentEntry["unexpected_fields"]
-                        : {}
-                fType =
-                    BibFieldTypes[fKey as keyof typeof BibFieldTypes]["type"]
+                oFields = this.currentEntry?.unexpected_fields
+                    ? this.currentEntry.unexpected_fields
+                    : {}
+                fType = BibFieldTypes[fKey as keyof typeof BibFieldTypes].type
             }
 
             let fValue = rawFields[bKey],
@@ -817,7 +813,7 @@ export class BibLatexParser {
                     } else if (this.currentEntry) {
                         this.error({
                             type: "unknown_date",
-                            entry: this.currentEntry["entry_key"],
+                            entry: this.currentEntry.entry_key,
                             field_name: fKey,
                             value: fValue as string | string[] | undefined,
                         })
@@ -842,7 +838,7 @@ export class BibLatexParser {
                 case "f_title":
                     oFields[fKey] = this._reformLiteral(
                         fValue as string,
-                        langEnglish
+                        langEnglish,
                     )
                     break
                 case "f_uri":
@@ -858,7 +854,7 @@ export class BibLatexParser {
                             value: fValue as string | string[] | undefined,
                         }
                         if (this.currentEntry) {
-                            error.entry = this.currentEntry["entry_key"]
+                            error.entry = this.currentEntry.entry_key
                         }
                         this.error(error)
                     }
@@ -868,7 +864,7 @@ export class BibLatexParser {
                     break
                 case "l_key":
                     oFields[fKey] = splitTeXString(fValue as string).map(
-                        (keyField) => this._reformKey(keyField, fKey)
+                        (keyField) => this._reformKey(keyField, fKey),
                     )
                     break
                 case "l_tag":
@@ -878,7 +874,7 @@ export class BibLatexParser {
                     break
                 case "l_literal":
                     oFields[fKey] = splitTeXString(fValue as string).map(
-                        (item) => this._reformLiteral(item.trim())
+                        (item) => this._reformLiteral(item.trim()),
                     )
                     break
                 case "l_name":
@@ -893,7 +889,7 @@ export class BibLatexParser {
 
     _reformKey(keyString: string, fKey: string): string | NodeArray {
         let keyValue = keyString.trim().toLowerCase()
-        let fieldType = BibFieldTypes[fKey as keyof typeof BibFieldTypes]
+        const fieldType = BibFieldTypes[fKey as keyof typeof BibFieldTypes]
         if (
             BiblatexAliasOptions[fKey as keyof typeof BiblatexAliasOptions] &&
             (BiblatexAliasOptions as Record<string, Record<string, string>>)[
@@ -905,19 +901,18 @@ export class BibLatexParser {
             )[fKey][keyValue]
         }
         if ("options" in fieldType) {
-            if (Array.isArray(fieldType["options"])) {
-                if (fieldType["options"].includes(keyValue)) {
+            if (Array.isArray(fieldType.options)) {
+                if (fieldType.options.includes(keyValue)) {
                     return keyValue
                 }
             } else {
-                let optionValue = Object.keys(fieldType["options"]!).find(
+                const optionValue = Object.keys(fieldType.options!).find(
                     (key) => {
                         return (
-                            (fieldType.options as LangidOptions)[key][
-                                "biblatex"
-                            ] === keyValue
+                            (fieldType.options as LangidOptions)[key]
+                                .biblatex === keyValue
                         )
-                    }
+                    },
                 )
                 if (optionValue) {
                     return optionValue
@@ -933,7 +928,7 @@ export class BibLatexParser {
                 value: keyString,
             }
             if (this.currentEntry) {
-                warning.entry = this.currentEntry["entry_key"]
+                warning.entry = this.currentEntry.entry_key
             }
             this.warning(warning)
             return ""
@@ -946,7 +941,7 @@ export class BibLatexParser {
            https://gist.github.com/dperini/729294
          */
         return /^(?:(?:(?:https?|ftp):)?\/\/)(?:\S+(?::\S*)?@)?(?:(?!(?:10|127)(?:\.\d{1,3}){3})(?!(?:169\.254|192\.168)(?:\.\d{1,3}){2})(?!172\.(?:1[6-9]|2\d|3[0-1])(?:\.\d{1,3}){2})(?:[1-9]\d?|1\d\d|2[01]\d|22[0-3])(?:\.(?:1?\d{1,2}|2[0-4]\d|25[0-5])){2}(?:\.(?:[1-9]\d?|1\d\d|2[0-4]\d|25[0-4]))|(?:(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)(?:\.(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)*(?:\.(?:[a-z\u00a1-\uffff]{2,})).?)(?::\d{2,5})?(?:[/?#]\S*)?$/i.test(
-            uriString
+            uriString,
         )
     }
 
@@ -968,7 +963,7 @@ export class BibLatexParser {
         const result: NameDictObject[] = names.filter(
             (name: NameDictObject | false) => {
                 return typeof name === "object"
-            }
+            },
         ) as NameDictObject[]
         return result
     }
@@ -978,14 +973,14 @@ export class BibLatexParser {
             let parts = string.split("--")
             if (parts.length > 1) {
                 return [
-                    this._reformLiteral(parts.shift()!.trim()),
+                    this._reformLiteral(parts.shift()?.trim()),
                     this._reformLiteral(parts.join("--").trim()),
                 ]
             } else {
                 parts = string.split("-")
                 if (parts.length > 1) {
                     return [
-                        this._reformLiteral(parts.shift()!.trim()),
+                        this._reformLiteral(parts.shift()?.trim()),
                         this._reformLiteral(parts.join("-").trim()),
                     ]
                 } else {
@@ -1023,7 +1018,7 @@ export class BibLatexParser {
         } else {
             bibType = Object.keys(BibTypes).find((bType) => {
                 return (
-                    BibTypes[bType]["biblatex"] === biblatexType &&
+                    BibTypes[bType].biblatex === biblatexType &&
                     (!biblatexSubtype ||
                         BibTypes[bType]["biblatex-subtype"] === biblatexSubtype)
                 )
@@ -1049,22 +1044,22 @@ export class BibLatexParser {
         }
         this.currentRawFields = {}
         this.entries.push(currentEntry)
-        if (currentEntry && currentEntry["entry_key"].length) {
+        if (currentEntry?.entry_key.length) {
             this.match(",")
         }
         this.keyValueList()
         this.endPosition = this.pos
-        currentEntry["bib_type"] = this.bibType()
+        currentEntry.bib_type = this.bibType()
         if (this.config.includeLocation) {
-            currentEntry["location"] = {
+            currentEntry.location = {
                 start: this.startPosition,
                 end: this.endPosition,
             }
         }
         if (this.config.includeRawText) {
-            currentEntry["raw_text"] = this.input.substring(
+            currentEntry.raw_text = this.input.substring(
                 this.startPosition,
-                this.endPosition + 1
+                this.endPosition + 1,
             )
         }
         this.currentEntry = currentEntry
@@ -1076,7 +1071,7 @@ export class BibLatexParser {
         this.currentType = this.key()
         if (!this.currentType.length) return null
         this.currentType = this.currentType.toLowerCase()
-        return "@" + this.currentType
+        return `@${this.currentType}`
     }
 
     string(): void {
@@ -1092,10 +1087,10 @@ export class BibLatexParser {
 
     replaceTeXChars(): void {
         let value = this.input
-        let len = TeXSpecialChars.length
+        const len = TeXSpecialChars.length
         for (let i = 0; i < len; i++) {
             if (!hasbackslash.test(value)) break
-            let texChar = TeXSpecialChars[i]
+            const texChar = TeXSpecialChars[i]
             value = value.replace(texChar.tex, texChar.unicode)
         }
         // Delete multiple spaces
@@ -1112,7 +1107,7 @@ export class BibLatexParser {
     stepThroughBibtexAsync(): Promise<null> {
         return this.skipToNext()
             ? new Promise((resolve) => resolve(this.parseNext())).then(() =>
-                  this.stepThroughBibtexAsync()
+                  this.stepThroughBibtexAsync(),
               )
             : Promise.resolve(null)
     }
@@ -1120,7 +1115,7 @@ export class BibLatexParser {
     parseNext(): void {
         let closer
         this.startPosition = this.pos
-        let d = this.directive()
+        const d = this.directive()
         if (!d) return
 
         if (this.tryMatch("{")) {
@@ -1138,11 +1133,11 @@ export class BibLatexParser {
             closer = "}"
         }
 
-        if (d == "@string") {
+        if (d === "@string") {
             this.string()
-        } else if (d == "@preamble") {
+        } else if (d === "@preamble") {
             this.preamble()
-        } else if (d == "@comment") {
+        } else if (d === "@comment") {
             this.parseComment(!closer)
         } else {
             this.createNewEntry()
@@ -1152,13 +1147,13 @@ export class BibLatexParser {
     }
 
     parseComment(braceless: boolean): void {
-        let start = this.pos
+        const start = this.pos
         let braces = 1
 
         if (braceless) {
             while (
                 this.input.length > this.pos &&
-                this.input[this.pos] != "\n"
+                this.input[this.pos] !== "\n"
             ) {
                 this.pos++
             }
@@ -1208,7 +1203,7 @@ export class BibLatexParser {
         this.bibDB = JSON.parse(
             JSON.stringify(this.bibDB)
                 .replace(/\u0871/, "\\\\") // Backslashes placed outside of literal fields
-                .replace(/\u0870/, "") // variable start/end outside of literal fields
+                .replace(/\u0870/, ""), // variable start/end outside of literal fields
         )
     }
 
@@ -1256,8 +1251,8 @@ export class BibLatexParser {
         while (toResolve.size > 0) {
             const queue = new Set<string>(
                 [...toResolve.values()].filter(
-                    (k) => !toResolve.has(this.crossrefs[k])
-                )
+                    (k) => !toResolve.has(this.crossrefs[k]),
+                ),
             )
             if (queue.size === 0) {
                 const entry = toResolve.values().next().value
@@ -1316,14 +1311,14 @@ export class BibLatexParser {
 
 export function parse(
     input: string,
-    config: ConfigObject = {}
+    config: ConfigObject = {},
 ): BiblatexParseResult {
     return new BibLatexParser(input, config).parse()
 }
 
 export function parseAsync(
     input: string,
-    config: ConfigObject = {}
+    config: ConfigObject = {},
 ): Promise<BiblatexParseResult> {
     return new BibLatexParser(input, config).parseAsync()
 }

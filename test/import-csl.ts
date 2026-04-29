@@ -1,21 +1,21 @@
-import * as converter from "../tmp/bundle.test.js"
+import fs from "node:fs"
+import path from "node:path"
+import { fileURLToPath } from "node:url"
 import { expect } from "chai"
-import fs from "fs"
-import path from "path"
-import { fileURLToPath } from "url"
+import * as converter from "../tmp/bundle.test.js"
 
 const writeFixtures = false // Set to true to save the results as expected test results.
 
 const verify = (cslfile) => {
-    let input = JSON.parse(fs.readFileSync(cslfile, "utf8"))
-    let name = path.basename(cslfile, path.extname(cslfile))
+    const input = JSON.parse(fs.readFileSync(cslfile, "utf8"))
+    const name = path.basename(cslfile, path.extname(cslfile))
 
-    let found = converter.parseCSL(input)
+    const found = converter.parseCSL(input)
     //clean(found)
 
-    let expected = path.join(path.dirname(cslfile), name + ".json")
+    let expected = path.join(path.dirname(cslfile), `${name}.json`)
     if (writeFixtures) {
-        fs.writeFileSync(expected, JSON.stringify(found, null, 4) + "\n")
+        fs.writeFileSync(expected, `${JSON.stringify(found, null, 4)}\n`)
     }
     expected = JSON.parse(fs.readFileSync(expected, "utf8"))
     //clean(expected)
@@ -27,11 +27,11 @@ const verify = (cslfile) => {
 
 const fixtures = path.join(
     path.dirname(fileURLToPath(import.meta.url)),
-    "fixtures/import/csl"
+    "fixtures/import/csl",
 )
 const cslfiles = fs.readdirSync(fixtures)
 for (let fixture of cslfiles) {
-    if (path.extname(fixture) != ".csl") {
+    if (path.extname(fixture) !== ".csl") {
         continue
     }
 

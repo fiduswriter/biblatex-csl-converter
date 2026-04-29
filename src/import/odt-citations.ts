@@ -39,8 +39,8 @@
  *   // result.warnings → ErrorObject[]
  */
 
-import { EntryObject } from "../const"
-import { CSLParser, CSLEntry } from "./csl"
+import type { EntryObject } from "../const"
+import { type CSLEntry, CSLParser } from "./csl"
 import { OdtNativeParser } from "./odt-native"
 import { extractJsonObject } from "./tools"
 
@@ -211,7 +211,7 @@ export class OdtCitationsParser {
             warnings: [],
             seenKeys: new Set<string>(),
             cslRawIdToEntryKey: new Map<string, string>(),
-        }
+        },
     ): CitationResult {
         const { entries, errors, warnings } = acc
         // Detect format
@@ -241,7 +241,7 @@ export class OdtCitationsParser {
                 markName,
                 format,
                 acc,
-                retrieveMetadata ? metadata : undefined
+                retrieveMetadata ? metadata : undefined,
             )
         } else if (format === "jabref") {
             OdtCitationsParser.extractJabRefMarkData(markName, acc)
@@ -329,7 +329,7 @@ export class OdtCitationsParser {
      */
     static bibliographyMarkCitation(
         bibMarkXml: string,
-        retrieve = true
+        retrieve = true,
     ): CitationResult {
         if (!bibMarkXml.includes("<text:bibliography-mark")) {
             return { isCitation: false }
@@ -442,7 +442,7 @@ export class OdtCitationsParser {
         markName: string,
         source: string,
         acc: CitationAccumulator,
-        metadata?: CitationItemMetadata[]
+        metadata?: CitationItemMetadata[],
     ): void {
         const { warnings } = acc
         const jsonStart = markName.indexOf("{")
@@ -465,7 +465,7 @@ export class OdtCitationsParser {
      */
     private static extractJabRefMarkData(
         markName: string,
-        acc: CitationAccumulator
+        acc: CitationAccumulator,
     ): void {
         const { entries, warnings, seenKeys } = acc
         const withoutPrefix = markName.slice("JABREF_".length)
@@ -499,7 +499,7 @@ export class OdtCitationsParser {
         jsonStr: string,
         source: string,
         acc: CitationAccumulator,
-        metadata?: CitationItemMetadata[]
+        metadata?: CitationItemMetadata[],
     ): void {
         const { entries, errors, warnings, seenKeys } = acc
         let citation: {
@@ -607,7 +607,7 @@ export class OdtCitationsParser {
      */
     private static extractEndNotePlaceholderData(
         segment: string,
-        acc: CitationAccumulator
+        acc: CitationAccumulator,
     ): void {
         const { entries, seenKeys } = acc
         const re = /^(.*?)[,\s]+(\d{4})\s+#(\d+)/
@@ -637,10 +637,10 @@ export class OdtCitationsParser {
             } else {
                 nameObj.literal = [{ type: "text", text: authorPart }]
             }
-            fields["author"] = [nameObj]
+            fields.author = [nameObj]
         }
 
-        if (year) fields["date"] = year
+        if (year) fields.date = year
 
         entries.push({
             entry_key: key,

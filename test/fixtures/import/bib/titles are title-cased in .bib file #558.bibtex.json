@@ -69,9 +69,7 @@
                         "text": "The American Journal of Emergency Medicine"
                     }
                 ],
-                "language": [
-                    "english"
-                ],
+                "language": ["english"],
                 "number": [
                     {
                         "type": "text",

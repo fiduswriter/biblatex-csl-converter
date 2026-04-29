@@ -1,14 +1,14 @@
-import * as converter from "../tmp/bundle.test.js"
+import fs from "node:fs"
+import path from "node:path"
+import { fileURLToPath } from "node:url"
 import { expect } from "chai"
-import fs from "fs"
-import path from "path"
-import { fileURLToPath } from "url"
+import * as converter from "../tmp/bundle.test.js"
 
 const writeFixtures = false // Set to true to save the results as expected test results.
 
 const clean = (state) => {
-    for (let prop of ["comments", "errors", "warnings"]) {
-        if (!state[prop] || state[prop].length == 0) {
+    for (const prop of ["comments", "errors", "warnings"]) {
+        if (!state[prop] || state[prop].length === 0) {
             delete state[prop]
         }
     }
@@ -19,7 +19,7 @@ const clean = (state) => {
 // Parse XML text content handling styled elements
 const parseXMLText = (xml) => {
     // Remove style tags and extract text content
-    let text = xml
+    const text = xml
         .replace(/<style[^>]*>/g, "")
         .replace(/<\/style>/g, "")
         .replace(/<[^>]+>/g, "") // Remove other XML tags
@@ -34,7 +34,7 @@ const parseRecord = (xml) => {
     //   <ref-type name="Journal Article">17</ref-type>  (standard EndNote)
     //   <ref-type name="Journal Article"/>              (Mendeley)
     const refTypeMatch = xml.match(
-        /<ref-type\s+name="([^"]+)"[^>]*\/>|<ref-type\s+name="([^"]+)"[^>]*>([^<]*)<\/ref-type>/
+        /<ref-type\s+name="([^"]+)"[^>]*\/>|<ref-type\s+name="([^"]+)"[^>]*>([^<]*)<\/ref-type>/,
     )
     if (refTypeMatch) {
         // Group 1 = self-closing form, groups 2+3 = regular form
@@ -51,11 +51,11 @@ const parseRecord = (xml) => {
 
     // Parse foreign-keys
     const foreignKeysMatch = xml.match(
-        /<foreign-keys>([\s\S]*?)<\/foreign-keys>/
+        /<foreign-keys>([\s\S]*?)<\/foreign-keys>/,
     )
     if (foreignKeysMatch) {
         const keyMatches = foreignKeysMatch[1].match(
-            /<key[^>]*app="EN"[^>]*>([^<]+)<\/key>/
+            /<key[^>]*app="EN"[^>]*>([^<]+)<\/key>/,
         )
         if (keyMatches) {
             record["foreign-keys"] = {
@@ -74,31 +74,31 @@ const parseRecord = (xml) => {
             titles.title = parseXMLText(titleMatch[1])
         }
         const secondaryTitleMatch = titlesContent.match(
-            /<secondary-title>([\s\S]*?)<\/secondary-title>/
+            /<secondary-title>([\s\S]*?)<\/secondary-title>/,
         )
         if (secondaryTitleMatch) {
             titles["secondary-title"] = parseXMLText(secondaryTitleMatch[1])
         }
         const tertiaryTitleMatch = titlesContent.match(
-            /<tertiary-title>([\s\S]*?)<\/tertiary-title>/
+            /<tertiary-title>([\s\S]*?)<\/tertiary-title>/,
         )
         if (tertiaryTitleMatch) {
             titles["tertiary-title"] = parseXMLText(tertiaryTitleMatch[1])
         }
         const shortTitleMatch = titlesContent.match(
-            /<short-title>([\s\S]*?)<\/short-title>/
+            /<short-title>([\s\S]*?)<\/short-title>/,
         )
         if (shortTitleMatch) {
             titles["short-title"] = parseXMLText(shortTitleMatch[1])
         }
         const altTitleMatch = titlesContent.match(
-            /<alt-title>([\s\S]*?)<\/alt-title>/
+            /<alt-title>([\s\S]*?)<\/alt-title>/,
         )
         if (altTitleMatch) {
             titles["alt-title"] = parseXMLText(altTitleMatch[1])
         }
         const translatedTitleMatch = titlesContent.match(
-            /<translated-title>([\s\S]*?)<\/translated-title>/
+            /<translated-title>([\s\S]*?)<\/translated-title>/,
         )
         if (translatedTitleMatch) {
             titles["translated-title"] = parseXMLText(translatedTitleMatch[1])
@@ -111,25 +111,25 @@ const parseRecord = (xml) => {
     // Parse contributors with all author types
     const contributors = {}
     const contributorsMatch = xml.match(
-        /<contributors>([\s\S]*?)<\/contributors>/
+        /<contributors>([\s\S]*?)<\/contributors>/,
     )
     if (contributorsMatch) {
         const contributorsContent = contributorsMatch[1]
 
         // Parse authors
         const authorsMatch = contributorsContent.match(
-            /<authors>([\s\S]*?)<\/authors>/
+            /<authors>([\s\S]*?)<\/authors>/,
         )
         if (authorsMatch) {
             const authorMatches = authorsMatch[1].match(
-                /<author[^>]*>([\s\S]*?)<\/author>/g
+                /<author[^>]*>([\s\S]*?)<\/author>/g,
             )
             if (authorMatches) {
                 contributors.authors = {
                     author: authorMatches.map((a) => {
                         const content = a.replace(
                             /<author[^>]*>([\s\S]*?)<\/author>/,
-                            "$1"
+                            "$1",
                         )
                         const textContent = parseXMLText(content)
                         // Extract author attributes
@@ -157,18 +157,18 @@ const parseRecord = (xml) => {
 
         // Parse secondary-authors
         const secondaryAuthorsMatch = contributorsContent.match(
-            /<secondary-authors>([\s\S]*?)<\/secondary-authors>/
+            /<secondary-authors>([\s\S]*?)<\/secondary-authors>/,
         )
         if (secondaryAuthorsMatch) {
             const authorMatches = secondaryAuthorsMatch[1].match(
-                /<author[^>]*>([\s\S]*?)<\/author>/g
+                /<author[^>]*>([\s\S]*?)<\/author>/g,
             )
             if (authorMatches) {
                 contributors["secondary-authors"] = {
                     author: authorMatches.map((a) => {
                         const content = a.replace(
                             /<author[^>]*>([\s\S]*?)<\/author>/,
-                            "$1"
+                            "$1",
                         )
                         return { "#text": parseXMLText(content) }
                     }),
@@ -178,18 +178,18 @@ const parseRecord = (xml) => {
 
         // Parse tertiary-authors
         const tertiaryAuthorsMatch = contributorsContent.match(
-            /<tertiary-authors>([\s\S]*?)<\/tertiary-authors>/
+            /<tertiary-authors>([\s\S]*?)<\/tertiary-authors>/,
         )
         if (tertiaryAuthorsMatch) {
             const authorMatches = tertiaryAuthorsMatch[1].match(
-                /<author[^>]*>([\s\S]*?)<\/author>/g
+                /<author[^>]*>([\s\S]*?)<\/author>/g,
             )
             if (authorMatches) {
                 contributors["tertiary-authors"] = {
                     author: authorMatches.map((a) => {
                         const content = a.replace(
                             /<author[^>]*>([\s\S]*?)<\/author>/,
-                            "$1"
+                            "$1",
                         )
                         return { "#text": parseXMLText(content) }
                     }),
@@ -199,18 +199,18 @@ const parseRecord = (xml) => {
 
         // Parse subsidiary-authors
         const subsidiaryAuthorsMatch = contributorsContent.match(
-            /<subsidiary-authors>([\s\S]*?)<\/subsidiary-authors>/
+            /<subsidiary-authors>([\s\S]*?)<\/subsidiary-authors>/,
         )
         if (subsidiaryAuthorsMatch) {
             const authorMatches = subsidiaryAuthorsMatch[1].match(
-                /<author[^>]*>([\s\S]*?)<\/author>/g
+                /<author[^>]*>([\s\S]*?)<\/author>/g,
             )
             if (authorMatches) {
                 contributors["subsidiary-authors"] = {
                     author: authorMatches.map((a) => {
                         const content = a.replace(
                             /<author[^>]*>([\s\S]*?)<\/author>/,
-                            "$1"
+                            "$1",
                         )
                         return { "#text": parseXMLText(content) }
                     }),
@@ -220,18 +220,18 @@ const parseRecord = (xml) => {
 
         // Parse translated-authors
         const translatedAuthorsMatch = contributorsContent.match(
-            /<translated-authors>([\s\S]*?)<\/translated-authors>/
+            /<translated-authors>([\s\S]*?)<\/translated-authors>/,
         )
         if (translatedAuthorsMatch) {
             const authorMatches = translatedAuthorsMatch[1].match(
-                /<author[^>]*>([\s\S]*?)<\/author>/g
+                /<author[^>]*>([\s\S]*?)<\/author>/g,
             )
             if (authorMatches) {
                 contributors["translated-authors"] = {
                     author: authorMatches.map((a) => {
                         const content = a.replace(
                             /<author[^>]*>([\s\S]*?)<\/author>/,
-                            "$1"
+                            "$1",
                         )
                         return { "#text": parseXMLText(content) }
                     }),
@@ -249,13 +249,13 @@ const parseRecord = (xml) => {
         const periodicalContent = periodicalMatch[1]
         const periodical = {}
         const fullTitleMatch = periodicalContent.match(
-            /<full-title>([\s\S]*?)<\/full-title>/
+            /<full-title>([\s\S]*?)<\/full-title>/,
         )
         if (fullTitleMatch) {
             periodical["full-title"] = parseXMLText(fullTitleMatch[1])
         }
         const abbr1Match = periodicalContent.match(
-            /<abbr-1>([\s\S]*?)<\/abbr-1>/
+            /<abbr-1>([\s\S]*?)<\/abbr-1>/,
         )
         if (abbr1Match) {
             periodical["abbr-1"] = parseXMLText(abbr1Match[1])
@@ -296,7 +296,7 @@ const parseRecord = (xml) => {
 
     // Parse secondary-volume
     const secondaryVolumeMatch = xml.match(
-        /<secondary-volume>([\s\S]*?)<\/secondary-volume>/
+        /<secondary-volume>([\s\S]*?)<\/secondary-volume>/,
     )
     if (secondaryVolumeMatch) {
         record["secondary-volume"] = parseXMLText(secondaryVolumeMatch[1])
@@ -304,7 +304,7 @@ const parseRecord = (xml) => {
 
     // Parse secondary-issue
     const secondaryIssueMatch = xml.match(
-        /<secondary-issue>([\s\S]*?)<\/secondary-issue>/
+        /<secondary-issue>([\s\S]*?)<\/secondary-issue>/,
     )
     if (secondaryIssueMatch) {
         record["secondary-issue"] = parseXMLText(secondaryIssueMatch[1])
@@ -349,22 +349,22 @@ const parseRecord = (xml) => {
 
         // Parse pub-dates
         const pubDatesMatch = datesContent.match(
-            /<pub-dates>([\s\S]*?)<\/pub-dates>/
+            /<pub-dates>([\s\S]*?)<\/pub-dates>/,
         )
         if (pubDatesMatch) {
             const dateMatches = pubDatesMatch[1].match(
-                /<date([^>]*)>([\s\S]*?)<\/date>/g
+                /<date([^>]*)>([\s\S]*?)<\/date>/g,
             )
             if (dateMatches) {
                 dates["pub-dates"] = {
                     date: dateMatches.map((d) => {
                         const dateContent = d.replace(
                             /<date([^>]*)>([\s\S]*?)<\/date>/,
-                            "$2"
+                            "$2",
                         )
                         const attrs = d.replace(
                             /<date([^>]*)>([\s\S]*?)<\/date>/,
-                            "$1"
+                            "$1",
                         )
                         const dateObj = { "#text": parseXMLText(dateContent) }
                         const yearAttrMatch = attrs.match(/year="([^"]*)"/)
@@ -391,7 +391,7 @@ const parseRecord = (xml) => {
 
     // Parse pub-location
     const pubLocationMatch = xml.match(
-        /<pub-location>([\s\S]*?)<\/pub-location>/
+        /<pub-location>([\s\S]*?)<\/pub-location>/,
     )
     if (pubLocationMatch) {
         record["pub-location"] = parseXMLText(pubLocationMatch[1])
@@ -430,11 +430,11 @@ const parseRecord = (xml) => {
     // Parse electronic-resource-num (DOI field used by Mendeley and newer
     // EndNote exports instead of the legacy <doi> element)
     const electronicResourceNumMatch = xml.match(
-        /<electronic-resource-num>([\s\S]*?)<\/electronic-resource-num>/
+        /<electronic-resource-num>([\s\S]*?)<\/electronic-resource-num>/,
     )
     if (electronicResourceNumMatch) {
         record["electronic-resource-num"] = parseXMLText(
-            electronicResourceNumMatch[1]
+            electronicResourceNumMatch[1],
         )
     }
 
@@ -452,7 +452,7 @@ const parseRecord = (xml) => {
 
     // Parse research-notes
     const researchNotesMatch = xml.match(
-        /<research-notes>([\s\S]*?)<\/research-notes>/
+        /<research-notes>([\s\S]*?)<\/research-notes>/,
     )
     if (researchNotesMatch) {
         record["research-notes"] = parseXMLText(researchNotesMatch[1])
@@ -462,7 +462,7 @@ const parseRecord = (xml) => {
     const keywordsMatch = xml.match(/<keywords>([\s\S]*?)<\/keywords>/)
     if (keywordsMatch) {
         const keywordMatches = keywordsMatch[1].match(
-            /<keyword>([\s\S]*?)<\/keyword>/g
+            /<keyword>([\s\S]*?)<\/keyword>/g,
         )
         if (keywordMatches) {
             record.keywords = {
@@ -484,11 +484,11 @@ const parseRecord = (xml) => {
         const urls = {}
 
         const webUrlsMatch = urlsContent.match(
-            /<web-urls>([\s\S]*?)<\/web-urls>/
+            /<web-urls>([\s\S]*?)<\/web-urls>/,
         )
         if (webUrlsMatch) {
             const urlMatches = webUrlsMatch[1].match(
-                /<url[^>]*>([\s\S]*?)<\/url>/g
+                /<url[^>]*>([\s\S]*?)<\/url>/g,
             )
             if (urlMatches) {
                 urls["web-urls"] = {
@@ -498,11 +498,11 @@ const parseRecord = (xml) => {
         }
 
         const relatedUrlsMatch = urlsContent.match(
-            /<related-urls>([\s\S]*?)<\/related-urls>/
+            /<related-urls>([\s\S]*?)<\/related-urls>/,
         )
         if (relatedUrlsMatch) {
             const urlMatches = relatedUrlsMatch[1].match(
-                /<url[^>]*>([\s\S]*?)<\/url>/g
+                /<url[^>]*>([\s\S]*?)<\/url>/g,
             )
             if (urlMatches) {
                 urls["related-urls"] = {
@@ -512,11 +512,11 @@ const parseRecord = (xml) => {
         }
 
         const pdfUrlsMatch = urlsContent.match(
-            /<pdf-urls>([\s\S]*?)<\/pdf-urls>/
+            /<pdf-urls>([\s\S]*?)<\/pdf-urls>/,
         )
         if (pdfUrlsMatch) {
             const urlMatches = pdfUrlsMatch[1].match(
-                /<url[^>]*>([\s\S]*?)<\/url>/g
+                /<url[^>]*>([\s\S]*?)<\/url>/g,
             )
             if (urlMatches) {
                 urls["pdf-urls"] = {
@@ -526,11 +526,11 @@ const parseRecord = (xml) => {
         }
 
         const textUrlsMatch = urlsContent.match(
-            /<text-urls>([\s\S]*?)<\/text-urls>/
+            /<text-urls>([\s\S]*?)<\/text-urls>/,
         )
         if (textUrlsMatch) {
             const urlMatches = textUrlsMatch[1].match(
-                /<url[^>]*>([\s\S]*?)<\/url>/g
+                /<url[^>]*>([\s\S]*?)<\/url>/g,
             )
             if (urlMatches) {
                 urls["text-urls"] = {
@@ -546,7 +546,7 @@ const parseRecord = (xml) => {
 
     // Parse accession-num
     const accessionNumMatch = xml.match(
-        /<accession-num>([\s\S]*?)<\/accession-num>/
+        /<accession-num>([\s\S]*?)<\/accession-num>/,
     )
     if (accessionNumMatch) {
         record["accession-num"] = parseXMLText(accessionNumMatch[1])
@@ -572,7 +572,7 @@ const parseRecord = (xml) => {
 
     // Parse reviewed-item
     const reviewedItemMatch = xml.match(
-        /<reviewed-item>([\s\S]*?)<\/reviewed-item>/
+        /<reviewed-item>([\s\S]*?)<\/reviewed-item>/,
     )
     if (reviewedItemMatch) {
         record["reviewed-item"] = parseXMLText(reviewedItemMatch[1])
@@ -592,7 +592,7 @@ const parseRecord = (xml) => {
 
     // Parse modified-date
     const modifiedDateMatch = xml.match(
-        /<modified-date>([\s\S]*?)<\/modified-date>/
+        /<modified-date>([\s\S]*?)<\/modified-date>/,
     )
     if (modifiedDateMatch) {
         record["modified-date"] = parseXMLText(modifiedDateMatch[1])
@@ -601,7 +601,7 @@ const parseRecord = (xml) => {
     // Parse custom fields
     for (let i = 1; i <= 7; i++) {
         const customMatch = xml.match(
-            new RegExp(`<custom${i}>([\\s\\S]*?)</custom${i}>`)
+            new RegExp(`<custom${i}>([\\s\\S]*?)</custom${i}>`),
         )
         if (customMatch) {
             record[`custom${i}`] = parseXMLText(customMatch[1])
@@ -611,7 +611,7 @@ const parseRecord = (xml) => {
     // Parse misc fields
     for (let i = 1; i <= 3; i++) {
         const miscMatch = xml.match(
-            new RegExp(`<misc${i}>([\\s\\S]*?)</misc${i}>`)
+            new RegExp(`<misc${i}>([\\s\\S]*?)</misc${i}>`),
         )
         if (miscMatch) {
             record[`misc${i}`] = parseXMLText(miscMatch[1])
@@ -625,7 +625,7 @@ const verify = (enfile) => {
     // Read XML file and parse it
     const xmlContent = fs.readFileSync(enfile, "utf8")
 
-    let records = []
+    const records = []
 
     // Check for <records> wrapper (EndNote.dtd format)
     const recordsMatch = xmlContent.match(/<records>([\s\S]*?)<\/records>/)
@@ -641,12 +641,12 @@ const verify = (enfile) => {
         const endNoteMatch = xmlContent.match(/<EndNote>([\s\S]*?)<\/EndNote>/)
         if (endNoteMatch) {
             const citeMatches = xmlContent.match(
-                /<Cite>[\s\S]*?<record>([\s\S]*?)<\/record>[\s\S]*?<\/Cite>/g
+                /<Cite>[\s\S]*?<record>([\s\S]*?)<\/record>[\s\S]*?<\/Cite>/g,
             )
             if (citeMatches) {
                 for (const citeXml of citeMatches) {
                     const recordMatch = citeXml.match(
-                        /<record>([\s\S]*?)<\/record>/
+                        /<record>([\s\S]*?)<\/record>/,
                     )
                     if (recordMatch) {
                         records.push(parseRecord(recordMatch[0]))
@@ -656,22 +656,22 @@ const verify = (enfile) => {
         }
     }
 
-    let input = records
-    let name = path.basename(enfile, path.extname(enfile))
+    const input = records
+    const name = path.basename(enfile, path.extname(enfile))
 
-    let found = converter.parseEndNote(input)
+    const found = converter.parseEndNote(input)
     clean(found)
 
-    let expected = path.join(path.dirname(enfile), name + ".json")
+    let expected = path.join(path.dirname(enfile), `${name}.json`)
     if (writeFixtures) {
-        fs.writeFileSync(expected, JSON.stringify(found, null, 4) + "\n")
+        fs.writeFileSync(expected, `${JSON.stringify(found, null, 4)}\n`)
     }
 
     if (!fs.existsSync(expected)) {
         console.log(
-            `Expected file ${expected} does not exist, creating fixture`
+            `Expected file ${expected} does not exist, creating fixture`,
         )
-        fs.writeFileSync(expected, JSON.stringify(found, null, 4) + "\n")
+        fs.writeFileSync(expected, `${JSON.stringify(found, null, 4)}\n`)
         return
     }
 
@@ -685,7 +685,7 @@ const verify = (enfile) => {
 
 const fixtures = path.join(
     path.dirname(fileURLToPath(import.meta.url)),
-    "fixtures/import/endnote"
+    "fixtures/import/endnote",
 )
 const enfiles = fs.readdirSync(fixtures)
 

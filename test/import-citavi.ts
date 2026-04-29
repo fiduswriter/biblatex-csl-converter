@@ -1,15 +1,15 @@
-import * as converter from "../tmp/bundle.test.js"
-import { expect } from "chai"
-import fs from "fs"
-import path from "path"
-import { fileURLToPath } from "url"
+import fs from "node:fs"
+import path from "node:path"
+import { fileURLToPath } from "node:url"
 import { DOMParser } from "@xmldom/xmldom"
+import { expect } from "chai"
+import * as converter from "../tmp/bundle.test.js"
 
 const writeFixtures = false // Set to true to regenerate expected test results.
 
 const clean = (state) => {
-    for (let prop of ["comments", "errors", "warnings"]) {
-        if (!state[prop] || state[prop].length == 0) {
+    for (const prop of ["comments", "errors", "warnings"]) {
+        if (!state[prop] || state[prop].length === 0) {
             delete state[prop]
         }
     }
@@ -26,18 +26,18 @@ const verifyJson = (citavifile) => {
 
     const expectedPath = path.join(
         path.dirname(citavifile),
-        name + "-expected.json"
+        `${name}-expected.json`,
     )
 
     if (writeFixtures) {
-        fs.writeFileSync(expectedPath, JSON.stringify(found, null, 4) + "\n")
+        fs.writeFileSync(expectedPath, `${JSON.stringify(found, null, 4)}\n`)
     }
 
     if (!fs.existsSync(expectedPath)) {
         console.log(
-            `Expected file ${expectedPath} does not exist, creating fixture`
+            `Expected file ${expectedPath} does not exist, creating fixture`,
         )
-        fs.writeFileSync(expectedPath, JSON.stringify(found, null, 4) + "\n")
+        fs.writeFileSync(expectedPath, `${JSON.stringify(found, null, 4)}\n`)
         return
     }
 
@@ -60,18 +60,18 @@ const verifyXml = (citavifile) => {
 
     const expectedPath = path.join(
         path.dirname(citavifile),
-        name + "-expected.json"
+        `${name}-expected.json`,
     )
 
     if (writeFixtures) {
-        fs.writeFileSync(expectedPath, JSON.stringify(found, null, 4) + "\n")
+        fs.writeFileSync(expectedPath, `${JSON.stringify(found, null, 4)}\n`)
     }
 
     if (!fs.existsSync(expectedPath)) {
         console.log(
-            `Expected file ${expectedPath} does not exist, creating fixture`
+            `Expected file ${expectedPath} does not exist, creating fixture`,
         )
-        fs.writeFileSync(expectedPath, JSON.stringify(found, null, 4) + "\n")
+        fs.writeFileSync(expectedPath, `${JSON.stringify(found, null, 4)}\n`)
         return
     }
 
@@ -85,7 +85,7 @@ const verifyXml = (citavifile) => {
 
 const fixtures = path.join(
     path.dirname(fileURLToPath(import.meta.url)),
-    "fixtures/import/citavi"
+    "fixtures/import/citavi",
 )
 const citavifiles = fs.readdirSync(fixtures)
 

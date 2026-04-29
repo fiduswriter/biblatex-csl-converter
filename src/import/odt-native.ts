@@ -8,7 +8,7 @@
  * This module is consumed by OdtCitationsParser in odt-citations.ts.
  */
 
-import { EntryObject, NodeArray, RangeArray } from "../const"
+import type { EntryObject, NodeArray, RangeArray } from "../const"
 
 // ---------------------------------------------------------------------------
 // Type map
@@ -105,7 +105,7 @@ export class OdtNativeParser {
 
 function processLibreOfficeMarkAttrs(
     attrString: string,
-    seenKeys?: Set<string>
+    seenKeys?: Set<string>,
 ): {
     entry?: EntryObject
     warning?: { type: string; field?: string; value?: unknown; entry?: string }
@@ -142,81 +142,81 @@ function processLibreOfficeMarkAttrs(
     const fields: Record<string, unknown> = {}
 
     const title = getAttr("text:title")
-    if (title) fields["title"] = makeRichText(title)
+    if (title) fields.title = makeRichText(title)
 
     // text:author is a plain string (may contain multiple authors
     // separated by semicolons, e.g. "Jones, Alice; Smith, Bob")
     const author = getAttr("text:author")
-    if (author) fields["author"] = parseODTNameString(author)
+    if (author) fields.author = parseODTNameString(author)
 
     const year = getAttr("text:year")
-    if (year) fields["date"] = year
+    if (year) fields.date = year
 
     const journal = getAttr("text:journal")
-    if (journal) fields["journaltitle"] = makeRichText(journal)
+    if (journal) fields.journaltitle = makeRichText(journal)
 
     const booktitle = getAttr("text:booktitle")
-    if (booktitle) fields["booktitle"] = makeRichText(booktitle)
+    if (booktitle) fields.booktitle = makeRichText(booktitle)
 
     const volume = getAttr("text:volume")
-    if (volume) fields["volume"] = makeRichText(volume)
+    if (volume) fields.volume = makeRichText(volume)
 
     const number = getAttr("text:number")
-    if (number) fields["number"] = makeRichText(number)
+    if (number) fields.number = makeRichText(number)
 
     const pages = getAttr("text:pages")
-    if (pages) fields["pages"] = convertRange(pages)
+    if (pages) fields.pages = convertRange(pages)
 
     const publisher = getAttr("text:publisher")
-    if (publisher) fields["publisher"] = [makeRichText(publisher)]
+    if (publisher) fields.publisher = [makeRichText(publisher)]
 
     // text:address is the ODF attribute for publisher address / place
     const address = getAttr("text:address")
-    if (address) fields["location"] = [makeRichText(address)]
+    if (address) fields.location = [makeRichText(address)]
 
     const edition = getAttr("text:edition")
-    if (edition) fields["edition"] = makeRichText(edition)
+    if (edition) fields.edition = makeRichText(edition)
 
     const isbn = getAttr("text:isbn")
-    if (isbn) fields["isbn"] = makeRichText(isbn)
+    if (isbn) fields.isbn = makeRichText(isbn)
 
     const issn = getAttr("text:issn")
-    if (issn) fields["issn"] = makeRichText(issn)
+    if (issn) fields.issn = makeRichText(issn)
 
     const doi = getAttr("text:doi")
-    if (doi) fields["doi"] = doi
+    if (doi) fields.doi = doi
 
     const url = getAttr("text:url")
-    if (url) fields["url"] = url
+    if (url) fields.url = url
 
     const note = getAttr("text:note")
-    if (note) fields["note"] = makeRichText(note)
+    if (note) fields.note = makeRichText(note)
 
     const annote = getAttr("text:annote")
-    if (annote && !fields["note"]) {
-        fields["note"] = makeRichText(annote)
+    if (annote && !fields.note) {
+        fields.note = makeRichText(annote)
     }
 
     // text:institution / text:school → institution field
     const institution = getAttr("text:institution")
-    if (institution) fields["institution"] = [makeRichText(institution)]
+    if (institution) fields.institution = [makeRichText(institution)]
 
     const school = getAttr("text:school")
-    if (school && !fields["institution"]) {
-        fields["institution"] = [makeRichText(school)]
+    if (school && !fields.institution) {
+        fields.institution = [makeRichText(school)]
     }
 
     const reportType = getAttr("text:report-type")
-    if (reportType) fields["type"] = reportType
+    if (reportType) fields.type = reportType
 
     const chapter = getAttr("text:chapter")
-    if (chapter) fields["chapter"] = makeRichText(chapter)
+    if (chapter) fields.chapter = makeRichText(chapter)
 
     const series = getAttr("text:series")
-    if (series) fields["series"] = makeRichText(series)
+    if (series) fields.series = makeRichText(series)
 
     const editor = getAttr("text:editor")
-    if (editor) fields["editor"] = parseODTNameString(editor)
+    if (editor) fields.editor = parseODTNameString(editor)
 
     return {
         entry: { entry_key: identifier, bib_type: bibType, fields },

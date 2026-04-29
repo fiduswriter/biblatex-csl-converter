@@ -33,10 +33,10 @@ class SentenceCaser {
         const preserve: TextRange[] = []
 
         this.input = this.input.replace(/[;:]\s+A\s/g, (match) =>
-            match.toLowerCase()
+            match.toLowerCase(),
         )
         this.input = this.input.replace(/[–—]\s*A\s/g, (match) =>
-            match.toLowerCase()
+            match.toLowerCase(),
         )
         let m
         while (this.input) {

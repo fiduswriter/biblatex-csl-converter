@@ -1,27 +1,27 @@
 import {
-    BibLatexParser,
+    type BibDB,
     BibLatexExporter,
-    CSLExporter,
-    CSLParser,
-    EndNoteParser,
-    RISParser,
-    ENWParser,
-    NBIBParser,
+    BibLatexParser,
     CitaviParser,
     CitaviXmlParser,
+    CSLExporter,
+    CSLParser,
     DocxCitationsParser,
-    OdtCitationsParser,
-    sniffFormat,
+    ENWParser,
+    EndNoteParser,
     edtfParse,
-    locales,
-    getLocale,
-    getFieldTitle,
-    getTypeTitle,
     getFieldHelp,
+    getFieldTitle,
     getLangidTitle,
+    getLocale,
     getOtherOptionTitle,
-    type BibDB,
+    getTypeTitle,
     type ImportFormat,
+    locales,
+    NBIBParser,
+    OdtCitationsParser,
+    RISParser,
+    sniffFormat,
 } from ".."
 
 // ─── Expose everything on globalThis for inline browser scripts ──────────────
@@ -155,10 +155,10 @@ function printObject(object: JSONValue): string {
                 html += '<table class="obj-table">'
                 Object.keys(object).forEach((key) => {
                     const valueHtml = printObject(
-                        (object as Record<string, JSONValue>)[key]
+                        (object as Record<string, JSONValue>)[key],
                     )
                     html += `<tr><td class="obj-key">${escapeHtml(
-                        key
+                        key,
                     )}</td><td>${valueHtml}</td></tr>`
                 })
                 html += "</table>"
@@ -187,9 +187,7 @@ function renderBibDB(bibDB: BibDB): string {
         const entryKey = (entry.entry_key as string) ?? ""
 
         html += `<details class="entry-block" open>`
-        html += `<summary><span class="entry-key">${escapeHtml(
-            entryKey
-        )}</span>`
+        html += `<summary><span class="entry-key">${escapeHtml(entryKey)}</span>`
         html += ` <span class="entry-type-badge">${escapeHtml(typLabel)}</span>`
         html += `</summary>`
         html += `<table class="field-table">`
@@ -203,7 +201,7 @@ function renderBibDB(bibDB: BibDB): string {
             html += escapeHtml(fieldLabel)
             if (help) {
                 html += ` <span class="field-help" title="${escapeHtml(
-                    help.replace(/<[^>]*>/g, "")
+                    help.replace(/<[^>]*>/g, ""),
                 )}">?</span>`
             }
             html += `</td>`
@@ -276,7 +274,7 @@ function importEndNote(input: string): BibDB {
             const childVal =
                 child.children.length > 0
                     ? nodeToObj(child)
-                    : child.textContent ?? ""
+                    : (child.textContent ?? "")
             if (existing === undefined) {
                 obj[tag] = childVal
             } else if (Array.isArray(existing)) {
@@ -291,8 +289,8 @@ function importEndNote(input: string): BibDB {
 
     const records = Array.from(
         doc.querySelectorAll(
-            "records > record, Xml > References > Reference, record"
-        )
+            "records > record, Xml > References > Reference, record",
+        ),
     ).map((el) => nodeToObj(el as Element))
 
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -387,7 +385,7 @@ function sniffAndImport(input: string): {
     if (sniffed === null) {
         throw new Error(
             "Could not detect the bibliography format. " +
-                "Please select a format manually from the drop-down."
+                "Please select a format manually from the drop-down.",
         )
     }
     // odt_citations and docx_citations require an extracted XML string, not the
@@ -396,7 +394,7 @@ function sniffAndImport(input: string): {
         throw new Error(
             `Detected ${FORMAT_LABELS[sniffed]} format. ` +
                 "This format must be loaded by uploading the file (.odt / .docx) — " +
-                "pasting the raw XML is not supported in the demo."
+                "pasting the raw XML is not supported in the demo.",
         )
     }
     const bibDB = runImport(sniffed, input)
@@ -414,7 +412,7 @@ function sniffAndImport(input: string): {
  */
 async function importDocumentFile(
     file: File,
-    format: "docx" | "odt"
+    format: "docx" | "odt",
 ): Promise<BibDB> {
     // JSZip is loaded via CDN script tag — access it through globalThis
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -425,7 +423,7 @@ async function importDocumentFile(
     }
     if (!JSZip) {
         throw new Error(
-            "JSZip is not loaded. Make sure the CDN script tag is present."
+            "JSZip is not loaded. Make sure the CDN script tag is present.",
         )
     }
 
@@ -483,7 +481,7 @@ function renderCSLPanel(bibDB: BibDB): void {
         el.innerHTML = printObject(cslDB as unknown as JSONValue)
     } catch (e) {
         el.innerHTML = `<span class="error-msg">CSL export failed: ${escapeHtml(
-            String(e)
+            String(e),
         )}</span>`
     }
 }
@@ -493,12 +491,10 @@ function renderBibLatexPanel(bibDB: BibDB): void {
     if (!el) return
     try {
         const exporter = new BibLatexExporter(bibDB)
-        el.innerHTML = `<pre class="bib-pre">${escapeHtml(
-            exporter.parse()
-        )}</pre>`
+        el.innerHTML = `<pre class="bib-pre">${escapeHtml(exporter.parse())}</pre>`
     } catch (e) {
         el.innerHTML = `<span class="error-msg">BibLaTeX export failed: ${escapeHtml(
-            String(e)
+            String(e),
         )}</span>`
     }
 }
@@ -531,7 +527,7 @@ function processInput(format: string, input: string): void {
             }
         } catch (e) {
             const msg = `<span class="error-msg">Import failed: ${escapeHtml(
-                String(e)
+                String(e),
             )}</span>`
             if (bibDbEl) bibDbEl.innerHTML = msg
             if (cslDbEl) cslDbEl.innerHTML = ""
@@ -630,8 +626,8 @@ function readFile(): void {
                     const count = Object.keys(currentBibDB).length
                     const formatNote = isAutoDoc
                         ? ` — detected as <strong>${escapeHtml(
-                              FORMAT_LABELS[docFormat + "_citations"] ??
-                                  docFormat
+                              FORMAT_LABELS[`${docFormat}_citations`] ??
+                                  docFormat,
                           )}</strong>`
                         : ""
                     statsEl.innerHTML = `${count} entr${
@@ -641,7 +637,7 @@ function readFile(): void {
             })
             .catch((e) => {
                 const msg = `<span class="error-msg">Import failed: ${escapeHtml(
-                    String(e)
+                    String(e),
                 )}</span>`
                 if (bibDbEl) bibDbEl.innerHTML = msg
                 if (cslDbEl) cslDbEl.innerHTML = ""
@@ -663,7 +659,7 @@ function readFile(): void {
                 if (sel) {
                     // Only update if the option actually exists in the select.
                     const exists = Array.from(sel.options).some(
-                        (o) => o.value === legacy
+                        (o) => o.value === legacy,
                     )
                     if (exists) sel.value = legacy
                 }
@@ -685,7 +681,7 @@ function readPaste(event: ClipboardEvent): void {
             const sel = getEl<HTMLSelectElement>("format-select")
             if (sel) {
                 const exists = Array.from(sel.options).some(
-                    (o) => o.value === legacy
+                    (o) => o.value === legacy,
                 )
                 if (exists) sel.value = legacy
             }

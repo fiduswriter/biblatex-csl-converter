@@ -42,13 +42,13 @@
 // ---------------------------------------------------------------------------
 
 export type {
-    FieldTitles,
     FieldHelp,
-    TypeTitles,
+    FieldTitles,
     FieldTitlesByType,
     LangidOptions,
-    OtherOptions,
     Locale,
+    OtherOptions,
+    TypeTitles,
 } from "./types"
 
 import type { Locale } from "./types"
@@ -102,7 +102,7 @@ export function getLocale(lang: string): Locale {
     if (base !== lang && base in locales) {
         return locales[base]
     }
-    return locales["en"]
+    return locales.en
 }
 
 /**
@@ -120,7 +120,7 @@ export function getLocale(lang: string): Locale {
 export function getFieldTitle(
     locale: Locale,
     typeKey: string,
-    fieldKey: string
+    fieldKey: string,
 ): string {
     return (
         locale.fieldTitlesByType[typeKey]?.[fieldKey] ??
@@ -150,7 +150,7 @@ export function getTypeTitle(locale: Locale, typeKey: string): string {
  */
 export function getFieldHelp(
     locale: Locale,
-    fieldKey: string
+    fieldKey: string,
 ): string | undefined {
     return locale.fieldHelp[fieldKey]
 }

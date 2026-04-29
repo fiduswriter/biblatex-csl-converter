@@ -180,7 +180,7 @@ export function makeEntryKey(
     candidate: string,
     usedKeys: Set<string>,
     lastName?: string,
-    year?: string
+    year?: string,
 ): string {
     // Determine a base key that starts with a letter.
     let base: string
@@ -280,15 +280,15 @@ export function extractJsonObject(str: string, startIndex = 0): string | null {
 // split at each occurence of splitToken, but only if no braces are currently open.
 export function splitTeXString(
     texString: string,
-    splitToken = "and"
+    splitToken = "and",
 ): string[] {
-    let output = []
-    let tokenRe = /([^\s{}]+|\s|{|})/g
+    const output = []
+    const tokenRe = /([^\s{}]+|\s|{|})/g
     let j = 0
     let k = 0
     let item
     while ((item = tokenRe.exec(texString)) !== null) {
-        const token = item && item.length ? item[0] : false
+        const token = item?.length ? item[0] : false
         if (token === false) {
             break
         }

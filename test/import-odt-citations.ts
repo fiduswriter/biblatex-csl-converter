@@ -1,14 +1,14 @@
-import * as converter from "../tmp/bundle.test.js"
+import fs from "node:fs"
+import path from "node:path"
+import { fileURLToPath } from "node:url"
 import { expect } from "chai"
-import fs from "fs"
-import path from "path"
-import { fileURLToPath } from "url"
+import * as converter from "../tmp/bundle.test.js"
 
 const writeFixtures = false // Set to true to regenerate expected test results.
 
 const clean = (state) => {
-    for (let prop of ["comments", "errors", "warnings"]) {
-        if (!state[prop] || state[prop].length == 0) {
+    for (const prop of ["comments", "errors", "warnings"]) {
+        if (!state[prop] || state[prop].length === 0) {
             delete state[prop]
         }
     }
@@ -30,18 +30,18 @@ const verify = (xmlFile) => {
 
     const expectedPath = path.join(
         path.dirname(xmlFile),
-        name + "-expected.json"
+        `${name}-expected.json`,
     )
 
     if (writeFixtures) {
-        fs.writeFileSync(expectedPath, JSON.stringify(found, null, 4) + "\n")
+        fs.writeFileSync(expectedPath, `${JSON.stringify(found, null, 4)}\n`)
     }
 
     if (!fs.existsSync(expectedPath)) {
         console.log(
-            `Expected file ${expectedPath} does not exist, creating fixture`
+            `Expected file ${expectedPath} does not exist, creating fixture`,
         )
-        fs.writeFileSync(expectedPath, JSON.stringify(found, null, 4) + "\n")
+        fs.writeFileSync(expectedPath, `${JSON.stringify(found, null, 4)}\n`)
         return
     }
 
@@ -55,12 +55,12 @@ const verify = (xmlFile) => {
 
 const fixturesDir = path.join(
     path.dirname(fileURLToPath(import.meta.url)),
-    "fixtures/import/odt-citations"
+    "fixtures/import/odt-citations",
 )
 
 const allFiles = fs.readdirSync(fixturesDir)
 
-for (let filename of allFiles) {
+for (const filename of allFiles) {
     if (path.extname(filename).toLowerCase() !== ".xml") continue
     // Skip expected-output JSON files
     if (filename.endsWith("-expected.json")) continue
@@ -79,7 +79,7 @@ describe("Static utility methods", () => {
                 const result =
                     converter.OdtCitationsParser.referenceMarkCitation(
                         markName,
-                        false
+                        false,
                     )
                 expect(result.isCitation).to.equal(true)
                 expect(result.format).to.equal("zotero")
@@ -91,7 +91,7 @@ describe("Static utility methods", () => {
                 const result =
                     converter.OdtCitationsParser.referenceMarkCitation(
                         markName,
-                        false
+                        false,
                     )
                 expect(result.isCitation).to.equal(true)
                 expect(result.format).to.equal("mendeley_legacy")
@@ -103,7 +103,7 @@ describe("Static utility methods", () => {
                 const result =
                     converter.OdtCitationsParser.referenceMarkCitation(
                         markName,
-                        false
+                        false,
                     )
                 expect(result.isCitation).to.equal(true)
                 expect(result.format).to.equal("jabref")
@@ -115,7 +115,7 @@ describe("Static utility methods", () => {
                 const result =
                     converter.OdtCitationsParser.referenceMarkCitation(
                         markName,
-                        false
+                        false,
                     )
                 expect(result.isCitation).to.equal(false)
             })
@@ -138,13 +138,13 @@ describe("Static utility methods", () => {
                 const result =
                     converter.OdtCitationsParser.referenceMarkCitation(
                         markName,
-                        true
+                        true,
                     )
                 expect(result.isCitation).to.equal(true)
                 expect(result.format).to.equal("zotero")
                 expect(result.entries).to.not.equal(undefined)
                 expect(Object.keys(result.entries!).length).to.be.greaterThan(0)
-                expect(result.errors!.length).to.equal(0)
+                expect(result.errors?.length).to.equal(0)
             })
 
             it("handles Zotero citation with random ID suffix", () => {
@@ -165,7 +165,7 @@ describe("Static utility methods", () => {
                 const result =
                     converter.OdtCitationsParser.referenceMarkCitation(
                         markName,
-                        true
+                        true,
                     )
                 expect(result.isCitation).to.equal(true)
                 expect(result.format).to.equal("zotero")
@@ -175,7 +175,7 @@ describe("Static utility methods", () => {
                 expect(entry.fields.title).to.deep.equal([
                     { type: "text", text: "Test Book" },
                 ])
-                expect(result.errors!.length).to.equal(0)
+                expect(result.errors?.length).to.equal(0)
             })
 
             it("handles various random ID formats", () => {
@@ -192,13 +192,13 @@ describe("Static utility methods", () => {
                     const result =
                         converter.OdtCitationsParser.referenceMarkCitation(
                             markName,
-                            true
+                            true,
                         )
                     expect(result.isCitation).to.equal(true)
                     expect(result.format).to.equal("zotero")
                     expect(result.entries).to.not.equal(undefined)
                     expect(
-                        Object.keys(result.entries!).length
+                        Object.keys(result.entries!).length,
                     ).to.be.greaterThan(0)
                 }
             })
@@ -208,7 +208,7 @@ describe("Static utility methods", () => {
                 const result =
                     converter.OdtCitationsParser.referenceMarkCitation(
                         markName,
-                        true
+                        true,
                     )
                 expect(result.isCitation).to.equal(true)
                 expect(result.format).to.equal("jabref")
@@ -224,7 +224,7 @@ describe("Static utility methods", () => {
                 const result =
                     converter.OdtCitationsParser.referenceMarkCitation(
                         markName,
-                        true
+                        true,
                     )
                 expect(result.isCitation).to.equal(false)
                 expect(result.format).to.equal(undefined)
@@ -236,7 +236,7 @@ describe("Static utility methods", () => {
                 const markName = "CSL_BIBLIOGRAPHY"
                 const result =
                     converter.OdtCitationsParser.referenceMarkBibliography(
-                        markName
+                        markName,
                     )
                 expect(result.isBibliography).to.equal(true)
                 expect(result.format).to.equal("mendeley_legacy")
@@ -246,7 +246,7 @@ describe("Static utility methods", () => {
                 const markName = "ZOTERO_ITEM CSL_CITATION {} RNDLQoAq6M7m4"
                 const result =
                     converter.OdtCitationsParser.referenceMarkBibliography(
-                        markName
+                        markName,
                     )
                 expect(result.isBibliography).to.equal(false)
             })
@@ -258,7 +258,7 @@ describe("Static utility methods", () => {
                     '<text:bibliography-mark text:identifier="Smith2020"/>'
                 const result =
                     converter.OdtCitationsParser.bibliographyMarkCitation(
-                        bibMarkXml
+                        bibMarkXml,
                     )
                 expect(result.isCitation).to.equal(true)
                 expect(result.format).to.equal("libreoffice_native")
@@ -277,7 +277,7 @@ describe("Static utility methods", () => {
                 const sectionName = "ZOTERO_BIBL CSL_BIBLIOGRAPHY RNDEk1MPyJ9IL"
                 const result =
                     converter.OdtCitationsParser.sectionBibliography(
-                        sectionName
+                        sectionName,
                     )
                 expect(result.isBibliography).to.equal(true)
                 expect(result.format).to.equal("zotero")
@@ -288,7 +288,7 @@ describe("Static utility methods", () => {
                     'ZOTERO_BIBL {"uncited":[],"omitted":[],"custom":[]} CSL_BIBLIOGRAPHY RNDjURflxggFg'
                 const result =
                     converter.OdtCitationsParser.sectionBibliography(
-                        sectionName
+                        sectionName,
                     )
                 expect(result.isBibliography).to.equal(true)
                 expect(result.format).to.equal("zotero")
@@ -298,7 +298,7 @@ describe("Static utility methods", () => {
                 const sectionName = "JR_bib"
                 const result =
                     converter.OdtCitationsParser.sectionBibliography(
-                        sectionName
+                        sectionName,
                     )
                 expect(result.isBibliography).to.equal(true)
                 expect(result.format).to.equal("jabref")
@@ -308,7 +308,7 @@ describe("Static utility methods", () => {
                 const sectionName = "JR_BIB"
                 const result =
                     converter.OdtCitationsParser.sectionBibliography(
-                        sectionName
+                        sectionName,
                     )
                 expect(result.isBibliography).to.equal(true)
                 expect(result.format).to.equal("jabref")
@@ -318,7 +318,7 @@ describe("Static utility methods", () => {
                 const sectionName = "Jr_BiB"
                 const result =
                     converter.OdtCitationsParser.sectionBibliography(
-                        sectionName
+                        sectionName,
                     )
                 expect(result.isBibliography).to.equal(true)
                 expect(result.format).to.equal("jabref")
@@ -328,7 +328,7 @@ describe("Static utility methods", () => {
                 const sectionName = "SOME_OTHER_SECTION"
                 const result =
                     converter.OdtCitationsParser.sectionBibliography(
-                        sectionName
+                        sectionName,
                     )
                 expect(result.isBibliography).to.equal(false)
                 expect(result.format).to.equal(undefined)
@@ -338,7 +338,7 @@ describe("Static utility methods", () => {
                 const sectionName = "JR_bibliography"
                 const result =
                     converter.OdtCitationsParser.sectionBibliography(
-                        sectionName
+                        sectionName,
                     )
                 expect(result.isBibliography).to.equal(false)
             })
@@ -350,7 +350,7 @@ describe("Static utility methods", () => {
                     "According to {Smith, 2020 #291}, the research shows..."
                 const result = converter.OdtCitationsParser.endNotePlaceholder(
                     text,
-                    false
+                    false,
                 )
                 expect(result.isCitation).to.equal(true)
                 expect(result.format).to.equal("endnote")
@@ -360,7 +360,7 @@ describe("Static utility methods", () => {
                 const text = "{Smith, 2020 #291; Jones, 2019 #47}"
                 const result = converter.OdtCitationsParser.endNotePlaceholder(
                     text,
-                    false
+                    false,
                 )
                 expect(result.isCitation).to.equal(true)
                 expect(result.format).to.equal("endnote")
@@ -371,7 +371,7 @@ describe("Static utility methods", () => {
                     "Just some regular text with {braces} but no #number"
                 const result = converter.OdtCitationsParser.endNotePlaceholder(
                     text,
-                    false
+                    false,
                 )
                 expect(result.isCitation).to.equal(false)
             })
@@ -380,7 +380,7 @@ describe("Static utility methods", () => {
                 const text = "Research shows {Smith, 2020 #291} that..."
                 const result = converter.OdtCitationsParser.endNotePlaceholder(
                     text,
-                    true
+                    true,
                 )
                 expect(result.isCitation).to.equal(true)
                 expect(result.format).to.equal("endnote")
@@ -395,7 +395,7 @@ describe("Static utility methods", () => {
                 const text = "{Smith, 2020 #291; Jones, 2019 #47}"
                 const result = converter.OdtCitationsParser.endNotePlaceholder(
                     text,
-                    true
+                    true,
                 )
                 expect(result.isCitation).to.equal(true)
                 expect(result.format).to.equal("endnote")
@@ -407,7 +407,7 @@ describe("Static utility methods", () => {
                 const text = "Just regular text"
                 const result = converter.OdtCitationsParser.endNotePlaceholder(
                     text,
-                    true
+                    true,
                 )
                 expect(result.isCitation).to.equal(false)
                 expect(result.format).to.equal(undefined)
@@ -468,7 +468,7 @@ describe("Static utility methods", () => {
                 const result =
                     converter.OdtCitationsParser.referenceMarkCitation(
                         zoteroMark,
-                        true
+                        true,
                     )
                 expect(result.isCitation).to.equal(true)
                 expect(result.metadata).to.equal(undefined)
@@ -479,7 +479,7 @@ describe("Static utility methods", () => {
                     converter.OdtCitationsParser.referenceMarkCitation(
                         zoteroMark,
                         false, // retrieve=false → no data extraction at all
-                        true // retrieveMetadata=true
+                        true, // retrieveMetadata=true
                     )
                 expect(result.isCitation).to.equal(true)
                 expect(result.entries).to.equal(undefined)
@@ -491,7 +491,7 @@ describe("Static utility methods", () => {
                     converter.OdtCitationsParser.referenceMarkCitation(
                         zoteroMark,
                         true,
-                        true // retrieveMetadata
+                        true, // retrieveMetadata
                     )
                 expect(result.isCitation).to.equal(true)
                 expect(result.metadata).to.be.an("array").with.lengthOf(3)
@@ -502,12 +502,12 @@ describe("Static utility methods", () => {
                     converter.OdtCitationsParser.referenceMarkCitation(
                         zoteroMark,
                         true,
-                        true
+                        true,
                     )
                 const entryKeys = Object.values(result.entries!).map(
-                    (e) => e.entry_key
+                    (e) => e.entry_key,
                 )
-                const metaKeys = result.metadata!.map((m) => m.entry_key)
+                const metaKeys = result.metadata?.map((m) => m.entry_key)
                 for (const key of metaKeys) {
                     expect(entryKeys).to.include(key)
                 }
@@ -520,9 +520,9 @@ describe("Static utility methods", () => {
                     converter.OdtCitationsParser.referenceMarkCitation(
                         zoteroMark,
                         true,
-                        true
+                        true,
                     )
-                const meta0 = result.metadata![0]
+                const meta0 = result.metadata?.[0]
                 expect(meta0.locator).to.equal("123")
                 expect(meta0.label).to.equal("page")
             })
@@ -532,9 +532,9 @@ describe("Static utility methods", () => {
                     converter.OdtCitationsParser.referenceMarkCitation(
                         zoteroMark,
                         true,
-                        true
+                        true,
                     )
-                const meta0 = result.metadata![0]
+                const meta0 = result.metadata?.[0]
                 expect(meta0.prefix).to.equal("see ")
                 expect(meta0.suffix).to.equal(" for more")
             })
@@ -544,9 +544,9 @@ describe("Static utility methods", () => {
                     converter.OdtCitationsParser.referenceMarkCitation(
                         zoteroMark,
                         true,
-                        true
+                        true,
                     )
-                const meta1 = result.metadata![1]
+                const meta1 = result.metadata?.[1]
                 expect(meta1.suppressAuthor).to.equal(true)
                 expect(meta1.authorOnly).to.equal(undefined)
                 expect(meta1.authorYear).to.equal(undefined)
@@ -557,9 +557,9 @@ describe("Static utility methods", () => {
                     converter.OdtCitationsParser.referenceMarkCitation(
                         zoteroMark,
                         true,
-                        true
+                        true,
                     )
-                const meta2 = result.metadata![2]
+                const meta2 = result.metadata?.[2]
                 expect(meta2.authorOnly).to.equal(true)
                 expect(meta2.suppressAuthor).to.equal(undefined)
                 expect(meta2.authorYear).to.equal(undefined)
@@ -570,10 +570,10 @@ describe("Static utility methods", () => {
                     converter.OdtCitationsParser.referenceMarkCitation(
                         zoteroMark,
                         true,
-                        true
+                        true,
                     )
                 // Second item has only suppress-author set; no locator/label/prefix/suffix
-                const meta1 = result.metadata![1]
+                const meta1 = result.metadata?.[1]
                 expect(meta1.locator).to.equal(undefined)
                 expect(meta1.label).to.equal(undefined)
                 expect(meta1.prefix).to.equal(undefined)
@@ -607,13 +607,13 @@ describe("Static utility methods", () => {
                     converter.OdtCitationsParser.referenceMarkCitation(
                         mendeleyMark,
                         true,
-                        true // retrieveMetadata
+                        true, // retrieveMetadata
                     )
                 expect(result.isCitation).to.equal(true)
                 expect(result.format).to.equal("mendeley_legacy")
                 expect(result.metadata).to.be.an("array").with.lengthOf(1)
 
-                const meta = result.metadata![0]
+                const meta = result.metadata?.[0]
                 expect(meta.locator).to.equal("55")
                 expect(meta.label).to.equal("chapter")
                 expect(meta.prefix).to.equal("cf. ")
@@ -629,7 +629,7 @@ describe("Static utility methods", () => {
                     converter.OdtCitationsParser.referenceMarkCitation(
                         jabrefMark,
                         true,
-                        true // retrieveMetadata
+                        true, // retrieveMetadata
                     )
                 expect(result.isCitation).to.equal(true)
                 expect(result.format).to.equal("jabref")

@@ -1,10 +1,10 @@
 import {
-    BibTypes,
     BibFieldTypes,
-    NodeArray,
-    EntryObject,
-    NameDictObject,
-    RangeArray,
+    BibTypes,
+    type EntryObject,
+    type NameDictObject,
+    type NodeArray,
+    type RangeArray,
 } from "../const"
 import { makeEntryKey } from "./tools"
 
@@ -104,7 +104,7 @@ export class CSLParser {
         let lastName: string | undefined
         let year: string | undefined
         if (!/^[A-Za-z]/.test(id)) {
-            const authors = entry["author"] as CSLNameObject[] | undefined
+            const authors = entry.author as CSLNameObject[] | undefined
             const first = Array.isArray(authors) ? authors[0] : undefined
             if (first?.family) {
                 lastName = first.family.replace(/[^A-Za-z0-9]/g, "")
@@ -113,7 +113,7 @@ export class CSLParser {
                     .split(/\s+/)[0]
                     .replace(/[^A-Za-z0-9]/g, "")
             }
-            const issued = entry["issued"] as CSLDateObject | undefined
+            const issued = entry.issued as CSLDateObject | undefined
             const parts = issued?.["date-parts"]?.[0]
             if (parts?.[0]) year = String(parts[0])
         }
@@ -134,7 +134,7 @@ export class CSLParser {
         // Find BibTeX type that maps to this CSL type
         return (
             Object.keys(BibTypes).find(
-                (type) => BibTypes[type].csl === cslType
+                (type) => BibTypes[type].csl === cslType,
             ) || false
         )
     }
@@ -142,7 +142,7 @@ export class CSLParser {
     private convertField(
         key: string,
         value: unknown,
-        entryId: string
+        entryId: string,
     ): [string, unknown] | false {
         // Find matching BibTeX field
         const bibField = Object.keys(BibFieldTypes).find((field) => {
@@ -225,7 +225,7 @@ export class CSLParser {
             case "l_key":
                 convertedValue = this.convertKeyList(
                     value as string[],
-                    bibField
+                    bibField,
                 )
                 break
 
@@ -288,12 +288,12 @@ export class CSLParser {
                 }
                 if (name["non-dropping-particle"]) {
                     nameObj.prefix = this.convertRichText(
-                        name["non-dropping-particle"]
+                        name["non-dropping-particle"],
                     )
                     nameObj.useprefix = true
                 } else if (name["dropping-particle"]) {
                     nameObj.prefix = this.convertRichText(
-                        name["dropping-particle"]
+                        name["dropping-particle"],
                     )
                     nameObj.useprefix = false
                 }
@@ -304,11 +304,11 @@ export class CSLParser {
     }
 
     private convertInteger(value: unknown): NodeArray {
-        const num = parseInt(String(value))
+        const num = parseInt(String(value), 10)
         return [
             {
                 type: "text",
-                text: isNaN(num) ? String(value) : String(num),
+                text: Number.isNaN(num) ? String(value) : String(num),
             },
         ]
     }
@@ -331,7 +331,7 @@ export class CSLParser {
                     { csl: string }
                 >
                 const option = Object.keys(options).find(
-                    (key) => options[key].csl === stringValue
+                    (key) => options[key].csl === stringValue,
                 )
                 return option || ""
             }
@@ -356,7 +356,7 @@ export class CSLParser {
 
     private convertKeyList(
         values: string[],
-        fieldName: string
+        fieldName: string,
     ): (string | NodeArray)[] {
         if (!Array.isArray(values)) {
             values = [String(values)]
@@ -444,7 +444,7 @@ export class CSLParser {
                     addTextNode()
                     if (closeTag) {
                         currentMarks = currentMarks.filter(
-                            (mark) => mark.type !== markType
+                            (mark) => mark.type !== markType,
                         )
                     } else {
                         currentMarks.push({ type: markType })
@@ -464,7 +464,7 @@ export class CSLParser {
 }
 
 export function parseCSL(
-    input: Record<string, CSLEntry>
+    input: Record<string, CSLEntry>,
 ): Record<number, EntryObject> {
     return new CSLParser(input).parse()
 }

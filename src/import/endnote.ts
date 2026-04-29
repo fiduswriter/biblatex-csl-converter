@@ -5,14 +5,14 @@
  */
 
 import {
-    BibTypes,
     BibFieldTypes,
-    NodeArray,
-    EntryObject,
-    NameDictObject,
-    RangeArray,
+    BibTypes,
+    type EntryObject,
+    type NameDictObject,
+    type NodeArray,
+    type RangeArray,
 } from "../const"
-import { makeEntryKey, lookupLangid } from "./tools"
+import { lookupLangid, makeEntryKey } from "./tools"
 
 // EndNote reference type name to BibType mapping
 // Direct mapping to internal BibType names
@@ -339,7 +339,7 @@ export class EndNoteParser {
 
     private convertRecord(
         record: EndNoteRecord,
-        index: number
+        index: number,
     ): EntryObject | false {
         // Get the reference type and map directly to BibType
         const refType = this.getRefType(record)
@@ -381,51 +381,51 @@ export class EndNoteParser {
             fields,
             "title",
             processedFields,
-            "titles.title"
+            "titles.title",
         )
         this.extractField(
             record.titles?.["secondary-title"],
             fields,
             "booktitle",
             processedFields,
-            "titles.secondary-title"
+            "titles.secondary-title",
         )
         this.extractField(
             record.titles?.["tertiary-title"],
             fields,
             "series",
             processedFields,
-            "titles.tertiary-title"
+            "titles.tertiary-title",
         )
         this.extractField(
             record.titles?.["short-title"],
             fields,
             "shorttitle",
             processedFields,
-            "titles.short-title"
+            "titles.short-title",
         )
 
         // Handle journal title from periodical or secondary-title
         processedFields.add("periodical")
         const periodicalTitle = this.getTextContent(
-            record.periodical?.["full-title"]
+            record.periodical?.["full-title"],
         )
         const periodicalAbbr = this.getTextContent(
-            record.periodical?.["abbr-1"]
+            record.periodical?.["abbr-1"],
         )
         if (periodicalTitle) {
-            fields["journaltitle"] = this.convertRichText(periodicalTitle)
-        } else if (!fields["booktitle"]) {
+            fields.journaltitle = this.convertRichText(periodicalTitle)
+        } else if (!fields.booktitle) {
             // If no booktitle was set from secondary-title, try it as journal
             const secondaryTitle = this.getTextContent(
-                record.titles?.["secondary-title"]
+                record.titles?.["secondary-title"],
             )
             if (secondaryTitle) {
-                fields["journaltitle"] = this.convertRichText(secondaryTitle)
+                fields.journaltitle = this.convertRichText(secondaryTitle)
             }
         }
         if (periodicalAbbr) {
-            fields["shortjournal"] = this.convertRichText(periodicalAbbr)
+            fields.shortjournal = this.convertRichText(periodicalAbbr)
         }
 
         // Volume/issue/number fields
@@ -434,56 +434,56 @@ export class EndNoteParser {
             fields,
             "volume",
             processedFields,
-            "volume"
+            "volume",
         )
         this.extractField(
             record.number,
             fields,
             "number",
             processedFields,
-            "number"
+            "number",
         )
         this.extractField(
             record.issue,
             fields,
             "issue",
             processedFields,
-            "issue"
+            "issue",
         )
         this.extractField(
             record["secondary-volume"],
             fields,
             "volume",
             processedFields,
-            "secondary-volume"
+            "secondary-volume",
         )
         this.extractField(
             record["secondary-issue"],
             fields,
             "issue",
             processedFields,
-            "secondary-issue"
+            "secondary-issue",
         )
         this.extractField(
             record["num-vols"],
             fields,
             "volumes",
             processedFields,
-            "num-vols"
+            "num-vols",
         )
         this.extractField(
             record.edition,
             fields,
             "edition",
             processedFields,
-            "edition"
+            "edition",
         )
         this.extractField(
             record.section,
             fields,
             "chapter",
             processedFields,
-            "section"
+            "section",
         )
 
         // Pages with special handling for start/end attributes
@@ -500,7 +500,7 @@ export class EndNoteParser {
                     : null
 
             if (startPage && endPage && !pagesText) {
-                fields["pages"] = [
+                fields.pages = [
                     [
                         [
                             { type: "text", text: String(startPage) },
@@ -509,7 +509,7 @@ export class EndNoteParser {
                     ],
                 ]
             } else if (pagesText) {
-                fields["pages"] = this.convertRange(pagesText)
+                fields.pages = this.convertRange(pagesText)
             }
         }
 
@@ -519,21 +519,21 @@ export class EndNoteParser {
             fields,
             "publisher",
             processedFields,
-            "publisher"
+            "publisher",
         )
         this.extractField(
             record["pub-location"],
             fields,
             "location",
             processedFields,
-            "pub-location"
+            "pub-location",
         )
         this.extractField(
             record["orig-pub"],
             fields,
             "origpublisher",
             processedFields,
-            "orig-pub"
+            "orig-pub",
         )
 
         // Identifiers
@@ -544,35 +544,35 @@ export class EndNoteParser {
             fields,
             "eprint",
             processedFields,
-            "accession-num"
+            "accession-num",
         )
         this.extractField(
             record["call-num"],
             fields,
             "library",
             processedFields,
-            "call-num"
+            "call-num",
         )
         this.extractField(
             record["report-id"],
             fields,
             "number",
             processedFields,
-            "report-id"
+            "report-id",
         )
         this.extractField(
             record.coden,
             fields,
             "coden",
             processedFields,
-            "coden"
+            "coden",
         )
         this.extractField(
             record["electronic-resource-num"],
             fields,
             "doi",
             processedFields,
-            "electronic-resource-num"
+            "electronic-resource-num",
         )
 
         // Abstract and notes
@@ -581,35 +581,35 @@ export class EndNoteParser {
             fields,
             "abstract",
             processedFields,
-            "abstract"
+            "abstract",
         )
         this.extractField(
             record.notes,
             fields,
             "note",
             processedFields,
-            "notes"
+            "notes",
         )
         this.extractField(
             record["research-notes"],
             fields,
             "annotation",
             processedFields,
-            "research-notes"
+            "research-notes",
         )
         this.extractField(
             record.caption,
             fields,
             "annotation",
             processedFields,
-            "caption"
+            "caption",
         )
         this.extractField(
             record.label,
             fields,
             "label",
             processedFields,
-            "label"
+            "label",
         )
 
         // Language
@@ -618,21 +618,21 @@ export class EndNoteParser {
             fields,
             "langid",
             processedFields,
-            "language"
+            "language",
         )
 
         // Work type
         processedFields.add("work-type")
         const workType = this.getTextContent(record["work-type"])
         if (workType && bibType === "misc") {
-            fields["type"] = { type: "text", text: workType }
+            fields.type = { type: "text", text: workType }
         }
 
         // Reviewed item
         processedFields.add("reviewed-item")
         const reviewedItem = this.getTextContent(record["reviewed-item"])
         if (reviewedItem) {
-            fields["related"] = this.convertRichText(reviewedItem)
+            fields.related = this.convertRichText(reviewedItem)
         }
 
         // Custom fields
@@ -685,7 +685,7 @@ export class EndNoteParser {
         }
         if (urls.length > 0) {
             // url is f_uri — store as a plain string, not a NodeArray
-            fields["url"] = urls.length > 1 ? urls.join("; ") : urls[0]
+            fields.url = urls.length > 1 ? urls.join("; ") : urls[0]
         }
 
         // Access date
@@ -694,7 +694,7 @@ export class EndNoteParser {
             fields,
             "urldate",
             processedFields,
-            "access-date"
+            "access-date",
         )
 
         // Mark dates as processed (handled separately)
@@ -732,72 +732,72 @@ export class EndNoteParser {
         // Handle dates
         const dateValue = this.extractDate(record, processedFields)
         if (dateValue) {
-            fields["date"] = dateValue
+            fields.date = dateValue
         }
 
         // Copyright date
         const copyrightDate = this.extractCopyrightDate(record, processedFields)
         if (copyrightDate?.length) {
-            fields["origdate"] = copyrightDate
+            fields.origdate = copyrightDate
         }
 
         // Handle translated authors: in EndNote, "translated-authors" are the
         // original authors of the source work that was translated. The "authors"
         // field in that case holds the translators of the work.
         const translatedAuthors = this.extractAuthors(
-            record.contributors?.["translated-authors"]?.author
+            record.contributors?.["translated-authors"]?.author,
         )
 
         // Handle primary authors
         const authors = this.extractAuthors(
-            record.contributors?.authors?.author
+            record.contributors?.authors?.author,
         )
 
         if (translatedAuthors.length > 0) {
             // When original authors are recorded via translated-authors, the
             // regular authors are actually the translators.
-            fields["author"] = translatedAuthors
+            fields.author = translatedAuthors
             if (authors.length > 0) {
-                fields["translator"] = authors
+                fields.translator = authors
             }
         } else if (authors.length > 0) {
-            fields["author"] = authors
+            fields.author = authors
         }
 
         // Handle secondary authors (editors)
         const secondaryAuthors = this.extractAuthors(
-            record.contributors?.["secondary-authors"]?.author
+            record.contributors?.["secondary-authors"]?.author,
         )
         if (secondaryAuthors.length > 0) {
-            fields["editor"] = secondaryAuthors
+            fields.editor = secondaryAuthors
         }
 
         // Handle tertiary authors (book authors for inbook/book types)
         const tertiaryAuthors = this.extractAuthors(
-            record.contributors?.["tertiary-authors"]?.author
+            record.contributors?.["tertiary-authors"]?.author,
         )
         if (tertiaryAuthors.length > 0) {
             // For book sections, tertiary authors are the book authors
             if (bibType === "inbook" || bibType === "book") {
-                fields["bookauthor"] = tertiaryAuthors
+                fields.bookauthor = tertiaryAuthors
             }
         }
 
         // Handle subsidiary authors
         const subsidiaryAuthors = this.extractAuthors(
-            record.contributors?.["subsidiary-authors"]?.author
+            record.contributors?.["subsidiary-authors"]?.author,
         )
         if (subsidiaryAuthors.length > 0) {
-            fields["editora"] = subsidiaryAuthors
+            fields.editora = subsidiaryAuthors
         }
 
         // Handle keywords
         const keywords = this.extractKeywords(
             record.keywords?.keyword,
-            processedFields
+            processedFields,
         )
         if (keywords.length > 0) {
-            fields["keywords"] = keywords
+            fields.keywords = keywords
         }
 
         // Handle image
@@ -807,13 +807,13 @@ export class EndNoteParser {
                     ? record.image
                     : record.image.file || record.image.name
             if (imageText) {
-                fields["file"] = { type: "text", text: imageText }
+                fields.file = { type: "text", text: imageText }
             }
         }
 
         // Check for unprocessed fields and add warnings
         // Warn about missing title
-        if (!fields["title"]) {
+        if (!fields.title) {
             this.warnings.push({
                 type: "missing_required_field",
                 field: "title",
@@ -822,7 +822,7 @@ export class EndNoteParser {
         }
 
         // Warn about missing author/editor when neither is present
-        if (!fields["author"] && !fields["editor"]) {
+        if (!fields.author && !fields.editor) {
             this.warnings.push({
                 type: "missing_required_field",
                 field: "author",
@@ -831,7 +831,7 @@ export class EndNoteParser {
         }
 
         // Warn about missing date
-        if (!fields["date"]) {
+        if (!fields.date) {
             this.warnings.push({
                 type: "missing_required_field",
                 field: "date",
@@ -844,13 +844,13 @@ export class EndNoteParser {
             processedFields,
             index,
             fields,
-            unhandledData
+            unhandledData,
         )
 
         // Add unhandled data to note field if there's any
-        if (unhandledData.length > 0 && !fields["note"]) {
-            fields["note"] = this.convertRichText(
-                "EndNote import: Unhandled fields - " + unhandledData.join("; ")
+        if (unhandledData.length > 0 && !fields.note) {
+            fields.note = this.convertRichText(
+                `EndNote import: Unhandled fields - ${unhandledData.join("; ")}`,
             )
         }
 
@@ -882,7 +882,7 @@ export class EndNoteParser {
                 ""
             const clean = (typeof raw === "string" ? raw : "").replace(
                 /[^A-Za-z0-9]/g,
-                ""
+                "",
             )
             if (clean) lastName = clean
         }
@@ -895,7 +895,7 @@ export class EndNoteParser {
             const rawYear =
                 typeof yearNode === "string"
                     ? yearNode
-                    : yearNode["#text"] ?? ""
+                    : (yearNode["#text"] ?? "")
             const m = String(rawYear).match(/\d{4}/)
             if (m) year = m[0]
         }
@@ -924,7 +924,7 @@ export class EndNoteParser {
     }
 
     private getTextContent(
-        value: EndNoteStyledValue | EndNoteAuthor | EndNoteDate | undefined
+        value: EndNoteStyledValue | EndNoteAuthor | EndNoteDate | undefined,
     ): string {
         if (!value) {
             return ""
@@ -976,7 +976,7 @@ export class EndNoteParser {
         fields: Record<string, unknown>,
         targetField: string,
         processedFields?: Set<string>,
-        sourceField?: string
+        sourceField?: string,
     ): void {
         if (!value) {
             return
@@ -1012,7 +1012,7 @@ export class EndNoteParser {
                 // Array options (e.g. bookpagination, type): plain string match
                 const lower = textContent.toLowerCase().trim()
                 const matched = options.find(
-                    (k: string) => k.toLowerCase() === lower
+                    (k: string) => k.toLowerCase() === lower,
                 )
                 if (matched) {
                     fields[targetField] = matched
@@ -1037,7 +1037,7 @@ export class EndNoteParser {
 
     private extractDate(
         record: EndNoteRecord,
-        processedFields?: Set<string>
+        processedFields?: Set<string>,
     ): string {
         // Always read the base year from the <year> element first so it can be
         // used as a fallback when pub-dates only carries month/day information
@@ -1197,9 +1197,9 @@ export class EndNoteParser {
         // ── 2. Bare integer 1–12 — Mendeley month number ─────────────────────
         //    Must be an exact integer string with no leading zeros so that we
         //    don't accidentally treat "01" (a day token elsewhere) as a month.
-        const bareInt = parseInt(trimmed)
+        const bareInt = parseInt(trimmed, 10)
         if (
-            !isNaN(bareInt) &&
+            !Number.isNaN(bareInt) &&
             bareInt >= 1 &&
             bareInt <= 12 &&
             String(bareInt) === trimmed
@@ -1219,13 +1219,13 @@ export class EndNoteParser {
         const slashDateRe = /^(\d{4})\/(\d{1,2})\/(\d{1,2})\/?$/
         const slashMatch = slashDateRe.exec(trimmed)
         if (slashMatch) {
-            const mm = parseInt(slashMatch[2])
-            const dd = parseInt(slashMatch[3])
+            const mm = parseInt(slashMatch[2], 10)
+            const dd = parseInt(slashMatch[3], 10)
             if (mm >= 1 && mm <= 12 && dd >= 1 && dd <= 31) {
                 // Valid calendar date — normalise to ISO 8601 with 2-digit padding
                 return `${slashMatch[1]}-${String(mm).padStart(
                     2,
-                    "0"
+                    "0",
                 )}-${String(dd).padStart(2, "0")}`
             }
             // Out-of-range values → not a real calendar date
@@ -1242,7 +1242,7 @@ export class EndNoteParser {
         if (ddMonYearMatch) {
             const monthNum = resolveMonth(ddMonYearMatch[2])
             if (monthNum) {
-                const day = parseInt(ddMonYearMatch[1])
+                const day = parseInt(ddMonYearMatch[1], 10)
                 if (day >= 1 && day <= 31) {
                     return `${
                         ddMonYearMatch[3]
@@ -1270,7 +1270,7 @@ export class EndNoteParser {
         const mdMatch = monthDayRe.exec(trimmed)
         if (mdMatch) {
             const monthNum = resolveMonth(mdMatch[1])
-            const day = parseInt(mdMatch[2])
+            const day = parseInt(mdMatch[2], 10)
             if (monthNum && day >= 1 && day <= 31 && baseYear) {
                 return `${baseYear}-${monthNum}-${mdMatch[2].padStart(2, "0")}`
             }
@@ -1299,7 +1299,7 @@ export class EndNoteParser {
 
     private extractCopyrightDate(
         record: EndNoteRecord,
-        processedFields?: Set<string>
+        processedFields?: Set<string>,
     ): string {
         const copyrightDates = record.dates?.["copyright-dates"]
         if (copyrightDates?.date) {
@@ -1320,7 +1320,7 @@ export class EndNoteParser {
     }
 
     private extractAuthors(
-        authorsData: EndNoteAuthor | EndNoteAuthor[] | undefined
+        authorsData: EndNoteAuthor | EndNoteAuthor[] | undefined,
     ): NameDictObject[] {
         if (!authorsData) {
             return []
@@ -1394,7 +1394,7 @@ export class EndNoteParser {
                 if (
                     parts.length >= 3 &&
                     /^(Jr|Sr|I{1,3}|IV|V|VI|VII|2nd|3rd|\d+th)\.?$/i.test(
-                        parts[1]
+                        parts[1],
                     )
                 ) {
                     nameObj.suffix = this.convertRichText(parts[1])
@@ -1424,7 +1424,7 @@ export class EndNoteParser {
 
     private extractKeywords(
         keywordsData: EndNoteStyledValue | EndNoteStyledValue[] | undefined,
-        processedFields?: Set<string>
+        processedFields?: Set<string>,
     ): string[] {
         if (!keywordsData) {
             return []
@@ -1494,8 +1494,8 @@ export class EndNoteParser {
         record: EndNoteRecord,
         processedFields: Set<string>,
         index: number,
-        fields: Record<string, unknown>,
-        unhandledData: string[]
+        _fields: Record<string, unknown>,
+        unhandledData: string[],
     ): void {
         // Define which top-level fields should be checked
         const knownFields = [
@@ -1587,10 +1587,10 @@ export class EndNoteParser {
 
             // Field has content but wasn't processed
             const textContent = this.getTextContent(
-                fieldValue as EndNoteStyledValue
+                fieldValue as EndNoteStyledValue,
             )
             if (!textContent) continue
-            if (textContent && textContent.trim()) {
+            if (textContent?.trim()) {
                 this.warnings.push({
                     type: "unhandled_field",
                     field: fieldName,
@@ -1598,7 +1598,7 @@ export class EndNoteParser {
                     entry: String(index),
                 })
                 unhandledData.push(
-                    `${fieldName}: ${textContent.substring(0, 50)}`
+                    `${fieldName}: ${textContent.substring(0, 50)}`,
                 )
             }
         }
@@ -1612,7 +1612,7 @@ export function parseEndNote(
         | {
               records?: { record?: EndNoteRecord | EndNoteRecord[] }
               xml?: { records?: { record?: EndNoteRecord | EndNoteRecord[] } }
-          }
+          },
 ): EndNoteParseResult {
     let records: EndNoteRecord[] = []
 

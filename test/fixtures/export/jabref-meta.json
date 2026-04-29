@@ -186,16 +186,12 @@
                     {
                         "name": "my-subgroup-2",
                         "groups": [],
-                        "references": [
-                            "Doe-2017"
-                        ]
+                        "references": ["Doe-2017"]
                     },
                     {
                         "name": "my-other-subgroup-2",
                         "groups": [],
-                        "references": [
-                            "Other-"
-                        ]
+                        "references": ["Other-"]
                     }
                 ],
                 "references": []

@@ -19,14 +19,14 @@
  * childNodes, textContent) so the class is compatible with @xmldom/xmldom.
  */
 
-import { EntryObject } from "../const"
+import type { EntryObject } from "../const"
 import {
+    type CitaviKeyword,
     CitaviParser,
-    CitaviReference,
-    CitaviPerson,
-    CitaviPublisher,
-    CitaviPeriodical,
-    CitaviKeyword,
+    type CitaviPeriodical,
+    type CitaviPerson,
+    type CitaviPublisher,
+    type CitaviReference,
 } from "./citavi"
 
 interface XmlErrorObject {
@@ -45,7 +45,7 @@ export class CitaviXmlParser {
             if (typeof DOMParser === "undefined") {
                 throw new Error(
                     "CitaviXmlParser: DOMParser is not available in this " +
-                        "environment. Pass a pre-parsed Document instead."
+                        "environment. Pass a pre-parsed Document instead.",
                 )
             }
             this.doc = new DOMParser().parseFromString(input, "text/xml")
@@ -75,11 +75,11 @@ export class CitaviXmlParser {
         const refEditors = this.buildOneToNMap(root, "ReferenceEditors")
         const refCollaborators = this.buildOneToNMap(
             root,
-            "ReferenceCollaborators"
+            "ReferenceCollaborators",
         )
         const refOrganizations = this.buildOneToNMap(
             root,
-            "ReferenceOrganizations"
+            "ReferenceOrganizations",
         )
         const refPublishers = this.buildOneToNMap(root, "ReferencePublishers")
         const refKeywords = this.buildOneToNMap(root, "ReferenceKeywords")
@@ -175,12 +175,12 @@ export class CitaviXmlParser {
             ref.Collaborators = this.resolvePersons(
                 id,
                 refCollaborators,
-                persons
+                persons,
             )
             ref.Organizations = this.resolvePersons(
                 id,
                 refOrganizations,
-                persons
+                persons,
             )
 
             // Publishers via OnetoN relation table
@@ -280,7 +280,7 @@ export class CitaviXmlParser {
         const section = this.firstChildEl(root, "Publishers")
         if (!section) return map
         for (const el of Array.from(
-            section.getElementsByTagName("Publisher")
+            section.getElementsByTagName("Publisher"),
         )) {
             const id = el.getAttribute("id")
             if (!id) continue
@@ -297,7 +297,7 @@ export class CitaviXmlParser {
         const section = this.firstChildEl(root, "Periodicals")
         if (!section) return map
         for (const el of Array.from(
-            section.getElementsByTagName("Periodical")
+            section.getElementsByTagName("Periodical"),
         )) {
             const id = el.getAttribute("id")
             if (!id) continue
@@ -317,7 +317,7 @@ export class CitaviXmlParser {
         const section = this.firstChildEl(root, "SeriesTitles")
         if (!section) return map
         for (const el of Array.from(
-            section.getElementsByTagName("SeriesTitle")
+            section.getElementsByTagName("SeriesTitle"),
         )) {
             const id = el.getAttribute("id")
             const name = this.childText(el, "Name")
@@ -338,7 +338,7 @@ export class CitaviXmlParser {
      */
     private buildOneToNMap(
         root: Element,
-        sectionTag: string
+        sectionTag: string,
     ): Map<string, string[]> {
         const map = new Map<string, string[]>()
         const section = this.firstChildEl(root, sectionTag)
@@ -415,7 +415,7 @@ export class CitaviXmlParser {
     private resolvePersons(
         refId: string,
         relationMap: Map<string, string[]>,
-        personMap: Map<string, CitaviPerson>
+        personMap: Map<string, CitaviPerson>,
     ): CitaviPerson[] {
         const ids = relationMap.get(refId) ?? []
         return ids
@@ -427,7 +427,7 @@ export class CitaviXmlParser {
 // ─── Convenience function ─────────────────────────────────────────────────────
 
 export function parseCitaviXml(
-    input: Document | string
+    input: Document | string,
 ): Record<number, EntryObject> {
     return new CitaviXmlParser(input).parse()
 }

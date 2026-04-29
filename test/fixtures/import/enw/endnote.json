@@ -167,9 +167,7 @@
                         "text": "978-3-123456-78-9"
                     }
                 ],
-                "keywords": [
-                    "Research Methods\nDigital Tools\nTextbook"
-                ],
+                "keywords": ["Research Methods\nDigital Tools\nTextbook"],
                 "library": [
                     {
                         "type": "text",
@@ -505,9 +503,7 @@
                     ]
                 ],
                 "doi": "10.1234/example.doi.006",
-                "keywords": [
-                    "Algorithms\nBig Data\nDistributed Computing"
-                ],
+                "keywords": ["Algorithms\nBig Data\nDistributed Computing"],
                 "library": [
                     {
                         "type": "text",
@@ -556,9 +552,7 @@
                 ],
                 "date": "2023",
                 "url": "https://example.com/who/gho",
-                "keywords": [
-                    "Global Health\nPublic Health Data\nStatistics"
-                ]
+                "keywords": ["Global Health\nPublic Health Data\nStatistics"]
             }
         },
         "8": {
@@ -624,9 +618,7 @@
                         }
                     ]
                 ],
-                "keywords": [
-                    "Patent\nDistributed Computing\nData Processing"
-                ],
+                "keywords": ["Patent\nDistributed Computing\nData Processing"],
                 "library": [
                     {
                         "type": "text",

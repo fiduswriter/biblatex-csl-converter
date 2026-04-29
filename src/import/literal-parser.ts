@@ -1,4 +1,4 @@
-import type { NodeObject, TextNodeObject, MarkObject } from "../const"
+import type { MarkObject, NodeObject, TextNodeObject } from "../const"
 import type { ConfigObject } from "./biblatex"
 
 const LATEX_COMMANDS = [
@@ -102,7 +102,7 @@ export class BibLatexLiteralParser {
             this.textNode.text === this.textNode.text.toLowerCase()
         ) {
             const marks = this.textNode.marks.filter(
-                (mark) => mark.type !== "nocase"
+                (mark) => mark.type !== "nocase",
             )
             if (marks.length) {
                 this.textNode.marks = marks
@@ -123,11 +123,11 @@ export class BibLatexLiteralParser {
         parseString: while (this.si < this.slen) {
             switch (this.string[this.si]) {
                 case "\\":
-                    for (let command of LATEX_COMMANDS) {
+                    for (const command of LATEX_COMMANDS) {
                         if (
                             this.string.substring(
                                 this.si,
-                                this.si + command[0].length
+                                this.si + command[0].length,
                             ) === command[0]
                         ) {
                             this.braceLevel++
@@ -148,7 +148,7 @@ export class BibLatexLiteralParser {
                                     this.inCasePreserve = null
                                 } else if (
                                     !this.currentMarks.find(
-                                        (mark) => mark.type === "nocase"
+                                        (mark) => mark.type === "nocase",
                                     )
                                 ) {
                                     // If not immediately inside a brace, any styling also
@@ -161,7 +161,7 @@ export class BibLatexLiteralParser {
                             }
                             if (
                                 this.currentMarks.find(
-                                    (mark) => mark.type === command[1]
+                                    (mark) => mark.type === command[1],
                                 )
                             ) {
                                 this.braceClosings.push(false)
@@ -173,17 +173,17 @@ export class BibLatexLiteralParser {
                             continue parseString
                         }
                     }
-                    for (let command of LATEX_NOBRACE_COMMANDS) {
+                    for (const command of LATEX_NOBRACE_COMMANDS) {
                         if (
                             this.string.substring(
                                 this.si,
-                                this.si + command[0].length
+                                this.si + command[0].length,
                             ) === command[0] &&
                             [" ", "\\"].includes(
                                 this.string.substring(
                                     this.si + command[0].length,
-                                    this.si + command[0].length + 1
-                                )
+                                    this.si + command[0].length + 1,
+                                ),
                             )
                         ) {
                             this.si += command[0].length
@@ -195,7 +195,7 @@ export class BibLatexLiteralParser {
                             }
                             if (
                                 !this.currentMarks.find(
-                                    (mark) => mark.type === command[1]
+                                    (mark) => mark.type === command[1],
                                 )
                             ) {
                                 this.currentMarks.push({ type: command[1] })
@@ -204,16 +204,16 @@ export class BibLatexLiteralParser {
                             continue parseString
                         }
                     }
-                    for (let command of LATEX_VERBATIM_COMMANDS) {
+                    for (const command of LATEX_VERBATIM_COMMANDS) {
                         if (
                             this.string.substring(
                                 this.si,
-                                this.si + command[0].length
+                                this.si + command[0].length,
                             ) === command[0]
                         ) {
                             this.checkAndAddNewTextNode()
                             this.textNode!.marks = this.currentMarks.slice()
-                            this.textNode!.marks.push({ type: command[1] })
+                            this.textNode?.marks.push({ type: command[1] })
                             this.si += command[0].length
                             let sj = this.si
                             let internalBraceLevel = 0
@@ -234,7 +234,7 @@ export class BibLatexLiteralParser {
                             }
                             this.textNode!.text = this.string.substring(
                                 this.si,
-                                sj
+                                sj,
                             )
                             this.addNewTextNode()
                             this.si = sj + 1
@@ -271,7 +271,7 @@ export class BibLatexLiteralParser {
                             this.si += 2
                             if (
                                 this.currentMarks.find(
-                                    (mark) => mark.type === "sub"
+                                    (mark) => mark.type === "sub",
                                 )
                             ) {
                                 this.braceClosings.push(false)
@@ -289,7 +289,7 @@ export class BibLatexLiteralParser {
                             // We only add the next character to a sub node.
                             this.checkAndAddNewTextNode()
                             this.textNode!.marks = this.currentMarks.slice()
-                            this.textNode!.marks.push({ type: "sub" })
+                            this.textNode?.marks.push({ type: "sub" })
                             this.textNode!.text = this.string[this.si + 1]
                             this.addNewTextNode()
                             if (this.currentMarks.length) {
@@ -305,7 +305,7 @@ export class BibLatexLiteralParser {
                         this.si += 2
                         if (
                             this.currentMarks.find(
-                                (mark) => mark.type === "enquote"
+                                (mark) => mark.type === "enquote",
                             )
                         ) {
                             this.braceClosings.push(false)
@@ -323,7 +323,7 @@ export class BibLatexLiteralParser {
                     if (this.string[this.si + 1] === "'") {
                         this.braceLevel--
                         if (this.braceLevel > -1) {
-                            let closeBrace = this.braceClosings.pop()
+                            const closeBrace = this.braceClosings.pop()
                             if (closeBrace) {
                                 this.checkAndAddNewTextNode()
                                 this.currentMarks.pop()
@@ -331,7 +331,7 @@ export class BibLatexLiteralParser {
                                     this.textNode!.marks =
                                         this.currentMarks.slice()
                                 } else {
-                                    delete this.textNode!.marks
+                                    delete this.textNode?.marks
                                 }
                             }
                             this.si += 2
@@ -353,7 +353,7 @@ export class BibLatexLiteralParser {
                             this.si += 2
                             if (
                                 this.currentMarks.find(
-                                    (mark) => mark.type === "sup"
+                                    (mark) => mark.type === "sup",
                                 )
                             ) {
                                 this.braceClosings.push(false)
@@ -371,7 +371,7 @@ export class BibLatexLiteralParser {
                             // We only add the next character to a sup node.
                             this.checkAndAddNewTextNode()
                             this.textNode!.marks = this.currentMarks.slice()
-                            this.textNode!.marks.push({ type: "sup" })
+                            this.textNode?.marks.push({ type: "sup" })
                             this.textNode!.text = this.string[this.si + 1]
                             this.addNewTextNode()
                             if (this.currentMarks.length) {
@@ -402,7 +402,7 @@ export class BibLatexLiteralParser {
                 case "}":
                     this.braceLevel--
                     if (this.braceLevel > -1) {
-                        let closeBrace = this.braceClosings.pop()
+                        const closeBrace = this.braceClosings.pop()
                         if (closeBrace) {
                             this.checkAndAddNewTextNode()
                             let lastMark = this.currentMarks.pop()!
@@ -420,7 +420,7 @@ export class BibLatexLiteralParser {
                             if (this.currentMarks.length) {
                                 this.textNode!.marks = this.currentMarks.slice()
                             } else {
-                                delete this.textNode!.marks
+                                delete this.textNode?.marks
                             }
                         }
                         this.si++

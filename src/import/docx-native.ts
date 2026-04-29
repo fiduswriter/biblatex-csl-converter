@@ -15,7 +15,7 @@
  * This module is consumed by DocxCitationsParser in docx-citations.ts.
  */
 
-import { EntryObject, NodeArray, RangeArray } from "../const"
+import type { EntryObject, NodeArray, RangeArray } from "../const"
 
 // ---------------------------------------------------------------------------
 // Result type
@@ -89,7 +89,7 @@ export class DocxNativeParser {
      */
     parse(
         citedKeys?: Set<string>,
-        importedKeys: Set<string> = new Set<string>()
+        importedKeys: Set<string> = new Set<string>(),
     ): DocxNativeParseResult {
         const sourceRe = /<b:Source\b[^>]*>([\s\S]*?)<\/b:Source>/g
         let m: RegExpExecArray | null
@@ -141,17 +141,17 @@ function parseWordSource(sourceXml: string): {
 
     // Title
     const title = getB("Title")
-    if (title) fields["title"] = makeRichText(title)
+    if (title) fields.title = makeRichText(title)
 
     // Authors
     const authorOuterMatch = sourceXml.match(/<b:Author>([\s\S]*?)<\/b:Author>/)
     if (authorOuterMatch) {
         const nameListMatch = authorOuterMatch[1].match(
-            /<b:NameList>([\s\S]*?)<\/b:NameList>/
+            /<b:NameList>([\s\S]*?)<\/b:NameList>/,
         )
         if (nameListMatch) {
             const authors = parseWordNameList(nameListMatch[1])
-            if (authors.length > 0) fields["author"] = authors
+            if (authors.length > 0) fields.author = authors
         }
     }
 
@@ -159,72 +159,72 @@ function parseWordSource(sourceXml: string): {
     const editorMatch = sourceXml.match(/<b:Editor>([\s\S]*?)<\/b:Editor>/)
     if (editorMatch) {
         const nameListMatch = editorMatch[1].match(
-            /<b:NameList>([\s\S]*?)<\/b:NameList>/
+            /<b:NameList>([\s\S]*?)<\/b:NameList>/,
         )
         if (nameListMatch) {
             const editors = parseWordNameList(nameListMatch[1])
-            if (editors.length > 0) fields["editor"] = editors
+            if (editors.length > 0) fields.editor = editors
         }
     }
 
     // Year → date
     const year = getB("Year")
-    if (year) fields["date"] = year
+    if (year) fields.date = year
 
     // Publisher / location
     const publisher = getB("Publisher")
-    if (publisher) fields["publisher"] = [makeRichText(publisher)]
+    if (publisher) fields.publisher = [makeRichText(publisher)]
 
     const city = getB("City")
-    if (city) fields["location"] = [makeRichText(city)]
+    if (city) fields.location = [makeRichText(city)]
 
     // Journal / periodical title
     const journal = getB("JournalName") || getB("PeriodicalTitle")
-    if (journal) fields["journaltitle"] = makeRichText(journal)
+    if (journal) fields.journaltitle = makeRichText(journal)
 
     // Book title (for sections / proceedings)
     const booktitle = getB("BookTitle") || getB("ConferenceName")
-    if (booktitle) fields["booktitle"] = makeRichText(booktitle)
+    if (booktitle) fields.booktitle = makeRichText(booktitle)
 
     // Volume, issue, pages
     const volume = getB("Volume")
-    if (volume) fields["volume"] = makeRichText(volume)
+    if (volume) fields.volume = makeRichText(volume)
 
     const issue = getB("Issue")
-    if (issue) fields["issue"] = makeRichText(issue)
+    if (issue) fields.issue = makeRichText(issue)
 
     const pages = getB("Pages")
-    if (pages) fields["pages"] = convertRange(pages)
+    if (pages) fields.pages = convertRange(pages)
 
     // Edition
     const edition = getB("Edition")
-    if (edition) fields["edition"] = makeRichText(edition)
+    if (edition) fields.edition = makeRichText(edition)
 
     // Series / standard number
     const series = getB("Series") || getB("SeriesTitle")
-    if (series) fields["series"] = makeRichText(series)
+    if (series) fields.series = makeRichText(series)
 
     // Report / patent number
     const reportNumber = getB("Number") || getB("ReportNumber")
-    if (reportNumber) fields["number"] = makeRichText(reportNumber)
+    if (reportNumber) fields.number = makeRichText(reportNumber)
 
     // Identifiers
     const doi = getB("DOI")
-    if (doi) fields["doi"] = doi
+    if (doi) fields.doi = doi
 
     const isbn = getB("ISBN")
-    if (isbn) fields["isbn"] = makeRichText(isbn)
+    if (isbn) fields.isbn = makeRichText(isbn)
 
     const url = getB("URL") || getB("InternetSiteTitle")
-    if (url) fields["url"] = url
+    if (url) fields.url = url
 
     // Abstract / note
     const comments = getB("Comments")
-    if (comments) fields["note"] = makeRichText(comments)
+    if (comments) fields.note = makeRichText(comments)
 
     // Language
     const lcid = getB("LCID")
-    if (lcid) fields["langid"] = lcid
+    if (lcid) fields.langid = lcid
 
     return {
         entry: { entry_key: tag, bib_type: bibType, fields },

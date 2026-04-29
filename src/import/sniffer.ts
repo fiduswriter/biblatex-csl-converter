@@ -214,7 +214,7 @@ function sniffJson(head: string, full: string): ImportFormat | null {
  */
 function tryParseJsonHead(
     head: string,
-    full: string
+    full: string,
 ): Record<string, unknown> | Record<string, unknown>[] | null {
     // For an array we want the first element.
     if (head.startsWith("[")) {
@@ -284,7 +284,7 @@ function findMatchingBrace(
     s: string,
     pos: number,
     open: string,
-    close: string
+    close: string,
 ): number {
     let depth = 0
     let inString = false
@@ -321,7 +321,7 @@ function findMatchingBrace(
  * Classify a parsed JSON value as a specific import format.
  */
 function classifyJsonValue(
-    value: Record<string, unknown> | Record<string, unknown>[]
+    value: Record<string, unknown> | Record<string, unknown>[],
 ): ImportFormat | null {
     // Array: could be CSL-JSON array or a Citavi reference array.
     if (Array.isArray(value)) {
@@ -346,32 +346,28 @@ function classifyJsonObject(obj: Record<string, unknown>): ImportFormat | null {
     // Citavi WordPlaceholder / inline JSON from DOCX citations.
     // The "$type" key is populated by the Newtonsoft.Json serialiser and
     // always contains a fully-qualified SwissAcademic type name.
-    if (
-        typeof obj["$type"] === "string" &&
-        obj["$type"].includes("SwissAcademic")
-    ) {
+    if (typeof obj.$type === "string" && obj.$type.includes("SwissAcademic")) {
         return "citavi_json"
     }
 
     // Citavi project JSON export: top-level "References" array.
-    if (Array.isArray(obj["References"])) {
-        const firstRef = obj["References"][0]
+    if (Array.isArray(obj.References)) {
+        const firstRef = obj.References[0]
         if (firstRef && typeof firstRef === "object") {
             return "citavi_json"
         }
     }
 
     // Citavi project JSON export: top-level "Entries" array (WordPlaceholder).
-    if (Array.isArray(obj["Entries"])) {
-        const firstEntry = obj["Entries"][0]
+    if (Array.isArray(obj.Entries)) {
+        const firstEntry = obj.Entries[0]
         if (
             firstEntry &&
             typeof firstEntry === "object" &&
-            (typeof (firstEntry as Record<string, unknown>)["$type"] ===
+            (typeof (firstEntry as Record<string, unknown>).$type ===
                 "string" ||
-                typeof (firstEntry as Record<string, unknown>)[
-                    "ReferenceId"
-                ] === "string")
+                typeof (firstEntry as Record<string, unknown>).ReferenceId ===
+                    "string")
         ) {
             return "citavi_json"
         }
@@ -380,14 +376,14 @@ function classifyJsonObject(obj: Record<string, unknown>): ImportFormat | null {
     // Citavi reference object (array element): has "ReferenceType" and
     // either "BibTeXKey" or "Title".
     if (
-        typeof obj["ReferenceType"] === "string" &&
-        (obj["BibTeXKey"] !== undefined || obj["Title"] !== undefined)
+        typeof obj.ReferenceType === "string" &&
+        (obj.BibTeXKey !== undefined || obj.Title !== undefined)
     ) {
         return "citavi_json"
     }
 
     // CSL-JSON entry object: must have both "id" and "type".
-    if (typeof obj["id"] !== "undefined" && typeof obj["type"] === "string") {
+    if (typeof obj.id !== "undefined" && typeof obj.type === "string") {
         return "csl_json"
     }
 
@@ -398,8 +394,8 @@ function classifyJsonObject(obj: Record<string, unknown>): ImportFormat | null {
             val !== null &&
             typeof val === "object" &&
             !Array.isArray(val) &&
-            typeof (val as Record<string, unknown>)["type"] === "string" &&
-            typeof (val as Record<string, unknown>)["id"] !== "undefined"
+            typeof (val as Record<string, unknown>).type === "string" &&
+            typeof (val as Record<string, unknown>).id !== "undefined"
         ) {
             return "csl_json"
         }

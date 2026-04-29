@@ -86,9 +86,7 @@
                         ]
                     }
                 ],
-                "keywords": [
-                    "NonPerRev"
-                ],
+                "keywords": ["NonPerRev"],
                 "note": [
                     {
                         "type": "text",

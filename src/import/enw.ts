@@ -4,14 +4,14 @@
  */
 
 import {
-    BibTypes,
     BibFieldTypes,
-    NodeArray,
-    EntryObject,
-    NameDictObject,
-    RangeArray,
+    BibTypes,
+    type EntryObject,
+    type NameDictObject,
+    type NodeArray,
+    type RangeArray,
 } from "../const"
-import { makeEntryKey, lookupLangid } from "./tools"
+import { lookupLangid, makeEntryKey } from "./tools"
 
 // EndNote .enw format type mapping (%0)
 // Source: Endnote 21 User Guide, p. 248-249
@@ -176,7 +176,7 @@ export class ENWParser {
             // EndNote format: %X value
             const match = line.match(/^%([0-9A-Z!@])\s+(.*)$/)
             if (match) {
-                currentTag = "%" + match[1]
+                currentTag = `%${match[1]}`
                 const value = match[2].trim()
 
                 if (!currentRecord[currentTag]) {
@@ -186,7 +186,7 @@ export class ENWParser {
             } else if (currentTag && line.trim() !== "") {
                 // Continuation of previous tag (for keywords, abstract, etc.)
                 const lastIndex = currentRecord[currentTag].length - 1
-                currentRecord[currentTag][lastIndex] += "\n" + line.trim()
+                currentRecord[currentTag][lastIndex] += `\n${line.trim()}`
             } else if (
                 line.trim() === "" &&
                 Object.keys(currentRecord).length > 0
@@ -210,7 +210,7 @@ export class ENWParser {
 
     private convertRecord(
         record: ENWRecord,
-        index: number
+        index: number,
     ): EntryObject | false {
         // Get the reference type
         const typeValue = this.getFirstValue(record["%0"]) || "Generic"
@@ -241,7 +241,7 @@ export class ENWParser {
         // Title
         const title = this.getFirstValue(record["%T"])
         if (title) {
-            fields["title"] = this.setField("title", title)
+            fields.title = this.setField("title", title)
         } else {
             this.warnings.push({
                 type: "missing_required_field",
@@ -254,21 +254,18 @@ export class ENWParser {
         const secondaryTitle =
             this.getFirstValue(record["%J"]) || this.getFirstValue(record["%B"])
         if (secondaryTitle) {
-            fields["journaltitle"] = this.setField(
-                "journaltitle",
-                secondaryTitle
-            )
+            fields.journaltitle = this.setField("journaltitle", secondaryTitle)
         }
 
         // Book title (for chapters)
         const bookTitle = this.getFirstValue(record["%B"])
         if (bookTitle && !secondaryTitle) {
-            fields["booktitle"] = this.setField("booktitle", bookTitle)
+            fields.booktitle = this.setField("booktitle", bookTitle)
         }
 
         // Authors
         if (record["%A"] && record["%A"].length > 0) {
-            fields["author"] = this.parseNames(record["%A"])
+            fields.author = this.parseNames(record["%A"])
         } else {
             this.warnings.push({
                 type: "missing_required_field",
@@ -279,25 +276,25 @@ export class ENWParser {
 
         // Secondary authors (editors)
         if (record["%E"] && record["%E"].length > 0) {
-            fields["editor"] = this.parseNames(record["%E"])
+            fields.editor = this.parseNames(record["%E"])
         }
 
         // Abstract
         const abstract = this.getFirstValue(record["%X"])
         if (abstract) {
-            fields["abstract"] = this.setField("abstract", abstract)
+            fields.abstract = this.setField("abstract", abstract)
         }
 
         // Notes
         const notes = this.getFirstValue(record["%Z"])
         if (notes) {
-            fields["note"] = this.setField("note", notes)
+            fields.note = this.setField("note", notes)
         }
 
         // Year
         const year = this.getFirstValue(record["%D"])
         if (year) {
-            fields["date"] = year
+            fields.date = year
         } else {
             this.warnings.push({
                 type: "missing_required_field",
@@ -309,90 +306,90 @@ export class ENWParser {
         // Volume
         const volume = this.getFirstValue(record["%V"])
         if (volume) {
-            fields["volume"] = this.setField("volume", volume)
+            fields.volume = this.setField("volume", volume)
         }
 
         // Number/Issue
         const number = this.getFirstValue(record["%N"])
         if (number) {
-            fields["number"] = this.setField("number", number)
+            fields.number = this.setField("number", number)
         }
 
         // Pages
         const pages = this.getFirstValue(record["%P"])
         if (pages) {
-            fields["pages"] = this.convertRange(pages)
+            fields.pages = this.convertRange(pages)
         }
 
         // Publisher
         const publisher = this.getFirstValue(record["%I"])
         if (publisher) {
-            fields["publisher"] = this.setField("publisher", publisher)
+            fields.publisher = this.setField("publisher", publisher)
         }
 
         // Place
         const place = this.getFirstValue(record["%C"])
         if (place) {
-            fields["location"] = this.setField("location", place)
+            fields.location = this.setField("location", place)
         }
 
         // Edition
         const edition = this.getFirstValue(record["%7"])
         if (edition) {
-            fields["edition"] = this.setField("edition", edition)
+            fields.edition = this.setField("edition", edition)
         }
 
         // DOI
         const doi = this.getFirstValue(record["%O"])
         if (doi) {
-            fields["doi"] = this.setField("doi", doi)
+            fields.doi = this.setField("doi", doi)
         }
 
         // URL
         const url = this.getFirstValue(record["%U"])
         if (url) {
-            fields["url"] = this.setField("url", url)
+            fields.url = this.setField("url", url)
         }
 
         // ISBN/ISSN
         const isbn = this.getFirstValue(record["%@"])
         if (isbn) {
-            fields["isbn"] = this.setField("isbn", isbn)
+            fields.isbn = this.setField("isbn", isbn)
         }
 
         // Keywords — l_tag expects string[], split on comma/semicolon like
         // the BibLaTeX importer does
         if (record["%K"] && record["%K"].length > 0) {
-            fields["keywords"] = record["%K"].flatMap((kw) =>
+            fields.keywords = record["%K"].flatMap((kw) =>
                 kw
                     .split(/[,;]/)
                     .map((s) => s.trim())
-                    .filter(Boolean)
+                    .filter(Boolean),
             )
         }
 
         // PubMed ID / Accession
         const pmid = this.getFirstValue(record["%M"])
         if (pmid) {
-            fields["eprint"] = this.setField("eprint", pmid)
+            fields.eprint = this.setField("eprint", pmid)
         }
 
         // Short title
         const shortTitle = this.getFirstValue(record["%!"])
         if (shortTitle) {
-            fields["shorttitle"] = this.setField("shorttitle", shortTitle)
+            fields.shorttitle = this.setField("shorttitle", shortTitle)
         }
 
         // Call number
         const callNum = this.getFirstValue(record["%L"])
         if (callNum) {
-            fields["library"] = this.setField("library", callNum)
+            fields.library = this.setField("library", callNum)
         }
 
         // Label
         const label = this.getFirstValue(record["%F"])
         if (label) {
-            fields["label"] = this.setField("label", label)
+            fields.label = this.setField("label", label)
         }
 
         // Warn about tags present in the record that are not handled
@@ -471,13 +468,13 @@ export class ENWParser {
         const firstAuthor = this.getFirstValue(record["%A"])
         const yearRaw = this.getFirstValue(record["%D"])
         // Extract a clean four-digit year from whatever the field contains.
-        const year = yearRaw ? yearRaw.match(/\d{4}/)?.[0] ?? "" : ""
+        const year = yearRaw ? (yearRaw.match(/\d{4}/)?.[0] ?? "") : ""
         const lastName = firstAuthor ? firstAuthor.split(",")[0].trim() : ""
         return makeEntryKey(
             String(index),
             this.usedKeys,
             lastName || undefined,
-            year || undefined
+            year || undefined,
         )
     }
 
@@ -508,7 +505,7 @@ export class ENWParser {
      */
     private setField(
         fieldKey: string,
-        text: string
+        text: string,
     ): NodeArray | NodeArray[] | string | undefined {
         const fieldDef = BibFieldTypes[fieldKey]
         const fieldType = fieldDef?.type
@@ -526,7 +523,7 @@ export class ENWParser {
                 // Array options (e.g. bookpagination, type): plain string match
                 const lower = text.toLowerCase().trim()
                 const matched = options.find(
-                    (k: string) => k.toLowerCase() === lower
+                    (k: string) => k.toLowerCase() === lower,
                 )
                 return matched // undefined if no match
             } else if (options) {

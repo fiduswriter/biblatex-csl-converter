@@ -1,14 +1,14 @@
-import * as converter from "../tmp/bundle.test.js"
+import fs from "node:fs"
+import path from "node:path"
+import { fileURLToPath } from "node:url"
 import { expect } from "chai"
-import fs from "fs"
-import path from "path"
-import { fileURLToPath } from "url"
+import * as converter from "../tmp/bundle.test.js"
 
 const writeFixtures = false // Set to true to regenerate expected test results.
 
 const clean = (state) => {
-    for (let prop of ["comments", "errors", "warnings"]) {
-        if (!state[prop] || state[prop].length == 0) {
+    for (const prop of ["comments", "errors", "warnings"]) {
+        if (!state[prop] || state[prop].length === 0) {
             delete state[prop]
         }
     }
@@ -38,18 +38,18 @@ const verify = (xmlFile, sourcesFile) => {
 
     const expectedPath = path.join(
         path.dirname(xmlFile),
-        name + "-expected.json"
+        `${name}-expected.json`,
     )
 
     if (writeFixtures) {
-        fs.writeFileSync(expectedPath, JSON.stringify(found, null, 4) + "\n")
+        fs.writeFileSync(expectedPath, `${JSON.stringify(found, null, 4)}\n`)
     }
 
     if (!fs.existsSync(expectedPath)) {
         console.log(
-            `Expected file ${expectedPath} does not exist, creating fixture`
+            `Expected file ${expectedPath} does not exist, creating fixture`,
         )
-        fs.writeFileSync(expectedPath, JSON.stringify(found, null, 4) + "\n")
+        fs.writeFileSync(expectedPath, `${JSON.stringify(found, null, 4)}\n`)
         return
     }
 
@@ -63,12 +63,12 @@ const verify = (xmlFile, sourcesFile) => {
 
 const fixturesDir = path.join(
     path.dirname(fileURLToPath(import.meta.url)),
-    "fixtures/import/docx-citations"
+    "fixtures/import/docx-citations",
 )
 
 const allFiles = fs.readdirSync(fixturesDir)
 
-for (let filename of allFiles) {
+for (const filename of allFiles) {
     if (path.extname(filename).toLowerCase() !== ".xml") continue
     // Skip companion sources files — they are loaded alongside their primary fixture
     if (filename.endsWith("-sources.xml")) continue
@@ -77,7 +77,7 @@ for (let filename of allFiles) {
 
     const xmlFile = path.join(fixturesDir, filename)
     const base = path.basename(filename, ".xml")
-    const sourcesFile = path.join(fixturesDir, base + "-sources.xml")
+    const sourcesFile = path.join(fixturesDir, `${base}-sources.xml`)
 
     verify(xmlFile, sourcesFile)
 }
@@ -94,7 +94,7 @@ describe("Static utility methods", () => {
                 </w:sdt>`
                 const result = converter.DocxCitationsParser.sdtCitation(
                     sdtXml,
-                    false
+                    false,
                 )
                 expect(result.isCitation).to.equal(true)
                 expect(result.format).to.equal("mendeley_v3")
@@ -109,7 +109,7 @@ describe("Static utility methods", () => {
                 </w:sdt>`
                 const result = converter.DocxCitationsParser.sdtCitation(
                     sdtXml,
-                    false
+                    false,
                 )
                 expect(result.isCitation).to.equal(true)
                 expect(result.format).to.equal("citavi")
@@ -124,7 +124,7 @@ describe("Static utility methods", () => {
                 </w:sdt>`
                 const result = converter.DocxCitationsParser.sdtCitation(
                     sdtXml,
-                    false
+                    false,
                 )
                 expect(result.isCitation).to.equal(false)
                 expect(result.format).to.equal(undefined)
@@ -140,7 +140,7 @@ describe("Static utility methods", () => {
                 </w:sdt>`
                 const result = converter.DocxCitationsParser.sdtBibliography(
                     sdtXml,
-                    false
+                    false,
                 )
                 expect(result.isBibliography).to.equal(true)
                 expect(result.format).to.equal("mendeley_v3")
@@ -154,7 +154,7 @@ describe("Static utility methods", () => {
                 </w:sdt>`
                 const result = converter.DocxCitationsParser.sdtBibliography(
                     sdtXml,
-                    false
+                    false,
                 )
                 expect(result.isBibliography).to.equal(false)
             })
@@ -165,7 +165,7 @@ describe("Static utility methods", () => {
                 const instr = "ADDIN ZOTERO_ITEM CSL_CITATION {}"
                 const result = converter.DocxCitationsParser.fieldCitation(
                     instr,
-                    false
+                    false,
                 )
                 expect(result.isCitation).to.equal(true)
                 expect(result.format).to.equal("zotero")
@@ -176,7 +176,7 @@ describe("Static utility methods", () => {
                 const instr = "ADDIN CSL_CITATION {}"
                 const result = converter.DocxCitationsParser.fieldCitation(
                     instr,
-                    false
+                    false,
                 )
                 expect(result.isCitation).to.equal(true)
                 expect(result.format).to.equal("mendeley_legacy")
@@ -186,7 +186,7 @@ describe("Static utility methods", () => {
                 const instr = "ADDIN EN.CITE <EndNote></EndNote>"
                 const result = converter.DocxCitationsParser.fieldCitation(
                     instr,
-                    false
+                    false,
                 )
                 expect(result.isCitation).to.equal(true)
                 expect(result.format).to.equal("endnote")
@@ -196,7 +196,7 @@ describe("Static utility methods", () => {
                 const instr = "CITATION Smith2020 \\l 1033"
                 const result = converter.DocxCitationsParser.fieldCitation(
                     instr,
-                    false
+                    false,
                 )
                 expect(result.isCitation).to.equal(true)
                 expect(result.format).to.equal("word_native")
@@ -206,7 +206,7 @@ describe("Static utility methods", () => {
                 const instr = "REF _Ref123456 \\h"
                 const result = converter.DocxCitationsParser.fieldCitation(
                     instr,
-                    false
+                    false,
                 )
                 expect(result.isCitation).to.equal(false)
             })
@@ -228,20 +228,20 @@ describe("Static utility methods", () => {
                 } `
                 const result = converter.DocxCitationsParser.fieldCitation(
                     instr,
-                    true
+                    true,
                 )
                 expect(result.isCitation).to.equal(true)
                 expect(result.format).to.equal("zotero")
                 expect(result.entries).to.not.equal(undefined)
                 expect(Object.keys(result.entries!).length).to.be.greaterThan(0)
-                expect(result.errors!.length).to.equal(0)
+                expect(result.errors?.length).to.equal(0)
             })
 
             it("returns empty result for non-citation field", () => {
                 const instr = "REF _Ref123456 \\h"
                 const result = converter.DocxCitationsParser.fieldCitation(
                     instr,
-                    true
+                    true,
                 )
                 expect(result.isCitation).to.equal(false)
                 expect(result.format).to.equal(undefined)
@@ -253,7 +253,7 @@ describe("Static utility methods", () => {
                 const instr = "ADDIN ZOTERO_BIBL {} CSL_BIBLIOGRAPHY"
                 const result = converter.DocxCitationsParser.fieldBibliography(
                     instr,
-                    false
+                    false,
                 )
                 expect(result.isBibliography).to.equal(true)
                 expect(result.format).to.equal("zotero")
@@ -263,7 +263,7 @@ describe("Static utility methods", () => {
                 const instr = "ADDIN EN.REFLIST"
                 const result = converter.DocxCitationsParser.fieldBibliography(
                     instr,
-                    false
+                    false,
                 )
                 expect(result.isBibliography).to.equal(true)
                 expect(result.format).to.equal("endnote")
@@ -273,7 +273,7 @@ describe("Static utility methods", () => {
                 const instr = "BIBLIOGRAPHY \\l 1033"
                 const result = converter.DocxCitationsParser.fieldBibliography(
                     instr,
-                    false
+                    false,
                 )
                 expect(result.isBibliography).to.equal(true)
                 expect(result.format).to.equal("word_native")
@@ -283,7 +283,7 @@ describe("Static utility methods", () => {
                 const instr = "ADDIN ZOTERO_ITEM CSL_CITATION {}"
                 const result = converter.DocxCitationsParser.fieldBibliography(
                     instr,
-                    false
+                    false,
                 )
                 expect(result.isBibliography).to.equal(false)
             })
@@ -342,7 +342,7 @@ describe("Static utility methods", () => {
             it("metadata is absent when retrieveMetadata is false (default)", () => {
                 const result = converter.DocxCitationsParser.fieldCitation(
                     zoteroInstr,
-                    true
+                    true,
                 )
                 expect(result.isCitation).to.equal(true)
                 expect(result.metadata).to.equal(undefined)
@@ -352,7 +352,7 @@ describe("Static utility methods", () => {
                 const result = converter.DocxCitationsParser.fieldCitation(
                     zoteroInstr,
                     false, // retrieve=false → no data extraction at all
-                    true // retrieveMetadata=true
+                    true, // retrieveMetadata=true
                 )
                 expect(result.isCitation).to.equal(true)
                 expect(result.entries).to.equal(undefined)
@@ -363,7 +363,7 @@ describe("Static utility methods", () => {
                 const result = converter.DocxCitationsParser.fieldCitation(
                     zoteroInstr,
                     true, // retrieve=true → data extraction
-                    true // retrieveMetadata
+                    true, // retrieveMetadata
                 )
                 expect(result.isCitation).to.equal(true)
                 expect(result.metadata).to.be.an("array").with.lengthOf(3)
@@ -373,12 +373,12 @@ describe("Static utility methods", () => {
                 const result = converter.DocxCitationsParser.fieldCitation(
                     zoteroInstr,
                     true,
-                    true
+                    true,
                 )
                 const entryKeys = Object.values(result.entries!).map(
-                    (e) => e.entry_key
+                    (e) => e.entry_key,
                 )
-                const metaKeys = result.metadata!.map((m) => m.entry_key)
+                const metaKeys = result.metadata?.map((m) => m.entry_key)
                 // Every metadata entry_key must correspond to a parsed entry
                 for (const key of metaKeys) {
                     expect(entryKeys).to.include(key)
@@ -391,9 +391,9 @@ describe("Static utility methods", () => {
                 const result = converter.DocxCitationsParser.fieldCitation(
                     zoteroInstr,
                     true,
-                    true
+                    true,
                 )
-                const meta0 = result.metadata![0]
+                const meta0 = result.metadata?.[0]
                 expect(meta0.locator).to.equal("123")
                 expect(meta0.label).to.equal("page")
             })
@@ -402,9 +402,9 @@ describe("Static utility methods", () => {
                 const result = converter.DocxCitationsParser.fieldCitation(
                     zoteroInstr,
                     true,
-                    true
+                    true,
                 )
-                const meta0 = result.metadata![0]
+                const meta0 = result.metadata?.[0]
                 expect(meta0.prefix).to.equal("see ")
                 expect(meta0.suffix).to.equal(" for more")
             })
@@ -413,9 +413,9 @@ describe("Static utility methods", () => {
                 const result = converter.DocxCitationsParser.fieldCitation(
                     zoteroInstr,
                     true,
-                    true
+                    true,
                 )
-                const meta1 = result.metadata![1]
+                const meta1 = result.metadata?.[1]
                 expect(meta1.suppressAuthor).to.equal(true)
                 expect(meta1.authorOnly).to.equal(undefined)
                 expect(meta1.authorYear).to.equal(undefined)
@@ -425,9 +425,9 @@ describe("Static utility methods", () => {
                 const result = converter.DocxCitationsParser.fieldCitation(
                     zoteroInstr,
                     true,
-                    true
+                    true,
                 )
-                const meta2 = result.metadata![2]
+                const meta2 = result.metadata?.[2]
                 expect(meta2.authorOnly).to.equal(true)
                 expect(meta2.suppressAuthor).to.equal(undefined)
                 expect(meta2.authorYear).to.equal(undefined)
@@ -437,10 +437,10 @@ describe("Static utility methods", () => {
                 const result = converter.DocxCitationsParser.fieldCitation(
                     zoteroInstr,
                     true,
-                    true
+                    true,
                 )
                 // Second item has only suppress-author set; no locator/label/prefix/suffix
-                const meta1 = result.metadata![1]
+                const meta1 = result.metadata?.[1]
                 expect(meta1.locator).to.equal(undefined)
                 expect(meta1.label).to.equal(undefined)
                 expect(meta1.prefix).to.equal(undefined)
@@ -472,13 +472,13 @@ describe("Static utility methods", () => {
                 const result = converter.DocxCitationsParser.fieldCitation(
                     instr,
                     true,
-                    true
+                    true,
                 )
                 expect(result.isCitation).to.equal(true)
                 expect(result.format).to.equal("endnote")
                 expect(result.metadata).to.be.an("array").with.lengthOf(1)
 
-                const meta = result.metadata![0]
+                const meta = result.metadata?.[0]
                 // entry_key is now the normalised lastname+year key from EndNoteParser
                 expect(meta.entry_key).to.equal("WilliamsWilliamT2020")
                 // Pages → locator
@@ -513,10 +513,10 @@ describe("Static utility methods", () => {
                 const result = converter.DocxCitationsParser.fieldCitation(
                     instr,
                     true,
-                    true
+                    true,
                 )
                 expect(result.metadata).to.be.an("array").with.lengthOf(1)
-                const meta = result.metadata![0]
+                const meta = result.metadata?.[0]
                 expect(meta.authorYear).to.equal(undefined)
                 expect(meta.suppressAuthor).to.equal(undefined)
                 expect(meta.locator).to.equal(undefined)
@@ -570,20 +570,20 @@ describe("Static utility methods", () => {
                 const result = converter.DocxCitationsParser.sdtCitation(
                     sdtXml,
                     true,
-                    true // retrieveMetadata
+                    true, // retrieveMetadata
                 )
                 expect(result.isCitation).to.equal(true)
                 expect(result.format).to.equal("mendeley_v3")
                 expect(result.metadata).to.be.an("array").with.lengthOf(2)
 
-                const meta0 = result.metadata![0]
+                const meta0 = result.metadata?.[0]
                 expect(meta0.locator).to.equal("42-43")
                 expect(meta0.label).to.equal("page")
                 expect(meta0.prefix).to.equal("see ")
                 expect(meta0.suffix).to.equal(" for details")
                 expect(meta0.suppressAuthor).to.equal(undefined)
 
-                const meta1 = result.metadata![1]
+                const meta1 = result.metadata?.[1]
                 expect(meta1.suppressAuthor).to.equal(true)
                 expect(meta1.locator).to.equal(undefined)
             })
@@ -685,20 +685,20 @@ describe("Static utility methods", () => {
                 const result = converter.DocxCitationsParser.sdtCitation(
                     sdtXml,
                     true,
-                    true // retrieveMetadata
+                    true, // retrieveMetadata
                 )
                 expect(result.isCitation).to.equal(true)
                 expect(result.format).to.equal("citavi")
                 expect(result.metadata).to.be.an("array").with.lengthOf(2)
 
-                const meta0 = result.metadata![0]
+                const meta0 = result.metadata?.[0]
                 expect(meta0.prefix).to.equal("see ")
                 expect(meta0.locator).to.equal("100-105")
                 // Citavi has no author-suppression support
                 expect(meta0.suppressAuthor).to.equal(undefined)
                 expect(meta0.authorYear).to.equal(undefined)
 
-                const meta1 = result.metadata![1]
+                const meta1 = result.metadata?.[1]
                 expect(meta1.locator).to.equal("42")
                 expect(meta1.prefix).to.equal(undefined)
             })
@@ -773,14 +773,14 @@ describe("Static utility methods", () => {
                 const result = converter.DocxCitationsParser.sdtCitation(
                     sdtXml,
                     true,
-                    true // retrieveMetadata
+                    true, // retrieveMetadata
                 )
                 expect(result.isCitation).to.equal(true)
                 expect(result.format).to.equal("citavi")
                 expect(result.warnings).to.be.an("array").with.lengthOf(0)
                 expect(result.metadata).to.be.an("array").with.lengthOf(1)
 
-                const meta0 = result.metadata![0]
+                const meta0 = result.metadata?.[0]
                 expect(meta0.locator).to.equal("99")
                 expect(meta0.prefix).to.equal(undefined)
                 expect(meta0.suppressAuthor).to.equal(undefined)
@@ -833,7 +833,7 @@ describe("Static utility methods", () => {
                 const result = converter.DocxCitationsParser.sdtCitation(
                     sdtXml,
                     true,
-                    true
+                    true,
                 )
                 expect(result.isCitation).to.equal(true)
                 expect(result.format).to.equal("citavi")

@@ -1,14 +1,14 @@
-import * as converter from "../tmp/bundle.test.js"
+import fs from "node:fs"
+import path from "node:path"
+import { fileURLToPath } from "node:url"
 import { expect } from "chai"
-import fs from "fs"
-import path from "path"
-import { fileURLToPath } from "url"
+import * as converter from "../tmp/bundle.test.js"
 
 const writeFixtures = false // Set to true to save the results as expected test results.
 
 const clean = (state) => {
-    for (let prop of ["comments", "errors", "warnings"]) {
-        if (!state[prop] || state[prop].length == 0) {
+    for (const prop of ["comments", "errors", "warnings"]) {
+        if (!state[prop] || state[prop].length === 0) {
             delete state[prop]
         }
     }
@@ -16,30 +16,30 @@ const clean = (state) => {
         delete state.strings
 
     if (state.jabref) {
-        if (!state.jabref.groups || state.jabref.groups.length == 0)
+        if (!state.jabref.groups || state.jabref.groups.length === 0)
             delete state.jabref.groups
-        if (!state.jabref.meta || Object.keys(state.jabref.meta).length == 0)
+        if (!state.jabref.meta || Object.keys(state.jabref.meta).length === 0)
             delete state.jabref.meta
-        if (Object.keys(state.jabref).length == 0) delete state.jabref
+        if (Object.keys(state.jabref).length === 0) delete state.jabref
     } else {
         delete state.jabref
     }
 }
 
 const verify = (bibfile, processComments) => {
-    let input = fs.readFileSync(bibfile, "utf8")
-    let name = path.basename(bibfile, path.extname(bibfile))
+    const input = fs.readFileSync(bibfile, "utf8")
+    const name = path.basename(bibfile, path.extname(bibfile))
 
-    let found = converter.parse(input, {
+    const found = converter.parse(input, {
         processComments,
         processUnexpected: true,
         processUnknown: true,
     })
     clean(found)
 
-    let expected = path.join(path.dirname(bibfile), name + ".json")
+    let expected = path.join(path.dirname(bibfile), `${name}.json`)
     if (writeFixtures) {
-        fs.writeFileSync(expected, JSON.stringify(found, null, 4) + "\n")
+        fs.writeFileSync(expected, `${JSON.stringify(found, null, 4)}\n`)
     }
     expected = JSON.parse(fs.readFileSync(expected, "utf8"))
     clean(expected)
@@ -50,8 +50,8 @@ const verify = (bibfile, processComments) => {
 }
 
 const verifyAsync = (bibfile, processComments) => {
-    let input = fs.readFileSync(bibfile, "utf8")
-    let name = path.basename(bibfile, path.extname(bibfile))
+    const input = fs.readFileSync(bibfile, "utf8")
+    const name = path.basename(bibfile, path.extname(bibfile))
 
     return converter
         .parseAsync(input, {
@@ -63,7 +63,7 @@ const verifyAsync = (bibfile, processComments) => {
         .then((found) => {
             clean(found)
 
-            let expected = path.join(path.dirname(bibfile), name + ".json")
+            let expected = path.join(path.dirname(bibfile), `${name}.json`)
             expected = JSON.parse(fs.readFileSync(expected, "utf8"))
             clean(expected)
 
@@ -74,11 +74,11 @@ const verifyAsync = (bibfile, processComments) => {
 }
 
 const verifyIncludeLocation = (bibfile) => {
-    let name = path.basename(bibfile, path.extname(bibfile))
+    const name = path.basename(bibfile, path.extname(bibfile))
     it(`include location: ${name}`, () => {
-        let input = fs.readFileSync(bibfile, "utf8")
+        const input = fs.readFileSync(bibfile, "utf8")
 
-        let found = converter.parse(input, { includeLocation: true })
+        const found = converter.parse(input, { includeLocation: true })
         clean(found)
         expect(found.entries["1"].location).to.be.deep.equal({
             start: 1,
@@ -96,32 +96,32 @@ const verifyIncludeLocation = (bibfile) => {
 }
 
 const verifyIncludeRawText = (bibfile) => {
-    let name = path.basename(bibfile, path.extname(bibfile))
+    const name = path.basename(bibfile, path.extname(bibfile))
     it(`include raw_text: ${name}`, () => {
-        let input = fs.readFileSync(bibfile, "utf8")
+        const input = fs.readFileSync(bibfile, "utf8")
 
-        let found = converter.parse(input, { includeRawText: true })
+        const found = converter.parse(input, { includeRawText: true })
         clean(found)
         expect(found.entries["1"].raw_text).to.match(
-            /^@article\{Sen\.2016\.BV,\n abstract = \{We construct the quantum.+year = \{2016\}\n\}$/s
+            /^@article\{Sen\.2016\.BV,\n abstract = \{We construct the quantum.+year = \{2016\}\n\}$/s,
         )
         expect(found.entries["2"].raw_text).to.match(
-            /^@article\{Smolin\.2013\.Classical,\n.+year = \{2013\}\n\}$/s
+            /^@article\{Smolin\.2013\.Classical,\n.+year = \{2013\}\n\}$/s,
         )
         expect(found.entries["3"].raw_text).to.match(
-            /^@article\{Ronnow\.2014\.Defining,\n.+year = \{2014\}\n\}$/s
+            /^@article\{Ronnow\.2014\.Defining,\n.+year = \{2014\}\n\}$/s,
         )
     })
 }
 
 const fixtures = path.join(
     path.dirname(fileURLToPath(import.meta.url)),
-    "fixtures/import/bib"
+    "fixtures/import/bib",
 )
 const bibfiles = fs.readdirSync(fixtures)
 const promised = []
 for (let fixture of bibfiles) {
-    if (path.extname(fixture) != ".bib") {
+    if (path.extname(fixture) !== ".bib") {
         continue
     }
 
@@ -133,10 +133,10 @@ for (let fixture of bibfiles) {
 }
 
 verifyIncludeLocation(
-    path.join(fixtures, "arXiv identifiers in BibLaTeX export #460.bibtex.bib")
+    path.join(fixtures, "arXiv identifiers in BibLaTeX export #460.bibtex.bib"),
 )
 verifyIncludeRawText(
-    path.join(fixtures, "arXiv identifiers in BibLaTeX export #460.bibtex.bib")
+    path.join(fixtures, "arXiv identifiers in BibLaTeX export #460.bibtex.bib"),
 )
 
 Promise.all(promised)

@@ -118,7 +118,7 @@ class SimpleEDTFParser {
 
     splitInterval() {
         const normalizedString = this.string.replace(/--/, "/")
-        let parts = normalizedString.split("/")
+        const parts = normalizedString.split("/")
         if (parts.length > 2) {
             this.valid = false
         } else if (parts.length === 2) {
@@ -127,7 +127,7 @@ class SimpleEDTFParser {
 
             // Parse both parts
             const parsedParts = parts.map((part) => {
-                let parser = new SimpleEDTFParser(part)
+                const parser = new SimpleEDTFParser(part)
                 parser.init()
                 return parser
             })
@@ -148,7 +148,7 @@ class SimpleEDTFParser {
                     // Try to compare the dates chronologically
                     const isChronological = this.isChronologicalInterval(
                         parsedParts[0],
-                        parsedParts[1]
+                        parsedParts[1],
                     )
 
                     if (isChronological) {
@@ -178,7 +178,7 @@ class SimpleEDTFParser {
 
     isChronologicalInterval(
         start: SimpleEDTFParser,
-        end: SimpleEDTFParser
+        end: SimpleEDTFParser,
     ): boolean {
         // For simplicity, we'll compare years first
         if (start.values.length > 0 && end.values.length > 0) {
@@ -244,16 +244,16 @@ class SimpleEDTFParser {
             return
         }
 
-        let parts = this.string.replace(/^y/, "").split(/(?!^)-/)
+        const parts = this.string.replace(/^y/, "").split(/(?!^)-/)
 
         if (parts.length > 3) {
             this.valid = false
             return
         }
         let certain = true
-        let year = parts[0]
+        const year = parts[0]
 
-        let yearChecker = /^-?[0-9]*u{0,4}$/ // 1994, 19uu, -234, 187u, 0, 1984?~, 1uuu, uuuu, etc.
+        const yearChecker = /^-?[0-9]*u{0,4}$/ // 1994, 19uu, -234, 187u, 0, 1984?~, 1uuu, uuuu, etc.
         if (!yearChecker.test(year)) {
             this.valid = false
             return
@@ -261,16 +261,16 @@ class SimpleEDTFParser {
         if (year.slice(-1) === "u") {
             certain = false
             this.type = "Interval"
-            let from = new SimpleEDTFParser(year.replace(/u/g, "0"))
+            const from = new SimpleEDTFParser(year.replace(/u/g, "0"))
             from.init()
-            let to = new SimpleEDTFParser(year.replace(/u/g, "9"))
+            const to = new SimpleEDTFParser(year.replace(/u/g, "9"))
             to.init()
             this.parts = [from, to]
             if (!from.valid || !to.valid) {
                 this.valid = false
             }
         } else {
-            this.values = [parseInt(year)]
+            this.values = [parseInt(year, 10)]
             this.type = "Date"
         }
 
@@ -280,14 +280,14 @@ class SimpleEDTFParser {
 
         // Month / Season
 
-        let month = parts[1]
+        const month = parts[1]
         if (!certain && month !== "uu") {
             // End of year uncertain but month specified. Invalid
             this.valid = false
             return
         }
-        let monthChecker = /^([0-2][0-9]|[1-9])|uu$/ // uu or 1, 2, 3, ..., 01, 02, 03, ..., 11, 12
-        let monthInt = parseInt(month.replace("uu", "01"))
+        const monthChecker = /^([0-2][0-9]|[1-9])|uu$/ // uu or 1, 2, 3, ..., 01, 02, 03, ..., 11, 12
+        const monthInt = parseInt(month.replace("uu", "01"), 10)
         if (
             !monthChecker.test(month) ||
             monthInt < 1 ||
@@ -319,15 +319,15 @@ class SimpleEDTFParser {
 
         // Day
 
-        let dayTime = parts[2].split("T"),
+        const dayTime = parts[2].split("T"),
             day = dayTime[0]
         if (!certain && day !== "uu") {
             // Month uncertain but day specified. Invalid
             this.valid = false
             return
         }
-        let dayChecker = /^[0-3][0-9]$|uu/ // uu or 01, 02, 03, ..., 11, 12
-        let dayInt = parseInt(day.replace("uu", "01"))
+        const dayChecker = /^[0-3][0-9]$|uu/ // uu or 01, 02, 03, ..., 11, 12
+        const dayInt = parseInt(day.replace("uu", "01"), 10)
         if (!dayChecker.test(month) || dayInt < 1 || dayInt > 31) {
             this.valid = false
             return
@@ -337,10 +337,10 @@ class SimpleEDTFParser {
         }
 
         if (certain) {
-            let testDate = new Date(`${year}/${month}/${day}`)
+            const testDate = new Date(`${year}/${month}/${day}`)
 
             if (
-                testDate.getFullYear() !== parseInt(year) ||
+                testDate.getFullYear() !== parseInt(year, 10) ||
                 testDate.getMonth() + 1 !== monthInt ||
                 testDate.getDate() !== dayInt
             ) {
@@ -363,10 +363,10 @@ class SimpleEDTFParser {
             return
         }
 
-        let timeParts = dayTime[1]
+        const timeParts = dayTime[1]
             .slice(0, 8)
             .split(":")
-            .map((part) => parseInt(part))
+            .map((part) => parseInt(part, 10))
 
         if (
             timeParts.length !== 3 ||
@@ -388,7 +388,7 @@ class SimpleEDTFParser {
             // No timezone
             return
         }
-        let timeZone = dayTime[1].slice(8)
+        const timeZone = dayTime[1].slice(8)
 
         if (timeZone === "Z") {
             // Zulu
@@ -396,8 +396,8 @@ class SimpleEDTFParser {
             return
         }
 
-        let tzChecker = RegExp("^[+-][0-1][0-9]:[0-1][0-9]$"),
-            tzParts = timeZone.split(":").map((part) => parseInt(part))
+        const tzChecker = /^[+-][0-1][0-9]:[0-1][0-9]$/,
+            tzParts = timeZone.split(":").map((part) => parseInt(part, 10))
 
         if (
             !tzChecker.test(timeZone) ||
@@ -416,6 +416,6 @@ class SimpleEDTFParser {
 }
 
 export function edtfParse(dateString: string): EDTFOutputObject {
-    let parser = new SimpleEDTFParser(dateString)
+    const parser = new SimpleEDTFParser(dateString)
     return parser.init()
 }

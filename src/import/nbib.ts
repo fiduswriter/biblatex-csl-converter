@@ -7,14 +7,14 @@
  */
 
 import {
-    BibTypes,
     BibFieldTypes,
-    NodeArray,
-    EntryObject,
-    NameDictObject,
-    RangeArray,
+    BibTypes,
+    type EntryObject,
+    type NameDictObject,
+    type NodeArray,
+    type RangeArray,
 } from "../const"
-import { makeEntryKey, lookupLangid } from "./tools"
+import { lookupLangid, makeEntryKey } from "./tools"
 
 /**
  * Map from PubMed publication type strings (PT tag) to internal BibTypes.
@@ -287,7 +287,7 @@ export class NBIBParser {
                 const value = line.trim()
                 const lastIdx = currentRecord[currentTag].length - 1
                 // Append with a space to join the multi-line field naturally
-                currentRecord[currentTag][lastIdx] += " " + value
+                currentRecord[currentTag][lastIdx] += ` ${value}`
             } else if (line.trim() === "") {
                 // Blank line ends a record
                 saveRecord()
@@ -304,12 +304,12 @@ export class NBIBParser {
 
     private convertRecord(
         record: NBIBRecord,
-        index: number
+        index: number,
     ): EntryObject | false {
         // Determine entry type from PT (Publication Type) tags.
         // A single NBIB record may list multiple PT values; we use the first
         // one that maps to a known internal type, falling back to misc.
-        const pubTypes = record["PT"] || []
+        const pubTypes = record.PT || []
         let mappedBibType: string | undefined
         let matchedPT: string | undefined
         for (const pt of pubTypes) {
@@ -346,10 +346,9 @@ export class NBIBParser {
         // ── Title ─────────────────────────────────────────────────────────────
         // TI = article/chapter title; BTI = book title (for book records)
         const title =
-            this.getFirstValue(record["TI"]) ||
-            this.getFirstValue(record["BTI"])
+            this.getFirstValue(record.TI) || this.getFirstValue(record.BTI)
         if (title) {
-            fields["title"] = this.setField("title", title)
+            fields.title = this.setField("title", title)
         } else {
             this.warnings.push({
                 type: "missing_required_field",
@@ -359,47 +358,40 @@ export class NBIBParser {
         }
 
         // ── Transliterated / alternate title ──────────────────────────────────
-        const transTitle = this.getFirstValue(record["TT"])
+        const transTitle = this.getFirstValue(record.TT)
         if (transTitle) {
-            fields["origtitle"] = this.setField("origtitle", transTitle)
+            fields.origtitle = this.setField("origtitle", transTitle)
         }
 
         // ── Journal title ─────────────────────────────────────────────────────
         // JT = full journal title; TA = abbreviated title; CTI = collection title
         const journalTitle =
-            this.getFirstValue(record["JT"]) ||
-            this.getFirstValue(record["CTI"])
+            this.getFirstValue(record.JT) || this.getFirstValue(record.CTI)
         if (journalTitle) {
-            fields["journaltitle"] = this.setField("journaltitle", journalTitle)
+            fields.journaltitle = this.setField("journaltitle", journalTitle)
         }
 
-        const journalAbbrev = this.getFirstValue(record["TA"])
+        const journalAbbrev = this.getFirstValue(record.TA)
         if (journalAbbrev && !journalTitle) {
             // Only use abbreviation when the full title is absent
-            fields["journaltitle"] = this.setField(
-                "journaltitle",
-                journalAbbrev
-            )
+            fields.journaltitle = this.setField("journaltitle", journalAbbrev)
         }
         if (journalAbbrev) {
-            fields["shortjournal"] = this.setField(
-                "shortjournal",
-                journalAbbrev
-            )
+            fields.shortjournal = this.setField("shortjournal", journalAbbrev)
         }
 
         // ── Volume title (VTI) ────────────────────────────────────────────────
-        const volumeTitle = this.getFirstValue(record["VTI"])
+        const volumeTitle = this.getFirstValue(record.VTI)
         if (volumeTitle) {
-            fields["booktitle"] = this.setField("booktitle", volumeTitle)
+            fields.booktitle = this.setField("booktitle", volumeTitle)
         }
 
         // ── Authors ───────────────────────────────────────────────────────────
         // FAU = full author name (preferred); AU = abbreviated author name;
         // CN = corporate/collective author (treated as literal name)
-        const fullAuthors = record["FAU"] || []
-        const shortAuthors = record["AU"] || []
-        const corpAuthors = record["CN"] || []
+        const fullAuthors = record.FAU || []
+        const shortAuthors = record.AU || []
+        const corpAuthors = record.CN || []
 
         const authorNames: NameDictObject[] = []
         if (fullAuthors.length > 0) {
@@ -418,7 +410,7 @@ export class NBIBParser {
         }
 
         if (authorNames.length > 0) {
-            fields["author"] = authorNames
+            fields.author = authorNames
         } else {
             this.warnings.push({
                 type: "missing_required_field",
@@ -429,28 +421,28 @@ export class NBIBParser {
 
         // ── Editors ───────────────────────────────────────────────────────────
         // FED = full editor name; ED = abbreviated editor name
-        const fullEditors = record["FED"] || []
-        const shortEditors = record["ED"] || []
+        const fullEditors = record.FED || []
+        const shortEditors = record.ED || []
         const editorNames: NameDictObject[] =
             fullEditors.length > 0
                 ? this.parseNames(fullEditors)
                 : this.parseNames(shortEditors)
         if (editorNames.length > 0) {
-            fields["editor"] = editorNames
+            fields.editor = editorNames
         }
 
         // ── Abstract ─────────────────────────────────────────────────────────
-        const abstract = this.getFirstValue(record["AB"])
+        const abstract = this.getFirstValue(record.AB)
         if (abstract) {
-            fields["abstract"] = this.setField("abstract", abstract)
+            fields.abstract = this.setField("abstract", abstract)
         }
 
         // ── Date of publication ───────────────────────────────────────────────
         // DP contains a human-readable date such as "2025 May", "2025 May 1",
         // "2025", "2025 Spring", etc.  We parse out a best-effort EDTF string.
-        const dp = this.getFirstValue(record["DP"])
+        const dp = this.getFirstValue(record.DP)
         if (dp) {
-            fields["date"] = this.parsePublicationDate(dp)
+            fields.date = this.parsePublicationDate(dp)
         } else {
             this.warnings.push({
                 type: "missing_required_field",
@@ -460,33 +452,33 @@ export class NBIBParser {
         }
 
         // ── Volume ────────────────────────────────────────────────────────────
-        const volume = this.getFirstValue(record["VI"])
+        const volume = this.getFirstValue(record.VI)
         if (volume) {
-            fields["volume"] = this.setField("volume", volume)
+            fields.volume = this.setField("volume", volume)
         }
 
         // ── Issue ─────────────────────────────────────────────────────────────
-        const issue = this.getFirstValue(record["IP"])
+        const issue = this.getFirstValue(record.IP)
         if (issue) {
-            fields["issue"] = this.setField("issue", issue)
+            fields.issue = this.setField("issue", issue)
         }
 
         // ── Pages ─────────────────────────────────────────────────────────────
-        const pages = this.getFirstValue(record["PG"])
+        const pages = this.getFirstValue(record.PG)
         if (pages) {
-            fields["pages"] = this.convertRange(pages)
+            fields.pages = this.convertRange(pages)
         }
 
         // ── Publisher ─────────────────────────────────────────────────────────
-        const publisher = this.getFirstValue(record["PB"])
+        const publisher = this.getFirstValue(record.PB)
         if (publisher) {
-            fields["publisher"] = this.setField("publisher", publisher)
+            fields.publisher = this.setField("publisher", publisher)
         }
 
         // ── Place of publication ──────────────────────────────────────────────
-        const place = this.getFirstValue(record["PL"])
+        const place = this.getFirstValue(record.PL)
         if (place) {
-            fields["location"] = this.setField("location", place)
+            fields.location = this.setField("location", place)
         }
 
         // ── DOI and other location identifiers ───────────────────────────────
@@ -496,67 +488,67 @@ export class NBIBParser {
         // AID lines use the same convention.
         const doi = this.extractLID(record, "doi")
         if (doi) {
-            fields["doi"] = this.setField("doi", doi)
+            fields.doi = this.setField("doi", doi)
         }
 
         const pii = this.extractLID(record, "pii")
         if (pii && !doi) {
             // Store pii as eprint when there is no DOI
-            fields["eprint"] = this.setField("eprint", pii)
-            fields["eprinttype"] = "pii"
+            fields.eprint = this.setField("eprint", pii)
+            fields.eprinttype = "pii"
         }
 
         // ── ISSN ─────────────────────────────────────────────────────────────
         // IS lines may appear multiple times (print/electronic ISSN).
         // We keep all values joined by space, or store each separately.
-        if (record["IS"] && record["IS"].length > 0) {
+        if (record.IS && record.IS.length > 0) {
             // Prefer the first value; it is often the print ISSN
-            const issn = record["IS"][0].trim()
+            const issn = record.IS[0].trim()
             if (issn) {
-                fields["issn"] = this.setField("issn", issn)
+                fields.issn = this.setField("issn", issn)
             }
         }
 
         // ── ISBN ─────────────────────────────────────────────────────────────
-        const isbn = this.getFirstValue(record["ISBN"])
+        const isbn = this.getFirstValue(record.ISBN)
         if (isbn) {
-            fields["isbn"] = this.setField("isbn", isbn)
+            fields.isbn = this.setField("isbn", isbn)
         }
 
         // ── PubMed ID ─────────────────────────────────────────────────────────
-        const pmid = this.getFirstValue(record["PMID"])
+        const pmid = this.getFirstValue(record.PMID)
         if (pmid) {
-            fields["eprint"] = this.setField("eprint", pmid.trim())
-            fields["eprinttype"] = "pubmed"
+            fields.eprint = this.setField("eprint", pmid.trim())
+            fields.eprinttype = "pubmed"
         }
 
         // ── PubMed Central ID ─────────────────────────────────────────────────
-        const pmc = this.getFirstValue(record["PMC"])
+        const pmc = this.getFirstValue(record.PMC)
         if (pmc) {
             // Only overwrite eprint with PMC if PMID was not set
             if (!pmid) {
-                fields["eprint"] = this.setField("eprint", pmc.trim())
-                fields["eprinttype"] = "pmcid"
+                fields.eprint = this.setField("eprint", pmc.trim())
+                fields.eprinttype = "pmcid"
             }
-            fields["note"] = this.setField("note", `PMC: ${pmc.trim()}`)
+            fields.note = this.setField("note", `PMC: ${pmc.trim()}`)
         }
 
         // ── Language ─────────────────────────────────────────────────────────
-        const language = this.getFirstValue(record["LA"])
+        const language = this.getFirstValue(record.LA)
         if (language) {
             const langid = this.setField("langid", language.trim())
             if (langid !== undefined) {
-                fields["langid"] = langid
+                fields.langid = langid
             }
         }
 
         // ── Keywords (MeSH + author keywords) ────────────────────────────────
         // OT = other terms (author-supplied keywords)
         // MH = MeSH headings — we include these too as they are topic keywords
-        const otKeywords = (record["OT"] || [])
+        const otKeywords = (record.OT || [])
             .map((k) => k.trim())
             .filter(Boolean)
-        const meshKeywords = (record["MH"] || [])
+        const meshKeywords = (record.MH || [])
             .map((k) => {
                 // Strip leading asterisks used to denote major MeSH headings
                 // and trailing qualifiers like "/pathology"
@@ -569,25 +561,27 @@ export class NBIBParser {
             // Deduplicate MeSH terms against already-present OT keywords
             ...meshKeywords.filter(
                 (m) =>
-                    !otKeywords.some((o) => o.toLowerCase() === m.toLowerCase())
+                    !otKeywords.some(
+                        (o) => o.toLowerCase() === m.toLowerCase(),
+                    ),
             ),
         ]
         if (allKeywords.length > 0) {
-            fields["keywords"] = allKeywords
+            fields.keywords = allKeywords
         }
 
         // ── Edition ───────────────────────────────────────────────────────────
-        const edition = this.getFirstValue(record["EN"])
+        const edition = this.getFirstValue(record.EN)
         if (edition) {
-            fields["edition"] = this.setField("edition", edition)
+            fields.edition = this.setField("edition", edition)
         }
 
         // ── Grant numbers ─────────────────────────────────────────────────────
-        if (record["GR"] && record["GR"].length > 0) {
+        if (record.GR && record.GR.length > 0) {
             // Store as a note — there is no dedicated internal field for grants
-            const grants = record["GR"].map((g) => g.trim()).join("; ")
-            if (grants && !fields["note"]) {
-                fields["note"] = this.setField("note", `Grants: ${grants}`)
+            const grants = record.GR.map((g) => g.trim()).join("; ")
+            if (grants && !fields.note) {
+                fields.note = this.setField("note", `Grants: ${grants}`)
             }
         }
 
@@ -654,7 +648,7 @@ export class NBIBParser {
 
         // "YYYY Season" — seasons are not representable in EDTF; keep year only
         const withSeason = dp.match(
-            /^(\d{4})\s+(spring|summer|fall|autumn|winter)$/i
+            /^(\d{4})\s+(spring|summer|fall|autumn|winter)$/i,
         )
         if (withSeason) {
             return withSeason[1]
@@ -662,7 +656,7 @@ export class NBIBParser {
 
         // "YYYY Mon" or "YYYY Mon-Mon" or "YYYY Mon Day" or "YYYY Mon Day-Day"
         const yearMonthMatch = dp.match(
-            /^(\d{4})\s+([A-Za-z]{3})(?:-([A-Za-z]{3}))?(?:\s+(\d{1,2})(?:-(\d{1,2}))?)?$/
+            /^(\d{4})\s+([A-Za-z]{3})(?:-([A-Za-z]{3}))?(?:\s+(\d{1,2})(?:-(\d{1,2}))?)?$/,
         )
         if (yearMonthMatch) {
             const year = yearMonthMatch[1]
@@ -767,7 +761,7 @@ export class NBIBParser {
             // it as given initials and the preceding words as family name
             if (/^[A-Z]{1,4}$/.test(lastWord)) {
                 nameObj.family = this.convertRichText(
-                    words.slice(0, -1).join(" ")
+                    words.slice(0, -1).join(" "),
                 )
                 nameObj.given = this.convertRichText(lastWord)
             } else {
@@ -782,10 +776,9 @@ export class NBIBParser {
     private generateEntryKey(record: NBIBRecord, index: number): string {
         // Prefer full author name, fall back to abbreviated
         const firstAuthor =
-            this.getFirstValue(record["FAU"]) ||
-            this.getFirstValue(record["AU"])
-        const dp = this.getFirstValue(record["DP"])
-        const year = dp ? dp.match(/\d{4}/)?.[0] ?? "" : ""
+            this.getFirstValue(record.FAU) || this.getFirstValue(record.AU)
+        const dp = this.getFirstValue(record.DP)
+        const year = dp ? (dp.match(/\d{4}/)?.[0] ?? "") : ""
 
         // Use the family name part (before the comma, if present)
         let lastName: string | undefined
@@ -800,14 +793,14 @@ export class NBIBParser {
 
         // Use PMID as the candidate when no author is available so that the
         // prefixed form "pmid{number}" is preserved as a fallback base.
-        const pmid = this.getFirstValue(record["PMID"])
+        const pmid = this.getFirstValue(record.PMID)
         const candidate = pmid ? `pmid${pmid.trim()}` : String(index)
 
         return makeEntryKey(
             candidate,
             this.usedKeys,
             lastName,
-            year || undefined
+            year || undefined,
         )
     }
 
@@ -847,7 +840,7 @@ export class NBIBParser {
      */
     private setField(
         fieldKey: string,
-        text: string
+        text: string,
     ): NodeArray | NodeArray[] | string | undefined {
         const fieldDef = BibFieldTypes[fieldKey]
         const fieldType = fieldDef?.type
@@ -865,7 +858,7 @@ export class NBIBParser {
                 // Array options (e.g. bookpagination, type): plain string match
                 const lower = text.toLowerCase().trim()
                 const matched = options.find(
-                    (k: string) => k.toLowerCase() === lower
+                    (k: string) => k.toLowerCase() === lower,
                 )
                 return matched // undefined if no match
             } else if (options) {

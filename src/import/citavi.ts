@@ -18,13 +18,13 @@
 
 import {
     BibTypes,
-    NodeArray,
-    TextNodeObject,
-    EntryObject,
-    NameDictObject,
-    RangeArray,
+    type EntryObject,
+    type NameDictObject,
+    type NodeArray,
+    type RangeArray,
+    type TextNodeObject,
 } from "../const"
-import { makeEntryKey, lookupLangid } from "./tools"
+import { lookupLangid, makeEntryKey } from "./tools"
 
 // ─── Citavi reference type → internal BibType mapping ───────────────────────
 
@@ -971,7 +971,7 @@ export class CitaviParser {
 
     private convertReference(
         ref: CitaviReference,
-        index: number
+        index: number,
     ): EntryObject | false {
         const entryId = ref.Id || String(index)
 
@@ -1024,7 +1024,7 @@ export class CitaviParser {
         // ── Access date ─────────────────────────────────────────────────────
         if (ref.AccessDate) {
             const iso = ref.AccessDate.split("T")[0]
-            if (iso) fields["urldate"] = iso
+            if (iso) fields.urldate = iso
         }
 
         // ── Publisher / Place ───────────────────────────────────────────────
@@ -1040,7 +1040,7 @@ export class CitaviParser {
         if (ref.PageRange) {
             const parsed = this.parsePageRange(ref.PageRange)
             if (parsed) {
-                fields["pages"] = parsed
+                fields.pages = parsed
             } else {
                 this.warnings.push({
                     type: "unparsed_page_range",
@@ -1053,7 +1053,7 @@ export class CitaviParser {
 
         // ── Page total / number of pages ────────────────────────────────────
         if (ref.PageCount) {
-            fields["pagetotal"] = this.convertRichText(ref.PageCount)
+            fields.pagetotal = this.convertRichText(ref.PageCount)
         }
 
         // ── Identifiers ─────────────────────────────────────────────────────
@@ -1062,7 +1062,7 @@ export class CitaviParser {
         // ── Online address / URL ─────────────────────────────────────────────
         // OnlineAddress is a dedicated top-level field (shown in table view)
         if (ref.OnlineAddress) {
-            fields["url"] = ref.OnlineAddress.trim()
+            fields.url = ref.OnlineAddress.trim()
         } else {
             // Fall back to scanning the Locations array
             this.processLocations(ref, fields)
@@ -1070,7 +1070,7 @@ export class CitaviParser {
 
         // ── Abstract ────────────────────────────────────────────────────────
         if (ref.Abstract) {
-            fields["abstract"] = this.convertRichText(ref.Abstract)
+            fields.abstract = this.convertRichText(ref.Abstract)
         }
 
         // ── Keywords ────────────────────────────────────────────────────────
@@ -1107,9 +1107,9 @@ export class CitaviParser {
     private processTitle(
         ref: CitaviReference,
         fields: Record<string, unknown>,
-        refType: string,
+        _refType: string,
         fo: FieldOverride,
-        entryId: string
+        entryId: string,
     ) {
         // Older Citavi JSON exports use "Title1"; newer use "Title"
         const rawTitle = ref.Title || ref.Title1
@@ -1137,12 +1137,12 @@ export class CitaviParser {
             }
             // fo_subtitle === null → discard subtitle
         }
-        fields["title"] = this.convertRichText(mainTitle)
+        fields.title = this.convertRichText(mainTitle)
 
         // Short title — Citavi prepends "Author Year – " which we strip
         if (ref.ShortTitle) {
             const cleaned = this.cleanShortTitle(ref.ShortTitle)
-            if (cleaned) fields["shorttitle"] = this.convertRichText(cleaned)
+            if (cleaned) fields.shorttitle = this.convertRichText(cleaned)
         }
 
         // TitleSupplement
@@ -1151,7 +1151,7 @@ export class CitaviParser {
             const suppTarget = fo.TitleSupplementField
             if (suppTarget === undefined) {
                 // Default: titleaddon
-                fields["titleaddon"] = this.convertRichText(supp)
+                fields.titleaddon = this.convertRichText(supp)
             } else if (suppTarget !== null) {
                 fields[suppTarget] = this.convertRichText(supp)
             }
@@ -1161,12 +1161,12 @@ export class CitaviParser {
     private processNames(
         ref: CitaviReference,
         fields: Record<string, unknown>,
-        ro: RoleOverride
+        ro: RoleOverride,
     ) {
         // Helper: get role for a slot, falling back to a default
         const role = (
             slot: keyof RoleOverride,
-            defaultRole: string | null
+            defaultRole: string | null,
         ): string | null => {
             if (slot in ro) {
                 return ro[slot] !== null && ro[slot] !== undefined
@@ -1185,7 +1185,7 @@ export class CitaviParser {
             this.addToNameField(
                 fields,
                 authorsRole,
-                this.convertPersonList(ref.Authors)
+                this.convertPersonList(ref.Authors),
             )
         }
 
@@ -1193,7 +1193,7 @@ export class CitaviParser {
             this.addToNameField(
                 fields,
                 editorsRole,
-                this.convertPersonList(ref.Editors)
+                this.convertPersonList(ref.Editors),
             )
         }
 
@@ -1201,7 +1201,7 @@ export class CitaviParser {
             this.addToNameField(
                 fields,
                 collaboRole,
-                this.convertPersonList(ref.Collaborators)
+                this.convertPersonList(ref.Collaborators),
             )
         }
 
@@ -1210,7 +1210,7 @@ export class CitaviParser {
             this.addToNameField(
                 fields,
                 orgRole,
-                this.convertPersonList(ref.Organizations, true)
+                this.convertPersonList(ref.Organizations, true),
             )
         }
 
@@ -1219,7 +1219,7 @@ export class CitaviParser {
             this.addToNameField(
                 fields,
                 "translator",
-                this.convertPersonList(ref.Translators)
+                this.convertPersonList(ref.Translators),
             )
         }
     }
@@ -1228,13 +1228,13 @@ export class CitaviParser {
     private addToNameField(
         fields: Record<string, unknown>,
         fieldName: string,
-        names: NameDictObject[]
+        names: NameDictObject[],
     ) {
         if (names.length === 0) return
         if (fields[fieldName]) {
             // Merge into existing list
             fields[fieldName] = (fields[fieldName] as NameDictObject[]).concat(
-                names
+                names,
             )
         } else {
             fields[fieldName] = names
@@ -1245,7 +1245,7 @@ export class CitaviParser {
         ref: CitaviReference,
         fields: Record<string, unknown>,
         refType: string,
-        entryId: string
+        entryId: string,
     ) {
         // For most types:
         //   Date  = primary date (release, publication, …)
@@ -1268,9 +1268,9 @@ export class CitaviParser {
         if (primaryRaw) {
             const iso = this.parseISODate(primaryRaw)
             if (iso) {
-                fields["date"] = iso
+                fields.date = iso
             } else if (/^\d{4}$/.test(primaryRaw.trim())) {
-                fields["date"] = primaryRaw.trim()
+                fields.date = primaryRaw.trim()
             } else if (yearFallback && /^\d{4}$/.test(yearFallback.trim())) {
                 this.warnings.push({
                     type: "unparsed_date",
@@ -1278,7 +1278,7 @@ export class CitaviParser {
                     value: primaryRaw,
                     entry: entryId,
                 })
-                fields["date"] = yearFallback.trim()
+                fields.date = yearFallback.trim()
             } else {
                 this.warnings.push({
                     type: "unparsed_date",
@@ -1288,7 +1288,7 @@ export class CitaviParser {
                 })
             }
         } else if (yearFallback && /^\d{4}$/.test(yearFallback.trim())) {
-            fields["date"] = yearFallback.trim()
+            fields.date = yearFallback.trim()
         }
 
         // Secondary date handling
@@ -1296,7 +1296,7 @@ export class CitaviParser {
             // For StatuteOrRegulation, Date2 = Revised → origdate
             if (refType === "StatuteOrRegulation") {
                 const iso = this.parseISODate(ref.Date2)
-                if (iso) fields["origdate"] = iso
+                if (iso) fields.origdate = iso
             }
             // For JournalArticle, Date2 = "Online since" — we can store as note or ignore
             // (no standard biblatex field for this, omit silently)
@@ -1305,28 +1305,28 @@ export class CitaviParser {
 
     private processPublisher(
         ref: CitaviReference,
-        fields: Record<string, unknown>
+        fields: Record<string, unknown>,
     ) {
         // Collect publisher names from Publishers array
         if (ref.Publishers && ref.Publishers.length > 0) {
             const names = ref.Publishers.map((p) => p.Name || "").filter(
-                Boolean
+                Boolean,
             )
             if (names.length > 0) {
-                fields["publisher"] = [this.convertRichText(names.join(" / "))]
+                fields.publisher = [this.convertRichText(names.join(" / "))]
             }
             // Some Publisher objects also carry a Place
             const places = ref.Publishers.map((p) => p.Place || "").filter(
-                Boolean
+                Boolean,
             )
             if (places.length > 0 && !ref.PlaceOfPublication) {
-                fields["location"] = [this.convertRichText(places.join(" / "))]
+                fields.location = [this.convertRichText(places.join(" / "))]
             }
         }
 
         // Explicit PlaceOfPublication always wins over Places from Publishers
         if (ref.PlaceOfPublication) {
-            fields["location"] = [this.convertRichText(ref.PlaceOfPublication)]
+            fields.location = [this.convertRichText(ref.PlaceOfPublication)]
         }
 
         // For Thesis, Organizations = Academic institution → institution field
@@ -1336,18 +1336,18 @@ export class CitaviParser {
 
     private processPeriodical(
         ref: CitaviReference,
-        fields: Record<string, unknown>
+        fields: Record<string, unknown>,
     ) {
         if (!ref.Periodical) return
         const name = ref.Periodical.Name
         if (name) {
-            fields["journaltitle"] = this.convertRichText(name)
+            fields.journaltitle = this.convertRichText(name)
         }
         const abbr =
             ref.Periodical.StandardAbbreviation ||
             ref.Periodical.UserAbbreviation1
         if (abbr) {
-            fields["shortjournal"] = this.convertRichText(abbr)
+            fields.shortjournal = this.convertRichText(abbr)
         }
     }
 
@@ -1355,7 +1355,7 @@ export class CitaviParser {
         ref: CitaviReference,
         fields: Record<string, unknown>,
         _refType: string,
-        fo: FieldOverride
+        fo: FieldOverride,
     ) {
         // Volume
         const volTarget = fo.Volume ?? "volume"
@@ -1365,14 +1365,14 @@ export class CitaviParser {
 
         // Issue (the Citavi `Issue` field — not the same as `Number`)
         if (ref.Issue) {
-            fields["issue"] = this.convertRichText(ref.Issue)
+            fields.issue = this.convertRichText(ref.Issue)
         }
 
         // Number (meaning varies per type; default is "number")
         const numTarget = fo.Number ?? "number"
         if (ref.Number && numTarget) {
             // Only set if not already set by Issue for journalArticle
-            if (numTarget === "issue" && fields["issue"]) {
+            if (numTarget === "issue" && fields.issue) {
                 // Already populated from the dedicated Issue field; skip
             } else {
                 fields[numTarget] = this.convertRichText(ref.Number)
@@ -1387,7 +1387,7 @@ export class CitaviParser {
 
         // Edition
         if (ref.Edition) {
-            fields["edition"] = this.convertRichText(ref.Edition)
+            fields.edition = this.convertRichText(ref.Edition)
         }
 
         // SeriesTitle (meaning varies per type; default is "series")
@@ -1400,7 +1400,7 @@ export class CitaviParser {
     private processIdentifiers(
         ref: CitaviReference,
         fields: Record<string, unknown>,
-        entryId: string
+        entryId: string,
     ) {
         if (ref.Doi) {
             const doi = ref.Doi.trim()
@@ -1414,25 +1414,25 @@ export class CitaviParser {
                 })
             }
             // doi is f_verbatim → store as a plain string, not a NodeArray
-            fields["doi"] = doi
+            fields.doi = doi
         }
         if (ref.Isbn) {
-            fields["isbn"] = this.convertRichText(ref.Isbn)
+            fields.isbn = this.convertRichText(ref.Isbn)
         }
         if (ref.Issn) {
-            fields["issn"] = this.convertRichText(ref.Issn)
+            fields.issn = this.convertRichText(ref.Issn)
         }
     }
 
     private processLocations(
         ref: CitaviReference,
-        fields: Record<string, unknown>
+        fields: Record<string, unknown>,
     ) {
         if (!ref.Locations || ref.Locations.length === 0) return
         for (const loc of ref.Locations) {
             const uri = loc.Address?.UriString || loc.Address?.OriginalString
             if (uri && /^https?:\/\//i.test(uri)) {
-                fields["url"] = uri
+                fields.url = uri
                 return
             }
         }
@@ -1440,19 +1440,19 @@ export class CitaviParser {
 
     private processKeywords(
         ref: CitaviReference,
-        fields: Record<string, unknown>
+        fields: Record<string, unknown>,
     ) {
         if (!ref.Keywords || ref.Keywords.length === 0) return
         const kws = ref.Keywords.map((k) => k.Name || "").filter(Boolean)
         if (kws.length > 0) {
-            fields["keywords"] = kws
+            fields.keywords = kws
         }
     }
 
     private processLanguage(
         ref: CitaviReference,
         fields: Record<string, unknown>,
-        entryId: string
+        entryId: string,
     ) {
         // Prefer LanguageCode (BCP-47) over Language (full name string)
         const code = ref.LanguageCode || ref.Language
@@ -1470,7 +1470,7 @@ export class CitaviParser {
             // recognised by BibFieldTypes.langid (e.g. "german", "usenglish").
             const langidKey = lookupLangid(trimmed)
             if (langidKey) {
-                fields["langid"] = langidKey
+                fields.langid = langidKey
             } else {
                 this.warnings.push({
                     type: "unknown_language",
@@ -1486,7 +1486,7 @@ export class CitaviParser {
         ref: CitaviReference,
         fields: Record<string, unknown>,
         fo: FieldOverride,
-        entryId: string
+        entryId: string,
     ) {
         const slots: Array<[keyof CitaviReference, keyof FieldOverride]> = [
             ["SpecificField1", "SpecificField1"],
@@ -1523,7 +1523,7 @@ export class CitaviParser {
                     const firstNode = existing[0] as TextNodeObject | undefined
                     const existingText = firstNode?.text ?? ""
                     fields[target] = this.convertRichText(
-                        `${existingText}; ${value}`
+                        `${existingText}; ${value}`,
                     )
                 }
                 // For other fields, don't overwrite
@@ -1533,8 +1533,8 @@ export class CitaviParser {
         }
 
         // StorageMedium → howpublished for types that don't override it
-        if (ref.StorageMedium && !fields["howpublished"]) {
-            fields["howpublished"] = this.convertRichText(ref.StorageMedium)
+        if (ref.StorageMedium && !fields.howpublished) {
+            fields.howpublished = this.convertRichText(ref.StorageMedium)
         }
     }
 
@@ -1544,14 +1544,14 @@ export class CitaviParser {
      */
     private processParentReference(
         parent: CitaviReference,
-        fields: Record<string, unknown>
+        fields: Record<string, unknown>,
     ) {
         const parentType = parent.ReferenceType || "Unknown"
         const parentTitle = parent.Title || parent.Title1
         const parentRoleOverrides = TypeRoleOverrides[parentType] || {}
 
         // ── Parent title → booktitle ─────────────────────────────────────────
-        if (parentTitle && !fields["booktitle"]) {
+        if (parentTitle && !fields.booktitle) {
             let pt = parentTitle
             if (parent.Subtitle) {
                 // Check if parent type merges subtitle into title
@@ -1560,7 +1560,7 @@ export class CitaviParser {
                     pt = `${pt}: ${parent.Subtitle}`
                 }
             }
-            fields["booktitle"] = this.convertRichText(pt)
+            fields.booktitle = this.convertRichText(pt)
         }
 
         // ── Parent editors → editor of host volume ───────────────────────────
@@ -1568,10 +1568,10 @@ export class CitaviParser {
         if (
             parent.Editors &&
             parent.Editors.length > 0 &&
-            !fields["editor"] &&
+            !fields.editor &&
             parentEditorsRole === "editor"
         ) {
-            fields["editor"] = this.convertPersonList(parent.Editors)
+            fields.editor = this.convertPersonList(parent.Editors)
         }
 
         // ── Parent authors → bookauthor (e.g. LegalCommentary parent) ────────
@@ -1579,25 +1579,23 @@ export class CitaviParser {
         if (
             parent.Authors &&
             parent.Authors.length > 0 &&
-            !fields["bookauthor"] &&
+            !fields.bookauthor &&
             parentAuthorsRole === "author"
         ) {
             // Only set bookauthor if child already has its own author
-            if (fields["author"]) {
-                fields["bookauthor"] = this.convertPersonList(parent.Authors)
+            if (fields.author) {
+                fields.bookauthor = this.convertPersonList(parent.Authors)
             }
         }
 
         // ── Parent periodical → journaltitle ─────────────────────────────────
-        if (parent.Periodical?.Name && !fields["journaltitle"]) {
-            fields["journaltitle"] = this.convertRichText(
-                parent.Periodical.Name
-            )
+        if (parent.Periodical?.Name && !fields.journaltitle) {
+            fields.journaltitle = this.convertRichText(parent.Periodical.Name)
             const abbr =
                 parent.Periodical.StandardAbbreviation ||
                 parent.Periodical.UserAbbreviation1
-            if (abbr && !fields["shortjournal"]) {
-                fields["shortjournal"] = this.convertRichText(abbr)
+            if (abbr && !fields.shortjournal) {
+                fields.shortjournal = this.convertRichText(abbr)
             }
         }
 
@@ -1605,41 +1603,35 @@ export class CitaviParser {
         if (
             parent.Publishers &&
             parent.Publishers.length > 0 &&
-            !fields["publisher"]
+            !fields.publisher
         ) {
             const names = parent.Publishers.map((p) => p.Name || "").filter(
-                Boolean
+                Boolean,
             )
             if (names.length) {
-                fields["publisher"] = [this.convertRichText(names.join(" / "))]
+                fields.publisher = [this.convertRichText(names.join(" / "))]
             }
         }
-        if (parent.PlaceOfPublication && !fields["location"]) {
-            fields["location"] = [
-                this.convertRichText(parent.PlaceOfPublication),
-            ]
+        if (parent.PlaceOfPublication && !fields.location) {
+            fields.location = [this.convertRichText(parent.PlaceOfPublication)]
         }
 
         // ── Parent ISBN ───────────────────────────────────────────────────────
-        if (parent.Isbn && !fields["isbn"]) {
-            fields["isbn"] = this.convertRichText(parent.Isbn)
+        if (parent.Isbn && !fields.isbn) {
+            fields.isbn = this.convertRichText(parent.Isbn)
         }
 
         // ── Parent volume / number / issue propagation ────────────────────────
         const parentFO = TypeFieldOverrides[parentType] || {}
-        if (parent.Volume && !fields["volume"]) {
-            fields["volume"] = this.convertRichText(parent.Volume)
+        if (parent.Volume && !fields.volume) {
+            fields.volume = this.convertRichText(parent.Volume)
         }
         const parentNumTarget = parentFO.Number ?? "number"
-        if (
-            parent.Number &&
-            !fields["number"] &&
-            parentNumTarget === "number"
-        ) {
-            fields["number"] = this.convertRichText(parent.Number)
+        if (parent.Number && !fields.number && parentNumTarget === "number") {
+            fields.number = this.convertRichText(parent.Number)
         }
-        if (parent.Issue && !fields["issue"]) {
-            fields["issue"] = this.convertRichText(parent.Issue)
+        if (parent.Issue && !fields.issue) {
+            fields.issue = this.convertRichText(parent.Issue)
         }
     }
 
@@ -1647,7 +1639,7 @@ export class CitaviParser {
 
     private convertPersonList(
         persons: CitaviPerson[],
-        forceInstitution = false
+        forceInstitution = false,
     ): NameDictObject[] {
         return persons
             .map((p) => this.convertPerson(p, forceInstitution))
@@ -1656,7 +1648,7 @@ export class CitaviParser {
 
     private convertPerson(
         person: CitaviPerson,
-        forceInstitution = false
+        forceInstitution = false,
     ): NameDictObject | null {
         if (!person) return null
 
@@ -1770,7 +1762,7 @@ export class CitaviParser {
     private buildEntryKey(
         ref: CitaviReference,
         index: number,
-        entryId: string
+        entryId: string,
     ): string {
         // 1. Prefer the BibTeX key that Citavi already computed — but still
         //    run it through makeEntryKey to guarantee a letter prefix and
@@ -1781,7 +1773,7 @@ export class CitaviParser {
 
         // 2. Derive from first author/editor/organization surname + year.
         const yearRaw = ref.YearResolved || ref.Year || ""
-        const year = yearRaw ? String(yearRaw).match(/\d{4}/)?.[0] ?? "" : ""
+        const year = yearRaw ? (String(yearRaw).match(/\d{4}/)?.[0] ?? "") : ""
         const firstPerson =
             ref.Authors?.[0] || ref.Editors?.[0] || ref.Organizations?.[0]
         let lastName: string | undefined

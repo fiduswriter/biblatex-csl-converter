@@ -1,4 +1,4 @@
-import type { EntryObject, NodeObject, GroupObject } from "../const"
+import type { EntryObject, GroupObject, NodeObject } from "../const"
 
 type StringStartTuplet = [string, () => void]
 
@@ -55,7 +55,7 @@ export class GroupParser {
         //let searchPos = 0
         this.pos = 0
         this.stringStarts.find((stringStart) => {
-            let pos = input.indexOf(stringStart[0], this.pos)
+            const pos = input.indexOf(stringStart[0], this.pos)
             if (pos < 0) {
                 return false
             } else {
@@ -125,25 +125,25 @@ export class GroupParser {
             .replace(/\\;/g, "\u2004")
             .split(";")
         lines = lines.map((line) => line.replace(/\u2005/g, ";"))
-        let levels: {
+        const levels: {
             [key: number]: GroupObject
         } = { "0": { name: "", references: [], groups: [] } }
-        for (let line of lines) {
+        for (const line of lines) {
             if (line === "") {
                 continue
             }
-            let match = line.match(/^([0-9])\s+([^:]+):(.*)/)
+            const match = line.match(/^([0-9])\s+([^:]+):(.*)/)
             if (!match) {
                 return
             }
-            let level = parseInt(match[1])
-            let type = match[2]
-            let referenceMatch = match[3]
+            const level = parseInt(match[1], 10)
+            const type = match[2]
+            const referenceMatch = match[3]
             const references = referenceMatch
                 ? referenceMatch.split("\u2004").filter((key) => key)
                 : []
-            let name = references.shift()!
-            let intersection = references.shift() // 0 = independent, 1 = intersection, 2 = union
+            const name = references.shift()!
+            const intersection = references.shift() // 0 = independent, 1 = intersection, 2 = union
 
             // ignore root level, has no refs anyway in the comment
             if (level === 0) {
@@ -156,7 +156,7 @@ export class GroupParser {
             levels[level - 1].groups.push(levels[level])
 
             // treat all groups as explicit
-            if (type != "ExplicitGroup") {
+            if (type !== "ExplicitGroup") {
                 this.warnings.push({
                     type: "unsupported_jabref_group",
                     group_type: type,
@@ -170,7 +170,7 @@ export class GroupParser {
                 case "1":
                     // intersect with parent. Hardly ever used.
                     levels[level].references = levels[level].references.filter(
-                        (key) => levels[level - 1].references.includes(key)
+                        (key) => levels[level - 1].references.includes(key),
                     )
                     break
                 case "2":
@@ -204,21 +204,17 @@ export class GroupParser {
 
         // this assumes the JabRef groups always come after the references
         this.entries.forEach((bib) => {
-            if (
-                !bib.unknown_fields ||
-                !bib.unknown_fields.groups ||
-                !bib.entry_key
-            ) {
+            if (!bib.unknown_fields?.groups || !bib.entry_key) {
                 return
             }
             // this assumes ref.unknown_fields.groups is a single text chunk
-            let groups = bib.unknown_fields.groups
+            const groups = bib.unknown_fields.groups
                 .reduce((string: string, node: NodeObject) => {
                     if ("text" in node) {
                         const text: string = node.text,
                             // undo undescores to marks -- groups content is in verbatim-ish mode
                             sub = (node.marks || []).find(
-                                (mark) => mark.type === "sub"
+                                (mark) => mark.type === "sub",
                             )
                                 ? "_"
                                 : ""
@@ -236,7 +232,7 @@ export class GroupParser {
             }
 
             groups.split(/\s*,\s*/).forEach((groupName) => {
-                let group = this.find(groupName)
+                const group = this.find(groupName)
                 if (group) {
                     group.references.push(bib.entry_key)
                 }
@@ -244,7 +240,7 @@ export class GroupParser {
         })
     }
 
-    find(name: string, groups: GroupObject[] | void): GroupObject | false {
+    find(name: string, groups: GroupObject[] | undefined): GroupObject | false {
         groups = groups || this.groups
         if (!groups) {
             return false
@@ -252,7 +248,7 @@ export class GroupParser {
 
         for (let i = 0; i < groups.length; i++) {
             if (groups[i].name === name) return groups[i]
-            let group = this.find(name, groups[i].groups)
+            const group = this.find(name, groups[i].groups)
             if (group) return group
         }
         return false

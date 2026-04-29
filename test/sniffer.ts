@@ -1,8 +1,8 @@
-import * as converter from "../tmp/bundle.test.js"
+import fs from "node:fs"
+import path from "node:path"
+import { fileURLToPath } from "node:url"
 import { expect } from "chai"
-import fs from "fs"
-import path from "path"
-import { fileURLToPath } from "url"
+import * as converter from "../tmp/bundle.test.js"
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const fixtures = path.join(__dirname, "fixtures/import")
@@ -21,13 +21,13 @@ describe("sniffFormat", () => {
 
         it("detects @book", () => {
             expect(converter.sniffFormat("@book{key, title={T}}")).to.equal(
-                "biblatex"
+                "biblatex",
             )
         })
 
         it("detects an entry with parenthesis delimiter", () => {
             expect(converter.sniffFormat("@article(key, title={T})")).to.equal(
-                "biblatex"
+                "biblatex",
             )
         })
 
@@ -44,8 +44,8 @@ describe("sniffFormat", () => {
         it("detects a file that consists only of @string directives", () => {
             expect(
                 converter.sniffFormat(
-                    "@string{journalA = {Journal of Stuff}}\n@string{pub = {Publisher}}"
-                )
+                    "@string{journalA = {Journal of Stuff}}\n@string{pub = {Publisher}}",
+                ),
             ).to.equal("biblatex")
         })
 
@@ -53,7 +53,7 @@ describe("sniffFormat", () => {
             const file = path.join(
                 fixtures,
                 "bib",
-                "Better BibLaTeX.001.biblatex.bib"
+                "Better BibLaTeX.001.biblatex.bib",
             )
             const input = fs.readFileSync(file, "utf8")
             expect(converter.sniffFormat(input)).to.equal("biblatex")
@@ -304,7 +304,7 @@ FAU - Smith, John A`
             const file = path.join(
                 fixtures,
                 "odt-citations",
-                "libreoffice-native.xml"
+                "libreoffice-native.xml",
             )
             const input = fs.readFileSync(file, "utf8")
             expect(converter.sniffFormat(input)).to.equal("odt_citations")
@@ -314,7 +314,7 @@ FAU - Smith, John A`
             const file = path.join(
                 fixtures,
                 "odt-citations",
-                "jabref-endnote.xml"
+                "jabref-endnote.xml",
             )
             const input = fs.readFileSync(file, "utf8")
             expect(converter.sniffFormat(input)).to.equal("odt_citations")
@@ -343,7 +343,7 @@ FAU - Smith, John A`
             const file = path.join(
                 fixtures,
                 "docx-citations",
-                "word-native.xml"
+                "word-native.xml",
             )
             const input = fs.readFileSync(file, "utf8")
             expect(converter.sniffFormat(input)).to.equal("docx_citations")
@@ -359,7 +359,7 @@ FAU - Smith, John A`
             const file = path.join(
                 fixtures,
                 "docx-citations",
-                "mendeley-v3.xml"
+                "mendeley-v3.xml",
             )
             const input = fs.readFileSync(file, "utf8")
             expect(converter.sniffFormat(input)).to.equal("docx_citations")
@@ -378,7 +378,9 @@ FAU - Smith, John A`
 
         it("returns null for random text", () => {
             expect(
-                converter.sniffFormat("This is just a paragraph of plain text.")
+                converter.sniffFormat(
+                    "This is just a paragraph of plain text.",
+                ),
             ).to.equal(null)
         })
 

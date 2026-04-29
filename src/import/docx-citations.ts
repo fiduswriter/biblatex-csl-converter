@@ -61,11 +61,11 @@
  * field, so no external Citavi project file is required.
  */
 
-import { EntryObject } from "../const"
-import { CSLParser, CSLEntry } from "./csl"
-import { CitaviParser, CitaviInput } from "./citavi"
-import { EndNoteParser, EndNoteRecord } from "./endnote"
+import type { EntryObject } from "../const"
+import { type CitaviInput, CitaviParser } from "./citavi"
+import { type CSLEntry, CSLParser } from "./csl"
 import { DocxNativeParser } from "./docx-native"
+import { EndNoteParser, type EndNoteRecord } from "./endnote"
 import { extractJsonObject } from "./tools"
 
 // ---------------------------------------------------------------------------
@@ -291,7 +291,7 @@ export class DocxCitationsParser {
             warnings: [],
             seenKeys: new Set<string>(),
             cslRawIdToEntryKey: new Map<string, string>(),
-        }
+        },
     ): CitationResult {
         const { entries, errors, warnings } = acc
         const tagMatch = sdtXml.match(/<w:tag\s+w:val="([^"]*)"/)
@@ -323,7 +323,7 @@ export class DocxCitationsParser {
                 DocxCitationsParser.decodeBase64Static(b64),
                 "mendeley_v3",
                 acc,
-                retrieveMetadata ? metadata : undefined
+                retrieveMetadata ? metadata : undefined,
             )
         } else if (format === "citavi") {
             // Word may split long field codes across multiple <w:instrText> runs.
@@ -333,7 +333,7 @@ export class DocxCitationsParser {
             // were used.
             let b64: string | null = null
             const sdtContentMatch = sdtXml.match(
-                /<w:sdtContent\b[^>]*>([\s\S]*?)<\/w:sdtContent>/
+                /<w:sdtContent\b[^>]*>([\s\S]*?)<\/w:sdtContent>/,
             )
             if (sdtContentMatch) {
                 const sdtContent = sdtContentMatch[1]
@@ -359,7 +359,7 @@ export class DocxCitationsParser {
                 DocxCitationsParser.extractCitaviData(
                     b64,
                     acc,
-                    retrieveMetadata ? metadata : undefined
+                    retrieveMetadata ? metadata : undefined,
                 )
             } else {
                 warnings.push({
@@ -437,7 +437,7 @@ export class DocxCitationsParser {
             warnings: [],
             seenKeys: new Set<string>(),
             cslRawIdToEntryKey: new Map<string, string>(),
-        }
+        },
     ): CitationResult {
         const { entries, errors, warnings, seenKeys } = acc
         const upper = instrText.trim().toUpperCase()
@@ -483,7 +483,7 @@ export class DocxCitationsParser {
                         jsonStr,
                         format,
                         acc,
-                        retrieveMetadata ? metadata : undefined
+                        retrieveMetadata ? metadata : undefined,
                     )
                 }
             }
@@ -492,17 +492,17 @@ export class DocxCitationsParser {
                 instrText,
                 fldData,
                 acc,
-                retrieveMetadata ? metadata : undefined
+                retrieveMetadata ? metadata : undefined,
             )
         } else if (format === "citavi") {
             const b64Match = instrText.match(
-                /ADDIN CitaviPlaceholder\{?([A-Za-z0-9+/=\s]+)\}?/i
+                /ADDIN CitaviPlaceholder\{?([A-Za-z0-9+/=\s]+)\}?/i,
             )
             if (b64Match) {
                 DocxCitationsParser.extractCitaviData(
                     b64Match[1].replace(/\s/g, ""),
                     acc,
-                    retrieveMetadata ? metadata : undefined
+                    retrieveMetadata ? metadata : undefined,
                 )
             }
         } else if (format === "word_native") {
@@ -518,7 +518,7 @@ export class DocxCitationsParser {
                 DocxCitationsParser.extractWordNativeData(
                     instrText,
                     options.sourcesXml,
-                    acc
+                    acc,
                 )
             }
         }
@@ -582,7 +582,7 @@ export class DocxCitationsParser {
         jsonStr: string,
         source: string,
         acc: CitationAccumulator,
-        metadata?: CitationItemMetadata[]
+        metadata?: CitationItemMetadata[],
     ): void {
         const { entries, errors, warnings, seenKeys } = acc
         let citation: {
@@ -692,7 +692,7 @@ export class DocxCitationsParser {
         instrText: string,
         fldData: string | undefined,
         acc: CitationAccumulator,
-        metadata?: CitationItemMetadata[]
+        metadata?: CitationItemMetadata[],
     ): void {
         const { warnings } = acc
         let xmlPayload = ""
@@ -711,7 +711,7 @@ export class DocxCitationsParser {
             const idx = instrText.toUpperCase().indexOf("ADDIN EN.CITE")
             if (idx === -1) return
             xmlPayload = DocxCitationsParser.unescapeXmlEntitiesStatic(
-                instrText.slice(idx + "ADDIN EN.CITE".length).trim()
+                instrText.slice(idx + "ADDIN EN.CITE".length).trim(),
             )
         }
 
@@ -736,7 +736,7 @@ export class DocxCitationsParser {
     private static extractCitaviData(
         b64: string,
         acc: CitationAccumulator,
-        metadata?: CitationItemMetadata[]
+        metadata?: CitationItemMetadata[],
     ): void {
         const { entries, errors, warnings, seenKeys } = acc
         let payload: CitaviInput
@@ -758,8 +758,8 @@ export class DocxCitationsParser {
         const hasEmbeddedReferences =
             !Array.isArray(payload) &&
             Array.isArray(typedPayload.Entries) &&
-            typedPayload.Entries!.some(
-                (e) => e.Reference !== null && e.Reference !== undefined
+            typedPayload.Entries?.some(
+                (e) => e.Reference !== null && e.Reference !== undefined,
             )
 
         if (!hasEmbeddedReferences) {
@@ -853,7 +853,7 @@ export class DocxCitationsParser {
     private static extractWordNativeData(
         instrText: string,
         sourcesXml: string,
-        acc: CitationAccumulator
+        acc: CitationAccumulator,
     ): void {
         const { entries, errors, warnings, seenKeys } = acc
         const m = /^CITATION\s+(\S+)/i.exec(instrText.trim())
@@ -866,7 +866,7 @@ export class DocxCitationsParser {
             // duplicate them across multiple CITATION fields in the same document.
             const citedKeys = new Set<string>([citationKey])
             const importedKeys = new Set<string>(
-                entries.map((e) => e.entry_key)
+                entries.map((e) => e.entry_key),
             )
             const nativeParser = new DocxNativeParser(sourcesXml)
             const result = nativeParser.parse(citedKeys, importedKeys)
@@ -883,7 +883,7 @@ export class DocxCitationsParser {
     private static parseEndNoteXml(
         xml: string,
         acc: CitationAccumulator,
-        metadata?: CitationItemMetadata[]
+        metadata?: CitationItemMetadata[],
     ): void {
         const { entries, errors, warnings, seenKeys } = acc
         const records: EndNoteRecord[] = []
@@ -907,7 +907,7 @@ export class DocxCitationsParser {
             const recordMatch = /<record>([\s\S]*?)<\/record>/.exec(citeXml)
             if (recordMatch) {
                 const record = DocxCitationsParser.parseEndNoteRecordXml(
-                    recordMatch[0]
+                    recordMatch[0],
                 )
                 const key = String(record["rec-number"] ?? "")
                 if (key && !seenKeys.has(key)) {
@@ -918,7 +918,7 @@ export class DocxCitationsParser {
                 if (metadata && key) {
                     // AuthorYear="1" on the opening <Cite> tag means show author outside parens
                     const authorYear = /AuthorYear\s*=\s*["']?1["']?/i.test(
-                        citeAttrs
+                        citeAttrs,
                     )
 
                     // Only search for citation-level fields (Prefix, Suffix,
@@ -938,24 +938,24 @@ export class DocxCitationsParser {
                     const suffixMatch =
                         /<Suffix[^>]*>([\s\S]*?)<\/Suffix>/i.exec(citeHeader)
                     const pagesMatch = /<Pages[^>]*>([\s\S]*?)<\/Pages>/i.exec(
-                        citeHeader
+                        citeHeader,
                     )
 
                     citeFieldsList.push({
                         recNum: key,
                         prefix: prefixMatch
                             ? DocxCitationsParser.stripStyleTagsStatic(
-                                  prefixMatch[1]
+                                  prefixMatch[1],
                               )
                             : undefined,
                         suffix: suffixMatch
                             ? DocxCitationsParser.stripStyleTagsStatic(
-                                  suffixMatch[1]
+                                  suffixMatch[1],
                               )
                             : undefined,
                         pages: pagesMatch
                             ? DocxCitationsParser.stripStyleTagsStatic(
-                                  pagesMatch[1]
+                                  pagesMatch[1],
                               )
                             : undefined,
                         authorYear,
@@ -998,7 +998,7 @@ export class DocxCitationsParser {
         const record: EndNoteRecord = {}
 
         const refTypeMatch = recordXml.match(
-            /<ref-type(?:\s+name="([^"]*)")?[^>]*>(\d+)<\/ref-type>/
+            /<ref-type(?:\s+name="([^"]*)")?[^>]*>(\d+)<\/ref-type>/,
         )
         if (refTypeMatch) {
             record["ref-type"] = {
@@ -1008,7 +1008,7 @@ export class DocxCitationsParser {
         }
 
         const recNumMatch = recordXml.match(
-            /<rec-number[^>]*>([\s\S]*?)<\/rec-number>/
+            /<rec-number[^>]*>([\s\S]*?)<\/rec-number>/,
         )
         if (recNumMatch) {
             record["rec-number"] = recNumMatch[1].trim()
@@ -1027,7 +1027,7 @@ export class DocxCitationsParser {
                 "translated-title",
             ] as const) {
                 const m = t.match(
-                    new RegExp(`<${tag}[^>]*>([\\s\\S]*?)<\\/${tag}>`)
+                    new RegExp(`<${tag}[^>]*>([\\s\\S]*?)<\\/${tag}>`),
                 )
                 if (m)
                     titles[tag] = {
@@ -1038,16 +1038,16 @@ export class DocxCitationsParser {
         }
 
         const contribMatch = recordXml.match(
-            /<contributors>([\s\S]*?)<\/contributors>/
+            /<contributors>([\s\S]*?)<\/contributors>/,
         )
         if (contribMatch) {
             record.contributors = DocxCitationsParser.parseContributorsXml(
-                contribMatch[1]
+                contribMatch[1],
             )
         }
 
         const periodicalMatch = recordXml.match(
-            /<periodical>([\s\S]*?)<\/periodical>/
+            /<periodical>([\s\S]*?)<\/periodical>/,
         )
         if (periodicalMatch) {
             const p = periodicalMatch[1]
@@ -1059,7 +1059,7 @@ export class DocxCitationsParser {
                 "abbr-3",
             ] as const) {
                 const m = p.match(
-                    new RegExp(`<${tag}[^>]*>([\\s\\S]*?)<\\/${tag}>`)
+                    new RegExp(`<${tag}[^>]*>([\\s\\S]*?)<\\/${tag}>`),
                 )
                 if (m)
                     periodical[tag] = {
@@ -1089,7 +1089,7 @@ export class DocxCitationsParser {
         ]
         for (const [recordKey, xmlTag] of scalarFields) {
             const m = recordXml.match(
-                new RegExp(`<${xmlTag}[^>]*>([\\s\\S]*?)<\\/${xmlTag}>`)
+                new RegExp(`<${xmlTag}[^>]*>([\\s\\S]*?)<\\/${xmlTag}>`),
             )
             if (m) {
                 // eslint-disable-next-line @typescript-eslint/no-extra-semi
@@ -1100,12 +1100,12 @@ export class DocxCitationsParser {
         }
 
         const pubLocMatch = recordXml.match(
-            /<pub-location[^>]*>([\s\S]*?)<\/pub-location>/
+            /<pub-location[^>]*>([\s\S]*?)<\/pub-location>/,
         )
         if (pubLocMatch) {
             record["pub-location"] = {
                 "#text": DocxCitationsParser.stripStyleTagsStatic(
-                    pubLocMatch[1]
+                    pubLocMatch[1],
                 ),
             }
         }
@@ -1116,19 +1116,19 @@ export class DocxCitationsParser {
         }
 
         const keywordsMatch = recordXml.match(
-            /<keywords>([\s\S]*?)<\/keywords>/
+            /<keywords>([\s\S]*?)<\/keywords>/,
         )
         if (keywordsMatch) {
             const kwMatches = [
                 ...keywordsMatch[1].matchAll(
-                    /<keyword[^>]*>([\s\S]*?)<\/keyword>/g
+                    /<keyword[^>]*>([\s\S]*?)<\/keyword>/g,
                 ),
             ]
             if (kwMatches.length > 0) {
                 record.keywords = {
                     keyword: kwMatches.map((kw) => ({
                         "#text": DocxCitationsParser.stripStyleTagsStatic(
-                            kw[1]
+                            kw[1],
                         ),
                     })),
                 }
@@ -1147,7 +1147,7 @@ export class DocxCitationsParser {
      * Parse contributors XML.
      */
     private static parseContributorsXml(
-        xml: string
+        xml: string,
     ): Record<string, { author: Array<{ "#text": string }> }> {
         const result: Record<string, { author: Array<{ "#text": string }> }> =
             {}
@@ -1159,7 +1159,7 @@ export class DocxCitationsParser {
             "subsidiary-authors",
         ] as const) {
             const m = xml.match(
-                new RegExp(`<${group}[^>]*>([\\s\\S]*?)<\\/${group}>`)
+                new RegExp(`<${group}[^>]*>([\\s\\S]*?)<\\/${group}>`),
             )
             if (m) {
                 const authorMatches = [
@@ -1169,7 +1169,7 @@ export class DocxCitationsParser {
                     result[group] = {
                         author: authorMatches.map((author) => ({
                             "#text": DocxCitationsParser.stripStyleTagsStatic(
-                                author[1]
+                                author[1],
                             ),
                         })),
                     }
@@ -1224,7 +1224,7 @@ export class DocxCitationsParser {
             "image-urls",
         ] as const) {
             const m = xml.match(
-                new RegExp(`<${group}>([\\s\\S]*?)<\\/${group}>`)
+                new RegExp(`<${group}>([\\s\\S]*?)<\\/${group}>`),
             )
             if (!m) continue
             const urlMatches = [
@@ -1435,7 +1435,7 @@ export class DocxCitationsParser {
                         warnings: this.warnings,
                         seenKeys: this.seenKeys,
                         cslRawIdToEntryKey: this.cslRawIdToEntryKey,
-                    }
+                    },
                 )
             } else if (
                 stack.length > 0 &&
@@ -1467,7 +1467,7 @@ export class DocxCitationsParser {
         // at this point this.entries is still empty for the Word-native path so
         // there is nothing to pre-populate it with.
         const importedKeys = new Set<string>(
-            this.entries.map((e) => e.entry_key)
+            this.entries.map((e) => e.entry_key),
         )
         const nativeParser = new DocxNativeParser(xml)
         const result = nativeParser.parse(this.seenKeys, importedKeys)
@@ -1484,7 +1484,7 @@ export class DocxCitationsParser {
 
 export function parseDocxCitations(
     documentXml: string,
-    options: DocxCitationsParserOptions = {}
+    options: DocxCitationsParserOptions = {},
 ): DocxCitationsParseResult {
     return new DocxCitationsParser(documentXml, options).parse()
 }

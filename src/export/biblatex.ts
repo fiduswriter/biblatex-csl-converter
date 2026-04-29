@@ -1,5 +1,10 @@
+import {
+    BibFieldTypes,
+    BibTypes,
+    type NodeArray,
+    type NodeObject,
+} from "../const"
 import { TexSpecialChars } from "./const"
-import { BibTypes, BibFieldTypes, NodeArray, NodeObject } from "../const"
 
 /** Export a list of bibliography items to bibLateX and serve the file to the user as a ZIP-file.
  * @class BibLatexExporter
@@ -55,7 +60,7 @@ export class BibLatexExporter {
     constructor(
         bibDB: BibDB,
         pks: string[] | false = false,
-        config: ConfigObject = {}
+        config: ConfigObject = {},
     ) {
         this.bibDB = bibDB // The bibliography database to export from.
         if (pks) {
@@ -71,26 +76,26 @@ export class BibLatexExporter {
 
     parse(): string {
         this.pks.forEach((pk) => {
-            let bib = this.bibDB[pk as unknown as number]
-            let bibEntry: BibObject = {
-                type: BibTypes[bib["bib_type"]]["biblatex"],
-                key: bib["entry_key"].length ? bib["entry_key"] : "Undefined",
+            const bib = this.bibDB[pk as unknown as number]
+            const bibEntry: BibObject = {
+                type: BibTypes[bib.bib_type].biblatex,
+                key: bib.entry_key.length ? bib.entry_key : "Undefined",
             }
-            let fValues: Record<string, unknown> = {}
-            if (BibTypes[bib["bib_type"]]["biblatex-subtype"]) {
-                fValues["entrysubtype"] =
-                    BibTypes[bib["bib_type"]]["biblatex-subtype"]
+            const fValues: Record<string, unknown> = {}
+            if (BibTypes[bib.bib_type]["biblatex-subtype"]) {
+                fValues.entrysubtype =
+                    BibTypes[bib.bib_type]["biblatex-subtype"]
             }
             const fields = this.config.exportUnexpectedFields
                 ? { ...bib.fields, ...bib.unexpected_fields }
                 : bib.fields
-            for (let fKey in fields) {
+            for (const fKey in fields) {
                 if (!(fKey in BibFieldTypes)) {
                     continue
                 }
-                let fValue = fields[fKey]
-                let fType: string = BibFieldTypes[fKey]["type"]
-                let key: string = BibFieldTypes[fKey]["biblatex"]
+                const fValue = fields[fKey]
+                const fType: string = BibFieldTypes[fKey].type
+                const key: string = BibFieldTypes[fKey].biblatex
                 switch (fType) {
                     case "f_date":
                         fValues[key] = fValue // EDTF 1.0 level 0/1 compliant string.
@@ -121,7 +126,7 @@ export class BibLatexExporter {
                                 .map((key: string | NodeArray) => {
                                     return this._reformKey(key, fKey)
                                 })
-                                .join(" and ")
+                                .join(" and "),
                         )
                         break
                     case "l_literal":
@@ -136,7 +141,7 @@ export class BibLatexExporter {
                         break
                     case "l_tag":
                         fValues[key] = this._escapeTeX(
-                            (fValue as string[]).join(", ")
+                            (fValue as string[]).join(", "),
                         )
                         break
                     default:
@@ -153,12 +158,12 @@ export class BibLatexExporter {
 
     _reformKey(theValue: string | unknown, fKey: string): string {
         if (typeof theValue === "string") {
-            let fieldType = BibFieldTypes[fKey]
-            if (Array.isArray(fieldType["options"])) {
+            const fieldType = BibFieldTypes[fKey]
+            if (Array.isArray(fieldType.options)) {
                 return this._escapeTeX(theValue)
             } else {
                 return this._escapeTeX(
-                    fieldType.options?.[theValue]?.["biblatex"] ?? ""
+                    fieldType.options?.[theValue]?.biblatex ?? "",
                 )
             }
         } else {
@@ -190,23 +195,27 @@ export class BibLatexExporter {
             console.warn(`Wrong format for reformName`, theValue)
             return ""
         }
-        let names: string[] = []
+        const names: string[] = []
         theValue.forEach((name) => {
             if (name.literal) {
-                let literal = this._reformText(name.literal)
+                const literal = this._reformText(name.literal)
                 if (literal.length) {
                     names.push(`{${literal}}`)
                 }
             } else {
-                let family = name.family ? this._reformText(name.family) : ""
-                let given = name.given ? this._reformText(name.given) : ""
-                let suffix = name.suffix ? this._reformText(name.suffix) : false
-                let prefix = name.prefix ? this._reformText(name.prefix) : false
-                let useprefix = name.useprefix ? name.useprefix : false
+                const family = name.family ? this._reformText(name.family) : ""
+                const given = name.given ? this._reformText(name.given) : ""
+                const suffix = name.suffix
+                    ? this._reformText(name.suffix)
+                    : false
+                const prefix = name.prefix
+                    ? this._reformText(name.prefix)
+                    : false
+                const useprefix = name.useprefix ? name.useprefix : false
                 if (this.config.traditionalNames) {
                     if (suffix && prefix) {
                         names.push(
-                            `{${prefix} ${family}}, {${suffix}}, {${given}}`
+                            `{${prefix} ${family}}, {${suffix}}, {${given}}`,
                         )
                     } else if (suffix) {
                         names.push(`{${family}}, {${suffix}}, {${given}}`)
@@ -216,25 +225,25 @@ export class BibLatexExporter {
                         names.push(`{${family}}, {${given}}`)
                     }
                 } else {
-                    let nameParts = []
+                    const nameParts = []
                     if (given.length) {
                         nameParts.push(
-                            this._protectNamePart(`given={${given}}`)
+                            this._protectNamePart(`given={${given}}`),
                         )
                     }
                     if (family.length) {
                         nameParts.push(
-                            this._protectNamePart(`family={${family}}`)
+                            this._protectNamePart(`family={${family}}`),
                         )
                     }
                     if (suffix) {
                         nameParts.push(
-                            this._protectNamePart(`suffix={${suffix}}`)
+                            this._protectNamePart(`suffix={${suffix}}`),
                         )
                     }
                     if (prefix) {
                         nameParts.push(
-                            this._protectNamePart(`prefix={${prefix}}`)
+                            this._protectNamePart(`prefix={${prefix}}`),
                         )
                         nameParts.push(`useprefix=${String(useprefix)}`)
                     }
@@ -258,11 +267,11 @@ export class BibLatexExporter {
             console.warn(`Wrong format for escapeTeX`, theValue)
             return ""
         }
-        let len = TexSpecialChars.length
+        const len = TexSpecialChars.length
         for (let i = 0; i < len; i++) {
             theValue = (theValue as string).replace(
                 TexSpecialChars[i][0],
-                TexSpecialChars[i][1]
+                TexSpecialChars[i][1],
             )
         }
         return theValue as string
@@ -283,14 +292,14 @@ export class BibLatexExporter {
                     // This is an undefined variable
                     // This should usually not happen, as CSL doesn't know what to
                     // do with these. We'll put them into an unsupported tag.
-                    latex += `} # ${node.attrs!.variable} # {`
+                    latex += `} # ${node.attrs?.variable} # {`
                     this.warnings.push({
                         type: "undefined_variable",
-                        variable: node.attrs!.variable as string,
+                        variable: node.attrs?.variable as string,
                     })
                     return
                 }
-                let newMarks: string[] = []
+                const newMarks: string[] = []
                 if (node.marks) {
                     let mathMode = false
                     node.marks.forEach((mark) => {
@@ -314,7 +323,7 @@ export class BibLatexExporter {
                 let closing = false,
                     closeTags: string[] = []
                 lastMarks.forEach((mark, index) => {
-                    if (mark != newMarks[index]) {
+                    if (mark !== newMarks[index]) {
                         closing = true
                     }
                     if (closing) {
@@ -338,7 +347,7 @@ export class BibLatexExporter {
                 let opening = false,
                     verbatim = false
                 newMarks.forEach((mark, index) => {
-                    if (mark != lastMarks[index]) {
+                    if (mark !== lastMarks[index]) {
                         opening = true
                     }
                     if (opening) {
@@ -376,8 +385,8 @@ export class BibLatexExporter {
             }
             const data = biblist[i]
             str += `@${data.type}{${data.key}`
-            for (let vKey in data.values) {
-                let value = `{${data.values[vKey]}}`
+            for (const vKey in data.values) {
+                const value = `{${data.values[vKey]}}`
                     .replace(/\{\} # /g, "")
                     .replace(/# \{\}/g, "")
                 str += `,\n${vKey} = ${value}`

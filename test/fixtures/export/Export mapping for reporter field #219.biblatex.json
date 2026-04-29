@@ -28,9 +28,7 @@
                         ]
                     }
                 ],
-                "keywords": [
-                    "au"
-                ],
+                "keywords": ["au"],
                 "shorttitle": [
                     {
                         "type": "text",

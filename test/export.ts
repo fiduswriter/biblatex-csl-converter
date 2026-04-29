@@ -1,22 +1,22 @@
-import * as converter from "../tmp/bundle.test.js"
+import fs from "node:fs"
+import path from "node:path"
+import { fileURLToPath } from "node:url"
 import { expect } from "chai"
-import fs from "fs"
-import path from "path"
-import { fileURLToPath } from "url"
+import * as converter from "../tmp/bundle.test.js"
 
 const writeFixtures = false // Set to true to save the results as expected test results.
 
 const verify = (jsonfile) => {
-    let input = JSON.parse(fs.readFileSync(jsonfile, "utf8"))
-    let name = path.basename(jsonfile, path.extname(jsonfile))
+    const input = JSON.parse(fs.readFileSync(jsonfile, "utf8"))
+    const name = path.basename(jsonfile, path.extname(jsonfile))
 
     // CSL
     const cslGetter = new converter.CSLExporter(input.entries)
     const foundCSL = cslGetter.parse()
 
-    let expectedCSL = path.join(path.dirname(jsonfile), name + ".csl")
+    let expectedCSL = path.join(path.dirname(jsonfile), `${name}.csl`)
     if (writeFixtures) {
-        fs.writeFileSync(expectedCSL, JSON.stringify(foundCSL, null, 4) + "\n")
+        fs.writeFileSync(expectedCSL, `${JSON.stringify(foundCSL, null, 4)}\n`)
     }
     expectedCSL = JSON.parse(fs.readFileSync(expectedCSL, "utf8"))
 
@@ -28,7 +28,7 @@ const verify = (jsonfile) => {
     const bibGetter = new converter.BibLatexExporter(input.entries)
     const foundBib = bibGetter.parse()
 
-    let expectedBib = path.join(path.dirname(jsonfile), name + ".bib")
+    let expectedBib = path.join(path.dirname(jsonfile), `${name}.bib`)
     if (writeFixtures) {
         fs.writeFileSync(expectedBib, foundBib)
     }
@@ -41,12 +41,12 @@ const verify = (jsonfile) => {
 
 const fixtures = path.join(
     path.dirname(fileURLToPath(import.meta.url)),
-    "fixtures/export"
+    "fixtures/export",
 )
 const jsonfiles = fs.readdirSync(fixtures)
 
 for (let fixture of jsonfiles) {
-    if (path.extname(fixture) != ".json") {
+    if (path.extname(fixture) !== ".json") {
         continue
     }
 
@@ -56,9 +56,9 @@ for (let fixture of jsonfiles) {
 }
 
 const verifyEscape = (jsonfile) => {
-    let name = path.basename(jsonfile, path.extname(jsonfile))
+    const name = path.basename(jsonfile, path.extname(jsonfile))
     it(`verify escape: ${name}`, () => {
-        let input = JSON.parse(fs.readFileSync(jsonfile, "utf8"))
+        const input = JSON.parse(fs.readFileSync(jsonfile, "utf8"))
         const exporter = new converter.CSLExporter(input.entries, null, {
             escapeText: true,
         })
@@ -67,11 +67,11 @@ const verifyEscape = (jsonfile) => {
         expect(escapedTitle).to.equal("A title with &lt;i&gt;style&lt;/i&gt;!")
         const citeprocedTitle = escapedTitle.replace(/&/g, "&#38;")
         expect(citeprocedTitle).to.equal(
-            "A title with &#38;lt;i&#38;gt;style&#38;lt;/i&#38;gt;!"
+            "A title with &#38;lt;i&#38;gt;style&#38;lt;/i&#38;gt;!",
         )
         const unciteprocedTitle = converter.unescapeCSL(citeprocedTitle)
         expect(unciteprocedTitle).to.equal(
-            "A title with &lt;i&gt;style&lt;/i&gt;!"
+            "A title with &lt;i&gt;style&lt;/i&gt;!",
         )
         const unescapedTitle = unciteprocedTitle
             .replace(/&lt;/g, "<")

@@ -1,1295 +1,1277 @@
 {
-  "$id": "1",
-  "$type": "SwissAcademic.Citavi.Citations.WordPlaceholder, SwissAcademic.Citavi",
-  "Entries": [
-    {
-      "$id": "2",
-      "$type": "SwissAcademic.Citavi.Citations.WordPlaceholderEntry, SwissAcademic.Citavi",
-      "Id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
-      "RangeLength": 42,
-      "ReferenceId": "b2c3d4e5-f6a7-8901-bcde-f12345678901",
-      "Prefix": "See ",
-      "UseStandardPrefix": false,
-      "PageRange": {
-        "$id": "3",
-        "$type": "SwissAcademic.PageRange, SwissAcademic",
-        "OriginalString": "123-125",
-        "NumberingType": 0,
-        "NumeralSystem": 0,
-        "StartPage": {
-          "$id": "4",
-          "$type": "SwissAcademic.PageNumber, SwissAcademic",
-          "OriginalString": "123",
-          "PrettyString": "123",
-          "Number": 123,
-          "IsFullyNumeric": true,
-          "NumberingType": 0,
-          "NumeralSystem": 0
-        },
-        "EndPage": {
-          "$id": "5",
-          "$type": "SwissAcademic.PageNumber, SwissAcademic",
-          "OriginalString": "125",
-          "PrettyString": "125",
-          "Number": 125,
-          "IsFullyNumeric": true,
-          "NumberingType": 0,
-          "NumeralSystem": 0
-        }
-      },
-      "Reference": {
-        "$id": "6",
-        "$type": "SwissAcademic.Citavi.Reference, SwissAcademic.Citavi",
-        "AbstractComplexity": 0,
-        "AbstractSourceTextFormat": 0,
-        "Authors": [
-          {
-            "$id": "7",
-            "$type": "SwissAcademic.Citavi.Person, SwissAcademic.Citavi",
-            "FirstName": "John",
-            "MiddleName": "A.",
-            "LastName": "Smith",
-            "Protected": false,
-            "Sex": 2,
-            "CreatedBy": "_Test User",
-            "CreatedOn": "2023-03-01T10:00:00",
-            "ModifiedBy": "_Test User",
-            "Id": "c3d4e5f6-a7b8-9012-cdef-123456789012",
-            "ModifiedOn": "2023-03-01T10:00:00",
-            "Project": {
-              "$id": "8",
-              "$type": "SwissAcademic.Citavi.Project, SwissAcademic.Citavi"
-            }
-          },
-          {
-            "$id": "9",
-            "$type": "SwissAcademic.Citavi.Person, SwissAcademic.Citavi",
-            "FirstName": "Mary",
-            "MiddleName": "B.",
-            "LastName": "Johnson",
-            "Protected": false,
-            "Sex": 1,
-            "CreatedBy": "_Test User",
-            "CreatedOn": "2023-03-01T10:00:00",
-            "ModifiedBy": "_Test User",
-            "Id": "d4e5f6a7-b8c9-0123-defa-234567890123",
-            "ModifiedOn": "2023-03-01T10:00:00",
-            "Project": {
-              "$ref": "8"
-            }
-          }
-        ],
-        "BibTeXKey": "Smith.2023",
-        "CitationKey": "[Smi‑23]",
-        "CitationKeyUpdateType": 0,
-        "Collaborators": [],
-        "Editors": [],
-        "EvaluationComplexity": 0,
-        "EvaluationSourceTextFormat": 0,
-        "Groups": [],
-        "HasLabel1": false,
-        "HasLabel2": false,
-        "Isbn": "978-0-12-345678-9",
-        "Keywords": [
-          {
-            "$id": "10",
-            "$type": "SwissAcademic.Citavi.Keyword, SwissAcademic.Citavi",
-            "Name": "methodology"
-          },
-          {
-            "$id": "11",
-            "$type": "SwissAcademic.Citavi.Keyword, SwissAcademic.Citavi",
-            "Name": "research design"
-          }
-        ],
-        "Language": "English",
-        "LanguageCode": "en",
-        "Locations": [
-          {
-            "$id": "12",
-            "$type": "SwissAcademic.Citavi.Location, SwissAcademic.Citavi",
-            "Address": {
-              "$id": "13",
-              "$type": "SwissAcademic.Citavi.LinkedResource, SwissAcademic.Citavi",
-              "LinkedResourceType": 5,
-              "OriginalString": "https://doi.org/10.1234/example.2023.001",
-              "UriString": "https://doi.org/10.1234/example.2023.001",
-              "LinkedResourceStatus": 8,
-              "Properties": {
-                "$id": "14",
-                "$type": "SwissAcademic.Citavi.LinkedResourceProperties, SwissAcademic.Citavi"
-              },
-              "SyncFolderType": 0,
-              "IsLocalCloudProjectFileLink": false,
-              "IsCloudRestore": false,
-              "IsCloudCopy": false,
-              "AttachmentFolderWasInFallbackMode": false
+    "$id": "1",
+    "$type": "SwissAcademic.Citavi.Citations.WordPlaceholder, SwissAcademic.Citavi",
+    "Entries": [
+        {
+            "$id": "2",
+            "$type": "SwissAcademic.Citavi.Citations.WordPlaceholderEntry, SwissAcademic.Citavi",
+            "Id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+            "RangeLength": 42,
+            "ReferenceId": "b2c3d4e5-f6a7-8901-bcde-f12345678901",
+            "Prefix": "See ",
+            "UseStandardPrefix": false,
+            "PageRange": {
+                "$id": "3",
+                "$type": "SwissAcademic.PageRange, SwissAcademic",
+                "OriginalString": "123-125",
+                "NumberingType": 0,
+                "NumeralSystem": 0,
+                "StartPage": {
+                    "$id": "4",
+                    "$type": "SwissAcademic.PageNumber, SwissAcademic",
+                    "OriginalString": "123",
+                    "PrettyString": "123",
+                    "Number": 123,
+                    "IsFullyNumeric": true,
+                    "NumberingType": 0,
+                    "NumeralSystem": 0
+                },
+                "EndPage": {
+                    "$id": "5",
+                    "$type": "SwissAcademic.PageNumber, SwissAcademic",
+                    "OriginalString": "125",
+                    "PrettyString": "125",
+                    "Number": 125,
+                    "IsFullyNumeric": true,
+                    "NumberingType": 0,
+                    "NumeralSystem": 0
+                }
             },
-            "Annotations": [],
-            "LocationType": 0,
-            "MirrorsReferencePropertyId": 128,
-            "CreatedBy": "_Test User",
-            "CreatedOn": "2023-03-01T10:00:00",
-            "ModifiedBy": "_Test User",
-            "Id": "e5f6a7b8-c9d0-1234-efab-345678901234",
-            "ModifiedOn": "2023-03-01T10:00:00",
-            "Project": {
-              "$ref": "8"
-            }
-          }
-        ],
-        "Number": "3",
-        "Organizations": [],
-        "OthersInvolved": [],
-        "PageRange": "<sp>\r\n  <n>123</n>\r\n  <in>true</in>\r\n  <os>123</os>\r\n  <ps>123</ps>\r\n</sp>\r\n<ep>\r\n  <n>145</n>\r\n  <in>true</in>\r\n  <os>145</os>\r\n  <ps>145</ps>\r\n</ep>\r\n<os>123-145</os>",
-        "Periodical": {
-          "$id": "15",
-          "$type": "SwissAcademic.Citavi.Periodical, SwissAcademic.Citavi",
-          "Name": "Journal of Examples",
-          "Pagination": 0,
-          "Protected": false,
-          "UserAbbreviation1": "J. Ex.",
-          "StandardAbbreviation": "J. Exam.",
-          "CreatedBy": "_Test User",
-          "CreatedOn": "2023-03-01T10:00:00",
-          "ModifiedBy": "_Test User",
-          "Id": "f6a7b8c9-d0e1-2345-fabc-456789012345",
-          "ModifiedOn": "2023-03-01T10:00:00",
-          "Project": {
-            "$ref": "8"
-          }
-        },
-        "Publishers": [],
-        "Quotations": [],
-        "Rating": 0,
-        "ReferenceType": "JournalArticle",
-        "ShortTitle": "Smith, Johnson 2023 – Comprehensive Study",
-        "ShortTitleUpdateType": 0,
-        "StaticIds": [
-          "a1b2c3d4-0000-0000-0000-000000000001"
-        ],
-        "TableOfContentsComplexity": 0,
-        "TableOfContentsSourceTextFormat": 0,
-        "Tasks": [],
-        "Title": "A Comprehensive Study of Example Phenomena",
-        "Translators": [],
-        "Volume": "45",
-        "Year": "2023",
-        "YearResolved": "2023",
-        "CreatedBy": "_Test User",
-        "CreatedOn": "2023-03-01T10:00:00",
-        "ModifiedBy": "_Test User",
-        "Id": "b2c3d4e5-f6a7-8901-bcde-f12345678901",
-        "ModifiedOn": "2023-03-01T10:00:00",
-        "Project": {
-          "$ref": "8"
-        }
-      },
-      "UseNumberingTypeOfParentDocument": false,
-      "UseStandardPrefix": true
-    },
-    {
-      "$id": "16",
-      "$type": "SwissAcademic.Citavi.Citations.WordPlaceholderEntry, SwissAcademic.Citavi",
-      "Id": "c5d6e7f8-a9b0-1234-cdef-345678901234",
-      "RangeLength": 18,
-      "ReferenceId": "d6e7f8a9-b0c1-2345-defa-456789012345",
-      "Prefix": "Vgl. ",
-      "UseStandardPrefix": false,
-      "PageRange": {
-        "$id": "17",
-        "$type": "SwissAcademic.PageRange, SwissAcademic",
-        "OriginalString": "42",
-        "NumberingType": 0,
-        "NumeralSystem": 0,
-        "StartPage": {
-          "$id": "18",
-          "$type": "SwissAcademic.PageNumber, SwissAcademic",
-          "OriginalString": "42",
-          "PrettyString": "42",
-          "Number": 42,
-          "IsFullyNumeric": true,
-          "NumberingType": 0,
-          "NumeralSystem": 0
-        },
-        "EndPage": {
-          "$id": "19",
-          "$type": "SwissAcademic.PageNumber, SwissAcademic",
-          "OriginalString": "42",
-          "PrettyString": "42",
-          "Number": 42,
-          "IsFullyNumeric": true,
-          "NumberingType": 0,
-          "NumeralSystem": 0
-        }
-      },
-      "Reference": {
-        "$id": "20",
-        "$type": "SwissAcademic.Citavi.Reference, SwissAcademic.Citavi",
-        "AbstractComplexity": 0,
-        "AbstractSourceTextFormat": 0,
-        "Authors": [
-          {
-            "$id": "21",
-            "$type": "SwissAcademic.Citavi.Person, SwissAcademic.Citavi",
-            "FirstName": "Hans",
-            "LastName": "Müller",
-            "Protected": false,
-            "Sex": 2,
-            "CreatedBy": "_Test User",
-            "CreatedOn": "2022-06-15T09:00:00",
-            "ModifiedBy": "_Test User",
-            "Id": "e7f8a9b0-c1d2-3456-efab-567890123456",
-            "ModifiedOn": "2022-06-15T09:00:00",
-            "Project": {
-              "$ref": "8"
-            }
-          }
-        ],
-        "BibTeXKey": "Muller.2022",
-        "CitationKey": "[Mül‑22]",
-        "CitationKeyUpdateType": 0,
-        "Collaborators": [],
-        "Editors": [
-          {
-            "$id": "22",
-            "$type": "SwissAcademic.Citavi.Person, SwissAcademic.Citavi",
-            "FirstName": "Klaus",
-            "LastName": "Schmidt",
-            "Protected": false,
-            "Sex": 2,
-            "CreatedBy": "_Test User",
-            "CreatedOn": "2022-06-15T09:00:00",
-            "ModifiedBy": "_Test User",
-            "Id": "f8a9b0c1-d2e3-4567-fabc-678901234567",
-            "ModifiedOn": "2022-06-15T09:00:00",
-            "Project": {
-              "$ref": "8"
-            }
-          }
-        ],
-        "Edition": "3rd",
-        "EvaluationComplexity": 0,
-        "EvaluationSourceTextFormat": 0,
-        "Groups": [],
-        "HasLabel1": false,
-        "HasLabel2": false,
-        "Isbn": "978-3-030-12345-6",
-        "Keywords": [],
-        "Language": "German",
-        "LanguageCode": "de",
-        "Locations": [],
-        "Organizations": [],
-        "OthersInvolved": [],
-        "PageRange": "<sp>\r\n  <n>42</n>\r\n  <in>true</in>\r\n  <os>42</os>\r\n  <ps>42</ps>\r\n</sp>\r\n<os>42</os>",
-        "PlaceOfPublication": "Berlin",
-        "Publishers": [
-          {
-            "$id": "23",
-            "$type": "SwissAcademic.Citavi.Publisher, SwissAcademic.Citavi",
-            "Name": "Springer-Verlag",
-            "Protected": false,
-            "CreatedBy": "_Test User",
-            "CreatedOn": "2022-06-15T09:00:00",
-            "ModifiedBy": "_Test User",
-            "Id": "a9b0c1d2-e3f4-5678-abcd-789012345678",
-            "ModifiedOn": "2022-06-15T09:00:00",
-            "Project": {
-              "$ref": "8"
-            }
-          }
-        ],
-        "Quotations": [],
-        "Rating": 0,
-        "ReferenceType": "Book",
-        "ShortTitle": "Müller 2022 – Deutsche Beispiele",
-        "ShortTitleUpdateType": 0,
-        "StaticIds": [
-          "a1b2c3d4-0000-0000-0000-000000000002"
-        ],
-        "TableOfContentsComplexity": 0,
-        "TableOfContentsSourceTextFormat": 0,
-        "Tasks": [],
-        "Title": "Deutsche Beispiele in der Wissenschaft",
-        "Translators": [],
-        "Year": "2022",
-        "YearResolved": "2022",
-        "CreatedBy": "_Test User",
-        "CreatedOn": "2022-06-15T09:00:00",
-        "ModifiedBy": "_Test User",
-        "Id": "d6e7f8a9-b0c1-2345-defa-456789012345",
-        "ModifiedOn": "2022-06-15T09:00:00",
-        "Project": {
-          "$ref": "8"
-        }
-      },
-      "UseNumberingTypeOfParentDocument": false
-    },
-    {
-      "$id": "24",
-      "$type": "SwissAcademic.Citavi.Citations.WordPlaceholderEntry, SwissAcademic.Citavi",
-      "Id": "b3c4d5e6-f7a8-9012-bcde-f23456789012",
-      "RangeLength": 15,
-      "ReferenceId": "e8f9a0b1-c2d3-4567-efab-678901234567",
-      "PageRange": {
-        "$id": "25",
-        "$type": "SwissAcademic.PageRange, SwissAcademic",
-        "OriginalString": "xvii",
-        "NumberingType": 0,
-        "NumeralSystem": 0,
-        "StartPage": {
-          "$id": "26",
-          "$type": "SwissAcademic.PageNumber, SwissAcademic",
-          "OriginalString": "xvii",
-          "PrettyString": "xvii",
-          "IsFullyNumeric": false,
-          "NumberingType": 0,
-          "NumeralSystem": 0
-        },
-        "EndPage": {
-          "$id": "27",
-          "$type": "SwissAcademic.PageNumber, SwissAcademic",
-          "OriginalString": "xvii",
-          "PrettyString": "xvii",
-          "IsFullyNumeric": false,
-          "NumberingType": 0,
-          "NumeralSystem": 0
-        }
-      },
-      "Reference": {
-        "$id": "28",
-        "$type": "SwissAcademic.Citavi.Reference, SwissAcademic.Citavi",
-        "AbstractComplexity": 0,
-        "AbstractSourceTextFormat": 0,
-        "Authors": [
-          {
-            "$id": "29",
-            "$type": "SwissAcademic.Citavi.Person, SwissAcademic.Citavi",
-            "FirstName": "Alice",
-            "LastName": "Brown",
-            "Protected": false,
-            "Sex": 1,
-            "CreatedBy": "_Test User",
-            "CreatedOn": "2021-08-15T14:30:00",
-            "ModifiedBy": "_Test User",
-            "Id": "f9a0b1c2-d3e4-5678-fabc-789012345678",
-            "ModifiedOn": "2021-08-15T14:30:00",
-            "Project": {
-              "$ref": "8"
-            }
-          }
-        ],
-        "BibTeXKey": "Brown.2021",
-        "CitationKey": "[Bro‑21]",
-        "CitationKeyUpdateType": 0,
-        "Collaborators": [],
-        "Doi": "10.1234/example.2021.002",
-        "Editors": [],
-        "Edition": "2nd",
-        "EvaluationComplexity": 0,
-        "EvaluationSourceTextFormat": 0,
-        "Groups": [],
-        "HasLabel1": false,
-        "HasLabel2": false,
-        "Keywords": [],
-        "Language": "English",
-        "LanguageCode": "en",
-        "Locations": [
-          {
-            "$id": "30",
-            "$type": "SwissAcademic.Citavi.Location, SwissAcademic.Citavi",
-            "Address": {
-              "$id": "31",
-              "$type": "SwissAcademic.Citavi.LinkedResource, SwissAcademic.Citavi",
-              "LinkedResourceType": 5,
-              "OriginalString": "10.1234/example.2021.002",
-              "UriString": "https://doi.org/10.1234/example.2021.002",
-              "LinkedResourceStatus": 8,
-              "Properties": {
-                "$id": "32",
-                "$type": "SwissAcademic.Citavi.LinkedResourceProperties, SwissAcademic.Citavi"
-              },
-              "SyncFolderType": 0,
-              "IsLocalCloudProjectFileLink": false,
-              "IsCloudRestore": false,
-              "IsCloudCopy": false,
-              "AttachmentFolderWasInFallbackMode": false
+            "Reference": {
+                "$id": "6",
+                "$type": "SwissAcademic.Citavi.Reference, SwissAcademic.Citavi",
+                "AbstractComplexity": 0,
+                "AbstractSourceTextFormat": 0,
+                "Authors": [
+                    {
+                        "$id": "7",
+                        "$type": "SwissAcademic.Citavi.Person, SwissAcademic.Citavi",
+                        "FirstName": "John",
+                        "MiddleName": "A.",
+                        "LastName": "Smith",
+                        "Protected": false,
+                        "Sex": 2,
+                        "CreatedBy": "_Test User",
+                        "CreatedOn": "2023-03-01T10:00:00",
+                        "ModifiedBy": "_Test User",
+                        "Id": "c3d4e5f6-a7b8-9012-cdef-123456789012",
+                        "ModifiedOn": "2023-03-01T10:00:00",
+                        "Project": {
+                            "$id": "8",
+                            "$type": "SwissAcademic.Citavi.Project, SwissAcademic.Citavi"
+                        }
+                    },
+                    {
+                        "$id": "9",
+                        "$type": "SwissAcademic.Citavi.Person, SwissAcademic.Citavi",
+                        "FirstName": "Mary",
+                        "MiddleName": "B.",
+                        "LastName": "Johnson",
+                        "Protected": false,
+                        "Sex": 1,
+                        "CreatedBy": "_Test User",
+                        "CreatedOn": "2023-03-01T10:00:00",
+                        "ModifiedBy": "_Test User",
+                        "Id": "d4e5f6a7-b8c9-0123-defa-234567890123",
+                        "ModifiedOn": "2023-03-01T10:00:00",
+                        "Project": {
+                            "$ref": "8"
+                        }
+                    }
+                ],
+                "BibTeXKey": "Smith.2023",
+                "CitationKey": "[Smi‑23]",
+                "CitationKeyUpdateType": 0,
+                "Collaborators": [],
+                "Editors": [],
+                "EvaluationComplexity": 0,
+                "EvaluationSourceTextFormat": 0,
+                "Groups": [],
+                "HasLabel1": false,
+                "HasLabel2": false,
+                "Isbn": "978-0-12-345678-9",
+                "Keywords": [
+                    {
+                        "$id": "10",
+                        "$type": "SwissAcademic.Citavi.Keyword, SwissAcademic.Citavi",
+                        "Name": "methodology"
+                    },
+                    {
+                        "$id": "11",
+                        "$type": "SwissAcademic.Citavi.Keyword, SwissAcademic.Citavi",
+                        "Name": "research design"
+                    }
+                ],
+                "Language": "English",
+                "LanguageCode": "en",
+                "Locations": [
+                    {
+                        "$id": "12",
+                        "$type": "SwissAcademic.Citavi.Location, SwissAcademic.Citavi",
+                        "Address": {
+                            "$id": "13",
+                            "$type": "SwissAcademic.Citavi.LinkedResource, SwissAcademic.Citavi",
+                            "LinkedResourceType": 5,
+                            "OriginalString": "https://doi.org/10.1234/example.2023.001",
+                            "UriString": "https://doi.org/10.1234/example.2023.001",
+                            "LinkedResourceStatus": 8,
+                            "Properties": {
+                                "$id": "14",
+                                "$type": "SwissAcademic.Citavi.LinkedResourceProperties, SwissAcademic.Citavi"
+                            },
+                            "SyncFolderType": 0,
+                            "IsLocalCloudProjectFileLink": false,
+                            "IsCloudRestore": false,
+                            "IsCloudCopy": false,
+                            "AttachmentFolderWasInFallbackMode": false
+                        },
+                        "Annotations": [],
+                        "LocationType": 0,
+                        "MirrorsReferencePropertyId": 128,
+                        "CreatedBy": "_Test User",
+                        "CreatedOn": "2023-03-01T10:00:00",
+                        "ModifiedBy": "_Test User",
+                        "Id": "e5f6a7b8-c9d0-1234-efab-345678901234",
+                        "ModifiedOn": "2023-03-01T10:00:00",
+                        "Project": {
+                            "$ref": "8"
+                        }
+                    }
+                ],
+                "Number": "3",
+                "Organizations": [],
+                "OthersInvolved": [],
+                "PageRange": "<sp>\r\n  <n>123</n>\r\n  <in>true</in>\r\n  <os>123</os>\r\n  <ps>123</ps>\r\n</sp>\r\n<ep>\r\n  <n>145</n>\r\n  <in>true</in>\r\n  <os>145</os>\r\n  <ps>145</ps>\r\n</ep>\r\n<os>123-145</os>",
+                "Periodical": {
+                    "$id": "15",
+                    "$type": "SwissAcademic.Citavi.Periodical, SwissAcademic.Citavi",
+                    "Name": "Journal of Examples",
+                    "Pagination": 0,
+                    "Protected": false,
+                    "UserAbbreviation1": "J. Ex.",
+                    "StandardAbbreviation": "J. Exam.",
+                    "CreatedBy": "_Test User",
+                    "CreatedOn": "2023-03-01T10:00:00",
+                    "ModifiedBy": "_Test User",
+                    "Id": "f6a7b8c9-d0e1-2345-fabc-456789012345",
+                    "ModifiedOn": "2023-03-01T10:00:00",
+                    "Project": {
+                        "$ref": "8"
+                    }
+                },
+                "Publishers": [],
+                "Quotations": [],
+                "Rating": 0,
+                "ReferenceType": "JournalArticle",
+                "ShortTitle": "Smith, Johnson 2023 – Comprehensive Study",
+                "ShortTitleUpdateType": 0,
+                "StaticIds": ["a1b2c3d4-0000-0000-0000-000000000001"],
+                "TableOfContentsComplexity": 0,
+                "TableOfContentsSourceTextFormat": 0,
+                "Tasks": [],
+                "Title": "A Comprehensive Study of Example Phenomena",
+                "Translators": [],
+                "Volume": "45",
+                "Year": "2023",
+                "YearResolved": "2023",
+                "CreatedBy": "_Test User",
+                "CreatedOn": "2023-03-01T10:00:00",
+                "ModifiedBy": "_Test User",
+                "Id": "b2c3d4e5-f6a7-8901-bcde-f12345678901",
+                "ModifiedOn": "2023-03-01T10:00:00",
+                "Project": {
+                    "$ref": "8"
+                }
             },
-            "Annotations": [],
-            "LocationType": 0,
-            "MirrorsReferencePropertyId": 128,
-            "CreatedBy": "_Test User",
-            "CreatedOn": "2021-08-15T14:30:00",
-            "ModifiedBy": "_Test User",
-            "Id": "a0b1c2d3-e4f5-6789-abcd-890123456789",
-            "ModifiedOn": "2021-08-15T14:30:00",
-            "Project": {
-              "$ref": "8"
-            }
-          }
-        ],
-        "Organizations": [],
-        "OthersInvolved": [],
-        "PageRange": "<sp>\r\n  <n>xvii</n>\r\n  <in>false</in>\r\n  <os>xvii</os>\r\n  <ps>xvii</ps>\r\n</sp>\r\n<os>xvii</os>",
-        "PlaceOfPublication": "Cambridge",
-        "Publishers": [
-          {
-            "$id": "33",
-            "$type": "SwissAcademic.Citavi.Publisher, SwissAcademic.Citavi",
-            "Name": "Cambridge University Press",
-            "Protected": false,
-            "CreatedBy": "_Test User",
-            "CreatedOn": "2021-08-15T14:30:00",
-            "ModifiedBy": "_Test User",
-            "Id": "b1c2d3e4-f5a6-7890-bcde-901234567890",
-            "ModifiedOn": "2021-08-15T14:30:00",
-            "Project": {
-              "$ref": "8"
-            }
-          }
-        ],
-        "Quotations": [],
-        "Rating": 0,
-        "ReferenceType": "Book",
-        "ShortTitle": "Brown 2021 – Research Methods",
-        "ShortTitleUpdateType": 0,
-        "StaticIds": [
-          "a1b2c3d4-0000-0000-0000-000000000003"
-        ],
-        "TableOfContentsComplexity": 0,
-        "TableOfContentsSourceTextFormat": 0,
-        "Tasks": [],
-        "Title": "Research Methods in Social Sciences",
-        "Translators": [],
-        "Year": "2021",
-        "YearResolved": "2021",
-        "CreatedBy": "_Test User",
-        "CreatedOn": "2021-08-15T14:30:00",
-        "ModifiedBy": "_Test User",
-        "Id": "e8f9a0b1-c2d3-4567-efab-678901234567",
-        "ModifiedOn": "2021-08-15T14:30:00",
-        "Project": {
-          "$ref": "8"
-        }
-      },
-      "UseNumberingTypeOfParentDocument": false,
-      "UseStandardPrefix": true
-    },
-    {
-      "$id": "34",
-      "$type": "SwissAcademic.Citavi.Citations.WordPlaceholderEntry, SwissAcademic.Citavi",
-      "Id": "d7e8f9a0-b1c2-3456-defa-567890123456",
-      "RangeLength": 8,
-      "ReferenceId": "f0a1b2c3-d4e5-6789-fabc-789012345678",
-      "PageRange": {
-        "$id": "35",
-        "$type": "SwissAcademic.PageRange, SwissAcademic",
-        "NumberingType": 0,
-        "NumeralSystem": 0,
-        "StartPage": {
-          "$id": "36",
-          "$type": "SwissAcademic.PageNumber, SwissAcademic",
-          "IsFullyNumeric": false,
-          "NumberingType": 0,
-          "NumeralSystem": 0
+            "UseNumberingTypeOfParentDocument": false,
+            "UseStandardPrefix": true
         },
-        "EndPage": {
-          "$id": "37",
-          "$type": "SwissAcademic.PageNumber, SwissAcademic",
-          "IsFullyNumeric": false,
-          "NumberingType": 0,
-          "NumeralSystem": 0
-        }
-      },
-      "Reference": {
-        "$id": "38",
-        "$type": "SwissAcademic.Citavi.Reference, SwissAcademic.Citavi",
-        "AbstractComplexity": 0,
-        "AbstractSourceTextFormat": 0,
-        "Authors": [
-          {
-            "$id": "39",
-            "$type": "SwissAcademic.Citavi.Person, SwissAcademic.Citavi",
-            "FirstName": "Robert",
-            "MiddleName": "C.",
-            "LastName": "Davis",
-            "Protected": false,
-            "Sex": 2,
-            "CreatedBy": "_Test User",
-            "CreatedOn": "2020-12-10T16:45:00",
-            "ModifiedBy": "_Test User",
-            "Id": "a1b2c3d4-e5f6-7890-abcd-890123456789",
-            "ModifiedOn": "2020-12-10T16:45:00",
-            "Project": {
-              "$ref": "8"
-            }
-          }
-        ],
-        "BibTeXKey": "Davis.2020",
-        "CitationKey": "[Dav‑20]",
-        "CitationKeyUpdateType": 0,
-        "Collaborators": [],
-        "Doi": "10.1234/example.2020.003",
-        "Editors": [],
-        "EvaluationComplexity": 0,
-        "EvaluationSourceTextFormat": 0,
-        "Groups": [],
-        "HasLabel1": false,
-        "HasLabel2": false,
-        "Keywords": [],
-        "Language": "English",
-        "LanguageCode": "en",
-        "Locations": [
-          {
-            "$id": "40",
-            "$type": "SwissAcademic.Citavi.Location, SwissAcademic.Citavi",
-            "Address": {
-              "$id": "41",
-              "$type": "SwissAcademic.Citavi.LinkedResource, SwissAcademic.Citavi",
-              "LinkedResourceType": 5,
-              "OriginalString": "10.1234/example.2020.003",
-              "UriString": "https://doi.org/10.1234/example.2020.003",
-              "LinkedResourceStatus": 8,
-              "Properties": {
-                "$id": "42",
-                "$type": "SwissAcademic.Citavi.LinkedResourceProperties, SwissAcademic.Citavi"
-              },
-              "SyncFolderType": 0,
-              "IsLocalCloudProjectFileLink": false,
-              "IsCloudRestore": false,
-              "IsCloudCopy": false,
-              "AttachmentFolderWasInFallbackMode": false
+        {
+            "$id": "16",
+            "$type": "SwissAcademic.Citavi.Citations.WordPlaceholderEntry, SwissAcademic.Citavi",
+            "Id": "c5d6e7f8-a9b0-1234-cdef-345678901234",
+            "RangeLength": 18,
+            "ReferenceId": "d6e7f8a9-b0c1-2345-defa-456789012345",
+            "Prefix": "Vgl. ",
+            "UseStandardPrefix": false,
+            "PageRange": {
+                "$id": "17",
+                "$type": "SwissAcademic.PageRange, SwissAcademic",
+                "OriginalString": "42",
+                "NumberingType": 0,
+                "NumeralSystem": 0,
+                "StartPage": {
+                    "$id": "18",
+                    "$type": "SwissAcademic.PageNumber, SwissAcademic",
+                    "OriginalString": "42",
+                    "PrettyString": "42",
+                    "Number": 42,
+                    "IsFullyNumeric": true,
+                    "NumberingType": 0,
+                    "NumeralSystem": 0
+                },
+                "EndPage": {
+                    "$id": "19",
+                    "$type": "SwissAcademic.PageNumber, SwissAcademic",
+                    "OriginalString": "42",
+                    "PrettyString": "42",
+                    "Number": 42,
+                    "IsFullyNumeric": true,
+                    "NumberingType": 0,
+                    "NumeralSystem": 0
+                }
             },
-            "Annotations": [],
-            "LocationType": 0,
-            "MirrorsReferencePropertyId": 128,
-            "CreatedBy": "_Test User",
-            "CreatedOn": "2020-12-10T16:45:00",
-            "ModifiedBy": "_Test User",
-            "Id": "b2c3d4e5-f6a7-8901-bcde-901234567890",
-            "ModifiedOn": "2020-12-10T16:45:00",
-            "Project": {
-              "$ref": "8"
-            }
-          }
-        ],
-        "Number": "2",
-        "Organizations": [],
-        "OthersInvolved": [],
-        "PageRange": "",
-        "Periodical": {
-          "$id": "43",
-          "$type": "SwissAcademic.Citavi.Periodical, SwissAcademic.Citavi",
-          "Eissn": "1234-5678",
-          "Name": "International Journal of Testing",
-          "Pagination": 0,
-          "Protected": false,
-          "UserAbbreviation1": "Int. J. Test.",
-          "StandardAbbreviation": "Int. J. Test.",
-          "CreatedBy": "_Test User",
-          "CreatedOn": "2020-12-10T16:45:00",
-          "ModifiedBy": "_Test User",
-          "Id": "c3d4e5f6-a7b8-9012-cdef-012345678901",
-          "ModifiedOn": "2020-12-10T16:45:00",
-          "Project": {
-            "$ref": "8"
-          }
-        },
-        "Publishers": [],
-        "Quotations": [],
-        "Rating": 0,
-        "ReferenceType": "JournalArticle",
-        "ShortTitle": "Davis 2020 – Testing Frameworks",
-        "ShortTitleUpdateType": 0,
-        "StaticIds": [
-          "a1b2c3d4-0000-0000-0000-000000000004"
-        ],
-        "TableOfContentsComplexity": 0,
-        "TableOfContentsSourceTextFormat": 0,
-        "Tasks": [],
-        "Title": "Modern Testing Frameworks: A Comprehensive Review",
-        "Translators": [],
-        "Volume": "12",
-        "Year": "2020",
-        "YearResolved": "2020",
-        "CreatedBy": "_Test User",
-        "CreatedOn": "2020-12-10T16:45:00",
-        "ModifiedBy": "_Test User",
-        "Id": "f0a1b2c3-d4e5-6789-fabc-789012345678",
-        "ModifiedOn": "2020-12-10T16:45:00",
-        "Project": {
-          "$ref": "8"
-        }
-      },
-      "UseNumberingTypeOfParentDocument": false,
-      "UseStandardPrefix": true
-    },
-    {
-      "$id": "55",
-      "$type": "SwissAcademic.Citavi.Citations.WordPlaceholderEntry, SwissAcademic.Citavi",
-      "Id": "e1f2a3b4-c5d6-7890-efab-123456789abc",
-      "RangeLength": 22,
-      "ReferenceId": "f2a3b4c5-d6e7-8901-fabc-234567890bcd",
-      "Prefix": "cf. ",
-      "Suffix": ", etc.",
-      "UseStandardPrefix": false,
-      "PageRange": {
-        "$id": "56",
-        "$type": "SwissAcademic.PageRange, SwissAcademic",
-        "OriginalString": "14-15",
-        "NumberingType": 0,
-        "NumeralSystem": 0,
-        "StartPage": {
-          "$id": "57",
-          "$type": "SwissAcademic.PageNumber, SwissAcademic",
-          "OriginalString": "14",
-          "PrettyString": "14",
-          "Number": 14,
-          "IsFullyNumeric": true,
-          "NumberingType": 0,
-          "NumeralSystem": 0
-        },
-        "EndPage": {
-          "$id": "58",
-          "$type": "SwissAcademic.PageNumber, SwissAcademic",
-          "OriginalString": "15",
-          "PrettyString": "15",
-          "Number": 15,
-          "IsFullyNumeric": true,
-          "NumberingType": 0,
-          "NumeralSystem": 0
-        }
-      },
-      "Reference": {
-        "$id": "59",
-        "$type": "SwissAcademic.Citavi.Reference, SwissAcademic.Citavi",
-        "AbstractComplexity": 0,
-        "AbstractSourceTextFormat": 0,
-        "Authors": [
-          {
-            "$id": "60",
-            "$type": "SwissAcademic.Citavi.Person, SwissAcademic.Citavi",
-            "FirstName": "Clara",
-            "LastName": "Evans",
-            "Protected": false,
-            "Sex": 1,
-            "CreatedBy": "_Test User",
-            "CreatedOn": "2019-05-20T11:00:00",
-            "ModifiedBy": "_Test User",
-            "Id": "a2b3c4d5-e6f7-8901-abcd-234567890abc",
-            "ModifiedOn": "2019-05-20T11:00:00",
-            "Project": {
-              "$ref": "8"
-            }
-          }
-        ],
-        "BibTeXKey": "Evans.2019",
-        "CitationKey": "[Eva‑19]",
-        "CitationKeyUpdateType": 0,
-        "Collaborators": [],
-        "Editors": [],
-        "EvaluationComplexity": 0,
-        "EvaluationSourceTextFormat": 0,
-        "Groups": [],
-        "HasLabel1": false,
-        "HasLabel2": false,
-        "Keywords": [],
-        "Language": "English",
-        "LanguageCode": "en",
-        "Locations": [],
-        "Organizations": [],
-        "OthersInvolved": [],
-        "PageRange": "<sp>\r\n  <n>14</n>\r\n  <in>true</in>\r\n  <os>14</os>\r\n  <ps>14</ps>\r\n</sp>\r\n<ep>\r\n  <n>15</n>\r\n  <in>true</in>\r\n  <os>15</os>\r\n  <ps>15</ps>\r\n</ep>\r\n<os>14-15</os>",
-        "Publishers": [],
-        "Quotations": [],
-        "Rating": 0,
-        "ReferenceType": "Book",
-        "ShortTitle": "Evans 2019 – Citation Practices",
-        "ShortTitleUpdateType": 0,
-        "StaticIds": [
-          "a1b2c3d4-0000-0000-0000-000000000005"
-        ],
-        "TableOfContentsComplexity": 0,
-        "TableOfContentsSourceTextFormat": 0,
-        "Tasks": [],
-        "Title": "Citation Practices in the Humanities",
-        "Translators": [],
-        "Year": "2019",
-        "YearResolved": "2019",
-        "CreatedBy": "_Test User",
-        "CreatedOn": "2019-05-20T11:00:00",
-        "ModifiedBy": "_Test User",
-        "Id": "f2a3b4c5-d6e7-8901-fabc-234567890bcd",
-        "ModifiedOn": "2019-05-20T11:00:00",
-        "Project": {
-          "$ref": "8"
-        }
-      },
-      "UseNumberingTypeOfParentDocument": false
-    },
-    {
-      "$id": "61",
-      "$type": "SwissAcademic.Citavi.Citations.WordPlaceholderEntry, SwissAcademic.Citavi",
-      "Id": "b5c6d7e8-f9a0-1234-bcde-f0123456789a",
-      "RangeLength": 12,
-      "ReferenceId": "c6d7e8f9-a0b1-2345-cdef-01234567890b",
-      "UseStandardPrefix": true,
-      "PageRange": {
-        "$id": "62",
-        "$type": "SwissAcademic.PageRange, SwissAcademic",
-        "OriginalString": "Col. 12-14",
-        "NumberingType": 1,
-        "NumeralSystem": 0,
-        "StartPage": {
-          "$id": "63",
-          "$type": "SwissAcademic.PageNumber, SwissAcademic",
-          "OriginalString": "12",
-          "PrettyString": "12",
-          "Number": 12,
-          "IsFullyNumeric": true,
-          "NumberingType": 1,
-          "NumeralSystem": 0
-        },
-        "EndPage": {
-          "$id": "64",
-          "$type": "SwissAcademic.PageNumber, SwissAcademic",
-          "OriginalString": "14",
-          "PrettyString": "14",
-          "Number": 14,
-          "IsFullyNumeric": true,
-          "NumberingType": 1,
-          "NumeralSystem": 0
-        }
-      },
-      "Reference": {
-        "$id": "65",
-        "$type": "SwissAcademic.Citavi.Reference, SwissAcademic.Citavi",
-        "AbstractComplexity": 0,
-        "AbstractSourceTextFormat": 0,
-        "Authors": [
-          {
-            "$id": "66",
-            "$type": "SwissAcademic.Citavi.Person, SwissAcademic.Citavi",
-            "FirstName": "Friedrich",
-            "LastName": "Wagner",
-            "Protected": false,
-            "Sex": 2,
-            "CreatedBy": "_Test User",
-            "CreatedOn": "2018-03-10T08:30:00",
-            "ModifiedBy": "_Test User",
-            "Id": "b3c4d5e6-f7a8-9012-bcde-345678901bcd",
-            "ModifiedOn": "2018-03-10T08:30:00",
-            "Project": {
-              "$ref": "8"
-            }
-          }
-        ],
-        "BibTeXKey": "Wagner.2018",
-        "CitationKey": "[Wag‑18]",
-        "CitationKeyUpdateType": 0,
-        "Collaborators": [],
-        "Editors": [],
-        "EvaluationComplexity": 0,
-        "EvaluationSourceTextFormat": 0,
-        "Groups": [],
-        "HasLabel1": false,
-        "HasLabel2": false,
-        "Keywords": [],
-        "Language": "German",
-        "LanguageCode": "de",
-        "Locations": [],
-        "Organizations": [],
-        "OthersInvolved": [],
-        "PageRange": "",
-        "PlaceOfPublication": "Frankfurt",
-        "Publishers": [
-          {
-            "$id": "67",
-            "$type": "SwissAcademic.Citavi.Publisher, SwissAcademic.Citavi",
-            "Name": "Klostermann",
-            "Protected": false,
-            "CreatedBy": "_Test User",
-            "CreatedOn": "2018-03-10T08:30:00",
-            "ModifiedBy": "_Test User",
-            "Id": "c4d5e6f7-a8b9-0123-cdef-456789012cde",
-            "ModifiedOn": "2018-03-10T08:30:00",
-            "Project": {
-              "$ref": "8"
-            }
-          }
-        ],
-        "Quotations": [],
-        "Rating": 0,
-        "ReferenceType": "Book",
-        "ShortTitle": "Wagner 2018 – Rechtsquellen",
-        "ShortTitleUpdateType": 0,
-        "StaticIds": [
-          "a1b2c3d4-0000-0000-0000-000000000006"
-        ],
-        "TableOfContentsComplexity": 0,
-        "TableOfContentsSourceTextFormat": 0,
-        "Tasks": [],
-        "Title": "Rechtsquellen des Mittelalters",
-        "Translators": [],
-        "Year": "2018",
-        "YearResolved": "2018",
-        "CreatedBy": "_Test User",
-        "CreatedOn": "2018-03-10T08:30:00",
-        "ModifiedBy": "_Test User",
-        "Id": "c6d7e8f9-a0b1-2345-cdef-01234567890b",
-        "ModifiedOn": "2018-03-10T08:30:00",
-        "Project": {
-          "$ref": "8"
-        }
-      },
-      "UseNumberingTypeOfParentDocument": false
-    },
-    {
-      "$id": "68",
-      "$type": "SwissAcademic.Citavi.Citations.WordPlaceholderEntry, SwissAcademic.Citavi",
-      "Id": "c9d0e1f2-a3b4-5678-cdef-012345678901",
-      "RangeLength": 9,
-      "ReferenceId": "d0e1f2a3-b4c5-6789-defa-123456789012",
-      "UseStandardPrefix": true,
-      "PageRange": {
-        "$id": "69",
-        "$type": "SwissAcademic.PageRange, SwissAcademic",
-        "OriginalString": "xiv-xvi",
-        "NumberingType": 0,
-        "NumeralSystem": 1,
-        "StartPage": {
-          "$id": "70",
-          "$type": "SwissAcademic.PageNumber, SwissAcademic",
-          "OriginalString": "xiv",
-          "PrettyString": "xiv",
-          "Number": 14,
-          "IsFullyNumeric": false,
-          "NumberingType": 0,
-          "NumeralSystem": 1
-        },
-        "EndPage": {
-          "$id": "71",
-          "$type": "SwissAcademic.PageNumber, SwissAcademic",
-          "OriginalString": "xvi",
-          "PrettyString": "xvi",
-          "Number": 16,
-          "IsFullyNumeric": false,
-          "NumberingType": 0,
-          "NumeralSystem": 1
-        }
-      },
-      "Reference": {
-        "$id": "72",
-        "$type": "SwissAcademic.Citavi.Reference, SwissAcademic.Citavi",
-        "AbstractComplexity": 0,
-        "AbstractSourceTextFormat": 0,
-        "Authors": [
-          {
-            "$id": "73",
-            "$type": "SwissAcademic.Citavi.Person, SwissAcademic.Citavi",
-            "FirstName": "Margaret",
-            "LastName": "Foster",
-            "Protected": false,
-            "Sex": 1,
-            "CreatedBy": "_Test User",
-            "CreatedOn": "2017-09-01T10:00:00",
-            "ModifiedBy": "_Test User",
-            "Id": "d5e6f7a8-b9c0-1234-defa-567890123def",
-            "ModifiedOn": "2017-09-01T10:00:00",
-            "Project": {
-              "$ref": "8"
-            }
-          }
-        ],
-        "BibTeXKey": "Foster.2017",
-        "CitationKey": "[Fos‑17]",
-        "CitationKeyUpdateType": 0,
-        "Collaborators": [],
-        "Editors": [],
-        "EvaluationComplexity": 0,
-        "EvaluationSourceTextFormat": 0,
-        "Groups": [],
-        "HasLabel1": false,
-        "HasLabel2": false,
-        "Keywords": [],
-        "Language": "English",
-        "LanguageCode": "en",
-        "Locations": [],
-        "Organizations": [],
-        "OthersInvolved": [],
-        "PageRange": "<sp>\r\n  <n>14</n>\r\n  <in>false</in>\r\n  <os>xiv</os>\r\n  <ps>xiv</ps>\r\n</sp>\r\n<ep>\r\n  <n>16</n>\r\n  <in>false</in>\r\n  <os>xvi</os>\r\n  <ps>xvi</ps>\r\n</ep>\r\n<os>xiv-xvi</os>",
-        "PlaceOfPublication": "Oxford",
-        "Publishers": [
-          {
-            "$id": "74",
-            "$type": "SwissAcademic.Citavi.Publisher, SwissAcademic.Citavi",
-            "Name": "Oxford University Press",
-            "Protected": false,
-            "CreatedBy": "_Test User",
-            "CreatedOn": "2017-09-01T10:00:00",
-            "ModifiedBy": "_Test User",
-            "Id": "e6f7a8b9-c0d1-2345-efab-678901234ef0",
-            "ModifiedOn": "2017-09-01T10:00:00",
-            "Project": {
-              "$ref": "8"
-            }
-          }
-        ],
-        "Quotations": [],
-        "Rating": 0,
-        "ReferenceType": "Book",
-        "ShortTitle": "Foster 2017 – Classical Traditions",
-        "ShortTitleUpdateType": 0,
-        "StaticIds": [
-          "a1b2c3d4-0000-0000-0000-000000000007"
-        ],
-        "TableOfContentsComplexity": 0,
-        "TableOfContentsSourceTextFormat": 0,
-        "Tasks": [],
-        "Title": "Classical Traditions in Modern Scholarship",
-        "Translators": [],
-        "Year": "2017",
-        "YearResolved": "2017",
-        "CreatedBy": "_Test User",
-        "CreatedOn": "2017-09-01T10:00:00",
-        "ModifiedBy": "_Test User",
-        "Id": "d0e1f2a3-b4c5-6789-defa-123456789012",
-        "ModifiedOn": "2017-09-01T10:00:00",
-        "Project": {
-          "$ref": "8"
-        }
-      },
-      "UseNumberingTypeOfParentDocument": false
-    },
-    {
-      "$id": "75",
-      "$type": "SwissAcademic.Citavi.Citations.WordPlaceholderEntry, SwissAcademic.Citavi",
-      "Id": "d1e2f3a4-b5c6-7890-defa-123456789abc",
-      "RangeLength": 6,
-      "ReferenceId": "e2f3a4b5-c6d7-8901-efab-234567890bcd",
-      "BibliographyEntry": "/bibonly",
-      "UseStandardPrefix": true,
-      "PageRange": {
-        "$id": "76",
-        "$type": "SwissAcademic.PageRange, SwissAcademic",
-        "NumberingType": 0,
-        "NumeralSystem": 0,
-        "StartPage": {
-          "$id": "77",
-          "$type": "SwissAcademic.PageNumber, SwissAcademic",
-          "IsFullyNumeric": false,
-          "NumberingType": 0,
-          "NumeralSystem": 0
-        },
-        "EndPage": {
-          "$id": "78",
-          "$type": "SwissAcademic.PageNumber, SwissAcademic",
-          "IsFullyNumeric": false,
-          "NumberingType": 0,
-          "NumeralSystem": 0
-        }
-      },
-      "Reference": {
-        "$id": "79",
-        "$type": "SwissAcademic.Citavi.Reference, SwissAcademic.Citavi",
-        "AbstractComplexity": 0,
-        "AbstractSourceTextFormat": 0,
-        "Authors": [
-          {
-            "$id": "80",
-            "$type": "SwissAcademic.Citavi.Person, SwissAcademic.Citavi",
-            "FirstName": "Thomas",
-            "LastName": "Nguyen",
-            "Protected": false,
-            "Sex": 2,
-            "CreatedBy": "_Test User",
-            "CreatedOn": "2016-11-15T09:00:00",
-            "ModifiedBy": "_Test User",
-            "Id": "f7a8b9c0-d1e2-3456-fabc-789012345f01",
-            "ModifiedOn": "2016-11-15T09:00:00",
-            "Project": {
-              "$ref": "8"
-            }
-          }
-        ],
-        "BibTeXKey": "Nguyen.2016",
-        "CitationKey": "[Ngu‑16]",
-        "CitationKeyUpdateType": 0,
-        "Collaborators": [],
-        "Editors": [],
-        "EvaluationComplexity": 0,
-        "EvaluationSourceTextFormat": 0,
-        "Groups": [],
-        "HasLabel1": false,
-        "HasLabel2": false,
-        "Keywords": [],
-        "Language": "English",
-        "LanguageCode": "en",
-        "Locations": [],
-        "Organizations": [],
-        "OthersInvolved": [],
-        "PageRange": "",
-        "PlaceOfPublication": "New York",
-        "Publishers": [
-          {
-            "$id": "81",
-            "$type": "SwissAcademic.Citavi.Publisher, SwissAcademic.Citavi",
-            "Name": "Academic Press",
-            "Protected": false,
-            "CreatedBy": "_Test User",
-            "CreatedOn": "2016-11-15T09:00:00",
-            "ModifiedBy": "_Test User",
-            "Id": "a8b9c0d1-e2f3-4567-abcd-890123456a02",
-            "ModifiedOn": "2016-11-15T09:00:00",
-            "Project": {
-              "$ref": "8"
-            }
-          }
-        ],
-        "Quotations": [],
-        "Rating": 0,
-        "ReferenceType": "Book",
-        "ShortTitle": "Nguyen 2016 – Background Reading",
-        "ShortTitleUpdateType": 0,
-        "StaticIds": [
-          "a1b2c3d4-0000-0000-0000-000000000008"
-        ],
-        "TableOfContentsComplexity": 0,
-        "TableOfContentsSourceTextFormat": 0,
-        "Tasks": [],
-        "Title": "Background Reading in Comparative Literature",
-        "Translators": [],
-        "Year": "2016",
-        "YearResolved": "2016",
-        "CreatedBy": "_Test User",
-        "CreatedOn": "2016-11-15T09:00:00",
-        "ModifiedBy": "_Test User",
-        "Id": "e2f3a4b5-c6d7-8901-efab-234567890bcd",
-        "ModifiedOn": "2016-11-15T09:00:00",
-        "Project": {
-          "$ref": "8"
-        }
-      },
-      "UseNumberingTypeOfParentDocument": false
-    },
-    {
-      "$id": "83",
-      "$type": "SwissAcademic.Citavi.Citations.WordPlaceholderEntry, SwissAcademic.Citavi",
-      "AssociateWithKnowledgeItemId": "a370a153-c716-49d8-a758-2d59f3c5a633",
-      "Id": "cb686afa-a86e-49b9-b146-32d691dc3f97",
-      "RangeLength": 27,
-      "ReferenceId": "12fe1ef7-4bcc-43ef-a99a-76b355e0e8eb",
-      "QuotationType": 1,
-      "PageRange": {
-        "$id": "84",
-        "$type": "SwissAcademic.PageRange, SwissAcademic",
-        "OriginalString": "306",
-        "NumberingType": 0,
-        "NumeralSystem": 0,
-        "StartPage": {
-          "$id": "85",
-          "$type": "SwissAcademic.PageNumber, SwissAcademic",
-          "OriginalString": "306",
-          "PrettyString": "306",
-          "Number": 306,
-          "IsFullyNumeric": true,
-          "NumberingType": 0,
-          "NumeralSystem": 0
-        },
-        "EndPage": {
-          "$id": "86",
-          "$type": "SwissAcademic.PageNumber, SwissAcademic",
-          "IsFullyNumeric": false,
-          "NumberingType": 0,
-          "NumeralSystem": 0
-        }
-      },
-      "Reference": {
-        "$id": "87",
-        "$type": "SwissAcademic.Citavi.Reference, SwissAcademic.Citavi",
-        "AbstractComplexity": 0,
-        "AbstractSourceTextFormat": 0,
-        "Authors": [
-          {
-            "$id": "88",
-            "$type": "SwissAcademic.Citavi.Person, SwissAcademic.Citavi",
-            "FirstName": "Peter",
-            "LastName": "Hofer",
-            "Protected": false,
-            "Sex": 2,
-            "CreatedBy": "_Peter Hofer",
-            "CreatedOn": "2022-04-09T07:06:51",
-            "ModifiedBy": "_Peter Hofer",
-            "Id": "2a74e362-3265-4aac-a4a0-6c446b32a0d8",
-            "ModifiedOn": "2022-04-09T07:06:51",
-            "Project": {
-              "$ref": "8"
-            }
-          },
-          {
-            "$id": "89",
-            "$type": "SwissAcademic.Citavi.Person, SwissAcademic.Citavi",
-            "FirstName": "Julian",
-            "LastName": "Eder",
-            "Protected": false,
-            "Sex": 2,
-            "CreatedBy": "_Peter Hofer",
-            "CreatedOn": "2020-01-21T18:17:58",
-            "ModifiedBy": "_Peter Hofer",
-            "Id": "927e9db8-108f-46f9-9146-54b1861c7665",
-            "ModifiedOn": "2020-01-21T18:18:42",
-            "Project": {
-              "$ref": "8"
-            }
-          }
-        ],
-        "CitationKeyUpdateType": 0,
-        "Collaborators": [],
-        "Doi": "10.1002/geot.202100068",
-        "Editors": [],
-        "EvaluationComplexity": 0,
-        "EvaluationSourceTextFormat": 0,
-        "Groups": [],
-        "HasLabel1": false,
-        "HasLabel2": false,
-        "Keywords": [],
-        "Locations": [
-          {
-            "$id": "90",
-            "$type": "SwissAcademic.Citavi.Location, SwissAcademic.Citavi",
-            "Address": {
-              "$id": "91",
-              "$type": "SwissAcademic.Citavi.LinkedResource, SwissAcademic.Citavi",
-              "LinkedResourceType": 5,
-              "OriginalString": "10.1002/geot.202100068",
-              "UriString": "https://doi.org/10.1002/geot.202100068",
-              "LinkedResourceStatus": 8,
-              "Properties": {
-                "$id": "92",
-                "$type": "SwissAcademic.Citavi.LinkedResourceProperties, SwissAcademic.Citavi"
-              },
-              "SyncFolderType": 0,
-              "IsLocalCloudProjectFileLink": false,
-              "IsCloudRestore": false,
-              "IsCloudCopy": false,
-              "AttachmentFolderWasInFallbackMode": false
+            "Reference": {
+                "$id": "20",
+                "$type": "SwissAcademic.Citavi.Reference, SwissAcademic.Citavi",
+                "AbstractComplexity": 0,
+                "AbstractSourceTextFormat": 0,
+                "Authors": [
+                    {
+                        "$id": "21",
+                        "$type": "SwissAcademic.Citavi.Person, SwissAcademic.Citavi",
+                        "FirstName": "Hans",
+                        "LastName": "Müller",
+                        "Protected": false,
+                        "Sex": 2,
+                        "CreatedBy": "_Test User",
+                        "CreatedOn": "2022-06-15T09:00:00",
+                        "ModifiedBy": "_Test User",
+                        "Id": "e7f8a9b0-c1d2-3456-efab-567890123456",
+                        "ModifiedOn": "2022-06-15T09:00:00",
+                        "Project": {
+                            "$ref": "8"
+                        }
+                    }
+                ],
+                "BibTeXKey": "Muller.2022",
+                "CitationKey": "[Mül‑22]",
+                "CitationKeyUpdateType": 0,
+                "Collaborators": [],
+                "Editors": [
+                    {
+                        "$id": "22",
+                        "$type": "SwissAcademic.Citavi.Person, SwissAcademic.Citavi",
+                        "FirstName": "Klaus",
+                        "LastName": "Schmidt",
+                        "Protected": false,
+                        "Sex": 2,
+                        "CreatedBy": "_Test User",
+                        "CreatedOn": "2022-06-15T09:00:00",
+                        "ModifiedBy": "_Test User",
+                        "Id": "f8a9b0c1-d2e3-4567-fabc-678901234567",
+                        "ModifiedOn": "2022-06-15T09:00:00",
+                        "Project": {
+                            "$ref": "8"
+                        }
+                    }
+                ],
+                "Edition": "3rd",
+                "EvaluationComplexity": 0,
+                "EvaluationSourceTextFormat": 0,
+                "Groups": [],
+                "HasLabel1": false,
+                "HasLabel2": false,
+                "Isbn": "978-3-030-12345-6",
+                "Keywords": [],
+                "Language": "German",
+                "LanguageCode": "de",
+                "Locations": [],
+                "Organizations": [],
+                "OthersInvolved": [],
+                "PageRange": "<sp>\r\n  <n>42</n>\r\n  <in>true</in>\r\n  <os>42</os>\r\n  <ps>42</ps>\r\n</sp>\r\n<os>42</os>",
+                "PlaceOfPublication": "Berlin",
+                "Publishers": [
+                    {
+                        "$id": "23",
+                        "$type": "SwissAcademic.Citavi.Publisher, SwissAcademic.Citavi",
+                        "Name": "Springer-Verlag",
+                        "Protected": false,
+                        "CreatedBy": "_Test User",
+                        "CreatedOn": "2022-06-15T09:00:00",
+                        "ModifiedBy": "_Test User",
+                        "Id": "a9b0c1d2-e3f4-5678-abcd-789012345678",
+                        "ModifiedOn": "2022-06-15T09:00:00",
+                        "Project": {
+                            "$ref": "8"
+                        }
+                    }
+                ],
+                "Quotations": [],
+                "Rating": 0,
+                "ReferenceType": "Book",
+                "ShortTitle": "Müller 2022 – Deutsche Beispiele",
+                "ShortTitleUpdateType": 0,
+                "StaticIds": ["a1b2c3d4-0000-0000-0000-000000000002"],
+                "TableOfContentsComplexity": 0,
+                "TableOfContentsSourceTextFormat": 0,
+                "Tasks": [],
+                "Title": "Deutsche Beispiele in der Wissenschaft",
+                "Translators": [],
+                "Year": "2022",
+                "YearResolved": "2022",
+                "CreatedBy": "_Test User",
+                "CreatedOn": "2022-06-15T09:00:00",
+                "ModifiedBy": "_Test User",
+                "Id": "d6e7f8a9-b0c1-2345-defa-456789012345",
+                "ModifiedOn": "2022-06-15T09:00:00",
+                "Project": {
+                    "$ref": "8"
+                }
             },
-            "Annotations": [],
-            "LocationType": 0,
-            "MirrorsReferencePropertyId": 128,
-            "CreatedBy": "_Peter Hofer",
-            "CreatedOn": "2022-06-06T06:14:19",
-            "ModifiedBy": "_Peter Hofer",
-            "Id": "279ed956-62e0-4615-b181-e70267c90447",
-            "ModifiedOn": "2022-06-06T06:14:19",
-            "Project": {
-              "$ref": "8"
-            }
-          }
-        ],
-        "Number": "3",
-        "Organizations": [],
-        "OthersInvolved": [],
-        "PageRange": "<sp>\r\n  <n>305</n>\r\n  <in>true</in>\r\n  <os>305</os>\r\n  <ps>305</ps>\r\n</sp>\r\n<ep>\r\n  <n>310</n>\r\n  <in>true</in>\r\n  <os>310</os>\r\n  <ps>310</ps>\r\n</ep>\r\n<os>305-310</os>",
-        "Periodical": {
-          "$id": "93",
-          "$type": "SwissAcademic.Citavi.Periodical, SwissAcademic.Citavi",
-          "Eissn": "1865-7389",
-          "Issn": "1865-7362",
-          "Name": "Geomechanics and Tunnelling",
-          "Pagination": 0,
-          "Protected": false,
-          "CreatedBy": "_Peter Hofer",
-          "CreatedOn": "2022-06-06T06:14:19",
-          "ModifiedBy": "_Peter Hofer",
-          "Id": "a4b90ead-df88-4715-b0d2-bf501de16a31",
-          "ModifiedOn": "2022-06-06T06:14:19",
-          "Project": {
-            "$ref": "8"
-          }
+            "UseNumberingTypeOfParentDocument": false
         },
-        "Publishers": [],
-        "Quotations": [],
-        "Rating": 0,
-        "ReferenceType": "JournalArticle",
-        "ShortTitle": "Hofer, Eder et al. 2022 – RApid Data Integration and Visualization",
-        "ShortTitleUpdateType": 0,
-        "SourceOfBibliographicInformation": "CrossRef",
-        "StaticIds": [
-          "12916421-a8a1-4e1e-8c03-8ed95892e50b"
-        ],
-        "TableOfContentsComplexity": 0,
-        "TableOfContentsSourceTextFormat": 0,
-        "Tasks": [],
-        "Title": "RApid Data Integration and Visualization (RADIV) in Subsurface Operations",
-        "Translators": [],
-        "Volume": "15",
-        "Year": "2022",
-        "YearResolved": "2022",
-        "CreatedBy": "_Peter Hofer",
-        "CreatedOn": "2022-06-06T06:14:19",
-        "ModifiedBy": "_Peter Hofer",
-        "Id": "12fe1ef7-4bcc-43ef-a99a-76b355e0e8eb",
-        "ModifiedOn": "2022-06-06T06:14:19",
-        "Project": {
-          "$ref": "8"
+        {
+            "$id": "24",
+            "$type": "SwissAcademic.Citavi.Citations.WordPlaceholderEntry, SwissAcademic.Citavi",
+            "Id": "b3c4d5e6-f7a8-9012-bcde-f23456789012",
+            "RangeLength": 15,
+            "ReferenceId": "e8f9a0b1-c2d3-4567-efab-678901234567",
+            "PageRange": {
+                "$id": "25",
+                "$type": "SwissAcademic.PageRange, SwissAcademic",
+                "OriginalString": "xvii",
+                "NumberingType": 0,
+                "NumeralSystem": 0,
+                "StartPage": {
+                    "$id": "26",
+                    "$type": "SwissAcademic.PageNumber, SwissAcademic",
+                    "OriginalString": "xvii",
+                    "PrettyString": "xvii",
+                    "IsFullyNumeric": false,
+                    "NumberingType": 0,
+                    "NumeralSystem": 0
+                },
+                "EndPage": {
+                    "$id": "27",
+                    "$type": "SwissAcademic.PageNumber, SwissAcademic",
+                    "OriginalString": "xvii",
+                    "PrettyString": "xvii",
+                    "IsFullyNumeric": false,
+                    "NumberingType": 0,
+                    "NumeralSystem": 0
+                }
+            },
+            "Reference": {
+                "$id": "28",
+                "$type": "SwissAcademic.Citavi.Reference, SwissAcademic.Citavi",
+                "AbstractComplexity": 0,
+                "AbstractSourceTextFormat": 0,
+                "Authors": [
+                    {
+                        "$id": "29",
+                        "$type": "SwissAcademic.Citavi.Person, SwissAcademic.Citavi",
+                        "FirstName": "Alice",
+                        "LastName": "Brown",
+                        "Protected": false,
+                        "Sex": 1,
+                        "CreatedBy": "_Test User",
+                        "CreatedOn": "2021-08-15T14:30:00",
+                        "ModifiedBy": "_Test User",
+                        "Id": "f9a0b1c2-d3e4-5678-fabc-789012345678",
+                        "ModifiedOn": "2021-08-15T14:30:00",
+                        "Project": {
+                            "$ref": "8"
+                        }
+                    }
+                ],
+                "BibTeXKey": "Brown.2021",
+                "CitationKey": "[Bro‑21]",
+                "CitationKeyUpdateType": 0,
+                "Collaborators": [],
+                "Doi": "10.1234/example.2021.002",
+                "Editors": [],
+                "Edition": "2nd",
+                "EvaluationComplexity": 0,
+                "EvaluationSourceTextFormat": 0,
+                "Groups": [],
+                "HasLabel1": false,
+                "HasLabel2": false,
+                "Keywords": [],
+                "Language": "English",
+                "LanguageCode": "en",
+                "Locations": [
+                    {
+                        "$id": "30",
+                        "$type": "SwissAcademic.Citavi.Location, SwissAcademic.Citavi",
+                        "Address": {
+                            "$id": "31",
+                            "$type": "SwissAcademic.Citavi.LinkedResource, SwissAcademic.Citavi",
+                            "LinkedResourceType": 5,
+                            "OriginalString": "10.1234/example.2021.002",
+                            "UriString": "https://doi.org/10.1234/example.2021.002",
+                            "LinkedResourceStatus": 8,
+                            "Properties": {
+                                "$id": "32",
+                                "$type": "SwissAcademic.Citavi.LinkedResourceProperties, SwissAcademic.Citavi"
+                            },
+                            "SyncFolderType": 0,
+                            "IsLocalCloudProjectFileLink": false,
+                            "IsCloudRestore": false,
+                            "IsCloudCopy": false,
+                            "AttachmentFolderWasInFallbackMode": false
+                        },
+                        "Annotations": [],
+                        "LocationType": 0,
+                        "MirrorsReferencePropertyId": 128,
+                        "CreatedBy": "_Test User",
+                        "CreatedOn": "2021-08-15T14:30:00",
+                        "ModifiedBy": "_Test User",
+                        "Id": "a0b1c2d3-e4f5-6789-abcd-890123456789",
+                        "ModifiedOn": "2021-08-15T14:30:00",
+                        "Project": {
+                            "$ref": "8"
+                        }
+                    }
+                ],
+                "Organizations": [],
+                "OthersInvolved": [],
+                "PageRange": "<sp>\r\n  <n>xvii</n>\r\n  <in>false</in>\r\n  <os>xvii</os>\r\n  <ps>xvii</ps>\r\n</sp>\r\n<os>xvii</os>",
+                "PlaceOfPublication": "Cambridge",
+                "Publishers": [
+                    {
+                        "$id": "33",
+                        "$type": "SwissAcademic.Citavi.Publisher, SwissAcademic.Citavi",
+                        "Name": "Cambridge University Press",
+                        "Protected": false,
+                        "CreatedBy": "_Test User",
+                        "CreatedOn": "2021-08-15T14:30:00",
+                        "ModifiedBy": "_Test User",
+                        "Id": "b1c2d3e4-f5a6-7890-bcde-901234567890",
+                        "ModifiedOn": "2021-08-15T14:30:00",
+                        "Project": {
+                            "$ref": "8"
+                        }
+                    }
+                ],
+                "Quotations": [],
+                "Rating": 0,
+                "ReferenceType": "Book",
+                "ShortTitle": "Brown 2021 – Research Methods",
+                "ShortTitleUpdateType": 0,
+                "StaticIds": ["a1b2c3d4-0000-0000-0000-000000000003"],
+                "TableOfContentsComplexity": 0,
+                "TableOfContentsSourceTextFormat": 0,
+                "Tasks": [],
+                "Title": "Research Methods in Social Sciences",
+                "Translators": [],
+                "Year": "2021",
+                "YearResolved": "2021",
+                "CreatedBy": "_Test User",
+                "CreatedOn": "2021-08-15T14:30:00",
+                "ModifiedBy": "_Test User",
+                "Id": "e8f9a0b1-c2d3-4567-efab-678901234567",
+                "ModifiedOn": "2021-08-15T14:30:00",
+                "Project": {
+                    "$ref": "8"
+                }
+            },
+            "UseNumberingTypeOfParentDocument": false,
+            "UseStandardPrefix": true
+        },
+        {
+            "$id": "34",
+            "$type": "SwissAcademic.Citavi.Citations.WordPlaceholderEntry, SwissAcademic.Citavi",
+            "Id": "d7e8f9a0-b1c2-3456-defa-567890123456",
+            "RangeLength": 8,
+            "ReferenceId": "f0a1b2c3-d4e5-6789-fabc-789012345678",
+            "PageRange": {
+                "$id": "35",
+                "$type": "SwissAcademic.PageRange, SwissAcademic",
+                "NumberingType": 0,
+                "NumeralSystem": 0,
+                "StartPage": {
+                    "$id": "36",
+                    "$type": "SwissAcademic.PageNumber, SwissAcademic",
+                    "IsFullyNumeric": false,
+                    "NumberingType": 0,
+                    "NumeralSystem": 0
+                },
+                "EndPage": {
+                    "$id": "37",
+                    "$type": "SwissAcademic.PageNumber, SwissAcademic",
+                    "IsFullyNumeric": false,
+                    "NumberingType": 0,
+                    "NumeralSystem": 0
+                }
+            },
+            "Reference": {
+                "$id": "38",
+                "$type": "SwissAcademic.Citavi.Reference, SwissAcademic.Citavi",
+                "AbstractComplexity": 0,
+                "AbstractSourceTextFormat": 0,
+                "Authors": [
+                    {
+                        "$id": "39",
+                        "$type": "SwissAcademic.Citavi.Person, SwissAcademic.Citavi",
+                        "FirstName": "Robert",
+                        "MiddleName": "C.",
+                        "LastName": "Davis",
+                        "Protected": false,
+                        "Sex": 2,
+                        "CreatedBy": "_Test User",
+                        "CreatedOn": "2020-12-10T16:45:00",
+                        "ModifiedBy": "_Test User",
+                        "Id": "a1b2c3d4-e5f6-7890-abcd-890123456789",
+                        "ModifiedOn": "2020-12-10T16:45:00",
+                        "Project": {
+                            "$ref": "8"
+                        }
+                    }
+                ],
+                "BibTeXKey": "Davis.2020",
+                "CitationKey": "[Dav‑20]",
+                "CitationKeyUpdateType": 0,
+                "Collaborators": [],
+                "Doi": "10.1234/example.2020.003",
+                "Editors": [],
+                "EvaluationComplexity": 0,
+                "EvaluationSourceTextFormat": 0,
+                "Groups": [],
+                "HasLabel1": false,
+                "HasLabel2": false,
+                "Keywords": [],
+                "Language": "English",
+                "LanguageCode": "en",
+                "Locations": [
+                    {
+                        "$id": "40",
+                        "$type": "SwissAcademic.Citavi.Location, SwissAcademic.Citavi",
+                        "Address": {
+                            "$id": "41",
+                            "$type": "SwissAcademic.Citavi.LinkedResource, SwissAcademic.Citavi",
+                            "LinkedResourceType": 5,
+                            "OriginalString": "10.1234/example.2020.003",
+                            "UriString": "https://doi.org/10.1234/example.2020.003",
+                            "LinkedResourceStatus": 8,
+                            "Properties": {
+                                "$id": "42",
+                                "$type": "SwissAcademic.Citavi.LinkedResourceProperties, SwissAcademic.Citavi"
+                            },
+                            "SyncFolderType": 0,
+                            "IsLocalCloudProjectFileLink": false,
+                            "IsCloudRestore": false,
+                            "IsCloudCopy": false,
+                            "AttachmentFolderWasInFallbackMode": false
+                        },
+                        "Annotations": [],
+                        "LocationType": 0,
+                        "MirrorsReferencePropertyId": 128,
+                        "CreatedBy": "_Test User",
+                        "CreatedOn": "2020-12-10T16:45:00",
+                        "ModifiedBy": "_Test User",
+                        "Id": "b2c3d4e5-f6a7-8901-bcde-901234567890",
+                        "ModifiedOn": "2020-12-10T16:45:00",
+                        "Project": {
+                            "$ref": "8"
+                        }
+                    }
+                ],
+                "Number": "2",
+                "Organizations": [],
+                "OthersInvolved": [],
+                "PageRange": "",
+                "Periodical": {
+                    "$id": "43",
+                    "$type": "SwissAcademic.Citavi.Periodical, SwissAcademic.Citavi",
+                    "Eissn": "1234-5678",
+                    "Name": "International Journal of Testing",
+                    "Pagination": 0,
+                    "Protected": false,
+                    "UserAbbreviation1": "Int. J. Test.",
+                    "StandardAbbreviation": "Int. J. Test.",
+                    "CreatedBy": "_Test User",
+                    "CreatedOn": "2020-12-10T16:45:00",
+                    "ModifiedBy": "_Test User",
+                    "Id": "c3d4e5f6-a7b8-9012-cdef-012345678901",
+                    "ModifiedOn": "2020-12-10T16:45:00",
+                    "Project": {
+                        "$ref": "8"
+                    }
+                },
+                "Publishers": [],
+                "Quotations": [],
+                "Rating": 0,
+                "ReferenceType": "JournalArticle",
+                "ShortTitle": "Davis 2020 – Testing Frameworks",
+                "ShortTitleUpdateType": 0,
+                "StaticIds": ["a1b2c3d4-0000-0000-0000-000000000004"],
+                "TableOfContentsComplexity": 0,
+                "TableOfContentsSourceTextFormat": 0,
+                "Tasks": [],
+                "Title": "Modern Testing Frameworks: A Comprehensive Review",
+                "Translators": [],
+                "Volume": "12",
+                "Year": "2020",
+                "YearResolved": "2020",
+                "CreatedBy": "_Test User",
+                "CreatedOn": "2020-12-10T16:45:00",
+                "ModifiedBy": "_Test User",
+                "Id": "f0a1b2c3-d4e5-6789-fabc-789012345678",
+                "ModifiedOn": "2020-12-10T16:45:00",
+                "Project": {
+                    "$ref": "8"
+                }
+            },
+            "UseNumberingTypeOfParentDocument": false,
+            "UseStandardPrefix": true
+        },
+        {
+            "$id": "55",
+            "$type": "SwissAcademic.Citavi.Citations.WordPlaceholderEntry, SwissAcademic.Citavi",
+            "Id": "e1f2a3b4-c5d6-7890-efab-123456789abc",
+            "RangeLength": 22,
+            "ReferenceId": "f2a3b4c5-d6e7-8901-fabc-234567890bcd",
+            "Prefix": "cf. ",
+            "Suffix": ", etc.",
+            "UseStandardPrefix": false,
+            "PageRange": {
+                "$id": "56",
+                "$type": "SwissAcademic.PageRange, SwissAcademic",
+                "OriginalString": "14-15",
+                "NumberingType": 0,
+                "NumeralSystem": 0,
+                "StartPage": {
+                    "$id": "57",
+                    "$type": "SwissAcademic.PageNumber, SwissAcademic",
+                    "OriginalString": "14",
+                    "PrettyString": "14",
+                    "Number": 14,
+                    "IsFullyNumeric": true,
+                    "NumberingType": 0,
+                    "NumeralSystem": 0
+                },
+                "EndPage": {
+                    "$id": "58",
+                    "$type": "SwissAcademic.PageNumber, SwissAcademic",
+                    "OriginalString": "15",
+                    "PrettyString": "15",
+                    "Number": 15,
+                    "IsFullyNumeric": true,
+                    "NumberingType": 0,
+                    "NumeralSystem": 0
+                }
+            },
+            "Reference": {
+                "$id": "59",
+                "$type": "SwissAcademic.Citavi.Reference, SwissAcademic.Citavi",
+                "AbstractComplexity": 0,
+                "AbstractSourceTextFormat": 0,
+                "Authors": [
+                    {
+                        "$id": "60",
+                        "$type": "SwissAcademic.Citavi.Person, SwissAcademic.Citavi",
+                        "FirstName": "Clara",
+                        "LastName": "Evans",
+                        "Protected": false,
+                        "Sex": 1,
+                        "CreatedBy": "_Test User",
+                        "CreatedOn": "2019-05-20T11:00:00",
+                        "ModifiedBy": "_Test User",
+                        "Id": "a2b3c4d5-e6f7-8901-abcd-234567890abc",
+                        "ModifiedOn": "2019-05-20T11:00:00",
+                        "Project": {
+                            "$ref": "8"
+                        }
+                    }
+                ],
+                "BibTeXKey": "Evans.2019",
+                "CitationKey": "[Eva‑19]",
+                "CitationKeyUpdateType": 0,
+                "Collaborators": [],
+                "Editors": [],
+                "EvaluationComplexity": 0,
+                "EvaluationSourceTextFormat": 0,
+                "Groups": [],
+                "HasLabel1": false,
+                "HasLabel2": false,
+                "Keywords": [],
+                "Language": "English",
+                "LanguageCode": "en",
+                "Locations": [],
+                "Organizations": [],
+                "OthersInvolved": [],
+                "PageRange": "<sp>\r\n  <n>14</n>\r\n  <in>true</in>\r\n  <os>14</os>\r\n  <ps>14</ps>\r\n</sp>\r\n<ep>\r\n  <n>15</n>\r\n  <in>true</in>\r\n  <os>15</os>\r\n  <ps>15</ps>\r\n</ep>\r\n<os>14-15</os>",
+                "Publishers": [],
+                "Quotations": [],
+                "Rating": 0,
+                "ReferenceType": "Book",
+                "ShortTitle": "Evans 2019 – Citation Practices",
+                "ShortTitleUpdateType": 0,
+                "StaticIds": ["a1b2c3d4-0000-0000-0000-000000000005"],
+                "TableOfContentsComplexity": 0,
+                "TableOfContentsSourceTextFormat": 0,
+                "Tasks": [],
+                "Title": "Citation Practices in the Humanities",
+                "Translators": [],
+                "Year": "2019",
+                "YearResolved": "2019",
+                "CreatedBy": "_Test User",
+                "CreatedOn": "2019-05-20T11:00:00",
+                "ModifiedBy": "_Test User",
+                "Id": "f2a3b4c5-d6e7-8901-fabc-234567890bcd",
+                "ModifiedOn": "2019-05-20T11:00:00",
+                "Project": {
+                    "$ref": "8"
+                }
+            },
+            "UseNumberingTypeOfParentDocument": false
+        },
+        {
+            "$id": "61",
+            "$type": "SwissAcademic.Citavi.Citations.WordPlaceholderEntry, SwissAcademic.Citavi",
+            "Id": "b5c6d7e8-f9a0-1234-bcde-f0123456789a",
+            "RangeLength": 12,
+            "ReferenceId": "c6d7e8f9-a0b1-2345-cdef-01234567890b",
+            "UseStandardPrefix": true,
+            "PageRange": {
+                "$id": "62",
+                "$type": "SwissAcademic.PageRange, SwissAcademic",
+                "OriginalString": "Col. 12-14",
+                "NumberingType": 1,
+                "NumeralSystem": 0,
+                "StartPage": {
+                    "$id": "63",
+                    "$type": "SwissAcademic.PageNumber, SwissAcademic",
+                    "OriginalString": "12",
+                    "PrettyString": "12",
+                    "Number": 12,
+                    "IsFullyNumeric": true,
+                    "NumberingType": 1,
+                    "NumeralSystem": 0
+                },
+                "EndPage": {
+                    "$id": "64",
+                    "$type": "SwissAcademic.PageNumber, SwissAcademic",
+                    "OriginalString": "14",
+                    "PrettyString": "14",
+                    "Number": 14,
+                    "IsFullyNumeric": true,
+                    "NumberingType": 1,
+                    "NumeralSystem": 0
+                }
+            },
+            "Reference": {
+                "$id": "65",
+                "$type": "SwissAcademic.Citavi.Reference, SwissAcademic.Citavi",
+                "AbstractComplexity": 0,
+                "AbstractSourceTextFormat": 0,
+                "Authors": [
+                    {
+                        "$id": "66",
+                        "$type": "SwissAcademic.Citavi.Person, SwissAcademic.Citavi",
+                        "FirstName": "Friedrich",
+                        "LastName": "Wagner",
+                        "Protected": false,
+                        "Sex": 2,
+                        "CreatedBy": "_Test User",
+                        "CreatedOn": "2018-03-10T08:30:00",
+                        "ModifiedBy": "_Test User",
+                        "Id": "b3c4d5e6-f7a8-9012-bcde-345678901bcd",
+                        "ModifiedOn": "2018-03-10T08:30:00",
+                        "Project": {
+                            "$ref": "8"
+                        }
+                    }
+                ],
+                "BibTeXKey": "Wagner.2018",
+                "CitationKey": "[Wag‑18]",
+                "CitationKeyUpdateType": 0,
+                "Collaborators": [],
+                "Editors": [],
+                "EvaluationComplexity": 0,
+                "EvaluationSourceTextFormat": 0,
+                "Groups": [],
+                "HasLabel1": false,
+                "HasLabel2": false,
+                "Keywords": [],
+                "Language": "German",
+                "LanguageCode": "de",
+                "Locations": [],
+                "Organizations": [],
+                "OthersInvolved": [],
+                "PageRange": "",
+                "PlaceOfPublication": "Frankfurt",
+                "Publishers": [
+                    {
+                        "$id": "67",
+                        "$type": "SwissAcademic.Citavi.Publisher, SwissAcademic.Citavi",
+                        "Name": "Klostermann",
+                        "Protected": false,
+                        "CreatedBy": "_Test User",
+                        "CreatedOn": "2018-03-10T08:30:00",
+                        "ModifiedBy": "_Test User",
+                        "Id": "c4d5e6f7-a8b9-0123-cdef-456789012cde",
+                        "ModifiedOn": "2018-03-10T08:30:00",
+                        "Project": {
+                            "$ref": "8"
+                        }
+                    }
+                ],
+                "Quotations": [],
+                "Rating": 0,
+                "ReferenceType": "Book",
+                "ShortTitle": "Wagner 2018 – Rechtsquellen",
+                "ShortTitleUpdateType": 0,
+                "StaticIds": ["a1b2c3d4-0000-0000-0000-000000000006"],
+                "TableOfContentsComplexity": 0,
+                "TableOfContentsSourceTextFormat": 0,
+                "Tasks": [],
+                "Title": "Rechtsquellen des Mittelalters",
+                "Translators": [],
+                "Year": "2018",
+                "YearResolved": "2018",
+                "CreatedBy": "_Test User",
+                "CreatedOn": "2018-03-10T08:30:00",
+                "ModifiedBy": "_Test User",
+                "Id": "c6d7e8f9-a0b1-2345-cdef-01234567890b",
+                "ModifiedOn": "2018-03-10T08:30:00",
+                "Project": {
+                    "$ref": "8"
+                }
+            },
+            "UseNumberingTypeOfParentDocument": false
+        },
+        {
+            "$id": "68",
+            "$type": "SwissAcademic.Citavi.Citations.WordPlaceholderEntry, SwissAcademic.Citavi",
+            "Id": "c9d0e1f2-a3b4-5678-cdef-012345678901",
+            "RangeLength": 9,
+            "ReferenceId": "d0e1f2a3-b4c5-6789-defa-123456789012",
+            "UseStandardPrefix": true,
+            "PageRange": {
+                "$id": "69",
+                "$type": "SwissAcademic.PageRange, SwissAcademic",
+                "OriginalString": "xiv-xvi",
+                "NumberingType": 0,
+                "NumeralSystem": 1,
+                "StartPage": {
+                    "$id": "70",
+                    "$type": "SwissAcademic.PageNumber, SwissAcademic",
+                    "OriginalString": "xiv",
+                    "PrettyString": "xiv",
+                    "Number": 14,
+                    "IsFullyNumeric": false,
+                    "NumberingType": 0,
+                    "NumeralSystem": 1
+                },
+                "EndPage": {
+                    "$id": "71",
+                    "$type": "SwissAcademic.PageNumber, SwissAcademic",
+                    "OriginalString": "xvi",
+                    "PrettyString": "xvi",
+                    "Number": 16,
+                    "IsFullyNumeric": false,
+                    "NumberingType": 0,
+                    "NumeralSystem": 1
+                }
+            },
+            "Reference": {
+                "$id": "72",
+                "$type": "SwissAcademic.Citavi.Reference, SwissAcademic.Citavi",
+                "AbstractComplexity": 0,
+                "AbstractSourceTextFormat": 0,
+                "Authors": [
+                    {
+                        "$id": "73",
+                        "$type": "SwissAcademic.Citavi.Person, SwissAcademic.Citavi",
+                        "FirstName": "Margaret",
+                        "LastName": "Foster",
+                        "Protected": false,
+                        "Sex": 1,
+                        "CreatedBy": "_Test User",
+                        "CreatedOn": "2017-09-01T10:00:00",
+                        "ModifiedBy": "_Test User",
+                        "Id": "d5e6f7a8-b9c0-1234-defa-567890123def",
+                        "ModifiedOn": "2017-09-01T10:00:00",
+                        "Project": {
+                            "$ref": "8"
+                        }
+                    }
+                ],
+                "BibTeXKey": "Foster.2017",
+                "CitationKey": "[Fos‑17]",
+                "CitationKeyUpdateType": 0,
+                "Collaborators": [],
+                "Editors": [],
+                "EvaluationComplexity": 0,
+                "EvaluationSourceTextFormat": 0,
+                "Groups": [],
+                "HasLabel1": false,
+                "HasLabel2": false,
+                "Keywords": [],
+                "Language": "English",
+                "LanguageCode": "en",
+                "Locations": [],
+                "Organizations": [],
+                "OthersInvolved": [],
+                "PageRange": "<sp>\r\n  <n>14</n>\r\n  <in>false</in>\r\n  <os>xiv</os>\r\n  <ps>xiv</ps>\r\n</sp>\r\n<ep>\r\n  <n>16</n>\r\n  <in>false</in>\r\n  <os>xvi</os>\r\n  <ps>xvi</ps>\r\n</ep>\r\n<os>xiv-xvi</os>",
+                "PlaceOfPublication": "Oxford",
+                "Publishers": [
+                    {
+                        "$id": "74",
+                        "$type": "SwissAcademic.Citavi.Publisher, SwissAcademic.Citavi",
+                        "Name": "Oxford University Press",
+                        "Protected": false,
+                        "CreatedBy": "_Test User",
+                        "CreatedOn": "2017-09-01T10:00:00",
+                        "ModifiedBy": "_Test User",
+                        "Id": "e6f7a8b9-c0d1-2345-efab-678901234ef0",
+                        "ModifiedOn": "2017-09-01T10:00:00",
+                        "Project": {
+                            "$ref": "8"
+                        }
+                    }
+                ],
+                "Quotations": [],
+                "Rating": 0,
+                "ReferenceType": "Book",
+                "ShortTitle": "Foster 2017 – Classical Traditions",
+                "ShortTitleUpdateType": 0,
+                "StaticIds": ["a1b2c3d4-0000-0000-0000-000000000007"],
+                "TableOfContentsComplexity": 0,
+                "TableOfContentsSourceTextFormat": 0,
+                "Tasks": [],
+                "Title": "Classical Traditions in Modern Scholarship",
+                "Translators": [],
+                "Year": "2017",
+                "YearResolved": "2017",
+                "CreatedBy": "_Test User",
+                "CreatedOn": "2017-09-01T10:00:00",
+                "ModifiedBy": "_Test User",
+                "Id": "d0e1f2a3-b4c5-6789-defa-123456789012",
+                "ModifiedOn": "2017-09-01T10:00:00",
+                "Project": {
+                    "$ref": "8"
+                }
+            },
+            "UseNumberingTypeOfParentDocument": false
+        },
+        {
+            "$id": "75",
+            "$type": "SwissAcademic.Citavi.Citations.WordPlaceholderEntry, SwissAcademic.Citavi",
+            "Id": "d1e2f3a4-b5c6-7890-defa-123456789abc",
+            "RangeLength": 6,
+            "ReferenceId": "e2f3a4b5-c6d7-8901-efab-234567890bcd",
+            "BibliographyEntry": "/bibonly",
+            "UseStandardPrefix": true,
+            "PageRange": {
+                "$id": "76",
+                "$type": "SwissAcademic.PageRange, SwissAcademic",
+                "NumberingType": 0,
+                "NumeralSystem": 0,
+                "StartPage": {
+                    "$id": "77",
+                    "$type": "SwissAcademic.PageNumber, SwissAcademic",
+                    "IsFullyNumeric": false,
+                    "NumberingType": 0,
+                    "NumeralSystem": 0
+                },
+                "EndPage": {
+                    "$id": "78",
+                    "$type": "SwissAcademic.PageNumber, SwissAcademic",
+                    "IsFullyNumeric": false,
+                    "NumberingType": 0,
+                    "NumeralSystem": 0
+                }
+            },
+            "Reference": {
+                "$id": "79",
+                "$type": "SwissAcademic.Citavi.Reference, SwissAcademic.Citavi",
+                "AbstractComplexity": 0,
+                "AbstractSourceTextFormat": 0,
+                "Authors": [
+                    {
+                        "$id": "80",
+                        "$type": "SwissAcademic.Citavi.Person, SwissAcademic.Citavi",
+                        "FirstName": "Thomas",
+                        "LastName": "Nguyen",
+                        "Protected": false,
+                        "Sex": 2,
+                        "CreatedBy": "_Test User",
+                        "CreatedOn": "2016-11-15T09:00:00",
+                        "ModifiedBy": "_Test User",
+                        "Id": "f7a8b9c0-d1e2-3456-fabc-789012345f01",
+                        "ModifiedOn": "2016-11-15T09:00:00",
+                        "Project": {
+                            "$ref": "8"
+                        }
+                    }
+                ],
+                "BibTeXKey": "Nguyen.2016",
+                "CitationKey": "[Ngu‑16]",
+                "CitationKeyUpdateType": 0,
+                "Collaborators": [],
+                "Editors": [],
+                "EvaluationComplexity": 0,
+                "EvaluationSourceTextFormat": 0,
+                "Groups": [],
+                "HasLabel1": false,
+                "HasLabel2": false,
+                "Keywords": [],
+                "Language": "English",
+                "LanguageCode": "en",
+                "Locations": [],
+                "Organizations": [],
+                "OthersInvolved": [],
+                "PageRange": "",
+                "PlaceOfPublication": "New York",
+                "Publishers": [
+                    {
+                        "$id": "81",
+                        "$type": "SwissAcademic.Citavi.Publisher, SwissAcademic.Citavi",
+                        "Name": "Academic Press",
+                        "Protected": false,
+                        "CreatedBy": "_Test User",
+                        "CreatedOn": "2016-11-15T09:00:00",
+                        "ModifiedBy": "_Test User",
+                        "Id": "a8b9c0d1-e2f3-4567-abcd-890123456a02",
+                        "ModifiedOn": "2016-11-15T09:00:00",
+                        "Project": {
+                            "$ref": "8"
+                        }
+                    }
+                ],
+                "Quotations": [],
+                "Rating": 0,
+                "ReferenceType": "Book",
+                "ShortTitle": "Nguyen 2016 – Background Reading",
+                "ShortTitleUpdateType": 0,
+                "StaticIds": ["a1b2c3d4-0000-0000-0000-000000000008"],
+                "TableOfContentsComplexity": 0,
+                "TableOfContentsSourceTextFormat": 0,
+                "Tasks": [],
+                "Title": "Background Reading in Comparative Literature",
+                "Translators": [],
+                "Year": "2016",
+                "YearResolved": "2016",
+                "CreatedBy": "_Test User",
+                "CreatedOn": "2016-11-15T09:00:00",
+                "ModifiedBy": "_Test User",
+                "Id": "e2f3a4b5-c6d7-8901-efab-234567890bcd",
+                "ModifiedOn": "2016-11-15T09:00:00",
+                "Project": {
+                    "$ref": "8"
+                }
+            },
+            "UseNumberingTypeOfParentDocument": false
+        },
+        {
+            "$id": "83",
+            "$type": "SwissAcademic.Citavi.Citations.WordPlaceholderEntry, SwissAcademic.Citavi",
+            "AssociateWithKnowledgeItemId": "a370a153-c716-49d8-a758-2d59f3c5a633",
+            "Id": "cb686afa-a86e-49b9-b146-32d691dc3f97",
+            "RangeLength": 27,
+            "ReferenceId": "12fe1ef7-4bcc-43ef-a99a-76b355e0e8eb",
+            "QuotationType": 1,
+            "PageRange": {
+                "$id": "84",
+                "$type": "SwissAcademic.PageRange, SwissAcademic",
+                "OriginalString": "306",
+                "NumberingType": 0,
+                "NumeralSystem": 0,
+                "StartPage": {
+                    "$id": "85",
+                    "$type": "SwissAcademic.PageNumber, SwissAcademic",
+                    "OriginalString": "306",
+                    "PrettyString": "306",
+                    "Number": 306,
+                    "IsFullyNumeric": true,
+                    "NumberingType": 0,
+                    "NumeralSystem": 0
+                },
+                "EndPage": {
+                    "$id": "86",
+                    "$type": "SwissAcademic.PageNumber, SwissAcademic",
+                    "IsFullyNumeric": false,
+                    "NumberingType": 0,
+                    "NumeralSystem": 0
+                }
+            },
+            "Reference": {
+                "$id": "87",
+                "$type": "SwissAcademic.Citavi.Reference, SwissAcademic.Citavi",
+                "AbstractComplexity": 0,
+                "AbstractSourceTextFormat": 0,
+                "Authors": [
+                    {
+                        "$id": "88",
+                        "$type": "SwissAcademic.Citavi.Person, SwissAcademic.Citavi",
+                        "FirstName": "Peter",
+                        "LastName": "Hofer",
+                        "Protected": false,
+                        "Sex": 2,
+                        "CreatedBy": "_Peter Hofer",
+                        "CreatedOn": "2022-04-09T07:06:51",
+                        "ModifiedBy": "_Peter Hofer",
+                        "Id": "2a74e362-3265-4aac-a4a0-6c446b32a0d8",
+                        "ModifiedOn": "2022-04-09T07:06:51",
+                        "Project": {
+                            "$ref": "8"
+                        }
+                    },
+                    {
+                        "$id": "89",
+                        "$type": "SwissAcademic.Citavi.Person, SwissAcademic.Citavi",
+                        "FirstName": "Julian",
+                        "LastName": "Eder",
+                        "Protected": false,
+                        "Sex": 2,
+                        "CreatedBy": "_Peter Hofer",
+                        "CreatedOn": "2020-01-21T18:17:58",
+                        "ModifiedBy": "_Peter Hofer",
+                        "Id": "927e9db8-108f-46f9-9146-54b1861c7665",
+                        "ModifiedOn": "2020-01-21T18:18:42",
+                        "Project": {
+                            "$ref": "8"
+                        }
+                    }
+                ],
+                "CitationKeyUpdateType": 0,
+                "Collaborators": [],
+                "Doi": "10.1002/geot.202100068",
+                "Editors": [],
+                "EvaluationComplexity": 0,
+                "EvaluationSourceTextFormat": 0,
+                "Groups": [],
+                "HasLabel1": false,
+                "HasLabel2": false,
+                "Keywords": [],
+                "Locations": [
+                    {
+                        "$id": "90",
+                        "$type": "SwissAcademic.Citavi.Location, SwissAcademic.Citavi",
+                        "Address": {
+                            "$id": "91",
+                            "$type": "SwissAcademic.Citavi.LinkedResource, SwissAcademic.Citavi",
+                            "LinkedResourceType": 5,
+                            "OriginalString": "10.1002/geot.202100068",
+                            "UriString": "https://doi.org/10.1002/geot.202100068",
+                            "LinkedResourceStatus": 8,
+                            "Properties": {
+                                "$id": "92",
+                                "$type": "SwissAcademic.Citavi.LinkedResourceProperties, SwissAcademic.Citavi"
+                            },
+                            "SyncFolderType": 0,
+                            "IsLocalCloudProjectFileLink": false,
+                            "IsCloudRestore": false,
+                            "IsCloudCopy": false,
+                            "AttachmentFolderWasInFallbackMode": false
+                        },
+                        "Annotations": [],
+                        "LocationType": 0,
+                        "MirrorsReferencePropertyId": 128,
+                        "CreatedBy": "_Peter Hofer",
+                        "CreatedOn": "2022-06-06T06:14:19",
+                        "ModifiedBy": "_Peter Hofer",
+                        "Id": "279ed956-62e0-4615-b181-e70267c90447",
+                        "ModifiedOn": "2022-06-06T06:14:19",
+                        "Project": {
+                            "$ref": "8"
+                        }
+                    }
+                ],
+                "Number": "3",
+                "Organizations": [],
+                "OthersInvolved": [],
+                "PageRange": "<sp>\r\n  <n>305</n>\r\n  <in>true</in>\r\n  <os>305</os>\r\n  <ps>305</ps>\r\n</sp>\r\n<ep>\r\n  <n>310</n>\r\n  <in>true</in>\r\n  <os>310</os>\r\n  <ps>310</ps>\r\n</ep>\r\n<os>305-310</os>",
+                "Periodical": {
+                    "$id": "93",
+                    "$type": "SwissAcademic.Citavi.Periodical, SwissAcademic.Citavi",
+                    "Eissn": "1865-7389",
+                    "Issn": "1865-7362",
+                    "Name": "Geomechanics and Tunnelling",
+                    "Pagination": 0,
+                    "Protected": false,
+                    "CreatedBy": "_Peter Hofer",
+                    "CreatedOn": "2022-06-06T06:14:19",
+                    "ModifiedBy": "_Peter Hofer",
+                    "Id": "a4b90ead-df88-4715-b0d2-bf501de16a31",
+                    "ModifiedOn": "2022-06-06T06:14:19",
+                    "Project": {
+                        "$ref": "8"
+                    }
+                },
+                "Publishers": [],
+                "Quotations": [],
+                "Rating": 0,
+                "ReferenceType": "JournalArticle",
+                "ShortTitle": "Hofer, Eder et al. 2022 – RApid Data Integration and Visualization",
+                "ShortTitleUpdateType": 0,
+                "SourceOfBibliographicInformation": "CrossRef",
+                "StaticIds": ["12916421-a8a1-4e1e-8c03-8ed95892e50b"],
+                "TableOfContentsComplexity": 0,
+                "TableOfContentsSourceTextFormat": 0,
+                "Tasks": [],
+                "Title": "RApid Data Integration and Visualization (RADIV) in Subsurface Operations",
+                "Translators": [],
+                "Volume": "15",
+                "Year": "2022",
+                "YearResolved": "2022",
+                "CreatedBy": "_Peter Hofer",
+                "CreatedOn": "2022-06-06T06:14:19",
+                "ModifiedBy": "_Peter Hofer",
+                "Id": "12fe1ef7-4bcc-43ef-a99a-76b355e0e8eb",
+                "ModifiedOn": "2022-06-06T06:14:19",
+                "Project": {
+                    "$ref": "8"
+                }
+            },
+            "UseNumberingTypeOfParentDocument": false
         }
-      },
-      "UseNumberingTypeOfParentDocument": false
-    }
-  ],
-  "FormattedText": {
-    "$id": "94",
-    "Count": 5,
-    "TextUnits": [
-      {
-        "$id": "95",
-        "FontStyle": {
-          "$id": "96",
-          "Neutral": true
-        },
-        "ReadingOrder": 1,
-        "Text": "See "
-      },
-      {
-        "$id": "97",
-        "FontStyle": {
-          "$id": "98",
-          "Italic": true
-        },
-        "ReadingOrder": 1,
-        "Text": "Smith and Johnson"
-      },
-      {
-        "$id": "99",
-        "FontStyle": {
-          "$id": "100",
-          "Neutral": true
-        },
-        "ReadingOrder": 1,
-        "Text": " 2023, 123-125; Vgl. "
-      },
-      {
-        "$id": "101",
-        "FontStyle": {
-          "$id": "102",
-          "Italic": true
-        },
-        "ReadingOrder": 1,
-        "Text": "Müller"
-      },
-      {
-        "$id": "103",
-        "FontStyle": {
-          "$id": "104",
-          "Neutral": true
-        },
-        "ReadingOrder": 1,
-        "Text": " 2022, 42; Davis 2020; cf. Evans 2019, p. 14-15, etc.; Wagner 2018, Col. 12-14; Foster 2017, p. xiv-xvi; Hofer et al. 2022, p. 306"
-      }
-    ]
-  },
-  "Tag": "CitaviPlaceholder#a1b2c3d4-e5f6-7890-abcd-ef1234567890",
-  "Text": "See Smith and Johnson 2023, 123-125; Vgl. Müller 2022, 42; Davis 2020; cf. Evans 2019, p. 14-15, etc.; Wagner 2018, Col. 12-14; Foster 2017, p. xiv-xvi; Hofer et al. 2022, p. 306",
-  "WAIVersion": "6.14.0.0"
+    ],
+    "FormattedText": {
+        "$id": "94",
+        "Count": 5,
+        "TextUnits": [
+            {
+                "$id": "95",
+                "FontStyle": {
+                    "$id": "96",
+                    "Neutral": true
+                },
+                "ReadingOrder": 1,
+                "Text": "See "
+            },
+            {
+                "$id": "97",
+                "FontStyle": {
+                    "$id": "98",
+                    "Italic": true
+                },
+                "ReadingOrder": 1,
+                "Text": "Smith and Johnson"
+            },
+            {
+                "$id": "99",
+                "FontStyle": {
+                    "$id": "100",
+                    "Neutral": true
+                },
+                "ReadingOrder": 1,
+                "Text": " 2023, 123-125; Vgl. "
+            },
+            {
+                "$id": "101",
+                "FontStyle": {
+                    "$id": "102",
+                    "Italic": true
+                },
+                "ReadingOrder": 1,
+                "Text": "Müller"
+            },
+            {
+                "$id": "103",
+                "FontStyle": {
+                    "$id": "104",
+                    "Neutral": true
+                },
+                "ReadingOrder": 1,
+                "Text": " 2022, 42; Davis 2020; cf. Evans 2019, p. 14-15, etc.; Wagner 2018, Col. 12-14; Foster 2017, p. xiv-xvi; Hofer et al. 2022, p. 306"
+            }
+        ]
+    },
+    "Tag": "CitaviPlaceholder#a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+    "Text": "See Smith and Johnson 2023, 123-125; Vgl. Müller 2022, 42; Davis 2020; cf. Evans 2019, p. 14-15, etc.; Wagner 2018, Col. 12-14; Foster 2017, p. xiv-xvi; Hofer et al. 2022, p. 306",
+    "WAIVersion": "6.14.0.0"
 }

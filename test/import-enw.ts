@@ -1,14 +1,14 @@
-import * as converter from "../tmp/bundle.test.js"
+import fs from "node:fs"
+import path from "node:path"
+import { fileURLToPath } from "node:url"
 import { expect } from "chai"
-import fs from "fs"
-import path from "path"
-import { fileURLToPath } from "url"
+import * as converter from "../tmp/bundle.test.js"
 
 const writeFixtures = false // Set to true to save the results as expected test results.
 
 const clean = (state) => {
-    for (let prop of ["comments", "errors", "warnings"]) {
-        if (!state[prop] || state[prop].length == 0) {
+    for (const prop of ["comments", "errors", "warnings"]) {
+        if (!state[prop] || state[prop].length === 0) {
             delete state[prop]
         }
     }
@@ -17,22 +17,22 @@ const clean = (state) => {
 }
 
 const verify = (enwfile) => {
-    let input = fs.readFileSync(enwfile, "utf8")
-    let name = path.basename(enwfile, path.extname(enwfile))
+    const input = fs.readFileSync(enwfile, "utf8")
+    const name = path.basename(enwfile, path.extname(enwfile))
 
-    let found = converter.parseENW(input)
+    const found = converter.parseENW(input)
     clean(found)
 
-    let expected = path.join(path.dirname(enwfile), name + ".json")
+    let expected = path.join(path.dirname(enwfile), `${name}.json`)
     if (writeFixtures) {
-        fs.writeFileSync(expected, JSON.stringify(found, null, 4) + "\n")
+        fs.writeFileSync(expected, `${JSON.stringify(found, null, 4)}\n`)
     }
 
     if (!fs.existsSync(expected)) {
         console.log(
-            `Expected file ${expected} does not exist, creating fixture`
+            `Expected file ${expected} does not exist, creating fixture`,
         )
-        fs.writeFileSync(expected, JSON.stringify(found, null, 4) + "\n")
+        fs.writeFileSync(expected, `${JSON.stringify(found, null, 4)}\n`)
         return
     }
 
@@ -46,7 +46,7 @@ const verify = (enwfile) => {
 
 const fixtures = path.join(
     path.dirname(fileURLToPath(import.meta.url)),
-    "fixtures/import/enw"
+    "fixtures/import/enw",
 )
 const enwfiles = fs.readdirSync(fixtures)
 
