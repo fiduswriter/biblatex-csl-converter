@@ -3,13 +3,13 @@
     "type": "module",
     "version": "3.5.5",
     "description": "Bibliography format converter: BibLaTeX, BibTeX, CSL-JSON, RIS, ENW, EndNote XML, Citavi, DOCX citations, ODT citations — parse, convert, and export with round-trip fidelity",
-    "main": "lib/index.js",
-    "module": "lib/index.mjs",
+    "main": "lib/index.cjs",
+    "module": "lib/index.js",
     "types": "lib/index.d.ts",
     "exports": {
         ".": {
-            "import": "./lib/index.mjs",
-            "require": "./lib/index.js",
+            "import": "./lib/index.js",
+            "require": "./lib/index.cjs",
             "types": "./lib/index.d.ts"
         }
     },
@@ -70,8 +70,8 @@
         "pretest": "npm run lint",
         "compile_i18n": "node --experimental-strip-types scripts/build-i18n.ts",
         "compile": "npm run compile_lib && npm run compile_bundle && npm run compile_demo && npm run compile_browser && npm run compile_types",
-        "compile_lib": "rollup -c rollup.config.es.ts --output.file lib/index.mjs",
-        "compile_bundle": "rollup src/index.ts --config --output.format cjs --output.file lib/index.js --output.sourcemap true",
+        "compile_lib": "rollup -c rollup.config.es.ts --output.file lib/index.js",
+        "compile_bundle": "rollup src/index.ts --config --output.format cjs --output.file lib/index.cjs --output.sourcemap true",
         "compile_types": "rollup src/index.ts -c rollup.config.dts.ts",
         "compile_demo": "rollup src/entries/demo.ts --config --output.format iife --output.file demo/demo.js",
         "compile_browser": "npm run compile_browser-export-biblatex && npm run compile_browser-export-csl && npm run compile_browser-import-biblatex && npm run compile_browser-import-csl && npm run compile_browser-biblatex-csl-converter",
