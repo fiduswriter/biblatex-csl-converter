@@ -9,7 +9,15 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": true
+      "recommended": true,
+      "style": {
+        "noNonNullAssertion": "off"
+      },
+      "suspicious": {
+        "noAssignInExpressions": "off",
+        "noImplicitAnyLet": "off",
+        "noShadowRestrictedNames": "off"
+      }
     }
   },
   "javascript": {
@@ -33,6 +41,12 @@
     "maxSize": 5242880
   },
   "overrides": [
+    {
+      "includes": ["test/fixtures/**"],
+      "linter": {
+        "enabled": false
+      }
+    },
     {
       "includes": ["src/i18n/locales.ts", "lib/**", "browser/**", "demo/**", "tmp/**", "*.cjs", "*.mjs"],
       "linter": {
