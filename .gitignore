@@ -7,7 +7,6 @@ demo/*.js.map
 browser/*.js
 browser/*.js.map
 tmp/
-.nyc_output
 .vscode
 package-lock.json
 yarn.lock

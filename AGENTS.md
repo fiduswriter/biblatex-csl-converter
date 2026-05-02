@@ -312,7 +312,7 @@ All parsers follow the same pattern:
 - **Rollup**: Module bundling with plugins for TypeScript, Babel, etc.
 - **TypeScript**: Type checking and compilation
 - **Mocha/Chai**: Testing framework
-- **nyc**: Code coverage
+- **c8**: Code coverage
 - **ESLint/Prettier**: Code quality and formatting
 
 ## Browser Usage

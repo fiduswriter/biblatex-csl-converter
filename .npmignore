@@ -2,7 +2,6 @@ docs/
 !lib/*
 .travis/
 test/
-.nyc_output/
 .travis.yml
 venv/
 coverage/
@@ -10,7 +9,6 @@ coverage/
 .envrc
 demo/
 browser/
-.nyc_output/
 coverage/
 tmp/
 .github/

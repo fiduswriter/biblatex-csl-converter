@@ -1,5 +1,5 @@
 import { expect } from "chai"
-import * as converter from "../tmp/bundle.test.js"
+import * as converter from "../src/index.ts"
 
 const roundTripTest = (biblatex) => {
     // Parse BibLaTeX to internal format

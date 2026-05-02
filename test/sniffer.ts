@@ -2,7 +2,7 @@ import fs from "node:fs"
 import path from "node:path"
 import { fileURLToPath } from "node:url"
 import { expect } from "chai"
-import * as converter from "../tmp/bundle.test.js"
+import * as converter from "../src/index.ts"
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const fixtures = path.join(__dirname, "fixtures/import")

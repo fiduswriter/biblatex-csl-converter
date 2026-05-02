@@ -3,7 +3,7 @@ import path from "node:path"
 import { fileURLToPath } from "node:url"
 import { DOMParser } from "@xmldom/xmldom"
 import { expect } from "chai"
-import * as converter from "../tmp/bundle.test.js"
+import * as converter from "../src/index.ts"
 
 const writeFixtures = false // Set to true to regenerate expected test results.
 

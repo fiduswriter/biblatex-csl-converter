@@ -1,6 +1,5 @@
 lib/
 demo/
 browser/
-.nyc_output/
 tmp/
 coverage/
