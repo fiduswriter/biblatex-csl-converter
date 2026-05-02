@@ -82,6 +82,7 @@
         "compile_browser-import-csl": "rollup src/entries/browser-import-csl.ts --config --output.format iife --output.file browser/import-csl.js",
         "prepare": "npm run lint && npm run compile",
         "test": "rollup -c rollup.config.test.ts && mocha",
+        "test:coverage": "rollup -c rollup.config.test.ts && npx nyc mocha && node scripts/generate-lcov.cjs",
         "postversion": "echo remember to run 'git push --follow-tags'"
     },
     "dependencies": {
@@ -93,6 +94,7 @@
         "@babel/preset-env": "^7.29.2",
         "@babel/runtime": "^7.29.2",
         "@biomejs/biome": "^2.4.13",
+        "@istanbuljs/nyc-config-typescript": "^1.0.2",
         "@rollup/plugin-babel": "^7.0.0",
         "@rollup/plugin-commonjs": "^29.0.2",
         "@rollup/plugin-json": "^6.1.0",
@@ -104,6 +106,7 @@
         "chai": "^6.2.2",
         "coveralls": "^3.1.1",
         "mocha": "^11.7.5",
+        "nyc": "^18.0.0",
         "prettier-cli": "^0.1.0",
         "rollup": "^4.60.2",
         "rollup-plugin-dts": "^6.4.1",

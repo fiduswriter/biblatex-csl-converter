@@ -1,0 +1,7 @@
+{
+  "reporter": ["lcov", "text"],
+  "include": ["src/**/*.ts"],
+  "exclude": ["test/**", "node_modules/**", "tmp/**", "coverage/**", "dist/**", "lib/**"],
+  "require": ["@istanbuljs/nyc-config-typescript"],
+  "extension": [".ts"]
+}
