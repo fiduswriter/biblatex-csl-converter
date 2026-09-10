@@ -1,7 +1,7 @@
 {
     "name": "bibliojson",
     "type": "module",
-    "version": "4.0.4",
+    "version": "4.1.0",
     "description": "BiblioJSON: a JSON-based bibliography format with importers and exporters for BibLaTeX, BibTeX, CSL-JSON, RIS, ENW, EndNote XML, Citavi, DOCX citations, and ODT citations",
     "main": "lib/index.cjs",
     "module": "lib/index.js",
