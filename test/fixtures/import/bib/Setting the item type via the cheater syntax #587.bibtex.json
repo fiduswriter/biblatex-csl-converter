@@ -206,6 +206,7 @@
             "entry_key": "ratliff_mystery_1999",
             "fields": {
                 "date": "1999-04",
+                "langid": "usenglish",
                 "abstract": [
                     {
                         "type": "text",
@@ -328,6 +329,7 @@
             "entry_key": "kamp_deconstructing_2006",
             "fields": {
                 "date": "2006-04",
+                "langid": "usenglish",
                 "abstract": [
                     {
                         "type": "text",

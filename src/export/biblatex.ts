@@ -162,8 +162,11 @@ export class BibLatexExporter {
             if (Array.isArray(fieldType.options)) {
                 return this._escapeTeX(theValue)
             } else {
+                // Values that are not known options (e.g. ISO 639 language
+                // codes in langid) are passed through as-is.
                 return this._escapeTeX(
-                    fieldType.options?.[theValue]?.biblatex ?? "",
+                    fieldType.options?.[theValue]?.biblatex ??
+                        (theValue as string),
                 )
             }
         } else {

@@ -221,7 +221,11 @@ export class CSLExporter {
             if (Array.isArray(fieldType.options)) {
                 return theValue
             } else {
-                return fieldType.options?.[theValue].csl
+                // Values that are not known options (e.g. ISO 639 language
+                // codes in langid) are passed through as-is.
+                return (
+                    fieldType.options?.[theValue]?.csl ?? (theValue as string)
+                )
             }
         } else {
             return this._reformText(theValue)
@@ -289,9 +293,11 @@ export class CSLExporter {
         // Check if the language is English or not specified
         // Check against all English language variants based on langidOptions values
         // Only apply sentence casing for English (default) language
+        const language = this.config.language?.toLowerCase() ?? ""
         const isEnglishLanguage =
             !this.config.language ||
-            this.config.language.toLowerCase().endsWith("english")
+            language.endsWith("english") ||
+            language.startsWith("en")
 
         // Only apply sentence casing for English or unspecified language
         let sentenceCasedText: string = isEnglishLanguage
@@ -472,7 +478,6 @@ export class CSLExporter {
                     : ""
             case "f_literal":
             case "f_long_literal":
-            case "f_title":
             default:
                 return Array.isArray(fValue)
                     ? this._plainText(fValue as NodeArray)

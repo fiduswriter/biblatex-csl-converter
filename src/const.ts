@@ -622,7 +622,7 @@ export const BibFieldTypes: Record<string, BibFieldType> = {
     },
     langid: {
         type: "f_key",
-        strict: true, // Does not allow costum strings
+        strict: true, // Only known language names and ISO 639 codes are allowed
         biblatex: "langid",
         csl: "language",
         options: langidOptions,

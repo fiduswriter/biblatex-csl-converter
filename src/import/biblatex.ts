@@ -664,6 +664,7 @@ export class BibLatexParser {
                 "newzealand",
             ]
             if (
+                !langString.startsWith("en") &&
                 !englishOptions.some((option) => {
                     return langString === option
                 })
@@ -683,6 +684,7 @@ export class BibLatexParser {
                 fields.langid = langid
                 if (
                     typeof langid === "string" &&
+                    !langid.startsWith("en") &&
                     ![
                         "usenglish",
                         "ukenglish",
@@ -938,9 +940,23 @@ export class BibLatexParser {
                 )
                 if (optionValue) {
                     return optionValue
-                } else {
+                }
+                // The value is not a known option (e.g. an ISO 639 language
+                // code such as "fr" in langid). Keep the raw value rather
+                // than dropping it, unless the field is strict.
+                if ("strict" in fieldType && fieldType.strict) {
+                    const warning: ErrorObject = {
+                        type: "unknown_key",
+                        field_name: fKey,
+                        value: keyString,
+                    }
+                    if (this.currentEntry) {
+                        warning.entry = this.currentEntry.entry_key
+                    }
+                    this.warning(warning)
                     return ""
                 }
+                return keyValue
             }
         }
         if ("strict" in fieldType && fieldType.strict) {
