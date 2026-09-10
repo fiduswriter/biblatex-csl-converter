@@ -210,6 +210,11 @@ compiled bundle `demo/demo.js` (built by `npm run compile_demo`).
   EndNote XML, and Citavi JSON. The file-input `accept` attribute updates automatically.
 - **File upload or paste** — load a bibliography by choosing a file or pasting text
   directly into the paste area.
+- **Option checkboxes** — an options bar below the main toolbar exposes parser and
+  exporter config flags: BibLaTeX import (`processUnexpected`, `processUnknown`),
+  CSL export (`exportUnmappedFields`, `useEntryKeys`, `escapeText`), and BibLaTeX
+  export (`exportUnexpectedFields`). Import options re-run the last import; export
+  options re-render the export panels only.
 - **Language selector** — choose from all supported display languages. Changing the
   language re-renders the BibDB panel instantly (no re-import required) using
   `getLocale()` / `getFieldTitle()` / `getTypeTitle()`.

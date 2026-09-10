@@ -5,7 +5,19 @@
             "entry_key": "_loi_2011",
             "fields": {
                 "date": "2011-05-18",
+                "journaltitle": [
+                    {
+                        "type": "text",
+                        "text": "JORF"
+                    }
+                ],
                 "langid": "french",
+                "number": [
+                    {
+                        "type": "text",
+                        "text": "BCRX0929142L"
+                    }
+                ],
                 "title": [
                     {
                         "type": "text",
@@ -28,18 +40,6 @@
                 "url": "http://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000024021430&categorieLien=id"
             },
             "unexpected_fields": {
-                "journaltitle": [
-                    {
-                        "type": "text",
-                        "text": "JORF"
-                    }
-                ],
-                "number": [
-                    {
-                        "type": "text",
-                        "text": "BCRX0929142L"
-                    }
-                ],
                 "pages": [
                     [
                         [
@@ -62,18 +62,6 @@
         }
     },
     "warnings": [
-        {
-            "type": "unexpected_field",
-            "field_name": "journaltitle",
-            "entry": "_loi_2011",
-            "line": 11
-        },
-        {
-            "type": "unexpected_field",
-            "field_name": "number",
-            "entry": "_loi_2011",
-            "line": 11
-        },
         {
             "type": "unexpected_field",
             "field_name": "pages",

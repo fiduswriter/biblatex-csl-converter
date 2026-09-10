@@ -79,6 +79,23 @@
                 height: 28px;
                 background: #ddd;
             }
+            .toolbar input[type="checkbox"] {
+                cursor: pointer;
+                accent-color: #f3b52b;
+            }
+            .options-bar {
+                padding-top: 8px;
+                padding-bottom: 8px;
+                gap: 12px;
+            }
+            .opt-group-label {
+                font-size: .7rem;
+                font-weight: 700;
+                color: #999;
+                text-transform: uppercase;
+                letter-spacing: .05em;
+                white-space: nowrap;
+            }
             .btn-sample {
                 font-size: .82rem;
                 font-weight: 700;
@@ -466,6 +483,39 @@
                     <option value="tr">T&#252;rk&#231;e</option>
                     <option value="zh">&#20013;&#25991;</option>
                 </select>
+            </label>
+
+        </div>
+
+        <!-- ── Import / export options ─────────────────────────────────── -->
+        <div class="toolbar options-bar">
+
+            <span class="opt-group-label">BibLaTeX import</span>
+            <label title="Keep fields that are known but not expected for the entry type">
+                <input type="checkbox" id="opt-process-unexpected" checked /> Unexpected fields
+            </label>
+            <label title="Keep fields with unknown names">
+                <input type="checkbox" id="opt-process-unknown" checked /> Unknown fields
+            </label>
+
+            <div class="divider"></div>
+
+            <span class="opt-group-label">CSL export</span>
+            <label title="Export fields that have no CSL equivalent into the standard note variable">
+                <input type="checkbox" id="opt-csl-unmapped" /> Unmapped fields &rarr; note
+            </label>
+            <label title="Use entry keys as CSL IDs">
+                <input type="checkbox" id="opt-csl-entrykeys" /> Entry keys as IDs
+            </label>
+            <label title="Escape special characters in text fields">
+                <input type="checkbox" id="opt-csl-escape" /> Escape text
+            </label>
+
+            <div class="divider"></div>
+
+            <span class="opt-group-label">BibLaTeX export</span>
+            <label title="Include fields that were not expected for the entry type when importing">
+                <input type="checkbox" id="opt-bib-unexpected" /> Unexpected fields
             </label>
 
         </div>

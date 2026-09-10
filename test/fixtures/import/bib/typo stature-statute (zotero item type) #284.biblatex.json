@@ -11,7 +11,19 @@
                         "text": "JORF n°0137 du 16 juin 2009 page 9784 texte n° 1"
                     }
                 ],
+                "journaltitle": [
+                    {
+                        "type": "text",
+                        "text": "JORF"
+                    }
+                ],
                 "langid": "french",
+                "number": [
+                    {
+                        "type": "text",
+                        "text": "PRMX0908015L"
+                    }
+                ],
                 "title": [
                     {
                         "type": "text",
@@ -21,18 +33,6 @@
                 "url": "http://www.legifrance.gouv.fr/WAspad/UnTexteDeJorf?numjo=PRMX0908015L"
             },
             "unexpected_fields": {
-                "journaltitle": [
-                    {
-                        "type": "text",
-                        "text": "JORF"
-                    }
-                ],
-                "number": [
-                    {
-                        "type": "text",
-                        "text": "PRMX0908015L"
-                    }
-                ],
                 "pages": [
                     [
                         [
@@ -55,18 +55,6 @@
         }
     },
     "warnings": [
-        {
-            "type": "unexpected_field",
-            "field_name": "journaltitle",
-            "entry": "_loi_2009",
-            "line": 13
-        },
-        {
-            "type": "unexpected_field",
-            "field_name": "number",
-            "entry": "_loi_2009",
-            "line": 13
-        },
         {
             "type": "unexpected_field",
             "field_name": "pages",

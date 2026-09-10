@@ -126,11 +126,17 @@ const SAMPLE_BIBLATEX = `% Sample bibliography — covers five common entry type
 
 let currentBibDB: BibDB = {}
 let currentLang = "en"
+let lastFormat = ""
+let lastInput = ""
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
 
 function getEl<T extends HTMLElement = HTMLElement>(id: string): T | null {
     return document.getElementById(id) as T | null
+}
+
+function getOption(id: string): boolean {
+    return getEl<HTMLInputElement>(id)?.checked ?? false
 }
 
 function escapeHtml(s: string): string {
@@ -221,8 +227,10 @@ function renderBibDB(bibDB: BibDB): string {
 
 function importBibLatex(input: string): BibDB {
     const parser = new BibLatexParser(input, {
-        processUnexpected: true,
-        processUnknown: { collaborator: "l_name" },
+        processUnexpected: getOption("opt-process-unexpected"),
+        processUnknown: getOption("opt-process-unknown")
+            ? { collaborator: "l_name" }
+            : false,
     })
     const { entries: bibDB, errors, warnings } = parser.parse()
     if (errors.length) console.warn("BibLaTeX errors:", errors)
@@ -476,7 +484,11 @@ function renderCSLPanel(bibDB: BibDB): void {
     const el = getEl("csl-db")
     if (!el) return
     try {
-        const exporter = new CSLExporter(bibDB)
+        const exporter = new CSLExporter(bibDB, false, {
+            exportUnmappedFields: getOption("opt-csl-unmapped"),
+            useEntryKeys: getOption("opt-csl-entrykeys"),
+            escapeText: getOption("opt-csl-escape"),
+        })
         const cslDB = exporter.parse()
         el.innerHTML = printObject(cslDB as unknown as JSONValue)
     } catch (e) {
@@ -490,7 +502,9 @@ function renderBibLatexPanel(bibDB: BibDB): void {
     const el = getEl("biblatex")
     if (!el) return
     try {
-        const exporter = new BibLatexExporter(bibDB)
+        const exporter = new BibLatexExporter(bibDB, false, {
+            exportUnexpectedFields: getOption("opt-bib-unexpected"),
+        })
         el.innerHTML = `<pre class="bib-pre">${escapeHtml(exporter.parse())}</pre>`
     } catch (e) {
         el.innerHTML = `<span class="error-msg">BibLaTeX export failed: ${escapeHtml(
@@ -503,6 +517,8 @@ function renderBibLatexPanel(bibDB: BibDB): void {
 
 function processInput(format: string, input: string): void {
     const t0 = performance.now()
+    lastFormat = format
+    lastInput = input
 
     // bibDB panel
     const bibDbEl = getEl("bib-db")
@@ -562,6 +578,19 @@ function rerenderBibDB(): void {
     bibDbEl.innerHTML = renderBibDB(currentBibDB)
 }
 
+// Re-render the export panels when an export option changes (no re-import)
+function rerenderExports(): void {
+    if (Object.keys(currentBibDB).length === 0) return
+    renderCSLPanel(currentBibDB)
+    renderBibLatexPanel(currentBibDB)
+}
+
+// Re-run the last import when an import option changes
+function rerunImport(): void {
+    if (!lastInput) return
+    processInput(lastFormat, lastInput)
+}
+
 // ─── UI event wiring ─────────────────────────────────────────────────────────
 
 function getSelectedFormat(): string {
@@ -597,6 +626,9 @@ function readFile(): void {
     const isAutoDoc = format === "auto" && /\.(docx|odt)$/i.test(file.name)
 
     if (isDocFormat || isAutoDoc) {
+        // Import options do not apply to document files; reset the last-input
+        // record so toggling an option does not re-run a stale text import.
+        lastInput = ""
         let docFormat: "docx" | "odt"
         if (isAutoDoc) {
             docFormat = /\.odt$/i.test(file.name) ? "odt" : "docx"
@@ -711,6 +743,15 @@ document.addEventListener("DOMContentLoaded", () => {
         currentLang = (e.target as HTMLSelectElement).value
         rerenderBibDB()
     })
+
+    // Import options re-run the last import; export options re-render the
+    // export panels without re-importing.
+    getEl("opt-process-unexpected")?.addEventListener("change", rerunImport)
+    getEl("opt-process-unknown")?.addEventListener("change", rerunImport)
+    getEl("opt-csl-unmapped")?.addEventListener("change", rerenderExports)
+    getEl("opt-csl-entrykeys")?.addEventListener("change", rerenderExports)
+    getEl("opt-csl-escape")?.addEventListener("change", rerenderExports)
+    getEl("opt-bib-unexpected")?.addEventListener("change", rerenderExports)
 
     // Update file-input accept attribute when format changes
     const acceptMap: Record<string, string> = {

@@ -26,9 +26,10 @@
                 "family": "Author"
             }
         ],
+        "publisher": "Institution",
         "publisher-place": "Place",
         "note": "{:X-genre: xxx}",
-        "collection-number": "77",
+        "number": "77",
         "title": "A report",
         "type": "report",
         "id": "2"

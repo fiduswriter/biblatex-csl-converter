@@ -515,6 +515,7 @@ export class BibLatexParser {
         }
         const rawFields = this.currentRawFields!
         const fields = this.currentEntry.fields
+        const unparsedDates: string[] = []
 
         if ("crossref" in rawFields) {
             this.crossrefs[this.currentEntry.entry_key] =
@@ -579,6 +580,9 @@ export class BibLatexParser {
                     error.entry = this.currentEntry.entry_key
                 }
                 this.errors.push(error)
+                // Preserve the unparsable date in the note field so the
+                // information is not lost entirely.
+                unparsedDates.push(`date: ${rawFields.date}`)
             } else if (rawFields.year) {
                 // Always try to use year even if month was invalid
                 const yearObj = edtfParse(rawFields.year as string)
@@ -637,6 +641,9 @@ export class BibLatexParser {
                             warning.entry = this.currentEntry.entry_key
                         }
                         this.warnings.push(warning)
+                        // Preserve the unparsable year in the note field so
+                        // the information is not lost entirely.
+                        unparsedDates.push(`year: ${rawFields.year}`)
                     }
                 }
             }
@@ -883,6 +890,21 @@ export class BibLatexParser {
                 default:
                     // Something must be wrong in the code.
                     console.warn(`Unrecognized type: ${fType}!`)
+            }
+        }
+        if (unparsedDates.length) {
+            if (Array.isArray(fields.note)) {
+                fields.note.push({
+                    type: "text",
+                    text: ` ${unparsedDates.join("; ")}`,
+                })
+            } else {
+                fields.note = [
+                    {
+                        type: "text",
+                        text: unparsedDates.join("; "),
+                    },
+                ]
             }
         }
     }

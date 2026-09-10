@@ -105,8 +105,9 @@
                 "family": "Weihs"
             }
         ],
+        "publisher": "Technische Universität Dortmund",
         "publisher-place": "Eldorado",
-        "collection-number": "2003/32864",
+        "number": "2003/32864",
         "title": "Stability <span class=\"nocase\">Analysis</span> and <span class=\"nocase\">Clustering</span> of <span class=\"nocase\">Electrical Transmission Systems</span>",
         "URL": "http://dx.doi.org/10.17877/DE290R-13190",
         "type": "report",

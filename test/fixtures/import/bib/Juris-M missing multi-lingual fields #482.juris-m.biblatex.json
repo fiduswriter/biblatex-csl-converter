@@ -34,7 +34,13 @@
                     }
                 ],
                 "url": "http://server.wenzibase.com",
-                "urldate": "2016-04-20"
+                "urldate": "2016-04-20",
+                "note": [
+                    {
+                        "type": "text",
+                        "text": "year: n.d."
+                    }
+                ]
             },
             "unknown_fields": {
                 "timestamp": [

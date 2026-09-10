@@ -5,15 +5,6 @@
             "entry_key": "_dalain_2010",
             "fields": {
                 "date": "2010-12-23",
-                "langid": "french",
-                "title": [
-                    {
-                        "type": "text",
-                        "text": "Dalain"
-                    }
-                ]
-            },
-            "unexpected_fields": {
                 "institution": [
                     [
                         {
@@ -28,6 +19,7 @@
                         "text": "Rec."
                     }
                 ],
+                "langid": "french",
                 "number": [
                     {
                         "type": "text",
@@ -43,6 +35,12 @@
                             }
                         ]
                     ]
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Dalain"
+                    }
                 ],
                 "volume": [
                     {
@@ -63,38 +61,8 @@
     },
     "warnings": [
         {
-            "type": "unexpected_field",
-            "field_name": "institution",
-            "entry": "_dalain_2010",
-            "line": 12
-        },
-        {
-            "type": "unexpected_field",
-            "field_name": "journaltitle",
-            "entry": "_dalain_2010",
-            "line": 12
-        },
-        {
-            "type": "unexpected_field",
-            "field_name": "number",
-            "entry": "_dalain_2010",
-            "line": 12
-        },
-        {
-            "type": "unexpected_field",
-            "field_name": "pages",
-            "entry": "_dalain_2010",
-            "line": 12
-        },
-        {
             "type": "unknown_field",
             "field_name": "timestamp",
-            "entry": "_dalain_2010",
-            "line": 12
-        },
-        {
-            "type": "unexpected_field",
-            "field_name": "volume",
             "entry": "_dalain_2010",
             "line": 12
         }

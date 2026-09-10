@@ -38,6 +38,7 @@ type ConfigObject = {
     escapeText?: boolean
     useEntryKeys?: boolean // Whether to output using the entry keys
     language?: string // Language of the citation
+    exportUnmappedFields?: boolean // Whether to export fields without a CSL mapping into the note field
 }
 
 type ErrorObject = {
@@ -117,12 +118,30 @@ export class CSLExporter {
             this.config.language = bib.fields.langid as string
         }
 
+        const extraNotes: string[] = []
         for (const fKey in bib.fields) {
-            if (
-                bib.fields[fKey] !== "" &&
-                fKey in BibFieldTypes &&
-                "csl" in BibFieldTypes[fKey]
-            ) {
+            if (bib.fields[fKey] === "" || !(fKey in BibFieldTypes)) {
+                continue
+            }
+            if (!("csl" in BibFieldTypes[fKey])) {
+                // The field has no CSL equivalent. If requested, export it
+                // into the note field so the information is not lost. `note`
+                // is a standard CSL variable, so this does not produce
+                // non-standard output.
+                if (this.config.exportUnmappedFields) {
+                    const text = this._reformPlainText(
+                        bib.fields[fKey],
+                        BibFieldTypes[fKey].type,
+                    )
+                    if (text.length) {
+                        extraNotes.push(
+                            `${BibFieldTypes[fKey].biblatex}: ${text}`,
+                        )
+                    }
+                }
+                continue
+            }
+            {
                 const fValue = bib.fields[fKey]
                 const fType = BibFieldTypes[fKey].type
                 let key: string
@@ -186,6 +205,11 @@ export class CSLExporter {
                         console.warn(`Unrecognized field type: ${fType}!`)
                 }
             }
+        }
+        if (extraNotes.length) {
+            fValues.note = fValues.note
+                ? `${fValues.note} ${extraNotes.join("; ")}`
+                : extraNotes.join("; ")
         }
         fValues.type = BibTypes[bib.bib_type].csl
         return fValues
@@ -409,6 +433,61 @@ export class CSLExporter {
                 html += TAGS[mark].close
             })
         return html
+    }
+
+    /** Converts a field value to plain text (without markup) for use in the
+     * note field when no CSL equivalent of the field exists.
+     */
+    _reformPlainText(fValue: unknown, fType: string): string {
+        switch (fType) {
+            case "f_date":
+            case "f_integer":
+            case "f_key":
+            case "f_uri":
+            case "f_verbatim":
+                return typeof fValue === "string" ? fValue : ""
+            case "l_key":
+            case "l_tag":
+                return Array.isArray(fValue)
+                    ? (fValue as string[]).join(", ")
+                    : ""
+            case "l_literal":
+                return Array.isArray(fValue)
+                    ? (fValue as NodeArray[])
+                          .map((text) => this._plainText(text))
+                          .join(", ")
+                    : ""
+            case "l_name":
+                return Array.isArray(fValue)
+                    ? (fValue as NameDictObject[])
+                          .map((name) => {
+                              if (name.literal) {
+                                  return this._plainText(name.literal)
+                              }
+                              return [name.family, name.given]
+                                  .filter(Boolean)
+                                  .join(", ")
+                          })
+                          .join(" and ")
+                    : ""
+            case "f_literal":
+            case "f_long_literal":
+            case "f_title":
+            default:
+                return Array.isArray(fValue)
+                    ? this._plainText(fValue as NodeArray)
+                    : ""
+        }
+    }
+
+    _plainText(theValue: NodeArray): string {
+        return theValue.reduce((text, node) => {
+            if ("text" in node) {
+                return text + node.text
+            } else {
+                return text
+            }
+        }, "")
     }
 
     _reformDate(dateStr: string): false | CSLDateObject {

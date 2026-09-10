@@ -53,6 +53,8 @@ Synchronously parse the input. Returns:
 - `errors`: ErrorObject[]
 - `warnings`: ErrorObject[]
 
+**Note:** Date fields that cannot be parsed (e.g. `year = {enacted date}`) produce a warning/error and the raw value is preserved in the entry's `note` field as `year: <value>` so the information is not lost.
+
 ```typescript
 parseAsync(): Promise<BiblatexParseResult>
 ```
@@ -276,6 +278,7 @@ new CSLExporter(
 
 - `escapeText` (boolean): Escape special characters in text fields
 - `useEntryKeys` (boolean): Use entry keys as CSL IDs
+- `exportUnmappedFields` (boolean): Export fields that have no CSL equivalent (e.g. `keywords`, `file`) into the standard CSL `note` variable as `fieldname: value` entries instead of dropping them
 
 #### Methods
 

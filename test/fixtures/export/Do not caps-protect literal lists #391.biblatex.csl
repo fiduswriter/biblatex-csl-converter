@@ -9,11 +9,13 @@
         "id": "1"
     },
     "2": {
+        "publisher": "Office of Information Management and Communications",
         "title": "Institution",
         "type": "report",
         "id": "2"
     },
     "3": {
+        "publisher": "University of Saint Kitts and Nevis",
         "title": "University",
         "type": "thesis",
         "id": "3"

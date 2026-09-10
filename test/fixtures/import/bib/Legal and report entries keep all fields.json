@@ -1,0 +1,272 @@
+{
+    "entries": {
+        "1": {
+            "bib_type": "report",
+            "entry_key": "r1",
+            "fields": {
+                "date": "2023",
+                "author": [
+                    {
+                        "literal": [
+                            {
+                                "type": "text",
+                                "text": "Nimbus Systems"
+                            }
+                        ]
+                    }
+                ],
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Handshake Protocol"
+                    }
+                ],
+                "institution": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Nimbus Systems"
+                        }
+                    ]
+                ]
+            }
+        },
+        "2": {
+            "bib_type": "legal_case",
+            "entry_key": "ThuringerAufbaubankLN2026a",
+            "fields": {
+                "date": "2026-06-25",
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Thüringer Aufbaubank c LN"
+                    }
+                ],
+                "number": [
+                    {
+                        "type": "text",
+                        "text": "14/25"
+                    }
+                ],
+                "institution": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "CJUE"
+                        }
+                    ]
+                ],
+                "file": "E:\\Zotero data\\storage\\C5WQBR75\\2026 - Thüringer Aufbaubank c LN.pdf"
+            }
+        },
+        "3": {
+            "bib_type": "legislation",
+            "entry_key": "DirectiveEUEuropean2024",
+            "fields": {
+                "date": "2024-04-11",
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Directive ("
+                    },
+                    {
+                        "type": "text",
+                        "text": "EU",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": ") of the "
+                    },
+                    {
+                        "type": "text",
+                        "text": "European Parliament",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " and of the "
+                    },
+                    {
+                        "type": "text",
+                        "text": "Council",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " of 11 "
+                    },
+                    {
+                        "type": "text",
+                        "text": "April",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " 2024 on Protecting Persons Who Engage in Public Participation from Manifestly Unfounded Claims or Abusive Court Proceedings (‘"
+                    },
+                    {
+                        "type": "text",
+                        "text": "Strategic",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": " Lawsuits against Public Participation’)"
+                    }
+                ],
+                "shorttitle": [
+                    {
+                        "type": "text",
+                        "text": "Anti-"
+                    },
+                    {
+                        "type": "text",
+                        "text": "SLAPPs Directive",
+                        "marks": [
+                            {
+                                "type": "nocase"
+                            }
+                        ]
+                    }
+                ],
+                "number": [
+                    {
+                        "type": "text",
+                        "text": "2024/1069"
+                    }
+                ],
+                "url": "https://eur-lex.europa.eu/eli/dir/2024/1069/oj/eng",
+                "urldate": "2025-06-27",
+                "abstract": [
+                    {
+                        "type": "text",
+                        "text": "Directive"
+                    }
+                ],
+                "langid": "usenglish",
+                "file": "E \\\\Zotero data\\\\storage\\\\DG94HJDK\\\\Directive (EU) of the European Parliament and of the Council of 11 April 2024 on protecting persons.pdf;E \\\\Zotero data\\\\storage\\\\599VVQYR\\\\eng.html"
+            }
+        },
+        "4": {
+            "bib_type": "legal_case",
+            "entry_key": "CourCassationCivile2020d",
+            "fields": {
+                "date": "2020-01-30",
+                "journaltitle": [
+                    {
+                        "type": "text",
+                        "text": "Bull. civ."
+                    }
+                ],
+                "volume": [
+                    {
+                        "type": "text",
+                        "text": "II"
+                    }
+                ],
+                "number": [
+                    {
+                        "type": "text",
+                        "text": "18-18.922"
+                    }
+                ],
+                "institution": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "Cass. 2"
+                        },
+                        {
+                            "type": "text",
+                            "text": "e",
+                            "marks": [
+                                {
+                                    "type": "sup"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "text",
+                            "text": " civ."
+                        }
+                    ]
+                ],
+                "keywords": ["Cour de cassation", "Répétition de l'indu"],
+                "file": "E \\\\Zotero data\\\\storage\\\\H6UC6739\\\\Document-20260317-021917.pdf;E \\\\Zotero data\\\\storage\\\\VNQNB6MU\\\\GPL373f3.pdf;E \\\\Zotero data\\\\storage\\\\YPRAIQQS\\\\Document-20260317-021855.pdf"
+            }
+        },
+        "5": {
+            "bib_type": "legislation",
+            "entry_key": "Article1341",
+            "fields": {
+                "title": [
+                    {
+                        "type": "text",
+                        "text": "Article 1341"
+                    }
+                ],
+                "journaltitle": [
+                    {
+                        "type": "text",
+                        "text": "C. civ."
+                    }
+                ],
+                "number": [
+                    {
+                        "type": "text",
+                        "text": "official name here"
+                    }
+                ],
+                "note": [
+                    {
+                        "type": "text",
+                        "text": "year: enacted date"
+                    }
+                ]
+            },
+            "unknown_fields": {
+                "year": [
+                    {
+                        "type": "text",
+                        "text": "enacted date"
+                    }
+                ]
+            }
+        }
+    },
+    "warnings": [
+        {
+            "type": "unknown_date",
+            "field_name": "year",
+            "value": "enacted date",
+            "entry": "Article1341"
+        },
+        {
+            "type": "unknown_field",
+            "field_name": "year",
+            "entry": "Article1341",
+            "line": 44
+        }
+    ]
+}

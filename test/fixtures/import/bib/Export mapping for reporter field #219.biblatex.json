@@ -28,7 +28,31 @@
                         ]
                     }
                 ],
+                "institution": [
+                    [
+                        {
+                            "type": "text",
+                            "text": "HCA"
+                        }
+                    ]
+                ],
+                "journaltitle": [
+                    {
+                        "type": "text",
+                        "text": "CLR"
+                    }
+                ],
                 "keywords": ["au"],
+                "pages": [
+                    [
+                        [
+                            {
+                                "type": "text",
+                                "text": "337"
+                            }
+                        ]
+                    ]
+                ],
                 "shorttitle": [
                     {
                         "type": "text",
@@ -49,42 +73,6 @@
                             }
                         ]
                     }
-                ]
-            },
-            "unexpected_fields": {
-                "institution": [
-                    [
-                        {
-                            "type": "text",
-                            "text": "HCA"
-                        }
-                    ]
-                ],
-                "journaltitle": [
-                    {
-                        "type": "text",
-                        "text": "CLR"
-                    }
-                ],
-                "pages": [
-                    [
-                        [
-                            {
-                                "type": "text",
-                                "text": "337"
-                            }
-                        ]
-                    ]
-                ],
-                "translator": [
-                    {
-                        "literal": [
-                            {
-                                "type": "text",
-                                "text": "Kartinyeri"
-                            }
-                        ]
-                    }
                 ],
                 "volume": [
                     {
@@ -100,28 +88,22 @@
                         "text": "2015-02-24 12:14:36 +0100"
                     }
                 ]
+            },
+            "unexpected_fields": {
+                "translator": [
+                    {
+                        "literal": [
+                            {
+                                "type": "text",
+                                "text": "Kartinyeri"
+                            }
+                        ]
+                    }
+                ]
             }
         }
     },
     "warnings": [
-        {
-            "type": "unexpected_field",
-            "field_name": "institution",
-            "entry": "kartinyeri",
-            "line": 14
-        },
-        {
-            "type": "unexpected_field",
-            "field_name": "journaltitle",
-            "entry": "kartinyeri",
-            "line": 14
-        },
-        {
-            "type": "unexpected_field",
-            "field_name": "pages",
-            "entry": "kartinyeri",
-            "line": 14
-        },
         {
             "type": "unknown_field",
             "field_name": "timestamp",
@@ -131,12 +113,6 @@
         {
             "type": "unexpected_field",
             "field_name": "translator",
-            "entry": "kartinyeri",
-            "line": 14
-        },
-        {
-            "type": "unexpected_field",
-            "field_name": "volume",
             "entry": "kartinyeri",
             "line": 14
         }

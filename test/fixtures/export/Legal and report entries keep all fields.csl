@@ -1,0 +1,89 @@
+{
+    "1": {
+        "issued": {
+            "date-parts": [
+                [
+                    2023
+                ]
+            ]
+        },
+        "author": [
+            {
+                "literal": "Nimbus Systems"
+            }
+        ],
+        "title": "Handshake protocol",
+        "publisher": "Nimbus Systems",
+        "type": "report",
+        "id": "1"
+    },
+    "2": {
+        "issued": {
+            "date-parts": [
+                [
+                    2026,
+                    6,
+                    25
+                ]
+            ]
+        },
+        "title": "Thüringer aufbaubank c LN",
+        "number": "14/25",
+        "authority": "CJUE",
+        "type": "legal_case",
+        "id": "2"
+    },
+    "3": {
+        "issued": {
+            "date-parts": [
+                [
+                    2024,
+                    4,
+                    11
+                ]
+            ]
+        },
+        "title": "Directive (<span class=\"nocase\">EU</span>) of the <span class=\"nocase\">European Parliament</span> and of the <span class=\"nocase\">Council</span> of 11 <span class=\"nocase\">April</span> 2024 on protecting persons who engage in public participation from manifestly unfounded claims or abusive court proceedings (‘<span class=\"nocase\">Strategic</span> lawsuits against public participation’)",
+        "title-short": "Anti-<span class=\"nocase\">SLAPPs Directive</span>",
+        "number": "2024/1069",
+        "URL": "https://eur-lex.europa.eu/eli/dir/2024/1069/oj/eng",
+        "accessed": {
+            "date-parts": [
+                [
+                    2025,
+                    6,
+                    27
+                ]
+            ]
+        },
+        "abstract": "Directive",
+        "language": "en-US",
+        "type": "legislation",
+        "id": "3"
+    },
+    "4": {
+        "issued": {
+            "date-parts": [
+                [
+                    2020,
+                    1,
+                    30
+                ]
+            ]
+        },
+        "container-title": "Bull. civ.",
+        "volume": "II",
+        "number": "18-18.922",
+        "authority": "Cass. 2<sup>e</sup> civ.",
+        "type": "legal_case",
+        "id": "4"
+    },
+    "5": {
+        "title": "Article 1341",
+        "container-title": "C. civ.",
+        "number": "official name here",
+        "note": "year: enacted date",
+        "type": "legislation",
+        "id": "5"
+    }
+}

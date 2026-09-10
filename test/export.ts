@@ -81,3 +81,31 @@ const verifyEscape = (jsonfile) => {
 }
 
 verifyEscape(path.join(fixtures, "escape.json"))
+
+const verifyUnmappedFields = (jsonfile) => {
+    const input = JSON.parse(fs.readFileSync(jsonfile, "utf8"))
+
+    it("exportUnmappedFields: fields without a CSL mapping go into note", () => {
+        const exporter = new converter.CSLExporter(input.entries, null, {
+            exportUnmappedFields: true,
+        })
+        const output = exporter.parse()
+        expect(output["2"].note).to.equal(
+            "file: E:\\Zotero data\\storage\\C5WQBR75\\2026 - Thüringer Aufbaubank c LN.pdf",
+        )
+        expect(output["4"].note).to.match(
+            /^keywords: Cour de cassation, Répétition de l'indu; file: E/,
+        )
+    })
+
+    it("fields without a CSL mapping are dropped by default", () => {
+        const exporter = new converter.CSLExporter(input.entries)
+        const output = exporter.parse()
+        expect(output["2"].note).to.be.undefined
+        expect(output["4"].note).to.be.undefined
+    })
+}
+
+verifyUnmappedFields(
+    path.join(fixtures, "Legal and report entries keep all fields.json"),
+)
